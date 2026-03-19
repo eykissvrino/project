@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나라장터 v2.0 — 구현 완료!</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:24px}
+  .hero{text-align:center;padding:32px 0 24px}
+  .hero h1{font-size:2rem;color:#f8fafc;margin-bottom:8px}
+  .hero .ver{display:inline-block;background:linear-gradient(135deg,#22c55e,#3b82f6);color:#fff;font-weight:800;padding:4px 16px;border-radius:20px;font-size:0.85rem;margin-bottom:12px}
+  .hero p{color:#94a3b8;font-size:0.85rem}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;max-width:900px;margin:20px auto}
+  .stat-card{background:#1e293b;border-radius:10px;padding:16px;text-align:center}
+  .stat-card .val{font-size:1.5rem;font-weight:800}
+  .stat-card .val.green{color:#22c55e}.stat-card .val.blue{color:#60a5fa}.stat-card .val.red{color:#f87171}.stat-card .val.amber{color:#fbbf24}
+  .stat-card .lbl{font-size:0.65rem;color:#94a3b8;margin-top:4px}
+
+  .grid{display:grid;grid-template-columns:1fr;gap:12px;max-width:900px;margin:20px auto}
+  .card{background:#1e293b;border-radius:12px;padding:16px;border-left:4px solid #22c55e}
+  .card h3{font-size:0.9rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .card p{font-size:0.78rem;color:#94a3b8;line-height:1.5}
+  .badge{font-size:0.65rem;background:#166534;color:#86efac;padding:2px 8px;border-radius:10px;font-weight:600}
+
+  .agents{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .chip{display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:8px;font-size:0.72rem;font-weight:600;background:#14532d;color:#86efac}
+
+  .deploy{max-width:900px;margin:24px auto;background:linear-gradient(135deg,#1e3a5f,#1e293b);border:1px solid #3b82f6;border-radius:12px;padding:20px}
+  .deploy h3{color:#60a5fa;font-size:0.95rem;margin-bottom:10px}
+  .deploy code{background:#0f172a;padding:8px 12px;border-radius:6px;display:block;font-size:0.8rem;color:#86efac;margin:6px 0;font-family:monospace}
+
+  .files{max-width:900px;margin:20px auto;background:#1e293b;border-radius:12px;padding:16px}
+  .files h3{font-size:0.85rem;margin-bottom:10px}
+  .f-row{display:flex;gap:8px;padding:3px 0;font-size:0.72rem;font-family:monospace}
+  .f-new{color:#4ade80}.f-del{color:#f87171}.f-mod{color:#60a5fa}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="ver">v2.0.0</div>
+  <h1>🎉 나라장터 모니터링 웹앱 v2.0 구현 완료!</h1>
+  <p>시앤피컨설팅 · HR컨설팅 전문 · 6인 에이전트팀 구축 성공</p>
+</div>
+
+<div class="stats">
+  <div class="stat-card"><div class="val green">4/4</div><div class="lbl">Phase 완료</div></div>
+  <div class="stat-card"><div class="val blue">42</div><div class="lbl">변경 파일</div></div>
+  <div class="stat-card"><div class="val green">+3,876</div><div class="lbl">추가 라인</div></div>
+  <div class="stat-card"><div class="val red">-1,714</div><div class="lbl">삭제 라인</div></div>
+  <div class="stat-card"><div class="val green">✓</div><div class="lbl">빌드 성공</div></div>
+  <div class="stat-card"><div class="val amber">Push 대기</div><div class="lbl">Railway 배포</div></div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h3>✅ Phase 1 — 기반 정비 <span class="badge">완료</span></h3>
+    <p>알림 코드 7개 삭제 · 패키지 5개 제거 · 관리자 시스템 (role 기반 접근제어, 사용자 CRUD) · 본부별 키워드 격리 · AccessLog 로그인 추적</p>
+    <div class="agents"><div class="chip">🧹 Cleaner</div><div class="chip">🔐 Guardian</div><div class="chip">🔧 Hephaestus</div></div>
+  </div>
+
+  <div class="card">
+    <h3>✅ Phase 2 — 낙찰정보 연동 <span class="badge">완료</span></h3>
+    <p>ScsbidInfoService API 연동 · BidResult/Company DB 모델 · 개찰결과 검색/크롤링 · 대시보드 "개찰" 탭 추가 · 기업 자동 집계</p>
+    <div class="agents"><div class="chip">🔧 Hephaestus</div><div class="chip">🎨 Athena</div></div>
+  </div>
+
+  <div class="card">
+    <h3>✅ Phase 3 — 수주 분석 <span class="badge">완료</span></h3>
+    <p>분석 API 5개 · 기업별/기관별/트렌드 차트 · 관리자 이용 현황 대시보드 · 검색 키워드 빈도 분석</p>
+    <div class="agents"><div class="chip">📊 Oracle</div><div class="chip">🎨 Athena</div></div>
+  </div>
+
+  <div class="card">
+    <h3>✅ Phase 4 — 최적화 <span class="badge">완료</span></h3>
+    <p>사전규격 용역 전용화 (API 호출 75%↓) · 크롤링 90일 확대 · 빌드 성공 (25개 라우트)</p>
+    <div class="agents"><div class="chip">🧹 Cleaner</div></div>
+  </div>
+</div>
+
+<div class="deploy">
+  <h3>🚀 Railway 배포 방법</h3>
+  <p style="color:#94a3b8;font-size:0.8rem;margin-bottom:10px">이 환경에서 GitHub 직접 push가 제한되어, 로컬 PC에서 아래 명령을 실행해주세요:</p>
+  <code>cd [프로젝트 경로]</code>
+  <code>git pull  # 변경사항 가져오기</code>
+  <code>git push origin main  # Railway 자동 배포 트리거</code>
+  <p style="color:#94a3b8;font-size:0.75rem;margin-top:10px">Railway가 main 브랜치 push 감지 → 자동 빌드 & 배포</p>
+</div>
+
+<div class="files">
+  <h3>📁 신규 생성 파일 (15개)</h3>
+  <div class="f-row"><span class="f-new">+</span> AGENTS.md — 에이전트팀 가이드</div>
+  <div class="f-row"><span class="f-new">+</span> app/(admin)/layout.tsx — 관리자 레이아웃</div>
+  <div class="f-row"><span class="f-new">+</span> app/(admin)/admin/page.tsx — 사용자 관리</div>
+  <div class="f-row"><span class="f-new">+</span> app/(admin)/admin/keywords/page.tsx — 키워드 할당</div>
+  <div class="f-row"><span class="f-new">+</span> app/(admin)/admin/analytics/page.tsx — 이용 현황</div>
+  <div class="f-row"><span class="f-new">+</span> app/(dashboard)/analytics/page.tsx — 수주 분석</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/admin/users/route.ts — 사용자 CRUD</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/admin/keywords/route.ts — 키워드 할당 API</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/admin/analytics/route.ts — 이용 현황 API</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/analytics/companies/route.ts — 기업 분석</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/analytics/agencies/route.ts — 기관 분석</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/analytics/trends/route.ts — 트렌드 분석</div>
+  <div class="f-row"><span class="f-new">+</span> app/api/analytics/keywords/route.ts — 키워드 분석</div>
+  <div class="f-row"><span class="f-new">+</span> 2개 DB 마이그레이션 SQL</div>
+</div>
+
+</body>
+</html>

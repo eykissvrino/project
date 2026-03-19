@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclus One-Pager Proposal</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .a4-container {
+            width: 210mm;
+            min-height: 297mm;
+            background-color: #ffffff;
+            padding: 20mm;
+            box-sizing: border-box;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .header {
+            text-align: left;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            color: #0056b3;
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            color: #0056b3;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title span {
+            margin-right: 8px;
+            font-size: 22px;
+        }
+
+        .content {
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid #0056b3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .highlight-box h3 {
+            margin: 0 0 10px 0;
+            color: #003d82;
+            font-size: 17px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .strong-text {
+            font-weight: 700;
+            color: #222;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .math-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .math-box.red {
+            border-top: 4px solid #d9534f;
+        }
+
+        .math-box.blue {
+            border-top: 4px solid #5cb85c;
+            background-color: #f9fff9;
+        }
+
+        .math-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .math-value {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .math-box.red .math-value { color: #d9534f; }
+        .math-box.blue .math-value { color: #5cb85c; }
+
+        .footer {
+            margin-top: 40px;
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .footer h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        .footer p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #e0f0ff;
+        }
+
+        /* Print formatting */
+        @media print {
+            body { background-color: white; }
+            .a4-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-container">
+        
+        <div class="header">
+            <h1>매년 허공에 버리시던 '부담금 1.4억 원',<br>내년부터는 '영업 이익 5,000만 원'으로 바꿔 드립니다.</h1>
+            <p>IT/테크 기업을 위한 사무직 특화 장애인 채용 턴키 솔루션, Inclus(인클루스)</p>
+        </div>
+
+        <div class="content">
+            <p>대표님, 혹시 올해도 "어쩔 수 없지"라며 수억 원의 장애인 고용 부담금을 납부할 계획이신가요?</p>
+            <p>IT 기업의 고민은 저희도 잘 압니다. "단순 조립직을 맡길 수도 없고, 휠체어가 들어올 공간도 없다." 그래서 대부분 고용을 포기하고 벌금을 감수합니다. 하지만 관점을 바꾸면 <strong>비용 절감은 물론 추가 수익까지 창출</strong>할 수 있습니다.</p>
+
+            <div class="section-title"><span>💡</span> "뽑을 직무가 없다고요? 직무를 창조해 드립니다."</div>
+            <div class="highlight-box">
+                <h3>사무 공간 특화 혁신 직무 개발(Job Carving) 시스템</h3>
+                <p style="margin-top:0"><strong>"연봉 1억짜리 시니어 개발자가 왜 매일 1시간씩 데이터 오탈자 검수 노가다를 합니까?"</strong></p>
+                <p>단순 인력 매칭이 아닙니다. 핵심 인력(개발자/기획자)이 낭비하는 파편화된 업무를 묶어, 비대면/원격 100% 소화 가능한 <strong>새로운 사무 지원 직무</strong>로 재설계합니다.</p>
+                <ul>
+                    <li><span class="strong-text">[사내 데이터 매니저]</span> AI 데이터 라벨링, 메타데이터 분류</li>
+                    <li><span class="strong-text">[ESG 모니터링 요원]</span> 경쟁사 평판 모니터링, 오탈자 검수</li>
+                    <li><span class="strong-text">[스마트 헬프데스크]</span> 사내 라이선스 정리 및 IT 비품 대장 관리</li>
+                </ul>
+            </div>
+
+            <div class="section-title"><span>📊</span> 숫자로 증명하는 압도적인 ROI (투자 대비 수익)</div>
+            <p><em>*상시근로자 200인 IT 기업 기준 가상 시뮬레이션 결과</em></p>
+            
+            <div class="grid-2">
+                <div class="math-box red">
+                    <div class="math-title">인클루스 도입 전 (현재)</div>
+                    <div class="math-value">- 1.4억 원</div>
+                    <p style="font-size: 13px; color: #666; margin: 5px 0 0 0;">매년 허공에 날리는 순 지출(벌금)</p>
+                </div>
+                <div class="math-box blue">
+                    <div class="math-title">인클루스 도입 후</div>
+                    <div class="math-value">+ 5,000만 원</div>
+                    <p style="font-size: 13px; color: #666; margin: 5px 0 0 0;">부담금 100% 방어 및 장려금 추가 수익</p>
+                </div>
+            </div>
+
+            <div class="section-title"><span>🤝</span> 인사팀 리소스 투입 "ZERO" + "월 관리비 0원"</div>
+            <p>직무 설계부터 면접 대행, 보조공학기기 세팅, 주기적인 멘탈 케어, 정부 장려금 서류 처리까지 <strong>100% 턴키(Turn-key) 매니지드 서비스</strong>를 제공합니다. 귀사의 인사팀이 할 일은 제안서에 서명하시는 것뿐입니다.</p>
+            
+            <ul>
+                <li><strong>초기 세팅비 무상 지원</strong> (파일럿 파트너사 한정)</li>
+                <li><strong>월 고정 관리비 0원</strong> (고정비 리스크 원천 차단)</li>
+                <li>오직 귀사가 수령하게 될 <strong>'정부 고용 장려금(수익)' 안에서 20%만 성과 수수료</strong>로 셰어합니다.</li>
+            </ul>
+
+        </div>
+
+        <div class="footer">
+            <h3>단 5개사 한정: [무료] 부담금 방어 컨설팅 신청</h3>
+            <p>1.4억을 버리시겠습니까, 5천만 원을 더 버시겠습니까?</p>
+            <p style="margin-top: 15px; font-weight: bold; font-size: 16px;">미팅 예약: contact@cnpdiversity.com / 02-XXX-XXXX</p>
+            <p style="font-size: 12px; margin-top: 5px; opacity: 0.8;">C&P Diversity - Inclus Team</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
