@@ -67,7 +67,7 @@
 - [x] Phase 1: 핵심 스킬 고도화 (consulting-report, proposal, job-analysis, data-analysis, quality-contract)
 - [x] Phase 2: 에이전트 구축 (Tier 1~3 프롬프트 설계, 9개 완료)
 - [x] Phase 3: 루프 체계 구축 (랄프 루프, Pygmalion)
-- [ ] Phase 4: 확장·최적화
+- [x] Phase 4: 확장·최적화 (REGISTRY.md 업데이트, 전 프로젝트 동기화)
 
 ## 스킬 현황 (Phase 1 완료)
 ### 재작성 완료 (P0 → Advanced)

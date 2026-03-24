@@ -2,7 +2,7 @@
 
 > 이석주의 AI 작업 환경에서 사용 가능한 모든 스킬, 에이전트, 워크플로우, 커맨드, 플러그인의 통합 카탈로그입니다.
 >
-> 최종 업데이트: 2026-03-19
+> 최종 업데이트: 2026-03-24
 
 ---
 
@@ -12,12 +12,15 @@
 |-------------|------|------|
 | Tier 1 스킬 (전역) | 22개 | `~/.claude/skills/` |
 | Tier 2 스킬 (워크스페이스) | 23개 | `workspace/_shared/skills/` |
-| 에이전트 | 12개 | `workspace/_shared/agents/` |
-| 워크플로우 | 7개 | `workspace/_shared/workflows/` |
+| 에이전트 (비즈니스) | 9개 | `workspace/_shared/agents/` (Tier 1~3) |
+| 에이전트 (기술/개발) | 12개 | `workspace/_shared/agents/` (레거시) |
+| 워크플로우 (신규) | 2개 | `workspace/_shared/workflows/` (ralph-loop, pygmalion) |
+| 워크플로우 (레거시) | 7개 | `workspace/_shared/workflows/` (Antigravity) |
+| 품질계약 | 1개 | `workspace/_shared/quality-contracts/` |
 | 커맨드 | 4개 | `~/.claude/commands/` + `_shared/commands/` |
 | 플러그인 | 2개 | `~/.claude/plugins/` |
 | 프롬프트 | - | `workspace/_shared/prompts/` |
-| **합계** | **70+** | |
+| **합계** | **80+** | |
 
 ---
 
@@ -87,42 +90,81 @@
 
 ---
 
-## 2. 에이전트 카탈로그 (12개) — `workspace/_shared/agents/`
+## 2. 에이전트 카탈로그 (21개) — `workspace/_shared/agents/`
 
 > **크로스도구**: sync-tools.cmd 실행 시 `.claude/agents/` + `.agent/workflows/` 양쪽에 배포됨
-> Claude Code, OpenCode, Antigravity 모든 도구에서 사용 가능
+
+### Tier 1: 비즈니스 오너 에이전트 (7개) — 신규 구축
+
+> 사용자 요청 → Sisyphus → 리드 에이전트 1명 지정 → 허용된 하위 스킬만 호출
+
+| # | 에이전트 | 그리스 원형 | 역할 | 활용 스킬 |
+|---|----------|-----------|------|----------|
+| 1 | **athena** | 지혜의 여신 | 경영/사업/성장전략 수립 | strategic-management, data-analysis |
+| 2 | **apollo** | 지식의 신 | 시장조사, 경쟁분석, 벤치마킹 | data-analysis |
+| 3 | **hera** | 조직의 여신 | HRM/HRD/OD, 직무분석, 조직진단 | job-analysis, hr-consulting, org-diagnosis |
+| 4 | **hermes** | 전달의 신 | 문서 산출물 총괄, 품질 통제 | consulting-report, proposal, pptx, docx |
+| 5 | **themis** | 정의의 여신 | 법률검토, 계약서, 규정 준수 | legal-consulting (예정) |
+| 6 | **aphrodite** | 미의 여신 | 브랜딩, 네이밍, 마케팅 | branding-marketing (예정) |
+| 7 | **midas** | 황금의 손 | 사업계획, 재무추정, BM설계 | business-planning, data-analysis |
+
+### Tier 2: 개발 에이전트 (1개) — 신규 구축
+
+| # | 에이전트 | 역할 | 하위 스킬 |
+|---|----------|------|----------|
+| 8 | **daedalus** | 개발 총괄 아키텍트 | Arachne(FE), Talos(BE), Iris(모바일), Helios(인프라), Nike(QA) |
+
+### Tier 3: 메타 에이전트 (1개) — 신규 구축
+
+| # | 에이전트 | 역할 | 활용 |
+|---|----------|------|------|
+| 9 | **chronos** | 프로젝트 관리 | WBS, 간트차트, 리스크관리, 진행 추적 |
+
+### 기존 기술/개발 에이전트 (12개)
 
 | # | 에이전트 | 역할 | 컨설팅 업무 매핑 |
 |---|----------|------|-----------------|
-| 1 | planner | 작업 계획 수립 | 프로젝트 기획, WBS 작성 |
-| 2 | plan-reviewer | 계획 검토 | 기획안 품질 검토 |
-| 3 | workspace-manager | 워크스페이스 관리 | 프로젝트 생성/아카이빙/동기화 |
-| 4 | auto-error-resolver | 에러 자동 해결 | 기술 문제 자동 해결 |
-| 5 | code-architecture-reviewer | 코드 아키텍처 리뷰 | 시스템 설계 검토 |
-| 6 | code-refactor-master | 코드 리팩토링 | 코드 품질 개선 |
-| 7 | documentation-architect | 문서화 설계 | 보고서 구조 설계 |
-| 8 | frontend-error-fixer | 프론트엔드 에러 수정 | UI 문제 해결 |
-| 9 | web-research-specialist | 웹 리서치 | 시장조사, 벤치마킹 |
-| 10 | auth-route-debugger | 인증 라우트 디버깅 | 인증 시스템 디버깅 |
-| 11 | auth-route-tester | 인증 라우트 테스트 | 인증 시스템 테스트 |
-| 12 | refactor-planner | 리팩토링 계획 | 개선 계획 수립 |
+| 10 | planner | 작업 계획 수립 | 프로젝트 기획, WBS 작성 |
+| 11 | plan-reviewer | 계획 검토 | 기획안 품질 검토 |
+| 12 | workspace-manager | 워크스페이스 관리 | 프로젝트 생성/아카이빙/동기화 |
+| 13 | auto-error-resolver | 에러 자동 해결 | 기술 문제 자동 해결 |
+| 14 | code-architecture-reviewer | 코드 아키텍처 리뷰 | 시스템 설계 검토 |
+| 15 | code-refactor-master | 코드 리팩토링 | 코드 품질 개선 |
+| 16 | documentation-architect | 문서화 설계 | 보고서 구조 설계 |
+| 17 | frontend-error-fixer | 프론트엔드 에러 수정 | UI 문제 해결 |
+| 18 | web-research-specialist | 웹 리서치 | 시장조사, 벤치마킹 |
+| 19 | auth-route-debugger | 인증 라우트 디버깅 | 인증 시스템 디버깅 |
+| 20 | auth-route-tester | 인증 라우트 테스트 | 인증 시스템 테스트 |
+| 21 | refactor-planner | 리팩토링 계획 | 개선 계획 수립 |
 
 ---
 
-## 3. 워크플로우 카탈로그 (7개) — `workspace/_shared/workflows/`
+## 3. 워크플로우 카탈로그 (9개) — `workspace/_shared/workflows/`
 
-> **크로스도구**: sync-tools.cmd 실행 시 `.agent/workflows/` + `.claude/agents/` 양쪽에 배포됨
-> Antigravity, Claude Code, OpenCode 모든 도구에서 사용 가능
+### 핵심 워크플로우 (2개) — 신규 구축
 
 | # | 워크플로우 | 역할 | 활용 장면 |
 |---|------------|------|-----------|
-| 1 | agent-01-legal | 법률/구조 설계 자문 | 법인 설립, 계약서 검토 |
-| 2 | agent-02-hr | HR/인사노무 진단 | 인사제도 진단, 노무 자문 |
-| 3 | agent-03-job-carving | 장애인 직무개발 | Job Carving 컨설팅 |
-| 4 | agent-04-bm | 비즈니스 모델/재무 추정 | 사업 타당성 분석, 손익 추정 |
-| 5 | agent-05-research | 시장 리서치/경쟁 분석 | 시장조사, 경쟁사 분석 |
-| 6 | agent-06-branding | 브랜딩/네이밍/스토리텔링 | 브랜드 전략, 네이밍 |
-| 7 | agent-07-cso | 총괄 관리/사업계획서 | 사업계획서 작성, 총괄 관리 |
+| 1 | **ralph-loop** | 품질 검증 루프 | 모든 산출물 품질 보증 (초안→Momus검증→수정→확정) |
+| 2 | **pygmalion** | 자기진화 워크플로우 | 스킬/에이전트 점진적 개선 (관찰→패턴→개선→시험→승격) |
+
+### 레거시 워크플로우 (7개) — Antigravity 전용
+
+| # | 워크플로우 | 역할 | 비고 |
+|---|------------|------|------|
+| 3 | agent-01-legal | 법률/구조 설계 자문 | → Tier 1 **Themis**로 대체 |
+| 4 | agent-02-hr | HR/인사노무 진단 | → Tier 1 **Hera**로 대체 |
+| 5 | agent-03-job-carving | 장애인 직무개발 | P2026-001 전용 |
+| 6 | agent-04-bm | 비즈니스 모델/재무 추정 | → Tier 1 **Midas**로 대체 |
+| 7 | agent-05-research | 시장 리서치/경쟁 분석 | → Tier 1 **Apollo**로 대체 |
+| 8 | agent-06-branding | 브랜딩/네이밍 | → Tier 1 **Aphrodite**로 대체 |
+| 9 | agent-07-cso | 총괄 관리/사업계획서 | → Tier 1 **Athena**+**Midas**로 대체 |
+
+### 품질계약 (1개) — `workspace/_shared/quality-contracts/`
+
+| # | 문서 | 역할 |
+|---|------|------|
+| 1 | **QUALITY_CONTRACT.md** | 산출물 유형별 품질 기준 (공통 5항목 + 유형별 6종), 등급 체계 |
 
 ---
 
@@ -183,7 +225,7 @@
   │ Tier 2 스킬  │    │              │    │              │
   │ (프로젝트별) │    │              │    │              │
   │              │    │              │    │              │
-  │ ★에이전트19개│    │ ★에이전트19개│    │              │
+  │ ★에이전트30개│    │ ★에이전트30개│    │              │
   │ .claude/     │    │ .agent/      │    │              │
   │  agents/     │    │  workflows/  │    │              │
   │              │    │              │    │              │
@@ -191,7 +233,7 @@
   │ 플러그인     │    │              │    │              │
   └──────────────┘    └──────────────┘    └──────────────┘
 
-  ★ 교차 배포: agents(12) + workflows(7) = 19개 양쪽 모두 배포
+  ★ 교차 배포: agents(21) + workflows(9) = 30개 양쪽 모두 배포
 ```
 
 ---
@@ -200,29 +242,45 @@
 
 ### HR 컨설팅
 
-| 업무 | 사용 스킬 | 사용 에이전트/워크플로우 |
-|------|-----------|------------------------|
-| 직무분석 | job-analysis, data-analysis | agent-02-hr |
-| 조직진단 | consulting-report, data-analysis | agent-02-hr, web-research-specialist |
-| 보고서 작성 | consulting-report, pptx, docx | documentation-architect |
-| 제안서 작성 | proposal, pptx | planner, plan-reviewer |
+| 업무 | 리드 에이전트 | 사용 스킬 | 품질 검증 |
+|------|-------------|-----------|----------|
+| 직무분석 | **Hera** | job-analysis, data-analysis | 랄프 루프 |
+| 조직진단 | **Hera** | org-diagnosis, data-analysis | 랄프 루프 |
+| 인사제도 설계 | **Hera** | hr-consulting | 랄프 루프 |
+| HR 보고서 작성 | **Hermes** | consulting-report, pptx, docx | 랄프 루프 |
+
+### 경영전략
+
+| 업무 | 리드 에이전트 | 사용 스킬 | 품질 검증 |
+|------|-------------|-----------|----------|
+| 전략 수립 | **Athena** | strategic-management | 랄프 루프 |
+| 시장조사/경쟁분석 | **Apollo** | data-analysis | 랄프 루프 |
+| 제안서 작성 | **Hermes** | proposal, pptx | 랄프 루프 |
 
 ### 사업개발
 
-| 업무 | 사용 스킬 | 사용 에이전트/워크플로우 |
-|------|-----------|------------------------|
-| 시장조사 | web-search, data-analysis | agent-05-research, web-research-specialist |
-| 사업계획 | proposal | agent-04-bm, agent-07-cso |
-| 재무추정 | data-analysis | agent-04-bm |
-| 법률검토 | - | agent-01-legal |
+| 업무 | 리드 에이전트 | 사용 스킬 | 품질 검증 |
+|------|-------------|-----------|----------|
+| 사업계획서 | **Midas** | business-planning, data-analysis | 랄프 루프 |
+| 재무추정 | **Midas** | data-analysis | 랄프 루프 |
+| 법률검토 | **Themis** | legal-consulting (예정) | 랄프 루프 |
+| 브랜딩/마케팅 | **Aphrodite** | branding-marketing (예정) | 랄프 루프 |
 
 ### 웹/앱 개발
 
-| 업무 | 사용 스킬 | 사용 에이전트/워크플로우 |
-|------|-----------|------------------------|
-| 프론트엔드 | frontend-design, nextjs15-init | frontend-error-fixer |
-| 백엔드 | fastapi-backend-guidelines | code-architecture-reviewer |
-| 테스트 | pytest-backend-testing | auth-route-tester |
+| 업무 | 리드 에이전트 | 사용 스킬 | 품질 검증 |
+|------|-------------|-----------|----------|
+| 프론트엔드 | **Daedalus** → Arachne | nextjs-frontend-guidelines | 랄프 루프 |
+| 백엔드 | **Daedalus** → Talos | fastapi-backend-guidelines | 랄프 루프 |
+| 인프라 | **Daedalus** → Helios | vercel-react-best-practices | 랄프 루프 |
+| 테스트 | **Daedalus** → Nike | pytest-backend-testing | 랄프 루프 |
+
+### 프로젝트 관리
+
+| 업무 | 리드 에이전트 | 사용 도구 | 비고 |
+|------|-------------|-----------|------|
+| 일정/리소스 관리 | **Chronos** | WBS, 간트차트 | 모든 프로젝트 공통 |
+| 리스크 관리 | **Chronos** | 리스크 매트릭스 | 모든 프로젝트 공통 |
 
 ---
 
