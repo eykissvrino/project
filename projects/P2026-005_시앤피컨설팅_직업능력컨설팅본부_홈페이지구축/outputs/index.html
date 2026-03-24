@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시앤피컨설팅 직업능력컨설팅본부 | HRM · HRD · AX 컨설팅</title>
+<meta name="description" content="HRM, HRD, AX 컨설팅 전문기관 - 시앤피컨설팅 직업능력컨설팅본부. 직무분석, 역량모델링, AI Transformation 등 조직과 구성원의 성장을 설계합니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+/* ============================================ */
+/* RESET & BASE                                 */
+/* ============================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Pretendard Variable','Pretendard',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:1rem;line-height:1.7;color:#1E293B;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+button{cursor:pointer}
+ul,ol{list-style:none}
+
+/* ============================================ */
+/* DESIGN TOKENS                                */
+/* ============================================ */
+:root{
+  --navy-900:#0A0F1E;--navy-800:#0F172A;--navy-700:#1A2332;--navy-600:#1E293B;--navy-500:#2C3E5A;
+  --blue-600:#2563EB;--blue-500:#3B82F6;--blue-400:#60A5FA;--blue-300:#93C5FD;--blue-200:#BFDBFE;--blue-100:#DBEAFE;
+  --emerald-500:#10B981;--emerald-400:#34D399;
+  --violet-500:#8B5CF6;--violet-400:#A78BFA;
+  --amber-500:#F59E0B;--rose-500:#EF4444;
+  --gray-50:#F8FAFC;--gray-100:#F1F5F9;--gray-200:#E2E8F0;--gray-300:#CBD5E1;--gray-400:#94A3B8;--gray-500:#64748B;--gray-600:#475569;--gray-700:#334155;--gray-800:#1E293B;--gray-900:#0F172A;
+  --white:#FFFFFF;
+  --radius-sm:0.375rem;--radius:0.5rem;--radius-md:0.75rem;--radius-lg:1rem;--radius-xl:1.5rem;--radius-2xl:2rem;--radius-full:9999px;
+  --shadow-lg:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1);
+  --shadow-xl:0 20px 25px -5px rgba(0,0,0,0.1),0 8px 10px -6px rgba(0,0,0,0.1);
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --transition:0.3s cubic-bezier(0.16,1,0.3,1);
+  --transition-fast:0.15s cubic-bezier(0.16,1,0.3,1);
+}
+
+/* ============================================ */
+/* UTILITY                                      */
+/* ============================================ */
+.container{max-width:1280px;margin:0 auto;padding:0 2rem}
+@media(max-width:640px){.container{padding:0 1.25rem}}
+.page{display:none}.page.active{display:block}
+
+/* ============================================ */
+/* BUTTONS                                      */
+/* ============================================ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.875rem 2rem;font-size:0.875rem;font-weight:600;font-family:inherit;border-radius:var(--radius-md);border:none;cursor:pointer;transition:all var(--transition);letter-spacing:-0.01em;white-space:nowrap;text-decoration:none}
+.btn-primary{background:var(--blue-500);color:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.btn-primary:hover{background:var(--blue-600);transform:translateY(-2px);box-shadow:0 4px 12px rgba(59,130,246,0.4)}
+.btn-outline-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.3)}
+.btn-outline-light:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.5)}
+.btn-dark{background:var(--navy-800);color:#fff}
+.btn-dark:hover{background:var(--navy-700);transform:translateY(-2px)}
+.btn-lg{padding:1rem 2.5rem;font-size:1rem;border-radius:var(--radius-lg)}
+
+/* ============================================ */
+/* ANIMATIONS                                   */
+/* ============================================ */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes scrollDown{0%{opacity:1;transform:scaleY(0);transform-origin:top}50%{opacity:1;transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{opacity:0;transform:scaleY(0);transform-origin:bottom}}
+
+.reveal{opacity:0;transform:translateY(40px);transition:all 0.8s var(--ease-out)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ============================================ */
+/* HEADER                                       */
+/* ============================================ */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all var(--transition);background:transparent}
+.header.scrolled{background:rgba(10,15,30,0.85);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,0.06)}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:80px}
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;z-index:10;cursor:pointer}
+.logo-mark{width:40px;height:40px;background:linear-gradient(135deg,var(--blue-500),var(--blue-400));border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;color:#fff;letter-spacing:-0.5px}
+.logo-sub{font-size:10px;font-weight:600;color:var(--blue-400);letter-spacing:1.5px;line-height:1;margin-bottom:2px}
+.logo-main{font-size:0.875rem;font-weight:800;color:#fff;line-height:1.2;letter-spacing:-0.02em}
+.nav{display:flex;align-items:center;gap:0.25rem}
+.nav-link{display:flex;align-items:center;gap:0.25rem;padding:0.625rem 1rem;font-size:0.875rem;font-weight:500;color:rgba(255,255,255,0.7);border-radius:var(--radius);transition:all var(--transition-fast);background:none;border:none;font-family:inherit;cursor:pointer;white-space:nowrap}
+.nav-link:hover{color:#fff;background:rgba(255,255,255,0.06)}
+.nav-link .chevron{transition:transform var(--transition-fast);display:inline-block;margin-left:2px}
+.dropdown{position:relative}
+.mega{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(8px);opacity:0;visibility:hidden;transition:all 0.2s var(--ease-out);pointer-events:none;z-index:100}
+.dropdown:hover .mega,.mega.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.dropdown:hover .chevron{transform:rotate(180deg)}
+.mega-inner{background:var(--navy-700);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-lg);padding:1.5rem;min-width:420px;box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+.mega-label{font-size:0.75rem;font-weight:600;color:var(--gray-500);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.75rem;padding:0 0.5rem}
+.mega-grid{display:flex;flex-direction:column;gap:0.25rem}
+.mega-card{display:flex;align-items:center;gap:0.75rem;padding:0.75rem;border-radius:var(--radius);transition:all var(--transition-fast);cursor:pointer}
+.mega-card:hover{background:rgba(255,255,255,0.05)}
+.mega-card .icon{font-size:1.5rem;flex-shrink:0}
+.mega-card strong{display:block;font-size:0.875rem;font-weight:600;color:#fff}
+.mega-card span{font-size:0.75rem;color:var(--gray-400)}
+.mega-card .arrow{margin-left:auto;color:var(--gray-500);opacity:0;transform:translateX(-4px);transition:all var(--transition-fast);flex-shrink:0}
+.mega-card:hover .arrow{opacity:1;transform:translateX(0)}
+.header-cta{margin-left:0.75rem;display:inline-flex;align-items:center;gap:0.375rem;padding:0.5rem 1.25rem;font-size:0.875rem;font-weight:600;color:#fff;background:var(--blue-500);border-radius:var(--radius-full);transition:all var(--transition);text-decoration:none;border:none;font-family:inherit;cursor:pointer}
+.header-cta:hover{background:var(--blue-600);transform:translateY(-1px);box-shadow:0 4px 12px rgba(59,130,246,0.4)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:0.5rem;z-index:10;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:#fff;border-radius:1px;transition:all var(--transition);transform-origin:center}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+@media(max-width:1024px){
+  .nav{position:fixed;inset:0;background:var(--navy-900);flex-direction:column;align-items:stretch;padding:6rem 2rem 2rem;gap:0.5rem;opacity:0;visibility:hidden;transition:all var(--transition)}
+  .nav.open{opacity:1;visibility:visible}
+  .nav-link{padding:1rem;font-size:1.125rem;color:rgba(255,255,255,0.6)}
+  .burger{display:flex}
+  .mega{position:static;transform:none;opacity:1;visibility:visible;pointer-events:auto;display:none}
+  .mega.open{display:block}
+  .mega-inner{background:transparent;border:none;box-shadow:none;padding:0 0 0 1rem;min-width:auto}
+  .mega-label{display:none}
+  .header-cta{margin:1.5rem 0 0;justify-content:center;padding:1rem;border-radius:var(--radius-md)}
+}
+
+/* ============================================ */
+/* HERO (HOME)                                  */
+/* ============================================ */
+.home-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--navy-900);overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:60px 60px}
+.orb1{position:absolute;top:-20%;right:-10%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.12) 0%,transparent 70%);animation:float 8s ease-in-out infinite}
+.orb2{position:absolute;bottom:-25%;left:-15%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.08) 0%,transparent 70%);animation:float 10s ease-in-out infinite reverse}
+.orb3{position:absolute;top:40%;left:50%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,0.06) 0%,transparent 70%);animation:float 12s ease-in-out infinite}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 2rem;max-width:900px}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.25rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius-full);font-size:0.875rem;font-weight:500;color:var(--blue-300);letter-spacing:0.5px;margin-bottom:2rem;animation:fadeInUp 0.8s var(--ease-out) both}
+.badge-dot{width:6px;height:6px;background:var(--emerald-400);border-radius:50%;animation:pulse 2s ease-in-out infinite}
+.hero-title{font-weight:800;color:#fff;line-height:1.15;letter-spacing:-0.03em;margin-bottom:1.5rem}
+.hero-line1{display:block;font-size:3rem;animation:fadeInUp 0.8s var(--ease-out) 0.1s both}
+.hero-line2{display:block;font-size:4.5rem;background:linear-gradient(135deg,var(--blue-400),var(--violet-400),var(--emerald-400));background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeInUp 0.8s var(--ease-out) 0.2s both,gradientShift 6s ease infinite}
+.hero-desc{font-size:1.125rem;color:var(--gray-400);line-height:1.8;margin-bottom:2.5rem;animation:fadeInUp 0.8s var(--ease-out) 0.3s both}
+.hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:4rem;animation:fadeInUp 0.8s var(--ease-out) 0.4s both}
+.hero-stats{display:flex;justify-content:center;gap:3rem;padding-top:3rem;border-top:1px solid rgba(255,255,255,0.06);animation:fadeInUp 0.8s var(--ease-out) 0.5s both}
+.hero-stat{display:flex;flex-direction:column;align-items:center}
+.hero-stat-val{font-size:1.875rem;font-weight:800;color:#fff;letter-spacing:-0.02em}
+.hero-stat-val span{font-size:1.125rem;color:var(--blue-400);font-weight:600}
+.hero-stat-label{font-size:0.75rem;color:var(--gray-500);margin-top:0.25rem}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.75rem;z-index:2;animation:fadeIn 1s var(--ease-out) 1s both}
+.hero-scroll span{font-size:0.75rem;color:var(--gray-500);letter-spacing:2px;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gray-500),transparent);animation:pulse 2s ease-in-out infinite}
+
+@media(max-width:768px){
+  .hero-line1{font-size:1.875rem}
+  .hero-line2{font-size:2.25rem}
+  .hero-desc{font-size:1rem}
+  .hero-stats{gap:1.5rem;flex-wrap:wrap}
+  .hero-stat-val{font-size:1.5rem}
+}
+@media(max-width:640px){
+  .hero-line1{font-size:1.5rem}
+  .hero-line2{font-size:1.875rem}
+}
+
+/* ============================================ */
+/* SECTIONS COMMON                              */
+/* ============================================ */
+.section-label{display:inline-block;font-size:0.75rem;font-weight:700;color:var(--blue-500);text-transform:uppercase;letter-spacing:2px;margin-bottom:0.75rem}
+.section-title{font-size:2.25rem;font-weight:800;color:var(--navy-800);line-height:1.25;letter-spacing:-0.02em}
+.section-title-sm{font-size:1.875rem;font-weight:800;color:var(--navy-800);line-height:1.25;letter-spacing:-0.02em;margin-bottom:0.5rem}
+.sec-header{text-align:center;margin-bottom:3.5rem}
+.sec-desc{font-size:1.125rem;color:var(--gray-500);margin-top:1rem}
+@media(max-width:768px){.section-title{font-size:1.5rem}.section-title-sm{font-size:1.5rem}.sec-desc{font-size:1rem}}
+
+/* ============================================ */
+/* ABOUT                                        */
+/* ============================================ */
+.about-section{padding:7rem 0;background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+.about-lead{font-size:1.125rem;color:var(--gray-700);line-height:1.8;margin-bottom:1rem;font-weight:500}
+.about-body{font-size:1rem;color:var(--gray-500);line-height:1.8;margin-bottom:2rem}
+.about-features{display:flex;flex-direction:column;gap:1rem}
+.about-feature{display:flex;align-items:flex-start;gap:1rem;padding:1rem;background:var(--gray-50);border-radius:var(--radius-md);border:1px solid var(--gray-100)}
+.about-feature .fi{width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;background:#fff;border-radius:var(--radius);border:1px solid var(--gray-200)}
+.about-feature strong{display:block;font-size:0.875rem;font-weight:700;color:var(--navy-800);margin-bottom:0.125rem}
+.about-feature span{font-size:0.875rem;color:var(--gray-500)}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:2.5rem}}
+
+/* ============================================ */
+/* SERVICES CARDS                               */
+/* ============================================ */
+.services-section{padding:7rem 0;background:var(--gray-50)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.service-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-xl);padding:2rem;transition:all var(--transition);cursor:pointer;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);opacity:0;transition:opacity var(--transition)}
+.service-card:hover{border-color:transparent;box-shadow:var(--shadow-xl),0 0 0 1px rgba(0,0,0,0.03);transform:translateY(-6px)}
+.service-card:hover::before{opacity:1}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+.card-icon{font-size:2rem}
+.card-tag{padding:0.25rem 0.75rem;font-size:0.75rem;font-weight:700;border-radius:var(--radius-full);letter-spacing:0.5px}
+.card-title{font-size:1.25rem;font-weight:800;color:var(--navy-800);margin-bottom:0.25rem;letter-spacing:-0.01em}
+.card-team{font-size:0.875rem;font-weight:600;color:var(--gray-400);margin-bottom:0.75rem}
+.card-desc{font-size:0.875rem;color:var(--gray-600);line-height:1.7;margin-bottom:1.25rem;flex:1}
+.card-list{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;padding-top:1.25rem;border-top:1px solid var(--gray-100)}
+.card-list li{display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--gray-700)}
+.card-list li svg{flex-shrink:0}
+.card-action{display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;font-weight:600;color:var(--gray-400);transition:all var(--transition);margin-top:auto}
+.service-card:hover .card-action{gap:0.75rem;color:var(--accent)}
+@media(max-width:1024px){.service-grid{grid-template-columns:1fr}}
+
+/* ============================================ */
+/* PROCESS                                      */
+/* ============================================ */
+.process-section{padding:7rem 0;background:var(--navy-900)}
+.process-section .section-label{color:var(--blue-400)}
+.process-section .section-title{color:#fff}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.process-card{position:relative;padding:2rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius-lg);transition:all var(--transition)}
+.process-card:hover{background:rgba(255,255,255,0.06);border-color:rgba(59,130,246,0.2);transform:translateY(-4px)}
+.process-num{display:inline-block;font-size:1.875rem;font-weight:800;color:var(--blue-500);opacity:0.4;margin-bottom:1rem;letter-spacing:-0.02em}
+.process-card h3{font-size:1.125rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
+.process-card p{font-size:0.875rem;color:var(--gray-500);line-height:1.6}
+.process-arrow{display:none}
+@media(min-width:1024px){.process-arrow{display:flex;position:absolute;right:-1rem;top:50%;transform:translateY(-50%);color:var(--gray-600);font-size:1.25rem;z-index:2}}
+@media(max-width:1024px){.process-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.process-grid{grid-template-columns:1fr}}
+
+/* ============================================ */
+/* CTA                                          */
+/* ============================================ */
+.cta-section{padding:7rem 0;background:#fff}
+.cta-box{position:relative;background:linear-gradient(135deg,var(--navy-800),var(--navy-700));border-radius:var(--radius-2xl);padding:5rem 3rem;text-align:center;overflow:hidden}
+.cta-box h2{font-size:1.875rem;font-weight:800;color:#fff;line-height:1.3;margin-bottom:1rem;letter-spacing:-0.02em;position:relative;z-index:2}
+.cta-box p{font-size:1rem;color:var(--gray-400);line-height:1.8;margin-bottom:2.5rem;position:relative;z-index:2}
+.cta-box .section-label{color:var(--blue-400);position:relative;z-index:2}
+.cta-orb{position:absolute;top:-50%;right:-20%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.1) 0%,transparent 70%)}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:2}
+@media(max-width:768px){.cta-box{padding:3.5rem 1.5rem}.cta-box h2{font-size:1.5rem}}
+
+/* ============================================ */
+/* SERVICE DETAIL PAGES (HRM, HRD, AX)          */
+/* ============================================ */
+.page-hero{position:relative;padding:11rem 0 5rem;background:var(--navy-900);overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-40%;right:-15%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.08) 0%,transparent 70%)}
+.page-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:60px 60px}
+.page-hero .container{position:relative;z-index:2}
+.breadcrumb{display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--gray-500);margin-bottom:2rem}
+.breadcrumb a{color:var(--gray-500);cursor:pointer;transition:color var(--transition-fast)}
+.breadcrumb a:hover{color:#fff}
+.hero-tag{display:inline-block;padding:0.3rem 0.875rem;font-size:0.75rem;font-weight:700;border-radius:var(--radius-full);margin-bottom:1.25rem;letter-spacing:0.5px}
+.hero-tag-blue{background:rgba(59,130,246,0.15);color:var(--blue-400)}
+.hero-tag-green{background:rgba(16,185,129,0.15);color:var(--emerald-400)}
+.hero-tag-violet{background:rgba(139,92,246,0.15);color:var(--violet-400)}
+.page-hero-title{font-size:3rem;font-weight:800;color:#fff;line-height:1.2;letter-spacing:-0.03em;margin-bottom:1.25rem}
+.page-hero-desc{font-size:1.125rem;color:var(--gray-400);line-height:1.8;max-width:640px}
+@media(max-width:768px){.page-hero-title{font-size:1.875rem}.page-hero-desc{font-size:1rem}}
+
+.detail-section{padding:6rem 0}
+.detail-section-alt{padding:6rem 0;background:var(--gray-50)}
+.sec-header-left{margin-bottom:3rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+@media(max-width:1024px){.grid3{grid-template-columns:1fr 1fr}.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid3,.grid2,.grid4{grid-template-columns:1fr}}
+
+.detail-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.75rem;transition:all var(--transition)}
+.detail-card:hover{border-color:transparent;box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.detail-card-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;border-radius:var(--radius-md);margin-bottom:1.25rem}
+.icon-blue{background:rgba(59,130,246,0.08)}
+.icon-green{background:rgba(16,185,129,0.08)}
+.icon-violet{background:rgba(139,92,246,0.08)}
+.detail-card h3{font-size:1.125rem;font-weight:700;color:var(--navy-800);margin-bottom:0.5rem;letter-spacing:-0.01em}
+.detail-card p{font-size:0.875rem;color:var(--gray-600);line-height:1.7}
+
+/* Service Process */
+.svc-process{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.svc-process-step{text-align:center;padding:2rem 1rem;position:relative}
+.svc-process-step:not(:last-child)::after{content:'→';position:absolute;right:-0.5rem;top:50%;transform:translateY(-50%);font-size:1.25rem;color:var(--gray-300)}
+.svc-process-num{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--blue-500);color:#fff;font-weight:800;font-size:0.875rem;border-radius:var(--radius-full);margin:0 auto 0.75rem}
+.svc-process-title{font-size:0.875rem;font-weight:700;color:var(--navy-800);margin-bottom:0.25rem}
+.svc-process-desc{font-size:0.75rem;color:var(--gray-500)}
+@media(max-width:1024px){.svc-process{grid-template-columns:repeat(3,1fr);gap:1rem}}
+@media(max-width:640px){.svc-process{grid-template-columns:1fr}.svc-process-step:not(:last-child)::after{content:'↓';right:auto;left:50%;top:auto;bottom:-0.5rem;transform:translateX(-50%)}}
+
+/* Result cards */
+.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.result-card{text-align:center;padding:2rem;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);transition:all var(--transition)}
+.result-card:hover{border-color:var(--blue-200);transform:translateY(-2px)}
+.result-value{font-size:2.25rem;font-weight:800;color:var(--blue-500);letter-spacing:-0.02em}
+.result-label{font-size:0.875rem;color:var(--gray-500);margin-top:0.25rem}
+@media(max-width:1024px){.result-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.result-grid{grid-template-columns:1fr}}
+
+/* Detail CTA */
+.detail-cta{padding:6rem 0}
+.detail-cta-box{position:relative;background:linear-gradient(135deg,var(--navy-800),var(--navy-700));border-radius:var(--radius-2xl);padding:4rem 3rem;text-align:center;overflow:hidden}
+.detail-cta-box::before{content:'';position:absolute;top:-40%;right:-20%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.1) 0%,transparent 70%)}
+.detail-cta-box h2{font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:1rem;position:relative;z-index:2}
+.detail-cta-box p{font-size:1rem;color:var(--gray-400);margin-bottom:2rem;position:relative;z-index:2}
+@media(max-width:768px){.detail-cta-box{padding:3rem 1.5rem}}
+
+/* ============================================ */
+/* PORTFOLIO                                    */
+/* ============================================ */
+.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:1rem}
+.filters{display:flex;gap:0.5rem;flex-wrap:wrap}
+.filter-btn{display:inline-flex;align-items:center;gap:0.375rem;padding:0.5rem 1.25rem;font-size:0.875rem;font-weight:600;border:1px solid var(--gray-200);border-radius:var(--radius-full);background:#fff;color:var(--gray-600);cursor:pointer;transition:all var(--transition-fast);font-family:inherit}
+.filter-btn:hover{border-color:var(--blue-300);color:var(--blue-500)}
+.filter-btn.active{background:var(--navy-800);color:#fff;border-color:var(--navy-800)}
+.filter-btn .count{font-size:0.75rem;background:rgba(255,255,255,0.15);padding:0.125rem 0.5rem;border-radius:var(--radius-full)}
+.total-count{font-size:0.875rem;color:var(--gray-500)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.portfolio-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:1.75rem;transition:all var(--transition)}
+.portfolio-card:hover{border-color:transparent;box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.portfolio-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.portfolio-badge{padding:0.2rem 0.625rem;font-size:0.75rem;font-weight:700;border-radius:var(--radius-full)}
+.portfolio-meta{display:flex;align-items:center;gap:0.5rem}
+.status-live{display:inline-flex;align-items:center;gap:0.25rem;font-size:0.75rem;font-weight:600;color:var(--emerald-500)}
+.status-live::before{content:'';width:6px;height:6px;background:var(--emerald-500);border-radius:50%;animation:pulse 2s infinite}
+.portfolio-year{font-size:0.75rem;color:var(--gray-400)}
+.portfolio-card h3{font-size:1rem;font-weight:700;color:var(--navy-800);margin-bottom:0.5rem;line-height:1.5;letter-spacing:-0.01em}
+.portfolio-client{font-size:0.875rem;color:var(--blue-500);font-weight:600;margin-bottom:0.375rem}
+.portfolio-desc{font-size:0.875rem;color:var(--gray-500);line-height:1.7}
+@media(max-width:1024px){.portfolio-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr}}
+
+/* ============================================ */
+/* CONTACT                                      */
+/* ============================================ */
+.contact-content{padding:4rem 0 6rem}
+.contact-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:start}
+.form-wrap h2{font-size:1.5rem;font-weight:800;color:var(--navy-800);margin-bottom:0.5rem;letter-spacing:-0.02em}
+.form-desc{font-size:1rem;color:var(--gray-500);margin-bottom:2rem}
+.form{display:flex;flex-direction:column;gap:1.25rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+.field{display:flex;flex-direction:column;gap:0.5rem}
+.field label{font-size:0.875rem;font-weight:600;color:var(--gray-700)}
+.field label .req{color:var(--blue-500)}
+.field input,.field select,.field textarea{padding:0.75rem 1rem;border:1px solid var(--gray-200);border-radius:var(--radius-md);font-size:1rem;font-family:inherit;color:var(--gray-800);background:#fff;transition:all var(--transition-fast)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue-500);box-shadow:0 0 0 3px rgba(59,130,246,0.08)}
+.field input::placeholder,.field textarea::placeholder{color:var(--gray-400)}
+.field textarea{resize:vertical;min-height:120px}
+.success-msg{text-align:center;padding:4rem 2rem;background:var(--gray-50);border-radius:var(--radius-xl);border:1px solid var(--gray-200)}
+.success-icon{width:64px;height:64px;background:rgba(16,185,129,0.1);border-radius:var(--radius-full);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem}
+.success-msg h3{font-size:1.25rem;font-weight:700;color:var(--navy-800);margin-bottom:0.5rem}
+.success-msg p{font-size:1rem;color:var(--gray-500)}
+.info-wrap{display:flex;flex-direction:column;gap:1.5rem;position:sticky;top:100px}
+.info-card{background:var(--gray-50);border:1px solid var(--gray-100);border-radius:var(--radius-xl);padding:2rem}
+.info-card h3{font-size:1.125rem;font-weight:700;color:var(--navy-800);margin-bottom:1.25rem}
+.info-list{display:flex;flex-direction:column;gap:1.25rem}
+.info-item{display:flex;gap:1rem;align-items:flex-start}
+.info-icon{width:40px;height:40px;flex-shrink:0;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:1.125rem}
+.info-item strong{display:block;font-size:0.875rem;font-weight:600;color:var(--gray-700);margin-bottom:0.125rem}
+.info-item p{font-size:0.875rem;color:var(--gray-500)}
+.quick-p{font-size:0.875rem;color:var(--gray-600);line-height:1.7;margin-bottom:1.25rem}
+.trust-card{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;background:var(--navy-800);border-radius:var(--radius-xl);padding:1.5rem}
+.trust-item{text-align:center}
+.trust-item strong{display:block;font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:-0.02em}
+.trust-item span{font-size:0.75rem;color:var(--gray-400)}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+
+/* ============================================ */
+/* FOOTER                                       */
+/* ============================================ */
+.footer{background:var(--navy-900);color:var(--gray-400);border-top:1px solid rgba(255,255,255,0.04)}
+.footer-top{display:grid;grid-template-columns:1.2fr 2fr;gap:4rem;padding:4.5rem 0 3rem}
+.footer-brand{display:flex;flex-direction:column;gap:1.25rem}
+.footer-logo{display:flex;align-items:center;gap:0.75rem}
+.footer-logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--blue-500),var(--blue-400));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff}
+.footer-logo-sub{display:block;font-size:9px;font-weight:600;color:var(--blue-400);letter-spacing:1.5px;line-height:1;margin-bottom:1px}
+.footer-logo-main{display:block;font-size:0.875rem;font-weight:800;color:#fff;line-height:1.2;letter-spacing:-0.02em}
+.footer-tagline{font-size:0.875rem;line-height:1.7;color:var(--gray-500);max-width:320px}
+.footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.footer-col{display:flex;flex-direction:column;gap:0.625rem}
+.footer-col h4{font-size:0.75rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.25rem}
+.footer-col a,.footer-col span{font-size:0.875rem;color:var(--gray-500);transition:color var(--transition-fast)}
+.footer-col a:hover{color:var(--blue-400)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 0;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-bottom p{font-size:0.75rem;color:var(--gray-600)}
+.footer-bottom-links{display:flex;gap:1.5rem}
+.footer-bottom-links a{font-size:0.75rem;color:var(--gray-600);transition:color var(--transition-fast)}
+.footer-bottom-links a:hover{color:var(--gray-400)}
+@media(max-width:768px){.footer-top{grid-template-columns:1fr;gap:3rem}}
+@media(max-width:640px){.footer-links{grid-template-columns:1fr;gap:2rem}.footer-bottom{flex-direction:column;gap:0.75rem}}
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- HEADER                                       -->
+<!-- ============================================ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('home')">
+      <div class="logo-mark">C&P</div>
+      <div>
+        <div class="logo-sub">CNP CONSULTING</div>
+        <div class="logo-main">직업능력컨설팅본부</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a class="nav-link" onclick="showPage('home');scrollToAbout()">본부소개</a>
+      <div class="dropdown">
+        <button class="nav-link" onclick="toggleMobileMenu(event)">서비스 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="chevron"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="mega" id="megaMenu">
+          <div class="mega-inner">
+            <div class="mega-label">서비스 영역</div>
+            <div class="mega-grid">
+              <div class="mega-card" onclick="showPage('hrm')"><span class="icon">📋</span><div><strong>HRM 컨설팅</strong><span>직무중심 인적자원관리</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="mega-card" onclick="showPage('hrd')"><span class="icon">🎯</span><div><strong>HRD 컨설팅</strong><span>직무·역량·Skill 기반 인재개발</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="mega-card" onclick="showPage('ax')"><span class="icon">⚡</span><div><strong>AX 컨설팅</strong><span>AI Transformation</span></div><svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="nav-link" onclick="showPage('portfolio')">포트폴리오</a>
+      <a class="nav-link" onclick="showPage('contact')">문의하기</a>
+      <a class="header-cta" onclick="showPage('contact')">상담 문의 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="메뉴" onclick="toggleNav()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================ -->
+<!-- HOME PAGE                                    -->
+<!-- ============================================ -->
+<div class="page active" id="page-home">
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="orb1"></div>
+      <div class="orb2"></div>
+      <div class="orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span>Competency & Performance</div>
+      <h1 class="hero-title">
+        <span class="hero-line1">조직과 구성원의</span>
+        <span class="hero-line2">성장을 설계합니다</span>
+      </h1>
+      <p class="hero-desc">HRM · HRD · AX 컨설팅 전문기관<br>시앤피컨설팅 직업능력컨설팅본부</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" onclick="showPage('contact')">상담 문의하기 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-outline-light btn-lg" onclick="showPage('portfolio')">포트폴리오</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-val">500<span>+</span></span><span class="hero-stat-label">프로젝트 수행</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">200<span>+</span></span><span class="hero-stat-label">공공기관 파트너</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">15<span>yr+</span></span><span class="hero-stat-label">컨설팅 경력</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">98<span>%</span></span><span class="hero-stat-label">고객 만족도</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section reveal" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="section-label">About</span>
+          <h2 class="section-title">직업능력컨설팅본부를<br>소개합니다</h2>
+        </div>
+        <div>
+          <p class="about-lead">시앤피컨설팅 직업능력컨설팅본부는 공공기관 및 민간기업의 인적자원관리(HRM), 인적자원개발(HRD), 그리고 AI Transformation(AX) 분야에서 체계적인 방법론과 풍부한 현장 경험을 바탕으로 맞춤형 솔루션을 제공하는 전문기관입니다.</p>
+          <p class="about-body">경영학 박사, 공인노무사, 경영지도사 등 각 분야 전문가로 구성된 컨설팅 그룹으로, 직무분석·역량모델링·교육체계 수립·AI 전환 전략까지 조직 성장의 전 과정을 지원합니다.</p>
+          <div class="about-features">
+            <div class="about-feature"><div class="fi">🏛️</div><div><strong>공공기관 특화</strong><span>경영평가 대응 및 공공부문 HRM/HRD 전문</span></div></div>
+            <div class="about-feature"><div class="fi">🔬</div><div><strong>방법론 기반</strong><span>체계적인 컨설팅 프레임워크와 검증된 도구 활용</span></div></div>
+            <div class="about-feature"><div class="fi">🤖</div><div><strong>AX 선도</strong><span>HR 전문성 기반 AI Transformation 컨설팅</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section reveal">
+    <div class="container">
+      <div class="sec-header">
+        <span class="section-label">Services</span>
+        <h2 class="section-title">핵심 서비스 영역</h2>
+        <p class="sec-desc">세 가지 핵심 영역에서 조직의 지속가능한 성장을 설계합니다</p>
+      </div>
+      <div class="service-grid">
+        <!-- HRM -->
+        <div class="service-card" style="--accent:#3B82F6" onclick="showPage('hrm')">
+          <div class="card-top">
+            <span class="card-icon">📋</span>
+            <span class="card-tag" style="background:#3B82F615;color:#3B82F6">HRM</span>
+          </div>
+          <h3 class="card-title">직무중심 HRM</h3>
+          <p class="card-team">공공기관컨설팅팀</p>
+          <p class="card-desc">직무분석·직무분류체계·직무평가·성과관리체계 구축 등 공공기관의 직무중심 인적자원관리를 체계적으로 설계합니다.</p>
+          <ul class="card-list">
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>직무분석 및 직무분류체계 수립</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>직무평가 및 직급·보수체계 설계</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>성과관리체계 구축</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>경영평가 대응 컨설팅</li>
+          </ul>
+          <div class="card-action">자세히 보기 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <!-- HRD -->
+        <div class="service-card" style="--accent:#10B981" onclick="showPage('hrd')">
+          <div class="card-top">
+            <span class="card-icon">🎯</span>
+            <span class="card-tag" style="background:#10B98115;color:#10B981">HRD</span>
+          </div>
+          <h3 class="card-title">직무·역량·Skill 기반 HRD</h3>
+          <p class="card-team">HR솔루션팀</p>
+          <p class="card-desc">역량모델링, 교육체계 수립, NCS 기반 교육과정 개발, Skill 기반 인재개발 전략까지 맞춤형 HRD 솔루션을 제공합니다.</p>
+          <ul class="card-list">
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>역량모델링 및 역량평가</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>교육체계 수립·교육과정 개발</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>NCS 기반 과정 설계</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Skill 기반 인재개발</li>
+          </ul>
+          <div class="card-action">자세히 보기 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <!-- AX -->
+        <div class="service-card" style="--accent:#8B5CF6" onclick="showPage('ax')">
+          <div class="card-top">
+            <span class="card-icon">⚡</span>
+            <span class="card-tag" style="background:#8B5CF615;color:#8B5CF6">AX</span>
+          </div>
+          <h3 class="card-title">AX 컨설팅</h3>
+          <p class="card-team">AI Transformation</p>
+          <p class="card-desc">AI 성숙도 진단, AX 전략수립, Skill Set 구축, AI 워크플로우 재설계, AX 교육훈련까지 조직의 AI 전환을 종합 지원합니다.</p>
+          <ul class="card-list">
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AX 진단 및 전략수립</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AX Skill Set 구축</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AI 활용 워크플로우 재설계</li>
+            <li><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7L5.5 10L11.5 4" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>AX 교육훈련 설계·운영</li>
+          </ul>
+          <div class="card-action">자세히 보기 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section reveal">
+    <div class="container">
+      <div class="sec-header">
+        <span class="section-label">Process</span>
+        <h2 class="section-title">컨설팅 수행 프로세스</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-card"><span class="process-num">01</span><h3>진단·분석</h3><p>조직 현황 및 이슈 진단</p><div class="process-arrow">→</div></div>
+        <div class="process-card"><span class="process-num">02</span><h3>전략 설계</h3><p>맞춤형 솔루션 설계</p><div class="process-arrow">→</div></div>
+        <div class="process-card"><span class="process-num">03</span><h3>구축·개발</h3><p>체계 구축 및 도구 개발</p><div class="process-arrow">→</div></div>
+        <div class="process-card"><span class="process-num">04</span><h3>실행·정착</h3><p>이행 지원 및 변화관리</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section reveal">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-orb"></div>
+        <span class="section-label">Get Started</span>
+        <h2>프로젝트에 대해<br>상담을 원하시나요?</h2>
+        <p>HRM · HRD · AX 컨설팅에 대한 문의사항이 있으시면 언제든 연락주세요.<br>전문 컨설턴트가 맞춤 상담을 제공합니다.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" onclick="showPage('contact')">무료 상담 신청</a>
+          <a href="tel:02-0000-0000" class="btn btn-outline-light btn-lg">📞 02-0000-0000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- HRM PAGE                                     -->
+<!-- ============================================ -->
+<div class="page" id="page-hrm">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('home')">홈</a> / <span>서비스</span> / <span>HRM 컨설팅</span></div>
+      <span class="hero-tag hero-tag-blue">직무중심 인적자원관리</span>
+      <h1 class="page-hero-title">HRM 컨설팅</h1>
+      <p class="page-hero-desc">직무분석부터 직무분류체계 수립, 직무평가, 성과관리체계 구축, 보수체계 설계까지 공공기관의 직무중심 인적자원관리를 체계적으로 설계합니다.</p>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Services</span><h2 class="section-title-sm">주요 서비스</h2><p class="sec-desc" style="max-width:560px">공공기관의 직무중심 인사제도 혁신을 위한 전문 컨설팅 서비스입니다.</p></div>
+      <div class="grid3">
+        <div class="detail-card"><div class="detail-card-icon icon-blue">📋</div><h3>직무분석</h3><p>전 직무를 대상으로 체계적인 직무분석을 실시하여 직무의 본질을 규명하고, 직무기술서·직무명세서를 산출합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-blue">🗂️</div><h3>직무분류체계 수립</h3><p>직무의 유사성·난이도·전문성을 기준으로 체계적인 직무분류체계를 구축하고, 직무관리의 기반을 마련합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-blue">⚖️</div><h3>직무평가</h3><p>직무의 상대적 가치를 평가하여 직무등급을 설정하고, 직무급 보수체계의 기초 자료를 산출합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-blue">📊</div><h3>성과관리체계</h3><p>전략 연계형 BSC 기반 성과관리체계를 설계하고, 조직·개인 KPI를 체계적으로 수립합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-blue">💰</div><h3>보수체계 설계</h3><p>직무가치 기반의 보수체계를 설계하여 공정한 보상체계를 구축하고, 성과 중심 보상 문화를 정착합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-blue">👥</div><h3>정원산정·인력운영</h3><p>적정 인력규모를 과학적으로 산정하고, 부서별 인력 재배치 및 효율적 인력운영 방안을 수립합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Process</span><h2 class="section-title-sm">HRM 컨설팅 프로세스</h2></div>
+      <div class="svc-process">
+        <div class="svc-process-step"><div class="svc-process-num">1</div><div class="svc-process-title">현황 진단</div><div class="svc-process-desc">인사제도·조직 분석</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">2</div><div class="svc-process-title">직무분석</div><div class="svc-process-desc">직무조사·분석</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">3</div><div class="svc-process-title">체계 설계</div><div class="svc-process-desc">분류체계·등급 설계</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">4</div><div class="svc-process-title">제도 구축</div><div class="svc-process-desc">성과·보수체계 구축</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">5</div><div class="svc-process-title">이행 지원</div><div class="svc-process-desc">정착·변화관리</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Results</span><h2 class="section-title-sm">컨설팅 성과</h2></div>
+      <div class="result-grid">
+        <div class="result-card"><div class="result-value">200+</div><div class="result-label">공공기관 수행 실적</div></div>
+        <div class="result-card"><div class="result-value">98%</div><div class="result-label">고객 만족도</div></div>
+        <div class="result-card"><div class="result-value">500+</div><div class="result-label">직무분석 수행</div></div>
+        <div class="result-card"><div class="result-value">15yr+</div><div class="result-label">HRM 컨설팅 경력</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-cta">
+    <div class="container">
+      <div class="detail-cta-box">
+        <h2>직무중심 인사제도 혁신,<br>어디서부터 시작해야 할지 고민이신가요?</h2>
+        <p>직무분석부터 성과관리까지 한 번에 상담받으세요.</p>
+        <a class="btn btn-primary btn-lg" onclick="showPage('contact')" style="position:relative;z-index:2">HRM 컨설팅 문의</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- HRD PAGE                                     -->
+<!-- ============================================ -->
+<div class="page" id="page-hrd">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('home')">홈</a> / <span>서비스</span> / <span>HRD 컨설팅</span></div>
+      <span class="hero-tag hero-tag-green">직무·역량·Skill 기반</span>
+      <h1 class="page-hero-title">HRD 컨설팅</h1>
+      <p class="page-hero-desc">역량모델링, 교육체계 수립, NCS 기반 교육과정 개발, Skill 기반 인재개발 전략까지 맞춤형 HRD 솔루션을 제공합니다.</p>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Services</span><h2 class="section-title-sm">주요 서비스</h2><p class="sec-desc" style="max-width:560px">조직과 구성원의 역량 성장을 위한 전문 HRD 컨설팅 서비스입니다.</p></div>
+      <div class="grid3">
+        <div class="detail-card"><div class="detail-card-icon icon-green">🎯</div><h3>역량모델링</h3><p>핵심·리더십·직무역량을 체계적으로 도출하고, 역량별 행동지표와 수준체계를 설계합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-green">📚</div><h3>교육체계 수립</h3><p>직급·직무·역량별 교육로드맵을 수립하고, 체계적인 인재개발 프레임워크를 구축합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-green">📖</div><h3>교육과정 개발</h3><p>NCS를 활용한 현장 중심 교육과정을 개발하고, 실효성 있는 학습모듈을 설계합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-green">🧩</div><h3>Skill 기반 인재개발</h3><p>직무별 Skill Map을 구축하고, 개인 맞춤형 학습경로를 설계하여 Skill 기반 인재개발을 지원합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-green">📊</div><h3>역량평가 체계</h3><p>다면평가, 역량진단 등 과학적 역량평가 체계를 구축하고, 결과 활용 방안을 수립합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-green">📈</div><h3>교육효과성 분석</h3><p>Kirkpatrick 모형 기반 교육효과성을 체계적으로 측정하고, 교육체계 개선 방안을 도출합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Process</span><h2 class="section-title-sm">HRD 컨설팅 프로세스</h2></div>
+      <div class="svc-process">
+        <div class="svc-process-step"><div class="svc-process-num">1</div><div class="svc-process-title">현황 분석</div><div class="svc-process-desc">교육·역량 진단</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">2</div><div class="svc-process-title">역량 모델링</div><div class="svc-process-desc">역량체계 설계</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">3</div><div class="svc-process-title">체계 수립</div><div class="svc-process-desc">교육로드맵 설계</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">4</div><div class="svc-process-title">과정 개발</div><div class="svc-process-desc">교육콘텐츠 개발</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">5</div><div class="svc-process-title">운영·평가</div><div class="svc-process-desc">실행·효과측정</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Results</span><h2 class="section-title-sm">컨설팅 성과</h2></div>
+      <div class="result-grid">
+        <div class="result-card"><div class="result-value">150+</div><div class="result-label">역량모델링 수행</div></div>
+        <div class="result-card"><div class="result-value">300+</div><div class="result-label">교육과정 개발</div></div>
+        <div class="result-card"><div class="result-value">50+</div><div class="result-label">Skill Map 구축</div></div>
+        <div class="result-card"><div class="result-value">97%</div><div class="result-label">교육 만족도</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-cta">
+    <div class="container">
+      <div class="detail-cta-box">
+        <h2>조직의 인재개발 체계,<br>더 효과적으로 만들고 싶으신가요?</h2>
+        <p>역량모델링부터 교육체계 수립까지 한 번에 상담받으세요.</p>
+        <a class="btn btn-primary btn-lg" onclick="showPage('contact')" style="position:relative;z-index:2">HRD 컨설팅 문의</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- AX PAGE                                      -->
+<!-- ============================================ -->
+<div class="page" id="page-ax">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('home')">홈</a> / <span>서비스</span> / <span>AX 컨설팅</span></div>
+      <span class="hero-tag hero-tag-violet">AI Transformation</span>
+      <h1 class="page-hero-title">AX 컨설팅</h1>
+      <p class="page-hero-desc">AI Transformation 진단부터 전략수립, Skill Set 구축, 워크플로우 재설계, 교육훈련까지 조직의 AI 전환을 종합 지원합니다.</p>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Services</span><h2 class="section-title-sm">주요 서비스</h2><p class="sec-desc" style="max-width:560px">성공적인 AI Transformation을 위한 엔드투엔드 컨설팅 서비스입니다.</p></div>
+      <div class="grid3">
+        <div class="detail-card"><div class="detail-card-icon icon-violet">🔍</div><h3>AX 진단</h3><p>조직의 AI 성숙도를 진단하고, 업무 프로세스에서 AI 적용 가능 영역과 잠재적 효과를 분석합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">📐</div><h3>AX 전략수립</h3><p>조직 비전·전략과 연계된 AI Transformation 로드맵을 수립하고, 단계별 추진 전략과 우선순위를 도출합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">🧩</div><h3>AX Skill Set 구축</h3><p>직무별 AI 활용 Skill Set을 정의하고, 구성원의 AI 리터러시 수준에 맞는 역량 개발 체계를 구축합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">⚙️</div><h3>AI 워크플로우 재설계</h3><p>기존 업무 프로세스를 AI 관점에서 재설계하여, 생산성과 효율성을 극대화하는 워크플로우를 구축합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">🎓</div><h3>AX 교육훈련</h3><p>AI 리터러시부터 실무 활용, 프롬프트 엔지니어링까지 조직 맞춤형 AX 교육 프로그램을 설계·운영합니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">📊</div><h3>AX 효과측정·고도화</h3><p>AI 도입 성과를 체계적으로 측정하고, 지속적 개선과 고도화를 위한 피드백 체계를 구축합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Process</span><h2 class="section-title-sm">AX 추진 프로세스</h2></div>
+      <div class="svc-process">
+        <div class="svc-process-step"><div class="svc-process-num">1</div><div class="svc-process-title">AX 진단</div><div class="svc-process-desc">AI 성숙도·업무 분석</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">2</div><div class="svc-process-title">전략수립</div><div class="svc-process-desc">AX 로드맵 설계</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">3</div><div class="svc-process-title">Skill 구축</div><div class="svc-process-desc">AI Skill Set 정의</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">4</div><div class="svc-process-title">워크플로우</div><div class="svc-process-desc">AI 프로세스 혁신</div></div>
+        <div class="svc-process-step"><div class="svc-process-num">5</div><div class="svc-process-title">교육·정착</div><div class="svc-process-desc">AX 교육·변화관리</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-section-alt">
+    <div class="container">
+      <div class="sec-header-left"><span class="section-label">Why AX</span><h2 class="section-title-sm">왜 AX 컨설팅이 필요한가?</h2></div>
+      <div class="grid2">
+        <div class="detail-card"><div class="detail-card-icon icon-violet">🔮</div><h3>AI 도입의 현실적 과제</h3><p>AI 기술 도입 자체보다 중요한 것은 구성원의 AI 활용 역량과 업무 프로세스의 전환입니다. 기술 도입만으로는 실질적 성과를 내기 어렵습니다.</p></div>
+        <div class="detail-card"><div class="detail-card-icon icon-violet">🧠</div><h3>사람 중심의 AI Transformation</h3><p>시앤피컨설팅은 HRM·HRD 전문성을 기반으로, 기술이 아닌 '사람'을 중심에 둔 AI Transformation을 설계합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="detail-cta">
+    <div class="container">
+      <div class="detail-cta-box">
+        <h2>조직의 AI Transformation,<br>어디서부터 시작해야 할지 고민이신가요?</h2>
+        <p>AX 진단부터 전략수립, 교육훈련까지 한 번에 상담받으세요.</p>
+        <a class="btn btn-primary btn-lg" onclick="showPage('contact')" style="position:relative;z-index:2">AX 컨설팅 문의</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- PORTFOLIO PAGE                               -->
+<!-- ============================================ -->
+<div class="page" id="page-portfolio">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('home')">홈</a> / <span>포트폴리오</span></div>
+      <h1 class="page-hero-title">포트폴리오 & 실적</h1>
+      <p class="page-hero-desc">시앤피컨설팅 직업능력컨설팅본부의 주요 프로젝트 수행 실적입니다.</p>
+    </div>
+  </section>
+  <section class="detail-section">
+    <div class="container">
+      <div class="toolbar">
+        <div class="filters" id="portfolioFilters">
+          <button class="filter-btn active" data-cat="전체" onclick="filterPortfolio('전체',this)">전체</button>
+          <button class="filter-btn" data-cat="HRM" onclick="filterPortfolio('HRM',this)">HRM <span class="count">4</span></button>
+          <button class="filter-btn" data-cat="HRD" onclick="filterPortfolio('HRD',this)">HRD <span class="count">4</span></button>
+          <button class="filter-btn" data-cat="AX" onclick="filterPortfolio('AX',this)">AX <span class="count">4</span></button>
+        </div>
+        <span class="total-count" id="totalCount">12건</span>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+  <section class="detail-cta">
+    <div class="container">
+      <div class="detail-cta-box">
+        <h2>유사한 프로젝트를 계획 중이신가요?</h2>
+        <p>풍부한 경험을 바탕으로 최적의 솔루션을 제안해 드리겠습니다.</p>
+        <a class="btn btn-primary btn-lg" onclick="showPage('contact')" style="position:relative;z-index:2">프로젝트 상담하기</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================ -->
+<!-- CONTACT PAGE                                 -->
+<!-- ============================================ -->
+<div class="page" id="page-contact">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('home')">홈</a> / <span>문의하기</span></div>
+      <h1 class="page-hero-title">문의하기</h1>
+      <p class="page-hero-desc">HRM · HRD · AX 컨설팅에 대한 문의사항이 있으시면 언제든 연락해 주세요.</p>
+    </div>
+  </section>
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="form-wrap">
+          <h2>상담 신청</h2>
+          <p class="form-desc">양식을 작성해 주시면, 담당 컨설턴트가 빠르게 연락드리겠습니다.</p>
+          <div id="contactFormArea">
+            <form class="form" id="contactForm" onsubmit="submitContact(event)">
+              <div class="form-row">
+                <div class="field"><label for="name">성함 <span class="req">*</span></label><input type="text" id="name" required placeholder="홍길동"></div>
+                <div class="field"><label for="org">소속기관/기업 <span class="req">*</span></label><input type="text" id="org" required placeholder="소속기관 또는 기업명"></div>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="email">이메일 <span class="req">*</span></label><input type="email" id="email" required placeholder="example@email.com"></div>
+                <div class="field"><label for="phone">연락처 <span class="req">*</span></label><input type="tel" id="phone" required placeholder="010-0000-0000"></div>
+              </div>
+              <div class="field">
+                <label for="service">관심 서비스</label>
+                <select id="service"><option value="" disabled selected>선택해주세요</option><option value="hrm">HRM 컨설팅 (직무중심 인적자원관리)</option><option value="hrd">HRD 컨설팅 (직무·역량·Skill 기반)</option><option value="ax">AX 컨설팅 (AI Transformation)</option><option value="multi">복수 서비스</option><option value="other">기타</option></select>
+              </div>
+              <div class="field">
+                <label for="budget">예상 예산 규모</label>
+                <select id="budget"><option value="" disabled selected>선택해주세요</option><option value="~5000">5,000만원 미만</option><option value="5000~1억">5,000만원 ~ 1억원</option><option value="1억~3억">1억원 ~ 3억원</option><option value="3억+">3억원 이상</option><option value="undecided">미정</option></select>
+              </div>
+              <div class="field"><label for="msg">문의 내용 <span class="req">*</span></label><textarea id="msg" rows="5" required placeholder="프로젝트 개요, 기대 일정, 문의사항 등을 자유롭게 작성해주세요"></textarea></div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">문의 접수하기</button>
+            </form>
+          </div>
+        </div>
+        <div class="info-wrap">
+          <div class="info-card">
+            <h3>연락처 정보</h3>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📍</div><div><strong>주소</strong><p>서울특별시 (추후 업데이트)</p></div></div>
+              <div class="info-item"><div class="info-icon">📞</div><div><strong>전화</strong><p>02-0000-0000</p></div></div>
+              <div class="info-item"><div class="info-icon">✉️</div><div><strong>이메일</strong><p>info@cnpconsulting.co.kr</p></div></div>
+              <div class="info-item"><div class="info-icon">🕐</div><div><strong>업무시간</strong><p>월~금 09:00 - 18:00</p></div></div>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>빠른 상담이 필요하신가요?</h3>
+            <p class="quick-p">급한 문의는 전화 또는 이메일로 직접 연락해 주세요. 평일 업무시간 내 빠른 응대가 가능합니다.</p>
+            <a href="tel:02-0000-0000" class="btn btn-dark" style="width:100%">📞 전화 상담하기</a>
+          </div>
+          <div class="trust-card">
+            <div class="trust-item"><strong>500+</strong><span>프로젝트 수행</span></div>
+            <div class="trust-item"><strong>98%</strong><span>고객 만족도</span></div>
+            <div class="trust-item"><strong>15yr+</strong><span>컨설팅 경력</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ============================================ -->
+<!-- FOOTER                                       -->
+<!-- ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-mark">C&P</div>
+          <div>
+            <span class="footer-logo-sub">CNP CONSULTING</span>
+            <span class="footer-logo-main">직업능력컨설팅본부</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Competency & Performance — HRM · HRD · AX 컨설팅 전문기관으로서 조직과 구성원의 성장을 함께 설계합니다.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>서비스</h4>
+          <a onclick="showPage('hrm')">HRM 컨설팅</a>
+          <a onclick="showPage('hrd')">HRD 컨설팅</a>
+          <a onclick="showPage('ax')">AX 컨설팅</a>
+        </div>
+        <div class="footer-col">
+          <h4>바로가기</h4>
+          <a onclick="showPage('home');scrollToAbout()">본부 소개</a>
+          <a onclick="showPage('portfolio')">포트폴리오</a>
+          <a onclick="showPage('contact')">문의하기</a>
+          <a href="https://www.cnp.re.kr" target="_blank" rel="noopener noreferrer">시앤피컨설팅 그룹 →</a>
+        </div>
+        <div class="footer-col">
+          <h4>연락처</h4>
+          <span>서울특별시 (추후 업데이트)</span>
+          <span>Tel. 02-0000-0000</span>
+          <span>info@cnpconsulting.co.kr</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 시앤피컨설팅 직업능력컨설팅본부. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">이용약관</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================ -->
+<!-- JAVASCRIPT                                   -->
+<!-- ============================================ -->
+<script>
+// === Portfolio Data ===
+const projects = [
+  { cat:'HRM', year:'2025', client:'A 공공기관', title:'직무분석 및 직무분류체계 수립', desc:'전 직무 대상 직무분석 실시 및 직무분류체계·직무기술서 수립', status:'완료' },
+  { cat:'HRM', year:'2025', client:'B 공기업', title:'성과관리체계 고도화 컨설팅', desc:'전략 연계형 BSC 기반 성과관리체계 재설계 및 KPI 체계 수립', status:'완료' },
+  { cat:'HRM', year:'2024', client:'C 지방공기업', title:'직무급 보수체계 설계', desc:'직무평가 기반 직무등급 설정 및 직무급 보수체계 설계', status:'완료' },
+  { cat:'HRM', year:'2024', client:'D 공공기관', title:'정원산정 및 인력운영 컨설팅', desc:'적정 인력 규모 산정 및 부서별 인력 재배치 방안 수립', status:'완료' },
+  { cat:'HRD', year:'2025', client:'E 공공기관', title:'역량모델링 및 교육체계 수립', desc:'핵심·리더십·직무역량 모델링 및 직급·직무별 교육로드맵 수립', status:'완료' },
+  { cat:'HRD', year:'2024', client:'F 공기업', title:'NCS 기반 교육과정 개발', desc:'NCS 활용 현장 중심 교육과정 10개 개발 및 학습모듈 설계', status:'완료' },
+  { cat:'HRD', year:'2024', client:'G 민간기업', title:'Skill 기반 인재개발 전략 수립', desc:'직무별 Skill Map 구축 및 개인 맞춤형 학습경로 설계', status:'완료' },
+  { cat:'HRD', year:'2025', client:'H 공공기관', title:'교육효과성 분석 및 체계 개선', desc:'Kirkpatrick 모형 기반 교육효과성 측정 및 개선 방안 도출', status:'진행중' },
+  { cat:'AX', year:'2025', client:'I 공공기관', title:'AX 진단 및 전략수립', desc:'조직 AI 성숙도 진단 및 단계별 AX 추진 로드맵 수립', status:'완료' },
+  { cat:'AX', year:'2025', client:'J 공기업', title:'AI 활용 워크플로우 재설계', desc:'주요 업무 프로세스 AI 관점 재설계 및 자동화 방안 도출', status:'진행중' },
+  { cat:'AX', year:'2024', client:'K 지방공기업', title:'AX Skill Set 구축 및 교육훈련', desc:'직무별 AI Skill Set 정의 및 맞춤형 AX 교육 프로그램 운영', status:'완료' },
+  { cat:'AX', year:'2025', client:'L 민간기업', title:'AI 리터러시 교육체계 설계', desc:'전사 대상 AI 리터러시 진단 및 수준별 교육체계 설계', status:'완료' },
+];
+
+const colorMap = { HRM:'#3B82F6', HRD:'#10B981', AX:'#8B5CF6' };
+
+// === SPA Routing ===
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + name);
+  if (page) page.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  closeNav();
+  // Re-trigger reveal animations
+  setTimeout(() => observeReveal(), 100);
+}
+
+function scrollToAbout() {
+  setTimeout(() => {
+    const el = document.getElementById('about');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 300);
+}
+
+// === Navigation ===
+function toggleNav() {
+  const nav = document.getElementById('nav');
+  const burger = document.getElementById('burger');
+  nav.classList.toggle('open');
+  burger.classList.toggle('open');
+  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+}
+
+function closeNav() {
+  const nav = document.getElementById('nav');
+  const burger = document.getElementById('burger');
+  nav.classList.remove('open');
+  burger.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function toggleMobileMenu(e) {
+  if (window.innerWidth <= 1024) {
+    e.preventDefault();
+    e.stopPropagation();
+    const mega = document.getElementById('megaMenu');
+    mega.classList.toggle('open');
+  }
+}
+
+// === Header Scroll ===
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// === Scroll Reveal ===
+function observeReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(el => el.classList.add('visible'));
+    return;
+  }
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  els.forEach(el => {
+    if (!el.classList.contains('visible')) obs.observe(el);
+  });
+}
+
+// === Portfolio ===
+function renderPortfolio(filter) {
+  const grid = document.getElementById('portfolioGrid');
+  const filtered = filter === '전체' ? projects : projects.filter(p => p.cat === filter);
+  document.getElementById('totalCount').textContent = filtered.length + '건';
+
+  grid.innerHTML = filtered.map(p => `
+    <div class="portfolio-card">
+      <div class="portfolio-card-head">
+        <span class="portfolio-badge" style="background:${colorMap[p.cat]}12;color:${colorMap[p.cat]}">${p.cat}</span>
+        <div class="portfolio-meta">
+          ${p.status === '진행중' ? '<span class="status-live">진행중</span>' : ''}
+          <span class="portfolio-year">${p.year}</span>
+        </div>
+      </div>
+      <h3>${p.title}</h3>
+      <p class="portfolio-client">${p.client}</p>
+      <p class="portfolio-desc">${p.desc}</p>
+    </div>
+  `).join('');
+}
+
+function filterPortfolio(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPortfolio(cat);
+}
+
+// === Contact Form ===
+function submitContact(e) {
+  e.preventDefault();
+  document.getElementById('contactFormArea').innerHTML = `
+    <div class="success-msg">
+      <div class="success-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16L14 22L24 10" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>문의가 접수되었습니다</h3>
+      <p>빠른 시일 내에 담당 컨설턴트가 연락드리겠습니다.</p>
+    </div>`;
+}
+
+// === Init ===
+document.addEventListener('DOMContentLoaded', () => {
+  renderPortfolio('전체');
+  observeReveal();
+});
+</script>
+</body>
+</html>

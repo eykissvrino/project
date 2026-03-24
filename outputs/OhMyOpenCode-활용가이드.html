@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OhMyOpenCode 완전 활용 가이드</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface2: #334155;
+    --border: #475569;
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
+    --accent2: #818cf8;
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --orange: #fb923c;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 0;
+  }
+
+  /* Header */
+  .hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e1b4b 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+  }
+  .hero .subtitle {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+  }
+  .hero .badge {
+    display: inline-block;
+    background: var(--surface2);
+    color: var(--accent);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 16px;
+    border: 1px solid var(--border);
+  }
+
+  /* Layout */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 48px;
+  }
+  .toc h2 {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .toc ol {
+    padding-left: 20px;
+  }
+  .toc li {
+    margin-bottom: 6px;
+  }
+  .toc a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .toc a:hover {
+    color: var(--accent);
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 56px;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--surface2);
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 28px 0 12px;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent2);
+    margin: 20px 0 8px;
+  }
+
+  p { margin-bottom: 12px; }
+
+  /* Blockquote */
+  blockquote {
+    background: var(--surface);
+    border-left: 4px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+    color: var(--text);
+    font-style: normal;
+  }
+  blockquote strong {
+    color: var(--accent);
+  }
+
+  /* Code */
+  pre {
+    background: #0d1117;
+    border: 1px solid var(--surface2);
+    border-radius: 8px;
+    padding: 16px 20px;
+    overflow-x: auto;
+    margin: 12px 0 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    color: var(--green);
+  }
+  pre code {
+    color: var(--text-dim);
+  }
+  .inline-code {
+    background: var(--surface2);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--accent);
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 24px;
+    font-size: 0.95rem;
+  }
+  th {
+    background: var(--surface2);
+    color: var(--accent);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--surface2);
+    color: var(--text);
+  }
+  tr:hover td {
+    background: rgba(56, 189, 248, 0.05);
+  }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 24px;
+    margin-bottom: 12px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+
+  /* Tip boxes */
+  .tip {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(129, 140, 248, 0.08));
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 16px 0;
+  }
+  .tip-title {
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .warning {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 16px 0;
+  }
+  .warning-title {
+    color: var(--yellow);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  /* Comparison */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .compare-bad, .compare-good {
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+  .compare-bad {
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.2);
+  }
+  .compare-good {
+    background: rgba(74, 222, 128, 0.08);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+  }
+  .compare-label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+  .compare-bad .compare-label { color: var(--red); }
+  .compare-good .compare-label { color: var(--green); }
+
+  /* Diagram box */
+  .diagram {
+    background: #0d1117;
+    border: 1px solid var(--surface2);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 16px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  /* Card */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+  }
+
+  /* Quick ref card */
+  .quickref {
+    background: linear-gradient(135deg, var(--surface), #1e1b4b);
+    border: 2px solid var(--accent2);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+    text-align: center;
+  }
+  .quickref h3 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .quickref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .quickref-item {
+    background: rgba(0,0,0,0.3);
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+  .quickref-item .label {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .quickref-item .value {
+    color: var(--text);
+    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .hero { padding: 40px 20px; }
+    .hero h1 { font-size: 1.8rem; }
+    .compare { grid-template-columns: 1fr; }
+    .quickref-grid { grid-template-columns: 1fr; }
+    .container { padding: 24px 16px; }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 4px; }
+
+  .section-num {
+    color: var(--accent2);
+    font-weight: 800;
+    margin-right: 8px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--surface2);
+    margin: 40px 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>OhMyOpenCode 완전 활용 가이드</h1>
+  <p class="subtitle">OhMyOpenCode(omo)를 처음 쓰는 분도 따라할 수 있는 실전 가이드</p>
+  <span class="badge">Claude Code 2.1.79 기준 | 2026-03-19</span>
+</div>
+
+<div class="container">
+
+<!-- TOC -->
+<div class="toc">
+  <h2>목차</h2>
+  <ol>
+    <li><a href="#s1">OhMyOpenCode란?</a></li>
+    <li><a href="#s2">기본 개념 이해하기</a></li>
+    <li><a href="#s3">기본 사용법</a></li>
+    <li><a href="#s4">에이전트 시스템 이해하기</a></li>
+    <li><a href="#s5">카테고리 시스템</a></li>
+    <li><a href="#s6">스킬 활용하기</a></li>
+    <li><a href="#s7">작업 모드별 사용법</a></li>
+    <li><a href="#s8">실전 활용 패턴</a></li>
+    <li><a href="#s9">슬래시 명령어 레퍼런스</a></li>
+    <li><a href="#s10">플러그인 활용</a></li>
+    <li><a href="#s11">프로 팁 & 트릭</a></li>
+    <li><a href="#s12">자주 하는 실수 & 해결법</a></li>
+  </ol>
+</div>
+
+<!-- Section 1 -->
+<div class="section" id="s1">
+  <h2><span class="section-num">01</span> OhMyOpenCode란?</h2>
+
+  <blockquote>
+    <strong>Claude Code를 "혼자 일하는 AI"에서 "AI 전문가 팀"으로 업그레이드하는 플러그인</strong>
+  </blockquote>
+
+  <h3>뭐가 다른가요?</h3>
+  <table>
+    <tr><th></th><th>기본 Claude Code</th><th>+ OhMyOpenCode</th></tr>
+    <tr><td>AI 모델</td><td>Claude 하나만</td><td>Claude + GPT + Gemini + Grok 자동 배합</td></tr>
+    <tr><td>작업 방식</td><td>순차 처리</td><td>여러 에이전트 병렬 처리</td></tr>
+    <tr><td>코드 검색</td><td>직접 grep</td><td>전문 검색 에이전트 자동 파견</td></tr>
+    <tr><td>외부 조사</td><td>수동 검색</td><td>Librarian이 문서/라이브러리 자동 조사</td></tr>
+    <tr><td>품질 검증</td><td>없음</td><td>Oracle/Momus가 자동 리뷰</td></tr>
+    <tr><td>작업 관리</td><td>없음</td><td>Todo 시스템으로 진행상황 추적</td></tr>
+  </table>
+
+  <h3>비유로 이해하기</h3>
+  <div class="diagram">기본 Claude Code = 혼자서 다 하는 프리랜서
+OhMyOpenCode     = 시니어 개발자(Sisyphus)가 이끄는 개발팀
+
+  시니어(Sisyphus): "로그인 페이지 만들어야 해"
+    ├─ 인턴(Explore): "기존 코드 패턴 찾아왔습니다!"
+    ├─ 리서처(Librarian): "라이브러리 문서 정리했습니다!"
+    ├─ 시니어가 직접 구현
+    └─ CTO(Oracle): "아키텍처 검토 완료!"</div>
+</div>
+
+<!-- Section 2 -->
+<div class="section" id="s2">
+  <h2><span class="section-num">02</span> 기본 개념 이해하기</h2>
+
+  <h3>2.1 에이전트 (Agent) = AI 전문가</h3>
+  <p>각각 다른 역할과 능력을 가진 AI 전문가들입니다.</p>
+  <div class="diagram">Sisyphus ─── 나(총괄 매니저). 여러분이 대화하는 상대
+  ├── Explore ────── 코드베이스 고속 검색 (가볍고 빠름)
+  ├── Librarian ──── 외부 문서/라이브러리 조사 (구글링 대체)
+  ├── Oracle ─────── 아키텍처 자문/디버깅 (고급, 비쌈)
+  ├── Metis ──────── 작업 분석/모호성 검출 (기획 단계)
+  └── Momus ──────── 계획 리뷰/품질 검증 (QA 역할)</div>
+
+  <h3>2.2 카테고리 (Category) = 작업 분류</h3>
+  <p>작업을 맡기면 성격에 맞는 최적 AI 모델로 자동 라우팅됩니다.</p>
+  <div class="card">
+    <p><code>"UI 만들어줘"</code> → visual-engineering (디자인 특화 모델)</p>
+    <p><code>"알고리즘 짜줘"</code> → ultrabrain (논리 추론 특화 모델)</p>
+    <p><code>"오타 고쳐줘"</code> → quick (빠르고 저렴한 모델)</p>
+    <p><code>"문서 써줘"</code> → writing (글쓰기 특화 모델)</p>
+  </div>
+
+  <h3>2.3 스킬 (Skill) = 전문 지식 카드</h3>
+  <p>특정 작업에 대한 상세한 노하우가 담긴 카드입니다. 에이전트에게 장착시키면 품질이 올라갑니다.</p>
+  <div class="card">
+    <p><code>"Next.js 프로젝트 만들어줘"</code></p>
+    <p>→ nextjs15-init 스킬 자동 장착</p>
+    <p>→ 프로젝트 구조, 설정, 컨벤션까지 알고 작업</p>
+  </div>
+</div>
+
+<!-- Section 3 -->
+<div class="section" id="s3">
+  <h2><span class="section-num">03</span> 기본 사용법</h2>
+
+  <h3>3.1 이렇게 말하면 됩니다</h3>
+  <p>OhMyOpenCode에서는 <strong>자연어로 말하면</strong> 알아서 최적의 방법을 찾아 실행합니다.</p>
+
+  <h4>간단한 작업</h4>
+  <pre><code>"package.json에 axios 추가해줘"
+"이 함수 이름 calculateTotal로 바꿔줘"
+"README.md 한국어로 번역해줘"</code></pre>
+
+  <h4>조사/탐색</h4>
+  <pre><code>"이 프로젝트에서 인증 로직이 어디 있어?"
+"React Query 사용법 알려줘"
+"이 에러 왜 나는 거야? [에러 메시지]"</code></pre>
+
+  <h4>복잡한 작업</h4>
+  <pre><code>"로그인/회원가입 페이지 만들어줘"
+"이 API를 REST에서 GraphQL로 바꿔줘"
+"테스트 코드 전체 작성해줘"</code></pre>
+
+  <h3>3.2 잘 말하는 법 (프롬프트 팁)</h3>
+
+  <div class="compare">
+    <div class="compare-bad">
+      <div class="compare-label">❌ 나쁜 예시</div>
+      <p>"고쳐줘"</p>
+      <p>"개선해줘"</p>
+      <p>"뭔가 이상해"</p>
+    </div>
+    <div class="compare-good">
+      <div class="compare-label">✅ 좋은 예시</div>
+      <p>"src/auth/login.ts에서 비밀번호 유효성 검사가 안 되고 있어. 8자 이상 + 특수문자 필수로 바꿔줘"</p>
+      <p>"빌드하면 'Module not found' 에러 나는데, next.config.js 경로 설정 문제인 것 같아"</p>
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">핵심 공식</div>
+    <p><strong>[어디서]</strong> + <strong>[무엇이]</strong> + <strong>[어떻게]</strong> + <strong>[왜]</strong></p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      "src/components/Header.tsx에서(어디서) 저장 버튼이(무엇이) 편집 버튼 오른쪽에 추가되었으면 해(어떻게). 사용자가 작업 중 빠르게 저장할 수 있게(왜)."
+    </p>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section" id="s4">
+  <h2><span class="section-num">04</span> 에이전트 시스템 이해하기</h2>
+
+  <h3>4.1 Explore (탐험가)</h3>
+  <p><strong>역할</strong>: 코드베이스 내부를 빠르게 검색합니다.</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "이 프로젝트에서 데이터베이스 연결하는 부분 어디 있어?"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      → Explore 에이전트 발사 (백그라운드)<br>
+      → "DB 연결 패턴 찾아라: connection, pool, prisma, database 키워드 검색"<br>
+      → 결과 수집 후 정리해서 답변
+    </p>
+  </div>
+  <p><strong>언제 자동 발동?</strong></p>
+  <ul>
+    <li>코드베이스 구조를 파악해야 할 때</li>
+    <li>특정 패턴이나 함수를 찾아야 할 때</li>
+    <li>여러 파일에 걸친 변경이 필요할 때</li>
+  </ul>
+
+  <h3>4.2 Librarian (사서)</h3>
+  <p><strong>역할</strong>: 외부 문서, 라이브러리, 오픈소스 코드를 조사합니다.</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "Tanstack Query v5에서 useSuspenseQuery 어떻게 써?"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      → Librarian 에이전트 발사 (백그라운드)<br>
+      → "공식 문서, GitHub 예시 코드, 베스트 프랙티스 조사해라"<br>
+      → 결과 수집 후 정리해서 답변
+    </p>
+  </div>
+  <p><strong>언제 자동 발동?</strong></p>
+  <ul>
+    <li>외부 라이브러리 사용법이 필요할 때</li>
+    <li>최신 API 문서가 필요할 때</li>
+    <li>오픈소스 구현 예시가 필요할 때</li>
+  </ul>
+
+  <h3>4.3 Oracle (신탁)</h3>
+  <p><strong>역할</strong>: 아키텍처 설계, 어려운 디버깅 자문을 합니다. (비싸지만 정확)</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "마이크로서비스로 전환하려는데 어떤 구조가 좋을까?"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      → 먼저 Explore로 현재 코드 구조 파악<br>
+      → Oracle에게 "현재 구조 분석 + 마이크로서비스 전환 전략 자문"<br>
+      → Oracle의 아키텍처 조언을 바탕으로 답변
+    </p>
+  </div>
+
+  <h3>4.4 Metis (분석가)</h3>
+  <p><strong>역할</strong>: 작업 시작 전에 모호한 점, 숨은 요구사항을 찾아냅니다.</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "결제 시스템 만들어줘"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      Metis 분석: "어떤 결제 수단? PG사는? 정기결제? 환불 정책은?"<br>
+      → 모호한 점 식별 후 사용자에게 확인 질문
+    </p>
+  </div>
+
+  <h3>4.5 Momus (비평가)</h3>
+  <p><strong>역할</strong>: 작업 계획을 검토하고 빈틈을 찾습니다.</p>
+  <div class="card">
+    <p>Sisyphus가 계획을 세운 후:</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      → Momus에게 "이 계획 검토해줘"<br>
+      → "3번 단계에서 에러 핸들링이 빠져있습니다"<br>
+      → 계획 보완 후 실행
+    </p>
+  </div>
+
+  <h3>4.6 병렬 작업 = 핵심 강점</h3>
+  <div class="diagram">사용자: "NextAuth로 소셜 로그인 구현해줘"
+
+동시 발사 (병렬):
+  ├─ Explore #1: "기존 인증 코드 패턴 검색"
+  ├─ Explore #2: "기존 API 라우트 구조 검색"
+  ├─ Librarian #1: "NextAuth v5 공식 문서 조사"
+  └─ Librarian #2: "소셜 로그인 구현 예시 검색"
+
+  → 4개 결과 동시 수집 → 최적의 구현 시작</div>
+</div>
+
+<!-- Section 5 -->
+<div class="section" id="s5">
+  <h2><span class="section-num">05</span> 카테고리 시스템</h2>
+  <p>작업을 위임할 때 <strong>카테고리</strong>에 따라 최적화된 AI 모델이 배정됩니다.</p>
+
+  <table>
+    <tr><th>카테고리</th><th>용도</th><th>예시</th></tr>
+    <tr><td><code>visual-engineering</code></td><td>UI, 디자인, CSS, 애니메이션</td><td>"대시보드 레이아웃 만들어줘"</td></tr>
+    <tr><td><code>ultrabrain</code></td><td>복잡한 로직, 알고리즘</td><td>"최단 경로 알고리즘 구현해줘"</td></tr>
+    <tr><td><code>deep</code></td><td>자율적 리서치 + 구현</td><td>"성능 병목 찾아서 최적화해줘"</td></tr>
+    <tr><td><code>artistry</code></td><td>창의적 문제 해결</td><td>"독특한 인터랙션 디자인"</td></tr>
+    <tr><td><code>quick</code></td><td>간단한 수정</td><td>"오타 수정", "import 추가"</td></tr>
+    <tr><td><code>unspecified-low</code></td><td>기타 간단 작업</td><td>분류 어려운 간단 작업</td></tr>
+    <tr><td><code>unspecified-high</code></td><td>기타 복잡 작업</td><td>분류 어려운 복잡 작업</td></tr>
+    <tr><td><code>writing</code></td><td>문서, 글쓰기</td><td>"API 문서 작성해줘"</td></tr>
+  </table>
+
+  <div class="tip">
+    <div class="tip-title">사용자가 알아야 할 것</div>
+    <p><strong>직접 카테고리를 지정할 필요 없습니다!</strong> Sisyphus가 자동으로 판단합니다.</p>
+    <p style="margin-top:8px;">단, "예쁘게", "디자인", "레이아웃" 같은 키워드를 쓰면 → UI 특화 모델로, "복잡한 알고리즘", "최적화" 같은 키워드를 쓰면 → 논리 추론 특화 모델로 더 정확하게 라우팅됩니다.</p>
+  </div>
+</div>
+
+<!-- Section 6 -->
+<div class="section" id="s6">
+  <h2><span class="section-num">06</span> 스킬 활용하기</h2>
+
+  <h4>프로젝트 생성</h4>
+  <table>
+    <tr><th>스킬</th><th>트리거</th><th>설명</th></tr>
+    <tr><td><code>nextjs15-init</code></td><td>"Next.js 프로젝트 만들어줘"</td><td>Next.js 15 + App Router + ShadCN 풀스택</td></tr>
+    <tr><td><code>flutter-init</code></td><td>"Flutter 프로젝트 만들어줘"</td><td>Flutter + Clean Architecture + Riverpod</td></tr>
+  </table>
+
+  <h4>웹 개발</h4>
+  <table>
+    <tr><th>스킬</th><th>트리거</th><th>설명</th></tr>
+    <tr><td><code>frontend-design</code></td><td>"웹 페이지 만들어줘"</td><td>고품질 프론트엔드 UI 생성</td></tr>
+    <tr><td><code>landing-page-guide-v2</code></td><td>"랜딩페이지 만들어줘"</td><td>11가지 전환 요소 기반 랜딩페이지</td></tr>
+    <tr><td><code>design-prompt-generator-v2</code></td><td>"디자인 프롬프트 만들어줘"</td><td>Lovable/Cursor/Bolt용 디자인 프롬프트</td></tr>
+  </table>
+
+  <h4>콘텐츠 생성</h4>
+  <table>
+    <tr><th>스킬</th><th>트리거</th><th>설명</th></tr>
+    <tr><td><code>card-news-generator-v2</code></td><td>"카드뉴스 만들어줘"</td><td>600x600 인스타그램 카드뉴스</td></tr>
+    <tr><td><code>midjourney-card-news-backgrounds</code></td><td>"카드뉴스 배경"</td><td>Midjourney용 배경 프롬프트</td></tr>
+  </table>
+
+  <h4>도구/유틸리티</h4>
+  <table>
+    <tr><th>스킬</th><th>트리거</th><th>설명</th></tr>
+    <tr><td><code>web-search</code></td><td>"검색해줘", "찾아줘"</td><td>DuckDuckGo 웹 검색</td></tr>
+    <tr><td><code>web-to-markdown</code></td><td>"이 페이지 저장해줘"</td><td>웹페이지 → 마크다운 변환</td></tr>
+    <tr><td><code>gemini-logo-remover</code></td><td>"로고 제거해줘"</td><td>이미지에서 워터마크 제거</td></tr>
+    <tr><td><code>code-changelog</code></td><td>코드 변경 기록</td><td>변경사항 HTML 뷰어 생성</td></tr>
+    <tr><td><code>workthrough</code></td><td>작업 완료 후</td><td>작업 내용 자동 문서화</td></tr>
+  </table>
+
+  <h4>개발 워크플로우</h4>
+  <table>
+    <tr><th>스킬</th><th>트리거</th><th>설명</th></tr>
+    <tr><td><code>git-master</code></td><td>"커밋해줘", "리베이스"</td><td>Git 전문가</td></tr>
+    <tr><td><code>playwright</code></td><td>브라우저 테스트</td><td>브라우저 자동화/테스트</td></tr>
+    <tr><td><code>dev-browser</code></td><td>웹 자동화</td><td>상태 유지 브라우저 스크립팅</td></tr>
+    <tr><td><code>codex</code></td><td>"Codex 실행해줘"</td><td>OpenAI Codex CLI 연동</td></tr>
+    <tr><td><code>codex-claude-loop</code></td><td>듀얼 AI 루프</td><td>Claude + Codex 교차 검증</td></tr>
+    <tr><td><code>prompt-enhancer</code></td><td>프롬프트 개선</td><td>프로젝트 맥락 기반 프롬프트 강화</td></tr>
+    <tr><td><code>Prompt Coach</code></td><td>프롬프트 코칭</td><td>세션 로그 분석으로 프롬프트 개선</td></tr>
+  </table>
+
+  <h3>스킬 사용법</h3>
+  <p><strong>자동 발동:</strong> 관련 키워드를 말하면 자동으로 스킬이 장착됩니다.</p>
+  <p><strong>직접 호출:</strong> 슬래시 명령어로 직접 부를 수도 있습니다.</p>
+  <pre><code>/frontend-design
+/card-news-generator-v2
+/web-search "최신 React 트렌드"</code></pre>
+</div>
+
+<!-- Section 7 -->
+<div class="section" id="s7">
+  <h2><span class="section-num">07</span> 작업 모드별 사용법</h2>
+
+  <h3>7.1 일반 모드 (기본)</h3>
+  <p>그냥 말하면 됩니다. 가장 많이 쓰는 모드.</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "Header 컴포넌트에 다크모드 토글 버튼 추가해줘"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">1. 코드베이스에서 Header 컴포넌트 찾기 → 2. 기존 스타일/패턴 분석 → 3. 다크모드 토글 구현 → 4. 타입 검사 & 검증</p>
+  </div>
+  <p><strong>적합한 상황:</strong> 명확한 단일 작업, 간단한 수정</p>
+
+  <h3>7.2 울트라워크 모드 (자율 모드)</h3>
+  <p><code>ulw</code> + 작업 설명을 입력하면, 처음부터 끝까지 알아서 합니다.</p>
+  <div class="card">
+    <p><strong>사용자:</strong> "ulw 블로그 시스템 만들어줘"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">1. 코드베이스 전체 탐색 → 2. 기술 스택/패턴 분석 → 3. 계획 수립 → 4. 구현 (여러 에이전트 병렬 활용) → 5. 테스트 & 검증 → 6. 완료될 때까지 반복</p>
+  </div>
+  <p><strong>적합한 상황:</strong> 큰 기능 구현, "알아서 해줘" 스타일</p>
+
+  <h3>7.3 Prometheus 모드 (정밀 모드)</h3>
+  <p>Tab을 눌러 Prometheus를 선택하면, 먼저 인터뷰를 합니다.</p>
+  <div class="card">
+    <p><strong>[Tab → Prometheus 선택]</strong></p>
+    <p><strong>사용자:</strong> "e-커머스 결제 시스템 만들어줘"</p>
+    <p style="margin-top:8px; color: var(--text-dim);">
+      Prometheus 인터뷰: "어떤 PG사? 정기결제? 환불 정책?" → 상세 계획 수립<br>
+      <code>/start-work</code> → Atlas가 계획을 받아서 체계적으로 실행
+    </p>
+  </div>
+  <p><strong>적합한 상황:</strong> 복잡한 기능, 명확한 요구사항 정리가 필요할 때</p>
+
+  <h3>7.4 모드 선택 가이드</h3>
+  <div class="diagram">작업 복잡도?
+  │
+  ├─ 간단 (1-2 파일) ──→ 일반 모드: "버튼 추가해줘"
+  │
+  ├─ 보통 (3-5 파일) ──→ 일반 모드: "로그인 기능 만들어줘"
+  │
+  ├─ 복잡 (많은 파일) ─┬→ 빨리 해줘 → ulw: "ulw 대시보드 만들어줘"
+  │                    └→ 정확하게 → Prometheus: Tab → 인터뷰 → /start-work
+  │
+  └─ 초대형 프로젝트 ──→ Prometheus 필수</div>
+</div>
+
+<!-- Section 8 -->
+<div class="section" id="s8">
+  <h2><span class="section-num">08</span> 실전 활용 패턴</h2>
+
+  <h3>패턴 1: 새 프로젝트 시작</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "Next.js 15로 블로그 프로젝트 만들어줘. ShadCN UI 쓰고, 다크모드 지원하고, 마크다운 포스트 지원해줘."</p>
+    <p style="color: var(--green); margin-top:8px;">→ nextjs15-init + frontend-design 스킬 자동 로드 → 풀 프로젝트 생성</p>
+  </div>
+
+  <h3>패턴 2: 버그 수정</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "yarn dev 하면 이런 에러가 나: TypeError: Cannot read properties of undefined (reading 'map') at UserList (src/components/UserList.tsx:15:23)"</p>
+    <p style="color: var(--green); margin-top:8px;">→ 해당 파일 분석 → 원인 파악 → 최소한의 수정 → 타입 검사로 확인</p>
+  </div>
+
+  <h3>패턴 3: 리팩토링</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "src/utils/helpers.ts가 500줄이 넘어서 관리가 안 돼. 기능별로 분리해줘."</p>
+    <p style="color: var(--green); margin-top:8px;">→ Explore로 의존성 분석 → 모듈 분리 → import 경로 자동 수정</p>
+  </div>
+
+  <h3>패턴 4: 외부 라이브러리 도입</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "이 프로젝트에 Zustand 상태관리 도입해줘. 기존 Context API 코드를 마이그레이션해줘."</p>
+    <p style="color: var(--green); margin-top:8px;">→ Librarian: 최신 문서 조사 + Explore: 기존 코드 분석 → 마이그레이션</p>
+  </div>
+
+  <h3>패턴 5: 디자인 & UI 작업</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "대시보드 페이지를 예쁘게 만들어줘. 차트, 통계 카드, 최근 활동 리스트 포함."</p>
+    <p style="color: var(--green); margin-top:8px;">→ visual-engineering + frontend-design 스킬 → 고품질 UI → 반응형/다크모드 자동</p>
+  </div>
+
+  <h3>패턴 6: 여러 작업 동시 요청</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "1. README.md 한국어로 번역해줘  2. ESLint 설정 추가해줘  3. 테스트 설정 (Vitest) 해줘"</p>
+    <p style="color: var(--green); margin-top:8px;">→ 3개 작업을 병렬로 동시 처리 → 각각 최적 모델로 라우팅</p>
+  </div>
+
+  <h3>패턴 7: 조사 + 구현</h3>
+  <div class="card">
+    <p><strong>말하기:</strong> "경쟁사 A, B, C 랜딩페이지 분석해서 우리 랜딩페이지 만들어줘."</p>
+    <p style="color: var(--green); margin-top:8px;">→ Librarian: 경쟁사 분석 → landing-page-guide-v2 스킬 → 전환 최적화 랜딩페이지</p>
+  </div>
+</div>
+
+<!-- Section 9 -->
+<div class="section" id="s9">
+  <h2><span class="section-num">09</span> 슬래시 명령어 레퍼런스</h2>
+
+  <h3>핵심 명령어</h3>
+  <table>
+    <tr><th>명령어</th><th>설명</th><th>사용 예시</th></tr>
+    <tr><td><code>/init-deep</code></td><td>AGENTS.md 지식 베이스 초기화</td><td>프로젝트 시작 시 한번 실행</td></tr>
+    <tr><td><code>/ralph-loop</code></td><td>완료될 때까지 자동 반복 실행</td><td>큰 작업을 끝까지 돌릴 때</td></tr>
+    <tr><td><code>/ulw-loop</code></td><td>울트라워크 루프 시작</td><td>최대 강도로 작업할 때</td></tr>
+    <tr><td><code>/cancel-ralph</code></td><td>루프 중단</td><td>작업 멈추고 싶을 때</td></tr>
+    <tr><td><code>/start-work</code></td><td>Prometheus 계획 실행 시작</td><td>계획 수립 후 실행할 때</td></tr>
+    <tr><td><code>/stop-continuation</code></td><td>모든 자동 실행 중단</td><td>완전히 멈추고 싶을 때</td></tr>
+    <tr><td><code>/refactor</code></td><td>지능형 리팩토링</td><td>LSP + AST 기반 안전한 리팩토링</td></tr>
+    <tr><td><code>/handoff</code></td><td>컨텍스트 요약 생성</td><td>새 세션에서 이어서 작업할 때</td></tr>
+  </table>
+
+  <h3>스킬 명령어</h3>
+  <table>
+    <tr><th>명령어</th><th>설명</th></tr>
+    <tr><td><code>/web-search</code></td><td>DuckDuckGo 웹 검색</td></tr>
+    <tr><td><code>/frontend-design</code></td><td>고품질 프론트엔드 UI 생성</td></tr>
+    <tr><td><code>/card-news-generator-v2</code></td><td>인스타그램 카드뉴스 생성</td></tr>
+    <tr><td><code>/nextjs15-init</code></td><td>Next.js 15 프로젝트 생성</td></tr>
+    <tr><td><code>/flutter-init</code></td><td>Flutter 프로젝트 생성</td></tr>
+    <tr><td><code>/code-changelog</code></td><td>코드 변경사항 기록</td></tr>
+    <tr><td><code>/workthrough</code></td><td>작업 내용 자동 문서화</td></tr>
+  </table>
+</div>
+
+<!-- Section 10 -->
+<div class="section" id="s10">
+  <h2><span class="section-num">10</span> 플러그인 활용</h2>
+
+  <h3>Notion 연동</h3>
+  <p>Notion과 연결되어 있어 직접 조작이 가능합니다.</p>
+  <pre><code>"노션에서 '프로젝트 관리' 데이터베이스 검색해줘"
+"노션에 새 태스크 만들어줘: 로그인 페이지 구현"
+"노션에 이번 스프린트 회의록 페이지 만들어줘"</code></pre>
+
+  <p><strong>사용 가능한 Notion 기능:</strong></p>
+  <ul>
+    <li>데이터베이스 검색 및 쿼리</li>
+    <li>새 행(Row) 추가</li>
+    <li>페이지 생성</li>
+    <li>태스크 관리</li>
+    <li>워크스페이스 검색</li>
+  </ul>
+</div>
+
+<!-- Section 11 -->
+<div class="section" id="s11">
+  <h2><span class="section-num">11</span> 프로 팁 & 트릭</h2>
+
+  <div class="tip">
+    <div class="tip-title">팁 1: "왜"를 말하면 품질이 올라간다</div>
+    <div class="compare" style="margin-top:12px;">
+      <div class="compare-bad"><div class="compare-label">❌</div>"버튼 추가해줘"</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"사용자가 모바일에서 한 손으로 빠르게 저장할 수 있게, 화면 하단에 플로팅 저장 버튼 추가해줘"</div>
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 2: 기존 코드 언급하면 일관성이 올라간다</div>
+    <div class="compare" style="margin-top:12px;">
+      <div class="compare-bad"><div class="compare-label">❌</div>"로그인 페이지 만들어줘"</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"기존 회원가입 페이지(src/pages/signup.tsx) 스타일이랑 똑같이 로그인 페이지 만들어줘"</div>
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 3: 독립적인 작업은 한번에 요청 → 병렬 처리</div>
+    <p>"1. Header에 알림 아이콘 추가 / 2. Footer 저작권 연도 변경 / 3. 404 페이지 만들기"<br>→ 3개가 독립적이므로 동시 처리 → 빠름!</p>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 4: 에러 메시지를 그대로 붙여넣기</div>
+    <div class="compare" style="margin-top:12px;">
+      <div class="compare-bad"><div class="compare-label">❌</div>"빌드 에러 나"</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"빌드하면 이런 에러 나: Module not found: Can't resolve '@/components/ui/button' at src/pages/index.tsx:3:1"</div>
+    </div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 5: 참고 자료 URL 제공</div>
+    <p>"이 디자인처럼 만들어줘: https://example.com/design<br>색상은 #3B82F6(파랑) 기반으로"</p>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 6: 단계적으로 진행하기</div>
+    <p>1단계: "먼저 DB 스키마만 설계해줘" → 검토<br>
+    2단계: "좋아, 이제 API 엔드포인트 만들어줘" → 검토<br>
+    3단계: "이제 프론트엔드 연결해줘" → 검토</p>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 7: 틀렸으면 바로 말하기</div>
+    <p>"아니, 그게 아니라 카드형 레이아웃으로 해줘"<br>
+    "이 부분 롤백하고 다른 방법으로 해줘"</p>
+  </div>
+
+  <div class="tip">
+    <div class="tip-title">팁 8: 울트라워크(ulw)는 큰 작업에만</div>
+    <div class="compare" style="margin-top:12px;">
+      <div class="compare-bad"><div class="compare-label">❌ 낭비</div>ulw 오타 수정해줘</div>
+      <div class="compare-good"><div class="compare-label">✅ 적합</div>ulw 관리자 대시보드 만들어줘</div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 12 -->
+<div class="section" id="s12">
+  <h2><span class="section-num">12</span> 자주 하는 실수 & 해결법</h2>
+
+  <div class="warning">
+    <div class="warning-title">실수 1: 너무 모호하게 말하기</div>
+    <div class="compare">
+      <div class="compare-bad"><div class="compare-label">❌</div>"개선해줘" → 뭘 개선? 성능? UI? 코드 품질?</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"이 컴포넌트의 렌더링 성능을 개선해줘. 리스트가 1000개 넘으면 느려져."</div>
+    </div>
+  </div>
+
+  <div class="warning">
+    <div class="warning-title">실수 2: 한번에 너무 많은 것 요청하기</div>
+    <div class="compare">
+      <div class="compare-bad"><div class="compare-label">❌</div>"전체 앱 TypeScript 마이그레이션 + 테스트 + CI/CD + Docker + 문서"</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"먼저 src/utils/ 폴더만 TypeScript로 변환해줘"</div>
+    </div>
+  </div>
+
+  <div class="warning">
+    <div class="warning-title">실수 3: 컨텍스트 없이 에러 물어보기</div>
+    <div class="compare">
+      <div class="compare-bad"><div class="compare-label">❌</div>"왜 안 돼?"</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"yarn build 하면 이 에러가 나: [에러 메시지 전체 복붙] Node 20.x, Next.js 15 환경이야."</div>
+    </div>
+  </div>
+
+  <div class="warning">
+    <div class="warning-title">실수 4: 기존 패턴 무시하기</div>
+    <div class="compare">
+      <div class="compare-bad"><div class="compare-label">❌</div>"Redux로 상태관리 추가해줘" (프로젝트가 이미 Zustand 사용 중)</div>
+      <div class="compare-good"><div class="compare-label">✅</div>"기존 Zustand 패턴으로 장바구니 상태 추가해줘"</div>
+    </div>
+  </div>
+
+  <div class="warning">
+    <div class="warning-title">실수 5: 중간에 끊기</div>
+    <div class="compare">
+      <div class="compare-bad"><div class="compare-label">❌</div>작업 중간에 새 요청 → 이전 작업 미완성</div>
+      <div class="compare-good"><div class="compare-label">✅</div>현재 작업 완료 확인 → 다음 작업 요청<br>또는: "이건 잠깐 멈추고, 먼저 이거 해줘"</div>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Ref Card -->
+<div class="quickref">
+  <h3>한눈에 보는 빠른 참조 카드</h3>
+  <div class="quickref-grid">
+    <div class="quickref-item">
+      <div class="label">기본</div>
+      <div class="value">그냥 자연어로 말하기</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">자율 모드</div>
+      <div class="value">ulw + 작업설명</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">정밀 모드</div>
+      <div class="value">Tab → Prometheus → /start-work</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">검색</div>
+      <div class="value">/web-search "검색어"</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">중단</div>
+      <div class="value">/stop-continuation</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">프롬프트 공식</div>
+      <div class="value">[어디서] + [무엇을] + [어떻게] + [왜]</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">에이전트</div>
+      <div class="value">Explore=검색 | Librarian=조사 | Oracle=자문</div>
+    </div>
+    <div class="quickref-item">
+      <div class="label">인기 스킬</div>
+      <div class="value">nextjs15-init | frontend-design | web-search</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<p style="text-align: center; color: var(--text-dim); padding: 20px 0;">
+  더 궁금한 기능이 있으면 언제든 물어보세요!<br>
+  Sisyphus는 질문에도, 코딩에도, 조사에도 항상 준비되어 있습니다.
+</p>
+
+</div>
+</body>
+</html>

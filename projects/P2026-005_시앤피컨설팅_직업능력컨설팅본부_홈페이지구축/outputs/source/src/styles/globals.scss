@@ -1,0 +1,153 @@
+@import './variables';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $text-base;
+  line-height: 1.7;
+  color: $gray-800;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+button { cursor: pointer; }
+
+// === Utility classes ===
+.container {
+  @include container;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// === Buttons ===
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-size: $text-sm;
+  font-weight: 600;
+  font-family: $font-primary;
+  border-radius: $radius-md;
+  border: none;
+  cursor: pointer;
+  transition: all $transition;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+
+  &-primary {
+    background: $blue-500;
+    color: $white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 0 0 0 rgba($blue-500, 0);
+    &:hover {
+      background: $blue-600;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba($blue-500, 0.4);
+    }
+    &:active { transform: translateY(0); }
+  }
+
+  &-outline-light {
+    background: transparent;
+    color: $white;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &-dark {
+    background: $navy-800;
+    color: $white;
+    &:hover {
+      background: $navy-700;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-ghost {
+    background: transparent;
+    color: $blue-500;
+    padding: 0.5rem 0;
+    &:hover {
+      color: $blue-600;
+      gap: 0.75rem;
+    }
+  }
+
+  &-lg {
+    padding: 1rem 2.5rem;
+    font-size: $text-base;
+    border-radius: $radius-lg;
+  }
+}
+
+// === Animations ===
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.8s $ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s $ease-out both;
+}

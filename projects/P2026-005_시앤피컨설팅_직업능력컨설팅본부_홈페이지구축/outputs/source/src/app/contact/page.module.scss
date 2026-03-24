@@ -1,0 +1,149 @@
+@import '../../styles/variables';
+
+.hero {
+  position: relative;
+  padding: 11rem 0 5rem;
+  background: $navy-900;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
+
+.heroInner {
+  @include container;
+  position: relative;
+  z-index: 2;
+  h1 { font-size: $text-5xl; font-weight: 800; color: $white; letter-spacing: -0.03em; margin-bottom: 1rem;
+    @media (max-width: $bp-md) { font-size: $text-3xl; } }
+  p { font-size: $text-lg; color: $gray-400; line-height: 1.8; }
+}
+
+.bread {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: $text-sm; color: $gray-500; margin-bottom: 2rem;
+  a { color: $gray-500; &:hover { color: $white; } }
+}
+
+.content { padding: 4rem 0 6rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formWrap {
+  h2 { font-size: $text-2xl; font-weight: 800; color: $navy-800; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+}
+
+.formDesc { font-size: $text-base; color: $gray-500; margin-bottom: 2rem; }
+
+.form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+  @media (max-width: $bp-sm) { grid-template-columns: 1fr; }
+}
+
+.field {
+  display: flex; flex-direction: column; gap: 0.5rem;
+
+  label {
+    font-size: $text-sm; font-weight: 600; color: $gray-700;
+    span { color: $blue-500; }
+  }
+
+  input, select, textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid $gray-200;
+    border-radius: $radius-md;
+    font-size: $text-base;
+    font-family: $font-primary;
+    color: $gray-800;
+    background: $white;
+    transition: all $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $blue-500;
+      box-shadow: 0 0 0 3px rgba($blue-500, 0.08);
+    }
+
+    &::placeholder { color: $gray-400; }
+  }
+
+  textarea { resize: vertical; min-height: 120px; }
+}
+
+.success {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: $gray-50;
+  border-radius: $radius-xl;
+  border: 1px solid $gray-200;
+
+  h3 { font-size: $text-xl; font-weight: 700; color: $navy-800; margin-bottom: 0.5rem; }
+  p { font-size: $text-base; color: $gray-500; }
+}
+
+.successIcon {
+  width: 64px; height: 64px;
+  background: rgba($emerald-500, 0.1);
+  border-radius: $radius-full;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.infoWrap {
+  display: flex; flex-direction: column; gap: 1.5rem;
+  position: sticky; top: 100px;
+}
+
+.infoCard {
+  background: $gray-50;
+  border: 1px solid $gray-100;
+  border-radius: $radius-xl;
+  padding: 2rem;
+
+  h3 { font-size: $text-lg; font-weight: 700; color: $navy-800; margin-bottom: 1.25rem; }
+}
+
+.infoList { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.infoItem {
+  display: flex; gap: 1rem; align-items: flex-start;
+
+  strong { display: block; font-size: $text-sm; font-weight: 600; color: $gray-700; margin-bottom: 0.125rem; }
+  p { font-size: $text-sm; color: $gray-500; }
+}
+
+.infoIcon {
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: $white; border: 1px solid $gray-200;
+  border-radius: $radius; display: flex; align-items: center; justify-content: center;
+  font-size: 1.125rem;
+}
+
+.quickP { font-size: $text-sm; color: $gray-600; line-height: 1.7; margin-bottom: 1.25rem; }
+
+.trustCard {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+  background: $navy-800; border-radius: $radius-xl; padding: 1.5rem;
+}
+
+.trustItem {
+  text-align: center;
+  strong { display: block; font-size: $text-xl; font-weight: 800; color: $white; letter-spacing: -0.02em; }
+  span { font-size: $text-xs; color: $gray-400; }
+}

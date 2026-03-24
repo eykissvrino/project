@@ -15,6 +15,17 @@ secrets.*
 .claude/todos/
 .claude/transcripts/
 
+# === 프로젝트별 sync 복사본 (원본: _shared/) ===
+# sync-tools.cmd 실행으로 복원 가능 → GitHub에 중복 저장 불필요
+projects/*/.claude/skills/
+projects/*/.claude/agents/
+projects/*/.claude/commands/
+projects/*/.agent/skills/
+projects/*/.agent/workflows/
+
+# === 워크스페이스 루트 .claude (프로젝트 레벨 아닌 것) ===
+.claude/
+
 # === OS/에디터 ===
 .DS_Store
 Thumbs.db
