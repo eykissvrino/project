@@ -1,0 +1,178 @@
+# OhMyOpenAgent Reference Architecture Study - Summary
+
+## Key Findings
+
+### Architecture
+- 3-layer system: Planning (Prometheus, Metis, Momus) → Orchestration (Atlas) → Workers (11 agents)
+- 1,427 TypeScript files, ~40,000 LOC
+- 26 tools, 48 hooks, 19 feature modules
+- 11 specialized agents with different models and costs
+
+### Core Innovation
+Intent-based delegation: Classify work by intent, auto-route to specialists
+- Instead of: "Use tool X with model Y"
+- System does: "Understand intent → Select appropriate agent/skill → Execute"
+
+### Developer Focus
+- CLI-first interface (ultrawork, /start-work, /init-deep)
+- Code-centric tools (LSP, AST-Grep, hash-anchored edits)
+- Technical configuration (JSONC, Zod validation)
+- Extensibility (skills, commands, MCPs, hooks)
+
+## Design Patterns to Adopt
+
+1. **Intent-Based Delegation**
+   - User says "do job analysis" → system auto-selects job-analysis skill
+   - No need for users to know which tool/agent to use
+
+2. **Planning-Execution Separation**
+   - Collaborate on plan with user
+   - AI executes automatically with verification
+   - Prevents cognitive drift, enables audit trail
+
+3. **Parallel Background Work**
+   - 5+ agents work in parallel
+   - Main agent continues without blocking
+   - Results available on-demand
+
+4. **Multi-Level Configuration**
+   - Project → User → Defaults
+   - Automatic deep merge, no conflicts
+   - Sensible defaults for all workflows
+
+5. **Skill System**
+   - Domain-tuned instructions + embedded tools
+   - Reusable, composable, context-efficient
+   - HR consulting, project management, document generation
+
+6. **Dynamic Prompt Building**
+   - Generate prompts based on available agents/tools/skills
+   - No hardcoded prompts
+   - Model-specific variants
+
+7. **Three-Tier Hook System**
+   - Session → Tool-Guard → Transform → Continuation → Skill
+   - Clear responsibilities, prevents conflicts
+
+8. **Hash-Anchored Edits**
+   - Every line tagged with content hash
+   - Edits by hash, not content
+   - Zero stale-line errors
+
+## What to Adapt for Non-Developers
+
+### Interface
+- FROM: CLI commands (ultrawork, /start-work)
+- TO: Natural language ("Do this task", "Plan this project")
+- HOW: Conversational triggers instead of slash commands
+
+### Terminology
+- FROM: Technical (delegate, hash-anchored, AST-Grep)
+- TO: Business (get advice, safe changes, find patterns)
+- HOW: Translate concepts to business language
+
+### Workflow
+- FROM: Plan → Execute → Verify (explicit)
+- TO: Just "Do it" (implicit)
+- HOW: Hide orchestration, show results
+
+### Output Format
+- FROM: JSON/YAML, Markdown, Terminal logs, Code diffs
+- TO: Forms/wizards, Visual roadmaps, Progress dashboards, Plain English
+- HOW: Transform technical output to business-friendly format
+
+### Error Handling
+- FROM: Explicit errors ("Hook execution failed")
+- TO: Implicit recovery ("Something went wrong, trying again")
+- HOW: Automatic retry with fallback options
+
+### Configuration
+- FROM: JSONC files with Zod validation
+- TO: UI-based setup wizard
+- HOW: Hide config files, expose UI forms
+
+## Business-Specific Adaptations
+
+### Agents
+- Sisyphus → Project Manager (orchestrates work)
+- Oracle → Expert Advisor (strategic advice)
+- Librarian → Knowledge Assistant (documentation search)
+- Prometheus → Planning Assistant (interviews, plans)
+- Explore → Research Assistant (quick information)
+
+### Skills
+1. HR Consulting (job analysis, org design, competency mapping)
+2. Project Management (planning, tracking, risk management)
+3. Document Generation (proposals, reports, presentations)
+4. Data Analysis (Excel, charts, insights)
+5. Strategic Planning (SWOT, BSC, scenario planning)
+
+### Workflows
+1. Job Analysis: interview → analysis → report
+2. Org Design: assessment → design → implementation plan
+3. Project Planning: scope → plan → tracking
+4. Proposal Generation: research → draft → review → finalize
+5. Data Analysis: collect → analyze → visualize → insights
+
+## Implementation Roadmap
+
+### Phase 1: Foundation
+- Adapt intent-based delegation for HR/business domain
+- Build simplified orchestrator
+- Create multi-level configuration system
+- Implement planning-execution separation
+
+### Phase 2: Skills & Tools
+- Build HR consulting skill
+- Build project management skill
+- Build document generation skill
+- Build data analysis skill
+
+### Phase 3: Interface
+- Replace CLI with natural language
+- Build UI-based setup wizard
+- Create progress dashboard
+- Implement conversational triggers
+
+### Phase 4: Integration
+- Integrate with business tools (Excel, PowerPoint)
+- Build output formatters
+- Implement automatic error recovery
+- Add business-specific workflows
+
+### Phase 5: Polish
+- User testing and feedback
+- Performance optimization
+- Documentation and training
+- Deployment and monitoring
+
+## Critical Success Factors
+
+1. Intent-based delegation must work seamlessly
+2. Planning-execution separation must feel natural
+3. Error recovery must be automatic
+4. Output must be business-friendly
+5. Configuration must be hidden
+6. Skills must be composable
+
+## Risks and Mitigations
+
+1. Over-engineering
+   - MITIGATION: Focus on core patterns, adapt others as needed
+
+2. Complexity hidden from users
+   - MITIGATION: Provide transparency through dashboards and explanations
+
+3. Model lock-in
+   - MITIGATION: Implement fallback chains
+
+4. Configuration complexity
+   - MITIGATION: Sensible defaults, UI-based setup, minimal configuration
+
+## Next Steps
+
+1. Review this analysis with team
+2. Identify which patterns are most applicable
+3. Start with intent-based delegation as foundation
+4. Build HR consulting skill as first proof-of-concept
+5. Iterate based on user feedback

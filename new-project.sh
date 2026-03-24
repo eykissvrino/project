@@ -54,10 +54,12 @@ for skill_dir in "$WORKSPACE/_shared/skills/"*/; do
     ln -sf "$skill_dir" "$PROJECT_DIR/.claude/skills/$skill_name"
 done
 
-# 공유 에이전트 → .claude/agents/ 링크
+# 공유 에이전트 → 교차 배포 (.claude/agents/ + .agent/workflows/)
 mkdir -p "$PROJECT_DIR/.claude/agents"
+mkdir -p "$PROJECT_DIR/.agent/workflows"
 for agent_file in "$WORKSPACE/_shared/agents/"*.md; do
     ln -sf "$agent_file" "$PROJECT_DIR/.claude/agents/$(basename "$agent_file")"
+    ln -sf "$agent_file" "$PROJECT_DIR/.agent/workflows/$(basename "$agent_file")"
 done
 
 # 공유 커맨드 → .claude/commands/ 링크
@@ -65,10 +67,10 @@ for cmd_file in "$WORKSPACE/_shared/commands/"*.md; do
     ln -sf "$cmd_file" "$PROJECT_DIR/.claude/commands/$(basename "$cmd_file")"
 done
 
-# 공유 워크플로우 → .agent/workflows/ 링크
-mkdir -p "$PROJECT_DIR/.agent/workflows"
+# 공유 워크플로우 → 교차 배포 (.agent/workflows/ + .claude/agents/)
 for wf_file in "$WORKSPACE/_shared/workflows/"*.md; do
     ln -sf "$wf_file" "$PROJECT_DIR/.agent/workflows/$(basename "$wf_file")"
+    ln -sf "$wf_file" "$PROJECT_DIR/.claude/agents/$(basename "$wf_file")"
 done
 
 # 공유 스킬 → .agent/skills/ 링크
@@ -80,9 +82,9 @@ done
 echo "✓ 프로젝트 생성: $FULL_NAME"
 echo ""
 echo "  .claude/skills/     → 공유 스킬 링크됨"
-echo "  .claude/agents/     → 공유 에이전트 링크됨"
+echo "  .claude/agents/     → 에이전트+워크플로우 19개 (교차 배포)"
 echo "  .agent/skills/      → 공유 스킬 링크됨"
-echo "  .agent/workflows/   → 공유 워크플로우 링크됨"
+echo "  .agent/workflows/   → 워크플로우+에이전트 19개 (교차 배포)"
 echo "  docs/               ← 작업 메모"
 echo "  data/               ← 원시 데이터"
 echo "  outputs/            ← 최종 산출물"

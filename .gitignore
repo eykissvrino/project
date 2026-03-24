@@ -1,47 +1,42 @@
-# OS 파일
+# === 민감 정보 ===
+.env
+.env.*
+*.key
+*.pem
+credentials.*
+secrets.*
+
+# === AI 도구 런타임 (동기화 불필요) ===
+.omc/
+.claude/cache/
+.claude/debug/
+.claude/downloads/
+.claude/history.jsonl
+.claude/todos/
+.claude/transcripts/
+
+# === OS/에디터 ===
 .DS_Store
 Thumbs.db
-Desktop.ini
-*.tmp
-~$*
-
-# IDE / 에디터
-.vscode/
-.idea/
+desktop.ini
 *.swp
-*.swo
+*~
 
-# Claude Code
-.claude/
-
-# Antigravity AI
-.agent/
-
-# Archive 내 중첩 git 저장소 (기존 완료 프로젝트)
-archive/antigravity/
-archive/claude-code-harness/
-archive/_archived_Antigravity/
-archive/_archived_project/claude-code-harness/
-
-# Node.js (웹앱 프로젝트)
-node_modules/
-.next/
-dist/
-build/
-.env
-.env.local
-.env.*.local
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# 대용량 파일 (필요시 해제)
-# *.zip
-# *.tar.gz
-
-# 로그
+# === 임시 파일 ===
+*.tmp
+*.bak
 *.log
-npm-debug.log*
+node_modules/
+__pycache__/
+.next/
+.vercel/
+
+# === 대용량 바이너리 (필요 시 개별 추가) ===
+# *.pptx
+# *.xlsx
+# *.pdf
+# *.docx
+
+# === lock 파일 ===
+.~lock.*
+~$*

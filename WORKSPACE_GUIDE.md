@@ -1,6 +1,8 @@
 # 워크스페이스 운영 가이드
 
 > AI 도구(Claude Code, Antigravity, Cowork)가 이 워크스페이스에서 작업할 때 반드시 참조해야 하는 규칙입니다.
+>
+> 최종 업데이트: 2026-03-19
 
 ---
 
@@ -12,17 +14,26 @@ workspace/
 ├── WORKSPACE_GUIDE.md       ← 이 문서 (운영 규칙)
 ├── new-project.cmd          ← 새 프로젝트 생성 (Windows)
 ├── new-project.sh           ← 새 프로젝트 생성 (bash)
+├── sync-tools.cmd           ← ★ 리소스 동기화 (_shared → 모든 활성 프로젝트)
 │
 ├── _shared/                 ← 모든 프로젝트 공용 리소스
-│   ├── skills/              ← 범용 스킬 (18개)
-│   ├── agents/              ← 범용 에이전트 (11개)
+│   ├── REGISTRY.md          ← ★ 전체 리소스 마스터 카탈로그 (65+ 리소스)
+│   ├── AI_TOOLS_MAP.md      ← AI 도구 설정 맵 (전체 도구/설정 위치 정리)
+│   ├── skills/              ← 워크스페이스 레벨 스킬 (23개, 컨설팅+경영+학습)
+│   ├── agents/              ← Claude Code 에이전트 (12개)
 │   ├── workflows/           ← Antigravity 워크플로우 (7개)
 │   ├── commands/            ← Claude Code 커맨드 (3개)
 │   ├── templates/           ← 프로젝트 템플릿
-│   └── prompts/             ← 자주 쓰는 프롬프트
+│   └── prompts/             ← ★ 크로스도구 프롬프트 라이브러리
+│       ├── common/          ← 재사용 프롬프트 조각 (역할, 톤, 규칙)
+│       ├── claude-web/      ← Claude Web Projects용 시스템 지침
+│       └── cowork/          ← Claude Desktop(Cowork)용 프롬프트
 │
 ├── projects/                ← 활성 프로젝트
-│   └── P2026-001_장애인_B2B사업/
+│   ├── P2026-001_장애인_B2B사업/
+│   ├── P2026-002_컨소시엄_AX진단_컨설팅도구/
+│   ├── P2026-003_선도기업_직무디자인_연구용역/
+│   └── P2026-004_나라장터모니터링_웹앱/
 │
 ├── archive/                 ← 완료된 프로젝트
 └── outputs/                 ← 최종 산출물 모음
@@ -30,7 +41,56 @@ workspace/
 
 ---
 
-## 2. 프로젝트 코드 체계
+## 2. 스킬/에이전트 관리 체계 (2-Tier 원칙)
+
+### 핵심 원칙: Single Source of Truth
+
+스킬과 에이전트는 **두 곳에 나뉘어 관리**되며, 각각 다른 역할을 합니다.
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  Tier 1: 유저 레벨 (전역)                                │
+│  위치: ~/.claude/skills/ (22개)                           │
+│  적용: 모든 프로젝트에서 자동 로드                          │
+│  성격: AI 도구, 개발, 콘텐츠 생성                          │
+│  예시: card-news-generator, codex, flutter-init 등        │
+├─────────────────────────────────────────────────────────┤
+│  Tier 2: 워크스페이스 레벨 (프로젝트용)                     │
+│  위치: workspace/_shared/skills/ (19개)                    │
+│  적용: 프로젝트 생성 시 복사/심링크로 배포                   │
+│  성격: 컨설팅 업무, 문서 제작                               │
+│  예시: consulting-report, job-analysis, pptx 등           │
+└─────────────────────────────────────────────────────────┘
+```
+
+### 수정 시 원칙
+
+| 대상 | 원본 위치 | 수정 방법 |
+|------|-----------|-----------|
+| AI/개발 스킬 | `~/.claude/skills/` | 여기서 직접 수정 → 전역 즉시 반영 |
+| 컨설팅 스킬 | `workspace/_shared/skills/` | 여기서 수정 → 기존 프로젝트에는 수동 배포 필요 |
+| 에이전트 | `workspace/_shared/agents/` | 여기서 수정 → 기존 프로젝트에는 수동 배포 필요 |
+| 워크플로우 | `workspace/_shared/workflows/` | 여기서 수정 → Antigravity 프로젝트에 수동 배포 |
+| 커맨드 | `~/.claude/commands/` (유저) | 전역 적용 |
+| 커맨드 | `workspace/_shared/commands/` (워크스페이스) | 프로젝트 배포 시 포함 |
+
+### 새 스킬 추가 시 판단 기준
+
+```
+Q: 이 스킬은 모든 프로젝트에서 항상 필요한가?
+  YES → Tier 1: ~/.claude/skills/에 추가
+  NO  → Tier 2: workspace/_shared/skills/에 추가
+
+Q: 컨설팅 업무 전용인가, AI/개발 범용인가?
+  컨설팅 → Tier 2
+  AI/개발 → Tier 1
+```
+
+> **상세 목록**: `_shared/AI_TOOLS_MAP.md` 참조
+
+---
+
+## 3. 프로젝트 코드 체계
 
 ### 형식: `P{년도}-{일련번호}_{프로젝트명}`
 
@@ -41,11 +101,6 @@ workspace/
 | 일련번호 | 해당 연도 내 순차 번호 (3자리) | 001, 002, ... |
 | 프로젝트명 | 간결한 한글/영문 프로젝트명 | 장애인_B2B사업 |
 
-### 예시
-- `P2026-001_장애인_B2B사업`
-- `P2026-002_한화연_산업전환진단`
-- `P2026-003_진테크_일터혁신`
-
 ### 규칙
 - 일련번호는 `new-project.cmd` 또는 `new-project.sh` 사용 시 자동 부여
 - 프로젝트명에 공백 대신 언더스코어(`_`) 사용
@@ -53,7 +108,7 @@ workspace/
 
 ---
 
-## 3. 프로젝트 폴더 구조
+## 4. 프로젝트 폴더 구조
 
 새 프로젝트 생성 시 아래 구조가 자동 적용됩니다:
 
@@ -75,7 +130,7 @@ P2026-XXX_프로젝트명/
 
 ---
 
-## 4. 파일 저장 규칙
+## 5. 파일 저장 규칙
 
 ### 어디에 저장하나?
 
@@ -112,9 +167,9 @@ P2026-XXX_프로젝트명/
 
 ---
 
-## 5. 공유 리소스 활용
+## 6. 공유 리소스 목록
 
-### 스킬 (18개)
+### Tier 2 스킬 (워크스페이스 레벨, 23개)
 
 **컨설팅 업무용:**
 | 스킬명 | 용도 |
@@ -137,7 +192,6 @@ P2026-XXX_프로젝트명/
 **개발/기술용:**
 | 스킬명 | 용도 |
 |--------|------|
-| frontend-design | 프론트엔드 UI 설계 |
 | web-design-guidelines | 웹 디자인 가이드 |
 | fastapi-backend-guidelines | FastAPI 백엔드 |
 | nextjs-frontend-guidelines | Next.js 프론트엔드 |
@@ -145,8 +199,21 @@ P2026-XXX_프로젝트명/
 | pytest-backend-testing | 백엔드 테스트 |
 | error-tracking | 에러 추적 |
 | skill-developer | 새 스킬 개발 |
+| workspace-management | 워크스페이스 관리 |
 
-### 에이전트 (11개) — Claude Code 전용
+**HR·경영·학습 (Phase 2 신규):**
+| 스킬명 | 용도 |
+|--------|------|
+| hr-consulting | HRM/HRD/OD 종합 컨설팅 프레임워크 |
+| business-planning | PDCA 기반 사업 기획·실행·보완 |
+| org-diagnosis | 조직진단·조직설계·조직문화·변화관리 |
+| strategic-management | 경영전략 수립·실행 (BSC/OKR) |
+| knowledge-management | MBA/AI 학습·지식 축적·관리 |
+
+> **Tier 1 스킬 (유저 레벨, 22개)** 목록은 `_shared/AI_TOOLS_MAP.md` 참조
+> **전체 리소스 목록**: `_shared/REGISTRY.md` 참조
+
+### 에이전트 (12개) — 모든 도구 (Claude Code + OpenCode + Antigravity)
 
 | 에이전트 | 용도 |
 |----------|------|
@@ -161,8 +228,9 @@ P2026-XXX_프로젝트명/
 | auth-route-debugger | 인증 라우트 디버깅 |
 | auth-route-tester | 인증 라우트 테스트 |
 | refactor-planner | 리팩토링 계획 |
+| workspace-manager | 워크스페이스 관리 |
 
-### 워크플로우 (7개) — Antigravity 전용
+### 워크플로우 (7개) — 모든 도구 (Antigravity + Claude Code + OpenCode)
 
 | 워크플로우 | 용도 |
 |------------|------|
@@ -176,14 +244,16 @@ P2026-XXX_프로젝트명/
 
 ---
 
-## 6. AI 도구별 작업 방법
+## 7. AI 도구별 작업 방법
 
 ### Claude Code
 ```bash
 cd ~/workspace/projects/P2026-001_장애인_B2B사업
 claude
 ```
-- `.claude/skills/`, `.claude/agents/`, `CLAUDE.md`를 자동 인식
+- Tier 1 스킬(`~/.claude/skills/`)은 자동 로드
+- 프로젝트 내 `.claude/skills/`(Tier 2 배포본)도 자동 인식
+- `CLAUDE.md`를 프로젝트 컨텍스트로 자동 인식
 - 슬래시 커맨드로 `.claude/commands/` 내 커맨드 사용 가능
 
 ### Antigravity
@@ -196,7 +266,7 @@ claude
 
 ---
 
-## 7. 프로젝트 생명주기
+## 8. 프로젝트 생명주기
 
 ```
 생성 → 진행 → 완료 → 아카이브
@@ -223,28 +293,36 @@ mv projects/P2026-001_장애인_B2B사업 archive/
 
 ---
 
-## 8. 새 스킬/에이전트 추가 방법
+## 9. 새 스킬/에이전트 추가 방법
 
 ### 스킬 추가
+
+**Tier 1 (전역 AI/개발 스킬):**
 ```
-_shared/skills/새스킬명/SKILL.md   ← 파일 생성
+~/.claude/skills/새스킬명/SKILL.md   ← 파일 생성
 ```
-이후 `new-project.cmd`로 생성하는 프로젝트에 자동 포함됩니다.
-기존 프로젝트에 추가하려면 해당 프로젝트의 `.claude/skills/`나 `.agent/skills/`에 직접 복사하세요.
+→ 모든 프로젝트에서 즉시 사용 가능
+
+**Tier 2 (워크스페이스 컨설팅 스킬):**
+```
+workspace/_shared/skills/새스킬명/SKILL.md   ← 파일 생성
+```
+→ 이후 `new-project.cmd`로 생성하는 프로젝트에 자동 포함
+→ 기존 프로젝트에 추가하려면 해당 프로젝트의 `.claude/skills/`에 직접 복사
 
 ### 에이전트 추가
 ```
-_shared/agents/새에이전트.md   ← 파일 생성
+workspace/_shared/agents/새에이전트.md   ← 파일 생성
 ```
 
 ### 워크플로우 추가
 ```
-_shared/workflows/새워크플로우.md   ← 파일 생성
+workspace/_shared/workflows/새워크플로우.md   ← 파일 생성
 ```
 
 ---
 
-## 9. 워크스페이스 매니저 에이전트
+## 10. 워크스페이스 매니저 에이전트
 
 워크스페이스 전체를 관리하는 전용 에이전트가 `_shared/agents/workspace-manager.md`에 있습니다.
 
@@ -279,10 +357,55 @@ _shared/workflows/새워크플로우.md   ← 파일 생성
 
 ---
 
-## 10. 주의사항
+## 11. 홈 디렉토리 관리
+
+### AI 도구 설정 폴더 맵
+
+홈 디렉토리(`C:\Users\eykis\`)에는 여러 AI 도구의 설정 폴더가 존재합니다.
+각 폴더의 역할과 관리 방법은 `_shared/AI_TOOLS_MAP.md`에 상세 기술되어 있습니다.
+
+```
+~/ (홈 디렉토리)
+├── .claude/        ← Claude Code 설정 + Tier 1 스킬 (건드리지 않기)
+├── .claude.json    ← Claude Code 전역 인증 (삭제 금지)
+├── .opencode/      ← OhMyClaudeCode 런타임 (건드리지 않기)
+├── .config/        ← OpenCode 설정
+├── .gemini/        ← Gemini 설정
+├── .antigravity/   ← Antigravity 설정
+├── .agents/        ← ⚠️ 정리 필요 (아래 참조)
+├── .copilot/       ← GitHub Copilot
+├── .vscode/        ← VS Code
+└── workspace/      ← ★ 모든 작업은 여기서 수행
+```
+
+### 정리 완료 항목 (2026-03-19)
+
+| 파일/폴더 | 조치 | 결과 |
+|-----------|------|------|
+| `~/.agents/agents.md-main/` | `workspace/archive/`로 이관 | ✅ 완료 |
+| `~/.agents/oh-my-openagent-dev/` | `workspace/archive/`로 이관 | ✅ 완료 |
+| `~/.agents/workflows/` | 중복본 삭제 | ✅ 완료 |
+| `~/nul` | 불필요 파일 삭제 | ✅ 완료 |
+| `_shared/skills/frontend-design/` | Tier 1 중복 삭제 | ✅ 완료 |
+| `_shared/AI_도구_폴더관리_가이드.md` | AI_TOOLS_MAP.md로 대체 | ✅ 완료 |
+
+### 정기 관리 체크리스트
+
+| 주기 | 작업 |
+|------|------|
+| 수시 | 프로젝트 완료 시 `projects/` → `archive/` 이관 |
+| 월 1회 | `~/.claude/cache/`, `~/.claude/debug/` 정리 |
+| 분기 1회 | 스킬/에이전트 목록 최신화, 미사용 스킬 정리 |
+| 분기 1회 | AI_TOOLS_MAP.md 업데이트 |
+| 연 1회 | `archive/` 오래된 프로젝트 외부 백업 |
+
+---
+
+## 12. 주의사항
 
 - **홈 폴더에서 AI 도구 실행 금지** — 반드시 프로젝트 폴더로 이동 후 실행
 - **OneDrive에 AI 설정 폴더를 넣지 마세요** — `.claude/`, `.agent/` 등은 동기화 충돌 위험
 - **민감 정보(API 키, 토큰)는 절대 프로젝트 폴더에 저장 금지** — 1Password 등 별도 관리
 - **`_shared/`는 직접 수정 가능** — 스킬 내용을 개선하면 이후 모든 프로젝트에 반영
 - **`archive/`의 파일은 수정하지 마세요** — 필요 시 `projects/`로 복사 후 작업
+- **스킬 중복 금지** — Tier 1과 Tier 2에 같은 스킬이 있으면 혼란 발생 (AI_TOOLS_MAP.md에서 관리)
