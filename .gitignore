@@ -26,6 +26,16 @@ projects/*/.agent/workflows/
 # === 워크스페이스 루트 .claude (프로젝트 레벨 아닌 것) ===
 .claude/
 
+# === archive 내 레거시 프로젝트 (git submodule 충돌 방지) ===
+archive/_archived_*/
+archive/agents.md-main/
+archive/antigravity/
+archive/claude-code-harness/
+archive/oh-my-openagent-dev/
+
+# === 폰트 파일 ===
+.fonts/
+
 # === OS/에디터 ===
 .DS_Store
 Thumbs.db
