@@ -8,7 +8,7 @@ REM 예시 결과: P2026-002_한화연_산업전환진단
 REM ============================================
 
 set "WORKSPACE=%~dp0"
-set "TEMPLATE=%WORKSPACE%_shared\templates\project-template"
+set "TEMPLATE=%WORKSPACE%_core\templates\project-template"
 
 if "%~1"=="" (
     echo 사용법: new-project.cmd "프로젝트명"
@@ -50,21 +50,21 @@ REM 템플릿 복사
 xcopy "%TEMPLATE%" "!PROJECT_DIR!" /E /I /Q >nul
 
 REM 공유 스킬을 프로젝트에 복사
-xcopy "%WORKSPACE%_shared\skills" "!PROJECT_DIR!\.claude\skills" /E /I /Q >nul 2>nul
-xcopy "%WORKSPACE%_shared\skills" "!PROJECT_DIR!\.agent\skills" /E /I /Q >nul 2>nul
+xcopy "%WORKSPACE%_core\skills" "!PROJECT_DIR!\.claude\skills" /E /I /Q >nul 2>nul
+xcopy "%WORKSPACE%_core\skills" "!PROJECT_DIR!\.agent\skills" /E /I /Q >nul 2>nul
 
 REM 공유 에이전트 교차 배포 (Claude Code + Antigravity)
 if not exist "!PROJECT_DIR!\.claude\agents" mkdir "!PROJECT_DIR!\.claude\agents"
-copy "%WORKSPACE%_shared\agents\*.md" "!PROJECT_DIR!\.claude\agents\" /Y >nul 2>nul
-copy "%WORKSPACE%_shared\agents\*.md" "!PROJECT_DIR!\.agent\workflows\" /Y >nul 2>nul
+copy "%WORKSPACE%_core\agents\*.md" "!PROJECT_DIR!\.claude\agents\" /Y >nul 2>nul
+copy "%WORKSPACE%_core\agents\*.md" "!PROJECT_DIR!\.agent\workflows\" /Y >nul 2>nul
 
 REM 공유 커맨드 복사
-copy "%WORKSPACE%_shared\commands\*.md" "!PROJECT_DIR!\.claude\commands\" /Y >nul 2>nul
+copy "%WORKSPACE%_core\commands\*.md" "!PROJECT_DIR!\.claude\commands\" /Y >nul 2>nul
 
 REM 공유 워크플로우 교차 배포 (Antigravity + Claude Code)
 if not exist "!PROJECT_DIR!\.agent\workflows" mkdir "!PROJECT_DIR!\.agent\workflows"
-copy "%WORKSPACE%_shared\workflows\*.md" "!PROJECT_DIR!\.agent\workflows\" /Y >nul 2>nul
-copy "%WORKSPACE%_shared\workflows\*.md" "!PROJECT_DIR!\.claude\agents\" /Y >nul 2>nul
+copy "%WORKSPACE%_core\workflows\*.md" "!PROJECT_DIR!\.agent\workflows\" /Y >nul 2>nul
+copy "%WORKSPACE%_core\workflows\*.md" "!PROJECT_DIR!\.claude\agents\" /Y >nul 2>nul
 
 echo.
 echo ■ 프로젝트 생성: !FULL_NAME!

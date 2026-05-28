@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 :: ============================================================
 :: sync-tools.cmd — AI 리소스 동기화 스크립트
-:: workspace/_shared/ → 모든 활성 프로젝트에 교차 배포
+:: _core/ → 모든 활성 프로젝트에 교차 배포
 ::
 :: 핵심 원칙: 모든 에이전트/워크플로우가 모든 도구에서 사용 가능
 ::   agents/   → .claude/agents/ (Claude Code/OpenCode)
@@ -16,18 +16,18 @@ setlocal enabledelayedexpansion
 echo.
 echo ========================================
 echo   AI 리소스 동기화 도구 (크로스도구)
-echo   workspace/_shared/ → projects/
+echo   _core/ → projects/
 echo   모든 에이전트가 모든 도구에서 사용 가능
 echo ========================================
 echo.
 
 set "WORKSPACE=%~dp0"
-set "SHARED=%WORKSPACE%_shared"
+set "SHARED=%WORKSPACE%_core"
 set "PROJECTS=%WORKSPACE%projects"
 
 :: 공유 리소스 존재 확인
 if not exist "%SHARED%" (
-    echo [오류] _shared/ 폴더를 찾을 수 없습니다.
+    echo [오류] _core/ 폴더를 찾을 수 없습니다.
     exit /b 1
 )
 
@@ -116,12 +116,12 @@ echo   %PROJECT_COUNT%개 프로젝트에 배포됨
 echo ========================================
 echo.
 echo 배포 내용 (모든 도구에서 사용 가능):
-echo   - 스킬 (23개):     _shared/skills/     → .claude/skills/ + .agent/skills/
-echo   - 에이전트 (12개):  _shared/agents/     → .claude/agents/ + .agent/workflows/
-echo   - 워크플로우 (7개): _shared/workflows/  → .agent/workflows/ + .claude/agents/
-echo   - 커맨드 (3개):     _shared/commands/   → .claude/commands/
+echo   - 스킬 (25개):     _core/skills/     → .claude/skills/ + .agent/skills/
+echo   - 에이전트 (21개):  _core/agents/     → .claude/agents/ + .agent/workflows/
+echo   - 워크플로우 (9개): _core/workflows/  → .agent/workflows/ + .claude/agents/
+echo   - 커맨드:           _core/commands/   → .claude/commands/
 echo.
-echo 결과: 프로젝트 내 .claude/agents/에 19개, .agent/workflows/에 19개 배포
+echo 결과: 프로젝트 내 .claude/agents/에 30개, .agent/workflows/에 30개 배포
 echo.
 
 endlocal

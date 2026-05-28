@@ -15,7 +15,7 @@ secrets.*
 .claude/todos/
 .claude/transcripts/
 
-# === 프로젝트별 sync 복사본 (원본: _shared/) ===
+# === 프로젝트별 sync 복사본 (원본: _core/) ===
 # sync-tools.cmd 실행으로 복원 가능 → GitHub에 중복 저장 불필요
 projects/*/.claude/skills/
 projects/*/.claude/agents/
@@ -25,6 +25,9 @@ projects/*/.agent/workflows/
 
 # === 워크스페이스 루트 .claude (프로젝트 레벨 아닌 것) ===
 .claude/
+
+# === 데스크탑 셋업 (OneDrive로 동기화되므로 git 불필요) ===
+.desktop-setup/
 
 # === archive 내 레거시 프로젝트 (git submodule 충돌 방지) ===
 archive/_archived_*/
@@ -61,3 +64,4 @@ __pycache__/
 # === lock 파일 ===
 .~lock.*
 ~$*
+nul

@@ -29,15 +29,15 @@ echo "=== 아카이브 ===" && ls -1 workspace/archive/ 2>/dev/null
 
 **리소스 인벤토리**
 ```bash
-echo "스킬:" && ls -1 workspace/_shared/skills/ 2>/dev/null
-echo "에이전트:" && ls -1 workspace/_shared/agents/ 2>/dev/null
-echo "워크플로우:" && ls -1 workspace/_shared/workflows/ 2>/dev/null
-echo "커맨드:" && ls -1 workspace/_shared/commands/ 2>/dev/null
+echo "스킬:" && ls -1 _core/skills/ 2>/dev/null
+echo "에이전트:" && ls -1 _core/agents/ 2>/dev/null
+echo "워크플로우:" && ls -1 _core/workflows/ 2>/dev/null
+echo "커맨드:" && ls -1 _core/commands/ 2>/dev/null
 ```
 
 **디스크 사용량**
 ```bash
-du -sh workspace/ workspace/projects/ workspace/archive/ workspace/outputs/ workspace/_shared/ 2>/dev/null
+du -sh workspace/ workspace/projects/ workspace/archive/ workspace/outputs/ _core/ 2>/dev/null
 ```
 
 ### 🛠️ 프로젝트 관리
@@ -83,16 +83,16 @@ done
 
 ### 🔄 리소스 동기화
 
-**_shared/ → 모든 활성 프로젝트 배포**
+**_core/ → 모든 활성 프로젝트 배포**
 ```bash
 for proj in workspace/projects/P*/; do
   mkdir -p "$proj/.claude/skills" "$proj/.claude/agents" "$proj/.claude/commands"
   mkdir -p "$proj/.agent/skills" "$proj/.agent/workflows"
-  cp -r workspace/_shared/skills/* "$proj/.claude/skills/" 2>/dev/null
-  cp -r workspace/_shared/skills/* "$proj/.agent/skills/" 2>/dev/null
-  cp workspace/_shared/agents/*.md "$proj/.claude/agents/" 2>/dev/null
-  cp workspace/_shared/workflows/*.md "$proj/.agent/workflows/" 2>/dev/null
-  cp workspace/_shared/commands/*.md "$proj/.claude/commands/" 2>/dev/null
+  cp -r _core/skills/* "$proj/.claude/skills/" 2>/dev/null
+  cp -r _core/skills/* "$proj/.agent/skills/" 2>/dev/null
+  cp _core/agents/*.md "$proj/.claude/agents/" 2>/dev/null
+  cp _core/workflows/*.md "$proj/.agent/workflows/" 2>/dev/null
+  cp _core/commands/*.md "$proj/.claude/commands/" 2>/dev/null
   echo "✅ $(basename $proj) 동기화 완료"
 done
 ```
@@ -115,7 +115,7 @@ for proj in workspace/projects/P*/; do
       echo "  ✅ $dir/"
     fi
   done
-  [ ! -f "$proj/CLAUDE.md" ] && cp workspace/_shared/templates/project-template/CLAUDE.md "$proj/" && echo "  🔧 CLAUDE.md 복사됨"
+  [ ! -f "$proj/CLAUDE.md" ] && cp _core/templates/project-template/CLAUDE.md "$proj/" && echo "  🔧 CLAUDE.md 복사됨"
 done
 
 # 루트 미분류 파일

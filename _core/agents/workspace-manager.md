@@ -41,7 +41,7 @@ Read: workspace/WORKSPACE_GUIDE.md     ← 운영 규칙 전체
 절차:
 1. `workspace/projects/` 내 기존 프로젝트 번호 확인
 2. 다음 일련번호 산출 (해당 연도 기준, 3자리 zero-pad)
-3. `workspace/_shared/templates/project-template/` 복사
+3. `_core/templates/project-template/` 복사
 4. CLAUDE.md에 프로젝트 정보 기입
 5. 공유 리소스를 `.claude/`, `.agent/` 폴더에 연결
 
@@ -52,7 +52,7 @@ NEXT=$(ls workspace/projects/ | grep "^P${YEAR}" | sort -t'-' -k2 -n | tail -1 |
 [ -z "$NEXT" ] && NEXT="001"
 PROJECT="P${YEAR}-${NEXT}_프로젝트명"
 
-cp -r workspace/_shared/templates/project-template "workspace/projects/${PROJECT}"
+cp -r _core/templates/project-template "workspace/projects/${PROJECT}"
 ```
 
 ### 1-2. 프로젝트 아카이빙
@@ -138,27 +138,27 @@ done
 현재 보유 리소스를 항상 파악:
 
 ```bash
-echo "=== 스킬 ($(ls -d workspace/_shared/skills/*/ 2>/dev/null | wc -l)개) ==="
-ls -d workspace/_shared/skills/*/ 2>/dev/null | xargs -I{} basename {}
+echo "=== 스킬 ($(ls -d _core/skills/*/ 2>/dev/null | wc -l)개) ==="
+ls -d _core/skills/*/ 2>/dev/null | xargs -I{} basename {}
 
-echo "=== 에이전트 ($(ls workspace/_shared/agents/*.md 2>/dev/null | wc -l)개) ==="
-ls workspace/_shared/agents/*.md 2>/dev/null | xargs -I{} basename {}
+echo "=== 에이전트 ($(ls _core/agents/*.md 2>/dev/null | wc -l)개) ==="
+ls _core/agents/*.md 2>/dev/null | xargs -I{} basename {}
 
-echo "=== 워크플로우 ($(ls workspace/_shared/workflows/*.md 2>/dev/null | wc -l)개) ==="
-ls workspace/_shared/workflows/*.md 2>/dev/null | xargs -I{} basename {}
+echo "=== 워크플로우 ($(ls _core/workflows/*.md 2>/dev/null | wc -l)개) ==="
+ls _core/workflows/*.md 2>/dev/null | xargs -I{} basename {}
 
-echo "=== 커맨드 ($(ls workspace/_shared/commands/*.md 2>/dev/null | wc -l)개) ==="
-ls workspace/_shared/commands/*.md 2>/dev/null | xargs -I{} basename {}
+echo "=== 커맨드 ($(ls _core/commands/*.md 2>/dev/null | wc -l)개) ==="
+ls _core/commands/*.md 2>/dev/null | xargs -I{} basename {}
 ```
 
 ### 3-2. 새 스킬 추가
 
 ```bash
 # 1. 스킬 폴더 생성
-mkdir -p workspace/_shared/skills/{스킬명}/
+mkdir -p _core/skills/{스킬명}/
 
 # 2. SKILL.md 작성 (필수 구조)
-cat > workspace/_shared/skills/{스킬명}/SKILL.md << 'EOF'
+cat > _core/skills/{스킬명}/SKILL.md << 'EOF'
 # {스킬 이름}
 
 ## 목적
@@ -180,8 +180,8 @@ EOF
 
 # 3. 활성 프로젝트에 배포
 for proj in workspace/projects/P*/; do
-  cp -r workspace/_shared/skills/{스킬명} "$proj/.claude/skills/" 2>/dev/null
-  cp -r workspace/_shared/skills/{스킬명} "$proj/.agent/skills/" 2>/dev/null
+  cp -r _core/skills/{스킬명} "$proj/.claude/skills/" 2>/dev/null
+  cp -r _core/skills/{스킬명} "$proj/.agent/skills/" 2>/dev/null
 done
 ```
 
@@ -189,7 +189,7 @@ done
 
 ```bash
 # 1. 에이전트 파일 생성
-cat > workspace/_shared/agents/{에이전트명}.md << 'EOF'
+cat > _core/agents/{에이전트명}.md << 'EOF'
 ---
 name: {에이전트명}
 description: {한줄 설명}
@@ -208,7 +208,7 @@ EOF
 
 # 2. 활성 프로젝트에 배포
 for proj in workspace/projects/P*/; do
-  cp workspace/_shared/agents/{에이전트명}.md "$proj/.claude/agents/" 2>/dev/null
+  cp _core/agents/{에이전트명}.md "$proj/.claude/agents/" 2>/dev/null
 done
 ```
 
@@ -219,14 +219,14 @@ done
 for proj in workspace/projects/P*/; do
   echo "동기화: $(basename $proj)"
   # 스킬 동기화
-  cp -r workspace/_shared/skills/* "$proj/.claude/skills/" 2>/dev/null
-  cp -r workspace/_shared/skills/* "$proj/.agent/skills/" 2>/dev/null
+  cp -r _core/skills/* "$proj/.claude/skills/" 2>/dev/null
+  cp -r _core/skills/* "$proj/.agent/skills/" 2>/dev/null
   # 에이전트 동기화
-  cp workspace/_shared/agents/*.md "$proj/.claude/agents/" 2>/dev/null
+  cp _core/agents/*.md "$proj/.claude/agents/" 2>/dev/null
   # 워크플로우 동기화
-  cp workspace/_shared/workflows/*.md "$proj/.agent/workflows/" 2>/dev/null
+  cp _core/workflows/*.md "$proj/.agent/workflows/" 2>/dev/null
   # 커맨드 동기화
-  cp workspace/_shared/commands/*.md "$proj/.claude/commands/" 2>/dev/null
+  cp _core/commands/*.md "$proj/.claude/commands/" 2>/dev/null
 done
 ```
 
@@ -294,10 +294,10 @@ ARCHIVED=$(ls -d workspace/archive/P* 2>/dev/null | wc -l)
 echo "📁 프로젝트: 활성 ${ACTIVE}개, 아카이브 ${ARCHIVED}개"
 
 # 2. 공유 리소스 현황
-SKILLS=$(ls -d workspace/_shared/skills/*/ 2>/dev/null | wc -l)
-AGENTS=$(ls workspace/_shared/agents/*.md 2>/dev/null | wc -l)
-WORKFLOWS=$(ls workspace/_shared/workflows/*.md 2>/dev/null | wc -l)
-COMMANDS=$(ls workspace/_shared/commands/*.md 2>/dev/null | wc -l)
+SKILLS=$(ls -d _core/skills/*/ 2>/dev/null | wc -l)
+AGENTS=$(ls _core/agents/*.md 2>/dev/null | wc -l)
+WORKFLOWS=$(ls _core/workflows/*.md 2>/dev/null | wc -l)
+COMMANDS=$(ls _core/commands/*.md 2>/dev/null | wc -l)
 echo "🔧 리소스: 스킬 ${SKILLS}, 에이전트 ${AGENTS}, 워크플로우 ${WORKFLOWS}, 커맨드 ${COMMANDS}"
 
 # 3. 산출물 현황
@@ -358,7 +358,7 @@ echo "=========================================="
 | "워크스페이스 점검해" | 헬스체크 전체 실행 |
 | "산출물 정리해" | 각 프로젝트 outputs → 전역 outputs 동기화 |
 | "스킬 추가해" | 새 스킬 생성 + 전 프로젝트 배포 |
-| "리소스 동기화" | _shared/ → 모든 활성 프로젝트에 최신 리소스 배포 |
+| "리소스 동기화" | _core/ → 모든 활성 프로젝트에 최신 리소스 배포 |
 | "이 프로젝트 아카이빙해" | 프로젝트를 archive/로 이동 |
 | "폴더 정리해" | 미분류 파일 감지 + 정리 제안 |
 | "리소스 목록 보여줘" | 스킬/에이전트/워크플로우/커맨드 전체 인벤토리 |
@@ -369,6 +369,6 @@ echo "=========================================="
 
 - **삭제 전 반드시 확인**: 파일이나 폴더 삭제 시 사용자 확인 필수
 - **아카이빙 ≠ 삭제**: archive/로 이동은 보존이며, 삭제가 아님
-- **공유 리소스 수정 시 동기화**: _shared/ 수정 후 반드시 활성 프로젝트에 동기화
+- **공유 리소스 수정 시 동기화**: _core/ 수정 후 반드시 활성 프로젝트에 동기화
 - **산출물 원본 보존**: 전역 outputs/에 복사하되 프로젝트 내 원본은 유지
 - **코드 번호 중복 금지**: 반드시 기존 번호 확인 후 다음 번호 부여

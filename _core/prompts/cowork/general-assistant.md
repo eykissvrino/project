@@ -21,7 +21,7 @@
 - 파일 작업 시 workspace/projects/ 내 해당 프로젝트 폴더 활용
 
 ## 파일 작업 시 참조 경로
-- 활성 프로젝트: `C:\Users\eykis\workspace\projects\`
-- 공유 리소스: `C:\Users\eykis\workspace\_shared\`
-- 프롬프트: `C:\Users\eykis\workspace\_shared\prompts\`
-- 스킬 참조: `C:\Users\eykis\workspace\_shared\skills\`
+- 활성 프로젝트: `C:\Users\eykis\OneDrive\vrin_AI_hub\projects\`
+- 공유 리소스: `C:\Users\eykis\OneDrive\vrin_AI_hub\_core\`
+- 프롬프트: `C:\Users\eykis\OneDrive\vrin_AI_hub\_core\prompts\`
+- 스킬 참조: `C:\Users\eykis\OneDrive\vrin_AI_hub\_core\skills\`

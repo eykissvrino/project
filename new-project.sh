@@ -7,7 +7,7 @@
 # ============================================
 
 WORKSPACE="$(cd "$(dirname "$0")" && pwd)"
-TEMPLATE="$WORKSPACE/_shared/templates/project-template"
+TEMPLATE="$WORKSPACE/_core/templates/project-template"
 
 if [ -z "$1" ]; then
     echo "사용법: ./new-project.sh \"프로젝트명\""
@@ -49,7 +49,7 @@ cp -r "$TEMPLATE" "$PROJECT_DIR"
 sed -i "s/\[프로젝트명\]/$FULL_NAME/g" "$PROJECT_DIR/CLAUDE.md"
 
 # 공유 스킬 → .claude/skills/ 링크
-for skill_dir in "$WORKSPACE/_shared/skills/"*/; do
+for skill_dir in "$WORKSPACE/_core/skills/"*/; do
     skill_name=$(basename "$skill_dir")
     ln -sf "$skill_dir" "$PROJECT_DIR/.claude/skills/$skill_name"
 done
@@ -57,24 +57,24 @@ done
 # 공유 에이전트 → 교차 배포 (.claude/agents/ + .agent/workflows/)
 mkdir -p "$PROJECT_DIR/.claude/agents"
 mkdir -p "$PROJECT_DIR/.agent/workflows"
-for agent_file in "$WORKSPACE/_shared/agents/"*.md; do
+for agent_file in "$WORKSPACE/_core/agents/"*.md; do
     ln -sf "$agent_file" "$PROJECT_DIR/.claude/agents/$(basename "$agent_file")"
     ln -sf "$agent_file" "$PROJECT_DIR/.agent/workflows/$(basename "$agent_file")"
 done
 
 # 공유 커맨드 → .claude/commands/ 링크
-for cmd_file in "$WORKSPACE/_shared/commands/"*.md; do
+for cmd_file in "$WORKSPACE/_core/commands/"*.md; do
     ln -sf "$cmd_file" "$PROJECT_DIR/.claude/commands/$(basename "$cmd_file")"
 done
 
 # 공유 워크플로우 → 교차 배포 (.agent/workflows/ + .claude/agents/)
-for wf_file in "$WORKSPACE/_shared/workflows/"*.md; do
+for wf_file in "$WORKSPACE/_core/workflows/"*.md; do
     ln -sf "$wf_file" "$PROJECT_DIR/.agent/workflows/$(basename "$wf_file")"
     ln -sf "$wf_file" "$PROJECT_DIR/.claude/agents/$(basename "$wf_file")"
 done
 
 # 공유 스킬 → .agent/skills/ 링크
-for skill_dir in "$WORKSPACE/_shared/skills/"*/; do
+for skill_dir in "$WORKSPACE/_core/skills/"*/; do
     skill_name=$(basename "$skill_dir")
     ln -sf "$skill_dir" "$PROJECT_DIR/.agent/skills/$skill_name"
 done

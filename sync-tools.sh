@@ -1,23 +1,23 @@
 #!/bin/bash
 # ============================================================
 # sync-tools.sh — AI Resource Cross-Deploy Script
-# workspace/_shared/ -> All active projects (cross-tool)
+# workspace/_core/ -> All active projects (cross-tool)
 # All agents/workflows available in ALL tools
 # ============================================================
 
 WORKSPACE="$(cd "$(dirname "$0")" && pwd)"
-SHARED="$WORKSPACE/_shared"
+SHARED="$WORKSPACE/_core"
 PROJECTS="$WORKSPACE/projects"
 
 echo ""
 echo "========================================"
 echo "  AI Resource Sync (Cross-Tool Deploy)"
-echo "  _shared/ -> projects/"
+echo "  _core/ -> projects/"
 echo "========================================"
 echo ""
 
 if [ ! -d "$SHARED" ]; then
-    echo "[ERROR] _shared/ folder not found."
+    echo "[ERROR] _core/ folder not found."
     exit 1
 fi
 

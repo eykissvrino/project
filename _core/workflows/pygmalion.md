@@ -107,7 +107,7 @@ AI 에이전트와 스킬의 품질을 **시간이 지남에 따라 자동으로
 ### 관찰 근거: [관찰 데이터 참조]
 
 ### 대상
-- 파일: `_shared/skills/consulting-report/SKILL.md`
+- 파일: `_core/skills/consulting-report/SKILL.md`
 - 변경 유형: 스킬 보강
 
 ### 현재 상태
@@ -144,7 +144,7 @@ AI 에이전트와 스킬의 품질을 **시간이 지남에 따라 자동으로
 ### 3-5단계: 승격 또는 폐기 (Promote or Discard)
 
 #### 승격 (3개 기준 모두 충족 시)
-1. 개선안을 `_shared/` 원본에 적용
+1. 개선안을 `_core/` 원본에 적용
 2. `sync-tools.cmd`로 전 프로젝트에 배포
 3. 변경 이력을 REGISTRY.md에 기록
 4. Git commit & push
@@ -187,7 +187,7 @@ AI 에이전트와 스킬의 품질을 **시간이 지남에 따라 자동으로
                               [그림자 평가 → 승격]
                                       │
                                       ▼
-                              [_shared/ 업데이트]
+                              [_core/ 업데이트]
                                       │
                                       ▼
                               [sync-tools.cmd 배포]
@@ -198,9 +198,9 @@ AI 에이전트와 스킬의 품질을 **시간이 지남에 따라 자동으로
 
 | 참조 문서 | 역할 |
 |----------|------|
-| `_shared/workflows/ralph-loop.md` | 실패 데이터 공급원 |
-| `_shared/quality-contracts/QUALITY_CONTRACT.md` | 품질 기준 원본 (개선 대상) |
-| `_shared/REGISTRY.md` | 변경 이력 기록 |
+| `_core/workflows/ralph-loop.md` | 실패 데이터 공급원 |
+| `_core/quality-contracts/QUALITY_CONTRACT.md` | 품질 기준 원본 (개선 대상) |
+| `_core/REGISTRY.md` | 변경 이력 기록 |
 
 ---
 

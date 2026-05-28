@@ -67,7 +67,7 @@ description: 모든 산출물의 품질 검증 루프. 초안→검증→수정�
   - 정확성, 완결성, 일관성, 가독성, 근거성
 
 ### 3-2. Momus 1차 검증
-**검증 기준**: `_shared/quality-contracts/QUALITY_CONTRACT.md`
+**검증 기준**: `_core/quality-contracts/QUALITY_CONTRACT.md`
 
 #### 검증 체크리스트
 ```
@@ -162,9 +162,9 @@ description: 모든 산출물의 품질 검증 루프. 초안→검증→수정�
 
 | 참조 문서 | 역할 |
 |----------|------|
-| `_shared/quality-contracts/QUALITY_CONTRACT.md` | 검증 기준 원본 |
-| `_shared/agents/hermes.md` | 문서 품질 총괄 에이전트 |
-| `_shared/workflows/pygmalion.md` | 반복 실패 시 개선 트리거 |
+| `_core/quality-contracts/QUALITY_CONTRACT.md` | 검증 기준 원본 |
+| `_core/agents/hermes.md` | 문서 품질 총괄 에이전트 |
+| `_core/workflows/pygmalion.md` | 반복 실패 시 개선 트리거 |
 
 ---
 
