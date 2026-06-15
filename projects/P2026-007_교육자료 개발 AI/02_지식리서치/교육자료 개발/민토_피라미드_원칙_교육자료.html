@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>민토 피라미드 원칙 — 팀 교육자료 (심화편)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+  :root {
+    --navy: #1a1f36;
+    --deep: #252b48;
+    --card: #2d3555;
+    --accent: #6c63ff;
+    --accent2: #00c9a7;
+    --accent3: #f7c948;
+    --accent4: #ff6b6b;
+    --text: #e8e8f0;
+    --muted: #9a9ab8;
+    --border: #3d4470;
+    --glass: rgba(45,53,85,0.7);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  /* ===== NAVIGATION ===== */
+  .nav {
+    position: fixed; top:0; left:0; right:0; z-index:1000;
+    background: rgba(26,31,54,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex; align-items: center; height: 60px;
+  }
+  .nav-brand {
+    font-weight: 900; font-size: 1.1rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-right: 2rem; white-space: nowrap;
+  }
+  .nav-links {
+    display: flex; gap: 0.5rem; overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display:none; }
+  .nav-links a {
+    color: var(--muted); text-decoration:none; font-size:0.8rem;
+    padding: 0.4rem 0.7rem; border-radius: 6px; white-space:nowrap;
+    transition: all 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: var(--accent); background: rgba(108,99,255,0.1);
+  }
+  .nav-links .nav-divider {
+    color: var(--border); display:flex; align-items:center; font-size:0.7rem;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh; display:flex; align-items:center; justify-content:center;
+    text-align:center; padding: 6rem 2rem 4rem;
+    background: radial-gradient(ellipse at 30% 20%, rgba(108,99,255,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(0,201,167,0.1) 0%, transparent 50%);
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900; line-height:1.2; margin-bottom:1.5rem;
+  }
+  .hero h1 span {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero p { color: var(--muted); font-size:1.15rem; max-width:600px; margin:0 auto 2rem; }
+  .hero-badge {
+    display:inline-block; padding:0.5rem 1.5rem; border-radius:30px;
+    border:1px solid var(--border); color:var(--accent2); font-size:0.9rem;
+    margin-bottom:2rem;
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    max-width: 900px; margin: 0 auto; padding: 5rem 2rem;
+  }
+  .section-tag {
+    display:inline-block; font-size:0.75rem; font-weight:700;
+    text-transform:uppercase; letter-spacing:2px; color:var(--accent);
+    margin-bottom:1rem;
+  }
+  .section-tag.practical { color: var(--accent3); }
+  .section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight:900; margin-bottom:1.5rem; line-height:1.3;
+  }
+  .section h3 {
+    font-size: 1.4rem; font-weight:700; margin: 2.5rem 0 1rem;
+    color: var(--accent2);
+  }
+  .section h4 { font-size: 1.1rem; font-weight:700; margin: 1.5rem 0 0.8rem; color: var(--text); }
+  .section p { color:var(--muted); margin-bottom:1rem; }
+  .section p.highlight { color:var(--text); }
+
+  /* ===== CARDS ===== */
+  .card {
+    background: var(--card); border-radius:16px; padding:2rem;
+    border:1px solid var(--border); margin-bottom:1.5rem;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .card:hover { transform:translateY(-2px); border-color:var(--accent); }
+  .card-accent { border-left: 4px solid var(--accent); }
+  .card-green { border-left-color: var(--accent2); }
+  .card-yellow { border-left-color: var(--accent3); }
+  .card-red { border-left-color: var(--accent4); }
+  .card h4 { font-size:1.1rem; margin-bottom:0.8rem; color:var(--text); }
+  .card p { color:var(--muted); margin-bottom:0.5rem; font-size:0.95rem; }
+
+  /* ===== PYRAMID DIAGRAMS ===== */
+  .pyramid-container { display:flex; justify-content:center; margin: 2rem 0; }
+  .pyramid-svg { max-width:100%; height:auto; }
+
+  /* ===== INTERACTIVE TABS ===== */
+  .tabs { display:flex; gap:0.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+  .tab-btn {
+    padding:0.6rem 1.2rem; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--muted); cursor:pointer;
+    font-family:inherit; font-size:0.9rem; transition:all 0.2s;
+  }
+  .tab-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .tab-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .tab-content { display:none; }
+  .tab-content.active { display:block; }
+
+  /* ===== COMPARISON ===== */
+  .comparison { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:2rem 0; }
+  @media(max-width:700px) { .comparison { grid-template-columns:1fr; } }
+  .compare-bad { border-top:3px solid var(--accent4); }
+  .compare-good { border-top:3px solid var(--accent2); }
+  .compare-label {
+    font-size:0.8rem; font-weight:700; text-transform:uppercase;
+    letter-spacing:1px; margin-bottom:0.8rem;
+  }
+  .compare-bad .compare-label { color:var(--accent4); }
+  .compare-good .compare-label { color:var(--accent2); }
+
+  /* ===== FLOW DIAGRAMS ===== */
+  .flow { display:flex; align-items:center; justify-content:center; gap:0.5rem; margin:1.5rem 0; flex-wrap:wrap; }
+  .flow-box {
+    background:var(--deep); border:1px solid var(--border);
+    padding:0.8rem 1.2rem; border-radius:10px; font-size:0.9rem;
+    text-align:center; min-width:120px;
+  }
+  .flow-box.accent { border-color:var(--accent); background:rgba(108,99,255,0.15); }
+  .flow-box.green { border-color:var(--accent2); background:rgba(0,201,167,0.15); }
+  .flow-box.yellow { border-color:var(--accent3); background:rgba(247,201,72,0.15); }
+  .flow-box.red { border-color:var(--accent4); background:rgba(255,107,107,0.15); }
+  .flow-arrow { color:var(--accent); font-size:1.5rem; }
+
+  /* ===== GRID CARDS ===== */
+  .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:2rem 0; }
+  .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin:2rem 0; }
+  .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:2rem 0; }
+  @media(max-width:700px) { .grid-2, .grid-3, .grid-4 { grid-template-columns:1fr; } }
+
+  /* ===== STEP INDICATORS ===== */
+  .step-num {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:32px; height:32px; border-radius:50%; font-weight:700;
+    font-size:0.85rem; margin-right:0.8rem; flex-shrink:0;
+    background: var(--accent); color:#fff;
+  }
+  .step-row { display:flex; align-items:flex-start; margin-bottom:1.2rem; }
+  .step-row p { margin:0; color:var(--muted); }
+  .step-row strong { color:var(--text); }
+
+  /* ===== CALLOUT ===== */
+  .callout {
+    background: rgba(108,99,255,0.08); border:1px solid rgba(108,99,255,0.3);
+    border-radius:12px; padding:1.5rem 2rem; margin:2rem 0;
+  }
+  .callout.warn { background:rgba(247,201,72,0.08); border-color:rgba(247,201,72,0.3); }
+  .callout.green { background:rgba(0,201,167,0.08); border-color:rgba(0,201,167,0.3); }
+  .callout.red { background:rgba(255,107,107,0.08); border-color:rgba(255,107,107,0.3); }
+  .callout-title { font-weight:700; margin-bottom:0.5rem; }
+
+  /* ===== INTERACTIVE PYRAMID BUILDER ===== */
+  .pyramid-interactive { position:relative; margin:2rem auto; max-width:700px; }
+  .pyr-level { display:flex; justify-content:center; margin-bottom:0.5rem; transition: all 0.3s; }
+  .pyr-box {
+    background: var(--card); border:2px solid var(--border);
+    padding: 1rem 1.5rem; border-radius:10px; text-align:center;
+    cursor:pointer; transition: all 0.3s; position:relative; font-size:0.9rem;
+  }
+  .pyr-box:hover, .pyr-box.active { border-color:var(--accent); background:rgba(108,99,255,0.15); transform: scale(1.03); }
+  .pyr-box .pyr-label { font-weight:700; color:var(--text); }
+  .pyr-box .pyr-desc { color:var(--muted); font-size:0.8rem; margin-top:0.3rem; }
+  .pyr-connector { width:2px; height:20px; background:var(--border); margin:0 auto; }
+  .pyr-branches { display:flex; justify-content:center; gap:1.5rem; flex-wrap:wrap; }
+
+  /* ===== QUIZ ===== */
+  .quiz-box {
+    background:var(--deep); border:1px solid var(--border);
+    border-radius:12px; padding:2rem; margin:2rem 0;
+  }
+  .quiz-q { font-weight:700; margin-bottom:1rem; color:var(--text); font-size:1.05rem; }
+  .quiz-options { display:flex; flex-direction:column; gap:0.5rem; }
+  .quiz-opt {
+    padding:0.8rem 1.2rem; border:1px solid var(--border); border-radius:8px;
+    cursor:pointer; transition:all 0.2s; font-family:inherit; font-size:0.95rem;
+    background:transparent; color:var(--muted); text-align:left;
+  }
+  .quiz-opt:hover { border-color:var(--accent); color:var(--text); }
+  .quiz-opt.correct { border-color:var(--accent2); background:rgba(0,201,167,0.15); color:var(--accent2); }
+  .quiz-opt.wrong { border-color:var(--accent4); background:rgba(255,107,107,0.1); color:var(--accent4); }
+  .quiz-explain {
+    display:none; margin-top:1rem; padding:1rem; border-radius:8px;
+    background:rgba(108,99,255,0.08); font-size:0.9rem; color:var(--muted);
+  }
+  .quiz-explain.show { display:block; }
+
+  /* ===== PROGRESS BAR ===== */
+  .progress-bar { position:fixed; top:60px; left:0; right:0; height:3px; z-index:999; background:var(--deep); }
+  .progress-fill { height:100%; background:linear-gradient(90deg, var(--accent), var(--accent2)); width:0%; transition: width 0.1s; }
+
+  /* ===== TOC BUTTON ===== */
+  .toc-btn {
+    position:fixed; bottom:2rem; right:2rem; z-index:1001;
+    width:50px; height:50px; border-radius:50%;
+    background:var(--accent); color:#fff; border:none; cursor:pointer;
+    font-size:1.5rem; display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 4px 20px rgba(108,99,255,0.4); transition: transform 0.2s;
+  }
+  .toc-btn:hover { transform:scale(1.1); }
+
+  /* ===== SCQA DIAGRAM ===== */
+  .scqa-flow { display:grid; grid-template-columns: repeat(4,1fr); gap:1rem; margin:2rem 0; }
+  @media(max-width:700px) { .scqa-flow { grid-template-columns: repeat(2,1fr); } }
+  .scqa-item { text-align:center; padding:1.5rem 1rem; border-radius:12px; border:1px solid var(--border); }
+  .scqa-item .scqa-letter { font-size:2rem; font-weight:900; margin-bottom:0.5rem; }
+  .scqa-item .scqa-name { font-size:0.85rem; font-weight:700; margin-bottom:0.3rem; text-transform:uppercase; letter-spacing:1px; }
+  .scqa-item .scqa-desc { font-size:0.85rem; color:var(--muted); }
+  .scqa-s { background:rgba(108,99,255,0.1); }
+  .scqa-s .scqa-letter, .scqa-s .scqa-name { color:var(--accent); }
+  .scqa-c { background:rgba(255,107,107,0.1); }
+  .scqa-c .scqa-letter, .scqa-c .scqa-name { color:var(--accent4); }
+  .scqa-q { background:rgba(247,201,72,0.1); }
+  .scqa-q .scqa-letter, .scqa-q .scqa-name { color:var(--accent3); }
+  .scqa-a { background:rgba(0,201,167,0.1); }
+  .scqa-a .scqa-letter, .scqa-a .scqa-name { color:var(--accent2); }
+
+  /* ===== DEDUCTION CHAIN ===== */
+  .deduction-chain { display:flex; align-items:stretch; gap:0; margin:2rem 0; justify-content:center; flex-wrap:wrap; }
+  .ded-box {
+    background:var(--card); border:1px solid var(--border);
+    padding:1rem 1.5rem; text-align:center; font-size:0.9rem;
+    min-width:160px; max-width:220px; display:flex; align-items:center;
+    justify-content:center; border-radius:10px;
+  }
+  .ded-arrow { display:flex; align-items:center; padding:0 0.5rem; color:var(--accent); font-size:1.5rem; }
+  .ded-box.conclusion { border-color:var(--accent2); background:rgba(0,201,167,0.1); }
+
+  /* ===== FOOTER ===== */
+  .footer { text-align:center; padding:4rem 2rem; color:var(--muted); font-size:0.85rem; border-top:1px solid var(--border); }
+
+  /* ===== ANIMATIONS ===== */
+  .fade-in { opacity:0; transform:translateY(30px); transition: opacity 0.6s, transform 0.6s; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+
+  .sep { width:60px; height:3px; border-radius:2px; margin:3rem auto; background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+
+  .big-num {
+    font-size:3.5rem; font-weight:900; line-height:1;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stat-card { text-align:center; padding:2rem; }
+  .stat-label { color:var(--muted); font-size:0.9rem; margin-top:0.5rem; }
+
+  /* ===== Expand/collapse ===== */
+  .expand-toggle {
+    cursor:pointer; display:flex; align-items:center; gap:0.5rem;
+    padding:0.8rem 1.2rem; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--text); font-family:inherit;
+    font-size:0.95rem; font-weight:500; transition: all 0.2s; width:100%;
+    text-align:left; margin-bottom:0.5rem;
+  }
+  .expand-toggle:hover { border-color:var(--accent); }
+  .expand-toggle .arrow { transition:transform 0.3s; }
+  .expand-toggle.open .arrow { transform:rotate(90deg); }
+  .expand-body { display:none; padding:1rem 1.5rem; }
+  .expand-body.open { display:block; }
+
+  /* ===== NEW: CASE STUDY BOX ===== */
+  .case-box {
+    background: var(--deep); border:1px solid var(--border); border-radius:14px;
+    padding:2rem; margin:2rem 0; position:relative; overflow:hidden;
+  }
+  .case-box::before {
+    content: 'CASE'; position:absolute; top:12px; right:16px;
+    font-size:0.7rem; font-weight:900; letter-spacing:2px;
+    color:var(--accent3); opacity:0.5;
+  }
+  .case-title { font-weight:700; color:var(--accent3); margin-bottom:1rem; font-size:1.05rem; }
+
+  /* ===== NEW: SLIDE MOCKUP ===== */
+  .slide-mock {
+    background: #fff; color:#333; border-radius:8px; padding:1.5rem 2rem;
+    margin:1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    font-family: 'Noto Sans KR', sans-serif; position:relative;
+    aspect-ratio: 16/10; display:flex; flex-direction:column; justify-content:center;
+  }
+  .slide-mock .slide-title {
+    font-size:1.3rem; font-weight:900; color:#1a1f36; margin-bottom:1rem;
+    border-bottom:2px solid #6c63ff; padding-bottom:0.5rem;
+  }
+  .slide-mock .slide-point {
+    font-size:0.9rem; color:#444; margin-bottom:0.5rem; padding-left:1rem;
+    border-left:3px solid #6c63ff;
+  }
+  .slide-mock .slide-sub {
+    font-size:0.8rem; color:#777; padding-left:2rem; margin-bottom:0.3rem;
+  }
+  .slide-mock .slide-badge {
+    position:absolute; bottom:8px; right:12px; font-size:0.65rem;
+    color:#aaa;
+  }
+
+  /* ===== NEW: REPORT MOCKUP ===== */
+  .report-mock {
+    background:#fafafa; color:#333; border-radius:8px; padding:2rem;
+    margin:1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    font-family: 'Noto Sans KR', serif; font-size:0.9rem; line-height:1.9;
+    max-height:400px; overflow-y:auto;
+  }
+  .report-mock h5 { font-size:1.1rem; font-weight:900; color:#1a1f36; margin-bottom:1rem; text-align:center; }
+  .report-mock .r-section { font-weight:700; color:#333; margin:1rem 0 0.5rem; font-size:0.95rem; }
+  .report-mock .r-body { color:#555; margin-bottom:0.8rem; text-indent:1rem; }
+  .report-mock .r-indent { padding-left:1.5rem; color:#555; margin-bottom:0.3rem; }
+  .report-mock .r-highlight { background:rgba(108,99,255,0.1); padding:2px 4px; border-radius:3px; }
+
+  /* ===== NEW: PROCESS STEP ===== */
+  .process-steps { display:flex; gap:0; margin:2rem 0; overflow-x:auto; padding-bottom:1rem; }
+  .process-step {
+    flex:1; min-width:150px; text-align:center; padding:1.5rem 1rem;
+    background:var(--card); border:1px solid var(--border); position:relative;
+  }
+  .process-step:first-child { border-radius:12px 0 0 12px; }
+  .process-step:last-child { border-radius:0 12px 12px 0; }
+  .process-step .ps-num {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:28px; height:28px; border-radius:50%; font-weight:700;
+    font-size:0.75rem; background: var(--accent); color:#fff; margin-bottom:0.5rem;
+  }
+  .process-step .ps-title { font-weight:700; font-size:0.85rem; color:var(--text); margin-bottom:0.3rem; }
+  .process-step .ps-desc { font-size:0.75rem; color:var(--muted); }
+  .process-step::after {
+    content:'→'; position:absolute; right:-10px; top:50%; transform:translateY(-50%);
+    color:var(--accent); font-size:1.2rem; z-index:1;
+  }
+  .process-step:last-child::after { display:none; }
+
+  /* ===== NEW: BEFORE/AFTER WORKSHOP ===== */
+  .workshop-item { margin:2rem 0; }
+  .workshop-label {
+    display:inline-block; padding:0.3rem 0.8rem; border-radius:4px; font-size:0.75rem;
+    font-weight:700; letter-spacing:1px; margin-bottom:0.8rem;
+  }
+  .workshop-label.before { background:rgba(255,107,107,0.15); color:var(--accent4); }
+  .workshop-label.after { background:rgba(0,201,167,0.15); color:var(--accent2); }
+  .workshop-content {
+    padding:1.2rem 1.5rem; border-radius:10px; font-size:0.9rem;
+    border:1px solid var(--border); background:var(--deep);
+  }
+  .workshop-content ul { list-style:none; padding:0; }
+  .workshop-content ul li { padding:0.3rem 0; color:var(--muted); }
+  .workshop-content ul li::before { content:'• '; color:var(--accent); }
+
+  /* ===== CHECKLIST ===== */
+  .check-item {
+    display:flex; align-items:flex-start; gap:1rem; padding:1rem 0;
+    border-bottom:1px solid rgba(61,68,112,0.3);
+  }
+  .check-icon { font-size:1.3rem; flex-shrink:0; cursor:pointer; user-select:none; }
+  .check-item.done .check-text { text-decoration:line-through; color:var(--muted); opacity:0.5; }
+
+  /* ===== PROBLEM DEFINITION TABLE ===== */
+  .pd-table {
+    width:100%; border-collapse:collapse; margin:1.5rem 0;
+    font-size:0.85rem;
+  }
+  .pd-table th {
+    background:rgba(108,99,255,0.15); color:var(--accent); padding:0.8rem 1rem;
+    text-align:left; border:1px solid var(--border); font-weight:700;
+  }
+  .pd-table td {
+    padding:0.8rem 1rem; border:1px solid var(--border); color:var(--muted);
+    vertical-align:top;
+  }
+  .pd-table tr:hover td { background:rgba(108,99,255,0.05); }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-brand">🔺 Minto Pyramid</div>
+  <div class="nav-links">
+    <a href="#why">왜 피라미드인가</a>
+    <a href="#structure">3대 규칙</a>
+    <a href="#substructure">하위구조</a>
+    <a href="#scqa">SCQA</a>
+    <a href="#build">피라미드 만들기</a>
+    <a href="#deduction">연역 vs 귀납</a>
+    <a href="#logical-order">논리적 순서</a>
+    <a href="#summary">요약의 기술</a>
+    <span class="nav-divider">│</span>
+    <a href="#problem-def">문제 정의</a>
+    <a href="#endproduct">End-Product</a>
+    <a href="#inductive-leap">귀납적 도약</a>
+    <span class="nav-divider">│</span>
+    <a href="#case-grouping">그룹핑 실습</a>
+    <a href="#case-ppt">PPT 제작</a>
+    <a href="#case-report">보고서 작성</a>
+    <a href="#case-email">이메일·메모</a>
+    <span class="nav-divider">│</span>
+    <a href="#practice">퀴즈</a>
+  </div>
+</nav>
+
+<!-- Progress Bar -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="top">
+  <div>
+    <div class="hero-badge">Barbara Minto's Framework · 팀 교육용 심화편</div>
+    <h1><span>민토 피라미드 원칙</span><br>완전 가이드</h1>
+    <p>논리적으로 생각하고, 명확하게 쓰고, 설득력 있게 전달하는 기술.<br>
+    맥킨지에서 탄생한 비즈니스 커뮤니케이션의 골든 스탠다드.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+      <div class="stat-card card" style="min-width:130px;">
+        <div class="big-num">7±2</div>
+        <div class="stat-label">매직 넘버</div>
+      </div>
+      <div class="stat-card card" style="min-width:130px;">
+        <div class="big-num">3</div>
+        <div class="stat-label">피라미드 규칙</div>
+      </div>
+      <div class="stat-card card" style="min-width:130px;">
+        <div class="big-num">MECE</div>
+        <div class="stat-label">핵심 원칙</div>
+      </div>
+      <div class="stat-card card" style="min-width:130px;">
+        <div class="big-num">SCQA</div>
+        <div class="stat-label">도입부 공식</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =====================================================
+     PART I: 이론편 — 핵심 개념
+     ===================================================== -->
+
+<!-- ==================== CH1: 왜 피라미드인가 ==================== -->
+<section class="section fade-in" id="why">
+  <span class="section-tag">Chapter 1 — 인지심리학적 기초</span>
+  <h2>왜 피라미드 구조로 써야 하는가?</h2>
+
+  <p class="highlight">글을 읽는 사람의 두뇌는 정보를 <strong>위에서 아래로, 그룹 지어서</strong> 이해합니다.
+  이것이 피라미드 구조의 출발점입니다.</p>
+
+  <h3>🧠 두뇌의 정보 처리 방식</h3>
+  <p>인간의 두뇌는 동시에 기억할 수 있는 항목 수에 한계가 있습니다. 심리학자 조지 밀러(George Miller, 1956)는 이를 <strong>"매직 넘버 7±2"</strong>라 불렀습니다. 즉, 한 번에 5~9개 이상의 항목을 처리하기 어렵습니다.</p>
+
+  <p>이 한계를 극복하기 위해 두뇌는 자동으로 <strong>논리적으로 연결된 항목들을 그룹으로 묶어(chunking)</strong> 기억합니다. 마치 전화번호 02-1234-5678을 세 덩어리로 나누어 기억하는 것처럼요.</p>
+
+  <div class="callout">
+    <div class="callout-title">💡 인지심리학적 근거</div>
+    <p style="margin:0">밀러의 "청킹(Chunking)" 이론에 따르면, 개별 정보를 의미 있는 단위로 묶으면 작업 기억(Working Memory)의 용량 한계를 극복할 수 있습니다. 피라미드 구조는 이 청킹 원리를 <strong>글쓰기에 체계적으로 적용</strong>한 것입니다.</p>
+  </div>
+
+  <p>독자가 그룹핑을 하기 전에, <strong>글쓴이가 미리 논리적으로 그룹핑해서 전달</strong>하면 독자의 이해가 훨씬 쉬워집니다. 민토는 이것을 "독자의 인지 부담을 최소화하는 것"이라고 설명합니다.</p>
+
+  <h3>피라미드란 무엇인가?</h3>
+  <p>피라미드 구조란, 하나의 <strong>핵심 메시지(결론)</strong>를 꼭대기에 놓고, 그것을 뒷받침하는 근거들을 아래로 계층적으로 배치하는 것입니다.</p>
+
+  <!-- Interactive Pyramid -->
+  <div class="pyramid-interactive">
+    <div class="pyr-level">
+      <div class="pyr-box accent" style="min-width:280px;" onclick="showPyrInfo(this, 'top')">
+        <div class="pyr-label">핵심 메시지 (결론)</div>
+        <div class="pyr-desc">독자에게 전달하고 싶은 단 하나의 핵심</div>
+      </div>
+    </div>
+    <div class="pyr-connector"></div>
+    <div class="pyr-branches" style="margin-bottom:0.5rem;">
+      <div class="pyr-box" onclick="showPyrInfo(this, 'key')" style="min-width:180px;">
+        <div class="pyr-label">Key Line 1</div>
+        <div class="pyr-desc">핵심 뒷받침 근거</div>
+      </div>
+      <div class="pyr-box" onclick="showPyrInfo(this, 'key')" style="min-width:180px;">
+        <div class="pyr-label">Key Line 2</div>
+        <div class="pyr-desc">핵심 뒷받침 근거</div>
+      </div>
+      <div class="pyr-box" onclick="showPyrInfo(this, 'key')" style="min-width:180px;">
+        <div class="pyr-label">Key Line 3</div>
+        <div class="pyr-desc">핵심 뒷받침 근거</div>
+      </div>
+    </div>
+    <div class="pyr-connector"></div>
+    <div class="pyr-branches">
+      <div class="pyr-box" style="min-width:120px;font-size:0.8rem;">
+        <div class="pyr-label">세부 근거</div>
+      </div>
+      <div class="pyr-box" style="min-width:120px;font-size:0.8rem;">
+        <div class="pyr-label">세부 근거</div>
+      </div>
+      <div class="pyr-box" style="min-width:120px;font-size:0.8rem;">
+        <div class="pyr-label">세부 근거</div>
+      </div>
+      <div class="pyr-box" style="min-width:120px;font-size:0.8rem;">
+        <div class="pyr-label">세부 근거</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Before / After: 피라미드 구조의 힘</h3>
+  <div class="comparison">
+    <div class="card compare-bad">
+      <div class="compare-label">❌ 구조 없이 쓴 글</div>
+      <p>"지난 분기 매출이 15% 하락했고, 경쟁사가 신제품을 출시했으며, 고객 불만이 증가하고, 마케팅 예산이 삭감되었고, 팀원 두 명이 퇴사했습니다. 또한 공급망 지연이 있었고..."</p>
+      <p style="font-size:0.85rem;color:var(--accent4);">→ 정보 나열, 핵심 불명확, 독자 혼란</p>
+    </div>
+    <div class="card compare-good">
+      <div class="compare-label">✅ 피라미드 구조</div>
+      <p><strong>"긴급한 매출 회복 전략이 필요합니다."</strong></p>
+      <p>1. 경쟁력이 약화되고 있다 (경쟁사 신제품, 고객 불만 증가)<br>
+         2. 내부 자원이 부족하다 (마케팅 예산 삭감, 핵심 인력 이탈)<br>
+         3. 외부 환경이 악화되었다 (공급망 지연, 시장 위축)</p>
+      <p style="font-size:0.85rem;color:var(--accent2);">→ 결론 먼저, 논리적 그룹핑, 즉시 이해 가능</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH2: 3대 규칙 ==================== -->
+<section class="section fade-in" id="structure">
+  <span class="section-tag">Chapter 2 — 구조의 원리</span>
+  <h2>피라미드의 3대 규칙</h2>
+
+  <p class="highlight">모든 피라미드 구조는 반드시 이 세 가지 규칙을 따라야 합니다. 이 규칙 중 하나라도 어기면, 논리 구조 전체가 무너집니다.</p>
+
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h4>규칙 1</h4>
+      <div style="font-size:1.3rem;font-weight:700;color:var(--accent);margin-bottom:0.8rem;">상위 = 하위의 요약</div>
+      <p>피라미드의 모든 레벨에서, 상위 항목은 반드시 그 아래 그룹화된 항목들의 <strong>요약</strong>이어야 합니다.</p>
+      <div class="callout" style="margin-top:1rem;padding:1rem;">
+        <p style="margin:0;font-size:0.85rem;">예: "비용을 절감해야 한다" 아래에 "인건비를 줄여라", "재료비를 줄여라"가 오면, 상위 포인트가 하위를 요약하고 있는 것입니다.</p>
+      </div>
+    </div>
+    <div class="card card-green">
+      <h4>규칙 2</h4>
+      <div style="font-size:1.3rem;font-weight:700;color:var(--accent2);margin-bottom:0.8rem;">같은 종류끼리 그룹</div>
+      <p>같은 레벨에 있는 항목들은 반드시 <strong>논리적으로 같은 종류</strong>여야 합니다. 하나의 복수명사로 묶을 수 있어야 합니다.</p>
+      <div class="callout green" style="margin-top:1rem;padding:1rem;">
+        <p style="margin:0;font-size:0.85rem;">예: "문제점들", "단계들", "이유들" — 같은 종류의 아이디어를 하나의 그룹에</p>
+      </div>
+    </div>
+    <div class="card card-yellow">
+      <h4>규칙 3</h4>
+      <div style="font-size:1.3rem;font-weight:700;color:var(--accent3);margin-bottom:0.8rem;">논리적 순서</div>
+      <p>같은 레벨의 항목들은 반드시 <strong>논리적 순서</strong>로 배열해야 합니다. 시간 순서, 구조 순서, 또는 중요도 순서 중 하나.</p>
+      <div class="callout warn" style="margin-top:1rem;padding:1rem;">
+        <p style="margin:0;font-size:0.85rem;">순서를 찾을 수 없다면 → 그룹핑 자체에 문제가 있다는 신호!</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>수직 관계: Q&A 대화</h3>
+  <p>피라미드의 수직 관계는 <strong>질문-답변(Q&A)의 대화</strong>입니다. 상위 포인트를 제시하면, 독자는 자연스럽게 "왜?", "어떻게?", "그래서?"라고 묻습니다. 바로 아래 레벨이 그 답변이 됩니다.</p>
+
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="400" height="250" viewBox="0 0 400 250" class="pyramid-svg">
+      <rect x="120" y="10" width="160" height="50" rx="8" fill="none" stroke="#6c63ff" stroke-width="2"/>
+      <text x="200" y="40" text-anchor="middle" fill="#e8e8f0" font-size="13" font-weight="700">비용을 절감해야 한다</text>
+      <rect x="300" y="15" width="80" height="30" rx="15" fill="rgba(247,201,72,0.2)" stroke="#f7c948" stroke-width="1"/>
+      <text x="340" y="35" text-anchor="middle" fill="#f7c948" font-size="12" font-weight="700">왜?</text>
+      <line x1="200" y1="60" x2="200" y2="80" stroke="#3d4470" stroke-width="2"/>
+      <line x1="80" y1="80" x2="320" y2="80" stroke="#3d4470" stroke-width="2"/>
+      <line x1="80" y1="80" x2="80" y2="100" stroke="#3d4470" stroke-width="2"/>
+      <line x1="200" y1="80" x2="200" y2="100" stroke="#3d4470" stroke-width="2"/>
+      <line x1="320" y1="80" x2="320" y2="100" stroke="#3d4470" stroke-width="2"/>
+      <rect x="20" y="100" width="120" height="40" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="80" y="125" text-anchor="middle" fill="#e8e8f0" font-size="11">인건비가 너무 높다</text>
+      <rect x="145" y="100" width="120" height="40" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="205" y="125" text-anchor="middle" fill="#e8e8f0" font-size="11">재료비가 과다하다</text>
+      <rect x="270" y="100" width="120" height="40" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="330" y="125" text-anchor="middle" fill="#e8e8f0" font-size="11">운영비 비효율적</text>
+      <text x="200" y="175" text-anchor="middle" fill="#f7c948" font-size="11" font-weight="700">다시 질문 → 어떻게?</text>
+      <text x="200" y="210" text-anchor="middle" fill="#6c63ff" font-size="12" font-weight="500">↕ 수직 = Q&amp;A 대화 &nbsp;&nbsp; ↔ 수평 = 연역 또는 귀납</text>
+    </svg>
+  </div>
+
+  <div class="callout green">
+    <div class="callout-title">🔑 자가 점검 질문</div>
+    <p style="margin:0">글을 쓴 후 모든 레벨에서 확인하세요: "상위 포인트를 읽었을 때, 독자가 자연스럽게 제기할 질문은 무엇인가? 그리고 바로 아래 항목들이 그 질문에 답하고 있는가?"</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH2 심화: 하위구조 ==================== -->
+<section class="section fade-in" id="substructure">
+  <span class="section-tag">Chapter 2 — 심화</span>
+  <h2>피라미드의 3가지 하위구조</h2>
+
+  <p class="highlight">피라미드 안에는 세 가지 서로 다른 논리적 관계가 동시에 작동합니다.</p>
+
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h4>① 수직 관계</h4>
+      <p>상위-하위 간의 <strong>Q&A 대화</strong>. 상위 포인트가 질문을 유발하고, 하위가 답합니다.</p>
+    </div>
+    <div class="card card-green">
+      <h4>② 수평 관계</h4>
+      <p>같은 레벨 간의 <strong>연역적 또는 귀납적</strong> 논리. 함께 상위 포인트를 뒷받침합니다.</p>
+    </div>
+    <div class="card card-yellow">
+      <h4>③ 도입부 구조</h4>
+      <p>피라미드의 꼭대기를 독자에게 소개하는 <strong>스토리텔링(SCQA)</strong>. 독자의 관심과 질문을 유도합니다.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH3-4: SCQA ==================== -->
+<section class="section fade-in" id="scqa">
+  <span class="section-tag">Chapter 3-4 — 도입부</span>
+  <h2>SCQA: 도입부의 기술</h2>
+
+  <p class="highlight">독자가 피라미드의 꼭대기(핵심 메시지)를 받아들이려면, 먼저 <strong>왜 이 이야기를 들어야 하는지</strong>를 이해해야 합니다. SCQA가 바로 그 역할을 합니다.</p>
+
+  <div class="scqa-flow">
+    <div class="scqa-item scqa-s">
+      <div class="scqa-letter">S</div>
+      <div class="scqa-name">Situation</div>
+      <div class="scqa-desc">독자가 동의하는<br>안정된 상황</div>
+    </div>
+    <div class="scqa-item scqa-c">
+      <div class="scqa-letter">C</div>
+      <div class="scqa-name">Complication</div>
+      <div class="scqa-desc">상황을 뒤흔드는<br>문제/변화</div>
+    </div>
+    <div class="scqa-item scqa-q">
+      <div class="scqa-letter">Q</div>
+      <div class="scqa-name">Question</div>
+      <div class="scqa-desc">독자 마음속에<br>떠오르는 질문</div>
+    </div>
+    <div class="scqa-item scqa-a">
+      <div class="scqa-letter">A</div>
+      <div class="scqa-name">Answer</div>
+      <div class="scqa-desc">피라미드의 꼭대기<br>= 핵심 메시지</div>
+    </div>
+  </div>
+
+  <h3>SCQA 실전 예시</h3>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab(event, 'scqa-ex1')">전략 보고서</button>
+    <button class="tab-btn" onclick="switchTab(event, 'scqa-ex2')">프로젝트 제안</button>
+    <button class="tab-btn" onclick="switchTab(event, 'scqa-ex3')">성과 분석</button>
+  </div>
+
+  <div class="tab-content active" id="scqa-ex1">
+    <div class="card card-accent">
+      <p><strong style="color:var(--accent);">S:</strong> 우리 회사는 지난 5년간 국내 시장 1위를 유지해왔습니다.</p>
+      <p><strong style="color:var(--accent4);">C:</strong> 그러나 올해 글로벌 경쟁사 A가 한국 시장에 진출하면서 점유율이 3개월 만에 8%p 하락했습니다.</p>
+      <p><strong style="color:var(--accent3);">Q:</strong> 어떻게 하면 시장 1위를 방어할 수 있을까?</p>
+      <p><strong style="color:var(--accent2);">A:</strong> 3가지 방어 전략을 즉시 실행해야 합니다. (→ 피라미드 본론으로)</p>
+    </div>
+  </div>
+  <div class="tab-content" id="scqa-ex2">
+    <div class="card card-accent">
+      <p><strong style="color:var(--accent);">S:</strong> 현재 고객 응대 시간은 평균 48시간으로 업계 기준을 충족하고 있습니다.</p>
+      <p><strong style="color:var(--accent4);">C:</strong> 그러나 주요 경쟁사들이 AI 챗봇을 도입해 4시간 이내 응대를 시작했으며, 고객 이탈률이 증가하고 있습니다.</p>
+      <p><strong style="color:var(--accent3);">Q:</strong> 고객 응대 시스템을 어떻게 개선해야 하는가?</p>
+      <p><strong style="color:var(--accent2);">A:</strong> AI 기반 고객 응대 시스템을 3단계로 도입할 것을 제안합니다.</p>
+    </div>
+  </div>
+  <div class="tab-content" id="scqa-ex3">
+    <div class="card card-accent">
+      <p><strong style="color:var(--accent);">S:</strong> Q1 매출 목표는 전년 대비 20% 성장인 50억 원이었습니다.</p>
+      <p><strong style="color:var(--accent4);">C:</strong> 실제 매출은 42억 원으로 목표 대비 84%에 그쳤습니다.</p>
+      <p><strong style="color:var(--accent3);">Q:</strong> 왜 목표를 달성하지 못했으며, Q2에 어떻게 만회할 것인가?</p>
+      <p><strong style="color:var(--accent2);">A:</strong> 2가지 핵심 원인이 있으며, 3가지 개선 방안으로 Q2에 보충 가능합니다.</p>
+    </div>
+  </div>
+
+  <h3>4가지 질문 유형에 따른 패턴</h3>
+  <p>독자의 머릿속에 떠오르는 질문은 네 가지 유형으로 나뉘며, 그에 따라 SCQA의 변형이 달라집니다.</p>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <h4>① 우리는 무엇을 해야 하는가?</h4>
+      <p>문제 해결 → <strong>해결책 제안</strong> 패턴</p>
+      <p style="font-size:0.85rem;">S→C→"어떻게?"→A(행동 계획)</p>
+    </div>
+    <div class="card card-green">
+      <h4>② 우리는 이것을 해야 하는가?</h4>
+      <p>의사결정 → <strong>예/아니오 + 이유</strong> 패턴</p>
+      <p style="font-size:0.85rem;">S→C→"해야 하나?"→A(판단+근거)</p>
+    </div>
+    <div class="card card-yellow">
+      <h4>③ 왜 이런 일이 발생했는가?</h4>
+      <p>원인 분석 → <strong>원인 규명</strong> 패턴</p>
+      <p style="font-size:0.85rem;">S→C→"왜?"→A(원인+대안)</p>
+    </div>
+    <div class="card card-red">
+      <h4>④ 이것에 대해 어떻게 생각하는가?</h4>
+      <p>상황 평가 → <strong>평가/분석</strong> 패턴</p>
+      <p style="font-size:0.85rem;">S→C→"무엇을 의미?"→A(평가)</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH5: Top-Down / Bottom-Up ==================== -->
+<section class="section fade-in" id="build">
+  <span class="section-tag">Chapter 5 — 구축 방법</span>
+  <h2>피라미드 만들기: Top-Down vs Bottom-Up</h2>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab(event, 'topdown')">Top-Down (권장)</button>
+    <button class="tab-btn" onclick="switchTab(event, 'bottomup')">Bottom-Up</button>
+  </div>
+
+  <div class="tab-content active" id="topdown">
+    <div class="callout green">
+      <div class="callout-title">✅ Top-Down 접근법 — 가능하면 항상 이 방법을 쓰세요</div>
+      <p style="margin:0">결론을 먼저 정하고, 그것을 뒷받침할 근거를 아래로 전개합니다.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-num">1</div>
+        <div class="ps-title">주제 파악</div>
+        <div class="ps-desc">글의 주제를<br>명확히 정의</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">2</div>
+        <div class="ps-title">질문 도출</div>
+        <div class="ps-desc">독자가 이 주제에<br>던질 질문은?</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">3</div>
+        <div class="ps-title">답변 = 결론</div>
+        <div class="ps-desc">그 질문에 대한<br>답 = 핵심 메시지</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">4</div>
+        <div class="ps-title">S-C 구성</div>
+        <div class="ps-desc">도입부의<br>S와 C를 설계</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">5</div>
+        <div class="ps-title">Key Lines</div>
+        <div class="ps-desc">결론을 뒷받침하는<br>2~4개 근거</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="bottomup">
+    <div class="callout warn">
+      <div class="callout-title">⚠️ Bottom-Up 접근법 — 결론이 잡히지 않을 때 사용</div>
+      <p style="margin:0">먼저 모든 정보/아이디어를 나열하고, 논리적 그룹으로 묶은 후, 각 그룹의 요약으로 올라가면서 피라미드를 쌓습니다.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-num">1</div>
+        <div class="ps-title">아이디어 나열</div>
+        <div class="ps-desc">떠오르는 모든<br>포인트를 기록</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">2</div>
+        <div class="ps-title">관계 파악</div>
+        <div class="ps-desc">항목 간 논리적<br>관계를 식별</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">3</div>
+        <div class="ps-title">그룹핑</div>
+        <div class="ps-desc">같은 종류끼리<br>묶기</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">4</div>
+        <div class="ps-title">요약 도출</div>
+        <div class="ps-desc">각 그룹의<br>핵심을 요약</div>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">5</div>
+        <div class="ps-title">최종 결론</div>
+        <div class="ps-desc">요약들의 요약<br>= 핵심 메시지</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH6: 연역 vs 귀납 ==================== -->
+<section class="section fade-in" id="deduction">
+  <span class="section-tag">Chapter 6 — 논리 구조</span>
+  <h2>연역적 추론 vs 귀납적 추론</h2>
+
+  <p class="highlight">피라미드의 수평 관계는 <strong>연역</strong> 또는 <strong>귀납</strong> 두 가지 논리로 구성됩니다. 어떤 것을 선택하느냐에 따라 글의 성격이 완전히 달라집니다.</p>
+
+  <h3>연역적 추론 (Deductive Reasoning)</h3>
+  <p>하나의 전제에서 출발하여, 관련된 전제를 추가하고, 필연적인 결론에 도달하는 방식입니다. 삼단논법이 대표적입니다.</p>
+
+  <div class="deduction-chain">
+    <div class="ded-box">
+      <div><strong style="color:var(--accent);">대전제</strong><br><span style="color:var(--muted);font-size:0.85rem;">모든 사람은 죽는다</span></div>
+    </div>
+    <div class="ded-arrow">→</div>
+    <div class="ded-box">
+      <div><strong style="color:var(--accent3);">소전제</strong><br><span style="color:var(--muted);font-size:0.85rem;">소크라테스는 사람이다</span></div>
+    </div>
+    <div class="ded-arrow">→</div>
+    <div class="ded-box conclusion">
+      <div><strong style="color:var(--accent2);">결론</strong><br><span style="color:var(--muted);font-size:0.85rem;">소크라테스는 죽는다</span></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">📌 비즈니스 연역 예시</div>
+    <p style="margin:0">대전제: "시장 점유율이 30% 아래로 떨어지면 수익성이 악화된다"<br>
+    소전제: "우리 점유율이 현재 25%이다"<br>
+    결론: <strong>"따라서 수익성이 악화되고 있으며 점유율 회복 전략이 필요하다"</strong></p>
+  </div>
+
+  <h3>귀납적 추론 (Inductive Reasoning)</h3>
+  <p>여러 개의 <strong>같은 종류의 사실/관찰</strong>을 모아서, 그로부터 하나의 일반적인 결론(추론)을 이끌어내는 방식입니다.</p>
+
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="500" height="200" viewBox="0 0 500 200" class="pyramid-svg">
+      <rect x="30" y="100" width="120" height="50" rx="8" fill="none" stroke="#6c63ff" stroke-width="1.5"/>
+      <text x="90" y="122" text-anchor="middle" fill="#e8e8f0" font-size="11">A 지역 매출 증가</text>
+      <text x="90" y="140" text-anchor="middle" fill="#9a9ab8" font-size="10">(관찰 1)</text>
+      <rect x="180" y="100" width="120" height="50" rx="8" fill="none" stroke="#6c63ff" stroke-width="1.5"/>
+      <text x="240" y="122" text-anchor="middle" fill="#e8e8f0" font-size="11">B 지역 매출 증가</text>
+      <text x="240" y="140" text-anchor="middle" fill="#9a9ab8" font-size="10">(관찰 2)</text>
+      <rect x="330" y="100" width="120" height="50" rx="8" fill="none" stroke="#6c63ff" stroke-width="1.5"/>
+      <text x="390" y="122" text-anchor="middle" fill="#e8e8f0" font-size="11">C 지역 매출 증가</text>
+      <text x="390" y="140" text-anchor="middle" fill="#9a9ab8" font-size="10">(관찰 3)</text>
+
+      <line x1="90" y1="100" x2="240" y2="50" stroke="#00c9a7" stroke-width="1.5"/>
+      <line x1="240" y1="100" x2="240" y2="50" stroke="#00c9a7" stroke-width="1.5"/>
+      <line x1="390" y1="100" x2="240" y2="50" stroke="#00c9a7" stroke-width="1.5"/>
+
+      <rect x="160" y="15" width="160" height="40" rx="8" fill="rgba(0,201,167,0.15)" stroke="#00c9a7" stroke-width="2"/>
+      <text x="240" y="40" text-anchor="middle" fill="#00c9a7" font-size="12" font-weight="700">전국적으로 매출이 증가 추세</text>
+
+      <text x="240" y="185" text-anchor="middle" fill="#9a9ab8" font-size="11">같은 종류의 관찰들 → 하나의 추론</text>
+    </svg>
+  </div>
+
+  <h3>연역 vs 귀납: 언제 어떤 것을 쓸까?</h3>
+
+  <div class="comparison">
+    <div class="card" style="border-top:3px solid var(--accent);">
+      <div class="compare-label" style="color:var(--accent);">연역적 추론</div>
+      <p><strong>적합한 경우:</strong> 설득이 핵심이고 논리적 필연성을 보여야 할 때</p>
+      <p><strong>장점:</strong> 논리적 결합력이 강함</p>
+      <p><strong>단점:</strong> 전개가 느리고, 독자가 마지막까지 읽어야 결론에 도달</p>
+      <p style="font-size:0.85rem;color:var(--accent);">💡 피라미드 하위 레벨에서 사용 권장</p>
+    </div>
+    <div class="card" style="border-top:3px solid var(--accent2);">
+      <div class="compare-label" style="color:var(--accent2);">귀납적 추론</div>
+      <p><strong>적합한 경우:</strong> 여러 관찰에서 패턴을 도출할 때</p>
+      <p><strong>장점:</strong> 독자가 한눈에 파악 가능, 구조가 명확</p>
+      <p><strong>단점:</strong> 추론의 비약(Inductive Leap) 위험</p>
+      <p style="font-size:0.85rem;color:var(--accent2);">💡 피라미드 Key Line 수준에서 사용 권장</p>
+    </div>
+  </div>
+
+  <div class="callout warn">
+    <div class="callout-title">⚠️ 민토의 핵심 권고</div>
+    <p style="margin:0">피라미드의 <strong>Key Line(핵심 근거) 수준에서는 귀납적 추론을 권장</strong>합니다. 연역은 결론까지 도달하는 데 시간이 걸려 독자의 집중력을 떨어뜨릴 수 있기 때문입니다. 연역은 하위 레벨의 세부 논증에 사용하는 것이 효과적입니다.</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH6 심화: 논리적 순서 ==================== -->
+<section class="section fade-in" id="logical-order">
+  <span class="section-tag">Chapter 6 — 심화</span>
+  <h2>논리적 순서 부여하기</h2>
+
+  <p class="highlight">같은 레벨의 항목들을 배열할 때는 반드시 <strong>세 가지 논리적 순서</strong> 중 하나를 적용해야 합니다. 순서를 찾지 못한다면 그룹핑에 문제가 있다는 신호입니다.</p>
+
+  <div class="grid-3">
+    <div class="card card-accent">
+      <h4>⏱ 시간 순서</h4>
+      <p>프로세스, 단계, 절차를 표현할 때 사용합니다.</p>
+      <p style="font-size:0.85rem;color:var(--accent);">인과관계가 있는 행동들:</p>
+      <p style="font-size:0.85rem;">1단계 → 2단계 → 3단계</p>
+      <p style="font-size:0.85rem;">예: "시스템 도입 로드맵"</p>
+    </div>
+    <div class="card card-green">
+      <h4>🏗 구조 순서</h4>
+      <p>하나의 전체를 구성 요소로 분류할 때 사용합니다.</p>
+      <p style="font-size:0.85rem;color:var(--accent2);">MECE하게 분류된 항목들:</p>
+      <p style="font-size:0.85rem;">부서별, 지역별, 기능별</p>
+      <p style="font-size:0.85rem;">예: "조직 구조 분석"</p>
+    </div>
+    <div class="card card-yellow">
+      <h4>📊 중요도 순서</h4>
+      <p>같은 종류의 항목을 등급으로 배열할 때 사용합니다.</p>
+      <p style="font-size:0.85rem;color:var(--accent3);">가장 중요한 것부터:</p>
+      <p style="font-size:0.85rem;">큰 것 → 작은 것</p>
+      <p style="font-size:0.85rem;">예: "우선순위별 리스크"</p>
+    </div>
+  </div>
+
+  <h3>MECE: 상호 배타적, 전체 포괄적</h3>
+  <p><strong>MECE(Mutually Exclusive, Collectively Exhaustive)</strong>란 항목들이 서로 겹치지 않으면서(ME), 전체를 빠짐없이 포괄(CE)하는 것입니다.</p>
+
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="500" height="200" viewBox="0 0 500 200" class="pyramid-svg">
+      <text x="250" y="25" text-anchor="middle" fill="#e8e8f0" font-size="14" font-weight="700">MECE 분류 예시: 회사 매출 분석</text>
+
+      <rect x="50" y="50" width="400" height="45" rx="8" fill="rgba(108,99,255,0.1)" stroke="#6c63ff" stroke-width="2"/>
+      <text x="250" y="78" text-anchor="middle" fill="#6c63ff" font-size="12" font-weight="700">전체 매출 (100%)</text>
+
+      <rect x="50" y="115" width="125" height="40" rx="6" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="112" y="140" text-anchor="middle" fill="#00c9a7" font-size="11">국내 B2B</text>
+      <rect x="185" y="115" width="125" height="40" rx="6" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="247" y="140" text-anchor="middle" fill="#00c9a7" font-size="11">국내 B2C</text>
+      <rect x="320" y="115" width="130" height="40" rx="6" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="385" y="140" text-anchor="middle" fill="#00c9a7" font-size="11">해외 매출</text>
+
+      <text x="250" y="183" text-anchor="middle" fill="#9a9ab8" font-size="10">겹치지 않고(ME) + 빠짐없이(CE) = MECE ✓</text>
+    </svg>
+  </div>
+
+  <div class="callout red">
+    <div class="callout-title">❌ MECE 위반 예시</div>
+    <p style="margin:0">"매출 분석: ① 온라인 매출, ② 모바일 매출, ③ 오프라인 매출" → 모바일 매출은 온라인에 포함되므로 <strong>ME(상호배타) 위반</strong></p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== CH7: 요약의 기술 ==================== -->
+<section class="section fade-in" id="summary">
+  <span class="section-tag">Chapter 7 — 요약</span>
+  <h2>요약의 기술: "지적으로 공허한 진술"을 피하라</h2>
+
+  <p class="highlight">피라미드에서 상위 포인트는 하위를 "요약"해야 합니다. 그러나 많은 사람들이 진정한 요약 대신 <strong>지적으로 공허한 진술(Intellectually Blank Assertion)</strong>을 씁니다.</p>
+
+  <h3>지적으로 공허한 진술이란?</h3>
+  <div class="comparison">
+    <div class="card compare-bad">
+      <div class="compare-label">❌ 공허한 진술</div>
+      <p>"이 회사에는 조직적 문제가 있다"</p>
+      <p>"개선이 필요한 분야가 있다"</p>
+      <p>"몇 가지 조치를 취해야 한다"</p>
+      <p style="color:var(--accent4);font-size:0.85rem;">→ 아무런 생각을 자극하지 않는, 당연한 말</p>
+    </div>
+    <div class="card compare-good">
+      <div class="compare-label">✅ 진정한 요약</div>
+      <p>"의사결정 권한이 중복되어 실행 속도가 느리다"</p>
+      <p>"고객 이탈의 70%가 온보딩 단계에서 발생한다"</p>
+      <p>"3가지 프로세스 통합으로 처리 시간을 50% 단축하라"</p>
+      <p style="color:var(--accent2);font-size:0.85rem;">→ 구체적이고, 행동을 유발하는 진술</p>
+    </div>
+  </div>
+
+  <h3>요약하는 두 가지 방법</h3>
+  <p>하위 항목의 성격에 따라 요약 방법이 달라집니다:</p>
+
+  <div class="grid-2">
+    <div class="card card-accent">
+      <h4>행동(Action) 요약</h4>
+      <p>하위가 <strong>행동/조치</strong>들일 때: 그 행동들이 모여 만들어내는 <strong>최종 결과(Effect)</strong>를 요약으로 사용</p>
+      <div class="callout" style="padding:1rem;margin-top:0.8rem;">
+        <p style="margin:0;font-size:0.85rem;">하위: ① 인력을 재배치하라 ② 시스템을 업그레이드하라 ③ 교육을 실시하라<br>
+        → 요약: <strong>"운영 효율성을 30% 향상시켜라"</strong> (행동의 결과)</p>
+      </div>
+    </div>
+    <div class="card card-green">
+      <h4>상황(Situation) 요약</h4>
+      <p>하위가 <strong>상황/사실</strong>들일 때: 그 상황들이 암시하는 <strong>의미/추론(Inference)</strong>을 요약으로 사용</p>
+      <div class="callout green" style="padding:1rem;margin-top:0.8rem;">
+        <p style="margin:0;font-size:0.85rem;">하위: ① 매출이 하락중 ② 비용이 증가중 ③ 고객 이탈률 상승<br>
+        → 요약: <strong>"회사의 수익 구조가 위험 수준에 도달했다"</strong> (상황의 의미)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">💡 자가 점검법</div>
+    <p style="margin:0">작성한 요약문을 읽고 "그래서 뭐?(So what?)"라고 물어보세요. 더 구체적이고 의미 있는 답이 나온다면, 원래 요약이 공허했다는 뜻입니다. "So what?" 질문에 더 이상 답할 수 없을 때까지 반복하세요.</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- =====================================================
+     PART II: 이론 심화편
+     ===================================================== -->
+
+<!-- ==================== 문제 정의 프레임워크 (Ch8) ==================== -->
+<section class="section fade-in" id="problem-def">
+  <span class="section-tag">Chapter 8 — 이론 심화</span>
+  <h2>문제 정의 프레임워크</h2>
+
+  <p class="highlight">복잡한 비즈니스 문제를 다룰 때, SCQA의 도입부를 쓰기 전에 먼저 <strong>문제를 체계적으로 정의</strong>해야 합니다. 민토는 이를 위한 4단계 프레임워크를 제시합니다.</p>
+
+  <h3>문제 정의의 4가지 요소</h3>
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="700" height="320" viewBox="0 0 700 320" class="pyramid-svg">
+      <!-- Opening Scene -->
+      <rect x="30" y="20" width="280" height="80" rx="12" fill="rgba(108,99,255,0.1)" stroke="#6c63ff" stroke-width="2"/>
+      <text x="170" y="48" text-anchor="middle" fill="#6c63ff" font-size="13" font-weight="700">① 시작 상황 (Opening Scene)</text>
+      <text x="170" y="72" text-anchor="middle" fill="#9a9ab8" font-size="11">현재 안정적 상태나 사실 기술</text>
+      <text x="170" y="90" text-anchor="middle" fill="#9a9ab8" font-size="10">"우리 회사는 시장 1위를 유지하고 있다"</text>
+
+      <!-- Disturbing Event -->
+      <rect x="380" y="20" width="280" height="80" rx="12" fill="rgba(255,107,107,0.1)" stroke="#ff6b6b" stroke-width="2"/>
+      <text x="520" y="48" text-anchor="middle" fill="#ff6b6b" font-size="13" font-weight="700">② 방해 사건 (Disturbing Event)</text>
+      <text x="520" y="72" text-anchor="middle" fill="#9a9ab8" font-size="11">안정을 위협하는 변화/문제</text>
+      <text x="520" y="90" text-anchor="middle" fill="#9a9ab8" font-size="10">"경쟁사가 파괴적 기술로 진입했다"</text>
+
+      <!-- Arrow -->
+      <line x1="310" y1="60" x2="380" y2="60" stroke="#f7c948" stroke-width="2"/>
+      <polygon points="375,55 385,60 375,65" fill="#f7c948"/>
+
+      <!-- R1 -->
+      <rect x="100" y="150" width="220" height="80" rx="12" fill="rgba(255,107,107,0.1)" stroke="#ff6b6b" stroke-width="1.5"/>
+      <text x="210" y="178" text-anchor="middle" fill="#ff6b6b" font-size="13" font-weight="700">R1 — 원하지 않는 결과</text>
+      <text x="210" y="200" text-anchor="middle" fill="#9a9ab8" font-size="11">현재 발생 중이거나 예상되는</text>
+      <text x="210" y="218" text-anchor="middle" fill="#9a9ab8" font-size="10">"점유율이 급격히 하락하고 있다"</text>
+
+      <!-- R2 -->
+      <rect x="380" y="150" width="220" height="80" rx="12" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="490" y="178" text-anchor="middle" fill="#00c9a7" font-size="13" font-weight="700">R2 — 원하는 결과</text>
+      <text x="490" y="200" text-anchor="middle" fill="#9a9ab8" font-size="11">도달하고 싶은 이상적 상태</text>
+      <text x="490" y="218" text-anchor="middle" fill="#9a9ab8" font-size="10">"점유율 30% 이상 유지"</text>
+
+      <!-- Gap -->
+      <line x1="320" y1="190" x2="380" y2="190" stroke="#f7c948" stroke-width="2" stroke-dasharray="6"/>
+      <text x="350" y="183" text-anchor="middle" fill="#f7c948" font-size="10" font-weight="700">GAP</text>
+
+      <!-- Question -->
+      <rect x="200" y="270" width="300" height="40" rx="20" fill="rgba(247,201,72,0.15)" stroke="#f7c948" stroke-width="2"/>
+      <text x="350" y="295" text-anchor="middle" fill="#f7c948" font-size="12" font-weight="700">Q: R1 → R2로 가려면 어떻게 해야 하는가?</text>
+
+      <line x1="350" y1="230" x2="350" y2="270" stroke="#f7c948" stroke-width="1.5"/>
+      <polygon points="345,265 355,265 350,275" fill="#f7c948"/>
+    </svg>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">💡 핵심 인사이트: R1-R2 갭이 곧 문제</div>
+    <p style="margin:0"><strong>문제 = 원하지 않는 결과(R1)와 원하는 결과(R2) 사이의 차이(Gap)</strong>입니다. 이 갭을 메우는 것이 해결책이며, 도입부의 Question은 이 갭에서 자연스럽게 도출됩니다. 문제를 정확히 정의하면 SCQA는 자동으로 완성됩니다.</p>
+  </div>
+
+  <h3>7가지 표준 문제 상황</h3>
+  <p>비즈니스에서 발생하는 문제 상황은 7가지 유형으로 분류할 수 있으며, 각각 대응하는 SCQA 패턴이 있습니다.</p>
+
+  <table class="pd-table">
+    <thead>
+      <tr><th style="width:5%;">#</th><th style="width:25%;">문제 상황</th><th style="width:35%;">설명</th><th style="width:35%;">SCQA 질문(Q)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>해결책을 모른다</td><td>문제가 있고 R2도 알지만, R2에 도달하는 방법을 모른다</td><td>"어떻게 해야 하는가?"</td></tr>
+      <tr><td>2</td><td>해결책이 있지만 확신이 없다</td><td>해결책을 생각했지만, 그것이 맞는지 검증이 필요하다</td><td>"이 방법이 올바른가?"</td></tr>
+      <tr><td>3</td><td>해결책은 알지만 실행 방법을 모른다</td><td>무엇을 해야 하는지 알지만, 어떻게 실행할지 모른다</td><td>"어떻게 실행해야 하는가?"</td></tr>
+      <tr><td>4</td><td>해결책을 실행했지만 효과가 없다</td><td>이미 조치를 취했는데 문제가 해결되지 않았다</td><td>"왜 효과가 없었으며, 대안은?"</td></tr>
+      <tr><td>5</td><td>여러 해결책 중 선택해야 한다</td><td>여러 대안이 존재하며 최적의 선택이 필요하다</td><td>"어떤 것을 선택해야 하는가?"</td></tr>
+      <tr><td>6</td><td>문제는 감지했지만 정의가 안 된다</td><td>무언가 잘못되었다는 느낌은 있지만 정확히 뭐가 문제인지 모른다</td><td>"정확히 무엇이 문제인가?"</td></tr>
+      <tr><td>7</td><td>기회를 활용하고 싶다</td><td>문제가 아니라 새로운 기회를 포착하여 활용하고 싶다</td><td>"이 기회를 어떻게 활용할 것인가?"</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout green">
+    <div class="callout-title">🔑 문제 정의 → SCQA 변환법</div>
+    <p style="margin:0"><strong>S</strong> = 시작 상황(Opening Scene) + 방해 사건(Disturbing Event)<br>
+    <strong>C</strong> = R1(원하지 않는 결과) 또는 R1-R2 간의 갭<br>
+    <strong>Q</strong> = 7가지 문제 유형에 해당하는 질문<br>
+    <strong>A</strong> = 피라미드의 꼭대기 (핵심 메시지/해결책)</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== End-Product Wording (Ch7 심화) ==================== -->
+<section class="section fade-in" id="endproduct">
+  <span class="section-tag">Chapter 7 — 심화: End-Product Wording</span>
+  <h2>최종 산출물 표현법 (End-Product Wording)</h2>
+
+  <p class="highlight">행동(Action) 아이디어들을 요약할 때, <strong>모호한 동사</strong> 대신 <strong>구체적인 최종 산출물</strong>을 떠올려 표현하면 요약의 질이 비약적으로 향상됩니다.</p>
+
+  <h3>모호한 표현 → 구체적 표현 변환</h3>
+  <p>민토는 "End-Product Wording" 기법을 통해, 각 행동이 만들어내는 구체적인 산출물(시스템, 프로세스, 구조, 계획 등)을 떠올리라고 말합니다.</p>
+
+  <div class="comparison">
+    <div class="card compare-bad">
+      <div class="compare-label">❌ 모호한 행동 요약</div>
+      <p>"조직을 개선하라"</p>
+      <p>"고객 서비스를 강화하라"</p>
+      <p>"비용을 관리하라"</p>
+      <p>"마케팅을 혁신하라"</p>
+      <p>"프로세스를 재검토하라"</p>
+    </div>
+    <div class="card compare-good">
+      <div class="compare-label">✅ End-Product 표현</div>
+      <p>"3개 사업부를 2개로 통합하라" → <em>새로운 조직도</em></p>
+      <p>"24시간 실시간 채팅 시스템을 구축하라" → <em>시스템</em></p>
+      <p>"간접비를 15% 절감하는 예산을 수립하라" → <em>예산안</em></p>
+      <p>"SNS 중심 퍼포먼스 마케팅 전략을 수립하라" → <em>전략서</em></p>
+      <p>"주문-배송 프로세스를 5단계에서 3단계로 축소하라" → <em>프로세스</em></p>
+    </div>
+  </div>
+
+  <h3>행동의 레벨 구분하기</h3>
+  <p>행동 아이디어를 그룹핑할 때, <strong>원인(Cause)과 결과(Effect)</strong>를 구분하는 것이 핵심입니다. 같은 레벨에 원인과 결과가 섞이면 안 됩니다.</p>
+
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="600" height="250" viewBox="0 0 600 250" class="pyramid-svg">
+      <!-- Wrong -->
+      <text x="150" y="20" text-anchor="middle" fill="#ff6b6b" font-size="12" font-weight="700">❌ 레벨 혼재</text>
+      <rect x="30" y="35" width="240" height="100" rx="10" fill="rgba(255,107,107,0.05)" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="4"/>
+      <text x="150" y="60" text-anchor="middle" fill="#9a9ab8" font-size="10">같은 레벨에:</text>
+      <text x="150" y="80" text-anchor="middle" fill="#e8e8f0" font-size="11">• 신제품 출시 계획 수립 (결과)</text>
+      <text x="150" y="98" text-anchor="middle" fill="#e8e8f0" font-size="11">• 시장 조사 실시 (원인)</text>
+      <text x="150" y="116" text-anchor="middle" fill="#e8e8f0" font-size="11">• R&amp;D 팀 확대 (원인)</text>
+
+      <!-- Right -->
+      <text x="450" y="20" text-anchor="middle" fill="#00c9a7" font-size="12" font-weight="700">✅ 레벨 분리</text>
+      <rect x="370" y="35" width="200" height="40" rx="8" fill="rgba(0,201,167,0.15)" stroke="#00c9a7" stroke-width="2"/>
+      <text x="470" y="60" text-anchor="middle" fill="#00c9a7" font-size="11" font-weight="700">신제품 출시 계획 수립</text>
+      <line x1="470" y1="75" x2="470" y2="95" stroke="#3d4470" stroke-width="1.5"/>
+      <line x1="400" y1="95" x2="540" y2="95" stroke="#3d4470" stroke-width="1.5"/>
+      <rect x="350" y="100" width="110" height="35" rx="6" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="405" y="122" text-anchor="middle" fill="#9a9ab8" font-size="10">시장 조사 실시</text>
+      <rect x="480" y="100" width="110" height="35" rx="6" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="535" y="122" text-anchor="middle" fill="#9a9ab8" font-size="10">R&amp;D 팀 확대</text>
+
+      <!-- Note -->
+      <text x="300" y="190" text-anchor="middle" fill="#f7c948" font-size="11" font-weight="700">원인과 결과를 섞지 말 것!</text>
+      <text x="300" y="210" text-anchor="middle" fill="#9a9ab8" font-size="10">상위 = 결과(Effect), 하위 = 원인(Cause) = 구체적 행동</text>
+    </svg>
+  </div>
+
+  <div class="callout">
+    <div class="callout-title">💡 구조적 유사성(Structural Similarity) 확인법</div>
+    <p style="margin:0">같은 레벨의 아이디어들이 올바르게 그룹화되었는지 확인하려면, 그들 사이의 <strong>구조적 유사성</strong>을 찾으세요. 좋은 그룹의 항목들은 같은 주어, 같은 동사 형태, 또는 같은 판단 기준을 공유합니다.<br><br>
+    예: "인건비를 줄여라 / 재료비를 줄여라 / 운영비를 줄여라" → 모두 "비용 항목 + 줄여라" 구조 ✅</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 귀납적 도약 (Ch7 심화) ==================== -->
+<section class="section fade-in" id="inductive-leap">
+  <span class="section-tag">Chapter 7 — 심화: 귀납적 도약</span>
+  <h2>귀납적 도약 (Inductive Leap)</h2>
+
+  <p class="highlight">귀납적 추론에서 가장 위험한 함정은 <strong>"귀납적 도약(Inductive Leap)"</strong>입니다. 개별 관찰들에서 너무 큰 결론으로 비약하거나, 반대로 너무 약한 결론을 내리는 것입니다.</p>
+
+  <h3>귀납적 도약이란?</h3>
+  <p>귀납적 추론은 본질적으로 "부분에서 전체로" 나아갑니다. 이때 적절한 수준의 결론을 내리는 것이 관건입니다.</p>
+
+  <div class="grid-3">
+    <div class="card card-red">
+      <h4>과도한 도약 ❌</h4>
+      <p>관찰: A팀 성과↑, B팀 성과↑</p>
+      <p>결론: "회사 전체가 성장하고 있다"</p>
+      <p style="color:var(--accent4);font-size:0.85rem;">→ C, D팀은 확인 안 함. 비약!</p>
+    </div>
+    <div class="card card-green">
+      <h4>적절한 도약 ✅</h4>
+      <p>관찰: A팀 성과↑, B팀 성과↑</p>
+      <p>결론: "두 팀의 성과가 모두 개선되고 있다"</p>
+      <p style="color:var(--accent2);font-size:0.85rem;">→ 관찰에 충실한 결론</p>
+    </div>
+    <div class="card card-yellow">
+      <h4>부족한 도약 ⚠️</h4>
+      <p>관찰: A팀 성과↑, B팀 성과↑</p>
+      <p>결론: "A팀과 B팀 성과가 올라갔다"</p>
+      <p style="color:var(--accent3);font-size:0.85rem;">→ 요약이 아니라 반복. 공허!</p>
+    </div>
+  </div>
+
+  <h3>귀납적 도약 검증 3단계</h3>
+
+  <div class="card card-accent" style="margin:2rem 0;">
+    <div class="step-row">
+      <span class="step-num">1</span>
+      <div><strong>같은 종류인지 확인</strong>
+      <p>모인 항목들이 정말 같은 범주에 속하는가? "이 항목들을 하나의 복수명사로 묶을 수 있는가?"</p></div>
+    </div>
+    <div class="step-row">
+      <span class="step-num">2</span>
+      <div><strong>MECE 확인</strong>
+      <p>빠진 관찰은 없는가? 겹치는 관찰은 없는가? 불완전한 관찰 세트로 결론을 내리면 도약이 됩니다.</p></div>
+    </div>
+    <div class="step-row">
+      <span class="step-num">3</span>
+      <div><strong>"So what?" 반복</strong>
+      <p>결론에 "그래서 뭐?"라고 물었을 때, 더 의미 있는 답이 나오면 아직 충분히 올라가지 않은 것. 답이 없으면 적절한 수준.</p></div>
+    </div>
+  </div>
+
+  <div class="callout warn">
+    <div class="callout-title">⚠️ 민토의 "시각화" 테스트</div>
+    <p style="margin:0">귀납적 요약을 쓸 때 민토가 제안하는 방법: <strong>하위 항목들을 모아놓고, 그것들이 함께 만들어내는 "장면(scene)"을 머릿속에 그려보세요.</strong> 그 장면을 한 문장으로 묘사한 것이 바로 적절한 귀납적 요약입니다.<br><br>
+    예: "매출↑ + 비용↓ + 고객만족↑" → 눈 감고 상상 → "건강한 성장 궤도에 진입했다" 🎯</p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- =====================================================
+     PART III: 실무 적용편
+     ===================================================== -->
+
+<!-- ==================== 실무1: 그룹핑 실습 ==================== -->
+<section class="section fade-in" id="case-grouping">
+  <span class="section-tag practical">실무 적용 ①</span>
+  <h2>그룹핑 실전 워크숍</h2>
+
+  <p class="highlight">실무에서 가장 흔한 실수는 <strong>잘못된 그룹핑</strong>입니다. 아래 실전 케이스를 통해 올바른 그룹핑 감각을 기릅시다.</p>
+
+  <h3>Case 1: 주간 보고 — 그룹핑 전 vs 후</h3>
+  <div class="case-box">
+    <div class="case-title">📋 상황: 팀장이 주간 보고를 요청했습니다. 이번 주 있었던 일:</div>
+    <div class="workshop-item">
+      <div class="workshop-label before">BEFORE — 나열식</div>
+      <div class="workshop-content">
+        <ul>
+          <li>월요일 A 클라이언트 미팅</li>
+          <li>디자인 시안 3차 수정</li>
+          <li>김 대리 퇴사 의향 표명</li>
+          <li>서버 장애 2시간 발생</li>
+          <li>B 프로젝트 제안서 발송</li>
+          <li>신입 교육 진행</li>
+          <li>예산 초과 경고</li>
+          <li>C 클라이언트 계약 체결</li>
+        </ul>
+      </div>
+    </div>
+    <div class="workshop-item">
+      <div class="workshop-label after">AFTER — 피라미드 그룹핑</div>
+      <div class="workshop-content">
+        <p style="color:var(--accent2);font-weight:700;margin-bottom:1rem;">"이번 주는 영업 성과가 양호했으나, 인력·운영 리스크에 대한 대응이 시급합니다."</p>
+        <p style="color:var(--text);font-weight:700;">1. 영업 진행 상황 (긍정)</p>
+        <ul>
+          <li>A 클라이언트 미팅 → 추가 요구사항 확인</li>
+          <li>B 프로젝트 제안서 발송 → 다음주 피드백 예정</li>
+          <li>C 클라이언트 계약 체결 (5,000만 원)</li>
+        </ul>
+        <p style="color:var(--text);font-weight:700;margin-top:0.8rem;">2. 내부 리스크 (주의)</p>
+        <ul>
+          <li>김 대리 퇴사 의향 → 리텐션 면담 필요</li>
+          <li>예산 초과 경고 → 비용 재조정 필요</li>
+          <li>서버 장애 2시간 → 인프라 점검 예정</li>
+        </ul>
+        <p style="color:var(--text);font-weight:700;margin-top:0.8rem;">3. 프로젝트 실행 (진행중)</p>
+        <ul>
+          <li>디자인 시안 3차 수정 → 최종 검토 중</li>
+          <li>신입 교육 → 2주차 진입</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>Case 2: 회의 안건 — 그룹핑 실습</h3>
+  <div class="case-box">
+    <div class="case-title">📋 상황: 아래 9개 포인트를 3개 그룹으로 묶어보세요</div>
+    <div class="workshop-content" style="margin:1rem 0;">
+      <p style="color:var(--text);font-size:0.9rem;">① 경쟁사 D가 가격을 20% 인하했다 / ② 우리 앱 다운로드가 전월 대비 30% 증가 / ③ 고객센터 응대시간이 2배로 늘었다 / ④ 신제품 베타 테스트 완료 / ⑤ 고객 NPS가 65→52로 하락 / ⑥ 3분기 매출이 목표 대비 110% / ⑦ 핵심 개발자 2명 채용 성공 / ⑧ 고객 이탈률이 5%→8%로 상승 / ⑨ 파트너사 제휴 계약 3건 체결</p>
+    </div>
+
+    <div class="tabs" style="margin-top:1rem;">
+      <button class="tab-btn active" onclick="switchTab(event, 'group-try')">직접 생각해보기</button>
+      <button class="tab-btn" onclick="switchTab(event, 'group-answer')">정답 보기</button>
+    </div>
+
+    <div class="tab-content active" id="group-try">
+      <div class="callout">
+        <p style="margin:0;">힌트: 각 항목의 <strong>성격</strong>을 먼저 분류하세요. 같은 종류의 관찰끼리 묶이는지, 하나의 복수명사로 표현 가능한지 확인해보세요.</p>
+      </div>
+    </div>
+    <div class="tab-content" id="group-answer">
+      <div class="grid-3">
+        <div class="card card-green" style="padding:1.5rem;">
+          <h4 style="color:var(--accent2);">성장 신호 🟢</h4>
+          <p>② 앱 다운로드 30%↑</p>
+          <p>⑥ 매출 목표 110% 달성</p>
+          <p>⑨ 파트너 제휴 3건 체결</p>
+          <p style="color:var(--accent2);font-size:0.85rem;">→ "사업 성과가 강한 성장세"</p>
+        </div>
+        <div class="card card-red" style="padding:1.5rem;">
+          <h4 style="color:var(--accent4);">고객 경험 위기 🔴</h4>
+          <p>③ 응대시간 2배 증가</p>
+          <p>⑤ NPS 65→52 하락</p>
+          <p>⑧ 이탈률 5%→8% 상승</p>
+          <p style="color:var(--accent4);font-size:0.85rem;">→ "고객 만족도가 급격히 악화 중"</p>
+        </div>
+        <div class="card card-accent" style="padding:1.5rem;">
+          <h4 style="color:var(--accent);">경쟁력 확보 ⚡</h4>
+          <p>① 경쟁사 가격 20% 인하</p>
+          <p>④ 신제품 베타테스트 완료</p>
+          <p>⑦ 핵심 개발자 2명 채용</p>
+          <p style="color:var(--accent);font-size:0.85rem;">→ "경쟁 대응 체력을 갖추고 있다"</p>
+        </div>
+      </div>
+      <div class="callout green" style="margin-top:1rem;">
+        <p style="margin:0;font-weight:700;">최종 메시지: "사업 성장이 강하지만, 고객 경험 악화가 성장의 지속성을 위협하고 있으므로 고객 만족 회복에 집중해야 한다."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 실무2: PPT 슬라이드 제작법 ==================== -->
+<section class="section fade-in" id="case-ppt">
+  <span class="section-tag practical">실무 적용 ②</span>
+  <h2>피라미드 기반 PPT 슬라이드 제작법</h2>
+
+  <p class="highlight">피라미드 구조를 PPT에 적용하면, <strong>한 슬라이드 = 하나의 메시지</strong> 원칙이 됩니다. 슬라이드 제목이 곧 피라미드의 포인트입니다.</p>
+
+  <h3>핵심 원칙: 슬라이드 제목 = 피라미드의 포인트</h3>
+  <div class="callout">
+    <div class="callout-title">📐 "제목을 모아 읽으면 보고서 전체가 요약된다"</div>
+    <p style="margin:0">PPT의 모든 슬라이드 제목을 순서대로 나열했을 때, 그것만으로 전체 프레젠테이션의 논리가 통해야 합니다. 이것이 피라미드 기반 PPT의 핵심입니다.</p>
+  </div>
+
+  <h3>PPT 구성 매핑</h3>
+  <div style="text-align:center;margin:2rem 0;">
+    <svg width="700" height="300" viewBox="0 0 700 300" class="pyramid-svg">
+      <!-- Pyramid side -->
+      <text x="180" y="20" text-anchor="middle" fill="#6c63ff" font-size="12" font-weight="700">피라미드 구조</text>
+
+      <rect x="100" y="35" width="160" height="40" rx="8" fill="rgba(108,99,255,0.2)" stroke="#6c63ff" stroke-width="2"/>
+      <text x="180" y="60" text-anchor="middle" fill="#e8e8f0" font-size="11" font-weight="700">핵심 메시지</text>
+
+      <line x1="180" y1="75" x2="180" y2="95" stroke="#3d4470" stroke-width="1.5"/>
+      <rect x="40" y="100" width="110" height="35" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="95" y="122" text-anchor="middle" fill="#e8e8f0" font-size="10">Key Line 1</text>
+      <rect x="160" y="100" width="110" height="35" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="215" y="122" text-anchor="middle" fill="#e8e8f0" font-size="10">Key Line 2</text>
+      <rect x="280" y="100" width="110" height="35" rx="6" fill="none" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="335" y="122" text-anchor="middle" fill="#e8e8f0" font-size="10">Key Line 3</text>
+
+      <line x1="95" y1="135" x2="95" y2="155" stroke="#3d4470" stroke-width="1"/>
+      <rect x="45" y="160" width="100" height="25" rx="4" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="95" y="177" text-anchor="middle" fill="#9a9ab8" font-size="9">세부 근거</text>
+
+      <!-- Arrow -->
+      <text x="430" y="90" text-anchor="middle" fill="#f7c948" font-size="16">→</text>
+
+      <!-- PPT side -->
+      <text x="570" y="20" text-anchor="middle" fill="#f7c948" font-size="12" font-weight="700">PPT 슬라이드</text>
+
+      <rect x="470" y="35" width="200" height="30" rx="4" fill="rgba(247,201,72,0.1)" stroke="#f7c948" stroke-width="1.5"/>
+      <text x="570" y="55" text-anchor="middle" fill="#f7c948" font-size="10" font-weight="700">슬라이드 1: 요약/결론</text>
+
+      <rect x="470" y="75" width="200" height="25" rx="4" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1"/>
+      <text x="570" y="92" text-anchor="middle" fill="#00c9a7" font-size="10">슬라이드 2: Key Line 1 전개</text>
+      <rect x="470" y="108" width="200" height="25" rx="4" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1"/>
+      <text x="570" y="125" text-anchor="middle" fill="#00c9a7" font-size="10">슬라이드 3: Key Line 2 전개</text>
+      <rect x="470" y="141" width="200" height="25" rx="4" fill="rgba(0,201,167,0.1)" stroke="#00c9a7" stroke-width="1"/>
+      <text x="570" y="158" text-anchor="middle" fill="#00c9a7" font-size="10">슬라이드 4: Key Line 3 전개</text>
+
+      <rect x="470" y="180" width="200" height="25" rx="4" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="570" y="197" text-anchor="middle" fill="#9a9ab8" font-size="10">슬라이드 5-N: 세부 근거</text>
+
+      <rect x="470" y="220" width="200" height="30" rx="4" fill="rgba(108,99,255,0.1)" stroke="#6c63ff" stroke-width="1.5"/>
+      <text x="570" y="240" text-anchor="middle" fill="#6c63ff" font-size="10" font-weight="700">마지막: Next Steps</text>
+    </svg>
+  </div>
+
+  <h3>실전 예시: 신규 시스템 도입 제안 PPT</h3>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab(event, 'ppt-bad')">❌ 잘못된 구성</button>
+    <button class="tab-btn" onclick="switchTab(event, 'ppt-good')">✅ 피라미드 구성</button>
+  </div>
+
+  <div class="tab-content active" id="ppt-bad">
+    <div class="slide-mock" style="opacity:0.7;">
+      <div class="slide-title" style="border-bottom-color:#ff6b6b;">현 시스템 현황</div>
+      <div class="slide-point">현재 시스템 스펙</div>
+      <div class="slide-point">도입 연도 및 운영 기간</div>
+      <div class="slide-point">현재 사용자 수</div>
+      <div class="slide-point">유지보수 비용 추이</div>
+      <div class="slide-badge" style="color:#ff6b6b;">❌ 결론 없이 정보만 나열</div>
+    </div>
+    <p style="color:var(--accent4);font-size:0.9rem;margin-top:1rem;">→ 슬라이드 제목이 "주제"일 뿐, "메시지"가 아닙니다. 독자는 "그래서 뭐?"라고 생각합니다.</p>
+  </div>
+
+  <div class="tab-content" id="ppt-good">
+    <div style="display:flex;flex-direction:column;gap:1rem;">
+      <div class="slide-mock">
+        <div class="slide-title">ERP 시스템을 올해 4분기까지 교체해야 합니다</div>
+        <div class="slide-point">1. 현 시스템의 유지비가 매년 30%씩 증가하고 있다</div>
+        <div class="slide-point">2. 업무 효율이 업계 평균의 60% 수준에 불과하다</div>
+        <div class="slide-point">3. 보안 취약점으로 규제 리스크가 높아지고 있다</div>
+        <div class="slide-badge">슬라이드 1: Executive Summary</div>
+      </div>
+      <div class="slide-mock">
+        <div class="slide-title">현 시스템 유지비가 매년 30%씩 증가하고 있다</div>
+        <div class="slide-point">5년간 유지보수 비용 추이 (그래프)</div>
+        <div class="slide-sub">2022: 2억 → 2023: 2.6억 → 2024: 3.4억 → 2025: 4.4억</div>
+        <div class="slide-point">주요 비용 증가 요인: 레거시 호환, 전문인력 인건비</div>
+        <div class="slide-point">교체 시 3년간 총 비용 40% 절감 가능</div>
+        <div class="slide-badge">슬라이드 2: Key Line 1 근거</div>
+      </div>
+    </div>
+    <p style="color:var(--accent2);font-size:0.9rem;margin-top:1rem;">→ 슬라이드 제목 자체가 메시지! 제목만 읽어도 전체 논리가 통합니다.</p>
+  </div>
+
+  <div class="callout green" style="margin-top:2rem;">
+    <div class="callout-title">✅ PPT 제작 체크리스트</div>
+    <p style="margin:0;">
+    ☐ 첫 슬라이드 제목에 핵심 결론이 있는가?<br>
+    ☐ 모든 슬라이드 제목이 "메시지"인가? ("현황" 같은 주제어가 아닌가?)<br>
+    ☐ 제목만 순서대로 읽으면 전체 논리가 통하는가?<br>
+    ☐ 각 슬라이드 = 하나의 메시지만 담고 있는가?<br>
+    ☐ Key Line 수준은 귀납적(병렬 근거)으로 구성했는가?<br>
+    ☐ SCQA 도입부(S→C→Q→A)로 시작하는가?
+    </p>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 실무3: 한글 보고서 작성 ==================== -->
+<section class="section fade-in" id="case-report">
+  <span class="section-tag practical">실무 적용 ③</span>
+  <h2>피라미드 기반 한글 보고서 작성법</h2>
+
+  <p class="highlight">한국 직장에서 가장 빈번하게 작성하는 보고서, 이메일, 품의서를 피라미드 구조로 재구성하는 실전 가이드입니다.</p>
+
+  <h3>보고서 구조 공식</h3>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="ps-num">1</div>
+      <div class="ps-title">제목</div>
+      <div class="ps-desc">핵심 메시지를<br>한 줄로</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">2</div>
+      <div class="ps-title">배경/도입</div>
+      <div class="ps-desc">SCQA 구조<br>왜 이 보고서가 필요한가</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">3</div>
+      <div class="ps-title">핵심 요약</div>
+      <div class="ps-desc">Key Line 2~4개<br>결론의 핵심 근거</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">4</div>
+      <div class="ps-title">상세 내용</div>
+      <div class="ps-desc">각 Key Line의<br>세부 데이터/근거</div>
+    </div>
+    <div class="process-step">
+      <div class="ps-num">5</div>
+      <div class="ps-title">요청 사항</div>
+      <div class="ps-desc">의사결정/승인<br>Next Steps</div>
+    </div>
+  </div>
+
+  <h3>실전 예시: 마케팅 예산 증액 보고서</h3>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab(event, 'report-bad')">❌ 일반적 보고서</button>
+    <button class="tab-btn" onclick="switchTab(event, 'report-good')">✅ 피라미드 보고서</button>
+  </div>
+
+  <div class="tab-content active" id="report-bad">
+    <div class="report-mock">
+      <h5>마케팅팀 예산 관련 보고</h5>
+      <div class="r-section">1. 현황</div>
+      <div class="r-body">현재 마케팅팀 예산은 분기당 5,000만 원이며, 주로 온라인 광고, 콘텐츠 제작, 이벤트에 사용되고 있습니다.</div>
+      <div class="r-section">2. 실적</div>
+      <div class="r-body">지난 분기 리드 획득 수는 1,200건이었으며, 전환율은 3.2%였습니다. 경쟁사 대비 광고 노출은 약 60% 수준입니다.</div>
+      <div class="r-section">3. 이슈</div>
+      <div class="r-body">최근 CPC 비용이 상승하고 있어 같은 예산으로 달성 가능한 리드 수가 감소 추세입니다. 또한 콘텐츠 마케팅 채널 확장 필요성이 대두되고 있습니다.</div>
+      <div class="r-section">4. 검토 요청</div>
+      <div class="r-body">상기 내용 검토 후 예산 관련 협의를 요청드립니다.</div>
+      <p style="color:#999;font-size:0.8rem;text-align:center;margin-top:1rem;">❌ 결론이 어디에도 없고, 독자가 "그래서 뭘 해달라는 건지?" 모름</p>
+    </div>
+  </div>
+
+  <div class="tab-content" id="report-good">
+    <div class="report-mock">
+      <h5>Q3 마케팅 예산 30% 증액 요청 건</h5>
+      <div class="r-section" style="color:#6c63ff;">■ 핵심 요약 (SCQA 기반 도입)</div>
+      <div class="r-body"><span class="r-highlight">Q3 마케팅 예산을 현재 5,000만 원에서 6,500만 원으로 30% 증액</span>할 것을 요청드립니다.</div>
+      <div class="r-body">하반기 매출 목표 달성을 위해 리드 획득을 40% 늘려야 하나(S→C), 현재 예산으로는 CPC 상승과 채널 확장에 대응이 불가합니다(Q).</div>
+
+      <div class="r-section" style="color:#00c9a7;">■ 증액이 필요한 3가지 이유</div>
+      <div class="r-body"><strong>1. CPC 비용 상승으로 리드 단가가 25% 증가</strong></div>
+      <div class="r-indent">- Q1 리드당 비용: 35,000원 → Q2: 44,000원 (+25%)</div>
+      <div class="r-indent">- 같은 예산으로 Q3 리드 예상: 1,200건 → 900건으로 감소</div>
+
+      <div class="r-body"><strong>2. 신규 콘텐츠 채널 확장이 시급</strong></div>
+      <div class="r-indent">- 유튜브/TikTok 채널 미운영 → 타겟 20~30대 도달률 30%p 저조</div>
+      <div class="r-indent">- 경쟁사 B, C는 이미 숏폼 콘텐츠로 월 50만 뷰 달성 중</div>
+
+      <div class="r-body"><strong>3. 증액 대비 ROI가 명확</strong></div>
+      <div class="r-indent">- 추가 1,500만 원 → 예상 추가 리드 500건 → 예상 매출 2.5억 원</div>
+      <div class="r-indent">- 투자 대비 수익률(ROI): 약 16.7배</div>
+
+      <div class="r-section" style="color:#f7c948;">■ 요청 사항</div>
+      <div class="r-body">Q3 마케팅 예산 증액(5,000만→6,500만 원)을 승인해주시기 바랍니다.</div>
+      <p style="color:#666;font-size:0.8rem;text-align:center;margin-top:1rem;">✅ 결론 먼저 → 3가지 근거 → 구체적 요청</p>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 실무4: 이메일·메모 작성 ==================== -->
+<section class="section fade-in" id="case-email">
+  <span class="section-tag practical">실무 적용 ④</span>
+  <h2>이메일 · 메모 · 슬랙 메시지 작성법</h2>
+
+  <p class="highlight">짧은 커뮤니케이션에도 피라미드 원칙을 적용하면 <strong>응답률과 실행력이 비약적으로 향상</strong>됩니다.</p>
+
+  <h3>이메일 피라미드 공식</h3>
+
+  <div class="card card-accent" style="margin:2rem 0;">
+    <div class="step-row">
+      <span class="step-num">1</span>
+      <div><strong>제목 = 핵심 메시지</strong>
+      <p>"미팅 관련" ❌ → "4/15 프로젝트 킥오프 일정을 4/22로 변경 요청드립니다" ✅</p></div>
+    </div>
+    <div class="step-row">
+      <span class="step-num">2</span>
+      <div><strong>첫 문장 = 결론/요청</strong>
+      <p>인사말 다음 바로 핵심 메시지. "~~와 관련하여 ~~을 요청/공유드립니다."</p></div>
+    </div>
+    <div class="step-row">
+      <span class="step-num">3</span>
+      <div><strong>본문 = 2~3개 근거</strong>
+      <p>핵심 메시지를 뒷받침하는 근거를 귀납적으로 배치.</p></div>
+    </div>
+    <div class="step-row">
+      <span class="step-num" style="background:var(--accent2);">4</span>
+      <div><strong>마무리 = 구체적 요청 + 기한</strong>
+      <p>"~까지 ~을 해주시면 감사하겠습니다."</p></div>
+    </div>
+  </div>
+
+  <h3>Before / After 비교</h3>
+  <div class="comparison">
+    <div class="card compare-bad">
+      <div class="compare-label">❌ 일반 이메일</div>
+      <p><strong>제목:</strong> 시스템 관련 건</p>
+      <p style="font-size:0.85rem;">안녕하세요, 개발팀입니다. 지난주 미팅에서 논의했던 것처럼 현재 시스템에 몇 가지 이슈가 있습니다. 첫째로 로그인 관련 오류가 간헐적으로 발생하고 있고, 또한 데이터 동기화 지연도 확인되었으며, 그리고 지난달에 발견된 보안 패치도 아직 미적용 상태입니다. 이 부분에 대해 논의가 필요할 것 같습니다. 확인 부탁드립니다.</p>
+    </div>
+    <div class="card compare-good">
+      <div class="compare-label">✅ 피라미드 이메일</div>
+      <p><strong>제목:</strong> [요청] 시스템 긴급 패치 3건 — 금주 금요일까지 적용 필요</p>
+      <p style="font-size:0.85rem;"><strong>현재 3가지 시스템 이슈가 서비스 안정성을 위협하고 있어 금주 금요일까지 긴급 패치를 요청드립니다.</strong></p>
+      <p style="font-size:0.85rem;">1. 로그인 간헐 오류: 일평균 50건, 고객 클레임 발생 중<br>
+      2. 데이터 동기화 지연: 실시간→5분 지연, 영업팀 업무 차질<br>
+      3. 보안 패치 미적용: CVE-2025-xxxx, 외부 감사 지적 예정</p>
+      <p style="font-size:0.85rem;color:var(--accent2);"><strong>요청:</strong> 4/4(금)까지 3건 패치 적용 + 완료 확인 회신 부탁드립니다.</p>
+    </div>
+  </div>
+
+  <h3>슬랙/메신저 메시지도 피라미드!</h3>
+  <div class="case-box">
+    <div class="case-title">📱 슬랙 메시지 작성 공식</div>
+    <div class="grid-2">
+      <div class="card compare-bad" style="padding:1.5rem;">
+        <div class="compare-label">❌</div>
+        <p style="font-size:0.85rem;background:#2b2040;padding:1rem;border-radius:8px;font-family:monospace;">
+          오늘 미팅에서 나온 얘기인데요 클라이언트가 일정을 당기고 싶어하는 것 같아요. 근데 디자인이 아직 안 끝났고 개발팀도 다른 프로젝트 하고 있어서 좀 어려울 것 같은데 어떻게 하면 좋을까요?
+        </p>
+      </div>
+      <div class="card compare-good" style="padding:1.5rem;">
+        <div class="compare-label">✅</div>
+        <p style="font-size:0.85rem;background:#1a2040;padding:1rem;border-radius:8px;font-family:monospace;">
+          <strong>🚨 A 프로젝트 일정 앞당김 요청 — 대응 방향 결정 필요</strong><br><br>
+          클라이언트가 런칭을 2주 앞당기길 원합니다.<br>
+          • 디자인: 현재 70% → 1주 내 완료 가능<br>
+          • 개발: B 프로젝트와 겹침 → 인력 재배치 필요<br><br>
+          👉 <strong>내일 10시 긴급 회의</strong>에서 결정할까요?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- =====================================================
+     PART IV: 이해도 점검
+     ===================================================== -->
+
+<section class="section fade-in" id="practice">
+  <span class="section-tag">이해도 점검</span>
+  <h2>실전 퀴즈</h2>
+
+  <p class="highlight">교육 내용을 얼마나 이해했는지 확인해봅시다. 각 문제를 풀고 해설을 확인하세요.</p>
+
+  <!-- Quiz 1 -->
+  <div class="quiz-box" id="quiz1">
+    <div class="quiz-q">Q1. 피라미드 구조에서 상위 포인트의 역할은?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz1',this,false)">A. 하위 내용의 배경을 설명한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz1',this,true)">B. 하위 내용을 논리적으로 요약한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz1',this,false)">C. 하위 내용의 순서를 지시한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz1',this,false)">D. 하위 내용의 중요도를 표시한다</button>
+    </div>
+    <div class="quiz-explain" id="quiz1-explain">
+      ✅ <strong>B가 정답!</strong> 피라미드의 첫 번째 규칙: "상위 항목은 반드시 하위 그룹의 요약이어야 한다." 단순한 배경 설명이나 순서 지시가 아니라, 하위 내용들이 함께 의미하는 바를 한 문장으로 요약해야 합니다.
+    </div>
+  </div>
+
+  <!-- Quiz 2 -->
+  <div class="quiz-box" id="quiz2">
+    <div class="quiz-q">Q2. SCQA에서 'C(Complication)'의 역할은?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz2',this,false)">A. 현재 상황을 설명한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz2',this,false)">B. 결론을 제시한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz2',this,true)">C. 안정된 상황에 변화/문제를 일으켜 질문을 유발한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz2',this,false)">D. 독자의 배경지식을 확인한다</button>
+    </div>
+    <div class="quiz-explain" id="quiz2-explain">
+      ✅ <strong>C가 정답!</strong> Complication은 Situation의 안정을 깨뜨리는 변화/문제입니다. 이것이 독자의 머릿속에 자연스럽게 질문(Q)을 만들고, 그 질문에 대한 답(A)이 피라미드의 핵심 메시지가 됩니다.
+    </div>
+  </div>
+
+  <!-- Quiz 3 -->
+  <div class="quiz-box" id="quiz3">
+    <div class="quiz-q">Q3. 다음 중 "지적으로 공허한 진술"은?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz3',this,true)">A. "조직에 몇 가지 개선이 필요하다"</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz3',this,false)">B. "의사결정 권한이 중복되어 실행 속도가 50% 느리다"</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz3',this,false)">C. "3개 부서를 2개로 통합하면 연간 5억 절감된다"</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz3',this,false)">D. "고객 이탈의 70%가 온보딩 단계에서 발생한다"</button>
+    </div>
+    <div class="quiz-explain" id="quiz3-explain">
+      ✅ <strong>A가 정답!</strong> "몇 가지 개선이 필요하다"는 구체적인 내용이 전혀 없는 공허한 진술입니다. "So what?"을 물어보면 더 의미 있는 답이 나올 수 있다면, 원래 진술은 공허한 것입니다. B, C, D는 모두 구체적이고 행동을 유발하는 진술입니다.
+    </div>
+  </div>
+
+  <!-- Quiz 4 -->
+  <div class="quiz-box" id="quiz4">
+    <div class="quiz-q">Q4. MECE 원칙에 위배되는 분류는?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz4',this,false)">A. 매출 분석: 국내 B2B / 국내 B2C / 해외</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz4',this,true)">B. 고객 분석: 온라인 고객 / 모바일 고객 / 오프라인 고객</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz4',this,false)">C. 비용 분석: 인건비 / 재료비 / 운영비 / 기타</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz4',this,false)">D. 시장 분석: 국내 시장 / 해외 시장</button>
+    </div>
+    <div class="quiz-explain" id="quiz4-explain">
+      ✅ <strong>B가 정답!</strong> "모바일 고객"은 "온라인 고객"의 하위 집합입니다. 스마트폰으로 접속하는 고객은 온라인 고객이기도 하므로, 상호 배타적(ME)이지 않습니다. 올바른 분류: "웹 고객 / 앱 고객 / 오프라인 고객" 또는 "온라인 고객 / 오프라인 고객"
+    </div>
+  </div>
+
+  <!-- Quiz 5 -->
+  <div class="quiz-box" id="quiz5">
+    <div class="quiz-q">Q5. "문제 정의 프레임워크"에서 R1과 R2의 차이(Gap)는 무엇을 의미하는가?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz5',this,false)">A. 과거와 현재의 차이</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz5',this,true)">B. 원하지 않는 결과와 원하는 결과 사이의 차이 = 해결해야 할 문제</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz5',this,false)">C. 경쟁사와 우리의 차이</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz5',this,false)">D. 예산과 실적의 차이</button>
+    </div>
+    <div class="quiz-explain" id="quiz5-explain">
+      ✅ <strong>B가 정답!</strong> 민토의 문제 정의 프레임워크에서 R1(원하지 않는 결과)와 R2(원하는 결과) 사이의 Gap이 곧 "문제"입니다. 이 Gap을 해소하는 것이 해결책이며, SCQA의 Question은 이 Gap에서 자연스럽게 도출됩니다.
+    </div>
+  </div>
+
+  <!-- Quiz 6 -->
+  <div class="quiz-box" id="quiz6">
+    <div class="quiz-q">Q6. PPT에서 피라미드 원칙을 적용하면, 슬라이드 제목은 어떤 역할을 해야 하는가?</div>
+    <div class="quiz-options">
+      <button class="quiz-opt" onclick="checkQuiz('quiz6',this,false)">A. 해당 슬라이드의 주제(topic)를 표시한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz6',this,false)">B. 시각적 일관성을 위한 장식적 요소이다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz6',this,true)">C. 피라미드의 포인트(메시지)로, 제목만 모아 읽으면 전체 논리가 통해야 한다</button>
+      <button class="quiz-opt" onclick="checkQuiz('quiz6',this,false)">D. 페이지 번호와 섹션 구분 역할을 한다</button>
+    </div>
+    <div class="quiz-explain" id="quiz6-explain">
+      ✅ <strong>C가 정답!</strong> 피라미드 기반 PPT의 핵심 원칙: "슬라이드 제목 = 피라미드의 포인트(메시지)". 제목을 순서대로 읽으면 전체 프레젠테이션이 요약됩니다. "현황", "배경" 같은 주제어가 아니라, "매출이 15% 하락했다" 같은 구체적 메시지여야 합니다.
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 자가진단 체크리스트 ==================== -->
+<section class="section fade-in" id="checklist">
+  <span class="section-tag">종합 점검</span>
+  <h2>글쓰기 전 자가진단 체크리스트</h2>
+
+  <p class="highlight">보고서, PPT, 이메일을 작성한 후 아래 항목을 점검하세요.</p>
+
+  <div class="card" style="margin:2rem 0;">
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>핵심 메시지가 맨 위에 있는가?</strong>
+      <p style="font-size:0.85rem;">제목이나 첫 문장에서 결론이 명확한가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>SCQA 도입부를 갖추었는가?</strong>
+      <p style="font-size:0.85rem;">독자가 "왜 이걸 읽어야 하는지" 이해하는가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>Key Line이 2~4개의 귀납적 근거로 되어 있는가?</strong>
+      <p style="font-size:0.85rem;">연역적 체인이 아닌 병렬 근거로 핵심을 뒷받침하는가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>각 그룹이 MECE한가?</strong>
+      <p style="font-size:0.85rem;">겹치는 항목은 없는가? 빠진 것은 없는가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>같은 레벨의 항목이 같은 종류인가?</strong>
+      <p style="font-size:0.85rem;">하나의 복수명사로 묶을 수 있는가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>논리적 순서가 있는가?</strong>
+      <p style="font-size:0.85rem;">시간·구조·중요도 순서 중 하나를 따르는가?</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>상위 요약이 공허하지 않은가?</strong>
+      <p style="font-size:0.85rem;">"So what?"에 더 좋은 답이 나오면 요약을 구체화하라.</p></div>
+    </div>
+    <div class="check-item" onclick="this.classList.toggle('done')">
+      <span class="check-icon">☐</span>
+      <div class="check-text"><strong>PPT라면: 슬라이드 제목만 읽어도 논리가 통하는가?</strong>
+      <p style="font-size:0.85rem;">제목이 "주제"가 아니라 "메시지"인가?</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"></div>
+
+<!-- ==================== 핵심 요약 ==================== -->
+<section class="section fade-in" id="final">
+  <span class="section-tag">핵심 요약</span>
+  <h2>한 장으로 정리하는 민토 피라미드</h2>
+
+  <div style="text-align:center;margin:3rem 0;">
+    <svg width="700" height="500" viewBox="0 0 700 500" class="pyramid-svg">
+      <!-- Background pyramid shape -->
+      <polygon points="350,30 80,380 620,380" fill="rgba(108,99,255,0.03)" stroke="rgba(108,99,255,0.15)" stroke-width="1"/>
+
+      <!-- Level 1: Top -->
+      <rect x="250" y="50" width="200" height="55" rx="10" fill="rgba(108,99,255,0.2)" stroke="#6c63ff" stroke-width="2"/>
+      <text x="350" y="72" text-anchor="middle" fill="#6c63ff" font-size="11" font-weight="700">핵심 메시지</text>
+      <text x="350" y="90" text-anchor="middle" fill="#e8e8f0" font-size="10">(결론을 먼저!)</text>
+
+      <!-- SCQA label -->
+      <rect x="480" y="55" width="80" height="45" rx="6" fill="rgba(247,201,72,0.1)" stroke="#f7c948" stroke-width="1"/>
+      <text x="520" y="75" text-anchor="middle" fill="#f7c948" font-size="10" font-weight="700">도입부</text>
+      <text x="520" y="90" text-anchor="middle" fill="#f7c948" font-size="9">S→C→Q→A</text>
+      <line x1="450" y1="77" x2="480" y2="77" stroke="#f7c948" stroke-width="1" stroke-dasharray="3"/>
+
+      <!-- Lines to Level 2 -->
+      <line x1="350" y1="105" x2="350" y2="130" stroke="#3d4470" stroke-width="2"/>
+      <line x1="170" y1="130" x2="530" y2="130" stroke="#3d4470" stroke-width="2"/>
+      <line x1="170" y1="130" x2="170" y2="145" stroke="#3d4470" stroke-width="2"/>
+      <line x1="350" y1="130" x2="350" y2="145" stroke="#3d4470" stroke-width="2"/>
+      <line x1="530" y1="130" x2="530" y2="145" stroke="#3d4470" stroke-width="2"/>
+
+      <!-- Level 2: Key Line -->
+      <rect x="105" y="145" width="130" height="50" rx="8" fill="rgba(0,201,167,0.15)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="170" y="168" text-anchor="middle" fill="#00c9a7" font-size="10" font-weight="700">Key Line 1</text>
+      <text x="170" y="183" text-anchor="middle" fill="#9a9ab8" font-size="9">뒷받침 근거</text>
+
+      <rect x="285" y="145" width="130" height="50" rx="8" fill="rgba(0,201,167,0.15)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="350" y="168" text-anchor="middle" fill="#00c9a7" font-size="10" font-weight="700">Key Line 2</text>
+      <text x="350" y="183" text-anchor="middle" fill="#9a9ab8" font-size="9">뒷받침 근거</text>
+
+      <rect x="465" y="145" width="130" height="50" rx="8" fill="rgba(0,201,167,0.15)" stroke="#00c9a7" stroke-width="1.5"/>
+      <text x="530" y="168" text-anchor="middle" fill="#00c9a7" font-size="10" font-weight="700">Key Line 3</text>
+      <text x="530" y="183" text-anchor="middle" fill="#9a9ab8" font-size="9">뒷받침 근거</text>
+
+      <!-- Horizontal label -->
+      <rect x="140" y="210" width="100" height="25" rx="4" fill="rgba(108,99,255,0.1)" stroke="none"/>
+      <text x="190" y="227" text-anchor="middle" fill="#6c63ff" font-size="9">귀납 또는 연역</text>
+
+      <!-- Lines to Level 3 -->
+      <line x1="170" y1="195" x2="170" y2="250" stroke="#3d4470" stroke-width="1.5"/>
+      <line x1="120" y1="250" x2="220" y2="250" stroke="#3d4470" stroke-width="1.5"/>
+
+      <rect x="100" y="255" width="60" height="30" rx="4" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="130" y="274" text-anchor="middle" fill="#9a9ab8" font-size="8">근거</text>
+      <rect x="170" y="255" width="60" height="30" rx="4" fill="none" stroke="#3d4470" stroke-width="1"/>
+      <text x="200" y="274" text-anchor="middle" fill="#9a9ab8" font-size="8">근거</text>
+
+      <!-- Rules -->
+      <rect x="20" y="310" width="200" height="120" rx="8" fill="rgba(108,99,255,0.05)" stroke="#6c63ff" stroke-width="1"/>
+      <text x="120" y="332" text-anchor="middle" fill="#6c63ff" font-size="10" font-weight="700">3대 규칙</text>
+      <text x="120" y="352" text-anchor="middle" fill="#9a9ab8" font-size="9">1. 상위 = 하위의 요약</text>
+      <text x="120" y="370" text-anchor="middle" fill="#9a9ab8" font-size="9">2. 같은 종류끼리 그룹</text>
+      <text x="120" y="388" text-anchor="middle" fill="#9a9ab8" font-size="9">3. 논리적 순서 부여</text>
+      <text x="120" y="418" text-anchor="middle" fill="#00c9a7" font-size="9" font-weight="700">+ MECE 원칙</text>
+
+      <!-- Order types -->
+      <rect x="245" y="310" width="210" height="120" rx="8" fill="rgba(0,201,167,0.05)" stroke="#00c9a7" stroke-width="1"/>
+      <text x="350" y="332" text-anchor="middle" fill="#00c9a7" font-size="10" font-weight="700">3가지 순서</text>
+      <text x="350" y="355" text-anchor="middle" fill="#9a9ab8" font-size="9">시간 순서 (프로세스)</text>
+      <text x="350" y="375" text-anchor="middle" fill="#9a9ab8" font-size="9">구조 순서 (MECE 분류)</text>
+      <text x="350" y="395" text-anchor="middle" fill="#9a9ab8" font-size="9">중요도 순서 (랭킹)</text>
+      <text x="350" y="418" text-anchor="middle" fill="#f7c948" font-size="9" font-weight="700">+ So What? 테스트</text>
+
+      <!-- Logic types -->
+      <rect x="480" y="310" width="200" height="120" rx="8" fill="rgba(247,201,72,0.05)" stroke="#f7c948" stroke-width="1"/>
+      <text x="580" y="332" text-anchor="middle" fill="#f7c948" font-size="10" font-weight="700">2가지 논리</text>
+      <text x="580" y="355" text-anchor="middle" fill="#9a9ab8" font-size="9">연역: A→B→따라서 C</text>
+      <text x="580" y="375" text-anchor="middle" fill="#9a9ab8" font-size="9">귀납: A, B, C → 추론 X</text>
+      <text x="580" y="400" text-anchor="middle" fill="#f7c948" font-size="9" font-weight="700">Key Line은 귀납 권장</text>
+
+      <!-- Practical application -->
+      <rect x="120" y="450" width="460" height="35" rx="8" fill="rgba(108,99,255,0.1)" stroke="#6c63ff" stroke-width="1.5"/>
+      <text x="350" y="473" text-anchor="middle" fill="#e8e8f0" font-size="11" font-weight="700">실무 적용: 보고서 · PPT · 이메일 · 슬랙 → 결론 먼저, 근거 뒤에!</text>
+    </svg>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Based on "The Minto Pyramid Principle" by Barbara Minto</p>
+  <p style="margin-top:0.5rem;">팀 교육용 심화 자료 · 2026</p>
+</footer>
+
+<!-- Back to top -->
+<button class="toc-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="맨 위로">↑</button>
+
+<script>
+// Progress bar
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+});
+
+// Pyramid info click
+function showPyrInfo(el, level) {
+  document.querySelectorAll('.pyr-box').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// Tab switching
+function switchTab(e, tabId) {
+  const parent = e.target.closest('.section') || e.target.parentElement.parentElement;
+  parent.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  parent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  e.target.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+// Quiz checking
+function checkQuiz(quizId, btn, isCorrect) {
+  const box = document.getElementById(quizId);
+  if (box.dataset.answered) return;
+  box.dataset.answered = 'true';
+
+  box.querySelectorAll('.quiz-opt').forEach(o => {
+    o.style.pointerEvents = 'none';
+  });
+
+  if (isCorrect) {
+    btn.classList.add('correct');
+  } else {
+    btn.classList.add('wrong');
+    box.querySelectorAll('.quiz-opt').forEach(o => {
+      if (o.getAttribute('onclick').includes('true')) o.classList.add('correct');
+    });
+  }
+
+  document.getElementById(quizId + '-explain').classList.add('show');
+}
+
+// Checklist toggle
+document.querySelectorAll('.check-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const icon = this.querySelector('.check-icon');
+    if (this.classList.contains('done')) {
+      icon.textContent = '☑';
+    } else {
+      icon.textContent = '☐';
+    }
+  });
+});
+
+// Intersection Observer for fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Active nav link
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    if (window.scrollY >= top) current = section.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
