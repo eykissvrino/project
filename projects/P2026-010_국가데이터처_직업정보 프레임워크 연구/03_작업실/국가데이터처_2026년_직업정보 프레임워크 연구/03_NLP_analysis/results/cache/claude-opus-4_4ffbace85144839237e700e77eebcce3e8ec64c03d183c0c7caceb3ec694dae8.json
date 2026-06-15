@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28433",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "의료장비",
+      "full_statement": "의료장비의 사용법과 사양을 병원 고객에게 설명한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "의료장비",
+      "full_statement": "고객 필요에 맞는 의료장비를 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추산하다",
+      "object": "설치 비용",
+      "full_statement": "의료장비 설치 및 유지 비용을 추산한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

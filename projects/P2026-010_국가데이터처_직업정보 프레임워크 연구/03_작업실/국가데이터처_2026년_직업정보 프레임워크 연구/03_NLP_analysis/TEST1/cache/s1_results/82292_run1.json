@@ -1,0 +1,77 @@
+{
+  "ksco_code": "82292",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "자동 재단기",
+      "full_statement": "양복, 양장 및 기타 의복을 재단하기 위해 자동 재단기를 조작한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "재단하다",
+      "object": "양복",
+      "full_statement": "섬유 또는 유사재료를 가지고 양복을 재단한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재단하다",
+      "object": "양장",
+      "full_statement": "섬유 또는 유사재료를 가지고 양장을 재단한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재단하다",
+      "object": "기타 의복",
+      "full_statement": "섬유 또는 유사재료를 가지고 기타 의복을 재단한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "준비하다",
+      "object": "섬유 또는 유사재료",
+      "full_statement": "재단을 위해 섬유 또는 유사재료를 준비한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "섬유가공 관련 기계",
+      "full_statement": "섬유가공과 관련된 기계를 조작한다.",
+      "source_sentence": "직조 및 편직기를 조작하거나 신발제조와 관련된 기계를 조작하며 가죽, 모피 등 섬유가공과 관련된 직무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "적응하다",
+      "object": "기술적 혁신",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터를 이용하여 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {
+      "name": "자동 재단기",
+      "category": "장비",
+      "evidence_span": "양복, 양장 및 기타 의복을 재단하는 자동 재단기를 조작한다"
+    }
+  ],
+  "work_context": []
+}

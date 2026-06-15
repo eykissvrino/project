@@ -1,0 +1,143 @@
+{
+  "ksco_code": "33110",
+  "tasks": [
+    {
+      "verb": "기록하다",
+      "object": "제반 거래사항",
+      "full_statement": "사업체의 제반 거래사항을 기록하고 정리한다.",
+      "source_sentence": "사업체의 제반 거래사항을 기록‧정리하고 원가계산을 통하여 제조원가를 산출하고 기업의 재무 상태와 경영실적을 파악하기 위하여 결산절차에 따라 대차대조표, 손익계산서 등의 재무제표를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "산출하다",
+      "object": "제조원가",
+      "full_statement": "원가계산을 통하여 제조원가를 산출한다.",
+      "source_sentence": "사업체의 제반 거래사항을 기록‧정리하고 원가계산을 통하여 제조원가를 산출하고 기업의 재무 상태와 경영실적을 파악하기 위하여 결산절차에 따라 대차대조표, 손익계산서 등의 재무제표를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "파악하다",
+      "object": "기업의 재무 상태와 경영실적",
+      "full_statement": "기업의 재무 상태와 경영실적을 파악한다.",
+      "source_sentence": "기업의 재무 상태와 경영실적을 파악하기 위하여 결산절차에 따라 대차대조표, 손익계산서 등의 재무제표를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "재무제표",
+      "full_statement": "결산절차에 따라 대차대조표, 손익계산서 등의 재무제표를 작성한다.",
+      "source_sentence": "기업의 재무 상태와 경영실적을 파악하기 위하여 결산절차에 따라 대차대조표, 손익계산서 등의 재무제표를 작성한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.97
+    },
+    {
+      "verb": "처리하다",
+      "object": "손익예상과 결산업무",
+      "full_statement": "손익예상과 결산업무를 처리한다.",
+      "source_sentence": "손익예상과 결산업무를 처리하고 모든 계정을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "모든 계정",
+      "full_statement": "모든 계정을 계산한다.",
+      "source_sentence": "손익예상과 결산업무를 처리하고 모든 계정을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기장하다",
+      "object": "주요 장부",
+      "full_statement": "주요 장부를 기장한다.",
+      "source_sentence": "주요 장부의 기장 및 전표를 계산하고 경비지출 및 출‧수납에 관련한 사무를 본다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "전표",
+      "full_statement": "전표를 계산한다.",
+      "source_sentence": "주요 장부의 기장 및 전표를 계산하고 경비지출 및 출‧수납에 관련한 사무를 본다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처리하다",
+      "object": "경비지출 및 출·수납 사무",
+      "full_statement": "경비지출 및 출·수납에 관련한 사무를 처리한다.",
+      "source_sentence": "주요 장부의 기장 및 전표를 계산하고 경비지출 및 출‧수납에 관련한 사무를 본다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "기입하다",
+      "object": "재무기록",
+      "full_statement": "재무기록을 기입하여 대차계정을 수립한다.",
+      "source_sentence": "재무기록을 기입하여 대차계정을 수립, 유지 및 결산하고 일반 원장 (元帳)을 관리하며 재무제표, 대차대조표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결산하다",
+      "object": "대차계정",
+      "full_statement": "대차계정을 유지 및 결산한다.",
+      "source_sentence": "재무기록을 기입하여 대차계정을 수립, 유지 및 결산하고 일반 원장 (元帳)을 관리하며 재무제표, 대차대조표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "일반 원장",
+      "full_statement": "일반 원장을 관리한다.",
+      "source_sentence": "재무기록을 기입하여 대차계정을 수립, 유지 및 결산하고 일반 원장 (元帳)을 관리하며 재무제표, 대차대조표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "임금대장",
+      "full_statement": "급여, 공과금, 세금 및 기타 청구서에 대한 임금대장을 계산하고 작성한다.",
+      "source_sentence": "급여, 공과금, 세금 및 기타 청구서에 대한 임금대장을 계산하고 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "장부 서류",
+      "full_statement": "세금 송금, 봉급, 연금, 보험양식 및 기타 장부 서류를 작성하여 제출한다.",
+      "source_sentence": "세금 송금, 봉급, 연금, 보험양식 및 기타 장부 서류를 작성하여 제출한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "소득 신고서 및 결산 보고서",
+      "full_statement": "소득 신고서 및 기타 통계, 재무 및 결산 보고서를 작성한다.",
+      "source_sentence": "소득 신고서 및 기타 통계, 재무 및 결산 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "청구서·송장·지불계정 및 수취계정",
+      "full_statement": "청구서, 송장, 지불계정 및 수취계정을 정해진 방식에 따라 계산하고 처리한다.",
+      "source_sentence": "경리 사무원으로서 청구서, 송장, 지불계정 및 수취계정, 예산 및 기타 일상적인 기록을 정해진 방식에 따라 계산하고 작성하며 처리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "예산 및 일상적 기록",
+      "full_statement": "예산 및 기타 일상적인 기록을 정해진 방식에 따라 작성한다.",
+      "source_sentence": "경리 사무원으로서 청구서, 송장, 지불계정 및 수취계정, 예산 및 기타 일상적인 기록을 정해진 방식에 따라 계산하고 작성하며 처리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

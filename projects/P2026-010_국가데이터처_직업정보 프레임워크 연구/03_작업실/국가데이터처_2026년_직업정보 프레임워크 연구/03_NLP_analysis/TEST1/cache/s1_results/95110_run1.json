@@ -1,0 +1,79 @@
+{
+  "ksco_code": "95110",
+  "tasks": [
+    {
+      "verb": "받다",
+      "object": "고객의 지시",
+      "full_statement": "고객의 지시를 받아 수행할 가사노동의 내용을 확인한다.",
+      "source_sentence": "고객의 지시를 받아 가정을 방문하여 청소, 세탁, 요리 등 가사노동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "방문하다",
+      "object": "고객의 가정",
+      "full_statement": "고객의 가정을 방문하여 가사노동을 수행한다.",
+      "source_sentence": "고객의 지시를 받아 가정을 방문하여 청소, 세탁, 요리 등 가사노동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "청소하다",
+      "object": "화장실·거실 등 집안",
+      "full_statement": "화장실, 거실 등의 집안을 청소한다.",
+      "source_sentence": "화장실, 거실 등의 집안을 청소하며, 의복을 세탁한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "세탁하다",
+      "object": "의복",
+      "full_statement": "의복을 세탁한다.",
+      "source_sentence": "화장실, 거실 등의 집안을 청소하며, 의복을 세탁한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "만들다",
+      "object": "음식",
+      "full_statement": "음식을 만든다.",
+      "source_sentence": "음식을 만들고 상을 차리는 등의 가사업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "차리다",
+      "object": "상",
+      "full_statement": "음식을 담아 상을 차린다.",
+      "source_sentence": "음식을 만들고 상을 차리는 등의 가사업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대행하다",
+      "object": "가정용품 구입",
+      "full_statement": "가정용품의 구입을 대행한다.",
+      "source_sentence": "가정용품의 구입을 대행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "고객의 가정(실내)을 방문하여 작업",
+      "evidence_span": "고객의 지시를 받아 가정을 방문하여 청소, 세탁, 요리 등 가사노동을 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객의 지시를 받아 업무 수행(고객 응대)",
+      "evidence_span": "고객의 지시를 받아 가정을 방문하여"
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순·일상적 업무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

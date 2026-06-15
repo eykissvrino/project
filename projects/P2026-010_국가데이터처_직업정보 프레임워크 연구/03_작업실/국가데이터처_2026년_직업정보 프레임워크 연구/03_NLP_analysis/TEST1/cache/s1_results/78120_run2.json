@@ -1,0 +1,138 @@
+{
+  "ksco_code": "78120",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "보",
+      "full_statement": "콘크리트 타설 전에 매입한 천장틀 앵커에 보를 설치한다.",
+      "source_sentence": "콘크리트 타설 전에 매입한 천장틀 앵커에 보를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "달대와 인서트",
+      "full_statement": "천장으로부터 일정 간격 떨어져서 격자로 달대와 인서트를 설치한다.",
+      "source_sentence": "천장으로부터 일정 간격 떨어져서 격자로 달대와 인서트를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "절단하다",
+      "object": "경량철골",
+      "full_statement": "절단기를 사용하여 경량철골을 치수에 맞도록 절단한다.",
+      "source_sentence": "절단기를 사용하여 경량철골을 치수에 맞도록 절단한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.96
+    },
+    {
+      "verb": "고정하다",
+      "object": "M형 금속막대",
+      "full_statement": "아연 도금된 M형 금속막대(M-bar)를 찬넬클립으로 견고하게 고정한다.",
+      "source_sentence": "아연 도금된 M형 금속막대(M-bar)를 찬넬클립으로 견고하게 고정 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "붙이다",
+      "object": "석고보드",
+      "full_statement": "석고보드를 M형 금속막대의 중심이 되게 붙이며 이음새가 M형 금속막대의 중심에 오게 한다.",
+      "source_sentence": "석고보드를 M형 금속막대의 중심이 되게 붙이며, 이음새가 M형 금속 막대의 중심에 오게 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "부착하다",
+      "object": "석고보드",
+      "full_statement": "석고보드는 M형 금속막대에 수평을 맞추며 나사못의 머리는 보드 표면보다 약간 들어가게 부착한다.",
+      "source_sentence": "석고보드는 M형 금속막대에 수평을 맞추며, 나사못의 머리는 보드 표면보다 약간 들어가게 부착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "눌러붙이다",
+      "object": "테이프용 헤라",
+      "full_statement": "하도가 끝난 즉시 테이프용 헤라를 충분한 압력을 가하여 눌러 붙인다.",
+      "source_sentence": "하도가 끝난 즉시 테이프용 헤라를 충분한 압력을 가하여 눌러 붙인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "콤파운드",
+      "full_statement": "중도가 완전히 끝난 후 상도용 헤라를 사용하여 콤파운드를 엷게 바른다.",
+      "source_sentence": "중도가 완전히 끝난 후 상도용 헤라를 사용하여 콤파운드를 엷게 바른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "메우다",
+      "object": "못의 머리",
+      "full_statement": "못의 머리는 상도용 콤파운드로 메우고 면을 평활하게 한다.",
+      "source_sentence": "못의 머리는 상도용 콤파운드로 메우고 면을 평활하게 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "닦아내다",
+      "object": "주위의 콤파운드",
+      "full_statement": "상도처리 후 스펀지를 물에 적셔 주위의 콤파운드를 닦아낸다.",
+      "source_sentence": "상도처리 후 스펀지를 물에 적셔 주위의 콤파운드를 닦아내고 완전 건조 후 샌딩공구로 평활하게 마무리 한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.89
+    },
+    {
+      "verb": "마무리하다",
+      "object": "면",
+      "full_statement": "완전 건조 후 샌딩공구로 면을 평활하게 마무리한다.",
+      "source_sentence": "상도처리 후 스펀지를 물에 적셔 주위의 콤파운드를 닦아내고 완전 건조 후 샌딩공구로 평활하게 마무리 한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.89
+    },
+    {
+      "verb": "설치하다",
+      "object": "합판·무늬목·석고보드",
+      "full_statement": "설치된 천장틀에 합판, 무늬목, 석고보드를 올려 설치한다.",
+      "source_sentence": "설치된 천장틀에 합판, 무늬목, 석고보드를 올려 설치하고 못, 나사로 고정시킨다.",
+      "derived_from": "상속 주요업무(복합행동 분할)→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "고정하다",
+      "object": "합판·무늬목·석고보드",
+      "full_statement": "천장틀에 올린 합판, 무늬목, 석고보드를 못과 나사로 고정한다.",
+      "source_sentence": "설치된 천장틀에 합판, 무늬목, 석고보드를 올려 설치하고 못, 나사로 고정시킨다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "천장틀",
+      "full_statement": "건물 내부의 천장 등에 경량철골을 사용하여 천장틀을 설치한다.",
+      "source_sentence": "건물내부의 천장 등에 경량철골을 사용하여 천장틀을 설치하고 합판, 무늬판, 석고보드 등을 시공하여 조립식건물외벽 등을 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "설치하다",
+      "object": "조립식건물외벽",
+      "full_statement": "합판, 무늬판, 석고보드 등을 시공하여 조립식건물외벽 등을 설치한다.",
+      "source_sentence": "건물내부의 천장 등에 경량철골을 사용하여 천장틀을 설치하고 합판, 무늬판, 석고보드 등을 시공하여 조립식건물외벽 등을 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    }
+  ],
+  "tools": [
+    {"name": "절단기", "category": "장비", "evidence_span": "절단기를 사용하여 경량철골을 치수에 맞도록 절단한다."},
+    {"name": "찬넬클립", "category": "도구", "evidence_span": "아연 도금된 M형 금속막대(M-bar)를 찬넬클립으로 견고하게 고정 시킨다."},
+    {"name": "테이프용 헤라", "category": "도구", "evidence_span": "하도가 끝난 즉시 테이프용 헤라를 충분한 압력을 가하여 눌러 붙인다."},
+    {"name": "상도용 헤라", "category": "도구", "evidence_span": "중도가 완전히 끝난 후 상도용 헤라를 사용하여 콤파운드를 엷게 바른다."},
+    {"name": "샌딩공구", "category": "도구", "evidence_span": "완전 건조 후 샌딩공구로 평활하게 마무리 한다."},
+    {"name": "경량철골(M형 금속막대·M-bar)", "category": "장비", "evidence_span": "아연 도금된 M형 금속막대(M-bar)를 찬넬클립으로 견고하게 고정 시킨다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내부 천장 등 실내 시공 현장", "evidence_span": "건물내부의 천장 등에 경량철골을 사용하여 천장틀을 설치하고"},
+    {"category": "장소", "value": "천장으로부터 일정 간격 떨어진 고소 작업", "evidence_span": "천장으로부터 일정 간격 떨어져서 격자로 달대와 인서트를 설치한다."},
+    {"category": "신체적", "value": "수공구를 사용한 정밀·체력 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

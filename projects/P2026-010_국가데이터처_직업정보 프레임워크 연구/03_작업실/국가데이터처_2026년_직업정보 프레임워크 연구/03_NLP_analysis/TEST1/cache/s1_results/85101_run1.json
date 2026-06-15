@@ -1,0 +1,121 @@
+{
+  "ksco_code": "85101",
+  "tasks": [
+    {
+      "verb": "해석하다",
+      "object": "작업 주문서와 청사진",
+      "full_statement": "작업 주문서와 청사진을 해석하여 선반 가공 조작을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "결정하다",
+      "object": "선반 조작 방법",
+      "full_statement": "청사진 해석을 바탕으로 선반의 조작 방법을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설치하다",
+      "object": "선반",
+      "full_statement": "선반을 설치하고 가공 준비를 한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "동력 선반",
+      "full_statement": "동력에 의해 움직이는 선반을 조정하여 조작한다.",
+      "source_sentence": "동력에 의해 움직이는 선반을 조정 조작하고 자동, 반자동 선반을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "자동 선반",
+      "full_statement": "자동 선반을 조작하여 금속을 가공한다.",
+      "source_sentence": "동력에 의해 움직이는 선반을 조정 조작하고 자동, 반자동 선반을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "반자동 선반",
+      "full_statement": "반자동 선반을 조작하여 금속을 가공한다.",
+      "source_sentence": "동력에 의해 움직이는 선반을 조정 조작하고 자동, 반자동 선반을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "선반",
+      "full_statement": "선반을 가공 조건에 맞게 조정한다.",
+      "source_sentence": "동력에 의해 움직이는 선반을 조정 조작하고 자동, 반자동 선반을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "터닝 가공",
+      "full_statement": "선반을 작동시켜 터닝 가공을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "보링 가공",
+      "full_statement": "선반을 작동시켜 보링 가공을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "드릴링 가공",
+      "full_statement": "선반을 작동시켜 드릴링 가공을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선반)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "측정하다",
+      "object": "부품의 치수",
+      "full_statement": "정밀측정 기구를 사용하여 가공한 기계장치 부품의 치수를 측정한다.",
+      "source_sentence": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "반복 작업",
+      "full_statement": "자동 또는 반자동 선반을 조작하여 반복적인 작업을 수행한다.",
+      "source_sentence": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "사용하다",
+      "object": "정밀측정기",
+      "full_statement": "수공구 및 정밀측정기를 사용하여 가공 작업을 보조한다.",
+      "source_sentence": "각종 금속 공작 기계, 수공구 및 정밀측정기를 사용하여 금속 공작 기계조작, 냉난방 관련 설비조작, 자동 조립라인 및 산업용 로봇조작, 운송차량을 조작한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "선반", "category": "장비", "evidence_span": "동력에 의해 움직이는 선반을 조정 조작하고 자동, 반자동 선반을 조작한다."},
+    {"name": "자동 선반", "category": "장비", "evidence_span": "자동, 반자동 선반을 조작한다."},
+    {"name": "반자동 선반", "category": "장비", "evidence_span": "자동, 반자동 선반을 조작한다."},
+    {"name": "정밀측정 기구", "category": "도구", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "각종 금속 공작 기계, 수공구 및 정밀측정기를 사용하여"},
+    {"name": "청사진", "category": "도구", "evidence_span": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "반복적인 작업", "evidence_span": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다."},
+    {"category": "신체적", "value": "정밀 측정·가공", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다."}
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "ksco_code": "21224",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "현대 사회의 발전과 구조",
+      "full_statement": "현대 사회의 발전, 구조, 유형 및 사회적 관계를 연구한다.",
+      "source_sentence": "현대 사회의 발전, 구조, 유형 및 사회적 관계를 연구하는 자로서",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "사회구조 조직의 사회학적 측면",
+      "full_statement": "사회구조 조직의 사회학적 측면을 연구한다.",
+      "source_sentence": "사회구조 조직, 가족 및 범죄 분야의 인간 행태 및 사회현상의 사회학적 측면을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연구하다",
+      "object": "가족 분야의 인간 행태",
+      "full_statement": "가족 분야의 인간 행태를 사회학적으로 연구한다.",
+      "source_sentence": "사회구조 조직, 가족 및 범죄 분야의 인간 행태 및 사회현상의 사회학적 측면을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연구하다",
+      "object": "범죄 분야의 인간 행태",
+      "full_statement": "범죄 분야의 인간 행태를 사회학적으로 연구한다.",
+      "source_sentence": "사회구조 조직, 가족 및 범죄 분야의 인간 행태 및 사회현상의 사회학적 측면을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "사회현상의 사회학적 측면",
+      "full_statement": "사회현상의 사회학적 측면을 분석한다.",
+      "source_sentence": "인간 행태 및 사회현상의 사회학적 측면을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연구하다",
+      "object": "사회집단의 구조",
+      "full_statement": "사회집단의 구조를 연구한다.",
+      "source_sentence": "사회학자, 정치학자 또는 관련 연구원 및 전문가는 사회집단의 구조, 인간 활동 사이의 상호의존성과 정치체제, 제도에 대한 이론과 실제 등에 대해 연구하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "인간 활동 사이의 상호의존성",
+      "full_statement": "인간 활동 사이의 상호의존성을 연구한다.",
+      "source_sentence": "사회집단의 구조, 인간 활동 사이의 상호의존성과 정치체제, 제도에 대한 이론과 실제 등에 대해 연구하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "연구하다",
+      "object": "제도에 대한 이론과 실제",
+      "full_statement": "사회 제도에 대한 이론과 실제를 연구한다.",
+      "source_sentence": "정치체제, 제도에 대한 이론과 실제 등에 대해 연구하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "활용하다",
+      "object": "획득된 지식",
+      "full_statement": "연구로 획득된 지식을 정책결정을 위한 기반으로 이용한다.",
+      "source_sentence": "획득된 지식을 정책결정을 위한 기반으로 이용하도록 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "응용하다",
+      "object": "사회학 관련 지식",
+      "full_statement": "사회학 등의 관련 지식을 응용하여 사회과학을 연구한다.",
+      "source_sentence": "경제학, 사회학, 정치학, 사회복지학 등의 관련 지식을 응용하여 사회과학을 연구하여",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.86
+    },
+    {
+      "verb": "개선하다",
+      "object": "사회학 개념과 이론",
+      "full_statement": "사회학에 대한 개념, 이론 및 운영기법을 개선한다.",
+      "source_sentence": "그에 대한 개념, 이론 및 운영기법을 개선, 개발하고 학술적 논문 및 보고서를 작성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "사회학 운영기법",
+      "full_statement": "사회학의 운영기법을 개발한다.",
+      "source_sentence": "그에 대한 개념, 이론 및 운영기법을 개선, 개발하고 학술적 논문 및 보고서를 작성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "학술적 논문",
+      "full_statement": "사회학 연구 결과에 대한 학술적 논문을 작성한다.",
+      "source_sentence": "학술적 논문 및 보고서를 작성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "연구 보고서",
+      "full_statement": "사회학 연구 결과에 대한 보고서를 작성한다.",
+      "source_sentence": "학술적 논문 및 보고서를 작성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "정책결정 기반 제공(연구 결과의 정책 활용)",
+      "evidence_span": "획득된 지식을 정책결정을 위한 기반으로 이용하도록 한다."
+    }
+  ]
+}

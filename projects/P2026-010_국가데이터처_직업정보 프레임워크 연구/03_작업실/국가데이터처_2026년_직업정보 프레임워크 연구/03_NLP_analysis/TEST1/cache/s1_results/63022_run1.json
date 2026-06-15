@@ -1,0 +1,77 @@
+{
+  "ksco_code": "63022",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "어로 도구",
+      "full_statement": "내수면 어로에 사용할 어로 도구를 준비한다.",
+      "source_sentence": "어로 도구 및 미끼를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(내륙의 호수·강·어장)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "미끼",
+      "full_statement": "물고기를 유인할 미끼를 준비한다.",
+      "source_sentence": "어로 도구 및 미끼를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "잡다",
+      "object": "물고기",
+      "full_statement": "내륙의 호수, 강, 어장 등에서 어로 장비를 써서 물고기를 잡는다.",
+      "source_sentence": "내륙의 호수, 강, 어장 등에서 물고기를 잡거나, 기타 수생 동‧식물들을 포획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(내륙의 호수·강·어장)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "포획하다",
+      "object": "수생 동식물",
+      "full_statement": "내륙의 수역에서 기타 수생 동‧식물을 포획한다.",
+      "source_sentence": "내륙의 호수, 강, 어장 등에서 물고기를 잡거나, 기타 수생 동‧식물들을 포획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "사용하다",
+      "object": "어로 장비",
+      "full_statement": "고기를 잡기 위해 어로 장비를 사용한다.",
+      "source_sentence": "어로 장비를 써서 고기를 잡아 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분류하다",
+      "object": "잡은 고기",
+      "full_statement": "잡은 고기를 분류한다.",
+      "source_sentence": "어로 장비를 써서 고기를 잡아 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "씻다",
+      "object": "잡은 물고기",
+      "full_statement": "잡은 물고기를 씻는다.",
+      "source_sentence": "잡은 물고기를 씻어서 소금에 절인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절이다",
+      "object": "물고기",
+      "full_statement": "씻은 물고기를 소금에 절인다.",
+      "source_sentence": "잡은 물고기를 씻어서 소금에 절인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "어로 도구", "category": "도구", "evidence_span": "어로 도구 및 미끼를 준비한다."},
+    {"name": "어로 장비", "category": "장비", "evidence_span": "어로 장비를 써서 고기를 잡아 분류한다."},
+    {"name": "미끼", "category": "도구", "evidence_span": "어로 도구 및 미끼를 준비한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "내륙의 호수·강·어장 등 내수면(실외)", "evidence_span": "내륙의 호수, 강, 어장 등에서 물고기를 잡거나, 기타 수생 동‧식물들을 포획한다."}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28291",
+  "tasks": [
+    {
+      "verb": "심사하다",
+      "object": "증권 발행",
+      "full_statement": "새로운 주식 및 채권 발행을 심사한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "증권 유형",
+      "full_statement": "발행된 증권의 유형 및 기간을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협상하다",
+      "object": "발행 조건",
+      "full_statement": "신청 사업 내용을 위해 회사 및 정부와 협상한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "내용설명서",
+      "full_statement": "신청 사업 내용설명서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

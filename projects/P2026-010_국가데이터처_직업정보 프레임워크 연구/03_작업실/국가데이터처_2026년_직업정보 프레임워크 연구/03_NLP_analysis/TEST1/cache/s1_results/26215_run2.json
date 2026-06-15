@@ -1,0 +1,119 @@
+{
+  "ksco_code": "26215",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "교육계획",
+      "full_statement": "미술·음악·체육 과목에 대한 교육계획을 수립한다.",
+      "source_sentence": "중·고등학교에서 미술, 음악, 체육과목에 대한 교육계획을 수립하고 교육한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가르치다",
+      "object": "미술·음악·체육 과목",
+      "full_statement": "중·고등학생에게 미술·음악·체육 과목을 가르친다.",
+      "source_sentence": "중·고등학교에서 미술, 음악, 체육과목에 대한 교육계획을 수립하고 교육한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "적용하다",
+      "object": "교과서·시청각 자료·실험 장치",
+      "full_statement": "학습내용을 가르치기 위하여 교과서, 시청각 자료, 실험 장치와 적절한 방법을 적용한다.",
+      "source_sentence": "교육과정의 학습내용을 가르치기 위하여 교과서, 시청각 자료, 실험 장치와 적절한 방법을 적용하여 중‧고등학생들에게 교과목을 가르치고 평가하며 생활을 지도하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 2621)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "출제하다",
+      "object": "시험",
+      "full_statement": "학습 진단을 위하여 시험을 출제한다.",
+      "source_sentence": "학습 진단을 위하여 시험을 출제하고 그 결과를 평가하여 성적표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "시험 결과",
+      "full_statement": "시험 결과를 평가한다.",
+      "source_sentence": "학습 진단을 위하여 시험을 출제하고 그 결과를 평가하여 성적표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "성적표",
+      "full_statement": "평가 결과를 바탕으로 성적표를 작성한다.",
+      "source_sentence": "학습 진단을 위하여 시험을 출제하고 그 결과를 평가하여 성적표를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "전·입학 등 학사업무",
+      "full_statement": "전·입학 등의 학사업무를 처리한다.",
+      "source_sentence": "전‧입학 등의 학사업무를 처리하고 교직원회의 및 교사연수교육에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "참여하다",
+      "object": "교직원회의 및 교사연수교육",
+      "full_statement": "교직원회의 및 교사연수교육에 참여한다.",
+      "source_sentence": "전‧입학 등의 학사업무를 처리하고 교직원회의 및 교사연수교육에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지도하다",
+      "object": "단체 활동·특별활동",
+      "full_statement": "단체 활동이나 특별활동을 지도한다.",
+      "source_sentence": "단체 활동이나 특별활동을 지도하고 각종 학교행사를 준비‧지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "준비하다",
+      "object": "각종 학교행사",
+      "full_statement": "각종 학교행사를 준비하고 지도한다.",
+      "source_sentence": "단체 활동이나 특별활동을 지도하고 각종 학교행사를 준비‧지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "상담하다",
+      "object": "학부모",
+      "full_statement": "학업, 인성, 사회적응문제에 관하여 학부모와 상담하고 조언한다.",
+      "source_sentence": "학업, 인성, 사회적응문제에 관하여 학부모와 상담하고 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "지도하다",
+      "object": "학생",
+      "full_statement": "학업 및 기타 문제에 관하여 학생들을 지도하고 조언한다.",
+      "source_sentence": "학업 및 기타 문제에 관하여 학생들을 지도‧조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지도하다",
+      "object": "생활",
+      "full_statement": "중·고등학생들의 생활을 지도한다.",
+      "source_sentence": "중‧고등학생들에게 교과목을 가르치고 평가하며 생활을 지도하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 2621)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "교과서", "category": "도구", "evidence_span": "교과서, 시청각 자료, 실험 장치와 적절한 방법을 적용하여"},
+    {"name": "시청각 자료", "category": "도구", "evidence_span": "교과서, 시청각 자료, 실험 장치와 적절한 방법을 적용하여"},
+    {"name": "실험 장치", "category": "장비", "evidence_span": "교과서, 시청각 자료, 실험 장치와 적절한 방법을 적용하여"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "중·고등학교(실내)", "evidence_span": "중·고등학교에서 미술, 음악, 체육과목에 대한 교육계획을 수립하고 교육한다."},
+    {"category": "사회적", "value": "학생 대상 교육·지도", "evidence_span": "중‧고등학생들에게 교과목을 가르치고 평가하며 생활을 지도하는 업무를 수행한다."},
+    {"category": "사회적", "value": "학부모 상담", "evidence_span": "학업, 인성, 사회적응문제에 관하여 학부모와 상담하고 조언한다."}
+  ]
+}

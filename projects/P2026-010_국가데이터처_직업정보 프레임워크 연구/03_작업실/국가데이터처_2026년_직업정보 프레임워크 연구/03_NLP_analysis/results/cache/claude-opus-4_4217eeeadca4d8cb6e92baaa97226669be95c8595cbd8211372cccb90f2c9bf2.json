@@ -1,0 +1,49 @@
+{
+  "ksco_code": "28211",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "투자 정보",
+      "full_statement": "주식·채권 보고서와 재무제표를 이용해 투자정보를 수집한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "유가증권 가치",
+      "full_statement": "특정 유가증권의 본질적 가치와 안정성·수익성을 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "예측하다",
+      "object": "시황",
+      "full_statement": "시장의 장·단기 시황을 분석하고 예측한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "투자유망 종목",
+      "full_statement": "투자유망 종목을 개발하고 관리한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "투자 자문",
+      "full_statement": "고객과 펀드관리자에게 투자자문과 권고안을 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "기업분석 보고서",
+      "full_statement": "기업분석 보고서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

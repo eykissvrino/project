@@ -1,0 +1,77 @@
+{
+  "ksco_code": "43191",
+  "tasks": [
+    {
+      "verb": "연출하다",
+      "object": "의상과 액세서리",
+      "full_statement": "패션 감각에 맞게 의상과 신발, 가방, 스카프, 액세서리를 조화롭게 연출한다.",
+      "source_sentence": "패션 감각에 맞게 의상과 신발, 가방, 스카프, 액세서리 등을 조화롭게 연출한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조화시키다",
+      "object": "옷·액세서리·메이크업·헤어스타일",
+      "full_statement": "옷과 액세서리, 메이크업, 헤어스타일을 조화시켜 전체적인 멋을 추구한다.",
+      "source_sentence": "이들은 옷과 액세서리, 메이크업, 헤어스타일 등을 조화시켜 전체적인 멋을 추구하고 특성에 맞는 제품을 기획, 조정, 통제한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "특성에 맞는 제품",
+      "full_statement": "특성에 맞는 제품을 기획한다.",
+      "source_sentence": "특성에 맞는 제품을 기획, 조정, 통제한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "특성에 맞는 제품",
+      "full_statement": "특성에 맞는 제품을 조정한다.",
+      "source_sentence": "특성에 맞는 제품을 기획, 조정, 통제한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "통제하다",
+      "object": "특성에 맞는 제품",
+      "full_statement": "특성에 맞는 제품을 통제한다.",
+      "source_sentence": "특성에 맞는 제품을 기획, 조정, 통제한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조언하다",
+      "object": "의상·화장·액세서리",
+      "full_statement": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리를 조언한다.",
+      "source_sentence": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리,화술, 자세 등을 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조언하다",
+      "object": "화술과 자세",
+      "full_statement": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 화술과 자세를 조언한다.",
+      "source_sentence": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리,화술, 자세 등을 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연출하다",
+      "object": "직위·직책·분위기에 맞는 이미지",
+      "full_statement": "직위나 직책, 분위기에 맞는 이미지를 연출한다.",
+      "source_sentence": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리,화술, 자세 등을 조언한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 대상 이미지 연출 조언(대인 서비스)",
+      "evidence_span": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리,화술, 자세 등을 조언한다."
+    }
+  ]
+}

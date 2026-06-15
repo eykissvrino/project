@@ -1,0 +1,119 @@
+{
+  "ksco_code": "26111",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "과정표와 교과과정",
+      "full_statement": "교육 관련 학문의 과정표와 교과과정을 계획하고 조정한다.",
+      "source_sentence": "과정표와 교과과정을 계획‧조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(교육 분야)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조정하다",
+      "object": "교과과정",
+      "full_statement": "교과과정의 편성과 운영을 조정한다.",
+      "source_sentence": "과정표와 교과과정을 계획‧조정한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "준비하다",
+      "object": "강의",
+      "full_statement": "국어, 역사, 윤리 등 교육 관련 학문 분야의 강의를 준비한다.",
+      "source_sentence": "강의를 준비하고, 학생들에게 강의를 하며 세미나 및 실험을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(교육 분야)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "강의하다",
+      "object": "교육 관련 학문",
+      "full_statement": "대학에서 학생들에게 교육에 관련된 학문을 강의한다.",
+      "source_sentence": "대학에서 국어, 역사, 윤리 등 교육에 관련된 학문을 연구, 강의한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "세미나 및 실험",
+      "full_statement": "강의와 관련된 세미나 및 실험을 수행한다.",
+      "source_sentence": "강의를 준비하고, 학생들에게 강의를 하며 세미나 및 실험을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "출제하다",
+      "object": "시험",
+      "full_statement": "담당 과목의 시험을 출제한다.",
+      "source_sentence": "시험을 출제하고 그 결과를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "시험 결과",
+      "full_statement": "시험 결과를 평가한다.",
+      "source_sentence": "시험을 출제하고 그 결과를 평가한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지도하다",
+      "object": "졸업생의 논문 및 연구계획",
+      "full_statement": "졸업생의 논문 및 연구계획을 지도한다.",
+      "source_sentence": "졸업생의 논문 및 연구계획을 지도‧조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조언하다",
+      "object": "졸업생의 논문 및 연구계획",
+      "full_statement": "졸업생의 논문 및 연구계획에 대해 조언한다.",
+      "source_sentence": "졸업생의 논문 및 연구계획을 지도‧조언한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연구하다",
+      "object": "교육 관련 학문 전공분야",
+      "full_statement": "국어, 역사, 윤리 등 교육에 관련된 자신의 전공분야를 연구한다.",
+      "source_sentence": "대학에서 국어, 역사, 윤리 등 교육에 관련된 학문을 연구, 강의한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화(교육 분야)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "발표하다",
+      "object": "조사·연구결과",
+      "full_statement": "책이나 전문잡지에 조사·연구결과를 발표한다.",
+      "source_sentence": "책이나 전문잡지에 조사‧연구결과를 발표한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안 및 교재",
+      "full_statement": "담당 과목의 강의안 및 교재를 작성한다.",
+      "source_sentence": "대학교육 과정에서 담당과목을 교수하며 강의안 및 교재를 작성한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "발표하다",
+      "object": "논문",
+      "full_statement": "자신의 전공분야에 대한 논문을 발표한다.",
+      "source_sentence": "자신의 전공분야에 대한 연구 및 논문을 발표한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "개발하다",
+      "object": "개념 및 운영기법",
+      "full_statement": "교육 관련 학문 분야의 개념 및 운영기법을 연구·개발한다.",
+      "source_sentence": "또한 관련 개념, 이론 및 운영기법에 관하여 연구, 개발 등의 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,151 @@
+{
+  "ksco_code": "78252",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면과 시방서",
+      "full_statement": "도면과 시방서를 검토하여 보도블록 시공계획을 세운다.",
+      "source_sentence": "도면과 시방서에 따라 시공계획을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "조적용 공구·장비 및 재료",
+      "full_statement": "조적용 공구, 장비 및 재료를 준비한다.",
+      "source_sentence": "조적용 공구, 장비 및 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "시공위치",
+      "full_statement": "보도블록을 깔 시공위치를 측정한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "표시하다",
+      "object": "시공위치",
+      "full_statement": "측정한 시공위치를 표시한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "규준틀",
+      "full_statement": "시공 기준선을 잡기 위해 규준틀을 설치한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "포설하다",
+      "object": "모래나 기초",
+      "full_statement": "블록을 깔기 위해 모래나 기타 기초를 포설한다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "깔다",
+      "object": "보도블록",
+      "full_statement": "도로 및 보도를 만들기 위해 기초 위에 보도블록을 깔아놓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부설하다",
+      "object": "포장석",
+      "full_statement": "기초 위에 포장석을 부설한다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "부설하다",
+      "object": "슬래브",
+      "full_statement": "기초 위에 슬래브를 부설한다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "깔다",
+      "object": "벽돌",
+      "full_statement": "기초 위에 벽돌을 깔아놓는다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설치하다",
+      "object": "가장자리 돌",
+      "full_statement": "보도의 경계를 만들기 위해 가장자리 돌을 설치한다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "시공하다",
+      "object": "도랑",
+      "full_statement": "도랑을 만들기 위해 블록을 깔아 시공한다.",
+      "source_sentence": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.74
+    },
+    {
+      "verb": "배합하다",
+      "object": "모르타르",
+      "full_statement": "부설 작업에 사용할 모르타르를 배합한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "자르다",
+      "object": "블록",
+      "full_statement": "블록을 원하는 크기로 자른다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제거하다",
+      "object": "오래된 조적재료",
+      "full_statement": "보수를 위해 오래된 조적재료를 제거한다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재시공하다",
+      "object": "손상 부분",
+      "full_statement": "손상된 해당 부분만 다시 깔아 재시공한다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "시공 결함유무",
+      "full_statement": "작업완료 후 시공의 결함유무를 확인하고 검사한다.",
+      "source_sentence": "작업완료 후 시공의 결함유무를 확인, 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "흙손", "category": "도구", "evidence_span": "흙손과 같은 조적용 공구, 장비와 다양한 재료의 벽돌, 블록을 사용하여"},
+    {"name": "조적용 공구", "category": "도구", "evidence_span": "조적용 공구, 장비 및 재료를 준비한다."},
+    {"name": "규준틀", "category": "장비", "evidence_span": "조적위치를 측정․ 표시하고 규준틀을 설치한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "도로·보도 등 실외 작업", "evidence_span": "도로, 보도 및 도랑을 만들기 위해 모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다."},
+    {"category": "신체적", "value": "블록·포장석·가장자리 돌 등 중량물 취급", "evidence_span": "모래나 기타 기초 위에 블록, 포장석, 슬래브, 벽돌 및 가장자리 돌을 깔아놓는다."},
+    {"category": "신체적", "value": "손과 수공구 위주의 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

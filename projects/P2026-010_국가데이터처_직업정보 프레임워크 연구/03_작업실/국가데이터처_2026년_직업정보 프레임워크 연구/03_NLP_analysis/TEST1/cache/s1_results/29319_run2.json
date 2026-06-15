@@ -1,0 +1,207 @@
+{
+  "ksco_code": "29319",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "작품의 주제와 성격",
+      "full_statement": "작품의 주제, 성격 등을 분석한다.",
+      "source_sentence": "작품의 주제, 성격 등을 분석하고 다양한 제작방침을 결정한다.",
+      "derived_from": "상속 주요업무(감독)→세세정의 빈약으로 조상정의(세분류 2931) 병행",
+      "confidence": 0.62
+    },
+    {
+      "verb": "결정하다",
+      "object": "제작방침",
+      "full_statement": "다양한 제작방침을 결정한다.",
+      "source_sentence": "작품의 주제, 성격 등을 분석하고 다양한 제작방침을 결정한다.",
+      "derived_from": "상속 주요업무(감독)→조상정의(세분류 2931) 병행",
+      "confidence": 0.62
+    },
+    {
+      "verb": "선정하다",
+      "object": "배역",
+      "full_statement": "배역을 선정한다.",
+      "source_sentence": "배역을 선정하고 후원자, 작가 및 제작진과 협의한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "협의하다",
+      "object": "후원자·작가·제작진",
+      "full_statement": "후원자, 작가 및 제작진과 협의한다.",
+      "source_sentence": "배역을 선정하고 후원자, 작가 및 제작진과 협의한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "해석하다",
+      "object": "작품",
+      "full_statement": "작품을 해석한다.",
+      "source_sentence": "작품을 해석하고 바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다.",
+      "derived_from": "상속 주요업무(감독)→조상정의(세분류 2931: 제작을 총괄적으로 감독하고 연출한다) 병행",
+      "confidence": 0.6
+    },
+    {
+      "verb": "감독하다",
+      "object": "출연자 및 제작진",
+      "full_statement": "바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다.",
+      "source_sentence": "작품을 해석하고 바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다.",
+      "derived_from": "상속 주요업무(감독)→조상정의(세분류 2931) 병행",
+      "confidence": 0.62
+    },
+    {
+      "verb": "감독하다",
+      "object": "리허설",
+      "full_statement": "리허설을 감독한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "지도하다",
+      "object": "연기",
+      "full_statement": "연기를 지도한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "편집하다",
+      "object": "작품",
+      "full_statement": "작품을 편집한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.56
+    },
+    {
+      "verb": "지시하다",
+      "object": "조명 관련 사항",
+      "full_statement": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등에 대한 조명 관련 사항을 조명기사에게 지시한다.",
+      "source_sentence": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등에 대한 조명 관련 사항에 대해 조명기사에게 지시한다.",
+      "derived_from": "상속 주요업무(감독)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "계획하다",
+      "object": "음향장비 및 녹음장비의 기술적 분야",
+      "full_statement": "음향장비 및 녹음장비의 기술적인 분야를 계획한다.",
+      "source_sentence": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다.",
+      "derived_from": "상속 주요업무(감독)→조상정의(세분류 2931: 기술적인 업무를 계획하고 지도‧조정한다) 병행",
+      "confidence": 0.58
+    },
+    {
+      "verb": "조정하다",
+      "object": "음향장비 및 녹음장비의 기술적 분야",
+      "full_statement": "음향장비 및 녹음장비의 기술적인 분야를 지도‧조정한다.",
+      "source_sentence": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다.",
+      "derived_from": "상속 주요업무(감독)→조상정의(세분류 2931) 병행",
+      "confidence": 0.58
+    },
+    {
+      "verb": "검토하다",
+      "object": "대본",
+      "full_statement": "대본을 검토한다.",
+      "source_sentence": "대본을 검토하고 장면의 해석과 촬영효과에 관하여 연출자와 협의한다.",
+      "derived_from": "상속 주요업무(촬영감독)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "협의하다",
+      "object": "장면의 해석과 촬영효과",
+      "full_statement": "장면의 해석과 촬영효과에 관하여 연출자와 협의한다.",
+      "source_sentence": "대본을 검토하고 장면의 해석과 촬영효과에 관하여 연출자와 협의한다.",
+      "derived_from": "상속 주요업무(촬영감독)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "협의하다",
+      "object": "조명 설치",
+      "full_statement": "조명 설치를 위하여 조명감독과 협의한다.",
+      "source_sentence": "조명 설치를 위하여 조명감독과 협의하고 화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "derived_from": "상속 주요업무(촬영감독)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "지시하다",
+      "object": "촬영 사항",
+      "full_statement": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "source_sentence": "조명 설치를 위하여 조명감독과 협의하고 화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "derived_from": "상속 주요업무(촬영감독)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "확인하다",
+      "object": "대본",
+      "full_statement": "대본을 확인한다.",
+      "source_sentence": "대본을 확인하고 영화촬영 시에 작성한 촬영기록을 검토한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "검토하다",
+      "object": "촬영기록",
+      "full_statement": "영화촬영 시에 작성한 촬영기록을 검토한다.",
+      "source_sentence": "대본을 확인하고 영화촬영 시에 작성한 촬영기록을 검토한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "결정하다",
+      "object": "연결·삭제부위",
+      "full_statement": "화면을 보면서 연결‧삭제부위를 결정한다.",
+      "source_sentence": "화면을 보면서 연결‧삭제부위를 결정해 편집한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "편집하다",
+      "object": "영상",
+      "full_statement": "화면을 보면서 연결‧삭제부위를 편집한다.",
+      "source_sentence": "화면을 보면서 연결‧삭제부위를 결정해 편집한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "확인하다",
+      "object": "편집한 영상",
+      "full_statement": "영화제작자 또는 영화 감독과 협의하여 편집한 영상을 확인한다.",
+      "source_sentence": "영화제작자 또는 영화 감독과 협의하여 편집한 영상을 확인하고 의견을 수렴하여 재편집한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.53
+    },
+    {
+      "verb": "재편집하다",
+      "object": "영상",
+      "full_statement": "의견을 수렴하여 영상을 재편집한다.",
+      "source_sentence": "영화제작자 또는 영화 감독과 협의하여 편집한 영상을 확인하고 의견을 수렴하여 재편집한다.",
+      "derived_from": "상속 주요업무(편집감독)",
+      "confidence": 0.53
+    },
+    {
+      "verb": "협의하다",
+      "object": "무대장치의 종류 및 수량",
+      "full_statement": "대본을 검토하여 무대장치의 종류 및 수량을 영화 감독 또는 방송연출가와 협의한다.",
+      "source_sentence": "대본을 검토하여 무대장치의 종류 및 수량을 영화 감독 또는 방송연출가와 협의한다.",
+      "derived_from": "상속 주요업무(무대감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "협의하다",
+      "object": "무대장치 설치",
+      "full_statement": "특정한 시간과 장소를 표현하는 무대장치를 설치하기 위하여 무대기술자와 협의한다.",
+      "source_sentence": "특정한 시간과 장소를 표현하는 무대장치를 설치하기 위하여 무대기술자와 협의한다.",
+      "derived_from": "상속 주요업무(무대감독)",
+      "confidence": 0.54
+    },
+    {
+      "verb": "관리하다",
+      "object": "무대설치",
+      "full_statement": "무대장치가 주어진 예산과 세부계획에 일치하도록 무대설치를 관리하고 조정한다.",
+      "source_sentence": "무대장치가 주어진 예산과 세부계획에 일치하도록 무대설치를 관리하고 조정한다.",
+      "derived_from": "상속 주요업무(무대감독)",
+      "confidence": 0.54
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

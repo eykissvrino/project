@@ -1,0 +1,80 @@
+{
+  "ksco_code": "43153",
+  "tasks": [
+    {
+      "verb": "분장하다",
+      "object": "출연자의 얼굴",
+      "full_statement": "영화, 연극, 방송드라마 출연자들의 얼굴을 극의 분위기에 맞게 분장한다.",
+      "source_sentence": "영화, 연극, 방송드라마 출연자들의 얼굴을 극의 분위기에 맞게 분장한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "검토하다",
+      "object": "사진, 문헌 등",
+      "full_statement": "극의 분위기와 시대적 배경에 맞는 사진, 문헌 등을 검토한다.",
+      "source_sentence": "극의 분위기와 시대적 배경에 맞는 사진, 문헌 등을 검토하여 분장 방법을 결정한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "분장 방법",
+      "full_statement": "검토한 자료를 바탕으로 분장 방법을 결정한다.",
+      "source_sentence": "극의 분위기와 시대적 배경에 맞는 사진, 문헌 등을 검토하여 분장 방법을 결정한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무(방송분장사 분장방법 결정)→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "파악하다",
+      "object": "고객의 요구",
+      "full_statement": "고객의 요구를 파악한다.",
+      "source_sentence": "고객의 요구를 파악하고 의상, 얼굴 특성에 따라 화장을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분석하다",
+      "object": "출연자의 신체적 특성",
+      "full_statement": "출연자의 얼굴 생김새와 특징, 피부, 체격 등 신체적 특성을 분석한다.",
+      "source_sentence": "출연자의 얼굴 생김새와 특징, 피부, 체격 등 신체적 특성에 따라 분장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적용하다",
+      "object": "분장용 재료",
+      "full_statement": "가발, 수염, 연지, 분, 물감 등의 분장용 재료를 출연자의 얼굴에 적용한다.",
+      "source_sentence": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여 출연자의 얼굴 생김새와 특징, 피부, 체격 등 신체적 특성에 따라 분장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "사용하다",
+      "object": "화장품",
+      "full_statement": "분장 과정에서 화장품을 사용한다.",
+      "source_sentence": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여 출연자의 얼굴 생김새와 특징, 피부, 체격 등 신체적 특성에 따라 분장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조언하다",
+      "object": "화장법",
+      "full_statement": "때로는 화장법에 대해 고객에게 조언한다.",
+      "source_sentence": "때로는 화장법에 대해 고객에게 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "가발", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"},
+    {"name": "수염", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"},
+    {"name": "연지", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"},
+    {"name": "분", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"},
+    {"name": "물감", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"},
+    {"name": "화장품", "category": "도구", "evidence_span": "가발, 수염, 연지, 분, 물감 등의 분장용 재료와 화장품을 사용하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "출연자·고객 대면 응대", "evidence_span": "고객의 요구를 파악하고 의상, 얼굴 특성에 따라 화장을 해준다."}
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "ksco_code": "53210",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "담당구역의 고객",
+      "full_statement": "담당구역의 고객을 방문하여 가정이나 사업체를 찾아다닌다.",
+      "source_sentence": "담당구역의 고객을 방문하여 견본을 보여 주거나 안내서로 상품을 설명하고 상품의 특징과 장점을 설명하여 구매 욕구를 자극시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가정 또는 사업체를 찾아다니면서)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보여주다",
+      "object": "상품 견본",
+      "full_statement": "고객에게 상품 견본을 보여준다.",
+      "source_sentence": "담당구역의 고객을 방문하여 견본을 보여 주거나 안내서로 상품을 설명하고 상품의 특징과 장점을 설명하여 구매 욕구를 자극시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품 내용",
+      "full_statement": "안내서로 각종 상품이나 서비스의 내용을 설명한다.",
+      "source_sentence": "가정 또는 사업체를 찾아다니면서 각종 상품이나 서비스의 내용을 설명하고 상품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 결합",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품의 특징과 장점",
+      "full_statement": "상품의 특징과 장점을 설명하여 고객의 구매 욕구를 자극시킨다.",
+      "source_sentence": "담당구역의 고객을 방문하여 견본을 보여 주거나 안내서로 상품을 설명하고 상품의 특징과 장점을 설명하여 구매 욕구를 자극시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "알리다",
+      "object": "상품의 가격",
+      "full_statement": "상품의 가격을 고객에게 알린다.",
+      "source_sentence": "상품의 가격을 알리고 현찰, 할부판매, 카드판매 등의 거래조건과 물품 인도조건을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "거래조건",
+      "full_statement": "현찰, 할부판매, 카드판매 등의 거래조건을 협의한다.",
+      "source_sentence": "상품의 가격을 알리고 현찰, 할부판매, 카드판매 등의 거래조건과 물품 인도조건을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "물품 인도조건",
+      "full_statement": "물품 인도조건을 협의한다.",
+      "source_sentence": "상품의 가격을 알리고 현찰, 할부판매, 카드판매 등의 거래조건과 물품 인도조건을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품",
+      "full_statement": "각종 상품이나 서비스를 고객에게 판매한다.",
+      "source_sentence": "가정 또는 사업체를 찾아다니면서 각종 상품이나 서비스의 내용을 설명하고 상품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "전달하다",
+      "object": "주문서",
+      "full_statement": "주문서를 출고 관련 부서에 전달한다.",
+      "source_sentence": "주문서를 출고 관련 부서에 전달하고 영업보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "작성하다",
+      "object": "영업보고서",
+      "full_statement": "영업보고서를 작성한다.",
+      "source_sentence": "주문서를 출고 관련 부서에 전달하고 영업보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수금하다",
+      "object": "상품 판매대금",
+      "full_statement": "상품 판매대금을 수금한다.",
+      "source_sentence": "상품 판매대금을 수금하거나 판매상품을 배달하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배달하다",
+      "object": "판매상품",
+      "full_statement": "판매상품을 고객에게 배달한다.",
+      "source_sentence": "상품 판매대금을 수금하거나 판매상품을 배달하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "고객의 가정 또는 사업체를 순회하는 이동 근무",
+      "evidence_span": "가정 또는 사업체를 찾아다니면서 각종 상품이나 서비스의 내용을 설명하고 상품을 판매하는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 직접 방문·대면 응대",
+      "evidence_span": "담당구역의 고객을 방문하여 견본을 보여 주거나 안내서로 상품을 설명하고"
+    }
+  ]
+}

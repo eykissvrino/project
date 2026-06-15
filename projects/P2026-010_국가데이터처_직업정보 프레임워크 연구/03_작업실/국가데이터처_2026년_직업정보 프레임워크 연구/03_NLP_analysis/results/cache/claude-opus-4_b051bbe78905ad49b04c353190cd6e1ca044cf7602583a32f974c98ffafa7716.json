@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28112",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "직무 정보",
+      "full_statement": "업무 내용·수행요건·근로조건 등 기술적 정보를 조사하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "직무",
+      "full_statement": "합리적 직무평가를 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "직업 정보",
+      "full_statement": "효율적인 직업 정보를 분석하여 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "직무분석 기법",
+      "full_statement": "직무분석 기법을 개발한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "인사관리",
+      "full_statement": "조직적 인사관리에 대해 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

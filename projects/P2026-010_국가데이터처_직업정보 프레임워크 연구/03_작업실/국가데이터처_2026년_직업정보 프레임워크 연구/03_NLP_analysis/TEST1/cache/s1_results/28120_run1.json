@@ -1,0 +1,202 @@
+{
+  "ksco_code": "28120",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "회계 용역 업무",
+      "full_statement": "회계에 관한 용역 업무를 계획하고 관리한다.",
+      "source_sentence": "회계에 관한 용역 업무를 계획‧관리하고, 의뢰인의 위임에 따라 재무회계 서류의 작성, 기업의 소득세보고서 작성, 재무회계감사 또는 증명을 하고, 재무 서류의 조정, 재무조사 및 기타 회계 사무에 관련된 상담한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "재무회계 서류",
+      "full_statement": "의뢰인의 위임에 따라 재무회계 서류를 작성한다.",
+      "source_sentence": "의뢰인의 위임에 따라 재무회계 서류의 작성, 기업의 소득세보고서 작성, 재무회계감사 또는 증명을 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "소득세보고서",
+      "full_statement": "기업의 소득세보고서를 작성한다.",
+      "source_sentence": "의뢰인의 위임에 따라 재무회계 서류의 작성, 기업의 소득세보고서 작성, 재무회계감사 또는 증명을 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "감사하다",
+      "object": "재무회계",
+      "full_statement": "재무회계감사 또는 증명을 한다.",
+      "source_sentence": "의뢰인의 위임에 따라 재무회계 서류의 작성, 기업의 소득세보고서 작성, 재무회계감사 또는 증명을 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "재무 서류",
+      "full_statement": "재무 서류를 조정한다.",
+      "source_sentence": "재무 서류의 조정, 재무조사 및 기타 회계 사무에 관련된 상담한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "재무",
+      "full_statement": "재무조사를 수행한다.",
+      "source_sentence": "재무 서류의 조정, 재무조사 및 기타 회계 사무에 관련된 상담한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "상담하다",
+      "object": "회계 사무",
+      "full_statement": "기타 회계 사무에 관련된 상담을 한다.",
+      "source_sentence": "재무 서류의 조정, 재무조사 및 기타 회계 사무에 관련된 상담한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설정하다",
+      "object": "회계시스템",
+      "full_statement": "회계시스템을 계획, 설정하고 관리한다.",
+      "source_sentence": "회계시스템을 계획, 설정하고 관리하며 개인, 부서, 회사나 기타 사업체의 재무정보를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "재무정보",
+      "full_statement": "개인, 부서, 회사나 기타 사업체의 재무정보를 작성한다.",
+      "source_sentence": "회계시스템을 계획, 설정하고 관리하며 개인, 부서, 회사나 기타 사업체의 재무정보를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "회계기록",
+      "full_statement": "회계기록을 조사한다.",
+      "source_sentence": "회계기록을 조사하고 재무제표 및 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "재무제표 및 보고서",
+      "full_statement": "재무제표 및 보고서를 작성한다.",
+      "source_sentence": "회계기록을 조사하고 재무제표 및 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "비용 조사 보고서",
+      "full_statement": "비용에 대한 조사 보고서를 작성한다.",
+      "source_sentence": "비용에 대한 조사 보고서를 작성하고 내부규제절차를 만들고 유지‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "유지하다",
+      "object": "내부규제절차",
+      "full_statement": "내부규제절차를 만들고 유지‧관리한다.",
+      "source_sentence": "비용에 대한 조사 보고서를 작성하고 내부규제절차를 만들고 유지‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조사하다",
+      "object": "재무거래계산서 및 기록",
+      "full_statement": "재무거래계산서 및 기록들을 조사한다.",
+      "source_sentence": "재무거래계산서 및 기록들을 조사하고 회계보고서를 통해 소득세신고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "소득세신고서",
+      "full_statement": "회계보고서를 통해 소득세신고서를 작성한다.",
+      "source_sentence": "재무거래계산서 및 기록들을 조사하고 회계보고서를 통해 소득세신고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "재무제표 및 보고서",
+      "full_statement": "재무제표 및 보고서를 분석한다.",
+      "source_sentence": "재무제표 및 보고서를 분석하고 재무, 사업 및 세금에 대한 자문을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "재무·사업·세금",
+      "full_statement": "재무, 사업 및 세금에 대한 자문을 해준다.",
+      "source_sentence": "재무제표 및 보고서를 분석하고 재무, 사업 및 세금에 대한 자문을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "대조하다",
+      "object": "각 서류의 기재사항",
+      "full_statement": "각 서류의 기재사항을 대조한다.",
+      "source_sentence": "각 서류의 기재사항을 대조하고 오차 발견 시 원인을 조사하여 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "오차 원인",
+      "full_statement": "오차 발견 시 원인을 조사하여 조정한다.",
+      "source_sentence": "각 서류의 기재사항을 대조하고 오차 발견 시 원인을 조사하여 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "회계 및 재무기록",
+      "full_statement": "일지, 원장기입, 은행계산서, 납세신고서 등의 회계 및 재무기록과 회계기준·절차·내부규정 일치여부 및 재무기록의 정확성을 확인하기 위해 조사하고 분석한다.",
+      "source_sentence": "일지, 원장기입, 은행계산서, 납세신고서 등의 회계 및 재무기록과 사업체의 회계기준, 절차 및 내부규정 일치여부, 재무기록의 정확성 여부 등을 확인 하기 위해 조사하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "작성하다",
+      "object": "감사결과 보고서",
+      "full_statement": "감사결과에 대한 상세한 보고서를 작성한다.",
+      "source_sentence": "감사결과에 대한 상세한 보고서를 작성하고, 개인이나 사업체의 회계 및 경영실무를 개선하기 위한 권고안을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "개선 권고안",
+      "full_statement": "개인이나 사업체의 회계 및 경영실무를 개선하기 위한 권고안을 만든다.",
+      "source_sentence": "감사결과에 대한 상세한 보고서를 작성하고, 개인이나 사업체의 회계 및 경영실무를 개선하기 위한 권고안을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수행하다",
+      "object": "사업현장 감사",
+      "full_statement": "소득세법 규정이나 기타 요건에 맞는지 확인하기 위해 사업현장 감사를 수행한다.",
+      "source_sentence": "소득세법 규정이나 기타 요건에 맞는지 확인하기 위해 사업현장 감사를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "회계법인·합동회계사무소·감사반이나 일반기업체 근무, 개인 개업 가능",
+      "evidence_span": "회계법인, 합동회계사무소, 감사반이나 일반기업체에서 일하며 개인적으로 개업할 수도 있다."
+    },
+    {
+      "category": "사회적",
+      "value": "의뢰인 위임에 따른 회계 상담 등 고객응대",
+      "evidence_span": "의뢰인의 위임에 따라 재무회계 서류의 작성"
+    }
+  ]
+}

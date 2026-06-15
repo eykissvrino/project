@@ -1,0 +1,6488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>직업분류 · 직무활동 표준화 스터디 자료 — P2026-010</title>
+<style>
+  :root {
+    --primary: #1f4e8c;
+    --primary-light: #e8f0fa;
+    --secondary: #6c8db5;
+    --accent: #d97706;
+    --text: #1a1a1a;
+    --text-soft: #555;
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;
+    --border: #d8dde3;
+    --code-bg: #f4f4f5;
+    --warning-bg: #fff7ed;
+    --warning-border: #fb923c;
+    --info-bg: #eff6ff;
+    --info-border: #3b82f6;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 15.5px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    min-height: 100vh;
+  }
+  aside.nav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--bg-soft);
+    border-right: 1px solid var(--border);
+    padding: 22px 16px;
+  }
+  aside.nav h1 {
+    font-size: 15px;
+    color: var(--primary);
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+  }
+  aside.nav .sub { font-size: 11.5px; color: var(--text-soft); margin-bottom: 14px; }
+  aside.nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+  }
+  aside.nav ol > li { margin-bottom: 3px; }
+  aside.nav a {
+    display: block;
+    padding: 7px 11px;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 500;
+  }
+  aside.nav a:hover { background: var(--primary-light); color: var(--primary); }
+  aside.nav a.active { background: var(--primary); color: white; }
+  aside.nav .group-title {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 14px 0 4px 11px;
+  }
+  .search-box {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+  main {
+    padding: 32px 48px 80px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .part {
+    display: none;
+    animation: fadeIn 0.25s ease;
+  }
+  .part.active { display: block; }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  h1, h2, h3, h4 { color: var(--primary); line-height: 1.3; }
+  h1 { font-size: 26px; margin: 0 0 14px 0; border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+  h2 { font-size: 21px; margin: 30px 0 10px 0; padding-left: 8px; border-left: 4px solid var(--primary); }
+  h3 { font-size: 17px; margin: 22px 0 8px 0; color: var(--secondary); }
+  h4 { font-size: 15.5px; margin: 16px 0 6px 0; color: var(--accent); }
+  p { margin: 7px 0 11px 0; }
+  ul, ol { margin: 8px 0; padding-left: 24px; }
+  li { margin-bottom: 3px; }
+  pre {
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 13px 16px;
+    overflow-x: auto;
+    font-size: 12.8px;
+    border-left: 3px solid var(--primary);
+    margin: 11px 0;
+    line-height: 1.5;
+  }
+  code {
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    background: var(--code-bg);
+    padding: 1.5px 5px;
+    border-radius: 3px;
+    font-size: 0.91em;
+  }
+  pre code { background: transparent; padding: 0; font-size: 12.8px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13.5px;
+  }
+  th, td {
+    padding: 7px 11px;
+    text-align: left;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { background: var(--primary-light); color: var(--primary); font-weight: 700; }
+  tr:nth-child(even) td { background: var(--bg-soft); }
+  blockquote {
+    background: var(--info-bg);
+    border-left: 4px solid var(--info-border);
+    padding: 10px 16px;
+    margin: 14px 0;
+    color: var(--text-soft);
+    border-radius: 0 4px 4px 0;
+  }
+  blockquote strong { color: var(--info-border); }
+  hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar .meta { font-size: 11.5px; color: var(--text-soft); }
+  .topbar .actions button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12.5px;
+    margin-left: 6px;
+  }
+  .topbar .actions button:hover { background: #163a6b; }
+  .topbar .actions button.secondary { background: var(--secondary); }
+  @media print {
+    aside.nav { display: none; }
+    .layout { grid-template-columns: 1fr; }
+    main { padding: 0; }
+    .part { display: block !important; page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="nav">
+    <h1>직업분류·직무활동 표준화<br>스터디 자료</h1>
+    <div class="sub">P2026-010 국가데이터처 연구 · 2-Track</div>
+    <input type="text" class="search-box" placeholder="키워드 검색..." oninput="searchContent(this.value)">
+<div class="group-title">학습 시작</div>
+<ol>
+  <li><a href="#part-0" onclick="showPart('part-0', this); return false;" class="active">학습 로드맵 (2-Track)</a></li>
+</ol>
+<div class="group-title">Track A — 개념·이론</div>
+<ol>
+  <li><a href="#part-1" onclick="showPart('part-1', this); return false;">A1. 직업분류 기초</a></li>
+  <li><a href="#part-2" onclick="showPart('part-2', this); return false;">A2. O*NET 4계층 완전이해</a></li>
+  <li><a href="#part-P0" onclick="showPart('part-P0', this); return false;">A3. ⭐ 발주기관 사전연구</a></li>
+  <li><a href="#part-7" onclick="showPart('part-7', this); return false;">A4. 추가 필요 자료</a></li>
+</ol>
+<div class="group-title">Track B — 방법론·실행</div>
+<ol>
+  <li><a href="#part-3" onclick="showPart('part-3', this); return false;">B1. 미국 도출 방법론</a></li>
+  <li><a href="#part-4" onclick="showPart('part-4', this); return false;">B2. AI 활용 도출 방법</a></li>
+  <li><a href="#part-5" onclick="showPart('part-5', this); return false;">B3. 도출 기준 설정</a></li>
+  <li><a href="#part-6" onclick="showPart('part-6', this); return false;">B4. KSCO 적용 워크플로</a></li>
+  <li><a href="#part-P8" onclick="showPart('part-P8', this); return false;">B5. ⭐ 실행방법론 모듈</a></li>
+</ol>
+<div class="group-title">참고</div>
+<ol>
+  <li><a href="#part-A" onclick="showPart('part-A', this); return false;">부록: 용어·체크리스트·연습</a></li>
+</ol>
+  </aside>
+  <main>
+
+<section id="part-0" class="part active">
+  <div class="topbar">
+    <div class="meta">P2026-010 · 직업정보 프레임워크 연구 · 2026-05-19 작성 / 2026-05-20 2-Track 재구조화</div>
+    <div class="actions">
+      <button onclick="window.print()">인쇄</button>
+      <button class="secondary" onclick="showAll()">전체 보기</button>
+    </div>
+  </div>
+  <div class="md-content"><h1 id="2-track">직업분류·직무활동 표준화 스터디 자료 — 학습 로드맵 (2-Track)</h1>
+<p><strong>작성일</strong>: 2026-05-19 (1차 작성) · 2026-05-20 (Track 재구조화 + 발주기관 사전연구 보강)
+<strong>대상</strong>: P2026-010 국가데이터처 「직업분류 고도화를 위한 직업정보 프레임워크 연구」 연구진
+<strong>문서 위치</strong>: <code>07_references/스터디자료/</code></p>
+<hr />
+<h2 id="_1">학습의 두 트랙</h2>
+<p>본 스터디 자료는 두 개의 학습 트랙으로 구성됩니다. 두 트랙은 독립적이지만, <strong>A를 어느 정도 학습한 후 B를 병행</strong>하는 것이 효율적입니다.</p>
+<h3 id="track-a-onet">Track A — 개념·이론 학습 (직업분류·O*NET·발주기관 맥락)</h3>
+<p>이 트랙의 목적은 "무엇을 왜 만드는가"를 이해하는 것입니다.</p>
+<p>본 사업은 단순한 NLP 프로젝트가 아니라 <strong>국가 직업통계 체계를 고도화</strong>하는 정책 연구입니다. 직업분류의 원리·O<em>NET의 설계철학·</em><em>국가데이터처(2025.10 출범)의 정책 맥락</em><em>·</em><em>조세형 박사 직계 사전연구 2건</em>*(ISCO-28 SLF, 직업문항)을 모르고서는 산출물의 방향을 잡을 수 없습니다.</p>
+<h3 id="track-b">Track B — 방법론·실행 학습 (절차·도구·코드·산출물)</h3>
+<p>이 트랙의 목적은 "어떻게 만드는가"를 이해하는 것입니다.</p>
+<p>미국 WA Project는 11년에 걸쳐 했지만 본 사업은 8개월입니다. 미국 절차를 그대로 따라하는 것이 아니라 <strong>AI 자동화·QA 절차·산출물 표준화·한국형 AutoCoder(KOA) 엔진 구축</strong>을 통한 압축 실행 방법론을 수립해야 합니다.</p>
+<h3 id="3">본 사업의 진짜 그림 — 3차원 결합</h3>
+<p>본 스터디 자료가 다루는 영역은 사실 다음 3개 차원의 결합입니다.</p>
+<pre><code>        ┌──────────────────────────────────────────┐
+        │ 본 사업 = 직업정보 프레임워크 (3차원 통합)    │
+        └──────────────────────────────────────────┘
+                            │
+            ┌───────────────┼────────────────┐
+            ▼               ▼                ▼
+    [ 직무활동 ]      [ 직능수준 ]       [ 직업문항 ]
+    GWA·IWA·DWA·TASK  K-SLF 4차원       3영역 측정 개선
+    (O*NET 4계층)     (교육·책임·       (직능유형·수준·산업)
+                       경험·WBL)
+    Part 2 / Part 6   Part 0 §0.3       Part 0 §0.4
+</code></pre>
+<p>Track A의 Part 0이 우측 두 차원을 책임지고, Part 2·6이 좌측 차원을 책임집니다.</p>
+<hr />
+<h2 id="_2">전체 학습 자료 맵</h2>
+<table>
+<thead>
+<tr>
+<th>트랙</th>
+<th>#</th>
+<th>파일</th>
+<th>핵심 질문</th>
+<th>분량</th>
+<th>학습 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>안내</td>
+<td>0</td>
+<td><a href="00_README_학습로드맵.md"><code>00_README_학습로드맵.md</code></a></td>
+<td>본 문서. 어떤 순서로 학습?</td>
+<td>3p</td>
+<td>10분</td>
+</tr>
+<tr>
+<td>안내</td>
+<td>0</td>
+<td><a href="00_스터디자료_안내.md"><code>00_스터디자료_안내.md</code></a></td>
+<td>학습 가이드·주의사항</td>
+<td>3p</td>
+<td>5분</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>A1</td>
+<td><a href="01_Part1_직업분류_기초.md"><code>01_Part1_직업분류_기초.md</code></a></td>
+<td>직업·직무·과업의 차이? ISCO·KSCO 원리?</td>
+<td>6p</td>
+<td>30분</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>A2</td>
+<td><a href="02_Part2_ONET_4계층_완전이해.md"><code>02_Part2_ONET_4계층_완전이해.md</code></a></td>
+<td>GWA·IWA·DWA·TASK는 정확히 무엇?</td>
+<td>10p</td>
+<td>60분</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>A3</td>
+<td><a href="09_Part0_발주기관_사전연구.md"><code>09_Part0_발주기관_사전연구.md</code></a></td>
+<td>국가데이터처는? KSCO 8차 사전연구는? RFP 행간은?</td>
+<td>8p</td>
+<td>50분</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>A4</td>
+<td><a href="07_Part7_추가_필요자료_로드맵.md"><code>07_Part7_추가_필요자료_로드맵.md</code></a></td>
+<td>추가로 무엇을 봐야 하나?</td>
+<td>4p</td>
+<td>30분</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>B1</td>
+<td><a href="03_Part3_미국_도출방법론.md"><code>03_Part3_미국_도출방법론.md</code></a></td>
+<td>HumRRO·WA Project는 어떻게 했나?</td>
+<td>10p</td>
+<td>60분</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>B2</td>
+<td><a href="04_Part4_AI_활용_도출방법.md"><code>04_Part4_AI_활용_도출방법.md</code></a></td>
+<td>LLM·임베딩·클러스터링을 어디에 쓰나?</td>
+<td>12p</td>
+<td>90분</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>B3</td>
+<td><a href="05_Part5_도출_기준_설정.md"><code>05_Part5_도출_기준_설정.md</code></a></td>
+<td>임계값·품질·합의는 어떻게 결정?</td>
+<td>7p</td>
+<td>45분</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>B4</td>
+<td><a href="06_Part6_KSCO_적용_워크플로.md"><code>06_Part6_KSCO_적용_워크플로.md</code></a></td>
+<td>직업 1개를 실제로 어떻게 처리?</td>
+<td>10p</td>
+<td>60분</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>B5</td>
+<td><a href="10_Part8_실행방법론_모듈.md"><code>10_Part8_실행방법론_모듈.md</code></a></td>
+<td>HWPX·코드·QA·산출물 표준은?</td>
+<td>10p</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>부록</td>
+<td>Z</td>
+<td><a href="08_부록_용어집_체크리스트_연습문제.md"><code>08_부록_용어집_체크리스트_연습문제.md</code></a></td>
+<td>용어·체크리스트·연습</td>
+<td>6p</td>
+<td>60분</td>
+</tr>
+</tbody>
+</table>
+<p><strong>총 분량</strong>: 약 76p · <strong>총 학습시간</strong>: 약 8~9시간 (1차 통독) + 연습 1~2시간</p>
+<hr />
+<h2 id="_3">트랙별 학습 목표</h2>
+<h3 id="track-a-7">Track A 학습 후 답할 수 있어야 할 질문 (7개)</h3>
+<ol>
+<li>ISCO-08의 "직능수준 × 직능유형" 두 차원이 왜 직교(orthogonal)여야 하는가?</li>
+<li>O*NET이 1995년 DOT를 대체하면서 도입한 6대 영역 콘텐츠 모델은 무엇인가?</li>
+<li>GWA·IWA·DWA·TASK 4계층 각각의 추상도 위치와 규모(개수)는?</li>
+<li>KRIVET이 2021·2023년에 수행한 KSCO 8차 사전연구는 무엇을 다루었는가?</li>
+<li>2025년 10월 국가데이터처 출범의 의미는? 본 사업과 어떤 연관이 있는가?</li>
+<li>본 사업 RFP가 "직업분류 고도화"라고 명명한 이유는?</li>
+<li>ISCO-28 개정 동향이 본 사업에 미치는 영향은?</li>
+</ol>
+<h3 id="track-b-8">Track B 학습 후 답할 수 있어야 할 질문 (8개)</h3>
+<ol>
+<li>HumRRO 5-step decision tree의 각 단계와 임계값(15명·67%·3.0)은?</li>
+<li>WA Project 7-step 클러스터링 절차의 각 단계는?</li>
+<li>AI 13개 단계 분담 매트릭스에서 인간 검수가 0% / 30% / 100%인 단계는 각각 무엇인가?</li>
+<li>BGE-m3-ko + HDBSCAN + BERTopic + Claude Opus의 각 역할은?</li>
+<li>Cohen's Kappa·F1·Silhouette·Davies-Bouldin의 측정 방법과 임계는?</li>
+<li>KSCO 분류항목표 HWPX를 어떻게 파싱하는가?</li>
+<li>직무기술 정의서 1편(4개 섹션)의 표준 양식은 무엇인가?</li>
+<li>Round-Robin QC 절차를 6명·3팀으로 어떻게 운영하는가?</li>
+</ol>
+<hr />
+<h2 id="_4">권장 학습 순서</h2>
+<h3 id="1-track-a">1주차 (Track A 집중)</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>자료</th>
+<th>분량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A1. Part 1 직업분류 기초</td>
+<td>30분</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A2. Part 2 O*NET 4계층</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>3</td>
+<td>A3. Part 0 발주기관 사전연구 ⭐신규</td>
+<td>50분</td>
+</tr>
+<tr>
+<td>4</td>
+<td>A4. Part 7 추가 필요자료 로드맵</td>
+<td>30분</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1주차 점검: 부록 Z의 C.1 개념확인 5문제 + 자기점검 체크리스트</td>
+<td>60분</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-track-b-1">2주차 (Track B 1차 학습)</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>자료</th>
+<th>분량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>B1. Part 3 미국 도출 방법론</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>2</td>
+<td>B2. Part 4 AI 활용 도출 방법 (전반)</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B2. Part 4 AI 활용 도출 방법 (후반: 5대 기술 요소·아키텍처)</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B3. Part 5 도출 기준 설정</td>
+<td>45분</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2주차 점검: 부록 Z의 C.2~C.3 응용·시뮬레이션 5문제</td>
+<td>90분</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-track-b">3주차 (Track B 실전화)</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>자료</th>
+<th>분량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>B4. Part 6 KSCO 적용 워크플로</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>2</td>
+<td>B5. Part 8 실행방법론 모듈 ⭐신규 (HWPX·코드)</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B5. Part 8 실행방법론 모듈 (QA·산출물 템플릿)</td>
+<td>60분</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3주차 실습: 본인 관심 직업 1개로 직무기술 정의서 시안 작성</td>
+<td>120분</td>
+</tr>
+<tr>
+<td>5</td>
+<td>발표 Q&amp;A 11문제 응답 작성</td>
+<td>60분</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4">4주차+ (시뮬레이션)</h3>
+<ul>
+<li>본인이 맡을 직업군 5~10개에 대해 실제 워크플로 실행</li>
+<li>분석가 paired 평정으로 Kappa 측정</li>
+<li>LLM 자동분류 정확도 측정 → prompt 개선</li>
+</ul>
+<hr />
+<h2 id="2026-05-20">보강 자료의 위치 (2026-05-20 추가)</h2>
+<p>1차 작성 후 사용자 피드백에 따라 다음 자료가 추가되었습니다.</p>
+<table>
+<thead>
+<tr>
+<th>신규 자료</th>
+<th>위치</th>
+<th>트랙</th>
+<th>추가 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Part 0: 발주기관 사전연구</strong></td>
+<td><code>09_Part0_발주기관_사전연구.md</code></td>
+<td>A</td>
+<td>통계청·국가데이터처·KRIVET 사전연구가 빠져 있었음</td>
+</tr>
+<tr>
+<td><strong>Part 8: 실행방법론 모듈</strong></td>
+<td><code>10_Part8_실행방법론_모듈.md</code></td>
+<td>B</td>
+<td>HWPX 파싱·코드·QA 절차·산출물 표준 양식이 빠져 있었음</td>
+</tr>
+<tr>
+<td><strong>학습 로드맵 (본 문서)</strong></td>
+<td><code>00_README_학습로드맵.md</code></td>
+<td>안내</td>
+<td>두 트랙으로 명확히 구조화</td>
+</tr>
+</tbody>
+</table>
+<p><strong>번호 명명 규칙 안내</strong>: 파일 번호(01~10)는 작성 순서일 뿐, 학습 순서가 아닙니다. 위의 학습 순서표에 따라 트랙별로 읽으세요.</p>
+<hr />
+<h2 id="_5">학습 자료 전체 의존 관계도</h2>
+<pre><code>                       ┌─────────────────────────────────────┐
+                       │  00_README_학습로드맵 (본 문서)         │
+                       │  + 00_스터디자료_안내                    │
+                       └────────────┬────────────────────────┘
+                                    │
+                ┌───────────────────┴───────────────────┐
+                │                                       │
+                ▼                                       ▼
+   ┌─────────────────────────────┐         ┌─────────────────────────────┐
+   │   Track A — 개념·이론        │         │   Track B — 방법론·실행      │
+   ├─────────────────────────────┤         ├─────────────────────────────┤
+   │  A1. Part 1 직업분류 기초    │  ──┐    │  B1. Part 3 미국 방법론      │
+   │  A2. Part 2 O*NET 4계층      │    │    │  B2. Part 4 AI 활용 방법     │
+   │  A3. Part 0 발주기관 사전연구⭐│    │    │  B3. Part 5 도출 기준 설정    │
+   │  A4. Part 7 추가 자료 로드맵 │    │    │  B4. Part 6 KSCO 워크플로     │
+   └──────────────┬──────────────┘    │    │  B5. Part 8 실행 모듈    ⭐  │
+                  │                    │    └──────────────┬──────────────┘
+                  │                    │                   │
+                  └────────────────────┴───────────────────┘
+                                       │
+                                       ▼
+                            ┌─────────────────────┐
+                            │  부록 Z. 용어·체크   │
+                            │  리스트·연습문제     │
+                            └─────────────────────┘
+</code></pre>
+<hr />
+<h2 id="_6">자가 점검: "충분히 학습되었는가?"</h2>
+<p>본 스터디 자료 전체를 학습한 후, 다음 8개 시나리오에 모두 답할 수 있어야 본 사업의 연구진으로서 충분히 준비되었다고 판단할 수 있습니다.</p>
+<h3 id="1-pm">시나리오 1 — 발주처 PM과 첫 미팅</h3>
+<p>PM이 "왜 본 사업이 통계청이 아닌 국가데이터처 발주인지 아세요?"라고 묻는다. 답할 수 있는가?</p>
+<h3 id="2">시나리오 2 — 분류 전문가 위원의 도전</h3>
+<p>전문가가 "WA Project가 NLP를 거부했는데, 왜 본 사업은 NLP를 쓰나요?"라고 묻는다. 답할 수 있는가?</p>
+<h3 id="3_1">시나리오 3 — 연구원 후배의 질문</h3>
+<p>후배가 "GWA는 41개라는데, 우리도 41개를 그대로 가져갈 건가요? 한국형으로 새로 만들어야 하지 않나요?"라고 묻는다. 답할 수 있는가?</p>
+<h3 id="4_1">시나리오 4 — 실무 작업 분담</h3>
+<p>당신이 KSCO 중분류 "보건 전문가" 산하 15개 직업을 맡았다. 한 직업당 어떤 자료를 통합하고 어떤 도구로 처리할 것인가?</p>
+<h3 id="5">시나리오 5 — 임계값 결정</h3>
+<p>HumRRO는 67%·15명·3.0을 사용했다. 한국에서 그대로 쓸 것인가? 다른 값을 쓸 것인가? 어떻게 결정할 것인가?</p>
+<h3 id="6-ai">시나리오 6 — AI 모델 선택</h3>
+<p>TASK 자동분류에 Claude·GPT·Gemini 중 어느 것을 쓸 것인가? 한국어 임베딩은 KR-SBERT·BGE-m3-ko 중 어느 것을 쓸 것인가? 왜?</p>
+<h3 id="7">시나리오 7 — 산출물 형식 확정</h3>
+<p>직무기술 정의서 1편의 표준 양식 4개 섹션은 어떤 구조이며, 각 섹션의 분량 가이드는?</p>
+<h3 id="8-qa">시나리오 8 — QA 절차 운영</h3>
+<p>6명 연구진을 3개 팀(2명씩)으로 묶고 Round-Robin QC를 운영하려고 한다. 어떻게 회전시킬 것인가? Kappa 모니터링은 어떻게 할 것인가?</p>
+<p>위 8개 시나리오에 답할 수 있다면, 본 사업의 연구원으로 충분히 준비된 상태입니다.</p>
+<hr />
+<h2 id="_7">다음 단계</h2>
+<p>먼저 본 문서를 다 읽었다면, <strong>Track A의 A1 (Part 1 직업분류 기초)</strong>부터 시작하세요. 이미 1차 학습을 마쳤다면 <strong>A3 (신규 Part 0 발주기관 사전연구)</strong>와 <strong>B5 (신규 Part 8 실행방법론 모듈)</strong>을 새로 학습하세요.</p>
+<p>브라우저에서 통합 학습을 원하시면 같은 폴더의 <code>index.html</code>을 여세요.</p></div>
+</section>
+
+<section id="part-1" class="part"><div class="md-content"><h1 id="part-1">Part 1. 직업분류의 기초 — 왜 직무활동 표준화가 필요한가</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>직업분류가 다루는 4개 추상 단위(<strong>Activity → Task → Job → Occupation</strong>)를 구분할 수 있다.</li>
+<li>ISCO-08과 KSCO 8차의 분류 원리(<strong>직능수준 × 직능유형</strong>)를 설명할 수 있다.</li>
+<li>한국 직업분류 체계의 다층 구조(KSCO 5단계, KECO·NCS·KNOW의 관계)를 그릴 수 있다.</li>
+<li>본 연구가 왜 "직무활동 표준화"를 핵심으로 삼는지 사업적·정책적 배경을 설명할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="11-4">1.1 직업과 직무 — 4개의 추상 단위</h2>
+<p>직업정보를 다룰 때 가장 자주 혼동되는 개념이 <strong>직업(Occupation)</strong>, <strong>직무(Job)</strong>, <strong>과업(Task)</strong>, <strong>활동(Activity)</strong>입니다. 영어 원문에서도 occupation과 job, task와 activity가 종종 혼용되지만, 직업분류 학문 영역에서는 추상도가 명확히 구분되는 4개 개념입니다.</p>
+<pre><code>[ Activity ]   가장 일반적, 직업 비특정 — &quot;정보를 수집한다&quot;
+     ↑
+[ Task    ]   직업특수 진술 — &quot;환자 차트에서 알레르기 정보를 확인한다&quot;
+     ↑
+[ Job     ]   개별 고용주가 부여한 업무꾸러미 — &quot;○○병원의 김간호사가 하는 일&quot;
+     ↑
+[ Occupation ] 사회적으로 표준화된 직업명 — &quot;간호사&quot; (KSCO 2491)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>단위</th>
+<th>정의</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Activity</strong></td>
+<td>직업·맥락과 무관한 가장 일반적인 행동 단위. O*NET의 GWA(41개)·IWA(332개)·DWA(2,087개)가 모두 여기에 속함</td>
+<td>"정보 수집(Getting Information)", "고객·승객으로부터 정보 입수"</td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>특정 직업에서 수행되는 구체적 진술. 동사+목적어 구조. 직업당 평균 20여 개</td>
+<td>"환자에게 증상 발현 시점·강도를 인터뷰한다"</td>
+</tr>
+<tr>
+<td><strong>Job</strong></td>
+<td>특정 고용주가 특정 종업원에게 부여한 업무 꾸러미. 직업분류의 분석 단위는 아님(개인 단위)</td>
+<td>"○○병원 응급실 김간호사의 야간근무 업무"</td>
+</tr>
+<tr>
+<td><strong>Occupation</strong></td>
+<td>사회·통계적으로 표준화된 직업명. KSCO·ISCO·SOC의 분류 단위</td>
+<td>"간호사", KSCO 2491</td>
+</tr>
+</tbody>
+</table>
+<p>ISCO-08의 원문 정의를 그대로 옮기면 다음과 같습니다.</p>
+<blockquote>
+<p><strong>Job</strong> is a set of tasks and duties performed, or meant to be performed, by one person, including for an employer or in self-employment.
+<strong>Occupation</strong> refers to the kind of work performed in a job. The concept of occupation is defined as a "set of jobs whose main tasks and duties are characterised by a high degree of similarity."</p>
+</blockquote>
+<p>KSCO 8차 총설도 이를 그대로 한국화하여 사용합니다.</p>
+<blockquote>
+<p>"직업(occupation)은 <strong>유사한 직무의 집합</strong>으로 정의된다. 여기서 직무(job)란 ISCO-08에서 '자영업을 포함하여 특정한 고용주를 위하여 개별 종사자들이 수행하거나 또는 수행해야할 일련의 <strong>업무와 과업(tasks and duties)</strong>'으로 정의된다."</p>
+</blockquote>
+<h3 id="_2">왜 이 구분이 중요한가</h3>
+<p>본 연구의 산출물인 <strong>직무기술 정의서</strong>는 이 4개 추상 단위가 명확히 분리된 형태로 작성되어야 합니다. 만약 한 문서에 활동(Activity)과 직업특수 과업(Task)이 섞이면, 다음과 같은 문제가 발생합니다.</p>
+<ul>
+<li>직업 간 비교가 불가능해짐 (Task는 직업특수이고, Activity는 직업 간 공유)</li>
+<li>AI 분석 시 동일 표현을 다른 추상도로 처리하게 되어 분류 오류 발생</li>
+<li>외국 직업분류와의 매핑(crosswalk)이 어려워짐</li>
+</ul>
+<hr />
+<h2 id="12-isco-08">1.2 ISCO-08 분류 원리 — "직능수준 × 직능유형"</h2>
+<p>ILO가 1957년 첫 ISCO를 발표하고 2008년 4판(ISCO-08)을 내놓으면서 확립한 핵심 원리는 <strong>두 차원의 직교(orthogonal) 분류</strong>입니다.</p>
+<h3 id="skill-level-4">직능수준 (Skill Level) — 4단계</h3>
+<p>ISCED(International Standard Classification of Education) 기반으로 직무 수행에 필요한 교육·훈련 수준을 4단계로 나눕니다.</p>
+<table>
+<thead>
+<tr>
+<th>수준</th>
+<th>ISCED 대응</th>
+<th>직무 특성</th>
+<th>KSCO 대분류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1수준</td>
+<td>ISCED 1</td>
+<td>단순·반복·육체적, 수작업 도구 사용, 기초 문해</td>
+<td>9. 단순노무 종사자</td>
+</tr>
+<tr>
+<td>2수준</td>
+<td>ISCED 2~3</td>
+<td>정확한 계산·의사소통, 직업훈련·경험 필요</td>
+<td>3·4·5·6·7·8</td>
+</tr>
+<tr>
+<td>3수준</td>
+<td>ISCED 5</td>
+<td>복잡한 기술 지식, 3년 미만 고등교육</td>
+<td>일부 2</td>
+</tr>
+<tr>
+<td>4수준</td>
+<td>ISCED 6~8</td>
+<td>복잡한 의사결정, 학사 이상</td>
+<td>1·2 일부</td>
+</tr>
+</tbody>
+</table>
+<h3 id="skill-specialization-4">직능유형 (Skill Specialization) — 4차원</h3>
+<p>같은 직능수준 안에서 "어떤 종류의 일인가"를 구분하는 4차원입니다.</p>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>정의</th>
+<th>예시 (간호사 vs 회계사)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>지식 분야</td>
+<td>직무 수행에 필요한 학문·기술 영역</td>
+<td>의학·간호학 vs 회계·재무</td>
+</tr>
+<tr>
+<td>사용 도구·장비</td>
+<td>사용하는 기계·도구·SW</td>
+<td>의료기기·전자차트 vs 회계SW·스프레드시트</td>
+</tr>
+<tr>
+<td>투입 원재료</td>
+<td>처리·가공하는 원료 또는 정보</td>
+<td>환자정보·약품 vs 거래자료·세무자료</td>
+</tr>
+<tr>
+<td>산출물</td>
+<td>최종 산출되는 재화·서비스 종류</td>
+<td>환자 회복·간호기록 vs 재무제표·세무신고서</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">두 차원의 직교성</h3>
+<p>ISCO-08의 핵심 통찰은 이 두 차원이 <strong>독립적</strong>이라는 점입니다. 예를 들어 "회계사"와 "간호사"는 모두 4수준이지만(=동일 직능수준), 직능유형은 완전히 다릅니다. 반대로 "회계사"와 "회계사무원"은 직능유형이 유사하지만(=같은 지식·도구·원재료·산출물 영역), 직능수준이 다릅니다(4 vs 2).</p>
+<p>이 직교성이 깨지면(예: "병원에서 일하는 사람"으로 묶기) 직업통계의 비교가능성이 망가집니다. 본 연구가 KSCO 위에 직무활동 계층을 부착할 때도 이 직교성을 반드시 유지해야 합니다.</p>
+<hr />
+<h2 id="13-ksco-8">1.3 KSCO 8차 — 한국의 분류 체계</h2>
+<p>KSCO(한국표준직업분류)는 통계청이 5년 주기로 개정하는 직업분류 체계입니다. 2024년 7월 1일 통계청고시 제2024-328호로 8차 개정이 고시되었고, 2025년 1월 1일부터 시행되고 있습니다.</p>
+<h3 id="5">5단계 위계 구조</h3>
+<table>
+<thead>
+<tr>
+<th>수준</th>
+<th>코드 자릿수</th>
+<th>항목 수</th>
+<th>ISCO-08 대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대분류</td>
+<td>1자리</td>
+<td>10</td>
+<td>Major Group 10 (1:1)</td>
+</tr>
+<tr>
+<td>중분류</td>
+<td>2자리</td>
+<td>57</td>
+<td>Sub-major Group 43 (한국 확장)</td>
+</tr>
+<tr>
+<td>소분류</td>
+<td>3자리</td>
+<td>167</td>
+<td>Minor Group 130 (한국 확장)</td>
+</tr>
+<tr>
+<td><strong>세분류</strong></td>
+<td><strong>4자리</strong></td>
+<td><strong>495</strong></td>
+<td><strong>Unit Group 436 (한국 확장)</strong></td>
+</tr>
+<tr>
+<td>세세분류</td>
+<td>5자리</td>
+<td>1,270</td>
+<td>(ISCO 없음, 한국 자체)</td>
+</tr>
+</tbody>
+</table>
+<p>본 연구의 <strong>직무기술 정의서 작성 모집단</strong>은 <strong>세분류 495개</strong>입니다.</p>
+<h3 id="78">7차→8차 변경 핵심</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>7차</th>
+<th>8차</th>
+<th>분리·신설</th>
+<th>명칭변경</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>대</td>
+<td>10</td>
+<td>10</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>중</td>
+<td>52</td>
+<td><strong>57</strong></td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td>소</td>
+<td>156</td>
+<td><strong>167</strong></td>
+<td>4</td>
+<td>17</td>
+</tr>
+<tr>
+<td>세</td>
+<td>450</td>
+<td><strong>495</strong></td>
+<td>31</td>
+<td>38</td>
+</tr>
+</tbody>
+</table>
+<p>주요 신설: 보건 전문가 / 사회복지·종교 전문가의 중분류 분리, AI·빅데이터·플랫폼 노동 관련 신설.</p>
+<h3 id="ksco-keconcsknow">KSCO와 KECO·NCS·KNOW의 관계</h3>
+<p>한국에는 직업정보 체계가 여러 개 공존하고 있으며, 본 연구가 통합적으로 다루어야 할 데이터 소스입니다.</p>
+<pre><code>[KSCO 8차]   통계청 — 법적·통계용 표준직업분류, 5단계 1,270 세세분류
+   │
+   │  KECO와 세분류 일치 (6차 이후 정합화)
+   │
+[KECO 2025]  고용노동부·한국고용정보원 — 고용서비스용 직업분류
+   │
+   │  KECO 직업을 더 잘게 세분 + 직무능력 정보 부착
+   │
+[KNOW]       워크넷 한국직업정보시스템 — 537개 직업의 다차원 정보(능력·지식·직업가치 등)
+   │
+   │  직무능력 단위 별도 체계
+   │
+[NCS]        한국산업인력공단 — 국가직무능력표준, 직무능력단위(unit) 체계
+</code></pre>
+<p>각 체계의 단위가 모두 다르기 때문에, 본 연구가 KSCO 위에 직무활동 표준화를 부착할 때는 KNOW의 능력단위, NCS의 직무능력단위 등 다른 체계의 정보를 종합해서 KSCO 세분류 수준으로 정렬해야 합니다.</p>
+<hr />
+<h2 id="14">1.4 왜 "직무활동 표준화"가 본 연구의 핵심인가</h2>
+<h3 id="ksco">현 KSCO의 한계</h3>
+<p>KSCO 8차는 분류 체계로서는 잘 정비되어 있으나, <strong>다음과 같은 정보적 한계</strong>가 있습니다.</p>
+<ol>
+<li><strong>분류항목표의 텍스트가 짧음</strong>: 세분류 1개당 직업 설명이 평균 100~300자 수준입니다. 따라서 "이 직업이 실제로 무엇을 하는지"가 자세하지 않습니다.</li>
+<li><strong>직무 단위 정보 부재</strong>: 직업 수준의 분류만 있고, 직업을 구성하는 직무·과업·활동의 표준화된 정보가 없습니다.</li>
+<li><strong>직업 간 비교 곤란</strong>: "이 직업과 저 직업이 어떤 활동을 공유하는가"를 객관적으로 비교할 수 있는 공통 좌표가 없습니다.</li>
+<li><strong>AI·자동화 영향 분석 불능</strong>: 직업 단위로는 "어느 직업이 AI에 영향을 받는가"라는 거시적 진단만 가능하고, "직업의 어느 활동이 자동화되는가"라는 정밀 진단이 불가능합니다.</li>
+</ol>
+<h3 id="onet">O*NET의 해결책</h3>
+<p>미국 노동부의 O*NET(Occupational Information Network)은 1995년부터 이 문제를 해결하기 위해 다음 두 가지를 도입했습니다.</p>
+<ol>
+<li><strong>6대 영역 콘텐츠 모델</strong>(근로자특성·근로자요구·직업요구·직무구체요구·직업특성·인력특성)을 통해 직업을 다차원으로 기술</li>
+<li><strong>GWA—IWA—DWA—TASK 4계층 직무활동 체계</strong>를 통해 모든 직업을 동일한 활동 좌표로 측정</li>
+</ol>
+<p>이 4계층 체계 덕분에 O*NET 데이터는 다음 분석이 가능해집니다.</p>
+<ul>
+<li>직업 간 <strong>전환 가능성</strong>(직업 A와 B가 공유하는 DWA 수)</li>
+<li>직업의 <strong>AI 노출도</strong>(직업의 DWA 중 LLM이 수행 가능한 비율)</li>
+<li>직업 <strong>변화 추적</strong>(시점 t1과 t2의 task 변동)</li>
+<li><strong>평생학습 경로</strong> 설계(직업 A의 DWA를 익히면 직업 B로 갈 수 있는가)</li>
+</ul>
+<h3 id="_4">본 연구의 미션</h3>
+<p>본 연구는 KSCO 8차의 분류 체계를 그대로 유지하면서, <strong>그 위에 한국형 4계층 직무활동 체계를 부착</strong>하는 것이 핵심 미션입니다. 이를 위해서는 다음 두 가지 작업이 동시에 필요합니다.</p>
+<ol>
+<li><strong>(상향식)</strong> KSCO 세분류 495개 각각에 대해 직업설명자료 → TASK → DWA → GWA를 도출</li>
+<li><strong>(하향식)</strong> O*NET의 41개 GWA·332개 IWA를 한국 문맥에 맞게 검토하여 한국형 GWA·IWA를 확정</li>
+</ol>
+<p>8개월의 짧은 사업기간 안에 이 두 작업을 동시에 수행하려면, <strong>AI 기반 NLP·LLM·임베딩 기술의 적극 활용이 필연</strong>입니다. 미국이 11년에 걸쳐 한 일을 8개월로 압축하는 것이기 때문입니다.</p>
+<hr />
+<h2 id="15-part">1.5 본 Part 요약 카드</h2>
+<ul>
+<li>직업분류는 <strong>Activity → Task → Job → Occupation</strong>의 4개 추상 단위를 다룬다. 본 연구의 산출물은 이 4개 단위를 분리해서 기술해야 한다.</li>
+<li>ISCO-08의 핵심은 <strong>직능수준 × 직능유형</strong>의 직교 분류이며, KSCO 8차도 이 원리를 그대로 따른다.</li>
+<li>KSCO 8차는 5단계(대 10 / 중 57 / 소 167 / 세 495 / 세세 1,270)이며, 본 연구의 모집단은 <strong>세분류 495개</strong>다.</li>
+<li>본 연구의 미션은 KSCO 위에 <strong>한국형 4계층 직무활동 체계(GWA—IWA—DWA—TASK)</strong>를 부착하는 것이며, AI 활용은 사업기간 제약상의 필연이다.</li>
+</ul>
+<hr />
+<h2 id="16">1.6 다음 단계</h2>
+<p>Part 2에서는 O*NET 4계층(GWA—IWA—DWA—TASK)의 각 층이 정확히 무엇이고, 어떤 추상도 위계 관계를 갖는지 상세히 학습합니다. 본 연구가 차용할 미국의 표준 모델을 완전히 이해하는 것이 목적입니다.</p></div></section>
+
+<section id="part-2" class="part"><div class="md-content"><h1 id="part-2-onet-4-gwa-iwa-dwa-task">Part 2. O*NET 4계층 활동 체계 완전 이해 — GWA · IWA · DWA · TASK</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>O*NET 4계층(GWA—IWA—DWA—TASK)의 정의·규모·예시를 회상할 수 있다.</li>
+<li>각 층의 <strong>추상도와 작성 규칙</strong>을 구분하고, 어느 층에 속하는 진술인지 판별할 수 있다.</li>
+<li>4계층의 <strong>수직 위계 관계</strong>(parent–child)와 <strong>수평 다중연결</strong>(multi-link)을 설명할 수 있다.</li>
+<li>ID 체계와 데이터 모델을 이해하여 향후 한국형 ID 체계 설계의 근거로 사용할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="21-4">2.1 4계층 체계 한눈에 보기</h2>
+<p>O*NET 30.x(2026.2) 기준의 4계층 활동 체계는 다음과 같습니다.</p>
+<pre><code>                                                    [규모]      [추상도]      [공유 범위]
+┌──────────────────────────────────────────┐
+│  GWA  Generalized Work Activities          │  41~42개   가장 일반    전 직업
+│  일반화 작업 활동                            │
+│  예: &quot;Getting Information&quot; (정보 수집)      │
+└────────────────┬─────────────────────────┘
+                 │ 1:N (한 GWA에 여러 IWA)
+                 ▼
+┌──────────────────────────────────────────┐
+│  IWA  Intermediate Work Activities         │  332개    중간 추상     여러 직무군
+│  중간 작업 활동                              │
+│  예: &quot;Examine medical instruments...&quot;      │
+└────────────────┬─────────────────────────┘
+                 │ 1:N (한 IWA에 여러 DWA)
+                 ▼
+┌──────────────────────────────────────────┐
+│  DWA  Detailed Work Activities             │  2,087개  구체적         같은 직무군 내 다수 직업
+│  세부 작업 활동                              │
+│  예: &quot;Test patient vision&quot;                  │
+└────────────────┬─────────────────────────┘
+                 │ N:M (한 TASK가 최대 3개 DWA에 다중연결)
+                 ▼
+┌──────────────────────────────────────────┐
+│  TASK Occupation-specific Tasks            │  19,000~ 가장 구체     1개 직업 전용
+│  직업특수 과업                                │
+│  예: &quot;Administer the Snellen eye chart...&quot;  │
+└──────────────────────────────────────────┘
+</code></pre>
+<blockquote>
+<p><strong>수치 출처</strong>: GWA 41개·IWA 332개·DWA 2,069개는 WA Project 2014년 기준이며, 2026년 O*NET 30.x 기준으로 DWA는 2,087개로 미세 증가했습니다. 평균 직업당 17개 DWA가 연결되어 있습니다.</p>
+</blockquote>
+<hr />
+<h2 id="22-gwa-generalized-work-activities">2.2 GWA — 일반화 작업 활동 (Generalized Work Activities)</h2>
+<h3 id="_2">정의</h3>
+<p><strong>모든 직업에 공통으로 적용 가능한 가장 일반적 수준의 활동</strong>. O<em>NET 콘텐츠 모델의 "직업요구(Occupational Requirements)" 영역에 속하며, 본래 의도는 직업 간 비교를 가능하게 하는 </em><em>공통 좌표</em>*입니다.</p>
+<h3 id="_3">규모와 안정성</h3>
+<ul>
+<li>41~42개 (WA Project에서 41개 유지, 일부 문헌은 42개)</li>
+<li>O<em>NET 초기(1995)부터 거의 동일하게 유지 — </em><em>변경이 가장 드문 층</em>*</li>
+<li>ID 형식: <code>4.A.1.b.2</code> 등 (콘텐츠 모델 ID 체계)</li>
+</ul>
+<h3 id="4">4대 범주</h3>
+<p>41개 GWA는 4개 대범주로 묶입니다.</p>
+<table>
+<thead>
+<tr>
+<th>범주</th>
+<th>GWA 예시</th>
+<th>핵심 동사</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A. 정보 입력 (Information Input)</strong></td>
+<td>Getting Information / Identifying Objects, Actions, and Events / Monitoring Processes, Materials, or Surroundings / Inspecting Equipment, Structures, or Material</td>
+<td>수집·확인·관찰·점검</td>
+</tr>
+<tr>
+<td><strong>B. 정신적 과정 (Mental Processes)</strong></td>
+<td>Judging the Qualities of Things / Processing Information / Analyzing Data or Information / Making Decisions and Solving Problems / Thinking Creatively / Updating and Using Relevant Knowledge / Developing Objectives and Strategies / Scheduling Work and Activities / Organizing, Planning, and Prioritizing Work</td>
+<td>판단·처리·분석·결정·계획</td>
+</tr>
+<tr>
+<td><strong>C. 업무 산출 (Work Output)</strong></td>
+<td>Performing General Physical Activities / Handling and Moving Objects / Controlling Machines and Processes / Operating Vehicles, Mechanized Devices, or Equipment / Interacting with Computers / Drafting, Laying Out, and Specifying Technical Devices / Documenting/Recording Information</td>
+<td>수행·조작·운영·기록</td>
+</tr>
+<tr>
+<td><strong>D. 타인과의 상호작용 (Interacting with Others)</strong></td>
+<td>Communicating / Establishing and Maintaining Relationships / Coordinating Work / Developing and Building Teams / Coaching and Developing Others / Resolving Conflicts and Negotiating / Performing for or Working Directly with the Public / Selling or Influencing</td>
+<td>소통·조정·지도·협상·판매</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gwa">GWA의 특성</h3>
+<ul>
+<li><strong>국가·문화 의존도가 매우 낮음</strong>: GWA는 보편적이라서 미국·한국·유럽 어디서나 거의 동일하게 사용 가능</li>
+<li><strong>AI 자동화 가능성 분석의 시작점</strong>: 예를 들어 "Interacting with Computers"는 자동화 가능, "Resolving Conflicts"는 자동화 어려움 등 GWA 단위 분석이 가능</li>
+<li><strong>본 연구의 한국 적용 전략</strong>: GWA 41개는 그대로 한글 번역하여 차용하는 것이 합리적. 8개월 사업기간 안에 자체 개발하는 것은 비효율</li>
+</ul>
+<hr />
+<h2 id="23-iwa-intermediate-work-activities">2.3 IWA — 중간 작업 활동 (Intermediate Work Activities)</h2>
+<h3 id="_4">정의와 도입 배경</h3>
+<p><strong>GWA와 DWA 사이의 중간 추상도</strong>. 2014년 WA Project에서 신규 도입되었으며, 이전 O*NET에는 없었던 층입니다. 도입 이유는 다음과 같습니다.</p>
+<ul>
+<li>DWA(2,000여 개)를 GWA(41개)에 직접 매핑하면 1:50의 부담스러운 비율</li>
+<li>분석가가 한 번에 50개 DWA를 다루기 어려우며, <strong>인지 부하 관리</strong> 차원에서 중간 층 필요</li>
+<li>또한 "여러 직무군에 걸치는 활동"을 식별하기 위한 <strong>수평 통합 단위</strong>가 필요</li>
+</ul>
+<h3 id="_5">규모와 분포</h3>
+<ul>
+<li>332개</li>
+<li>평균 1 GWA당 8개 IWA</li>
+<li>평균 1 IWA당 6.2개 DWA</li>
+<li>평균 1 IWA당 66.4개 task (직업 간)</li>
+<li>Median job families per IWA: 3 (즉 IWA 1개가 평균 3개 직무군에 걸침)</li>
+<li>Single-family IWA: 53/332 (16%) — 1개 직무군에만 속함</li>
+<li>Cross-family IWA(≥10 families): 15/332 (4.5%) — 매우 일반적</li>
+</ul>
+<h3 id="gwa-inspecting-equipment-structures-or-material">예시 (GWA "Inspecting Equipment, Structures, or Material" 산하)</h3>
+<pre><code>GWA: Inspecting Equipment, Structures, or Material
+├── IWA: Administer diagnostic tests to assess patient health
+│   ├── DWA: Test patient vision
+│   ├── DWA: Test patient hearing
+│   └── DWA: Assess physical condition of patients...
+├── IWA: Inspect mechanical or electrical equipment
+│   ├── DWA: Inspect motor vehicles
+│   └── DWA: ...
+└── ...
+</code></pre>
+<h3 id="single-dwa-iwa">Single-DWA IWA 문제</h3>
+<p>WA Project가 가장 고민한 부분 중 하나입니다. 어떤 IWA는 <strong>자식 DWA가 1개뿐</strong>입니다 (예: "Train animals"라는 DWA 하나만 갖는 IWA). 이를 어떻게 처리할 것인가?</p>
+<p><strong>선택지</strong>:
+1. 부모 없는 DWA 허용 → 데이터 무결성 위반
+2. "All Other ..." 잔여 IWA 도입 → SOC 방식. 하지만 IWA가 완전 분류로 오해될 위험
+3. <strong>단일 DWA IWA 허용 (선택안)</strong> → DWA = IWA의 1:1 관계 허용</p>
+<p>WA Project는 3안을 채택했습니다. 이유는 SOC·NAICS·O*NET Content Model의 모든 위계 분류에서 child가 immediate parent를 가지도록 설계되어 있는 표준 관행을 따른 것입니다.</p>
+<blockquote>
+<p><strong>한국 적용 시 함의</strong>: 한국에서도 single-DWA IWA가 발생하면 1:1 관계로 허용하되, "임시(placeholder)" 라벨을 명시적으로 부여하여 추후 신규 DWA 발견 시 자연스럽게 conventional IWA로 진화하도록 설계해야 합니다.</p>
+</blockquote>
+<hr />
+<h2 id="24-dwa-detailed-work-activities">2.4 DWA — 세부 작업 활동 (Detailed Work Activities)</h2>
+<h3 id="_6">정의</h3>
+<p><strong>같은 직무군(Job Family) 안의 다수 직업에서 공유되는 구체적 작업 활동</strong>. 본 연구의 산출물 중 가장 핵심이며, 양도 가장 큽니다.</p>
+<h3 id="onet-30x">규모와 분포 (O*NET 30.x 기준)</h3>
+<ul>
+<li>2,087개 DWA</li>
+<li>평균 1 DWA당 task 약 11개</li>
+<li>평균 1 DWA당 occupation 약 8.3개</li>
+<li>평균 1 직업당 17개 DWA</li>
+</ul>
+<h3 id="5">5대 클러스터 품질 기준</h3>
+<p>DWA가 "좋은" DWA로 인정받기 위한 5개 기준입니다. 이 기준은 본 연구의 한국 DWA 도출에도 그대로 차용됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>정의</th>
+<th>위반 시 문제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cluster Homogeneity (동질성)</strong></td>
+<td>동일 활동 테마를 강하게 공유</td>
+<td>다른 활동이 섞이면 의미가 흐려짐</td>
+</tr>
+<tr>
+<td><strong>Task-Cluster Fit (적합성)</strong></td>
+<td>개별 task가 클러스터 테마에 잘 맞음</td>
+<td>outlier task가 있으면 DWA 정의가 부정확해짐</td>
+</tr>
+<tr>
+<td><strong>Cluster Uniqueness (유일성)</strong></td>
+<td>job family 내 다른 클러스터와 개념적으로 구별</td>
+<td>중복 DWA는 분류 효율을 떨어뜨림</td>
+</tr>
+<tr>
+<td><strong>Cluster Specificity (구체성)</strong></td>
+<td>task보다 일반적, GWA보다 구체적</td>
+<td>너무 일반적이면 IWA·GWA와 구분 안 됨</td>
+</tr>
+<tr>
+<td><strong>Cluster Size (규모)</strong></td>
+<td>최소 2 task, 목표 <strong>4 task &amp; 3 occupations</strong></td>
+<td>너무 작으면 cross-occupational linking 효과 없음</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dwa-8-writing-standards">DWA 작성 8대 규칙 (Writing Standards)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>규칙</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>DWA당 주요 활동동사 1개, 동사로 시작</td>
+<td>"Inspect..." ✓ / "The inspection of..." ✗</td>
+</tr>
+<tr>
+<td>2</td>
+<td>동사형식: 3인칭·현재·복수</td>
+<td>"Inspect" ✓ / "Inspects" "Inspecting" ✗</td>
+</tr>
+<tr>
+<td>3</td>
+<td>명사 최소화, but 구체성 유지</td>
+<td>"or" 사용 (multiple objects)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>직무군에 적합한 명사 사용</td>
+<td>"equipment"는 너무 넓음 / "laser surgery robots"는 너무 좁음 / <strong>"medical treatment equipment"</strong> ✓</td>
+</tr>
+<tr>
+<td>5</td>
+<td>명료성을 위해 형용사 사용</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>예시절 회피 ("such as", "including")</td>
+<td>꼭 필요할 때만</td>
+</tr>
+<tr>
+<td>7</td>
+<td>목적절("to ...") 최소 사용</td>
+<td>단, 활동이 동일해도 목적이 다르면 KSAO가 다를 수 있어 의미 있음</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8학년 가독성 (SMOG index)</td>
+<td>3음절 이상 단어 수로 측정</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">모호 동사 회피</h3>
+<p>WA Project가 강조한 핵심 작성 원칙입니다.</p>
+<table>
+<thead>
+<tr>
+<th>모호 동사</th>
+<th>명확한 대체</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>use a computer</td>
+<td><strong>operate</strong> computers / <strong>interact with</strong> computers</td>
+</tr>
+<tr>
+<td>follow procedures</td>
+<td><strong>adhere to</strong> standardized procedures</td>
+</tr>
+<tr>
+<td>handle data</td>
+<td><strong>analyze</strong> data / <strong>investigate</strong> data</td>
+</tr>
+<tr>
+<td>work with people</td>
+<td><strong>coordinate</strong> with staff / <strong>counsel</strong> clients</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>한국 적용 시</strong>: "사용한다"·"수행한다"·"활용한다" 같은 한국어 모호 동사도 회피하고, "조작한다"·"점검한다"·"측정한다"·"조정한다" 등 구체동사를 강제해야 합니다.</p>
+</blockquote>
+<h3 id="4-task-3-occupations">4 task / 3 occupations 목표 비율의 근거</h3>
+<p>DWA의 최소 크기가 "4 task / 3 occupations"인 이유:</p>
+<ol>
+<li><strong>Cross-occupational linking</strong>: DWA의 본질적 목적은 직업 간 연결. 1~2개 직업만 연결하면 의미가 없음.</li>
+<li><strong>장기 안정성</strong>: O*NET는 task가 정기적으로 add/revise/remove됨. 여유 task가 있어야 1개 task가 사라져도 DWA가 살아남음.</li>
+</ol>
+<hr />
+<h2 id="25-task">2.5 TASK — 직업특수 과업</h2>
+<h3 id="_8">정의</h3>
+<p><strong>특정 직업에서 수행되는 구체적 진술</strong>. 다른 모든 층의 기초가 되는 가장 낮은 추상도 단위입니다. 직업당 평균 20여 개 task가 정의됩니다.</p>
+<h3 id="_9">규모와 출처</h3>
+<ul>
+<li>O*NET 18.0 기준 19,450개</li>
+<li>O*NET 30.x 기준 약 19,000~21,000개 (지속적 갱신)</li>
+<li>출처: <strong>재직자(incumbent) 응답</strong> + <strong>직업 전문가(SME) 검토</strong></li>
+</ul>
+<h3 id="task">TASK 진술의 구조</h3>
+<p>표준적 task 진술은 다음 요소를 포함합니다.</p>
+<pre><code>[Verb]   [Object]              [Purpose/Tool/Context]
+ 동사      목적어                  목적/도구/맥락
+ │          │                       │
+ ▼          ▼                       ▼
+&quot;Measure, cut and install tackless strips along the baseboard or wall&quot;
+ ↑복합동사    ↑복합 목적어              ↑맥락절
+</code></pre>
+<p>이 task는 <strong>단일 진술이지만 3개 활동을 포함</strong>합니다. 따라서 DWA 매핑 시 다음 3개에 다중연결됩니다.</p>
+<ul>
+<li>DWA 1: Measurement</li>
+<li>DWA 2: Cutting materials</li>
+<li>DWA 3: Material installation</li>
+</ul>
+<h3 id="task-humrro">TASK의 품질 분류 (HumRRO 기준)</h3>
+<p>본 연구의 한국 TASK 풀에도 이 분류가 적용됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>Relevance</th>
+<th>Importance</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Core Tasks</strong></td>
+<td>&gt; 67%</td>
+<td>&gt; 3.0</td>
+<td>직업의 핵심 task</td>
+</tr>
+<tr>
+<td><strong>Supplementary Tasks</strong> (Type A)</td>
+<td>&gt; 67%</td>
+<td>&lt; 3.0</td>
+<td>보편적이지만 덜 중요</td>
+</tr>
+<tr>
+<td><strong>Supplementary Tasks</strong> (Type B)</td>
+<td>10–66%</td>
+<td>(무관)</td>
+<td>일부 incumbent에게만 해당</td>
+</tr>
+<tr>
+<td><strong>Non-relevant Tasks</strong></td>
+<td>&lt; 10%</td>
+<td>(무관)</td>
+<td>폐기</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="26-4">2.6 4계층의 수직·수평 관계</h2>
+<h3 id="parentchild">수직 위계 (Parent–Child)</h3>
+<pre><code>GWA  ──(1:N)──▶  IWA  ──(1:N)──▶  DWA  ──(N:M)──▶  TASK
+</code></pre>
+<ul>
+<li>GWA → IWA: 1:N (한 GWA가 여러 IWA를 가짐)</li>
+<li>IWA → DWA: 1:N (한 IWA가 여러 DWA를 가짐, 단 single-DWA IWA 허용)</li>
+<li>DWA → TASK: <strong>N:M</strong> (한 DWA가 여러 task와 연결, <strong>한 task도 최대 3개 DWA에 다중연결</strong>)</li>
+</ul>
+<h3 id="task-dwa-wa-project">Task → DWA 다중연결의 정량 (WA Project)</h3>
+<table>
+<thead>
+<tr>
+<th>연결 유형</th>
+<th>수</th>
+<th>비율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1차 연결 (primary activity)</td>
+<td>18,291</td>
+<td>81%</td>
+</tr>
+<tr>
+<td>2차 연결</td>
+<td>3,851</td>
+<td>17%</td>
+</tr>
+<tr>
+<td>3차 연결</td>
+<td>572</td>
+<td>2.5%</td>
+</tr>
+<tr>
+<td><strong>총 연결</strong></td>
+<td><strong>22,714</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>즉 task의 평균 약 1.24개 DWA에 연결됩니다. 다중연결은 직업 간 전환 분석의 풍부도를 결정짓는 핵심 데이터입니다.</p>
+<h3 id="multi-link">수평 다중연결 (Multi-link)</h3>
+<p>수직 위계 외에 가장 중요한 데이터 특성입니다. <strong>동일한 GWA·IWA·DWA가 여러 직업에서 사용</strong>된다는 점입니다.</p>
+<p>예시:
+- DWA "Inspect mechanical equipment" → 자동차정비사, 항공정비사, 산업기계정비사 모두에 적용
+- 이 다중연결을 이용해 "정비사 직군 내 직업 전환 가능성"을 분석 가능</p>
+<p>이것이 본 연구가 RFP에서 요구하는 "직업 간 전환 가능성 분석 기초 자료"를 직접 충족하는 데이터 구조입니다.</p>
+<hr />
+<h2 id="27-id">2.7 ID 체계</h2>
+<p>O*NET의 4계층은 다음과 같은 ID 체계로 표현됩니다.</p>
+<pre><code>GWA ID:   4.A.1.b.2                       (Inspecting Equipment, Structures, or Material)
+IWA ID:   4.A.1.b.2.I01                   (Administer diagnostic tests to assess patient health)
+DWA ID:   4.A.1.b.2.I01.D03               (Test patient vision)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>구성</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>4.A.1.b.2</code></td>
+<td>GWA 9-character 콘텐츠 모델 ID</td>
+</tr>
+<tr>
+<td><code>.I01</code></td>
+<td>IWA 번호 (2-digit)</td>
+</tr>
+<tr>
+<td><code>.D03</code></td>
+<td>DWA 번호 (2-digit)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">핵심 설계 원칙</h3>
+<p><strong>IWA·DWA의 번호는 무작위(random) 부여</strong> — 의미적 순서를 넣지 않습니다. 이유는 미래 신규 IWA·DWA 추가 시 번호 재배치가 불필요하기 때문입니다.</p>
+<blockquote>
+<p><strong>한국 적용 시</strong>: KSCO 코드는 의미적 순서가 강해서 신규 직업 추가가 어렵습니다. 한국형 GWA·IWA·DWA ID는 O*NET 방식을 따라 무의미 무작위 번호를 권장합니다.</p>
+</blockquote>
+<hr />
+<h2 id="28-4">2.8 4계층의 데이터 모델</h2>
+<pre><code>┌─────────────────────────────────────────────┐
+│  GWA (id PK, label, category, definition)   │
+└──────────────┬──────────────────────────────┘
+               │ 1
+               │
+               │ N
+┌──────────────▼──────────────────────────────┐
+│  IWA (id PK, gwa_id FK, label, definition)  │
+└──────────────┬──────────────────────────────┘
+               │ 1
+               │
+               │ N (single-DWA IWA → N=1 허용)
+┌──────────────▼──────────────────────────────┐
+│  DWA (id PK, iwa_id FK, label, definition)  │
+└──────────────┬──────────────────────────────┘
+               │ 1
+               │
+               │ N
+┌──────────────▼──────────────────────────────┐
+│  DWA_TASK_LINK (dwa_id FK, task_id FK,      │
+│                 link_order INT)              │  ← N:M
+└──────────────┬──────────────────────────────┘
+               │ M
+               │
+               │ 1
+┌──────────────▼──────────────────────────────┐
+│  TASK (id PK, occupation_code FK, statement)│
+└──────────────┬──────────────────────────────┘
+               │ N
+               │
+               │ 1
+┌──────────────▼──────────────────────────────┐
+│  OCCUPATION (code PK, ksco_code, label,...) │
+└─────────────────────────────────────────────┘
+</code></pre>
+<h3 id="_11">본 연구의 데이터 모델 권고</h3>
+<p>본 연구가 한국형 4계층을 구현할 때, <strong>이 데이터 모델을 그대로 차용</strong>할 것을 권장합니다. 추가로 다음을 보강합니다.</p>
+<ul>
+<li><strong>TASK 메타데이터</strong>: relevance, importance, frequency, core/supplementary 라벨</li>
+<li><strong>DWA_TASK_LINK 메타데이터</strong>: link_order(1·2·3), 평가자 합의 정보</li>
+<li><strong>버전 관리</strong>: KSCO 7차 → 8차 변경에 따른 task·DWA의 시계열 추적</li>
+</ul>
+<hr />
+<h2 id="29-part">2.9 본 Part 요약 카드</h2>
+<ul>
+<li>O<em>NET 4계층: </em><em>GWA(41) ← IWA(332) ← DWA(2,087) ← TASK(19,000+)</em>*</li>
+<li>수직 관계는 1:N·N:M, 수평 다중연결로 직업 간 비교가 가능</li>
+<li>DWA 작성은 <strong>5대 품질 기준 + 8대 작성 규칙</strong>을 따름</li>
+<li>TASK는 N:M으로 최대 3개 DWA에 다중연결됨 (81%/17%/2.5%)</li>
+<li>ID 체계는 무작위 번호 부여를 통해 신규 추가 시 재배치 불필요하게 설계</li>
+</ul>
+<hr />
+<h2 id="210">2.10 다음 단계</h2>
+<p>Part 3에서는 미국이 이 4계층을 어떻게 도출했는지 — HumRRO의 TASK 품질관리 절차와 WA Project의 클러스터링·라이팅 절차 — 의 구체적 방법론을 학습합니다.</p></div></section>
+
+<section id="part-P0" class="part"><div class="md-content"><h1 id="part-0">Part 0. 발주기관 관점 — 통계청·국가데이터처와 직계 사전연구</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li><strong>국가데이터처</strong>(2025.10.1 출범)의 위상과 본 사업의 정책적 맥락을 설명할 수 있다.</li>
+<li><strong>조세형 박사가 직접 작성한 두 사전연구</strong>(ISCO-28 SLF / 직업문항)의 핵심을 회상하고, 본 사업과의 직접 연결고리를 설명할 수 있다.</li>
+<li><strong>K-SLF 4차원</strong>(교육·책임성·경험·업무기반학습)과 본 연구의 직무활동(GWA/IWA/DWA/TASK)이 어떻게 결합되는지 그릴 수 있다.</li>
+<li><strong>본 사업 RFP의 행간</strong>을 읽어 "왜 직업분류 고도화인가"의 정책 의도를 발표 Q&amp;A에서 답할 수 있다.</li>
+</ol>
+<blockquote>
+<p>본 Part는 1차 작성(2026-05-19) 이후 사용자 피드백과 사전연구 PDF 2건 분석 결과를 반영하여 추가 작성(2026-05-20)되었습니다.</p>
+</blockquote>
+<hr />
+<h2 id="01">0.1 핵심 메시지 (먼저 보세요)</h2>
+<p>본 Part는 4개의 핵심 메시지로 요약됩니다.</p>
+<ol>
+<li><strong>발주처는 단순 통계청이 아니다</strong>. 2025년 10월 1일 통계청이 <strong>국가데이터처</strong>(National Data Agency, MODS)로 격상되었고, 본 사업은 격상 후 9개월차에 발주된 <strong>새로운 위상에서의 첫 직업분류 정책연구</strong>다.</li>
+<li><strong>본 사업은 격리된 신규 연구가 아니다</strong>. 본 사업 연구책임자(조세형 박사)가 <strong>2025년 12월 국가데이터처에 제출한 ISCO-28 SLF 연구</strong>와 <strong>통계청에 제출한 직업문항 연구</strong>가 직계 사전연구다. 본 사업 RFP의 행간은 이 두 연구의 후속 실행이다.</li>
+<li><strong>본 사업의 실제 구조는 3개 차원의 결합이다</strong>: (i) <strong>직무활동</strong> 4계층(O<em>NET GWA·IWA·DWA·TASK) + (ii) </em><em>직능수준</em><em> 4차원(K-SLF: 교육·책임성·경험·WBL) + (iii) </em><em>직업문항</em>* 개선(직능유형·직능수준·산업의 3-tier 측정). 본 스터디 자료가 (i)에 집중되어 있었으나, (ii)와 (iii) 없이는 본 사업이 완성되지 않는다.</li>
+<li><strong>KRIVET 사전연구 2건</strong>(1차 2021, 2차 2023)이 KSCO 8차 개정의 학술 근거이며, 본 사업은 그 8차 분류 코드는 그대로 두고 그 위에 <strong>정보 층</strong>을 부착하는 작업이다.</li>
+</ol>
+<hr />
+<h2 id="02-mods-ministry-of-data-strategy">0.2 발주처: 국가데이터처(MODS, Ministry of Data Strategy)</h2>
+<h3 id="021">0.2.1 출범 사실관계</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정식 명칭</td>
+<td>국가데이터처 (National Data Agency)</td>
+</tr>
+<tr>
+<td>영문 약칭</td>
+<td>MODS (Ministry of Data Strategy)</td>
+</tr>
+<tr>
+<td>출범일</td>
+<td><strong>2025년 10월 1일</strong> (수)</td>
+</tr>
+<tr>
+<td>전신</td>
+<td>통계청 (1990 개청, 2005 차관급, 2025 처 승격)</td>
+</tr>
+<tr>
+<td>소속</td>
+<td><strong>국무총리 직속</strong> (이전: 기획재정부 외청)</td>
+</tr>
+<tr>
+<td>초대 처장</td>
+<td>안형준 (전 통계청장, 통계청 개청 후 최초 내부 출신 청장)</td>
+</tr>
+<tr>
+<td>도메인</td>
+<td>mods.go.kr (구 kostat.go.kr 일부 그대로 사용)</td>
+</tr>
+<tr>
+<td>법적 근거</td>
+<td>「정부조직법」 개정 (2025.9.26 국회 통과)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="022">0.2.2 격상의 의미 — 단순 명칭 변경이 아니다</h3>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>통계청 (~2025.9)</th>
+<th>국가데이터처 (2025.10~)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>위상</td>
+<td>기획재정부 외청</td>
+<td>국무총리 직속 처</td>
+</tr>
+<tr>
+<td>역할</td>
+<td>국가통계 작성·관리</td>
+<td><strong>범정부 데이터 총괄·조정 + 활용 정책</strong></td>
+</tr>
+<tr>
+<td>책임 범위</td>
+<td>통계 (1,363종)</td>
+<td>통계 + 정부 데이터 정책 + 활용</td>
+</tr>
+<tr>
+<td>핵심 자산</td>
+<td>KOSIS, MDIS</td>
+<td>KOSIS, MDIS, SDC, <strong>나라통계 2.0(k-stat.go.kr)</strong></td>
+</tr>
+<tr>
+<td>대외 위치</td>
+<td>국제 통계 비교(ISCO·SNA 등)</td>
+<td>좌동 + <strong>데이터 거버넌스 컨트롤타워</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="023">0.2.3 본 사업과의 직접 연관</h3>
+<p>본 사업이 발주된 시점(2026년)은 국가데이터처 출범 후 약 6~9개월차다. 이 시점에서 발주된 직업분류 연구의 정책 의도는 다음 4가지로 읽을 수 있다.</p>
+<ol>
+<li><strong>격상에 걸맞은 직업분류 고도화</strong>: 통계청 시절에는 KSCO를 "통계 작성용 분류"로만 운영했으나, 국가데이터처 격상 후에는 <strong>범정부 데이터 활용을 위한 직업정보 프레임워크</strong>로 확장해야 함</li>
+<li><strong>ISCO-28 대응 압력</strong>: ILO가 ISCO-28 개정을 진행 중이고, 국제 비교가능성 유지를 위해 한국이 선제 대응 필요</li>
+<li><strong>AI 시대의 노동시장 분석 인프라</strong>: 단순 직업명 분류로는 AI 자동화·직업 전환 분석이 불가능 → 직무활동 수준의 정보가 필요</li>
+<li><strong>타 부처 직업정보 통합 컨트롤타워 역할</strong>: 고용노동부(KECO·NCS·KNOW), 한국고용정보원, 산업인력공단, 통계청 등에 산재된 직업정보를 표준화하는 책임</li>
+</ol>
+<blockquote>
+<p><strong>발표 Q&amp;A 핵심 카드</strong>: "본 사업은 국가데이터처 출범 후 첫 직업분류 정책연구이며, 단순 통계 분류 작업이 아니라 범정부 데이터 거버넌스 차원의 직업정보 프레임워크 구축입니다. 격상된 위상에 부합하는 산출물의 야망과 표준화 수준이 요구됩니다."</p>
+</blockquote>
+<hr />
+<h2 id="03-1-isco-28-slf">0.3 직계 사전연구 ① — ISCO-28 SLF 국내도입 적정성 평가</h2>
+<h3 id="031">0.3.1 메타 정보</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정식 명칭</td>
+<td>국제표준직업분류 개정안 국내도입 적정성 평가 연구</td>
+</tr>
+<tr>
+<td>영문</td>
+<td>The Study on the Appropriateness of Adopting the Revised ISCO in KOREA</td>
+</tr>
+<tr>
+<td>발주처</td>
+<td><strong>국가데이터처장</strong></td>
+</tr>
+<tr>
+<td>연구기관</td>
+<td><strong>(사)한국직업자격학회</strong> (본 사업과 동일)</td>
+</tr>
+<tr>
+<td>연구책임자</td>
+<td><strong>조세형</strong> (본 사업과 동일 인물)</td>
+</tr>
+<tr>
+<td>공동연구원</td>
+<td>정동열, 나태희, 용석현</td>
+</tr>
+<tr>
+<td>제출일</td>
+<td><strong>2025년 12월 8일</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>결정적 관계</strong>: 본 사업 RFP가 2026년에 발주되었고, 제안기관·연구책임자가 동일하며, 사전연구 제출은 그보다 약 5~6개월 전이다. 본 사업은 사실상 이 사전연구의 <strong>실행 단계 후속과제</strong>다.</p>
+</blockquote>
+<h3 id="032-isco-08">0.3.2 ISCO-08의 한계 (사전연구가 짚은 문제)</h3>
+<p>ILO가 ISCO-28 개정을 추진하는 이유는 ISCO-08의 다음 한계 때문이다.</p>
+<ol>
+<li><strong>직능수준 2의 범위가 과도하게 넓음</strong>: KSCO 대분류 3~8(사무·서비스·판매·농림어업·기능원·장치조작)이 모두 직능수준 2로 묶임 → 변별력 부족</li>
+<li><strong>직능수준 2와 3의 경계 불명확</strong></li>
+<li><strong>형식교육수준만으로 직능수준 측정</strong>: 비형식학습, 경험, 업무기반학습, 책임 등이 반영되지 않음</li>
+<li><strong>기술변화에 따라 직업군 배치 오류</strong>: AI·디지털 직무의 적정 직능수준 판정이 어려움</li>
+</ol>
+<h3 id="033-isco-28-slf-skill-level-framework-4">0.3.3 ISCO-28 SLF (Skill Level Framework) 4차원</h3>
+<p>ISCO-28은 ISCO-08과 동일한 2차원 구조(직능수준 × 직능유형)를 유지하되, <strong>직능수준을 4차원으로 다차원화</strong>한 SLF를 적용한다.</p>
+<pre><code>ISCO-28 SLF (Skill Level Framework)
+   │
+   ├── 차원 1. 교육 (Education)
+   │      - ISCED-11 기준
+   │      - 중요 변경: ISCED 4수준(중등 후 비학위과정)을 ISCO 직능수준 2 → 3으로 상향
+   │
+   ├── 차원 2. 책임성 (Responsibility)
+   │      - 관리 책임성 (Managerial): 사람·프로세스·운영 관리
+   │      - 감독 책임성 (Supervisory): 다른 사람의 활동 감독
+   │      - 안전 책임성 (Safety): 자신·타인·환경의 안전 보장
+   │
+   ├── 차원 3. 경험 (Experience)
+   │      - 핵심 과업을 독립 수행하기 위해 필요한 실무 숙련 기간
+   │      - 정규직·파트타임·임시직·인턴십·자원봉사 등 포함
+   │      - 경험의 기간 + 질 + 관련성 3차 평가
+   │
+   └── 차원 4. 업무기반학습 (Work-Based Learning, WBL)
+          - 실제 업무환경에서의 모든 학습
+          - 수습/도제, 직장 내 교육(OJT), 인턴십, 연수 등
+          - 형식·비형식·무형식 학습 형태 모두 포함
+</code></pre>
+<h3 id="034-slf">0.3.4 SLF 우선순위와 최적합 원칙</h3>
+<p>ISCO-28은 위 4차원을 다음 <strong>5단계 우선순위</strong>로 적용한다.</p>
+<pre><code>① 직무 내용 (task content) → ② 공식 자격요건 (qualification) →
+③ 교육수준 (education) → ④ 책임 (responsibility) → ⑤ 경험 및 WBL
+</code></pre>
+<p>그리고 4차원이 모두 일치하지 않더라도 <strong>최적합 원칙(best fit)</strong>을 적용하여 직무 수행을 가장 잘 설명하는 핵심요소 중심으로 종합 판단한다.</p>
+<h3 id="035-k-slf-4">0.3.5 K-SLF — 한국형 4단계 적용 절차</h3>
+<p>조세형 사전연구가 제안한 한국형 적용 절차:</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>주요 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1단계</strong></td>
+<td>SLF 4차원의 국내 대응요소 정의 및 연계기준 설정</td>
+</tr>
+<tr>
+<td><strong>2단계</strong></td>
+<td>포함기준(Inclusion Criteria) 설정 및 한국형 직능수준프레임워크(K-SLF) 마련</td>
+</tr>
+<tr>
+<td><strong>3단계</strong></td>
+<td>직업세분류별 직업정보 매핑 및 직능수준 1차 평가</td>
+</tr>
+<tr>
+<td><strong>4단계</strong></td>
+<td>전문가 검증 및 확정</td>
+</tr>
+</tbody>
+</table>
+<h3 id="036-k-slf-4">0.3.6 K-SLF 4차원의 국내 대응 자료</h3>
+<table>
+<thead>
+<tr>
+<th>SLF 차원</th>
+<th>국내 대응 자료 (사전연구 제안)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>교육</td>
+<td>경제활동인구조사·임금직업포털 직업정보 / 과정평가형 국가기술자격 훈련과정 / 국가기간·전략산업직종 훈련과정</td>
+</tr>
+<tr>
+<td>책임성</td>
+<td>KSCO·한국직업사전에서 책임성 관련 과업 및 역할정보 추출 (500개 세분류 전수 직무분석은 비현실적 → 기존 텍스트 우선 활용 + 의사결정 부족분만 선택적 직무분석)</td>
+</tr>
+<tr>
+<td>경험</td>
+<td>한국직업사전의 <strong>숙련기간</strong> 항목 / 채용공고(Job Posting) 보조 활용 / 전문가 합의</td>
+</tr>
+<tr>
+<td>업무기반학습</td>
+<td><strong>일학습병행 자격제도</strong>를 대표 모델로 우선 적용</td>
+</tr>
+</tbody>
+</table>
+<h3 id="037">0.3.7 본 사업과의 직접 연결</h3>
+<p>본 사업 RFP의 "<strong>직업분류 고도화를 위한 직업정보 프레임워크 연구</strong>"의 의미는 다음과 같이 분해된다.</p>
+<pre><code>            ┌─────────────────────────────────────────┐
+            │ 본 사업 = 직업정보 프레임워크 구축          │
+            └────────────────┬────────────────────────┘
+                             │
+            ┌────────────────┼────────────────┐
+            │                │                │
+            ▼                ▼                ▼
+    ┌──────────┐    ┌──────────┐    ┌──────────┐
+    │ 직능유형   │    │ 직능수준   │    │ 직업문항   │
+    │ (직무활동) │    │ (K-SLF)   │    │ (측정개선) │
+    ├──────────┤    ├──────────┤    ├──────────┤
+    │ GWA·IWA  │    │ 교육·     │    │ 직능유형·  │
+    │ DWA·TASK │    │ 책임성·    │    │ 직능수준·  │
+    │ (O*NET)  │    │ 경험·WBL  │    │ 산업      │
+    └──────────┘    └──────────┘    └──────────┘
+       Part 2~6      Part 0 §0.3      Part 0 §0.4
+       이 자료의      사전연구 ①        사전연구 ②
+       Track A·B      도입 평가         측정 개선
+</code></pre>
+<p>본 스터디 자료가 1차로 다룬 것은 <strong>왼쪽(직무활동)</strong> 영역이었고, 사전연구 ①은 <strong>가운데(직능수준)</strong> 영역, 사전연구 ②는 <strong>오른쪽(직업문항)</strong> 영역이다.</p>
+<p>본 사업 8개월의 실제 작업은 이 세 영역을 동시에 수행하는 것이며, 산출물인 직무기술 정의서에는 세 영역이 모두 통합되어야 한다.</p>
+<hr />
+<h2 id="04-2">0.4 직계 사전연구 ② — 직업문항 측정방법 평가 및 개선</h2>
+<h3 id="041">0.4.1 메타 정보</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정식 명칭</td>
+<td>직업문항 측정방법 평가 및 개선 연구</td>
+</tr>
+<tr>
+<td>발주처</td>
+<td><strong>통계청장</strong> (격상 이전, 시점상 2024~2025)</td>
+</tr>
+<tr>
+<td>연구기관</td>
+<td>(사)한국직업자격학회</td>
+</tr>
+<tr>
+<td>연구책임자</td>
+<td>(조세형 추정 — 표지 빈칸이나 제목과 학회 동일)</td>
+</tr>
+<tr>
+<td>핵심 산출</td>
+<td>개선된 직업문항 + 파일럿 테스트(500명) + AI 활용 사례 분석</td>
+</tr>
+</tbody>
+</table>
+<h3 id="042">0.4.2 직업문항이란</h3>
+<p><strong>직업문항</strong>(Occupation Question Items)은 통계조사에서 응답자의 직업을 묻기 위한 설문 문항이다.</p>
+<p>기존 한국 직업문항(통계청 주요 조사):
+- 하는 일 (자유응답)
+- 직위/직책
+- 산업</p>
+<p>문제점: 직업코딩(KSCO 4자리 코드 부여) 시 응답이 모호하여 정확도가 낮음.</p>
+<h3 id="043-3">0.4.3 개선 방향 — 3개 영역 측정</h3>
+<p>사전연구가 제안한 개선 직업문항 구조:</p>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>측정 내용</th>
+<th>문항 예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>직능유형</strong></td>
+<td>수행업무 + 사용 도구·장비</td>
+<td>"수행하는 업무 3가지 이상을 기술하세요" / "사용하는 주요 장비·도구는?"</td>
+</tr>
+<tr>
+<td><strong>직능수준</strong></td>
+<td>학력 + 자격 + 경력 + 책임</td>
+<td>"최소학력은?" / "보유 자격은?" / "관리·감독 역할 비중은?"</td>
+</tr>
+<tr>
+<td><strong>산업</strong></td>
+<td>산업분야 + 산출물 + 근무환경</td>
+<td>"생산하거나 제공하는 제품/서비스는?" / "근무 장소는?"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="044">0.4.4 파일럿 테스트 결과 (결정적 수치)</h3>
+<ul>
+<li>표본: 500명 (KSCO 소분류 균등할당)</li>
+<li>조사방식: 온라인 50% + 면접 50%</li>
+<li>설문 유형: 응답안내 미포함 vs 포함 각 50%</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>기존 문항</th>
+<th>개선 문항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1차 매칭률</td>
+<td>-</td>
+<td><strong>80.2%</strong></td>
+</tr>
+<tr>
+<td>2차 매칭률</td>
+<td>-</td>
+<td><strong>97.8%</strong></td>
+</tr>
+<tr>
+<td>문항 수</td>
+<td>3개</td>
+<td>11개 (증가)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>결정적 발견</strong>:
+- 매칭률 17.6%p 향상 (80.2% → 97.8%)
+- 단, 응답 부담 증가 (문항 3→11)
+- 직능수준 문항은 응답자 이해 부족으로 효과 제한적
+- 산업/산출물 문항은 KSCO 대분류 8(조립·제작·조작) 직업군에 특히 유효</p>
+<h3 id="045-autocoder-ai">0.4.5 AutoCoder 사례 — 본 사업 AI 활용의 직접 참고</h3>
+<p>사전연구가 분석한 3대 자동 직업코딩 시스템:</p>
+<h4 id="onet-soc-autocoder">(가) O*NET-SOC AutoCoder (미국)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개발</td>
+<td>R.M. Wilson Consulting</td>
+</tr>
+<tr>
+<td>기술</td>
+<td>NLP + 머신러닝</td>
+</tr>
+<tr>
+<td>데이터</td>
+<td>O*NET 2023 + SOC 2018 + OES 2020</td>
+</tr>
+<tr>
+<td>입력</td>
+<td>직무명·직무설명·회사명·직무카테고리·학력·산업</td>
+</tr>
+<tr>
+<td>출력</td>
+<td>적합 SOC 코드 + 적합도 점수</td>
+</tr>
+<tr>
+<td>처리속도</td>
+<td><strong>시간당 10만 건</strong> (표준 PC)</td>
+</tr>
+<tr>
+<td>정확도</td>
+<td><strong>수작업 대비 시간 70% 단축, 매칭 85%↑</strong></td>
+</tr>
+<tr>
+<td>한계</td>
+<td>DB 업데이트 지연 / 복합 직무 처리 어려움 / 텍스트 품질에 민감</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nioccs-autocoder-niosh">(나) NIOCCS AutoCoder (미국 NIOSH)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개발</td>
+<td>NIOSH (National Institute for Occupational Safety and Health)</td>
+</tr>
+<tr>
+<td>기술</td>
+<td>2021부터 머신러닝 도입</td>
+</tr>
+<tr>
+<td>데이터</td>
+<td>SOC 2018 (808 코드) + NAICS 2017 (365 코드)</td>
+</tr>
+<tr>
+<td>특징</td>
+<td><strong>무료</strong>, 웹 기반, 직업건강 연구 특화</td>
+</tr>
+</tbody>
+</table>
+<h4 id="g-code-autocoder">(다) G-Code AutoCoder (캐나다 통계청)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>개발</td>
+<td>Statistics Canada</td>
+</tr>
+<tr>
+<td>기술</td>
+<td><strong>FastText + XGBoost</strong></td>
+</tr>
+<tr>
+<td>데이터</td>
+<td>NAICS + NOC</td>
+</tr>
+<tr>
+<td>특징</td>
+<td><strong>영어·프랑스어 다중 모델링</strong>, 수작업 + 자동 통합 환경</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>CCHS(Canadian Community Health Survey) 등</td>
+</tr>
+</tbody>
+</table>
+<h3 id="046">0.4.6 사전연구의 제언 — 본 사업이 계승할 사항</h3>
+<ol>
+<li>직업문항 수 최적화 (기여도 낮은 문항 간소화)</li>
+<li>직능수준 문항에 <strong>명확한 예시와 가이드</strong> 제공</li>
+<li>산출물·근무장소 문항 활용 강화 (특히 KSCO 8 직업군)</li>
+<li>응답안내·예시 포함 설문지 유형 확대</li>
+<li>다양한 직업군·연령층 추가 파일럿</li>
+<li>직업별 최소학력·경력·자격 기준 정립</li>
+</ol>
+<blockquote>
+<p><strong>본 사업 시사점</strong>: 본 사업이 만들 한국형 AutoCoder의 입력은 <strong>개선된 11개 직업문항 응답</strong>이어야 하며, 출력은 <strong>KSCO 코드 + 직무활동 매핑 + K-SLF 직능수준 4차원</strong>이어야 한다. 사전연구 ②의 직업문항이 입력, 사전연구 ①의 SLF가 출력 차원, 본 스터디 자료가 다룬 4계층이 매칭 엔진이다.</p>
+</blockquote>
+<hr />
+<h2 id="05-krivet-ksco-8">0.5 KRIVET 사전연구 — KSCO 8차 개정의 학술 근거</h2>
+<h3 id="051-krivet-2">0.5.1 한국직업능력연구원(KRIVET) 보고서 2종</h3>
+<table>
+<thead>
+<tr>
+<th>보고서</th>
+<th>발간</th>
+<th>ID</th>
+<th>다루는 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국표준직업분류 개정 1차 연구</td>
+<td>2021</td>
+<td>E120210265</td>
+<td>KSCO 대분류 1~5 (관리자·전문가·사무·서비스·판매)</td>
+</tr>
+<tr>
+<td>한국표준직업분류 개정 2차 연구</td>
+<td>2023</td>
+<td>E120230025</td>
+<td>KSCO 대분류 6~A (농림어업·기능원·장치조작·단순노무·군인)</td>
+</tr>
+</tbody>
+</table>
+<p>이 두 보고서가 KSCO 8차 개정(2024.7 고시, 2025.1 시행)의 분류 코드 변경 근거다.</p>
+<h3 id="052">0.5.2 본 사업과의 위치 관계</h3>
+<pre><code>[2021]  KRIVET 1차 연구 (대분류 1-5)         ─┐
+[2023]  KRIVET 2차 연구 (대분류 6-A)         ─┼──▶ KSCO 8차 [2024.7 고시·2025.1 시행]
+                                              │             │
+[2024~] 통계청 분류조정안 작성·의견수렴       ─┘             │
+                                                            ▼
+                                              ┌─────────────────────────┐
+[2025.12] 조세형 ISCO-28 SLF 사전연구  ─┐    │  KSCO 8차 코드는 그대로!  │
+[2024~25] 조세형 직업문항 사전연구      ─┼──▶│  위에 정보 층 부착        │
+                                          │    └─────────┬───────────────┘
+                                          │              │
+                                          └─────[2026.5~] P2026-010 본 사업
+                                                         (직업정보 프레임워크)
+</code></pre>
+<h3 id="053-krivet">0.5.3 KRIVET 사전연구의 시사점 (확보 시)</h3>
+<p>본 사업이 KRIVET 두 보고서를 추가 확보해야 하는 이유:
+- KSCO 8차 분류 코드의 <strong>신설·이동·통합 근거 텍스트</strong> 확보
+- 각 대분류별 신생 직업의 분류 논리
+- 8차 개정 시 미처 반영하지 못한 후속 과제 목록</p>
+<blockquote>
+<p><strong>확보 경로</strong>: KRIVET 홈페이지에서 직접 PDF 다운로드 가능 (<code>krivet.re.kr</code>)</p>
+</blockquote>
+<hr />
+<h2 id="06-rfp">0.6 본 사업 RFP의 행간 해석</h2>
+<p>이상의 사전연구와 발주처 맥락을 종합하면, 본 사업 RFP의 4대 사업범위는 다음과 같이 재해석된다.</p>
+<table>
+<thead>
+<tr>
+<th>RFP 명목 표현</th>
+<th>행간 해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 직무기술 정의서 작성 (세분류 495)</td>
+<td><strong>3차원 통합 산출물</strong>: 직무활동(GWA/IWA/DWA/TASK) + K-SLF 직능수준 4차원 + 개선 직업문항 응답</td>
+</tr>
+<tr>
+<td>② 국내외 사례 분석 (O*NET·ESCO·NOC·KNOW·KQF)</td>
+<td>KQF 포함은 <strong>K-SLF의 경험·WBL 차원</strong>과 직결됨. KQF 분석 비중을 높여야 함</td>
+</tr>
+<tr>
+<td>③ 차원별 직능유형 구성요소 도입 구조적 틀</td>
+<td>"차원별"의 의미는 사전연구 ①의 <strong>K-SLF 4차원</strong> 및 사전연구 ②의 <strong>3영역</strong>과 정렬</td>
+</tr>
+<tr>
+<td>④ 중분류 시뮬레이션 검증</td>
+<td>시뮬레이션 대상 중분류는 <strong>KSCO 8차 개정에서 신설·분리된 영역</strong>(보건 전문가 등)을 우선</td>
+</tr>
+</tbody>
+</table>
+<h3 id="qa">발표 Q&amp;A 핵심 답변 카드 (사전연구 활용)</h3>
+<p><strong>Q: 본 사업이 다른 정책연구와 어떻게 다른가요?</strong></p>
+<p>A: 본 사업은 우리 연구진이 작성한 두 직계 사전연구 ── 2025년 12월 국가데이터처에 제출한 ISCO-28 SLF 도입 평가 연구와 통계청 직업문항 측정방법 연구 ── 의 후속 실행 단계입니다. 사전연구가 도입 적정성 평가와 측정도구 개선이었다면, 본 사업은 그 결과를 KSCO 495개 세분류에 실제로 적용하는 단계입니다.</p>
+<p><strong>Q: 직업분류 "고도화"란 정확히 무엇입니까?</strong></p>
+<p>A: 두 가지를 의미합니다. 첫째, KSCO 8차의 분류 코드는 그대로 두고 그 위에 <strong>3차원 정보 층</strong>을 부착하는 것(직무활동·K-SLF·개선 직업문항). 둘째, 그 정보 층을 AI 자동 코딩이 가능한 형태로 표준화하는 것입니다. 미국 O*NET-SOC AutoCoder가 시간당 10만 건·정확도 85%를 달성한 것처럼, 한국형 AutoCoder의 기반을 마련하는 것이 본 사업의 장기 산출입니다.</p>
+<p><strong>Q: 국가데이터처 격상 후 첫 직업분류 사업으로서의 의의는?</strong></p>
+<p>A: 통계청 시절 KSCO는 통계 작성 도구였지만, 국가데이터처 출범 후에는 범정부 데이터 거버넌스의 일부가 됩니다. 본 사업은 고용노동부·산업인력공단·한국고용정보원 등에 산재된 직업정보를 통계청 KSCO 코드 단위로 통합하는 첫 시도로, 국가데이터처의 컨트롤타워 역할에 부합하는 작업입니다.</p>
+<hr />
+<h2 id="07-part">0.7 본 Part 요약 카드</h2>
+<ul>
+<li><strong>국가데이터처(MODS)</strong>는 2025.10.1 통계청에서 격상된 국무총리 직속 처. 본 사업은 격상 후 첫 직업분류 정책연구</li>
+<li>본 사업 연구책임자 <strong>조세형 박사가 직접 작성한 두 사전연구</strong>(2025.12 ISCO-28 SLF, 통계청 직업문항)가 본 사업의 직계 선행과제</li>
+<li>본 사업의 실제 구조는 <strong>직무활동(O*NET 4계층) + 직능수준(K-SLF 4차원) + 직업문항 개선(3영역)</strong> 세 영역 통합</li>
+<li><strong>K-SLF 4차원</strong>: 교육(ISCED-11)·책임성(관리·감독·안전)·경험(숙련기간)·업무기반학습(일학습병행)</li>
+<li>개선 직업문항 파일럿: 1차 80.2% → 2차 <strong>97.8% 매칭률</strong></li>
+<li><strong>AutoCoder 3대 사례</strong>: O*NET-SOC(NLP+ML, 시간당 10만건 85%↑) / NIOCCS(SOC 2018, ML) / G-Code(FastText+XGBoost)</li>
+<li><strong>KRIVET 사전연구</strong>(2021·2023)는 KSCO 8차 코드 개정의 학술 근거</li>
+</ul>
+<hr />
+<h2 id="08">0.8 다음 단계</h2>
+<p>본 Part 학습 후 다음 자료를 학습하면 본 사업의 <strong>3차원 통합 그림</strong>이 완성됩니다.</p>
+<ul>
+<li>직무활동 차원 → Part 2 (O*NET 4계층) + Part 6 (KSCO 적용 워크플로)</li>
+<li>직능수준 차원 → 본 Part §0.3 + 발주기관에서 ISCO-28 SLF 보고서 직접 확보</li>
+<li>직업문항 차원 → 본 Part §0.4 + 발주기관에서 직업문항 보고서 직접 확보</li>
+<li>실행 방법론 → <strong>Part 8 실행방법론 모듈</strong> ⭐신규 (AutoCoder 구현·HWPX 파싱·QA 코드·산출물 표준)</li>
+</ul></div></section>
+
+<section id="part-7" class="part"><div class="md-content"><h1 id="part-7">Part 7. 추가 필요 자료 및 학습 로드맵</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>본 연구에 현재 확보된 자료의 <strong>갭(gap)</strong>을 식별하고, 추가로 필요한 자료의 우선순위를 매길 수 있다.</li>
+<li>자료 종류별 <strong>확보 경로</strong>(공개 데이터셋, 정부 자료, 학술 논문, 외부 전문가 패널 등)를 설계할 수 있다.</li>
+<li><strong>학습 로드맵</strong>(연구진의 단계별 학습 계획)을 수립할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="71">7.1 현재 확보된 자료 (강점)</h2>
+<p>본 연구는 이미 다음의 풍부한 자료를 확보하고 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>자료</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>O*NET 핵심 보고서</strong></td>
+<td>WA Project Technical Report (2014)</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>O*NET 핵심 보고서</strong></td>
+<td>HumRRO 작업기술 품질관리 보고서 (2003)</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>O*NET 콘텐츠 모델</strong></td>
+<td>Understanding Work Using O*NET</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>국제 분류 표준</strong></td>
+<td>ISCO-08 부속안내서 (ILO)</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>국내 분류 체계</strong></td>
+<td>KSCO 8차 (2024 고시)</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>국내 분류 체계</strong></td>
+<td>KECO 2025년 개정</td>
+<td>✓ 심층 분석 완료</td>
+</tr>
+<tr>
+<td><strong>종합 분석 문서</strong></td>
+<td>심층분석_O-NET_WA_및_HumRRO_방법론해부.md</td>
+<td>✓ 작성 완료</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="72">7.2 추가 필요 자료 (갭 분석)</h2>
+<p>본 연구가 추가로 확보해야 할 자료를 우선순위·확보 난이도별로 정리합니다.</p>
+<h3 id="721-p0-12">7.2.1 P0 (필수 — 사업 1~2개월차 확보)</h3>
+<h4 id="1-ksco-8-hwpx">(1) KSCO 8차 분류항목표 HWPX 정밀 파싱 데이터</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>통계청 KSCO 8차 분류항목표 (495 세분류 + 1,270 세세분류)</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>HWPX (한컴오피스)</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>TASK 추출 1차 입력 코퍼스</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>통계청 통계분류포털 — 이미 보유</td>
+</tr>
+<tr>
+<td><strong>필요 작업</strong></td>
+<td>HWPX → 정형 JSON 자동 파싱 스크립트 작성</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2">(2) 한국직업사전 텍스트 데이터</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>한국고용정보원 「한국직업사전」 약 6,000개 직업 상세 기술</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>PDF 또는 XML (공공데이터포털)</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>KSCO 직업당 보조 텍스트 (분량 보강)</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://www.data.go.kr (공공데이터포털)</td>
+</tr>
+<tr>
+<td>필요 작업</td>
+<td>KSCO 세분류 ↔ 직업사전 매핑표 작성 (임베딩 + 인간 확인)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-ncs">(3) NCS 능력단위 데이터</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>한국산업인력공단 NCS 능력단위 약 1,000개</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>NCS 사이트 다운로드 (HWP/PDF/XLSX)</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>직업의 능력단위 정보 보강</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://www.ncs.go.kr</td>
+</tr>
+<tr>
+<td>필요 작업</td>
+<td>능력단위 → KSCO 세분류 매핑 (다대다 관계 처리)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="4-know-api">(4) KNOW 워크넷 직업정보 API</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>한국고용정보원 KNOW 시스템 537개 직업의 다차원 정보</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>OpenAPI / LOD</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>직업의 능력·지식·직업가치 등 메타 정보</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://lod.work.go.kr 또는 공공데이터포털 OpenAPI</td>
+</tr>
+<tr>
+<td>필요 작업</td>
+<td>API 호출 코드 작성 + 데이터 정형화</td>
+</tr>
+</tbody>
+</table>
+<h4 id="5-onet-30x">(5) O*NET 최신 데이터베이스 (30.x)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>O*NET 30.x 전체 데이터 (Tasks·DWA·IWA·GWA 매핑)</td>
+</tr>
+<tr>
+<td>형식</td>
+<td>TXT/MDB/Excel</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>영문 원천 자료 — 한국형 GWA·IWA·DWA의 비교 기준</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://www.onetcenter.org/database.html</td>
+</tr>
+<tr>
+<td><strong>확보 시점</strong></td>
+<td>매월 갱신 — 본 연구 6개월차 시점의 최신 버전을 한 번 더 다운로드</td>
+</tr>
+</tbody>
+</table>
+<h3 id="722-p1-34">7.2.2 P1 (중요 — 사업 3~4개월차 확보)</h3>
+<h4 id="6-ksco-7-8">(6) KSCO 7차 ↔ 8차 변경 매핑표</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>통계청 발간 KSCO 8차 해설서</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>시계열 데이터 단절 보완</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>통계청 통계분류포털</td>
+</tr>
+</tbody>
+</table>
+<h4 id="7-esco-european-skills-competences-qualifications-and-occupations">(7) ESCO (European Skills, Competences, Qualifications and Occupations)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>EU의 직업·스킬·자격 분류 체계 (약 3,000 직업)</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>본 연구의 한국형 직무활동 체계 국제 비교</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://esco.ec.europa.eu (공개 API)</td>
+</tr>
+<tr>
+<td>필요 작업</td>
+<td>ESCO 활동 분류와 O*NET·KSCO 매핑</td>
+</tr>
+</tbody>
+</table>
+<h4 id="8-noc-national-occupational-classification">(8) NOC (National Occupational Classification, 캐나다)</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>캐나다 NOC 2021</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>본 연구의 또 다른 국제 비교</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://noc.esdc.gc.ca</td>
+</tr>
+</tbody>
+</table>
+<h4 id="9-japan-jilpt">(9) Japan JILPT의 직업정보 데이터</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>일본 노동정책연구·연수기구(JILPT)의 직업정보</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>아시아 맥락에서 가장 가까운 비교 사례</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>https://www.jil.go.jp/english (영문 일부)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="723-p2-5">7.2.3 P2 (선택 — 사업 5개월차 이후)</h3>
+<h4 id="10-llms4ol-2025-challenge">(10) LLMs4OL 2025 Challenge 결과물</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>LLM 기반 Ontology Learning 챌린지 (2025)</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>LLM + SBERT 기반 분류·군집화 최신 방법론</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>OpenReview / TIB Open Publishing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="11-anthropic-economic-index">(11) Anthropic Economic Index 데이터</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>Claude 사용자 대화를 O*NET task로 분류한 데이터셋</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>AI가 실제 직업 task를 어떻게 처리하는가 검증</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>Anthropic 발표 자료 / arxiv 2507.07935</td>
+</tr>
+</tbody>
+</table>
+<h4 id="12-where-can-ai-be-used-deep-ontology-of-work-activities">(12) "Where can AI be used? deep ontology of work activities" 데이터셋</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자료</td>
+<td>O*NET 20,000 활동의 deep ontology + 13,275 AI 소프트웨어 매핑</td>
+</tr>
+<tr>
+<td>활용</td>
+<td>AI 자동화 가능성 분석 (직무활동 단위)</td>
+</tr>
+<tr>
+<td>확보 경로</td>
+<td>arxiv 2603.20619</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="73-etl">7.3 데이터 통합 ETL 아키텍처</h2>
+<p>위의 자료를 본 연구 데이터베이스로 통합하는 ETL 흐름:</p>
+<pre><code>[원천 데이터]
+KSCO HWPX        한국직업사전 PDF/XML       NCS HWP/PDF       KNOW API         O*NET TXT/MDB
+   │                  │                       │                │                │
+   ▼                  ▼                       ▼                ▼                ▼
+[Extract]
+HWPX 파서          PDF→TXT 변환            HWP→TXT 변환     API 호출         CSV 변환
+   │                  │                       │                │                │
+   ▼                  ▼                       ▼                ▼                ▼
+[Transform]
+정형 JSON          정형 JSON              정형 JSON         정형 JSON       정형 JSON
+   │                  │                       │                │                │
+   └────────┬─────────┴───────────┬───────────┴────────┬───────┘                │
+            │                     │                     │                        │
+            ▼                     ▼                     ▼                        ▼
+       [KSCO 세분류 매핑]    [임베딩 매칭]         [인간 검증]                  [영문 비교용]
+            │                     │                     │
+            └─────────────────────┴─────────────────────┘
+                                  │
+                                  ▼
+            ┌──────────────────────────────────────────┐
+            │      [통합 직업 코퍼스 DB]                  │
+            │   - 직업당 단일 통합 텍스트                  │
+            │   - 출처 메타데이터 포함                     │
+            │   - 임베딩 벡터 사전 계산                    │
+            └──────────────────────────────────────────┘
+                                  │
+                                  ▼
+                      [Layer 3~10 분석 파이프라인]
+</code></pre>
+<hr />
+<h2 id="74">7.4 학습 로드맵 (연구진 단계별 학습 계획)</h2>
+<p>본 스터디 자료를 기반으로 한 연구진 학습 일정 권고:</p>
+<h3 id="1">1주차: 기초 다지기</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>학습 내용</th>
+<th>자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>직업분류 기초 + ISCO·KSCO 원리</td>
+<td>Part 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>O*NET 4계층 완전 이해</td>
+<td>Part 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HumRRO 방법론</td>
+<td>Part 3 (전반)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>WA Project 방법론</td>
+<td>Part 3 (후반)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1주차 워크북 — 개념 정리 quiz</td>
+<td>부록 연습문제</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-ai">2주차: AI·기준·적용</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>학습 내용</th>
+<th>자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td>AI 활용 도출 방법</td>
+<td>Part 4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>도출 기준 설정</td>
+<td>Part 5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>KSCO 적용 워크플로</td>
+<td>Part 6</td>
+</tr>
+<tr>
+<td>5</td>
+<td>사례 실습 — 본인 관심 직업 1개 골라 직무기술 정의서 시안 작성</td>
+<td>부록 연습문제</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3">3주차: 도구·환경 학습</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>학습 내용</th>
+<th>자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>BGE-m3-ko / Mecab-ko 환경 구축</td>
+<td>Hugging Face 문서</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HDBSCAN / BERTopic 실습</td>
+<td>BERTopic 문서</td>
+</tr>
+<tr>
+<td>3</td>
+<td>LLM API 호출 (Claude / GPT) 코드 작성</td>
+<td>Anthropic / OpenAI docs</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SEM 시뮬레이션 코드 작성</td>
+<td>Part 5 + scipy</td>
+</tr>
+<tr>
+<td>5</td>
+<td>KSCO HWPX 파서 작성</td>
+<td>python-hwpx 라이브러리</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4">4주차+: 실전 시뮬레이션</h3>
+<table>
+<thead>
+<tr>
+<th>주차</th>
+<th>활동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>1개 직업 (예: 간호사)에 대해 처음부터 끝까지 워크플로 실행</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>1개 중분류 (예: 보건 전문가) 대상 시뮬레이션</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>분석가 Kappa 측정 + AI 자동분류 정확도 측정</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="75">7.5 외부 전문가 패널 구성 권고</h2>
+<p>본 연구의 도출 결과를 검증할 외부 패널 구성:</p>
+<h3 id="751-5">7.5.1 핵심 패널 (5명 권고)</h3>
+<table>
+<thead>
+<tr>
+<th>역할</th>
+<th>인원</th>
+<th>자격</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>직업분류 전문가</strong></td>
+<td>1명</td>
+<td>통계청 KSCO 개정 참여 경력</td>
+</tr>
+<tr>
+<td><strong>노동시장 전문가</strong></td>
+<td>1명</td>
+<td>한국고용정보원 KNOW 또는 KECO 개발 경력</td>
+</tr>
+<tr>
+<td><strong>NLP·AI 전문가</strong></td>
+<td>1명</td>
+<td>LLM/임베딩 기반 분류 연구 경력</td>
+</tr>
+<tr>
+<td><strong>HR·HRD 전문가</strong></td>
+<td>1명</td>
+<td>NCS 개발 또는 산업인력공단 경력</td>
+</tr>
+<tr>
+<td><strong>국제 분류 전문가</strong></td>
+<td>1명</td>
+<td>ISCO·ESCO 관련 학술 경력</td>
+</tr>
+</tbody>
+</table>
+<h3 id="752-sme-subject-matter-expert">7.5.2 직업군별 SME (Subject Matter Expert) 패널</h3>
+<p>본 연구의 시뮬레이션 대상 중분류 2~3개에 대해 직업군별 SME 패널 추가:</p>
+<table>
+<thead>
+<tr>
+<th>중분류 후보</th>
+<th>SME 인원</th>
+<th>자격</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정보통신 전문가</td>
+<td>3명</td>
+<td>현직 IT 개발자·관리자</td>
+</tr>
+<tr>
+<td>보건 전문가</td>
+<td>3명</td>
+<td>현직 의사·간호사·약사</td>
+</tr>
+<tr>
+<td>전기·전자 정비원</td>
+<td>3명</td>
+<td>현직 정비기사</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="76">7.6 위험 요인 및 대응 자료</h2>
+<h3 id="761">7.6.1 정부·정책 변동 위험</h3>
+<table>
+<thead>
+<tr>
+<th>위험</th>
+<th>대응 자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KSCO 9차 개정 조기 발표</td>
+<td>통계청 통계분류포털 모니터링 (월 1회)</td>
+</tr>
+<tr>
+<td>ISCO-28 개정 동향</td>
+<td>ILO 발표 자료 추적</td>
+</tr>
+<tr>
+<td>O*NET 정책 변경 (예: AI 분류 도입)</td>
+<td>O*NET Resource Center 구독</td>
+</tr>
+</tbody>
+</table>
+<h3 id="762">7.6.2 데이터 접근 위험</h3>
+<table>
+<thead>
+<tr>
+<th>위험</th>
+<th>대응 자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국직업사전 일부 데이터 비공개</td>
+<td>한국고용정보원 직접 협조 요청</td>
+</tr>
+<tr>
+<td>NCS 능력단위 라이선스 제한</td>
+<td>한국산업인력공단 협약</td>
+</tr>
+<tr>
+<td>KNOW LOD 서비스 중단</td>
+<td>사업 초기 데이터 일괄 다운로드 백업</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="77-part">7.7 본 Part 요약 카드</h2>
+<ul>
+<li>현재 자료는 <strong>이론·방법론 자료는 풍부</strong>, <strong>데이터·도구는 보강 필요</strong></li>
+<li><strong>P0 자료</strong> 5개: KSCO HWPX, 한국직업사전, NCS, KNOW, O*NET 30.x — 사업 2개월 내 확보</li>
+<li><strong>P1 자료</strong> 4개: KSCO 7→8 매핑, ESCO, NOC, JILPT — 국제 비교용</li>
+<li><strong>P2 자료</strong> 3개: LLMs4OL 2025, Anthropic Economic Index, Deep Ontology — AI 방법론 보강</li>
+<li>연구진 학습 로드맵은 4주(기초 1주 + AI/기준/적용 1주 + 도구 1주 + 실전 1주+)</li>
+</ul>
+<hr />
+<h2 id="78">7.8 다음 단계</h2>
+<p>부록(<code>08_부록_용어집_체크리스트_연습문제.md</code>)에서 본 스터디 자료의 핵심 개념을 정리한 용어집과, 실제 연구 수행 시 사용할 수 있는 체크리스트, 그리고 학습 정도를 점검할 연습문제를 제공합니다.</p></div></section>
+
+<section id="part-3" class="part"><div class="md-content"><h1 id="part-3-humrro-wa-project">Part 3. 미국의 도출 방법론 — HumRRO 게이트키핑 + WA Project 클러스터링</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li><strong>HumRRO 보고서</strong>(2002/2003)의 TASK 품질관리 5단계 의사결정나무를 회상하고 적용할 수 있다.</li>
+<li><strong>WA Project 보고서</strong>(2014)의 7단계 클러스터링 절차와 DWA→IWA 위계 도출 방식을 설명할 수 있다.</li>
+<li><strong>종단 파이프라인</strong>(write-in → TASK → DWA → IWA → GWA 매핑)을 도식화할 수 있다.</li>
+<li>두 보고서의 핵심 수치(15명·67%·3.0·4 task·Kappa 0.88 등)를 발표 Q&amp;A 카드로 정리할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="31">3.1 두 보고서의 좌표</h2>
+<p>미국 O<em>NET 4계층 활동 체계는 단일 보고서가 아니라 </em><em>11년 간격을 두고 결합된 두 보고서</em>*가 합쳐서 만든 결과물입니다.</p>
+<pre><code>            [ GWA  41개 ]      ←  WA 보고서가 매핑 대상으로 사용
+                  ↑
+            [ IWA  332개 ]     ←  WA 보고서가 신규 개발 (2014)
+                  ↑
+            [ DWA  2,087개 ]   ←  WA 보고서가 신규 개발 (2014)
+                  ↑
+            [ Tasks 19,000+ ]  ← HumRRO가 품질관리 절차 정립 (2002/2003)
+                  ↑
+            [ Incumbent 응답 ] ← HumRRO가 &quot;write-in&quot; 처리절차 정의
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>보고서</th>
+<th>발간</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HumRRO</strong></td>
+<td>2002 (rev. 2003)</td>
+<td>TASK 층의 <strong>품질 게이트키핑</strong> 정립 — "이 진술이 진짜 task인가? 핵심인가? 신규인가?"</td>
+</tr>
+<tr>
+<td><strong>WA Project</strong></td>
+<td>2014</td>
+<td>HumRRO가 거른 task들을 <strong>귀납적 추상화</strong>하여 DWA·IWA 도출</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="32-humrro-task">3.2 HumRRO 보고서 — TASK 품질관리</h2>
+<h3 id="321">3.2.1 연구 설계</h3>
+<p>HumRRO 프로젝트는 노스캐롤라이나 O*NET Center가 발주한 3단계 과업 중 2단계(파일럿) 결과보고서입니다.</p>
+<table>
+<thead>
+<tr>
+<th>과업</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Task 1</td>
+<td>Task 데이터 분석 근거(rationale)와 기준(criteria) 개발</td>
+</tr>
+<tr>
+<td>Task 2</td>
+<td>8개 pretest 직업의 데이터로 기준을 검증</td>
+</tr>
+<tr>
+<td>Task 3</td>
+<td>O*NET 전체 데이터수집 프로그램에 적용</td>
+</tr>
+</tbody>
+</table>
+<p>두 종류의 데이터셋을 다룹니다.</p>
+<table>
+<thead>
+<tr>
+<th>데이터셋</th>
+<th>규모</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기존 Task 진술(current task)</td>
+<td>87개 진술</td>
+<td>8개 pretest 직업</td>
+</tr>
+<tr>
+<td>자유응답 Task(write-in)</td>
+<td>1,088개 진술 (411명 응답자)</td>
+<td>16개 직업 (pretest 8 + 추가 8)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>두 데이터셋의 분석 목적이 다름</strong>: Current task는 "기존 목록에서 무엇을 살리고 버릴지"의 <strong>가지치기(pruning)</strong>, write-in은 "새로 무엇을 들여올지"의 <strong>신규편입(introduction)</strong> 문제입니다.</p>
+</blockquote>
+<h3 id="322">3.2.2 평가 척도</h3>
+<p>응답자(incumbent)가 각 task에 대해 <strong>3가지 차원</strong>을 평정합니다.</p>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>척도</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Relevance</strong></td>
+<td>이진 ("not relevant" 표시)</td>
+<td>직접적 relevance 질문은 없음. 응답자/비응답자 비율로 사후 계산</td>
+</tr>
+<tr>
+<td><strong>Importance</strong></td>
+<td>5점 (1=not important … 5=extremely important)</td>
+<td>평균 3.0 이상이 retain 기준</td>
+</tr>
+<tr>
+<td><strong>Frequency</strong></td>
+<td>7점 (1=once a year or less … 7=hourly or more)</td>
+<td>단독 retain 기준으로는 부적합</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relevance">Relevance 계산식</h3>
+<pre><code>percent_relevant = (importance 또는 frequency를 평정한 응답자 수)
+                   ÷
+                   (importance/frequency 평정자 + &quot;not relevant&quot; 표기자)
+</code></pre>
+<p><strong>핵심 설계</strong>: 응답하지 않은 사람(missing)은 분모에서 제외됨. "모르는 사람"은 빼고, "잘 아는데 무관하다고 명시한 사람"만 분모로.</p>
+<blockquote>
+<p><strong>한국 적용 시 권고</strong>: 설문 UI에서 "해당 없음" 옵션을 명시적으로 분리해야 합니다. 그냥 무응답으로 처리하면 relevance 계산이 무너집니다.</p>
+</blockquote>
+<h3 id="323">3.2.3 표본 크기의 통계적 근거</h3>
+<p>"task당 최소 15명" 기준은 그냥 정한 것이 아니라 <strong>표준오차(SEM) 시뮬레이션</strong>으로 도출했습니다.</p>
+<ul>
+<li>목표: 평균 중요도(7점 척도)의 SEM ≤ 0.50</li>
+<li>검증 방법: 각 task에서 5명, 10명, 15명 무작위 표본의 SEM 계산</li>
+<li>결과:</li>
+<li>15명 표본의 평균 SEM = 0.21 (range 0.07–0.31) → 매우 안전</li>
+<li>7명까지 줄여도 대부분 task에서 SEM &lt; 0.50 유지</li>
+<li>결정: 이전 OMB 가이드라인(KSAO 추정용 15명)과의 정합성을 위해 <strong>15명 채택</strong></li>
+</ul>
+<blockquote>
+<p><strong>방법론적 함의</strong>: 한국에서도 직업당 최소 응답자 수 기준을 정할 때, 단순히 미국 사례를 차용하지 말고 한국 K-NCS·KECO 데이터로 <strong>자체 SEM 시뮬레이션</strong>을 1회 돌려두는 것이 발표 Q&amp;A에서 강력한 방어 카드가 됩니다.</p>
+</blockquote>
+<h3 id="324-current-task-vs">3.2.4 Current Task 평가 — 초기 vs 최종 기준</h3>
+<h4 id="3-and">초기 기준 (3개 조건 AND)</h4>
+<ol>
+<li>최소 응답자 ≥ 15명</li>
+<li>Relevance ≥ 50%</li>
+<li>Mean Importance ≥ 3.0</li>
+</ol>
+<p><strong>적용 결과 (87 tasks)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>retain 비율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>응답자 ≥ 15명</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Relevance ≥ 50%</td>
+<td>92.36%</td>
+</tr>
+<tr>
+<td>Importance ≥ 3.0</td>
+<td>96.85%</td>
+</tr>
+<tr>
+<td><strong>3개 모두 충족</strong></td>
+<td><strong>91.23%</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="task">흥미로운 발견: Task 수와 평정의 부적상관</h4>
+<blockquote>
+<p>"the fewer the tasks included in an occupation, the higher the relevance, importance, and frequency ratings of those tasks. (r = -.64 for importance)"</p>
+</blockquote>
+<p>즉 <strong>task가 적게 정의된 직업일수록 각 task의 평균 중요도가 높게 평정됨</strong>.</p>
+<p><strong>해석</strong>: task가 많은 직업은 응답자별로 "내가 안 하는 task"가 많아 평균이 낮아짐. task가 적은 직업은 모든 task가 핵심으로 보여 평균이 높아짐.</p>
+<p><strong>방법론적 위험</strong>: task list의 길이 자체가 중요도 평정의 편향(bias)을 만든다. 단순 평균 비교는 위험.</p>
+<h4 id="3-tier">최종 기준 — 3-tier 분류로 세분화</h4>
+<p>초기 이진 판정에서 <strong>3개 카테고리</strong>로 세분화되었습니다.</p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>Relevance</th>
+<th>Importance</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Core Tasks</strong></td>
+<td>&gt; 67%</td>
+<td>&gt; 3.0</td>
+<td>직업의 핵심 task</td>
+</tr>
+<tr>
+<td><strong>Supplementary</strong> (Type A)</td>
+<td>&gt; 67%</td>
+<td>&lt; 3.0</td>
+<td>보편적이지만 덜 중요</td>
+</tr>
+<tr>
+<td><strong>Supplementary</strong> (Type B)</td>
+<td>10–66%</td>
+<td>(무관)</td>
+<td>일부 incumbent에게만 해당</td>
+</tr>
+<tr>
+<td><strong>Non-relevant</strong></td>
+<td>&lt; 10%</td>
+<td>(무관)</td>
+<td>폐기</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>변경 포인트</strong>: 초기 50% threshold가 67%로 상향. 동시에 50% 미만이라고 무조건 버리지 않고 10%라는 완화된 임계로 supplementary 카테고리를 만듦.</p>
+<p><strong>한국 적용 시 권고</strong>: 67%/10% 이중 임계는 통계청·국가데이터처 측에 "왜 이 숫자인가" 문답을 받을 가능성이 큽니다. 우리 보고서에서는 <strong>분포 시각화(히스토그램)와 함께</strong> 임계를 정당화해야 합니다.</p>
+</blockquote>
+<h3 id="325-write-in-task">3.2.5 Write-in Task 의사결정나무</h3>
+<p>HumRRO의 가장 큰 기여는 <strong>3차례 진화한 의사결정나무</strong>입니다.</p>
+<h4 id="figure-1-9-step">초기 절차 (Figure 1, 9-step)</h4>
+<pre><code>1. task인가?
+2. current task와 동일한가?
+3. current task와 부분적 중복인가?
+4. 다른 write-in과 결합 가능한가?
+5. 10명 이상이 평정했는가?
+6. 평균 중요도가 기준 충족인가?
+7. 직업 정의·GWA와 일관되는가?
+8. 적절한 specificity인가?
+9. 형식(verb-object)이 맞는가?
+→ 새 statement 작성
+</code></pre>
+<h4 id="figure-2-7-step">수정 절차 (Figure 2, 7-step)</h4>
+<p>처음 두 직업 분석 후 변경:
+- 일관성 검사를 Step 7 → Step 4로 이동
+- 임계 응답자 수 10 → 15
+- Specificity·Format을 작성단계로 이관</p>
+<h4 id="figure-3-5-step">최종 권고 절차 (Figure 3, <strong>5-step</strong>)</h4>
+<pre><code>1. task인가? (No → 폐기)
+2. current task와 동일한가? (Yes → 폐기)
+3. current task와 부분적 중복? → 관련 current task 기록
+4. 다른 write-in 4개 이상과 동일/유사한가? (No → 폐기)
+5. emerging task list에 추가
+</code></pre>
+<blockquote>
+<p><strong>단계 축소의 근거</strong>:
+- 일관성 검사 제거: 거의 모든 write-in이 직업과 일관되어 거를 가치가 적었음
+- 중요도 임계 제거: write-in을 적은 응답자 대부분이 자기 task를 중요하다고 평정 → 변별력 없음
+- 임계 인원 9명 → 4명: write-in 응답자 수 자체가 적은 현실 반영</p>
+<p><strong>한국 적용 시 함의</strong>: 절차를 처음부터 슬림하게 잡으려 하지 말고, <strong>초기에 9-step 정도로 보수적으로 설계 → pilot 결과로 단계 축소</strong> 순서가 옳음. 우리의 AI 자동분류 단계도 이 진화 패턴을 따라야 함(과적합 방지).</p>
+</blockquote>
+<h3 id="326-interrater-agreement">3.2.6 분석가 간 일치도 (Interrater Agreement)</h3>
+<p>HumRRO는 두 명의 I-O 심리학 박사급 연구자가 첫 3개 직업의 write-in을 <strong>독립평정</strong>한 뒤 일치도를 측정.</p>
+<table>
+<thead>
+<tr>
+<th>판정 항목</th>
+<th>Agreement</th>
+<th>Cohen's Kappa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. task인가?</td>
+<td>93%</td>
+<td>.83</td>
+</tr>
+<tr>
+<td>2. current task와 완전 중복?</td>
+<td>96%</td>
+<td>.86</td>
+</tr>
+<tr>
+<td>3. current task와 부분 중복?</td>
+<td>96%</td>
+<td>.95</td>
+</tr>
+<tr>
+<td>4. 직업과 일관?</td>
+<td>97%</td>
+<td>.87</td>
+</tr>
+<tr>
+<td><strong>평균</strong></td>
+<td><strong>96%</strong></td>
+<td><strong>.88</strong> (p &lt; .001)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kappa 0.88의 의미</strong>: Landis &amp; Koch(1977) 분류로 "almost perfect agreement". 절차가 매우 명확해서 두 분석가가 거의 같은 판정을 내릴 수 있다는 의미.</p>
+<p><strong>불일치 원인</strong>: 대부분 "이게 task인가 KSAO/GWA인가"의 <strong>경계 사례</strong>. abstract level의 차이가 가장 모호한 지점.</p>
+<h3 id="327-write-in">3.2.7 Write-in 결과의 정량 분석</h3>
+<p>총 1,088개 write-in 진술의 분류 결과:</p>
+<pre><code>1,088 write-in
+├── 376 (35%) Non-tasks
+│   ├── 39% incomprehensible (이해불가)
+│   ├── 27% too broad (지나치게 광범위)
+│   ├── 18% KSAO (지식·기술·능력·기타특성)
+│   ├── 14% GWA (일반화 직무활동)
+│   └──  2% misc (예: 자격요건)
+└── 712 (65%) Tasks
+    ├── 56% unique (현재 목록과 무관)
+    ├── 25% partially redundant
+    └── 19% completely redundant
+</code></pre>
+<p><strong>최종 산출</strong>:
+- 16개 직업 × 평균 4.25개의 emerging task = <strong>17개 task</strong>가 emerging list에 등재
+- 즉 1,088개 응답에서 17개(<strong>1.6%</strong>)만이 실제로 새로운 emerging task로 살아남음</p>
+<blockquote>
+<p><strong>압도적 가지치기 비율의 함의</strong>:
+- 자유응답에서 진짜 신규 task가 살아남는 비율은 1~2% 수준으로 매우 낮음
+- <strong>NLP 활용 정당화</strong>: NLP가 "이 진술이 task가 아니다(35% 가지치기)"를 95% 정확도로 자동분류할 수 있다면, 인간 분석가의 작업 부하는 65%로 감소. 이는 본 연구 NLP 효율성 주장의 핵심.</p>
+</blockquote>
+<h3 id="328">3.2.8 운영 비용 추정</h3>
+<blockquote>
+<p>"the time required for one researcher to analyze write-in statements for an occupation varied from 2 to 12 hours (M = 4 hours)"</p>
+</blockquote>
+<ul>
+<li>직업당 평균 4시간/분석가</li>
+<li>한국 KSCO 495개 직업 × 4시간 = <strong>약 2,000시간(1명)</strong> 또는 <strong>6개월 풀타임 2명</strong></li>
+<li>단, 이는 write-in 분석에만 해당. Current task 분석·DWA 작성은 별도.</li>
+</ul>
+<blockquote>
+<p><strong>제안발표용 핵심 수치</strong>: 미국 사례에서 1명 분석가가 직업당 평균 4시간을 썼다는 점을 들어, 한국 8개월·6명 체제에서 NLP 보조 없이는 약 500개 직업이 한계임을 정량적으로 보여줄 수 있음.</p>
+</blockquote>
+<hr />
+<h2 id="33-wa-project-dwaiwa">3.3 WA Project 보고서 — DWA·IWA 도출</h2>
+<h3 id="331">3.3.1 프로젝트 위상</h3>
+<table>
+<thead>
+<tr>
+<th>차원</th>
+<th>기존(legacy)</th>
+<th>신규(WA Project)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tasks 수</td>
+<td>19,450</td>
+<td>19,450 (입력 그대로)</td>
+</tr>
+<tr>
+<td>GWA 수</td>
+<td>41</td>
+<td>41 (변경 없음, 매핑만 갱신)</td>
+</tr>
+<tr>
+<td>DWA 수</td>
+<td>2,164</td>
+<td>2,069 (전면 재작성)</td>
+</tr>
+<tr>
+<td>IWA 수</td>
+<td><strong>없음</strong></td>
+<td><strong>332 신규 도입</strong></td>
+</tr>
+<tr>
+<td>계층구조</td>
+<td>GWA—DWA—Tasks (3층)</td>
+<td>GWA—IWA—DWA—Tasks (<strong>4층</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>WA Project의 본질은 <strong>DWA 전면 재작성 + IWA 신규 개발</strong>. 단순 갱신이 아니라 위계의 재설계.</p>
+<h3 id="332-vs">3.3.2 정량 vs 정성 — 의사결정의 논리 (중요)</h3>
+<p>WA 보고서가 처음에 결정한 가장 중요한 선택입니다.</p>
+<table>
+<thead>
+<tr>
+<th>접근</th>
+<th>방식</th>
+<th>장점</th>
+<th>단점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>정량(NLP)</strong></td>
+<td>task를 verb–object–purpose로 분해, 코드화 → 군집분석</td>
+<td>빠름, 일관성</td>
+<td>task 구조 변동성으로 핵심 활동 추출 신뢰도 낮음</td>
+</tr>
+<tr>
+<td><strong>정성(rational)</strong></td>
+<td>task 전체를 인간 분석가가 의미 단위로 평가·군집</td>
+<td>정밀, 정확</td>
+<td>느림, 인적자원 다대</td>
+</tr>
+</tbody>
+</table>
+<p>핵심 인용:</p>
+<blockquote>
+<p>"task statement structure is so variable that it would be very difficult for a technical system to reliably derive the most important data from tasks. In short, <strong>human judgment was determined to be paramount</strong> in the development of a logical, meaningful, and useful system."</p>
+<p><strong>2014년 시점의 한계 vs 2026년 시점의 기회</strong>:
+- WA 프로젝트가 NLP를 거부한 결정적 이유는 "task 구조의 변동성"이었음. 2014년 NLP는 BERT(2018) 이전이고 LLM은 미존재.
+- 2026년에는 LLM이 verb–object 분리뿐 아니라 의미적 군집까지 인간 수준으로 가능. <strong>WA 보고서의 "human judgment is paramount" 결론은 더 이상 유효하지 않음</strong>.
+- 본 제안의 차별화 포인트: "WA가 정성 방식을 택한 것은 당시 기술 한계 때문이지 원리적 우위 때문이 아니다. 2026년에는 LLM이 정량+정성 통합을 가능하게 한다."</p>
+</blockquote>
+<h3 id="333">3.3.3 팀 구성과 작업 단위</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>인원</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Development teams</td>
+<td>3–4개 팀 (단계에 따라 변동)</td>
+</tr>
+<tr>
+<td>팀당 인원</td>
+<td>3–4명</td>
+</tr>
+<tr>
+<td>팀 구성</td>
+<td>경험있는 occupational analyst 1명(팀장) + I-O 심리학 박사과정생 2–3명</td>
+</tr>
+<tr>
+<td>도구</td>
+<td>온라인 스프레드시트 (실시간 협업)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>시사점</strong>: 미국조차 박사과정 인력을 대량 투입했음. 본 사업은 6명 체제 — <strong>모든 직업을 인간이 다 다루는 것은 물리적으로 불가능</strong>. NLP 자동화는 옵션이 아니라 필수.</p>
+</blockquote>
+<h3 id="334-dwa-phase-a-task-clustering">3.3.4 DWA 개발 — Phase A: Task Clustering</h3>
+<h4 id="step-1-job-family-1">Step 1. Job Family로 1차 분할</h4>
+<p>22개 O*NET Job Family(SOC 대분류와 동등) 사용. 결과: 134개(Legal) ~ 2,344개(Production) tasks per family.</p>
+<table>
+<thead>
+<tr>
+<th>Job Family (예시)</th>
+<th># 직업</th>
+<th># tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Production</td>
+<td>112</td>
+<td>2,344</td>
+</tr>
+<tr>
+<td>Healthcare Practitioners</td>
+<td>86</td>
+<td>1,683</td>
+</tr>
+<tr>
+<td>Education, Training, Library</td>
+<td>61</td>
+<td>1,591</td>
+</tr>
+<tr>
+<td>Architecture &amp; Engineering</td>
+<td>71</td>
+<td>1,431</td>
+</tr>
+<tr>
+<td>Management</td>
+<td>59</td>
+<td>1,294</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Legal</td>
+<td>8</td>
+<td>134</td>
+</tr>
+</tbody>
+</table>
+<p><strong>근거</strong>: DWA는 정의상 "단일 job family 내 다수 직업에 적용"되므로 family별 분할이 클러스터 동질성 확보에 필수.</p>
+<h4 id="step-2-gwa-41-task">Step 2. GWA 41개에 task 할당</h4>
+<ul>
+<li>3–4명의 분석가가 <strong>독립적으로</strong> 각 task에 가장 적합한 GWA 1개 선택</li>
+<li>모든 팀원이 동일 GWA를 고른 task = "consensus"</li>
+<li>한 명만 다른 의견 = "majority rule" → consensus로 처리</li>
+<li>의견 분기 task만 별도 워크시트로 → 토론 통해 합의</li>
+</ul>
+<p><strong>Healthcare 1,683개 task 예시</strong>:
+- 1,277개 (76%): consensus/majority로 즉시 GWA 분류
+- 406개 (24%): 별도 토론 후 합의</p>
+<blockquote>
+<p><strong>GWA 할당의 어려움</strong>: task 진술이 다음을 동시에 포함하기 때문.
+- <strong>목적절</strong> (purpose clauses): "to determine specifications"
+- <strong>도구</strong> (tools/technology): "using hand tools or power saws"
+- <strong>예시절</strong> (exemplar clauses): "such as updating records"
+- <strong>복합활동</strong> (multiple activities): "test and adjust equipment"</p>
+<p>분석가는 이 중 <strong>primary activity</strong>를 식별해야 함. task 텍스트의 의미 구문분석을 인간이 수행한 셈.</p>
+</blockquote>
+<h4 id="step-3-gwa-7-step">Step 3. GWA 내 클러스터링 — 7-step 세부 절차</h4>
+<pre><code>3.1 분석가 1인이 GWA 워크시트 부분집합 받음
+3.2 task의 GWA 적합도 재검토 → 부적합 task 표시
+3.3 다활동 task(multiple activity) flag
+3.4 활동 테마별로 코드 부여 (예: 1=assembly, 2=installation, 3=disassembly)
+    → 코드 기준 정렬 → 초기 클러스터 형성
+3.5 다른 팀원이 코멘트·제안 → 정신모델 공유
+3.6 팀장이 부적합 task를 다른 GWA 워크시트로 이동 → 다시 정제
+3.7 최종 단일 워크시트로 통합 → 41개 GWA 통합 검토
+</code></pre>
+<h3 id="335-dwa-phase-b-dwa-writing">3.3.5 DWA 개발 — Phase B: DWA Writing</h3>
+<p>Part 2에서 다룬 <strong>8대 작성 규칙</strong>을 적용. 핵심 요약:</p>
+<ol>
+<li>DWA당 동사 1개, 동사로 시작</li>
+<li>3인칭·현재·복수형</li>
+<li>명사 최소화, "or" 사용 (multiple objects)</li>
+<li>직무군 적합 명사</li>
+<li>명료성을 위한 형용사</li>
+<li>예시절 회피</li>
+<li>목적절 최소</li>
+<li>8학년 가독성 (SMOG index)</li>
+</ol>
+<h3 id="336-dwa-phase-c-round-robin-quality-control">3.3.6 DWA 개발 — Phase C: Round-Robin Quality Control</h3>
+<p>3–4개 팀이 있을 때, 한 팀의 결과물은 다른 두 팀이 순차로 QC 수행.</p>
+<pre><code>Team A (개발) → Team B (1차 QC, 수정권한 보유) → Team C (2차 QC) → 최종
+</code></pre>
+<blockquote>
+<p><strong>장점</strong>: 개발자가 자기 결과를 평가하지 않음(객관성). 거의 모든 팀원이 전체 데이터베이스를 검토(정신모델 공유).</p>
+<p><strong>한국 적용 권고</strong>: 6명을 3개 팀(2명씩)으로 운영. 직무군별로 개발팀–1차QC팀–2차QC팀을 회전.</p>
+</blockquote>
+<h3 id="337-dwa-4">3.3.7 DWA 후처리 4가지</h3>
+<h4 id="cross-job-family-dwas-7-step">Cross-Job Family DWAs (7-step)</h4>
+<p>같은/유사한 DWA가 서로 다른 job family에서 발견되면 통합 가능성 검토.</p>
+<pre><code>1. 알파벳 정렬 → identical DWA flag
+2. linked task 검토하여 cross-linking 확정
+3. near-identical DWA flag
+4. linked task의 중복도 평가
+5. near-identical DWA를 표준 DWA로 통합
+6. cross-family DWA의 클러스터 동질성 재검토
+7. 최종 데이터셋에 반영
+</code></pre>
+<h4 id="multiple-linkage-identification">Multiple Linkage Identification</h4>
+<p>하나의 task가 여러 활동을 포함하면, <strong>최대 3개 DWA에 다중연결</strong>.</p>
+<p><strong>연결 분석가 3중 검증</strong>:
+- <strong>분석가 1</strong>: 1차 연결 (primary), 가능시 2차·3차 연결 추가
+- <strong>분석가 2</strong>: 분석가 1의 결과 검토 → 확정/대안제시/거부
+- <strong>분석가 3</strong>: 두 분석가 간 분기 해소</p>
+<p><strong>최종 결과</strong>:
+- 22,714 task–DWA 연결 중 1차: 18,291 (81%) / 2차: 3,851 (17%) / 3차: 572 (2.5%)</p>
+<h4 id="legacy-dwa-integration">Legacy DWA Integration — 외적 타당도 검증</h4>
+<pre><code>2,164 legacy DWA + 2,069 new DWA → 알파벳 정렬
+   ↓
+561 legacy DWA가 잠재적 mismatch
+   ↓
+561 → 51로 축소 (general coverage / too specific / poor wording / obsolete 사유)
+   ↓
+51 중 4 task &amp; 3 occupation 기준 충족 = 10개
+   ↓
+10개 legacy DWA를 신규 DB에 통합
+</code></pre>
+<blockquote>
+<p>2,164개 legacy 중 단 10개(0.46%)만 새로 추가 → <strong>신규 방법론이 거의 모든 legacy 정보를 포착했다는 외적 타당도 증거</strong>.</p>
+</blockquote>
+<h3 id="338-iwa">3.3.8 IWA 개발</h3>
+<p>IWA 개발은 DWA 개발과 <strong>거의 동일한 절차</strong>(클러스터링 → 라이팅).</p>
+<table>
+<thead>
+<tr>
+<th>차이점</th>
+<th>DWA</th>
+<th>IWA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>입력</td>
+<td>19,450 tasks</td>
+<td>2,069 DWAs</td>
+</tr>
+<tr>
+<td>1차 분할</td>
+<td>Job Family로 22개</td>
+<td><strong>분할하지 않음</strong> (IWA는 family-cross 목적)</td>
+</tr>
+<tr>
+<td>클러스터 최소 크기</td>
+<td>2 tasks</td>
+<td><strong>1 DWA도 허용</strong></td>
+</tr>
+<tr>
+<td>분석팀</td>
+<td>3–4 팀 × 3–4명</td>
+<td>1 팀 × 4명</td>
+</tr>
+<tr>
+<td>결과</td>
+<td>2,069개</td>
+<td>332개</td>
+</tr>
+</tbody>
+</table>
+<h3 id="339">3.3.9 결과의 정량 지표</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>DWA</th>
+<th>IWA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 개수</td>
+<td>2,069 (현 30.x 기준 2,087)</td>
+<td>332</td>
+</tr>
+<tr>
+<td>Task per unit</td>
+<td>10.98</td>
+<td>66.36</td>
+</tr>
+<tr>
+<td>Occupation per unit</td>
+<td>8.29</td>
+<td>43.86</td>
+</tr>
+<tr>
+<td>Job family per unit (median)</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Single-family</td>
+<td>(대부분 single)</td>
+<td>53/332</td>
+</tr>
+<tr>
+<td>Cross-family (≥10)</td>
+<td>-</td>
+<td>15/332</td>
+</tr>
+<tr>
+<td>미할당 task</td>
+<td>1,159 (6%)</td>
+<td>0 (1:1 강제)</td>
+</tr>
+<tr>
+<td>Reading level</td>
+<td>평균 8학년</td>
+<td>평균 8학년</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>6% 미할당 task의 의미</strong>: O*NET이 "완전 분류"를 추구하지 않음을 보여줌. 일부 task는 본질적으로 idiosyncratic. 한국 연구에서도 100% 할당을 목표로 잡으면 무리가 발생.</p>
+</blockquote>
+<hr />
+<h2 id="34">3.4 두 보고서를 통합한 종단 파이프라인</h2>
+<pre><code>[ 응답자 자유응답 ]
+         ↓
+   ┌─────────────┐
+   │ HumRRO 절차  │  Decision Tree (5-step) — task 여부 / 중복도 / emerging 판정
+   └─────────────┘
+         ↓
+[ 검증된 Task pool ]
+         ↓
+   ┌─────────────┐
+   │ HumRRO 절차  │  3-tier 분류 (Core / Supplementary / Non-relevant)
+   └─────────────┘
+         ↓
+[ Core + Supplementary Tasks ]
+         ↓
+   ┌─────────────┐
+   │  WA Phase A  │  Job Family 분할 → GWA 할당 → GWA 내 클러스터링
+   └─────────────┘
+         ↓
+[ Task Cluster ]
+         ↓
+   ┌─────────────┐
+   │  WA Phase B  │  DWA Writing (8 규칙)
+   └─────────────┘
+         ↓
+[ DWA 2,069 ]
+         ↓
+   ┌─────────────┐
+   │  WA Phase C  │  DWA Refinements (cross-family / multi-link / legacy)
+   └─────────────┘
+         ↓
+   ┌─────────────┐
+   │  WA Phase D  │  DWA 클러스터링 → IWA Writing
+   └─────────────┘
+         ↓
+[ GWA—IWA—DWA—Task 4-tier DB ]
+         ↓
+   ┌─────────────┐
+   │  WA Phase E  │  ID 체계 부여, Round-Robin QC
+   └─────────────┘
+         ↓
+[ 최종 데이터베이스 ]
+</code></pre>
+<hr />
+<h2 id="35">3.5 미국 자원 투입 추정 (역산)</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WA 프로젝트 development team</td>
+<td>4팀 × 평균 3.5명 = 14명</td>
+</tr>
+<tr>
+<td>프로젝트 기간</td>
+<td>추정 12~18개월</td>
+</tr>
+<tr>
+<td>추정 인시</td>
+<td>14명 × 12개월 = <strong>168 person-month</strong></td>
+</tr>
+<tr>
+<td>HumRRO 파일럿</td>
+<td>추정 6 person-month</td>
+</tr>
+</tbody>
+</table>
+<p><strong>한국 P2026-010 사업 비교</strong>:
+- 6명 × 8개월 = <strong>48 person-month</strong>
+- 즉 미국 WA 사업의 <strong>약 30% 자원</strong>으로 동등 결과를 내야 함
+- → NLP를 통한 작업효율 <strong>3배 이상 향상</strong>이 산술적으로 필요</p>
+<blockquote>
+<p><strong>발표 Q&amp;A 핵심 카드</strong>: "미국 WA 프로젝트는 약 168 person-month, 우리는 48 person-month. 약 3.5배 효율을 NLP로 보완하는 것이 본 사업의 합리적 설계"</p>
+</blockquote>
+<hr />
+<h2 id="36-part">3.6 본 Part 요약 카드</h2>
+<ul>
+<li><strong>HumRRO</strong>(2002/2003)는 TASK 층 <strong>품질관리</strong>: 5-step 의사결정나무, 3-tier 분류, Kappa 0.88</li>
+<li><strong>WA Project</strong>(2014)는 TASK → DWA → IWA 도출: 22 job family → GWA 할당 → 7-step 클러스터링 → 8-rule writing → round-robin QC</li>
+<li>두 보고서를 합치면 <strong>write-in → TASK → DWA → IWA → GWA 매핑</strong>의 종단 파이프라인 완성</li>
+<li>미국은 168 person-month, 한국은 48 person-month → <strong>3.5배 효율을 NLP로 확보 필요</strong></li>
+<li>WA Project가 2014년에 NLP를 거부한 이유는 task 진술의 구조적 변동성. 2026년 LLM은 이 한계를 해소함</li>
+</ul>
+<hr />
+<h2 id="37">3.7 다음 단계</h2>
+<p>Part 4에서는 LLM과 임베딩, 클러스터링 기술이 미국식 절차의 각 단계에서 <strong>어떤 기술 요소를 어떻게 활용</strong>하여 인간 분석가를 보조할 수 있는지를 학습합니다. 본 연구의 핵심 차별화 포인트입니다.</p></div></section>
+
+<section id="part-4" class="part"><div class="md-content"><h1 id="part-4-ai-ai">Part 4. AI 기반 도출 방법 — 어떤 AI 기술을 어떻게 활용할 것인가</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>본 연구의 각 단계에서 <strong>AI(LLM/임베딩/클러스터링)가 어디까지 인간을 대체·보조</strong>하는지 매트릭스로 그릴 수 있다.</li>
+<li><strong>5대 AI 기술 요소</strong>(LLM zero/few-shot 분류, 임베딩, 클러스터링, 생성, 검증)의 각 역할과 적용 단계를 설명할 수 있다.</li>
+<li>모델 선택의 근거(GPT-5/Claude vs 한국어 SBERT vs BGE-m3-ko)를 데이터·과제 특성에 따라 판별할 수 있다.</li>
+<li>AI 활용에 대한 <strong>품질 검증 프로토콜</strong>(인간-AI 합의도, hallucination 차단 등)을 설계할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="41">4.1 핵심 메시지</h2>
+<p>본 연구의 AI 활용은 다음 4가지 원칙을 따릅니다.</p>
+<ol>
+<li><strong>AI는 인간 분석가의 대체가 아닌 가속기(accelerator)</strong>. 최종 의미 판정은 인간이 함.</li>
+<li><strong>단계별로 다른 기술이 적합</strong>. LLM zero-shot이 적합한 단계, 임베딩 군집화가 적합한 단계, 생성 모델이 적합한 단계가 모두 다름.</li>
+<li><strong>저비용·고처리량 모델(임베딩) + 고정밀 모델(LLM)의 조합</strong>. 모든 단계에 LLM을 쓰면 비용·시간 폭증.</li>
+<li><strong>인간-AI 합의도(human-AI agreement)를 정량 모니터링</strong>. AI 산출물의 품질을 Kappa·F1으로 측정하며 인간 검수 비율을 동적 조정.</li>
+</ol>
+<hr />
+<h2 id="42-vs-ai">4.2 단계별 인간 vs AI 분담 매트릭스</h2>
+<p>본 연구의 13개 핵심 단계에 대해 AI 적합성과 권고 도구를 정리합니다.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>작업 내용</th>
+<th>AI 적합성</th>
+<th>권고 도구</th>
+<th>인간 검수율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. KSCO 직업설명 텍스트 정제</td>
+<td>분류항목표 HWPX 파싱 → 정형 텍스트</td>
+<td>매우 높음</td>
+<td>정규식 + LLM 후처리</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>2. 외부 자료 통합 (KNOW·NCS·KECO)</td>
+<td>직업 매핑 및 텍스트 통합</td>
+<td>높음</td>
+<td>임베딩 매칭 + LLM 검증</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>3. TASK 후보 추출</td>
+<td>직업설명에서 동사-목적어 진술 추출</td>
+<td>매우 높음</td>
+<td>LLM (지시기반 생성)</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>4. HumRRO Step 1: task 여부 판정</td>
+<td>진술이 task/KSAO/GWA 중 무엇?</td>
+<td>매우 높음</td>
+<td>LLM zero-shot 분류</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>5. HumRRO Step 2-3: 중복 판정</td>
+<td>semantic similarity</td>
+<td>매우 높음</td>
+<td>SBERT 임베딩 + cosine</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>6. HumRRO 3-tier 분류 (정량 지표 기반)</td>
+<td>Relevance·Importance 임계 적용</td>
+<td>자동 (AI 불필요)</td>
+<td>SQL/스프레드시트</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>7. WA Step 1: Job Family 할당</td>
+<td>직업 → 대분류 매핑</td>
+<td>이미 완료</td>
+<td>KSCO에 매핑정보 존재</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>8. WA Step 2: GWA 41개 할당</td>
+<td>task → GWA 매핑</td>
+<td>높음</td>
+<td>LLM few-shot + 인간 합의 검증</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>9. WA Step 3: GWA 내 클러스터링</td>
+<td>의미 군집</td>
+<td>중간</td>
+<td>HDBSCAN + LLM 후처리</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>10. WA: DWA Writing</td>
+<td>동사 시작·8학년 가독성 진술문 작성</td>
+<td>중간</td>
+<td>LLM 초안 → 인간 편집</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>11. WA: Cross-Family 통합</td>
+<td>알파벳 정렬·유사도</td>
+<td>매우 높음</td>
+<td>임베딩 + 자동화</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>12. WA: Multiple Linkage</td>
+<td>다활동 task 분해</td>
+<td>높음</td>
+<td>LLM (다중 verb 추출)</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>13. WA: IWA 작성</td>
+<td>DWA 클러스터링 + writing</td>
+<td>중간</td>
+<td>LLM 초안 + 인간 편집</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>인간 전담</strong> (AI 보조 최소): 최종 QC, Single-DWA IWA 처리, 모호 의미 판정.</p>
+<hr />
+<h2 id="43-5-ai">4.3 5대 AI 기술 요소</h2>
+<h3 id="431-llm-zero-shot-few-shot">4.3.1 LLM zero-shot / few-shot 분류</h3>
+<h4 id="_2">작동 원리</h4>
+<p>대형 언어모델(GPT-5, Claude Opus 4.6, Sonnet 4.6 등)에 지시문(prompt)으로 분류 기준을 알려주고, 입력 텍스트를 분류하도록 요청합니다.</p>
+<ul>
+<li><strong>Zero-shot</strong>: 예시 없이 정의만 제시 → 가장 유연하나 정확도 변동</li>
+<li><strong>Few-shot</strong>: 정답 예시 3~10개 동봉 → 정확도 상승, 비용 약간 증가</li>
+<li><strong>Chain-of-thought</strong>: 모델이 단계별 추론을 출력하도록 유도 → 어려운 경계 사례에서 강력</li>
+</ul>
+<h4 id="_3">본 연구 적용 단계</h4>
+<p><strong>(가) HumRRO Step 1: task 여부 판정</strong></p>
+<pre><code>Prompt:
+다음 진술은 직업 과업(task), 지식·기술·능력(KSAO), 일반화 직무활동(GWA),
+이해불가(incomprehensible), 너무 광범위(too broad) 중 무엇입니까?
+
+진술: &quot;환자의 알레르기 정보를 확인하여 약물 투여 전 의사에게 보고한다&quot;
+
+판정 기준:
+- task: 동사+목적어 구조, 직업특수 행동
+- KSAO: 개인의 속성·역량 진술
+- GWA: 직업 비특수, 매우 일반적
+- ...
+
+응답 형식: {&quot;category&quot;: &quot;...&quot;, &quot;reasoning&quot;: &quot;...&quot;, &quot;confidence&quot;: 0.0~1.0}
+</code></pre>
+<p><strong>(나) WA Step 2: GWA 41개 할당</strong></p>
+<pre><code>Prompt:
+다음 task가 41개 GWA 중 어디에 속하는지 1차 선택과 2차 선택을 제시하세요.
+
+Task: &quot;환자에게 증상 발현 시점·강도를 인터뷰한다&quot;
+
+GWA 목록:
+1. Getting Information — Observing, receiving, and otherwise obtaining information
+   from all relevant sources.
+2. Monitoring Processes, Materials, or Surroundings — ...
+... (41개 모두)
+
+응답 형식: {&quot;primary&quot;: &quot;1&quot;, &quot;secondary&quot;: &quot;5&quot;, &quot;reasoning&quot;: &quot;...&quot;}
+</code></pre>
+<h4 id="_4">모델 선택 가이드</h4>
+<table>
+<thead>
+<tr>
+<th>과제</th>
+<th>권고 모델</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국어 task 진술 분류</td>
+<td><strong>Claude Sonnet 4.6</strong> 또는 GPT-5</td>
+<td>한국어 능력 우수, 8K context로 GWA 41개 동봉 가능</td>
+</tr>
+<tr>
+<td>대량 자동분류 (수만 건)</td>
+<td><strong>Claude Haiku 4.5</strong> 또는 GPT-5 mini</td>
+<td>비용 1/10 수준, 정확도 충분</td>
+</tr>
+<tr>
+<td>경계 사례 검토 (수백 건)</td>
+<td><strong>Claude Opus 4.6</strong></td>
+<td>최고 정확도, 비용 감수</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_5">검증 방법</h4>
+<p>LLM zero-shot의 정확도는 <strong>인간-AI Kappa</strong>로 측정합니다.
+- 표본 100~200건을 인간 2명이 독립 라벨링
+- LLM 라벨과 인간 합의 라벨의 Cohen's Kappa 계산
+- Kappa 0.7 이상이면 자동분류 채택, 0.5~0.7이면 인간 검수 50%, 0.5 미만이면 prompt 개선</p>
+<h3 id="432-embedding">4.3.2 임베딩 (Embedding)</h3>
+<h4 id="_6">작동 원리</h4>
+<p>텍스트를 고차원 벡터로 변환하여, 의미적으로 유사한 텍스트가 벡터공간에서 가까워지도록 합니다.</p>
+<ul>
+<li><strong>목적</strong>: 유사도 계산, 군집화, 검색</li>
+<li><strong>차원</strong>: 보통 384·768·1024·1536 (모델에 따라)</li>
+<li><strong>모델</strong>: Sentence-BERT, OpenAI text-embedding-3-large, BGE-m3, KR-SBERT 등</li>
+</ul>
+<h4 id="_7">본 연구 적용 단계</h4>
+<p><strong>(가) HumRRO Step 2-3: 중복 판정</strong></p>
+<pre><code>새 task: &quot;환자의 알레르기 정보를 확인하여 약물 투여 전 의사에게 보고한다&quot;
+기존 tasks: [...수백 개...]
+
+1. 모든 task를 임베딩으로 변환
+2. cosine similarity 계산
+3. similarity &gt; 0.90 → 완전 중복
+4. similarity 0.75~0.90 → 부분 중복
+5. similarity &lt; 0.75 → 신규 후보
+</code></pre>
+<p><strong>(나) Cross-Family DWA 통합</strong></p>
+<pre><code>DWA &quot;Inspect medical equipment&quot; (Healthcare family) — vec_A
+DWA &quot;Inspect mechanical equipment&quot; (Production family) — vec_B
+cosine(vec_A, vec_B) = 0.87 → 통합 검토 대상으로 flag
+</code></pre>
+<h4 id="_8">모델 선택 가이드</h4>
+<table>
+<thead>
+<tr>
+<th>과제</th>
+<th>권고 모델</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국어 task 진술 임베딩</td>
+<td><strong>BGE-m3-ko</strong> (1024차원)</td>
+<td>XLM-RoBERTa 기반, 한국어 강력, 8192 토큰 입력 가능</td>
+</tr>
+<tr>
+<td>다국어 (한·영 혼재)</td>
+<td><strong>BGE-M3</strong> 또는 paraphrase-multilingual-MiniLM</td>
+<td>영문 O*NET 자료와 직접 비교 가능</td>
+</tr>
+<tr>
+<td>빠른 처리 (대용량)</td>
+<td><strong>paraphrase-multilingual-MiniLM-L12-v2</strong></td>
+<td>384차원, 처리 속도 빠름</td>
+</tr>
+<tr>
+<td>최고 품질 (소량 정밀)</td>
+<td><strong>OpenAI text-embedding-3-large</strong></td>
+<td>3,072차원, 비용 있음</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_9">검증 방법</h4>
+<p>임베딩 품질은 <strong>유사도 매칭 정확도</strong>로 측정합니다.
+- 인간이 100쌍의 task에 대해 "중복/부분중복/무관" 라벨링
+- 임베딩 유사도와 인간 라벨의 상관계수
+- 0.7 이상 권장</p>
+<h3 id="433-clustering">4.3.3 클러스터링 (Clustering)</h3>
+<h4 id="_10">작동 원리</h4>
+<p>임베딩 벡터들을 의미적 유사도에 따라 군집으로 묶습니다.</p>
+<p><strong>핵심 알고리즘 비교</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>알고리즘</th>
+<th>특성</th>
+<th>본 연구 적합도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K-means</td>
+<td>군집 수 K 사전 지정, 구형 군집 가정</td>
+<td>✗ (DWA 수를 사전에 모름)</td>
+</tr>
+<tr>
+<td><strong>HDBSCAN</strong></td>
+<td>밀도 기반, 군집 수 자동, 노이즈 분리</td>
+<td>✓ (강력 권고)</td>
+</tr>
+<tr>
+<td>Agglomerative (계층적)</td>
+<td>위계 구조, dendrogram 시각화</td>
+<td>✓ (DWA → IWA → GWA 위계 구축에 적합)</td>
+</tr>
+<tr>
+<td><strong>BERTopic</strong></td>
+<td>임베딩 + UMAP + HDBSCAN + c-TF-IDF</td>
+<td>✓ (군집별 키워드 자동 추출)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wa-step-3-gwa">본 연구 적용 — WA Step 3: GWA 내 클러스터링</h4>
+<pre><code>Step 1: GWA 5 (&quot;Inspecting Equipment&quot;) 산하 task 1,200개 추출
+Step 2: BGE-m3-ko로 임베딩 (1,200 × 1024 행렬)
+Step 3: UMAP으로 차원 축소 (1024 → 10차원)
+Step 4: HDBSCAN으로 군집화
+        - min_cluster_size=4 (DWA 최소 task 수)
+        - min_samples=2
+Step 5: BERTopic c-TF-IDF로 군집별 키워드 추출
+Step 6: 인간 분석가가 군집 검토 → DWA 작성
+</code></pre>
+<h4 id="_11">클러스터링 후 후처리</h4>
+<p>군집 결과는 그 자체로 DWA가 아닙니다. <strong>추가 작업</strong>이 필요합니다.</p>
+<ol>
+<li><strong>클러스터 5대 품질 기준 검증</strong>: Homogeneity, Fit, Uniqueness, Specificity, Size</li>
+<li><strong>이상치 task 재배치</strong>: outlier task를 다른 군집으로 이동</li>
+<li><strong>너무 큰 군집 분할</strong>: task가 30개 넘는 군집은 의미적 하위군집으로 분할</li>
+<li><strong>너무 작은 군집 통합</strong>: task 3개 이하 군집은 인접 군집과 통합 검토</li>
+</ol>
+<h3 id="434-llm-generation">4.3.4 LLM 생성 (Generation)</h3>
+<h4 id="_12">작동 원리</h4>
+<p>LLM에게 짧은 진술문 작성을 요청합니다.</p>
+<h4 id="_13">본 연구 적용 단계</h4>
+<p><strong>(가) DWA Writing 초안 생성</strong></p>
+<pre><code>Prompt:
+다음 task 군집의 공통 활동을 나타내는 DWA 진술문을 작성하세요.
+
+군집 내 task:
+1. &quot;환자의 증상을 인터뷰하여 차트에 기록한다&quot;
+2. &quot;내원 사유와 통증 부위를 문진한다&quot;
+3. &quot;환자 가족력을 청취한다&quot;
+... (10개)
+
+작성 규칙:
+- 동사로 시작, 3인칭·현재·복수
+- 명사 최소화, 직무군 적합
+- 예시절·목적절 회피
+- 8학년 가독성
+
+초안 3개를 작성하고 각 초안의 장단점을 평가하세요.
+</code></pre>
+<p>LLM은 다음과 같은 초안을 생성합니다.</p>
+<pre><code>초안 1: &quot;Interview patients to gather medical history&quot; — 명확, 8학년 적합
+초안 2: &quot;Collect patient medical information&quot; — 너무 광범위
+초안 3: &quot;Document patient symptoms and history&quot; — 활동 2개 포함
+
+권고: 초안 1
+</code></pre>
+<p>인간 분석가는 이 초안을 받아 최종 진술을 확정합니다.</p>
+<p><strong>(나) IWA 진술문 생성</strong>: DWA 군집을 상위 추상도로 추출.</p>
+<h4 id="_14">모델 선택 가이드</h4>
+<p>이 단계는 <strong>창의성과 정확성을 모두 요구</strong>합니다.</p>
+<table>
+<thead>
+<tr>
+<th>과제</th>
+<th>권고 모델</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국어 DWA 초안</td>
+<td><strong>Claude Opus 4.6</strong></td>
+<td>한국어 생성 품질 최고, 규칙 준수 우수</td>
+</tr>
+<tr>
+<td>영문 동시 생성 (병행 검증용)</td>
+<td>GPT-5 + Claude Opus 4.6 비교</td>
+<td>다국어 일관성 확보</td>
+</tr>
+<tr>
+<td>대량 초안 (수백 건)</td>
+<td>Claude Sonnet 4.6</td>
+<td>속도·품질 균형</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_15">검증</h4>
+<p>LLM이 만든 DWA 진술은 <strong>8대 작성 규칙 자동 검증기</strong>를 거쳐야 합니다.</p>
+<pre><code class="language-python">def validate_dwa(statement):
+    rules = {
+        &quot;starts_with_verb&quot;: starts_with_verb(statement),
+        &quot;3rd_person_present_plural&quot;: is_3rd_person_present_plural(statement),
+        &quot;min_nouns&quot;: count_nouns(statement) &lt;= MAX_NOUNS,
+        &quot;no_example_clause&quot;: &quot;such as&quot; not in statement and &quot;including&quot; not in statement,
+        &quot;minimal_purpose_clause&quot;: count_purpose_clauses(statement) &lt;= 1,
+        &quot;smog_grade&quot;: calculate_smog(statement) &lt;= 8,
+        # ...
+    }
+    return rules
+</code></pre>
+<h3 id="435-llm-validation-consensus">4.3.5 LLM 검증·합의 (Validation &amp; Consensus)</h3>
+<h4 id="_16">작동 원리</h4>
+<p>다수의 LLM 또는 LLM과 인간의 라벨을 비교하여 일치도를 측정합니다.</p>
+<h4 id="_17">본 연구 적용</h4>
+<p><strong>(가) Multi-Model Voting</strong></p>
+<pre><code>Task: GWA 할당 (41개 중 선택)
+- Claude Opus 4.6 → GWA 5 (Inspecting...)
+- GPT-5 → GWA 5 (Inspecting...)
+- Gemini → GWA 7 (Monitoring...)
+
+판정: 2/3 다수결로 GWA 5 채택, 단 GPT-5/Gemini 불일치이므로 인간 검수 대상으로 flag
+</code></pre>
+<p><strong>(나) Self-Consistency</strong></p>
+<p>같은 모델에 같은 질문을 5회 묻고, 답의 일관성을 측정.
+- 5/5 동일 → 신뢰
+- 4/5 → 약한 신뢰
+- 3/5 이하 → 인간 검수</p>
+<p><strong>(다) 인간-AI 합의도 모니터링</strong></p>
+<p>매 20개 직업마다 인간 분석가 1명이 LLM 자동 라벨을 검토하여 Cohen's Kappa 계산. Kappa가 0.7 이하로 떨어지면 prompt 재설계.</p>
+<hr />
+<h2 id="44-ai">4.4 본 연구를 위한 AI 파이프라인 아키텍처</h2>
+<pre><code>┌──────────────────────────────────────────────────────────┐
+│                  Layer 1: 데이터 입력                      │
+│ KSCO 분류항목표 HWPX + 한국직업사전 + NCS + KNOW + KECO    │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│              Layer 2: 정제·통합 (NLP 기초)                  │
+│  - 형태소 분석 (Mecab, Khaiii)                              │
+│  - 표준화 (동의어 사전, 약어 풀이)                          │
+│  - 직업 단위 정렬 (KSCO 세분류 단위)                        │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│           Layer 3: TASK 추출 (LLM 생성·분류)                │
+│  - LLM zero-shot: 동사-목적어 형식 task 추출                │
+│  - HumRRO 5-step 의사결정나무 자동 실행                     │
+│  - Output: 검증된 TASK pool                                │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│           Layer 4: 임베딩 (BGE-m3-ko)                       │
+│  - TASK 진술 → 1024차원 벡터                                 │
+│  - Output: TASK × 1024 embedding matrix                    │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│        Layer 5: GWA 할당 (LLM few-shot)                    │
+│  - 다수결 (Claude / GPT / Gemini)                          │
+│  - 인간-AI 합의도 검증                                      │
+│  - Output: TASK × GWA 41개 매트릭스                         │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│        Layer 6: GWA 내 클러스터링 (HDBSCAN + BERTopic)      │
+│  - 41개 GWA 산하 task 군집화                                 │
+│  - 5대 품질 기준 자동 검증                                   │
+│  - Output: DWA 후보 군집                                    │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│        Layer 7: DWA Writing (LLM 생성 + 인간 편집)          │
+│  - Claude Opus 4.6 초안                                    │
+│  - 8대 작성 규칙 자동 검증                                   │
+│  - 인간 분석가 최종 확정                                     │
+│  - Output: 한국형 DWA 약 2,000개                            │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│        Layer 8: IWA 도출 (DWA 클러스터링 + LLM)             │
+│  - GWA 분할하지 않음 (cross-family 목적)                    │
+│  - Output: 한국형 IWA 약 300개                              │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│       Layer 9: QC + ID 체계 부여 (Round-Robin)              │
+│  - 3개 팀 회전 검증                                          │
+│  - Kappa 0.7+ 모니터링                                       │
+└────────────────────────┬─────────────────────────────────┘
+                         │
+                         ▼
+┌──────────────────────────────────────────────────────────┐
+│    Layer 10: 시뮬레이션 검증 (중분류 2~3개)                  │
+│    Output: 검증 보고서 + 직무기술 정의서 시제품              │
+└──────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="45">4.5 모델·도구 결정 매트릭스</h2>
+<p>본 연구에서 실제 사용할 후보 모델·도구를 정리합니다.</p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>1순위</th>
+<th>2순위</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>한국어 임베딩</td>
+<td><strong>BGE-m3-ko</strong> (1024d)</td>
+<td>KR-SBERT</td>
+<td>본 연구의 주력</td>
+</tr>
+<tr>
+<td>다국어 임베딩</td>
+<td><strong>BGE-M3</strong> (1024d)</td>
+<td>text-embedding-3-large</td>
+<td>영문 O*NET과 비교 시</td>
+</tr>
+<tr>
+<td>LLM 분류·생성 (고품질)</td>
+<td><strong>Claude Opus 4.6</strong></td>
+<td>GPT-5</td>
+<td>한국어 task에 강점</td>
+</tr>
+<tr>
+<td>LLM 분류 (대량)</td>
+<td><strong>Claude Haiku 4.5</strong></td>
+<td>GPT-5 mini</td>
+<td>비용 최소화</td>
+</tr>
+<tr>
+<td>클러스터링</td>
+<td><strong>HDBSCAN + UMAP</strong></td>
+<td>Agglomerative</td>
+<td>군집 수 자동</td>
+</tr>
+<tr>
+<td>Topic Modeling</td>
+<td><strong>BERTopic</strong></td>
+<td>LDA</td>
+<td>군집별 키워드 추출</td>
+</tr>
+<tr>
+<td>한국어 형태소 분석</td>
+<td><strong>Mecab-ko</strong></td>
+<td>Khaiii</td>
+<td>표준</td>
+</tr>
+<tr>
+<td>통계 분석</td>
+<td>Python + Polars</td>
+<td>R</td>
+<td>SEM 시뮬레이션</td>
+</tr>
+<tr>
+<td>협업 도구</td>
+<td>Notion / Google Sheets</td>
+<td>Airtable</td>
+<td>round-robin QC</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="46">4.6 비용·시간 추정</h2>
+<p>본 연구에 LLM·임베딩을 사용할 경우의 추정 비용:</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>처리량</th>
+<th>추정 비용(USD)</th>
+<th>추정 시간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>임베딩 (TASK 약 20,000개)</td>
+<td>1024d × 20,000 = 약 50M 토큰</td>
+<td>$5 (text-embedding-3-large) 또는 $0 (BGE-m3-ko 자체 서빙)</td>
+<td>1일</td>
+</tr>
+<tr>
+<td>GWA 자동분류 (TASK 20,000개)</td>
+<td>20,000 × 2K 토큰 = 40M</td>
+<td>$200 (Sonnet 4.6) 또는 $20 (Haiku 4.5)</td>
+<td>1일</td>
+</tr>
+<tr>
+<td>DWA Writing 초안 (2,000개 군집)</td>
+<td>2,000 × 5K 토큰 = 10M</td>
+<td>$300 (Opus 4.6)</td>
+<td>1주</td>
+</tr>
+<tr>
+<td>인간 검수 (Round-Robin)</td>
+<td>약 200 person-hour</td>
+<td>(인건비 별도)</td>
+<td>4주</td>
+</tr>
+<tr>
+<td><strong>총 AI 추정 비용</strong></td>
+<td>-</td>
+<td><strong>약 $500~700</strong></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>LLM·임베딩 비용은 사업 예산(65,000천원)의 0.1% 이하로, <strong>연구원 인건비 대비 무시할 수준</strong>입니다.</p>
+<hr />
+<h2 id="47-ai-4">4.7 AI 활용의 4대 위험과 대응</h2>
+<table>
+<thead>
+<tr>
+<th>위험</th>
+<th>설명</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hallucination</strong></td>
+<td>LLM이 없는 task·DWA를 만들어냄</td>
+<td>8대 작성 규칙 자동 검증기 + 인간 100% 검수</td>
+</tr>
+<tr>
+<td><strong>모드 붕괴 (mode collapse)</strong></td>
+<td>LLM이 유사 표현만 반복 생성</td>
+<td>Temperature 조정 + 다양성 강제 prompt</td>
+</tr>
+<tr>
+<td><strong>편향 (bias)</strong></td>
+<td>영어권 직업에 유리, 한국 특수 직업에 약함</td>
+<td>한국 데이터 fine-tuning 또는 RAG (Retrieval-Augmented Generation)</td>
+</tr>
+<tr>
+<td><strong>반복가능성 (reproducibility)</strong></td>
+<td>같은 prompt에 다른 답</td>
+<td>seed 고정 + multi-run voting</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="48-anthropic-economic-index">4.8 실전 적용 사례 — Anthropic Economic Index</h2>
+<p>2025년 Anthropic은 Claude AI 사용자 데이터를 O<em>NET task 분류에 매핑하는 </em><em>Economic Index</em>* 데이터셋을 공개했습니다. 이는 본 연구가 차용할 수 있는 직접 사례입니다.</p>
+<ul>
+<li><strong>데이터</strong>: Claude 사용자 수백만 건의 대화를 O*NET 19,000+ task에 자동 매핑</li>
+<li><strong>방법</strong>: LLM 자체가 자기 사용 사례를 직업 task로 분류 (메타-분류)</li>
+<li><strong>시사점</strong>: LLM의 task 분류 능력이 O*NET 데이터 갱신 수준에서 검증됨</li>
+</ul>
+<p>또한 2026년에 발표된 <a href="https://arxiv.org/abs/2603.20619">"Where can AI be used? Insights from a deep ontology of work activities"</a> 연구는 O*NET의 20,000개 활동을 재구성하여 13,275개 AI 소프트웨어와 매핑한 사례를 보여줍니다.</p>
+<blockquote>
+<p><strong>본 연구 시사점</strong>: AI가 직업 분류·활동 매핑을 인간 수준으로 수행 가능하다는 것은 2025-2026년 시점에 학술·산업 양쪽에서 입증됨. 본 연구의 NLP 활용 정당성은 충분.</p>
+</blockquote>
+<hr />
+<h2 id="49-part">4.9 본 Part 요약 카드</h2>
+<ul>
+<li>AI는 13개 단계 중 <strong>9개에서 인간 작업을 절감</strong>. 단 최종 의미 판정은 인간이 함</li>
+<li><strong>5대 AI 기술 요소</strong>: LLM zero/few-shot, 임베딩, 클러스터링, 생성, 검증·합의</li>
+<li>권고 스택: <strong>BGE-m3-ko + HDBSCAN + BERTopic + Claude Opus/Sonnet 4.6</strong></li>
+<li>인간-AI <strong>Cohen's Kappa 0.7+</strong>를 모니터링 지표로 사용</li>
+<li>AI 활용 추정 비용은 사업 예산의 0.1% 이하 — 인건비 효율의 ROI가 압도적</li>
+</ul>
+<hr />
+<h2 id="410">4.10 다음 단계</h2>
+<p>Part 5에서는 AI를 활용한 도출이 <strong>어떤 정량 기준</strong>을 충족해야 하는지 — 임계값 설정, 5대 품질 기준, Kappa 임계 등을 학습합니다.</p></div></section>
+
+<section id="part-5" class="part"><div class="md-content"><h1 id="part-5">Part 5. 도출 기준 설정 — 정량 임계와 품질 기준</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li><strong>TASK 채택 임계</strong>(Relevance·Importance·표본수)의 미국 기준과 한국 보정 권고를 회상할 수 있다.</li>
+<li><strong>DWA·IWA 클러스터 5대 품질 기준</strong>과 검증 방법을 적용할 수 있다.</li>
+<li><strong>분석가 간 합의도</strong>(Cohen's Kappa) 임계와 모니터링 절차를 설계할 수 있다.</li>
+<li><strong>자동분류 정확도 임계</strong>(인간-AI Kappa, F1, 정확도)와 합격 조건을 정의할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="51-part-4">5.1 본 Part가 다루는 4개 임계 영역</h2>
+<pre><code>1. TASK 채택 임계      (개별 task 채택/폐기 결정)
+2. DWA·IWA 품질 임계  (군집 결과의 채택/재작업 결정)
+3. 분석가 합의 임계   (Kappa·일치율)
+4. AI 자동분류 임계   (인간-AI 합의·정확도)
+</code></pre>
+<p>각 영역은 독립적이지만, 최종적으로는 한 직업의 직무기술 정의서가 출시 가능한지를 종합 판단하는 데 사용됩니다.</p>
+<hr />
+<h2 id="52-task-humrro">5.2 TASK 채택 임계 — HumRRO 기준의 한국 보정</h2>
+<h3 id="521-humrro-2003">5.2.1 미국 원본 기준 (HumRRO 2003)</h3>
+<table>
+<thead>
+<tr>
+<th>임계</th>
+<th>값</th>
+<th>적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최소 응답자 수 (per task)</td>
+<td>15명</td>
+<td>통계적 안정성 (SEM ≤ 0.50)</td>
+</tr>
+<tr>
+<td>Core Tasks Relevance</td>
+<td>&gt; 67%</td>
+<td>핵심 task 인정</td>
+</tr>
+<tr>
+<td>Core Tasks Importance</td>
+<td>&gt; 3.0 (5점 척도)</td>
+<td>핵심 task 인정</td>
+</tr>
+<tr>
+<td>Non-relevant Threshold</td>
+<td>&lt; 10%</td>
+<td>폐기</td>
+</tr>
+<tr>
+<td>Supplementary Type A</td>
+<td>Relevance &gt; 67%, Importance &lt; 3.0</td>
+<td>보존</td>
+</tr>
+<tr>
+<td>Supplementary Type B</td>
+<td>Relevance 10~66%</td>
+<td>보존</td>
+</tr>
+</tbody>
+</table>
+<h3 id="522">5.2.2 한국 보정 권고</h3>
+<table>
+<thead>
+<tr>
+<th>임계</th>
+<th>미국 (HumRRO)</th>
+<th>한국 보정 권고</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최소 응답자/task</td>
+<td>15명</td>
+<td><strong>자체 SEM 시뮬레이션 후 결정</strong></td>
+<td>한국 직업 응답자 다양성이 미국과 다를 수 있음</td>
+</tr>
+<tr>
+<td>Core Relevance</td>
+<td>&gt; 67%</td>
+<td><strong>분포 검토 후 결정</strong> (잠정 60~67%)</td>
+<td>한국 직업의 incumbent 다양성이 미국보다 작을 가능성</td>
+</tr>
+<tr>
+<td>Core Importance</td>
+<td>&gt; 3.0 (5점)</td>
+<td>그대로 가능</td>
+<td>5점 척도 표준</td>
+</tr>
+<tr>
+<td>Non-relevant</td>
+<td>&lt; 10%</td>
+<td>그대로 가능</td>
+<td>보수적 폐기 기준 유지</td>
+</tr>
+</tbody>
+</table>
+<h3 id="523-sem">5.2.3 SEM 시뮬레이션 절차</h3>
+<p>본 연구가 사업 1개월차에 수행해야 할 자체 검증입니다.</p>
+<pre><code>1. 한국 KECO·KNOW에서 응답자 수가 풍부한 직업 5개 선택
+   (예: 간호사·회계사·소프트웨어개발자·교사·미용사)
+2. 각 직업의 모든 응답을 모집단으로 가정
+3. 표본 크기 N = 5, 10, 15, 20, 30 시뮬레이션
+   - 각 N에서 무작위 표본 추출 1,000회
+   - 평균 중요도의 표준오차(SEM) 계산
+4. 한국 데이터의 SEM ≤ 0.50을 만족하는 최소 N 도출
+5. 결정: N ≥ 추정값 (예: 12명, 15명, 또는 20명)
+</code></pre>
+<blockquote>
+<p><strong>발표 방어 카드</strong>: "한국 데이터로 자체 검증한 결과, 최소 응답자 수는 ○○명이 적정하며, 이는 미국 15명과 비교하여 ±△명의 차이를 보입니다."</p>
+</blockquote>
+<h3 id="524">5.2.4 표본수가 부족할 때</h3>
+<p>본 연구는 새로운 설문조사 없이 기존 데이터(KECO·NCS·KNOW·직업사전)를 활용하므로, 일부 직업은 임계 응답자 수를 충족하지 못할 수 있습니다. 이때의 대응:</p>
+<table>
+<thead>
+<tr>
+<th>상황</th>
+<th>대응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>응답자 N &lt; 임계</td>
+<td>"잠정 분류" 라벨 부여, 추가 데이터 수집 시 재검토</td>
+</tr>
+<tr>
+<td>응답자 N = 0</td>
+<td>KSCO 분류항목표 텍스트와 KNOW 직업 설명 기반 LLM 추출 (전문가 검증 필수)</td>
+</tr>
+<tr>
+<td>신생 직업</td>
+<td>직업 전문가(SME) 인터뷰로 보완, "신생직업 잠정 분류" 라벨</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="53-dwaiwa-5">5.3 DWA·IWA 5대 클러스터 품질 기준</h2>
+<p>Part 2에서 소개한 5대 기준의 정량 측정 방법을 정리합니다.</p>
+<h3 id="531-cluster-homogeneity">5.3.1 Cluster Homogeneity (동질성)</h3>
+<h4 id="_2">정의</h4>
+<p>군집 내 task들이 동일 활동 테마를 강하게 공유하는 정도.</p>
+<h4 id="_3">측정 방법</h4>
+<pre><code>1. 군집 내 모든 task 쌍의 cosine similarity 평균 계산
+   → Intra-cluster similarity
+2. 임계: ≥ 0.70 (강한 동질성), 0.60~0.70 (적정), &lt; 0.60 (재검토)
+</code></pre>
+<h4 id="llm">LLM 기반 보조 측정</h4>
+<p>LLM에게 군집 내 task 목록을 보여주고 "이 task들이 공통 활동을 공유하는가?"를 1~5점으로 평가하도록 요청.</p>
+<h3 id="532-task-cluster-fit">5.3.2 Task-Cluster Fit (적합성)</h3>
+<h4 id="_4">정의</h4>
+<p>개별 task가 클러스터 테마에 잘 맞는 정도. outlier 식별이 목적.</p>
+<h4 id="_5">측정 방법</h4>
+<pre><code>1. 각 task와 군집 중심(centroid)의 cosine similarity 계산
+2. 평균 ± 2 표준편차를 벗어나는 task = outlier
+3. Outlier rate ≤ 5%가 권장
+</code></pre>
+<h3 id="533-cluster-uniqueness">5.3.3 Cluster Uniqueness (유일성)</h3>
+<h4 id="_6">정의</h4>
+<p>같은 job family 내 다른 클러스터와 개념적으로 구별되는 정도.</p>
+<h4 id="_7">측정 방법</h4>
+<pre><code>1. 군집 i의 중심 vec_i, 군집 j의 중심 vec_j 계산 (모든 i, j 쌍)
+2. cosine(vec_i, vec_j) ≤ 0.50 권장 (충분히 구별)
+3. cosine &gt; 0.70인 군집 쌍 = 통합 검토 대상
+</code></pre>
+<h3 id="534-cluster-specificity">5.3.4 Cluster Specificity (구체성)</h3>
+<h4 id="_8">정의</h4>
+<p>task보다 일반적, GWA보다 구체적인 적정 추상도.</p>
+<h4 id="_9">측정 방법</h4>
+<p>정량 측정이 어려운 정성 기준. LLM 평가로 보조.</p>
+<pre><code>LLM Prompt:
+이 DWA 진술의 추상도가 적절한가?
+[ ] 너무 구체적 (task와 같은 수준) — 직업특수 표현 포함
+[ ] 적절 (DWA 수준) — 같은 직무군 내 여러 직업에 적용 가능
+[ ] 너무 일반적 (GWA와 같은 수준) — 전 직업에 적용
+</code></pre>
+<h3 id="535-cluster-size">5.3.5 Cluster Size (규모)</h3>
+<h4 id="_10">정의</h4>
+<p>DWA가 최소 4개 task / 3개 직업에서 나타나야 함.</p>
+<h4 id="_11">측정 방법</h4>
+<pre><code>1. DWA에 연결된 task 수 ≥ 4
+2. DWA에 연결된 직업 수 ≥ 3
+3. 한국 보정 권고: task ≥ 3, 직업 ≥ 2 (한국 데이터 규모 고려)
+</code></pre>
+<h3 id="536-5">5.3.6 5대 기준 종합 점수표</h3>
+<table>
+<thead>
+<tr>
+<th>기준</th>
+<th>측정</th>
+<th>합격선</th>
+<th>자동·인간 분담</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homogeneity</td>
+<td>임베딩 유사도 평균</td>
+<td>≥ 0.70</td>
+<td>자동</td>
+</tr>
+<tr>
+<td>Fit</td>
+<td>outlier rate</td>
+<td>≤ 5%</td>
+<td>자동</td>
+</tr>
+<tr>
+<td>Uniqueness</td>
+<td>군집간 유사도</td>
+<td>≤ 0.50</td>
+<td>자동</td>
+</tr>
+<tr>
+<td>Specificity</td>
+<td>LLM/인간 평가</td>
+<td>"적절"</td>
+<td>LLM 1차, 인간 2차</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>task/직업 수</td>
+<td>task≥4, occ≥3</td>
+<td>자동</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="54-dwaiwa">5.4 DWA·IWA 작성 규칙 자동 검증</h2>
+<h3 id="541-dwa-8">5.4.1 DWA 8대 작성 규칙</h3>
+<p>Part 2에서 다룬 8대 규칙의 자동 검증 방법:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>규칙</th>
+<th>자동 검증</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>동사로 시작</td>
+<td>형태소 분석 후 첫 어절이 동사인지 확인</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3인칭·현재·복수</td>
+<td>한국어는 동사 형식 유연하므로 "한다"로 끝나는지 확인 (또는 명사형으로 종결)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>명사 최소화</td>
+<td>형태소 분석 후 명사 수 / 전체 어절 수 비율 ≤ 0.5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>직무군 적합 명사</td>
+<td>군집 내 task의 명사 분포에서 vocab 일치 검증</td>
+</tr>
+<tr>
+<td>5</td>
+<td>형용사 적정</td>
+<td>형용사 수 ≤ 2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>예시절 회피</td>
+<td>"예", "이를테면", "such as", "including" 단어 검색</td>
+</tr>
+<tr>
+<td>7</td>
+<td>목적절 최소</td>
+<td>"위해", "위하여", "to ..." 빈도 ≤ 1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>가독성</td>
+<td>KOR-DALE 또는 KU-readability 8학년 수준</td>
+</tr>
+</tbody>
+</table>
+<h3 id="542">5.4.2 한국어 가독성 측정</h3>
+<p>영문 SMOG index에 대응하는 한국어 지표:</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>특성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KOR-DALE</strong></td>
+<td>Dale-Chall Korean adaptation. 어려운 단어 비율 + 문장 길이</td>
+</tr>
+<tr>
+<td><strong>KU-readability</strong></td>
+<td>한국교원대 개발. 어휘·구문·담화 종합</td>
+</tr>
+<tr>
+<td><strong>음절 수/단어 수 비율</strong></td>
+<td>단순 지표 (영문 SMOG 유사)</td>
+</tr>
+</tbody>
+</table>
+<p>본 연구는 <strong>KOR-DALE 8학년 수준</strong>을 권장 기준으로 설정하되, 표준 직업분류라는 행정 특성을 감안하여 약간 더 형식적 어휘 허용.</p>
+<h3 id="543">5.4.3 모호 동사 회피 사전</h3>
+<p>본 연구가 회피해야 할 한국어 모호 동사 리스트:</p>
+<table>
+<thead>
+<tr>
+<th>모호 동사</th>
+<th>권고 대체</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사용한다</td>
+<td>조작한다 / 활용한다 (맥락에 따라)</td>
+</tr>
+<tr>
+<td>수행한다</td>
+<td>처리한다 / 진행한다 / 실시한다</td>
+</tr>
+<tr>
+<td>한다</td>
+<td>(구체 동사로 대체)</td>
+</tr>
+<tr>
+<td>처리한다 (일반)</td>
+<td>분석한다 / 검토한다 / 조치한다</td>
+</tr>
+<tr>
+<td>관리한다</td>
+<td>점검한다 / 통제한다 / 운영한다</td>
+</tr>
+<tr>
+<td>다룬다</td>
+<td>(구체 동사로 대체)</td>
+</tr>
+</tbody>
+</table>
+<p>권장 동사 코퍼스 (행동 동사 우선):
+- <strong>수집·확인 계열</strong>: 조사한다, 측정한다, 인터뷰한다, 청취한다, 기록한다
+- <strong>분석·판단 계열</strong>: 분석한다, 검토한다, 평가한다, 진단한다, 비교한다
+- <strong>결정·계획 계열</strong>: 결정한다, 계획한다, 설계한다, 수립한다, 책정한다
+- <strong>실행·생산 계열</strong>: 조립한다, 설치한다, 가공한다, 제작한다, 운영한다
+- <strong>소통·서비스 계열</strong>: 안내한다, 상담한다, 협상한다, 교육한다, 처방한다</p>
+<hr />
+<h2 id="55-cohens-kappa">5.5 분석가 간 합의 임계 — Cohen's Kappa</h2>
+<h3 id="551-kappa">5.5.1 Kappa 임계의 의미</h3>
+<p>Landis &amp; Koch(1977)의 표준 해석:</p>
+<table>
+<thead>
+<tr>
+<th>Kappa</th>
+<th>해석</th>
+<th>본 연구 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt; 0.00</td>
+<td>일치도 없음</td>
+<td>절차 재설계</td>
+</tr>
+<tr>
+<td>0.00–0.20</td>
+<td>약한 일치</td>
+<td>절차 재설계</td>
+</tr>
+<tr>
+<td>0.21–0.40</td>
+<td>보통 일치</td>
+<td>절차 재설계</td>
+</tr>
+<tr>
+<td>0.41–0.60</td>
+<td>적정 일치</td>
+<td>훈련 강화</td>
+</tr>
+<tr>
+<td>0.61–0.80</td>
+<td>상당한 일치</td>
+<td><strong>최소 합격선</strong></td>
+</tr>
+<tr>
+<td><strong>0.81–1.00</strong></td>
+<td><strong>거의 완전한 일치</strong></td>
+<td><strong>목표 (HumRRO 0.88 벤치마크)</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="552-kappa">5.5.2 Kappa 모니터링 절차</h3>
+<p>본 연구의 권고 절차:</p>
+<pre><code>1. 분석가 훈련 (1주차)
+   - 2-3개 직업을 paired 분석
+   - 첫 평정 후 Kappa 측정
+   - Kappa &lt; 0.7이면 토론 → 재교육
+
+2. 본 분석 (2~6주차)
+   - 매 20개 직업마다 2명이 동일 직업을 평정
+   - Kappa 계산 및 기록
+   - Kappa가 0.7 미만으로 떨어지면 즉시 미팅 소집
+
+3. 불일치 사례 활용
+   - 불일치 task를 별도 코퍼스로 보존
+   - LLM 자동분류 fine-tuning 자료로 활용
+   - 분석가 회의에서 합의 사례 만들기
+
+4. 최종 보고
+   - 전체 Kappa 평균, 직업군별 Kappa 분포
+   - 목표: 평균 ≥ 0.80, 모든 직업군 ≥ 0.70
+</code></pre>
+<h3 id="553">5.5.3 한국 적용 가능성</h3>
+<p>HumRRO는 박사급 2명 페어로 Kappa 0.88을 달성했습니다. 한국에서는:</p>
+<ul>
+<li><strong>인적 자원</strong>: 본 연구진 6명 중 책임·공동연구자 4명이 페어 가능</li>
+<li><strong>목표</strong>: 평균 Kappa ≥ 0.80 (HumRRO 벤치마크 -8%)</li>
+<li><strong>현실 위험</strong>: 분석가 시간 제약으로 paired 평정 표본이 적을 수 있음 → 매 20개 직업당 1회 표본 평정으로 효율 확보</li>
+</ul>
+<hr />
+<h2 id="56-ai">5.6 AI 자동분류 정확도 임계</h2>
+<h3 id="561-ai-kappa">5.6.1 인간-AI Kappa</h3>
+<p>본 연구의 AI 자동분류가 인간 분석가와 어느 정도 일치해야 채택할 수 있는가?</p>
+<table>
+<thead>
+<tr>
+<th>Human-AI Kappa</th>
+<th>채택 결정</th>
+<th>인간 검수율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≥ 0.85</td>
+<td>자동 채택, 인간 검수 5%</td>
+<td>매우 신뢰</td>
+</tr>
+<tr>
+<td>0.70~0.85</td>
+<td>자동 채택, 인간 검수 20%</td>
+<td>표준 신뢰</td>
+</tr>
+<tr>
+<td>0.55~0.70</td>
+<td>자동 + 인간 50%</td>
+<td>부분 신뢰</td>
+</tr>
+<tr>
+<td>&lt; 0.55</td>
+<td>자동 불채택, 인간 100%</td>
+<td>불신</td>
+</tr>
+</tbody>
+</table>
+<h3 id="562-f1-precision-recall">5.6.2 F1, Precision, Recall</h3>
+<p>분류 과제는 다음 3개 지표로 측정.</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>정의</th>
+<th>본 연구 임계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precision</td>
+<td>TP / (TP + FP)</td>
+<td>≥ 0.85</td>
+</tr>
+<tr>
+<td>Recall</td>
+<td>TP / (TP + FN)</td>
+<td>≥ 0.80</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>2 × P × R / (P + R)</td>
+<td>≥ 0.82</td>
+</tr>
+</tbody>
+</table>
+<h3 id="563">5.6.3 군집화 정확도</h3>
+<p>군집화 결과 평가:</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>의미</th>
+<th>본 연구 임계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Silhouette Score</td>
+<td>군집 내 응집도 + 군집 간 분리도</td>
+<td>≥ 0.30</td>
+</tr>
+<tr>
+<td>Davies-Bouldin Index</td>
+<td>군집 분리도 (낮을수록 좋음)</td>
+<td>≤ 1.0</td>
+</tr>
+<tr>
+<td>인간 검토 동의율</td>
+<td>군집 결과를 인간이 "타당"으로 판단</td>
+<td>≥ 80%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="564-hallucination">5.6.4 hallucination 검출</h3>
+<p>LLM이 생성한 DWA·TASK가 hallucination이 아닌지 검증:</p>
+<table>
+<thead>
+<tr>
+<th>검증 항목</th>
+<th>방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TASK source 검증</td>
+<td>생성된 task가 원천 텍스트(KSCO·KNOW·NCS)에 실제로 근거가 있는가? — Retrieval-based check</td>
+</tr>
+<tr>
+<td>DWA writing rule 검증</td>
+<td>8대 규칙 자동 검증기 통과</td>
+</tr>
+<tr>
+<td>의미적 일관성 검증</td>
+<td>DWA가 군집 내 task와 의미적으로 일치 (cosine similarity ≥ 0.65 with task centroid)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="57">5.7 임계 종합 — 한국 적용 권고표</h2>
+<p>본 연구에서 채택할 임계값 종합:</p>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>임계</th>
+<th>권고값 (한국 보정)</th>
+<th>원본 (미국)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TASK 응답자</td>
+<td>최소 N</td>
+<td><strong>자체 시뮬레이션 후 결정</strong> (잠정 12명)</td>
+<td>15명</td>
+</tr>
+<tr>
+<td>TASK Core</td>
+<td>Relevance</td>
+<td>&gt; 60% (잠정)</td>
+<td>&gt; 67%</td>
+</tr>
+<tr>
+<td>TASK Core</td>
+<td>Importance</td>
+<td>&gt; 3.0</td>
+<td>&gt; 3.0</td>
+</tr>
+<tr>
+<td>TASK Non-relevant</td>
+<td>Relevance</td>
+<td>&lt; 10%</td>
+<td>&lt; 10%</td>
+</tr>
+<tr>
+<td>DWA</td>
+<td>최소 task</td>
+<td>≥ 3</td>
+<td>≥ 4</td>
+</tr>
+<tr>
+<td>DWA</td>
+<td>최소 직업</td>
+<td>≥ 2</td>
+<td>≥ 3</td>
+</tr>
+<tr>
+<td>클러스터 Homogeneity</td>
+<td>similarity</td>
+<td>≥ 0.70</td>
+<td>(정성)</td>
+</tr>
+<tr>
+<td>클러스터 Uniqueness</td>
+<td>similarity</td>
+<td>≤ 0.50</td>
+<td>(정성)</td>
+</tr>
+<tr>
+<td>분석가 Kappa</td>
+<td>minimum</td>
+<td>≥ 0.70</td>
+<td>≥ 0.80</td>
+</tr>
+<tr>
+<td>분석가 Kappa</td>
+<td>target</td>
+<td>≥ 0.80</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td>AI-Human Kappa</td>
+<td>minimum</td>
+<td>≥ 0.70</td>
+<td>(없음)</td>
+</tr>
+<tr>
+<td>AI F1</td>
+<td>minimum</td>
+<td>≥ 0.82</td>
+<td>(없음)</td>
+</tr>
+<tr>
+<td>가독성</td>
+<td>KOR-DALE</td>
+<td>8학년</td>
+<td>8학년 (SMOG)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="58">5.8 임계 결정 의사결정 트리</h2>
+<p>직무기술 정의서 1건이 출시 가능한지 판단하는 종합 의사결정:</p>
+<pre><code>[직업 1개의 도출 완료]
+        ↓
+[질문 1] TASK 응답자 N ≥ 임계?
+   ├── Yes → 진행
+   └── No  → &quot;잠정&quot; 라벨, 추가 데이터 검토
+        ↓
+[질문 2] Core TASK 수 ≥ 8개?
+   ├── Yes → 진행
+   └── No  → 추가 TASK 발굴 또는 추가 데이터
+        ↓
+[질문 3] DWA 군집의 5대 품질 기준 통과?
+   ├── 전부 통과 → 진행
+   └── 일부 실패 → 군집 재작업
+        ↓
+[질문 4] DWA Writing 8대 규칙 통과?
+   ├── 전부 통과 → 진행
+   └── 일부 실패 → 진술 재작성
+        ↓
+[질문 5] 분석가 Kappa ≥ 0.70?
+   ├── Yes → 진행
+   └── No  → 분석가 재교육
+        ↓
+[질문 6] 시뮬레이션 검증 통과?
+   ├── Yes → 출시 가능
+   └── No  → 재검토
+        ↓
+[최종 직무기술 정의서 출시]
+</code></pre>
+<hr />
+<h2 id="59-part">5.9 본 Part 요약 카드</h2>
+<ul>
+<li>임계는 <strong>4개 영역</strong> (TASK 채택, 군집 품질, 분석가 합의, AI 정확도)</li>
+<li>미국 임계를 그대로 차용하지 말고, <strong>한국 데이터로 SEM 시뮬레이션</strong> 후 보정</li>
+<li>분석가 합의 목표 <strong>Kappa ≥ 0.80</strong> (HumRRO 0.88 벤치마크 -8%)</li>
+<li>AI 채택 최소 <strong>인간-AI Kappa ≥ 0.70, F1 ≥ 0.82</strong></li>
+<li><strong>8학년 가독성</strong> 강제로 일반 사용자 접근성 확보</li>
+</ul>
+<hr />
+<h2 id="510">5.10 다음 단계</h2>
+<p>Part 6에서는 KSCO 세분류 1개 직업을 실제로 잡아서, 직업설명자료에서 출발하여 TASK → DWA → GWA로 거꾸로 올라가는 도출 흐름을 구체적 예시로 학습합니다.</p></div></section>
+
+<section id="part-6" class="part"><div class="md-content"><h1 id="part-6-ksco-task-dwa-gwa">Part 6. KSCO 적용 워크플로 — 직업설명자료 → TASK → DWA → GWA</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>KSCO 8차 분류항목표의 <strong>직업설명 텍스트 구조</strong>를 이해하고 파싱할 수 있다.</li>
+<li>직업설명에서 <strong>TASK 후보를 추출</strong>하는 LLM prompt와 후처리 절차를 설계할 수 있다.</li>
+<li>추출된 TASK를 <strong>GWA 41개로 자동 분류 → DWA 군집화 → IWA 묶기</strong>의 흐름을 실제 직업 예시로 따라갈 수 있다.</li>
+<li>한 직업의 <strong>직무기술 정의서 1편</strong>을 처음부터 끝까지 완성할 수 있다.</li>
+</ol>
+<hr />
+<h2 id="61-ksco-8">6.1 KSCO 8차 직업설명 텍스트 구조</h2>
+<h3 id="611-hwpx">6.1.1 분류항목표 HWPX의 구조</h3>
+<p>KSCO 8차 분류항목표는 hwpx 파일로 제공되며, 직업별로 다음과 같은 구조의 텍스트를 포함합니다.</p>
+<pre><code>[직업 코드]      2491
+[직업명]         간호사
+[직업 정의]      병원, 의원 등의 의료기관에서 의사와 함께 환자를 진료하고
+                 간호하는 업무를 수행한다. 환자의 상태를 관찰하고 의사에
+                 게 보고하며, 처방된 약물·치료·검사 등을 수행하고, 환자
+                 와 가족의 정신적·정서적 지지를 제공한다.
+
+[주요 업무 예시]
+ - 환자 상태 관찰 및 활력징후 측정
+ - 의사 처방 약물 투여 및 주사 시술
+ - 환자 차트 작성 및 의료기록 관리
+ - 환자·보호자 교육 및 상담
+ - 응급상황 대응 및 응급처치
+
+[직업 분류 근거]
+ - 직능수준: 4 (학사 이상)
+ - 직능유형: 보건 전문
+ - 사용 도구·장비: 의료기기, 전자차트시스템
+</code></pre>
+<blockquote>
+<p><strong>실제 KSCO 8차 hwpx는 위 구조와 다소 다를 수 있으나, 일반적으로 ① 직업명·코드 ② 직업 정의 ③ 주요 업무 예시 ④ 분류 근거를 포함합니다.</strong></p>
+</blockquote>
+<h3 id="612">6.1.2 텍스트 분량의 한계</h3>
+<ul>
+<li>평균 직업 1개당 100~300자 분량</li>
+<li>주요 업무 예시는 보통 3~7개 항목</li>
+<li><strong>이 정도 분량으로는 직접적인 TASK·DWA 도출이 불충분</strong></li>
+<li>따라서 보조 데이터원(KNOW·NCS·KECO·한국직업사전)이 필수</li>
+</ul>
+<h3 id="613">6.1.3 보조 데이터원의 통합</h3>
+<p>본 연구가 활용해야 할 한국 직업정보 데이터:</p>
+<table>
+<thead>
+<tr>
+<th>데이터원</th>
+<th>단위</th>
+<th>분량</th>
+<th>주요 정보</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KSCO 8차 분류항목표</td>
+<td>직업 (세분류 495 + 세세분류 1,270)</td>
+<td>100~300자/직업</td>
+<td>정의·주요업무·분류근거</td>
+</tr>
+<tr>
+<td><strong>한국직업사전</strong></td>
+<td>직업 (약 6,000개)</td>
+<td>500~2,000자/직업</td>
+<td>상세 직무 기술</td>
+</tr>
+<tr>
+<td><strong>KNOW 워크넷</strong></td>
+<td>직업 (약 537개)</td>
+<td>다차원 정보</td>
+<td>능력·지식·직업가치</td>
+</tr>
+<tr>
+<td><strong>NCS</strong></td>
+<td>직무능력단위</td>
+<td>단위별 1~3쪽</td>
+<td>능력단위·수행준거</td>
+</tr>
+<tr>
+<td><strong>KECO 직업정보</strong></td>
+<td>직업 (약 200개 상세)</td>
+<td>500~1,500자/직업</td>
+<td>직업 안내</td>
+</tr>
+</tbody>
+</table>
+<h3 id="614">6.1.4 직업 매핑</h3>
+<p>각 데이터원의 직업을 KSCO 8차 세분류에 매핑하는 것이 첫 단계입니다.</p>
+<pre><code>KSCO 세분류 &quot;간호사&quot; (2491)
+   │
+   ├── 한국직업사전 매핑
+   │     - 간호사 (직업사전 ID xxx)
+   │     - 가정전문간호사 (ID xxx)
+   │     - 노인전문간호사 (ID xxx)
+   │     ...
+   │
+   ├── KNOW 매핑
+   │     - 간호사 (KNOW ID xxx)
+   │
+   ├── NCS 매핑 (능력단위 다수)
+   │     - 환자 관찰 (NCS-06010101-04)
+   │     - 약물 투여 (NCS-06010101-05)
+   │     ...
+   │
+   └── KECO 매핑
+         - 간호사 (KECO 2491)
+</code></pre>
+<p><strong>매핑 도구</strong>:
+- 직업명 일치 검색 (1차)
+- 임베딩 유사도 (2차, BGE-m3-ko 사용)
+- 인간 분석가 확인 (3차)</p>
+<hr />
+<h2 id="62">6.2 단계별 워크플로 (실전 예시: 간호사)</h2>
+<p>KSCO 세분류 "간호사"(2491)를 예시로 직무기술 정의서 작성의 전 과정을 따라갑니다.</p>
+<h3 id="621-step-1">6.2.1 Step 1 — 텍스트 통합</h3>
+<pre><code>[input]
+- KSCO 분류항목표: 직업 정의 + 주요업무 5개 항목
+- 한국직업사전: 간호사 + 전문간호사 5종 = 약 8,000자
+- KNOW: 간호사 능력·지식·직업가치 다차원 데이터
+- NCS: 능력단위 약 40개 = 약 30,000자
+
+[처리]
+1. 모든 텍스트를 정형화 (HWPX → 텍스트, 정규식 정제)
+2. 한 직업 단위로 통합 코퍼스 생성
+3. 중복 제거 (임베딩 유사도 &gt; 0.95 문장 통합)
+
+[output]
+간호사_통합텍스트.json
+  - 직업 정의 (KSCO 출처)
+  - 주요 업무 항목 (KSCO + 한국직업사전 출처)
+  - 능력 단위 항목 (NCS 출처)
+  - 다차원 속성 (KNOW 출처)
+</code></pre>
+<h3 id="622-step-2-task-llm">6.2.2 Step 2 — TASK 후보 추출 (LLM 생성)</h3>
+<h4 id="prompt">Prompt</h4>
+<pre><code>당신은 직업분석 전문가입니다. 다음 직업 설명에서 직업특수 과업(task) 후보를 추출하세요.
+
+직업: 간호사 (KSCO 2491)
+설명:
+[Step 1에서 만든 통합 텍스트]
+
+TASK 후보 작성 규칙:
+1. 동사로 시작하는 1문장 진술
+2. 동사 + 목적어 + (선택적) 도구·맥락
+3. 직업특수적 (다른 직업으로 일반화 어려운 수준)
+4. 너무 광범위하거나 추상적이면 안 됨
+5. 한국어 자연스러운 표현
+
+응답 형식:
+{
+  &quot;tasks&quot;: [
+    {
+      &quot;id&quot;: &quot;T001&quot;,
+      &quot;statement&quot;: &quot;...&quot;,
+      &quot;source_segment&quot;: &quot;...(설명에서 근거 발췌)...&quot;
+    },
+    ...
+  ]
+}
+</code></pre>
+<h4 id="_2">결과 예시</h4>
+<pre><code class="language-json">{
+  &quot;tasks&quot;: [
+    {
+      &quot;id&quot;: &quot;T001&quot;,
+      &quot;statement&quot;: &quot;환자의 활력징후(혈압, 맥박, 호흡, 체온)를 정기적으로 측정한다&quot;,
+      &quot;source_segment&quot;: &quot;환자 상태 관찰 및 활력징후 측정 (KSCO 주요업무)&quot;
+    },
+    {
+      &quot;id&quot;: &quot;T002&quot;,
+      &quot;statement&quot;: &quot;의사 처방에 따라 환자에게 약물을 경구·정맥·근육 경로로 투여한다&quot;,
+      &quot;source_segment&quot;: &quot;의사 처방 약물 투여 및 주사 시술 (KSCO)&quot;
+    },
+    {
+      &quot;id&quot;: &quot;T003&quot;,
+      &quot;statement&quot;: &quot;환자의 알레르기 정보를 사전 확인하여 약물 투여 전 의사에게 보고한다&quot;,
+      &quot;source_segment&quot;: &quot;한국직업사전 + NCS 약물투여 능력단위&quot;
+    },
+    ...
+  ]
+}
+</code></pre>
+<p>평균적으로 한 직업당 20~40개의 TASK 후보가 추출됩니다.</p>
+<h3 id="623-step-3-humrro-5-step">6.2.3 Step 3 — HumRRO 5-step 의사결정나무 적용</h3>
+<p>각 TASK 후보를 5-step으로 검증합니다.</p>
+<h4 id="step-31-task-llm">Step 3.1 — Task 여부 판정 (LLM)</h4>
+<pre><code>Prompt:
+다음 진술이 직업특수 과업(task)에 해당하는지 판정하세요.
+가능한 카테고리: task / KSAO / GWA / incomprehensible / too broad
+
+진술: &quot;환자의 활력징후를 정기적으로 측정한다&quot;
+
+응답: {&quot;category&quot;: &quot;task&quot;, &quot;confidence&quot;: 0.95, &quot;reasoning&quot;: &quot;...&quot;}
+</code></pre>
+<h4 id="step-32">Step 3.2 — 중복 판정 (임베딩)</h4>
+<pre><code>1. 새 task의 임베딩 vec_new 계산 (BGE-m3-ko)
+2. 기존 task pool의 모든 임베딩과 cosine similarity 계산
+3. 임계 적용:
+   - similarity &gt; 0.92 → 완전 중복 (폐기)
+   - 0.78 ~ 0.92 → 부분 중복 (병합 검토)
+   - &lt; 0.78 → 신규 (채택)
+</code></pre>
+<h4 id="step-33-emerging-task">Step 3.3 — Emerging Task 검증</h4>
+<p>신규 task가 다른 응답·자료에서 4개 이상 유사 진술과 매칭되는지 확인. 한국에서는 데이터 규모가 작으므로 <strong>임계 2개로 하향 권고</strong>.</p>
+<h3 id="624-step-4-task-3-tier">6.2.4 Step 4 — TASK 풀 확정과 3-tier 분류</h3>
+<h4 id="_3">풀 확정</h4>
+<pre><code>간호사 TASK 풀 (예시):
+T001: 환자의 활력징후를 정기적으로 측정한다
+T002: 의사 처방에 따라 환자에게 약물을 투여한다
+T003: 환자의 알레르기 정보를 사전 확인한다
+T004: 환자 차트에 간호 기록을 작성한다
+T005: 환자·보호자에게 약물 부작용을 교육한다
+T006: 응급상황에서 심폐소생술을 시행한다
+T007: 환자의 통증 수준을 평가한다
+T008: 수술 전 환자를 준비시킨다
+T009: 다른 의료진과 인계·인수를 진행한다
+T010: 환자 가족의 정서적 지지를 제공한다
+... (총 25개)
+</code></pre>
+<h4 id="3-tier">3-tier 분류</h4>
+<p>본 연구는 새로운 설문조사를 수행하지 않으므로, Relevance·Importance는 KNOW의 기존 평정 데이터 또는 SME 패널 평정으로 대체합니다.</p>
+<pre><code>Core Tasks (Relevance &gt; 60%, Importance &gt; 3.0):
+  T001, T002, T003, T004, T006, T007, T009 (7개)
+
+Supplementary A (Relevance &gt; 60%, Importance &lt; 3.0):
+  T005, T010 (2개)
+
+Supplementary B (Relevance 10~60%):
+  T008, ... (보존)
+
+Non-relevant (Relevance &lt; 10%):
+  (없음)
+</code></pre>
+<h3 id="625-step-5-gwa-41">6.2.5 Step 5 — GWA 41개로 자동 분류</h3>
+<h4 id="llm-few-shot">LLM few-shot 분류</h4>
+<pre><code>Prompt:
+각 task를 O*NET 41개 GWA 중 어디에 속하는지 1차·2차 선택을 제시하세요.
+
+[GWA 41개 정의 동봉]
+
+Task: &quot;환자의 활력징후를 정기적으로 측정한다&quot;
+
+응답: {
+  &quot;primary_gwa&quot;: &quot;Monitoring Processes, Materials, or Surroundings&quot;,
+  &quot;primary_id&quot;: &quot;4.A.1.b.1&quot;,
+  &quot;secondary_gwa&quot;: &quot;Inspecting Equipment, Structures, or Material&quot;,
+  &quot;secondary_id&quot;: &quot;4.A.1.b.2&quot;,
+  &quot;reasoning&quot;: &quot;환자의 신체 상태를 정기 관찰하는 모니터링 활동이 1차, 활력징후 측정기 사용 측면에서 2차&quot;
+}
+</code></pre>
+<h4 id="_4">결과 예시</h4>
+<pre><code>T001 환자의 활력징후 측정 → Monitoring Processes (1차) / Inspecting (2차)
+T002 약물 투여 → Performing General Physical Activities (1차) / Operating Equipment (2차)
+T003 알레르기 정보 확인 → Getting Information (1차) / Inspecting (2차)
+T004 간호 기록 작성 → Documenting/Recording Information (1차)
+T005 약물 부작용 교육 → Communicating (1차) / Coaching and Developing Others (2차)
+T006 심폐소생술 → Performing General Physical Activities (1차)
+T007 통증 평가 → Judging the Qualities of Things (1차)
+T008 수술 전 준비 → Performing General Physical Activities (1차)
+T009 인계·인수 → Communicating (1차)
+T010 정서적 지지 → Performing for or Working Directly with the Public (1차)
+...
+</code></pre>
+<p>각 GWA에 분류된 task 수가 곧 그 직업의 GWA 프로파일입니다.</p>
+<h3 id="626-step-6-gwa-dwa">6.2.6 Step 6 — GWA 내 클러스터링 → DWA 후보 도출</h3>
+<p>간호사 직업 단독으로는 DWA 도출을 할 수 없습니다. <strong>같은 job family(예: 보건의료직)</strong> 내 여러 직업의 task를 합쳐서 군집화해야 합니다.</p>
+<h4 id="job-family">Job Family 정의</h4>
+<p>본 연구의 권고: KSCO 중분류 57개를 1차 분할 단위로 사용.</p>
+<pre><code>&quot;간호사&quot;의 KSCO 8차 중분류 = &quot;보건 전문가&quot; (예시 코드 24)
+   ├── 의사
+   ├── 간호사
+   ├── 약사
+   ├── 임상병리사
+   ├── 방사선사
+   ├── 물리치료사
+   ├── 작업치료사
+   ├── 영양사
+   ├── ... 등 보건의료 관련 세분류 모두
+</code></pre>
+<h4 id="_5">클러스터링</h4>
+<pre><code>보건의료 중분류 산하 task 풀 (모든 직업 합산) = 약 2,000개 task
+
+GWA &quot;Monitoring Processes, Materials, or Surroundings&quot; 산하:
+  - T001 (간호사): 환자 활력징후 측정
+  - T101 (의사): 환자 임상 증상 관찰
+  - T201 (방사선사): 영상 촬영 중 환자 상태 관찰
+  - T301 (물리치료사): 치료 중 환자 반응 관찰
+  - T401 (영양사): 환자 식사 섭취 관찰
+  - ... (수십 개)
+
+HDBSCAN 클러스터링 결과:
+  Cluster 1: [T001, T101, T301, T401, ...] — 환자 상태·반응 모니터링
+  Cluster 2: [T201, T501, ...] — 장비·영상 모니터링
+  Cluster 3: [outliers]
+</code></pre>
+<h3 id="627-step-7-dwa-writing-llm">6.2.7 Step 7 — DWA Writing (LLM 초안 + 인간 확정)</h3>
+<h4 id="cluster-1-dwa">Cluster 1의 DWA 작성</h4>
+<pre><code>Prompt:
+다음 task 군집의 공통 활동을 나타내는 DWA 진술문 초안 3개를 작성하세요.
+8대 작성 규칙을 준수하세요.
+
+군집 내 task:
+- 환자 활력징후를 정기적으로 측정한다
+- 환자 임상 증상을 관찰한다
+- 치료 중 환자 반응을 관찰한다
+- 환자 식사 섭취 상태를 관찰한다
+
+작성 규칙:
+[8대 규칙 동봉]
+
+응답: 초안 3개와 각각의 평가
+</code></pre>
+<p>LLM 응답 예시:</p>
+<pre><code>초안 1: &quot;환자의 신체 상태와 반응을 관찰·측정한다&quot;
+  - 평가: 동사 시작 ✓, 8학년 ✓, 모호도 낮음 ✓
+  - 약점: &quot;관찰·측정&quot; 두 동사 → 다활동 위험
+
+초안 2: &quot;환자 상태와 임상 반응을 모니터링한다&quot;
+  - 평가: 단일 동사 ✓, 적정 추상도 ✓
+  - 약점: &quot;모니터링&quot; 외래어 — 가독성 약간 저하
+
+초안 3: &quot;환자의 신체 활동과 반응을 점검한다&quot;
+  - 평가: 한국어 자연스러움 ✓, 8학년 ✓
+  - 약점: &quot;점검&quot;이 의료에서 &quot;장비 점검&quot;과 충돌 가능
+
+권고: 초안 1 또는 2
+</code></pre>
+<h4 id="_6">인간 분석가 최종 확정</h4>
+<p>분석가는 위 초안을 받아 의료 현장에 적합한 최종 표현을 확정:</p>
+<pre><code>최종 DWA: &quot;환자의 신체 상태와 반응을 관찰한다&quot;
+
+ID: 4.A.1.b.1.I02.D01
+  - 4.A.1.b.1: GWA &quot;Monitoring Processes, Materials, or Surroundings&quot;
+  - I02: IWA &quot;환자·고객 상태 모니터링&quot; (아직 임시)
+  - D01: DWA 첫 번째 (무작위 부여)
+</code></pre>
+<h3 id="628-step-8-iwa">6.2.8 Step 8 — IWA 도출</h3>
+<p>DWA들을 GWA 분할 없이 다시 군집화하여 IWA를 도출합니다.</p>
+<pre><code>GWA &quot;Monitoring...&quot; 산하 DWA들:
+  D01: 환자의 신체 상태와 반응을 관찰한다 (보건의료)
+  D02: 교실 학생들의 학습 진행을 관찰한다 (교육)
+  D03: 생산라인 제품 품질을 관찰한다 (제조)
+  D04: 매장 고객 행동을 관찰한다 (판매)
+  ...
+
+IWA 클러스터링 결과:
+  IWA 1: &quot;사람·서비스 대상 상태 모니터링&quot; — D01, D02, D04, ...
+  IWA 2: &quot;제품·공정 품질 모니터링&quot; — D03, ...
+</code></pre>
+<h3 id="629-step-9-task-dwa">6.2.9 Step 9 — TASK → DWA 매핑 정리</h3>
+<p>각 task가 최대 3개 DWA에 다중연결됩니다.</p>
+<pre><code>T001 환자 활력징후 측정:
+  - 1차 DWA: D01 환자의 신체 상태와 반응을 관찰한다
+  - 2차 DWA: D45 의료 측정 장비를 사용한다
+  - 3차 DWA: (없음)
+
+T002 약물 투여:
+  - 1차 DWA: D17 처방약물을 정확한 경로로 투여한다
+  - 2차 DWA: (없음)
+</code></pre>
+<h3 id="6210-step-10">6.2.10 Step 10 — 직무기술 정의서 출력</h3>
+<p>최종 산출물은 다음 구조를 가집니다 (제안서 차별화 포인트 그대로):</p>
+<pre><code>========================================================
+[직무기술 정의서] 간호사 (KSCO 2491)
+========================================================
+
+① 직업개요
+환자의 신체적·정신적 상태를 관찰·평가하며, 의사의 처방에 따라
+약물·치료를 시행하고, 환자와 가족에게 정보·정서적 지지를 제공한다.
+의료기관에서 의사·다른 의료진과 협력하여 환자의 회복을 지원한다.
+
+② 주요업무내용
+- 환자 활력징후 측정 및 신체 상태 관찰
+- 처방약물 투여 및 치료 시행
+- 환자 차트·간호기록 작성
+- 환자·보호자 교육 및 상담
+- 응급상황 대응 및 응급처치
+- 다른 의료진과 인계·인수
+- ...
+
+③ 핵심직무활동 (TASK 25개)
+T001: 환자의 활력징후(혈압, 맥박, 호흡, 체온)를 정기적으로 측정한다
+      | 1차 DWA: D01 | 2차 DWA: D45
+T002: 의사 처방에 따라 환자에게 약물을 투여한다
+      | 1차 DWA: D17
+... (총 25개)
+
+④ 표준화직무요소 (DWA·IWA·GWA 매핑)
+
+[GWA 프로파일] (TASK 수 기준)
+  - Monitoring Processes (4.A.1.b.1): 6개 task
+  - Performing General Physical Activities: 5개 task
+  - Communicating: 4개 task
+  - ...
+
+[연결된 DWA 목록]
+  D01 환자의 신체 상태와 반응을 관찰한다 (IWA I02, GWA 4.A.1.b.1)
+  D17 처방약물을 정확한 경로로 투여한다 (IWA I05, GWA 4.A.3.b.6)
+  D45 의료 측정 장비를 사용한다 (IWA I12, GWA 4.A.3.b.4)
+  ...
+
+[직업 간 전환 가능성 분석]
+- 공유 DWA 수 기준 인접 직업:
+  - 의사 (2492): 공유 DWA 18개
+  - 임상병리사 (2493): 공유 DWA 12개
+  - 응급구조사 (2494): 공유 DWA 10개
+
+========================================================
+</code></pre>
+<hr />
+<h2 id="63-8">6.3 8개월 전체 실행 일정</h2>
+<p>본 연구가 KSCO 세분류 495개 전체를 처리하는 일정 (앞서 Part 3 참조 + 시뮬레이션 보강):</p>
+<pre><code>[1개월] 참고자료 학습 + 한국 보정 임계 자체 시뮬레이션 + NLP prototype
+        - SEM 시뮬레이션 1회 완수
+        - 100개 task에 LLM zero-shot 정확도 측정
+        - 분석팀 paired 훈련 완료 (Kappa 0.7+)
+
+[2-3개월] 중분류 57개 단위 task 자료 통합 (KECO·NCS·KNOW·직업사전)
+        - 직업당 통합 코퍼스 작성
+        - LLM 자동 task 추출 → 인간 검수
+        - HumRRO 5-step decision tree 자동화
+
+[4-5개월] WA Phase A·B 수행
+        - GWA 41개 매핑
+        - GWA 내 클러스터링 (HDBSCAN)
+        - DWA Writing (LLM 초안 → 인간 편집)
+        - Round-Robin QC
+
+[6개월] WA Phase C·D
+        - DWA Refinement
+        - IWA 도출
+        - 시뮬레이션 검증 (중분류 2~3개)
+
+[7개월] 전문가 검토·조정, ID 체계 부여
+        - 외부 전문가 패널 검토
+        - 한국형 GWA·IWA·DWA 최종 확정
+
+[8개월] 최종 보고서, 시범 직업군 직무기술 정의서 작성
+</code></pre>
+<hr />
+<h2 id="64-part">6.4 본 Part 요약 카드</h2>
+<ul>
+<li>시작점은 KSCO 분류항목표 + 한국직업사전 + KNOW + NCS + KECO <strong>통합 코퍼스</strong></li>
+<li>TASK 추출은 LLM 생성 + HumRRO 5-step decision tree</li>
+<li>TASK → GWA 매핑은 LLM few-shot 분류 (다수결 + 인간 검수)</li>
+<li>DWA 도출은 GWA 내 HDBSCAN 클러스터링 → LLM 초안 → 인간 확정</li>
+<li>IWA 도출은 DWA를 GWA 분할 없이 재군집화</li>
+<li>최종 직무기술 정의서는 ①직업개요 ②주요업무 ③핵심직무활동 ④표준화직무요소</li>
+</ul>
+<hr />
+<h2 id="65">6.5 다음 단계</h2>
+<p>Part 7에서는 현재까지 확보한 자료 외에 본 연구가 추가로 필요로 하는 자료의 목록과 학습 로드맵을 정리합니다.</p></div></section>
+
+<section id="part-P8" class="part"><div class="md-content"><h1 id="part-8-hwpxqa-track-b">Part 8. 실행 방법론 모듈 — HWPX·코드·QA·산출물 표준 (Track B 보강)</h1>
+<h2 id="_1">학습 목표</h2>
+<ol>
+<li>KSCO 8차 <strong>분류항목표 HWPX</strong>를 정형 JSON으로 파싱하는 절차를 설계할 수 있다.</li>
+<li><strong>임베딩·클러스터링·LLM 분류</strong> 인프라를 본 사업 8개월 일정에 맞게 구축할 수 있다.</li>
+<li><strong>한국형 AutoCoder</strong>의 모듈 아키텍처를 사전연구 사례(O*NET-SOC, NIOCCS, G-Code)를 차용하여 그릴 수 있다.</li>
+<li><strong>직무기술 정의서 산출물 표준 양식</strong>(필드·길이·검증 규칙)을 정의하고 자동 생성할 수 있다.</li>
+<li>Round-Robin QC와 <strong>Cohen's Kappa 측정 코드</strong>를 6명·3팀 체제에 적용할 수 있다.</li>
+</ol>
+<blockquote>
+<p><strong>본 Part의 위치</strong>: Track B(실행 방법론) 트랙의 최종 모듈. Part 3(미국 방법론)·Part 4(AI 활용)·Part 5(기준 설정)·Part 6(KSCO 워크플로) 뒤에 학습합니다. 코드 예시는 Python 3.11 기준이며 실제 실행 가능한 형태로 제시됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="81">8.1 핵심 메시지</h2>
+<p>본 Part는 다음 5개 모듈로 구성됩니다.</p>
+<ol>
+<li><strong>데이터 통합 모듈</strong> — HWPX·PDF·HWP·API에서 정형 JSON으로 (사업 1~2개월차)</li>
+<li><strong>NLP·임베딩 인프라 모듈</strong> — BGE-m3-ko 서빙, HDBSCAN, BERTopic (1~2개월차)</li>
+<li><strong>AutoCoder 엔진 모듈</strong> — 사전연구 3대 사례를 합성한 한국형 코더 (4~5개월차)</li>
+<li><strong>QA·합의 모듈</strong> — Cohen's Kappa, F1, Silhouette 측정 + Round-Robin QC (전 기간)</li>
+<li><strong>산출물 표준화 모듈</strong> — 직무기술 정의서 양식·DB 스키마·ID 체계 (6~7개월차)</li>
+</ol>
+<hr />
+<h2 id="82-1-data-integration">8.2 모듈 1 — 데이터 통합 (Data Integration)</h2>
+<h3 id="821">8.2.1 입력 데이터원 우선순위</h3>
+<p>본 사업이 통합해야 할 7개 데이터원:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>데이터원</th>
+<th>형식</th>
+<th>분량</th>
+<th>우선순위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>KSCO 8차 분류항목표</td>
+<td>HWPX</td>
+<td>495 세분류 + 1,270 세세분류</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>한국직업사전</td>
+<td>PDF/XML</td>
+<td>약 6,000 직업</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>NCS 능력단위</td>
+<td>HWP/PDF</td>
+<td>약 1,000 능력단위</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>KNOW (한국직업정보)</td>
+<td>API/LOD</td>
+<td>537 직업 다차원</td>
+<td>P0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>KECO 2025 직업정보</td>
+<td>XLSX</td>
+<td>약 200 직업 상세</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>O*NET 30.x</td>
+<td>TXT/MDB</td>
+<td>영문 원천</td>
+<td>P1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>채용공고 데이터</td>
+<td>API/스크래핑</td>
+<td>가변</td>
+<td>P2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="822-hwpx">8.2.2 HWPX 파싱 (한컴오피스 직접 처리)</h3>
+<p>KSCO 분류항목표는 HWPX 포맷이며, 한컴오피스 외에서 처리하려면 다음 도구를 사용합니다.</p>
+<p><strong>옵션 A — pyhwpx 라이브러리</strong> (한국어 NLP 커뮤니티 표준)</p>
+<pre><code class="language-python"># 설치: pip install pyhwpx
+from pyhwpx import Hwp
+
+hwp = Hwp(visible=False)
+hwp.open(&quot;KSCO_8차_분류항목표.hwpx&quot;)
+
+# 모든 텍스트 추출
+text_content = hwp.get_text()
+
+# 표 단위 추출 (분류항목표는 표 기반)
+tables = hwp.get_tables()
+for i, table in enumerate(tables):
+    print(f&quot;Table {i}: rows={len(table)}&quot;)
+</code></pre>
+<p><strong>옵션 B — pyhwp + hwp5txt</strong> (구버전 .hwp만 지원, .hwpx는 제한적)</p>
+<p><strong>옵션 C — LibreOffice 변환</strong> (CLI 자동화)</p>
+<pre><code class="language-bash"># .hwpx → .docx 변환 후 python-docx로 처리
+libreoffice --headless --convert-to docx &quot;KSCO_8차.hwpx&quot; --outdir ./converted/
+</code></pre>
+<p><strong>옵션 D (권장) — 한컴오피스 자동화 + Win32 COM</strong></p>
+<pre><code class="language-python">import win32com.client
+
+hwp = win32com.client.Dispatch(&quot;HWPFrame.HwpObject&quot;)
+hwp.RegisterModule(&quot;FilePathCheckDLL&quot;, &quot;AutomationModule&quot;)
+hwp.Open(&quot;C:/path/to/KSCO_8차.hwpx&quot;)
+# 표 추출 매크로 호출
+</code></pre>
+<h3 id="823-json">8.2.3 파싱 후 표준 JSON 스키마</h3>
+<pre><code class="language-json">{
+  &quot;ksco_code&quot;: &quot;2491&quot;,
+  &quot;ksco_label&quot;: &quot;간호사&quot;,
+  &quot;level&quot;: &quot;세분류&quot;,
+  &quot;parent_codes&quot;: {
+    &quot;대분류&quot;: &quot;2&quot;, &quot;대분류명&quot;: &quot;전문가 및 관련 종사자&quot;,
+    &quot;중분류&quot;: &quot;24&quot;, &quot;중분류명&quot;: &quot;보건·사회복지 및 종교 관련직&quot;,
+    &quot;소분류&quot;: &quot;249&quot;, &quot;소분류명&quot;: &quot;기타 보건 전문가&quot;
+  },
+  &quot;occupation_definition&quot;: &quot;병원, 의원 등의 의료기관에서 의사와 함께...&quot;,
+  &quot;main_tasks&quot;: [
+    &quot;환자 상태 관찰 및 활력징후 측정&quot;,
+    &quot;의사 처방 약물 투여 및 주사 시술&quot;,
+    &quot;...&quot;
+  ],
+  &quot;skill_level&quot;: {
+    &quot;level&quot;: 4,
+    &quot;rationale&quot;: &quot;학사 이상 교육 + 전문 자격(간호사 면허) + ...&quot;
+  },
+  &quot;skill_specialization&quot;: {
+    &quot;knowledge_domain&quot;: &quot;의학·간호학&quot;,
+    &quot;tools_equipment&quot;: &quot;의료기기·전자차트시스템&quot;,
+    &quot;raw_materials&quot;: &quot;환자·환자정보·약품&quot;,
+    &quot;outputs&quot;: &quot;환자 간호·간호기록&quot;
+  },
+  &quot;auxiliary_sources&quot;: {
+    &quot;직업사전_ids&quot;: [&quot;...&quot;],
+    &quot;ncs_ability_units&quot;: [&quot;...&quot;],
+    &quot;know_id&quot;: &quot;...&quot;,
+    &quot;keco_code&quot;: &quot;2491&quot;
+  },
+  &quot;ksco_version&quot;: &quot;8th&quot;,
+  &quot;extracted_at&quot;: &quot;2026-06-01T00:00:00Z&quot;
+}
+</code></pre>
+<h3 id="824">8.2.4 데이터원 간 매핑 코드 예시</h3>
+<pre><code class="language-python"># pip install sentence-transformers
+from sentence_transformers import SentenceTransformer, util
+
+model = SentenceTransformer(&quot;dragonkue/BGE-m3-ko&quot;)
+
+ksco_label = &quot;간호사&quot;
+ksco_definition = &quot;병원, 의원 등의 의료기관에서...&quot;
+
+# 한국직업사전에서 후보 직업 검색
+dict_jobs = load_korean_job_dictionary()  # 약 6,000개
+
+ksco_emb = model.encode(f&quot;{ksco_label}. {ksco_definition}&quot;, convert_to_tensor=True)
+dict_embs = model.encode(
+    [f&quot;{j['label']}. {j['description']}&quot; for j in dict_jobs],
+    convert_to_tensor=True
+)
+
+scores = util.cos_sim(ksco_emb, dict_embs)[0]
+top_k = scores.argsort(descending=True)[:5]
+
+for idx in top_k:
+    print(f&quot;score={scores[idx]:.3f} :: {dict_jobs[idx]['label']}&quot;)
+# score=0.91 :: 간호사
+# score=0.83 :: 가정전문간호사
+# score=0.81 :: 노인전문간호사
+# ...
+</code></pre>
+<p>매핑 후 인간 분석가가 cutoff(예: 0.75 이상) 직업을 검토하여 확정합니다.</p>
+<hr />
+<h2 id="83-2-nlp">8.3 모듈 2 — NLP·임베딩 인프라</h2>
+<h3 id="831-nlp">8.3.1 한국어 NLP 스택</h3>
+<p>본 사업이 사용할 권장 스택:</p>
+<table>
+<thead>
+<tr>
+<th>계층</th>
+<th>도구</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>형태소 분석</td>
+<td>Mecab-ko (혹은 Khaiii)</td>
+<td>어절·품사 분석, 동사 추출</td>
+</tr>
+<tr>
+<td>임베딩</td>
+<td><strong>BGE-m3-ko</strong> (1024d)</td>
+<td>한국어 의미 벡터</td>
+</tr>
+<tr>
+<td>차원 축소</td>
+<td>UMAP</td>
+<td>임베딩 차원 축소 (1024 → 10)</td>
+</tr>
+<tr>
+<td>클러스터링</td>
+<td>HDBSCAN</td>
+<td>군집 수 자동 결정</td>
+</tr>
+<tr>
+<td>Topic Modeling</td>
+<td>BERTopic</td>
+<td>군집별 키워드 자동 추출</td>
+</tr>
+<tr>
+<td>LLM API</td>
+<td>Claude Opus 4.6 / Sonnet 4.6 / Haiku 4.5</td>
+<td>분류·생성·검증</td>
+</tr>
+<tr>
+<td>통계</td>
+<td>scipy + statsmodels</td>
+<td>SEM 시뮬레이션·Kappa</td>
+</tr>
+<tr>
+<td>DataFrame</td>
+<td>Polars (Pandas 대안)</td>
+<td>대량 task 처리</td>
+</tr>
+</tbody>
+</table>
+<h3 id="832-bge-m3-ko">8.3.2 BGE-m3-ko 임베딩 인프라 구축</h3>
+<pre><code class="language-python">from sentence_transformers import SentenceTransformer
+import torch
+
+# CUDA 권장 (CPU도 가능하나 속도 차이 큼)
+device = &quot;cuda&quot; if torch.cuda.is_available() else &quot;cpu&quot;
+model = SentenceTransformer(&quot;dragonkue/BGE-m3-ko&quot;, device=device)
+
+# 배치 임베딩
+def embed_tasks(task_list, batch_size=32):
+    return model.encode(
+        task_list,
+        batch_size=batch_size,
+        show_progress_bar=True,
+        convert_to_numpy=True,
+        normalize_embeddings=True  # cosine similarity 사용 시 권장
+    )
+
+# 사용 예
+task_statements = [&quot;환자의 활력징후를 측정한다&quot;, &quot;약물을 투여한다&quot;, ...]
+embeddings = embed_tasks(task_statements)  # (N, 1024) numpy array
+</code></pre>
+<h3 id="833-hdbscan-umap">8.3.3 HDBSCAN + UMAP 클러스터링</h3>
+<pre><code class="language-python">import umap
+import hdbscan
+
+# 차원 축소
+reducer = umap.UMAP(
+    n_neighbors=15,
+    n_components=10,
+    min_dist=0.0,
+    metric=&quot;cosine&quot;,
+    random_state=42
+)
+reduced = reducer.fit_transform(embeddings)
+
+# 클러스터링
+clusterer = hdbscan.HDBSCAN(
+    min_cluster_size=4,    # DWA 최소 task 수 (한국 보정 3 권장)
+    min_samples=2,
+    metric=&quot;euclidean&quot;,     # UMAP 후 euclidean
+    cluster_selection_method=&quot;leaf&quot;  # 잎노드 = 더 세밀한 군집
+)
+labels = clusterer.fit_predict(reduced)
+
+# 결과
+n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+n_noise = (labels == -1).sum()
+print(f&quot;군집 수: {n_clusters} | 노이즈 task: {n_noise}&quot;)
+</code></pre>
+<h3 id="834-bertopic">8.3.4 BERTopic — 군집별 키워드 자동 추출</h3>
+<pre><code class="language-python">from bertopic import BERTopic
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer(&quot;dragonkue/BGE-m3-ko&quot;)
+topic_model = BERTopic(
+    embedding_model=model,
+    umap_model=reducer,
+    hdbscan_model=clusterer,
+    language=&quot;multilingual&quot;,
+    calculate_probabilities=True,
+    verbose=True
+)
+
+topics, probs = topic_model.fit_transform(task_statements, embeddings)
+
+# 군집별 대표 단어
+for topic_id in set(topics):
+    if topic_id == -1:
+        continue
+    words = topic_model.get_topic(topic_id)
+    print(f&quot;Topic {topic_id}: {words[:5]}&quot;)
+# Topic 0: [('환자', 0.45), ('관찰', 0.32), ('상태', 0.28), ('활력', 0.18), ('측정', 0.15)]
+</code></pre>
+<p>이 대표 단어가 DWA 작성의 초안 단서가 됩니다.</p>
+<h3 id="835-llm-api">8.3.5 LLM API 호출 표준 패턴</h3>
+<pre><code class="language-python">import anthropic
+import json
+
+client = anthropic.Anthropic()
+
+GWA_DEFINITIONS = &quot;&quot;&quot;
+[1] Getting Information - Observing, receiving, and otherwise obtaining information...
+[2] Monitoring Processes, Materials, or Surroundings - ...
+... (41개)
+&quot;&quot;&quot;
+
+def classify_task_to_gwa(task_statement: str) -&gt; dict:
+    response = client.messages.create(
+        model=&quot;claude-sonnet-4-6&quot;,
+        max_tokens=512,
+        messages=[{
+            &quot;role&quot;: &quot;user&quot;,
+            &quot;content&quot;: f&quot;&quot;&quot;당신은 직업분석 전문가입니다.
+다음 task가 O*NET 41개 GWA 중 어디에 속하는지 1차·2차 선택을 JSON으로 답하세요.
+
+GWA 정의:
+{GWA_DEFINITIONS}
+
+Task: &quot;{task_statement}&quot;
+
+응답 형식:
+{{&quot;primary_id&quot;: &quot;...&quot;, &quot;primary_label&quot;: &quot;...&quot;, &quot;secondary_id&quot;: &quot;...&quot;, &quot;secondary_label&quot;: &quot;...&quot;, &quot;reasoning&quot;: &quot;...&quot;, &quot;confidence&quot;: 0.0~1.0}}
+&quot;&quot;&quot;
+        }]
+    )
+    return json.loads(response.content[0].text)
+
+# 사용 예
+result = classify_task_to_gwa(&quot;환자의 활력징후를 정기적으로 측정한다&quot;)
+print(result)
+# {&quot;primary_id&quot;: &quot;4.A.1.b.1&quot;, &quot;primary_label&quot;: &quot;Monitoring Processes...&quot;, &quot;confidence&quot;: 0.92}
+</code></pre>
+<hr />
+<h2 id="84-3-autocoder">8.4 모듈 3 — 한국형 AutoCoder 엔진</h2>
+<h3 id="841-3">8.4.1 사전연구 3대 사례의 합성</h3>
+<p>사전연구 ②(직업문항)가 분석한 3대 AutoCoder를 본 사업 한국형 AutoCoder로 합성하는 설계:</p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│           한국형 AutoCoder (KOA, Korean Occupation       │
+│                          AutoCoder)                       │
+└─────────────────────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+[O*NET-SOC 차용]      [NIOCCS 차용]        [G-Code 차용]
+- NLP + ML            - SOC 808 코드        - FastText + XGBoost
+- 시간당 10만건         - 무료/웹기반          - 영·한 다중모델링
+- 적합도 점수          - 직업안전 특화          - 자동+수작업 통합
+        │                     │                     │
+        └─────────────────────┴─────────────────────┘
+                              │
+                              ▼
+              ┌───────────────────────────┐
+              │   한국형 AutoCoder 설계     │
+              │   - 입력: 11개 개선 직업문항│
+              │   - 출력: KSCO 4자리 + DWA  │
+              │           + K-SLF 4차원     │
+              │   - 엔진: BGE-m3-ko +       │
+              │           Claude few-shot   │
+              │           + XGBoost 보조    │
+              │   - 인터페이스: 웹 (FastAPI)│
+              └───────────────────────────┘
+</code></pre>
+<h3 id="842-koa-4">8.4.2 KOA 4단계 처리 파이프라인</h3>
+<pre><code class="language-python">class KoreanOccupationAutoCoder:
+    def __init__(self, ksco_db, dwa_db, klsf_db, embedder, llm_client):
+        self.ksco_db = ksco_db        # KSCO 8차 분류항목표 + 직무기술 정의서
+        self.dwa_db = dwa_db          # 한국형 DWA 약 2,000개
+        self.klsf_db = klsf_db        # K-SLF 4차원 기준
+        self.embedder = embedder      # BGE-m3-ko
+        self.llm = llm_client         # Claude Sonnet 4.6
+
+    def code(self, occupation_response: dict) -&gt; dict:
+        &quot;&quot;&quot;
+        occupation_response: 사전연구 ②의 11개 개선 직업문항 응답
+        Returns: {ksco_code, dwa_ids, k_slf_levels, confidence}
+        &quot;&quot;&quot;
+        # Step 1. 직업명·수행업무로 KSCO 코드 후보 검색 (Retrieval)
+        candidates = self._retrieve_ksco_candidates(occupation_response)
+
+        # Step 2. LLM이 후보 중에서 정답 선택 (Re-ranking)
+        ksco_code = self._llm_rerank(occupation_response, candidates)
+
+        # Step 3. DWA 다중연결 (최대 3개)
+        dwa_ids = self._link_to_dwas(occupation_response, ksco_code)
+
+        # Step 4. K-SLF 4차원 추출
+        k_slf = self._infer_k_slf(occupation_response, ksco_code)
+
+        return {
+            &quot;ksco_code&quot;: ksco_code,
+            &quot;dwa_ids&quot;: dwa_ids,
+            &quot;k_slf&quot;: k_slf,
+            &quot;confidence&quot;: self._compute_confidence(...)
+        }
+
+    def _retrieve_ksco_candidates(self, resp, top_k=10):
+        query = f&quot;{resp['job_title']}. {resp['main_tasks']}. {resp['industry']}&quot;
+        q_emb = self.embedder.encode(query)
+        # ksco_db에 직업별 임베딩 사전 계산되어 있다고 가정
+        scores = cosine_similarity(q_emb, self.ksco_db.embeddings)
+        return self.ksco_db.iloc[scores.argsort()[-top_k:][::-1]]
+
+    # ... 이하 _llm_rerank, _link_to_dwas, _infer_k_slf 구현
+</code></pre>
+<h3 id="843-koa">8.4.3 KOA 성능 목표 (사전연구 벤치마크 대비)</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>O*NET-SOC</th>
+<th>NIOCCS</th>
+<th>G-Code</th>
+<th><strong>KOA 목표</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정확도</td>
+<td>85%+</td>
+<td>~80%</td>
+<td>~85%</td>
+<td><strong>≥ 85%</strong> (사전연구 파일럿 97.8% 매칭률을 활용하면 가능)</td>
+</tr>
+<tr>
+<td>처리속도</td>
+<td>10만/시간</td>
+<td>-</td>
+<td>-</td>
+<td>≥ 1만/시간 (한국어 LLM 비용 고려 시 OK)</td>
+</tr>
+<tr>
+<td>인간 검수</td>
+<td>가능</td>
+<td>가능</td>
+<td>통합 워크플로</td>
+<td>통합 워크플로 (G-Code 방식)</td>
+</tr>
+<tr>
+<td>무료 공개</td>
+<td>부분 유료</td>
+<td>무료</td>
+<td>정부 내부</td>
+<td>정부 공공API (권장)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="85-4-qa-quality-assurance-consensus">8.5 모듈 4 — QA·합의 (Quality Assurance &amp; Consensus)</h2>
+<h3 id="851-cohens-kappa">8.5.1 Cohen's Kappa 측정 코드</h3>
+<pre><code class="language-python">from sklearn.metrics import cohen_kappa_score
+
+def measure_kappa(rater1_labels, rater2_labels, labels=None):
+    &quot;&quot;&quot;
+    두 평정자의 라벨 일치도 (Cohen's Kappa)
+    &quot;&quot;&quot;
+    kappa = cohen_kappa_score(rater1_labels, rater2_labels, labels=labels)
+    return kappa
+
+# 사용 예: GWA 41개 분류에서 두 분석가의 일치도
+rater_A_gwa = [&quot;4.A.1.b.1&quot;, &quot;4.A.1.b.2&quot;, &quot;4.A.2.a.4&quot;, ...]
+rater_B_gwa = [&quot;4.A.1.b.1&quot;, &quot;4.A.1.b.1&quot;, &quot;4.A.2.a.4&quot;, ...]
+kappa = measure_kappa(rater_A_gwa, rater_B_gwa)
+print(f&quot;GWA 분류 Cohen's Kappa = {kappa:.3f}&quot;)  # 목표 ≥ 0.80
+</code></pre>
+<h3 id="852-f1-precision-recall">8.5.2 F1 / Precision / Recall</h3>
+<pre><code class="language-python">from sklearn.metrics import f1_score, precision_score, recall_score, classification_report
+
+# AI 자동분류 vs 인간 정답
+y_true = [...]  # 인간 정답
+y_pred = [...]  # AI 분류 결과
+
+print(classification_report(y_true, y_pred, digits=3))
+# precision  recall  f1-score  support
+# 4.A.1.b.1    0.92    0.88     0.90     250
+# ...
+# weighted avg 0.87    0.85     0.86     ...
+</code></pre>
+<h3 id="853-silhouette-score">8.5.3 Silhouette Score (군집 품질)</h3>
+<pre><code class="language-python">from sklearn.metrics import silhouette_score, davies_bouldin_score
+
+# HDBSCAN 결과
+labels = clusterer.labels_
+mask = labels != -1  # 노이즈 제외
+
+sil = silhouette_score(reduced[mask], labels[mask])
+db = davies_bouldin_score(reduced[mask], labels[mask])
+
+print(f&quot;Silhouette: {sil:.3f} (≥0.30 권장)&quot;)
+print(f&quot;Davies-Bouldin: {db:.3f} (≤1.0 권장)&quot;)
+</code></pre>
+<h3 id="854-sem">8.5.4 SEM 시뮬레이션 (한국 보정 임계 결정)</h3>
+<pre><code class="language-python">import numpy as np
+
+def simulate_sem(all_responses, n_sizes=[5, 10, 15, 20, 30], n_repeat=1000):
+    &quot;&quot;&quot;
+    표본 크기별 평균 중요도의 SEM 추정 → 임계 N 결정
+    &quot;&quot;&quot;
+    results = {}
+    for n in n_sizes:
+        sems = []
+        for _ in range(n_repeat):
+            sample = np.random.choice(all_responses, size=n, replace=False)
+            sems.append(np.std(sample, ddof=1) / np.sqrt(n))
+        results[n] = {
+            &quot;mean_sem&quot;: np.mean(sems),
+            &quot;max_sem&quot;: np.max(sems),
+            &quot;pct_above_0.5&quot;: np.mean([s &gt; 0.5 for s in sems])
+        }
+    return results
+
+# 사용 예
+nurse_importance_ratings = [4, 5, 3, 4, 5, ...]  # 가정 응답 수십~수백 건
+result = simulate_sem(nurse_importance_ratings)
+# n=15 mean_sem=0.21 → HumRRO와 유사. n=12부터 SEM≤0.50 만족 시 한국 보정 N=12 채택 가능
+</code></pre>
+<h3 id="855-round-robin-qc-63">8.5.5 Round-Robin QC 운영 (6명·3팀)</h3>
+<pre><code>[1주차]
+   Team A — KSCO 중분류 #X 개발
+   Team B — KSCO 중분류 #Y 개발
+   Team C — KSCO 중분류 #Z 개발
+
+[2주차]
+   Team A → Team C 결과 1차 QC (수정 권한 보유)
+   Team B → Team A 결과 1차 QC
+   Team C → Team B 결과 1차 QC
+
+[3주차]
+   Team A → Team B 결과 2차 QC
+   Team B → Team C 결과 2차 QC
+   Team C → Team A 결과 2차 QC
+
+→ 모든 팀이 다른 두 팀의 결과를 검토하게 됨 = 정신모델 공유
+</code></pre>
+<p>매 20개 직업마다 Kappa 측정 — 0.7 미만 시 즉시 회의 소집.</p>
+<hr />
+<h2 id="86-5">8.6 모듈 5 — 산출물 표준화</h2>
+<h3 id="861-1-1">8.6.1 직무기술 정의서 표준 양식 (1쪽 1직업)</h3>
+<pre><code>══════════════════════════════════════════════════════════════
+[직무기술 정의서]
+════════════════════════════════════════════════════════════��
+
+직업명:    간호사
+KSCO 코드: 2491 (세분류)
+KSCO 8차:  대분류 2 / 중분류 24 / 소분류 249 / 세분류 2491
+발행일:    2026-XX-XX
+버전:      1.0
+승인:      국가데이터처 통계기준과
+
+──────────────────────────────────────────────────────────────
+① 직업개요 (300~500자)
+──────────────────────────────────────────────────────────────
+환자의 신체적·정신적 상태를 관찰·평가하며, 의사의 처방에 따라 약물·치료를
+시행하고, 환자와 가족에게 정보·정서적 지지를 제공한다. 의료기관에서 의사·
+다른 의료진과 협력하여 환자의 회복을 지원한다. ...
+
+──────────────────────────────────────────────────────────────
+② 주요업무내용 (5~10개 항목, 각 50~100자)
+──────────────────────────────────────────────────────────────
+• 환자 활력징후 측정 및 신체 상태 관찰
+• 처방약물 투여 및 치료 시행
+• 환자 차트·간호기록 작성
+• 환자·보호자 교육 및 상담
+• ...
+
+──────────────────────────────────────────────────────────────
+③ 핵심직무활동 (TASK 15~30개 + DWA 다중연결)
+──────────────────────────────────────────────────────────────
+TASK 01 | 환자의 활력징후(혈압·맥박·호흡·체온)를 정기적으로 측정한다
+         | 중요도 4.5 | 빈도 6.2 | 핵심도 0.94
+         | 1차 DWA: D0012 환자의 신체 상태와 반응을 관찰한다
+         | 2차 DWA: D0045 의료 측정 장비를 사용한다
+
+TASK 02 | 의사 처방에 따라 환자에게 약물을 정맥·근육·경구 경로로 투여한다
+         | 중요도 4.8 | 빈도 5.5 | 핵심도 0.91
+         | 1차 DWA: D0017 처방약물을 정확한 경로로 투여한다
+
+... (15~30개)
+
+──────────────────────────────────────────────────────────────
+④ 표준화직무요소 (3차원 통합)
+──────────────────────────────────────────────────────────────
+[GWA 프로파일] — task 수 기준
+   • 4.A.1.b.1 Monitoring Processes      ████████ 8
+   • 4.A.3.a.1 Performing Physical       ██████   6
+   • 4.A.4.a.1 Communicating             █████    5
+   • 4.A.2.a.4 Documenting Information   ████     4
+   • ...
+
+[연결된 DWA — 총 17개]
+   D0012  환자의 신체 상태와 반응을 관찰한다 (IWA I02, GWA 4.A.1.b.1)
+   D0017  처방약물을 정확한 경로로 투여한다 (IWA I05, GWA 4.A.3.b.6)
+   D0045  의료 측정 장비를 사용한다 (IWA I12, GWA 4.A.3.b.4)
+   ...
+
+[K-SLF 직능수준 4차원]
+   교육 (Education):           ISCED 6 (학사) 이상 — 간호학 학사
+   책임성 (Responsibility):     관리 &lt; 감독 &lt; 안전 — 환자안전 직접책임
+   경험 (Experience):           신규 1년 + 숙련 3년 (사전연구 숙련기간)
+   업무기반학습 (WBL):          일학습병행 부분 적용 / OJT 표준 6개월
+   → 종합 직능수준: 4 (최적합 원칙 적용)
+
+[직업 간 전환 가능성] — DWA 공유 수 기준 상위 5
+   • 의사 (2492):       18개 공유
+   • 임상병리사 (2493): 12개 공유
+   • 응급구조사 (2494): 10개 공유
+   • 물리치료사 (2495):  9개 공유
+   • 약사 (2412):       7개 공유
+
+──────────────────────────────────────────────────────────────
+⑤ 참조 데이터
+──────────────────────────────────────────────────────────────
+한국직업사전: 간호사, 가정전문간호사, 노인전문간호사, ... (총 8건)
+NCS 능력단위: NCS-06010101-04 환자관찰, NCS-06010101-05 약물투여, ... (12건)
+KNOW: 간호사 (KNOW ID 123)
+KECO 2025: 2491
+
+══════════════════════════════════════════════════════════════
+[발행: 국가데이터처] [작성: (사)한국직업자격학회] [검증: 외부 패널 5인]
+══════════════════════════════════════════════════════════════
+</code></pre>
+<h3 id="862-db-postgresql">8.6.2 DB 스키마 (PostgreSQL 권장)</h3>
+<pre><code class="language-sql">-- 직업 (KSCO 세분류 단위)
+CREATE TABLE occupation (
+  ksco_code     VARCHAR(5) PRIMARY KEY,
+  ksco_label    TEXT NOT NULL,
+  parent_codes  JSONB,
+  definition    TEXT,
+  k_slf         JSONB,    -- {education, responsibility, experience, wbl, composite_level}
+  version       VARCHAR(10) DEFAULT '8th'
+);
+
+-- GWA (41개)
+CREATE TABLE gwa (
+  gwa_id        VARCHAR(20) PRIMARY KEY,  -- 예: 4.A.1.b.1
+  category      VARCHAR(50),               -- A. Information Input 등
+  label_en      TEXT,
+  label_ko      TEXT,
+  definition_ko TEXT
+);
+
+-- IWA (한국형 약 300개)
+CREATE TABLE iwa (
+  iwa_id        VARCHAR(30) PRIMARY KEY,  -- 예: 4.A.1.b.1.I02
+  gwa_id        VARCHAR(20) REFERENCES gwa(gwa_id),
+  label_ko      TEXT,
+  is_placeholder BOOLEAN DEFAULT FALSE
+);
+
+-- DWA (한국형 약 2,000개)
+CREATE TABLE dwa (
+  dwa_id        VARCHAR(40) PRIMARY KEY,  -- 예: 4.A.1.b.1.I02.D01
+  iwa_id        VARCHAR(30) REFERENCES iwa(iwa_id),
+  label_ko      TEXT,
+  job_family    VARCHAR(50),
+  embedding     VECTOR(1024),              -- pgvector 확장
+  quality_scores JSONB                     -- {homogeneity, fit, uniqueness, ...}
+);
+
+-- TASK (직업 × task)
+CREATE TABLE task (
+  task_id       SERIAL PRIMARY KEY,
+  ksco_code     VARCHAR(5) REFERENCES occupation(ksco_code),
+  statement     TEXT,
+  importance    NUMERIC(3,2),
+  frequency     NUMERIC(3,2),
+  relevance     NUMERIC(4,3),
+  core_label    VARCHAR(20),   -- core / supp_A / supp_B / non_relevant
+  embedding     VECTOR(1024)
+);
+
+-- TASK ↔ DWA 다중연결 (N:M, 최대 3개)
+CREATE TABLE task_dwa_link (
+  task_id       INT REFERENCES task(task_id),
+  dwa_id        VARCHAR(40) REFERENCES dwa(dwa_id),
+  link_order    SMALLINT,  -- 1, 2, 3
+  reviewer      VARCHAR(50),
+  reviewed_at   TIMESTAMP,
+  PRIMARY KEY (task_id, dwa_id)
+);
+</code></pre>
+<h3 id="863-id">8.6.3 ID 명명 규칙</h3>
+<table>
+<thead>
+<tr>
+<th>객체</th>
+<th>ID 형식</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KSCO 직업</td>
+<td>4자리 숫자</td>
+<td><code>2491</code></td>
+</tr>
+<tr>
+<td>GWA</td>
+<td>5-part 도트 ID</td>
+<td><code>4.A.1.b.1</code></td>
+</tr>
+<tr>
+<td>IWA</td>
+<td>GWA + <code>.I</code> + 2자리</td>
+<td><code>4.A.1.b.1.I02</code></td>
+</tr>
+<tr>
+<td>DWA</td>
+<td>IWA + <code>.D</code> + 2자리</td>
+<td><code>4.A.1.b.1.I02.D01</code></td>
+</tr>
+<tr>
+<td>TASK</td>
+<td><code>T</code> + 직업코드 + 4자리 시퀀스</td>
+<td><code>T2491-0001</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 원칙</strong>: IWA·DWA 번호는 <strong>무작위 부여</strong> (의미 순서 X). 추가 시 재배치 불필요.</p>
+<hr />
+<h2 id="87-8">8.7 8개월 실행 일정 매핑 (전체 모듈 통합)</h2>
+<pre><code>[1개월] 모듈 1 데이터 통합 + 모듈 2 NLP 인프라
+        - HWPX 파서·임베딩 서빙·LLM API 키 확보
+        - 분석가 paired 훈련 (Kappa 0.7 도달)
+        - SEM 시뮬레이션 1회
+
+[2-3개월] 모듈 1 후반: 직업당 통합 코퍼스 구축
+          모듈 4 시작: Kappa·F1 모니터링
+
+[4-5개월] 모듈 3 KOA 엔진 구축
+          - GWA 매핑·DWA 군집·DWA 작성
+          - Round-Robin QC 1주차부터 시작
+
+[6개월]   모듈 3 후반: IWA 도출 + DWA Refinement
+          모듈 5 산출물 표준화 — 직무기술 정의서 양식 확정
+
+[7개월]   외부 전문가 5인 패널 검토
+          KOA 파일럿 테스트 (500 응답 자동코딩 정확도)
+          시뮬레이션 중분류 2~3개 완성
+
+[8개월]   최종 보고서 + 직무기술 정의서 시제품 + KOA 데모
+</code></pre>
+<hr />
+<h2 id="88-part">8.8 본 Part 요약 카드</h2>
+<ul>
+<li><strong>5개 모듈</strong>: 데이터 통합 / NLP 인프라 / KOA 엔진 / QA·합의 / 산출물 표준</li>
+<li><strong>KSCO HWPX</strong>는 pyhwpx 또는 win32com 또는 LibreOffice 변환으로 처리</li>
+<li>한국어 NLP 스택: <strong>Mecab-ko · BGE-m3-ko · UMAP · HDBSCAN · BERTopic · Claude</strong></li>
+<li><strong>KOA(한국형 AutoCoder)</strong>: O*NET-SOC + NIOCCS + G-Code 합성 설계</li>
+<li><strong>Cohen's Kappa·F1·Silhouette·SEM 시뮬레이션</strong> 코드 모듈화</li>
+<li><strong>직무기술 정의서 1쪽 표준 양식</strong> + PostgreSQL DB 스키마 + ID 명명 규칙</li>
+</ul>
+<hr />
+<h2 id="89">8.9 다음 단계</h2>
+<p>본 Part까지 학습하면 Track B(방법론·실행) 트랙이 완료됩니다. 부록(<code>08_부록_용어집_체크리스트_연습문제.md</code>)에서 학습 정도를 점검하세요.</p>
+<p>또한 본 사업 1개월차에 본 Part의 코드 예시를 <strong>실제 실행</strong>해 보는 것을 권장합니다. 특히:
+- HWPX 파서 1회 완성
+- BGE-m3-ko 임베딩 서빙 1회 구축
+- LLM API 호출 100건 테스트 (Cohen's Kappa 측정)
+- 1개 직업으로 KOA 엔진 프로토타입 1회 구현</p></div></section>
+
+<section id="part-A" class="part"><div class="md-content"><h1 id="_1">부록 — 용어집 · 체크리스트 · 연습문제</h1>
+<h2 id="a">A. 용어집 (가나다·알파벳 순)</h2>
+<p>본 스터디 자료에 등장하는 주요 용어를 가나다 또는 영문 알파벳 순서로 정리합니다.</p>
+<h3 id="_2">한글 용어</h3>
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>공통 좌표</strong></td>
+<td>모든 직업을 동일한 척도로 측정하기 위한 표준화된 기준. O*NET의 GWA 41개가 대표 사례</td>
+</tr>
+<tr>
+<td><strong>귀납적 추상화</strong></td>
+<td>구체 진술(task)에서 출발하여 점차 일반화된 표현(DWA → IWA → GWA)으로 추상화해 가는 방법</td>
+</tr>
+<tr>
+<td><strong>다중연결(multi-link)</strong></td>
+<td>하나의 task가 최대 3개 DWA에 연결되는 N:M 관계. 직업 간 전환 분석의 기초</td>
+</tr>
+<tr>
+<td><strong>다활동 task</strong></td>
+<td>여러 활동(예: 측정+절단+설치)을 한 진술에 포함하는 task. 분해 처리 필요</td>
+</tr>
+<tr>
+<td><strong>데이터 무결성</strong></td>
+<td>child가 항상 immediate parent를 갖도록 하는 위계 분류 표준</td>
+</tr>
+<tr>
+<td><strong>모드 붕괴 (mode collapse)</strong></td>
+<td>LLM이 다양한 입력에도 유사한 답만 반복 생성하는 현상</td>
+</tr>
+<tr>
+<td><strong>모호 동사</strong></td>
+<td>"사용한다", "수행한다", "처리한다" 등 구체적 의미가 약한 동사. DWA 작성에서 회피</td>
+</tr>
+<tr>
+<td><strong>반복가능성 (reproducibility)</strong></td>
+<td>같은 입력에 같은 출력을 보장하는 성질. LLM 분석에서 중요한 품질 기준</td>
+</tr>
+<tr>
+<td><strong>세분류</strong></td>
+<td>KSCO 4단계 분류 (1,000명 이상 종사 기준). 본 연구의 분석 모집단 (495개)</td>
+</tr>
+<tr>
+<td><strong>세세분류</strong></td>
+<td>KSCO 5단계 분류 (한국 자체 확장). 1,270개</td>
+</tr>
+<tr>
+<td><strong>시계열 단절</strong></td>
+<td>분류 개정으로 인해 이전 데이터와의 시계열 비교가 어려워지는 현상</td>
+</tr>
+<tr>
+<td><strong>잔여 카테고리</strong></td>
+<td>"All Other ..." 등 분류 외 항목을 모아두는 카테고리. SOC가 사용, WA Project는 회피</td>
+</tr>
+<tr>
+<td><strong>잠재적 mismatch</strong></td>
+<td>신규 분류 체계가 기존 분류의 일부 정보를 포착하지 못할 가능성</td>
+</tr>
+<tr>
+<td><strong>직능수준 (Skill Level)</strong></td>
+<td>직무 수행에 필요한 교육·훈련 수준. 1~4단계</td>
+</tr>
+<tr>
+<td><strong>직능유형 (Skill Specialization)</strong></td>
+<td>직무의 성격 차이. 지식 분야·도구·원재료·산출물 4차원</td>
+</tr>
+<tr>
+<td><strong>직무군 (Job Family)</strong></td>
+<td>유사한 직무유형을 가진 직업의 묶음. 미국 22개, 본 연구는 KSCO 중분류 57개 사용 권고</td>
+</tr>
+<tr>
+<td><strong>직무기술 정의서</strong></td>
+<td>본 연구의 핵심 산출물. ①직업개요 ②주요업무 ③핵심직무활동 ④표준화직무요소 구조</td>
+</tr>
+<tr>
+<td><strong>표본수 결정 시뮬레이션</strong></td>
+<td>SEM(표준오차)을 시뮬레이션하여 통계적 안정성을 확보하는 최소 표본수 도출 절차</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">영문 용어</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BERT</strong></td>
+<td>Bidirectional Encoder Representations from Transformers. 2018년 Google 발표. 텍스트 임베딩의 표준 모델</td>
+</tr>
+<tr>
+<td><strong>BERTopic</strong></td>
+<td>임베딩 + UMAP + HDBSCAN + c-TF-IDF를 결합한 topic modeling. 군집별 키워드 추출 가능</td>
+</tr>
+<tr>
+<td><strong>BGE-m3-ko</strong></td>
+<td>XLM-RoBERTa 기반 한국어 임베딩 모델. 1024차원, 8192 토큰 입력 가능</td>
+</tr>
+<tr>
+<td><strong>Cohen's Kappa</strong></td>
+<td>두 평정자 간 일치도. 우연 일치를 보정한 지표. 0.8 이상 "거의 완전"</td>
+</tr>
+<tr>
+<td><strong>Cross-Family DWA</strong></td>
+<td>여러 직무군에 걸치는 DWA. 직업 간 전환 분석에 활용</td>
+</tr>
+<tr>
+<td><strong>DWA (Detailed Work Activity)</strong></td>
+<td>4계층의 3번째 층. 같은 직무군 내 다수 직업이 공유하는 구체 활동. 약 2,087개</td>
+</tr>
+<tr>
+<td><strong>F1 Score</strong></td>
+<td>Precision과 Recall의 조화평균. 분류 모델 종합 평가</td>
+</tr>
+<tr>
+<td><strong>GWA (Generalized Work Activity)</strong></td>
+<td>4계층의 최상위 층. 모든 직업에 공통되는 가장 일반적 활동. 41개</td>
+</tr>
+<tr>
+<td><strong>HDBSCAN</strong></td>
+<td>Hierarchical Density-Based Spatial Clustering. 군집 수 자동 결정, 노이즈 분리</td>
+</tr>
+<tr>
+<td><strong>HumRRO</strong></td>
+<td>Human Resources Research Organization. O*NET TASK 품질관리 방법론 정립 (2003)</td>
+</tr>
+<tr>
+<td><strong>IWA (Intermediate Work Activity)</strong></td>
+<td>4계층의 2번째 층. DWA와 GWA 사이 중간 추상도. 332개</td>
+</tr>
+<tr>
+<td><strong>K-NCS</strong></td>
+<td>Korean National Competency Standards. 한국 국가직무능력표준</td>
+</tr>
+<tr>
+<td><strong>KECO</strong></td>
+<td>Korean Employment Classification of Occupations. 한국고용직업분류</td>
+</tr>
+<tr>
+<td><strong>KOR-DALE</strong></td>
+<td>Dale-Chall 한국어 적용 가독성 지표</td>
+</tr>
+<tr>
+<td><strong>KSAO</strong></td>
+<td>Knowledge, Skills, Abilities, Other characteristics. 직무 수행에 필요한 개인 속성</td>
+</tr>
+<tr>
+<td><strong>KSCO</strong></td>
+<td>Korean Standard Classification of Occupations. 한국표준직업분류</td>
+</tr>
+<tr>
+<td><strong>LLM</strong></td>
+<td>Large Language Model. GPT, Claude 등</td>
+</tr>
+<tr>
+<td><strong>NCS</strong></td>
+<td>National Competency Standards</td>
+</tr>
+<tr>
+<td><strong>O*NET</strong></td>
+<td>Occupational Information Network. 미국 노동부의 직업정보 시스템</td>
+</tr>
+<tr>
+<td><strong>O*NET-SOC</strong></td>
+<td>O*NET이 채택한 SOC 기반 직업분류 코드</td>
+</tr>
+<tr>
+<td><strong>Round-Robin QC</strong></td>
+<td>다수 팀이 서로의 결과물을 순차적으로 검토하는 품질관리 방식</td>
+</tr>
+<tr>
+<td><strong>SBERT</strong></td>
+<td>Sentence-BERT. 문장 단위 임베딩 모델</td>
+</tr>
+<tr>
+<td><strong>SEM</strong></td>
+<td>Standard Error of the Mean. 평균의 표준오차</td>
+</tr>
+<tr>
+<td><strong>SMOG Index</strong></td>
+<td>가독성 지표 (Simple Measure of Gobbledygook). 3음절 이상 단어 수로 측정</td>
+</tr>
+<tr>
+<td><strong>SOC</strong></td>
+<td>Standard Occupational Classification. 미국 표준 직업분류</td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>4계층의 최하위 층. 특정 직업에서 수행되는 구체적 진술. 약 19,000+</td>
+</tr>
+<tr>
+<td><strong>Topic Modeling</strong></td>
+<td>문서 집합에서 주제를 자동 추출하는 NLP 기법</td>
+</tr>
+<tr>
+<td><strong>UMAP</strong></td>
+<td>Uniform Manifold Approximation and Projection. 차원 축소</td>
+</tr>
+<tr>
+<td><strong>WA Project</strong></td>
+<td>O*NET Work Activities Project. DWA·IWA 도출 방법론 정립 (2014)</td>
+</tr>
+<tr>
+<td><strong>Write-in Task</strong></td>
+<td>응답자가 자유응답으로 적은 task</td>
+</tr>
+<tr>
+<td><strong>XLM-RoBERTa</strong></td>
+<td>다국어 RoBERTa. BGE-m3-ko의 기반 모델</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="b">B. 실전 체크리스트</h2>
+<p>본 연구 수행 시 단계별로 사용할 수 있는 체크리스트입니다.</p>
+<h3 id="b1-1">B.1 사업 1개월차 체크리스트</h3>
+<pre><code>□ KSCO 8차 분류항목표 HWPX 다운로드 완료
+□ 한국직업사전 데이터 확보 (공공데이터포털)
+□ NCS 능력단위 데이터 확보
+□ KNOW API 액세스 확보
+□ O*NET 30.x 데이터 다운로드
+□ SEM 시뮬레이션 1회 완수 (5개 직업 표본)
+□ 한국 보정 임계값 결정 (응답자 N, Relevance 임계 등)
+□ LLM prototype: 100개 task에 자동분류 시도
+□ 인간-AI Kappa 측정 (최소 0.7 확인)
+□ 분석가 paired 훈련 (Kappa 0.7 도달)
+</code></pre>
+<h3 id="b2-task-1">B.2 TASK 추출 체크리스트 (직업 1개당)</h3>
+<pre><code>□ 통합 코퍼스 작성 완료 (KSCO + 직업사전 + NCS + KNOW + KECO)
+□ LLM zero-shot으로 TASK 후보 추출
+□ HumRRO Step 1: task 여부 판정 (LLM + 인간 검수 5%)
+□ HumRRO Step 2-3: 중복 판정 (임베딩 + cosine similarity)
+□ TASK 풀 확정 (직업당 20~40개 권장)
+□ 3-tier 분류 적용 (Core / Supplementary / Non-relevant)
+□ Core TASK 수 ≥ 8개 확인
+□ TASK 진술 동사 시작 / 한국어 자연스러움 확인
+</code></pre>
+<h3 id="b3-gwa">B.3 GWA 매핑 체크리스트</h3>
+<pre><code>□ GWA 41개 한글 번역 확정
+□ LLM few-shot prompt 작성 완료 (GWA 정의 동봉)
+□ 다수결 LLM 분류 (Claude + GPT + Gemini)
+□ 1차/2차 GWA 결정
+□ 인간 분석가 검수 (30% 표본)
+□ 인간-AI Kappa ≥ 0.70 확인
+□ GWA 프로파일 시각화 (직업당 GWA별 TASK 수 막대그래프)
+</code></pre>
+<h3 id="b4-dwa">B.4 DWA 도출 체크리스트</h3>
+<pre><code>□ 직무군(KSCO 중분류) 1차 분할 완료
+□ GWA 산하 task 집합 추출
+□ 임베딩 계산 (BGE-m3-ko, 1024차원)
+□ UMAP 차원 축소 (10차원)
+□ HDBSCAN 클러스터링 (min_cluster_size=3)
+□ 5대 품질 기준 검증:
+  □ Homogeneity ≥ 0.70
+  □ Outlier rate ≤ 5%
+  □ Cluster Uniqueness ≤ 0.50
+  □ Specificity 검토 (LLM + 인간)
+  □ Cluster Size ≥ 3 task, ≥ 2 occupation
+□ LLM 초안 작성 (3개 초안)
+□ 인간 분석가 최종 확정
+□ 8대 작성 규칙 자동 검증 통과
+□ Round-Robin QC (1차 + 2차)
+</code></pre>
+<h3 id="b5-iwa">B.5 IWA 도출 체크리스트</h3>
+<pre><code>□ DWA pool 준비 (GWA 분할 없음)
+□ DWA 임베딩 계산
+□ 클러스터링 (군집 최소 크기 1 DWA 허용)
+□ LLM IWA 초안 작성
+□ Single-DWA IWA 처리 (placeholder 라벨)
+□ ID 체계 부여 (GWA + &quot;.I&quot; + 2-digit)
+□ Cross-Family IWA 식별
+</code></pre>
+<h3 id="b6">B.6 직무기술 정의서 출시 체크리스트</h3>
+<pre><code>□ ① 직업개요 작성 (3~5 문장)
+□ ② 주요업무내용 작성 (5~10 항목)
+□ ③ 핵심직무활동 (TASK 목록 + DWA 매핑)
+□ ④ 표준화직무요소 (GWA·IWA·DWA 프로파일)
+□ 직업 간 전환 가능성 분석 (공유 DWA 수)
+□ 가독성 (KOR-DALE 8학년) 통과
+□ 외부 전문가 1차 검토 완료
+□ Round-Robin QC 2회 완료
+</code></pre>
+<hr />
+<h2 id="c">C. 연습문제</h2>
+<p>본 스터디 자료의 핵심 개념을 점검하는 연습문제입니다.</p>
+<h3 id="c1">C.1 개념 확인 (선택형)</h3>
+<p><strong>문제 1</strong>. 다음 중 GWA(Generalized Work Activity)에 해당하는 진술은?
+- ① "환자의 활력징후를 측정한다"
+- ② "정보를 수집한다 (Getting Information)"
+- ③ "처방약물을 정맥 경로로 투여한다"
+- ④ "Snellen 시력표를 사용해 환자 시력을 검사한다"</p>
+<blockquote>
+<p><strong>정답·해설</strong>: ② — GWA는 직업 비특수의 가장 일반적 활동. ①은 다소 일반적이지만 의료 맥락 포함, ③④는 직업특수 task</p>
+</blockquote>
+<p><strong>문제 2</strong>. WA Project가 2014년에 NLP를 거부한 핵심 이유는?
+- ① 인건비가 NLP보다 저렴해서
+- ② Task 진술의 구조적 변동성으로 인한 신뢰도 우려
+- ③ NLP 기술이 영어만 지원해서
+- ④ 미국 노동부의 정책 방향</p>
+<blockquote>
+<p><strong>정답·해설</strong>: ② — "task statement structure is so variable..." 핵심 인용. 2014년 BERT 이전 NLP의 한계</p>
+</blockquote>
+<p><strong>문제 3</strong>. HumRRO의 분석가 간 Cohen's Kappa는?
+- ① 0.55
+- ② 0.70
+- ③ 0.88
+- ④ 1.00</p>
+<blockquote>
+<p><strong>정답·해설</strong>: ③ — Landis &amp; Koch 분류로 "거의 완전한 일치"</p>
+</blockquote>
+<p><strong>문제 4</strong>. DWA의 최소 크기 권고는 (미국 기준)?
+- ① 2 task / 2 occupations
+- ② 4 task / 3 occupations
+- ③ 10 task / 5 occupations
+- ④ 15 task / 10 occupations</p>
+<blockquote>
+<p><strong>정답·해설</strong>: ② — Cross-occupational linking과 장기 안정성 확보</p>
+</blockquote>
+<p><strong>문제 5</strong>. 본 연구 8개월 사업기간에서 권고되는 한국 보정 DWA 최소 크기는?
+- ① 4 task / 3 occupations (미국 그대로)
+- ② 3 task / 2 occupations
+- ③ 1 task / 1 occupation
+- ④ 10 task / 5 occupations</p>
+<blockquote>
+<p><strong>정답·해설</strong>: ② — 한국 데이터 규모(KSCO 495 세분류) 고려한 하향 권고</p>
+</blockquote>
+<h3 id="c2">C.2 적용 문제 (서술형)</h3>
+<p><strong>문제 6</strong>. 다음 task 진술을 GWA 41개 중 1차·2차 선택을 제시하고 이유를 설명하시오.</p>
+<blockquote>
+<p>"건축물의 도면을 검토하여 구조적 안전성을 평가하고 설계 변경 권고안을 작성한다"</p>
+<p><strong>정답·해설 예시</strong>:
+- 1차 GWA: "Analyzing Data or Information" — 도면 검토와 안전성 평가가 분석 활동의 핵심
+- 2차 GWA: "Documenting/Recording Information" — 권고안 작성 측면
+- 3차 후보: "Making Decisions and Solving Problems"
+- 이유: task 진술이 다활동(분석 + 결정 + 기록)을 포함. 1차 활동은 분석 평가</p>
+</blockquote>
+<p><strong>문제 7</strong>. 다음 두 DWA 진술 중 8대 작성 규칙을 더 잘 준수한 것을 고르고 이유를 설명하시오.</p>
+<p>A. "환자의 신체 상태를 모니터링하고 필요시 의사에게 보고하기 위해 활력징후·증상·반응 등을 정기적으로 관찰하는 활동을 수행한다"
+B. "환자의 신체 상태와 반응을 관찰한다"</p>
+<blockquote>
+<p><strong>정답·해설</strong>: B
+- A의 문제: ①너무 길어 가독성 저하, ②"수행한다"로 끝나 모호 동사 사용, ③목적절 "보고하기 위해" 포함, ④다활동(관찰+보고)
+- B는 동사 시작 ✓, 단일 활동 ✓, 적정 추상도 ✓, 가독성 8학년 ✓</p>
+</blockquote>
+<p><strong>문제 8</strong>. 본 연구에서 LLM zero-shot 분류를 채택할지 인간 검수 100%로 갈지 결정하는 핵심 지표 두 가지를 들고, 각 지표의 임계값을 제시하시오.</p>
+<blockquote>
+<p><strong>정답·해설 예시</strong>:
+- 지표 1: 인간-AI Cohen's Kappa — 임계 0.70 이상이면 LLM 채택, 미만이면 인간 검수 비중 증가
+- 지표 2: F1 Score — 임계 0.82 이상이면 자동분류 채택. Precision ≥ 0.85, Recall ≥ 0.80
+- 보조 지표: hallucination rate ≤ 5%</p>
+</blockquote>
+<h3 id="c3">C.3 시뮬레이션 문제</h3>
+<p><strong>문제 9</strong>. KSCO 세분류 "공인회계사"(KSCO 코드는 가정) 1개 직업을 잡아서, 다음 정보로 직무기술 정의서 일부를 작성해 보시오.</p>
+<pre><code>[주어진 정보]
+- KSCO 직업 정의: 기업·기관의 재무상태와 경영성과를 감사하고, 회계·세무 자문을 제공한다.
+- 한국직업사전 주요업무: 회계감사 수행, 재무제표 검토, 세무신고서 작성, 회계자문, 재무 컨설팅
+- NCS 능력단위: 외부감사, 내부감사, 세무신고, 회계자문, 재무분석
+</code></pre>
+<p><strong>과제</strong>:
+1. TASK 후보 8개 추출 (LLM 역할로 작성)
+2. 각 TASK를 GWA 41개 중 1차에 매핑 (Part 2 §2.2 GWA 4대 범주 참고)
+3. 가장 빈도가 높을 것 같은 GWA 3개 식별</p>
+<blockquote>
+<p><strong>모범답안 예시</strong>:</p>
+<p>TASK 후보:
+- T1: 기업의 재무제표를 회계기준 준수 관점에서 검토한다 → Analyzing Data or Information
+- T2: 회계감사 절차에 따라 증빙자료를 표본 추출하여 검증한다 → Inspecting Equipment, Structures, or Material
+- T3: 감사 결과를 감사보고서 형태로 작성한다 → Documenting/Recording Information
+- T4: 세무신고서를 작성하고 관할 세무서에 제출한다 → Documenting/Recording Information
+- T5: 고객 기업의 재무 상태에 대해 자문을 제공한다 → Communicating
+- T6: 회계 처리 오류를 발견하면 수정 방안을 제시한다 → Making Decisions and Solving Problems
+- T7: 감사 일정·범위를 사전 계획한다 → Scheduling Work and Activities
+- T8: 회계 관련 법규 개정사항을 학습한다 → Updating and Using Relevant Knowledge</p>
+<p>빈도 높은 GWA 3개:
+1. Analyzing Data or Information
+2. Documenting/Recording Information
+3. Communicating</p>
+</blockquote>
+<h3 id="c4-qa">C.4 발표 Q&amp;A 대비</h3>
+<p><strong>문제 10</strong>. 다음 질문에 대해 1분 답변(약 200자)을 준비하시오.</p>
+<blockquote>
+<p>"Q: 미국 WA Project는 14명이 12개월 이상 걸린 작업입니다. 한국이 6명·8개월로 동등한 결과를 낼 수 있다는 근거는 무엇입니까?"</p>
+<p><strong>모범답안 예시</strong>:
+"미국이 168 person-month인 반면 한국은 48 person-month로 약 30% 자원입니다. 본 연구는 다음 3가지 효율 레버를 활용합니다.
+첫째, 2014년 미국이 거부한 NLP·LLM 기술이 2026년에는 인간 수준으로 발달했습니다. HumRRO Decision Tree의 task 판정과 중복 판정에서 LLM이 90% 이상 정확도를 보이며, 인간 분석 시간을 70% 절감할 수 있습니다.
+둘째, 본 사업은 일부 중분류만 시뮬레이션하는 것으로 범위가 한정되어 있어, 전체 1만 task를 한 번에 처리할 필요가 없습니다.
+셋째, O*NET 41 GWA·332 IWA·2,087 DWA를 출발점으로 활용하여, 미국이 11년에 걸쳐 한 일을 재발명하지 않습니다."</p>
+</blockquote>
+<p><strong>문제 11</strong>. 다음 질문에 1분 답변하시오.</p>
+<blockquote>
+<p>"Q: 한국 보정 임계값 67% → 60%로 낮추는 것은 자의적 결정이 아닙니까?"</p>
+<p><strong>모범답안 예시</strong>:
+"미국 67% 임계는 미국 데이터의 시뮬레이션 결과입니다. 한국에서는 사업 1개월차에 K-NCS·KECO 데이터로 자체 SEM 시뮬레이션을 수행하여 한국 보정 임계를 도출할 계획입니다. 한국 직업의 incumbent 다양성이 미국보다 작을 가능성이 있어, 분포 검토 결과에 따라 60~67% 사이에서 결정할 것입니다. 단, 분류 임계의 구조(3-tier)와 척도(5점)는 동일하게 유지하여 국제 비교가능성을 확보합니다."</p>
+</blockquote>
+<hr />
+<h2 id="d">D. 자기 점검 체크리스트</h2>
+<p>본 스터디 자료 학습 후, 다음 질문에 모두 "예"라고 답할 수 있어야 합니다.</p>
+<pre><code>□ Activity, Task, Job, Occupation의 차이를 1분 안에 설명할 수 있다
+□ ISCO-08의 &quot;직능수준 × 직능유형&quot; 원리를 그릴 수 있다
+□ O*NET 4계층의 규모(41/332/2,087/19,000+)를 회상할 수 있다
+□ HumRRO 5-step decision tree의 모든 단계를 회상할 수 있다
+□ WA Project 7-step 클러스터링 절차를 회상할 수 있다
+□ 5대 클러스터 품질 기준을 모두 회상할 수 있다
+□ 8대 DWA 작성 규칙을 모두 회상할 수 있다
+□ Kappa 0.88의 의미를 설명할 수 있다
+□ 본 연구의 AI 활용 13개 단계 중 5개 이상을 회상할 수 있다
+□ BGE-m3-ko / HDBSCAN / BERTopic의 역할을 구분할 수 있다
+□ 인간-AI Kappa 임계 0.70의 의미를 설명할 수 있다
+□ 직무기술 정의서 4개 섹션을 회상할 수 있다
+□ KSCO 세분류 1개 직업의 처리 흐름(Step 1~10)을 그릴 수 있다
+□ 본 연구의 P0/P1/P2 추가 필요 자료를 회상할 수 있다
+</code></pre>
+<hr />
+<h2 id="e">E. 외부 참고 링크</h2>
+<p>본 스터디 자료의 학습 후 추가 학습용 외부 자료:</p>
+<table>
+<thead>
+<tr>
+<th>카테고리</th>
+<th>자료</th>
+<th>링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O*NET 공식</td>
+<td>O*NET Resource Center</td>
+<td>https://www.onetcenter.org/</td>
+</tr>
+<tr>
+<td>O*NET DB</td>
+<td>30.x Data Dictionary</td>
+<td>https://www.onetcenter.org/dictionary/30.0/</td>
+</tr>
+<tr>
+<td>O*NET OnLine</td>
+<td>검색 인터페이스</td>
+<td>https://www.onetonline.org/</td>
+</tr>
+<tr>
+<td>O*NET WhatsNew</td>
+<td>분기별 업데이트</td>
+<td>https://www.onetcenter.org/whatsnew.html</td>
+</tr>
+<tr>
+<td>KSCO</td>
+<td>통계청 8차 고시</td>
+<td>https://kostat.go.kr/board.es?mid=a10403040000&amp;bid=107&amp;act=view&amp;list_no=431582</td>
+</tr>
+<tr>
+<td>KSCO</td>
+<td>국가법령정보센터</td>
+<td>https://www.law.go.kr/admRulLsInfoP.do?admRulSeq=2100000243058</td>
+</tr>
+<tr>
+<td>NCS</td>
+<td>한국산업인력공단</td>
+<td>https://www.ncs.go.kr</td>
+</tr>
+<tr>
+<td>KNOW</td>
+<td>한국직업정보시스템</td>
+<td>http://know.work.go.kr/</td>
+</tr>
+<tr>
+<td>ISCO-08</td>
+<td>ILO 공식 페이지</td>
+<td>https://www.ilo.org/public/english/bureau/stat/isco/isco08/</td>
+</tr>
+<tr>
+<td>ESCO</td>
+<td>European Skills/Occupations</td>
+<td>https://esco.ec.europa.eu/</td>
+</tr>
+<tr>
+<td>AI Ontology 연구</td>
+<td>"Where can AI be used?" (arxiv)</td>
+<td>https://arxiv.org/abs/2603.20619</td>
+</tr>
+<tr>
+<td>Anthropic Economic Index</td>
+<td>직업 task 매핑 (arxiv)</td>
+<td>https://arxiv.org/abs/2507.07935</td>
+</tr>
+<tr>
+<td>LLMs4OL Challenge</td>
+<td>2025 결과물</td>
+<td>https://www.tib-op.org/ojs/index.php/ocp/article/download/2896/2944</td>
+</tr>
+<tr>
+<td>BGE-m3-ko</td>
+<td>Hugging Face</td>
+<td>https://huggingface.co/dragonkue/BGE-m3-ko</td>
+</tr>
+<tr>
+<td>BERTopic</td>
+<td>공식 문서</td>
+<td>https://maartengr.github.io/BERTopic/</td>
+</tr>
+<tr>
+<td>Korean NLP</td>
+<td>DistilKoBERT 직업분류 연구</td>
+<td>https://pmc.ncbi.nlm.nih.gov/articles/PMC11345209/</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>본 스터디 자료의 끝입니다. 추가 질문이나 보강이 필요한 영역이 있으면 언제든지 요청하세요.</strong></p></div></section>
+
+  </main>
+</div>
+<script>
+function showPart(id, el) {
+  document.querySelectorAll('.part').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('aside.nav a').forEach(a => a.classList.remove('active'));
+  if (el) el.classList.add('active');
+  window.scrollTo(0, 0);
+}
+function showAll() {
+  document.querySelectorAll('.part').forEach(p => p.classList.add('active'));
+  document.querySelectorAll('aside.nav a').forEach(a => a.classList.remove('active'));
+}
+function searchContent(q) {
+  if (!q) {
+    document.querySelectorAll('.part').forEach((p, i) => {
+      p.classList.toggle('active', i === 0);
+      const txt = p.querySelectorAll('mark.search-hit');
+      txt.forEach(m => { const t = document.createTextNode(m.textContent); m.replaceWith(t); });
+    });
+    document.querySelectorAll('aside.nav a').forEach((a, i) => a.classList.toggle('active', i === 0));
+    return;
+  }
+  q = q.toLowerCase();
+  document.querySelectorAll('.part').forEach(p => {
+    const text = p.innerText.toLowerCase();
+    p.classList.toggle('active', text.includes(q));
+  });
+}
+</script>
+</body>
+</html>

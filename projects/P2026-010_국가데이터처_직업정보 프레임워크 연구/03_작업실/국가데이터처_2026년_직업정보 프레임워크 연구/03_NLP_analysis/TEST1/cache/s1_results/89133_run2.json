@@ -1,0 +1,94 @@
+{
+  "ksco_code": "89133",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "인화지 제조기",
+      "full_statement": "인화지를 생산하는 일련의 장치를 조작한다.",
+      "source_sentence": "인화지를 생산하는 일련의 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "생산하다",
+      "object": "인화지",
+      "full_statement": "일련의 장치를 운전하여 인화지를 생산한다.",
+      "source_sentence": "인화지를 생산하는 일련의 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "절단하다",
+      "object": "카드지나 판지",
+      "full_statement": "인화지를 필요한 길이로 절단하기 위해 절단 기계를 조작한다.",
+      "source_sentence": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "접다",
+      "object": "종이",
+      "full_statement": "상자형태로 제조하기 위해 카드지나 판지를 접는 기계를 조작한다.",
+      "source_sentence": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "압착하다",
+      "object": "종이, 판지 또는 카드지",
+      "full_statement": "용기를 제조하기 위해 종이, 판지 또는 카드지를 압착하는 기계를 조작한다.",
+      "source_sentence": "종이, 판지 또는 카드지를 압착해 음료용 컵이나 기타 용기를 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "재단하다",
+      "object": "종이",
+      "full_statement": "제품을 제조하기 위해 종이를 재단하는 기계를 조작한다.",
+      "source_sentence": "종이를 재단하고 접어 풀칠해서 봉투, 포대를 제조하거나 셀로판지 또는 기타 유사 재료로 봉투를 만드는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.45
+    },
+    {
+      "verb": "풀칠하다",
+      "object": "종이",
+      "full_statement": "제품을 제조하기 위해 종이를 접어 풀칠하는 기계를 조작한다.",
+      "source_sentence": "종이를 재단하고 접어 풀칠해서 봉투, 포대를 제조하거나 셀로판지 또는 기타 유사 재료로 봉투를 만드는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기계의 기능장애를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제어하다",
+      "object": "산업용 기계 및 장비",
+      "full_statement": "컴퓨터에 의한 기계 제어 방식으로 산업용 기계 및 장비를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "인화지 제조기", "category": "장비", "evidence_span": "인화지를 생산하는 일련의 장치를 조작한다."},
+    {"name": "절단기", "category": "장비", "evidence_span": "카드지나 판지를 절단하고 접는 기계를 조작한다."},
+    {"name": "압착기", "category": "장비", "evidence_span": "종이, 판지 또는 카드지를 압착해 음료용 컵이나 기타 용기를 제조하는 기계를 조작한다."},
+    {"name": "재단기", "category": "장비", "evidence_span": "종이를 재단하고 접어 풀칠해서 봉투, 포대를 제조하거나"}
+  ],
+  "work_context": [
+    {"category": "시간적", "value": "고도의 자동화된 산업용 기계 운전 환경", "evidence_span": "대규모적이고 때로는 고도의 자동화된 산업용 기계 및 장비를 조작하고"}
+  ]
+}

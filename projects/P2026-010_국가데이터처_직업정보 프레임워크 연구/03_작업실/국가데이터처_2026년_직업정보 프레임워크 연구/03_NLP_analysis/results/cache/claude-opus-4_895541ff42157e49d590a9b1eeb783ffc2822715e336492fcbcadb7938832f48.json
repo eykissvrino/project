@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28153",
+  "tasks": [
+    {
+      "verb": "심사하다",
+      "object": "품질경영시스템",
+      "full_statement": "조직의 품질경영시스템을 심사한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "인증 적합성",
+      "full_statement": "국제표준기구의 품질인증 적합성 여부를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "심사보고서",
+      "full_statement": "품질인증 심사 결과 보고서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

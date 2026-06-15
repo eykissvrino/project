@@ -1,0 +1,101 @@
+{
+  "ksco_code": "72243",
+  "tasks": [
+    {
+      "verb": "수선하다",
+      "object": "구두 파손부위",
+      "full_statement": "구두의 파손부위를 수선한다.",
+      "source_sentence": "구두의 파손부위를 수선하거나 구두굽을 교체한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "교체하다",
+      "object": "구두굽",
+      "full_statement": "구두굽을 교체한다.",
+      "source_sentence": "구두의 파손부위를 수선하거나 구두굽을 교체한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "염색하다",
+      "object": "구두",
+      "full_statement": "구두의 색상을 바꾸기 위해 구두를 염색한다.",
+      "source_sentence": "구두의 색상을 바꾸기 위해 염색을 하거나 구두 이외의 신발을 수선하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수선하다",
+      "object": "구두 이외의 신발",
+      "full_statement": "구두 이외의 신발을 수선한다.",
+      "source_sentence": "구두의 색상을 바꾸기 위해 염색을 하거나 구두 이외의 신발을 수선하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "수선부위",
+      "full_statement": "수선표의 표시를 보고 수선부위를 확인한다.",
+      "source_sentence": "수선표의 표시를 보고 수선부위를 쪽가위로 뜯는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "뜯다",
+      "object": "수선부위",
+      "full_statement": "수선부위를 쪽가위로 뜯는다.",
+      "source_sentence": "수선표의 표시를 보고 수선부위를 쪽가위로 뜯는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "천·실 등 자재",
+      "full_statement": "수선 작업 지시서에 따라 필요한 천·실 등을 준비한다.",
+      "source_sentence": "수선 작업 지시서에 따라 필요한 천·실 등을 준비하고 재봉틀을 조작하거나 바느질‧다림질 등을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "재봉틀",
+      "full_statement": "수선 작업을 위해 재봉틀을 조작한다.",
+      "source_sentence": "수선 작업 지시서에 따라 필요한 천·실 등을 준비하고 재봉틀을 조작하거나 바느질‧다림질 등을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "바느질하다",
+      "object": "수선부위",
+      "full_statement": "수선부위를 바느질한다.",
+      "source_sentence": "수선 작업 지시서에 따라 필요한 천·실 등을 준비하고 재봉틀을 조작하거나 바느질‧다림질 등을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수리하다",
+      "object": "가죽",
+      "full_statement": "고객의 요구에 따라 가죽 등을 수리한다.",
+      "source_sentence": "고객의 요구에 따라 구두(신발)의 굽을 바꾸고 가죽 등을 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "바꾸다",
+      "object": "구두(신발)의 굽",
+      "full_statement": "고객의 요구에 따라 구두(신발)의 굽을 바꾼다.",
+      "source_sentence": "고객의 요구에 따라 구두(신발)의 굽을 바꾸고 가죽 등을 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "쪽가위", "category": "도구", "evidence_span": "수선표의 표시를 보고 수선부위를 쪽가위로 뜯는다."},
+    {"name": "재봉틀", "category": "장비", "evidence_span": "재봉틀을 조작하거나 바느질‧다림질 등을 한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객의 요구에 따라 수선 작업 수행(고객응대)", "evidence_span": "고객의 요구에 따라 구두(신발)의 굽을 바꾸고 가죽 등을 수리한다."},
+    {"category": "신체적", "value": "쪽가위·바느질 등 손과 수공구를 사용한 정밀 수작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

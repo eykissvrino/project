@@ -1,0 +1,103 @@
+{
+  "ksco_code": "95120",
+  "tasks": [
+    {
+      "verb": "듣다",
+      "object": "아이의 특이사항 및 주의사항",
+      "full_statement": "아이의 특이사항 및 주의사항을 듣고 숙지한다.",
+      "source_sentence": "아이의 특이사항 및 주의사항을 듣고 숙지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돕다",
+      "object": "아이의 식사",
+      "full_statement": "아이와 일상을 함께하면서 식사를 돕는다.",
+      "source_sentence": "아이와 일상을 함께하면서 식사, 놀이, 배변, 수면 등을 돕는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "돕다",
+      "object": "아이의 놀이",
+      "full_statement": "아이와 일상을 함께하면서 놀이를 돕는다.",
+      "source_sentence": "아이와 일상을 함께하면서 식사, 놀이, 배변, 수면 등을 돕는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "돕다",
+      "object": "아이의 배변",
+      "full_statement": "아이와 일상을 함께하면서 배변을 돕는다.",
+      "source_sentence": "아이와 일상을 함께하면서 식사, 놀이, 배변, 수면 등을 돕는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "돕다",
+      "object": "아이의 수면",
+      "full_statement": "아이와 일상을 함께하면서 수면을 돕는다.",
+      "source_sentence": "아이와 일상을 함께하면서 식사, 놀이, 배변, 수면 등을 돕는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보호하다",
+      "object": "아이",
+      "full_statement": "아이를 안전하게 보호한다.",
+      "source_sentence": "아이를 안전하게 보호한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돌보다",
+      "object": "아이",
+      "full_statement": "가정에서 아이를 돌본다.",
+      "source_sentence": "가정에서 아이를 돌보고, 어린이의 피복을 수선, 세척, 다림질하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수선하다",
+      "object": "어린이의 피복",
+      "full_statement": "어린이의 피복을 수선한다.",
+      "source_sentence": "가정에서 아이를 돌보고, 어린이의 피복을 수선, 세척, 다림질하기도 한다.",
+      "derived_from": "세세분류 정의(복합행동 분할)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "세척하다",
+      "object": "어린이의 피복",
+      "full_statement": "어린이의 피복을 세척한다.",
+      "source_sentence": "가정에서 아이를 돌보고, 어린이의 피복을 수선, 세척, 다림질하기도 한다.",
+      "derived_from": "세세분류 정의(복합행동 분할)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "다림질하다",
+      "object": "어린이의 피복",
+      "full_statement": "어린이의 피복을 다림질한다.",
+      "source_sentence": "가정에서 아이를 돌보고, 어린이의 피복을 수선, 세척, 다림질하기도 한다.",
+      "derived_from": "세세분류 정의(복합행동 분할)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "가정(고용주의 가정) 내 실내 작업",
+      "evidence_span": "가정에서 아이를 돌보고"
+    },
+    {
+      "category": "사회적",
+      "value": "아이 돌봄 대상과의 직접 대면 돌봄",
+      "evidence_span": "아이와 일상을 함께하면서 식사, 놀이, 배변, 수면 등을 돕는다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

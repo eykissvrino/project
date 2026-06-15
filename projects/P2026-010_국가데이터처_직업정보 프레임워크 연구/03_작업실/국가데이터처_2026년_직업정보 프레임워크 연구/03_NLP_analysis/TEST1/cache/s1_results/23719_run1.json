@@ -1,0 +1,149 @@
+{
+  "ksco_code": "23719",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "환경보전 공학기술",
+      "full_statement": "환경보전에 필요한 다양한 공학적인 기술을 개발한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(상기 어느 항목에도 포함되지 않은 유사 직무)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설계하다",
+      "object": "환경오염 방지·제어 처리시설",
+      "full_statement": "환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설계하다",
+      "object": "폐기물·오염물질 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정을 설계한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "시공하다",
+      "object": "폐기물·오염물질 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정을 시공한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "운전하다",
+      "object": "폐기물·오염물질 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정을 운전한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "진단하다",
+      "object": "오폐수 처리장 시설",
+      "full_statement": "오폐수 처리장의 시설을 진단한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수립하다",
+      "object": "기존시설 효율적 이용계획",
+      "full_statement": "오폐수 처리장 기존시설의 효율적인 이용계획을 수립한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "수립하다",
+      "object": "시설 발전계획",
+      "full_statement": "오폐수 처리장 시설의 발전 계획을 수립한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.64
+    },
+    {
+      "verb": "연구하다",
+      "object": "도시고형폐기물 처리",
+      "full_statement": "도시고형폐기물(MSW)의 처리에 관한 연구를 수행한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "설계하다",
+      "object": "매립지",
+      "full_statement": "도시고형폐기물 처리를 위한 매립지를 설계한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "진단하다",
+      "object": "쓰레기 매립장 안전",
+      "full_statement": "쓰레기 매립장의 안전진단을 수행한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.64
+    },
+    {
+      "verb": "수립하다",
+      "object": "매립장 안정대책",
+      "full_statement": "쓰레기 매립장의 안정대책을 수립한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.63
+    },
+    {
+      "verb": "평가하다",
+      "object": "개발 행위의 자연환경 영향",
+      "full_statement": "각종 개발 행위가 자연환경에 미치는 영향을 사전 평가한다.",
+      "source_sentence": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "예방하다",
+      "object": "환경보건 위협 요인",
+      "full_statement": "다양한 공학 원리를 활용하여 환경보건에 위협이 되는 것을 예방한다.",
+      "source_sentence": "다양한 공학 원리를 활용하여 환경보건에 위협이 되는 것을 예방, 통제하며 개선과 관련된 공학적인 일을 설계하고 계획하거나 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "통제하다",
+      "object": "환경보건 위협 요인",
+      "full_statement": "다양한 공학 원리를 활용하여 환경보건에 위협이 되는 것을 통제한다.",
+      "source_sentence": "다양한 공학 원리를 활용하여 환경보건에 위협이 되는 것을 예방, 통제하며 개선과 관련된 공학적인 일을 설계하고 계획하거나 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.57
+    },
+    {
+      "verb": "처리하다",
+      "object": "폐기물",
+      "full_statement": "폐기물 처리에 관한 기술업무를 수행한다.",
+      "source_sentence": "폐기물 처리, 현장개선이나 공해방지 기술업무를 포함하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수행하다",
+      "object": "공해방지 기술업무",
+      "full_statement": "공해방지 기술업무를 수행한다.",
+      "source_sentence": "폐기물 처리, 현장개선이나 공해방지 기술업무를 포함하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "환경 관련 공무원·국립 연구소·정부투자기관·기업체 연구소·학교·산업체",
+      "evidence_span": "환경 관련 공무원, 국립 연구소, 정부투자기관, 각종 기업체의 연구소, 학교 및 각종 산업체에서 일한다."
+    }
+  ]
+}

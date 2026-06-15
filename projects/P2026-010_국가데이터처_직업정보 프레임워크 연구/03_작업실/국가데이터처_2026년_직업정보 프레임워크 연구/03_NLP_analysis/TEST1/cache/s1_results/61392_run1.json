@@ -1,0 +1,93 @@
+{
+  "ksco_code": "61392",
+  "tasks": [
+    {
+      "verb": "놓다",
+      "object": "덫",
+      "full_statement": "포유류, 조류 및 파충류를 포획하기 위해 덫을 놓는다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이용하다",
+      "object": "무기",
+      "full_statement": "포유류, 조류 및 파충류를 사냥하기 위해 무기를 이용한다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "사냥하다",
+      "object": "포유류·조류·파충류",
+      "full_statement": "포유류, 조류 및 파충류를 사냥한다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.96
+    },
+    {
+      "verb": "받다",
+      "object": "정부의 사냥 허가",
+      "full_statement": "사냥을 하기 위해 정부의 허가를 받는다.",
+      "source_sentence": "정부의 허가를 받아 사냥을 하며, 사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "출하하다",
+      "object": "사냥물",
+      "full_statement": "사냥물을 산 채로 출하한다.",
+      "source_sentence": "사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "벗기다",
+      "object": "가죽",
+      "full_statement": "사냥물을 시판할 수 있도록 가죽을 벗긴다.",
+      "source_sentence": "사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "처리하다",
+      "object": "사냥물",
+      "full_statement": "사냥물을 시판할 수 있도록 기타 방법으로 처리한다.",
+      "source_sentence": "사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "사육하다",
+      "object": "모피생산 동물·엽조류",
+      "full_statement": "모피생산 동물과 엽조류를 번식·사육한다.",
+      "source_sentence": "조류, 파충류, 모피생산 동물, 가금, 엽조류를 포함하여 소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "수렵하다",
+      "object": "엽조류",
+      "full_statement": "엽조류를 대상으로 수렵 관련 직무를 수행한다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "수렵 관련 직무",
+      "full_statement": "자기 계획과 판단에 따라 수렵 관련 직무를 수행한다.",
+      "source_sentence": "자기 계획과 판단에 따라 농산물, 임산물 및 수산물의 생산에 필요한 지식과 경험을 기초로 작물을 재배‧수확하고 동물을 번식‧사육하며, 산림을 경작, 보존 및 개발하고, 물고기 및 기타 수생 동‧식물을 번식 및 양식하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "덫", "category": "도구", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."},
+    {"name": "무기", "category": "도구", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "실외(수렵 현장)", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."},
+    {"category": "위험", "value": "무기 취급 및 야생동물 포획", "evidence_span": "무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."}
+  ]
+}

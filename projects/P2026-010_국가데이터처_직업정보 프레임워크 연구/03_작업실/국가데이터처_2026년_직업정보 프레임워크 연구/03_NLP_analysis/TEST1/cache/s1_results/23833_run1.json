@@ -1,0 +1,109 @@
+{
+  "ksco_code": "23833",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "신호기와 전철기",
+      "full_statement": "통제탑이나 신호소에서 신호기와 전철기를 조작한다.",
+      "source_sentence": "철도교통의 원활을 기하기 위해 통제탑이나 신호소에서 신호기와 전철기를 조작하며 관련된 정보제공을 통해 철도교통의 안전한 운행을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "관련 정보",
+      "full_statement": "철도교통 운행과 관련된 정보를 제공한다.",
+      "source_sentence": "통제탑이나 신호소에서 신호기와 전철기를 조작하며 관련된 정보제공을 통해 철도교통의 안전한 운행을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감시하다",
+      "object": "열차운행 상태",
+      "full_statement": "열차운행 상태를 감시한다.",
+      "source_sentence": "열차운행 상태를 감시하고 통제한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "통제하다",
+      "object": "열차운행 상태",
+      "full_statement": "열차운행 상태를 통제한다.",
+      "source_sentence": "열차운행 상태를 감시하고 통제한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지시하다",
+      "object": "긴급조치",
+      "full_statement": "열차사고·운행 장애 또는 이상이나 비상사태 발생 시 긴급조치를 지시한다.",
+      "source_sentence": "열차사고․운행 장애 또는 이상이나 비상사태 발생 시 긴급조치를 지시한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "승인하다",
+      "object": "선로 내 모터카 운행",
+      "full_statement": "선로 내 모터카 운행을 승인한다.",
+      "source_sentence": "선로 내 모터카 운행 승인 및 본선 구간 작업승인을 한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "승인하다",
+      "object": "본선 구간 작업",
+      "full_statement": "본선 구간 작업을 승인한다.",
+      "source_sentence": "선로 내 모터카 운행 승인 및 본선 구간 작업승인을 한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "통제하다",
+      "object": "선로 내 출입자",
+      "full_statement": "선로 내 출입자를 통제한다.",
+      "source_sentence": "선로 내 출입자를 통제한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지시하다",
+      "object": "이상기후 시 필요한 조치",
+      "full_statement": "이상기후 시 필요한 조치를 지시한다.",
+      "source_sentence": "이상기후 시 필요한 조치를 지시한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보고하다",
+      "object": "상황보고",
+      "full_statement": "상황발생 시 보고계통에 의한 상황보고를 한다.",
+      "source_sentence": "상황발생 시 보고계통에 의한 상황보고를 한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지시하다",
+      "object": "열차운행에 필요한 사항",
+      "full_statement": "기타 열차운행에 필요한 사항을 지시한다.",
+      "source_sentence": "기타 열차운행에 필요한 사항을 지시한다.",
+      "derived_from": "상속 주요업무(철도교통 관제사)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지원하다",
+      "object": "철도교통의 안전한 운행",
+      "full_statement": "관련 정보제공을 통해 철도교통의 안전한 운행을 지원한다.",
+      "source_sentence": "관련된 정보제공을 통해 철도교통의 안전한 운행을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "신호기", "category": "장비", "evidence_span": "통제탑이나 신호소에서 신호기와 전철기를 조작하며"},
+    {"name": "전철기", "category": "장비", "evidence_span": "통제탑이나 신호소에서 신호기와 전철기를 조작하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "통제탑이나 신호소(실내 관제 공간)", "evidence_span": "통제탑이나 신호소에서 신호기와 전철기를 조작하며"},
+    {"category": "위험", "value": "열차사고·운행 장애·비상사태 대응", "evidence_span": "열차사고․운행 장애 또는 이상이나 비상사태 발생 시 긴급조치를 지시한다."}
+  ]
+}

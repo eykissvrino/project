@@ -1,0 +1,103 @@
+{
+  "ksco_code": "94130",
+  "tasks": [
+    {
+      "verb": "순회하다",
+      "object": "일정구역",
+      "full_statement": "일정구역을 돌면서 청소 대상 구간을 순회한다.",
+      "source_sentence": "일정구역을 돌면서 공공장소나 인도를 청소하거나 도로 배수관이 막히지 않도록 낙엽을 치운다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청소하다",
+      "object": "공공장소",
+      "full_statement": "일정구역을 돌면서 공공장소나 인도를 청소한다.",
+      "source_sentence": "일정구역을 돌면서 공공장소나 인도를 청소하거나 도로 배수관이 막히지 않도록 낙엽을 치운다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "청소하다",
+      "object": "인도",
+      "full_statement": "인도를 청소한다.",
+      "source_sentence": "일정구역을 돌면서 공공장소나 인도를 청소하거나 도로 배수관이 막히지 않도록 낙엽을 치운다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치우다",
+      "object": "낙엽",
+      "full_statement": "도로 배수관이 막히지 않도록 낙엽을 치운다.",
+      "source_sentence": "일정구역을 돌면서 공공장소나 인도를 청소하거나 도로 배수관이 막히지 않도록 낙엽을 치운다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "치우다",
+      "object": "쌓인 눈",
+      "full_statement": "가로에 쌓은 눈을 치운다.",
+      "source_sentence": "가로에 쌓은 눈을 치우거나 모래 및 염화칼슘을 뿌리는 등 제설작업을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "뿌리다",
+      "object": "모래",
+      "full_statement": "인도나 도로에 모래를 뿌려 제설작업을 한다.",
+      "source_sentence": "인도나 도로에 모래 및 염화칼슘을 뿌리는 등 제설작업을 하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "뿌리다",
+      "object": "염화칼슘",
+      "full_statement": "인도나 도로에 염화칼슘을 뿌려 제설작업을 한다.",
+      "source_sentence": "인도나 도로에 모래 및 염화칼슘을 뿌리는 등 제설작업을 하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "쓸다",
+      "object": "쓰레기",
+      "full_statement": "가로에 버려진 쓰레기를 빗자루로 쓸어서 치운다.",
+      "source_sentence": "가로에 버려진 쓰레기나 낙엽, 눈 등을 빗자루로 쓸어서 치운다",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "유지하다",
+      "object": "공공장소 청결",
+      "full_statement": "공원, 공중화장실 등 공공장소를 청결하게 유지하기 위해 청소하여 관리한다.",
+      "source_sentence": "공원, 공중화장실 등 공공장소를 청결하게 유지하기 위해 청소하여 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "청소하다",
+      "object": "공중화장실",
+      "full_statement": "공중화장실을 청소하여 관리한다.",
+      "source_sentence": "공원, 공중화장실 등 공공장소를 청결하게 유지하기 위해 청소하여 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직업 예시: 공중화장실 미화원)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "청소하다",
+      "object": "공원",
+      "full_statement": "공원을 청소하여 관리한다.",
+      "source_sentence": "공원, 공중화장실 등 공공장소를 청결하게 유지하기 위해 청소하여 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직업 예시: 공원 청소원)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "빗자루", "category": "도구", "evidence_span": "가로에 버려진 쓰레기나 낙엽, 눈 등을 빗자루로 쓸어서 치운다"},
+    {"name": "모래", "category": "도구", "evidence_span": "모래 및 염화칼슘을 뿌리는 등 제설작업을 하기도 한다"},
+    {"name": "염화칼슘", "category": "도구", "evidence_span": "모래 및 염화칼슘을 뿌리는 등 제설작업을 하기도 한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "실외(거리·인도·공공장소)", "evidence_span": "일정구역을 돌면서 공공장소나 인도를 청소하거나"},
+    {"category": "장소", "value": "이동(일정구역 순회)", "evidence_span": "일정구역을 돌면서"},
+    {"category": "신체적", "value": "상당한 육체적 노력 요구", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"}
+  ]
+}

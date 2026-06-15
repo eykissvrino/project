@@ -1,0 +1,111 @@
+{
+  "ksco_code": "29512",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "가구 디자인 자료",
+      "full_statement": "디자인할 가구나 주제에 관한 자료를 수집한다.",
+      "source_sentence": "디자인할 대상물이나 주제에 관한 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(대상물→가구)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "가구 디자인 자료",
+      "full_statement": "수집한 가구 디자인 자료를 분석한다.",
+      "source_sentence": "디자인할 대상물이나 주제에 관한 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "제작하다",
+      "object": "가구 시안",
+      "full_statement": "디자인 기법과 재료에 대한 지식을 토대로 가구 시안을 제작한다.",
+      "source_sentence": "디자인 기법과 재료에 대한 지식을 토대로 시안을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시안→가구 시안)",
+      "confidence": 0.77
+    },
+    {
+      "verb": "결정하다",
+      "object": "가구 디자인",
+      "full_statement": "가구 디자인을 결정한다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "완료하다",
+      "object": "스케치",
+      "full_statement": "결정된 가구 디자인의 스케치를 완료한다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "이관하다",
+      "object": "완성된 디자인",
+      "full_statement": "완성된 가구 디자인을 제작공정으로 넘긴다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "디자인하다",
+      "object": "실내용 가구",
+      "full_statement": "실내용 가구를 디자인한다.",
+      "source_sentence": "실내용 및 실외용 가구, 수납‧작업‧휴식용 가구 등 가구류를 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "디자인하다",
+      "object": "실외용 가구",
+      "full_statement": "실외용 가구를 디자인한다.",
+      "source_sentence": "실내용 및 실외용 가구, 수납‧작업‧휴식용 가구 등 가구류를 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "디자인하다",
+      "object": "수납용 가구",
+      "full_statement": "수납용 가구를 디자인한다.",
+      "source_sentence": "실내용 및 실외용 가구, 수납‧작업‧휴식용 가구 등 가구류를 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "디자인하다",
+      "object": "작업용 가구",
+      "full_statement": "작업용 가구를 디자인한다.",
+      "source_sentence": "실내용 및 실외용 가구, 수납‧작업‧휴식용 가구 등 가구류를 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "디자인하다",
+      "object": "휴식용 가구",
+      "full_statement": "휴식용 가구를 디자인한다.",
+      "source_sentence": "실내용 및 실외용 가구, 수납‧작업‧휴식용 가구 등 가구류를 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "디자인하다",
+      "object": "인테리어용품",
+      "full_statement": "인테리어용품을 디자인한다.",
+      "source_sentence": "가구 디자이너·인테리어용품 디자이너",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설계하다",
+      "object": "가구의 실용성",
+      "full_statement": "가구를 실용성 있게 설계한다.",
+      "source_sentence": "생활하는데 필요한 제품, 패션, 인테리어, 미디어 콘텐츠 등을 시각적으로 아름답게 혹은 실용성 있게 설계하고 디자인한다.",
+      "derived_from": "조상정의(소분류 295)→세세 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

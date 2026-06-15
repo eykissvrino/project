@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28250",
+  "tasks": [
+    {
+      "verb": "심사하다",
+      "object": "보상 청구",
+      "full_statement": "보상사무원이 조사한 보상청구를 검토하고 심사한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "사고 원인",
+      "full_statement": "사고 원인을 조사하여 손해액을 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검토하다",
+      "object": "판례",
+      "full_statement": "유사한 보험클레임이나 판례·사례를 검토한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산출하다",
+      "object": "보험금",
+      "full_statement": "조사자료와 보험약관을 분석하여 지급할 보험금을 산출한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "손해사정 보고서",
+      "full_statement": "손해사정 보고서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

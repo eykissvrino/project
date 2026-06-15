@@ -1,0 +1,95 @@
+{
+  "ksco_code": "79111",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "흙",
+      "full_statement": "도자기 제작에 사용할 흙을 준비한다.",
+      "source_sentence": "손이나 간단한 도구, 흙을 이용하여 개인이나 가정용 또는 장식용으로 사용하기 위한 도자기를 제작한다.",
+      "derived_from": "세세분류 정의(흙 이용 단서)→상속 주요업무(재료를 준비한다) 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제작하다",
+      "object": "도자기",
+      "full_statement": "개인이나 가정용 또는 장식용으로 사용하기 위한 도자기를 제작한다.",
+      "source_sentence": "손이나 간단한 도구, 흙을 이용하여 개인이나 가정용 또는 장식용으로 사용하기 위한 도자기를 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "만들다",
+      "object": "도자기 모양",
+      "full_statement": "흙을 이용하여 도자기의 모양을 만든다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "성형하다",
+      "object": "도자기",
+      "full_statement": "손이나 간단한 도구를 이용하여 도자기를 성형한다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의→세세분류 직업 예시(도자기 성형원) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "굽다",
+      "object": "도자기",
+      "full_statement": "성형한 도자기를 화로에 넣어 굽는다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "칠하다",
+      "object": "유약",
+      "full_statement": "구운 도자기에 유약을 칠한다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "유약",
+      "full_statement": "도자기에 사용할 유약을 분쇄한다.",
+      "source_sentence": "도자기 유약 분쇄원",
+      "derived_from": "세세분류 직업 예시(도자기 유약 분쇄원)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "입히다",
+      "object": "색깔",
+      "full_statement": "도자기에 각종 색깔을 입힌다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "말리다",
+      "object": "도자기",
+      "full_statement": "색깔을 입힌 도자기를 말린다.",
+      "source_sentence": "도자기의 모양을 만들고, 화로에 넣어 구운 다음에 유약을 칠하고 각종 색깔을 입힌 후 말린다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "장식하다",
+      "object": "도자기",
+      "full_statement": "장식용으로 사용하기 위한 도자기를 장식한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무→세세분류 정의(장식용 도자기) 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "흙", "category": "도구", "evidence_span": "손이나 간단한 도구, 흙을 이용하여"},
+    {"name": "간단한 도구", "category": "도구", "evidence_span": "손이나 간단한 도구, 흙을 이용하여"},
+    {"name": "화로", "category": "장비", "evidence_span": "화로에 넣어 구운 다음에"},
+    {"name": "유약", "category": "도구", "evidence_span": "유약을 칠하고 각종 색깔을 입힌 후 말린다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 간단한 도구를 이용한 수공 작업(기능 중심)", "evidence_span": "손이나 간단한 도구, 흙을 이용하여"},
+    {"category": "위험", "value": "화로 사용에 따른 고온 환경", "evidence_span": "화로에 넣어 구운 다음에"}
+  ]
+}

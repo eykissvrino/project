@@ -1,0 +1,126 @@
+{
+  "ksco_code": "82220",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "신발 제조용 기계",
+      "full_statement": "각각의 생산 공정에서 사용되는 신발 제조용 기계를 조작한다.",
+      "source_sentence": "신발을 제조하기 위해 각각의 생산 공정에서 사용되는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "신발창 성형 기계",
+      "full_statement": "생고무를 고열압축으로 성형하는 기계를 이용하여 신발창을 만드는 기계를 조작한다.",
+      "source_sentence": "생고무를 고열압축으로 성형하는 기계를 이용하여 신발창을 만드는 기계를 조작하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "접착하다",
+      "object": "고무밑창",
+      "full_statement": "신발에 고무밑창을 접착한다.",
+      "source_sentence": "고무밑창을 접착하는 등 신발을 제조하기 위해",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "작성하다",
+      "object": "패턴",
+      "full_statement": "디자인설계에 따라 패턴을 작성한다.",
+      "source_sentence": "디자인설계에 따라 패턴을 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "펴다",
+      "object": "생고무",
+      "full_statement": "생고무를 얇게 펴서 생지를 만든다.",
+      "source_sentence": "생고무를 얇게 펴서 생지를 만들고, 그 위에 발형을 올려놓고 고열 압축으로 성형하여 신발창을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "올려놓다",
+      "object": "발형",
+      "full_statement": "생지 위에 발형을 올려놓는다.",
+      "source_sentence": "그 위에 발형을 올려놓고 고열 압축으로 성형하여 신발창을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "성형하다",
+      "object": "신발창",
+      "full_statement": "생지를 고열 압축으로 성형하여 신발창을 만든다.",
+      "source_sentence": "그 위에 발형을 올려놓고 고열 압축으로 성형하여 신발창을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "부착하다",
+      "object": "안피와 겉피",
+      "full_statement": "안피와 겉피를 부착한다.",
+      "source_sentence": "안피와 겉피를 부착하고 앞골을 씌우고 건조시켜 고정시킨 후에 고무 밑창을 접착시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "씌우다",
+      "object": "앞골",
+      "full_statement": "앞골을 씌운다.",
+      "source_sentence": "안피와 겉피를 부착하고 앞골을 씌우고 건조시켜 고정시킨 후에 고무 밑창을 접착시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "건조시키다",
+      "object": "신발",
+      "full_statement": "신발을 건조시켜 고정시킨다.",
+      "source_sentence": "안피와 겉피를 부착하고 앞골을 씌우고 건조시켜 고정시킨 후에 고무 밑창을 접착시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "접착하다",
+      "object": "고무 밑창",
+      "full_statement": "건조 고정 후에 고무 밑창을 접착시킨다.",
+      "source_sentence": "안피와 겉피를 부착하고 앞골을 씌우고 건조시켜 고정시킨 후에 고무 밑창을 접착시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부착하다",
+      "object": "깔창",
+      "full_statement": "깔창을 부착한다.",
+      "source_sentence": "깔창을 부착하고 끈을 끼우며 필요시 광택제를 도포하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "끼우다",
+      "object": "끈",
+      "full_statement": "끈을 끼운다.",
+      "source_sentence": "깔창을 부착하고 끈을 끼우며 필요시 광택제를 도포하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "도포하다",
+      "object": "광택제",
+      "full_statement": "필요시 광택제를 도포하여 마무리한다.",
+      "source_sentence": "깔창을 부착하고 끈을 끼우며 필요시 광택제를 도포하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "신발창 성형기(고열압축 성형기)", "category": "장비", "evidence_span": "생고무를 고열압축으로 성형하는 기계를 이용하여 신발창을 만드는 기계를 조작하거나"},
+    {"name": "발형(라스트)", "category": "도구", "evidence_span": "그 위에 발형을 올려놓고 고열 압축으로 성형하여 신발창을 만든다."},
+    {"name": "광택제", "category": "도구", "evidence_span": "필요시 광택제를 도포하여 마무리한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "고열 압축 공정", "evidence_span": "생고무를 고열압축으로 성형하는 기계를 이용하여"},
+    {"category": "신체적", "value": "공정별 기계 조작 작업", "evidence_span": "각각의 생산 공정에서 사용되는 기계를 조작한다."}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28434",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "농업용 기계",
+      "full_statement": "농업용 기계장비의 사용법을 고객에게 설명한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "농기계",
+      "full_statement": "고객 필요에 맞는 농업용 기계를 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "판매계약서",
+      "full_statement": "판매계약서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,186 @@
+{
+  "ksco_code": "37250",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "자원봉사자 모집 계획",
+      "full_statement": "자원봉사자의 모집 계획을 수립한다.",
+      "source_sentence": "자원봉사자의 모집 계획 수립, 선발 및 교육, 자원봉사활동 지도 및 감독, 사후 관리 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "모집하다",
+      "object": "자원봉사자",
+      "full_statement": "지역사회 문제를 진단·예방·해결하기 위하여 자원봉사자를 모집한다.",
+      "source_sentence": "지역사회 문제를 진단, 예방, 해결하기 위하여 자원봉사자를 모집하고 수요처를 개척한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개척하다",
+      "object": "자원봉사 수요처",
+      "full_statement": "자원봉사 인력의 수요처를 개척한다.",
+      "source_sentence": "지역사회 문제를 진단, 예방, 해결하기 위하여 자원봉사자를 모집하고 수요처를 개척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파악하다",
+      "object": "자원봉사 욕구",
+      "full_statement": "자원봉사자와 지역사회의 자원봉사 욕구를 파악한다.",
+      "source_sentence": "자원봉사자와 지역사회의 자원봉사 욕구를 파악하고 적절한 인력을 선발, 배치하는 등 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선발하다",
+      "object": "자원봉사 인력",
+      "full_statement": "적절한 자원봉사 인력을 선발한다.",
+      "source_sentence": "자원봉사자와 지역사회의 자원봉사 욕구를 파악하고 적절한 인력을 선발, 배치하는 등 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "배치하다",
+      "object": "자원봉사 인력",
+      "full_statement": "선발한 자원봉사 인력을 적절히 배치한다.",
+      "source_sentence": "자원봉사자와 지역사회의 자원봉사 욕구를 파악하고 적절한 인력을 선발, 배치하는 등 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연계하다",
+      "object": "자원봉사 수급",
+      "full_statement": "자원봉사자와 수요처 간 자원봉사 수급을 연계한다.",
+      "source_sentence": "자원봉사 활동지원을 전담하여 그 활동을 독려하고 자원봉사 수급을 연계한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "독려하다",
+      "object": "자원봉사 활동",
+      "full_statement": "자원봉사 활동을 독려한다.",
+      "source_sentence": "정부, 공공기관, 기업, 자원봉사단체 등에서 자원봉사 활동지원을 전담하여 그 활동을 독려하고 자원봉사 수급을 연계한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "기획하다",
+      "object": "교육·훈련",
+      "full_statement": "자원봉사자의 지속적 참여를 유도하기 위하여 다양한 교육과 훈련을 기획한다.",
+      "source_sentence": "자원봉사자들의 지속적인 참여를 유도하고 동기를 강화시키기 위하여 다양한 교육과 훈련을 기획하고 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "운영하다",
+      "object": "교육·훈련",
+      "full_statement": "자원봉사자 대상 교육과 훈련을 운영한다.",
+      "source_sentence": "자원봉사자들의 지속적인 참여를 유도하고 동기를 강화시키기 위하여 다양한 교육과 훈련을 기획하고 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "강화하다",
+      "object": "참여 동기",
+      "full_statement": "자원봉사자의 지속적 참여 동기를 강화한다.",
+      "source_sentence": "자원봉사자들의 지속적인 참여를 유도하고 동기를 강화시키기 위하여 다양한 교육과 훈련을 기획하고 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지도하다",
+      "object": "자원봉사 활동",
+      "full_statement": "자원봉사활동을 지도한다.",
+      "source_sentence": "자원봉사활동 지도 및 감독, 사후 관리 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "감독하다",
+      "object": "자원봉사 활동",
+      "full_statement": "자원봉사활동을 감독한다.",
+      "source_sentence": "자원봉사활동 지도 및 감독, 사후 관리 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "사후 관리 업무",
+      "full_statement": "자원봉사 활동의 사후 관리 업무를 수행한다.",
+      "source_sentence": "자원봉사활동 지도 및 감독, 사후 관리 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "봉사 프로그램",
+      "full_statement": "사회변화와 새로운 욕구에 대응한 봉사 프로그램을 개발한다.",
+      "source_sentence": "사회변화와 새로운 욕구에 대응한 봉사 프로그램과 자원봉사자를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발굴하다",
+      "object": "신규 자원봉사자",
+      "full_statement": "사회변화와 새로운 욕구에 대응하여 신규 자원봉사자를 발굴한다.",
+      "source_sentence": "사회변화와 새로운 욕구에 대응한 봉사 프로그램과 자원봉사자를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "처리하다",
+      "object": "활동 자료·기록 통계",
+      "full_statement": "자원봉사활동 자료와 기록을 통계 처리한다.",
+      "source_sentence": "자원봉사활동 자료와 기록을 통계 처리하고 연간 사업보고서 등 사무적인 활동을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "연간 사업보고서",
+      "full_statement": "연간 사업보고서를 작성한다.",
+      "source_sentence": "자원봉사활동 자료와 기록을 통계 처리하고 연간 사업보고서 등 사무적인 활동을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "홍보하다",
+      "object": "자원봉사 활동 상황",
+      "full_statement": "자원봉사활동 진행 상황을 다양한 매체를 통해 지역사회에 알린다.",
+      "source_sentence": "자원봉사활동으로 진행되는 상황들을 지역사회에 다양한 매체를 통해 알리고 전시, 행사 등을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "전시·행사",
+      "full_statement": "자원봉사활동과 관련한 전시·행사를 진행한다.",
+      "source_sentence": "자원봉사활동으로 진행되는 상황들을 지역사회에 다양한 매체를 통해 알리고 전시, 행사 등을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "진단하다",
+      "object": "지역사회 문제",
+      "full_statement": "지역사회 문제를 진단한다.",
+      "source_sentence": "지역사회 문제를 진단, 예방, 해결하기 위하여 자원봉사자를 모집하고 수요처를 개척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "자원봉사자·지역사회 대상 응대 및 연계(대인 업무)",
+      "evidence_span": "자원봉사자와 지역사회의 자원봉사 욕구를 파악하고 적절한 인력을 선발, 배치하는 등 연결한다."
+    },
+    {
+      "category": "장소",
+      "value": "정부·공공기관·기업·자원봉사단체 등 기관 내 근무",
+      "evidence_span": "정부, 공공기관, 기업, 자원봉사단체 등에서 자원봉사 활동지원을 전담하여"
+    }
+  ]
+}

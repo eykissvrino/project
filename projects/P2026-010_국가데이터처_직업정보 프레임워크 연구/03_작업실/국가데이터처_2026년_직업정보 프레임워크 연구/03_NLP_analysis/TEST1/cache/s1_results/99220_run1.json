@@ -1,0 +1,66 @@
+{
+  "ksco_code": "99220",
+  "tasks": [
+    {
+      "verb": "유지하다",
+      "object": "자동판매기",
+      "full_statement": "자동판매기를 점검하여 정상 작동 상태로 유지한다.",
+      "source_sentence": "자동판매기를 유지‧관리하며 수금한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "자동판매기",
+      "full_statement": "자동판매기를 관리한다.",
+      "source_sentence": "자동판매기를 유지‧관리하며 수금한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수금하다",
+      "object": "판매대금",
+      "full_statement": "자동판매기의 판매대금을 수금한다.",
+      "source_sentence": "자동판매기를 유지‧관리하며 수금한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보충하다",
+      "object": "물품",
+      "full_statement": "자동판매기에 물품을 보충한다.",
+      "source_sentence": "자동판매기에 물품을 보충하고 자동판매기의 동전박스에서 동전을 수거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수거하다",
+      "object": "동전",
+      "full_statement": "자동판매기의 동전박스에서 동전을 수거한다.",
+      "source_sentence": "자동판매기에 물품을 보충하고 자동판매기의 동전박스에서 동전을 수거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수거하다",
+      "object": "돈",
+      "full_statement": "주차계기 등의 박스에서 돈을 수거한다.",
+      "source_sentence": "주차계기 등의 박스에서 돈을 수거하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {
+      "name": "자동판매기",
+      "category": "장비",
+      "evidence_span": "자동판매기를 유지‧관리하며 수금한다."
+    },
+    {
+      "name": "동전박스",
+      "category": "장비",
+      "evidence_span": "자동판매기의 동전박스에서 동전을 수거한다."
+    }
+  ],
+  "work_context": []
+}

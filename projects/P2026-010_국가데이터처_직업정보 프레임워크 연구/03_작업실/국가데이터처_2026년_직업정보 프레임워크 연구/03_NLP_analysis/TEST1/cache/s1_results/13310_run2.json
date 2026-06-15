@@ -1,0 +1,151 @@
+{
+  "ksco_code": "13310",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "건강관리서비스",
+      "full_statement": "진단·처치·간호 및 치료 등의 건강관리서비스를 기획한다.",
+      "source_sentence": "보건 및 의료서비스를 제공하는 기관 내에서 진단, 처치, 간호 및 치료 등의 건강관리서비스를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "건강관리서비스",
+      "full_statement": "진단·처치·간호 및 치료 등의 건강관리서비스를 관리한다.",
+      "source_sentence": "보건 및 의료서비스를 제공하는 기관 내에서 진단, 처치, 간호 및 치료 등의 건강관리서비스를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "건강관리서비스",
+      "full_statement": "진단·처치·간호 및 치료 등의 건강관리서비스를 조정한다.",
+      "source_sentence": "보건 및 의료서비스를 제공하는 기관 내에서 진단, 처치, 간호 및 치료 등의 건강관리서비스를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "계획하다",
+      "object": "보건서비스",
+      "full_statement": "부서나 사업체 내에서 보건서비스를 계획한다.",
+      "source_sentence": "부서나 사업체내에서 보건서비스를 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조직하다",
+      "object": "보건서비스",
+      "full_statement": "부서나 사업체 내에서 보건서비스를 조직한다.",
+      "source_sentence": "부서나 사업체내에서 보건서비스를 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지시하다",
+      "object": "보건서비스",
+      "full_statement": "부서나 사업체 내에서 보건서비스를 지시한다.",
+      "source_sentence": "부서나 사업체내에서 보건서비스를 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "보건서비스",
+      "full_statement": "부서나 사업체 내에서 보건서비스를 관리한다.",
+      "source_sentence": "부서나 사업체내에서 보건서비스를 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "이사진 및 고위 관리자",
+      "full_statement": "보건·의료서비스 제공 기준을 유지하고 확립하기 위해 이사진 및 고위 관리자들과 협의한다.",
+      "source_sentence": "보건‧의료서비스 제공에 대한 기준을 유지하고 확립하기 위해 이사진 및 고위 관리자들과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "확립하다",
+      "object": "보건·의료서비스 제공 기준",
+      "full_statement": "보건·의료서비스 제공에 대한 기준을 확립한다.",
+      "source_sentence": "보건‧의료서비스 제공에 대한 기준을 유지하고 확립하기 위해 이사진 및 고위 관리자들과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "유지하다",
+      "object": "보건·의료서비스 제공 기준",
+      "full_statement": "보건·의료서비스 제공에 대한 기준을 유지한다.",
+      "source_sentence": "보건‧의료서비스 제공에 대한 기준을 유지하고 확립하기 위해 이사진 및 고위 관리자들과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "감독하다",
+      "object": "진단서비스 사용",
+      "full_statement": "자원의 효율적인 사용을 확인하기 위해 진단서비스 사용을 감독한다.",
+      "source_sentence": "자원의 효율적인 사용을 확인하기 위해 진단서비스, 입원환자침대 및 시설 사용을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "감독하다",
+      "object": "입원환자침대 사용",
+      "full_statement": "자원의 효율적인 사용을 확인하기 위해 입원환자침대 사용을 감독한다.",
+      "source_sentence": "자원의 효율적인 사용을 확인하기 위해 진단서비스, 입원환자침대 및 시설 사용을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "시설 사용",
+      "full_statement": "자원의 효율적인 사용을 확인하기 위해 시설 사용을 감독한다.",
+      "source_sentence": "자원의 효율적인 사용을 확인하기 위해 진단서비스, 입원환자침대 및 시설 사용을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "건강관리 감독자",
+      "full_statement": "건강관리 감독자를 관리한다.",
+      "source_sentence": "건강관리 감독자 및 의료‧보건 전문가들을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "관리하다",
+      "object": "의료·보건 전문가",
+      "full_statement": "의료·보건 전문가들을 관리한다.",
+      "source_sentence": "건강관리 감독자 및 의료‧보건 전문가들을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "대표하다",
+      "object": "보건·의료 기관",
+      "full_statement": "보건 및 의료 기관을 대표하여 사업 활동을 관리하고 조정한다.",
+      "source_sentence": "보건 및 사회복지 기관을 대표하여 사업 활동을 관리하며 조정한다.",
+      "derived_from": "조상정의(소분류)→세세 보건의료 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "보건 및 의료서비스 제공 기관 내",
+      "evidence_span": "보건 및 의료서비스를 제공하는 기관 내에서"
+    },
+    {
+      "category": "사회적",
+      "value": "이사진 및 고위 관리자와의 협의",
+      "evidence_span": "이사진 및 고위 관리자들과 협의한다"
+    },
+    {
+      "category": "사회적",
+      "value": "건강관리 감독자 및 의료·보건 전문가 관리(인력 관리)",
+      "evidence_span": "건강관리 감독자 및 의료‧보건 전문가들을 관리한다"
+    }
+  ]
+}

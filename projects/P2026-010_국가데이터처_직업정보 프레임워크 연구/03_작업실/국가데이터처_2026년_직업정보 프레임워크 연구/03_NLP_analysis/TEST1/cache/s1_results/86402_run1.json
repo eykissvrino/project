@@ -1,0 +1,104 @@
+{
+  "ksco_code": "86402",
+  "tasks": [
+    {
+      "verb": "조립하다",
+      "object": "영상 및 음향장비",
+      "full_statement": "텔레비전, 라디오 등의 영상과 음향장비를 조립한다.",
+      "source_sentence": "텔레비전, 라디오 등의 영상과 음향장비를 조립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조립하다",
+      "object": "전기장비의 구성품 또는 부품",
+      "full_statement": "영상·음향장비의 구성품 또는 부품을 조립한다.",
+      "source_sentence": "전기장비의 구성품 또는 부품을 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조립하다",
+      "object": "전자정밀기구의 부속품",
+      "full_statement": "광학기구 등 전자정밀기구의 부속품을 조립한다.",
+      "source_sentence": "광학기구 등의 전자정밀기구의 부속품을 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "부품",
+      "full_statement": "부품을 검사하여 품질기준에 적합한가를 확인한다.",
+      "source_sentence": "부품을 검사하고 시험하여, 품질기준에 적합한가를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "부품",
+      "full_statement": "부품을 시험하여 품질기준 적합 여부를 확인한다.",
+      "source_sentence": "부품을 검사하고 시험하여, 품질기준에 적합한가를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "부품 및 작업용구",
+      "full_statement": "조립에 요구되는 부품 및 작업용구 등을 준비한다.",
+      "source_sentence": "가정용 전기‧전자제품에 요구되는 부품 및 작업용구 등을 준비·점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "점검하다",
+      "object": "부품 및 작업용구",
+      "full_statement": "조립에 요구되는 부품 및 작업용구 등을 점검한다.",
+      "source_sentence": "가정용 전기‧전자제품에 요구되는 부품 및 작업용구 등을 준비·점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "체결하다",
+      "object": "볼트, 나사",
+      "full_statement": "수공구 또는 자동공구를 사용하여 볼트, 나사 등 체결작업을 한다.",
+      "source_sentence": "수공구 또는 자동공구를 사용하여 볼트, 나사 등 체결작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "용접하다",
+      "object": "전동기, 콘덴서, 열교환기",
+      "full_statement": "전동기, 콘덴서, 열교환기 등을 용접한다.",
+      "source_sentence": "전동기, 콘덴서, 열교환기 등을 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "조립 이상 유무",
+      "full_statement": "각 공정별로 조립 이상 유무를 전압계, 전력계, 시험지그 등을 이용하여 소음, 소비전력, 전기결선 이상 유무 등을 검사한다.",
+      "source_sentence": "각 공정별로 조립 이상 유무를 전압계, 전력계, 시험지그 등을 이용하여 소음, 소비전력, 전기결선 이상 유무 등을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실시하다",
+      "object": "외관검사",
+      "full_statement": "제품외관의 찍힘, 긁힘, 색상 등 외관검사를 실시한다.",
+      "source_sentence": "제품외관의 찍힘, 긁힘, 색상 등 외관검사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 또는 자동공구를 사용하여 볼트, 나사 등 체결작업을 한다."},
+    {"name": "자동공구", "category": "도구", "evidence_span": "수공구 또는 자동공구를 사용하여 볼트, 나사 등 체결작업을 한다."},
+    {"name": "전압계", "category": "장비", "evidence_span": "각 공정별로 조립 이상 유무를 전압계, 전력계, 시험지그 등을 이용하여"},
+    {"name": "전력계", "category": "장비", "evidence_span": "각 공정별로 조립 이상 유무를 전압계, 전력계, 시험지그 등을 이용하여"},
+    {"name": "시험지그", "category": "장비", "evidence_span": "각 공정별로 조립 이상 유무를 전압계, 전력계, 시험지그 등을 이용하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "엄격하게 설정된 절차에 따른 조립 작업", "evidence_span": "엄격하게 설정된 절차에 따라 전기제품과 전자제품 또는 구성품이나 부품을 조립한다."},
+    {"category": "신체적", "value": "정밀기구 부속품 조립", "evidence_span": "광학기구 등의 전자정밀기구의 부속품을 조립한다."}
+  ]
+}

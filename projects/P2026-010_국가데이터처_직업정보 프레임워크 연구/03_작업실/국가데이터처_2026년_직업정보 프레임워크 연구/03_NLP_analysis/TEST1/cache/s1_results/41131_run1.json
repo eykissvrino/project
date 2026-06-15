@@ -1,0 +1,119 @@
+{
+  "ksco_code": "41131",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "보호소년 및 위탁소년",
+      "full_statement": "소년원 학교 및 소년 분류 심사원에서 보호소년 및 위탁소년을 관리한다.",
+      "source_sentence": "소년원 학교 및 소년 분류 심사원에서 보호소년 및 위탁소년을 관리하고 이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "교화교육",
+      "full_statement": "보호소년 및 위탁소년에게 교화교육을 수행한다.",
+      "source_sentence": "이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실시하다",
+      "object": "직업훈련",
+      "full_statement": "보호소년 및 위탁소년에게 직업훈련을 실시한다.",
+      "source_sentence": "이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지도하다",
+      "object": "생활",
+      "full_statement": "보호소년 및 위탁소년의 생활을 지도한다.",
+      "source_sentence": "이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "교정교육",
+      "full_statement": "보호소년 및 위탁소년에게 교정교육을 수행한다.",
+      "source_sentence": "이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교화하다",
+      "object": "수용자",
+      "full_statement": "수용자를 교화한다.",
+      "source_sentence": "수용자를 관리하고 교화한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 도주",
+      "full_statement": "수용자의 도주를 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 폭행",
+      "full_statement": "수용자의 폭행을 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 소요",
+      "full_statement": "수용자의 소요를 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 자살",
+      "full_statement": "수용자의 자살을 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조직하다",
+      "object": "사회, 오락 및 교육활동",
+      "full_statement": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 조직한다.",
+      "source_sentence": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 조직, 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "사회, 오락 및 교육활동",
+      "full_statement": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 감독한다.",
+      "source_sentence": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 조직, 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.77
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "소년원 학교 및 소년 분류 심사원(교정시설)",
+      "evidence_span": "소년원 학교 및 소년 분류 심사원에서 보호소년 및 위탁소년을 관리하고"
+    },
+    {
+      "category": "위험",
+      "value": "수용자의 폭행·소요·자살 등 안전사고 대응",
+      "evidence_span": "수용자의 도주, 폭행, 소요, 자살 등을 방지한다."
+    },
+    {
+      "category": "사회적",
+      "value": "보호소년·위탁소년 대상 대인 교화·지도(대인 서비스)",
+      "evidence_span": "이들에게 교화교육, 직업훈련, 생활지도 등 교정교육을 수행한다."
+    }
+  ]
+}

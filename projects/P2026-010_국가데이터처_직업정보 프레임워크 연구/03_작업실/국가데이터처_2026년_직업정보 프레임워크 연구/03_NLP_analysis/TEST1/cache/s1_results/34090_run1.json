@@ -1,0 +1,122 @@
+{
+  "ksco_code": "34090",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "금융기관 거래 관련 사무업무",
+      "full_statement": "신용협동조합·상호저축은행·여신전문금융사·우체국 금융부문 등 기타 유사 금융기관의 거래에 관련된 사무업무를 수행한다.",
+      "source_sentence": "신용협동조합 및 상호저축은행과 여신전문금융사(신용카드사, 리스 할부사, 신기술사업금융업 등), 우체국(금융부문) 등 기타 유사한 금융기관의 거래에 관련된 사무업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "처리하다",
+      "object": "금융거래",
+      "full_statement": "기타 금융기관에서 발생하는 금융거래를 처리한다.",
+      "source_sentence": "기타 유사한 금융기관의 거래에 관련된 사무업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제공하다",
+      "object": "금융서비스",
+      "full_statement": "고객에게 금융서비스를 제공한다.",
+      "source_sentence": "금융서비스를 제공하고 관리하며, 해당 사무적인 일을 하는 것과 관련된 직업들이다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "관리하다",
+      "object": "금융서비스",
+      "full_statement": "제공한 금융서비스를 관리한다.",
+      "source_sentence": "금융서비스를 제공하고 관리하며, 해당 사무적인 일을 하는 것과 관련된 직업들이다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "기록하다",
+      "object": "거래 정보",
+      "full_statement": "거래 관련 정보를 기록한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "보관하다",
+      "object": "거래 정보",
+      "full_statement": "거래 관련 정보를 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.56
+    },
+    {
+      "verb": "계산하다",
+      "object": "거래 정보",
+      "full_statement": "거래 관련 금액 및 정보를 계산한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.56
+    },
+    {
+      "verb": "검색하다",
+      "object": "거래 정보",
+      "full_statement": "필요한 거래 관련 정보를 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "취급하다",
+      "object": "금전",
+      "full_statement": "금전취급 활동을 수행한다.",
+      "source_sentence": "또한 금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "상담하다",
+      "object": "고객 문의",
+      "full_statement": "고객의 금융 관련 문의에 대해 상담한다.",
+      "source_sentence": "또한 금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.52
+    },
+    {
+      "verb": "안내하다",
+      "object": "금융 업무",
+      "full_statement": "고객에게 금융 업무를 안내한다.",
+      "source_sentence": "또한 금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.52
+    },
+    {
+      "verb": "접수하다",
+      "object": "고객 신청",
+      "full_statement": "고객의 금융 거래 신청을 접수한다.",
+      "source_sentence": "또한 금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.52
+    },
+    {
+      "verb": "조사하다",
+      "object": "신용",
+      "full_statement": "여신 및 거래에 필요한 신용을 조사한다.",
+      "source_sentence": "- 종합금융 신용 조사원·신협 사무원",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객응대·상담·안내·접수",
+      "evidence_span": "금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다."
+    },
+    {
+      "category": "장소",
+      "value": "금융기관(은행·상호저축은행·카드회사·신용협동조합 등) 사무실",
+      "evidence_span": "주로 은행, 증권사, 선물회사, 자산운용‧신탁사, 상호저축은행, 카드회사, 신용협동조합, 새마을 금고 등의 금융권에서 일한다."
+    }
+  ]
+}

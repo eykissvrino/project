@@ -1,0 +1,79 @@
+{
+  "ksco_code": "29141",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "사전 및 기타 참고자료",
+      "full_statement": "번역을 의뢰받은 원문의 정확한 이해를 위해 사전 및 기타 참고자료를 수집한다.",
+      "source_sentence": "번역을 의뢰 받은 원문의 정확한 이해를 위해 사전 및 기타 참고자료를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "이해하다",
+      "object": "의뢰받은 원문",
+      "full_statement": "번역을 의뢰받은 원문을 정확하게 이해한다.",
+      "source_sentence": "번역을 의뢰 받은 원문의 정확한 이해를 위해 사전 및 기타 참고자료를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "원문",
+      "full_statement": "원문을 연구하여 본래의 사상과 감정을 파악한다.",
+      "source_sentence": "원문을 연구하여 본래의 사상과 감정을 그대로 살려서 해석문을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "쓰다",
+      "object": "해석문",
+      "full_statement": "원문 본래의 사상과 감정을 그대로 살려서 해석문을 쓴다.",
+      "source_sentence": "원문을 연구하여 본래의 사상과 감정을 그대로 살려서 해석문을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "옮기다",
+      "object": "한 나라의 언어를 다른 나라의 언어로",
+      "full_statement": "한 나라의 언어를 다른 나라의 언어로 옮겨 표현한다.",
+      "source_sentence": "번역은 한 나라의 언어를 다른 나라의 언어로 옮겨 표현하는 전문적 작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "번역하다",
+      "object": "문서·전문서적·문학작품",
+      "full_statement": "문서, 전문서적, 문학작품 등을 전문적으로 번역한다.",
+      "source_sentence": "문서, 전문서적, 문학작품 등을 전문적으로 번역하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "번역하다",
+      "object": "학술자료·전문서류",
+      "full_statement": "학술자료 및 전문서류를 전문적으로 번역한다.",
+      "source_sentence": "학술 번역가·전문서류 번역가",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "번역하다",
+      "object": "영상물",
+      "full_statement": "영상물의 대사 및 자막을 번역한다.",
+      "source_sentence": "영상 번역가·문학 번역가",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "번역하다",
+      "object": "산업기술 문서",
+      "full_statement": "산업 분야의 기술 문서를 번역한다.",
+      "source_sentence": "산업 번역가",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

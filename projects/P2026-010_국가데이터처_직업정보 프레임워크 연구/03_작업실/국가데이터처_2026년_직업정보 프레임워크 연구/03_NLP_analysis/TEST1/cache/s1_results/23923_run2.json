@@ -1,0 +1,117 @@
+{
+  "ksco_code": "23923",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "섬유 염색의 연구·응용·개발과 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "섬유 염색의 연구, 응용, 개발 작업과 관련하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "섬유 염색 기술",
+      "full_statement": "섬유 염색 기술을 연구한다.",
+      "source_sentence": "섬유 염색의 연구, 응용, 개발 작업과 관련하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.74
+    },
+    {
+      "verb": "개발하다",
+      "object": "염색 공정",
+      "full_statement": "섬유 염색 공정을 개발한다.",
+      "source_sentence": "섬유 염색의 연구, 응용, 개발 작업과 관련하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의→직업예시(염색 공정 개발 기술자) 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "응용하다",
+      "object": "염색 기술",
+      "full_statement": "섬유 제품 제조에 염색 기술을 응용한다.",
+      "source_sentence": "섬유 염색의 연구, 응용, 개발 작업과 관련하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.68
+    },
+    {
+      "verb": "개발하다",
+      "object": "섬유 제품",
+      "full_statement": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발하고 분석한다.",
+      "derived_from": "상속 주요업무→염색 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분석하다",
+      "object": "섬유 제품",
+      "full_statement": "섬유의 종류와 성질에 따라 각종 섬유 제품을 분석한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "적용하다",
+      "object": "과학적 원리",
+      "full_statement": "염색 품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "source_sentence": "품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "derived_from": "상속 주요업무→염색 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "개선하다",
+      "object": "염색 품질",
+      "full_statement": "과학적 원리를 적용하여 염색 제품의 품질을 개선한다.",
+      "source_sentence": "품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "derived_from": "상속 주요업무→염색 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "시험하다",
+      "object": "섬유의 구조",
+      "full_statement": "섬유의 구조를 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "시험하다",
+      "object": "섬유의 인장력",
+      "full_statement": "섬유의 인장력을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "시험하다",
+      "object": "열 및 화학 물질에 대한 안정성",
+      "full_statement": "섬유의 열 및 화학 물질에 대한 안정성을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "섬유의 안정성",
+      "full_statement": "섬유의 안정성을 검사한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "염색 견뢰도",
+      "full_statement": "화학 물질에 대한 안정성을 바탕으로 염색 제품의 견뢰도를 검사한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무→염색 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "위험",
+      "value": "화학 물질 취급",
+      "evidence_span": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다."
+    }
+  ]
+}

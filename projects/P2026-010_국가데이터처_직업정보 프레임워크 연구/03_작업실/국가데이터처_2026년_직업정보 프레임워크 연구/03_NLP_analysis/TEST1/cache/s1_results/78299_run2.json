@@ -1,0 +1,102 @@
+{
+  "ksco_code": "78299",
+  "tasks": [
+    {
+      "verb": "떠받치다",
+      "object": "건물",
+      "full_statement": "구조를 변경할 때 건물을 떠받친다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보강하다",
+      "object": "빌딩",
+      "full_statement": "필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "해체하다",
+      "object": "건축물",
+      "full_statement": "건축물을 해체한다.",
+      "source_sentence": "건축물을 해체하고, 구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "골라내다",
+      "object": "재사용 가능 자재",
+      "full_statement": "구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "source_sentence": "건축물을 해체하고, 구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "세우다",
+      "object": "방음벽",
+      "full_statement": "방음벽을 세운다.",
+      "source_sentence": "방음벽을 세우거나 정화조를 설치한다.",
+      "derived_from": "상속 주요업무→세세예시(방음벽 설치원) 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설치하다",
+      "object": "정화조",
+      "full_statement": "정화조를 설치한다.",
+      "source_sentence": "방음벽을 세우거나 정화조를 설치한다.",
+      "derived_from": "상속 주요업무→세세예시(정화조 설치원) 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "건설하다",
+      "object": "건물 기초공사",
+      "full_statement": "건물 내·외부 및 기타 건설물의 기초공사를 건설한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "건설하다",
+      "object": "벽 및 주요 부분",
+      "full_statement": "건설물의 벽 및 주요 부분을 건설한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "유지하다",
+      "object": "건설물",
+      "full_statement": "건설물의 주요 부분을 유지한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "수리하다",
+      "object": "건설물",
+      "full_statement": "건설물의 주요 부분을 수리한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "건립하다",
+      "object": "구조물",
+      "full_statement": "건설업 분야에서 건축물이나 구조물을 건립한다.",
+      "source_sentence": "또한 건설업 분야에서 건축물이나 구조물을 가공 및 건립, 설치한다.",
+      "derived_from": "조상정의(대분류 7)",
+      "confidence": 0.52
+    }
+  ],
+  "tools": [
+    {"name": "금속 받침대", "category": "도구", "evidence_span": "필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다."},
+    {"name": "목재 받침대", "category": "도구", "evidence_span": "필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"},
+    {"category": "위험", "value": "중량물(구조강·목재·받침대) 취급", "evidence_span": "구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다."}
+  ]
+}

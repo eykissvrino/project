@@ -1,0 +1,162 @@
+{
+  "ksco_code": "24209",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "동물의 각종 질환",
+      "full_statement": "동물들의 각종 질환을 진단한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "치료하다",
+      "object": "동물의 각종 질환",
+      "full_statement": "동물들의 각종 질환을 치료한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "집도하다",
+      "object": "수술",
+      "full_statement": "동물의 질환 치료를 위해 수술을 집도한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "실시하다",
+      "object": "예방 접종",
+      "full_statement": "동물들을 대상으로 예방 접종을 실시한다.",
+      "source_sentence": "동물들을 대상으로 예방 접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "행하다",
+      "object": "애완동물 진료",
+      "full_statement": "진료실에서 주로 애완동물의 진료를 행한다.",
+      "source_sentence": "도시지역의 동물병원 수의사는 진료실에서 주로 애완동물의 진료를 행하고 투약 등의 처치를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "실시하다",
+      "object": "투약 등의 처치",
+      "full_statement": "애완동물에게 투약 등의 처치를 실시한다.",
+      "source_sentence": "도시지역의 동물병원 수의사는 진료실에서 주로 애완동물의 진료를 행하고 투약 등의 처치를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "상담하다",
+      "object": "동물관리 관련 사항",
+      "full_statement": "고객과 동물관리에 관한 상담을 한다.",
+      "source_sentence": "이들은 고객과 동물관리에 관한 상담에도 많은 시간을 할애한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "담당하다",
+      "object": "축산동물 진료",
+      "full_statement": "농촌지역에서 축산동물들을 주로 담당하여 진료한다.",
+      "source_sentence": "농촌지역에서 활동하는 수의사는 축산동물들을 주로 담당한다. 검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "나가다",
+      "object": "축산농가 왕진",
+      "full_statement": "검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나간다.",
+      "source_sentence": "검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며, 축산농가에서 궁금해 하는 여러 가지 축산문제나 경영상의 어려움 등의 질문에 상담을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "상담하다",
+      "object": "축산문제·경영상 어려움",
+      "full_statement": "축산농가의 축산문제나 경영상의 어려움 등 질문에 상담을 해준다.",
+      "source_sentence": "축산농가에서 궁금해 하는 여러 가지 축산문제나 경영상의 어려움 등의 질문에 상담을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "담당하다",
+      "object": "국가 수의업무 전반",
+      "full_statement": "공직 수의사는 국가 수의업무 전반을 담당한다.",
+      "source_sentence": "공직에 있는 수의사는 국가 수의업무 전반을 담당하고 있다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "담당하다",
+      "object": "가축의 질병 예방",
+      "full_statement": "가축의 질병 예방 업무를 담당한다.",
+      "source_sentence": "가축의 질병 예방이나 가축의 개량 및 번식업무를 담당하거나 동물용 의약품의 안전성 확보를 위한 검정시험 실시 외에",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "담당하다",
+      "object": "가축의 개량 및 번식업무",
+      "full_statement": "가축의 개량 및 번식업무를 담당한다.",
+      "source_sentence": "가축의 질병 예방이나 가축의 개량 및 번식업무를 담당하거나 동물용 의약품의 안전성 확보를 위한 검정시험 실시 외에",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.73
+    },
+    {
+      "verb": "실시하다",
+      "object": "동물용 의약품 검정시험",
+      "full_statement": "동물용 의약품의 안전성 확보를 위한 검정시험을 실시한다.",
+      "source_sentence": "동물용 의약품의 안전성 확보를 위한 검정시험 실시 외에",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "실시하다",
+      "object": "검역작업",
+      "full_statement": "축산물·모피 등의 수출입 시 전염병을 막기 위한 검역작업을 실시한다.",
+      "source_sentence": "해외로부터 가축이나 축산물, 모피 등의 유입 시 혹은 국내에서 생산한 모든 축산물을 해외로 수출할 경우에는 전염병을 막기 위한 검역작업을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(공중방역·축산물방역 수의사 예시 반영)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "예방하다",
+      "object": "동물의 질병과 상해",
+      "full_statement": "동물의 질병과 상해를 예방한다.",
+      "source_sentence": "[세분류 2420 수의사] 동물의 질병과 상해를 예방, 진단, 치료하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [
+    {
+      "name": "검사용 기구",
+      "category": "장비",
+      "evidence_span": "검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "진료실(실내) 진료",
+      "evidence_span": "도시지역의 동물병원 수의사는 진료실에서 주로 애완동물의 진료를 행하고"
+    },
+    {
+      "category": "장소",
+      "value": "축산농가 왕진(이동·현장)",
+      "evidence_span": "검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 상담·응대",
+      "evidence_span": "이들은 고객과 동물관리에 관한 상담에도 많은 시간을 할애한다."
+    },
+    {
+      "category": "위험",
+      "value": "전염병 등 생물위험(검역 대상)",
+      "evidence_span": "전염병을 막기 위한 검역작업을 실시한다."
+    }
+  ]
+}

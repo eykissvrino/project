@@ -1,0 +1,119 @@
+{
+  "ksco_code": "95310",
+  "tasks": [
+    {
+      "verb": "유도하다",
+      "object": "차량",
+      "full_statement": "주유가 가능한 위치로 차량을 유도한다.",
+      "source_sentence": "주유가 가능한 위치로 차량을 유도하고 고객이 원하는 주유량을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "주유량",
+      "full_statement": "고객이 원하는 주유량을 확인한다.",
+      "source_sentence": "주유가 가능한 위치로 차량을 유도하고 고객이 원하는 주유량을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "열다",
+      "object": "연료주입구",
+      "full_statement": "차량의 연료주입구를 연다.",
+      "source_sentence": "차량의 연료주입구를 열고, 연료를 주입하기 위하여 주유기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "주유기",
+      "full_statement": "연료를 주입하기 위하여 주유기를 조작한다.",
+      "source_sentence": "차량의 연료주입구를 열고, 연료를 주입하기 위하여 주유기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "주입하다",
+      "object": "연료",
+      "full_statement": "주유소에서 차량에 연료를 주입한다.",
+      "source_sentence": "차량에 연료를 주입하거나 매장 정리, 전단지 배포 등 기타 판매 관련 단순 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "확인하다",
+      "object": "계수기",
+      "full_statement": "주유 후 계수기를 확인한다.",
+      "source_sentence": "계수기를 확인하고 요금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "계산하다",
+      "object": "요금",
+      "full_statement": "주유량에 따른 요금을 계산한다.",
+      "source_sentence": "계수기를 확인하고 요금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "판매하다",
+      "object": "엔진오일·부동액·연료첨가제",
+      "full_statement": "엔진오일, 부동액, 연료첨가제 등 자동차 소모품을 판매한다.",
+      "source_sentence": "엔진오일, 부동액, 연료첨가제 등을 판매‧주입하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "주입하다",
+      "object": "엔진오일·부동액·연료첨가제",
+      "full_statement": "엔진오일, 부동액, 연료첨가제 등을 차량에 주입한다.",
+      "source_sentence": "엔진오일, 부동액, 연료첨가제 등을 판매‧주입하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "주입하다",
+      "object": "가스",
+      "full_statement": "가스충전소에서 LPG나 수소 차량에 가스를 주입한다.",
+      "source_sentence": "LPG나 수소 차량에 가스를 주입한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "판매하다",
+      "object": "연료 및 기타 자동차 소모품",
+      "full_statement": "주유소나 가스충전소에서 연료 및 기타 자동차 소모품을 판매한다.",
+      "source_sentence": "주유소나 가스충전소에 고용되어 연료 및 기타 자동차 소모품 등을 판매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정리하다",
+      "object": "매장",
+      "full_statement": "매장을 정리한다.",
+      "source_sentence": "차량에 연료를 주입하거나 매장 정리, 전단지 배포 등 기타 판매 관련 단순 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "배포하다",
+      "object": "전단지",
+      "full_statement": "전단지를 배포한다.",
+      "source_sentence": "차량에 연료를 주입하거나 매장 정리, 전단지 배포 등 기타 판매 관련 단순 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "주유기", "category": "장비", "evidence_span": "연료를 주입하기 위하여 주유기를 조작한다."},
+    {"name": "계수기", "category": "장비", "evidence_span": "계수기를 확인하고 요금을 계산한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대(주유량 확인·요금 계산)", "evidence_span": "고객이 원하는 주유량을 확인한다."},
+    {"category": "위험", "value": "인화성 연료·가스(LPG·수소) 취급", "evidence_span": "LPG나 수소 차량에 가스를 주입한다."},
+    {"category": "장소", "value": "주유소·가스충전소", "evidence_span": "주유소나 가스충전소에 고용되어 연료 및 기타 자동차 소모품 등을 판매한다."},
+    {"category": "신체적", "value": "상당한 육체적 노력이 요구되는 단순·반복 업무", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."}
+  ]
+}

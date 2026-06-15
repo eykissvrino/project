@@ -1,0 +1,218 @@
+{
+  "ksco_code": "89119",
+  "tasks": [
+    {
+      "verb": "벗기다",
+      "object": "통나무 껍질",
+      "full_statement": "제재나 단판제조를 위하여 박피기를 조작하여 통나무 껍질을 벗긴다.",
+      "source_sentence": "제재나 단판제조를 위해 통나무 껍질을 벗기거나, 판자의 결함부분을 베어내고(다듬고), 둥근 톱의 경사를 조작하는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "베어내다",
+      "object": "판자의 결함부분",
+      "full_statement": "기계를 조작하여 판자의 결함부분을 베어내고 다듬는다.",
+      "source_sentence": "제재나 단판제조를 위해 통나무 껍질을 벗기거나, 판자의 결함부분을 베어내고(다듬고), 둥근 톱의 경사를 조작하는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "둥근 톱의 경사",
+      "full_statement": "절삭 각도를 맞추기 위하여 둥근 톱의 경사를 조작한다.",
+      "source_sentence": "제재나 단판제조를 위해 통나무 껍질을 벗기거나, 판자의 결함부분을 베어내고(다듬고), 둥근 톱의 경사를 조작하는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자르다",
+      "object": "원목",
+      "full_statement": "판재, 재목, 각목 등을 제조하기 위하여 원목을 일정한 규격으로 자른다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "기계톱 및 제재기",
+      "full_statement": "원목을 일정한 규격으로 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판절삭기",
+      "full_statement": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "source_sentence": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "파티클 보드 제조 기계",
+      "full_statement": "목재를 파쇄하여 섬유 상태로 만든 다음 접착제와 혼합, 성형, 압착하여 파티클 보드를 제조하는 기계를 조작한다.",
+      "source_sentence": "목재를 파쇄하여 섬유 상태로 만든 다음 접착제와 혼합, 성형, 압착하여 파티클 보드를 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "파쇄하다",
+      "object": "목재",
+      "full_statement": "섬유 상태로 만들기 위하여 목재를 파쇄한다.",
+      "source_sentence": "목재를 파쇄하여 섬유 상태로 만든 다음 접착제와 혼합, 성형, 압착하여 파티클 보드를 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목재마쇄기·목재칩제조기 예시)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살포하다",
+      "object": "아교",
+      "full_statement": "합판을 제조하기 위하여 단판에 아교를 살포한다.",
+      "source_sentence": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판 접착 기계",
+      "full_statement": "합판을 제조하기 위하여 단판을 접착하는 기계를 조작한다.",
+      "source_sentence": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "가공하기 위하여 기계장치에 재료를 투입한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "작업표준에 따라 가공하기 위하여 기계장치를 조정한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기능장애가 발생한 기계를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재선반",
+      "full_statement": "목재를 절삭 가공하기 위하여 목재선반을 조작한다.",
+      "source_sentence": "박피기 조작원·목재선반 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재보링기·목재천공기",
+      "full_statement": "목재에 구멍을 뚫기 위하여 목재보링기 및 목재천공기를 조작한다.",
+      "source_sentence": "목재보링기 조작원·목재천공기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재밀링기·목재평삭기",
+      "full_statement": "목재 표면을 절삭하고 평탄하게 가공하기 위하여 목재밀링기 및 목재평삭기를 조작한다.",
+      "source_sentence": "목재밀링기 조작원·목재평삭기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재건조기",
+      "full_statement": "목재의 수분을 제거하기 위하여 목재건조기를 조작한다.",
+      "source_sentence": "목재건조기 조작원·단판절단기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판절단기",
+      "full_statement": "단판을 일정 규격으로 자르기 위하여 단판절단기를 조작한다.",
+      "source_sentence": "목재건조기 조작원·단판절단기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "로타리레이스·슬라이서",
+      "full_statement": "통나무를 얇게 깎아 단판을 만들기 위하여 로타리레이스 및 슬라이서를 조작한다.",
+      "source_sentence": "로타리레이스 조작원·슬라이서 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "칼날연마기",
+      "full_statement": "가공기계의 칼날을 연마하기 위하여 칼날연마기를 조작한다.",
+      "source_sentence": "칼날연마기 조작원·목재칩제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재칩제조기",
+      "full_statement": "목재를 칩 형태로 가공하기 위하여 목재칩제조기를 조작한다.",
+      "source_sentence": "칼날연마기 조작원·목재칩제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "펄프치퍼기·목재마쇄기",
+      "full_statement": "목재를 펄프 원료로 잘게 부수기 위하여 펄프치퍼기 및 목재마쇄기를 조작한다.",
+      "source_sentence": "펄프치퍼기 조작원·목재마쇄기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "목질원료 파쇄 및 섬유화 장치",
+      "full_statement": "목질원료를 파쇄하여 섬유 상태로 만들기 위하여 목질원료 파쇄 및 섬유화 장치를 조작한다.",
+      "source_sentence": "목질원료 파쇄 및 섬유화 장치 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "박피기", "category": "장비", "evidence_span": "박피기 조작원"},
+    {"name": "목재선반", "category": "장비", "evidence_span": "목재선반 조작원"},
+    {"name": "목재보링기", "category": "장비", "evidence_span": "목재보링기 조작원"},
+    {"name": "목재천공기", "category": "장비", "evidence_span": "목재천공기 조작원"},
+    {"name": "목재밀링기", "category": "장비", "evidence_span": "목재밀링기 조작원"},
+    {"name": "목재평삭기", "category": "장비", "evidence_span": "목재평삭기 조작원"},
+    {"name": "목재건조기", "category": "장비", "evidence_span": "목재건조기 조작원"},
+    {"name": "단판절단기", "category": "장비", "evidence_span": "단판절단기 조작원"},
+    {"name": "로타리레이스", "category": "장비", "evidence_span": "로타리레이스 조작원"},
+    {"name": "슬라이서", "category": "장비", "evidence_span": "슬라이서 조작원"},
+    {"name": "칼날연마기", "category": "장비", "evidence_span": "칼날연마기 조작원"},
+    {"name": "목재칩제조기", "category": "장비", "evidence_span": "목재칩제조기 조작원"},
+    {"name": "펄프치퍼기", "category": "장비", "evidence_span": "펄프치퍼기 조작원"},
+    {"name": "목재마쇄기", "category": "장비", "evidence_span": "목재마쇄기 조작원"},
+    {"name": "목질원료 파쇄 및 섬유화 장치", "category": "장비", "evidence_span": "목질원료 파쇄 및 섬유화 장치 조작원"},
+    {"name": "기계톱 및 제재기", "category": "장비", "evidence_span": "판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다"},
+    {"name": "단판절삭기", "category": "장비", "evidence_span": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다"},
+    {"name": "둥근 톱", "category": "장비", "evidence_span": "둥근 톱의 경사를 조작하는 등의 직무"}
+  ],
+  "work_context": []
+}

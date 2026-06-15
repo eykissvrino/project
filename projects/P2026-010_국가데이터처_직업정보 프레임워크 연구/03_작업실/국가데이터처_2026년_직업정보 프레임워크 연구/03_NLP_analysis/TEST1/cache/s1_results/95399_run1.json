@@ -1,0 +1,82 @@
+{
+  "ksco_code": "95399",
+  "tasks": [
+    {
+      "verb": "옮기다",
+      "object": "매장에 진열될 제품",
+      "full_statement": "매장에 진열될 제품을 옮긴다.",
+      "source_sentence": "매장에 진열될 제품을 옮긴다.",
+      "derived_from": "상속 주요업무(세분류 9539)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "확인하다",
+      "object": "상품 진열상태",
+      "full_statement": "수시로 상품 진열상태를 확인한다.",
+      "source_sentence": "수시로 상품 진열상태를 확인하고 부족상품을 보충한다.",
+      "derived_from": "상속 주요업무(세분류 9539)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보충하다",
+      "object": "부족상품",
+      "full_statement": "부족한 상품을 보충한다.",
+      "source_sentence": "수시로 상품 진열상태를 확인하고 부족상품을 보충한다.",
+      "derived_from": "상속 주요업무(세분류 9539)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정리하다",
+      "object": "쇼핑카터 등 운송수단",
+      "full_statement": "쇼핑카터 등 운송수단을 정리한다.",
+      "source_sentence": "쇼핑카터 등 운송수단을 정리한다.",
+      "derived_from": "상속 주요업무(세분류 9539)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "정리하다",
+      "object": "매장",
+      "full_statement": "매장을 정리한다.",
+      "source_sentence": "매장 정리, 전단지 배포 등 기타 판매 관련 단순 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 9539)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "배포하다",
+      "object": "전단지",
+      "full_statement": "전단지를 배포한다.",
+      "source_sentence": "매장 정리, 전단지 배포 등 기타 판매 관련 단순 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 9539)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "접수하다",
+      "object": "고객의 휴대품",
+      "full_statement": "휴대품 보관소에서 고객의 휴대품을 접수한다.",
+      "source_sentence": "휴대품 보관소 접수원·헬스클럽 탈의실 보관원",
+      "derived_from": "세세분류 직업 예시→세세활동 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "헬스클럽 탈의실에서 고객의 물품을 보관한다.",
+      "source_sentence": "휴대품 보관소 접수원·헬스클럽 탈의실 보관원",
+      "derived_from": "세세분류 직업 예시→세세활동 특화",
+      "confidence": 0.48
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(휴대품·물품 보관 접수)",
+      "evidence_span": "휴대품 보관소 접수원·헬스클럽 탈의실 보관원"
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순·반복 업무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

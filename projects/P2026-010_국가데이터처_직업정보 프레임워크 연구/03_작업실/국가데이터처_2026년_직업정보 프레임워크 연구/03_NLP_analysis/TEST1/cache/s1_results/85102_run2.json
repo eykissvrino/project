@@ -1,0 +1,95 @@
+{
+  "ksco_code": "85102",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "밀링기",
+      "full_statement": "다인회전 절삭공구가 장착된 밀링기를 조작하여 금속을 절삭한다.",
+      "source_sentence": "다인회전 절삭공구로 금속을 절삭하는 밀링기를 조정 또는 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "밀링기",
+      "full_statement": "금속을 절삭하기 위해 밀링기를 조정한다.",
+      "source_sentence": "다인회전 절삭공구로 금속을 절삭하는 밀링기를 조정 또는 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "해석하다",
+      "object": "작업 주문서와 청사진",
+      "full_statement": "작업 주문서와 청사진을 해석하여 밀링 가공 작업 내용을 파악한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "기계 조작 방식",
+      "full_statement": "청사진 해석을 바탕으로 밀링기의 조작 방식을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "설치하다",
+      "object": "밀링기",
+      "full_statement": "가공에 앞서 밀링기를 설치한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작동시키다",
+      "object": "밀링기",
+      "full_statement": "밀링기를 작동시켜 밀링 가공을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "기계장치 부품의 치수",
+      "full_statement": "정밀측정 기구를 사용하여 가공된 부품의 치수를 측정한다.",
+      "source_sentence": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "수행하다",
+      "object": "반복 작업",
+      "full_statement": "자동 또는 반자동 밀링기를 조작하여 반복적인 절삭 작업을 수행한다.",
+      "source_sentence": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "사용하다",
+      "object": "수공구 및 정밀측정기",
+      "full_statement": "수공구 및 정밀측정기를 사용하여 금속 공작 기계 조작을 보조한다.",
+      "source_sentence": "각종 금속 공작 기계, 수공구 및 정밀측정기를 사용하여 금속 공작 기계조작, 냉난방 관련 설비조작, 자동 조립라인 및 산업용 로봇조작, 운송차량을 조작한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제어하다",
+      "object": "밀링기",
+      "full_statement": "컴퓨터를 이용해 밀링기를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [
+    {"name": "밀링기", "category": "장비", "evidence_span": "다인회전 절삭공구로 금속을 절삭하는 밀링기를 조정 또는 조작한다."},
+    {"name": "다인회전 절삭공구", "category": "도구", "evidence_span": "다인회전 절삭공구로 금속을 절삭하는 밀링기를 조정 또는 조작한다."},
+    {"name": "정밀측정 기구", "category": "도구", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "각종 금속 공작 기계, 수공구 및 정밀측정기를 사용하여"},
+    {"name": "정밀측정기", "category": "도구", "evidence_span": "각종 금속 공작 기계, 수공구 및 정밀측정기를 사용하여"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "반복적인 작업", "evidence_span": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다."}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28441",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "농산물 시장정보",
+      "full_statement": "농산물의 품질·가격·시장정보를 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "농수산물 샘플",
+      "full_statement": "농수산물 샘플을 검사하여 등급과 질을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "경매 우선순위",
+      "full_statement": "경매에 내놓을 물품을 확인하고 경매 우선순위를 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "경매",
+      "full_statement": "경매 최저가격을 설정하고 경매를 시행하여 낙찰자를 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

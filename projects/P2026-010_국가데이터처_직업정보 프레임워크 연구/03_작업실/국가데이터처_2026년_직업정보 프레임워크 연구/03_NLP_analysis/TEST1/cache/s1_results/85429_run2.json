@@ -1,0 +1,91 @@
+{
+  "ksco_code": "85429",
+  "tasks": [
+    {
+      "verb": "조립하다",
+      "object": "자동차 내부 구성품",
+      "full_statement": "손, 공구, 고정 및 자동조립설비 등을 사용하여 자동차의 내부 구성품을 조립한다.",
+      "source_sentence": "자동차 부품을 조립하기 위하여 손, 공구, 고정 및 자동조립설비 등을 사용하여 내부 구성품을 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사용하다",
+      "object": "공구 및 고정·자동조립설비",
+      "full_statement": "부품 조립을 위하여 손공구와 고정 및 자동조립설비를 사용한다.",
+      "source_sentence": "자동차 부품을 조립하기 위하여 손, 공구, 고정 및 자동조립설비 등을 사용하여 내부 구성품을 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "최종 생산품",
+      "full_statement": "최종 생산품을 검사하여 조립 작업이 정확한지 확인한다.",
+      "source_sentence": "최종 생산품을 검사하고 시험하여 조립원들의 작업이 정확하고 품질기준에 적합한가를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시험하다",
+      "object": "최종 생산품",
+      "full_statement": "최종 생산품을 시험하여 품질기준에 적합한지 확인한다.",
+      "source_sentence": "최종 생산품을 검사하고 시험하여 조립원들의 작업이 정확하고 품질기준에 적합한가를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "품질기준 적합 여부",
+      "full_statement": "조립 작업이 품질기준에 적합한지를 확인한다.",
+      "source_sentence": "최종 생산품을 검사하고 시험하여 조립원들의 작업이 정확하고 품질기준에 적합한가를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조립하다",
+      "object": "자동차 의장부품",
+      "full_statement": "자동차의 의장부품을 조립한다.",
+      "source_sentence": "[세세분류 직업 예시] 자동차 의장부품 조립원",
+      "derived_from": "상속 주요업무→세세정의(예시) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조립하다",
+      "object": "자동차 금속부품",
+      "full_statement": "자동차의 금속부품을 조립한다.",
+      "source_sentence": "[세세분류 직업 예시] 자동차 금속부품 조립원",
+      "derived_from": "상속 주요업무→세세정의(예시) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조립하다",
+      "object": "자동차 고무부품",
+      "full_statement": "자동차의 고무부품을 조립한다.",
+      "source_sentence": "[세세분류 직업 예시] 자동차 고무부품 조립원",
+      "derived_from": "상속 주요업무→세세정의(예시) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조립하다",
+      "object": "자동차 플라스틱부품",
+      "full_statement": "자동차의 플라스틱부품을 조립한다.",
+      "source_sentence": "[세세분류 직업 예시] 자동차 플라스틱부품 조립원",
+      "derived_from": "상속 주요업무→세세정의(예시) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조립하다",
+      "object": "금속제품 구성품 또는 부품",
+      "full_statement": "여러 가지 형태의 금속제품 구성품 또는 부품을 조립한다.",
+      "source_sentence": "[세분류 8542 자동차 부품 조립원] 자동차의 엔진, 차체, 모터 및 배터리 등 여러 가지 형태의 금속제품 구성품 또는 부품을 조립한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "손, 공구, 고정 및 자동조립설비 등을 사용하여 내부 구성품을 조립한다."},
+    {"name": "고정설비", "category": "장비", "evidence_span": "손, 공구, 고정 및 자동조립설비 등을 사용하여 내부 구성품을 조립한다."},
+    {"name": "자동조립설비", "category": "장비", "evidence_span": "손, 공구, 고정 및 자동조립설비 등을 사용하여 내부 구성품을 조립한다."}
+  ],
+  "work_context": []
+}

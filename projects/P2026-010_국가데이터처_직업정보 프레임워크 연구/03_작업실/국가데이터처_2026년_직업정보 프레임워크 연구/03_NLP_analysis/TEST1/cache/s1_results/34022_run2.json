@@ -1,0 +1,133 @@
+{
+  "ksco_code": "34022",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "보험거래 사무업무",
+      "full_statement": "각종 손해보험과 생명보험의 거래와 관련된 사무업무를 수행한다.",
+      "source_sentence": "자동차, 선박, 항공, 화재, 질병, 상해, 생명, 책임, 재산 관련 보험 등 각종 손해보험과 생명보험의 거래와 관련된 사무업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "보험거래에 수반되는 사무업무",
+      "full_statement": "자동차, 화재, 질병, 상해, 생명, 책임, 재산, 선박, 항공 및 기타 각종 보험거래에 수반되는 사무업무를 처리한다.",
+      "source_sentence": "보험사에서 자동차, 화재, 질병, 상해, 생명, 책임, 재산, 선박, 항공 및 기타 각종 보험거래에 수반되는 사무업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수집하다",
+      "object": "통계자료",
+      "full_statement": "입원, 퇴원, 사망, 출생, 치료내용 등에 관한 통계자료를 수집한다.",
+      "source_sentence": "입원, 퇴원, 사망, 출생, 치료내용 등에 관한 통계자료를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "신청하다",
+      "object": "보험 사항",
+      "full_statement": "보험 사항을 기재하여 신청한다.",
+      "source_sentence": "의료보험 사항을 기재하여 신청하거나 신청된 내용을 심사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "심사하다",
+      "object": "신청 내용",
+      "full_statement": "신청된 보험 내용을 심사한다.",
+      "source_sentence": "의료보험 사항을 기재하여 신청하거나 신청된 내용을 심사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "받다",
+      "object": "관련자 진술",
+      "full_statement": "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받는다.",
+      "source_sentence": "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받고 자문을 구하며 기록이나 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "구하다",
+      "object": "자문",
+      "full_statement": "관련 전문가에게 자문을 구한다.",
+      "source_sentence": "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받고 자문을 구하며 기록이나 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "작성하다",
+      "object": "기록이나 보고서",
+      "full_statement": "진술과 자문 내용을 바탕으로 기록이나 보고서를 작성한다.",
+      "source_sentence": "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받고 자문을 구하며 기록이나 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "처리하다",
+      "object": "보험금 청구",
+      "full_statement": "보험금 청구 관련 사무를 처리한다.",
+      "source_sentence": "보험청구 사무원·보상사무원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "처리하다",
+      "object": "보상 사무",
+      "full_statement": "사고 발생에 따른 보상 사무를 처리한다.",
+      "source_sentence": "보험청구 사무원·보상사무원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "가입자",
+      "full_statement": "보험 가입자 정보를 관리한다.",
+      "source_sentence": "가입자 관리원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.72
+    },
+    {
+      "verb": "처리하다",
+      "object": "환수 사무",
+      "full_statement": "보험금 환수 관련 사무를 처리한다.",
+      "source_sentence": "환수․환부 사무원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "처리하다",
+      "object": "환부 사무",
+      "full_statement": "보험금 환부 관련 사무를 처리한다.",
+      "source_sentence": "환수․환부 사무원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "기록하다",
+      "object": "거래 정보",
+      "full_statement": "보험거래에 관련된 정보를 기록하고 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "검색하다",
+      "object": "거래 자료",
+      "full_statement": "보관된 보험거래 자료를 계산하고 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "배상 요구자·사고 목격자·의사 등 관련자 응대 및 진술 청취",
+      "evidence_span": "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받고 자문을 구하며"
+    }
+  ]
+}

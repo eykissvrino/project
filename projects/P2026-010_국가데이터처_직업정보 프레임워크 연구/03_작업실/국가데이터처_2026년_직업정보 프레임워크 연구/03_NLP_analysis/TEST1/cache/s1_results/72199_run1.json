@@ -1,0 +1,134 @@
+{
+  "ksco_code": "72199",
+  "tasks": [
+    {
+      "verb": "선별하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분류하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 분류한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "직조하다",
+      "object": "직물",
+      "full_statement": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다.",
+      "source_sentence": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "짜다",
+      "object": "카펫",
+      "full_statement": "매듭기법으로 카펫을 짠다.",
+      "source_sentence": "매듭기법으로 카펫을 짠다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "장치하다",
+      "object": "스프링",
+      "full_statement": "가구틀에 스프링을 장치한다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "넣다",
+      "object": "솜",
+      "full_statement": "가구틀 속에 솜을 넣는다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "씌우다",
+      "object": "커버",
+      "full_statement": "가구틀에 커버를 씌운다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "장식하다",
+      "object": "안락기구 내부 장식",
+      "full_statement": "섬유, 피혁 및 유사제품 등의 안락기구 또는 내부 장식을 장식한다.",
+      "source_sentence": "섬유, 피혁 및 유사제품 등의 안락기구 또는 내부 장식을 낮추고 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검사하다",
+      "object": "의류",
+      "full_statement": "완성된 의류의 품질과 결함을 검사한다.",
+      "source_sentence": "의류 검사원·직물제품 검사원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검사하다",
+      "object": "직물제품",
+      "full_statement": "직물제품의 품질과 결함을 검사한다.",
+      "source_sentence": "의류 검사원·직물제품 검사원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검사하다",
+      "object": "직물원단",
+      "full_statement": "직물원단의 상태와 결함을 검사한다.",
+      "source_sentence": "직물원단 검사원·기타 가죽제품 관련 종사자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "가공하다",
+      "object": "섬유",
+      "full_statement": "기타 섬유를 가공하여 제품을 제조한다.",
+      "source_sentence": "기타 섬유가공 종사자",
+      "derived_from": "세세분류 직업 예시→중분류 정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제조하다",
+      "object": "가죽제품",
+      "full_statement": "기타 가죽제품을 제조한다.",
+      "source_sentence": "직물원단 검사원·기타 가죽제품 관련 종사자",
+      "derived_from": "세세분류 직업 예시→소분류 정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수선하다",
+      "object": "모피제품",
+      "full_statement": "구두, 가구 장식물, 모피제품을 제조하고 수선한다.",
+      "source_sentence": "섬유·의복 및 가죽 관련 기능직은 섬유를 가공하여 직물을 제조하고 의복을 재단, 재봉하며, 구두, 가구 장식물, 모피제품을 제조하고 수선한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "제조하다",
+      "object": "가죽 장식물",
+      "full_statement": "구두를 만들고 가죽 장식물을 제조한다.",
+      "source_sentence": "천연섬유, 연사, 방적사를 가공하며 직조, 편직 및 기타 방법으로 직물을 제조하고 의복을 재단, 재봉하며 구두를 만들고, 가죽 장식물을 제조한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "수동직기", "category": "장비", "evidence_span": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다."},
+    {"name": "수동기계", "category": "장비", "evidence_span": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 수작업 중심", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"},
+    {"category": "신체적", "value": "손이나 수동기계를 이용한 섬유 선별·분류 작업", "evidence_span": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다."}
+  ]
+}

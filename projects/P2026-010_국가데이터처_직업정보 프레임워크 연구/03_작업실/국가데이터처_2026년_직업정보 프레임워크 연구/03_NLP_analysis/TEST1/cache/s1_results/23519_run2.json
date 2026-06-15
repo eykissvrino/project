@@ -1,0 +1,141 @@
+{
+  "ksco_code": "23519",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "원자력 설비 및 장치",
+      "full_statement": "원자력 설비 및 장치, 정밀기구, 카메라 및 영사기, 기계적 기능의 의료장비의 실현가능성과 성능에 관해 연구한다.",
+      "source_sentence": "원자력 설비 및 장치, 정밀기구, 카메라 및 영사기, 기계적 기능의 의료장비를 연구하고, 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "정밀기구",
+      "full_statement": "정밀기구, 카메라 및 영사기 등 기계장치의 세부사항을 설계한다.",
+      "source_sentence": "원자력 설비 및 장치, 정밀기구, 카메라 및 영사기, 기계적 기능의 의료장비를 연구하고, 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "제조",
+      "full_statement": "기계적 기능의 의료장비 등의 제조를 기획한다.",
+      "source_sentence": "원자력 설비 및 장치, 정밀기구, 카메라 및 영사기, 기계적 기능의 의료장비를 연구하고, 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "유지",
+      "full_statement": "원자력 설비 및 정밀기구 등의 유지를 관리한다.",
+      "source_sentence": "원자력 설비 및 장치, 정밀기구, 카메라 및 영사기, 기계적 기능의 의료장비를 연구하고, 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연구하다",
+      "object": "메커니즘의 실현가능성",
+      "full_statement": "메커니즘(기계류), 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "source_sentence": "메커니즘(기계류), 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "재료·비용·견적서·보고서",
+      "full_statement": "재료, 비용, 견적서, 보고서를 작성한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "기계 및 시스템의 세부사항",
+      "full_statement": "기계 및 시스템에 대한 세부사항을 설계한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "기계시스템의 설치·변경·위탁",
+      "full_statement": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "기계시스템",
+      "full_statement": "건설 현장이나 산업설비에서 기계시스템을 검사한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조사하다",
+      "object": "기계적 고장",
+      "full_statement": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "source_sentence": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "계약 서류",
+      "full_statement": "계약 서류를 작성한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "제안서",
+      "full_statement": "산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "기술자 및 엔지니어",
+      "full_statement": "기술자 및 다른 엔지니어를 감독한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검토하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 검토한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "승인하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 승인한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "기계장치와 시스템",
+      "full_statement": "발전, 운송 및 생산을 위한 기계장치와 시스템을 개발한다.",
+      "source_sentence": "난방, 환기, 공기정화, 발전, 운송 및 생산을 위한 기계장치와 시스템을 연구, 설계, 개발한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설 현장이나 산업설비",
+      "evidence_span": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다."
+    }
+  ]
+}

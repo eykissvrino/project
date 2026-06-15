@@ -1,0 +1,90 @@
+{
+  "ksco_code": "61121",
+  "tasks": [
+    {
+      "verb": "파종하다",
+      "object": "채소 종자",
+      "full_statement": "경작지에 배추, 무, 당근 등 채소 종자를 파종한다.",
+      "source_sentence": "경작지에 채소 및 특용작물을 파종, 이식하고 비료 및 농약을 살포하고 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "이식하다",
+      "object": "채소 모종",
+      "full_statement": "경작지에 채소 모종을 이식한다.",
+      "source_sentence": "경작지에 채소 및 특용작물을 파종, 이식하고 비료 및 농약을 살포하고 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살포하다",
+      "object": "비료",
+      "full_statement": "채소작물에 비료를 살포한다.",
+      "source_sentence": "경작지에 채소 및 특용작물을 파종, 이식하고 비료 및 농약을 살포하고 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살포하다",
+      "object": "농약",
+      "full_statement": "병해충 방제를 위해 채소작물에 농약을 살포한다.",
+      "source_sentence": "경작지에 채소 및 특용작물을 파종, 이식하고 비료 및 농약을 살포하고 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재배하다",
+      "object": "채소작물",
+      "full_statement": "배추, 무, 당근 등 채소를 재배한다.",
+      "source_sentence": "배추, 무, 당근 등 채소를 재배하고 수확한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수확하다",
+      "object": "채소작물",
+      "full_statement": "배추, 무, 당근 등 다 자란 채소를 수확한다.",
+      "source_sentence": "배추, 무, 당근 등 채소를 재배하고 수확한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "수확한 채소 생산물을 저장한다.",
+      "source_sentence": "생산물을 저장하거나 일부 기초적인 가공을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "가공하다",
+      "object": "생산물",
+      "full_statement": "생산물에 대해 일부 기초적인 가공을 한다.",
+      "source_sentence": "생산물을 저장하거나 일부 기초적인 가공을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "판매하다",
+      "object": "생산물",
+      "full_statement": "구매자, 판매조직 또는 시장에 채소 생산물을 판매한다.",
+      "source_sentence": "구매자, 판매조직 또는 시장에 생산물을 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "경작지(실외 농경지)에서 작업",
+      "evidence_span": "경작지에 채소 및 특용작물을 파종, 이식하고 비료 및 농약을 살포하고 수확한다."
+    },
+    {
+      "category": "위험",
+      "value": "농약 살포에 따른 화학물질 노출",
+      "evidence_span": "비료 및 농약을 살포하고"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "ksco_code": "35120",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "감사계획",
+      "full_statement": "법률적 근거 및 지침에 따라 감사를 수행하기 위한 계획을 수립한다.",
+      "source_sentence": "감사를 수행하기 위해 법률적 근거 및 지침에 따라 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기획하다",
+      "object": "감사업무",
+      "full_statement": "효율적인 감사업무를 수행하기 위하여 감사를 기획한다.",
+      "source_sentence": "효율적인 감사업무를 수행하기 위하여 감사기획 및 지침수립 등 감사실시에 따른 제반업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수립하다",
+      "object": "감사지침",
+      "full_statement": "감사 실시를 위한 감사지침을 수립한다.",
+      "source_sentence": "효율적인 감사업무를 수행하기 위하여 감사기획 및 지침수립 등 감사실시에 따른 제반업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "감사계획서",
+      "full_statement": "감사에 필요한 계획서를 작성한다.",
+      "source_sentence": "서류준비, 계획서 작성 등 감사에 따른 제반 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "준비하다",
+      "object": "감사서류",
+      "full_statement": "감사에 필요한 서류를 준비한다.",
+      "source_sentence": "서류준비, 계획서 작성 등 감사에 따른 제반 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실시하다",
+      "object": "감사",
+      "full_statement": "수립된 계획과 지침에 따라 감사를 실시한다.",
+      "source_sentence": "효율적인 감사업무를 수행하기 위하여 감사기획 및 지침수립 등 감사실시에 따른 제반업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "감시하다",
+      "object": "준법 여부",
+      "full_statement": "조직 구성원의 준법 여부를 감시한다.",
+      "source_sentence": "감사 사무원·준법감시 사무원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "관공서 또는 기업체 내 사무 환경",
+      "evidence_span": "관공서 또는 기업체에서 효율적인 감사업무를 수행하기 위하여"
+    }
+  ]
+}

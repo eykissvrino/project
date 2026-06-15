@@ -1,0 +1,127 @@
+{
+  "ksco_code": "29820",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "영화 및 음반시장의 경쟁 환경",
+      "full_statement": "영화 및 음반시장의 경쟁 환경을 분석한다.",
+      "source_sentence": "영화 및 음반시장의 경쟁 환경 및 소비형태를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "영화 및 음반시장의 소비형태",
+      "full_statement": "영화 및 음반시장의 소비형태를 분석한다.",
+      "source_sentence": "영화 및 음반시장의 경쟁 환경 및 소비형태를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기획하다",
+      "object": "영화 및 음반 상품",
+      "full_statement": "영화 및 음반 상품의 부가가치를 극대화할 수 있도록 상품을 기획한다.",
+      "source_sentence": "영화, 음반 상품의 부가가치를 극대화할 수 있도록 상품기획, 투자유치, 예산수립, 제작홍보 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "선정하다",
+      "object": "영화 및 음반의 유통 채널",
+      "full_statement": "영화 및 음반의 유통 채널을 선정한다.",
+      "source_sentence": "영화 및 음반의 유통 채널을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수립하다",
+      "object": "예산",
+      "full_statement": "영화 및 음반 제작 예산을 수립한다.",
+      "source_sentence": "영화 및 음반의 유통 채널을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기획하다",
+      "object": "제작인력 구성",
+      "full_statement": "영화 및 음반 제작인력 구성을 기획한다.",
+      "source_sentence": "영화 및 음반의 유통 채널을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "구성하다",
+      "object": "영화 및 음반 기획안",
+      "full_statement": "영화 및 음반 기획안을 구성한다.",
+      "source_sentence": "영화 및 음반 기획안을 구성, 발표하여 투자를 유치하거나 판권 및 음원 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "발표하다",
+      "object": "영화 및 음반 기획안",
+      "full_statement": "영화 및 음반 기획안을 발표한다.",
+      "source_sentence": "영화 및 음반 기획안을 구성, 발표하여 투자를 유치하거나 판권 및 음원 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "유치하다",
+      "object": "투자",
+      "full_statement": "영화 및 음반 제작을 위한 투자를 유치한다.",
+      "source_sentence": "영화 및 음반 기획안을 구성, 발표하여 투자를 유치하거나 판권 및 음원 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지원하다",
+      "object": "판권 및 음원 판매",
+      "full_statement": "영화 판권 및 음원 판매를 지원한다.",
+      "source_sentence": "영화 및 음반 기획안을 구성, 발표하여 투자를 유치하거나 판권 및 음원 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "지원하다",
+      "object": "마케팅 및 홍보",
+      "full_statement": "영화 및 음반의 마케팅 및 홍보를 지원한다.",
+      "source_sentence": "영화 및 음반 기획안을 구성, 발표하여 투자를 유치하거나 판권 및 음원 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "기획하다",
+      "object": "제작 과정",
+      "full_statement": "영화 및 음반의 제작 과정을 기획한다.",
+      "source_sentence": "영화, 음반 상품의 부가가치를 극대화할 수 있도록 상품기획, 투자유치, 예산수립, 제작홍보 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실행하다",
+      "object": "제작 과정",
+      "full_statement": "영화 및 음반의 제작 과정을 실행한다.",
+      "source_sentence": "영화, 음반 상품의 부가가치를 극대화할 수 있도록 상품기획, 투자유치, 예산수립, 제작홍보 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "수행하다",
+      "object": "제작홍보",
+      "full_statement": "영화 및 음반의 제작홍보를 수행한다.",
+      "source_sentence": "영화, 음반 상품의 부가가치를 극대화할 수 있도록 상품기획, 투자유치, 예산수립, 제작홍보 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수립하다",
+      "object": "기획 전략",
+      "full_statement": "문화 상품의 부가가치를 극대화할 수 있도록 기획 전략을 수립한다.",
+      "source_sentence": "공연, 시각예술, 영화, 음반 등의 문화 상품의 부가가치를 극대화할 수 있도록 기획 전략을 수립하고 관리 및 실행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

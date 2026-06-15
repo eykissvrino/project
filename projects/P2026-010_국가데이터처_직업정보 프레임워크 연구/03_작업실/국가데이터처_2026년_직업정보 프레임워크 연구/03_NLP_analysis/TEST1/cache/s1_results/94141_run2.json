@@ -1,0 +1,87 @@
+{
+  "ksco_code": "94141",
+  "tasks": [
+    {
+      "verb": "수거하다",
+      "object": "품목별로 분리배출된 재활용 쓰레기",
+      "full_statement": "품목별로 분리배출된 재활용 쓰레기를 수거한다.",
+      "source_sentence": "품목별로 분리배출된 재활용 쓰레기를 수거하거나 재활용품을 수리 또는 가공하여 판매하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "재활용품",
+      "full_statement": "재활용품을 수리한다.",
+      "source_sentence": "품목별로 분리배출된 재활용 쓰레기를 수거하거나 재활용품을 수리 또는 가공하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가공하다",
+      "object": "재활용품",
+      "full_statement": "재활용품을 가공한다.",
+      "source_sentence": "품목별로 분리배출된 재활용 쓰레기를 수거하거나 재활용품을 수리 또는 가공하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "판매하다",
+      "object": "수리 또는 가공한 재활용품",
+      "full_statement": "수리 또는 가공한 재활용품을 판매한다.",
+      "source_sentence": "품목별로 분리배출된 재활용 쓰레기를 수거하거나 재활용품을 수리 또는 가공하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수거하다",
+      "object": "폐기물",
+      "full_statement": "폐기물을 수거한다.",
+      "source_sentence": "폐기물을 수거하여 싣거나 하차한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "싣다",
+      "object": "수거한 폐기물",
+      "full_statement": "수거한 폐기물을 차량에 싣는다.",
+      "source_sentence": "폐기물을 수거하여 싣거나 하차한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "하차하다",
+      "object": "수거한 폐기물",
+      "full_statement": "수거한 폐기물을 하차한다.",
+      "source_sentence": "폐기물을 수거하여 싣거나 하차한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "단속하다",
+      "object": "쓰레기 무단투기나 불법투기",
+      "full_statement": "쓰레기 무단투기나 불법투기를 단속한다.",
+      "source_sentence": "쓰레기 무단투기나 불법투기를 단속한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분류하다",
+      "object": "수거한 재활용 쓰레기",
+      "full_statement": "수거한 재활용 쓰레기를 품목별로 분류한다.",
+      "source_sentence": "품목별로 분리배출된 재활용 쓰레기를 수거하거나",
+      "derived_from": "세세분류 정의→직업예시(폐지 분류원) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수집하다",
+      "object": "고철",
+      "full_statement": "고철을 수집한다.",
+      "source_sentence": "재활용 쓰레기 수거원·고철 수집원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

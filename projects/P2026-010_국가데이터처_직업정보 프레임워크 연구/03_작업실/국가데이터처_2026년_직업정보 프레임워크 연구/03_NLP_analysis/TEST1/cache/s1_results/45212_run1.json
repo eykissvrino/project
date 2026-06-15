@@ -1,0 +1,68 @@
+{
+  "ksco_code": "45212",
+  "tasks": [
+    {
+      "verb": "끓이다",
+      "object": "물",
+      "full_statement": "전통차를 만들기 위하여 물을 끓인다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "혼합하다",
+      "object": "전통차 재료",
+      "full_statement": "제조 방법에 따라 전통차 재료를 적당히 혼합한다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "만들다",
+      "object": "전통차",
+      "full_statement": "대추차, 오미자차, 모과차, 쌍화차 등 전통차를 만든다.",
+      "source_sentence": "대추차, 오미자차, 모과차, 쌍화차 등 전통차를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "전통차",
+      "full_statement": "만든 전통차를 고객에게 제공한다.",
+      "source_sentence": "대추차, 오미자차, 모과차, 쌍화차 등 전통차를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기록하다",
+      "object": "일일판매기록부",
+      "full_statement": "매일 판매된 차를 일일판매기록부에 기록하고 정리한다.",
+      "source_sentence": "매일 판매된 커피와 차를 일일판매기록부에 기록‧정리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연구하다",
+      "object": "전통차 제조법",
+      "full_statement": "새로운 전통차를 만드는 방법을 연구한다.",
+      "source_sentence": "새로운 커피와 차를 만드는 방법을 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.73
+    },
+    {
+      "verb": "보관하다",
+      "object": "찻잔",
+      "full_statement": "필요한 찻잔 등을 보관하고 유지한다.",
+      "source_sentence": "필요한 커피잔이나 찻잔 등을 보관 및 유지한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.74
+    }
+  ],
+  "tools": [
+    {"name": "찻잔", "category": "도구", "evidence_span": "필요한 커피잔이나 찻잔 등을 보관 및 유지한다."},
+    {"name": "일일판매기록부", "category": "도구", "evidence_span": "매일 판매된 커피와 차를 일일판매기록부에 기록‧정리한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대(고객에게 음료 제공)", "evidence_span": "대추차, 오미자차, 모과차, 쌍화차 등 전통차를 만들어 고객에게 제공한다."}
+  ]
+}

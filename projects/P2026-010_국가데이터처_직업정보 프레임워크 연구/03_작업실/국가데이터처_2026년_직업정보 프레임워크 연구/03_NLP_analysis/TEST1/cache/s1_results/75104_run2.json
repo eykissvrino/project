@@ -1,0 +1,110 @@
+{
+  "ksco_code": "75104",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "차체 판금의 변형 및 파손정도",
+      "full_statement": "자동차 차체 판금의 변형 및 파손정도를 확인한다.",
+      "source_sentence": "자동차 차체 판금의 변형 및 파손정도를 확인하여 원형으로 복구하거나 교체하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "복구하다",
+      "object": "변형된 차체 판금",
+      "full_statement": "변형된 차체 판금을 원형으로 복구한다.",
+      "source_sentence": "자동차 차체 판금의 변형 및 파손정도를 확인하여 원형으로 복구하거나 교체하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "교체하다",
+      "object": "파손된 차체 판금",
+      "full_statement": "파손된 차체 판금을 교체하여 수리한다.",
+      "source_sentence": "자동차 차체 판금의 변형 및 파손정도를 확인하여 원형으로 복구하거나 교체하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제거하다",
+      "object": "표면의 흠집",
+      "full_statement": "차체 표면의 흠집을 제거한다.",
+      "source_sentence": "표면의 흠집을 없애거나 색을 바꾸기 위하여 페인트 등으로 도색·도장하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "도색하다",
+      "object": "차체 표면",
+      "full_statement": "표면의 색을 바꾸기 위하여 페인트 등으로 차체 표면을 도색한다.",
+      "source_sentence": "표면의 흠집을 없애거나 색을 바꾸기 위하여 페인트 등으로 도색·도장하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "도장하다",
+      "object": "차체 표면",
+      "full_statement": "페인트 등으로 차체 표면을 도장한다.",
+      "source_sentence": "표면의 흠집을 없애거나 색을 바꾸기 위하여 페인트 등으로 도색·도장하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "진단하다",
+      "object": "차체 파손 각 부분",
+      "full_statement": "파손의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험·측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분해하다",
+      "object": "파손 차체 부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 파손 차체 부위를 분해한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "판단하다",
+      "object": "수리 또는 교체의 필요성",
+      "full_statement": "명세서와 비교·검사하여 수리 또는 교체의 필요성을 판단한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 부품",
+      "full_statement": "사용가능한 부품은 수리하여 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리하거나 교체한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "수리부분의 상태",
+      "full_statement": "수리부분의 마감 및 도장 상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "도구", "evidence_span": "시험‧측정 기구를 사용하여 각 부분을 진단·검사한다"},
+    {"name": "페인트", "category": "도구", "evidence_span": "페인트 등으로 도색·도장하기도 한다"},
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 및 관련 장비를 사용하여 조정하고 교체하거나 수리하여 정비한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "수공구 및 관련 장비를 사용한 수작업", "evidence_span": "수공구 및 관련 장비를 사용하여 조정하고 교체하거나 수리하여 정비한다"},
+    {"category": "위험", "value": "페인트 도료 등 화학물질 취급", "evidence_span": "페인트 등으로 도색·도장하기도 한다"}
+  ]
+}

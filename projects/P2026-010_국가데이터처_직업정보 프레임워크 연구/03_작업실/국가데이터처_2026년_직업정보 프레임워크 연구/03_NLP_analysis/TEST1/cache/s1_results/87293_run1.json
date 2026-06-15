@@ -1,0 +1,53 @@
+{
+  "ksco_code": "87293",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "의뢰 차량",
+      "full_statement": "의뢰한 운전자를 대신하여 해당 차량을 운전한다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 목적지까지 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이동하다",
+      "object": "목적지",
+      "full_statement": "의뢰받은 차량을 목적지까지 이동시킨다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 목적지까지 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운전하다",
+      "object": "차량",
+      "full_statement": "차량 소유주를 대신하여 차량을 운전한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "주차하다",
+      "object": "차량",
+      "full_statement": "차량 소유주를 대신하여 차량을 주차한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "운전 장치",
+      "full_statement": "손과 해당 운전 장치를 이용하여 운송장비를 조작한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "운전 장치", "category": "장비", "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"},
+    {"name": "자동차", "category": "장비", "evidence_span": "택시, 버스, 트럭, 특수차 등 자동차를 운전한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "의뢰자(고객) 차량을 대신 운전하는 대행 서비스", "evidence_span": "의뢰한 운전자를 대신하여 해당 차량을 목적지까지 운전한다."},
+    {"category": "장소", "value": "도로상 이동(목적지까지 운전)", "evidence_span": "해당 차량을 목적지까지 운전한다."}
+  ]
+}

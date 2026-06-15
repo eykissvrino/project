@@ -1,0 +1,141 @@
+{
+  "ksco_code": "81140",
+  "tasks": [
+    {
+      "verb": "추출하다",
+      "object": "주스",
+      "full_statement": "과실과 채소를 가열 또는 압착하여 주스를 추출하는 기계를 조작한다.",
+      "source_sentence": "가열 또는 압착하여 과실과 채소로부터 주스를 추출하는 기계를 조작 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "가열하다",
+      "object": "과실과 채소",
+      "full_statement": "주스를 추출하기 위해 과실과 채소를 가열하는 기계를 조작한다.",
+      "source_sentence": "가열 또는 압착하여 과실과 채소로부터 주스를 추출하는 기계를 조작 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "압착하다",
+      "object": "과실과 채소",
+      "full_statement": "주스를 추출하기 위해 과실과 채소를 압착하는 기계를 조작한다.",
+      "source_sentence": "가열 또는 압착하여 과실과 채소로부터 주스를 추출하는 기계를 조작 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "냉동하다",
+      "object": "과실, 채소 및 견과",
+      "full_statement": "과실, 채소 및 견과를 냉동 가공하는 기계를 조작한다.",
+      "source_sentence": "냉동, 건조, 조리, 통조림 가공 또는 기타 방법으로 과실, 채소 및 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "건조하다",
+      "object": "과실, 채소 및 견과",
+      "full_statement": "과실, 채소 및 견과를 건조 가공하는 기계를 조작한다.",
+      "source_sentence": "냉동, 건조, 조리, 통조림 가공 또는 기타 방법으로 과실, 채소 및 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조리하다",
+      "object": "과실, 채소 및 견과",
+      "full_statement": "과실, 채소 및 견과를 조리 가공하는 기계를 조작한다.",
+      "source_sentence": "냉동, 건조, 조리, 통조림 가공 또는 기타 방법으로 과실, 채소 및 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "가공하다",
+      "object": "통조림",
+      "full_statement": "과실, 채소 및 견과를 통조림으로 가공하는 기계를 조작한다.",
+      "source_sentence": "냉동, 건조, 조리, 통조림 가공 또는 기타 방법으로 과실, 채소 및 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "과실 통조림기",
+      "full_statement": "과실을 통조림으로 가공하는 통조림기를 조작한다.",
+      "source_sentence": "과실 통조림기 조작원·채소 통조림기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "채소 통조림기",
+      "full_statement": "채소를 통조림으로 가공하는 통조림기를 조작한다.",
+      "source_sentence": "과실 통조림기 조작원·채소 통조림기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살균하다",
+      "object": "과일",
+      "full_statement": "과일을 살균기로 살균 처리한다.",
+      "source_sentence": "과일 살균기 조작원·과일 및 채소 고압살균기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.82
+    },
+    {
+      "verb": "살균하다",
+      "object": "채소",
+      "full_statement": "채소를 살균기로 살균 처리한다.",
+      "source_sentence": "채소 살균기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "고압살균기",
+      "full_statement": "과일 및 채소를 고압살균기로 가공한다.",
+      "source_sentence": "과일 및 채소 고압살균기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "냉장하다",
+      "object": "과실",
+      "full_statement": "과실을 냉장기로 냉장 보관 처리한다.",
+      "source_sentence": "과실 냉장기 조작원·채소 살균기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "냉장하다",
+      "object": "채소",
+      "full_statement": "채소를 냉장기로 냉장 보관 처리한다.",
+      "source_sentence": "채소 냉장기 조작원·과실 건조기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "건조하다",
+      "object": "과실",
+      "full_statement": "과실을 건조기로 건조 가공한다.",
+      "source_sentence": "채소 냉장기 조작원·과실 건조기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.82
+    },
+    {
+      "verb": "건조하다",
+      "object": "채소",
+      "full_statement": "채소를 건조기로 건조 가공한다.",
+      "source_sentence": "채소 건조기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "과실·채소 통조림기", "category": "장비", "evidence_span": "과실 통조림기 조작원·채소 통조림기 조작원"},
+    {"name": "살균기", "category": "장비", "evidence_span": "과일 살균기 조작원·채소 살균기 조작원"},
+    {"name": "고압살균기", "category": "장비", "evidence_span": "과일 및 채소 고압살균기 조작원"},
+    {"name": "냉장기", "category": "장비", "evidence_span": "과실 냉장기 조작원·채소 냉장기 조작원"},
+    {"name": "건조기", "category": "장비", "evidence_span": "과실 건조기 조작원·채소 건조기 조작원"}
+  ],
+  "work_context": []
+}

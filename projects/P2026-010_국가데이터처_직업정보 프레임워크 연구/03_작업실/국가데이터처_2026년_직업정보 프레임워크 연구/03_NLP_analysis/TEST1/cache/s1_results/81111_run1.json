@@ -1,0 +1,83 @@
+{
+  "ksco_code": "81111",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "곡물 제분기",
+      "full_statement": "각종 곡물을 제분하기 위하여 곡물 제분기를 조작한다.",
+      "source_sentence": "각종 곡물을 조미료를 제외한 반려동물 및 사육동물용 사료 등으로 만들기 위하여 제분하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "사료 제분기",
+      "full_statement": "곡물을 반려동물 및 사육동물용 사료로 만들기 위하여 사료 제분기를 조작한다.",
+      "source_sentence": "각종 곡물을 조미료를 제외한 반려동물 및 사육동물용 사료 등으로 만들기 위하여 제분하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제분하다",
+      "object": "각종 곡물",
+      "full_statement": "반려동물 및 사육동물용 사료를 만들기 위하여 각종 곡물을 제분한다.",
+      "source_sentence": "각종 곡물을 조미료를 제외한 반려동물 및 사육동물용 사료 등으로 만들기 위하여 제분하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "쌀·밀가루 가공 기계",
+      "full_statement": "쌀 및 밀가루를 가공하기 위하여 사용되는 기계를 조작한다.",
+      "source_sentence": "쌀, 밀가루 및 동물사료의 가공을 위하여 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "동물사료 가공 기계",
+      "full_statement": "동물사료를 가공하기 위하여 사용되는 기계를 조작한다.",
+      "source_sentence": "쌀, 밀가루 및 동물사료의 가공을 위하여 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "양념분쇄용 제분기",
+      "full_statement": "양념을 분쇄하기 위하여 양념분쇄용 제분기를 조작한다.",
+      "source_sentence": "곡물 및 양념분쇄용 제분기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물 압착기",
+      "full_statement": "곡물을 압착하기 위하여 곡물 압착기를 조작한다.",
+      "source_sentence": "곡물 제분기 조작원·곡물 압착기 조작원",
+      "derived_from": "세세분류 직업예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물 마쇄기",
+      "full_statement": "곡물을 마쇄하기 위하여 곡물 마쇄기를 조작한다.",
+      "source_sentence": "사료 제분기 조작원·곡물 마쇄기 조작원",
+      "derived_from": "세세분류 직업예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "곡물",
+      "full_statement": "사료 또는 식료품을 만들기 위하여 곡물을 분쇄한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "제분기", "category": "장비", "evidence_span": "곡물 및 양념분쇄용 제분기를 조작한다."},
+    {"name": "곡물 압착기", "category": "장비", "evidence_span": "곡물 제분기 조작원·곡물 압착기 조작원"},
+    {"name": "곡물 마쇄기", "category": "장비", "evidence_span": "사료 제분기 조작원·곡물 마쇄기 조작원"}
+  ],
+  "work_context": []
+}

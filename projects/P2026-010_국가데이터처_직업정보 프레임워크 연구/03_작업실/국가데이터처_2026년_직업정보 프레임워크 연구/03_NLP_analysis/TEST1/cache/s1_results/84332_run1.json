@@ -1,0 +1,150 @@
+{
+  "ksco_code": "84332",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "콘크리트제품 제조 기계장치",
+      "full_statement": "U형 블록, 콘크리트 벽돌, 타일, 블록, 판석, 울타리 기둥, 파일, 전신주 등 각종 콘크리트제품을 제조하는 기계장치를 조작한다.",
+      "source_sentence": "도랑의 U형 블록, 콘크리트 벽돌, 타일, 블록, 판석, 울타리 기둥, 파일, 전신주 등의 각종 콘크리트제품을 제조하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "콘크리트 혼합장치",
+      "full_statement": "시멘트, 모래, 자갈, 물을 혼합하는 콘크리트 혼합장치를 조작한다.",
+      "source_sentence": "시멘트, 모래, 자갈, 물을 혼합하는 콘크리트 혼합장치를 조작하는 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "명세서 및 배합비율에 따라 재료를 투입한다.",
+      "source_sentence": "명세서 및 배합비율에 따라 재료를 투입하고 혼합하는 장치를 조작 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합장치",
+      "full_statement": "명세서 및 배합비율에 따라 재료를 혼합하는 장치를 조작한다.",
+      "source_sentence": "명세서 및 배합비율에 따라 재료를 투입하고 혼합하는 장치를 조작 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "콘크리트제품 재료를 성형, 압출, 롤링하는 기계를 설치한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "콘크리트제품 재료를 성형, 압출, 롤링하는 기계를 조작한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "취급하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "콘크리트제품 재료를 성형, 압출, 롤링하는 기계를 취급한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "성형장치의 압력·유출량 및 컨베이어 속도",
+      "full_statement": "성형장치의 압력, 유출량과 컨베이어의 속도를 조정한다.",
+      "source_sentence": "성형장치의 압력, 유출량, 컨베이어의 속도를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조립하다",
+      "object": "주형",
+      "full_statement": "주형을 맞추어 조립한다.",
+      "source_sentence": "주형을 맞추어 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성제품",
+      "full_statement": "완성된 콘크리트제품을 측정한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계량하다",
+      "object": "완성제품",
+      "full_statement": "완성된 콘크리트제품을 계량한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성제품",
+      "full_statement": "완성된 콘크리트제품을 검사하고 명세서와 비교한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "세척하다",
+      "object": "기계장치",
+      "full_statement": "기계장치를 세척한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "탐지하다",
+      "object": "기계장치의 기능장애",
+      "full_statement": "기계장치의 기능장애를 탐지한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "기계장치",
+      "full_statement": "기능장애가 발생한 기계장치를 수리한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "콘크리트제품 제조 기계장치", "category": "장비", "evidence_span": "각종 콘크리트제품을 제조하는 기계장치를 조작한다"},
+    {"name": "콘크리트 혼합장치", "category": "장비", "evidence_span": "시멘트, 모래, 자갈, 물을 혼합하는 콘크리트 혼합장치를 조작하는 직무"},
+    {"name": "성형·압출·롤링 기계", "category": "장비", "evidence_span": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다"},
+    {"name": "성형장치", "category": "장비", "evidence_span": "성형장치의 압력, 유출량, 컨베이어의 속도를 조정한다"},
+    {"name": "컨베이어", "category": "장비", "evidence_span": "성형장치의 압력, 유출량, 컨베이어의 속도를 조정한다"},
+    {"name": "주형", "category": "도구", "evidence_span": "주형을 맞추어 조립한다"}
+  ],
+  "work_context": []
+}

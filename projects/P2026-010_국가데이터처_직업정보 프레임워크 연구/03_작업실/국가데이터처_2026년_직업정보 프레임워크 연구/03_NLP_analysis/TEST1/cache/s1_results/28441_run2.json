@@ -1,0 +1,138 @@
+{
+  "ksco_code": "28441",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "경매 우선순위",
+      "full_statement": "공급자가 출하한 농수산물에 대해 경매 우선순위를 결정한다",
+      "source_sentence": "공급자가 출하한 농수산물에 대해 경매 우선순위의 결정, 가격 평가, 경락자의 결정 등을 수행하여 공급자와 구매자를 연결해 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "평가하다",
+      "object": "농수산물 가격",
+      "full_statement": "출하된 농수산물의 가격을 평가한다",
+      "source_sentence": "공급자가 출하한 농수산물에 대해 경매 우선순위의 결정, 가격 평가, 경락자의 결정 등을 수행하여 공급자와 구매자를 연결해 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "결정하다",
+      "object": "경락자",
+      "full_statement": "경매를 통해 경락자를 결정한다",
+      "source_sentence": "공급자가 출하한 농수산물에 대해 경매 우선순위의 결정, 가격 평가, 경락자의 결정 등을 수행하여 공급자와 구매자를 연결해 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "연결하다",
+      "object": "공급자와 구매자",
+      "full_statement": "공급자와 구매자를 연결해 준다",
+      "source_sentence": "공급자가 출하한 농수산물에 대해 경매 우선순위의 결정, 가격 평가, 경락자의 결정 등을 수행하여 공급자와 구매자를 연결해 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "농산물 시장정보",
+      "full_statement": "각종 자료, 육감을 통해 농산물의 품질, 가격, 무게에 관한 시장정보를 분석한다",
+      "source_sentence": "각종 자료, 육감을 통해 농산물의 품질, 가격, 무게에 관한 시장정보를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "농수산물 샘플",
+      "full_statement": "농수산물의 샘플을 검사한다",
+      "source_sentence": "농수산물의 샘플을 검사하고, 등급 및 상품의 질을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "결정하다",
+      "object": "등급 및 상품의 질",
+      "full_statement": "농수산물의 등급 및 상품의 질을 결정한다",
+      "source_sentence": "농수산물의 샘플을 검사하고, 등급 및 상품의 질을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "면담하다",
+      "object": "재배자",
+      "full_statement": "재배자와 거래조건에 관해 면담한다",
+      "source_sentence": "재배자와 거래조건에 관해 면담하고 재배지를 방문하여 구매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "방문하다",
+      "object": "재배지",
+      "full_statement": "재배지를 방문하여 구매한다",
+      "source_sentence": "재배자와 거래조건에 관해 면담하고 재배지를 방문하여 구매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "마련하다",
+      "object": "인도계획",
+      "full_statement": "인도계획을 마련한다",
+      "source_sentence": "인도계획을 마련하고 상품대금을 지불하며 관련 서류를 작성‧수령한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "지불하다",
+      "object": "상품대금",
+      "full_statement": "상품대금을 지불한다",
+      "source_sentence": "인도계획을 마련하고 상품대금을 지불하며 관련 서류를 작성‧수령한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "작성하다",
+      "object": "관련 서류",
+      "full_statement": "거래 관련 서류를 작성·수령한다",
+      "source_sentence": "인도계획을 마련하고 상품대금을 지불하며 관련 서류를 작성‧수령한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "확인하다",
+      "object": "경매 물품",
+      "full_statement": "경매에 내놓을 물품을 확인한 후 경매 우선순위를 결정한다",
+      "source_sentence": "경매에 내놓을 물품을 확인한 후 경매 우선순위를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설정하다",
+      "object": "경매최저가격",
+      "full_statement": "상장된 물품의 가격을 평가하여 경매최저가격을 설정한다",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시행하다",
+      "object": "경매",
+      "full_statement": "경매를 시행하여 낙찰자를 결정한다",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "공급자·구매자 중개 및 재배자 면담",
+      "evidence_span": "재배자와 거래조건에 관해 면담하고 재배지를 방문하여 구매한다."
+    },
+    {
+      "category": "장소",
+      "value": "재배지 방문(현장 이동)",
+      "evidence_span": "재배지를 방문하여 구매한다."
+    }
+  ]
+}

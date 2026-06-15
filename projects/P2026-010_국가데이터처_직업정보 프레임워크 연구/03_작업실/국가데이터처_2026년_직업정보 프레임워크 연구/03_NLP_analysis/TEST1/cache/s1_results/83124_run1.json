@@ -1,0 +1,104 @@
+{
+  "ksco_code": "83124",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "증류 장비",
+      "full_statement": "화학물을 증류하는 장비를 조작한다.",
+      "source_sentence": "화학물을 증류 및 반응, 변환하는 장비를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "반응 장비",
+      "full_statement": "화학물을 반응시키는 장비를 조작한다.",
+      "source_sentence": "화학물을 증류 및 반응, 변환하는 장비를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "변환 장비",
+      "full_statement": "화학물을 변환하는 장비를 조작한다.",
+      "source_sentence": "화학물을 증류 및 반응, 변환하는 장비를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "정화·혼합·합성 기계장비",
+      "full_statement": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학변화 유발 기계장비",
+      "full_statement": "재료에 화학변화를 일으키는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의(반응·변환) 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "여과 장치",
+      "full_statement": "용액을 여과하는 장치를 조작한다.",
+      "source_sentence": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "분리 기계",
+      "full_statement": "용액을 분리시키는 기계를 조작한다.",
+      "source_sentence": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의(증류 분리) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "증발기",
+      "full_statement": "화학물을 증발시키는 증발기를 조작한다.",
+      "source_sentence": "증발기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "가열하다",
+      "object": "화학물",
+      "full_statement": "필요한 성질을 가진 제품을 얻기 위하여 화학물을 가열한다.",
+      "source_sentence": "필요한 성질을 가진 제품을 얻기 위하여 파쇄, 가열, 혼합, 증류 또는 여과 등화학물을 가공하는 기계 장비를 조작한다.",
+      "derived_from": "조상정의(세분류)→증류 공정 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "혼합하다",
+      "object": "화학물",
+      "full_statement": "필요한 성질을 가진 제품을 얻기 위하여 화학물을 혼합한다.",
+      "source_sentence": "필요한 성질을 가진 제품을 얻기 위하여 파쇄, 가열, 혼합, 증류 또는 여과 등화학물을 가공하는 기계 장비를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "건조하다",
+      "object": "화학물 및 관련 재료",
+      "full_statement": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "source_sentence": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "증류기", "category": "장비", "evidence_span": "화학물 증류기 조작원"},
+    {"name": "반응기", "category": "장비", "evidence_span": "화학물 반응기 조작원"},
+    {"name": "증발기", "category": "장비", "evidence_span": "증발기 조작원"},
+    {"name": "건조기", "category": "장비", "evidence_span": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다."},
+    {"name": "여과 장치", "category": "장비", "evidence_span": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다."},
+    {"name": "분리 기계", "category": "장비", "evidence_span": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급", "evidence_span": "화학물을 증류 및 반응, 변환하는 장비를 조작한다."}
+  ]
+}

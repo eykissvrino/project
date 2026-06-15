@@ -1,0 +1,110 @@
+{
+  "ksco_code": "72241",
+  "tasks": [
+    {
+      "verb": "수선하다",
+      "object": "양복",
+      "full_statement": "양복을 수선한다.",
+      "source_sentence": "양복, 양장 및 기타 의복제품을 수선한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수선하다",
+      "object": "양장",
+      "full_statement": "양장을 수선한다.",
+      "source_sentence": "양복, 양장 및 기타 의복제품을 수선한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수선하다",
+      "object": "기타 의복제품",
+      "full_statement": "기타 의복제품을 수선한다.",
+      "source_sentence": "양복, 양장 및 기타 의복제품을 수선한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "수선 부위",
+      "full_statement": "수선표의 표시를 보고 수선 부위를 확인한다.",
+      "source_sentence": "수선표의 표시를 보고 수선 부위를 쪽 가위로 뜯고, 재봉틀을 조작하거나 바느질‧다림질 등을 하여 수선한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "뜯다",
+      "object": "수선 부위",
+      "full_statement": "수선표의 표시를 보고 수선 부위를 쪽가위로 뜯는다.",
+      "source_sentence": "수선표의 표시를 보고 수선부위를 쪽가위로 뜯는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "천·실",
+      "full_statement": "수선 작업 지시서에 따라 필요한 천·실 등을 준비한다.",
+      "source_sentence": "수선 작업 지시서에 따라 필요한 천·실 등을 준비하고 재봉틀을 조작하거나 바느질‧다림질 등을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "재봉틀",
+      "full_statement": "재봉틀을 조작하여 의복을 수선한다.",
+      "source_sentence": "재봉틀을 조작하거나 바느질‧다림질 등을 하여 수선한다.",
+      "derived_from": "세세분류 정의∩상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "바느질하다",
+      "object": "수선 부위",
+      "full_statement": "수선 부위를 바느질하여 수선한다.",
+      "source_sentence": "재봉틀을 조작하거나 바느질‧다림질 등을 하여 수선한다.",
+      "derived_from": "세세분류 정의∩상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "다림질하다",
+      "object": "수선한 의복",
+      "full_statement": "수선한 의복을 다림질한다.",
+      "source_sentence": "재봉틀을 조작하거나 바느질‧다림질 등을 하여 수선한다.",
+      "derived_from": "세세분류 정의∩상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "줄이다",
+      "object": "큰 의복",
+      "full_statement": "큰 의복을 치수에 맞게 줄인다.",
+      "source_sentence": "큰 의복을 줄이고, 작은 의복은 늘이거나 디자인을 바꾸는 등 의복, 의류제품(모자, 장갑 등), 구두(신발) 등을 수선한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "늘이다",
+      "object": "작은 의복",
+      "full_statement": "작은 의복을 치수에 맞게 늘인다.",
+      "source_sentence": "큰 의복을 줄이고, 작은 의복은 늘이거나 디자인을 바꾸는 등 의복, 의류제품(모자, 장갑 등), 구두(신발) 등을 수선한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "바꾸다",
+      "object": "의복 디자인",
+      "full_statement": "고객 요구에 따라 의복의 디자인을 바꾼다.",
+      "source_sentence": "큰 의복을 줄이고, 작은 의복은 늘이거나 디자인을 바꾸는 등 의복, 의류제품(모자, 장갑 등), 구두(신발) 등을 수선한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "쪽가위", "category": "도구", "evidence_span": "수선부위를 쪽가위로 뜯는다"},
+    {"name": "재봉틀", "category": "장비", "evidence_span": "재봉틀을 조작하거나 바느질‧다림질 등을 한다"},
+    {"name": "수선표", "category": "도구", "evidence_span": "수선표의 표시를 보고 수선 부위를"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "쪽가위로 뜯고 바느질하는 정밀 수작업", "evidence_span": "수선부위를 쪽가위로 뜯는다 … 바느질‧다림질 등을 한다"},
+    {"category": "사회적", "value": "고객의 요구에 따른 작업(고객응대)", "evidence_span": "고객의 요구에 따라 구두(신발)의 굽을 바꾸고 가죽 등을 수리한다"}
+  ]
+}

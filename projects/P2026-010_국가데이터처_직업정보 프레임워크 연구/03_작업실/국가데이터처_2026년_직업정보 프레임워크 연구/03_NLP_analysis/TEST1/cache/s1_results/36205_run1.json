@@ -1,0 +1,90 @@
+{
+  "ksco_code": "36205",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "공인중개사",
+      "full_statement": "공인중개사를 보조하여 부동산 등의 매매·임대·교환 알선 업무 일부를 수행한다.",
+      "source_sentence": "부동산 중개사무소 등에서 중개사를 보조하여 부동산 등의 매매 및 임대‧교환을 알선‧중개하기 위한 업무 일부를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보여주다",
+      "object": "중개 물건",
+      "full_statement": "중개할 물건을 고객에게 보여준다.",
+      "source_sentence": "중개할 물건을 고객에게 보여준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연락하다",
+      "object": "고객",
+      "full_statement": "중개 업무를 위해 고객에게 연락을 취한다.",
+      "source_sentence": "중개 업무를 위해 고객에게 연락을 취하거나, 고객 또는 공인 중개사를 대신하여 관련 서류 등을 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준비하다",
+      "object": "관련 서류",
+      "full_statement": "고객 또는 공인중개사를 대신하여 관련 서류 등을 준비한다.",
+      "source_sentence": "중개 업무를 위해 고객에게 연락을 취하거나, 고객 또는 공인 중개사를 대신하여 관련 서류 등을 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "알선하다",
+      "object": "부동산 매매·임대·교환",
+      "full_statement": "부동산 등의 매매 및 임대·교환을 알선·중개한다.",
+      "source_sentence": "부동산 중개사무소 등에서 중개사를 보조하여 부동산 등의 매매 및 임대‧교환을 알선‧중개하기 위한 업무 일부를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "응대하다",
+      "object": "방문고객·상담전화 민원",
+      "full_statement": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대한다.",
+      "source_sentence": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고 창구의 자료 및 이용 안내문 배치 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "배치하다",
+      "object": "창구 자료·이용 안내문",
+      "full_statement": "창구의 자료 및 이용 안내문을 배치한다.",
+      "source_sentence": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고 창구의 자료 및 이용 안내문 배치 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "기록하다",
+      "object": "관련 정보",
+      "full_statement": "중개 업무에 관련된 정보를 기록·보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검색하다",
+      "object": "관련 정보",
+      "full_statement": "중개 업무에 필요한 관련 정보를 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "부동산 중개사무소",
+      "evidence_span": "부동산 중개사무소 등에서 중개사를 보조하여"
+    },
+    {
+      "category": "사회적",
+      "value": "고객응대(방문·전화 상담)",
+      "evidence_span": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고"
+    }
+  ]
+}

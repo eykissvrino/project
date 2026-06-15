@@ -1,0 +1,116 @@
+{
+  "ksco_code": "28243",
+  "tasks": [
+    {
+      "verb": "취급하다",
+      "object": "외환",
+      "full_statement": "자사를 대리하거나 위탁고객을 위하여 현물 또는 선물시장에서 외환을 취급한다.",
+      "source_sentence": "자사를 대리하거나 위탁고객을 위하여 현물 또는 선물시장에서 외환을 취급 하고, 외환시장 추이를 분석하며 외환의 선물 및 현물을 매매하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "분석하다",
+      "object": "외환시장 추이",
+      "full_statement": "외환시장의 추이를 분석한다.",
+      "source_sentence": "외환시장 추이를 분석하며 외환의 선물 및 현물을 매매하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "매매하다",
+      "object": "외환 선물·현물",
+      "full_statement": "외환의 선물 및 현물을 매매한다.",
+      "source_sentence": "외환시장 추이를 분석하며 외환의 선물 및 현물을 매매하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "체크하다",
+      "object": "국내외 경제동향",
+      "full_statement": "상품에 대해 고객에게 투자 중개를 하기 위하여 국내외 경제동향을 체크한다.",
+      "source_sentence": "상품에 대해 고객에게 투자 중개를 하기 위하여 국내외 경제동향을 체크하고 신문, 연구 분석자료, 정보네트워크 등을 통해 정보를 수집‧분석하여 투자자에게 제공하고 투자를 중개하는 자도 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "투자 정보",
+      "full_statement": "신문, 연구 분석자료, 정보네트워크 등을 통해 정보를 수집·분석한다.",
+      "source_sentence": "신문, 연구 분석자료, 정보네트워크 등을 통해 정보를 수집‧분석하여 투자자에게 제공하고 투자를 중개하는 자도 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "투자 정보",
+      "full_statement": "수집·분석한 정보를 투자자에게 제공한다.",
+      "source_sentence": "신문, 연구 분석자료, 정보네트워크 등을 통해 정보를 수집‧분석하여 투자자에게 제공하고 투자를 중개하는 자도 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "중개하다",
+      "object": "투자",
+      "full_statement": "상품에 대해 고객에게 투자를 중개한다.",
+      "source_sentence": "투자자에게 제공하고 투자를 중개하는 자도 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "중개하다",
+      "object": "주식·채권·파생상품 매매",
+      "full_statement": "주식, 채권, 파생상품, 투자 신탁상품 등의 매매를 중개한다.",
+      "source_sentence": "주식, 채권, 파생상품, 투자 신탁상품 등의 매매를 중개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "장세 전망·매매 전략",
+      "full_statement": "신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집하고 장세 전망 및 매매 전략을 수립한다.",
+      "source_sentence": "투자 상담을 하기 위해 국내외 증시동향을 체크하고 신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집하고, 장세 전망 및 매매 전략을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "교환하다",
+      "object": "각종 정보",
+      "full_statement": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고 시황을 전망한다.",
+      "source_sentence": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고 시황을 전망한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "전망하다",
+      "object": "시황",
+      "full_statement": "수집한 정보를 토대로 시황을 전망한다.",
+      "source_sentence": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고 시황을 전망한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "통보하다",
+      "object": "매매결과",
+      "full_statement": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보한다.",
+      "source_sentence": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보하며, 중개매매에 따른 성과를 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "중개매매 성과",
+      "full_statement": "중개매매에 따른 성과를 분석한다.",
+      "source_sentence": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보하며, 중개매매에 따른 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    }
+  ],
+  "tools": [
+    {"name": "정보네트워크", "category": "시스템", "evidence_span": "신문, 연구 분석자료, 정보네트워크 등을 통해 정보를 수집‧분석하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객·투자자 대상 투자 중개", "evidence_span": "고객에게 투자 중개를 하기 위하여"},
+    {"category": "사회적", "value": "펀드매니저·증권분석가와 정보 교환", "evidence_span": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고"}
+  ]
+}

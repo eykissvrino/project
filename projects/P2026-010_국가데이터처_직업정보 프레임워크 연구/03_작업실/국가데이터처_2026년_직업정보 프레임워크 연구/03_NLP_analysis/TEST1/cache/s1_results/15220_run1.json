@@ -1,0 +1,122 @@
+{
+  "ksco_code": "15220",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "음식 및 음료 서비스 운영",
+      "full_statement": "음식점, 술집, 레스토랑, 카페, 패스트푸드점 등에서 음식 및 음료 서비스 운영을 기획한다.",
+      "source_sentence": "일정규모의 음식점, 술집, 레스토랑, 카페, 패스트푸드점 등에서 음식 및 음료 서비스 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "음식 및 음료 서비스 운영",
+      "full_statement": "음식 및 음료 서비스 운영을 관리한다.",
+      "source_sentence": "일정규모의 음식점, 술집, 레스토랑, 카페, 패스트푸드점 등에서 음식 및 음료 서비스 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "음식 및 음료 서비스 운영",
+      "full_statement": "음식 및 음료 서비스 운영을 조정한다.",
+      "source_sentence": "일정규모의 음식점, 술집, 레스토랑, 카페, 패스트푸드점 등에서 음식 및 음료 서비스 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "제공할 서비스의 유형",
+      "full_statement": "제공할 서비스의 유형을 결정한다.",
+      "source_sentence": "제공할 서비스의 유형을 결정하고 운영절차를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영절차",
+      "full_statement": "운영절차를 관리한다.",
+      "source_sentence": "제공할 서비스의 유형을 결정하고 운영절차를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "재고품",
+      "full_statement": "재고품을 관리한다.",
+      "source_sentence": "재고품을 관리하고 수입을 파악하여 가격을 변경한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파악하다",
+      "object": "수입",
+      "full_statement": "수입을 파악한다.",
+      "source_sentence": "재고품을 관리하고 수입을 파악하여 가격을 변경한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "변경하다",
+      "object": "가격",
+      "full_statement": "수입을 파악하여 가격을 변경한다.",
+      "source_sentence": "재고품을 관리하고 수입을 파악하여 가격을 변경한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "해결하다",
+      "object": "고객의 불만",
+      "full_statement": "고객의 불만을 해결한다.",
+      "source_sentence": "고객의 불만을 해결하고 보건 및 안전규정에 따르고 있는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "확인하다",
+      "object": "보건 및 안전규정 준수 여부",
+      "full_statement": "보건 및 안전규정에 따르고 있는지 확인한다.",
+      "source_sentence": "고객의 불만을 해결하고 보건 및 안전규정에 따르고 있는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "식품 및 기타 원자재",
+      "full_statement": "식품 및 기타 원자재를 결정한다.",
+      "source_sentence": "식품 및 기타 원자재를 결정하고 납품업자들과 협상하여 거래한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협상하다",
+      "object": "납품업자",
+      "full_statement": "납품업자들과 협상하여 거래한다.",
+      "source_sentence": "식품 및 기타 원자재를 결정하고 납품업자들과 협상하여 거래한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운영하다",
+      "object": "사업체",
+      "full_statement": "음식 및 음료서비스 사업체를 직접 운영한다.",
+      "source_sentence": "음식 및 음료서비스업체에 고용되거나 직접 사업체를 운영하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 불만 응대",
+      "evidence_span": "고객의 불만을 해결하고 보건 및 안전규정에 따르고 있는지 확인한다."
+    },
+    {
+      "category": "사회적",
+      "value": "납품업자와 협상·거래",
+      "evidence_span": "식품 및 기타 원자재를 결정하고 납품업자들과 협상하여 거래한다."
+    }
+  ]
+}

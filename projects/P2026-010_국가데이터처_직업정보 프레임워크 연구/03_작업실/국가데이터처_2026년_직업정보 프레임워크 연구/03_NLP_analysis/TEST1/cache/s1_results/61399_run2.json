@@ -1,0 +1,143 @@
+{
+  "ksco_code": "61399",
+  "tasks": [
+    {
+      "verb": "사육하다",
+      "object": "가축 외의 동물",
+      "full_statement": "가축 외의 동물을 사육한다.",
+      "source_sentence": "가축 외의 동물과 곤충, 조류, 파충류 등을 번식, 사육하는데 종사하는 자를 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "번식시키다",
+      "object": "가축 외의 동물",
+      "full_statement": "가축 외의 동물을 번식시킨다.",
+      "source_sentence": "가축 외의 동물과 곤충, 조류, 파충류 등을 번식, 사육하는데 종사하는 자를 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "사육하다",
+      "object": "곤충",
+      "full_statement": "곤충을 사육한다.",
+      "source_sentence": "가축 외의 동물과 곤충, 조류, 파충류 등을 번식, 사육하는데 종사하는 자를 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "사육하다",
+      "object": "조류",
+      "full_statement": "조류를 사육한다.",
+      "source_sentence": "가축 외의 동물과 곤충, 조류, 파충류 등을 번식, 사육하는데 종사하는 자를 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사육하다",
+      "object": "파충류",
+      "full_statement": "파충류를 사육한다.",
+      "source_sentence": "가축 외의 동물과 곤충, 조류, 파충류 등을 번식, 사육하는데 종사하는 자를 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "실험실 곤충과 동물",
+      "full_statement": "실험실에서 사용하는 곤충과 동물을 관리한다.",
+      "source_sentence": "실험실에서 사용하는 곤충과 동물을 관리하거나, 동물 보호와 보존을 위한 사육사, 단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "사육하다",
+      "object": "동물 보호와 보존 대상 동물",
+      "full_statement": "동물 보호와 보존을 위하여 동물을 사육한다.",
+      "source_sentence": "실험실에서 사용하는 곤충과 동물을 관리하거나, 동물 보호와 보존을 위한 사육사, 단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "강화하다",
+      "object": "동물 품종의 특성",
+      "full_statement": "동물 품종의 특성을 강화하기 위하여 사육한다.",
+      "source_sentence": "단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보존하다",
+      "object": "동물 품종의 특성",
+      "full_statement": "동물 품종의 특성을 보존하기 위하여 사육한다.",
+      "source_sentence": "단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개량하다",
+      "object": "새로운 품종",
+      "full_statement": "교배를 통해 새로운 품종을 개량한다.",
+      "source_sentence": "단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교배하다",
+      "object": "동물 품종",
+      "full_statement": "새로운 품종 개량을 위해 동물을 교배한다.",
+      "source_sentence": "단순 번식 목적이 아닌 동물 품종의 특성을 강화 또는 보존하거나 교배를 통해 새로운 품종을 개량하기 위해 사육하는 브리더도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사육하다",
+      "object": "양봉용 벌",
+      "full_statement": "양봉을 위하여 벌을 사육한다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "사육하다",
+      "object": "양잠용 누에",
+      "full_statement": "양잠을 위하여 누에를 사육한다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수렵하다",
+      "object": "야생 동물",
+      "full_statement": "수렵 활동에 종사하여 야생 동물을 포획한다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "부화시키다",
+      "object": "동물",
+      "full_statement": "동물을 부화시킨다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "사육하다",
+      "object": "실험용 동물",
+      "full_statement": "실험용 동물을 사육한다.",
+      "source_sentence": "실험용 동물의 사육이나 수렵 종사자, 동물 종의 개체를 보존하기 위한 사육 관련 종사자 등의 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보존하다",
+      "object": "동물 종의 개체",
+      "full_statement": "동물 종의 개체를 보존하기 위하여 사육한다.",
+      "source_sentence": "실험용 동물의 사육이나 수렵 종사자, 동물 종의 개체를 보존하기 위한 사육 관련 종사자 등의 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

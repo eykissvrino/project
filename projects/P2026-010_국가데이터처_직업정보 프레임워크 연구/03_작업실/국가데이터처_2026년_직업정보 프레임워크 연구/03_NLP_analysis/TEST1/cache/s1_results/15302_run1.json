@@ -1,0 +1,95 @@
+{
+  "ksco_code": "15302",
+  "tasks": [
+    {
+      "verb": "조직하다",
+      "object": "청소 서비스 업체 운영",
+      "full_statement": "청소 및 환경처리 서비스 업체의 운영을 조직한다.",
+      "source_sentence": "청소, 환경처리 서비스 업체의 운영을 조직, 계획하고 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "계획하다",
+      "object": "청소 서비스 업체 운영",
+      "full_statement": "청소 및 환경처리 서비스 업체의 운영을 계획한다.",
+      "source_sentence": "청소, 환경처리 서비스 업체의 운영을 조직, 계획하고 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지시하다",
+      "object": "청소 서비스 업체 운영",
+      "full_statement": "청소 및 환경처리 서비스 업체의 운영을 지시한다.",
+      "source_sentence": "청소, 환경처리 서비스 업체의 운영을 조직, 계획하고 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "청소 서비스 업체 운영",
+      "full_statement": "청소 및 환경처리 서비스 업체의 운영을 관리한다.",
+      "source_sentence": "청소, 환경처리 서비스 업체의 운영을 조직, 계획하고 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "주택시설 청소 업무",
+      "full_statement": "주택시설 청소 업무의 운영을 관리한다.",
+      "source_sentence": "경비서비스나 주택시설 청소, 폐기물 처리 및 수질 환경 관리 업체의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "조정하다",
+      "object": "청소 서비스 업체 운영",
+      "full_statement": "청소 서비스 업체의 운영을 조정한다.",
+      "source_sentence": "경비서비스나 주택시설 청소, 폐기물 처리 및 수질 환경 관리 업체의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "관리하다",
+      "object": "폐기물 처리 업무",
+      "full_statement": "폐기물 처리 업무의 운영을 관리한다.",
+      "source_sentence": "경비서비스나 주택시설 청소, 폐기물 처리 및 수질 환경 관리 업체의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "기획하다",
+      "object": "사업체 정책 및 활동",
+      "full_statement": "사업체의 정책과 활동을 기획한다.",
+      "source_sentence": "정부, 기업, 단체 또는 그 내부 부서의 정책과 활동을 기획, 지휘 및 조정하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "분석하다",
+      "object": "구성원 직무",
+      "full_statement": "다른 사람의 직무를 분석한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.48
+    },
+    {
+      "verb": "평가하다",
+      "object": "구성원 직무",
+      "full_statement": "다른 사람의 직무를 평가한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.48
+    },
+    {
+      "verb": "조정하다",
+      "object": "구성원 직무",
+      "full_statement": "다른 사람의 직무를 조정한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.48
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

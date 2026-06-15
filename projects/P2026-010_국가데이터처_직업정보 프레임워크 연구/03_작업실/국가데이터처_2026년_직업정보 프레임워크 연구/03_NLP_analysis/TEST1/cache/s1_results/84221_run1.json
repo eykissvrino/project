@@ -1,0 +1,135 @@
+{
+  "ksco_code": "84221",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "금속물 세척 기계장치",
+      "full_statement": "전기도금, 아연도금, 에나멜도금 및 기타 가공을 위하여 금속물을 세척하는 기계장치를 조작한다.",
+      "source_sentence": "전기도금, 아연도금, 에나멜도금 및 기타 가공을 위하여 금속물을 세척하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "도금 준비 세척 장비",
+      "full_statement": "전기도금, 아연도금, 법랑처리 또는 유사가공을 위한 준비과정에서 금속 제품을 청결하게 하는 장비를 조작한다.",
+      "source_sentence": "전기도금, 아연도금, 법랑처리 또는 유사가공을 위한 준비과정에서 금속 제품을 청결하게 하는 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학처리 기계장비",
+      "full_statement": "화학처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작한다.",
+      "source_sentence": "또한 화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "가열처리 기계장비",
+      "full_statement": "가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작한다.",
+      "source_sentence": "또한 화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "금속제품 부식방지 장비",
+      "full_statement": "화학처리 또는 가열을 통해 금속제품의 부식을 방지하는 장비를 조작한다.",
+      "source_sentence": "화학처리 또는 가열을 통해 금속제품의 부식을 방지하는 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청장하다",
+      "object": "금속물 표면",
+      "full_statement": "화학처리나 가열처리로 금속물의 표면을 청장한다.",
+      "source_sentence": "또한 화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "방청하다",
+      "object": "금속물 표면",
+      "full_statement": "화학처리나 가열처리로 금속물의 표면을 방청한다.",
+      "source_sentence": "또한 화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가공하다",
+      "object": "금속물 무늬",
+      "full_statement": "화학처리나 가열처리로 금속물에 무늬가공을 한다.",
+      "source_sentence": "또한 화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "세척하다",
+      "object": "강판",
+      "full_statement": "강판을 세척한다.",
+      "source_sentence": "산성 침세원·강판 세척원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.62
+    },
+    {
+      "verb": "산세하다",
+      "object": "코일",
+      "full_statement": "코일을 산세한다.",
+      "source_sentence": "코일 산세원·크롬 세척원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.62
+    },
+    {
+      "verb": "세척하다",
+      "object": "크롬 금속물",
+      "full_statement": "크롬 처리된 금속물을 세척한다.",
+      "source_sentence": "코일 산세원·크롬 세척원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    },
+    {
+      "verb": "세척하다",
+      "object": "니켈 금속물",
+      "full_statement": "니켈 처리된 금속물을 세척한다.",
+      "source_sentence": "니켈 세척원·연속 전해식 세척기 희박산수원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "연속 전해식 세척기",
+      "full_statement": "연속 전해식 세척기를 조작한다.",
+      "source_sentence": "니켈 세척원·연속 전해식 세척기 희박산수원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "광물 세척기",
+      "full_statement": "광물 세척기를 조작한다.",
+      "source_sentence": "광물 세척기 조작원·금속 청장기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "금속 청장기",
+      "full_statement": "금속 청장기를 조작한다.",
+      "source_sentence": "광물 세척기 조작원·금속 청장기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "금속물 세척 기계장치", "category": "장비", "evidence_span": "금속물을 세척하는 기계장치를 조작한다"},
+    {"name": "연속 전해식 세척기", "category": "장비", "evidence_span": "연속 전해식 세척기 희박산수원"},
+    {"name": "광물 세척기", "category": "장비", "evidence_span": "광물 세척기 조작원"},
+    {"name": "금속 청장기", "category": "장비", "evidence_span": "금속 청장기 조작원"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "산성 약품 등 화학물질 취급", "evidence_span": "산성 침세원·강판 세척원"},
+    {"category": "위험", "value": "가열처리에 따른 고온 노출", "evidence_span": "화학처리나 가열처리로 금속물에 청장, 방청, 무늬가공을 하는 기계장비를 조작"}
+  ]
+}

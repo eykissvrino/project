@@ -1,0 +1,114 @@
+{
+  "ksco_code": "36123",
+  "tasks": [
+    {
+      "verb": "방송하다",
+      "object": "열차 및 항공기의 도착·출발 시간",
+      "full_statement": "열차 및 항공기의 도착·출발 시간을 방송으로 안내한다.",
+      "source_sentence": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "방송하다",
+      "object": "편의시설 정보",
+      "full_statement": "편의시설에 대한 정보를 방송으로 안내한다.",
+      "source_sentence": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "방송하다",
+      "object": "분실물 관련 안내",
+      "full_statement": "분실물에 대한 안내 방송을 한다.",
+      "source_sentence": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "방송하다",
+      "object": "미아 안내",
+      "full_statement": "미아에 대한 안내 방송을 한다.",
+      "source_sentence": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "방송하다",
+      "object": "사업체 내 연락 방송",
+      "full_statement": "병원 등 사업체 내의 연락 방송을 한다.",
+      "source_sentence": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "방송하다",
+      "object": "사업체 내 안내 방송",
+      "full_statement": "사업체 내의 안내 방송을 한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 정보",
+      "full_statement": "방문객에게 각종 정보를 제공한다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "요청사항",
+      "full_statement": "방문객의 요청사항을 처리하거나 접수한다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연결하다",
+      "object": "담당자",
+      "full_statement": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "source_sentence": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제공하다",
+      "object": "안내 서비스",
+      "full_statement": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "source_sentence": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "맡다",
+      "object": "분실품",
+      "full_statement": "고객 요청 시 귀중품, 분실품, 반입금지 물품 등을 잠시 맡아준다.",
+      "source_sentence": "고객 요청 시, 귀중품, 분실품, 반입금지 물품 등을 잠시 맡아주기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "응답하다",
+      "object": "고객의 질문",
+      "full_statement": "고객의 질문에 응답하여 정보를 안내한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "고객의 편의를 돕기 위하여 열차 및 항공기의 도착‧출발 시간, 편의시설 및 분실물, 미아 등에 대한 방송과 병원 등 사업체내의 연락방송을 한다."
+    },
+    {
+      "category": "장소",
+      "value": "사업체 내(역사·공항·병원 등)",
+      "evidence_span": "병원 등 사업체내의 연락방송을 한다."
+    }
+  ]
+}

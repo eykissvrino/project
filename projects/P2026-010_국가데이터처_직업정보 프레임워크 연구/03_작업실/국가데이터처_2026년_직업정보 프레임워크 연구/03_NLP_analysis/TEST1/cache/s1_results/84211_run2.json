@@ -1,0 +1,113 @@
+{
+  "ksco_code": "84211",
+  "tasks": [
+    {
+      "verb": "조정하다",
+      "object": "분무기 노즐위치",
+      "full_statement": "차량의 종류·형태에 따라 분무기의 노즐위치를 조정한다.",
+      "source_sentence": "제품의 종류‧형태에 따라 분무기의 노즐위치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(제품→차량)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "혼합된 도료",
+      "full_statement": "혼합된 도료를 확인한다.",
+      "source_sentence": "혼합된 도료를 확인하고 저장 통에 넣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "넣다",
+      "object": "도료",
+      "full_statement": "확인한 도료를 저장 통에 넣는다.",
+      "source_sentence": "혼합된 도료를 확인하고 저장 통에 넣는다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조절하다",
+      "object": "분무기 밸브",
+      "full_statement": "분무기의 밸브를 돌려 간격과 압력을 조절한다.",
+      "source_sentence": "분무기의 밸브를 돌려 간격과 압력을 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "제품의 마스킹상태·위치",
+      "full_statement": "이송장치에 있는 차량의 마스킹상태와 위치 등을 확인한다.",
+      "source_sentence": "이송장치에 있는 제품의 마스킹상태, 위치 등을 확인하고 이송장치를 가동시켜 자동분무기로 보내 도장을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가동시키다",
+      "object": "이송장치",
+      "full_statement": "이송장치를 가동시켜 차량을 자동분무기로 보낸다.",
+      "source_sentence": "이송장치에 있는 제품의 마스킹상태, 위치 등을 확인하고 이송장치를 가동시켜 자동분무기로 보내 도장을 실시한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "도장기계",
+      "full_statement": "승용차·버스·트럭과 같은 차량에 페인트를 칠하기 위하여 도장기계를 조작한다.",
+      "source_sentence": "승용차, 버스 및 트럭과 같은 차량에 페인트를 칠하기 위하여 도장기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "실시하다",
+      "object": "도장",
+      "full_statement": "차량에 페인트를 칠하기 위해 자동분무기로 도장을 실시한다.",
+      "source_sentence": "이송장치에 있는 제품의 마스킹상태, 위치 등을 확인하고 이송장치를 가동시켜 자동분무기로 보내 도장을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관찰하다",
+      "object": "자동 분무되는 제품의 상태",
+      "full_statement": "자동 분무되는 차량의 상태를 관찰한다.",
+      "source_sentence": "자동 분무되는 제품의 상태를 관찰하여 도장불량 시 노즐의 위치‧압력 등을 조절한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조절하다",
+      "object": "노즐 위치·압력",
+      "full_statement": "도장불량 시 노즐의 위치와 압력 등을 조절한다.",
+      "source_sentence": "자동 분무되는 제품의 상태를 관찰하여 도장불량 시 노즐의 위치‧압력 등을 조절한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "도장된 제품의 결함상태",
+      "full_statement": "도장된 차량의 결함상태를 검사한다.",
+      "source_sentence": "도장된 제품의 결함상태를 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(제품→차량)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "고치다",
+      "object": "흠",
+      "full_statement": "완성제품의 검사단계에서 흠을 고치기 위해 도장을 한다.",
+      "source_sentence": "또한 완성제품의 검사단계에서 흠을 고치기 위해 도장을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "도장기계", "category": "장비", "evidence_span": "차량에 페인트를 칠하기 위하여 도장기계를 조작한다"},
+    {"name": "분무기(스프레이)", "category": "장비", "evidence_span": "분무기의 밸브를 돌려 간격과 압력을 조절한다"},
+    {"name": "자동분무기", "category": "장비", "evidence_span": "이송장치를 가동시켜 자동분무기로 보내 도장을 실시한다"},
+    {"name": "이송장치", "category": "장비", "evidence_span": "이송장치에 있는 제품의 마스킹상태, 위치 등을 확인하고 이송장치를 가동시켜"},
+    {"name": "페인트", "category": "도구", "evidence_span": "차량에 페인트를 칠하기 위하여"},
+    {"name": "도료", "category": "도구", "evidence_span": "혼합된 도료를 확인하고 저장 통에 넣는다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "노즐 위치·압력 조정 및 결함 검사 등 정밀 작업", "evidence_span": "도장불량 시 노즐의 위치‧압력 등을 조절한다 / 도장된 제품의 결함상태를 검사한다"},
+    {"category": "위험", "value": "페인트·도료 분무 등 화학물질 취급", "evidence_span": "차량에 페인트를 칠하기 위하여 / 혼합된 도료를 확인하고 저장 통에 넣는다"}
+  ]
+}

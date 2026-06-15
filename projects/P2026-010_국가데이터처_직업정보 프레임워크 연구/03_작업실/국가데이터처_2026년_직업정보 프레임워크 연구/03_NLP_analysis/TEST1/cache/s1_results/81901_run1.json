@@ -1,0 +1,120 @@
+{
+  "ksco_code": "81901",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "기름 추출 기계",
+      "full_statement": "기름을 함유한 씨앗과 견과에서 기름을 추출하는 기계를 조작한다.",
+      "source_sentence": "기름을 함유하고 있는 씨앗, 견과에서 기름을 추출하며 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추출하다",
+      "object": "기름",
+      "full_statement": "씨앗과 견과로부터 기름을 추출한다.",
+      "source_sentence": "기름을 함유하고 있는 씨앗, 견과에서 기름을 추출하며 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "견과 가공 기계",
+      "full_statement": "견과를 가공하는 기계를 조작한다.",
+      "source_sentence": "기름을 함유하고 있는 씨앗, 견과에서 기름을 추출하며 견과를 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "식용유 착유기",
+      "full_statement": "식용유 착유기를 조작하여 기름을 짜낸다.",
+      "source_sentence": "식용유 착유기 조작원·오일씨드 추출기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "오일씨드 추출기",
+      "full_statement": "오일씨드 추출기를 조작하여 유지 종자에서 기름을 추출한다.",
+      "source_sentence": "식용유 착유기 조작원·오일씨드 추출기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "오일씨드 압착기",
+      "full_statement": "오일씨드 압착기를 조작하여 종자를 압착해 기름을 분리한다.",
+      "source_sentence": "오일씨드 압착기 조작원·식용유 정제기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "정제하다",
+      "object": "식용유",
+      "full_statement": "식용유 정제기를 조작하여 추출된 기름을 정제한다.",
+      "source_sentence": "오일씨드 압착기 조작원·식용유 정제기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조작하다",
+      "object": "경화기",
+      "full_statement": "경화기를 조작하여 유지를 경화 처리한다.",
+      "source_sentence": "경화기 조작원·마가린 제조기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제조하다",
+      "object": "마가린",
+      "full_statement": "마가린 제조기를 조작하여 마가린을 제조한다.",
+      "source_sentence": "경화기 조작원·마가린 제조기 조작원",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "세척하다",
+      "object": "식용견과",
+      "full_statement": "착유용 식용견과 세척기를 조작하여 견과를 세척한다.",
+      "source_sentence": "식용견과 세척기 조작원(착유용)·식용견과 가공기 조작원(착유용)",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "식용견과",
+      "full_statement": "착유용 식용견과 가공기를 조작하여 견과를 가공한다.",
+      "source_sentence": "식용견과 세척기 조작원(착유용)·식용견과 가공기 조작원(착유용)",
+      "derived_from": "세세분류 정의→직업예시로 목적어 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제조하다",
+      "object": "식품",
+      "full_statement": "식품 및 음료를 가공하고 제조하는 기계를 조작한다.",
+      "source_sentence": "식품 및 음료를 가공하고 제조하는 기계를 조작하는 직군이 여기에 분류된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 자동화된 산업용 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "식용유 착유기", "category": "장비", "evidence_span": "식용유 착유기 조작원"},
+    {"name": "오일씨드 추출기", "category": "장비", "evidence_span": "오일씨드 추출기 조작원"},
+    {"name": "오일씨드 압착기", "category": "장비", "evidence_span": "오일씨드 압착기 조작원"},
+    {"name": "식용유 정제기", "category": "장비", "evidence_span": "식용유 정제기 조작원"},
+    {"name": "경화기", "category": "장비", "evidence_span": "경화기 조작원"},
+    {"name": "마가린 제조기", "category": "장비", "evidence_span": "마가린 제조기 조작원"},
+    {"name": "식용견과 세척기", "category": "장비", "evidence_span": "식용견과 세척기 조작원(착유용)"},
+    {"name": "식용견과 가공기", "category": "장비", "evidence_span": "식용견과 가공기 조작원(착유용)"}
+  ],
+  "work_context": []
+}

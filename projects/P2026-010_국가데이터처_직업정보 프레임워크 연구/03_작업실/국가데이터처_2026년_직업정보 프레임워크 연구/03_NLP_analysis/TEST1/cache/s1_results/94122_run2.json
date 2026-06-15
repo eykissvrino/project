@@ -1,0 +1,90 @@
+{
+  "ksco_code": "94122",
+  "tasks": [
+    {
+      "verb": "세척하다",
+      "object": "산업설비",
+      "full_statement": "운송장비를 제외한 산업설비를 세척한다.",
+      "source_sentence": "운송장비를 제외한 산업설비 및 산업용품을 세척하거나 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청소하다",
+      "object": "산업설비",
+      "full_statement": "운송장비를 제외한 산업설비를 청소한다.",
+      "source_sentence": "운송장비를 제외한 산업설비 및 산업용품을 세척하거나 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "세척하다",
+      "object": "산업용품",
+      "full_statement": "산업용품을 세척한다.",
+      "source_sentence": "운송장비를 제외한 산업설비 및 산업용품을 세척하거나 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "청소하다",
+      "object": "산업용품",
+      "full_statement": "산업용품을 청소한다.",
+      "source_sentence": "운송장비를 제외한 산업설비 및 산업용품을 세척하거나 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "털다",
+      "object": "산업설비 바닥과 벽의 먼지",
+      "full_statement": "생산시설 설비의 바닥과 벽에 있는 먼지를 턴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "쓸다",
+      "object": "산업설비 바닥",
+      "full_statement": "생산시설 설비의 바닥을 쓴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "닦다",
+      "object": "산업설비 바닥과 벽",
+      "full_statement": "생산시설 설비의 바닥과 벽을 닦는다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수거하다",
+      "object": "생산시설 배출 쓰레기",
+      "full_statement": "생산시설에서 배출된 쓰레기를 수거한다.",
+      "source_sentence": "생산시설에서 배출된 쓰레기를 수거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유지하다",
+      "object": "생산시설의 청결",
+      "full_statement": "생산시설의 청결을 유지하기 위하여 청소한다.",
+      "source_sentence": "운송수단이나 생산시설의 청결을 유지하기 위하여 청소한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무 작업",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    },
+    {
+      "category": "신체적",
+      "value": "간단한 수공구를 사용하는 단순·일상 반복 작업",
+      "evidence_span": "주로 간단한 수공구의 사용과 단순하고 일상적이며"
+    }
+  ]
+}

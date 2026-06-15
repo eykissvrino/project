@@ -1,0 +1,223 @@
+{
+  "ksco_code": "32110",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "사업체의 제반 운영 상태",
+      "full_statement": "사업체의 제반 운영 상태를 파악하여 필요한 장비, 자재, 물품의 상세 내역을 작성한다.",
+      "source_sentence": "사업체의 제반 운영 상태를 파악하고 필요한 장비, 자재, 물품에 대한 상세한 내역을 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "장비·자재·물품 내역서",
+      "full_statement": "필요한 장비, 자재, 물품에 대한 상세한 내역을 작성한다.",
+      "source_sentence": "사업체의 제반 운영 상태를 파악하고 필요한 장비, 자재, 물품에 대한 상세한 내역을 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "공고하다",
+      "object": "입찰",
+      "full_statement": "구매를 위해 입찰공고를 낸다.",
+      "source_sentence": "입찰공고를 내고, 공급업자와 교섭하거나 견적서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "교섭하다",
+      "object": "공급업자",
+      "full_statement": "공급업자와 교섭한다.",
+      "source_sentence": "입찰공고를 내고, 공급업자와 교섭하거나 견적서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "검토하다",
+      "object": "견적서",
+      "full_statement": "공급업자의 견적서를 검토한다.",
+      "source_sentence": "입찰공고를 내고, 공급업자와 교섭하거나 견적서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "계약서 조항과 조건",
+      "full_statement": "계약서 조항과 조건을 결정한다.",
+      "source_sentence": "계약서 조항과 조건을 결정하고 계약을 체결하거나 계약 체결을 건의 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "체결하다",
+      "object": "계약",
+      "full_statement": "공급업자와 계약을 체결하거나 계약 체결을 건의한다.",
+      "source_sentence": "계약서 조항과 조건을 결정하고 계약을 체결하거나 계약 체결을 건의 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수립하다",
+      "object": "납품 일정",
+      "full_statement": "납품 일정을 수립하고 진척상황을 검토한다.",
+      "source_sentence": "납품 일정을 수립하고 진척상황을 검토하며, 문제해결을 위해 고객 또는 공급업자와 접촉한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "접촉하다",
+      "object": "고객 또는 공급업자",
+      "full_statement": "문제해결을 위해 고객 또는 공급업자와 접촉한다.",
+      "source_sentence": "납품 일정을 수립하고 진척상황을 검토하며, 문제해결을 위해 고객 또는 공급업자와 접촉한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "구입하다",
+      "object": "경영에 필요한 장비·장치·물건",
+      "full_statement": "경영에 필요한 각종 장비, 장치, 물건을 구입하는 구매업무를 수행한다.",
+      "source_sentence": "경영에 필요한 각종 장비, 장치, 물건을 구입하는 구매업무와 제품생산에 필요한 각종 자재를 구입하고 적정 재고를 유지하는 자재업무를 수행하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "구입하다",
+      "object": "제품생산에 필요한 각종 자재",
+      "full_statement": "제품생산에 필요한 각종 자재를 구입한다.",
+      "source_sentence": "경영에 필요한 각종 장비, 장치, 물건을 구입하는 구매업무와 제품생산에 필요한 각종 자재를 구입하고 적정 재고를 유지하는 자재업무를 수행하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "유지하다",
+      "object": "적정 재고",
+      "full_statement": "제품생산에 필요한 각종 자재의 적정 재고를 유지한다.",
+      "source_sentence": "제품생산에 필요한 각종 자재를 구입하고 적정 재고를 유지하는 자재업무를 수행하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "창고 업무",
+      "full_statement": "자재, 공구, 설비, 생산 제품 및 기타 물품의 입고, 보관, 불출, 기록 등과 같은 창고 업무를 관리한다.",
+      "source_sentence": "또한 자재, 공구, 설비, 생산 제품 및 기타 물품의 입고, 보관, 불출, 기록 등과 같은 창고 업무를 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검수하다",
+      "object": "구입된 자재나 물류의 상태와 수량",
+      "full_statement": "구입된 자재나 물류의 상태와 수량을 검수한다.",
+      "source_sentence": "구입된 자재나 물류의 상태와 수량을 검수한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "입고된 물품의 명세",
+      "full_statement": "창고 원장이나 기록 일지에 입고된 물품의 명세를 기록한다.",
+      "source_sentence": "창고 원장이나 기록 일지에 입고된 물품의 명세를 기록하고 물품의 종류에 따라 창고 내의 적재 위치를 선정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "선정하다",
+      "object": "창고 내의 적재 위치",
+      "full_statement": "물품의 종류에 따라 창고 내의 적재 위치를 선정한다.",
+      "source_sentence": "창고 원장이나 기록 일지에 입고된 물품의 명세를 기록하고 물품의 종류에 따라 창고 내의 적재 위치를 선정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "접수하다",
+      "object": "물품 청구서",
+      "full_statement": "각 부서로부터 물품 청구서를 접수받는다.",
+      "source_sentence": "각 부서로부터 물품 청구서를 접수받아 물품을 불출하며 정기적으로 재고 조사를 실시하고 창고 원장과 대조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "불출하다",
+      "object": "물품",
+      "full_statement": "접수받은 물품 청구서에 따라 물품을 불출한다.",
+      "source_sentence": "각 부서로부터 물품 청구서를 접수받아 물품을 불출하며 정기적으로 재고 조사를 실시하고 창고 원장과 대조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "정기적인 재고 조사",
+      "full_statement": "정기적으로 재고 조사를 실시한다.",
+      "source_sentence": "각 부서로부터 물품 청구서를 접수받아 물품을 불출하며 정기적으로 재고 조사를 실시하고 창고 원장과 대조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대조하다",
+      "object": "창고 원장",
+      "full_statement": "재고 조사 결과를 창고 원장과 대조한다.",
+      "source_sentence": "각 부서로부터 물품 청구서를 접수받아 물품을 불출하며 정기적으로 재고 조사를 실시하고 창고 원장과 대조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "각종 자재의 내역과 용도",
+      "full_statement": "제품생산에 필요한 각종 자재의 내역과 용도를 조사·분석한다.",
+      "source_sentence": "제품생산에 필요한 각종 자재의 내역과 용도를 조사‧ 분석하여 연간‧ 월간‧주간‧일일소요계획을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "자재 소요계획",
+      "full_statement": "자재의 내역과 용도 분석을 토대로 연간·월간·주간·일일 소요계획을 수립한다.",
+      "source_sentence": "제품생산에 필요한 각종 자재의 내역과 용도를 조사‧ 분석하여 연간‧ 월간‧주간‧일일소요계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접수하다",
+      "object": "자재청구서 또는 자재지원 의뢰서",
+      "full_statement": "각 부서로부터 자재청구서 또는 자재지원 의뢰서를 접수받는다.",
+      "source_sentence": "각 부서로부터 자재청구서 또는 자재지원 의뢰서를 접수받고 소비량을 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "자재 소비량",
+      "full_statement": "접수받은 청구서를 토대로 자재 소비량을 검토한다.",
+      "source_sentence": "각 부서로부터 자재청구서 또는 자재지원 의뢰서를 접수받고 소비량을 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "구매하다",
+      "object": "재고가 없는 필요자재",
+      "full_statement": "필요자재의 재고가 없을 시 자재를 구매한다.",
+      "source_sentence": "필요자재의 재고가 없을시 자재를 구매하며, 각 생산부서의 사양에 맞추어 적시에 적정량이 공급되도록 제반사항을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "자재 공급 제반사항",
+      "full_statement": "각 생산부서의 사양에 맞추어 적시에 적정량이 공급되도록 제반사항을 관리한다.",
+      "source_sentence": "필요자재의 재고가 없을시 자재를 구매하며, 각 생산부서의 사양에 맞추어 적시에 적정량이 공급되도록 제반사항을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "창고 원장", "category": "시스템", "evidence_span": "창고 원장이나 기록 일지에 입고된 물품의 명세를 기록하고"},
+    {"name": "기록 일지", "category": "도구", "evidence_span": "창고 원장이나 기록 일지에 입고된 물품의 명세를 기록하고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "창고 내 물품 입고·보관·불출 및 적재 관리", "evidence_span": "자재, 공구, 설비, 생산 제품 및 기타 물품의 입고, 보관, 불출, 기록 등과 같은 창고 업무를 관리한다."},
+    {"category": "사회적", "value": "각 부서로부터 물품 청구서 접수 등 부서 간 협업", "evidence_span": "각 부서로부터 물품 청구서를 접수받아 물품을 불출하며"},
+    {"category": "사회적", "value": "공급업자·고객과의 교섭 및 접촉", "evidence_span": "문제해결을 위해 고객 또는 공급업자와 접촉한다."},
+    {"category": "시간적", "value": "정기적인 재고 조사 실시", "evidence_span": "정기적으로 재고 조사를 실시하고 창고 원장과 대조한다."}
+  ]
+}

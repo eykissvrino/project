@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28436",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "의약품 효능",
+      "full_statement": "의약품의 사용법과 효능을 병원·약국에 설명한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "의약품",
+      "full_statement": "고객 필요에 맞는 의약품을 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "영업",
+      "full_statement": "병원과 약국을 대상으로 의약품 영업활동을 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

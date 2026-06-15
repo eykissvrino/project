@@ -1,0 +1,125 @@
+{
+  "ksco_code": "23822",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "선장의 항해",
+      "full_statement": "선장의 지시에 따라 선장을 보조하여 항해한다.",
+      "source_sentence": "선장의 지시에 따라 선장을 보조하여 항해하며 항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "선박 위치와 진로",
+      "full_statement": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다.",
+      "source_sentence": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무→세세정의 특화",
+      "confidence": 0.96
+    },
+    {
+      "verb": "계획하다",
+      "object": "안전항해",
+      "full_statement": "안전항해를 계획한다.",
+      "source_sentence": "안전항해를 계획하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실행하다",
+      "object": "안전항해",
+      "full_statement": "안전항해를 실행한다.",
+      "source_sentence": "안전항해를 계획하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "판단하다",
+      "object": "지리적 위치",
+      "full_statement": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다.",
+      "source_sentence": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "통신하다",
+      "object": "다른 선박 또는 육지",
+      "full_statement": "신호기 및 무선전신을 이용하여 다른 선박 또는 육지와 통신을 한다.",
+      "source_sentence": "신호기 및 무선전신을 이용하여 다른 선박 또는 육지와 통신을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "인도하다",
+      "object": "선박",
+      "full_statement": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박들을 인도한다.",
+      "source_sentence": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박들을 인도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "선체와 갑판 설비",
+      "full_statement": "선체, 배의 상부구조, 화물실 및 갑판 설비를 관리하고 유지한다.",
+      "source_sentence": "또한 선체, 배의 상부구조, 화물실 및 갑판 설비를 관리, 유지하고 화물의 선적 및 하역 작업을 감독한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "유지하다",
+      "object": "선박의 항해기기 및 장비",
+      "full_statement": "선박의 항해기기 및 장비를 유지 관리한다.",
+      "source_sentence": "선박의 항해기기 및 장비를 유지 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "감독하다",
+      "object": "화물의 선적 및 하역 작업",
+      "full_statement": "화물의 선적 및 하역 작업을 감독한다.",
+      "source_sentence": "또한 선체, 배의 상부구조, 화물실 및 갑판 설비를 관리, 유지하고 화물의 선적 및 하역 작업을 감독한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "감독하다",
+      "object": "갑판 승무원들의 활동",
+      "full_statement": "갑판 승무원들의 활동을 감독하고 조정한다.",
+      "source_sentence": "갑판 승무원들의 활동을 감독하고 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기록하다",
+      "object": "선박의 진행사항 및 해양상태",
+      "full_statement": "선박의 진행사항, 승무원의 활동, 날씨 및 배의 측정기상에 나온 해양상태를 기록한다.",
+      "source_sentence": "선박의 진행사항, 승무원의 활동, 날씨 및 배의 측정기상에 나온 해양상태를 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운전하다",
+      "object": "소형선박",
+      "full_statement": "배와 배 사이나 배와 해안 사이에서 승객 및 화물을 나르는 소형선박을 운전한다.",
+      "source_sentence": "배와 배 사이나 또는 배와 해안사이에서 승객 및 화물을 나르는 소형선박을 운전한다. 항구나 해변지역을 순찰하기도 하며 항해활동을 보조하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "항해도", "category": "도구", "evidence_span": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다."},
+    {"name": "나침판", "category": "장비", "evidence_span": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다."},
+    {"name": "레이더", "category": "장비", "evidence_span": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다."},
+    {"name": "항해 보조구", "category": "장비", "evidence_span": "항해도, 나침판, 레이더 및 기타 항해 보조구를 사용하여 선박 위치와 진로를 결정한다."},
+    {"name": "신호기", "category": "장비", "evidence_span": "신호기 및 무선전신을 이용하여 다른 선박 또는 육지와 통신을 한다."},
+    {"name": "무선전신", "category": "장비", "evidence_span": "신호기 및 무선전신을 이용하여 다른 선박 또는 육지와 통신을 한다."},
+    {"name": "항해기구", "category": "장비", "evidence_span": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다."},
+    {"name": "차트", "category": "도구", "evidence_span": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "해양·연안·내륙해안 등 선박 위/수상 작업", "evidence_span": "해양, 연안 및 내륙해안 상에서 승객 및 화물을 운송하기 위해 배나 자가 추진 선박을 운전하고"},
+    {"category": "위험", "value": "좁거나 위험한 바다 및 수로", "evidence_span": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박들을 인도한다."},
+    {"category": "사회적", "value": "갑판 승무원 감독·조정(팀 감독)", "evidence_span": "갑판 승무원들의 활동을 감독하고 조정한다."},
+    {"category": "사회적", "value": "선장 지시 하 보조 업무", "evidence_span": "선장의 지시에 따라 선장을 보조하여 항해하며"}
+  ]
+}

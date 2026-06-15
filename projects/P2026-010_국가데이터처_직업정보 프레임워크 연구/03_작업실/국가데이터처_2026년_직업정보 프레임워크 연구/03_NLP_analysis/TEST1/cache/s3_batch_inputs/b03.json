@@ -1,0 +1,340 @@
+[
+  {
+    "iwa_id": "I_0091",
+    "n_dwa": 3,
+    "n_task": 14,
+    "n_jobs": 13,
+    "mean_cosine": 0.8875,
+    "member_dwa_labels": [
+      "금속재를 가공하여 공예품을 만든다",
+      "전주를 세운다",
+      "강레일로 승강기궤도를 설치한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0092",
+    "n_dwa": 3,
+    "n_task": 11,
+    "n_jobs": 4,
+    "mean_cosine": 0.8775,
+    "member_dwa_labels": [
+      "방수콤파운드를 도포한다",
+      "함석판 접합부에 용마루를 씌워 고정한다",
+      "처마에 물받이홈통을 설치한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0093",
+    "n_dwa": 3,
+    "n_task": 21,
+    "n_jobs": 14,
+    "mean_cosine": 0.904,
+    "member_dwa_labels": [
+      "노후한 석조물을 보수한다",
+      "전통건축물을 신축한다",
+      "재활용자재를 선별한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0094",
+    "n_dwa": 3,
+    "n_task": 13,
+    "n_jobs": 8,
+    "mean_cosine": 0.8768,
+    "member_dwa_labels": [
+      "연료공급설비를 설치한다",
+      "기계설비에 연료 및 원료를 공급한다",
+      "연도에 계측기구를 설치한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0095",
+    "n_dwa": 3,
+    "n_task": 16,
+    "n_jobs": 8,
+    "mean_cosine": 0.895,
+    "member_dwa_labels": [
+      "손질·포장한 가금육을 직접 판매한다",
+      "취재 및 준비과정에 직접 동행한다",
+      "상품 시연·시음 체험을 제공한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0096",
+    "n_dwa": 3,
+    "n_task": 12,
+    "n_jobs": 4,
+    "mean_cosine": 0.9075,
+    "member_dwa_labels": [
+      "구어의 발음과 언어결합 방식을 연구한다",
+      "언어의 기원과 구조를 추적한다",
+      "서로 다른 언어 간 의사소통을 통역한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0097",
+    "n_dwa": 3,
+    "n_task": 9,
+    "n_jobs": 5,
+    "mean_cosine": 0.8901,
+    "member_dwa_labels": [
+      "표준분류체계로 분류한다",
+      "기록물 및 도서자료를 주제별로 분류한다",
+      "검침서류를 지역별로 구분한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0098",
+    "n_dwa": 3,
+    "n_task": 23,
+    "n_jobs": 3,
+    "mean_cosine": 0.9171,
+    "member_dwa_labels": [
+      "치과기공물을 제작한다",
+      "치아 질환을 치료한다",
+      "치과보철물을 제작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0099",
+    "n_dwa": 2,
+    "n_task": 4,
+    "n_jobs": 2,
+    "mean_cosine": 0.9096,
+    "member_dwa_labels": [
+      "소방용품 인증신청서류를 접수한다",
+      "소방용품 시험·검사를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0100",
+    "n_dwa": 2,
+    "n_task": 4,
+    "n_jobs": 2,
+    "mean_cosine": 0.9113,
+    "member_dwa_labels": [
+      "미사 집전을 보조한다",
+      "수도자 지원자를 교육한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0101",
+    "n_dwa": 2,
+    "n_task": 8,
+    "n_jobs": 2,
+    "mean_cosine": 0.9461,
+    "member_dwa_labels": [
+      "한복을 제작한다",
+      "손바느질로 의류를 봉제한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0102",
+    "n_dwa": 2,
+    "n_task": 7,
+    "n_jobs": 3,
+    "mean_cosine": 0.9293,
+    "member_dwa_labels": [
+      "운송수단내부쿠션을 제조한다",
+      "섬유제품을 재단한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0103",
+    "n_dwa": 2,
+    "n_task": 8,
+    "n_jobs": 3,
+    "mean_cosine": 0.9558,
+    "member_dwa_labels": [
+      "우편물을 처리한다",
+      "우편물을 배달한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0104",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 5,
+    "mean_cosine": 0.9207,
+    "member_dwa_labels": [
+      "전화선을 색상별로 연결한다",
+      "선로 연결상태를 확인한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0105",
+    "n_dwa": 2,
+    "n_task": 14,
+    "n_jobs": 11,
+    "mean_cosine": 0.9323,
+    "member_dwa_labels": [
+      "단열재를 시공한다",
+      "전선보호재를 설치한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0106",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 5,
+    "mean_cosine": 0.9083,
+    "member_dwa_labels": [
+      "상품흐름 전 과정을 총괄한다",
+      "여행여정을 기획한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0107",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 4,
+    "mean_cosine": 0.9122,
+    "member_dwa_labels": [
+      "오락시설에서 동전을 교환한다",
+      "카지노게임을 진행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0108",
+    "n_dwa": 2,
+    "n_task": 4,
+    "n_jobs": 4,
+    "mean_cosine": 0.9199,
+    "member_dwa_labels": [
+      "점술도구로 점을 친다",
+      "세탁물에 광택을 낸다"
+    ]
+  },
+  {
+    "iwa_id": "I_0109",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 5,
+    "mean_cosine": 0.9106,
+    "member_dwa_labels": [
+      "전자의료기기의 전자회로기판을 설계한다",
+      "전자부품 및 제어장비의 초기값을 설정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0110",
+    "n_dwa": 2,
+    "n_task": 11,
+    "n_jobs": 7,
+    "mean_cosine": 0.9024,
+    "member_dwa_labels": [
+      "검사기록을 해석한다",
+      "관찰창으로 재료의 용융상태를 관찰한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0111",
+    "n_dwa": 2,
+    "n_task": 19,
+    "n_jobs": 4,
+    "mean_cosine": 0.9542,
+    "member_dwa_labels": [
+      "석유가스자원의 추출기술을 연구한다",
+      "석유화학제품을 정제한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0112",
+    "n_dwa": 2,
+    "n_task": 10,
+    "n_jobs": 4,
+    "mean_cosine": 0.9156,
+    "member_dwa_labels": [
+      "과수착과량을 조절한다",
+      "호부기를 조작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0113",
+    "n_dwa": 2,
+    "n_task": 5,
+    "n_jobs": 3,
+    "mean_cosine": 0.9345,
+    "member_dwa_labels": [
+      "식품원료를 손질하여 김치를 제조한다",
+      "해조류를 식용제품으로 가공한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0114",
+    "n_dwa": 2,
+    "n_task": 13,
+    "n_jobs": 2,
+    "mean_cosine": 0.9529,
+    "member_dwa_labels": [
+      "시력교정구를 처방한다",
+      "시력증진을 위한 처방을 한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0115",
+    "n_dwa": 2,
+    "n_task": 4,
+    "n_jobs": 4,
+    "mean_cosine": 0.9265,
+    "member_dwa_labels": [
+      "미수금 법적조치를 권고한다",
+      "운항계획을 조정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0116",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 3,
+    "mean_cosine": 0.9086,
+    "member_dwa_labels": [
+      "전통건조물 시공을 총괄한다",
+      "충전전지격자 처리장비를 관리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0117",
+    "n_dwa": 2,
+    "n_task": 4,
+    "n_jobs": 2,
+    "mean_cosine": 0.9011,
+    "member_dwa_labels": [
+      "퍼티스크레이퍼로 충전면을 고른다",
+      "퍼티충전면을 건조 후 사포질한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0118",
+    "n_dwa": 2,
+    "n_task": 17,
+    "n_jobs": 4,
+    "mean_cosine": 0.9485,
+    "member_dwa_labels": [
+      "간판을 제작하거나 보수한다",
+      "홍보물을 지정된 위치에 부착한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0119",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 4,
+    "mean_cosine": 0.9176,
+    "member_dwa_labels": [
+      "전기코일을 후처리한다",
+      "권선기로 코일을 감는다"
+    ]
+  },
+  {
+    "iwa_id": "I_0120",
+    "n_dwa": 2,
+    "n_task": 14,
+    "n_jobs": 8,
+    "mean_cosine": 0.914,
+    "member_dwa_labels": [
+      "자동분무기로 제품에 도장한다",
+      "분사기를 점화하여 로를 가동한다"
+    ]
+  }
+]

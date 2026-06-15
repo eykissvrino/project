@@ -1,0 +1,141 @@
+{
+  "ksco_code": "22235",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "네트워크 프로그램",
+      "full_statement": "익스플로러, TCP, IP, API 등 네트워크를 사용하기 위해 필요한 네트워크 프로그램을 개발한다.",
+      "source_sentence": "네트워크를 사용하기 위해 필요한 익스플로러, TCP, IP, API 등과 같은 네트워크 프로그램을 개발하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개발하다",
+      "object": "디바이스 드라이버 프로그램",
+      "full_statement": "하드웨어를 직접 구동하는 디바이스 드라이버 프로그램을 개발한다.",
+      "source_sentence": "하드웨어를 직접 구동하는 디바이스 드라이버 프로그램(LAN Card), TCP와 같은 트랜스포트 계층의 인터페이스를 이용하는 소켓프로그램(TCP/IP), 컴퓨터 시스템이 지원하는 네트워크 유틸리티나 응용 프로그램을 활용하여 가장 상위계층의 프로그래밍 인터페이스 등을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "소켓 프로그램",
+      "full_statement": "TCP와 같은 트랜스포트 계층의 인터페이스를 이용하는 소켓프로그램을 개발한다.",
+      "source_sentence": "TCP와 같은 트랜스포트 계층의 인터페이스를 이용하는 소켓프로그램(TCP/IP)",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "상위계층 프로그래밍 인터페이스",
+      "full_statement": "컴퓨터 시스템이 지원하는 네트워크 유틸리티나 응용 프로그램을 활용하여 가장 상위계층의 프로그래밍 인터페이스를 개발한다.",
+      "source_sentence": "컴퓨터 시스템이 지원하는 네트워크 유틸리티나 응용 프로그램을 활용하여 가장 상위계층의 프로그래밍 인터페이스 등을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "네트워크 프로그램 기능·성능 및 사용자 요구사항",
+      "full_statement": "네트워크 프로그램의 기능·성능 및 사용자의 요구사항을 분석하고 정의한다.",
+      "source_sentence": "응용 소프트웨어 기능‧성능 및 사용자의 요구사항을 분석하고 정의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "네트워크 프로그램",
+      "full_statement": "요구사항을 기본으로 네트워크 프로그램을 설계한다.",
+      "source_sentence": "요구사항을 기본으로 응용 소프트웨어를 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "프로그래밍하다",
+      "object": "네트워크 프로그램",
+      "full_statement": "네트워크 프로그램을 프로그래밍하고 제작한다.",
+      "source_sentence": "응용 소프트웨어를 프로그래밍하고 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "실시간 환경 컴퓨터기술 적용요건",
+      "full_statement": "통신 등 실시간 환경에서 컴퓨터기술의 적용요건을 분석한다.",
+      "source_sentence": "프로세스나 기계제어, 계측, 로봇, 통신, 환경감시, 원격감지, 의료 및 관련 공학, 과학 및 산업 애플리케이션을 위한 실시간 환경에서 컴퓨터기술의 적용요건을 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "감독하다",
+      "object": "프로그래머의 작업",
+      "full_statement": "프로그래머의 작업을 감독한다.",
+      "source_sentence": "프로그래머의 작업을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설정하다",
+      "object": "오퍼레이션 명세서",
+      "full_statement": "오퍼레이션 명세서를 설정하고 네트워크 프로그램 요건을 체계화한다.",
+      "source_sentence": "오퍼레이션 명세서를 설정하고 응용 소프트웨어 요건을 체계화한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "네트워크 프로그램 설명서",
+      "full_statement": "네트워크 프로그램 설명서를 작성하는 데 참여한다.",
+      "source_sentence": "응용 소프트웨어 설명서를 작성하는데 참여하며 컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "유지하다",
+      "object": "컴퓨터 프로그램",
+      "full_statement": "컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "source_sentence": "응용 소프트웨어 설명서를 작성하는데 참여하며 컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "개발 목적 및 문제",
+      "full_statement": "개발자가 명기한 목적 및 문제들을 분석한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 명기한 목적 및 문제들을 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "전환하다",
+      "object": "형식화된 솔루션",
+      "full_statement": "제시된 형식화된 솔루션을 상세한 프로그램 명세서로 전환한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 제시한 형식화된 솔루션을 상세한 프로그램 명세서로 전환하고, 프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검사하다",
+      "object": "프로그램의 타당성과 로직",
+      "full_statement": "프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 제시한 형식화된 솔루션을 상세한 프로그램 명세서로 전환하고, 프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서·매뉴얼 및 문서",
+      "full_statement": "소프트웨어의 상태, 작동 및 유지관리에 관한 보고서, 매뉴얼 및 문서를 작성한다.",
+      "source_sentence": "소프트웨어의 상태, 작동 및 유지관리에 관한 보고서, 매뉴얼 및 문서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "TCP/IP", "category": "시스템", "evidence_span": "TCP와 같은 트랜스포트 계층의 인터페이스를 이용하는 소켓프로그램(TCP/IP)"},
+    {"name": "API", "category": "SW", "evidence_span": "익스플로러, TCP, IP, API 등과 같은 네트워크 프로그램을 개발하는 자를 말한다."},
+    {"name": "익스플로러", "category": "SW", "evidence_span": "네트워크를 사용하기 위해 필요한 익스플로러, TCP, IP, API 등과 같은 네트워크 프로그램"},
+    {"name": "LAN Card", "category": "HW", "evidence_span": "하드웨어를 직접 구동하는 디바이스 드라이버 프로그램(LAN Card)"},
+    {"name": "네트워크 유틸리티", "category": "SW", "evidence_span": "컴퓨터 시스템이 지원하는 네트워크 유틸리티나 응용 프로그램을 활용하여"}
+  ],
+  "work_context": []
+}

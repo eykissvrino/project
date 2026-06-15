@@ -1,0 +1,79 @@
+{
+  "ksco_code": "35290",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "국가행정 및 지방행정 업무",
+      "full_statement": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획한다.",
+      "source_sentence": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "국가행정 및 지방행정 업무",
+      "full_statement": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 시행한다.",
+      "source_sentence": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기안하다",
+      "object": "각종 보고서나 문서",
+      "full_statement": "각종 보고서나 문서를 기안한다.",
+      "source_sentence": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "민원 업무",
+      "full_statement": "중앙 및 지방행정기관에서 각종 민원 업무를 처리한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "처리하다",
+      "object": "행정 실무",
+      "full_statement": "중앙 및 지방행정기관에서 각종 행정 실무를 처리한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "기록하다",
+      "object": "업무 관련 정보",
+      "full_statement": "당해 작업에 관련된 정보를 기록한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보관하다",
+      "object": "업무 관련 정보",
+      "full_statement": "당해 작업에 관련된 정보를 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검색하다",
+      "object": "업무 관련 정보",
+      "full_statement": "당해 작업에 관련된 정보를 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "안내하다",
+      "object": "방문 민원인",
+      "full_statement": "민원인에 대한 상담, 안내 및 접수와 관련된 사무를 처리한다.",
+      "source_sentence": "또한 금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

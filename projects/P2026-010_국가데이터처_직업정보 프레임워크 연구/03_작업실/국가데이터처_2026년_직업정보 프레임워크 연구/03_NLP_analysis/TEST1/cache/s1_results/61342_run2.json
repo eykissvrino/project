@@ -1,0 +1,63 @@
+{
+  "ksco_code": "61342",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "사육할 가금 종류와 양",
+      "full_statement": "달걀 생산을 위해 사육할 닭, 오리 등 가금의 종류와 양을 결정한다.",
+      "source_sentence": "닭, 오리 등 사육할 가금 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구입하다",
+      "object": "사육용 원료와 도구",
+      "full_statement": "가금 사육에 필요한 원료와 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사육하다",
+      "object": "산란계 등 가금",
+      "full_statement": "달걀 등 알을 얻기 위하여 닭, 오리 등의 가금을 사육한다.",
+      "source_sentence": "달걀 등 알을 얻기 위하여 닭, 오리 등의 가금을 사육하고, 생산물을 포장하거나 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "포장하다",
+      "object": "달걀 등 생산물",
+      "full_statement": "산란계로부터 생산된 달걀 등의 생산물을 포장한다.",
+      "source_sentence": "달걀 등 알을 얻기 위하여 닭, 오리 등의 가금을 사육하고, 생산물을 포장하거나 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "출하하다",
+      "object": "달걀 등 생산물",
+      "full_statement": "산란계로부터 생산된 달걀 등의 생산물을 출하한다.",
+      "source_sentence": "달걀 등 알을 얻기 위하여 닭, 오리 등의 가금을 사육하고, 생산물을 포장하거나 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "저장하다",
+      "object": "알 등 생산물",
+      "full_statement": "생산된 알 등의 생산물을 저장한다.",
+      "source_sentence": "육계나 알 등의 생산물을 저장하고, 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "공급하다",
+      "object": "알 등 생산물",
+      "full_statement": "생산된 알 등의 생산물을 공급한다.",
+      "source_sentence": "육계나 알 등의 생산물을 저장하고, 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,106 @@
+{
+  "ksco_code": "52121",
+  "tasks": [
+    {
+      "verb": "응대하다",
+      "object": "고객",
+      "full_statement": "매장을 방문한 고객을 응대하고 구매하려는 의류의 종류, 품질, 수량에 대해 의논한다.",
+      "source_sentence": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(상품→의류)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "의류 상품",
+      "full_statement": "남성 의류, 여성 의류, 속옷, 양말 등의 상품을 고객에게 설명한다.",
+      "source_sentence": "상점에서 남성 의류, 여성 의류, 속옷, 양말 등의 상품을 고객에게 설명하고 구매하도록 유도하는 등 판매와 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "유도하다",
+      "object": "구매",
+      "full_statement": "고객이 의류 상품을 선택하고 구매하도록 유도한다.",
+      "source_sentence": "상점에서 남성 의류, 여성 의류, 속옷, 양말 등의 상품을 고객에게 설명하고 구매하도록 유도하는 등 판매와 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "보여주다",
+      "object": "다양한 모델 및 색상",
+      "full_statement": "고객에게 다양한 의류 모델 및 색상을 보여줌으로써 상품 선택을 돕는다.",
+      "source_sentence": "고객에게 상품의 내용을 설명하고 다양한 모델 및 색상을 보여줌으로써 고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)→세세정의 특화(의류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설명하다",
+      "object": "사용법 및 보관요령",
+      "full_statement": "의류 제품의 사용법 및 보관요령에 대해 설명한다.",
+      "source_sentence": "제품의 사용법 및 보관요령에 대해 설명한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(의류)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "협의하다",
+      "object": "가격·판매 조건·배달일자",
+      "full_statement": "고객과 가격, 판매 조건, 배달일자 등을 협의한다.",
+      "source_sentence": "가격, 판매 조건, 배달일자 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계산하다",
+      "object": "구매 물품 가격",
+      "full_statement": "고객이 구매한 의류 물품의 가격을 계산한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발급하다",
+      "object": "영수증",
+      "full_statement": "구매 대금 정산 후 고객에게 영수증을 발급한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "포장하다",
+      "object": "구매한 상품",
+      "full_statement": "고객이 구매한 의류 상품을 포장한다.",
+      "source_sentence": "구매한 상품의 가격계산 및 포장등의 상품을 판매하는데 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화(의류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조사하다",
+      "object": "재고량",
+      "full_statement": "수시로 의류 상품의 재고량을 조사한다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "알리다",
+      "object": "부족상품 보충",
+      "full_statement": "재고 조사 결과 부족한 상품의 보충을 알린다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "상점·매장 내 실내 근무",
+      "evidence_span": "상점에서 남성 의류, 여성 의류, 속옷, 양말 등의 상품을 고객에게 설명하고"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다."
+    }
+  ]
+}

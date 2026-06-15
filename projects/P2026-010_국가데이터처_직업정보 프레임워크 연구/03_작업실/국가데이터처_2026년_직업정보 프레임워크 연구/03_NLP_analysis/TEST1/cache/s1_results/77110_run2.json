@@ -1,0 +1,103 @@
+{
+  "ksco_code": "77110",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "컴퓨터",
+      "full_statement": "컴퓨터를 설치한다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "컴퓨터",
+      "full_statement": "컴퓨터를 조정한다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "컴퓨터",
+      "full_statement": "컴퓨터를 수리한다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정비하다",
+      "object": "컴퓨터",
+      "full_statement": "컴퓨터를 정비한다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "안내하다",
+      "object": "컴퓨터 조작법",
+      "full_statement": "컴퓨터의 조작법을 알려준다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "안내하다",
+      "object": "사용 유의사항",
+      "full_statement": "컴퓨터 사용상의 유의사항을 알려준다.",
+      "source_sentence": "컴퓨터를 설치, 조정, 수리, 정비하고 조작법 및 유의사항을 알려준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.91
+    },
+    {
+      "verb": "해결하다",
+      "object": "사용상 불편 또는 오류",
+      "full_statement": "컴퓨터 사용상의 불편 또는 오류를 해결한다.",
+      "source_sentence": "컴퓨터 사용상의 불편 또는 오류를 해결하고 원활한 사용을 위해 유지‧보수한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "유지보수하다",
+      "object": "사용중인 컴퓨터",
+      "full_statement": "원활한 사용을 위해 사용중인 컴퓨터를 유지‧보수한다.",
+      "source_sentence": "컴퓨터 사용상의 불편 또는 오류를 해결하고 원활한 사용을 위해 유지‧보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "설치하다",
+      "object": "보조기억장치",
+      "full_statement": "보조기억장치를 설치한다.",
+      "source_sentence": "보조기억장치 설치원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "보조기억장치",
+      "full_statement": "보조기억장치를 수리한다.",
+      "source_sentence": "보조기억장치 수리원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설치하다",
+      "object": "콘솔",
+      "full_statement": "콘솔을 설치한다.",
+      "source_sentence": "콘솔 설치원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "설치하다",
+      "object": "자료처리장치",
+      "full_statement": "자료처리장치를 설치한다.",
+      "source_sentence": "자료처리장치 설치원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

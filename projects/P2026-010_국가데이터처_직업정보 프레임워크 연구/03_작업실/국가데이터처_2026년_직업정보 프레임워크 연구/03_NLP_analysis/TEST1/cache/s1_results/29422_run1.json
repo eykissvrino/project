@@ -1,0 +1,95 @@
+{
+  "ksco_code": "29422",
+  "tasks": [
+    {
+      "verb": "촬영하다",
+      "object": "일반 관심사의 인물과 사건, 풍경",
+      "full_statement": "신문, 잡지 및 유사 간행물에 게재하기 위하여 일반 관심사의 대상 인물과 사건, 풍경 등을 촬영한다.",
+      "source_sentence": "신문, 잡지 및 유사 간행물에 게재하기 위하여, 일반 관심사의 대상 인물과 사건, 풍경 등을 촬영하거나 운동경기와 같은 특정 뉴스를 전문적으로 촬영한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "촬영하다",
+      "object": "운동경기 등 특정 뉴스",
+      "full_statement": "운동경기와 같은 특정 뉴스를 전문적으로 촬영한다.",
+      "source_sentence": "신문, 잡지 및 유사 간행물에 게재하기 위하여, 일반 관심사의 대상 인물과 사건, 풍경 등을 촬영하거나 운동경기와 같은 특정 뉴스를 전문적으로 촬영한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "선정하다",
+      "object": "촬영 모델이나 장소",
+      "full_statement": "사진을 촬영할 수 있는 모델이나 장소를 선정한다.",
+      "source_sentence": "사진을 촬영할 수 있는 모델이나 장소를 선정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "날씨, 조도 등 촬영 조건",
+      "full_statement": "날씨, 조도 등을 확인하여 촬영 조건을 파악한다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조절하다",
+      "object": "카메라",
+      "full_statement": "촬영 조건에 맞추어 카메라를 조절한다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "잡다",
+      "object": "구도",
+      "full_statement": "촬영을 위해 구도를 잡는다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "현상하다",
+      "object": "촬영한 필름",
+      "full_statement": "촬영한 필름을 현상액에 넣어 현상한다.",
+      "source_sentence": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "선별하다",
+      "object": "사진 작품",
+      "full_statement": "현상한 필름을 조명에 비추어 게재할 사진을 선별한다.",
+      "source_sentence": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "절단하다",
+      "object": "인화지",
+      "full_statement": "일정규격으로 인화지를 절단한다.",
+      "source_sentence": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "완성하다",
+      "object": "사진작품",
+      "full_statement": "현상한 필름에 맞추어 인화하여 사진작품을 완성한다.",
+      "source_sentence": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "카메라", "category": "장비", "evidence_span": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다."},
+    {"name": "현상액", "category": "도구", "evidence_span": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다."},
+    {"name": "필름", "category": "도구", "evidence_span": "촬영한 필름은 현상액에 넣어 현상한 후"},
+    {"name": "인화지", "category": "도구", "evidence_span": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "촬영 장소 이동(모델·장소 선정)", "evidence_span": "사진을 촬영할 수 있는 모델이나 장소를 선정한다."},
+    {"category": "장소", "value": "실외 촬영(날씨·조도 영향)", "evidence_span": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다."}
+  ]
+}

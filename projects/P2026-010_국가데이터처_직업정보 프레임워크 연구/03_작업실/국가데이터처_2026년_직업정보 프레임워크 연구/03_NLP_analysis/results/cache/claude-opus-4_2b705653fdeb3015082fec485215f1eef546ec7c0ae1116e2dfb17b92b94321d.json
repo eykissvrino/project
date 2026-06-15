@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28151",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "조직 기능",
+      "full_statement": "기업운영·경영방법이나 조직의 기능을 분석하고 재설계한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제안하다",
+      "object": "경영 개선점",
+      "full_statement": "효율적 경영을 위해 사업·조직체계를 검토하고 개선점을 제안한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "업무 절차",
+      "full_statement": "조직 체계와 업무 절차를 설계하고 매뉴얼을 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "경영 방법",
+      "full_statement": "공공·민간 사업체의 경영방법과 조직에 대해 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "경영 연구",
+      "full_statement": "경영정책의 효율성을 판단하기 위한 연구를 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

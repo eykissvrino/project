@@ -1,0 +1,87 @@
+{
+  "ksco_code": "75343",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "지게차 바퀴",
+      "full_statement": "지게차의 바퀴 상태를 점검한다.",
+      "source_sentence": "지게차의 바퀴, 연결고리, 정상 작동여부 등을 점검하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "지게차 연결고리",
+      "full_statement": "지게차의 연결고리 상태를 점검한다.",
+      "source_sentence": "지게차의 바퀴, 연결고리, 정상 작동여부 등을 점검하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "지게차 정상 작동여부",
+      "full_statement": "지게차의 정상 작동여부를 점검한다.",
+      "source_sentence": "지게차의 바퀴, 연결고리, 정상 작동여부 등을 점검하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "지게차",
+      "full_statement": "점검 결과 이상이 있는 지게차를 수리한다.",
+      "source_sentence": "지게차의 바퀴, 연결고리, 정상 작동여부 등을 점검하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "지게차",
+      "full_statement": "지게차를 정비한다.",
+      "source_sentence": "지게차의 바퀴, 연결고리, 정상 작동여부 등을 점검하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "물품 이동 장비",
+      "full_statement": "전기·기계동력에 의하여 가동되는 지게차 등 물품 이동 장비를 설치한다.",
+      "source_sentence": "전기‧기계동력에 의하여 가동되는 크레인‧호이스트, 지게차 등 물품 이동 장비를 설치하거나 정비한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "점검하다",
+      "object": "제동장치",
+      "full_statement": "지게차의 제동장치를 점검하고 조정한다.",
+      "source_sentence": "제동장치‧스위치‧신호 및 조정장치 등을 점검‧조정하고 고장이 발생할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "점검하다",
+      "object": "스위치",
+      "full_statement": "지게차의 스위치를 점검하고 조정한다.",
+      "source_sentence": "제동장치‧스위치‧신호 및 조정장치 등을 점검‧조정하고 고장이 발생할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조정하다",
+      "object": "신호 및 조정장치",
+      "full_statement": "지게차의 신호 및 조정장치를 점검·조정한다.",
+      "source_sentence": "제동장치‧스위치‧신호 및 조정장치 등을 점검‧조정하고 고장이 발생할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수리하다",
+      "object": "고장",
+      "full_statement": "고장이 발생할 경우 이를 수리한다.",
+      "source_sentence": "제동장치‧스위치‧신호 및 조정장치 등을 점검‧조정하고 고장이 발생할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

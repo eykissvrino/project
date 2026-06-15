@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28229",
+  "tasks": [
+    {
+      "verb": "운용하다",
+      "object": "자산",
+      "full_statement": "고객이 위탁한 자산을 운용한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "투자 방법",
+      "full_statement": "자산 운용 및 투자 방법에 대해 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "투자 컨설팅",
+      "full_statement": "투자 컨설팅을 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,135 @@
+{
+  "ksco_code": "23629",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "소방시설",
+      "full_statement": "소화전, 스프링클러 등 소방시설을 점검한다.",
+      "source_sentence": "주로 소화전, 스프링클러 등 소방시설을 점검하고 결과를 관할 소방서에 통보, 불량일 경우에는 시정명령을 내릴 수 있도록 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "통보하다",
+      "object": "점검 결과",
+      "full_statement": "소방시설 점검 결과를 관할 소방서에 통보한다.",
+      "source_sentence": "주로 소화전, 스프링클러 등 소방시설을 점검하고 결과를 관할 소방서에 통보, 불량일 경우에는 시정명령을 내릴 수 있도록 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "내리다",
+      "object": "시정명령",
+      "full_statement": "소방시설이 불량일 경우 시정명령을 내린다.",
+      "source_sentence": "불량일 경우에는 시정명령을 내릴 수 있도록 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "소방시설공사",
+      "full_statement": "소방시설공사를 설계한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "시공하다",
+      "object": "소방시설공사",
+      "full_statement": "소방시설공사를 시공한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "감리하다",
+      "object": "소방시설공사",
+      "full_statement": "소방시설공사를 감리한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "관리하다",
+      "object": "소방시설공사",
+      "full_statement": "소방시설공사를 관리한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "정비하다",
+      "object": "소방시설",
+      "full_statement": "소방시설을 정비한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "방화안전관리",
+      "full_statement": "화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "source_sentence": "소방시설공사를 설계, 시공, 감리, 관리하며, 소방시설의 점검‧정비와 화기의 사용 및 취급 등 방화안전관리에 대한 감독을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "실시하다",
+      "object": "소화·통보·피난 훈련",
+      "full_statement": "소방계획에 의한 소화, 통보 및 피난 등의 훈련을 실시한다.",
+      "source_sentence": "소방계획에 의한 소화, 통보 및 피난 등의 훈련을 실시하는 방화관리 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수립하다",
+      "object": "소방계획",
+      "full_statement": "방화관리를 위한 소방계획을 수립한다.",
+      "source_sentence": "소방계획에 의한 소화, 통보 및 피난 등의 훈련을 실시하는 방화관리 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "조사하다",
+      "object": "소방안전 관련 현장",
+      "full_statement": "소방안전 관련 현장조사를 실시한다.",
+      "source_sentence": "소방안전 관련 현장조사, 재해보고서, 재해통계자료, 국내외 안전위생관계 문헌 등의 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수집하다",
+      "object": "재해보고서·통계·문헌 자료",
+      "full_statement": "재해보고서, 재해통계자료, 국내외 안전위생관계 문헌 등의 자료를 수집한다.",
+      "source_sentence": "소방안전 관련 현장조사, 재해보고서, 재해통계자료, 국내외 안전위생관계 문헌 등의 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "수집 자료",
+      "full_statement": "수집한 재해보고서·재해통계자료·안전위생관계 문헌 등의 자료를 분석한다.",
+      "source_sentence": "소방안전 관련 현장조사, 재해보고서, 재해통계자료, 국내외 안전위생관계 문헌 등의 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조사하다",
+      "object": "위험요인 및 유해요소",
+      "full_statement": "위험요인 및 유해요소를 조사한다.",
+      "source_sentence": "위험요인 및 유해요소를 조사‧분석하여 제반 안전 예방대책을 위한 계획 및 관리업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수립하다",
+      "object": "안전 예방대책 계획",
+      "full_statement": "제반 안전 예방대책을 위한 계획을 수립한다.",
+      "source_sentence": "위험요인 및 유해요소를 조사‧분석하여 제반 안전 예방대책을 위한 계획 및 관리업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

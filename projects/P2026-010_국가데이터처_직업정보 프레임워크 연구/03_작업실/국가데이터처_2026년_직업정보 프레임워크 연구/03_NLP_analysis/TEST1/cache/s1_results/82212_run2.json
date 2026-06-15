@@ -1,0 +1,94 @@
+{
+  "ksco_code": "82212",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "편직기",
+      "full_statement": "직물, 의복, 기타 제품을 편직하기 위하여 편직기를 조작한다.",
+      "source_sentence": "직물, 의복, 기타 제품을 편직하는 편직기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검토하다",
+      "object": "원사 명세서",
+      "full_statement": "원사의 종류, 제조직물의 조직과 무늬에 대한 명세서를 검토한다.",
+      "source_sentence": "원사의 종류, 제조직물의 조직과 무늬에 대한 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "공급하다",
+      "object": "원사",
+      "full_statement": "편직에 사용할 원사를 편직기에 공급한다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직기→편직기)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "감다",
+      "object": "원사",
+      "full_statement": "원사를 목관에 감아 편직기 공급에 대비한다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "가동하다",
+      "object": "편직기",
+      "full_statement": "편직기를 가동하여 편직 작업을 시작한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직기→편직기)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "제반조건",
+      "full_statement": "편직물의 무늬, 무게, 속도 등 제반조건을 확인한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "연결하다",
+      "object": "끊어진 실",
+      "full_statement": "편직 중 끊어진 실을 연결한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계 기능장애",
+      "full_statement": "편직기의 기능장애를 점검한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직기→편직기)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계 기능장애",
+      "full_statement": "편직기의 기능장애를 조정한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(직기→편직기)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "생산하다",
+      "object": "직물 제품",
+      "full_statement": "편직기를 사용하여 직물과 기타 물질을 생산한다.",
+      "source_sentence": "섬유제품 제조업체나 의류 제조업체에서 직조와 편직 및 기타 물질과 직물을 생산하기 위하여 사용되는 관련 장비를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.66
+    }
+  ],
+  "tools": [
+    {"name": "편직기", "category": "장비", "evidence_span": "직물, 의복, 기타 제품을 편직하는 편직기를 조작한다."},
+    {"name": "자동편직기", "category": "장비", "evidence_span": "편직기 조작원·자동편직기 조작원"},
+    {"name": "호부기", "category": "장비", "evidence_span": "실에 풀을 입히는 호부기를 조정, 조작한다."},
+    {"name": "목관", "category": "도구", "evidence_span": "위사용 원사를 목관에 감고 직기에 공급한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "섬유제품 제조업체·의류 제조업체(실내 공장)", "evidence_span": "섬유제품 제조업체나 의류 제조업체에서 직조와 편직 및 기타 물질과 직물을 생산하기 위하여 사용되는 관련 장비를 조작한다."}
+  ]
+}

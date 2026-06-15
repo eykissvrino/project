@@ -1,0 +1,110 @@
+{
+  "ksco_code": "26461",
+  "tasks": [
+    {
+      "verb": "교육하다",
+      "object": "디자인 이론",
+      "full_statement": "디자인학원에서 수강생들에게 디자인에 대한 이론을 교육한다.",
+      "source_sentence": "디자인학원에서 수강생들에게 디자인에 대한 이론과 기술을 습득시키고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "디자인 기술 습득",
+      "full_statement": "수강생들이 디자인 기술을 습득하도록 지도한다.",
+      "source_sentence": "디자인학원에서 수강생들에게 디자인에 대한 이론과 기술을 습득시키고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설명하다",
+      "object": "기본 이론",
+      "full_statement": "디자인의 기본 이론에 관하여 설명한다.",
+      "source_sentence": "기본 이론, 공구 및 기계의 사용에 관하여 설명하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설명하다",
+      "object": "공구의 사용법",
+      "full_statement": "공구의 사용에 관하여 설명한다.",
+      "source_sentence": "기본 이론, 공구 및 기계의 사용에 관하여 설명하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "설명하다",
+      "object": "기계의 사용법",
+      "full_statement": "기계의 사용에 관하여 설명한다.",
+      "source_sentence": "기본 이론, 공구 및 기계의 사용에 관하여 설명하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "지도하다",
+      "object": "실습",
+      "full_statement": "수강생들의 실습을 지도한다.",
+      "source_sentence": "실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "감독하다",
+      "object": "실습",
+      "full_statement": "수강생들의 실습을 감독한다.",
+      "source_sentence": "실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설명하다",
+      "object": "기술의 기본이론",
+      "full_statement": "기술의 기본이론에 대해 설명한다.",
+      "source_sentence": "기술계학원에서 기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고 시범을 보인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "안전관리",
+      "full_statement": "공구 및 기계 사용 시의 안전관리에 대해 설명한다.",
+      "source_sentence": "기술계학원에서 기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고 시범을 보인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "시범보이다",
+      "object": "공구 및 기계 사용",
+      "full_statement": "공구 및 기계의 사용에 대해 시범을 보인다.",
+      "source_sentence": "기술계학원에서 기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고 시범을 보인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "교육하다",
+      "object": "디자인 관련 기술·기능 이론",
+      "full_statement": "디자인 관련 기술·기능 이론 교육을 실시한다.",
+      "source_sentence": "디자인, 이‧미용, 요리 광고, 방송, 디자인 관련 기술‧기능 이론 교육과 실습을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지도하다",
+      "object": "디자인 실습",
+      "full_statement": "디자인 관련 실습을 지도한다.",
+      "source_sentence": "디자인, 이‧미용, 요리 광고, 방송, 디자인 관련 기술‧기능 이론 교육과 실습을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "공구", "category": "도구", "evidence_span": "기본 이론, 공구 및 기계의 사용에 관하여 설명하고"},
+    {"name": "기계", "category": "장비", "evidence_span": "기본 이론, 공구 및 기계의 사용에 관하여 설명하고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "디자인학원(실내 교육기관)", "evidence_span": "디자인학원에서 수강생들에게 디자인에 대한 이론과 기술을 습득시키고"},
+    {"category": "사회적", "value": "수강생 대상 교육·지도", "evidence_span": "디자인학원에서 수강생들에게 디자인에 대한 이론과 기술을 습득시키고"},
+    {"category": "안전", "value": "공구 및 기계 사용에 따른 안전관리", "evidence_span": "기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고"}
+  ]
+}

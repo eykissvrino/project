@@ -1,0 +1,85 @@
+{
+  "ksco_code": "23750",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "인증시험",
+      "full_statement": "신재생에너지 기술자 및 연구원의 관리하에 신재생에너지 기반 기술의 인증시험을 수행한다.",
+      "source_sentence": "신재생에너지 기술자 및 연구원의 관리하에 신재생에너지 기반 기술을 인증시험을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시험하다",
+      "object": "신재생에너지 관련 기술",
+      "full_statement": "신재생에너지 관련 기술을 시험한다.",
+      "source_sentence": "신재생에너지 관련 기술을 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "보조하다",
+      "object": "기술 개발 및 연구",
+      "full_statement": "신재생에너지 활용에 필요한 공학적 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "신재생에너지 활용에 필요한 다양한 공학적인 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "시설 유지 업무",
+      "full_statement": "신재생에너지 관련 시설의 유지 업무를 수행한다.",
+      "source_sentence": "또한 신재생에너지 관련 시설 및 장비의 유지, 보수관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "장비 유지 업무",
+      "full_statement": "신재생에너지 관련 장비의 유지 업무를 수행한다.",
+      "source_sentence": "또한 신재생에너지 관련 시설 및 장비의 유지, 보수관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "시설 보수관리 업무",
+      "full_statement": "신재생에너지 관련 시설의 보수관리 업무를 수행한다.",
+      "source_sentence": "또한 신재생에너지 관련 시설 및 장비의 유지, 보수관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "장비 보수관리 업무",
+      "full_statement": "신재생에너지 관련 장비의 보수관리 업무를 수행한다.",
+      "source_sentence": "또한 신재생에너지 관련 시설 및 장비의 유지, 보수관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "시설 보수업무",
+      "full_statement": "신재생에너지 기반의 시설 보수업무를 수행한다.",
+      "source_sentence": "신재생에너지 기반의 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수행하다",
+      "object": "장비 유지업무",
+      "full_statement": "신재생에너지 기반의 장비 유지업무를 수행한다.",
+      "source_sentence": "신재생에너지 기반의 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "신재생에너지 기술자 및 연구원의 관리하 업무(지휘·감독 하 수행)",
+      "evidence_span": "신재생에너지 기술자 및 연구원의 관리하에 신재생에너지 기반 기술을 인증시험을 수행한다."
+    }
+  ]
+}

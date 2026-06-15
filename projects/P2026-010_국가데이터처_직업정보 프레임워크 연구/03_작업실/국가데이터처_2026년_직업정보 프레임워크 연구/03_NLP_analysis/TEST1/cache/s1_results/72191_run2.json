@@ -1,0 +1,93 @@
+{
+  "ksco_code": "72191",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "모자",
+      "full_statement": "펠트, 섬유 및 밀짚 등의 각종 재료로 모자를 제조한다.",
+      "source_sentence": "펠트, 섬유 및 밀짚 등의 각종 재료로 모자를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제조하다",
+      "object": "모자형",
+      "full_statement": "모자형을 제조한다.",
+      "source_sentence": "또한 모자형과 특수목적용 모자를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제조하다",
+      "object": "특수목적용 모자",
+      "full_statement": "특수목적용 모자를 제조한다.",
+      "source_sentence": "또한 모자형과 특수목적용 모자를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "선별하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 양모, 면화 등 모자 제조용 천연섬유를 선별한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "분류하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 모자 제조용 천연섬유를 분류한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "가공하다",
+      "object": "섬유",
+      "full_statement": "모자 제조를 위해 펠트, 섬유 및 밀짚 등의 재료를 가공한다.",
+      "source_sentence": "섬유를 가공하여 직물을 제조하고 의복을 재단, 재봉하며, 구두, 가구 장식물, 모피제품을 제조하고 수선한다.",
+      "derived_from": "조상정의(중분류)→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "재단하다",
+      "object": "모자 재료",
+      "full_statement": "모자 형태에 맞추어 펠트·섬유 등의 재료를 재단한다.",
+      "source_sentence": "섬유를 가공하여 직물을 제조하고 의복을 재단, 재봉하며",
+      "derived_from": "조상정의(중분류)→세세정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "재봉하다",
+      "object": "모자",
+      "full_statement": "재단된 재료를 재봉하여 모자를 형성한다.",
+      "source_sentence": "섬유를 가공하여 직물을 제조하고 의복을 재단, 재봉하며",
+      "derived_from": "조상정의(중분류)→세세정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "성형하다",
+      "object": "모자형",
+      "full_statement": "모자틀을 이용하여 재료를 모자형으로 성형한다.",
+      "source_sentence": "또한 모자형과 특수목적용 모자를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수선하다",
+      "object": "모자",
+      "full_statement": "제조된 모자제품을 수선한다.",
+      "source_sentence": "구두, 가구 장식물, 모피제품을 제조하고 수선한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손과 수공구를 주로 사용하는 수작업 중심 기능 작업",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"
+    }
+  ]
+}

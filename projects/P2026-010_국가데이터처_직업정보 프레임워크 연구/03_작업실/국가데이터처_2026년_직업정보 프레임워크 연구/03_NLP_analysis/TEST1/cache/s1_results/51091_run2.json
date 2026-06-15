@@ -1,0 +1,74 @@
+{
+  "ksco_code": "51091",
+  "tasks": [
+    {
+      "verb": "수주하다",
+      "object": "인쇄물 주문",
+      "full_statement": "인쇄소에 소속되어 인쇄물 수주에 관련된 영업을 한다.",
+      "source_sentence": "인쇄소에 소속되어 인쇄물 수주에 관련된 영업을 하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수주하다",
+      "object": "광고",
+      "full_statement": "신문·잡지 등에 게재할 광고를 수주한다.",
+      "source_sentence": "신문‧잡지 등에 게재할 광고를 수주하기 위해 광고주를 대상으로 영업하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "영업하다",
+      "object": "광고주",
+      "full_statement": "광고를 수주하기 위해 광고주를 대상으로 영업한다.",
+      "source_sentence": "광고를 수주하기 위해 광고주를 대상으로 영업하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "근무하다",
+      "object": "방송·신문사·잡지사",
+      "full_statement": "방송, 신문사, 잡지사 등에 근무하면서 광고 영업을 담당한다.",
+      "source_sentence": "방송, 신문사, 잡지사 등에 근무하면서 신문‧잡지 등에 게재할 광고를 수주하기 위해 광고주를 대상으로 영업하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품·서비스",
+      "full_statement": "영업활동을 통해 상품이나 서비스를 판매한다.",
+      "source_sentence": "영업활동을 통해 상품이나 서비스를 판매하는 일을 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "홍보하다",
+      "object": "상품의 품질·기능",
+      "full_statement": "상품을 광고하거나 상품의 품질과 기능을 홍보한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "이용하다",
+      "object": "통신 수단",
+      "full_statement": "인터넷 등 통신을 이용하여 영업활동을 수행한다.",
+      "source_sentence": "인터넷 등 통신을 이용하거나, 상점이나 거리 및 공공장소에서 상품을 영업하기도 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "광고주 대상 고객응대 영업",
+      "evidence_span": "광고주를 대상으로 영업하는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "통신(인터넷)을 이용한 영업",
+      "evidence_span": "인터넷 등 통신을 이용하거나"
+    }
+  ]
+}

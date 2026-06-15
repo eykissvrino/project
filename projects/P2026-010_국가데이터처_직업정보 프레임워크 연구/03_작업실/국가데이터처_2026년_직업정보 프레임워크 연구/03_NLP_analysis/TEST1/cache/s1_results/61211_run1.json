@@ -1,0 +1,87 @@
+{
+  "ksco_code": "61211",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "육묘 및 화훼작물의 종류와 양",
+      "full_statement": "재배할 육묘 및 화훼작물의 종류와 양을 결정한다.",
+      "source_sentence": "재배할 육묘 및 화훼작물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구입하다",
+      "object": "종자, 비료 및 기타 공급물",
+      "full_statement": "종자, 비료 및 기타 공급물을 구입한다.",
+      "source_sentence": "종자, 비료 및 기타 공급물을 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "생산하다",
+      "object": "묘목, 구근 및 종자",
+      "full_statement": "묘목, 구근 및 종자를 생산한다.",
+      "source_sentence": "묘목, 구근 및 종자를 생산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기르다",
+      "object": "뿌리가 있는 어린 식물(육묘)",
+      "full_statement": "작물 재배나 나무 번식에 이용되는 뿌리가 있는 어린 식물을 기른다.",
+      "source_sentence": "작물 재배나 나무를 번식시키는데 이용되는 뿌리가 있는 어린 식물을 기르는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "번식시키다",
+      "object": "나무(묘목)",
+      "full_statement": "작물 재배에 이용되는 나무를 번식시킨다.",
+      "source_sentence": "작물 재배나 나무를 번식시키는데 이용되는 뿌리가 있는 어린 식물을 기르는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "재배하다",
+      "object": "화훼작물(선인장, 난, 장미, 튜울립 등)",
+      "full_statement": "선인장, 난, 장미, 튜울립 등의 화훼작물을 재배한다.",
+      "source_sentence": "선인장, 난, 장미, 튜울립 등의 화훼작물을 재배한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "공급하다",
+      "object": "재배된 묘목, 구근 및 종자, 꽃",
+      "full_statement": "재배된 묘목, 구근 및 종자, 꽃 등을 공급한다.",
+      "source_sentence": "재배된 묘목, 구근 및 종자, 꽃 등을 공급‧출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "출하하다",
+      "object": "재배된 묘목, 구근 및 종자, 꽃",
+      "full_statement": "재배된 묘목, 구근 및 종자, 꽃 등을 출하한다.",
+      "source_sentence": "재배된 묘목, 구근 및 종자, 꽃 등을 공급‧출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "증식하다",
+      "object": "교목, 관목, 꽃, 기타 작물",
+      "full_statement": "교목, 관목, 꽃, 기타 작물을 증식한다.",
+      "source_sentence": "교목, 관목, 꽃, 기타 작물의 증식, 재배 및 구근과 씨앗의 생산에 필요한 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "생산하다",
+      "object": "구근과 씨앗",
+      "full_statement": "구근과 씨앗을 생산한다.",
+      "source_sentence": "교목, 관목, 꽃, 기타 작물의 증식, 재배 및 구근과 씨앗의 생산에 필요한 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

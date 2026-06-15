@@ -1,0 +1,119 @@
+{
+  "ksco_code": "75232",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "주요 기관",
+      "full_statement": "철도 기관차의 주요 기관의 고장상태를 점검한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정비하다",
+      "object": "주요 기관",
+      "full_statement": "철도 기관차의 주요 기관을 정비한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "기관",
+      "full_statement": "철도 기관차나 전동차의 기관을 수리한다.",
+      "source_sentence": "철도 기관차나 전동차의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "차체",
+      "full_statement": "철도 기관차의 차체의 고장상태를 점검한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "정비하다",
+      "object": "차체",
+      "full_statement": "철도 기관차의 차체를 정비한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "바퀴",
+      "full_statement": "철도 기관차의 바퀴의 고장상태를 점검한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "정비하다",
+      "object": "바퀴",
+      "full_statement": "철도 기관차의 바퀴를 정비한다.",
+      "source_sentence": "철도 기관차의 주요 기관 및 차체, 바퀴 등의 고장상태를 점검하고 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "연료 상태",
+      "full_statement": "기관차가 안전하게 운행할 수 있도록 연료 상태를 확인한다.",
+      "source_sentence": "또한 안전하게 운행할 수 있도록 연료 상태, 전기시설과의 연결사항 등을 확인하고 조치를 취하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "확인하다",
+      "object": "전기시설 연결사항",
+      "full_statement": "기관차가 안전하게 운행할 수 있도록 전기시설과의 연결사항을 확인한다.",
+      "source_sentence": "또한 안전하게 운행할 수 있도록 연료 상태, 전기시설과의 연결사항 등을 확인하고 조치를 취하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조치하다",
+      "object": "이상사항",
+      "full_statement": "안전 운행을 위해 확인된 이상사항에 대해 조치를 취한다.",
+      "source_sentence": "또한 안전하게 운행할 수 있도록 연료 상태, 전기시설과의 연결사항 등을 확인하고 조치를 취하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "연결고리 이상 유무",
+      "full_statement": "기관차나 전동차의 연결고리의 이상 유무를 확인한다.",
+      "source_sentence": "기관차나 전동차의 차체, 바퀴, 연결고리 등의 이상 유무를 확인하고 고장시에 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "고장 부위",
+      "full_statement": "차체·바퀴·연결고리 등의 고장 시 이를 수리한다.",
+      "source_sentence": "기관차나 전동차의 차체, 바퀴, 연결고리 등의 이상 유무를 확인하고 고장시에 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "객차",
+      "full_statement": "객차를 전문적으로 정비한다.",
+      "source_sentence": "객차, 화차를 전문적으로 정비, 수리하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수리하다",
+      "object": "화차",
+      "full_statement": "화차를 전문적으로 수리한다.",
+      "source_sentence": "객차, 화차를 전문적으로 정비, 수리하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

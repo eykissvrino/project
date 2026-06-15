@@ -1,0 +1,98 @@
+{
+  "ksco_code": "94110",
+  "tasks": [
+    {
+      "verb": "청소하다",
+      "object": "건물 내부",
+      "full_statement": "공공건물, 사무실, 상업건물, 아파트 등의 건물 내부를 청소한다.",
+      "source_sentence": "공공건물, 사무실, 상업건물, 아파트 등의 건물내부를 청소하고 정돈한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정돈하다",
+      "object": "건물 내부",
+      "full_statement": "공공건물, 사무실, 상업건물, 아파트 등의 건물 내부를 정돈한다.",
+      "source_sentence": "공공건물, 사무실, 상업건물, 아파트 등의 건물내부를 청소하고 정돈한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "털다",
+      "object": "먼지",
+      "full_statement": "사무실이나 아파트 복도, 계단 등에 있는 먼지를 턴다.",
+      "source_sentence": "사무실이나 아파트 복도, 계단 등에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "쓸다",
+      "object": "복도와 계단 바닥",
+      "full_statement": "사무실이나 아파트 복도, 계단 등의 바닥을 쓴다.",
+      "source_sentence": "사무실이나 아파트 복도, 계단 등에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "닦다",
+      "object": "복도와 계단 바닥",
+      "full_statement": "사무실이나 아파트 복도, 계단 등의 바닥을 닦는다.",
+      "source_sentence": "사무실이나 아파트 복도, 계단 등에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "옮겨담다",
+      "object": "쓰레기",
+      "full_statement": "휴지통에 있는 쓰레기를 옮겨담는다.",
+      "source_sentence": "휴지통에서 쓰레기를 옮겨담아 비운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "비우다",
+      "object": "휴지통",
+      "full_statement": "쓰레기가 담긴 휴지통을 비운다.",
+      "source_sentence": "휴지통에서 쓰레기를 옮겨담아 비운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "사무실",
+      "full_statement": "사무실 내부를 청소한다.",
+      "source_sentence": "공공건물, 사무실, 상업건물, 아파트 등의 건물내부를 청소하고 정돈한다.",
+      "derived_from": "세세분류 정의→예시 특화(사무실 청소원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "청소하다",
+      "object": "아파트 공용공간",
+      "full_statement": "아파트의 복도와 계단 등 공용공간을 청소한다.",
+      "source_sentence": "사무실이나 아파트 복도, 계단 등에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→예시 특화(아파트 청소원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수거하다",
+      "object": "쓰레기",
+      "full_statement": "건물 내부에서 발생한 쓰레기를 수거한다.",
+      "source_sentence": "재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건물 내부(사무실·공공건물·상업건물·아파트 등) 실내",
+      "evidence_span": "공공건물, 사무실, 상업건물, 아파트 등의 건물내부를 청소하고 정돈한다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순·반복 작업",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."
+    }
+  ]
+}

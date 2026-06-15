@@ -1,0 +1,83 @@
+{
+  "ksco_code": "77190",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "정보 통신기기",
+      "full_statement": "컴퓨터 및 이동전화기를 제외한 정보 통신기기를 설치한다.",
+      "source_sentence": "컴퓨터 및 이동전화기를 제외한 정보 통신기기를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "정보 통신기기",
+      "full_statement": "컴퓨터 및 이동전화기를 제외한 정보 통신기기를 수리한다.",
+      "source_sentence": "컴퓨터 및 이동전화기를 제외한 정보 통신기기를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "유선전화기",
+      "full_statement": "고장 난 유선전화기를 수리한다.",
+      "source_sentence": "- 유선전화기 수리원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "통신설비",
+      "full_statement": "방송이나 통신에 사용되는 통신설비를 설치한다.",
+      "source_sentence": "컴퓨터, 이동전화기 등 정보통신기기와 방송장비, 통신설비, 통신케이블 등 방송이나 통신에 사용되는 장비를 설치, 보수, 수리한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "보수하다",
+      "object": "통신설비",
+      "full_statement": "방송이나 통신에 사용되는 통신설비를 보수한다.",
+      "source_sentence": "컴퓨터, 이동전화기 등 정보통신기기와 방송장비, 통신설비, 통신케이블 등 방송이나 통신에 사용되는 장비를 설치, 보수, 수리한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설치하다",
+      "object": "통신케이블",
+      "full_statement": "방송이나 통신에 사용되는 통신케이블을 설치한다.",
+      "source_sentence": "컴퓨터, 이동전화기 등 정보통신기기와 방송장비, 통신설비, 통신케이블 등 방송이나 통신에 사용되는 장비를 설치, 보수, 수리한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "통신케이블",
+      "full_statement": "방송이나 통신에 사용되는 통신케이블을 수리한다.",
+      "source_sentence": "컴퓨터, 이동전화기 등 정보통신기기와 방송장비, 통신설비, 통신케이블 등 방송이나 통신에 사용되는 장비를 설치, 보수, 수리한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "응용하다",
+      "object": "관련 지식과 기술",
+      "full_statement": "정보통신업 분야에서 관련된 지식과 기술을 응용하여 기기를 설치 및 정비한다.",
+      "source_sentence": "광업, 제조업, 정보통신업 분야에서 관련된 지식과 기술을 응용하여 금속을 성형하고 각종 기계를 설치 및 정비한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "사용하다",
+      "object": "수공구",
+      "full_statement": "손과 수공구를 주로 사용하여 정보 통신기기를 설치하고 수리한다.",
+      "source_sentence": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 사용하는 사람의 기능 중심 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

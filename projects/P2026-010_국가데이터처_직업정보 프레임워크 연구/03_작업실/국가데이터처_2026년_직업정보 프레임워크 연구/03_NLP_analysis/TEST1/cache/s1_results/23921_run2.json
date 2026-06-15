@@ -1,0 +1,119 @@
+{
+  "ksco_code": "23921",
+  "tasks": [
+    {
+      "verb": "분류하다",
+      "object": "섬유",
+      "full_statement": "섬유의 종류와 성질에 따라 섬유를 분류한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 분류하고 각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발하고 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "섬유 소재",
+      "full_statement": "각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 분류하고 각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "섬유 소재",
+      "full_statement": "각종 섬유 소재를 분석한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 분류하고 각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "개발하다",
+      "object": "의복용 섬유 소재",
+      "full_statement": "의복에 적합한 섬유 소재를 개발한다.",
+      "source_sentence": "각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발하고 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "원단",
+      "full_statement": "각 소재에 적합한 원단을 개발한다.",
+      "source_sentence": "각 소재에 적합한 의복이나 원단 등 각종 섬유 소재를 개발하고 분석한다.",
+      "derived_from": "세세분류 정의(직업예시: 원단 개발원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "섬유 제품",
+      "full_statement": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "섬유 제품",
+      "full_statement": "각종 섬유 제품을 분석한다.",
+      "source_sentence": "섬유의 종류와 성질에 따라 각종 섬유 제품을 개발하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "적용하다",
+      "object": "과학적 원리",
+      "full_statement": "품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "source_sentence": "품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "개선하다",
+      "object": "섬유 소재 품질",
+      "full_statement": "과학적 원리를 적용하여 섬유 소재의 품질을 개선한다.",
+      "source_sentence": "품질을 개선하기 위하여 과학적 원리를 적용한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시험하다",
+      "object": "섬유 구조",
+      "full_statement": "섬유의 구조에 대한 안정성을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "섬유 인장력",
+      "full_statement": "섬유의 인장력에 대한 안정성을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "열 안정성",
+      "full_statement": "섬유의 열에 대한 안정성을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "화학 물질 안정성",
+      "full_statement": "섬유의 화학 물질에 대한 안정성을 시험한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "섬유 안정성",
+      "full_statement": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 검사한다.",
+      "source_sentence": "섬유의 구조, 인장력, 열 및 화학 물질에 대한 안정성을 시험, 검사와 관련된 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

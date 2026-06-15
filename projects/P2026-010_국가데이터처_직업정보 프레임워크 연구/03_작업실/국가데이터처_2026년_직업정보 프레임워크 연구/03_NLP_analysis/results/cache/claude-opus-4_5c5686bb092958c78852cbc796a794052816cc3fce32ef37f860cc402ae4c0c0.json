@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28420",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "해외시장 정보",
+      "full_statement": "해외시장 정보를 수집하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "홍보하다",
+      "object": "제품",
+      "full_statement": "해외 업체와 바이어에게 제품을 홍보하여 구매를 유도한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "수입 영업",
+      "full_statement": "수입이 필요한 상품을 위해 해외 판매자에게 영업활동을 한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "수입 조건",
+      "full_statement": "소비자 선호도를 토대로 수입물량과 수입가격을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

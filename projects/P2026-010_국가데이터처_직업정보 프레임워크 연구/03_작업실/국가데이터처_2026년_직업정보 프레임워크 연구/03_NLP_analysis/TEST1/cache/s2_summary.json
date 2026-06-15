@@ -1,0 +1,43 @@
+{
+  "n_task": 16168,
+  "k_cut": 1510,
+  "n_dwa": 1192,
+  "band": [
+    1347,
+    2694
+  ],
+  "tau": 0.81,
+  "avg_links": 1.304,
+  "cohesion_median": 0.8949,
+  "cohesion_ge_070": 1192,
+  "cross_family": 494,
+  "cross_family_pct": 0.4144,
+  "ratio_task_per_dwa": 13.56,
+  "cut_curve_head": [
+    {
+      "k": 1347,
+      "cut_height": 0.34721,
+      "gap": 1.9e-05
+    },
+    {
+      "k": 1348,
+      "cut_height": 0.34712,
+      "gap": 9.1e-05
+    },
+    {
+      "k": 1349,
+      "cut_height": 0.34711,
+      "gap": 4e-06
+    },
+    {
+      "k": 1350,
+      "cut_height": 0.34708,
+      "gap": 3.2e-05
+    },
+    {
+      "k": 1351,
+      "cut_height": 0.34702,
+      "gap": 5.9e-05
+    }
+  ]
+}

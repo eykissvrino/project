@@ -1,0 +1,140 @@
+{
+  "ksco_code": "83232",
+  "tasks": [
+    {
+      "verb": "계량하다",
+      "object": "합성수지, 안료 등의 각종 재료",
+      "full_statement": "합성수지, 안료 등의 각종 재료를 계량한다.",
+      "source_sentence": "합성수지, 안료 등의 각종 재료를 계량하고 일정비율로 배합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "배합하다",
+      "object": "각종 재료",
+      "full_statement": "각종 재료를 일정비율로 배합한다.",
+      "source_sentence": "합성수지, 안료 등의 각종 재료를 계량하고 일정비율로 배합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "장착하다",
+      "object": "다이, 롤러, 금형, 칼, 연마 휠 등의 부착물",
+      "full_statement": "압출기에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "source_sentence": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(압출기)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "투입하다",
+      "object": "배합된 재료",
+      "full_statement": "압출기 또는 호퍼에 배합된 재료를 투입한다.",
+      "source_sentence": "기계 또는 호퍼에 배합된 재료를 투입한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(압출기)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "압출기",
+      "full_statement": "틀을 통하여 플라스틱 물질을 봉, 관, 띠 및 기타 제품과 같은 계속적인 형태로 밀어내는 압출기를 조작한다.",
+      "source_sentence": "틀을 통하여 플라스틱 물질을 봉, 관, 띠 및 기타 제품과 같은 계속적인 형태로 밀어내는 압출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "밀어내다",
+      "object": "플라스틱 물질",
+      "full_statement": "틀을 통하여 플라스틱 물질을 봉, 관, 띠 등 계속적인 형태로 밀어낸다.",
+      "source_sentence": "틀을 통하여 플라스틱 물질을 봉, 관, 띠 및 기타 제품과 같은 계속적인 형태로 밀어내는 압출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "압출 기계장치",
+      "full_statement": "재료를 압출, 성형하는 압출 기계장치를 조정한다.",
+      "source_sentence": "재료 및 부품을 혼합, 사출, 압출, 압착, 주입, 성형, 조립, 마무리하는 각종 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(압출)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "롤러의 온도와 압력",
+      "full_statement": "가이드, 밸브, 조종 장치를 조작하여 롤러의 온도와 압력을 조정한다.",
+      "source_sentence": "롤러의 온도와 압력, 재료 및 공기, 물, 증기, 기름의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "재료 및 공기, 물, 증기, 기름의 흐름",
+      "full_statement": "가이드, 밸브, 조종 장치를 조작하여 재료 및 공기, 물, 증기, 기름의 흐름을 조정한다.",
+      "source_sentence": "롤러의 온도와 압력, 재료 및 공기, 물, 증기, 기름의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "가이드, 밸브, 조종 장치",
+      "full_statement": "기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "source_sentence": "롤러의 온도와 압력, 재료 및 공기, 물, 증기, 기름의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성된 제품의 치수",
+      "full_statement": "완성된 제품의 치수를 측정한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품의 결함여부",
+      "full_statement": "기포, 균열, 뒤틀림 및 기타 결함여부를 검사한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "군더더기",
+      "full_statement": "제품의 군더더기를 제거하여 마무리한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "압출기", "category": "장비", "evidence_span": "봉, 관, 띠 및 기타 제품과 같은 계속적인 형태로 밀어내는 압출기를 조작한다"},
+    {"name": "다이", "category": "도구", "evidence_span": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "롤러", "category": "도구", "evidence_span": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "금형", "category": "도구", "evidence_span": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "칼", "category": "도구", "evidence_span": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "연마 휠", "category": "도구", "evidence_span": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "호퍼", "category": "장비", "evidence_span": "기계 또는 호퍼에 배합된 재료를 투입한다"},
+    {"name": "가이드", "category": "도구", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다"},
+    {"name": "밸브", "category": "도구", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다"},
+    {"name": "조종 장치", "category": "장비", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "재료 계량·배합 및 치수 측정의 정밀 작업", "evidence_span": "합성수지, 안료 등의 각종 재료를 계량하고 일정비율로 배합한다 / 완성된 제품의 치수를 측정하고"}
+  ]
+}

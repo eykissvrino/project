@@ -1,0 +1,122 @@
+{
+  "ksco_code": "35112",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "특허 관련 사무",
+      "full_statement": "변리사의 관리하에 특허와 관련된 전문적인 사무를 수행한다.",
+      "source_sentence": "특허와 관련된 전문적인 사무를 수행하는 자로서 변리사의 관리하에 고객이 고안한 발명이나 의장 등을 권리화하거나, 등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "권리화하다",
+      "object": "고객이 고안한 발명이나 의장",
+      "full_statement": "고객이 고안한 발명이나 의장 등을 권리화한다.",
+      "source_sentence": "변리사의 관리하에 고객이 고안한 발명이나 의장 등을 권리화하거나, 등록된 권리를 방어‧보존하기 위하여",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "방어하다",
+      "object": "등록된 권리",
+      "full_statement": "등록된 권리를 방어한다.",
+      "source_sentence": "등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보존하다",
+      "object": "등록된 권리",
+      "full_statement": "등록된 권리를 보존한다.",
+      "source_sentence": "등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "특허권 출원 관련서류",
+      "full_statement": "특허권의 출원에 관련된 제반 서류를 작성한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "특허권 등록 관련서류",
+      "full_statement": "특허권의 등록에 관련된 제반 서류를 작성한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "이의신청 관련서류",
+      "full_statement": "특허권의 이의신청에 관련된 제반 서류를 작성한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "심판청구 관련서류",
+      "full_statement": "특허권의 심판청구에 관련된 제반 서류를 작성한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "출원하다",
+      "object": "특허권",
+      "full_statement": "고안된 발명이나 의장에 대한 특허권을 출원한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "등록하다",
+      "object": "특허권",
+      "full_statement": "출원된 특허권을 등록한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "신청하다",
+      "object": "이의신청",
+      "full_statement": "특허권에 대한 이의신청을 한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "청구하다",
+      "object": "심판",
+      "full_statement": "특허권에 대한 심판을 청구한다.",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등의 제반 관련서류를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "특허법률 사무업무",
+      "full_statement": "의뢰인에 의해 고안된 발명이나 고안을 권리화하고 등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "source_sentence": "의뢰인에 의해 고안된 발명이나 고안을 권리화 하고 등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "변리사의 관리하에 업무 수행(감독 하 종속 업무)",
+      "evidence_span": "변리사의 관리하에 고객이 고안한 발명이나 의장 등을 권리화하거나"
+    },
+    {
+      "category": "사회적",
+      "value": "고객·의뢰인 응대",
+      "evidence_span": "고객이 고안한 발명이나 의장 등을 권리화하거나"
+    }
+  ]
+}

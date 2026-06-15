@@ -1,0 +1,106 @@
+{
+  "ksco_code": "85107",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "머시닝센터",
+      "full_statement": "공구를 자동으로 교환하면서 가공작업을 연속 수행하는 머시닝센터를 조작한다.",
+      "source_sentence": "가공작업에 필요한 여러 공구들이 머시닝센터 내에 미리 장착되어 있어 가공 작업의 변경 시 공작물의 교체 없이 공구를 자동적으로 교환하면서 밀링가공, 드릴링가공, 보링가공 등을 연속해서 수행할 수 있는 공작기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "밀링가공",
+      "full_statement": "머시닝센터로 밀링가공을 수행한다.",
+      "source_sentence": "밀링가공, 드릴링가공, 보링가공 등을 연속해서 수행할 수 있는 공작기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화(밀링)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "드릴링가공",
+      "full_statement": "머시닝센터로 드릴링가공을 수행한다.",
+      "source_sentence": "밀링가공, 드릴링가공, 보링가공 등을 연속해서 수행할 수 있는 공작기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화(드릴링)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "보링가공",
+      "full_statement": "머시닝센터로 보링가공을 수행한다.",
+      "source_sentence": "밀링가공, 드릴링가공, 보링가공 등을 연속해서 수행할 수 있는 공작기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화(보링)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교환하다",
+      "object": "공구",
+      "full_statement": "가공작업 변경 시 공작물 교체 없이 공구를 자동으로 교환한다.",
+      "source_sentence": "가공 작업의 변경 시 공작물의 교체 없이 공구를 자동적으로 교환하면서",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "장착하다",
+      "object": "공구",
+      "full_statement": "가공작업에 필요한 여러 공구를 머시닝센터 내에 미리 장착한다.",
+      "source_sentence": "가공작업에 필요한 여러 공구들이 머시닝센터 내에 미리 장착되어 있어",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "해석하다",
+      "object": "작업 주문서와 청사진",
+      "full_statement": "작업 주문서와 청사진을 해석한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "기계 조작",
+      "full_statement": "해석한 정보를 바탕으로 기계 조작을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "기계",
+      "full_statement": "가공작업을 위해 기계를 설치한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작동시키다",
+      "object": "기계",
+      "full_statement": "설치한 기계를 작동시켜 가공조작을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "측정하다",
+      "object": "기계장치 부품의 치수",
+      "full_statement": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 측정한다.",
+      "source_sentence": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "가공 프로그램",
+      "full_statement": "머시닝센터 가공을 위한 프로그램을 작성한다.",
+      "source_sentence": "MCT(머시닝센터) 프로그래머(조작원)",
+      "derived_from": "세세분류 직업 예시→고유활동 추가",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "머시닝센터", "category": "장비", "evidence_span": "공구를 자동적으로 교환하면서 밀링가공, 드릴링가공, 보링가공 등을 연속해서 수행할 수 있는 공작기계를 조작한다"},
+    {"name": "정밀측정 기구", "category": "도구", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다"}
+  ],
+  "work_context": []
+}

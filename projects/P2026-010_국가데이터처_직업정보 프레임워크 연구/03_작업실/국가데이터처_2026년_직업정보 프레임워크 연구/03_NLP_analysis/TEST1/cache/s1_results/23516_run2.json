@@ -1,0 +1,175 @@
+{
+  "ksco_code": "23516",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "차량 내연기관",
+      "full_statement": "승용차, 상업용 또는 군용차량 등 차량의 내연기관에 관하여 연구한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설계하다",
+      "object": "차량 내연기관",
+      "full_statement": "차량의 내연기관을 설계한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "자문하다",
+      "object": "차량 내연기관",
+      "full_statement": "차량의 내연기관에 관하여 자문한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "차체",
+      "full_statement": "차량의 차체를 설계한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "차대받이 장치",
+      "full_statement": "차량의 차대받이 장치를 설계한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설계하다",
+      "object": "제동장치",
+      "full_statement": "차량의 제동장치를 설계한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "제어장치",
+      "full_statement": "차량의 제어장치를 설계한다.",
+      "source_sentence": "승용차, 상업 또는 군용차량, 농업용 트랙터 및 모터사이클과 같은 차량의 내연기관, 차체, 차대받이 장치, 제동장치, 제어장치, 기타 구성품에 관하여 연구‧ 설계 및 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "전자제어 시스템",
+      "full_statement": "차량의 전자제어 시스템에 대하여 연구한다.",
+      "source_sentence": "전자제어 시스템에 대하여 연구, 설계 및 자문을 하는 카일렉트로닉스(car electronics) 기술자를 포함한다.",
+      "derived_from": "세세분류 정의→고유활동",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "전자제어 시스템",
+      "full_statement": "차량의 전자제어 시스템을 설계한다.",
+      "source_sentence": "전자제어 시스템에 대하여 연구, 설계 및 자문을 하는 카일렉트로닉스(car electronics) 기술자를 포함한다.",
+      "derived_from": "세세분류 정의→고유활동",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "전자제어 시스템",
+      "full_statement": "차량의 전자제어 시스템에 대하여 자문한다.",
+      "source_sentence": "전자제어 시스템에 대하여 연구, 설계 및 자문을 하는 카일렉트로닉스(car electronics) 기술자를 포함한다.",
+      "derived_from": "세세분류 정의→고유활동",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "차량 구성품의 실현가능성·성능",
+      "full_statement": "차량 구성요소 및 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "source_sentence": "메커니즘(기계류), 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "견적서·보고서",
+      "full_statement": "재료, 비용, 견적서, 보고서를 작성한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설계하다",
+      "object": "차량 구성품 세부사항",
+      "full_statement": "차량 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "감독하다",
+      "object": "기계시스템 설치·변경",
+      "full_statement": "산업설비에서 기계시스템의 설치, 변경, 위탁을 감독한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "기계시스템 설치",
+      "full_statement": "산업설비에서 기계시스템의 설치를 검사한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조사하다",
+      "object": "기계적 고장",
+      "full_statement": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "source_sentence": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "계약 서류",
+      "full_statement": "계약 서류를 작성한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "평가하다",
+      "object": "제안서",
+      "full_statement": "산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "감독하다",
+      "object": "기술자 및 엔지니어",
+      "full_statement": "기술자 및 다른 엔지니어를 감독한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검토하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 검토한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "승인하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 승인한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

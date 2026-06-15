@@ -1,0 +1,68 @@
+{
+  "ksco_code": "78351",
+  "tasks": [
+    {
+      "verb": "측정하다",
+      "object": "넓이",
+      "full_statement": "도배지·풀 등의 양을 산출하기 위해 천장·벽·바닥 등 부착면의 넓이를 측정한다.",
+      "source_sentence": "도배지, 풀 등의 양을 산출하기 위해 넓이를 측정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산출하다",
+      "object": "도배지·풀의 양",
+      "full_statement": "측정한 넓이를 바탕으로 도배지·풀 등의 소요량을 산출한다.",
+      "source_sentence": "도배지, 풀 등의 양을 산출하기 위해 넓이를 측정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정리하다",
+      "object": "바탕면",
+      "full_statement": "도배지를 부착하기 전에 천장·벽·바닥의 바탕면을 정리한다.",
+      "source_sentence": "바탕면을 정리하고 도배지를 부착한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "풀 또는 접착제",
+      "full_statement": "종이·천·플라스틱재에 풀 또는 접착제를 바른다.",
+      "source_sentence": "종이‧천‧플라스틱재를 건축구조물의 천장‧벽‧바닥‧창호 등에 풀 또는 접착제를 사용하여 부착한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "부착하다",
+      "object": "도배지",
+      "full_statement": "종이·천·플라스틱재를 건축구조물의 천장·벽·바닥·창호 등에 풀 또는 접착제를 사용하여 부착한다.",
+      "source_sentence": "종이‧천‧플라스틱재를 건축구조물의 천장‧벽‧바닥‧창호 등에 풀 또는 접착제를 사용하여 부착한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "도배하다",
+      "object": "천장·벽·바닥",
+      "full_statement": "종이·천·플라스틱을 이용하여 건축구조물의 천장·벽·바닥을 도배한다.",
+      "source_sentence": "종이, 천, 플라스틱을 이용하여 도배를 하거나 건축물의 창문, 진열장 등 유리를 부착한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재단하다",
+      "object": "도배지",
+      "full_statement": "부착면의 규격에 맞추어 종이·천·플라스틱재 도배지를 재단한다.",
+      "source_sentence": "종이‧천‧플라스틱재를 건축구조물의 천장‧벽‧바닥‧창호 등에 풀 또는 접착제를 사용하여 부착한다.",
+      "derived_from": "세세분류 정의→활동 도출",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "풀", "category": "도구", "evidence_span": "풀 또는 접착제를 사용하여 부착한다"},
+    {"name": "접착제", "category": "도구", "evidence_span": "풀 또는 접착제를 사용하여 부착한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건축구조물의 천장·벽·바닥·창호 등 실내 작업", "evidence_span": "건축구조물의 천장‧벽‧바닥‧창호 등에 풀 또는 접착제를 사용하여 부착한다"}
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "ksco_code": "45199",
+  "tasks": [
+    {
+      "verb": "조리하다",
+      "object": "면류",
+      "full_statement": "각종 분식점 등에서 면류를 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 떡뽁이, 튀김 등의 분식을 조리하거나, 위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조리하다",
+      "object": "김밥",
+      "full_statement": "각종 분식점 등에서 김밥을 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 떡뽁이, 튀김 등의 분식을 조리하거나, 위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조리하다",
+      "object": "떡볶이",
+      "full_statement": "각종 분식점 등에서 떡볶이를 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 떡뽁이, 튀김 등의 분식을 조리하거나, 위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조리하다",
+      "object": "튀김",
+      "full_statement": "각종 분식점 등에서 튀김을 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 떡뽁이, 튀김 등의 분식을 조리하거나, 위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조리하다",
+      "object": "기타 국가의 전통요리",
+      "full_statement": "위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 떡뽁이, 튀김 등의 분식을 조리하거나, 위에서 언급되지 않은 기타 국가들의 전통요리를 전문적으로 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조리하다",
+      "object": "샌드위치",
+      "full_statement": "샌드위치를 조리한다.",
+      "source_sentence": "샌드위치 조리사·베트남 요리 조리사",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조리하다",
+      "object": "베트남 요리",
+      "full_statement": "베트남 요리를 조리한다.",
+      "source_sentence": "샌드위치 조리사·베트남 요리 조리사",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조리하다",
+      "object": "포장마차 요리",
+      "full_statement": "포장마차에서 판매하는 요리를 조리한다.",
+      "source_sentence": "포장마차 요리 조리사",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "준비하다",
+      "object": "음식",
+      "full_statement": "각종 사업체, 시설, 가정, 선박 또는 여객열차에서 음식을 준비한다.",
+      "source_sentence": "각종 사업체, 시설, 가정, 선박 또는 여객열차에서 음식을 준비 및 조리하고 음식료품을 제공하는 것과 관련된 여러 가지 일을 수행한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제공하다",
+      "object": "음식료품",
+      "full_statement": "조리한 음식료품을 고객에게 제공한다.",
+      "source_sentence": "각종 사업체, 시설, 가정, 선박 또는 여객열차에서 음식을 준비 및 조리하고 음식료품을 제공하는 것과 관련된 여러 가지 일을 수행한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

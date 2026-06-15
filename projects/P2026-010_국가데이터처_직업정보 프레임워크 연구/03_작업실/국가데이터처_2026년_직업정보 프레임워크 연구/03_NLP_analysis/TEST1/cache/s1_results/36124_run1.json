@@ -1,0 +1,125 @@
+{
+  "ksco_code": "36124",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "전화교환기",
+      "full_statement": "전화교환기나 그에 부수된 기기를 조작한다.",
+      "source_sentence": "전화교환기나 그에 부수된 기기를 조작하여 외부통화자의 요청에 의해 사업체 내부의 구내전화를 연결시키며, 숙박업소에 투숙한 고객의 전화를 연결한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연결하다",
+      "object": "사업체 내부의 구내전화",
+      "full_statement": "외부통화자의 요청에 따라 사업체 내부의 구내전화를 연결한다.",
+      "source_sentence": "전화교환기나 그에 부수된 기기를 조작하여 외부통화자의 요청에 의해 사업체 내부의 구내전화를 연결시키며, 숙박업소에 투숙한 고객의 전화를 연결한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연결하다",
+      "object": "투숙 고객의 전화",
+      "full_statement": "숙박업소에 투숙한 고객의 전화를 연결한다.",
+      "source_sentence": "전화교환기나 그에 부수된 기기를 조작하여 외부통화자의 요청에 의해 사업체 내부의 구내전화를 연결시키며, 숙박업소에 투숙한 고객의 전화를 연결한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "수행하다",
+      "object": "모닝콜 업무",
+      "full_statement": "고객이 요청할 경우 모닝콜 업무를 수행한다.",
+      "source_sentence": "또한 고객이 요청할 경우 모닝콜 업무를 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청취하다",
+      "object": "고객이 문의하는 상호 및 인명",
+      "full_statement": "고객이 전화를 걸어 문의하는 상호 및 인명을 듣는다.",
+      "source_sentence": "고객이 전화를 걸어 문의하는 상호 및 인명을 듣고 즉시 컴퓨터에 연결된 단말기를 조작하여 고객에게 문의하는 번호를 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "컴퓨터 연결 단말기",
+      "full_statement": "컴퓨터에 연결된 단말기를 조작하여 문의된 번호를 검색한다.",
+      "source_sentence": "고객이 전화를 걸어 문의하는 상호 및 인명을 듣고 즉시 컴퓨터에 연결된 단말기를 조작하여 고객에게 문의하는 번호를 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "안내하다",
+      "object": "문의 전화번호",
+      "full_statement": "고객에게 문의하는 전화번호를 안내한다.",
+      "source_sentence": "고객이 전화를 걸어 문의하는 상호 및 인명을 듣고 즉시 컴퓨터에 연결된 단말기를 조작하여 고객에게 문의하는 번호를 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "전화번호",
+      "full_statement": "고객의 질문에 응답하여 전화번호를 안내한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연결하다",
+      "object": "전화",
+      "full_statement": "고객의 질문에 응답하여 해당 전화를 연결해 준다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "방송하다",
+      "object": "사업체 내 안내 방송",
+      "full_statement": "사업체 내의 안내 방송을 한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 정보",
+      "full_statement": "방문객에게 각종 정보를 제공한다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "접수하다",
+      "object": "고객 요청사항",
+      "full_statement": "고객의 요청사항을 처리하거나 접수해 준다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연결하다",
+      "object": "담당자",
+      "full_statement": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "source_sentence": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "시설 안내 서비스",
+      "full_statement": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "source_sentence": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "전화교환기", "category": "장비", "evidence_span": "전화교환기나 그에 부수된 기기를 조작하여"},
+    {"name": "컴퓨터 연결 단말기", "category": "시스템", "evidence_span": "즉시 컴퓨터에 연결된 단말기를 조작하여 고객에게 문의하는 번호를 안내한다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객·외부통화자 응대 및 전화 안내", "evidence_span": "외부통화자의 요청에 의해 사업체 내부의 구내전화를 연결시키며"},
+    {"category": "사회적", "value": "고객 전화 문의 응대", "evidence_span": "고객이 전화를 걸어 문의하는 상호 및 인명을 듣고"}
+  ]
+}

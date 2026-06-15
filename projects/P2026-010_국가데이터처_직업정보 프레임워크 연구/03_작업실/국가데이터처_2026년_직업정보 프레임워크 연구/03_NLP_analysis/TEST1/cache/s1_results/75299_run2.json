@@ -1,0 +1,89 @@
+{
+  "ksco_code": "75299",
+  "tasks": [
+    {
+      "verb": "정비하다",
+      "object": "기타 운송장비의 기관",
+      "full_statement": "오토바이, 자전거 등 기타 운송장비의 기관을 정비한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(기타 운송장비)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수리하다",
+      "object": "기타 운송장비의 기관",
+      "full_statement": "오토바이, 자전거 등 기타 운송장비의 기관을 수리한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "점검하다",
+      "object": "기타 운송장비의 기관",
+      "full_statement": "오토바이, 자전거 등 기타 운송장비의 기관을 점검한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "확인하다",
+      "object": "바퀴·연결고리의 이상 유무",
+      "full_statement": "바퀴, 연결고리 등의 이상 유무를 확인한다.",
+      "source_sentence": "바퀴, 연결고리 등의 이상 유무를 확인하고 고장 시에 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "수리하다",
+      "object": "바퀴·연결고리의 고장 부위",
+      "full_statement": "바퀴, 연결고리 등의 고장 시에 이를 수리한다.",
+      "source_sentence": "바퀴, 연결고리 등의 이상 유무를 확인하고 고장 시에 이를 수리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "정비하다",
+      "object": "기타 운송장비",
+      "full_statement": "오토바이, 자전거 등 기타 운송장비를 정비한다.",
+      "source_sentence": "오토바이, 자전거 등 기타 운송장비를 정비한다.",
+      "derived_from": "조상정의(세분류 7529)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "운송장비",
+      "full_statement": "수공구 및 관련 장비를 사용하여 운송장비를 조정한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류 752)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "교체하다",
+      "object": "운송장비 부품",
+      "full_statement": "수공구 및 관련 장비를 사용하여 운송장비의 부품을 교체한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류 752)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "운송장비",
+      "full_statement": "수공구 및 관련 장비를 사용하여 운송장비를 수리하여 정비한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류 752)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "유지관리하다",
+      "object": "운송장비",
+      "full_statement": "운송장비를 유지관리한다.",
+      "source_sentence": "자동차, 철도, 선박, 비행기를 정비하며 공업기계, 엘리베이터 냉난방 공조기 등 기계 설치하고, 유지관리 및 정비한다.",
+      "derived_from": "조상정의(중분류 75)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다."}
+  ],
+  "work_context": []
+}

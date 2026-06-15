@@ -1,0 +1,87 @@
+{
+  "ksco_code": "95392",
+  "tasks": [
+    {
+      "verb": "배포하다",
+      "object": "광고 전단지",
+      "full_statement": "각종 점포나 상품의 광고 전단지를 행인들에게 배포한다.",
+      "source_sentence": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "배포하다",
+      "object": "카탈로그",
+      "full_statement": "카탈로그를 행인들에게 배포한다.",
+      "source_sentence": "카탈로그 배포원·벽보원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "배포하다",
+      "object": "홍보지",
+      "full_statement": "각종 홍보지를 행인들에게 배포한다.",
+      "source_sentence": "홍보지 배포원·스티커 부착원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "선정하다",
+      "object": "배포 장소",
+      "full_statement": "거리나 지하철역, 버스 정류장 등 사람들이 많이 다니는 배포 장소를 선정한다.",
+      "source_sentence": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "붙이다",
+      "object": "포스터",
+      "full_statement": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "부착하다",
+      "object": "광고 스티커",
+      "full_statement": "광고 스티커를 지정된 위치에 부착한다.",
+      "source_sentence": "광고스티커 부착원·포스터 부착원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "부착하다",
+      "object": "벽보",
+      "full_statement": "벽보를 전봇대나 벽 등 지정된 위치에 부착한다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 명칭·정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "게시하다",
+      "object": "홍보물",
+      "full_statement": "홍보물을 지정된 게시판에 게시한다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "실외(거리, 지하철역, 버스 정류장)",
+      "evidence_span": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다."
+    },
+    {
+      "category": "사회적",
+      "value": "행인 대상 대면 배포",
+      "evidence_span": "거리나 지하철역, 버스 정류장에서 행인들에게 배포한다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "ksco_code": "51011",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "잠재적 구매고객",
+      "full_statement": "생산된 신차를 판매하기 위해 잠재적 구매고객을 파악한다.",
+      "source_sentence": "생산된 자동차를 고객에게 판매하기 위한 잠재적 구매고객을 파악하고 판매가 이루어지도록 영업 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설득하다",
+      "object": "잠재 구매고객",
+      "full_statement": "잠재적인 구매고객을 대상으로 신차 구매가 이루어지도록 설득한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고, 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "촉진시키다",
+      "object": "기존 고객 판매",
+      "full_statement": "기존 고객을 대상으로 신차 판매를 촉진시킨다.",
+      "source_sentence": "기존 고객을 대상으로 판매를 촉진시킬 수 있도록 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서나 제안서",
+      "full_statement": "자동차 구매로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "source_sentence": "자동차 구매로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설명하다",
+      "object": "자동차 구매 이익",
+      "full_statement": "고객에게 자동차 구매로 얻게 될 이익을 설명한다.",
+      "source_sentence": "자동차 구매로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "협의하다",
+      "object": "구매비용·인도일자·계약 조건",
+      "full_statement": "자동차의 구매비용, 인도일자 및 계약 조건 등을 협의한다.",
+      "source_sentence": "자동차의 구매비용, 인도일자 및 계약 조건 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "처리하다",
+      "object": "판매 후 발생 문제",
+      "full_statement": "자동차 판매 후 문제가 발생했을 경우 이를 처리한다.",
+      "source_sentence": "자동차 판매 후 문제가 발생했을 경우 이를 처리해주고, 계속적인 지원서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "지원서비스",
+      "full_statement": "고객에게 계속적인 지원서비스를 제공한다.",
+      "source_sentence": "자동차 판매 후 문제가 발생했을 경우 이를 처리해주고, 계속적인 지원서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "파악하다",
+      "object": "경쟁업체·시장상황 정보",
+      "full_statement": "경쟁업체와 시장상황에 관한 정보를 파악한다.",
+      "source_sentence": "경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "연계시키다",
+      "object": "시장 정보와 영업활동",
+      "full_statement": "파악한 경쟁업체·시장상황 정보를 영업활동과 연계시킨다.",
+      "source_sentence": "경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "판매하다",
+      "object": "신차",
+      "full_statement": "생산된 신차를 고객에게 판매한다.",
+      "source_sentence": "생산된 자동차를 고객에게 판매하기 위한 잠재적 구매고객을 파악하고 판매가 이루어지도록 영업 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객응대(잠재·기존 고객 대상 영업·설득)",
+      "evidence_span": "잠재적인 구매고객을 파악하고, 구매가 이루어지도록 설득한다."
+    },
+    {
+      "category": "사회적",
+      "value": "계약 조건 협의(협상)",
+      "evidence_span": "자동차의 구매비용, 인도일자 및 계약 조건 등을 협의한다."
+    }
+  ]
+}

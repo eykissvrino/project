@@ -1,0 +1,103 @@
+{
+  "ksco_code": "21334",
+  "tasks": [
+    {
+      "verb": "관찰하다",
+      "object": "천체현상",
+      "full_statement": "천문학자를 보조하여 천체현상을 관찰한다.",
+      "source_sentence": "천체현상을 관찰하고 해석하는 천문학자와 우주 과학 연구원을 보조하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "천체현상 해석",
+      "full_statement": "천체현상을 해석하는 천문학자의 기술적 업무를 보조한다.",
+      "source_sentence": "천체현상을 관찰하고 해석하는 천문학자와 우주 과학 연구원을 보조하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "우주 과학 연구원 업무",
+      "full_statement": "우주 과학 연구원의 기술적 업무를 보조한다.",
+      "source_sentence": "천체현상을 관찰하고 해석하는 천문학자와 우주 과학 연구원을 보조하여 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수집하다",
+      "object": "관측 표본",
+      "full_statement": "천문 및 우주 과학 관측에 필요한 표본을 수집한다.",
+      "source_sentence": "표본을 수집하고 실험, 검사 및 분석용 재료와 장비를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "준비하다",
+      "object": "실험·검사·분석용 재료와 장비",
+      "full_statement": "실험, 검사 및 분석용 재료와 장비를 준비한다.",
+      "source_sentence": "표본을 수집하고 실험, 검사 및 분석용 재료와 장비를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보조하다",
+      "object": "실험·검사·분석",
+      "full_statement": "천문 및 우주 과학 분야의 실험, 검사 및 분석을 보조한다.",
+      "source_sentence": "실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "실험·검사·분석",
+      "full_statement": "천문 및 우주 과학 분야의 실험, 검사 및 분석을 직접 수행한다.",
+      "source_sentence": "실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "작성하다",
+      "object": "재료·인력·비용 세부 견적서",
+      "full_statement": "주어진 명세서에 따라 프로젝트에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "source_sentence": "주어진 명세서에 따라 프로젝트에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "응용하다",
+      "object": "기술적 지식",
+      "full_statement": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "확인하다",
+      "object": "연구과정 문제",
+      "full_statement": "연구과정에서 야기되는 문제를 확인한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "유지하다",
+      "object": "조사·연구 장비",
+      "full_statement": "천문 및 우주 과학 조사·연구 장비를 유지한다.",
+      "source_sentence": "조사, 연구 장비를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.77
+    },
+    {
+      "verb": "보수하다",
+      "object": "조사·연구 장비",
+      "full_statement": "천문 및 우주 과학 조사·연구 장비를 보수한다.",
+      "source_sentence": "조사, 연구 장비를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.77
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

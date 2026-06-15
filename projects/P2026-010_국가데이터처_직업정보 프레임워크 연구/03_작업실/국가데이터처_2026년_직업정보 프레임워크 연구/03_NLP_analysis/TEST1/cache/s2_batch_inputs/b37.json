@@ -1,0 +1,291 @@
+[
+  {
+    "dwa_id": "D_1111",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "레이더 모니터, 무전 및 기타 통신장비와 시각적 참조사항을 사용하여 할당된 관제공역 범위 내의 항공교통 흐름을 통제한다.",
+      "레이더나 폐쇄회로 모니터, 원격무전시스템 및 기타 통신장비를 이용하여 선박의 이동을 관리한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1112",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "인근 해양관제구역과 관할권 내의 선박들과 무전 및 전화연결을 유지한다.",
+      "인접 관제탑 및 다른 관제센터와 무선이나 전화연결을 유지한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1113",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "역구내 또는 정비창 등에서 기관차나 객화차를 이동시키기 위하여 기관차·전동차를 운전한다.",
+      "역구내 또는 정비창 등에서 전동차를 이동시킨다."
+    ]
+  },
+  {
+    "dwa_id": "D_1114",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "기계식 주차설비의 경우 주차대수를 파악한다.",
+      "기계식 주차설비의 주차대수를 파악한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1115",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "성형된 건조 충전전지 격자를 세척·약품처리·건조하는 장비를 관리한다.",
+      "성형된 건조 충전전지 격자를 세척하는 장비를 관리한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1116",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "슈트, 트로프, 로커쇼벨, 체인컨베이어, 에어호이스트, 광차 등의 장비를 이용하여 갱외로 석재를 운반한다.",
+      "슈트, 트로프, 로커쇼벨, 체인컨베이어, 에어호이스트, 광차 등의 장비를 이용하여 갱외로 석재나 탄을 운반한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1117",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "퍼티스크레이퍼를 사용하여 못 구멍, 균열부분, 봉합면에 퍼티, 모르타르 등을 발라 고르게 한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1118",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "퍼티·모르타르를 바른 부위를 건조한 후 사포질을 한다.",
+      "퍼티·모르타르를 바른 면을 건조한 후 사포질을 한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1119",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "흙손을 사용하여 돌의 연결부분에 모르타르나 치장용재를 채운다.",
+      "흙손과 같은 조적용 공구와 장비를 이용하여 벽돌을 쌓는다."
+    ]
+  },
+  {
+    "dwa_id": "D_1120",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "시험시동하기 위하여 두꺼운 마분지와 황마로 된 판, 기타 보조물을 가설한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1121",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "도배지를 부착하기 전에 천장·벽·바닥의 바탕면을 정리한다.",
+      "유리를 부착하기 전에 창틀·문틀 등 바탕면을 정리한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1122",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "건축구조물의 기밀성 및 수밀성을 확보하기 위하여 간격 및 접합부에 실란트(실리콘)를 충진한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1123",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "굴진 정도에 따라서 I빔 강재 등의 지주재를 이용하여 갱도를 보강한다.",
+      "굴진 정도에 따라 I빔 강재 등의 지주재를 이용하여 갱도를 보강한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1124",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "처마폭에 앵글을 이용하여 물받이와 홈통을 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1125",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "매듭기법으로 카펫을 짠다."
+    ]
+  },
+  {
+    "dwa_id": "D_1126",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "천장‧바닥‧벽면에 슬리브(sleeve)를 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1127",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "경우에 따라 코일을 재권선한다.",
+      "코일을 산세한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1128",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "주요 장부를 기장한다.",
+      "신부 화장 등 특별한 화장을 해준다."
+    ]
+  },
+  {
+    "dwa_id": "D_1129",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "임목지의 관목을 제거한다.",
+      "대나무 몸통 속의 마디를 제거한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1130",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "녹 제거공구 또는 화학약품을 사용하여 작업 대상물의 녹을 제거한다.",
+      "녹 제거공구 또는 화학약품을 사용하여 녹을 제거한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1131",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "탈묵기에서 폐지 속의 잉크입자를 제거한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1132",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "연도 중간에 온도계와 가스 채취구를 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1133",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "연료탱크와 오일(가스)버너를 적당한 위치에 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1134",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "제작한 연도를 버너 배기구에 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1135",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1136",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "강관을 교정한다.",
+      "강판을 세척한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1137",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "자카르식 직조기를 포함한 각종 섬유직물가공 직조기를 조작한다.",
+      "직조 무늬 제어용 카드를 만들기 위하여 자카르식 카드재단기를 조작한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1138",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "철심 코어를 적층하기 위해 코아적층프레스를 조작한다.",
+      "코팅된 전극을 압축하는 프레스 장치를 조작한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1139",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "풀어준 섬유입자를 종이를 만들기에 알맞도록 적당히 절단하여 섬유로 만든다.",
+      "풀어진 섬유입자를 종이를 만들기에 알맞도록 적당히 절단하여 섬유로 만든다."
+    ]
+  },
+  {
+    "dwa_id": "D_1140",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "천이나 플라스틱으로 각종 조화제품을 만든다.",
+      "여러 가지 도료와 기술을 사용하여 회화, 추상화, 풍경화 등의 예술품을 창조한다."
+    ]
+  }
+]

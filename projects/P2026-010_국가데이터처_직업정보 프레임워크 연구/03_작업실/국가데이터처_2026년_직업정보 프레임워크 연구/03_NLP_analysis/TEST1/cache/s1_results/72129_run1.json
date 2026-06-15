@@ -1,0 +1,111 @@
+{
+  "ksco_code": "72129",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면, 견본 및 디자인 명세서",
+      "full_statement": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "source_sentence": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제작하다",
+      "object": "본",
+      "full_statement": "가구용 린넨, 실내장식품, 매트리스, 돛, 천막, 텐트, 우산 등을 제조하기 위하여 본을 제작한다.",
+      "source_sentence": "가구용 린넨이나 실내장식품, 매트리스, 돛, 천막, 텐트, 우산 등을 제조하기 위해 본을 제조 또는 표시하거나 감을 재단한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "표시하다",
+      "object": "본",
+      "full_statement": "제품 제조를 위하여 원단에 본을 표시한다.",
+      "source_sentence": "가구용 린넨이나 실내장식품, 매트리스, 돛, 천막, 텐트, 우산 등을 제조하기 위해 본을 제조 또는 표시하거나 감을 재단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "표시하다",
+      "object": "재단·재봉 및 조립 선",
+      "full_statement": "원단 위에 포켓이나 단추의 위치와 재단, 재봉 및 조립 선을 표시한다.",
+      "source_sentence": "원단 위에 포켓이나 단추의 위치와 재단, 재봉 및 조립 선을 표시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재단하다",
+      "object": "감",
+      "full_statement": "가구용 린넨, 실내장식품, 매트리스, 돛, 천막, 텐트, 우산 등을 제조하기 위하여 감을 재단한다.",
+      "source_sentence": "가구용 린넨이나 실내장식품, 매트리스, 돛, 천막, 텐트, 우산 등을 제조하기 위해 본을 제조 또는 표시하거나 감을 재단한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재단하다",
+      "object": "장갑용 재료",
+      "full_statement": "장갑을 제조하기 위하여 재료를 재단한다.",
+      "source_sentence": "또한 장갑을 제조하기 위하여 재단하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "취급하다",
+      "object": "가위, 칼 및 기타 관련기계",
+      "full_statement": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "source_sentence": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정리하다",
+      "object": "재료",
+      "full_statement": "재단한 재료를 정리한다.",
+      "source_sentence": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "구멍 내다",
+      "object": "재료",
+      "full_statement": "재료에 구멍을 낸다.",
+      "source_sentence": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 가이드 절단 날 및 기타 장치",
+      "full_statement": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "source_sentence": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조사하다",
+      "object": "완성품의 결함",
+      "full_statement": "완성품의 결함을 조사한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "비교하다",
+      "object": "설정된 표준",
+      "full_statement": "완성품을 설정된 표준과 비교한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "가위", "category": "도구", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"},
+    {"name": "칼", "category": "도구", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"},
+    {"name": "재단기", "category": "장비", "evidence_span": "재단기를 조작하여 자르고"},
+    {"name": "가이드 절단 날", "category": "장비", "evidence_span": "기계의 가이드 절단 날 및 기타 장치를 조정한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "가위·칼·관련기계의 기술적 취급(정밀·기능 중심)", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"},
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하며 사람의 기능 역할이 중요", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

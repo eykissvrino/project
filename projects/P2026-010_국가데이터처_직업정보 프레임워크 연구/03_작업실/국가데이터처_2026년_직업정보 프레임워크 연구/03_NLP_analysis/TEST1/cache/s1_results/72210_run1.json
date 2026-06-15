@@ -1,0 +1,157 @@
+{
+  "ksco_code": "72210",
+  "tasks": [
+    {
+      "verb": "상의하다",
+      "object": "직물의 종류·색상·원단",
+      "full_statement": "한복 제조 시 직물의 종류·색상·원단의 실용성·디자인에 관하여 고객과 상의한다.",
+      "source_sentence": "한복 제조 시 직물의 종류·색상·원단의 실용성‧디자인에 관하여 고객과 상의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정하다",
+      "object": "원단의 종류와 색상",
+      "full_statement": "고객의 주문에 의해서 원단의 종류와 색상을 정한다.",
+      "source_sentence": "고객의 주문에 의해서 원단의 종류와 색상을 정하고 치수를 재어 알맞은 바느질법으로 저고리‧치마‧두루마기‧마고자‧버선 등과 같은 한복을 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재다",
+      "object": "고객의 치수",
+      "full_statement": "줄자를 사용하여 고객의 치수를 잰다.",
+      "source_sentence": "줄자를 사용하여 고객의 치수를 재고 명세서에 규격·색상·직물의 종류‧본 등을 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기록하다",
+      "object": "명세서",
+      "full_statement": "명세서에 규격·색상·직물의 종류·본 등을 기록한다.",
+      "source_sentence": "줄자를 사용하여 고객의 치수를 재고 명세서에 규격·색상·직물의 종류‧본 등을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "표시하다",
+      "object": "직물",
+      "full_statement": "명세서에 따라 재단대 위에 직물을 펼쳐놓고 자·연필·초크를 사용하여 표시를 한다.",
+      "source_sentence": "명세서에 따라 재단대 위에 직물을 펼쳐놓고 자· 연필· 초크를 사용하여 표시를 한다. 표시부위에 따라 가위나 칼로 재단한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "재단하다",
+      "object": "직물",
+      "full_statement": "표시부위에 따라 가위나 칼로 직물을 재단한다.",
+      "source_sentence": "명세서에 따라 재단대 위에 직물을 펼쳐놓고 자· 연필· 초크를 사용하여 표시를 한다. 표시부위에 따라 가위나 칼로 재단한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "표시하다",
+      "object": "다음 공정",
+      "full_statement": "재단 후 다음 공정이 용이하도록 초크로 표시를 한다.",
+      "source_sentence": "재단 후 다음 공정이 용이하도록 초크로 표시를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선택하다",
+      "object": "실의 색깔",
+      "full_statement": "부분품 및 명세서에 따라 실의 색깔을 선택한다.",
+      "source_sentence": "부분품 및 명세서에 따라 실의 색깔을 선택하고 재봉틀로 재봉을 하거나, 손바느질을 하여 꿰맨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재봉하다",
+      "object": "한복",
+      "full_statement": "재봉틀로 한복을 재봉한다.",
+      "source_sentence": "부분품 및 명세서에 따라 실의 색깔을 선택하고 재봉틀로 재봉을 하거나, 손바느질을 하여 꿰맨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "꿰매다",
+      "object": "한복",
+      "full_statement": "알맞은 바느질법으로 손바느질을 하여 한복을 꿰맨다.",
+      "source_sentence": "부분품 및 명세서에 따라 실의 색깔을 선택하고 재봉틀로 재봉을 하거나, 손바느질을 하여 꿰맨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제거하다",
+      "object": "불필요한 실",
+      "full_statement": "가위나 칼로 불필요한 실을 제거한다.",
+      "source_sentence": "가위나 칼로 불필요한 실을 제거하고 다림질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "펴다",
+      "object": "주름진 곳",
+      "full_statement": "다리미로 주름진 곳 및 구겨진 곳을 펴서 한복을 완성한다.",
+      "source_sentence": "다리미로 주름진 곳 및 구겨진 곳을 펴서 한복을 완성시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제조하다",
+      "object": "저고리·치마·두루마기·마고자·버선",
+      "full_statement": "알맞은 바느질법으로 저고리·치마·두루마기·마고자·버선 등과 같은 한복을 제조한다.",
+      "source_sentence": "고객의 주문에 의해서 원단의 종류와 색상을 정하고 치수를 재어 알맞은 바느질법으로 저고리‧치마‧두루마기‧마고자‧버선 등과 같은 한복을 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제조하다",
+      "object": "수의",
+      "full_statement": "수의를 제조한다.",
+      "source_sentence": "또한 수의를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "놓다",
+      "object": "수",
+      "full_statement": "고객의 주문에 따라 한복의 옷감에 수를 놓는다.",
+      "source_sentence": "고객의 주문에 따라 한복의 옷감에 수를 놓기도 하며, 그 외 여러 가지 장식을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "장식하다",
+      "object": "한복",
+      "full_statement": "고객의 주문에 따라 한복에 여러 가지 장식을 한다.",
+      "source_sentence": "고객의 주문에 따라 한복의 옷감에 수를 놓기도 하며, 그 외 여러 가지 장식을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수선하다",
+      "object": "한복",
+      "full_statement": "고객의 주문에 따라 한복을 수선한다.",
+      "source_sentence": "고객의 주문에 따라 한복을 수선하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "줄자", "category": "도구", "evidence_span": "줄자를 사용하여 고객의 치수를 재고"},
+    {"name": "자", "category": "도구", "evidence_span": "자· 연필· 초크를 사용하여 표시를 한다"},
+    {"name": "연필", "category": "도구", "evidence_span": "자· 연필· 초크를 사용하여 표시를 한다"},
+    {"name": "초크", "category": "도구", "evidence_span": "자· 연필· 초크를 사용하여 표시를 한다"},
+    {"name": "가위", "category": "도구", "evidence_span": "표시부위에 따라 가위나 칼로 재단한다"},
+    {"name": "칼", "category": "도구", "evidence_span": "표시부위에 따라 가위나 칼로 재단한다"},
+    {"name": "재봉틀", "category": "장비", "evidence_span": "재봉틀로 재봉을 하거나"},
+    {"name": "다리미", "category": "도구", "evidence_span": "다리미로 주름진 곳 및 구겨진 곳을 펴서"},
+    {"name": "재단대", "category": "장비", "evidence_span": "재단대 위에 직물을 펼쳐놓고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객응대(주문 상담·치수 측정)", "evidence_span": "한복 제조 시 직물의 종류·색상·원단의 실용성‧디자인에 관하여 고객과 상의한다."},
+    {"category": "신체적", "value": "정밀 수작업(손바느질·재단)", "evidence_span": "알맞은 바느질법으로 ... 손바느질을 하여 꿰맨다"},
+    {"category": "사회적", "value": "맞춤 주문 제작(독립 작업)", "evidence_span": "고객의 주문에 의해서 원단의 종류와 색상을 정하고"}
+  ]
+}

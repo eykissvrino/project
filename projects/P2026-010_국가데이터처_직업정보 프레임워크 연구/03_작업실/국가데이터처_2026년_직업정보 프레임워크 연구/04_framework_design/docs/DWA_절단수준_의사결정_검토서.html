@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DWA 절단 수준(Granularity) 의사결정 검토서</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#1a2230; --body:#28303e; --muted:#697587; --faint:#8a94a3;
+    --line:#dde3ec; --line2:#eef1f6; --bg:#ffffff; --paper:#fbfcfe;
+    --navy:#152544; --accent:#1f4e8c; --accent2:#7a2e3a;
+    --soft:#f1f5fb; --done:#1f6b3a; --rec:#1f6b3a;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    font-size:16px;line-height:1.78;letter-spacing:-.1px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 30px}
+  header.cover{border-bottom:3px solid var(--navy);padding:52px 0 26px;margin-bottom:8px}
+  .docmeta{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.6px;margin-bottom:14px}
+  header.cover h1{font-size:29px;line-height:1.32;font-weight:800;color:var(--navy);margin:0 0 8px;letter-spacing:-.6px}
+  header.cover .sub{font-size:17px;color:var(--muted);font-weight:600;margin:0 0 22px}
+  .coverbar{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .coverbar div{flex:1;min-width:150px;padding:11px 16px;border-right:1px solid var(--line2);font-size:13.5px}
+  .coverbar div:last-child{border-right:none}
+  .coverbar b{display:block;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:.4px;margin-bottom:2px}
+  .abstract{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:18px 22px;margin:24px 0 6px;font-size:15px;color:var(--body)}
+  .abstract b{color:var(--navy)}
+  nav.toc{margin:26px 0 8px;padding:18px 22px;background:var(--soft);border-radius:8px}
+  nav.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.5px;color:var(--faint);font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px;font-size:14px}
+  @media(max-width:680px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{padding:32px 0;border-bottom:1px solid var(--line2)}
+  h2{font-size:21px;font-weight:800;color:var(--navy);margin:0 0 4px;letter-spacing:-.3px;
+    padding-bottom:9px;border-bottom:2px solid var(--line)}
+  h2 .num{color:var(--accent);margin-right:9px}
+  h3{font-size:16.5px;font-weight:700;color:var(--ink);margin:22px 0 8px}
+  h3 .num{color:var(--accent);font-weight:700;margin-right:7px}
+  p{margin:10px 0}
+  .lead{font-size:15px;color:var(--muted);margin:6px 0 16px}
+  strong,b{color:var(--ink)}
+  .interp{border:1px solid var(--line);border-left:3px solid #0f6b5f;background:#f4faf8;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .interp b{color:#0f6b5f}
+  .method{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--paper);
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat{border:1px solid #ecd9c2;border-left:3px solid var(--accent2);background:#fdf8f3;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat b{color:var(--accent2)}
+  .rec{border:1px solid #c5e2cf;border-left:3px solid var(--rec);background:#f3faf5;
+    border-radius:6px;padding:14px 20px;margin:16px 0;font-size:14.5px}
+  .rec b{color:var(--rec)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}
+  caption{caption-side:top;text-align:left;font-size:12.5px;color:var(--faint);font-weight:700;margin-bottom:6px;letter-spacing:.3px}
+  th,td{border-bottom:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--navy);background:transparent;color:var(--navy);font-weight:700;font-size:12.5px;letter-spacing:.2px}
+  tbody tr:hover td{background:var(--paper)}
+  .hl{background:#eef6f0}
+  td code,p code,li code{background:var(--soft);color:var(--accent2);padding:1px 6px;border-radius:4px;font-size:13px;font-family:Consolas,monospace}
+  ul.tight{margin:8px 0;padding-left:20px}ul.tight li{margin:5px 0}
+  .pros{color:#1f6b3a;font-weight:600}.cons{color:#7a2e3a;font-weight:600}
+  .optcard{border:1px solid var(--line);border-radius:9px;padding:16px 20px;margin:16px 0;background:#fff}
+  .optcard.recommend{border:2px solid var(--rec);background:#f7fcf9}
+  .optcard h3{margin-top:4px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;color:#fff;vertical-align:middle}
+  .t-rec{background:#1f6b3a}.t-keep{background:#1f4e8c}.t-mid{background:#9a6212}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}
+  @media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .twocol .box{border:1px solid var(--line);border-radius:7px;padding:10px 14px;font-size:13.5px}
+  .twocol .box h5{margin:0 0 6px;font-size:12.5px;letter-spacing:.3px}
+  .blank{border:1px dashed #c3ccd9;border-radius:6px;padding:10px 14px;color:var(--faint);font-size:13px;margin:8px 0}
+  footer{padding:24px 0 56px;color:var(--faint);font-size:12.5px;border-top:2px solid var(--navy);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <div class="docmeta">국가데이터처 2026 · 직업정보 프레임워크 연구 — 연구진 의사결정 검토서</div>
+  <h1>DWA 절단 수준(Granularity) 의사결정 검토서</h1>
+  <p class="sub">Stage 2 DWA를 몇 개 수준으로 도출할 것인가 — ONET 비교가능성 vs 자연 절단 vs 재작업 비용</p>
+  <div class="coverbar">
+    <div><b>문서 위상</b>의사결정 검토(연구진 회람)</div>
+    <div><b>작성일</b>2026-06-11</div>
+    <div><b>현재 상태</b>Stage 2 전수 1,192 DWA 완료</div>
+    <div><b>결정 기한</b>Stage 4(GWA) 착수 전</div>
+  </div>
+
+  <div class="abstract">
+    Stage 2(DWA 도출)를 전수 완료(<b>1,192개 DWA</b>)하였으나, ONET(작업 ~19,000 → DWA 2,087, 약 9:1)과 비교해 우리의 도출 비율이 <b>13.6:1로 다소 거칠다</b>. 이는 오류가 아니라 ① TASK의 직업 간 verbatim 중복(고유 진술문 81%), ② 절단점이 자연 밴드의 거친 끝에 위치한 데 따른 결과다. 본 검토서는 <b>DWA 절단 수준을 현행대로 둘지, ONET 비율에 맞춰 더 잘게 잘라 재도출할지</b>를 연구진이 결정하도록, 각 선택지의 <b>기준·방법·이슈·장단점</b>을 실측 데이터와 함께 제시한다. <b>현재 Stage 3(IWA, 178개)까지 현행 1,192 DWA 기준으로 잠정 도출된 상태</b>이며(GWA 미착수), 결정은 <b>Stage 4(GWA) 착수 전</b>에 필요하다. 단 §2.5에서 보듯 <b>상위 계층의 군집 골격(특히 GWA)은 절단 선택과 무관하게 고정</b>되므로, 재절단을 택해도 상위 산출이 구조적으로 무너지지 않는다(IWA/DWA 라벨·매핑만 재도출).
+  </div>
+
+  <nav class="toc">
+    <h4>목 차</h4>
+    <ol>
+      <li><a href="#s1">의사결정 배경 — 왜 지금 결정해야 하나</a></li>
+      <li><a href="#s2">핵심 근거 데이터 (실측)</a></li>
+      <li><a href="#s3">의사결정 기준 7가지</a></li>
+      <li><a href="#s4">선택지 A·B·C 상세 비교</a></li>
+      <li><a href="#s5">직교 이슈 2가지 (별도 검토)</a></li>
+      <li><a href="#s6">권고안 및 결정 시 후속조치</a></li>
+      <li><a href="#s7">연구진 결정 기록란</a></li>
+    </ol>
+  </nav>
+</header>
+
+<!-- 1 -->
+<section id="s1">
+  <h2><span class="num">1.</span>의사결정 배경 — 왜 지금 결정해야 하나</h2>
+  <p>DWA(Detailed Work Activity, 상세 작업활동)는 여러 직업·여러 TASK가 공유하는 <b>중간 추상 수준</b>의 작업활동이다. "몇 개로 묶을 것인가"(절단 수준, granularity)는 정답이 하나로 정해진 값이 아니라 <b>연구가 선택하는 추상 수준</b>이다. 너무 잘게 자르면 TASK와 구분이 안 되고, 너무 거칠게 자르면 상위 계층(IWA)과 구분이 안 된다.</p>
+  <p>현재 우리는 <b>1,192개</b>로 도출했는데, 발주기관·학계가 비교 기준으로 삼는 미국 O*NET은 <b>2,087개</b>(작업 약 19,000개 → 약 9:1)다. 우리 비율은 <b>13.6:1</b>로 더 거칠다. 이 차이가 "도출 오류"인지 "선택의 결과"인지, 그리고 <b>지금 수준이 적정한지 더 잘게 잘라야 하는지</b>를 판단해야 한다.</p>
+  <div class="caveat"><b>왜 지금(Stage 4 착수 전)인가.</b> DWA는 단일 응집트리(dendrogram)를 특정 높이에서 자른 결과이고, IWA·GWA는 <b>같은 트리를 더 높은 곳에서 자르는 것</b>이다. 현재 <b>Stage 3(IWA)까지 현행 1,192 DWA 기준으로 잠정 완료</b>됐다. 여기서 재절단을 택하면 <b>Stage 3(IWA)도 재실행</b>해야 한다(DWA→IWA 매핑·IWA 라벨이 DWA에 의존). 단 §2.5대로 IWA·GWA의 <b>군집 골격은 불변</b>이고 재도출되는 것은 라벨·매핑뿐이며, GWA(미착수) 골격은 어느 선택지에서도 동일하다. 그러므로 <b>GWA 착수 전에 DWA 수준을 확정</b>하는 것이 재작업을 최소화한다.</div>
+</section>
+
+<!-- 2 -->
+<section id="s2">
+  <h2><span class="num">2.</span>핵심 근거 데이터 (실측)</h2>
+  <p class="lead">아래는 통합 데이터베이스·임베딩·응집트리에서 직접 산출한 값이다(2026-06-11).</p>
+
+  <h3><span class="num">2.1</span>근거 ① — TASK의 직업 간 중복 (가장 큰 원인)</h3>
+  <p>우리 16,168 TASK 중 <b>고유 진술문은 13,142개(81.3%)</b>뿐이다. 나머지 약 19%는 서로 다른 직업이 <b>글자 그대로 동일하게</b> 기술한 중복이다. O*NET은 직업분석가(SME)가 직업마다 고유 문장을 작성하므로 중복이 거의 없다 — <b>같은 분모(작업 수)라도 의미적 다양성이 우리가 더 낮다.</b></p>
+  <table>
+    <caption>표 1. 직업 간 verbatim 중복 상위 예시</caption>
+    <thead><tr><th>TASK 진술문</th><th>중복 출현(직업 수)</th></tr></thead>
+    <tbody>
+      <tr><td>생산기록을 작성한다</td><td>18</td></tr>
+      <tr><td>시험 결과를 평가한다</td><td>17</td></tr>
+      <tr><td>하도급업자 및 부하직원을 고용한다</td><td>16</td></tr>
+      <tr><td>하도급업자 및 부하직원의 활동을 감독한다</td><td>16</td></tr>
+    </tbody>
+  </table>
+  <div class="interp"><b>함의.</b> 공정 비교의 분모는 16,168이 아니라 <b>고유 13,142</b>다. ONET 비율 9:1을 고유 기준에 적용하면 기대 DWA는 <b>약 1,460개</b>. 즉 ONET과 같은 잣대로도 우리는 ONET 2,087보다 적게 나오는 게 정상이며(자료원이 다름), 현행 1,192는 그 기대치보다 약간 더 적은 수준이다.</div>
+
+  <h3><span class="num">2.2</span>근거 ② — 자연 절단점이 약하다 (granularity 부재)</h3>
+  <p>응집트리에서 "가장 자연스러운 절단"은 병합 높이가 갑자기 벌어지는 곳(gap 최대)이다. ONET 비율 밴드(작업÷12 ~ ÷6 = <b>1,347~2,694</b>) 안에서 gap을 보면:</p>
+  <table>
+    <caption>표 2. 밴드 내 절단 gap 상위 (k=군집수, gap=병합높이 도약)</caption>
+    <thead><tr><th>순위</th><th>k</th><th>절단높이</th><th>gap</th></tr></thead>
+    <tbody>
+      <tr class="hl"><td>1</td><td><b>1,510</b> (현행 채택)</td><td>0.3388</td><td>0.00030</td></tr>
+      <tr><td>2</td><td>1,402</td><td>0.3444</td><td>0.00028</td></tr>
+      <tr><td>3</td><td>1,381</td><td>0.3457</td><td>0.00025</td></tr>
+      <tr><td>…</td><td>2,439</td><td>0.3023</td><td>0.00020</td></tr>
+    </tbody>
+  </table>
+  <div class="interp"><b>함의.</b> k=1,510이 gap 1위인 것은 맞다(알고리즘은 옳게 골랐다). 그러나 1·2·3위 gap 값이 <b>0.00030 vs 0.00028 vs 0.00025로 거의 붙어 있다</b> — 즉 <b>뚜렷한 자연 경계가 없다.</b> 이 경우 1,510이든 2,400이든 데이터가 어느 한쪽을 강하게 지지하지 않으므로, 절단 수준은 <b>연구 목적(ONET 비교·상세성)으로 정해도 정당</b>하다. (설계서가 예견한 "자연 granularity 부재" 상황.)</div>
+
+  <h3><span class="num">2.3</span>근거 ③ — 절단 k별 결과 비교</h3>
+  <table>
+    <caption>표 3. 절단 k별 채택 DWA·비율·크기 (채택임계 3작업 또는 2직업 적용 후)</caption>
+    <thead><tr><th>k (절단)</th><th>채택 DWA</th><th>작업:DWA 비율</th><th>DWA당 작업 중앙값</th><th>거대군집(≥50작업)</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>1,347</td><td>1,066</td><td>15.2 : 1</td><td>8</td><td>56</td><td>밴드 하한·가장 거침</td></tr>
+      <tr class="hl"><td><b>1,510</b></td><td><b>1,192</b></td><td><b>13.6 : 1</b></td><td>7</td><td>47</td><td><b>현행 (자연절단 1위)</b></td></tr>
+      <tr><td>1,796</td><td>1,382</td><td>11.7 : 1</td><td>6</td><td>28</td><td>—</td></tr>
+      <tr><td>2,100</td><td>1,586</td><td>10.2 : 1</td><td>6</td><td>20</td><td>절충안 C</td></tr>
+      <tr class="hl"><td><b>2,400</b></td><td><b>1,766</b></td><td><b>9.2 : 1</b></td><td>5</td><td>12</td><td><b>ONET 비율 정렬 (안 A)</b></td></tr>
+      <tr><td>2,694</td><td>1,918</td><td>8.4 : 1</td><td>5</td><td>11</td><td>밴드 상한·가장 잘게</td></tr>
+    </tbody>
+  </table>
+  <p class="lead">참고: ONET = 9.1:1 · DWA당 작업 평균 ~9 · DWA 사전 2,087개 · Multiple Linkage 평균 1.26.</p>
+
+  <h3><span class="num">2.4</span>근거 ④ — 거대군집은 더 잘게 자르면 의미 있게 분해된다</h3>
+  <p>현행 최대 군집(423개 작업, "기계를 조작하여 제품을 생산한다")을 k=2,400으로 자르면 <b>17개 하위군집으로 분할</b>되며, 다음처럼 훨씬 'DWA다운' 구체 활동으로 떨어진다:</p>
+  <table>
+    <caption>표 4. 최대 거대군집의 k=2,400 분할 결과(상위 6개)</caption>
+    <thead><tr><th>하위군집 크기</th><th>대표 작업활동</th><th>평가</th></tr></thead>
+    <tbody>
+      <tr><td>211개</td><td>마이크로폰·앰프 조작 / 라디오 장비 조작 …(범용 "기계 조작" 핵심)</td><td>여전히 큼</td></tr>
+      <tr><td>45개</td><td>합성섬유(레이온·나일론) 제조·성형</td><td class="pros">적정 DWA</td></tr>
+      <tr><td>28개</td><td>금속공작기계(선반·밀링·연삭) 조작</td><td class="pros">적정 DWA</td></tr>
+      <tr><td>27개</td><td>방적기 조작(섬유·실 제조)</td><td class="pros">적정 DWA</td></tr>
+      <tr><td>21개</td><td>사출성형기 조작</td><td class="pros">적정 DWA</td></tr>
+      <tr><td>21개</td><td>제빵·제과 반죽 가공</td><td class="pros">적정 DWA</td></tr>
+    </tbody>
+  </table>
+  <div class="caveat"><b>단, 한계 분명.</b> 더 잘게 잘라도 <b>"기계 조작" 범용 핵심 211개는 끝까지 안 쪼개진다.</b> KSCO 해설서 원문 자체가 "기계를 조작하여 제품을 생산한다" 수준으로 범용 기술돼 있기 때문이며, 이는 <b>절단 수준 조정으로 해결되지 않는 자료원의 한계</b>다(후속 KJD·NCS 보강 또는 비고 처리 대상).</div>
+
+  <h3><span class="num">2.5</span>근거 ⑤ — 상위 계층(IWA·GWA)에 미치는 영향 (실증)</h3>
+  <p>IWA·GWA는 별도로 만드는 것이 아니라 <b>DWA와 같은 단일 TASK 트리를 더 높은 곳에서 자른 것</b>(설계 Stage 3 §⑧-1 "방법 A")이다. 이 구조의 성질을 실측 확인했다.</p>
+  <table>
+    <caption>표 4-2. DWA 절단 시나리오별 IWA층 영향 (IWA를 DWA÷6.3로 절단 시)</caption>
+    <thead><tr><th>구분</th><th>DWA</th><th>IWA</th><th>IWA당 DWA 중앙값</th><th>퇴화 IWA(DWA 1개)</th></tr></thead>
+    <tbody>
+      <tr><td>현행 1,192급</td><td>1,192</td><td>240</td><td>3</td><td>55 (23%)</td></tr>
+      <tr><td>재절단 1,766급</td><td>1,766</td><td>381</td><td>3</td><td>76 (20%)</td></tr>
+    </tbody>
+  </table>
+  <div class="interp"><b>핵심 — 골격은 영향 없음, 명명·해석만 영향.</b> ① <b>IWA·GWA의 군집 골격(어떤 TASK가 묶이나)은 DWA 절단과 무관하게 동일</b>하다. 같은 트리를 각 층 자기 높이에서 자르기 때문이다. 특히 <b>정책 핵심인 GWA 골격(≈41개)은 DWA 절단 선택과 완전 무관하게 고정</b>된다(실측: 트리 k=41 절단은 DWA와 독립). ② 영향받는 것은 <b>계층 간 연결·명명</b>이다 — IWA 이름은 소속 DWA 라벨로 짓고(Stage 3 §④-4), DWA→IWA 구성도 DWA 수에 따라 달라진다.</div>
+  <div class="caveat"><b>C6 정정.</b> 당초 "거친 DWA → IWA 퇴화"(기준 C6)를 우려했으나, 실측상 <b>퇴화 IWA 비율은 두 시나리오 모두 ~20~23%로 비슷</b>하다(IWA 수가 DWA에 비례해 늘기 때문). 즉 <b>거친 DWA가 상위 계층을 크게 망가뜨리지 않는다</b> — C6의 가중치는 당초 평가보다 낮다. 재절단의 근거는 C6(하위 퇴화)보다 <b>C1(ONET 비교)·C2(DWA 상세성)</b>에 두는 것이 정확하다.</div>
+</section>
+
+<!-- 3 -->
+<section id="s3">
+  <h2><span class="num">3.</span>의사결정 기준 7가지</h2>
+  <p class="lead">어느 절단이 옳은지는 아래 기준 중 무엇을 우선하느냐로 갈린다. 연구진이 가중치를 정해야 한다.</p>
+  <table>
+    <caption>표 5. 의사결정 기준과 각 방향이 지지하는 선택</caption>
+    <thead><tr><th>#</th><th>기준</th><th>설명</th><th>유리한 방향</th></tr></thead>
+    <tbody>
+      <tr><td>C1</td><td><b>ONET 비교가능성</b></td><td>한국형 DWA↔ONET DWA 매핑·크로스워크, 발주기관 설득력</td><td class="pros">잘게(≈9:1)</td></tr>
+      <tr><td>C2</td><td><b>DWA '상세성' 적합</b></td><td>"Detailed" 본분 — 거대군집은 IWA급 과대</td><td class="pros">잘게</td></tr>
+      <tr><td>C3</td><td>군집 응집도·품질</td><td>현행 응집도 중앙 0.895, 전 군집 ≥0.70</td><td>둘 다 양호(중립)</td></tr>
+      <tr><td>C4</td><td>자연 데이터 구조 충실</td><td>dendrogram의 최대 gap 절단 존중</td><td class="cons">현행(1,510)*</td></tr>
+      <tr><td>C5</td><td>재작업 비용</td><td>절단 변경 시 재명명 필요</td><td class="cons">현행 유지</td></tr>
+      <tr><td>C6</td><td>하위 단계(IWA/GWA) 영향</td><td>골격은 무관(§2.5 실증). 명명·DWA→IWA 구성만 영향. 퇴화 IWA는 양쪽 비슷</td><td>중립*</td></tr>
+      <tr><td>C7</td><td>원문 한계 수용</td><td>범용 핵심은 어느 쪽도 해결 못 함</td><td>중립</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px;color:var(--muted)">* C4의 "자연절단 1위"는 §2.2에서 보듯 gap 차이가 미미해 <b>지지력이 약하다</b>. C6은 §2.5 실증으로 <b>중립으로 하향</b>(골격 무관·퇴화율 유사) — 따라서 결정 가중치는 <b>C1·C2</b>에 둔다.</p>
+</section>
+
+<!-- 4 -->
+<section id="s4">
+  <h2><span class="num">4.</span>선택지 A·B·C 상세 비교</h2>
+
+  <div class="optcard recommend">
+    <h3>선택지 A — ONET 비율로 재절단 (k≈2,400 → 약 1,766 DWA) <span class="tag t-rec">권고</span></h3>
+    <p><b>기준·근거:</b> ONET 비율(9:1)·DWA 사전 규모대에 정렬(<b>C1·C2 우선</b>; C6은 §2.5로 중립화). 자연 gap이 약하므로 목적 기반 절단이 정당(§2.2).</p>
+    <p><b>방법:</b> 캐시된 임베딩·응집트리 재사용 → <code>fcluster(maxclust≈2400)</code>로 재절단(즉시) → 채택임계 3/2 → Multiple Linkage 재계산 → <b>약 1,766개 재명명</b>(기존과 동일: 6개씩 순차 웨이브 Opus + 8조항 자동검증 + 위반 재작성) → 적재·엑셀.</p>
+    <div class="twocol">
+      <div class="box"><h5 class="pros">장점</h5>
+        <ul class="tight">
+          <li>ONET 9.2:1 정렬 → 국제 비교·매핑·발주기관 설득력 ↑</li>
+          <li>거대군집 47→12 → 방적·금속공작·사출성형 등 <b>진짜 상세활동</b> 분해</li>
+          <li>IWA 명명 입력(소속 DWA)이 풍부해져 IWA 라벨 품질 ↑(골격은 불변)</li>
+        </ul>
+      </div>
+      <div class="box"><h5 class="cons">단점·이슈</h5>
+        <ul class="tight">
+          <li>약 1,766개 <b>재명명 필요</b>(≈1시간, 동일 파이프라인·비용 발생)</li>
+          <li>DWA당 작업 중앙값 5로 다소 작아짐(여전히 ONET대)</li>
+          <li>범용 핵심 211개 블롭은 그대로(C7 한계)</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13px"><b>산출 영향:</b> <code>S2_DWA도출.xlsx</code> 재생성, <code>dwa</code>/<code>task_to_dwa</code> 재적재. Stage 3 입력이 1,766 DWA로 확정.</p>
+  </div>
+
+  <div class="optcard">
+    <h3>선택지 B — 현행 1,192 DWA 유지 <span class="tag t-keep">현상</span></h3>
+    <p><b>기준·근거:</b> 자연 절단 1위(C4)·재작업 회피(C5) 우선. 전형 DWA(중앙 7)는 ONET(9)과 유사.</p>
+    <p><b>방법:</b> 추가 작업 없음. 이미 명명·적재·엑셀 완료.</p>
+    <div class="twocol">
+      <div class="box"><h5 class="pros">장점</h5>
+        <ul class="tight">
+          <li>밴드 내 gap 최대 절단점(데이터의 가장 자연스러운 경계)</li>
+          <li>이미 8조항 100%·적재 완료 — 추가 비용 0</li>
+          <li>전형 DWA 크기는 ONET과 유사(중앙 7 vs 9)</li>
+        </ul>
+      </div>
+      <div class="box"><h5 class="cons">단점·이슈</h5>
+        <ul class="tight">
+          <li>ONET 대비 거침(13.6:1) → 매핑 시 1:다 대응 多</li>
+          <li>거대군집 47개 잔존 = <b>IWA급 과대 DWA</b>(C2 약점·ONET 비교 시 1:다 대응)</li>
+          <li>DWA 층 자체의 상세성·ONET 정렬은 미달(단, 상위 GWA 골격엔 영향 없음 §2.5)</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13px"><b>산출 영향:</b> 변경 없음. Stage 3 입력 1,192 DWA.</p>
+  </div>
+
+  <div class="optcard">
+    <h3>선택지 C — 절충 재절단 (k≈2,100 → 약 1,586 DWA) <span class="tag t-mid">절충</span></h3>
+    <p><b>기준·근거:</b> ONET 완전정렬과 현행의 중간. 거대군집을 줄이되 과도한 세분은 피함.</p>
+    <p><b>방법:</b> 선택지 A와 동일 절차, k≈2,100. 재명명 약 1,586개.</p>
+    <div class="twocol">
+      <div class="box"><h5 class="pros">장점</h5>
+        <ul class="tight">
+          <li>거대군집 47→20으로 완화, 10.2:1로 ONET에 근접</li>
+          <li>A보다 재명명 분량 적음(약 180개 ↓)</li>
+        </ul>
+      </div>
+      <div class="box"><h5 class="cons">단점·이슈</h5>
+        <ul class="tight">
+          <li>ONET 완전정렬은 아님(10.2:1) — 비교 시 설명 필요</li>
+          <li>재명명 비용은 여전히 발생(B 대비)</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:13px"><b>산출 영향:</b> 선택지 A와 동일 구조, 규모만 1,586.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="s5">
+  <h2><span class="num">5.</span>직교 이슈 2가지 (절단 수준과 별개로 검토)</h2>
+
+  <h3><span class="num">5.1</span>이슈 ① — 직업 간 verbatim 중복을 군집 전에 통합할 것인가</h3>
+  <p>19% 중복(§2.1)을 군집 전에 합치면 거대군집이 줄고 분포가 깨끗해진다. <b>그러나 설계 원칙상 의도적으로 유지</b>한 것이다 — "같은 활동을 여러 직업이 공유"한다는 사실이 바로 <b>Cross-Family(직업 간 공통활동·직업전환 분석)</b>의 신호이기 때문이다. 중복을 합치면 <code>n_jobs</code>(직업 수) 신호가 사라진다.</p>
+  <div class="method"><b>검토 의견.</b> 현행 유지 권장. 중복은 <code>task_to_dwa</code>에 작업 단위로 보존되어 직업 수 집계가 정확하다. 단, 절단 수준과 무관하게 "범용 핵심 블롭"의 근본 원인이므로 <b>보고서에 명시적 해설</b> 필요.</div>
+
+  <h3><span class="num">5.2</span>이슈 ② — 균일 절단 대신 거대군집만 표적 분할할 것인가</h3>
+  <p>전체를 더 잘게 자르는 대신, <b>≥50작업 거대군집만 골라 하위 분할</b>하는 방법도 있다(혼합 granularity). 거대군집 문제만 정확히 겨냥한다.</p>
+  <div class="caveat"><b>검토 의견.</b> 비권장. 단일 트리·균일 절단을 깨면 <b>DWA⊂IWA⊂GWA nesting 보장</b>이 약해지고(설계 핵심 결정), DWA마다 추상 수준이 들쭉날쭉해져 사전 일관성이 떨어진다. 균일 절단(A/B/C) 중 선택을 권장.</div>
+</section>
+
+<!-- 6 -->
+<section id="s6">
+  <h2><span class="num">6.</span>권고안 및 결정 시 후속조치</h2>
+  <div class="rec">
+    <b>작성자 권고: 선택지 A (k≈2,400, 약 1,766 DWA).</b> 근거 — ① 자연 gap이 약해(§2.2) 현행 1,192의 데이터적 우위가 크지 않고, ② 거대군집이 더 잘게 자르면 실제 상세활동으로 분해되며(§2.4), ③ ONET 비율(9:1) 정렬로 비교·매핑·설득력이 높아진다(C1·C2). 재명명 비용(약 1시간)은 동일 검증 파이프라인으로 흡수 가능. <b>단, 이는 권고이며 최종 결정은 연구진이 한다.</b><br><br>
+    <b>중요 — 결정 부담은 생각보다 낮다(§2.5).</b> IWA·GWA 군집 골격은 DWA 절단과 무관하게 동일하고, <b>정책 핵심인 GWA(≈41개)는 어느 선택지에서도 고정</b>된다. 즉 어느 쪽으로 정해도 <b>상위 산출이 구조적으로 위태로워지지 않는다.</b> DWA 절단은 ① DWA 층 자체의 상세성·ONET 비교가능성, ② 계층 라벨(명명)의 내용을 좌우할 뿐이다. 되돌리기 비용도 (재명명 1회) 제한적이다.
+  </div>
+  <p><b>결정이 A 또는 C로 날 경우 후속조치(작성자 수행):</b></p>
+  <ul class="tight">
+    <li><code>s2_cluster.py</code> 절단을 확정 k로 고정(<code>--k</code>) 후 재절단 → 재명명(6개씩 순차 웨이브)·8조항 검증·재적재·<code>S2_DWA도출.xlsx</code> 재생성</li>
+    <li><b>Stage 3(IWA) 재실행</b>(현재 178 IWA는 1,192 DWA 기준): DWA가 바뀌면 <code>dwa_to_iwa</code> 매핑·IWA 라벨이 달라지므로 IWA 재절단·재명명 필요 (캐시 재사용으로 군집은 즉시, 재명명만 추가)</li>
+    <li>Stage 2·3 결과해설서(<code>stage_report.py s2/s3</code>)·진행현황 보고서 수치 갱신</li>
+  </ul>
+  <p><b>결정이 B(현행 유지)일 경우:</b> 추가 작업 없음. 이미 도출된 Stage 3(IWA 178)이 그대로 유효하므로 바로 <b>Stage 4(GWA)</b> 착수. 단 보고서에 "거대군집 47개 = IWA급 활동, IWA 단계에서 흡수" 명시.</p>
+</section>
+
+<!-- 7 -->
+<section id="s7">
+  <h2><span class="num">7.</span>연구진 결정 기록란</h2>
+  <table>
+    <caption>표 6. 결정 체크리스트</caption>
+    <thead><tr><th>항목</th><th>결정</th></tr></thead>
+    <tbody>
+      <tr><td>채택 선택지</td><td>☐ A(≈1,766) &nbsp; ☐ B(현행 1,192) &nbsp; ☐ C(≈1,586) &nbsp; ☐ 기타</td></tr>
+      <tr><td>확정 절단 k</td><td>__________</td></tr>
+      <tr><td>중복 통합(이슈①)</td><td>☐ 현행 유지 &nbsp; ☐ 변경</td></tr>
+      <tr><td>결정 일자 / 결정자</td><td>__________</td></tr>
+    </tbody>
+  </table>
+  <div class="blank">검토 의견 / 추가 지시:</div>
+</section>
+
+<footer>
+  국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 — DWA 절단 수준 의사결정 검토서<br>
+  작성 2026-06-11 · 결정 기한: Stage 4(GWA) 착수 전(Stage 3는 1,192 기준 잠정완료) · 함께 보는 문서: Stage2 결과해설서 / 직무활동체계 도출 방법론 / 전체 로드맵 및 진행현황
+</footer>
+
+</div>
+</body>
+</html>

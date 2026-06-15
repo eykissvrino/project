@@ -1,0 +1,100 @@
+{
+  "ksco_code": "43142",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "변형된 체형의 원인",
+      "full_statement": "현대인들의 변형된 체형의 원인들을 파악한다.",
+      "source_sentence": "현대인들의 변형된 체형의 원인들을 파악하고 체력과 영양상태 등을 측정한 후",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "측정하다",
+      "object": "체력과 영양상태",
+      "full_statement": "고객의 체력과 영양상태 등을 측정한다.",
+      "source_sentence": "현대인들의 변형된 체형의 원인들을 파악하고 체력과 영양상태 등을 측정한 후",
+      "derived_from": "세세분류 정의→상속 주요업무(체형에 맞게 고객의 체력과 영양 상태를 관리해 준다) 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제시하다",
+      "object": "올바른 처방과 대안",
+      "full_statement": "측정 결과에 따른 올바른 처방과 적절한 대안을 제시한다.",
+      "source_sentence": "그에 따른 올바른 처방과 식이요법 및 행동 수정요법, 기구요법 등 다양한 교정요법을 적용하여 적절한 대안제시와 처방교정을 통해",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "적용하다",
+      "object": "식이요법",
+      "full_statement": "체형 교정을 위해 식이요법을 적용한다.",
+      "source_sentence": "그에 따른 올바른 처방과 식이요법 및 행동 수정요법, 기구요법 등 다양한 교정요법을 적용하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "적용하다",
+      "object": "행동 수정요법",
+      "full_statement": "체형 교정을 위해 행동 수정요법을 적용한다.",
+      "source_sentence": "그에 따른 올바른 처방과 식이요법 및 행동 수정요법, 기구요법 등 다양한 교정요법을 적용하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "적용하다",
+      "object": "기구요법",
+      "full_statement": "체형 교정을 위해 기구요법을 적용한다.",
+      "source_sentence": "그에 따른 올바른 처방과 식이요법 및 행동 수정요법, 기구요법 등 다양한 교정요법을 적용하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "교정하다",
+      "object": "처방",
+      "full_statement": "다양한 교정요법을 통해 처방을 교정한다.",
+      "source_sentence": "다양한 교정요법을 적용하여 적절한 대안제시와 처방교정을 통해 균형을 잡아주고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "잡아주다",
+      "object": "체형의 균형",
+      "full_statement": "교정요법을 통해 체형의 균형을 잡아준다.",
+      "source_sentence": "적절한 대안제시와 처방교정을 통해 균형을 잡아주고 아름답고 건강한 삶을 유지할 수 있도록 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 건강한 삶",
+      "full_statement": "고객이 아름답고 건강한 삶을 유지할 수 있도록 관리한다.",
+      "source_sentence": "균형을 잡아주고 아름답고 건강한 삶을 유지할 수 있도록 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 체력과 영양 상태",
+      "full_statement": "체형에 맞게 고객의 체력과 영양 상태를 관리한다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시행하다",
+      "object": "체형 관리방법",
+      "full_statement": "고객의 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "source_sentence": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "derived_from": "조상정의(세분류)→세세 체형 특화",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "기구요법용 교정기구", "category": "장비", "evidence_span": "기구요법 등 다양한 교정요법을 적용하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대 및 상담", "evidence_span": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다"},
+    {"category": "장소", "value": "실내(피부 관리실·미용 관련 업체)", "evidence_span": "이들은 미용실, 피부 관리실, 기타 미용 관련 업체에서 주로 일하며"}
+  ]
+}

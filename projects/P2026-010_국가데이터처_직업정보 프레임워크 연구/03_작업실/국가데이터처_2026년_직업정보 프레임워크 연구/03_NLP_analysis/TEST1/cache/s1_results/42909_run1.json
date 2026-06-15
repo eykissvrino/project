@@ -1,0 +1,108 @@
+{
+  "ksco_code": "42909",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "복지 및 요양시설 운영업무",
+      "full_statement": "복지 및 요양시설에서 운영업무를 보조한다.",
+      "source_sentence": "환자를 대상으로 직접적인 돌봄업무를 하지 않는 복지 및 요양시설 보조원이 여기에 해당하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지원하다",
+      "object": "돌봄 서비스 부수업무",
+      "full_statement": "환자를 직접 돌보지 않는 범위에서 돌봄 서비스의 부수업무를 지원한다.",
+      "source_sentence": "환자를 대상으로 직접적인 돌봄업무를 하지 않는 복지 및 요양시설 보조원이 여기에 해당하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.62
+    },
+    {
+      "verb": "보조하다",
+      "object": "치료사 활동",
+      "full_statement": "재활·물리·언어·작업치료 등에서 치료사를 보조한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.66
+    },
+    {
+      "verb": "수행하다",
+      "object": "재활치료 관련 보조활동",
+      "full_statement": "치료사를 보조하여 재활치료에 관련된 보조활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수행하다",
+      "object": "물리치료 관련 보조활동",
+      "full_statement": "치료사를 보조하여 물리치료에 관련된 보조활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수행하다",
+      "object": "언어치료 관련 보조활동",
+      "full_statement": "치료사를 보조하여 언어치료에 관련된 보조활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수행하다",
+      "object": "작업치료 관련 보조활동",
+      "full_statement": "치료사를 보조하여 작업치료에 관련된 보조활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "돌보다",
+      "object": "산모",
+      "full_statement": "산후조리원에서 산모를 돌본다.",
+      "source_sentence": "산후조리원에서 산모를 돌보거나",
+      "derived_from": "조상정의(세분류 4290)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제공하다",
+      "object": "보건·의료분야 보조 서비스",
+      "full_statement": "보건·의료분야의 보조 서비스를 제공한다.",
+      "source_sentence": "공공안전이나 신변보호, 돌봄, 보건‧의료분야 보조 서비스와 미용, 혼례 및 장례, 운송, 여가, 조리와 관련된 공공 사회서비스 및 개인 생활 서비스 등 대인 서비스를 제공하는 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류 4)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제공하다",
+      "object": "대인 서비스",
+      "full_statement": "이용자를 대상으로 대인 서비스를 제공한다.",
+      "source_sentence": "공공 사회서비스 및 개인 생활 서비스 등 대인 서비스를 제공하는 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류 4)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "복지 및 요양시설",
+      "evidence_span": "복지 및 요양시설 보조원이 여기에 해당하며"
+    },
+    {
+      "category": "장소",
+      "value": "산후조리원",
+      "evidence_span": "산후조리원에서 산모를 돌보거나"
+    },
+    {
+      "category": "사회적",
+      "value": "치료사 보조(팀작업)",
+      "evidence_span": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행하며"
+    },
+    {
+      "category": "사회적",
+      "value": "대인 서비스(고객응대)",
+      "evidence_span": "대인 서비스를 제공하는 업무를 주로 수행한다"
+    }
+  ]
+}

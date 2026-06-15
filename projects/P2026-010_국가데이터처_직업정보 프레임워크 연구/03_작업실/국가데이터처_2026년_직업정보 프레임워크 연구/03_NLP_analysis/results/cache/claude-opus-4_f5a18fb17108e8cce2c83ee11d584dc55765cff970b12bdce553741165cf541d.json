@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28243",
+  "tasks": [
+    {
+      "verb": "매매하다",
+      "object": "외환",
+      "full_statement": "현물 또는 선물시장에서 외환을 취급하고 매매한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "외환시장",
+      "full_statement": "외환시장 추이를 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "경제 정보",
+      "full_statement": "국내외 경제동향을 체크하고 정보를 수집·분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "중개하다",
+      "object": "투자",
+      "full_statement": "투자자에게 정보를 제공하고 투자를 중개한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

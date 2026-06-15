@@ -1,0 +1,134 @@
+{
+  "ksco_code": "87409",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "트랙터",
+      "full_statement": "트랙터, 콤바인과 같은 농기계를 운전하여 영농작업을 수행한다.",
+      "source_sentence": "트랙터, 콤바인과 같은 농기계 또는 장비를 조작하고",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "콤바인",
+      "full_statement": "콤바인, 탈곡기 등의 영농기계를 조작한다.",
+      "source_sentence": "트랙터 또는 콤바인, 탈곡기 등의 영농기계를 운전 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "농기계 장비",
+      "full_statement": "트랙터, 콤바인과 같은 농기계 또는 장비를 조작한다.",
+      "source_sentence": "트랙터, 콤바인과 같은 농기계 또는 장비를 조작하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "운전하다",
+      "object": "통나무 운반 차량",
+      "full_statement": "제재소, 목재 집적소 및 기타 사업체에서 통나무를 기중대에 달아 단거리 사이를 운반하는 차량을 운전한다.",
+      "source_sentence": "제재소, 목재 집적소 및 기타 사업체에서 통나무, 제재목 및 유사한 짐을 기중대에 달아 단거리 사이를 운반하는 차량을 운전하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운전하다",
+      "object": "제재목 운반 차량",
+      "full_statement": "제재소 및 목재 집적소에서 제재목을 기중대에 달아 단거리 사이를 운반하는 차량을 운전한다.",
+      "source_sentence": "제재소, 목재 집적소 및 기타 사업체에서 통나무, 제재목 및 유사한 짐을 기중대에 달아 단거리 사이를 운반하는 차량을 운전하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "운전하다",
+      "object": "동력 산림용 기계 장치",
+      "full_statement": "동력 산림용 기계 장치를 운전한다.",
+      "source_sentence": "동력 산림용 기계 장치를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운반하다",
+      "object": "산림용 목재",
+      "full_statement": "산림용 목재를 운반한다.",
+      "source_sentence": "산림용 목재를 운반 또는 특수목적 산림기계를 운전 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "운전하다",
+      "object": "특수목적 산림기계",
+      "full_statement": "특수목적 산림기계를 운전 및 조작한다.",
+      "source_sentence": "산림용 목재를 운반 또는 특수목적 산림기계를 운전 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "준설 장비",
+      "full_statement": "해상 및 해저로부터 모래, 자갈 및 진흙을 제거하는 준설 장비를 조작한다.",
+      "source_sentence": "해상 및 해저로부터 모래, 자갈 및 진흙을 제거하는 장비를 조작한다.",
+      "derived_from": "상속 주요업무(직업예시 준설기 운전원과 정합)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "운전하다",
+      "object": "준설기",
+      "full_statement": "모래, 자갈 및 진흙을 제거하기 위하여 준설기를 운전한다.",
+      "source_sentence": "준설기 운전원",
+      "derived_from": "세세분류 직업 예시→상속 주요업무 정합",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "수확기",
+      "full_statement": "농업용 수확기를 조작하여 농작물을 수확한다.",
+      "source_sentence": "농업용 기계 조작원·농업용 수확기 조작원",
+      "derived_from": "세세분류 직업 예시→세분류 영농기계 정합",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "동력 농업용 장비",
+      "full_statement": "동력 농업용 장비를 조작한다.",
+      "source_sentence": "동력 농업용장비 조작원·산림용 기계 운전원",
+      "derived_from": "세세분류 직업 예시→세분류 정의 정합",
+      "confidence": 0.78
+    },
+    {
+      "verb": "운전하다",
+      "object": "임업 장치",
+      "full_statement": "임업 장치를 운전한다.",
+      "source_sentence": "임업장치 운전원·제재목 운반차 운전원",
+      "derived_from": "세세분류 직업 예시→세세정의 정합",
+      "confidence": 0.78
+    },
+    {
+      "verb": "운전하다",
+      "object": "탈곡기",
+      "full_statement": "탈곡기를 운전하여 곡물을 탈곡한다.",
+      "source_sentence": "트랙터 또는 콤바인, 탈곡기 등의 영농기계를 운전 및 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "트랙터", "category": "장비", "evidence_span": "트랙터, 콤바인과 같은 농기계 또는 장비를 조작하고"},
+    {"name": "콤바인", "category": "장비", "evidence_span": "트랙터, 콤바인과 같은 농기계 또는 장비를 조작하고"},
+    {"name": "탈곡기", "category": "장비", "evidence_span": "트랙터 또는 콤바인, 탈곡기 등의 영농기계를 운전 및 조작한다."},
+    {"name": "동력 산림용 기계 장치", "category": "장비", "evidence_span": "동력 산림용 기계 장치를 운전한다."},
+    {"name": "특수목적 산림기계", "category": "장비", "evidence_span": "산림용 목재를 운반 또는 특수목적 산림기계를 운전 및 조작한다."},
+    {"name": "준설기", "category": "장비", "evidence_span": "준설기 운전원"},
+    {"name": "제재목 운반차", "category": "장비", "evidence_span": "제재목 운반차 운전원"},
+    {"name": "농업용 수확기", "category": "장비", "evidence_span": "농업용 수확기 조작원"},
+    {"name": "기중대", "category": "장비", "evidence_span": "통나무, 제재목 및 유사한 짐을 기중대에 달아 단거리 사이를 운반하는 차량을 운전하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "제재소·목재 집적소 등 사업체", "evidence_span": "제재소, 목재 집적소 및 기타 사업체에서 통나무, 제재목 및 유사한 짐을 기중대에 달아 단거리 사이를 운반하는 차량을 운전하며"},
+    {"category": "장소", "value": "해상 및 해저", "evidence_span": "해상 및 해저로부터 모래, 자갈 및 진흙을 제거하는 장비를 조작한다."},
+    {"category": "신체적", "value": "운전 장치를 손으로 조작하는 운전 기술", "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"},
+    {"category": "시간적", "value": "단거리 운반 작업", "evidence_span": "기중대에 달아 단거리 사이를 운반하는 차량을 운전하며"}
+  ]
+}

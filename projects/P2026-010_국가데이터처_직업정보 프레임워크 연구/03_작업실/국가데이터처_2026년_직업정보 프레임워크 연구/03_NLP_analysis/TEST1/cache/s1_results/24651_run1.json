@@ -1,0 +1,95 @@
+{
+  "ksco_code": "24651",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "의지 보조기장비",
+      "full_statement": "환자의 보조용구로 사용되는 의지 보조기장비를 연구한다.",
+      "source_sentence": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선하거나 새로운 장비를 연구‧개발, 유지, 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "새로운 의지 보조기장비",
+      "full_statement": "환자의 보조용구로 사용되는 새로운 의지 보조기장비를 개발한다.",
+      "source_sentence": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선하거나 새로운 장비를 연구‧개발, 유지, 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개선하다",
+      "object": "의지 보조기장비의 성능",
+      "full_statement": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선한다.",
+      "source_sentence": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선하거나 새로운 장비를 연구‧개발, 유지, 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "유지하다",
+      "object": "의지 보조기장비",
+      "full_statement": "환자의 보조용구로 사용되는 의지 보조기장비를 유지한다.",
+      "source_sentence": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선하거나 새로운 장비를 연구‧개발, 유지, 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보수하다",
+      "object": "의지 보조기장비",
+      "full_statement": "환자의 보조용구로 사용되는 의지 보조기장비를 보수한다.",
+      "source_sentence": "환자의 보조용구로 사용되는 의지 보조기장비의 성능을 개선하거나 새로운 장비를 연구‧개발, 유지, 보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "재활 보조공학기기",
+      "full_statement": "재활 보조공학기기를 개발한다.",
+      "source_sentence": "재활 보조공학기기 개발, 성능개선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개선하다",
+      "object": "재활 보조공학기기의 성능",
+      "full_statement": "재활 보조공학기기의 성능을 개선한다.",
+      "source_sentence": "재활 보조공학기기 개발, 성능개선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "재활 보조공학기기",
+      "full_statement": "재활 보조공학기기를 환자에게 맞춰 맞춤 제작한다.",
+      "source_sentence": "재활 보조공학기기를 맞춤 제작, 착용, 유지보수한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "착용하다",
+      "object": "재활 보조공학기기",
+      "full_statement": "재활 보조공학기기를 환자에게 착용시킨다.",
+      "source_sentence": "재활 보조공학기기를 맞춤 제작, 착용, 유지보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "유지보수하다",
+      "object": "재활 보조공학기기",
+      "full_statement": "재활 보조공학기기를 유지보수한다.",
+      "source_sentence": "재활 보조공학기기를 맞춤 제작, 착용, 유지보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접합하다",
+      "object": "의수‧의족",
+      "full_statement": "환자에게 의수‧의족을 접합한다.",
+      "source_sentence": "의수‧의족 접합원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

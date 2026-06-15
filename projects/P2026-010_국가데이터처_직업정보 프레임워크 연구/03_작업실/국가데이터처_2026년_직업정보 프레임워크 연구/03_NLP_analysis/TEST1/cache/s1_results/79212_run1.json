@@ -1,0 +1,170 @@
+{
+  "ksco_code": "79212",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "건물설계도",
+      "full_statement": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토한다.",
+      "source_sentence": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토하고 현장검증을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 배관)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검증하다",
+      "object": "현장",
+      "full_statement": "요구되는 재료, 장비, 노동력을 판단하기 위하여 현장검증을 한다.",
+      "source_sentence": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토하고 현장검증을 한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "측정하다",
+      "object": "파이프의 길이와 구경",
+      "full_statement": "파이프의 길이와 구경을 측정하고 표시한다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스관)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절단하다",
+      "object": "파이프",
+      "full_statement": "명세서에 따라 파이프를 절단한다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "내다",
+      "object": "나사",
+      "full_statement": "명세서에 따라 파이프에 나사를 낸다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "뚫다",
+      "object": "구멍",
+      "full_statement": "배관설비를 부설하기 위하여 건축구조물에 구멍을 뚫는다.",
+      "source_sentence": "배관설비를 부설하기 위하여 건축구조물에 구멍을 뚫는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 배관 부착물 설치)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "시설하다",
+      "object": "파이프",
+      "full_statement": "파이프를 시설한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 배관 설치)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "봉합하다",
+      "object": "연결부위",
+      "full_statement": "파이프의 연결부위를 봉합하여 밀봉한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "납땜하다",
+      "object": "연결부위",
+      "full_statement": "파이프의 연결부위를 납땜하여 밀봉한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "용접하다",
+      "object": "연결부위",
+      "full_statement": "파이프의 연결부위를 용접하여 밀봉한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "설치하다",
+      "object": "가스 배관 부착물 및 장치물",
+      "full_statement": "가스의 배관 조직, 부착물 및 장치물을 설치한다.",
+      "source_sentence": "가스의 배관 조직, 부착물 및 장치물을 설치, 유지 및 수리한다.",
+      "derived_from": "세세분류 정의(고유활동 추가)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "유지하다",
+      "object": "가스 배관 조직 및 장치물",
+      "full_statement": "가스의 배관 조직, 부착물 및 장치물을 유지한다.",
+      "source_sentence": "가스의 배관 조직, 부착물 및 장치물을 설치, 유지 및 수리한다.",
+      "derived_from": "세세분류 정의(고유활동 추가)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수리하다",
+      "object": "낡거나 고장난 가스 배관 및 연관",
+      "full_statement": "낡거나 고장난 가스 배관 및 연관을 수리한다.",
+      "source_sentence": "낡거나 고장난 배관 및 연관을 수리 또는 교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 배관 수리)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "교체하다",
+      "object": "낡거나 고장난 가스 배관 및 연관",
+      "full_statement": "낡거나 고장난 가스 배관 및 연관을 교체한다.",
+      "source_sentence": "낡거나 고장난 배관 및 연관을 수리 또는 교체한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시험하다",
+      "object": "배관시설",
+      "full_statement": "누수 또는 결함부위를 찾아내기 위하여 배관시설을 시험한다.",
+      "source_sentence": "누수 또는 결함부위를 찾아내기 위하여 배관시설을 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 누설 점검)",
+      "confidence": 0.77
+    },
+    {
+      "verb": "절곡하다",
+      "object": "파이프",
+      "full_statement": "다양한 수공구 및 동력공구를 사용하여 파이프를 절곡한다.",
+      "source_sentence": "파이프 및 기타 재료를 절단, 절곡, 나사성형, 납땜, 용접, 조립하기 위하여 다양한 수공구 및 동력공구를 기술적으로 사용한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조립하다",
+      "object": "파이프 및 기타 재료",
+      "full_statement": "다양한 수공구 및 동력공구를 사용하여 파이프 및 기타 재료를 조립한다.",
+      "source_sentence": "파이프 및 기타 재료를 절단, 절곡, 나사성형, 납땜, 용접, 조립하기 위하여 다양한 수공구 및 동력공구를 기술적으로 사용한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "확인하다",
+      "object": "작업물",
+      "full_statement": "작업물이 명세서와 일치하는지 확인 및 검사한다.",
+      "source_sentence": "작업물이 명세서와 일치하는지 확인 및 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.73
+    },
+    {
+      "verb": "매설하다",
+      "object": "가스 공급 배관",
+      "full_statement": "가스 공급을 위한 배관을 매설한다.",
+      "source_sentence": "물, 가스 공급을 위한 배관을 만들고 매설하거나 유지·보수한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화(가스)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "설치하다",
+      "object": "건축구조물 내 가스관",
+      "full_statement": "옥내 가스관을 건축구조물에 설치한다.",
+      "source_sentence": "옥내 급수관이나 가스관 등을 건축구조물에 설치하기도 한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화(가스관)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구 및 동력공구를 기술적으로 사용한다."},
+    {"name": "동력공구", "category": "도구", "evidence_span": "다양한 수공구 및 동력공구를 기술적으로 사용한다."}
+  ],
+  "work_context": []
+}

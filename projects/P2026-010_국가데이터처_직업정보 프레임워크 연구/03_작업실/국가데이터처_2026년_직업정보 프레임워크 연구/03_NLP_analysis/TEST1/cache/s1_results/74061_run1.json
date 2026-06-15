@@ -1,0 +1,108 @@
+{
+  "ksco_code": "74061",
+  "tasks": [
+    {
+      "verb": "용접하다",
+      "object": "금속",
+      "full_statement": "아세틸렌·산소-아세틸렌 등의 가스 열원으로 금속을 용접한다.",
+      "source_sentence": "[세세분류 74061 가스 용접원] 아세틸렌, 산소-아세틸렌 등으로 금속을 용접한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검토하다",
+      "object": "도면 또는 작업 지시서",
+      "full_statement": "명세치수 및 작업절차를 결정하기 위하여 도면 또는 작업 지시서를 검토한다.",
+      "source_sentence": "명세치수 및 작업절차를 결정하기 위하여 도면 또는 작업 지시서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "손질하다",
+      "object": "용접부위",
+      "full_statement": "용접부위를 손질하여 이물질을 제거한다.",
+      "source_sentence": "용접부위를 손질하여 이물질을 제거하고 용접점이나 절단선을 표시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "표시하다",
+      "object": "용접점이나 절단선",
+      "full_statement": "용접점이나 절단선을 표시한다.",
+      "source_sentence": "용접부위를 손질하여 이물질을 제거하고 용접점이나 절단선을 표시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "파악하다",
+      "object": "용접물의 재료·두께·형태",
+      "full_statement": "용접물의 재료, 두께, 형태 등을 파악한다.",
+      "source_sentence": "용접물의 재료, 두께, 형태 등을 파악하고 적합하게 용접장비를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "가스 용접장비",
+      "full_statement": "용접물에 적합하게 가스 용접장비를 조정한다.",
+      "source_sentence": "용접물의 재료, 두께, 형태 등을 파악하고 적합하게 용접장비를 조정 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "위치시키다",
+      "object": "공작물",
+      "full_statement": "공작물을 작업 위치에 위치시킨다.",
+      "source_sentence": "공작물을 위치시키고 적절한 전극, 용접봉, 토치팁 및 기타 필요한 공구를 사용하여 접합부나 이음매를 용접하거나 절단선을 따라 절단 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "용접하다",
+      "object": "접합부나 이음매",
+      "full_statement": "용접봉·토치팁 등을 사용하여 접합부나 이음매를 용접한다.",
+      "source_sentence": "용접봉, 토치팁 등을 사용하여 접합부나 이음매를 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절단하다",
+      "object": "공작물",
+      "full_statement": "절단선을 따라 공작물을 절단한다.",
+      "source_sentence": "공작물을 위치시키고 적절한 전극, 용접봉, 토치팁 및 기타 필요한 공구를 사용하여 접합부나 이음매를 용접하거나 절단선을 따라 절단 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "비교·검사하다",
+      "object": "완성된 접합체의 비드 크기·침투력·특성",
+      "full_statement": "완성된 접합체의 비드 크기, 침투력 및 기타 특성을 명세서와 비교·검사한다.",
+      "source_sentence": "완성된 접합체의 비드 크기, 침투력 및 기타 특성을 명세서와 비교‧ 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "손질하다",
+      "object": "용접부위",
+      "full_statement": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다.",
+      "source_sentence": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "아세틸렌", "category": "도구", "evidence_span": "아세틸렌, 산소-아세틸렌 등으로 금속을 용접한다."},
+    {"name": "산소-아세틸렌", "category": "도구", "evidence_span": "아세틸렌, 산소-아세틸렌 등으로 금속을 용접한다."},
+    {"name": "용접봉", "category": "도구", "evidence_span": "적절한 전극, 용접봉, 토치팁 및 기타 필요한 공구를 사용하여"},
+    {"name": "토치팁", "category": "도구", "evidence_span": "적절한 전극, 용접봉, 토치팁 및 기타 필요한 공구를 사용하여"},
+    {"name": "전극", "category": "도구", "evidence_span": "적절한 전극, 용접봉, 토치팁 및 기타 필요한 공구를 사용하여"},
+    {"name": "철솔", "category": "도구", "evidence_span": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다."},
+    {"name": "그라인더", "category": "장비", "evidence_span": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다."},
+    {"name": "화공약품", "category": "도구", "evidence_span": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다."},
+    {"name": "용접장비", "category": "장비", "evidence_span": "용접물의 재료, 두께, 형태 등을 파악하고 적합하게 용접장비를 조정 한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화공약품 취급(화학물질 노출)", "evidence_span": "철솔, 그라인더 및 화공약품을 사용하여 용접부위를 손질한다."},
+    {"category": "신체적", "value": "수공구·기능 중심 작업(사람의 기능 역할 중요)", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

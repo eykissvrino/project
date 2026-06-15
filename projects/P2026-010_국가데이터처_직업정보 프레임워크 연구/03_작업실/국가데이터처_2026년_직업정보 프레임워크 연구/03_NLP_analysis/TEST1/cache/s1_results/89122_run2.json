@@ -1,0 +1,141 @@
+{
+  "ksco_code": "89122",
+  "tasks": [
+    {
+      "verb": "벗기다",
+      "object": "나무 껍질",
+      "full_statement": "벌목한 나무의 껍질을 벗긴다.",
+      "source_sentence": "벌목한 나무의 껍질을 벗긴 후에 쇄목기에 넣어 나무를 파쇄하여 죽처럼 만들어서 이것을 정선기에 넣어 펄프에 쓰일 수 있는 것만을 골라낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "파쇄하다",
+      "object": "나무",
+      "full_statement": "껍질을 벗긴 나무를 쇄목기에 넣어 파쇄하여 죽처럼 만든다.",
+      "source_sentence": "벌목한 나무의 껍질을 벗긴 후에 쇄목기에 넣어 나무를 파쇄하여 죽처럼 만들어서 이것을 정선기에 넣어 펄프에 쓰일 수 있는 것만을 골라낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "골라내다",
+      "object": "펄프 원료",
+      "full_statement": "파쇄한 원료를 정선기에 넣어 펄프에 쓰일 수 있는 것만을 골라낸다.",
+      "source_sentence": "이것을 정선기에 넣어 펄프에 쓰일 수 있는 것만을 골라낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "농축시키다",
+      "object": "펄프",
+      "full_statement": "정선된 펄프를 종이형성에 적당한 농도로 농축시킨다.",
+      "source_sentence": "이렇게 정선된 펄프를 종이형성에 적당한 농도로 농축시킨 후에 표백하고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화(종이 제조)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "표백하다",
+      "object": "펄프",
+      "full_statement": "농축된 펄프를 표백한다.",
+      "source_sentence": "이렇게 정선된 펄프를 종이형성에 적당한 농도로 농축시킨 후에 표백하고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "배합하다",
+      "object": "약품과 펄프",
+      "full_statement": "표백한 펄프를 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "source_sentence": "약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "섞다",
+      "object": "수입 펄프와 물",
+      "full_statement": "수입한 펄프와 물을 잘 섞어서 작은 섬유입자를 풀어준다.",
+      "source_sentence": "수입한 펄프와 물을 잘 섞어서 작은 섬유입자를 풀어준 후에 종이를 만들기에 알맞도록 적당히 절단하여 섬유로 만들고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절단하다",
+      "object": "섬유입자",
+      "full_statement": "풀어준 섬유입자를 종이를 만들기에 알맞도록 적당히 절단하여 섬유로 만든다.",
+      "source_sentence": "종이를 만들기에 알맞도록 적당히 절단하여 섬유로 만들고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "풀어주다",
+      "object": "폐지 섬유입자",
+      "full_statement": "헌 신문이나 잡지, 기타 폐지를 물과 약품에 섞어서 작은 섬유입자로 풀어준다.",
+      "source_sentence": "헌 신문이나 잡지, 기타 폐지를 물과 약품에 섞어서 작은 섬유입자로 풀어준 후에 탈묵기에서 폐지 속의 잉크입자를 제거하고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제거하다",
+      "object": "잉크입자",
+      "full_statement": "탈묵기에서 폐지 속의 잉크입자를 제거한다.",
+      "source_sentence": "탈묵기에서 폐지 속의 잉크입자를 제거하고, 약품과 일정한 비율로 배합하여 종이원료를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "종이 제조 기계장비",
+      "full_statement": "펄프를 원료로 종이를 제조하는 기계장비를 조작한다.",
+      "source_sentence": "펄프를 원료로 종이, 판지 및 박엽지를 제조하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "판지 제조 기계장비",
+      "full_statement": "펄프를 원료로 판지를 제조하는 기계장비를 조작한다.",
+      "source_sentence": "펄프를 원료로 종이, 판지 및 박엽지를 제조하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "박엽지 제조 기계장비",
+      "full_statement": "펄프를 원료로 박엽지를 제조하는 기계장비를 조작한다.",
+      "source_sentence": "펄프를 원료로 종이, 판지 및 박엽지를 제조하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "마무리하다",
+      "object": "종이 제품",
+      "full_statement": "제조된 종이 제품을 마무리하는 관련 기기를 조작한다.",
+      "source_sentence": "이들 원료로 종이, 판지 및 박엽지를 제조하는 기기를 조작하고 제품을 마무리하는 관련 기기를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "쇄목기", "category": "장비", "evidence_span": "쇄목기에 넣어 나무를 파쇄하여 죽처럼 만들어서"},
+    {"name": "정선기", "category": "장비", "evidence_span": "이것을 정선기에 넣어 펄프에 쓰일 수 있는 것만을 골라낸다"},
+    {"name": "탈묵기", "category": "장비", "evidence_span": "탈묵기에서 폐지 속의 잉크입자를 제거하고"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "약품 사용(화학물질 취급)", "evidence_span": "약품과 일정한 비율로 배합하여 종이원료를 만든다"}
+  ]
+}

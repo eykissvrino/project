@@ -1,0 +1,119 @@
+{
+  "ksco_code": "23730",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "석유 및 가스 에너지 추출기술",
+      "full_statement": "석유 및 가스 에너지의 추출기술을 연구한다.",
+      "source_sentence": "석유 및 가스 에너지 추출기술 연구하고 개발 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "석유 및 가스 에너지 추출기술",
+      "full_statement": "석유 및 가스 에너지의 추출기술을 개발한다.",
+      "source_sentence": "석유 및 가스 에너지 추출기술 연구하고 개발 한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연구하다",
+      "object": "에너지 제품 및 공정의 기술",
+      "full_statement": "에너지 제품 및 공정의 기술에 관하여 연구한다.",
+      "source_sentence": "에너지 제품 및 공정의 기술에 관한 연구, 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "에너지 제품 및 공정의 기술",
+      "full_statement": "에너지 제품 및 공정의 기술에 관하여 자문한다.",
+      "source_sentence": "에너지 제품 및 공정의 기술에 관한 연구, 자문한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "채광 및 광물의 채취",
+      "full_statement": "채광 및 광물의 채취에 대하여 연구한다.",
+      "source_sentence": "채광, 석유 또는 가스의 채취 및 추출과 개발, 유지에 대하여 연구하고 특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "석유 또는 가스의 채취",
+      "full_statement": "석유 또는 가스의 채취에 대하여 연구한다.",
+      "source_sentence": "채광, 석유 또는 가스의 채취 및 추출과 개발, 유지에 대하여 연구하고 특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "추출하다",
+      "object": "석유 또는 가스",
+      "full_statement": "석유 또는 가스를 추출한다.",
+      "source_sentence": "채광, 석유 또는 가스의 채취 및 추출과 개발, 유지에 대하여 연구하고 특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "개발하다",
+      "object": "석유 또는 가스 자원",
+      "full_statement": "석유 또는 가스 자원을 개발한다.",
+      "source_sentence": "채광, 석유 또는 가스의 채취 및 추출과 개발, 유지에 대하여 연구하고 특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "유지하다",
+      "object": "석유 또는 가스 채취 설비",
+      "full_statement": "석유 또는 가스의 채취 및 추출 설비를 유지한다.",
+      "source_sentence": "채광, 석유 또는 가스의 채취 및 추출과 개발, 유지에 대하여 연구하고 특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연구하다",
+      "object": "특정 재료의 기술적 분야",
+      "full_statement": "특정 재료의 기술적 분야에 관하여 연구한다.",
+      "source_sentence": "특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "자문하다",
+      "object": "특정 재료·제품·공정의 기술적 분야",
+      "full_statement": "특정 재료·제품 및 공정의 기술적 분야에 관하여 자문한다.",
+      "source_sentence": "특정재료, 제품 및 공정의 기술적 분야에 관하여 연구, 자문한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "탐사하다",
+      "object": "에너지 자원",
+      "full_statement": "석유·가스 등 에너지 자원의 부존 여부를 탐사한다.",
+      "source_sentence": "탐사 기술자",
+      "derived_from": "세세분류 정의→직업예시(탐사 기술자) 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "시추하다",
+      "object": "석유·가스 시추공",
+      "full_statement": "석유·가스 채취를 위한 시추공을 시추한다.",
+      "source_sentence": "시추 기술자",
+      "derived_from": "세세분류 정의→직업예시(시추 기술자) 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "선별하다",
+      "object": "광물",
+      "full_statement": "채취한 광물을 유용 성분 기준으로 선별한다.",
+      "source_sentence": "선광 기술자",
+      "derived_from": "세세분류 정의(채광)→직업예시(선광 기술자) 특화",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

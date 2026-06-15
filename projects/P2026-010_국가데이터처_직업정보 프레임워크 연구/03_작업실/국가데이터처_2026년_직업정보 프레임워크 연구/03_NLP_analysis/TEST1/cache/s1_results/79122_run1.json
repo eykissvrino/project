@@ -1,0 +1,165 @@
+{
+  "ksco_code": "79122",
+  "tasks": [
+    {
+      "verb": "검사하다",
+      "object": "보석의 특성",
+      "full_statement": "보석의 가치, 순도, 물리적 구조, 색 등급 및 기타 관련 요소를 판단하기 위해 그 특성을 검사한다.",
+      "source_sentence": "보석의 가치, 순도, 물리적 구조, 색 등급 및 기타 관련 요소를 판단하기 위해 그 특성을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "원석",
+      "full_statement": "보석으로 가공하기 위해 원석을 측정한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절단하다",
+      "object": "원석",
+      "full_statement": "보석으로 가공하기 위해 원석을 절단한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연마하다",
+      "object": "원석",
+      "full_statement": "보석으로 가공하기 위해 원석을 연마한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "내다",
+      "object": "원석의 광택",
+      "full_statement": "보석으로 가공하기 위해 원석에 광택을 낸다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주조하다",
+      "object": "귀금속 재료",
+      "full_statement": "특정한 형태로 가공하기 위해 귀금속 재료를 주조한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조각하다",
+      "object": "귀금속 재료",
+      "full_statement": "특정한 형태로 가공하기 위해 귀금속 재료를 조각한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "용접하다",
+      "object": "귀금속 재료",
+      "full_statement": "특정한 형태로 가공하기 위해 귀금속 재료를 용접한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접착하다",
+      "object": "보석",
+      "full_statement": "보석을 접착하고 고정시킨다.",
+      "source_sentence": "보석을 접착·고정시키고 광택을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "고정시키다",
+      "object": "보석",
+      "full_statement": "반지, 브로치, 팔찌 등에 부착하기 위하여 보석을 고정시킨다.",
+      "source_sentence": "보석을 접착·고정시키고 광택을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "내다",
+      "object": "보석의 광택",
+      "full_statement": "접착·고정한 보석에 광택을 낸다.",
+      "source_sentence": "보석을 접착·고정시키고 광택을 낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "정밀공차 작업",
+      "full_statement": "반지, 귀걸이, 팔찌 등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다.",
+      "source_sentence": "귀석을 측정, 표시, 절단, 연마, 광택 및 접착하고 반지, 귀걸이, 팔찌등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "표시하다",
+      "object": "귀석",
+      "full_statement": "장신구 세공을 위해 귀석을 표시한다.",
+      "source_sentence": "귀석을 측정, 표시, 절단, 연마, 광택 및 접착하고 반지, 귀걸이, 팔찌등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "수공구·동력공구·광학 보조기구 및 관련 장비",
+      "full_statement": "귀금속, 보석, 장신구를 세공하기 위하여 다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작하고 취급한다.",
+      "source_sentence": "귀금속, 보석, 장신구를 세공하기 위하여 다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품의 품질과 가치",
+      "full_statement": "완성품의 품질과 가치를 검사한다.",
+      "source_sentence": "완성품의 품질과 가치를 검사하고 결함을 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "결함",
+      "full_statement": "완성품의 결함을 수리한다.",
+      "source_sentence": "완성품의 품질과 가치를 검사하고 결함을 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "모조장신구",
+      "full_statement": "각종 모조장신구를 제작한다.",
+      "source_sentence": "각종 모조장신구를 제작․ 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조립하다",
+      "object": "모조장신구",
+      "full_statement": "각종 모조장신구를 조립한다.",
+      "source_sentence": "각종 모조장신구를 제작․ 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "세공하다",
+      "object": "보석 제품",
+      "full_statement": "반지, 브로치, 팔찌 등에 부착하기 위하여 루비, 사파이어, 다이아몬드 등의 보석 제품을 세공한다.",
+      "source_sentence": "반지, 브로치, 팔찌 등에 부착하기 위하여 루비, 사파이어, 다이아몬드 등의 보석 제품을 세공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다."},
+    {"name": "동력공구", "category": "도구", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다."},
+    {"name": "광학 보조기구", "category": "장비", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀공차 작업 등 정밀 작업 수행", "evidence_span": "반지, 귀걸이, 팔찌등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다."}
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "ksco_code": "29222",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "역사적 가치 기록물",
+      "full_statement": "역사적으로 가치 있는 각종 형태의 기록물을 수집한다.",
+      "source_sentence": "역사적으로 가치 있는 각종 형태의 기록물을 수집하여 체계 있게 조직하고 보존하며, 수집물의 목록, 서지학, 마이크로필름 복사물 및 관련 자료의 작성을 관리하거나 직접 수행하며, 이를 이용자에게 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조직하다",
+      "object": "수집 기록물",
+      "full_statement": "수집한 기록물을 체계 있게 조직한다.",
+      "source_sentence": "역사적으로 가치 있는 각종 형태의 기록물을 수집하여 체계 있게 조직하고 보존하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보존하다",
+      "object": "수집 기록물",
+      "full_statement": "수집한 기록물을 보존한다.",
+      "source_sentence": "역사적으로 가치 있는 각종 형태의 기록물을 수집하여 체계 있게 조직하고 보존하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "배열하다",
+      "object": "수집 문서·자료",
+      "full_statement": "수집한 문서나 자료를 배열한다.",
+      "source_sentence": "수집한 문서나 자료를 배열하고 관리하며 번호를 달고 목록을 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "수집 문서·자료",
+      "full_statement": "수집한 문서나 자료를 관리한다.",
+      "source_sentence": "수집한 문서나 자료를 배열하고 관리하며 번호를 달고 목록을 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "부여하다",
+      "object": "문서·자료 번호",
+      "full_statement": "수집한 문서나 자료에 번호를 부여한다.",
+      "source_sentence": "수집한 문서나 자료를 배열하고 관리하며 번호를 달고 목록을 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "수집물 목록",
+      "full_statement": "수집물의 목록을 작성한다.",
+      "source_sentence": "수집한 문서나 자료를 배열하고 관리하며 번호를 달고 목록을 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "서지학 자료 작성",
+      "full_statement": "수집물의 서지학 및 관련 자료의 작성을 관리한다.",
+      "source_sentence": "수집물의 목록, 서지학, 마이크로필름 복사물 및 관련 자료의 작성을 관리하거나 직접 수행하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "마이크로필름 복사물",
+      "full_statement": "수집물의 마이크로필름 복사물을 작성한다.",
+      "source_sentence": "수집물의 목록, 서지학, 마이크로필름 복사물 및 관련 자료의 작성을 관리하거나 직접 수행하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "제공하다",
+      "object": "기록물 이용 서비스",
+      "full_statement": "관리하는 기록물을 이용자에게 제공한다.",
+      "source_sentence": "수집물의 목록, 서지학, 마이크로필름 복사물 및 관련 자료의 작성을 관리하거나 직접 수행하며, 이를 이용자에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "문서 소장 상태",
+      "full_statement": "중요한 문서나 자료의 소장, 상태, 위치, 대여 등에 관해 기록한다.",
+      "source_sentence": "중요한 문서나 자료의 소장, 상태, 위치, 대여 등에 관해 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분류하다",
+      "object": "기록물 자료",
+      "full_statement": "기록물 자료의 내용과 주제에 따라 분류한다.",
+      "source_sentence": "자료의 내용, 주제에 따라 도서자료를 분류하고, 규정된 분류체계에 따라 분류번호와 표제를 결정하고 목록카드를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "결정하다",
+      "object": "분류번호·표제",
+      "full_statement": "규정된 분류체계에 따라 분류번호와 표제를 결정한다.",
+      "source_sentence": "자료의 내용, 주제에 따라 도서자료를 분류하고, 규정된 분류체계에 따라 분류번호와 표제를 결정하고 목록카드를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "마이크로필름", "category": "장비", "evidence_span": "수집물의 목록, 서지학, 마이크로필름 복사물 및 관련 자료의 작성을 관리하거나 직접 수행하며"}
+  ],
+  "work_context": []
+}

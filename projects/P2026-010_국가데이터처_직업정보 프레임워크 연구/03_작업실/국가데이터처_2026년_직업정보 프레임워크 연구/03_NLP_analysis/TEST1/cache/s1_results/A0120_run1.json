@@ -1,0 +1,39 @@
+{
+  "ksco_code": "A0120",
+  "tasks": [
+    {
+      "verb": "유지하다",
+      "object": "군인 신분",
+      "full_statement": "현재 군인 신분을 유지하며 복무한다.",
+      "source_sentence": "의무 복무 여부를 불문하고 현재 군인 신분을 유지하고 있는 군인을 말한다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "수행하다",
+      "object": "국방 관련 직무",
+      "full_statement": "국방과 관련된 군 직무를 수행한다.",
+      "source_sentence": "국방과 관련된 정부기업에 고용된 민간인, 국가의 요청에 따라 단기간 군사훈련 또는 재훈련을 위해 일시적으로 소집된 자 및 예비군은 제외된다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "지휘하다",
+      "object": "예하 부대원",
+      "full_statement": "위관급 장교로서 예하 부대원을 지휘한다.",
+      "source_sentence": "육‧해‧공군의 소위, 중위 및 대위를 포함한다.",
+      "derived_from": "세세분류 정의→조상정의(소분류 A01 장교) 보강",
+      "confidence": 0.3
+    },
+    {
+      "verb": "필요로하다",
+      "object": "제2수준 이상 직무능력",
+      "full_statement": "제2수준 이상의 직무능력을 적용하여 군 업무를 수행한다.",
+      "source_sentence": "이 대분류에 포함되는 대부분의 직업은 제2수준 이상의 직무능력을 필요로 한다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.3
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

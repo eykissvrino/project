@@ -1,0 +1,168 @@
+{
+  "ksco_code": "75361",
+  "tasks": [
+    {
+      "verb": "읽다",
+      "object": "시공도면",
+      "full_statement": "시공도면을 읽고 천장·바닥·벽면에 보일러 배관 위치를 확인한다.",
+      "source_sentence": "시공도면을 읽고 천장‧바닥‧벽면에 구멍을 뚫고 슬리브(sleeve)를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "뚫다",
+      "object": "구멍",
+      "full_statement": "천장·바닥·벽면에 구멍을 뚫고 슬리브(sleeve)를 설치한다.",
+      "source_sentence": "시공도면을 읽고 천장‧바닥‧벽면에 구멍을 뚫고 슬리브(sleeve)를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "펌프",
+      "full_statement": "펌프를 적당한 위치에 설치한다.",
+      "source_sentence": "펌프를 설치하고 앵커볼트에 진동방지용 고무를 대고 펌프와 고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고정하다",
+      "object": "펌프",
+      "full_statement": "앵커볼트에 진동방지용 고무를 대고 펌프를 고정시킨다.",
+      "source_sentence": "펌프를 설치하고 앵커볼트에 진동방지용 고무를 대고 펌프와 고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "용접하다",
+      "object": "응축수 탱크와 펌프 사이",
+      "full_statement": "응축수 탱크와 펌프 사이를 용접하여 배관한다.",
+      "source_sentence": "응축수 탱크와 펌프사이를 용접하여 배관하고 수량계와 인젝터를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "수량계와 인젝터",
+      "full_statement": "수량계와 인젝터를 설치한다.",
+      "source_sentence": "응축수 탱크와 펌프사이를 용접하여 배관하고 수량계와 인젝터를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "연료탱크와 오일(가스)버너",
+      "full_statement": "연료탱크와 오일(가스)버너를 적당한 위치에 설치한다.",
+      "source_sentence": "연료탱크와 오일(가스)버너를 적당한 위치에 설치하고 파이프를 이용하여 탱크모서리에 누유나 가스누출 검사구를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "만들다",
+      "object": "누유·가스누출 검사구",
+      "full_statement": "파이프를 이용하여 탱크모서리에 누유나 가스누출 검사구를 만든다.",
+      "source_sentence": "연료탱크와 오일(가스)버너를 적당한 위치에 설치하고 파이프를 이용하여 탱크모서리에 누유나 가스누출 검사구를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "성형하다",
+      "object": "철판",
+      "full_statement": "철판을 성형하여 연도를 만든다.",
+      "source_sentence": "철판을 성형하여 연도를 만들고 연도중간에 온도계와 가스 채취구를 설치하여 버너 배기구에 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "설치하다",
+      "object": "온도계와 가스 채취구",
+      "full_statement": "연도 중간에 온도계와 가스 채취구를 설치하여 버너 배기구에 설치한다.",
+      "source_sentence": "철판을 성형하여 연도를 만들고 연도중간에 온도계와 가스 채취구를 설치하여 버너 배기구에 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "연결하다",
+      "object": "관",
+      "full_statement": "보일러의 주밸브와 건물난방용 배관구 사이에 관을 연결하여 용접한다.",
+      "source_sentence": "보일러의 주밸브와 건물난방용 배관구 또는 산업기기의 스팀 밸브사이에 관을 연결하여 용접하고 압력계를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "압력계",
+      "full_statement": "배관 연결부에 압력계를 설치한다.",
+      "source_sentence": "보일러의 주밸브와 건물난방용 배관구 또는 산업기기의 스팀 밸브사이에 관을 연결하여 용접하고 압력계를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "점검하다",
+      "object": "급유 및 급수상태와 가스밸브 위치",
+      "full_statement": "급유 및 급수상태, 가스밸브의 위치 등을 조정·점검한다.",
+      "source_sentence": "급유 및 급수상태, 가스밸브의 위치 등을 조정‧점검하고 시운전을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시운전하다",
+      "object": "보일러",
+      "full_statement": "보일러를 시운전한다.",
+      "source_sentence": "급유 및 급수상태, 가스밸브의 위치 등을 조정‧점검하고 시운전을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조립하다",
+      "object": "보일러·탱크·압력용기",
+      "full_statement": "건물난방용 보일러를 설치하기 위하여 보일러·탱크·압력용기 등을 조립한다.",
+      "source_sentence": "건물난방용 보일러를 설치하기 위하여 보일러‧탱크‧압력용기 등을 조립하여 배관·용접하거나 고장난 보일러를 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "배관하다",
+      "object": "보일러 설비",
+      "full_statement": "조립한 보일러·탱크·압력용기를 배관한다.",
+      "source_sentence": "건물난방용 보일러를 설치하기 위하여 보일러‧탱크‧압력용기 등을 조립하여 배관·용접하거나 고장난 보일러를 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "고장난 보일러",
+      "full_statement": "고장난 건물난방용 보일러를 정비한다.",
+      "source_sentence": "건물난방용 보일러를 설치하기 위하여 보일러‧탱크‧압력용기 등을 조립하여 배관·용접하거나 고장난 보일러를 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "보일러",
+      "full_statement": "보일러가 고장 났을 경우에는 이를 수리한다.",
+      "source_sentence": "보일러가 고장 났을 경우에는 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "슬리브(sleeve)", "category": "장비", "evidence_span": "천장‧바닥‧벽면에 구멍을 뚫고 슬리브(sleeve)를 설치한다"},
+    {"name": "펌프", "category": "장비", "evidence_span": "펌프를 설치하고 앵커볼트에 진동방지용 고무를 대고"},
+    {"name": "앵커볼트", "category": "도구", "evidence_span": "앵커볼트에 진동방지용 고무를 대고 펌프와 고정시킨다"},
+    {"name": "응축수 탱크", "category": "장비", "evidence_span": "응축수 탱크와 펌프사이를 용접하여 배관하고"},
+    {"name": "수량계", "category": "장비", "evidence_span": "수량계와 인젝터를 설치한다"},
+    {"name": "인젝터", "category": "장비", "evidence_span": "수량계와 인젝터를 설치한다"},
+    {"name": "연료탱크", "category": "장비", "evidence_span": "연료탱크와 오일(가스)버너를 적당한 위치에 설치하고"},
+    {"name": "오일(가스)버너", "category": "장비", "evidence_span": "연료탱크와 오일(가스)버너를 적당한 위치에 설치하고"},
+    {"name": "온도계", "category": "장비", "evidence_span": "연도중간에 온도계와 가스 채취구를 설치하여"},
+    {"name": "가스 채취구", "category": "장비", "evidence_span": "연도중간에 온도계와 가스 채취구를 설치하여"},
+    {"name": "압력계", "category": "장비", "evidence_span": "관을 연결하여 용접하고 압력계를 설치한다"},
+    {"name": "압력용기", "category": "장비", "evidence_span": "보일러‧탱크‧압력용기 등을 조립하여"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "누유·가스누출 등 가스 위험 환경", "evidence_span": "탱크모서리에 누유나 가스누출 검사구를 만든다"},
+    {"category": "신체적", "value": "천장·바닥·벽면 천공 및 중량 설비 설치 작업", "evidence_span": "천장‧바닥‧벽면에 구멍을 뚫고 슬리브(sleeve)를 설치한다"},
+    {"category": "장소", "value": "건물 보일러 기계실 등 설비 현장", "evidence_span": "건물난방용 보일러를 설치하기 위하여"}
+  ]
+}

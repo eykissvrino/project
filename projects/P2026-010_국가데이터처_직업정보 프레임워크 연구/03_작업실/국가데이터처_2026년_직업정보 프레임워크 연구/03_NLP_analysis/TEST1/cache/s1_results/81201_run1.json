@@ -1,0 +1,127 @@
+{
+  "ksco_code": "81201",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "곡물 혼합·압착 기계",
+      "full_statement": "맥아주정, 포도주, 소주 등 알코올성 음료를 만들기 위하여 곡물을 혼합하거나 압착하는 기계를 조작한다.",
+      "source_sentence": "맥아주정, 포도주, 소주 및 기타 알코올성 음료를 만들기 위하여 곡물과 혼합, 압착 또는 맥아처리 및 발효시키는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "맥아처리 기계",
+      "full_statement": "알코올성 음료를 만들기 위하여 곡물을 맥아처리하는 기계를 조작한다.",
+      "source_sentence": "맥아주정, 포도주, 소주 및 기타 알코올성 음료를 만들기 위하여 곡물과 혼합, 압착 또는 맥아처리 및 발효시키는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "발효 기계",
+      "full_statement": "알코올성 음료를 만들기 위하여 곡물을 발효시키는 기계를 조작한다.",
+      "source_sentence": "맥아주정, 포도주, 소주 및 기타 알코올성 음료를 만들기 위하여 곡물과 혼합, 압착 또는 맥아처리 및 발효시키는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "보리·곡물 가공 기계",
+      "full_statement": "증류 및 맥아처리 술을 만들기 위하여 사용되는 보리와 기타 곡물을 가공하는 기계를 조작한다.",
+      "source_sentence": "증류 및 맥아처리 술을 만들기 위하여 사용되는 보리와 기타 곡물을 가공하고 발효과정을 통제하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "통제하다",
+      "object": "곡물 발효과정",
+      "full_statement": "증류 및 맥아처리 술을 만들기 위하여 보리와 곡물의 발효과정을 통제하는 기계를 조작한다.",
+      "source_sentence": "증류 및 맥아처리 술을 만들기 위하여 사용되는 보리와 기타 곡물을 가공하고 발효과정을 통제하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조작하다",
+      "object": "포도·과일 가공 기계",
+      "full_statement": "포도주를 만드는 데 사용되는 포도와 기타 과일을 가공하는 기계를 조작한다.",
+      "source_sentence": "포도주를 만드는데 사용되는 포도와 기타 과일을 가공하고 발효과정을 통제하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "통제하다",
+      "object": "포도 발효과정",
+      "full_statement": "포도주를 만드는 데 사용되는 포도와 과일의 발효과정을 통제하는 기계를 조작한다.",
+      "source_sentence": "포도주를 만드는데 사용되는 포도와 기타 과일을 가공하고 발효과정을 통제하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "알코올성 음료의 알코올 함유량을 증가 또는 감소시키는 증류기를 조작한다.",
+      "source_sentence": "알코올성 음료의 알코올 함유량을 증가 또는 감소시키는 증류기를 조작 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "포도주·주정 혼합기",
+      "full_statement": "맛과 향을 얻기 위하여 포도주와 주정 혼합기를 조작한다.",
+      "source_sentence": "맛과 향을 얻기 위하여 포도주와 주정 혼합기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "조작하다",
+      "object": "주정발효장비",
+      "full_statement": "주정을 만들기 위하여 주정발효장비를 조작한다.",
+      "source_sentence": "맥아 제조기 조작원·주정발효장비 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "주정배합장치",
+      "full_statement": "주정을 배합하기 위하여 주정배합장치를 조작한다.",
+      "source_sentence": "주정배합장치 조작원·주정증류장치 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "주정증류장치",
+      "full_statement": "주정을 증류하기 위하여 주정증류장치를 조작한다.",
+      "source_sentence": "주정배합장치 조작원·주정증류장치 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "맥아 제조기",
+      "full_statement": "맥아를 제조하기 위하여 맥아 제조기를 조작한다.",
+      "source_sentence": "맥아 제조기 조작원·주정발효장비 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "포도주 제조장치",
+      "full_statement": "포도주를 제조하기 위하여 포도주 제조장치를 조작한다.",
+      "source_sentence": "포도주 제조장치 조작원·술 제조장치 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "증류기", "category": "장비", "evidence_span": "알코올 함유량을 증가 또는 감소시키는 증류기를 조작 한다"},
+    {"name": "포도주·주정 혼합기", "category": "장비", "evidence_span": "맛과 향을 얻기 위하여 포도주와 주정 혼합기를 조작한다"},
+    {"name": "맥아 제조기", "category": "장비", "evidence_span": "맥아 제조기 조작원"},
+    {"name": "주정발효장비", "category": "장비", "evidence_span": "주정발효장비 조작원"},
+    {"name": "주정배합장치", "category": "장비", "evidence_span": "주정배합장치 조작원"},
+    {"name": "주정증류장치", "category": "장비", "evidence_span": "주정증류장치 조작원"},
+    {"name": "포도주 제조장치", "category": "장비", "evidence_span": "포도주 제조장치 조작원"}
+  ],
+  "work_context": []
+}

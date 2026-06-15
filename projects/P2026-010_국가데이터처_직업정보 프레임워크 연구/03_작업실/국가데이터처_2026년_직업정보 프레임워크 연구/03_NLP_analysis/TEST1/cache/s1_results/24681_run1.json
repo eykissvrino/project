@@ -1,0 +1,101 @@
+{
+  "ksco_code": "24681",
+  "tasks": [
+    {
+      "verb": "상담하다",
+      "object": "언어 장애 환자",
+      "full_statement": "언어 장애 환자와 상담을 진행한다.",
+      "source_sentence": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "언어 장애 환자",
+      "full_statement": "언어 장애 환자를 대상으로 검사를 실시한다.",
+      "source_sentence": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "진단하다",
+      "object": "장애의 원인",
+      "full_statement": "상담 및 검사를 통하여 언어 장애의 원인을 진단한다.",
+      "source_sentence": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "평가하다",
+      "object": "언어 장애",
+      "full_statement": "상담 및 검사 결과를 바탕으로 언어 장애를 평가한다.",
+      "source_sentence": "언어 및 청각장애 환자와 상담 및 검사를 통해 장애원인 진단, 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "치료프로그램",
+      "full_statement": "적절한 도구를 활용하여 언어 치료프로그램을 계획한다.",
+      "source_sentence": "적절한 도구(글자, 카드 등)를 활용하여 치료프로그램을 계획하고 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "치료하다",
+      "object": "언어 장애 환자",
+      "full_statement": "글자, 그림카드 등을 이용하여 언어 장애 환자를 치료한다.",
+      "source_sentence": "글자, 그림카드 등을 이용하여 치료하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "치료프로그램",
+      "full_statement": "계획한 언어 치료프로그램을 수행한다.",
+      "source_sentence": "적절한 도구(글자, 카드 등)를 활용하여 치료프로그램을 계획하고 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "상담하다",
+      "object": "환자 가족",
+      "full_statement": "환자 가족을 상대로 상담을 수행한다.",
+      "source_sentence": "환자 가족과 지도교사를 상대로 상담 또는 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "상담하다",
+      "object": "지도교사",
+      "full_statement": "지도교사를 상대로 상담을 수행한다.",
+      "source_sentence": "환자 가족과 지도교사를 상대로 상담 또는 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지도하다",
+      "object": "환자 가족",
+      "full_statement": "환자 가족을 상대로 지도활동을 수행한다.",
+      "source_sentence": "환자 가족과 지도교사를 상대로 상담 또는 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "지도교사",
+      "full_statement": "지도교사를 상대로 지도활동을 수행한다.",
+      "source_sentence": "환자 가족과 지도교사를 상대로 상담 또는 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "글자 카드", "category": "도구", "evidence_span": "글자, 그림카드 등을 이용하여 치료하고"},
+    {"name": "그림카드", "category": "도구", "evidence_span": "글자, 그림카드 등을 이용하여 치료하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자와의 상담(고객·대상자 응대)", "evidence_span": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며"},
+    {"category": "사회적", "value": "환자 가족·지도교사 상대 상담·지도", "evidence_span": "환자 가족과 지도교사를 상대로 상담 또는 지도활동을 수행한다."}
+  ]
+}

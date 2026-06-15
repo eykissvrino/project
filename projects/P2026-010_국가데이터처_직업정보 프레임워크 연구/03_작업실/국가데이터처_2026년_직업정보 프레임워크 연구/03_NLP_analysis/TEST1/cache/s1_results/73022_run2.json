@@ -1,0 +1,87 @@
+{
+  "ksco_code": "73022",
+  "tasks": [
+    {
+      "verb": "수리하다",
+      "object": "각종 가구",
+      "full_statement": "다양한 수공구 및 목공기계를 사용하여 장롱, 책상, 식탁, 의자, 침대 등 각종 가구를 수리한다.",
+      "source_sentence": "다양한 수공구 및 목공기계를 사용하여 장롱, 책상, 식탁, 의자, 침대 등 각종 가구를 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수선하다",
+      "object": "부품 및 완성품의 표면결함",
+      "full_statement": "가구 부품 및 완성품의 표면결함을 수선한다.",
+      "source_sentence": "부품 및 완성품의 표면결함을 수선한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수선하다",
+      "object": "손잡이·경첩·걸쇠 등 부착물",
+      "full_statement": "손잡이, 경첩, 걸쇠 등의 부착물을 수선한다.",
+      "source_sentence": "손잡이, 경첩, 걸쇠 등의 부착물을 수선하여 고가구를 복원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "복원하다",
+      "object": "고가구",
+      "full_statement": "손잡이, 경첩, 걸쇠 등의 부착물을 수선하여 고가구를 복원한다.",
+      "source_sentence": "손잡이, 경첩, 걸쇠 등의 부착물을 수선하여 고가구를 복원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "붙이다",
+      "object": "손잡이·경첩·걸쇠 등 부착물",
+      "full_statement": "드라이버, 동력공구, 아교 등을 이용하여 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "source_sentence": "가구제조의 전 공정을 담당하며, 드라이버, 동력공구, 아교 등을 이용하여 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조립하다",
+      "object": "가구의 부분품",
+      "full_statement": "가구의 부분품을 가구 조립기에 장착하거나 기타 수동공구를 사용하여 조립한다.",
+      "source_sentence": "가구의 부분품을 가구 조립기에 장착하여 조립하거나 기타 수동공구를 사용하여 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "확인하다",
+      "object": "완성제품과 제작명세서 일치 여부",
+      "full_statement": "완성제품이 제작명세서와 일치하는지 확인한다.",
+      "source_sentence": "완성제품이 제작명세서와 일치하는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "가구의 접속부분",
+      "full_statement": "엄격하게 설정된 절차에 따라 가구의 모양, 접속부분 등 여러 형태의 가구를 수리한다.",
+      "source_sentence": "가구의 모양, 접속부분, 손잡이 경첩 등 엄격하게 설정된 절차에 따라 여러가지 형태의 가구를 제조하거나 수리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "리폼하다",
+      "object": "가구",
+      "full_statement": "기존 가구를 리폼하여 새로운 형태나 용도로 개조한다.",
+      "source_sentence": "가구 리폼원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구 및 목공기계를 사용하여"},
+    {"name": "목공기계", "category": "장비", "evidence_span": "다양한 수공구 및 목공기계를 사용하여"},
+    {"name": "드라이버", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여"},
+    {"name": "동력공구", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여"},
+    {"name": "아교", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여"},
+    {"name": "가구 조립기", "category": "장비", "evidence_span": "가구의 부분품을 가구 조립기에 장착하여 조립하거나"},
+    {"name": "수동공구", "category": "도구", "evidence_span": "기타 수동공구를 사용하여 조립한다"}
+  ],
+  "work_context": []
+}

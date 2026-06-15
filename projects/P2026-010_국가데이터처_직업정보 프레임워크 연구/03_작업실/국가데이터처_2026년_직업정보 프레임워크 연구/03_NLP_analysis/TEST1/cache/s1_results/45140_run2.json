@@ -1,0 +1,98 @@
+{
+  "ksco_code": "45140",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "주문 메뉴",
+      "full_statement": "고객이 주문한 조리메뉴를 확인한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "조리 재료",
+      "full_statement": "조리에 필요한 각종 육류, 생선류, 면류 등의 재료를 준비한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(육류·생선류·면류)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조리하다",
+      "object": "일본식 요리",
+      "full_statement": "각종 육류, 생선류, 면류 등의 일본식 요리를 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 일식점, 일본식 회전문점 등에서 각종 육류, 생선류, 면류 등의 일본식 요리를 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "튀기다",
+      "object": "요리 재료",
+      "full_statement": "재료를 튀기는 방식으로 일본식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "굽다",
+      "object": "요리 재료",
+      "full_statement": "재료를 굽는 방식으로 일본식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "볶다",
+      "object": "요리 재료",
+      "full_statement": "재료를 볶는 방식으로 일본식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "끓이다",
+      "object": "면류",
+      "full_statement": "면류 등의 재료를 끓이는 방식으로 일본식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(면류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조리하다",
+      "object": "생선류 요리",
+      "full_statement": "생선류를 일본식 방식으로 조리한다.",
+      "source_sentence": "각종 육류, 생선류, 면류 등의 일본식 요리를 조리한다.",
+      "derived_from": "세세분류 정의(생선류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "회 요리",
+      "full_statement": "일본식 회 요리를 조리한다.",
+      "source_sentence": "일식 조리사·일본식 회 전문 조리사",
+      "derived_from": "세세분류 직업 예시(일본식 회 전문 조리사)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조리하다",
+      "object": "초밥",
+      "full_statement": "초밥을 조리한다.",
+      "source_sentence": "초밥 조리사",
+      "derived_from": "세세분류 직업 예시(초밥 조리사)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "호텔·레스토랑·일식점·일본식 회전문점 등 실내 조리 공간",
+      "evidence_span": "호텔, 레스토랑, 일식점, 일본식 회전문점 등에서 각종 육류, 생선류, 면류 등의 일본식 요리를 조리한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 주문 응대",
+      "evidence_span": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다."
+    }
+  ]
+}

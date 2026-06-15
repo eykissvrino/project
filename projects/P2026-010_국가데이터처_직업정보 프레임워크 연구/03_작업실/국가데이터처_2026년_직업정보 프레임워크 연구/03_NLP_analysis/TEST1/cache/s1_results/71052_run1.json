@@ -1,0 +1,111 @@
+{
+  "ksco_code": "71052",
+  "tasks": [
+    {
+      "verb": "선별하다",
+      "object": "밑반찬 식품 원료",
+      "full_statement": "밑반찬 제조에 사용할 식품의 원료를 선별한다.",
+      "source_sentence": "식품의 원료를 선별한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자르다",
+      "object": "식품 재료",
+      "full_statement": "만들려는 밑반찬의 크기와 모양에 맞게 식품 재료를 자른다.",
+      "source_sentence": "크기, 모양을 만들려는 식품에 맞게 자르거나, 소금에 절인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절이다",
+      "object": "원료",
+      "full_statement": "원료를 소금에 절인다.",
+      "source_sentence": "소금에 절이기도 하고, 양념을 넣어 볶고, 튀기고, 익히고, 말리기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "넣다",
+      "object": "양념",
+      "full_statement": "조리하려는 밑반찬에 알맞은 양념을 넣는다.",
+      "source_sentence": "알맞은 양념을 넣고 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "볶다",
+      "object": "재료",
+      "full_statement": "양념을 넣은 재료를 볶아 멸치볶음 등 밑반찬을 만든다.",
+      "source_sentence": "양념을 넣어 볶고, 튀기고, 익히고, 말리기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "튀기다",
+      "object": "재료",
+      "full_statement": "재료를 튀겨 밑반찬을 만든다.",
+      "source_sentence": "양념을 넣어 볶고, 튀기고, 익히고, 말리기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "익히다",
+      "object": "재료",
+      "full_statement": "재료를 익혀 밑반찬을 만든다.",
+      "source_sentence": "양념을 넣어 볶고, 튀기고, 익히고, 말리기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "말리다",
+      "object": "재료",
+      "full_statement": "재료를 말려 밑반찬을 만든다.",
+      "source_sentence": "양념을 넣어 볶고, 튀기고, 익히고, 말리기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "콩자반",
+      "full_statement": "콩 등의 원료를 조리하여 콩자반을 제조한다.",
+      "source_sentence": "콩자반, 구이김, 멸치볶음 등 밑반찬을 제조한다.",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "구이하다",
+      "object": "김",
+      "full_statement": "김을 구워 구이김을 제조한다.",
+      "source_sentence": "콩자반, 구이김, 멸치볶음 등 밑반찬을 제조한다.",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "볶다",
+      "object": "멸치",
+      "full_statement": "멸치를 볶아 멸치볶음을 제조한다.",
+      "source_sentence": "콩자반, 구이김, 멸치볶음 등 밑반찬을 제조한다.",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절이다",
+      "object": "장아찌 재료",
+      "full_statement": "재료를 소금이나 식초 등에 절여 장아찌를 제조한다.",
+      "source_sentence": "원료를 소금이나 식초 등에 절여 가공하고자 하는 형태로 만든 다음, 속이나 각종 양념 등 재료를 넣은 김치나 장아찌, 멸치 볶음 등과 같은 밑반찬을 제조한다.",
+      "derived_from": "조상정의(세분류)→직업예시 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보관하다",
+      "object": "밑반찬",
+      "full_statement": "음식의 종류에 따라 보관방법을 달리하여 제조한 밑반찬을 보관한다.",
+      "source_sentence": "음식의 종류에 따라 보관방법을 달리하여 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

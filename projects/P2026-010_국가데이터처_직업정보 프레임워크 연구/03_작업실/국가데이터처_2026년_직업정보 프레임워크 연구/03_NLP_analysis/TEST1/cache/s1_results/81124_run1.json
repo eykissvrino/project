@@ -1,0 +1,127 @@
+{
+  "ksco_code": "81124",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "사탕 제조 기계",
+      "full_statement": "설탕, 초콜릿과 기타 재료를 써서 사탕을 제조하는 기계를 조작한다.",
+      "source_sentence": "설탕, 초콜릿과 기타 재료를 써서 사탕을 제조하는 기계를 조작하거나, 초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "초콜릿 분쇄기",
+      "full_statement": "초콜릿을 제조하는 데 사용되는 분쇄기를 조작한다.",
+      "source_sentence": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "초콜릿 압착기",
+      "full_statement": "초콜릿을 제조하는 데 사용되는 압착기를 조작한다.",
+      "source_sentence": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "초콜릿 배합기",
+      "full_statement": "초콜릿을 제조하는 데 사용되는 배합기를 조작한다.",
+      "source_sentence": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "초콜릿 및 설탕과자 제조 기계",
+      "full_statement": "초콜릿 및 설탕과자를 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "초콜릿 및 설탕과자를 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "혼합하다",
+      "object": "재료",
+      "full_statement": "사탕과 초콜릿 제품 반죽을 가공하려고 설탕에 다른 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "성형하다",
+      "object": "초콜릿",
+      "full_statement": "초콜릿 제품을 성형하는 기계를 조작한다.",
+      "source_sentence": "초콜릿 성형기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "용해하다",
+      "object": "캔디 재료",
+      "full_statement": "캔디 제조에 사용되는 재료를 용해하는 기계를 조작한다.",
+      "source_sentence": "캔디 냉각기 조작원·캔디 용해기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "냉각하다",
+      "object": "캔디",
+      "full_statement": "캔디를 냉각하는 기계를 조작한다.",
+      "source_sentence": "캔디 냉각기 조작원·캔디 용해기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제조하다",
+      "object": "캔디",
+      "full_statement": "캔디를 제조하는 기계를 조작한다.",
+      "source_sentence": "캔디 제조기 조작원·껌 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제조하다",
+      "object": "껌",
+      "full_statement": "껌을 제조하는 기계를 조작한다.",
+      "source_sentence": "캔디 제조기 조작원·껌 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "생산하다",
+      "object": "설탕과자",
+      "full_statement": "설탕과자를 생산하는 기계를 조작한다.",
+      "source_sentence": "설탕과자 생산기 조작원·소프트캔디 생산기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "생산하다",
+      "object": "소프트캔디",
+      "full_statement": "소프트캔디를 생산하는 기계를 조작한다.",
+      "source_sentence": "설탕과자 생산기 조작원·소프트캔디 생산기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.82
+    },
+    {
+      "verb": "압출하다",
+      "object": "반죽",
+      "full_statement": "사탕·초콜릿 제품을 제조하기 위한 반죽을 압출하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "사탕 제조 기계", "category": "장비", "evidence_span": "설탕, 초콜릿과 기타 재료를 써서 사탕을 제조하는 기계를 조작하거나"},
+    {"name": "분쇄기", "category": "장비", "evidence_span": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다."},
+    {"name": "압착기", "category": "장비", "evidence_span": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다."},
+    {"name": "배합기", "category": "장비", "evidence_span": "초콜릿을 제조하는 분쇄기, 압착기, 배합기 및 기타 기계를 조작한다."},
+    {"name": "초콜릿 성형기", "category": "장비", "evidence_span": "초콜릿 성형기 조작원"},
+    {"name": "캔디 용해기", "category": "장비", "evidence_span": "캔디 냉각기 조작원·캔디 용해기 조작원"},
+    {"name": "캔디 냉각기", "category": "장비", "evidence_span": "캔디 냉각기 조작원·캔디 용해기 조작원"}
+  ],
+  "work_context": []
+}

@@ -1,0 +1,87 @@
+{
+  "ksco_code": "61319",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "사육할 동물의 종류와 양",
+      "full_statement": "양, 산양 등 사육할 동물의 종류와 양을 결정한다.",
+      "source_sentence": "젖소, 양 등 사육할 동물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(젖소 제외, 양·산양 대상)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "번식시키다",
+      "object": "양·산양 등 가축",
+      "full_statement": "양, 산양 등과 같은 가축을 번식시킨다.",
+      "source_sentence": "젖소를 제외한 양, 산양 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사육하다",
+      "object": "양·산양 등 가축",
+      "full_statement": "양, 산양 등과 같은 가축을 사육한다.",
+      "source_sentence": "젖소를 제외한 양, 산양 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "생산하다",
+      "object": "낙농제품",
+      "full_statement": "양, 산양 등의 가축으로부터 낙농제품을 생산한다.",
+      "source_sentence": "젖소를 제외한 양, 산양 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "구입하다",
+      "object": "원료와 도구",
+      "full_statement": "사육 시 필요한 원료와 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "생산한 양유 등 낙농 생산물을 저장한다.",
+      "source_sentence": "생산물을 저장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(양유 등 생산물)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "정비하다",
+      "object": "농장건물·기계·장비",
+      "full_statement": "농장건물, 기계 및 장비를 정비한다.",
+      "source_sentence": "농장건물, 기계 및 장비를 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "생산물을 공급한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "출하하다",
+      "object": "생산물",
+      "full_statement": "생산물을 출하한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "양·산양 등 사육 가축",
+      "full_statement": "우유나 유제품 재료를 생산하는 양 등을 관리한다.",
+      "source_sentence": "우유나 유제품 재료를 생산하는 젖소나 양 등을 사육하고 관리한다.",
+      "derived_from": "조상정의(세분류 6131)→세세정의 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

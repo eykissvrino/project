@@ -1,0 +1,63 @@
+{
+  "ksco_code": "29413",
+  "tasks": [
+    {
+      "verb": "창조하다",
+      "object": "서예작품",
+      "full_statement": "서예 관련기법을 사용하여 독창적인 서예작품을 창조한다.",
+      "source_sentence": "서예 관련기법을 사용하여 독창적인 서예작품이나 서체를 창조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "창조하다",
+      "object": "서체",
+      "full_statement": "서예 관련기법을 사용하여 독창적인 서체를 창조한다.",
+      "source_sentence": "서예 관련기법을 사용하여 독창적인 서예작품이나 서체를 창조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "사용하다",
+      "object": "서예 관련기법",
+      "full_statement": "독창적인 작품을 표현하기 위하여 서예 관련기법을 사용한다.",
+      "source_sentence": "서예 관련기법을 사용하여 독창적인 서예작품이나 서체를 창조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구상하다",
+      "object": "작품의 구도",
+      "full_statement": "작품의 구도를 구상한다.",
+      "source_sentence": "작품의 구도를 구상하고 유채, 수채, 연필, 파스텔, 잉크 등의 그림 재료를 선택한다.",
+      "derived_from": "상속 주요업무→서예 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "선택하다",
+      "object": "재료",
+      "full_statement": "작품 제작을 위하여 먹, 종이, 붓 등의 재료를 선택한다.",
+      "source_sentence": "작품의 구도를 구상하고 유채, 수채, 연필, 파스텔, 잉크 등의 그림 재료를 선택한다.",
+      "derived_from": "상속 주요업무→서예 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "소묘하다",
+      "object": "작품의 윤곽",
+      "full_statement": "표면에 작품의 윤곽을 미리 소묘한다.",
+      "source_sentence": "캔버스, 나무판, 종이 등의 표면에 작품의 윤곽을 미리 소묘한다.",
+      "derived_from": "상속 주요업무→서예 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "활용하다",
+      "object": "시각적 요소",
+      "full_statement": "원하는 작품의 효과를 얻기 위하여 선, 공간, 크기, 농담 등의 시각적 요소를 활용한다.",
+      "source_sentence": "원하는 그림의 효과를 얻기 위하여 선, 공간, 크기, 색채, 원근, 농담 등의 시각적 요소를 활용하여 그림을 그린다.",
+      "derived_from": "상속 주요업무→서예 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

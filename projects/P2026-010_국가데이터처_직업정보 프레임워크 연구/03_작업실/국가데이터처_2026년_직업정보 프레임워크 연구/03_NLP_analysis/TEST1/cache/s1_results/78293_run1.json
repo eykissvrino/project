@@ -1,0 +1,59 @@
+{
+  "ksco_code": "78293",
+  "tasks": [
+    {
+      "verb": "해체하다",
+      "object": "건축물",
+      "full_statement": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체한다.",
+      "source_sentence": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체하고, 구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "골라내다",
+      "object": "재사용 가능한 구조강 및 목재",
+      "full_statement": "구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "source_sentence": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체하고, 구조강 및 목재들 가운데 다시 쓸 수 있는 것을 골라낸다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "떠받치다",
+      "object": "건물",
+      "full_statement": "구조를 변경할 때 건물을 떠받친다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보강하다",
+      "object": "접속된 빌딩",
+      "full_statement": "필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "세우다",
+      "object": "방음벽",
+      "full_statement": "방음벽을 세운다.",
+      "source_sentence": "방음벽을 세우거나 정화조를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설치하다",
+      "object": "정화조",
+      "full_statement": "정화조를 설치한다.",
+      "source_sentence": "방음벽을 세우거나 정화조를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [
+    {"name": "해머", "category": "도구", "evidence_span": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체하고"},
+    {"name": "쇠지레", "category": "도구", "evidence_span": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체하고"},
+    {"name": "공기압축해머", "category": "장비", "evidence_span": "해머, 쇠지레, 공기압축해머 및 기타 도구로 건축물을 해체하고"}
+  ],
+  "work_context": []
+}

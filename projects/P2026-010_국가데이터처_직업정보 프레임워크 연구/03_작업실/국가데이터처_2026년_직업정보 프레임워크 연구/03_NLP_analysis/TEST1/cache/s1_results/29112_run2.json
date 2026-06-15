@@ -1,0 +1,127 @@
+{
+  "ksco_code": "29112",
+  "tasks": [
+    {
+      "verb": "구상하다",
+      "object": "문학작품",
+      "full_statement": "소설, 시, 동화, 수필 등의 문학작품을 구상한다.",
+      "source_sentence": "소설, 시, 동화, 수필 등의 문학작품을 구상하거나 창작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "창작하다",
+      "object": "문학작품",
+      "full_statement": "소설, 시, 동화, 수필 등의 문학작품을 창작한다.",
+      "source_sentence": "소설, 시, 동화, 수필 등의 문학작품을 구상하거나 창작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "소설의 줄거리나 등장인물",
+      "full_statement": "소설의 줄거리나 등장인물을 결정한다.",
+      "source_sentence": "소설의 줄거리나 등장인물을 결정하고 필요한 경우 역사적 배경이나 사건 현장을 조사‧분석하여 작품에 반영한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소설)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "역사적 배경이나 사건 현장",
+      "full_statement": "필요한 경우 역사적 배경이나 사건 현장을 조사한다.",
+      "source_sentence": "소설의 줄거리나 등장인물을 결정하고 필요한 경우 역사적 배경이나 사건 현장을 조사‧분석하여 작품에 반영한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소설)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "역사적 배경이나 사건 현장",
+      "full_statement": "조사한 역사적 배경이나 사건 현장을 분석하여 작품에 반영한다.",
+      "source_sentence": "소설의 줄거리나 등장인물을 결정하고 필요한 경우 역사적 배경이나 사건 현장을 조사‧분석하여 작품에 반영한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소설)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구상하다",
+      "object": "등장인물의 성격·줄거리 전개·심리묘사·사회적 배경",
+      "full_statement": "등장인물의 성격, 줄거리의 전개, 심리묘사, 사회적 배경 등을 구상한다.",
+      "source_sentence": "등장인물의 성격, 줄거리의 전개, 심리묘사, 사회적 배경 등을 구상하여 작품을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "쓰다",
+      "object": "작품",
+      "full_statement": "구상한 내용을 바탕으로 작품을 쓴다.",
+      "source_sentence": "등장인물의 성격, 줄거리의 전개, 심리묘사, 사회적 배경 등을 구상하여 작품을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "저술하다",
+      "object": "작품",
+      "full_statement": "출판을 위해 작품을 저술한다.",
+      "source_sentence": "출판을 위해 저술하기도 하지만 신문, 잡지 등의 정기간행물에 연재하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연재하다",
+      "object": "작품",
+      "full_statement": "신문, 잡지 등의 정기간행물에 작품을 연재한다.",
+      "source_sentence": "출판을 위해 저술하기도 하지만 신문, 잡지 등의 정기간행물에 연재하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "표현하다",
+      "object": "자신의 정서",
+      "full_statement": "사물·현상에 대한 느낌이나 작가 자신의 경험을 바탕으로 자유로운 문장형식으로 자신의 정서를 표현한다.",
+      "source_sentence": "사물, 현상에 대한 느낌 혹은 작가 자신의 경험을 바탕으로 하여 자유로운 문장형식으로 자신의 정서를 표현‧전달한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(수필)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관찰하다",
+      "object": "자연·인생 등 여러 현상",
+      "full_statement": "자연, 인생 등 여러 현상을 작가의 주관적이고 독특한 시각으로 관찰한다.",
+      "source_sentence": "자연, 인생 등 여러 현상을 작가의 주관적이고 독특한 시각으로 관찰하여 시적 어구로 표현‧전달한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "표현하다",
+      "object": "관찰한 현상",
+      "full_statement": "관찰한 현상을 시적 어구로 표현한다.",
+      "source_sentence": "자연, 인생 등 여러 현상을 작가의 주관적이고 독특한 시각으로 관찰하여 시적 어구로 표현‧전달한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "선정하다",
+      "object": "주제",
+      "full_statement": "작품을 창작하기 위하여 주제를 선정한다.",
+      "source_sentence": "작품을 창작하기 위하여 주제를 선정하고 관련 자료를 수집, 분석하고 작품을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "관련 자료",
+      "full_statement": "주제와 관련된 자료를 수집한다.",
+      "source_sentence": "작품을 창작하기 위하여 주제를 선정하고 관련 자료를 수집, 분석하고 작품을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "관련 자료",
+      "full_statement": "수집한 관련 자료를 분석한다.",
+      "source_sentence": "작품을 창작하기 위하여 주제를 선정하고 관련 자료를 수집, 분석하고 작품을 쓴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

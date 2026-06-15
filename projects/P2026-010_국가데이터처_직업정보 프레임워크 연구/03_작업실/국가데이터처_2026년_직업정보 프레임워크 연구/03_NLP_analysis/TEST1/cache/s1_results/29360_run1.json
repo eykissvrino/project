@@ -1,0 +1,137 @@
+{
+  "ksco_code": "29360",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "조정판(콘솔)",
+      "full_statement": "방송 프로그램의 송신신호를 조절하기 위하여 조정판(콘솔)을 조작한다.",
+      "source_sentence": "방송 프로그램의 송신신호를 조절하기 위하여 조정판(콘솔)을 조작하거나 영화, 방송에 쓰이는 영상을 대본에 맞게 편집장비를 조작하여 편집한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "편집하다",
+      "object": "영상",
+      "full_statement": "영화, 방송에 쓰이는 영상을 대본에 맞게 편집장비를 조작하여 편집한다.",
+      "source_sentence": "방송 프로그램의 송신신호를 조절하기 위하여 조정판(콘솔)을 조작하거나 영화, 방송에 쓰이는 영상을 대본에 맞게 편집장비를 조작하여 편집한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "재생하다",
+      "object": "녹화된 영상",
+      "full_statement": "편성프로그램 순서로 녹화된 영상을 재생한다.",
+      "source_sentence": "편성프로그램 순서로 녹화된 영상을 재생하여 모니터를 관찰한다.",
+      "derived_from": "상속 주요업무(영상기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "모니터",
+      "full_statement": "재생된 영상을 확인하기 위하여 모니터를 관찰한다.",
+      "source_sentence": "편성프로그램 순서로 녹화된 영상을 재생하여 모니터를 관찰한다.",
+      "derived_from": "상속 주요업무(영상기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "조정판(콘솔)",
+      "full_statement": "영상의 구도, 색상 등을 조절하는 조정판(콘솔)을 조작한다.",
+      "source_sentence": "영상의 구도, 색상 등을 조절하는 조정판(콘솔)을 조작한다.",
+      "derived_from": "상속 주요업무(영상기사)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관찰하다",
+      "object": "방송중인 프로그램",
+      "full_statement": "영상의 색상 번짐, 화면 떨림 등의 기술적인 사항을 확인하기 위하여 방송중인 프로그램을 관찰한다.",
+      "source_sentence": "영상의 색상 번짐, 화면 떨림 등의 기술적인 사항을 확인하기 위하여 방송중인 프로그램을 관찰한다.",
+      "derived_from": "상속 주요업무(영상기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "녹화하다",
+      "object": "프로그램의 영상신호",
+      "full_statement": "녹화기를 조작하여 프로그램의 영상신호를 녹화한다.",
+      "source_sentence": "녹화기를 조작하여 프로그램의 영상신호를 녹화한다.",
+      "derived_from": "상속 주요업무(녹화기사)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "검토하다",
+      "object": "모니터",
+      "full_statement": "영상의 구도 및 조명등을 확인하기 위하여 모니터(monitor)를 검토한다.",
+      "source_sentence": "영상의 구도 및 조명등을 확인하기 위하여 모니터(monitor)를 검토하고 잡음, 화면 떨림 등의 장애원인을 제거한다.",
+      "derived_from": "상속 주요업무(녹화기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "장애원인",
+      "full_statement": "잡음, 화면 떨림 등의 장애원인을 제거한다.",
+      "source_sentence": "영상의 구도 및 조명등을 확인하기 위하여 모니터(monitor)를 검토하고 잡음, 화면 떨림 등의 장애원인을 제거한다.",
+      "derived_from": "상속 주요업무(녹화기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재편집하다",
+      "object": "프로그램의 화면과 음향",
+      "full_statement": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집한다.",
+      "source_sentence": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며 기기의 작동상태를 점검하기도 한다.",
+      "derived_from": "상속 주요업무(녹화기사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "기기의 작동상태",
+      "full_statement": "기기의 작동상태를 점검한다.",
+      "source_sentence": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며 기기의 작동상태를 점검하기도 한다.",
+      "derived_from": "상속 주요업무(녹화기사)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "대본",
+      "full_statement": "대본을 검토하여 드라마의 분위기나 흐름 등을 파악한다.",
+      "source_sentence": "대본을 검토하여 드라마의 분위기나 흐름 등을 파악한다.",
+      "derived_from": "상속 주요업무(편집기사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "영상",
+      "full_statement": "촬영순서에 따라 영상을 관찰한다.",
+      "source_sentence": "촬영순서에 따라 영상을 관찰하고 편집순서를 검토한다.",
+      "derived_from": "상속 주요업무(편집기사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검토하다",
+      "object": "편집순서",
+      "full_statement": "촬영순서에 따라 편집순서를 검토한다.",
+      "source_sentence": "촬영순서에 따라 영상을 관찰하고 편집순서를 검토한다.",
+      "derived_from": "상속 주요업무(편집기사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "편집하다",
+      "object": "영상",
+      "full_statement": "편집감독의 지시에 따라 편집 장비를 사용하여 영상을 편집한다.",
+      "source_sentence": "편집감독의 지시에 따라 편집 장비를 사용하여 편집한다.",
+      "derived_from": "상속 주요업무(편집기사)",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "조정판(콘솔)", "category": "장비", "evidence_span": "영상의 구도, 색상 등을 조절하는 조정판(콘솔)을 조작한다."},
+    {"name": "편집장비", "category": "장비", "evidence_span": "영화, 방송에 쓰이는 영상을 대본에 맞게 편집장비를 조작하여 편집한다."},
+    {"name": "녹화기", "category": "장비", "evidence_span": "녹화기를 조작하여 프로그램의 영상신호를 녹화한다."},
+    {"name": "편집기", "category": "장비", "evidence_span": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며"},
+    {"name": "모니터(monitor)", "category": "장비", "evidence_span": "영상의 구도 및 조명등을 확인하기 위하여 모니터(monitor)를 검토하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "편집감독의 지시에 따라 작업", "evidence_span": "편집감독의 지시에 따라 편집 장비를 사용하여 편집한다."},
+    {"category": "시간적", "value": "방송시간에 맞춘 작업", "evidence_span": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집"},
+    {"category": "신체적", "value": "모니터 관찰을 통한 정밀 점검", "evidence_span": "영상의 색상 번짐, 화면 떨림 등의 기술적인 사항을 확인하기 위하여 방송중인 프로그램을 관찰한다."}
+  ]
+}

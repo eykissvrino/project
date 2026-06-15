@@ -1,0 +1,181 @@
+{
+  "ksco_code": "37101",
+  "tasks": [
+    {
+      "verb": "총괄하다",
+      "object": "행정업무",
+      "full_statement": "사업체의 운영에 필요한 각종 행정업무를 총괄한다.",
+      "source_sentence": "사업체의 운영에 필요한 각종 행정업무를 총괄하는 업무를 수행하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수발하다",
+      "object": "문서",
+      "full_statement": "사내외 문서를 수발한다.",
+      "source_sentence": "문서의 수발‧관리, 4대 사회보험관리, 급여 관리, 비품 및 차량의 관리, 각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "문서",
+      "full_statement": "사내외 문서를 관리한다.",
+      "source_sentence": "문서의 수발‧관리, 4대 사회보험관리, 급여 관리, 비품 및 차량의 관리, 각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "4대 사회보험",
+      "full_statement": "4대 사회보험을 관리한다.",
+      "source_sentence": "문서의 수발‧관리, 4대 사회보험관리, 급여 관리, 비품 및 차량의 관리, 각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "급여",
+      "full_statement": "임직원의 급여를 관리한다.",
+      "source_sentence": "문서의 수발‧관리, 4대 사회보험관리, 급여 관리, 비품 및 차량의 관리, 각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "비품 및 차량",
+      "full_statement": "사업체의 비품 및 차량을 관리한다.",
+      "source_sentence": "문서의 수발‧관리, 4대 사회보험관리, 급여 관리, 비품 및 차량의 관리, 각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "계획하다",
+      "object": "사내 행사",
+      "full_statement": "각종 사내 행사를 계획한다.",
+      "source_sentence": "각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "사내 행사",
+      "full_statement": "각종 사내 행사를 준비한다.",
+      "source_sentence": "각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "집행하다",
+      "object": "사내 행사",
+      "full_statement": "각종 사내 행사를 집행한다.",
+      "source_sentence": "각종 사내 행사를 계획‧준비‧집행하는데 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "섭외하다",
+      "object": "협회·조합·단체",
+      "full_statement": "회사와 관련이 있는 협회·조합·단체에 대한 섭외업무를 수행한다.",
+      "source_sentence": "또한 기타 회사와 관련이 있는 협회‧조합‧단체에 대한 섭외업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "사무행정 절차",
+      "full_statement": "사무행정 절차를 감독한다.",
+      "source_sentence": "사무행정 절차를 감독, 조정하며 새로운 절차를 검토, 평가, 집행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "사무행정 절차",
+      "full_statement": "사무행정 절차를 조정한다.",
+      "source_sentence": "사무행정 절차를 감독, 조정하며 새로운 절차를 검토, 평가, 집행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "새로운 절차",
+      "full_statement": "새로운 사무행정 절차를 검토한다.",
+      "source_sentence": "사무행정 절차를 감독, 조정하며 새로운 절차를 검토, 평가, 집행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "평가하다",
+      "object": "새로운 절차",
+      "full_statement": "새로운 사무행정 절차를 평가한다.",
+      "source_sentence": "사무행정 절차를 감독, 조정하며 새로운 절차를 검토, 평가, 집행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "집행하다",
+      "object": "새로운 절차",
+      "full_statement": "새로운 사무행정 절차를 집행한다.",
+      "source_sentence": "사무행정 절차를 감독, 조정하며 새로운 절차를 검토, 평가, 집행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조정하다",
+      "object": "사무 관련 업무",
+      "full_statement": "후생복지, 재배치, 장비, 소요물품, 서식, 주차, 유지 및 보안 서비스 등 사무 관련 업무를 조정한다.",
+      "source_sentence": "후생복지, 재배치, 장비, 소요물품, 서식, 주차, 유지 및 보안 서비스등 사무 관련 업무를 조정, 계획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "계획하다",
+      "object": "사무 관련 업무",
+      "full_statement": "후생복지, 재배치, 장비, 소요물품, 서식, 주차, 유지 및 보안 서비스 등 사무 관련 업무를 계획한다.",
+      "source_sentence": "후생복지, 재배치, 장비, 소요물품, 서식, 주차, 유지 및 보안 서비스등 사무 관련 업무를 조정, 계획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "수립하다",
+      "object": "운영예산",
+      "full_statement": "운영예산을 수립한다.",
+      "source_sentence": "운영예산 수립, 재고 및 예산 관리 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "재고",
+      "full_statement": "사업체의 재고를 관리한다.",
+      "source_sentence": "운영예산 수립, 재고 및 예산 관리 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "관리하다",
+      "object": "예산",
+      "full_statement": "사업체의 예산을 관리한다.",
+      "source_sentence": "운영예산 수립, 재고 및 예산 관리 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "보고서·편람·공문",
+      "full_statement": "보고서, 편람, 공문 등을 준비한다.",
+      "source_sentence": "보고서, 편람, 공문 등을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "협회·조합·단체 대상 섭외(대외 응대)",
+      "evidence_span": "또한 기타 회사와 관련이 있는 협회‧조합‧단체에 대한 섭외업무를 한다."
+    }
+  ]
+}

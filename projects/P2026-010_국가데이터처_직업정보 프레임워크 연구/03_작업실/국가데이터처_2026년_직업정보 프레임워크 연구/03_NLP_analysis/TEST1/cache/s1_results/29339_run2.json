@@ -1,0 +1,154 @@
+{
+  "ksco_code": "29339",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "사람 및 사건에 대한 정보",
+      "full_statement": "사람 및 사건에 대한 정보를 수집한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "사람 및 사건에 대한 정보",
+      "full_statement": "사람 및 사건에 대한 정보를 분석한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "준비하다",
+      "object": "원고",
+      "full_statement": "방송 진행을 위한 원고를 준비한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "진행하다",
+      "object": "뉴스",
+      "full_statement": "방송에서 뉴스를 진행한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "진행하다",
+      "object": "교양·오락 프로그램",
+      "full_statement": "텔레비전과 라디오 방송에서 교양·오락 등의 프로그램을 진행한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "소개하다",
+      "object": "출연진이나 연예인",
+      "full_statement": "쇼나 프로그램에서 출연진이나 연예인을 소개한다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "진행하다",
+      "object": "쇼나 프로그램",
+      "full_statement": "쇼나 프로그램의 진행을 맡는다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.77
+    },
+    {
+      "verb": "소개하다",
+      "object": "보도 내용",
+      "full_statement": "텔레비전과 라디오 방송 프로그램에 참여하여 보도 내용을 소개한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램에 참여하여 보도 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.77
+    },
+    {
+      "verb": "참여하다",
+      "object": "취재",
+      "full_statement": "직접 취재에 참여한다.",
+      "source_sentence": "직접 취재에 참여하여 취재 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "소개하다",
+      "object": "취재 내용",
+      "full_statement": "직접 취재한 내용을 소개한다.",
+      "source_sentence": "직접 취재에 참여하여 취재 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보도하다",
+      "object": "뉴스",
+      "full_statement": "텔레비전, 라디오, 케이블, 인터넷 방송에서 뉴스를 보도한다.",
+      "source_sentence": "텔레비전, 라디오, 케이블, 인터넷 방송에서 뉴스를 보도하거나 오락, 교양, 시사, 음악 프로그램을 진행하거나 방송내용을 소개하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "진행하다",
+      "object": "시사·음악 프로그램",
+      "full_statement": "방송에서 시사·음악 프로그램을 진행한다.",
+      "source_sentence": "텔레비전, 라디오, 케이블, 인터넷 방송에서 뉴스를 보도하거나 오락, 교양, 시사, 음악 프로그램을 진행하거나 방송내용을 소개하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.66
+    },
+    {
+      "verb": "소개하다",
+      "object": "방송내용",
+      "full_statement": "방송내용을 소개한다.",
+      "source_sentence": "텔레비전, 라디오, 케이블, 인터넷 방송에서 뉴스를 보도하거나 오락, 교양, 시사, 음악 프로그램을 진행하거나 방송내용을 소개하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.66
+    },
+    {
+      "verb": "진행하다",
+      "object": "행사",
+      "full_statement": "이벤트 사회자로서 행사를 진행한다.",
+      "source_sentence": "이벤트 사회자(행사 MC)",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "해설하다",
+      "object": "경기",
+      "full_statement": "경기 해설사로서 경기 상황을 해설한다.",
+      "source_sentence": "경기 해설사",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "중계하다",
+      "object": "스포츠 경기",
+      "full_statement": "스포츠 캐스터로서 스포츠 경기를 중계한다.",
+      "source_sentence": "스포츠 캐스터·기상 캐스터",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "전달하다",
+      "object": "기상 정보",
+      "full_statement": "기상 캐스터로서 기상 정보를 전달한다.",
+      "source_sentence": "스포츠 캐스터·기상 캐스터",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "텔레비전·라디오·케이블·인터넷 방송",
+      "evidence_span": "텔레비전, 라디오, 케이블, 인터넷 방송에서 뉴스를 보도하거나"
+    },
+    {
+      "category": "사회적",
+      "value": "출연진·연예인 소개 등 대중 응대 진행",
+      "evidence_span": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다."
+    }
+  ]
+}

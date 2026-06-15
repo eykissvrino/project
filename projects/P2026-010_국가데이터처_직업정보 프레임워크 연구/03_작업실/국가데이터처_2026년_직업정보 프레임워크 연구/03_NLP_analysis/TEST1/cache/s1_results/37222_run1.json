@@ -1,0 +1,143 @@
+{
+  "ksco_code": "37222",
+  "tasks": [
+    {
+      "verb": "주선하다",
+      "object": "경기",
+      "full_statement": "운동선수의 경기를 주선한다.",
+      "source_sentence": "운동선수의 기량향상, 계약조건, 경기 관련 일정 등 경기를 주선하고 운동선수의 사업문제를 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "운동선수의 사업문제",
+      "full_statement": "운동선수의 사업문제를 관리한다.",
+      "source_sentence": "운동선수의 기량향상, 계약조건, 경기 관련 일정 등 경기를 주선하고 운동선수의 사업문제를 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "운동선수의 기량향상",
+      "full_statement": "운동선수의 기량향상을 관리한다.",
+      "source_sentence": "운동선수의 기량향상, 계약조건, 경기 관련 일정 등 경기를 주선하고 운동선수의 사업문제를 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "경기 관련 일정",
+      "full_statement": "경기 관련 일정을 관리한다.",
+      "source_sentence": "운동선수의 기량향상, 계약조건, 경기 관련 일정 등 경기를 주선하고 운동선수의 사업문제를 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "협상하다",
+      "object": "선수의 연봉",
+      "full_statement": "선수의 연봉을 협상한다.",
+      "source_sentence": "스포츠 매니저는 선수의 체력관리와 연봉협상 등을 한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "선수의 체력",
+      "full_statement": "선수의 체력을 관리한다.",
+      "source_sentence": "스포츠 매니저는 선수의 체력관리와 연봉협상 등을 한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "경기프로모터 또는 관련기관",
+      "full_statement": "유리한 계약조건을 얻기 위하여 경기프로모터 또는 관련기관과 협의한다.",
+      "source_sentence": "유리한 계약조건을 얻기 위하여 경기프로모터 또는 관련기관과 협의 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "프로선수의 운동시간",
+      "full_statement": "프로선수가 지켜야 할 운동시간을 관리한다.",
+      "source_sentence": "프로선수가 지켜야 할 운동시간, 휴식시간, 체중, 식사량 등을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "프로선수의 휴식시간",
+      "full_statement": "프로선수가 지켜야 할 휴식시간을 관리한다.",
+      "source_sentence": "프로선수가 지켜야 할 운동시간, 휴식시간, 체중, 식사량 등을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "프로선수의 체중",
+      "full_statement": "프로선수가 지켜야 할 체중을 관리한다.",
+      "source_sentence": "프로선수가 지켜야 할 운동시간, 휴식시간, 체중, 식사량 등을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "프로선수의 식사량",
+      "full_statement": "프로선수가 지켜야 할 식사량을 관리한다.",
+      "source_sentence": "프로선수가 지켜야 할 운동시간, 휴식시간, 체중, 식사량 등을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "주선하다",
+      "object": "선수 또는 팀 간의 시합",
+      "full_statement": "선수 또는 팀 간의 시합을 주선한다.",
+      "source_sentence": "경기 프로모터는 선수 또는 팀 간의 시합을 주선하고 이를 성사시키는 역할을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "성사시키다",
+      "object": "선수 또는 팀 간의 시합",
+      "full_statement": "선수 또는 팀 간의 시합을 성사시킨다.",
+      "source_sentence": "경기 프로모터는 선수 또는 팀 간의 시합을 주선하고 이를 성사시키는 역할을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수립하다",
+      "object": "여행일정",
+      "full_statement": "지방이나 해외공연에 따른 여행일정, 교통, 숙박 등에 관련된 세부적인 일정을 수립한다.",
+      "source_sentence": "지방이나 해외공연에 따른 여행일정, 교통, 숙박 등에 관련된 세부적인 일정을 수립·관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "대리하다",
+      "object": "출연일정 및 출연료 계약 업무",
+      "full_statement": "협회나 흥행단체와 출연일정 및 출연료 등을 협의하고 계약하는 업무를 대리한다.",
+      "source_sentence": "협회나 영화사, 방송국 및 기타 흥행단체와 출연일정 및 출연료 등을 협의하고 계약하는 업무를 대리한다.",
+      "derived_from": "상속 주요업무(연예인 매니저 활동, 스포츠 매니저 적합성 낮음)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "경기프로모터·관련기관과의 협의 및 계약 교섭",
+      "evidence_span": "유리한 계약조건을 얻기 위하여 경기프로모터 또는 관련기관과 협의 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "운동선수 보좌·관리(대인 보조 업무)",
+      "evidence_span": "관리자, 연예인 및 운동선수 등이 보다 능률적으로 최대한의 업무 성과를 올릴 수 있도록 보좌 한다."
+    },
+    {
+      "category": "장소",
+      "value": "지방·해외 이동(출장)",
+      "evidence_span": "지방이나 해외공연에 따른 여행일정, 교통, 숙박 등에 관련된 세부적인 일정을 수립·관리한다."
+    }
+  ]
+}

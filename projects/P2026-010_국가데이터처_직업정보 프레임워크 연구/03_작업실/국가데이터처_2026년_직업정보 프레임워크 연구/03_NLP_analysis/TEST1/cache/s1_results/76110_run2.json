@@ -1,0 +1,110 @@
+{
+  "ksco_code": "76110",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "사무용 기기",
+      "full_statement": "수동공구와 동력공구를 사용하여 복사기·팩시밀리 등 사무용 기기를 설치한다.",
+      "source_sentence": "컴퓨터를 제외한 복사기‧팩시밀리 등과 같은 사무용 기기를 수동공구, 동력공구를 사용하여 설치하고, 제품의 작동상태를 점검하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "제품의 작동상태",
+      "full_statement": "설치한 사무용 기기 제품의 작동상태를 점검한다.",
+      "source_sentence": "컴퓨터를 제외한 복사기‧팩시밀리 등과 같은 사무용 기기를 수동공구, 동력공구를 사용하여 설치하고, 제품의 작동상태를 점검하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "사무용 기기",
+      "full_statement": "작동상태에 이상이 있는 사무용 기기를 수리한다.",
+      "source_sentence": "컴퓨터를 제외한 복사기‧팩시밀리 등과 같은 사무용 기기를 수동공구, 동력공구를 사용하여 설치하고, 제품의 작동상태를 점검하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작동시키다",
+      "object": "기계",
+      "full_statement": "고장의 원인을 알아내기 위하여 사무용 기기를 작동시킨다.",
+      "source_sentence": "고장의 원인을 알아내기 위하여 기계를 작동시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분해하다",
+      "object": "기계",
+      "full_statement": "수동공구를 사용하여 사무용 기기를 분해한다.",
+      "source_sentence": "수동공구를 사용하여 기계를 분해하고, 기어‧가이드‧롤러 등의 부품을 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "부품",
+      "full_statement": "기어·가이드·롤러 등의 부품을 검사한다.",
+      "source_sentence": "수동공구를 사용하여 기계를 분해하고, 기어‧가이드‧롤러 등의 부품을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "수동공구·동력공구·용접기구 등을 사용하여 부품을 교체한다.",
+      "source_sentence": "수동공구‧동력공구‧용접기구 등을 사용하여 부품을 교체하고 땜질하거나 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "땜질하다",
+      "object": "부품",
+      "full_statement": "용접기구 등을 사용하여 부품을 땜질한다.",
+      "source_sentence": "수동공구‧동력공구‧용접기구 등을 사용하여 부품을 교체하고 땜질하거나 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조절하다",
+      "object": "부품",
+      "full_statement": "공구를 사용하여 부품을 조절한다.",
+      "source_sentence": "수동공구‧동력공구‧용접기구 등을 사용하여 부품을 교체하고 땜질하거나 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청소하다",
+      "object": "작동 부품",
+      "full_statement": "작동되는 부품을 깨끗이 닦는다.",
+      "source_sentence": "작동되는 부품을 깨끗이 닦고 기름을 친다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "급유하다",
+      "object": "작동 부품",
+      "full_statement": "작동되는 부품에 기름을 친다.",
+      "source_sentence": "작동되는 부품을 깨끗이 닦고 기름을 친다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설명하다",
+      "object": "기계사용 유의사항 및 조작방법",
+      "full_statement": "기계사용의 유의사항이나 조작방법 등을 설명한다.",
+      "source_sentence": "기계사용의 유의사항이나 조작방법 등을 설명하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "수동공구", "category": "도구", "evidence_span": "수동공구, 동력공구를 사용하여 설치하고"},
+    {"name": "동력공구", "category": "도구", "evidence_span": "수동공구, 동력공구를 사용하여 설치하고"},
+    {"name": "용접기구", "category": "도구", "evidence_span": "수동공구‧동력공구‧용접기구 등을 사용하여 부품을 교체하고 땜질하거나 조절한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "수공구 사용 기반 정밀 분해·조립 작업", "evidence_span": "수동공구를 사용하여 기계를 분해하고, 기어‧가이드‧롤러 등의 부품을 검사한다."},
+    {"category": "사회적", "value": "고객 대상 기계사용 유의사항·조작방법 설명", "evidence_span": "기계사용의 유의사항이나 조작방법 등을 설명하기도 한다."}
+  ]
+}

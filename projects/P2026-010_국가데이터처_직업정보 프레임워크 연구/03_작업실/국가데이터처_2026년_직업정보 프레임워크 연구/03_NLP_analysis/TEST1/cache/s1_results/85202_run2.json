@@ -1,0 +1,77 @@
+{
+  "ksco_code": "85202",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "냉장·냉동 시설",
+      "full_statement": "식품저장용, 냉각매체용 등 다양한 목적의 냉장·냉동 시설을 조작한다.",
+      "source_sentence": "식품저장용, 냉각매체용과 같이 신선유지 등을 위한 다양한 목적의 냉장‧냉동 시설을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "냉방장치",
+      "full_statement": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "source_sentence": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "유지하다",
+      "object": "식품 신선도",
+      "full_statement": "식품저장용 냉장·냉동 시설을 가동하여 저장물의 신선유지 상태를 유지한다.",
+      "source_sentence": "식품저장용, 냉각매체용과 같이 신선유지 등을 위한 다양한 목적의 냉장‧냉동 시설을 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "냉각매체용 시설",
+      "full_statement": "냉각매체용 냉장·냉동 시설을 조작한다.",
+      "source_sentence": "식품저장용, 냉각매체용과 같이 신선유지 등을 위한 다양한 목적의 냉장‧냉동 시설을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "작동상태",
+      "full_statement": "냉장·냉동 설비의 작동상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "점검하다",
+      "object": "배관상태",
+      "full_statement": "냉장·냉동 설비의 배관상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "냉동기 설비",
+      "full_statement": "냉동기 설비를 효율적으로 관리한다.",
+      "source_sentence": "대형 건물의 보일러를 조작하고 효율적으로 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "제어하다",
+      "object": "냉장 시스템",
+      "full_statement": "컴퓨터에 의한 기계 제어를 활용하여 냉장 시스템을 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "냉장·냉동 시설", "category": "장비", "evidence_span": "다양한 목적의 냉장‧냉동 시설을 조작한다"},
+    {"name": "냉방장치", "category": "장비", "evidence_span": "건물을 냉방시키기 위해 냉방장치를 조작한다"},
+    {"name": "냉동기", "category": "장비", "evidence_span": "냉동기 조작원"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "기계·장비 조작", "evidence_span": "기계를 조작하여 제품을 생산하거나 대규모적이고 때로는 고도의 자동화된 산업용 기계 및 장비를 조작하고"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28221",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "투자 계획",
+      "full_statement": "운용자산 특성에 맞추어 효율적인 투자계획을 수립한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운용하다",
+      "object": "포트폴리오",
+      "full_statement": "자금사정과 증권시장 변동에 따라 포트폴리오를 운용한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "손실 위험",
+      "full_statement": "주식·채권·파생상품으로 구분하여 투자 위험을 관리한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "투자 조언",
+      "full_statement": "개인·기관 투자자에게 자산운용에 관한 조언을 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운용하다",
+      "object": "펀드",
+      "full_statement": "투자신탁 재산이나 기관투자가의 펀드를 관리하고 운용한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

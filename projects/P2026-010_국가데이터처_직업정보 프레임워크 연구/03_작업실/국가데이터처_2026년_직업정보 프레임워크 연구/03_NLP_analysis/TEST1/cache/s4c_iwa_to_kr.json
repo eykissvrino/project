@@ -1,0 +1,892 @@
+{
+  "I_0001": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.6806,
+    "method": "mapped"
+  },
+  "I_0002": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.6811,
+    "method": "mapped"
+  },
+  "I_0003": {
+    "gwa_id": "KGc_33",
+    "cosine": 0.6939,
+    "method": "mapped"
+  },
+  "I_0004": {
+    "gwa_id": "KGc_01",
+    "cosine": 0.6863,
+    "method": "mapped"
+  },
+  "I_0005": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.7279,
+    "method": "mapped"
+  },
+  "I_0006": {
+    "gwa_id": "KGc_10",
+    "cosine": 0.6979,
+    "method": "mapped"
+  },
+  "I_0007": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.6858,
+    "method": "mapped"
+  },
+  "I_0008": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.7253,
+    "method": "mapped"
+  },
+  "I_0009": {
+    "gwa_id": "KGc_29",
+    "cosine": 0.6979,
+    "method": "mapped"
+  },
+  "I_0010": {
+    "gwa_id": "KGc_30",
+    "cosine": 0.7241,
+    "method": "mapped"
+  },
+  "I_0011": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.6783,
+    "method": "mapped"
+  },
+  "I_0012": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6199,
+    "method": "mapped"
+  },
+  "I_0013": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.6358,
+    "method": "mapped"
+  },
+  "I_0014": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.6745,
+    "method": "mapped"
+  },
+  "I_0015": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.6314,
+    "method": "mapped"
+  },
+  "I_0016": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.7066,
+    "method": "mapped"
+  },
+  "I_0017": {
+    "gwa_id": "KGc_35",
+    "cosine": 0.7181,
+    "method": "mapped"
+  },
+  "I_0018": {
+    "gwa_id": "KGc_28",
+    "cosine": 0.689,
+    "method": "mapped"
+  },
+  "I_0019": {
+    "gwa_id": "KGc_24",
+    "cosine": 0.5727,
+    "method": "mapped"
+  },
+  "I_0020": {
+    "gwa_id": "KGc_23",
+    "cosine": 0.6779,
+    "method": "mapped"
+  },
+  "I_0021": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.661,
+    "method": "mapped"
+  },
+  "I_0022": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6829,
+    "method": "mapped"
+  },
+  "I_0023": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.6402,
+    "method": "mapped"
+  },
+  "I_0024": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.6509,
+    "method": "mapped"
+  },
+  "I_0025": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.5918,
+    "method": "mapped"
+  },
+  "I_0026": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.6581,
+    "method": "mapped"
+  },
+  "I_0027": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6303,
+    "method": "mapped"
+  },
+  "I_0028": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6411,
+    "method": "mapped"
+  },
+  "I_0029": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.702,
+    "method": "mapped"
+  },
+  "I_0030": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.6407,
+    "method": "mapped"
+  },
+  "I_0031": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.6737,
+    "method": "mapped"
+  },
+  "I_0032": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.6535,
+    "method": "mapped"
+  },
+  "I_0033": {
+    "gwa_id": "KGc_33",
+    "cosine": 0.5904,
+    "method": "mapped"
+  },
+  "I_0034": {
+    "gwa_id": "KGc_22",
+    "cosine": 0.6532,
+    "method": "mapped"
+  },
+  "I_0035": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6434,
+    "method": "mapped"
+  },
+  "I_0036": {
+    "gwa_id": "KGc_33",
+    "cosine": 0.5616,
+    "method": "mapped"
+  },
+  "I_0037": {
+    "gwa_id": "KGc_31",
+    "cosine": 0.7582,
+    "method": "mapped"
+  },
+  "I_0038": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.7291,
+    "method": "mapped"
+  },
+  "I_0039": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6607,
+    "method": "mapped"
+  },
+  "I_0040": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.6554,
+    "method": "mapped"
+  },
+  "I_0041": {
+    "gwa_id": "KGc_30",
+    "cosine": 0.5794,
+    "method": "mapped"
+  },
+  "I_0042": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.5859,
+    "method": "mapped"
+  },
+  "I_0043": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.6423,
+    "method": "mapped"
+  },
+  "I_0044": {
+    "gwa_id": "KGc_33",
+    "cosine": 0.6127,
+    "method": "mapped"
+  },
+  "I_0045": {
+    "gwa_id": "KGc_28",
+    "cosine": 0.6634,
+    "method": "mapped"
+  },
+  "I_0046": {
+    "gwa_id": "KGc_28",
+    "cosine": 0.756,
+    "method": "mapped"
+  },
+  "I_0047": {
+    "gwa_id": "KGc_03",
+    "cosine": 0.6352,
+    "method": "mapped"
+  },
+  "I_0048": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5746,
+    "method": "mapped"
+  },
+  "I_0049": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.6658,
+    "method": "mapped"
+  },
+  "I_0050": {
+    "gwa_id": "KGc_10",
+    "cosine": 0.6616,
+    "method": "mapped"
+  },
+  "I_0051": {
+    "gwa_id": "KGc_24",
+    "cosine": 0.6049,
+    "method": "mapped"
+  },
+  "I_0052": {
+    "gwa_id": "KGc_26",
+    "cosine": 0.6554,
+    "method": "mapped"
+  },
+  "I_0053": {
+    "gwa_id": "KGc_23",
+    "cosine": 0.6683,
+    "method": "mapped"
+  },
+  "I_0054": {
+    "gwa_id": "KGc_24",
+    "cosine": 0.5888,
+    "method": "mapped"
+  },
+  "I_0055": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.5911,
+    "method": "mapped"
+  },
+  "I_0056": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.6699,
+    "method": "mapped"
+  },
+  "I_0057": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.6216,
+    "method": "mapped"
+  },
+  "I_0058": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.6144,
+    "method": "mapped"
+  },
+  "I_0059": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.7058,
+    "method": "mapped"
+  },
+  "I_0060": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6153,
+    "method": "mapped"
+  },
+  "I_0061": {
+    "gwa_id": "KGc_32",
+    "cosine": 0.6227,
+    "method": "mapped"
+  },
+  "I_0062": {
+    "gwa_id": "KGc_32",
+    "cosine": 0.6616,
+    "method": "mapped"
+  },
+  "I_0063": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.6932,
+    "method": "mapped"
+  },
+  "I_0064": {
+    "gwa_id": "KGc_25",
+    "cosine": 0.6382,
+    "method": "mapped"
+  },
+  "I_0065": {
+    "gwa_id": "KGc_31",
+    "cosine": 0.603,
+    "method": "mapped"
+  },
+  "I_0066": {
+    "gwa_id": "KGc_34",
+    "cosine": 0.6215,
+    "method": "mapped"
+  },
+  "I_0067": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.5631,
+    "method": "mapped"
+  },
+  "I_0068": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.617,
+    "method": "mapped"
+  },
+  "I_0069": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.5891,
+    "method": "mapped"
+  },
+  "I_0070": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.557,
+    "method": "mapped"
+  },
+  "I_0071": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.6004,
+    "method": "mapped"
+  },
+  "I_0072": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.6429,
+    "method": "mapped"
+  },
+  "I_0073": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.5548,
+    "method": "mapped"
+  },
+  "I_0074": {
+    "gwa_id": "KGc_06",
+    "cosine": 0.6298,
+    "method": "mapped"
+  },
+  "I_0075": {
+    "gwa_id": "KGc_26",
+    "cosine": 0.5783,
+    "method": "mapped"
+  },
+  "I_0076": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.6478,
+    "method": "mapped"
+  },
+  "I_0077": {
+    "gwa_id": "KGc_29",
+    "cosine": 0.6326,
+    "method": "mapped"
+  },
+  "I_0078": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.5607,
+    "method": "mapped"
+  },
+  "I_0079": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.6783,
+    "method": "mapped"
+  },
+  "I_0080": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.5769,
+    "method": "mapped"
+  },
+  "I_0081": {
+    "gwa_id": "KGc_26",
+    "cosine": 0.601,
+    "method": "mapped"
+  },
+  "I_0082": {
+    "gwa_id": "KGc_22",
+    "cosine": 0.6287,
+    "method": "mapped"
+  },
+  "I_0083": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.606,
+    "method": "mapped"
+  },
+  "I_0084": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.589,
+    "method": "mapped"
+  },
+  "I_0085": {
+    "gwa_id": "KGc_23",
+    "cosine": 0.6283,
+    "method": "mapped"
+  },
+  "I_0086": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5014,
+    "method": "mapped"
+  },
+  "I_0087": {
+    "gwa_id": "KGc_35",
+    "cosine": 0.5853,
+    "method": "mapped"
+  },
+  "I_0088": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.6358,
+    "method": "mapped"
+  },
+  "I_0089": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.5963,
+    "method": "mapped"
+  },
+  "I_0090": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.5878,
+    "method": "mapped"
+  },
+  "I_0091": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.526,
+    "method": "mapped"
+  },
+  "I_0092": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.5125,
+    "method": "mapped"
+  },
+  "I_0093": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.6022,
+    "method": "mapped"
+  },
+  "I_0094": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5881,
+    "method": "mapped"
+  },
+  "I_0095": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.5684,
+    "method": "mapped"
+  },
+  "I_0096": {
+    "gwa_id": "KGc_25",
+    "cosine": 0.5775,
+    "method": "mapped"
+  },
+  "I_0097": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.5952,
+    "method": "mapped"
+  },
+  "I_0098": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.5492,
+    "method": "mapped"
+  },
+  "I_0099": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.5743,
+    "method": "mapped"
+  },
+  "I_0100": {
+    "gwa_id": "KGc_28",
+    "cosine": 0.5052,
+    "method": "mapped"
+  },
+  "I_0101": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.5764,
+    "method": "mapped"
+  },
+  "I_0102": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.5445,
+    "method": "mapped"
+  },
+  "I_0103": {
+    "gwa_id": "KGc_22",
+    "cosine": 0.6029,
+    "method": "mapped"
+  },
+  "I_0104": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5432,
+    "method": "mapped"
+  },
+  "I_0105": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5884,
+    "method": "mapped"
+  },
+  "I_0106": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.5927,
+    "method": "mapped"
+  },
+  "I_0107": {
+    "gwa_id": "KGc_26",
+    "cosine": 0.478,
+    "method": "mapped"
+  },
+  "I_0108": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.5313,
+    "method": "mapped"
+  },
+  "I_0109": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5853,
+    "method": "mapped"
+  },
+  "I_0110": {
+    "gwa_id": "KGc_02",
+    "cosine": 0.6875,
+    "method": "mapped"
+  },
+  "I_0111": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.601,
+    "method": "mapped"
+  },
+  "I_0112": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.5469,
+    "method": "mapped"
+  },
+  "I_0113": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.5649,
+    "method": "mapped"
+  },
+  "I_0114": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.5659,
+    "method": "mapped"
+  },
+  "I_0115": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.4969,
+    "method": "mapped"
+  },
+  "I_0116": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6121,
+    "method": "mapped"
+  },
+  "I_0117": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.5272,
+    "method": "mapped"
+  },
+  "I_0118": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5533,
+    "method": "mapped"
+  },
+  "I_0119": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.5199,
+    "method": "mapped"
+  },
+  "I_0120": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.5343,
+    "method": "mapped"
+  },
+  "I_0121": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.6833,
+    "method": "mapped"
+  },
+  "I_0122": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.6024,
+    "method": "mapped"
+  },
+  "I_0123": {
+    "gwa_id": "KGc_07",
+    "cosine": 0.5846,
+    "method": "mapped"
+  },
+  "I_0124": {
+    "gwa_id": "KGc_05",
+    "cosine": 0.5499,
+    "method": "mapped"
+  },
+  "I_0125": {
+    "gwa_id": "KGc_33",
+    "cosine": 0.5814,
+    "method": "mapped"
+  },
+  "I_0126": {
+    "gwa_id": "KGc_36",
+    "cosine": 0.6346,
+    "method": "mapped"
+  },
+  "I_0127": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.5848,
+    "method": "mapped"
+  },
+  "I_0128": {
+    "gwa_id": "KGc_35",
+    "cosine": 0.6312,
+    "method": "mapped"
+  },
+  "I_0129": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.6526,
+    "method": "mapped"
+  },
+  "I_0130": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.6551,
+    "method": "mapped"
+  },
+  "I_0131": {
+    "gwa_id": "KGc_11",
+    "cosine": 0.6081,
+    "method": "mapped"
+  },
+  "I_0132": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.627,
+    "method": "mapped"
+  },
+  "I_0133": {
+    "gwa_id": "KGc_24",
+    "cosine": 0.5455,
+    "method": "mapped"
+  },
+  "I_0134": {
+    "gwa_id": "KGc_15",
+    "cosine": 0.6159,
+    "method": "mapped"
+  },
+  "I_0135": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.5661,
+    "method": "mapped"
+  },
+  "I_0136": {
+    "gwa_id": "KGc_22",
+    "cosine": 0.4583,
+    "method": "mapped"
+  },
+  "I_0137": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.4407,
+    "method": "mapped"
+  },
+  "I_0138": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.446,
+    "method": "mapped"
+  },
+  "I_0139": {
+    "gwa_id": "KGc_16",
+    "cosine": 0.4575,
+    "method": "mapped"
+  },
+  "I_0140": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.5551,
+    "method": "mapped"
+  },
+  "I_0141": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.4845,
+    "method": "mapped"
+  },
+  "I_0142": {
+    "gwa_id": "KGc_02",
+    "cosine": 0.5468,
+    "method": "mapped"
+  },
+  "I_0143": {
+    "gwa_id": "KGc_25",
+    "cosine": 0.5198,
+    "method": "mapped"
+  },
+  "I_0144": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5264,
+    "method": "mapped"
+  },
+  "I_0145": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.491,
+    "method": "mapped"
+  },
+  "I_0146": {
+    "gwa_id": "KGc_19",
+    "cosine": 0.5316,
+    "method": "mapped"
+  },
+  "I_0147": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.4666,
+    "method": "mapped"
+  },
+  "I_0148": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.4945,
+    "method": "mapped"
+  },
+  "I_0149": {
+    "gwa_id": "KGc_26",
+    "cosine": 0.6254,
+    "method": "mapped"
+  },
+  "I_0150": {
+    "gwa_id": "KGc_12",
+    "cosine": 0.5202,
+    "method": "mapped"
+  },
+  "I_0151": {
+    "gwa_id": "KGc_02",
+    "cosine": 0.6094,
+    "method": "mapped"
+  },
+  "I_0152": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.4999,
+    "method": "mapped"
+  },
+  "I_0153": {
+    "gwa_id": "KGc_35",
+    "cosine": 0.5586,
+    "method": "mapped"
+  },
+  "I_0154": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.5971,
+    "method": "mapped"
+  },
+  "I_0155": {
+    "gwa_id": "KGc_21",
+    "cosine": 0.462,
+    "method": "mapped"
+  },
+  "I_0156": {
+    "gwa_id": "KGc_17",
+    "cosine": 0.5507,
+    "method": "mapped"
+  },
+  "I_0157": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.6258,
+    "method": "mapped"
+  },
+  "I_0158": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.5364,
+    "method": "mapped"
+  },
+  "I_0159": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.5172,
+    "method": "mapped"
+  },
+  "I_0160": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.4619,
+    "method": "mapped"
+  },
+  "I_0161": {
+    "gwa_id": "KGc_20",
+    "cosine": 0.5957,
+    "method": "mapped"
+  },
+  "I_0162": {
+    "gwa_id": "KGc_18",
+    "cosine": 0.5465,
+    "method": "mapped"
+  },
+  "I_0163": {
+    "gwa_id": "KGc_14",
+    "cosine": 0.5608,
+    "method": "mapped"
+  },
+  "I_0164": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.5864,
+    "method": "mapped"
+  },
+  "I_0165": {
+    "gwa_id": "KGc_32",
+    "cosine": 0.4715,
+    "method": "mapped"
+  },
+  "I_0166": {
+    "gwa_id": "KGc_10",
+    "cosine": 0.5646,
+    "method": "mapped"
+  },
+  "I_0167": {
+    "gwa_id": "KGc_10",
+    "cosine": 0.6377,
+    "method": "mapped"
+  },
+  "I_0168": {
+    "gwa_id": "KGc_30",
+    "cosine": 0.5907,
+    "method": "mapped"
+  },
+  "I_0169": {
+    "gwa_id": "KGc_35",
+    "cosine": 0.6159,
+    "method": "mapped"
+  },
+  "I_0170": {
+    "gwa_id": "KGc_01",
+    "cosine": 0.5882,
+    "method": "mapped"
+  },
+  "I_0171": {
+    "gwa_id": "KGc_02",
+    "cosine": 0.5974,
+    "method": "mapped"
+  },
+  "I_0172": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.5727,
+    "method": "mapped"
+  },
+  "I_0173": {
+    "gwa_id": "KGc_04",
+    "cosine": 0.6149,
+    "method": "mapped"
+  },
+  "I_0174": {
+    "gwa_id": "KGc_27",
+    "cosine": 0.5162,
+    "method": "mapped"
+  },
+  "I_0175": {
+    "gwa_id": "KGc_22",
+    "cosine": 0.4862,
+    "method": "mapped"
+  },
+  "I_0176": {
+    "gwa_id": "KGc_34",
+    "cosine": 0.6083,
+    "method": "mapped"
+  },
+  "I_0177": {
+    "gwa_id": "KGc_24",
+    "cosine": 0.3758,
+    "method": "mapped"
+  },
+  "I_0178": {
+    "gwa_id": "KGc_28",
+    "cosine": 0.3893,
+    "method": "mapped"
+  }
+}

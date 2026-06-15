@@ -1,0 +1,119 @@
+{
+  "ksco_code": "52112",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "일선직원 관리 업무",
+      "full_statement": "단일 매장 내에서 일선직원에 대한 관리 업무를 수행한다.",
+      "source_sentence": "소매점이나 백화점, 쇼핑센터에 있는 단일 매장 내에서 일선직원, 판매 등의 관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "매장 판매 업무",
+      "full_statement": "단일 매장 내에서 판매 관련 관리 업무를 수행한다.",
+      "source_sentence": "소매점이나 백화점, 쇼핑센터에 있는 단일 매장 내에서 일선직원, 판매 등의 관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대응하다",
+      "object": "고객 불만사항",
+      "full_statement": "매장 내에서 발생한 고객 불만사항에 대응한다.",
+      "source_sentence": "매장 내에서 발생한 고객 불만사항에 대응한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "담당하다",
+      "object": "직원 훈련",
+      "full_statement": "매장 일선직원에 대한 훈련을 담당한다.",
+      "source_sentence": "고객 불만사항 발생시 대응하고 직원 훈련을 담당하기도 한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 보강",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "매장 내 상품 재고",
+      "full_statement": "매장 내 상품 재고를 관리한다.",
+      "source_sentence": "매장 내 상품 재고 및 판매현황을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "매장 내 판매현황",
+      "full_statement": "매장 내 판매현황을 관리한다.",
+      "source_sentence": "매장 내 상품 재고 및 판매현황을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "담당하다",
+      "object": "매장 내 인력 배치",
+      "full_statement": "매장 내 인력에 대한 배치를 담당한다.",
+      "source_sentence": "매장 내 인력에 대한 배치, 일정조정 및 평가․훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "매장 내 인력 일정",
+      "full_statement": "매장 내 인력의 일정을 조정한다.",
+      "source_sentence": "매장 내 인력에 대한 배치, 일정조정 및 평가․훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "평가하다",
+      "object": "매장 내 인력",
+      "full_statement": "매장 내 인력에 대한 평가를 수행한다.",
+      "source_sentence": "매장 내 인력에 대한 배치, 일정조정 및 평가․훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객",
+      "full_statement": "필요할 경우 고객을 응대한다.",
+      "source_sentence": "필요할 경우, 고객 응대, 판매, 진열 등을 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품",
+      "full_statement": "필요할 경우 상품을 판매한다.",
+      "source_sentence": "필요할 경우, 고객 응대, 판매, 진열 등을 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "진열하다",
+      "object": "상품",
+      "full_statement": "필요할 경우 상품을 진열한다.",
+      "source_sentence": "필요할 경우, 고객 응대, 판매, 진열 등을 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "소매점·백화점·쇼핑센터 내 단일 매장",
+      "evidence_span": "소매점이나 백화점, 쇼핑센터에 있는 단일 매장 내에서"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 불만 대응 등 고객 응대",
+      "evidence_span": "매장 내에서 발생한 고객 불만사항에 대응한다."
+    },
+    {
+      "category": "사회적",
+      "value": "일선직원 관리·훈련 등 팀 관리",
+      "evidence_span": "매장 내 인력에 대한 배치, 일정조정 및 평가․훈련을 담당한다."
+    }
+  ]
+}

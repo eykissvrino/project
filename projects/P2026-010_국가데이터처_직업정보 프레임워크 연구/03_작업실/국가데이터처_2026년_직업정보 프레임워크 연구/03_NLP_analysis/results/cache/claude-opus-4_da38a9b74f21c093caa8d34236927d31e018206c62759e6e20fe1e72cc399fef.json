@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28232",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "고객 니즈",
+      "full_statement": "시장조사를 통해 고객 니즈를 파악한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "금융 상품",
+      "full_statement": "고객 니즈에 적합한 금융 상품을 개발한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "상품 금리",
+      "full_statement": "금융시장과 금리 리스크를 감안해 상품 금리와 서비스 내용을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "신상품 피드백",
+      "full_statement": "금융 신상품에 대한 지속적인 피드백을 점검한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

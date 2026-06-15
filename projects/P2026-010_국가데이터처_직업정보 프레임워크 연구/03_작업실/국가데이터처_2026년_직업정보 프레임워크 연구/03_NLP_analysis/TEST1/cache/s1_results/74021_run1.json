@@ -1,0 +1,68 @@
+{
+  "ksco_code": "74021",
+  "tasks": [
+    {
+      "verb": "구상하다",
+      "object": "모형",
+      "full_statement": "나무로 제작할 모형 또는 원형을 만들기 위하여 형태를 구상한다.",
+      "source_sentence": "모형 또는 원형을 만들기 위하여 구상‧설계하고 각종 공구 및 기계를 이용하여 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설계하다",
+      "object": "모형",
+      "full_statement": "나무 모형 또는 원형의 형태를 설계한다.",
+      "source_sentence": "모형 또는 원형을 만들기 위하여 구상‧설계하고 각종 공구 및 기계를 이용하여 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면으로 작성된 형태를 검토하여 제작할 모형을 확인한다.",
+      "source_sentence": "머리 속으로 생각한 것이나, 도면으로 작성된 것을 나무로 똑같이 만든 모형이나 원형을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "결정하다",
+      "object": "보정 값",
+      "full_statement": "수축여유, 취급구배, 가공여유 등 각종 보정 값을 고려하여 모형의 치수를 결정한다.",
+      "source_sentence": "각종 보정 값(수축여유, 취급구배, 가공여유 등)을 고려하여 목재, 금속 또는 수지로 모형을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "나무 모형",
+      "full_statement": "각종 공구 및 기계를 이용하여 목재로 모형을 제작한다.",
+      "source_sentence": "각종 보정 값(수축여유, 취급구배, 가공여유 등)을 고려하여 목재, 금속 또는 수지로 모형을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제작하다",
+      "object": "원형",
+      "full_statement": "도면이나 구상한 형태를 나무로 똑같이 만들어 원형을 제작한다.",
+      "source_sentence": "머리 속으로 생각한 것이나, 도면으로 작성된 것을 나무로 똑같이 만든 모형이나 원형을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "이용하다",
+      "object": "공구 및 기계",
+      "full_statement": "각종 공구 및 기계를 이용하여 모형을 가공한다.",
+      "source_sentence": "모형 또는 원형을 만들기 위하여 구상‧설계하고 각종 공구 및 기계를 이용하여 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "각종 공구", "category": "도구", "evidence_span": "각종 공구 및 기계를 이용하여 제작한다"},
+    {"name": "기계", "category": "장비", "evidence_span": "각종 공구 및 기계를 이용하여 제작한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "각종 공구 및 기계를 이용한 정밀 제작 작업", "evidence_span": "각종 공구 및 기계를 이용하여 제작한다"}
+  ]
+}

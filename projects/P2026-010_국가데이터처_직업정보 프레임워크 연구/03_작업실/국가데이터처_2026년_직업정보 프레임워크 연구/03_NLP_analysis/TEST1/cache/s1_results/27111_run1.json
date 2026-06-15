@@ -1,0 +1,106 @@
+{
+  "ksco_code": "27111",
+  "tasks": [
+    {
+      "verb": "진행하다",
+      "object": "재판",
+      "full_statement": "법정에서 재판을 진행한다.",
+      "source_sentence": "법정에서 재판을 진행하고 판결을 내리는 업무를 진행한다.",
+      "derived_from": "세세분류 정의 / 조상정의(세분류)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선고하다",
+      "object": "판결",
+      "full_statement": "재판 결과에 따라 판결을 선고한다.",
+      "source_sentence": "법정에서 재판을 진행하고 판결을 내리는 업무를 진행한다.",
+      "derived_from": "세세분류 정의→조상정의(소분류) 보강",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정하다",
+      "object": "증인의 채택",
+      "full_statement": "증인의 채택을 정한다.",
+      "source_sentence": "증인의 채택, 재판 방식 및 기타 재판절차를 정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정하다",
+      "object": "재판 방식 및 재판절차",
+      "full_statement": "재판 방식 및 기타 재판절차를 정한다.",
+      "source_sentence": "증인의 채택, 재판 방식 및 기타 재판절차를 정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "해결하다",
+      "object": "민사 분쟁",
+      "full_statement": "재판진행을 통해 민사 분쟁을 해결한다.",
+      "source_sentence": "재판진행을 통해 민사 분쟁을 해결하며, 기소된 형사사건의 범죄여부를 판단한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "판단하다",
+      "object": "형사사건의 범죄여부",
+      "full_statement": "기소된 형사사건의 범죄여부를 판단한다.",
+      "source_sentence": "재판진행을 통해 민사 분쟁을 해결하며, 기소된 형사사건의 범죄여부를 판단한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "경청하다",
+      "object": "변호사와 검사의 논쟁",
+      "full_statement": "변호사와 검사의 논쟁을 경청한다.",
+      "source_sentence": "변호사와 검사의 논쟁을 경청하고, 변호인 및 증인의 진술과 법정에 제출된 증거를 검토․ 추론한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "변호인 및 증인의 진술과 법정 제출 증거",
+      "full_statement": "변호인 및 증인의 진술과 법정에 제출된 증거를 검토한다.",
+      "source_sentence": "변호사와 검사의 논쟁을 경청하고, 변호인 및 증인의 진술과 법정에 제출된 증거를 검토․ 추론한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추론하다",
+      "object": "법정 제출 증거",
+      "full_statement": "변호인 및 증인의 진술과 법정에 제출된 증거를 추론한다.",
+      "source_sentence": "변호사와 검사의 논쟁을 경청하고, 변호인 및 증인의 진술과 법정에 제출된 증거를 검토․ 추론한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "주재하다",
+      "object": "소송과정",
+      "full_statement": "소송과정을 주재한다.",
+      "source_sentence": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "재판의 진행",
+      "full_statement": "재판의 진행을 관리·감독한다.",
+      "source_sentence": "재판의 진행을 관리, 감독한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "법정(실내)",
+      "evidence_span": "법정에서 재판을 진행하고 판결을 내리는 업무를 진행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "변호사·검사·증인 등 소송 관계인과의 대면 상호작용",
+      "evidence_span": "변호사와 검사의 논쟁을 경청하고, 변호인 및 증인의 진술과 법정에 제출된 증거를 검토․ 추론한다."
+    }
+  ]
+}

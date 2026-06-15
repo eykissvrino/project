@@ -1,0 +1,78 @@
+{
+  "ksco_code": "85203",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "환기 장치의 전기모터",
+      "full_statement": "냉난방을 위한 공기제어를 위해 환기 장치의 전기모터를 조작한다.",
+      "source_sentence": "냉난방을 위한 공기제어 등을 위해 환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "송풍기",
+      "full_statement": "냉난방을 위한 공기제어를 위해 송풍기를 조작한다.",
+      "source_sentence": "냉난방을 위한 공기제어 등을 위해 환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "환기 장비",
+      "full_statement": "냉난방을 위한 공기제어를 위해 환기 장치의 기타 장비를 조작한다.",
+      "source_sentence": "냉난방을 위한 공기제어 등을 위해 환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제어하다",
+      "object": "공기",
+      "full_statement": "냉난방을 위해 실내 공기를 제어한다.",
+      "source_sentence": "냉난방을 위한 공기제어 등을 위해 환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "냉방장치",
+      "full_statement": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "source_sentence": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "작동상태",
+      "full_statement": "공조 설비의 작동상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "점검하다",
+      "object": "배관상태",
+      "full_statement": "공조 설비의 배관상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "관리하다",
+      "object": "공조 설비",
+      "full_statement": "건물의 공조 설비를 효율적으로 관리한다.",
+      "source_sentence": "대형 건물의 보일러를 조작하고 효율적으로 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "전기모터", "category": "장비", "evidence_span": "환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다"},
+    {"name": "송풍기", "category": "장비", "evidence_span": "환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다"},
+    {"name": "환기 장치", "category": "장비", "evidence_span": "냉난방을 위한 공기제어 등을 위해 환기 장치의 전기모터, 송풍기 및 기타 장비를 조작한다"},
+    {"name": "냉방장치", "category": "장비", "evidence_span": "건물을 냉방시키기 위해 냉방장치를 조작한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내부(대형 건물·산업시설 등)", "evidence_span": "대형 건물의 보일러를 조작하고 효율적으로 관리한다"}
+  ]
+}

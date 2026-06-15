@@ -1,0 +1,111 @@
+{
+  "ksco_code": "85201",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "건물 냉난방장치",
+      "full_statement": "건물의 냉난방장치를 조작한다.",
+      "source_sentence": "건물의 냉난방장치나 주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "증기 공급 보일러",
+      "full_statement": "주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다.",
+      "source_sentence": "건물의 냉난방장치나 주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "냉난방 설비 작동상태",
+      "full_statement": "냉난방기 관련 설비들의 작동상태를 점검한다.",
+      "source_sentence": "냉난방기 관련 설비들의 작동상태와 배관상태를 점검하여 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "냉난방 설비 배관상태",
+      "full_statement": "냉난방기 관련 설비들의 배관상태를 점검한다.",
+      "source_sentence": "냉난방기 관련 설비들의 작동상태와 배관상태를 점검하여 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "냉난방 관련 설비",
+      "full_statement": "냉난방기 관련 설비들을 점검하여 관리한다.",
+      "source_sentence": "냉난방기 관련 설비들의 작동상태와 배관상태를 점검하여 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "대형 건물 보일러",
+      "full_statement": "대형 건물의 보일러를 조작한다.",
+      "source_sentence": "대형 건물의 보일러를 조작하고 효율적으로 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "보일러",
+      "full_statement": "대형 건물의 보일러를 효율적으로 관리한다.",
+      "source_sentence": "대형 건물의 보일러를 조작하고 효율적으로 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "보일러 작동상태",
+      "full_statement": "보일러의 작동상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "보일러 배관상태",
+      "full_statement": "보일러의 배관상태를 점검한다.",
+      "source_sentence": "보일러의 작동상태 및 배관상태를 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "냉방장치",
+      "full_statement": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "source_sentence": "건물을 냉방시키기 위해 냉방장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "공급하다",
+      "object": "증기",
+      "full_statement": "주기관 및 보조기관에 증기를 공급한다.",
+      "source_sentence": "산업시설, 병원, 대학, 공공기관, 상업시설물 등에 설비된 주기관 및 보조기관에 증기를 공급하는 보일러를 조작하거나 건물 냉방 관련 기기를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "건물 냉방 관련 기기",
+      "full_statement": "건물 냉방 관련 기기를 조작한다.",
+      "source_sentence": "산업시설, 병원, 대학, 공공기관, 상업시설물 등에 설비된 주기관 및 보조기관에 증기를 공급하는 보일러를 조작하거나 건물 냉방 관련 기기를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "보일러", "category": "장비", "evidence_span": "주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다"},
+    {"name": "냉난방장치", "category": "장비", "evidence_span": "건물의 냉난방장치나 주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다"},
+    {"name": "냉방장치", "category": "장비", "evidence_span": "건물을 냉방시키기 위해 냉방장치를 조작한다"},
+    {"name": "배관", "category": "장비", "evidence_span": "냉난방기 관련 설비들의 작동상태와 배관상태를 점검하여 관리한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내 설비(실내)", "evidence_span": "건물의 냉난방장치나 주기관 및 보조기관에 증기를 공급하는 보일러를 조작한다"},
+    {"category": "장소", "value": "산업시설·병원·대학·공공기관·상업시설물", "evidence_span": "산업시설, 병원, 대학, 공공기관, 상업시설물 등에 설비된 주기관 및 보조기관에 증기를 공급하는 보일러를 조작하거나"}
+  ]
+}

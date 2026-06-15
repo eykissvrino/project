@@ -1,0 +1,90 @@
+{
+  "ksco_code": "86209",
+  "tasks": [
+    {
+      "verb": "유지하다",
+      "object": "전기설비",
+      "full_statement": "건물, 아파트, 공장 등의 전기설비를 유지한다.",
+      "source_sentence": "건물, 아파트, 공장 등의 전기설비를 유지, 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보수하다",
+      "object": "전기설비",
+      "full_statement": "건물, 아파트, 공장 등의 전기설비를 보수한다.",
+      "source_sentence": "건물, 아파트, 공장 등의 전기설비를 유지, 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "전기·전자 설비",
+      "full_statement": "건물, 아파트, 공장 및 기타 전기·전자 설비를 조작한다.",
+      "source_sentence": "건물, 아파트, 공장 및 기타 전기‧전자 설비를 조작, 유지, 보수한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "보안관리 업무",
+      "full_statement": "전기시설에 관한 보안관리 업무를 수행한다.",
+      "source_sentence": "전기시설에 관한 보안관리 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "전기 장비 제조 관련 기기",
+      "full_statement": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "source_sentence": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "발전장치",
+      "full_statement": "전기를 생산하고 배전을 통제하는 발전장치를 조작한다.",
+      "source_sentence": "전기를 생산하고 배전을 통제하는 발전장치, 전기·전자설비,전기·전자 부품 및 제품을 조립한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "통제하다",
+      "object": "배전",
+      "full_statement": "전기 생산 과정에서 배전을 통제한다.",
+      "source_sentence": "전기를 생산하고 배전을 통제하는 발전장치, 전기·전자설비,전기·전자 부품 및 제품을 조립한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조립하다",
+      "object": "전기·전자 부품 및 제품",
+      "full_statement": "전기·전자 부품 및 제품을 조립한다.",
+      "source_sentence": "전기를 생산하고 배전을 통제하는 발전장치, 전기·전자설비,전기·전자 부품 및 제품을 조립한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "냉난방 관련 설비",
+      "full_statement": "냉난방 관련 설비를 조작한다.",
+      "source_sentence": "냉난방 관련 설비를 조작하기도 한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건물·아파트·공장 등 전기설비 현장(실내)",
+      "evidence_span": "건물, 아파트, 공장 등의 전기설비를 유지, 보수한다."
+    },
+    {
+      "category": "위험",
+      "value": "전기·전기시설 취급에 따른 감전 위험",
+      "evidence_span": "전기시설에 관한 보안관리 업무를 수행한다."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "ksco_code": "44293",
+  "tasks": [
+    {
+      "verb": "입다",
+      "object": "응원복",
+      "full_statement": "운동경기에서 소속팀의 사기를 북돋우기 위하여 응원복을 입는다.",
+      "source_sentence": "운동경기에서 소속팀의 사기를 북돋우기 위하여 응원복을 입고 춤, 동작을 취하며 관중이 따라 하거나 함성을 지르도록 유도하고 각종 구호를 연호하도록 선창하는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "취하다",
+      "object": "춤·동작",
+      "full_statement": "관중 앞에서 춤과 동작을 취한다.",
+      "source_sentence": "응원복을 입고 춤, 동작 등을 취하여 관중들이 따라 하거나 함성을 지르도록 유도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "유도하다",
+      "object": "관중의 동작 따라하기·함성",
+      "full_statement": "관중이 동작을 따라 하거나 함성을 지르도록 유도한다.",
+      "source_sentence": "응원복을 입고 춤, 동작 등을 취하여 관중들이 따라 하거나 함성을 지르도록 유도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "확인하다",
+      "object": "소속팀의 선수명단",
+      "full_statement": "소속팀의 선수명단을 확인한다.",
+      "source_sentence": "소속팀의 선수명단을 확인하고 명단이나 각종 구호를 연호하도록 선창한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선창하다",
+      "object": "선수명단·각종 구호",
+      "full_statement": "관중이 선수명단이나 각종 구호를 연호하도록 선창한다.",
+      "source_sentence": "소속팀의 선수명단을 확인하고 명단이나 각종 구호를 연호하도록 선창한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "북돋우다",
+      "object": "소속팀의 사기",
+      "full_statement": "응원을 통해 소속팀의 사기를 북돋운다.",
+      "source_sentence": "운동경기에서 소속팀의 사기를 북돋우기 위하여 응원복을 입고 춤, 동작을 취하며 관중이 따라 하거나 함성을 지르도록 유도하고 각종 구호를 연호하도록 선창하는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "리드하다",
+      "object": "응원",
+      "full_statement": "운동경기에서 관중의 응원을 리드한다.",
+      "source_sentence": "운동경기에서 응원복을 입고 응원을 리드하는 응원단원도 포함된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "운동경기 현장",
+      "evidence_span": "운동경기에서 소속팀의 사기를 북돋우기 위하여 응원복을 입고"
+    },
+    {
+      "category": "사회적",
+      "value": "관중 대상 응원 유도(대인 응대)",
+      "evidence_span": "관중이 따라 하거나 함성을 지르도록 유도하고"
+    },
+    {
+      "category": "신체적",
+      "value": "춤·동작 수행(신체활동)",
+      "evidence_span": "응원복을 입고 춤, 동작을 취하며"
+    }
+  ]
+}

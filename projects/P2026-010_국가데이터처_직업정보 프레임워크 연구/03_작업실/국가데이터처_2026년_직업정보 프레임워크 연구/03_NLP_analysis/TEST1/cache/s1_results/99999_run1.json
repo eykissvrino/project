@@ -1,0 +1,85 @@
+{
+  "ksco_code": "99999",
+  "tasks": [
+    {
+      "verb": "닦다",
+      "object": "구두",
+      "full_statement": "고객의 구두를 닦아 광택을 낸다.",
+      "source_sentence": "기타 서비스 관련 단순 노무 종사자는 구두닦이, 손세탁, 검표, 대여 제품 방문 점검과 같은 여러 가지 서비스를 제공한다.",
+      "derived_from": "조상정의(소분류 999)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "세탁하다",
+      "object": "의류",
+      "full_statement": "의류를 손으로 세탁한다.",
+      "source_sentence": "기타 서비스 관련 단순 노무 종사자는 구두닦이, 손세탁, 검표, 대여 제품 방문 점검과 같은 여러 가지 서비스를 제공한다.",
+      "derived_from": "조상정의(소분류 999)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검표하다",
+      "object": "입장권",
+      "full_statement": "입장권이나 승차권을 확인하여 검표한다.",
+      "source_sentence": "기타 서비스 관련 단순 노무 종사자는 구두닦이, 손세탁, 검표, 대여 제품 방문 점검과 같은 여러 가지 서비스를 제공한다.",
+      "derived_from": "조상정의(소분류 999)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "점검하다",
+      "object": "대여 제품",
+      "full_statement": "고객을 방문하여 대여 제품을 점검한다.",
+      "source_sentence": "기타 서비스 관련 단순 노무 종사자는 구두닦이, 손세탁, 검표, 대여 제품 방문 점검과 같은 여러 가지 서비스를 제공한다.",
+      "derived_from": "조상정의(소분류 999)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "전달하다",
+      "object": "물품",
+      "full_statement": "지시에 따라 물품이나 서류를 전달하는 심부름을 수행한다.",
+      "source_sentence": "심부름원·사환",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 999) 보강",
+      "confidence": 0.45
+    },
+    {
+      "verb": "안내하다",
+      "object": "승객",
+      "full_statement": "승객의 승하차를 안내한다.",
+      "source_sentence": "승하차안내원·교통안전도우미",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 999) 보강",
+      "confidence": 0.45
+    },
+    {
+      "verb": "유도하다",
+      "object": "교통",
+      "full_statement": "교통안전을 위해 보행자와 차량을 유도한다.",
+      "source_sentence": "승하차안내원·교통안전도우미",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 999) 보강",
+      "confidence": 0.45
+    },
+    {
+      "verb": "사용하다",
+      "object": "간단한 수공구",
+      "full_statement": "간단한 수공구를 사용하여 단순하고 일상적인 작업을 수행한다.",
+      "source_sentence": "주로 간단한 수공구의 사용과 단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다.",
+      "derived_from": "조상정의(대분류 9)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "제공하다",
+      "object": "서비스",
+      "full_statement": "고객에게 여러 가지 단순 서비스를 제공한다.",
+      "source_sentence": "기타 서비스 관련 단순 노무 종사자는 구두닦이, 손세탁, 검표, 대여 제품 방문 점검과 같은 여러 가지 서비스를 제공한다.",
+      "derived_from": "조상정의(소분류 999)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "간단한 수공구", "category": "도구", "evidence_span": "주로 간단한 수공구의 사용과 단순하고 일상적이며"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "상당한 육체적 노력 요구", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"},
+    {"category": "사회적", "value": "고객 대상 서비스 제공", "evidence_span": "여러 가지 서비스를 제공한다"},
+    {"category": "신체적", "value": "단순·반복적 일상 업무", "evidence_span": "단순하고 일상적이며, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다"}
+  ]
+}

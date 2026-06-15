@@ -1,0 +1,119 @@
+{
+  "ksco_code": "75320",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "공업용 기계",
+      "full_statement": "각종 제품 생산에 사용되는 공업용 기계를 설치한다.",
+      "source_sentence": "각종 제품 생산에 사용되는 공업용 기계를 설치하고, 기계 및 장비를 검사하여 성능이나 작동여부를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "기계 및 장비",
+      "full_statement": "기계 및 장비를 검사하여 성능이나 작동여부를 확인한다.",
+      "source_sentence": "각종 제품 생산에 사용되는 공업용 기계를 설치하고, 기계 및 장비를 검사하여 성능이나 작동여부를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "유지보수하다",
+      "object": "기계",
+      "full_statement": "기계가 원활히 작동되고 제 기능을 유지할 수 있도록 유지보수한다.",
+      "source_sentence": "기계가 원활히 작동되고 제 기능을 유지 할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기계가 제 기능을 유지할 수 있도록 정비한다.",
+      "source_sentence": "기계가 원활히 작동되고 제 기능을 유지 할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "기계",
+      "full_statement": "기계가 제 기능을 유지할 수 있도록 수리한다.",
+      "source_sentence": "기계가 원활히 작동되고 제 기능을 유지 할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계",
+      "full_statement": "기계가 제 기능을 유지할 수 있도록 점검한다.",
+      "source_sentence": "기계가 원활히 작동되고 제 기능을 유지 할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "고장원인과 부위",
+      "full_statement": "장비나 기기의 성능저하 및 작동불능 등 고장원인과 부위를 찾고 분석한다.",
+      "source_sentence": "장비나 기기의 성능저하 및 작동불능 등 고장원인과 부위를 찾고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분해하다",
+      "object": "기계",
+      "full_statement": "렌치·드라이버 등을 사용하여 기계를 분해한다.",
+      "source_sentence": "렌치‧드라이버 등을 사용하여 분해한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "세척하다",
+      "object": "부품",
+      "full_statement": "솔·헝겊 등을 사용하여 세제·세척유 등으로 부품을 세척한다.",
+      "source_sentence": "솔‧헝겊 등을 사용하여 세제‧세척유 등으로 부품을 세척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "부품의 마모정도",
+      "full_statement": "다이얼게이지·버니어캘리퍼스 등을 사용하여 부품의 마모정도를 측정한다.",
+      "source_sentence": "다이얼게이지‧버니어캘리퍼스 등을 사용하여 부품의 마모정도를 측정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "파손되거나 규정 이상 마모된 부품을 신품으로 교체한다.",
+      "source_sentence": "파손되거나 규정 이상 마모된 부품을 신품으로 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시운전하다",
+      "object": "기계",
+      "full_statement": "성능을 검사하기 위하여 기계를 시운전한다.",
+      "source_sentence": "성능을 검사하기 위하여 시운전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조언하다",
+      "object": "수리과정의 문제점",
+      "full_statement": "수리과정에서 나타난 문제점을 취급자에게 조언한다.",
+      "source_sentence": "수리과정에서 나타난 문제점을 취급자에게 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "렌치", "category": "도구", "evidence_span": "렌치‧드라이버 등을 사용하여 분해한다."},
+    {"name": "드라이버", "category": "도구", "evidence_span": "렌치‧드라이버 등을 사용하여 분해한다."},
+    {"name": "다이얼게이지", "category": "장비", "evidence_span": "다이얼게이지‧버니어캘리퍼스 등을 사용하여 부품의 마모정도를 측정한다."},
+    {"name": "버니어캘리퍼스", "category": "장비", "evidence_span": "다이얼게이지‧버니어캘리퍼스 등을 사용하여 부품의 마모정도를 측정한다."},
+    {"name": "공업용 기계", "category": "장비", "evidence_span": "각종 제품 생산에 사용되는 공업용 기계를 설치하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "취급자 대상 조언(대인 응대)", "evidence_span": "수리과정에서 나타난 문제점을 취급자에게 조언한다."}
+  ]
+}

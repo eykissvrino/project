@@ -1,0 +1,130 @@
+{
+  "ksco_code": "51029",
+  "tasks": [
+    {
+      "verb": "촉진하다",
+      "object": "판매",
+      "full_statement": "기존 고객을 대상으로 판매를 촉진시킨다.",
+      "source_sentence": "기존 고객을 대상으로 판매를 촉진시킬 수 있도록 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "파악하다",
+      "object": "잠재 구매고객",
+      "full_statement": "잠재적인 구매고객을 파악한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설득하다",
+      "object": "구매고객",
+      "full_statement": "구매가 이루어지도록 구매고객을 설득한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서·제안서",
+      "full_statement": "제품의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "source_sentence": "제품의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "협의하다",
+      "object": "구매비용·인도일자·계약조건",
+      "full_statement": "구매자와 구매비용, 인도일자 및 계약조건 등을 협의한다.",
+      "source_sentence": "구매자와 구매비용, 인도일자 및 계약조건 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "처리하다",
+      "object": "주문",
+      "full_statement": "주문 받은 사항을 처리한다.",
+      "source_sentence": "주문 받은 사항을 처리하고 배달계획을 짠다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수립하다",
+      "object": "배달계획",
+      "full_statement": "주문에 따른 배달계획을 수립한다.",
+      "source_sentence": "주문 받은 사항을 처리하고 배달계획을 짠다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "계산하다",
+      "object": "주문량·매출액",
+      "full_statement": "주문량과 매출액을 계산하는 등 사무적인 업무를 처리한다.",
+      "source_sentence": "주문량과 매출액을 계산하는 등의 사무적인 업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "처리하다",
+      "object": "판매 후 문제",
+      "full_statement": "제품의 판매 후 문제가 발생했을 경우 이를 처리한다.",
+      "source_sentence": "제품의 판매 후 문제가 발생했을 경우 이를 처리해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "파악하다",
+      "object": "제품정보·경쟁업체·시장상황 정보",
+      "full_statement": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악한다.",
+      "source_sentence": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "연계하다",
+      "object": "정보·영업활동",
+      "full_statement": "파악한 정보를 영업활동과 연계시킨다.",
+      "source_sentence": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "감독하다",
+      "object": "다른 영업원의 활동",
+      "full_statement": "다른 영업원의 활동을 감독한다.",
+      "source_sentence": "다른 영업원의 활동을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "판매하다",
+      "object": "생산품·상품",
+      "full_statement": "기업이 생산하거나 수입한 각종 유형의 생산품, 상품 등을 도매점, 소매점, 기업, 공장 등에 판매한다.",
+      "source_sentence": "기업이 생산하거나 수입한 각종 유형의 생산품, 상품 등을 도매점 혹은 소매점, 기업 혹은 공장 등에 판매하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 5102)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "홍보하다",
+      "object": "상품의 품질·기능",
+      "full_statement": "상품의 품질과 기능을 홍보한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며, 매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류 5)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대 및 설득(구매자와의 협의)",
+      "evidence_span": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다."
+    },
+    {
+      "category": "장소",
+      "value": "상점·거리 및 공공장소에서의 영업",
+      "evidence_span": "상점이나 거리 및 공공장소에서 상품을 영업하기도 한다."
+    }
+  ]
+}

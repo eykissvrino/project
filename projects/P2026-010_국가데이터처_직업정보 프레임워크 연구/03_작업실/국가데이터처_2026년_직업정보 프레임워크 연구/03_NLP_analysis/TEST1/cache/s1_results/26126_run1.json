@@ -1,0 +1,138 @@
+{
+  "ksco_code": "26126",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "공학·제조 및 건설 분야 관련 과목",
+      "full_statement": "대학에서 공학과 제조 및 건설 분야에 관련된 과목을 연구한다.",
+      "source_sentence": "대학에서 공학과 제조 및 건설 분야에 관련된 과목을 연구, 교육한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교육하다",
+      "object": "공학·제조 및 건설 분야 관련 과목",
+      "full_statement": "대학에서 공학과 제조 및 건설 분야에 관련된 과목을 교육한다.",
+      "source_sentence": "대학에서 공학과 제조 및 건설 분야에 관련된 과목을 연구, 교육한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "교육 과정 결정을 위한 주제",
+      "full_statement": "교육에 필요한 과정을 결정하기 위하여 공학·제조·건설 분야의 주제를 분석한다.",
+      "source_sentence": "교육에 필요한 과정을 결정하기 위하여 주제를 분석‧평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "평가하다",
+      "object": "교육 과정 결정을 위한 주제",
+      "full_statement": "교육에 필요한 과정을 결정하기 위하여 공학·제조·건설 분야의 주제를 평가한다.",
+      "source_sentence": "교육에 필요한 과정을 결정하기 위하여 주제를 분석‧평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "계획하다",
+      "object": "과정표와 교과과정",
+      "full_statement": "공학·제조·건설 분야의 과정표와 교과과정을 계획한다.",
+      "source_sentence": "과정표와 교과과정을 계획‧조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조정하다",
+      "object": "과정표와 교과과정",
+      "full_statement": "공학·제조·건설 분야의 과정표와 교과과정을 조정한다.",
+      "source_sentence": "과정표와 교과과정을 계획‧조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "출제하다",
+      "object": "시험",
+      "full_statement": "전공과목의 시험을 출제한다.",
+      "source_sentence": "시험을 출제하고 그 결과를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "시험 결과",
+      "full_statement": "출제한 시험의 결과를 평가한다.",
+      "source_sentence": "시험을 출제하고 그 결과를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "강의하다",
+      "object": "학생",
+      "full_statement": "대학에서 학생들에게 강의를 한다.",
+      "source_sentence": "대학에서 학생들에게 강의를 하며 세미나 및 실험을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "세미나",
+      "full_statement": "전공과목 관련 세미나를 수행한다.",
+      "source_sentence": "대학에서 학생들에게 강의를 하며 세미나 및 실험을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수행하다",
+      "object": "실험",
+      "full_statement": "공학·제조·건설 분야의 실험을 수행한다.",
+      "source_sentence": "대학에서 학생들에게 강의를 하며 세미나 및 실험을 수행한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "교수하다",
+      "object": "담당과목",
+      "full_statement": "대학교육 과정에서 담당과목을 교수한다.",
+      "source_sentence": "대학교육 과정에서 담당과목을 교수하며 강의안 및 교재를 작성한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안",
+      "full_statement": "담당과목의 강의안을 작성한다.",
+      "source_sentence": "대학교육 과정에서 담당과목을 교수하며 강의안 및 교재를 작성한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "교재",
+      "full_statement": "담당과목의 교재를 작성한다.",
+      "source_sentence": "대학교육 과정에서 담당과목을 교수하며 강의안 및 교재를 작성한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "개발하다",
+      "object": "관련 개념·이론 및 운영기법",
+      "full_statement": "관련 개념, 이론 및 운영기법에 관하여 연구·개발 업무를 수행한다.",
+      "source_sentence": "또한 관련 개념, 이론 및 운영기법에 관하여 연구, 개발 등의 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "대학(실내 교육·연구 환경)",
+      "evidence_span": "대학에서 공학과 제조 및 건설 분야에 관련된 과목을 연구, 교육한다."
+    },
+    {
+      "category": "사회적",
+      "value": "학생 대상 강의·교수",
+      "evidence_span": "대학에서 학생들에게 강의를 하며 세미나 및 실험을 수행한다."
+    }
+  ]
+}

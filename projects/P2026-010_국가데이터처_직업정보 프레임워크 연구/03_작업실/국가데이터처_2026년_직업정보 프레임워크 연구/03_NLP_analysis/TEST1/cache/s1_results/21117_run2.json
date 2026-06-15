@@ -1,0 +1,93 @@
+{
+  "ksco_code": "21117",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "식품 관련 분야",
+      "full_statement": "식품 관련 분야를 연구한다.",
+      "source_sentence": "식품 관련 분야를 연구하여 그에 대한 개념 이론 및 제조, 운영방법을 개선, 개발하고 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개선하다",
+      "object": "식품 관련 개념 및 이론",
+      "full_statement": "식품 관련 분야의 개념과 이론을 개선한다.",
+      "source_sentence": "식품 관련 분야를 연구하여 그에 대한 개념 이론 및 제조, 운영방법을 개선, 개발하고 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "식품 제조방법",
+      "full_statement": "식품의 제조방법을 개발한다.",
+      "source_sentence": "식품 관련 분야를 연구하여 그에 대한 개념 이론 및 제조, 운영방법을 개선, 개발하고 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개선하다",
+      "object": "식품 운영방법",
+      "full_statement": "식품의 운영방법을 개선한다.",
+      "source_sentence": "식품 관련 분야를 연구하여 그에 대한 개념 이론 및 제조, 운영방법을 개선, 개발하고 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "응용하다",
+      "object": "식품 관련 과학지식",
+      "full_statement": "식품 관련 과학지식을 응용한다.",
+      "source_sentence": "식품 관련 분야를 연구하여 그에 대한 개념 이론 및 제조, 운영방법을 개선, 개발하고 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "기초 연구 및 응용연구",
+      "full_statement": "식품과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "source_sentence": "의약 및 농업과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "새로운 식품 제품",
+      "full_statement": "새로운 식품 제품을 개발한다.",
+      "source_sentence": "의약 및 농업과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "연구 자료",
+      "full_statement": "식품 분야의 연구 자료를 분석한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "연구보고서",
+      "full_statement": "분석한 연구 자료를 바탕으로 연구보고서를 작성한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "연구원 및 시험원",
+      "full_statement": "기타 연구원과 시험원을 감독하기도 한다.",
+      "source_sentence": "기타 연구원, 시험원을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "연구원·시험원 감독 등 팀 작업",
+      "evidence_span": "기타 연구원, 시험원을 감독하기도 한다."
+    }
+  ]
+}

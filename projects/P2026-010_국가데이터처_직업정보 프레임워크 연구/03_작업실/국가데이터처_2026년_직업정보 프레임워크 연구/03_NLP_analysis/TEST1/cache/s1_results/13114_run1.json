@@ -1,0 +1,143 @@
+{
+  "ksco_code": "13114",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "공학 연구개발 활동",
+      "full_statement": "건설공학, 환경공학 등 공학에 대한 상업·비상업적 연구개발 활동을 기획한다.",
+      "source_sentence": "건설공학, 환경공학 등 공학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "공학 연구개발 활동",
+      "full_statement": "건설공학, 환경공학 등 공학 연구개발 활동을 관리한다.",
+      "source_sentence": "건설공학, 환경공학 등 공학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "공학 연구개발 활동",
+      "full_statement": "건설공학, 환경공학 등 공학 연구개발 활동을 조정한다.",
+      "source_sentence": "건설공학, 환경공학 등 공학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "계획하다",
+      "object": "공학 연구소·연구개발부서 운영",
+      "full_statement": "공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "연구소·연구개발부서 운영",
+      "full_statement": "공학 관련 연구소나 연구개발부서의 활동 및 운영을 조정한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지시하다",
+      "object": "연구개발부서 운영",
+      "full_statement": "공학 관련 연구소나 연구개발부서의 활동 및 운영을 지시한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "연구소·연구개발부서 운영",
+      "full_statement": "공학 관련 연구소나 연구개발부서의 활동 및 운영을 관리한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "과학연구·기술작업 방침",
+      "full_statement": "과학연구 및 기술적 작업에 대한 방침을 개발한다.",
+      "source_sentence": "과학연구 및 기술적 작업에 대한 방침, 기준 및 절차를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "개발하다",
+      "object": "과학연구·기술작업 기준",
+      "full_statement": "과학연구 및 기술적 작업에 대한 기준을 개발한다.",
+      "source_sentence": "과학연구 및 기술적 작업에 대한 방침, 기준 및 절차를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "개발하다",
+      "object": "과학연구·기술작업 절차",
+      "full_statement": "과학연구 및 기술적 작업에 대한 절차를 개발한다.",
+      "source_sentence": "과학연구 및 기술적 작업에 대한 방침, 기준 및 절차를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "참여하다",
+      "object": "기술적 연구·응용과학 작업의 조사",
+      "full_statement": "기술적 연구, 이론 및 응용과학 작업에서 조사에 참여한다.",
+      "source_sentence": "기술적 연구, 이론 및 응용과학 작업에서 조사, 설계, 개발에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "참여하다",
+      "object": "응용과학 작업의 설계",
+      "full_statement": "기술적 연구, 이론 및 응용과학 작업에서 설계에 참여한다.",
+      "source_sentence": "기술적 연구, 이론 및 응용과학 작업에서 조사, 설계, 개발에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "참여하다",
+      "object": "응용과학 작업의 개발",
+      "full_statement": "기술적 연구, 이론 및 응용과학 작업에서 개발에 참여한다.",
+      "source_sentence": "기술적 연구, 이론 및 응용과학 작업에서 조사, 설계, 개발에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "특허·법적요건 획득 조언",
+      "full_statement": "특허나 기타 법적인 요건을 획득하는 데 조언 및 지원을 제공한다.",
+      "source_sentence": "특허나 기타 법적인 요건을 획득하는데 조언 및 지원을 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "계획하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 계획한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "집행하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 집행한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "관리하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 관리한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

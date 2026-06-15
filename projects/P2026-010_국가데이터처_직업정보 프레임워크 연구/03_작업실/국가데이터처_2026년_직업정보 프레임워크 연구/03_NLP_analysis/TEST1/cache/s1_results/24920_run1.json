@@ -1,0 +1,111 @@
+{
+  "ksco_code": "24920",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "시설의 위생상태",
+      "full_statement": "방역업체·단체급식소 등 시설의 위생상태를 점검한다.",
+      "source_sentence": "시설의 위생상태를 점검, 개선계획을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수립하다",
+      "object": "위생상태 개선계획",
+      "full_statement": "점검 결과를 바탕으로 위생상태 개선계획을 수립한다.",
+      "source_sentence": "시설의 위생상태를 점검, 개선계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감시하다",
+      "object": "위생상태",
+      "full_statement": "위생상태의 개선에 관한 문제와 기법에 관하여 감시한다.",
+      "source_sentence": "위생상태의 개선에 관한 문제와 기법에 관하여 감시 및 조언하고 위생의 질을 유지 또는 개선하기 위한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조언하다",
+      "object": "위생상태 개선 문제와 기법",
+      "full_statement": "위생상태의 개선에 관한 문제와 기법에 관하여 조언한다.",
+      "source_sentence": "위생상태의 개선에 관한 문제와 기법에 관하여 감시 및 조언하고 위생의 질을 유지 또는 개선하기 위한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "취하다",
+      "object": "위생의 질 유지·개선 조치",
+      "full_statement": "위생의 질을 유지 또는 개선하기 위한 조치를 취한다.",
+      "source_sentence": "위생상태의 개선에 관한 문제와 기법에 관하여 감시 및 조언하고 위생의 질을 유지 또는 개선하기 위한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "통제하다",
+      "object": "전염병원체",
+      "full_statement": "전염병원체를 통제한다.",
+      "source_sentence": "또한 전염병원체 및 공기 중 유해물질 통제, 위생식품 취급, 쓰레기의 적합한 처리 등의 개선된 방법에 대해 조언한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "통제하다",
+      "object": "공기 중 유해물질",
+      "full_statement": "공기 중 유해물질을 통제한다.",
+      "source_sentence": "또한 전염병원체 및 공기 중 유해물질 통제, 위생식품 취급, 쓰레기의 적합한 처리 등의 개선된 방법에 대해 조언한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조언하다",
+      "object": "전염병원체 통제의 개선된 방법",
+      "full_statement": "전염병원체 통제의 개선된 방법에 대해 조언한다.",
+      "source_sentence": "또한 전염병원체 및 공기 중 유해물질 통제, 위생식품 취급, 쓰레기의 적합한 처리 등의 개선된 방법에 대해 조언한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조언하다",
+      "object": "위생식품 취급의 개선된 방법",
+      "full_statement": "위생식품 취급의 개선된 방법에 대해 조언한다.",
+      "source_sentence": "또한 전염병원체 및 공기 중 유해물질 통제, 위생식품 취급, 쓰레기의 적합한 처리 등의 개선된 방법에 대해 조언한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조언하다",
+      "object": "쓰레기의 적합한 처리 방법",
+      "full_statement": "쓰레기의 적합한 처리 방법에 대해 조언한다.",
+      "source_sentence": "또한 전염병원체 및 공기 중 유해물질 통제, 위생식품 취급, 쓰레기의 적합한 처리 등의 개선된 방법에 대해 조언한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "실시하다",
+      "object": "유해물질 통제 개선조치",
+      "full_statement": "전염병원체 등 유해물질을 통제하기 위한 개선조치를 실시한다.",
+      "source_sentence": "전염병원체 등 유해물질 통제하고 개선조치를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "방역업체·단체급식소 등 위생관리 대상 시설",
+      "evidence_span": "방역업체, 단체급식소 등에서 위생상태의 개선에 관한 문제와 기법에 관하여 감시 및 조언하고"
+    },
+    {
+      "category": "위험",
+      "value": "전염병원체 등 생물학적 위험요소 노출",
+      "evidence_span": "전염병원체 및 공기 중 유해물질 통제"
+    },
+    {
+      "category": "위험",
+      "value": "공기 중 유해물질 노출",
+      "evidence_span": "전염병원체 및 공기 중 유해물질 통제"
+    }
+  ]
+}

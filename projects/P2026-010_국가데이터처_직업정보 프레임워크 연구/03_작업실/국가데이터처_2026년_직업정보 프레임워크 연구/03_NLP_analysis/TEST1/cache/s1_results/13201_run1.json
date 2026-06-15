@@ -1,0 +1,157 @@
+{
+  "ksco_code": "13201",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "운영부서 활동",
+      "full_statement": "보험 및 연금 사업체의 운영부서 활동을 기획한다.",
+      "source_sentence": "보험 및 연금 사업체의 운영부서나 신용부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영부서 활동",
+      "full_statement": "보험 및 연금 사업체의 운영부서 활동을 관리한다.",
+      "source_sentence": "보험 및 연금 사업체의 운영부서나 신용부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "운영부서 활동",
+      "full_statement": "보험 및 연금 사업체의 운영부서 활동을 조정한다.",
+      "source_sentence": "보험 및 연금 사업체의 운영부서나 신용부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "신용부서 활동",
+      "full_statement": "보험 및 연금 사업체의 신용부서 활동을 관리한다.",
+      "source_sentence": "보험 및 연금 사업체의 운영부서나 신용부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계획하다",
+      "object": "보험·연금 서비스 사업체 운영",
+      "full_statement": "자동차, 화재, 생명, 자산 또는 기타 보험·연금 서비스를 제공하는 사업체나 부서의 운영을 계획한다.",
+      "source_sentence": "자동차, 화재, 생명, 자산 또는 기타 보험, 연금 서비스를 제공하는 사업체나 부서의 운영을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조직하다",
+      "object": "보험·연금 서비스 사업체 운영",
+      "full_statement": "자동차, 화재, 생명, 자산 또는 기타 보험·연금 서비스를 제공하는 사업체나 부서의 운영을 조직한다.",
+      "source_sentence": "자동차, 화재, 생명, 자산 또는 기타 보험, 연금 서비스를 제공하는 사업체나 부서의 운영을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "보험·연금 서비스 사업체 운영",
+      "full_statement": "자동차, 화재, 생명, 자산 또는 기타 보험·연금 서비스를 제공하는 사업체나 부서의 운영을 관리한다.",
+      "source_sentence": "자동차, 화재, 생명, 자산 또는 기타 보험, 연금 서비스를 제공하는 사업체나 부서의 운영을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확보하다",
+      "object": "연체·체납계좌 수금",
+      "full_statement": "연체나 체납계좌의 수금을 확보한다.",
+      "source_sentence": "연체나 체납계좌의 수금을 확보한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "면담하다",
+      "object": "법인회사 및 개인고객",
+      "full_statement": "법인회사 및 개인고객을 면담한다.",
+      "source_sentence": "법인회사 및 개인고객을 면담하고 고객 문의에 응대한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객 문의",
+      "full_statement": "고객 문의에 응대한다.",
+      "source_sentence": "법인회사 및 개인고객을 면담하고 고객 문의에 응대한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "계획하다",
+      "object": "신용부서 활동",
+      "full_statement": "신용부서의 활동을 계획한다.",
+      "source_sentence": "신용부서의 활동을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조직하다",
+      "object": "신용부서 활동",
+      "full_statement": "신용부서의 활동을 조직한다.",
+      "source_sentence": "신용부서의 활동을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "신용부서 활동",
+      "full_statement": "신용부서의 활동을 관리한다.",
+      "source_sentence": "신용부서의 활동을 계획, 조직, 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "대출 계좌",
+      "full_statement": "법인회사, 상업 및 개인 대출 계좌를 관리한다.",
+      "source_sentence": "법인회사, 상업 및 개인 대출 계좌를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "결정하다",
+      "object": "상환계획·일정",
+      "full_statement": "상환계획이나 일정을 결정한다.",
+      "source_sentence": "신용신청서를 승인하거나 거부하며 신용한도를 정하고 상환계획이나 일정을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "기획하다",
+      "object": "부서 정책 및 활동",
+      "full_statement": "사업체 내부 부서의 정책과 활동을 기획한다.",
+      "source_sentence": "정부, 기업, 단체 또는 그 내부 부서의 정책과 활동을 기획, 지휘 및 조정하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "지휘하다",
+      "object": "부서 정책 및 활동",
+      "full_statement": "사업체 내부 부서의 정책과 활동을 지휘한다.",
+      "source_sentence": "정부, 기업, 단체 또는 그 내부 부서의 정책과 활동을 기획, 지휘 및 조정하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "분석하다",
+      "object": "타인의 직무",
+      "full_statement": "다른 사람의 직무를 분석, 평가하여 지시하고 조정한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "법인회사 및 개인고객 면담·문의 응대 등 고객응대",
+      "evidence_span": "법인회사 및 개인고객을 면담하고 고객 문의에 응대한다."
+    }
+  ]
+}

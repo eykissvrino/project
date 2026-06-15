@@ -1,0 +1,117 @@
+{
+  "ksco_code": "29640",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "피훈련자의 신체적 적성",
+      "full_statement": "체조 및 기타 연습방법으로 피훈련자의 신체적 적성을 개발한다.",
+      "source_sentence": "체조 및 기타 연습방법으로 피훈련자의 신체적 적성을 개발하고 유지하도록 하거나, 특수운동에 대비해서 신체적인 훈련과정을 계획하고 필요한 훈련을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "유지하다",
+      "object": "피훈련자의 신체적 적성",
+      "full_statement": "체조 및 기타 연습방법으로 피훈련자의 신체적 적성을 유지하도록 한다.",
+      "source_sentence": "체조 및 기타 연습방법으로 피훈련자의 신체적 적성을 개발하고 유지하도록 하거나, 특수운동에 대비해서 신체적인 훈련과정을 계획하고 필요한 훈련을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "계획하다",
+      "object": "신체적 훈련과정",
+      "full_statement": "특수운동에 대비해서 신체적인 훈련과정을 계획한다.",
+      "source_sentence": "특수운동에 대비해서 신체적인 훈련과정을 계획하고 필요한 훈련을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "가르치다",
+      "object": "필요한 훈련",
+      "full_statement": "특수운동에 대비해서 필요한 훈련을 가르친다.",
+      "source_sentence": "특수운동에 대비해서 신체적인 훈련과정을 계획하고 필요한 훈련을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "시범보이다",
+      "object": "태권도·에어로빅 등 동작",
+      "full_statement": "태권도, 에어로빅 등의 동작 시범을 보인다.",
+      "source_sentence": "태권도, 에어로빅 등 시범을 보이고 자세를 교정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "교정하다",
+      "object": "피훈련자의 자세",
+      "full_statement": "피훈련자의 자세를 교정한다.",
+      "source_sentence": "태권도, 에어로빅 등 시범을 보이고 자세를 교정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "단련시키다",
+      "object": "근육",
+      "full_statement": "피훈련자의 근육을 단련시킨다.",
+      "source_sentence": "근육을 단련시키고 규칙적 운동이나 교정운동을 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "지시하다",
+      "object": "규칙적 운동·교정운동",
+      "full_statement": "규칙적 운동이나 교정운동을 지시한다.",
+      "source_sentence": "근육을 단련시키고 규칙적 운동이나 교정운동을 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "증진시키다",
+      "object": "체력",
+      "full_statement": "피훈련자의 체력을 증진시킨다.",
+      "source_sentence": "체력을 증진시키거나 체중을 조절하도록 식이요법을 권고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "권고하다",
+      "object": "체중 조절 식이요법",
+      "full_statement": "체중을 조절하도록 식이요법을 권고한다.",
+      "source_sentence": "체력을 증진시키거나 체중을 조절하도록 식이요법을 권고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "풀어주다",
+      "object": "상처의 통증·근육긴장",
+      "full_statement": "상처의 통증이나 근육긴장 등을 풀어준다.",
+      "source_sentence": "상처의 통증‧근육긴장 등을 풀어주거나 응급조치를 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조치하다",
+      "object": "응급조치",
+      "full_statement": "필요 시 응급조치를 한다.",
+      "source_sentence": "상처의 통증‧근육긴장 등을 풀어주거나 응급조치를 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "지도하다",
+      "object": "체력훈련을 통한 신체적 적성",
+      "full_statement": "체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "source_sentence": "체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "피훈련자 대상 지도·교정 등 대면 응대",
+      "evidence_span": "태권도, 에어로빅 등 시범을 보이고 자세를 교정한다."
+    }
+  ]
+}

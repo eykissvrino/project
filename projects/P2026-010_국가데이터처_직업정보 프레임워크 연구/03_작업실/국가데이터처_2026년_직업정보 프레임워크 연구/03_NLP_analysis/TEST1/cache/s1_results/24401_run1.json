@@ -1,0 +1,132 @@
+{
+  "ksco_code": "24401",
+  "tasks": [
+    {
+      "verb": "전담하다",
+      "object": "전문 간호업무",
+      "full_statement": "병원·보건소·사업체 시설·개인가정 및 기타 의료기관에서 전문적인 간호업무를 전담한다.",
+      "source_sentence": "병원, 보건소, 사업체 시설, 개인가정 및 기타 의료기관에서 전문적인 간호업무를 전담하며 보건, 마취, 정신, 가정, 감염관리, 산업, 응급, 노인, 중환자, 호스피스, 종양, 임상 및 아동분야로 구분한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돕다",
+      "object": "의사의 치료",
+      "full_statement": "의사의 치료를 돕는다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "행하다",
+      "object": "치료",
+      "full_statement": "의사의 처방에 따라 치료를 행한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "취하다",
+      "object": "비상조치",
+      "full_statement": "의사 부재 시 비상조치를 취한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "측정하다",
+      "object": "체온·맥박·혈압",
+      "full_statement": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "병실 및 침대",
+      "full_statement": "병실 및 침대를 준비한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "씻다",
+      "object": "환부",
+      "full_statement": "환자의 환부를 씻는다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "소독하다",
+      "object": "장비",
+      "full_statement": "장비를 소독한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돕다",
+      "object": "수술 또는 분만시술 중인 의사 및 환자",
+      "full_statement": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕는다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수집하다",
+      "object": "간호활동에 관한 기록",
+      "full_statement": "간호활동에 관한 기록을 수집한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조언하다",
+      "object": "관련 문제",
+      "full_statement": "수집한 기록을 바탕으로 관련 문제에 대해 조언한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "점검하다",
+      "object": "환자의 상태",
+      "full_statement": "환자의 상태를 점검하고 기록한다.",
+      "source_sentence": "환자의 상태를 점검, 기록하고 환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "치료 및 질병예방",
+      "full_statement": "환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다.",
+      "source_sentence": "환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "병원·보건소·사업체 시설·개인가정 및 기타 의료기관",
+      "evidence_span": "병원, 보건소, 사업체 시설, 개인가정 및 기타 의료기관에서 전문적인 간호업무를 전담하며"
+    },
+    {
+      "category": "사회적",
+      "value": "환자 및 가족 응대(설명 제공)",
+      "evidence_span": "환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다."
+    },
+    {
+      "category": "사회적",
+      "value": "의사와의 팀작업(진료 보조)",
+      "evidence_span": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며"
+    },
+    {
+      "category": "위험",
+      "value": "감염·생물위험 노출(장비 소독·감염관리 분야)",
+      "evidence_span": "환부를 씻거나 장비를 소독한다."
+    }
+  ]
+}

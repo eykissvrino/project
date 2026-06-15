@@ -1,0 +1,162 @@
+{
+  "ksco_code": "13504",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "통신 및 관련 서비스 제공 활동",
+      "full_statement": "우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 기획한다.",
+      "source_sentence": "경영자의 포괄적인 관리 하에 다른 부서 관리자와 의논하여 우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "통신 및 관련 서비스 제공 활동",
+      "full_statement": "우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 관리한다.",
+      "source_sentence": "경영자의 포괄적인 관리 하에 다른 부서 관리자와 의논하여 우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "통신 및 관련 서비스 제공 활동",
+      "full_statement": "우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 조정한다.",
+      "source_sentence": "경영자의 포괄적인 관리 하에 다른 부서 관리자와 의논하여 우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "의논하다",
+      "object": "다른 부서 관리자",
+      "full_statement": "통신 서비스 제공 활동에 관하여 다른 부서 관리자와 의논한다.",
+      "source_sentence": "경영자의 포괄적인 관리 하에 다른 부서 관리자와 의논하여 우편, 전신, 전화, 기타 통신시설에 의한 통신 및 관련 서비스 제공에 관한 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "통신교통량과 흐름",
+      "full_statement": "지역 범위내의 통신교통량과 흐름을 관리한다.",
+      "source_sentence": "지역 범위내의 통신교통량과 흐름을 관리하며, 통신설치, 운영 및 관리 서비스를 분석하고 평가하며 개선안을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "통신설치·운영·관리 서비스",
+      "full_statement": "통신설치, 운영 및 관리 서비스를 분석한다.",
+      "source_sentence": "지역 범위내의 통신교통량과 흐름을 관리하며, 통신설치, 운영 및 관리 서비스를 분석하고 평가하며 개선안을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "통신설치·운영·관리 서비스",
+      "full_statement": "통신설치, 운영 및 관리 서비스를 평가한다.",
+      "source_sentence": "지역 범위내의 통신교통량과 흐름을 관리하며, 통신설치, 운영 및 관리 서비스를 분석하고 평가하며 개선안을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "통신 서비스 개선안",
+      "full_statement": "통신설치, 운영 및 관리 서비스의 개선안을 낸다.",
+      "source_sentence": "지역 범위내의 통신교통량과 흐름을 관리하며, 통신설치, 운영 및 관리 서비스를 분석하고 평가하며 개선안을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계획하다",
+      "object": "우편기관의 활동 및 운영",
+      "full_statement": "우편기관의 활동 및 운영을 계획한다.",
+      "source_sentence": "우편기관의 활동 및 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조직하다",
+      "object": "우편기관의 활동 및 운영",
+      "full_statement": "우편기관의 활동 및 운영을 조직한다.",
+      "source_sentence": "우편기관의 활동 및 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지시하다",
+      "object": "우편기관의 활동 및 운영",
+      "full_statement": "우편기관의 활동 및 운영을 지시한다.",
+      "source_sentence": "우편기관의 활동 및 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "우편기관의 활동 및 운영",
+      "full_statement": "우편기관의 활동 및 운영을 관리한다.",
+      "source_sentence": "우편기관의 활동 및 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "정보시스템 및 전산운영 부서와 사업체의 운영",
+      "full_statement": "정보시스템 및 전산운영 부서와 사업체의 운영을 계획한다.",
+      "source_sentence": "정보시스템 및 전산운영 부서와 사업체의 운영을 계획, 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지시하다",
+      "object": "정보시스템 및 전산운영 부서와 사업체의 운영",
+      "full_statement": "정보시스템 및 전산운영 부서와 사업체의 운영을 지시한다.",
+      "source_sentence": "정보시스템 및 전산운영 부서와 사업체의 운영을 계획, 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "협의하다",
+      "object": "자료처리·시스템 요건 및 명세사항",
+      "full_statement": "자료처리, 시스템 요건 및 명세사항을 사용자와 협의한다.",
+      "source_sentence": "자료처리, 시스템 요건 및 명세사항을 사용자와 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "채용하다",
+      "object": "인력",
+      "full_statement": "통신 부서의 인력을 채용한다.",
+      "source_sentence": "인력 채용, 훈련 및 업무수행을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "훈련하다",
+      "object": "인력",
+      "full_statement": "통신 부서의 인력을 훈련한다.",
+      "source_sentence": "인력 채용, 훈련 및 업무수행을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "감독하다",
+      "object": "업무수행",
+      "full_statement": "인력의 업무수행을 감독한다.",
+      "source_sentence": "인력 채용, 훈련 및 업무수행을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "다른 부서 관리자와의 협의·조정",
+      "evidence_span": "다른 부서 관리자와 의논하여"
+    },
+    {
+      "category": "사회적",
+      "value": "경영자의 포괄적 관리 하에서의 업무 수행",
+      "evidence_span": "경영자의 포괄적인 관리 하에"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "ksco_code": "83229",
+  "tasks": [
+    {
+      "verb": "계량하다",
+      "object": "고무원료 및 화공약품",
+      "full_statement": "고무원료 및 화공약품을 계량한다.",
+      "source_sentence": "고무원료 및 화공약품을 계량하고 일정비율로 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "혼합하다",
+      "object": "고무원료 및 화공약품",
+      "full_statement": "고무원료 및 화공약품을 일정비율로 혼합한다.",
+      "source_sentence": "고무원료 및 화공약품을 계량하고 일정비율로 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "장착하다",
+      "object": "기계 부착물",
+      "full_statement": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "source_sentence": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "기계 또는 호퍼에 재료를 투입한다.",
+      "source_sentence": "기계 또는 호퍼에 재료를 투입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "고무코팅기",
+      "full_statement": "고무 코팅기를 조작하여 고무 및 관련제품을 제조한다.",
+      "source_sentence": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "고무양각기",
+      "full_statement": "고무 양각기를 조작하여 고무제품을 제조한다.",
+      "source_sentence": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "기타 고무 제조기",
+      "full_statement": "기타 고무 제조기를 조작하여 고무제품을 제조한다.",
+      "source_sentence": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합·사출·접착 기계장치",
+      "full_statement": "각종 재료 및 부품을 혼합, 사출, 접착하는 기계장치를 조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "경화·가황 기계장치",
+      "full_statement": "각종 재료 및 부품을 경화, 가황하는 기계장치를 조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "절단·조립·마무리 기계장치",
+      "full_statement": "각종 재료 및 부품을 절단, 조립, 마무리하는 기계장치를 조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "재료 및 부품을 가공하는 기계장치를 조정한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.79
+    },
+    {
+      "verb": "조작하다",
+      "object": "가이드·밸브·조종 장치",
+      "full_statement": "롤러의 온도와 압력, 고무접착제 및 재료의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "source_sentence": "롤러의 온도와 압력, 고무접착제 및 재료의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "원료",
+      "full_statement": "고무 및 관련제품을 제조하는 과정에서 원료를 검사한다.",
+      "source_sentence": "고무 및 관련제품을 제조하는 과정에서 원료를 검사하고, 제품의 규격과 생산 공정 준수여부 및 인체에 유해성이 있는지 등 생산품을 검사하는 자도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 규격",
+      "full_statement": "제품의 규격 준수여부를 검사한다.",
+      "source_sentence": "제품의 규격과 생산 공정 준수여부 및 인체에 유해성이 있는지 등 생산품을 검사하는 자도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "생산 공정 준수여부",
+      "full_statement": "생산 공정 준수여부를 검사한다.",
+      "source_sentence": "제품의 규격과 생산 공정 준수여부 및 인체에 유해성이 있는지 등 생산품을 검사하는 자도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "인체 유해성",
+      "full_statement": "생산품의 인체 유해성 여부를 검사한다.",
+      "source_sentence": "제품의 규격과 생산 공정 준수여부 및 인체에 유해성이 있는지 등 생산품을 검사하는 자도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성 제품 치수",
+      "full_statement": "완성된 제품의 치수를 측정한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 결함",
+      "full_statement": "완성된 제품의 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "고무 코팅기", "category": "장비", "evidence_span": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다."},
+    {"name": "고무 양각기", "category": "장비", "evidence_span": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다."},
+    {"name": "기타 고무 제조기", "category": "장비", "evidence_span": "고무 코팅기, 양각기와 기타 고무 제조기 조작이 분류된다."},
+    {"name": "다이", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다."},
+    {"name": "롤러", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다."},
+    {"name": "연마 휠", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다."},
+    {"name": "호퍼", "category": "장비", "evidence_span": "기계 또는 호퍼에 재료를 투입한다."},
+    {"name": "가이드·밸브·조종 장치", "category": "장비", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "인체에 유해성이 있는 생산품(화학물질) 취급", "evidence_span": "인체에 유해성이 있는지 등 생산품을 검사하는 자도 포함된다."},
+    {"category": "신체적", "value": "정밀 측정·검사(치수·결함 검사)", "evidence_span": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다."}
+  ]
+}

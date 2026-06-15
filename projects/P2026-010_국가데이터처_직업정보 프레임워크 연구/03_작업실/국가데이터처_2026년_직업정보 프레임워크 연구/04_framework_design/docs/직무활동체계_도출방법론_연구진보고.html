@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSCO 직무활동 체계 도출 방법론</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#1a2230; --body:#28303e; --muted:#697587; --faint:#8a94a3;
+    --line:#dde3ec; --line2:#eef1f6; --bg:#ffffff; --paper:#fbfcfe;
+    --navy:#152544; --accent:#1f4e8c; --accent2:#7a2e3a;
+    --task:#9a6212; --dwa:#1f4e8c; --iwa:#0f6b5f; --gwa:#5b3a8a;
+    --soft:#f1f5fb;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    font-size:16px;line-height:1.78;letter-spacing:-.1px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 30px}
+  header.cover{border-bottom:3px solid var(--navy);padding:52px 0 26px;margin-bottom:8px}
+  .docmeta{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.6px;margin-bottom:14px}
+  header.cover h1{font-size:30px;line-height:1.32;font-weight:800;color:var(--navy);margin:0 0 8px;letter-spacing:-.6px}
+  header.cover .sub{font-size:18px;color:var(--muted);font-weight:600;margin:0 0 22px}
+  .coverbar{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .coverbar div{flex:1;min-width:150px;padding:11px 16px;border-right:1px solid var(--line2);font-size:13.5px}
+  .coverbar div:last-child{border-right:none}
+  .coverbar b{display:block;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:.4px;margin-bottom:2px}
+  .abstract{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:18px 22px;margin:24px 0 6px;font-size:15px;color:var(--body)}
+  .abstract b{color:var(--navy)}
+  nav.toc{margin:26px 0 8px;padding:18px 22px;background:var(--soft);border-radius:8px}
+  nav.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.5px;color:var(--faint);font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px;font-size:14px}
+  @media(max-width:680px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{padding:34px 0;border-bottom:1px solid var(--line2)}
+  h2{font-size:21px;font-weight:800;color:var(--navy);margin:0 0 4px;letter-spacing:-.3px;
+    padding-bottom:9px;border-bottom:2px solid var(--line)}
+  h2 .num{color:var(--accent);margin-right:9px}
+  h3{font-size:17px;font-weight:800;color:var(--ink);margin:26px 0 8px}
+  h3 .num{color:var(--accent);font-weight:700;margin-right:7px}
+  h4{font-size:14px;font-weight:700;color:var(--accent2);margin:16px 0 6px;
+    text-transform:none;letter-spacing:0}
+  h4.q{color:var(--accent);border-left:3px solid var(--accent);padding-left:9px}
+  p{margin:10px 0}
+  .lead{font-size:15px;color:var(--muted);margin:6px 0 18px}
+  strong,b{color:var(--ink)}
+  .interp{border:1px solid var(--line);border-left:3px solid var(--iwa);background:#f4faf8;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .interp b{color:#0f6b5f}
+  .method{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--paper);
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .why{border:1px solid #d9e6f5;border-left:3px solid var(--accent);background:#f3f8fd;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .why b{color:var(--accent)}
+  .caveat{border:1px solid #ecd9c2;border-left:3px solid var(--accent2);background:#fdf8f3;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat b{color:var(--accent2)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:12.5px;color:var(--faint);font-weight:700;margin-bottom:6px;letter-spacing:.3px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--navy);background:transparent;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.2px}
+  tbody tr:hover td{background:var(--paper)}
+  td code,p code,li code{background:var(--soft);color:var(--accent2);padding:1px 6px;border-radius:4px;font-size:13px;font-family:Consolas,monospace}
+  .eqbox{border:1px solid var(--line);border-radius:8px;margin:14px 0;overflow:hidden}
+  .eqbox .eq{background:#0f1b30;color:#e8eefc;padding:15px 20px;font-family:"Cambria Math","Times New Roman",Consolas,serif;
+    font-size:18px;letter-spacing:.3px}
+  .eqbox .eq .var{color:#9ec5ff;font-style:italic}
+  .eqbox .gl{padding:11px 20px;font-size:13.5px;color:var(--muted);background:var(--paper)}
+  .eqbox .gl b{color:var(--ink)}
+  figure.code{margin:14px 0}
+  figure.code figcaption{font-size:12.5px;color:var(--faint);font-weight:700;margin-bottom:5px;letter-spacing:.3px}
+  pre{background:#0f1b30;color:#dbe7fb;border-radius:8px;padding:15px 18px;overflow-x:auto;
+    font-size:13px;line-height:1.7;margin:0;font-family:"SF Mono",Consolas,monospace}
+  pre .c{color:#7c93b8}.pre-k{color:#ff9d6e}.pre-s{color:#9ddb8f}.pre-n{color:#e6c07b}
+  .levels{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
+  .lvrow{display:flex;border-bottom:1px solid var(--line2)}
+  .lvrow:last-child{border-bottom:none}
+  .lvrow .tier{flex:none;width:128px;padding:13px 16px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+  .lvrow .tier b{font-size:16px;letter-spacing:.5px}.lvrow .tier small{font-size:11.5px;opacity:.92}
+  .lvrow .desc{padding:12px 18px;font-size:14px}
+  .lvrow .desc .ex{color:var(--muted);font-size:13px;margin-top:2px}
+  .t-gwa{background:var(--gwa)}.t-iwa{background:var(--iwa)}.t-dwa{background:var(--dwa)}.t-task{background:var(--task)}
+  .stagestep{border:1px solid var(--line);border-radius:10px;margin:16px 0;overflow:hidden}
+  .stagestep>.hd{display:flex;align-items:center;gap:11px;padding:12px 18px;color:#fff}
+  .stagestep>.hd .n{font-weight:800;font-size:13px;background:rgba(255,255,255,.25);padding:2px 10px;border-radius:5px}
+  .stagestep>.hd b{font-size:16px}
+  .stagestep>.hd .io{margin-left:auto;font-size:12px;opacity:.95}
+  .stagestep>.bd{padding:4px 18px 16px}
+  .hd-task{background:var(--task)}.hd-dwa{background:var(--dwa)}.hd-iwa{background:var(--iwa)}.hd-gwa{background:var(--gwa)}
+  .figwrap{border:1px solid var(--line);border-radius:8px;padding:16px;margin:14px 0;background:#fff}
+  .figcap{font-size:12.5px;color:var(--faint);margin-top:8px;text-align:center}
+  ul.tight{margin:8px 0;padding-left:20px}ul.tight li{margin:5px 0}
+  ol.steps{margin:8px 0;padding-left:22px}ol.steps li{margin:6px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.two{grid-template-columns:1fr}}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;color:#fff;vertical-align:middle}
+  .p-ai{background:#1f4e8c}.p-expert{background:#7a2e3a}
+  footer{padding:26px 0 56px;color:var(--faint);font-size:12.5px;border-top:2px solid var(--navy);margin-top:8px}
+  svg{max-width:100%;height:auto}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="cover">
+  <div class="docmeta">국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구</div>
+  <h1>한국표준직업분류(KSCO) 직무활동 체계 도출 방법론</h1>
+  <p class="sub">TASK → DWA → IWA → GWA 4계층 어휘체계의 도출 이론·절차·구현</p>
+  <div class="coverbar">
+    <div><b>문서</b>직무활동 체계 도출 방법론 v2.0</div>
+    <div><b>작성일</b>2026-06-11</div>
+    <div><b>대상</b>연구진 내부 검토</div>
+    <div><b>함께 보는 문서</b>전체 로드맵 및 진행현황</div>
+  </div>
+
+  <div class="abstract">
+    본 문서는 한국표준직업분류(KSCO) 8차 해설서의 직업설명 텍스트로부터 직무활동을 <b>TASK·DWA·IWA·GWA의 4계층 체계</b>로 도출하는 방법을 설명한다. 4계층의 골격과 도출 규약은 미국 직업정보망 O*NET의 <b>작업활동 프로젝트(Work Activities Project, 2014)</b>를 따르되, O*NET이 직업분석가의 수작업으로 11년에 걸쳐 수행한 일을 <b>인공지능(대형언어모델·의미분석 AI)</b>으로 자동화하여 8개월 내 전수 구축이 가능하도록 설계하였다. 본 문서는 4계층 구조(2장), 전체 파이프라인(3장), <b>각 단계가 무엇을 어떤 이론·공식으로, 왜 그렇게, 어떤 처리 흐름으로 도출하는지(4장)</b>를 단계별로 통합 기술하고, 타당성과 한계를 함께 보고한다. <b>v2.0 갱신(2026-06-11): 4계층 전수 구축 완료(IWA 178·GWA 도출)를 반영하고, 특히 최상위 GWA는 O*NET이 GWA를 만든 방식 자체가 "데이터 군집이 아닌 이론 기반 연역 설계"였음에 근거해 세 가지 방식(ONET 채택·순수 상향식·연역적 한국형 GWA)으로 도출·비교한다(4.4절).</b>
+  </div>
+
+  <nav class="toc">
+    <h4>목 차</h4>
+    <ol>
+      <li><a href="#s1">연구 개요와 방법론적 정체성</a></li>
+      <li><a href="#s2">4계층 작업활동 체계의 구조</a></li>
+      <li><a href="#s3">전체 도출 파이프라인 개관</a></li>
+      <li><a href="#s4">단계별 도출 메커니즘 — 무엇을·왜·공식·구현</a></li>
+      <li><a href="#s5">타당성 검증과 정직한 한계</a></li>
+    </ol>
+  </nav>
+</header>
+
+<!-- 1 -->
+<section id="s1">
+  <h2><span class="num">1.</span>연구 개요와 방법론적 정체성</h2>
+
+  <h3><span class="num">1.1</span>문제 정의</h3>
+  <p>KSCO 직업설명은 직업마다 기술 문체·상세도·관점이 달라, 직업 간 직무를 <b>표준화된 단위로 비교</b>하기 어렵다. 본 연구는 직업설명 텍스트에서 직무활동을 일관된 위계 체계로 추출하여 ① 동일 분류코드 내 직업의 변별, ② 국제표준(O*NET·ISCO)과의 정합, ③ 직업 간 전환 가능성 분석의 정량적 기반을 마련한다.</p>
+
+  <h3><span class="num">1.2</span>방법론적 정체성 — 두 국면</h3>
+  <p>본 연구는 성격이 다른 <b>두 국면</b>으로 구성된다. 주체가 다르다는 점이 핵심이다.</p>
+  <table>
+    <caption>표 1-1. 두 국면 — 누가 무엇을 하는가</caption>
+    <thead><tr><th>국면</th><th>하는 일</th><th>주체</th><th>범위</th></tr></thead>
+    <tbody>
+      <tr><td><b>국면 1<br>직무활동체계 구축</b></td><td>KSCO 직업설명에서 <b>TASK→DWA→IWA→GWA</b> 4계층을 도출 (직무활동의 표준 "사전" 구축)</td><td><span class="pill p-ai">인공지능(AI)</span> 대형언어모델·의미분석 AI가 전 과정 수행</td><td>전국 표준직업분류 <b>전수</b></td></tr>
+      <tr><td><b>국면 2<br>검증·직업별 측정</b></td><td>구축된 체계가 타당한지 검증하고, 직업별로 각 GWA의 <b>중요도·수준</b>과 <b>책무성</b>을 부여</td><td><span class="pill p-expert">도메인 전문가</span> 직업 전문가가 직접 평정</td><td>시범 <b>2개 중분류</b></td></tr>
+    </tbody>
+  </table>
+  <div class="method"><b>핵심.</b> O*NET 작업활동 프로젝트(2014)는 <b>국면 1</b>을 직업분석가의 정성적 수작업으로 수행했고, 그 때문에 11년이 걸렸다. 본 연구는 2026년 인공지능의 의미이해 능력으로 국면 1을 자동화하여 <b>8개월 내 전수 구축</b>을 가능케 한다. <b>전문가는 자동 도출을 "검수"하는 보조 역할이 아니라, 완성된 체계 위에서 직업별 정보를 부여하는 국면 2의 핵심 측정 주체</b>다. 본 방법론 문서는 <b>국면 1(AI에 의한 체계 도출)</b>을 다룬다.</div>
+
+  <h3><span class="num">1.3</span>O*NET 작업활동 프로젝트(2014)의 원절차</h3>
+  <p class="lead">본 연구가 따르는 원형이다. O*NET의 직무활동(DWA) 개발은 3개 국면·7단계로 이뤄졌으며, 모두 직업분석가의 의미 판단에 의존했다.</p>
+  <ol class="steps">
+    <li><b>작업 군집화(Task Clustering)</b>: 직업을 22개 직업군(Job Family)으로 나누고 → 각 작업을 41개 일반활동(GWA)에 분류한 뒤 → 그 안에서 활동 테마별로 묶어 DWA 후보 형성.</li>
+    <li><b>DWA 작성(Writing)</b>: 각 묶음을 대표하는 진술을 <b>8개 작성 규칙</b>(단일동사·중간 일반화·예시구 금지 등)에 맞춰 기술.</li>
+    <li><b>교차 품질관리(Round-Robin QC)</b>: 한 팀의 결과를 다른 두 팀이 순차 검토하여 객관성·일관성 확보.</li>
+  </ol>
+  <div class="interp"><b>본 연구가 주목한 점.</b> 위 세 국면 모두 <b>사람의 의미 판단</b>에 의존하며, 미국조차 박사급 인력을 다수 투입했다. 2026년의 대형언어모델은 작업진술의 의미 분해·군집·명명을 사람 수준으로 수행할 수 있어, 이 수작업을 자동화하는 것이 8개월 사업기간에서 선택이 아니라 필연이다.</div>
+
+  <h3><span class="num">1.4</span>O*NET(2014) ↔ 본 연구(2026) 비교</h3>
+  <table>
+    <caption>표 1-2. 같은 골격, 다른 수행 방식</caption>
+    <thead><tr><th>항목</th><th>O*NET 2014</th><th>본 연구 2026</th></tr></thead>
+    <tbody>
+      <tr><td>4계층 구조·작성 규약</td><td colspan="2" style="text-align:center;background:var(--soft)"><b>동일</b> (TASK→DWA→IWA→GWA · 8개 작성 규칙 · 채택 최소조건 · 다중연결)</td></tr>
+      <tr><td>입력 자료</td><td>현장 수집 작업목록(약 1.9만)</td><td>KSCO 해설서 텍스트(1,270 직업)</td></tr>
+      <tr><td>국면 1 수행 주체</td><td>직업분석가 다수(수작업)</td><td><b>인공지능(대형언어모델·의미분석 AI)</b></td></tr>
+      <tr><td>군집 방식</td><td>사람의 정성적 분류</td><td>의미 임베딩 + 계층적 군집(정량)</td></tr>
+      <tr><td>재현성</td><td>사람 판단 의존</td><td><b>결정론적</b>(같은 입력 → 같은 결과)</td></tr>
+      <tr><td>소요 기간</td><td>11년</td><td>8개월(자동화)</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">1.5</span>연구 범위</h3>
+  <p>본 문서는 <b>국면 1(직무활동체계 도출, 전수)</b>의 방법을 다룬다. 국면 2(직업별 중요도·수준·책무성 측정)는 <b>시범 2개 중분류에 한해 이번 연구 범위</b>이며 도메인 전문가가 평정한다 — 그 설계와 측정 방안은 별도로 다룬다. 전 직업 대상 직업별 측정은 후속 사업이다.</p>
+</section>
+
+<!-- 2 -->
+<section id="s2">
+  <h2><span class="num">2.</span>4계층 작업활동 체계의 구조</h2>
+  <p class="lead">하위는 직업 특정적·구체적이며, 상위로 갈수록 직업·산업 무관의 일반 활동이 된다.</p>
+
+  <div class="levels">
+    <div class="lvrow"><div class="tier t-gwa"><b>GWA</b><small>일반 작업활동</small></div>
+      <div class="desc">직업·산업 무관의 최상위 일반 활동. <b>명사형</b>. (미국 O*NET 41개)
+        <div class="ex">예) "정보 입수", "데이터·정보 분석"</div></div></div>
+    <div class="lvrow"><div class="tier t-iwa"><b>IWA</b><small>중간 작업활동</small></div>
+      <div class="desc">여러 DWA를 포괄하는 중간 추상 수준. <b>동사구·일반</b>. (O*NET 332개)
+        <div class="ex">예) "재무·투자 정보를 분석하여 평가한다"</div></div></div>
+    <div class="lvrow"><div class="tier t-dwa"><b>DWA</b><small>상세 작업활동</small></div>
+      <div class="desc">복수 직업이 공유하는 상세 활동. <b>동사구·상세</b>. (O*NET 2,087개)
+        <div class="ex">예) "재무 기록을 조사하여 재무제표를 작성한다" — 회계사·세무사·신용분석가 공통</div></div></div>
+    <div class="lvrow"><div class="tier t-task"><b>TASK</b><small>작업(과업)</small></div>
+      <div class="desc">직업의 가장 구체적인 단일 행동진술. "동사+목적어", "~한다" 종결. (O*NET 1.9만 / 본 연구 1.6만)
+        <div class="ex">예) "도면을 검토하여 형태를 확인한다"</div></div></div>
+  </div>
+
+  <h3><span class="num">2.1</span>위계의 실제 구조 — 복수 직업이 활동을 공유한다</h3>
+  <p>4계층은 단순한 나무가 아니라 <b>부분적으로 얽힌 그물</b>이다. DWA–IWA–GWA 줄기는 깨끗한 나무 구조지만, 하나의 작업(TASK)이 여러 DWA에 연결(최대 3개)되며 줄기에 얽힌다. 핵심은 <b>서로 다른 직업의 작업이 같은 DWA로 모이는 것</b> — 이것이 직업 간 공통활동이다.</p>
+
+  <div class="figwrap">
+  <svg viewBox="0 0 760 320" role="img" aria-label="3개 직업의 작업이 공유 DWA로 모이는 구조">
+    <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9aa6b6"/></marker></defs>
+    <g font-size="11.5" fill="#697587" text-anchor="middle" font-weight="700">
+      <text x="58" y="14">직업</text><text x="225" y="14">작업(TASK)</text><text x="445" y="14">DWA</text><text x="600" y="14">IWA</text><text x="710" y="14">GWA</text></g>
+    <g fill="#152544"><circle cx="58" cy="68" r="25"/><circle cx="58" cy="160" r="25"/><circle cx="58" cy="252" r="25"/></g>
+    <g fill="#fff" font-size="10.5" text-anchor="middle"><text x="58" y="65">회계사</text><text x="58" y="79">2812</text>
+      <text x="58" y="157">세무사</text><text x="58" y="171">2813</text><text x="58" y="249">신용</text><text x="58" y="263">분석가</text></g>
+    <g fill="#9a6212"><rect x="178" y="40" width="94" height="22" rx="5"/><rect x="178" y="72" width="94" height="22" rx="5"/>
+      <rect x="178" y="132" width="94" height="22" rx="5"/><rect x="178" y="164" width="94" height="22" rx="5"/>
+      <rect x="178" y="224" width="94" height="22" rx="5"/><rect x="178" y="256" width="94" height="22" rx="5"/></g>
+    <g fill="#fff" font-size="9.5" text-anchor="middle">
+      <text x="225" y="55">재무제표 작성</text><text x="225" y="87">세무신고 검토</text>
+      <text x="225" y="147">재무기록 조사</text><text x="225" y="179">세액 산정</text>
+      <text x="225" y="239">신용자료 분석</text><text x="225" y="271">위험 평가</text></g>
+    <g fill="#1f4e8c"><rect x="392" y="66" width="106" height="40" rx="6"/><rect x="392" y="146" width="106" height="40" rx="6"/><rect x="392" y="226" width="106" height="40" rx="6"/></g>
+    <g fill="#fff" font-size="9.5" text-anchor="middle" font-weight="700">
+      <text x="445" y="82">재무기록 조사·</text><text x="445" y="95">재무제표 작성</text>
+      <text x="445" y="162">세무자료를</text><text x="445" y="175">검토·신고</text>
+      <text x="445" y="242">위험·신용을</text><text x="445" y="255">분석·평가</text></g>
+    <g fill="#0f6b5f"><rect x="556" y="96" width="92" height="34" rx="6"/><rect x="556" y="202" width="92" height="34" rx="6"/></g>
+    <g fill="#fff" font-size="9.5" text-anchor="middle"><text x="602" y="111">재무·투자</text><text x="602" y="123">정보 평가</text>
+      <text x="602" y="217">위험정보</text><text x="602" y="229">분석</text></g>
+    <rect x="676" y="146" width="76" height="40" rx="6" fill="#5b3a8a"/><text x="714" y="162" text-anchor="middle" fill="#fff" font-size="9.5">데이터·정보</text><text x="714" y="175" text-anchor="middle" fill="#fff" font-size="9.5">분석</text>
+    <g stroke="#c2ccd9" fill="none" marker-end="url(#ar)" stroke-width="1.2">
+      <path d="M83,61 L176,51"/><path d="M83,75 L176,83"/><path d="M83,153 L176,143"/><path d="M83,167 L176,175"/><path d="M83,245 L176,235"/><path d="M83,259 L176,267"/></g>
+    <g fill="none" marker-end="url(#ar)" stroke="#9a6212" stroke-width="1.7">
+      <path d="M272,51 L390,80"/><path d="M272,143 L390,88"/><path d="M272,83 L390,160"/><path d="M272,175 L390,168"/><path d="M272,235 L390,242"/><path d="M272,267 L390,250"/>
+      <path d="M272,155 L390,232" stroke-dasharray="4 3"/></g>
+    <g stroke="#9aa6b6" fill="none" marker-end="url(#ar)" stroke-width="1.3">
+      <path d="M498,88 L554,110"/><path d="M498,168 L554,116"/><path d="M498,246 L554,222"/><path d="M648,112 L674,158"/><path d="M648,218 L674,174"/></g>
+    <text x="300" y="310" font-size="11" fill="#9a6212">굵은 주황선 = 서로 다른 직업의 작업이 같은 DWA로 모임 · 점선 = 한 작업이 두 DWA에 연결</text>
+  </svg>
+  <div class="figcap">그림 2-1. 회계사·세무사·신용분석가의 작업이 공유 DWA로 수렴하는 구조. "재무기록 조사"(세무사)가 회계 DWA에도 연결(점선)되어 직업 간 공통활동이 드러난다.</div>
+  </div>
+
+  <h3><span class="num">2.2</span>직업군 수준 — GWA 프로파일로 직무 성격 비교</h3>
+  <p>개별 직업을 넘어 <b>직업군(대분류) 단위로 집계</b>하면, 각 직업군이 41개 GWA를 어떤 비중으로 수행하는지의 <b>프로파일</b>이 된다. 직업군 간 직무 성격 차이가 한눈에 보인다. (아래는 구조 이해용 예시이며, 실제 비중은 국면 2의 측정 산출물이다.)</p>
+  <div class="figwrap">
+  <svg viewBox="0 0 760 250" role="img" aria-label="직업군별 GWA 영역 비중 예시 히트맵">
+    <g font-size="10.5" fill="#152544" text-anchor="middle" font-weight="700">
+      <text x="270" y="22">정보 입력</text><text x="390" y="22">정신 처리</text><text x="510" y="22">작업 산출</text><text x="630" y="22">대인 상호작용</text></g>
+    <g font-size="11" fill="#28303e" text-anchor="end">
+      <text x="150" y="68">전문가</text><text x="150" y="118">사무 종사자</text><text x="150" y="168">기능원</text><text x="150" y="218">단순노무</text></g>
+    <g>
+      <rect x="220" y="50" width="100" height="32" fill="#1f4e8c" opacity="0.85"/><text x="270" y="70" text-anchor="middle" fill="#fff" font-size="11">높음</text>
+      <rect x="340" y="50" width="100" height="32" fill="#1f4e8c" opacity="0.95"/><text x="390" y="70" text-anchor="middle" fill="#fff" font-size="11">매우 높음</text>
+      <rect x="460" y="50" width="100" height="32" fill="#1f4e8c" opacity="0.40"/><text x="510" y="70" text-anchor="middle" fill="#fff" font-size="11">낮음</text>
+      <rect x="580" y="50" width="100" height="32" fill="#1f4e8c" opacity="0.60"/><text x="630" y="70" text-anchor="middle" fill="#fff" font-size="11">중간</text></g>
+    <g>
+      <rect x="220" y="100" width="100" height="32" fill="#1f4e8c" opacity="0.80"/><text x="270" y="120" text-anchor="middle" fill="#fff" font-size="11">높음</text>
+      <rect x="340" y="100" width="100" height="32" fill="#1f4e8c" opacity="0.62"/><text x="390" y="120" text-anchor="middle" fill="#fff" font-size="11">중상</text>
+      <rect x="460" y="100" width="100" height="32" fill="#1f4e8c" opacity="0.42"/><text x="510" y="120" text-anchor="middle" fill="#fff" font-size="11">낮음</text>
+      <rect x="580" y="100" width="100" height="32" fill="#1f4e8c" opacity="0.70"/><text x="630" y="120" text-anchor="middle" fill="#fff" font-size="11">중상</text></g>
+    <g>
+      <rect x="220" y="150" width="100" height="32" fill="#9a6212" opacity="0.45"/><text x="270" y="170" text-anchor="middle" fill="#fff" font-size="11">중간</text>
+      <rect x="340" y="150" width="100" height="32" fill="#9a6212" opacity="0.50"/><text x="390" y="170" text-anchor="middle" fill="#fff" font-size="11">중간</text>
+      <rect x="460" y="150" width="100" height="32" fill="#9a6212" opacity="0.95"/><text x="510" y="170" text-anchor="middle" fill="#fff" font-size="11">매우 높음</text>
+      <rect x="580" y="150" width="100" height="32" fill="#9a6212" opacity="0.30"/><text x="630" y="170" text-anchor="middle" fill="#fff" font-size="11">낮음</text></g>
+    <g>
+      <rect x="220" y="200" width="100" height="32" fill="#9a6212" opacity="0.30"/><text x="270" y="220" text-anchor="middle" fill="#fff" font-size="11">낮음</text>
+      <rect x="340" y="200" width="100" height="32" fill="#9a6212" opacity="0.25"/><text x="390" y="220" text-anchor="middle" fill="#fff" font-size="11">낮음</text>
+      <rect x="460" y="200" width="100" height="32" fill="#9a6212" opacity="0.90"/><text x="510" y="220" text-anchor="middle" fill="#fff" font-size="11">높음</text>
+      <rect x="580" y="200" width="100" height="32" fill="#9a6212" opacity="0.20"/><text x="630" y="220" text-anchor="middle" fill="#fff" font-size="11">낮음</text></g>
+  </svg>
+  <div class="figcap">그림 2-2. 직업군 × GWA 4영역 비중(예시 도해). 전문가·사무직은 "정신처리·정보입력"이 높고, 기능원·단순노무는 "작업산출"이 높다 — 직업군의 직무 성격이 GWA 분포로 요약된다.</div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="s3">
+  <h2><span class="num">3.</span>전체 도출 파이프라인 개관</h2>
+  <p class="lead">KSCO 직업설명 원문에서 4계층 체계까지의 처리 흐름. 0단계(입력 정리) 외에 핵심은 TASK→DWA→IWA→GWA의 4단계다. 각 단계의 상세는 4장에서 다룬다.</p>
+
+  <div class="figwrap">
+  <svg viewBox="0 0 760 250" role="img" aria-label="입력에서 4계층까지의 전체 파이프라인">
+    <defs><marker id="ar2" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5b6b80"/></marker></defs>
+    <rect x="20" y="40" width="120" height="64" rx="8" fill="#eef1f6" stroke="#cbd5e1"/>
+    <text x="80" y="66" text-anchor="middle" font-size="12.5" font-weight="700" fill="#152544">0. 입력 정리</text>
+    <text x="80" y="84" text-anchor="middle" font-size="10.5" fill="#697587">직업설명 정제·</text>
+    <text x="80" y="98" text-anchor="middle" font-size="10.5" fill="#697587">상속</text>
+    <g>
+      <rect x="170" y="40" width="120" height="64" rx="8" fill="#9a6212"/>
+      <rect x="320" y="40" width="120" height="64" rx="8" fill="#1f4e8c"/>
+      <rect x="470" y="40" width="120" height="64" rx="8" fill="#0f6b5f"/>
+      <rect x="620" y="40" width="120" height="64" rx="8" fill="#5b3a8a"/></g>
+    <g fill="#fff" text-anchor="middle">
+      <text x="230" y="62" font-size="13" font-weight="800">1. TASK</text><text x="230" y="80" font-size="10" opacity=".95">AI 추출</text><text x="230" y="94" font-size="10" opacity=".95">16,168개</text>
+      <text x="380" y="62" font-size="13" font-weight="800">2. DWA</text><text x="380" y="80" font-size="10" opacity=".95">의미 군집</text><text x="380" y="94" font-size="10" opacity=".95">+ 이름</text>
+      <text x="530" y="62" font-size="13" font-weight="800">3. IWA</text><text x="530" y="80" font-size="10" opacity=".95">상위 묶음</text>
+      <text x="680" y="62" font-size="13" font-weight="800">4. GWA</text><text x="680" y="80" font-size="10" opacity=".95">최상위</text><text x="680" y="94" font-size="10" opacity=".95">41개</text></g>
+    <g stroke="#5b6b80" stroke-width="1.8" marker-end="url(#ar2)" fill="none">
+      <path d="M140,72 L168,72"/><path d="M290,72 L318,72"/><path d="M440,72 L468,72"/><path d="M590,72 L618,72"/></g>
+    <text x="230" y="128" text-anchor="middle" font-size="10.5" fill="#9a6212">개별 작업</text>
+    <text x="380" y="128" text-anchor="middle" font-size="10.5" fill="#1f4e8c">상세활동</text>
+    <text x="530" y="128" text-anchor="middle" font-size="10.5" fill="#0f6b5f">중간활동</text>
+    <text x="680" y="128" text-anchor="middle" font-size="10.5" fill="#5b3a8a">일반활동</text>
+    <rect x="20" y="165" width="720" height="56" rx="8" fill="var(--paper)" stroke="#dde3ec"/>
+    <text x="36" y="186" font-size="12" font-weight="700" fill="#152544">방향: 아래에서 위로(상향식)</text>
+    <text x="36" y="206" font-size="11.5" fill="#697587">작은 단위(작업)부터 의미로 묶어 올라가며 상세 → 중간 → 일반 활동으로 추상화. 2~4단계는 모두 인공지능이 수행하며, 모든 결과는 다시 추적·재현이 가능하다.</text>
+  </svg>
+  <div class="figcap">그림 3-1. 전체 파이프라인. 0단계는 입력 정리(규칙 기반), 1~4단계는 인공지능에 의한 4계층 도출(상향식).</div>
+  </div>
+
+  <table>
+    <caption>표 3-1. 단계 요약</caption>
+    <thead><tr><th>단계</th><th>입력 → 출력</th><th>한 줄 설명</th></tr></thead>
+    <tbody>
+      <tr><td><b>0. 입력 정리</b></td><td>직업설명 → 정제된 입력</td><td>잡음 제거 + 상위분류 정보 상속(규칙 기반)</td></tr>
+      <tr><td><b>1. TASK</b></td><td>정제 입력 → 작업진술</td><td>AI가 "동사+목적어" 단일 작업을 추출</td></tr>
+      <tr><td><b>2. DWA</b></td><td>작업 → 상세활동</td><td>비슷한 작업을 묶고 대표 이름 부여</td></tr>
+      <tr><td><b>3. IWA</b></td><td>상세활동 → 중간활동</td><td>같은 나무를 더 높이 잘라 더 큰 묶음</td></tr>
+      <tr><td><b>4. GWA</b></td><td>중간활동 → 일반활동</td><td>최상위 일반활동 도출(세 방식: ONET채택·상향식·연역적 한국형)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 4 -->
+<section id="s4">
+  <h2><span class="num">4.</span>단계별 도출 메커니즘 — 무엇을·왜·공식·구현</h2>
+  <p class="lead">각 단계를 <b>① 무엇을 하나 · ② 왜 이렇게 했나(의사결정) · ③ 이론과 공식 · ④ 처리 흐름(코드)</b> 순서로 설명한다. 코드는 비전공자도 흐름을 읽을 수 있도록 핵심만 한국어로 표기한다.</p>
+
+  <!-- 4.1 TASK -->
+  <div class="stagestep">
+    <div class="hd hd-task"><span class="n">1단계</span><b>TASK 도출</b><span class="io">입력: 직업설명 → 출력: 작업진술 16,168개</span></div>
+    <div class="bd">
+      <h4 class="q">① 무엇을 하나</h4>
+      <p>직업설명에서 <b>"동사 + 목적어" 형태의 단일 작업진술</b>만 뽑는다(예: "도면을 검토하여 형태를 확인한다"). 함께 그 직업이 쓰는 도구·작업환경도 명시된 경우 추출한다. 직업명·소제목·"업무를 수행한다" 같은 일반 문구는 제외한다.</p>
+
+      <h4 class="q">② 왜 "합집합"인가 — 의사결정</h4>
+      <div class="why"><b>문제.</b> 인공지능은 같은 글을 읽어도 매번 결과가 조금씩 다르다(어떤 작업은 1차에만, 어떤 건 2차에만 나옴).<br>
+      <b>결정.</b> 같은 직업설명을 <b>2번 독립적으로 분석한 뒤, 두 결과를 합친다(합집합)</b> — 둘 중 하나라도 찾은 작업은 모두 채택.<br>
+      <b>이유.</b> 둘 다 나온 것만 취하는 "교집합"이 아니라 "합집합"을 택한 까닭은, <b>분류체계를 처음 만드는 단계에서는 빠뜨리는 것(누락)이 더 위험</b>하기 때문이다. 빠진 작업은 영영 체계에 없지만, 더 뽑힌 작업은 뒤의 군집·검증에서 걸러낼 수 있다. (O*NET이 여러 분석가의 합의로 안정성을 확보한 것을, 본 연구는 2회 반복으로 모사한다.)</div>
+
+      <h4 class="q">③ 이론과 공식</h4>
+      <p>두 번 추출 결과의 일치도를 <b>자카드 계수</b>로 기록한다(품질 판단용이 아니라 안정성 점검용).</p>
+      <div class="eqbox">
+        <div class="eq">J(<span class="var">A</span>, <span class="var">B</span>) = | <span class="var">A</span> ∩ <span class="var">B</span> | / | <span class="var">A</span> ∪ <span class="var">B</span> | &nbsp;&nbsp;(<span class="var">A,B</span> = 1·2차 추출 작업 집합)</div>
+        <div class="gl"><b>해석.</b> 두 번 다 나온 작업은 신뢰도 0.95, 한 번만 나온 작업은 0.80을 부여. 채택은 합집합(A∪B).</div>
+      </div>
+
+      <h4 class="q">④ 처리 흐름</h4>
+      <figure class="code"><figcaption>TASK 추출 — 처리 흐름(요약)</figcaption>
+      <pre><span class="c"># 같은 직업설명을 AI가 2번 독립적으로 읽는다</span>
+1차 = 추출AI(직업설명)        <span class="c"># 예: 작업 12개</span>
+2차 = 추출AI(직업설명)        <span class="c"># 예: 작업 13개</span>
+
+작업목록 = 1차 <span class="pre-k">∪</span> 2차          <span class="c"># 합집합: 하나라도 나오면 채택(누락 방지)</span>
+<span class="pre-k">for</span> 작업 <span class="pre-k">in</span> 작업목록:
+    작업.신뢰도 = <span class="pre-n">0.95</span> <span class="pre-k">if</span> 두번다_나옴 <span class="pre-k">else</span> <span class="pre-n">0.80</span>
+
+작업목록 = 중복제거(작업목록)   <span class="c"># 표현만 다른 같은 작업은 하나로 병합</span></pre></figure>
+
+      <h4 class="q">⑤ '정의빈약' 직업은 어떻게 다루나 — 조상 정의로 보완</h4>
+      <div class="why"><b>문제.</b> KSCO 해설서의 직업 정의는 길이·충실도가 제각각이다. 어떤 직업은 자기 정의가 <b>50자도 안 되거나 영문·코드 위주</b>라 그것만으로는 작업을 뽑기 어렵다.<br>
+      <b>판정.</b> 자기 정의가 <b>50자 미만</b>이거나 <b>영문·기호 비율 45% 초과</b>면 <b>'정의빈약(low_signal=TRUE)'</b>으로 자동 표시한다.<br>
+      <b>처리.</b> 정의빈약 직업은 <b>자기 정의만으로 추출하지 않고, 상위 분류(세→소→중→대)의 정의를 함께 근거로</b> 보완 추출한다. 특화 단서가 약하면 무리하게 지어내지 않으므로 작업 수가 적게 나올 수 있다(부족&lt;8 = 정직한 과소추출, 후속 비고 처리). → 전수 1,270직업 중 <b>정의빈약 385개·충실 885개</b>.</div>
+
+      <h4 class="q">⑥ 전수 결과 요약 — 1,270직업 · 16,168 작업</h4>
+      <table>
+        <caption>표 4-A. Stage 1 전수 결과·품질지표 (전 직업)</caption>
+        <thead><tr><th>항목</th><th>값</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>추출 직업</td><td><b>1,270 / 1,270 (100%)</b></td><td>KSCO 8차 세세분류 전수</td></tr>
+          <tr><td>총 작업(TASK)</td><td><b>16,168개</b></td><td>직업당 중앙값 12 · 평균 12.7 (ONET 준거 8~30)</td></tr>
+          <tr><td>과추출(&gt;40)</td><td><b>0건</b></td><td>상한 준수</td></tr>
+          <tr><td>추적성(원문근거·도출출처)</td><td><b>100%</b></td><td>결측 0 — 엑셀만으로 도출 추적 가능</td></tr>
+          <tr><td>신뢰도 0.95(2회 일치)</td><td>8,359건 · <b>51.7%</b></td><td>나머지 0.80(1회만) 7,809건</td></tr>
+          <tr><td>일관성(자카드) 중앙값</td><td>0.412</td><td>투명성 지표(문자열 정확일치 기준)</td></tr>
+          <tr><td>정의빈약 직업</td><td>385 / 1,270</td><td>조상 정의로 보완 추출</td></tr>
+        </tbody>
+      </table>
+      <p class="ref">→ <b>신뢰도·일관성·정의빈약</b> 세 컬럼은 엑셀 산출물에 그대로 들어 있어, 각 작업이 "두 번 다 나왔는지, 같은 직업을 두 번 분석했을 때 얼마나 겹쳤는지, 정의가 충실했는지"를 직접 확인할 수 있다. 상세 해설: <code>stages/results/Stage1_결과해설서.md</code>.</p>
+    </div>
+  </div>
+
+  <!-- 4.2 DWA -->
+  <div class="stagestep">
+    <div class="hd hd-dwa"><span class="n">2단계</span><b>DWA 도출 (군집 + 이름)</b><span class="io">입력: 작업 16,168개 → 출력: 상세활동(DWA) + 이름</span></div>
+    <div class="bd">
+      <h4 class="q">① 무엇을 하나</h4>
+      <p>1.6만 개 작업을 <b>의미가 비슷한 것끼리 묶어</b> DWA(여러 직업이 공유하는 상세활동)를 만들고, 각 묶음에 <b>8개 규칙에 맞는 대표 이름</b>을 붙인다.</p>
+
+      <h4 class="q">② 왜 "계층적 응집군집"인가 — 의사결정</h4>
+      <div class="why"><b>요구.</b> 본 연구의 묶기 방법은 세 가지를 <b>동시에</b> 만족해야 한다 — ⓐ <b>위계 일관성</b>(같은 DWA는 반드시 같은 IWA·GWA에 속함), ⓑ <b>빠짐 없음</b>(모든 작업이 어딘가에 속해야 직업 프로파일에 구멍이 안 생김), ⓒ <b>재현성</b>(같은 입력이면 항상 같은 결과 — 통계 분류의 필수 요건).</div>
+      <table>
+        <caption>표 4-1. 군집 방법 비교 — 왜 계층적 응집군집인가</caption>
+        <thead><tr><th>방법</th><th>ⓐ위계</th><th>ⓑ빠짐없음</th><th>ⓒ재현성</th><th>판정</th></tr></thead>
+        <tbody>
+          <tr><td><b>계층적 응집군집</b></td><td>◎</td><td>◎</td><td>◎</td><td><b>채택</b></td></tr>
+          <tr><td>밀도 기반(HDBSCAN)</td><td>△</td><td>✗ 38~62%가 미분류</td><td>△</td><td>부적합</td></tr>
+          <tr><td>K-평균(K-means)</td><td>✗ 계층 불가</td><td>◎</td><td>○</td><td>부적합</td></tr>
+        </tbody>
+      </table>
+      <p class="ref">→ 밀도 기반은 상당수 작업을 "잡음"으로 빼버려 직업 프로파일에 구멍을 내고, K-평균은 위계를 만들지 못한다. 세 요건을 모두 만족하는 것은 <b>계층적 응집군집</b>뿐이다.</p>
+
+      <h4 class="q">③ 이론과 공식</h4>
+      <p><b>분포가설</b>(비슷한 맥락에 쓰이는 표현은 의미도 비슷)에 따라, 각 작업진술을 <b>의미 좌표(임베딩)</b>로 바꾼다. 좌표가 가까울수록 의미가 비슷하며, 가까운 정도는 <b>코사인 유사도</b>로 잰다.</p>
+      <div class="two">
+        <div class="eqbox">
+          <div class="eq">cos(<span class="var">u</span>, <span class="var">v</span>) = <span class="var">u</span> · <span class="var">v</span> ∈ [−1, 1]</div>
+          <div class="gl"><b>유사도.</b> 1=의미 동일, 0=무관. DWA 묶음은 내부 평균 유사도 <b>≥0.70</b>이라야 인정한다.</div>
+        </div>
+        <div class="figwrap" style="display:grid;place-items:center;margin:0">
+          <svg viewBox="0 0 200 130" aria-label="의미 좌표가 가까울수록 유사">
+            <line x1="20" y1="112" x2="185" y2="112" stroke="#cbd5e1"/><line x1="20" y1="16" x2="20" y2="112" stroke="#cbd5e1"/>
+            <line x1="20" y1="112" x2="160" y2="36" stroke="#1f4e8c" stroke-width="2.4"/>
+            <line x1="20" y1="112" x2="146" y2="52" stroke="#0f6b5f" stroke-width="2.4"/>
+            <text x="164" y="34" font-size="10.5" fill="#1f4e8c">작업 A</text><text x="150" y="66" font-size="10.5" fill="#0f6b5f">작업 B</text>
+            <text x="60" y="104" font-size="10" fill="#9a6212">각도↓ = 유사↑</text>
+          </svg>
+        </div>
+      </div>
+      <p>의미 좌표가 가까운 작업부터 차례로 묶어 <b>하나의 "군집 나무(덴드로그램)"</b>를 만든다. 이 나무를 서로 다른 높이에서 자르면 DWA·IWA·GWA가 한 구조에서 일관되게 나온다.</p>
+      <div class="figwrap">
+      <svg viewBox="0 0 720 250" role="img" aria-label="하나의 나무를 높이별로 잘라 DWA IWA GWA 생성">
+        <g font-size="9" fill="#9a6212" text-anchor="middle">
+          <text x="60" y="238">작업</text><text x="100" y="238">작업</text><text x="150" y="238">작업</text><text x="200" y="238">작업</text>
+          <text x="270" y="238">작업</text><text x="320" y="238">작업</text><text x="380" y="238">작업</text>
+          <text x="450" y="238">작업</text><text x="500" y="238">작업</text><text x="560" y="238">작업</text><text x="620" y="238">작업</text></g>
+        <g stroke="#5b6b80" fill="none" stroke-width="1.4">
+          <path d="M60,225 V188 H100 V225"/><path d="M150,225 V188 H200 V225"/>
+          <path d="M270,225 V192 H320 V225"/>
+          <path d="M450,225 V188 H500 V225"/><path d="M560,225 V196 H620 V225"/>
+          <path d="M80,188 V140 H175 V188"/><path d="M295,192 V140 H380 V225"/>
+          <path d="M475,188 V140 H590 V196"/>
+          <path d="M127,140 V92 H337 V140"/><path d="M532,140 V92"/>
+          <path d="M232,92 V52 H532 V92"/></g>
+        <line x1="20" y1="184" x2="700" y2="184" stroke="#1f4e8c" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="700" y="180" font-size="11" fill="#1f4e8c" text-anchor="end" font-weight="700">DWA (낮게 자름 = 잘게)</text>
+        <line x1="20" y1="130" x2="700" y2="130" stroke="#0f6b5f" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="700" y="126" font-size="11" fill="#0f6b5f" text-anchor="end" font-weight="700">IWA (중간)</text>
+        <line x1="20" y1="84" x2="700" y2="84" stroke="#5b3a8a" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="700" y="80" font-size="11" fill="#5b3a8a" text-anchor="end" font-weight="700">GWA (높게 자름 = 크게)</text>
+        <text x="20" y="28" font-size="11.5" fill="#152544" font-weight="700">하나의 나무 · 세 높이로 자름 → "하위는 반드시 상위에 포함"이 자동 보장</text>
+      </svg>
+      <div class="figcap">그림 4-1. 단일 군집 나무의 높이별 절단. 같은 나무라서 "같은 DWA는 반드시 같은 IWA·GWA"가 수학적으로 보장된다(3·4단계가 여기서 함께 결정됨).</div>
+      </div>
+
+      <h4 class="q">③-보충. 채택 최소조건을 "3작업·2직업"으로 — 의사결정</h4>
+      <div class="why"><b>문제.</b> 묶음 중에는 작업 1~2개·직업 1개짜리 작은 것도 생기는데, DWA는 "여러 직업이 공유하는 활동"이라 이런 건 우연일 수 있다.<br>
+      <b>결정.</b> <b>최소 3개 작업 또는 2개 직업</b>이 모여야 DWA로 인정한다(미국 O*NET은 4작업·3직업).<br>
+      <b>이유.</b> 한국은 직업 수가 많아(1,270개 vs 미국 923개) "여러 직업 공유" 조건은 쉽게 충족되는 반면, 직업당 작업 수는 적어(평균 12.7개) 4작업 기준은 지나치게 빡빡하다. 그래서 한 단계 완화했다. 늘어나는 작은 묶음의 잡음은 응집도(≥0.70)와 이름 규칙으로 통제한다.</div>
+
+      <h4 class="q">④ 처리 흐름</h4>
+      <figure class="code"><figcaption>DWA 도출 — 처리 흐름(요약)</figcaption>
+      <pre>좌표 = 의미분석AI(작업_16168개)        <span class="c"># 작업문장 → 의미 좌표(점)</span>
+나무 = 가까운것부터_묶기(좌표)          <span class="c"># 하나의 '군집 나무' 생성</span>
+DWA후보 = 나무_자르기(높이=<span class="pre-s">'DWA수준'</span>)   <span class="c"># 적절한 높이에서 잘라 묶음 결정</span>
+DWA후보 = 작은묶음_제거(최소=<span class="pre-s">'3작업·2직업'</span>) <span class="c"># 우연한 작은 묶음 탈락</span>
+
+<span class="pre-k">for</span> 묶음 <span class="pre-k">in</span> DWA후보:
+    이름 = 명명AI(묶음.대표작업5건, 규칙=<span class="pre-s">'8조항'</span>)  <span class="c"># AI가 대표 이름 작성</span>
+    <span class="pre-k">while</span> <span class="pre-k">not</span> 여덟조항_통과(이름):       <span class="c"># 규칙 위반 시</span>
+        이름 = 명명AI_재작성(이름)         <span class="c"># 최대 3회 다시 씀</span></pre></figure>
+
+      <h4 class="q">⑤ DWA 이름 작성 규칙 — 8조항</h4>
+      <p>O*NET의 DWA 작성 규약(보고서 p.24)을 한국어에 맞게 옮긴 8개 규칙이다. 인공지능이 이름을 쓸 때 이 규칙을 강제로 따르며, 위반 시 자동으로 다시 쓴다. <b>영어의 "동사로 시작"은 한국어 어순상 "서술어로 종결(~한다)"로 옮겼다.</b></p>
+      <table>
+        <caption>표 4-2. DWA 이름 작성 8조항 (한국어판)</caption>
+        <thead><tr><th>#</th><th>규칙</th><th>설명·예시</th></tr></thead>
+        <tbody>
+          <tr><td><b>1</b></td><td>단일 핵심 서술어</td><td>DWA 1개 = 주요 활동 1개. "~한다"로 끝맺음(여러 활동을 한 문장에 욱여넣지 않음)</td></tr>
+          <tr><td><b>2</b></td><td>현재 평서형 '~한다'</td><td>"조사한다"(○) / "조사"·"조사하기"·"조사하였다"·"조사합니다"(✕)</td></tr>
+          <tr><td><b>3</b></td><td>목적어 절제 + '및/또는'</td><td>불필요한 수식 제거, 여러 대상은 "및·또는"으로 묶음</td></tr>
+          <tr><td><b>4</b></td><td>중간 수준의 명사</td><td>너무 넓은 말("장비"✕)도, 너무 좁은 말("○○사 전용 장비"✕)도 피하고 직업군에 통용되는 중간말("의료처치장비"○)</td></tr>
+          <tr><td><b>5</b></td><td>변별용 수식어 허용</td><td>의미 구분에 필요한 형용사는 사용(과한 수식은 지양)</td></tr>
+          <tr><td><b>6</b></td><td>예시·열거구 금지</td><td>"~등", "~와 같은", "예를 들어" 회피</td></tr>
+          <tr><td><b>7</b></td><td>목적·결과절 최소화</td><td>"~하기 위하여", "~함으로써" 남용 금지(목적이 활동을 가른다면 예외)</td></tr>
+          <tr><td><b>8</b></td><td>일반인 가독성</td><td>구직자·교사·인사담당자가 한 번에 이해 가능. 과한 한자어·전문용어 지양</td></tr>
+        </tbody>
+      </table>
+      <p class="ref">※ 작성된 이름은 위 8개 규칙을 자동 점검하여 <b>준수율 90% 이상</b>을 목표로 하고, 미달 이름은 다시 쓰거나 전문가 검토 대상으로 보낸다.</p>
+    </div>
+  </div>
+
+  <!-- 4.3 IWA -->
+  <div class="stagestep">
+    <div class="hd hd-iwa"><span class="n">3단계</span><b>IWA 도출 (상위 묶음)</b><span class="io">입력: DWA → 출력: 중간활동(IWA)</span></div>
+    <div class="bd">
+      <h4 class="q">① 무엇을 하나</h4>
+      <p>여러 DWA를 한 단계 더 일반화하여 <b>IWA(중간활동)</b>로 묶고, DWA보다 일반적인 이름을 붙인다.</p>
+      <h4 class="q">② 왜 "같은 나무를 더 높이 자르기"인가 — 의사결정</h4>
+      <div class="why"><b>결정.</b> DWA를 새로 다시 군집하지 않고, 2단계에서 만든 <b>그 나무를 더 높은 곳에서 자른다</b>.<br>
+      <b>이유.</b> 나무가 하나이므로 <b>"같은 DWA는 반드시 같은 IWA에 들어간다"가 저절로 보장</b>된다. 만약 따로 다시 묶으면 이 일관성이 깨져, 한 DWA가 두 IWA에 걸치는 모순이 생길 수 있다. (미국 O*NET도 DWA→IWA가 어긋남 0건인 깨끗한 나무 구조다.)</div>
+      <h4 class="q">③ 처리 흐름</h4>
+      <figure class="code"><figcaption>IWA 도출 — 처리 흐름(요약)</figcaption>
+      <pre>IWA후보 = 나무_자르기(높이=<span class="pre-s">'IWA수준'</span>)  <span class="c"># 2단계의 같은 나무를 '더 높이' 자름</span>
+<span class="c"># 나무가 하나라서 같은 DWA는 자동으로 같은 IWA에 포함됨</span>
+<span class="pre-k">for</span> 묶음 <span class="pre-k">in</span> IWA후보:
+    이름 = 명명AI(묶음.대표DWA5건, 규칙=<span class="pre-s">'8조항·더 일반적으로'</span>)</pre></figure>
+
+      <h4 class="q">④ 전수 결과 — 178 IWA <span class="pill p-ai" style="background:#0f6b5f">실측</span></h4>
+      <table>
+        <caption>표 4-C. Stage 3 전수 결과 (2026-06-11)</caption>
+        <thead><tr><th>항목</th><th>값</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>도출 IWA</td><td><b>178</b></td><td>DWA:IWA ≈ 6.7:1 (O*NET 6.3:1과 정합)</td></tr>
+          <tr><td>DWA→IWA 연결</td><td><b>1,192 / 1,192 strict 1:1</b></td><td>중복배정·고아 0 (같은 트리 → 포함관계 수학적 보장)</td></tr>
+          <tr><td>절단 수준</td><td>k=214 (유효 178)</td><td>자연 gap 평탄 → ONET 비율 기준선 채택</td></tr>
+          <tr><td>형식 7조항 준수</td><td><b>100%</b></td><td>조항4(광의 일반어)는 IWA에서 경고로 완화</td></tr>
+        </tbody>
+      </table>
+      <div class="why"><b>왜 조항4를 IWA에서 완화하나.</b> IWA는 본질적으로 DWA보다 일반적이라 "문서·자료를 읽어 업무에 활용한다"처럼 포괄 목적어가 정당하다(O*NET IWA 규약과 동일). 따라서 DWA에서 금지하던 광의 일반어를 IWA에서는 차단이 아니라 모니터링 지표로 둔다. 단 조항1(단일 핵심 서술어)은 엄격 유지하여 "~하여 ~하고 ~한다"식 나열을 막았다. 상세 해설: <code>stages/results/Stage3_결과해설서.md</code>.</div>
+    </div>
+  </div>
+
+  <!-- 4.4 GWA -->
+  <div class="stagestep">
+    <div class="hd hd-gwa"><span class="n">4단계</span><b>GWA 도출 (세 방식)</b><span class="io">입력: IWA 178 → 출력: 일반활동(GWA)</span></div>
+    <div class="bd">
+      <h4 class="q">① 무엇을 하나</h4>
+      <p>IWA를 최상위로 일반화하여 GWA(일반활동)를 확정한다. 그런데 GWA는 다른 계층과 성격이 근본적으로 다르다 — 아래 ②를 먼저 이해해야 한다.</p>
+
+      <h4 class="q">② O*NET GWA는 어떻게 만들어졌나 — 데이터가 아니라 "이론"</h4>
+      <div class="why"><b>핵심 사실.</b> O*NET의 41개 GWA는 작업 데이터를 군집해 나온 것이 <b>아니다</b>. 산업·조직심리학자들이 <b>이론으로 먼저 설계한 분류체계</b>다. 지적 계보는 둘이다 — ⓐ <b>PAQ(Position Analysis Questionnaire, McCormick 1972)</b>의 worker-oriented 직무분석(직업을 "무슨 산업의 무슨 일"이 아니라 작업자의 일반 행동요소로 기술), ⓑ <b>정보처리 모델</b>(일을 입력→처리→산출→상호작용으로 봄). O*NET 개발진(Jeanneret·Borman 등, 1999)은 이 이론으로 41개를 먼저 도출한 뒤 평정 데이터로 사후 검증했다. <b>순서가 핵심: 이론이 먼저, 데이터는 검증.</b></div>
+      <div class="interp"><b>그래서 상향식으로는 재현되지 않는다.</b> 우리 데이터만으로 최상위 묶음을 만들면 직종 축(생산·서비스·사무 등)으로 갈리고, ONET의 인지기능 축(입력·처리·산출·상호작용)은 자연 발생하지 않는다. 이는 결함이 아니라 GWA의 본질(이론 설계물)을 실증하는 결과다.</div>
+
+      <h4 class="q">③ 세 방식으로 도출·비교 — 의사결정</h4>
+      <p>이 특성 때문에 본 연구는 GWA를 <b>세 방식으로 모두 도출</b>하여 비교했다. 셋 다 178 IWA를 strict 1:1로 매핑(중복·고아 0).</p>
+      <table>
+        <caption>표 4-D. GWA 도출 세 방식</caption>
+        <thead><tr><th>방식</th><th>무엇을</th><th>GWA</th><th>ONET 정합</th></tr></thead>
+        <tbody>
+          <tr><td><b>ⓐ ONET 41 채택</b></td><td>ONET 41을 한국어 번역·채택, IWA를 의미 최근접 + AI 분류로 연결</td><td>41<br>(사용 33)</td><td>100%(동일 어휘)</td></tr>
+          <tr><td><b>ⓑ 순수 상향식</b></td><td>데이터만으로 최상위 묶음 자생 → ONET과 일치도 측정(가설검증)</td><td>41 자생</td><td>표출 19 / 미표출 22</td></tr>
+          <tr><td><b>ⓒ 연역적<br>한국형 GWA</b> <span class="pill p-ai" style="background:#5b3a8a">권장</span></td><td><b>ONET의 방법(이론→검증)만 복제, ONET 41 목록은 미사용.</b> 한국 데이터+이론으로 자체 설계</td><td><b>36</b><br>(4영역)</td><td>28 / 41 distinct</td></tr>
+        </tbody>
+      </table>
+
+      <h4 class="q">④ 연역적 한국형 GWA(ⓒ) — ONET을 베끼지 않고 ONET처럼</h4>
+      <p>ONET GWA를 3개 층으로 분리하면 <b>(가) 조직 프레임</b>(정보처리 4영역) · <b>(나) 방법</b>(이론 우선→데이터 검증) · <b>(다) 41개 목록</b>이다. ⓒ는 <b>(가)+(나)를 채택하고 (다)는 자체 생산</b>한다. 인공지능(I/O 전문가 패널 대리)이 아래 이론 베이스·기준에 따라 36개를 연역 설계했다.</p>
+      <table>
+        <caption>표 4-E. 연역 설계의 이론 베이스와 기준</caption>
+        <thead><tr><th>구분</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td><b>이론 베이스</b></td><td>PAQ(worker-oriented) · 정보처리 모델(4영역 고정) · Fleishman 분류학 원칙(상호배타·포괄·추상수준 동질) · ONET 작성형식(명사형 일반범주)</td></tr>
+          <tr><td><b>C1 영역 이론규정</b></td><td>각 영역이 이론상 어떤 활동유형으로 구성되는지 먼저 규정</td></tr>
+          <tr><td><b>C2 데이터 근거</b></td><td>178 IWA를 근거로 공통 일반활동을 범주로 묶음(개별 IWA 복사 금지)</td></tr>
+          <tr><td><b>C3 이론 보강 ★</b></td><td>이론상 필요하나 데이터에 얇은 활동(의사결정·전략수립 등)도 범주로 포함(<code>basis=theory</code> 표시)</td></tr>
+          <tr><td><b>C4~C6</b></td><td>MECE·추상수준 정제 / 입도 30~45(ONET 비교가능) / 한국 맥락 세분</td></tr>
+        </tbody>
+      </table>
+      <div class="figwrap">
+      <svg viewBox="0 0 720 188" role="img" aria-label="연역 설계: 4영역 천장 아래 36 GWA">
+        <text x="360" y="18" font-size="11.5" font-weight="700" fill="#5b3a8a" text-anchor="middle">정보처리 4영역(이론 천장) → 한국형 GWA 36</text>
+        <g font-size="10.5" fill="#fff" text-anchor="middle" font-weight="700">
+          <rect x="30" y="34" width="150" height="30" rx="6" fill="#1f4e8c"/><text x="105" y="53">정보 입력 · 5</text>
+          <rect x="195" y="34" width="150" height="30" rx="6" fill="#0f6b5f"/><text x="270" y="53">정신 과정 · 8</text>
+          <rect x="360" y="34" width="150" height="30" rx="6" fill="#9a6212"/><text x="435" y="53">작업 산출 · 11</text>
+          <rect x="525" y="34" width="165" height="30" rx="6" fill="#5b3a8a"/><text x="607" y="53">타인과의 상호작용 · 12</text></g>
+        <g font-size="9.5" fill="#28303e" text-anchor="middle">
+          <text x="105" y="86">관찰·감지 / 측정·검사</text><text x="105" y="100">심사·검증 …</text>
+          <text x="270" y="86">정보 분석 / 설계·도면화</text><text x="270" y="100">의사결정 / 목표·전략 ★</text>
+          <text x="435" y="86">제작·가공 / 건설·시공</text><text x="435" y="100">기계 조작 / 운전 …</text>
+          <text x="607" y="86">응대 / 판매·설득 / 돌봄</text><text x="607" y="100">교육 / 조정·협업 ★ …</text></g>
+        <rect x="30" y="120" width="660" height="50" rx="8" fill="var(--paper)" stroke="#dde3ec"/>
+        <text x="46" y="140" font-size="11.5" font-weight="700" fill="#152544">★ = 이론 보강(basis=theory): 데이터엔 얇지만 체계 완결성을 위해 둔 추상활동</text>
+        <text x="46" y="159" font-size="11" fill="#697587">→ 추출로는 안 잡혀 국면 2(직업별 측정)로 채운다. ONET도 추상활동을 평정으로 채웠다.</text>
+      </svg>
+      <div class="figcap">그림 4-2. 연역적 한국형 GWA(ⓒ). 정보처리 4영역을 이론 천장으로 고정하고, 그 아래 36개 일반 작업활동을 한국 데이터+이론으로 설계.</div>
+      </div>
+
+      <h4 class="q">⑤ 결과·정직한 한계</h4>
+      <div class="interp"><b>성과.</b> ⓒ는 순수 상향식(ⓑ)이 못 잡던 추상 인지·관리 활동을 이론으로 복원했다 — 의사결정·문제해결(ONET 정합 cos 0.88), 전문지식 적용·갱신(0.83), 조정·협업(0.82). ONET 정합도 19/41 → <b>28/41</b>로 향상. (가)프레임·(나)방법은 국제 정합, (다)내용은 한국 고유.</div>
+      <div class="caveat"><b>한계 — 추상활동은 추출이 아니라 측정.</b> 36개 중 "목표·전략의 수립"은 KSCO 직업설명에 명시되지 않아 데이터 추출만으론 0건이다(basis=theory). O*NET도 이를 추출이 아니라 <b>전 직업 평정</b>으로 채웠다. 곧 <b>연역 골격(ⓒ) + 직업별 측정(국면 2)이 한 세트</b>여야 ONET 수준으로 완성된다. 산출물: <code>S4_GWA도출.xlsx</code>(ⓐ)·<code>S4b_상향식GWA도출.xlsx</code>(ⓑ)·<code>S4c_연역적GWA도출.xlsx</code>(ⓒ).</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section id="s5">
+  <h2><span class="num">5.</span>타당성 검증과 정직한 한계</h2>
+
+  <h3><span class="num">5.1</span>타당성을 어떻게 방어하는가</h3>
+  <table>
+    <caption>표 5-1. 세 가지 방어 축</caption>
+    <thead><tr><th>축</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><b>재현성</b></td><td>의미 좌표·군집·절단이 모두 결정론적 — 같은 입력이면 항상 같은 결과(통계 분류의 필수 요건)</td></tr>
+      <tr><td><b>설명가능성</b></td><td>GWA → IWA → DWA → 작업 → 원문장까지 거꾸로 추적 가능 — "이 활동이 어디서 왔는가"를 늘 보일 수 있음</td></tr>
+      <tr><td><b>국제 정합성</b></td><td>한국형 체계와 O*NET의 수렴 정도를 측정하여 타당성 근거로 제시</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">5.2</span>정직하게 밝히는 한계</h3>
+  <table>
+    <caption>표 5-2. 한계와 대응</caption>
+    <thead><tr><th>한계</th><th>근거</th><th>대응</th></tr></thead>
+    <tbody>
+      <tr><td>교차언어 비교의 손실(한국어↔영어)</td><td>유사도 0.58–0.62</td><td>ONET 41개를 한국어로 번역한 뒤 비교</td></tr>
+      <tr><td>최상위 GWA가 데이터에서 자연 발생하지 않음</td><td>순수 상향식 시 직종 축으로 갈림(인지기능 축 미발생)</td><td>GWA의 본질(이론 설계물)을 인정하고, <b>ONET의 방법(연역)을 복제</b>해 한국형 GWA 36개를 설계(방식 ⓒ)</td></tr>
+      <tr><td>추상 인지·관리 활동이 추출로는 얇음</td><td>"목표·전략 수립" 등은 해설서에 명시 안 됨(basis=theory)</td><td>연역으로 범주는 확보하되, 채움은 국면 2(직업별 평정)로 — ONET과 동일 전략</td></tr>
+      <tr><td>해설서 정보가 적은 일부 직업</td><td>직업당 작업 중앙값 12(ONET 20)</td><td>정보 빈약 직업을 자동 식별하여 직업사전·NCS로 보강</td></tr>
+      <tr><td>DWA 입도가 ONET과 다름(3작업·2직업 vs 4·3)</td><td>한국은 직업당 작업이 적어 기준 완화</td><td>입도 차이는 정직 보고, 상위 IWA·GWA에서 정렬</td></tr>
+    </tbody>
+  </table>
+  <div class="caveat"><b>최상위(GWA)에 대한 현재 결론.</b> "미국의 41개 일반활동이 한국 데이터에서 저절로 나타난다"는 강한 주장은 성립하지 않는다(순수 상향식은 직종 축으로 갈림). 그러나 이는 GWA가 본래 <b>데이터 군집이 아니라 이론 설계물</b>이기 때문이며, 본 연구는 <b>ONET이 GWA를 만든 그 방법(이론 우선→데이터 검증)을 그대로 복제</b>하여 한국형 GWA 36개를 자체 설계했다(방식 ⓒ, ONET 정합 28/41). 절제된 보고문 — <em>"KSCO 직무활동을 O*NET 절차로 다층화할 수 있으며, 최상위 GWA는 O*NET의 연역적 방법을 적용해 한국 데이터·이론으로 자체 구성할 수 있다(국제 비교를 위해 ONET 41 채택본도 병행 제공). 추상 인지·관리 활동은 직업별 측정(국면 2)으로 완성한다."</em></div>
+</section>
+
+<footer>
+  국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구<br>
+  직무활동 체계 도출 방법론 v2.0 (2026-06-11, 4계층 전수 구축·GWA 3방식 반영) · 연구진 내부 검토용<br>
+  함께 보는 문서: 전체 로드맵 및 진행현황
+</footer>
+
+</div>
+</body>
+</html>

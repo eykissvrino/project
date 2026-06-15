@@ -1,0 +1,146 @@
+{
+  "ksco_code": "84160",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면을 검토하여 제관할 형태를 확인한다.",
+      "source_sentence": "도면을 검토하여 제관할 형태를 확인하고 작업 방법 및 순서를 숙지한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(철판·형강·봉·관 등 재료를 도면에 맞게 제작)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "숙지하다",
+      "object": "작업 방법 및 순서",
+      "full_statement": "작업 방법 및 순서를 숙지한다.",
+      "source_sentence": "도면을 검토하여 제관할 형태를 확인하고 작업 방법 및 순서를 숙지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "금속소재와 공구·장비",
+      "full_statement": "제관에 필요한 철골, 강판 등의 금속소재와 공구, 장비를 준비한다.",
+      "source_sentence": "제관에 필요한 철골, 강판 등의 금속소재와 공구, 장비 등을 준비한다",
+      "derived_from": "상속 주요업무→세세정의 특화(철판·형강·봉·관 등의 재료)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "절단하다",
+      "object": "금속소재",
+      "full_statement": "금속소재를 절단기 등의 장비를 사용하여 절단한다.",
+      "source_sentence": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(재료를 도면에 맞게 절단)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "구부리다",
+      "object": "금속소재",
+      "full_statement": "금속소재를 벤딩기 등의 장비를 사용하여 구부린다.",
+      "source_sentence": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(성형)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가공하다",
+      "object": "금속소재",
+      "full_statement": "금속소재를 프레스 등의 장비를 사용하여 가공한다.",
+      "source_sentence": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(성형)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가조립하다",
+      "object": "각 부분품",
+      "full_statement": "용접이나 볼트, 너트로 각 부분품을 가조립한다.",
+      "source_sentence": "용접이나 볼트, 너트로 각 부분품을 가조립하여 제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(조립)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "대조하다",
+      "object": "제품 형태와 명세서",
+      "full_statement": "가조립한 제품의 형태가 명세서와 일치하는지 대조한다.",
+      "source_sentence": "용접이나 볼트, 너트로 각 부분품을 가조립하여 제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "용접하다",
+      "object": "부분품",
+      "full_statement": "형태가 명세서와 일치하면 부분품을 완전히 용접한다.",
+      "source_sentence": "용접이나 볼트, 너트로 각 부분품을 가조립하여 제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(용접)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조립하다",
+      "object": "부분품",
+      "full_statement": "형태가 명세서와 일치하면 부분품을 완전히 조립한다.",
+      "source_sentence": "용접이나 볼트, 너트로 각 부분품을 가조립하여 제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(조립)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "다듬다",
+      "object": "용접부위",
+      "full_statement": "그라인더나 끌로 용접부위를 다듬는다.",
+      "source_sentence": "그라인더나 끌로 용접부위를 다듬는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(다듬질)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "확인하다",
+      "object": "제관된 제품",
+      "full_statement": "제관된 제품을 확인하여 도면과 비교한다.",
+      "source_sentence": "제관된 제품을 확인하여 도면과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "현도하다",
+      "object": "도면",
+      "full_statement": "도면에 따라 현도하는 일을 하기도 한다.",
+      "source_sentence": "도면에 따라 현도하고 마킹하는 일을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "마킹하다",
+      "object": "재료",
+      "full_statement": "도면에 따라 재료에 마킹하는 일을 하기도 한다.",
+      "source_sentence": "도면에 따라 현도하고 마킹하는 일을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "제관기",
+      "full_statement": "보일러, 철구조물과 저장용기류를 제작하기 위하여 제관기를 조작한다.",
+      "source_sentence": "철판, 형강, 봉 및 관 등의 재료를 도면에 맞게 절단, 성형, 용접, 다듬질 및 조립하고 보일러, 철구조물과 저장용기류를 제작하기 위하여 제관기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제작하다",
+      "object": "보일러·철구조물·저장용기류",
+      "full_statement": "보일러, 철구조물과 저장용기류를 제작한다.",
+      "source_sentence": "철판, 형강, 봉 및 관 등의 재료를 도면에 맞게 절단, 성형, 용접, 다듬질 및 조립하고 보일러, 철구조물과 저장용기류를 제작하기 위하여 제관기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "제관기", "category": "장비", "evidence_span": "보일러, 철구조물과 저장용기류를 제작하기 위하여 제관기를 조작한다."},
+    {"name": "절단기", "category": "장비", "evidence_span": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다."},
+    {"name": "벤딩기", "category": "장비", "evidence_span": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다."},
+    {"name": "프레스", "category": "장비", "evidence_span": "금속소재를 절단기, 벤딩기, 프레스 등의 장비를 사용하여 절단하거나 구부리고 가공한다."},
+    {"name": "그라인더", "category": "도구", "evidence_span": "그라인더나 끌로 용접부위를 다듬는다."},
+    {"name": "끌", "category": "도구", "evidence_span": "그라인더나 끌로 용접부위를 다듬는다."},
+    {"name": "용접기", "category": "장비", "evidence_span": "용접이나 볼트, 너트로 각 부분품을 가조립하여 제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "중량물(철골·강판 등 금속소재) 취급", "evidence_span": "제관에 필요한 철골, 강판 등의 금속소재와 공구, 장비 등을 준비한다"},
+    {"category": "신체적", "value": "정밀 작업(도면·명세서와 일치하는 가공·조립)", "evidence_span": "제품의 형태가 명세서와 일치하면 완전히 용접, 조립한다"}
+  ]
+}

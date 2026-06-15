@@ -1,0 +1,98 @@
+{
+  "ksco_code": "78499",
+  "tasks": [
+    {
+      "verb": "철거하다",
+      "object": "목제 및 철제 지주",
+      "full_statement": "폐쇄된 작업장에서 목제 및 철제 지주를 철거한다.",
+      "source_sentence": "폐쇄된 작업장에서 목제 및 철제 지주를 철거하거나, 금속광물을 회수하는 세광통에 자갈이 들어가도록 고수압의 물줄기를 댄다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "대다",
+      "object": "고수압의 물줄기",
+      "full_statement": "금속광물을 회수하는 세광통에 자갈이 들어가도록 고수압의 물줄기를 댄다.",
+      "source_sentence": "금속광물을 회수하는 세광통에 자갈이 들어가도록 고수압의 물줄기를 댄다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "회수하다",
+      "object": "금속광물",
+      "full_statement": "세광통을 이용하여 금속광물을 회수한다.",
+      "source_sentence": "금속광물을 회수하는 세광통에 자갈이 들어가도록 고수압의 물줄기를 댄다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "채취하다",
+      "object": "백악, 점토, 자갈, 모래 및 암염",
+      "full_statement": "노천광에서 백악, 점토, 자갈, 모래 및 암염 등을 채취한다.",
+      "source_sentence": "노천광에서 백악, 점토, 자갈, 모래 및 암염 등을 채취하는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "채취하다",
+      "object": "소금이나 광물",
+      "full_statement": "염전 및 노천광에서 소금이나 광물을 채취한다.",
+      "source_sentence": "염전 및 노천광에서 소금이나 광물을 채취한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "승강기·이동발판 및 인양장비",
+      "full_statement": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치한다.",
+      "source_sentence": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "승강기·이동발판 및 인양장비",
+      "full_statement": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 수리한다.",
+      "source_sentence": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수행하다",
+      "object": "폭파작업",
+      "full_statement": "채굴 및 토목공사 현장의 폭파작업을 수행한다.",
+      "source_sentence": "채굴 및 토목공사 현장의 폭파작업을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "견인하다",
+      "object": "광산 및 채석장 지주",
+      "full_statement": "광산 및 채석장의 지주를 견인한다.",
+      "source_sentence": "광산 견인원·광산지주 견인원 / 채석장 견인원·채석장지주 견인원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "채취하다",
+      "object": "자갈 및 모래",
+      "full_statement": "수력을 이용하여 자갈 및 모래를 채취한다.",
+      "source_sentence": "자갈, 모래 채취원·수력 사광원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "세광통", "category": "장비", "evidence_span": "금속광물을 회수하는 세광통에 자갈이 들어가도록 고수압의 물줄기를 댄다."},
+    {"name": "승강기", "category": "장비", "evidence_span": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치하고 수리한다."},
+    {"name": "이동발판", "category": "장비", "evidence_span": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치하고 수리한다."},
+    {"name": "인양장비", "category": "장비", "evidence_span": "자재와 작업원을 올리고 내리는 승강기, 이동발판 및 기타 인양장비를 설치하고 수리한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "폐쇄된 작업장(갱내·지하)", "evidence_span": "폐쇄된 작업장에서 목제 및 철제 지주를 철거하거나"},
+    {"category": "장소", "value": "노천광(실외)", "evidence_span": "노천광에서 백악, 점토, 자갈, 모래 및 암염 등을 채취하는"},
+    {"category": "장소", "value": "염전(실외)", "evidence_span": "염전 및 노천광에서 소금이나 광물을 채취한다."},
+    {"category": "위험", "value": "폭파작업 위험", "evidence_span": "채굴 및 토목공사 현장의 폭파작업을 수행한다."},
+    {"category": "신체적", "value": "고수압 물줄기 취급", "evidence_span": "자갈이 들어가도록 고수압의 물줄기를 댄다."}
+  ]
+}

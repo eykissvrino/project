@@ -1,0 +1,157 @@
+{
+  "ksco_code": "23512",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "플랜트 설비",
+      "full_statement": "공장과 대규모 플랜트 설비에 대한 연구개발 업무를 수행한다.",
+      "source_sentence": "공장과 대규모 설비인 플랜트(Plant)에 대한 연구개발, 설계, 제작, 감리 등의 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "플랜트 설비",
+      "full_statement": "공장과 대규모 플랜트 설비를 설계한다.",
+      "source_sentence": "공장과 대규모 설비인 플랜트(Plant)에 대한 연구개발, 설계, 제작, 감리 등의 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제작하다",
+      "object": "플랜트 설비",
+      "full_statement": "플랜트 설비를 제작한다.",
+      "source_sentence": "공장과 대규모 설비인 플랜트(Plant)에 대한 연구개발, 설계, 제작, 감리 등의 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감리하다",
+      "object": "플랜트 설비",
+      "full_statement": "플랜트 설비 구축에 대한 감리 업무를 수행한다.",
+      "source_sentence": "공장과 대규모 설비인 플랜트(Plant)에 대한 연구개발, 설계, 제작, 감리 등의 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "탐색하다",
+      "object": "고장 원인",
+      "full_statement": "플랜트 설비의 고장 발생 시 그 원인을 탐색한다.",
+      "source_sentence": "플랜트 설비의 고장발생시 그 원인을 탐색하고 수리계획을 수립하고 그 활동을 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "수리계획",
+      "full_statement": "플랜트 설비의 고장에 대한 수리계획을 수립한다.",
+      "source_sentence": "플랜트 설비의 고장발생시 그 원인을 탐색하고 수리계획을 수립하고 그 활동을 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "수리 활동",
+      "full_statement": "플랜트 설비의 수리 활동을 관리한다.",
+      "source_sentence": "플랜트 설비의 고장발생시 그 원인을 탐색하고 수리계획을 수립하고 그 활동을 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "메커니즘·구성요소·시스템의 실현가능성 및 성능",
+      "full_statement": "플랜트 메커니즘, 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "source_sentence": "메커니즘(기계류), 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "견적서 및 보고서",
+      "full_statement": "재료, 비용, 견적서, 보고서를 작성한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "기계 및 시스템 세부사항",
+      "full_statement": "플랜트 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "기계시스템 설치·변경·위탁",
+      "full_statement": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "기계시스템 설치",
+      "full_statement": "건설 현장이나 산업설비에서 기계시스템의 설치를 검사한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조사하다",
+      "object": "기계적 고장 및 관리 문제",
+      "full_statement": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "source_sentence": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "계약 서류",
+      "full_statement": "계약 서류를 작성한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "산업건설·유지관리 제안서",
+      "full_statement": "산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "감독하다",
+      "object": "기술자 및 엔지니어",
+      "full_statement": "기술자 및 다른 엔지니어를 감독한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검토하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 검토한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "승인하다",
+      "object": "설계·계산·비용 견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 승인한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설 현장이나 산업설비",
+      "evidence_span": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다."
+    }
+  ]
+}

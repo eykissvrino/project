@@ -1,0 +1,96 @@
+{
+  "ksco_code": "78243",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면을 검토하여 제작할 거푸집의 형태와 치수를 확인한다.",
+      "source_sentence": "콘크리트 타설 또는 흙막이 공사를 위하여 합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다.",
+      "derived_from": "세세분류 정의→공정 도출",
+      "confidence": 0.6
+    },
+    {
+      "verb": "절단하다",
+      "object": "합판·각재·판재",
+      "full_statement": "합판, 각재 및 판재 등을 거푸집 제작 치수에 맞게 절단한다.",
+      "source_sentence": "합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제작하다",
+      "object": "거푸집(형틀)",
+      "full_statement": "합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작한다.",
+      "source_sentence": "콘크리트 타설 또는 흙막이 공사를 위하여 합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "거푸집(형틀)",
+      "full_statement": "콘크리트 타설 또는 흙막이 공사를 위하여 제작한 거푸집(형틀)을 설치한다.",
+      "source_sentence": "콘크리트 타설 또는 흙막이 공사를 위하여 합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제작하다",
+      "object": "강재 거푸집(갱폼·유로폼)",
+      "full_statement": "철강재 거푸집인 갱폼이나 유로폼을 제작한다.",
+      "source_sentence": "철강재 거푸집인 갱폼이나 유로폼을 제작‧설치하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "강재 거푸집(갱폼·유로폼)",
+      "full_statement": "철강재 거푸집인 갱폼이나 유로폼을 설치한다.",
+      "source_sentence": "철강재 거푸집인 갱폼이나 유로폼을 제작‧설치하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조립하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "지주 및 거푸집을 조립한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "조립한 지주 및 거푸집을 검사한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "콘크리트 양생 후 지주 및 거푸집을 제거한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "목재가공 작업",
+      "full_statement": "건축물 내‧외부의 각종 공사에 필요한 목재가공 작업을 수행한다.",
+      "source_sentence": "건축물 내‧외부의 각종 공사에 필요한 목재가공 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "합판", "category": "장비", "evidence_span": "합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다."},
+    {"name": "각재", "category": "장비", "evidence_span": "합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다."},
+    {"name": "판재", "category": "장비", "evidence_span": "합판, 각재 및 판재 등을 사용하여 거푸집(형틀)을 제작‧설치한다."},
+    {"name": "갱폼", "category": "장비", "evidence_span": "철강재 거푸집인 갱폼이나 유로폼을 제작‧설치하기도 한다."},
+    {"name": "유로폼", "category": "장비", "evidence_span": "철강재 거푸집인 갱폼이나 유로폼을 제작‧설치하기도 한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건설현장 콘크리트 타설·흙막이 공사 현장", "evidence_span": "콘크리트 타설 또는 흙막이 공사를 위하여"},
+    {"category": "신체적", "value": "중량 거푸집·강재(갱폼·유로폼) 제작·설치 등 중량물 취급", "evidence_span": "철강재 거푸집인 갱폼이나 유로폼을 제작‧설치하기도 한다."}
+  ]
+}

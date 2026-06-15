@@ -1,0 +1,87 @@
+{
+  "ksco_code": "81123",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "면류 제조 기계",
+      "full_statement": "국수, 파스타, 마카로니 및 기타 유사한 밀가루 제품의 면류를 제조하는 기계를 조작한다.",
+      "source_sentence": "국수, 파스타, 마카로니 및 기타 유사한 밀가루 제품의 면류를 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 혼합 기계",
+      "full_statement": "면류 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 압출 기계",
+      "full_statement": "면류 반죽을 압출하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 성형 기계",
+      "full_statement": "면류 반죽을 성형하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물제품 제조 기계",
+      "full_statement": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "국수",
+      "full_statement": "국수를 제조하는 기계를 조작한다.",
+      "source_sentence": "국수 제조기 조작원·마카로니 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "마카로니",
+      "full_statement": "마카로니를 제조하는 기계를 조작한다.",
+      "source_sentence": "국수 제조기 조작원·마카로니 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "라면",
+      "full_statement": "라면을 제조하는 기계를 조작한다.",
+      "source_sentence": "라면 제조기 조작원·파스타 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "파스타",
+      "full_statement": "파스타를 제조하는 기계를 조작한다.",
+      "source_sentence": "라면 제조기 조작원·파스타 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "식사용 조제 식품 제조 기계",
+      "full_statement": "식사용으로 직접 먹거나 먹기 전에 가열하여 먹을 수 있는 식사용 조제 식품을 제조하는 기계를 조작한다.",
+      "source_sentence": "식사용으로 직접 먹거나 먹기 전에 가열하여 먹을 수 있는 식사용 조제 식품을 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

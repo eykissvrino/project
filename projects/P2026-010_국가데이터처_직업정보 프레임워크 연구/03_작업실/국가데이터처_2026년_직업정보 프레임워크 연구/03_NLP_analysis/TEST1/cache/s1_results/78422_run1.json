@@ -1,0 +1,136 @@
+{
+  "ksco_code": "78422",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "철도 선로",
+      "full_statement": "지정된 위치에 따라 철도 선로를 설치한다.",
+      "source_sentence": "지정된 위치에 따라 철도 선로를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보수하다",
+      "object": "철도 노반과 철로",
+      "full_statement": "철도 노반과 철로를 보수한다.",
+      "source_sentence": "철도 노반과 철로를 보수·정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정비하다",
+      "object": "철도 노반과 철로",
+      "full_statement": "철도 노반과 철로를 정비한다.",
+      "source_sentence": "철도 노반과 철로를 보수·정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "싣다",
+      "object": "점검·보수장비",
+      "full_statement": "궤도차에 점검·보수장비를 싣는다.",
+      "source_sentence": "궤도차에 점검·보수장비를 싣고 철로, 교량, 터널 및 방호설비 등을 순찰, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "순찰하다",
+      "object": "철로·교량·터널 및 방호설비",
+      "full_statement": "철로, 교량, 터널 및 방호설비 등을 순찰한다.",
+      "source_sentence": "궤도차에 점검·보수장비를 싣고 철로, 교량, 터널 및 방호설비 등을 순찰, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "철로·교량·터널 및 방호설비",
+      "full_statement": "철로, 교량, 터널 및 방호설비 등을 점검한다.",
+      "source_sentence": "궤도차에 점검·보수장비를 싣고 철로, 교량, 터널 및 방호설비 등을 순찰, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "다지다",
+      "object": "지반",
+      "full_statement": "궤도의 변형을 원형으로 복구하기 위하여 트렉렌치, 트렉잭 등의 공구를 사용하여 지반을 다진다.",
+      "source_sentence": "궤도의 변형을 원형으로 복구하기 위하여 트렉렌치, 트렉잭 등의 공구를 사용하여 지반을 다지고 뒤틀린 부분을 바로잡아 볼트나 고정쇠로 고정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "바로잡다",
+      "object": "궤도의 뒤틀린 부분",
+      "full_statement": "트렉렌치, 트렉잭 등의 공구를 사용하여 궤도의 뒤틀린 부분을 바로잡는다.",
+      "source_sentence": "궤도의 변형을 원형으로 복구하기 위하여 트렉렌치, 트렉잭 등의 공구를 사용하여 지반을 다지고 뒤틀린 부분을 바로잡아 볼트나 고정쇠로 고정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "고정하다",
+      "object": "바로잡은 부분",
+      "full_statement": "바로잡은 부분을 볼트나 고정쇠로 고정한다.",
+      "source_sentence": "궤도의 변형을 원형으로 복구하기 위하여 트렉렌치, 트렉잭 등의 공구를 사용하여 지반을 다지고 뒤틀린 부분을 바로잡아 볼트나 고정쇠로 고정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "차단기·레일·침목의 부패 혹은 마모정도",
+      "full_statement": "차단기, 레일, 침목 등의 부패 혹은 마모정도를 점검한다.",
+      "source_sentence": "차단기, 레일, 침목 등의 부패 혹은 마모정도를 점검하며 부패되거나 마모된 철로장비를 교환하고 노반자갈을 다진다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "교환하다",
+      "object": "부패되거나 마모된 철로장비",
+      "full_statement": "부패되거나 마모된 철로장비를 교환한다.",
+      "source_sentence": "차단기, 레일, 침목 등의 부패 혹은 마모정도를 점검하며 부패되거나 마모된 철로장비를 교환하고 노반자갈을 다진다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "다지다",
+      "object": "노반자갈",
+      "full_statement": "노반자갈을 다진다.",
+      "source_sentence": "차단기, 레일, 침목 등의 부패 혹은 마모정도를 점검하며 부패되거나 마모된 철로장비를 교환하고 노반자갈을 다진다.",
+      "derived_from": "상속 주요업무→세세정의 특화(철로 노반)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "치다",
+      "object": "기름이나 그리스",
+      "full_statement": "접점이나 이음매 연결부분에 기름이나 그리스를 친다.",
+      "source_sentence": "접점이나 이음매 연결부분에 기름이나 그리스를 친다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "철로지반 및 기타 구조물의 상태",
+      "full_statement": "레일·침목·철로지반 및 기타 구조물의 상태를 점검한다.",
+      "source_sentence": "열차의 안전한 운행과 선로수명을 연장하기 위하여 레일‧침목‧철로지반 및 기타 구조물의 상태를 점검하고 보수‧교체한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "교체하다",
+      "object": "레일·침목·철로지반 및 기타 구조물",
+      "full_statement": "레일·침목·철로지반 및 기타 구조물을 교체한다.",
+      "source_sentence": "열차의 안전한 운행과 선로수명을 연장하기 위하여 레일‧침목‧철로지반 및 기타 구조물의 상태를 점검하고 보수‧교체한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.74
+    }
+  ],
+  "tools": [
+    {"name": "궤도차", "category": "장비", "evidence_span": "궤도차에 점검·보수장비를 싣고"},
+    {"name": "트렉렌치", "category": "도구", "evidence_span": "트렉렌치, 트렉잭 등의 공구를 사용하여"},
+    {"name": "트렉잭", "category": "도구", "evidence_span": "트렉렌치, 트렉잭 등의 공구를 사용하여"},
+    {"name": "볼트", "category": "도구", "evidence_span": "볼트나 고정쇠로 고정한다"},
+    {"name": "고정쇠", "category": "도구", "evidence_span": "볼트나 고정쇠로 고정한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "철로·교량·터널 등 옥외 선로 현장(이동)", "evidence_span": "궤도차에 점검·보수장비를 싣고 철로, 교량, 터널 및 방호설비 등을 순찰, 점검한다."},
+    {"category": "신체적", "value": "지반·자갈 다지기 등 체력 부담 작업", "evidence_span": "지반을 다지고 뒤틀린 부분을 바로잡아 볼트나 고정쇠로 고정한다."}
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "n_dwa": 1192,
+  "n_task": 16168,
+  "band": [
+    149,
+    238
+  ],
+  "onet_ratio": 6.3,
+  "chosen_k": 214,
+  "chosen_eff_iwa": 178,
+  "sweep": [
+    {
+      "k": 120,
+      "eff_iwa": 95,
+      "ratio": 12.55,
+      "mean_purity": 0.9872,
+      "cohesion_median": 0.9024
+    },
+    {
+      "k": 135,
+      "eff_iwa": 107,
+      "ratio": 11.14,
+      "mean_purity": 0.9864,
+      "cohesion_median": 0.9006
+    },
+    {
+      "k": 149,
+      "eff_iwa": 119,
+      "ratio": 10.02,
+      "mean_purity": 0.986,
+      "cohesion_median": 0.9006
+    },
+    {
+      "k": 160,
+      "eff_iwa": 129,
+      "ratio": 9.24,
+      "mean_purity": 0.9859,
+      "cohesion_median": 0.8988
+    },
+    {
+      "k": 169,
+      "eff_iwa": 137,
+      "ratio": 8.7,
+      "mean_purity": 0.9859,
+      "cohesion_median": 0.9009
+    },
+    {
+      "k": 180,
+      "eff_iwa": 147,
+      "ratio": 8.11,
+      "mean_purity": 0.9858,
+      "cohesion_median": 0.9075
+    },
+    {
+      "k": 188,
+      "eff_iwa": 155,
+      "ratio": 7.69,
+      "mean_purity": 0.9858,
+      "cohesion_median": 0.9024
+    },
+    {
+      "k": 200,
+      "eff_iwa": 165,
+      "ratio": 7.22,
+      "mean_purity": 0.9858,
+      "cohesion_median": 0.9046
+    },
+    {
+      "k": 214,
+      "eff_iwa": 178,
+      "ratio": 6.7,
+      "mean_purity": 0.9856,
+      "cohesion_median": 0.905
+    },
+    {
+      "k": 225,
+      "eff_iwa": 189,
+      "ratio": 6.31,
+      "mean_purity": 0.9855,
+      "cohesion_median": 0.9074
+    },
+    {
+      "k": 238,
+      "eff_iwa": 198,
+      "ratio": 6.02,
+      "mean_purity": 0.9854,
+      "cohesion_median": 0.9094
+    },
+    {
+      "k": 260,
+      "eff_iwa": 217,
+      "ratio": 5.49,
+      "mean_purity": 0.9853,
+      "cohesion_median": 0.9129
+    },
+    {
+      "k": 290,
+      "eff_iwa": 238,
+      "ratio": 5.01,
+      "mean_purity": 0.9849,
+      "cohesion_median": 0.9159
+    }
+  ],
+  "gaps_top": [
+    {
+      "k": 169,
+      "gap": 0.000908
+    },
+    {
+      "k": 152,
+      "gap": 0.000901
+    },
+    {
+      "k": 214,
+      "gap": 0.000741
+    },
+    {
+      "k": 216,
+      "gap": 0.000727
+    },
+    {
+      "k": 227,
+      "gap": 0.000713
+    },
+    {
+      "k": 188,
+      "gap": 0.00068
+    },
+    {
+      "k": 236,
+      "gap": 0.00067
+    },
+    {
+      "k": 187,
+      "gap": 0.000586
+    }
+  ],
+  "split_demo": [
+    {
+      "label": "기계·공구를 조작하여 제품을 생산한다",
+      "n_dwa": 71,
+      "fine_splits": 1,
+      "coarse_merges_into": 1
+    },
+    {
+      "label": "고객을 응대하여 상품을 판매한다",
+      "n_dwa": 64,
+      "fine_splits": 4,
+      "coarse_merges_into": 1
+    },
+    {
+      "label": "조직의 운영을 기획하여 관리한다",
+      "n_dwa": 43,
+      "fine_splits": 2,
+      "coarse_merges_into": 1
+    },
+    {
+      "label": "자료를 처리하여 문서를 작성한다",
+      "n_dwa": 39,
+      "fine_splits": 3,
+      "coarse_merges_into": 1
+    },
+    {
+      "label": "설비·제품의 상태를 점검하여 진단한다",
+      "n_dwa": 38,
+      "fine_splits": 2,
+      "coarse_merges_into": 1
+    },
+    {
+      "label": "전문 분야를 연구하여 기술을 개발한다",
+      "n_dwa": 34,
+      "fine_splits": 2,
+      "coarse_merges_into": 1
+    }
+  ],
+  "coarse_k": 149,
+  "fine_k": 290
+}

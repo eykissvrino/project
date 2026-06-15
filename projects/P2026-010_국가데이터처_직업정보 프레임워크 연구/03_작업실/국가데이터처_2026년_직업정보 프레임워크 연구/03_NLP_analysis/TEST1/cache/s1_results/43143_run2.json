@@ -1,0 +1,61 @@
+{
+  "ksco_code": "43143",
+  "tasks": [
+    {
+      "verb": "도와주다",
+      "object": "손님의 목욕",
+      "full_statement": "손님이 목욕하는 것을 도와준다.",
+      "source_sentence": "손님이 목욕하는 것을 도와주는 등 개인 위생과 관련한 서비스를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "개인 위생 관련 서비스",
+      "full_statement": "손님의 개인 위생과 관련한 서비스를 제공한다.",
+      "source_sentence": "손님이 목욕하는 것을 도와주는 등 개인 위생과 관련한 서비스를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "도와주다",
+      "object": "손님의 목욕",
+      "full_statement": "손님의 목욕을 도와주는 일을 한다.",
+      "source_sentence": "손님의 목욕을 도와주는 일을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 피부",
+      "full_statement": "고객의 피부에 적합한 미용적 처치를 하여 피부를 관리한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무(세분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "관찰하다",
+      "object": "피부",
+      "full_statement": "고객의 피부 상태를 관찰한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무(세분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 체력과 영양 상태",
+      "full_statement": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무(세분류)",
+      "confidence": 0.35
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(대인 서비스)",
+      "evidence_span": "손님이 목욕하는 것을 도와주는 등 개인 위생과 관련한 서비스를 한다."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "ksco_code": "34040",
+  "tasks": [
+    {
+      "verb": "중개하다",
+      "object": "증권 및 선물 상품",
+      "full_statement": "증권사 지점 및 영업소 등에서 증권 및 선물 상품을 고객에게 중개한다.",
+      "source_sentence": "증권사 지점 및 영업소 등에서 증권 및 선물 상품을 고객에게 중개 또는 판매하는 등 증권사와 선물회사의 금융 거래에 관련된 사무업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "판매하다",
+      "object": "증권 및 선물 상품",
+      "full_statement": "증권사 지점 및 영업소 등에서 증권 및 선물 상품을 고객에게 판매한다.",
+      "source_sentence": "증권사 지점 및 영업소 등에서 증권 및 선물 상품을 고객에게 중개 또는 판매하는 등 증권사와 선물회사의 금융 거래에 관련된 사무업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "증권 및 선물의 중개·판매 관련 사무업무",
+      "full_statement": "증권 및 선물의 중개나 판매와 관련된 사무업무를 처리한다.",
+      "source_sentence": "증권 및 선물의 중개나 판매와 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "주식 구매 및 판매 주문서",
+      "full_statement": "주식 구매 및 판매에 대한 주문서를 작성한다.",
+      "source_sentence": "주식 구매 및 판매에 대한 주문서를 작성하고 양도세를 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "양도세",
+      "full_statement": "주식 거래에 따른 양도세를 계산한다.",
+      "source_sentence": "주식 구매 및 판매에 대한 주문서를 작성하고 양도세를 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "주식거래",
+      "full_statement": "주식거래를 확인한다.",
+      "source_sentence": "주식거래를 확인하고 증권의 인수와 전달, 주식가격의 변동에 대해 고객에게 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "알리다",
+      "object": "증권의 인수·전달 및 주식가격 변동",
+      "full_statement": "증권의 인수와 전달, 주식가격의 변동에 대해 고객에게 알린다.",
+      "source_sentence": "주식거래를 확인하고 증권의 인수와 전달, 주식가격의 변동에 대해 고객에게 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "계산하다",
+      "object": "주식액면가",
+      "full_statement": "주식액면가를 계산한다.",
+      "source_sentence": "주식액면가를 계산하고 배당금을 나눠주며, 매일의 거래와 보유물에 대한 기록을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지급하다",
+      "object": "배당금",
+      "full_statement": "고객에게 배당금을 지급한다.",
+      "source_sentence": "주식액면가를 계산하고 배당금을 나눠주며, 매일의 거래와 보유물에 대한 기록을 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "관리하다",
+      "object": "매일의 거래 및 보유물 기록",
+      "full_statement": "매일의 거래와 보유물에 대한 기록을 관리한다.",
+      "source_sentence": "주식액면가를 계산하고 배당금을 나눠주며, 매일의 거래와 보유물에 대한 기록을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "증권사 지점 및 영업소 등 실내 근무",
+      "evidence_span": "증권사 지점 및 영업소 등에서 증권 및 선물 상품을 고객에게 중개 또는 판매하는 등"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(중개·판매·통지)",
+      "evidence_span": "증권 및 선물 상품을 고객에게 중개 또는 판매하는 등"
+    }
+  ]
+}

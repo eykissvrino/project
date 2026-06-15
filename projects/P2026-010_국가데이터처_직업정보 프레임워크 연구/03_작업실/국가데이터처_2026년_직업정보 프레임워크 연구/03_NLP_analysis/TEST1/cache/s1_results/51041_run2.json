@@ -1,0 +1,106 @@
+{
+  "ksco_code": "51041",
+  "tasks": [
+    {
+      "verb": "위탁받다",
+      "object": "대출 모집 업무",
+      "full_statement": "금융회사나 대출모집법인으로부터 대출 모집 업무를 위탁받는다.",
+      "source_sentence": "금융회사나 대출모집법인으로부터 업무를 위탁받아 대면 또는 온라인, 전화 등으로 대출상품 설명 등 대출신청에 관한 상담업무를 수행하거나 대출 수요자를 발굴하여 대출신청자를 모집하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "대출상품",
+      "full_statement": "대출 신청자에게 대출상품을 설명한다.",
+      "source_sentence": "대출 신청자에게 대출상품을 설명하거나 대출가능 여부 등을 상담한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "상담하다",
+      "object": "대출가능 여부",
+      "full_statement": "대출 신청자에게 대출가능 여부 등을 상담한다.",
+      "source_sentence": "대출 신청자에게 대출상품을 설명하거나 대출가능 여부 등을 상담한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "홍보하다",
+      "object": "대출상품",
+      "full_statement": "대출상품 발급 수요자에게 상품을 홍보한다.",
+      "source_sentence": "대출상품이나 신용카드 발급 수요자에 상품을 설명하고 홍보하여 가입을 권유한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "권유하다",
+      "object": "가입",
+      "full_statement": "대출상품 수요자에게 상품 가입을 권유한다.",
+      "source_sentence": "대출상품이나 신용카드 발급 수요자에 상품을 설명하고 홍보하여 가입을 권유한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "발굴하다",
+      "object": "대출 수요자",
+      "full_statement": "대출 수요자를 발굴한다.",
+      "source_sentence": "대출 수요자를 발굴하여 대출신청자를 모집하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "모집하다",
+      "object": "대출신청자",
+      "full_statement": "대출신청자를 모집한다.",
+      "source_sentence": "대출 수요자를 발굴하여 대출신청자를 모집하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "접수하다",
+      "object": "대출 신청서",
+      "full_statement": "대출 신청서를 접수한다.",
+      "source_sentence": "대출 신청서를 접수하거나 전달하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "전달하다",
+      "object": "대출 신청서",
+      "full_statement": "접수한 대출 신청서를 전달한다.",
+      "source_sentence": "대출 신청서를 접수하거나 전달하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "접수하다",
+      "object": "대출서류",
+      "full_statement": "대출서류를 접수한다.",
+      "source_sentence": "대출서류를 접수하거나 접수한 서류를 전달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "전달하다",
+      "object": "접수한 서류",
+      "full_statement": "접수한 대출서류를 전달한다.",
+      "source_sentence": "대출서류를 접수하거나 접수한 서류를 전달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객(대출 신청자) 대면 상담",
+      "evidence_span": "대면 또는 온라인, 전화 등으로 대출상품 설명 등 대출신청에 관한 상담업무를 수행"
+    },
+    {
+      "category": "장소",
+      "value": "온라인·전화 등 비대면 채널 이용",
+      "evidence_span": "대면 또는 온라인, 전화 등으로 대출상품 설명 등 대출신청에 관한 상담업무를 수행"
+    }
+  ]
+}

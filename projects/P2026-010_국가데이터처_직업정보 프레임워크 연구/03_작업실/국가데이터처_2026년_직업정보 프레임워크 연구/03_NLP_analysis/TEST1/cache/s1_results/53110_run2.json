@@ -1,0 +1,136 @@
+{
+  "ksco_code": "53110",
+  "tasks": [
+    {
+      "verb": "판매하다",
+      "object": "유무선 통신 서비스",
+      "full_statement": "이동통신, 인터넷 전화, IPTV, 인터넷 네트워크 등 유무선 통신 서비스를 판매한다.",
+      "source_sentence": "이동통신, 인터넷 전화, IPTV, 인터넷 네트워크 서비스 등 유무선 통신 서비스를 판매하거나, 이동통신사와 이용자 간 계약체결을 위탁받아 대리하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "대리하다",
+      "object": "이동통신사와 이용자 간 계약체결",
+      "full_statement": "이동통신사와 이용자 간 계약체결을 위탁받아 대리한다.",
+      "source_sentence": "이동통신, 인터넷 전화, IPTV, 인터넷 네트워크 서비스 등 유무선 통신 서비스를 판매하거나, 이동통신사와 이용자 간 계약체결을 위탁받아 대리하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "판매하다",
+      "object": "이동 전화기 등 통신 단말기",
+      "full_statement": "통신 서비스와 함께 이동 전화기 등 통신 단말기를 판매한다.",
+      "source_sentence": "통신 서비스와 함께 이동 전화기 등 통신 단말기를 같이 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "처리하다",
+      "object": "가입·개통 전산 및 사무처리",
+      "full_statement": "가입, 개통에 대한 전산 및 사무처리를 한다.",
+      "source_sentence": "가입, 개통에 대한 전산 및 사무처리와 판매실적 등을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기록하다",
+      "object": "판매실적",
+      "full_statement": "판매실적 등을 기록한다.",
+      "source_sentence": "가입, 개통에 대한 전산 및 사무처리와 판매실적 등을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "상담하다",
+      "object": "통신 단말기 구매",
+      "full_statement": "고객에게 통신 단말기 구매에 대해 상담한다.",
+      "source_sentence": "고객에게 통신 단말기에 대한 구매, 통신 서비스에 대한 요금제 설계 및 설명, 무료 혜택이나 할인에 대해 상담해주고 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "통신 서비스 요금제",
+      "full_statement": "고객에게 통신 서비스에 대한 요금제를 설계한다.",
+      "source_sentence": "고객에게 통신 단말기에 대한 구매, 통신 서비스에 대한 요금제 설계 및 설명, 무료 혜택이나 할인에 대해 상담해주고 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "설명하다",
+      "object": "통신 서비스 요금제",
+      "full_statement": "고객에게 통신 서비스 요금제를 설명한다.",
+      "source_sentence": "고객에게 통신 단말기에 대한 구매, 통신 서비스에 대한 요금제 설계 및 설명, 무료 혜택이나 할인에 대해 상담해주고 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "상담하다",
+      "object": "무료 혜택·할인",
+      "full_statement": "고객에게 무료 혜택이나 할인에 대해 상담한다.",
+      "source_sentence": "고객에게 통신 단말기에 대한 구매, 통신 서비스에 대한 요금제 설계 및 설명, 무료 혜택이나 할인에 대해 상담해주고 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "매장 밖 홍보",
+      "full_statement": "판매촉진을 위해 매장 밖 홍보를 지원한다.",
+      "source_sentence": "매장 밖 홍보, 상품부스 설치 등 판매촉진을 위한 매장운영을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "상품부스",
+      "full_statement": "판매촉진을 위해 상품부스를 설치한다.",
+      "source_sentence": "매장 밖 홍보, 상품부스 설치 등 판매촉진을 위한 매장운영을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지원하다",
+      "object": "판매촉진 매장운영",
+      "full_statement": "판매촉진을 위한 매장운영을 지원한다.",
+      "source_sentence": "매장 밖 홍보, 상품부스 설치 등 판매촉진을 위한 매장운영을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "홍보하다",
+      "object": "상품의 품질과 기능",
+      "full_statement": "상품의 품질과 기능을 홍보한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며, 매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정산하다",
+      "object": "요금",
+      "full_statement": "매장에서 요금정산 등의 활동을 수행한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며, 매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {
+      "name": "전산처리시스템",
+      "category": "시스템",
+      "evidence_span": "가입, 개통에 대한 전산 및 사무처리와 판매실적 등을 기록한다."
+    }
+  ],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대·상담",
+      "evidence_span": "고객에게 통신 단말기에 대한 구매, 통신 서비스에 대한 요금제 설계 및 설명, 무료 혜택이나 할인에 대해 상담해주고 판매한다."
+    },
+    {
+      "category": "장소",
+      "value": "매장 운영 및 매장 밖 홍보",
+      "evidence_span": "매장 밖 홍보, 상품부스 설치 등 판매촉진을 위한 매장운영을 지원한다."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "ksco_code": "24661",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "의사의 진단 및 처방",
+      "full_statement": "의사의 진단 및 처방을 확인하여 물리치료 계획을 수립한다.",
+      "source_sentence": "의사의 진단 및 처방에 따라 환자에게 운동, 열, 전기, 광선 등의 물리적인 방법을 적용하여 신체기능장애나 통증을 완화, 회복시키는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실시하다",
+      "object": "검사",
+      "full_statement": "환자의 상태와 신체기능을 평가하기 위하여 다양한 검사를 실시한다.",
+      "source_sentence": "환자의 상태와 신체기능을 평가하기 위하여 다양한 검사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "환자의 신체기능",
+      "full_statement": "검사 결과를 토대로 환자의 신체기능장애나 통증 상태를 평가한다.",
+      "source_sentence": "환자에게 운동, 열, 전기, 광선 등의 물리적인 방법을 적용하여 신체기능장애나 통증을 완화, 회복시키는 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "시행하다",
+      "object": "온열치료",
+      "full_statement": "각종 치료기구를 적용하여 온열치료를 시행한다.",
+      "source_sentence": "각종 치료기구를 적용하여 온열치료, 전기치료, 운동치료, 약물치료 등을 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "전기치료",
+      "full_statement": "각종 치료기구를 적용하여 전기치료를 시행한다.",
+      "source_sentence": "각종 치료기구를 적용하여 온열치료, 전기치료, 운동치료, 약물치료 등을 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "운동치료",
+      "full_statement": "각종 치료기구를 적용하여 운동치료를 시행한다.",
+      "source_sentence": "각종 치료기구를 적용하여 온열치료, 전기치료, 운동치료, 약물치료 등을 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "약물치료",
+      "full_statement": "각종 치료기구를 적용하여 약물치료를 시행한다.",
+      "source_sentence": "각종 치료기구를 적용하여 온열치료, 전기치료, 운동치료, 약물치료 등을 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적용하다",
+      "object": "광선치료",
+      "full_statement": "환자에게 광선 등의 물리적인 방법을 적용하여 신체기능장애나 통증을 완화한다.",
+      "source_sentence": "환자에게 운동, 열, 전기, 광선 등의 물리적인 방법을 적용하여 신체기능장애나 통증을 완화, 회복시키는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "평가하다",
+      "object": "환자의 치료경과",
+      "full_statement": "환자의 치료경과를 평가한다.",
+      "source_sentence": "환자의 치료경과를 평가하고 담당의사에게 보고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보고하다",
+      "object": "치료경과",
+      "full_statement": "환자의 치료경과를 담당의사에게 보고한다.",
+      "source_sentence": "환자의 치료경과를 평가하고 담당의사에게 보고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "시험기구 및 치료기구와 약품",
+      "full_statement": "각종 시험기구 및 치료기구와 약품을 준비한다.",
+      "source_sentence": "각종 시험기구 및 치료기구와 약품을 준비, 소독, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "소독하다",
+      "object": "시험기구 및 치료기구와 약품",
+      "full_statement": "각종 시험기구 및 치료기구와 약품을 소독한다.",
+      "source_sentence": "각종 시험기구 및 치료기구와 약품을 준비, 소독, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "시험기구 및 치료기구와 약품",
+      "full_statement": "각종 시험기구 및 치료기구와 약품을 관리한다.",
+      "source_sentence": "각종 시험기구 및 치료기구와 약품을 준비, 소독, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조절하다",
+      "object": "진료시간",
+      "full_statement": "진료시간을 조절한다.",
+      "source_sentence": "진료시간을 조절하고, 진료기록을 유지하는 등의 사무업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "유지하다",
+      "object": "진료기록",
+      "full_statement": "진료기록을 유지한다.",
+      "source_sentence": "진료시간을 조절하고, 진료기록을 유지하는 등의 사무업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "치료기구", "category": "장비", "evidence_span": "각종 치료기구를 적용하여 온열치료, 전기치료, 운동치료, 약물치료 등을 시행한다."},
+    {"name": "시험기구", "category": "장비", "evidence_span": "각종 시험기구 및 치료기구와 약품을 준비, 소독, 관리한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자 응대 및 치료 수행", "evidence_span": "환자에게 운동, 열, 전기, 광선 등의 물리적인 방법을 적용하여 신체기능장애나 통증을 완화, 회복시키는 업무를 수행한다."},
+    {"category": "사회적", "value": "담당의사에게 보고 등 협업", "evidence_span": "환자의 치료경과를 평가하고 담당의사에게 보고한다."},
+    {"category": "위험", "value": "전기·열·광선 등 물리적 치료 수단 취급", "evidence_span": "환자에게 운동, 열, 전기, 광선 등의 물리적인 방법을 적용하여"}
+  ]
+}

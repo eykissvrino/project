@@ -1,0 +1,115 @@
+{
+  "ksco_code": "21323",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "수산학 관련 기술적 업무",
+      "full_statement": "수산학 연구원의 관리·감독 하에 수산학에 관한 연구와 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "수산학 연구원의 관리 하에 수산학에 관한 연구와 관련된 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보조하다",
+      "object": "수산학 연구",
+      "full_statement": "수산학 연구원의 관리·감독 하에 어업·수산 분야 연구를 보조한다.",
+      "source_sentence": "수산학 연구원의 관리 하에 수산학에 관한 연구와 관련된 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 결합",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수집하다",
+      "object": "자료",
+      "full_statement": "어업·수산 연구에 필요한 자료를 수집한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의(수산학) 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "실험",
+      "full_statement": "수산학 연구 과정의 실험을 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의(수산학) 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "수행하다",
+      "object": "검사",
+      "full_statement": "어업·수산 시료에 대한 검사를 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의(수산학) 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "수행하다",
+      "object": "분석",
+      "full_statement": "수집한 자료와 시료에 대한 분석을 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의(수산학) 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "작성하다",
+      "object": "세부 견적서",
+      "full_statement": "주어진 명세서에 따라 연구에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "source_sentence": "주어진 명세서에 따라 연구에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "응용하다",
+      "object": "기술적 지식",
+      "full_statement": "연구과정에서 야기되는 문제를 확인·해결하기 위하여 기술적 지식을 응용한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "확인하다",
+      "object": "연구과정 문제",
+      "full_statement": "연구과정에서 야기되는 문제를 확인한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "유지하다",
+      "object": "실험기기",
+      "full_statement": "수산학 연구에 사용하는 실험기기를 유지한다.",
+      "source_sentence": "실험기기를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "보수하다",
+      "object": "실험기기",
+      "full_statement": "수산학 연구에 사용하는 실험기기를 보수한다.",
+      "source_sentence": "실험기기를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "응용하다",
+      "object": "어업 운영기법",
+      "full_statement": "어업·수산업 분야 개념과 운영기법의 연구 및 응용과 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "농업, 임업, 어업, 수산업 등 농림어업분야에서 개념과 운영기법의 연구 및 응용에 관련된 기술적인 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)→세세정의(어업) 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "수행하다",
+      "object": "양식 시험",
+      "full_statement": "양식 분야의 연구와 관련된 시험 업무를 수행한다.",
+      "source_sentence": "수산업 시험원·양식 시험원",
+      "derived_from": "세세분류 직업 예시→세세정의 결합",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [
+    {"name": "실험기기", "category": "장비", "evidence_span": "실험기기를 유지 및 보수한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "수산학 연구원의 관리·감독 하 업무 수행", "evidence_span": "수산학 연구원의 관리 하에 수산학에 관한 연구와 관련된 기술적 업무를 수행한다."}
+  ]
+}

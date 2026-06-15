@@ -1,0 +1,82 @@
+{
+  "ksco_code": "45211",
+  "tasks": [
+    {
+      "verb": "만들다",
+      "object": "커피",
+      "full_statement": "커피전문점이나 커피숍 등에서 다양한 커피를 만든다.",
+      "source_sentence": "커피전문점, 커피숍 등에서 다양한 커피를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "커피",
+      "full_statement": "만든 다양한 커피를 고객에게 제공한다.",
+      "source_sentence": "커피전문점, 커피숍 등에서 다양한 커피를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "혼합하다",
+      "object": "음료 재료",
+      "full_statement": "제조 방법에 따라 물·우유·얼음 등의 재료를 적당히 혼합하여 음료를 만든다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "끓이다",
+      "object": "물",
+      "full_statement": "커피나 차 등을 만들기 위하여 물이나 우유를 끓인다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "얼리다",
+      "object": "얼음",
+      "full_statement": "음료 제조에 사용하기 위하여 얼음을 얼린다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "기록하다",
+      "object": "일일판매기록부",
+      "full_statement": "매일 판매된 커피와 차를 일일판매기록부에 기록하고 정리한다.",
+      "source_sentence": "매일 판매된 커피와 차를 일일판매기록부에 기록‧정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연구하다",
+      "object": "커피 제조방법",
+      "full_statement": "새로운 커피와 차를 만드는 방법을 연구한다.",
+      "source_sentence": "새로운 커피와 차를 만드는 방법을 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보관하다",
+      "object": "커피잔",
+      "full_statement": "필요한 커피잔이나 찻잔 등을 보관하고 유지한다.",
+      "source_sentence": "필요한 커피잔이나 찻잔 등을 보관 및 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(커피를 고객에게 제공)",
+      "evidence_span": "다양한 커피를 만들어 고객에게 제공한다."
+    },
+    {
+      "category": "장소",
+      "value": "실내(커피전문점·커피숍)",
+      "evidence_span": "커피전문점, 커피숍 등에서"
+    }
+  ]
+}

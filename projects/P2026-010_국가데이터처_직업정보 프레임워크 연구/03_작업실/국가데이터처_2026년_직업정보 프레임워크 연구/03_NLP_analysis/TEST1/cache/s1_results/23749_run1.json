@@ -1,0 +1,85 @@
+{
+  "ksco_code": "23749",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "환경공학 관련 기술 개발",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 기술 개발을 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(세분류 2374: 관리·감독 하 기술적 업무)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "환경공학 관련 연구",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무(복합행동 분할: 기술 개발/연구)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시험하다",
+      "object": "환경영향 평가",
+      "full_statement": "환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "유지하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 유지한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할: 유지/보수)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보수하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 보수한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할: 유지/보수)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학과 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "환경공학과 관련된 연구 및 개발과 관련하여 환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 2374)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "배출시설",
+      "full_statement": "오염물질 배출시설을 관리한다.",
+      "source_sentence": "환경 관리원·배출시설 관리원",
+      "derived_from": "세세분류 직업 예시→고유활동 도출",
+      "confidence": 0.62
+    },
+    {
+      "verb": "관리하다",
+      "object": "환경",
+      "full_statement": "사업장의 환경 상태를 관리한다.",
+      "source_sentence": "환경 관리원·배출시설 관리원",
+      "derived_from": "세세분류 직업 예시→고유활동 도출",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품의 안전성",
+      "full_statement": "제품의 안전성을 검사한다.",
+      "source_sentence": "기계장비의 통제 및 운용, 항공기 조종, 선박 운행과 제품의 안전성 검사 등을 지시하거나 수행한다.",
+      "derived_from": "조상정의(중분류 23)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "환경공학 기술자 및 연구원의 관리·감독 하 보조 업무",
+      "evidence_span": "환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다."
+    }
+  ]
+}

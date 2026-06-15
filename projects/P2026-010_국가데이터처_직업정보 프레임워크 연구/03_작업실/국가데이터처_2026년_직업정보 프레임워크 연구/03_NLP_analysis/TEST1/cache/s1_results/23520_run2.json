@@ -1,0 +1,151 @@
+{
+  "ksco_code": "23520",
+  "tasks": [
+    {
+      "verb": "연구개발하다",
+      "object": "로봇기술",
+      "full_statement": "로봇을 가동시키기 위한 로봇기술을 연구개발한다.",
+      "source_sentence": "로봇을 가동시키기 위하여 특별기능에 따라 프로그램을 작성, 운영, 통제하는 로봇기술을 연구개발하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "로봇기술 연구개발",
+      "full_statement": "로봇기술 연구개발을 계획한다.",
+      "source_sentence": "로봇기술 연구개발 계획하고 운영 및 통제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "운영하다",
+      "object": "로봇기술 연구개발",
+      "full_statement": "로봇기술 연구개발을 운영한다.",
+      "source_sentence": "로봇기술 연구개발 계획하고 운영 및 통제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "통제하다",
+      "object": "로봇기술 연구개발",
+      "full_statement": "로봇기술 연구개발을 통제한다.",
+      "source_sentence": "로봇기술 연구개발 계획하고 운영 및 통제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "로봇 제어 프로그램",
+      "full_statement": "로봇의 특별기능에 따라 로봇을 가동시키기 위한 프로그램을 작성한다.",
+      "source_sentence": "로봇을 가동시키기 위하여 특별기능에 따라 프로그램을 작성, 운영, 통제하는 로봇기술을 연구개발하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운영하다",
+      "object": "로봇 제어 프로그램",
+      "full_statement": "로봇을 가동시키기 위한 프로그램을 운영한다.",
+      "source_sentence": "로봇을 가동시키기 위하여 특별기능에 따라 프로그램을 작성, 운영, 통제하는 로봇기술을 연구개발하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "통제하다",
+      "object": "로봇 제어 프로그램",
+      "full_statement": "로봇을 가동시키기 위한 프로그램을 통제한다.",
+      "source_sentence": "로봇을 가동시키기 위하여 특별기능에 따라 프로그램을 작성, 운영, 통제하는 로봇기술을 연구개발하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "설계하다",
+      "object": "로봇 구성요소",
+      "full_statement": "로봇의 구성요소를 설계한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설계하다",
+      "object": "로봇 주변장치",
+      "full_statement": "로봇의 주변장치를 설계한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "기획하다",
+      "object": "로봇 구성요소 및 주변장치의 제조",
+      "full_statement": "로봇 구성요소 및 주변장치의 제조를 기획한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "로봇 구성요소 및 주변장치의 제조",
+      "full_statement": "로봇 구성요소 및 주변장치의 제조를 관리한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "기획하다",
+      "object": "로봇 구성요소 및 주변장치의 유지",
+      "full_statement": "로봇 구성요소 및 주변장치의 유지를 기획한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "관리하다",
+      "object": "로봇 구성요소 및 주변장치의 유지",
+      "full_statement": "로봇 구성요소 및 주변장치의 유지를 관리한다.",
+      "source_sentence": "로봇의 구성요소 및 주변장치의 설계, 제조 또는 유지를 기획, 관리하는 분야도 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "기획하다",
+      "object": "로봇 및 주변장치의 설계 및 운영",
+      "full_statement": "로봇 및 주변장치의 설계와 운영을 기획한다.",
+      "source_sentence": "로봇 및 주변장치의 설계, 제조, 운영을 기획, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "로봇 및 주변장치의 설계 및 운영",
+      "full_statement": "로봇 및 주변장치의 설계와 운영을 조정한다.",
+      "source_sentence": "로봇 및 주변장치의 설계, 제조, 운영을 기획, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "설계하다",
+      "object": "로봇 산업설비 및 시스템",
+      "full_statement": "로봇 등 산업설비 및 시스템의 생산을 설계한다.",
+      "source_sentence": "장치와 기계, 로봇 등 산업설비 및 시스템 생산에 대하여 연구, 조언, 설계 및 관리하며 관련 지식을 응용한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조언하다",
+      "object": "로봇 산업설비 및 시스템 생산",
+      "full_statement": "로봇 등 산업설비 및 시스템 생산에 대하여 조언한다.",
+      "source_sentence": "장치와 기계, 로봇 등 산업설비 및 시스템 생산에 대하여 연구, 조언, 설계 및 관리하며 관련 지식을 응용한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "응용하다",
+      "object": "로봇공학 관련 지식",
+      "full_statement": "로봇 산업설비 및 시스템 생산에 관련 지식을 응용한다.",
+      "source_sentence": "장치와 기계, 로봇 등 산업설비 및 시스템 생산에 대하여 연구, 조언, 설계 및 관리하며 관련 지식을 응용한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

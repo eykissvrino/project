@@ -1,0 +1,110 @@
+{
+  "ksco_code": "73032",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "악기의 음계",
+      "full_statement": "피아노, 바이올린 등 각종 악기의 음계를 확인한다.",
+      "source_sentence": "피아노, 바이올린 등 각종 악기의 음계, 음량 등을 확인하면서 조율한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "악기의 음량",
+      "full_statement": "피아노, 바이올린 등 각종 악기의 음량을 확인한다.",
+      "source_sentence": "피아노, 바이올린 등 각종 악기의 음계, 음량 등을 확인하면서 조율한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조율하다",
+      "object": "악기",
+      "full_statement": "음계와 음량을 확인하면서 피아노, 바이올린 등 각종 악기를 조율한다.",
+      "source_sentence": "피아노, 바이올린 등 각종 악기의 음계, 음량 등을 확인하면서 조율한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.96
+    },
+    {
+      "verb": "연주하다",
+      "object": "악기",
+      "full_statement": "조율 상태를 점검하기 위해 악기를 연주한다.",
+      "source_sentence": "수리가 완료되면 악기를 연주하여 조율한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "점검하다",
+      "object": "악기의 소리",
+      "full_statement": "악기를 연주하거나 소리를 점검한다.",
+      "source_sentence": "악기를 제조하며 제조된 악기를 연주하거나 소리를 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조율하다",
+      "object": "악기",
+      "full_statement": "수리가 완료되면 악기를 연주하여 조율한다.",
+      "source_sentence": "수리가 완료되면 악기를 연주하여 조율한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "악기",
+      "full_statement": "악기의 조정 업무를 수행한다.",
+      "source_sentence": "악기 조율, 조정, 정음 업무만 전담하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "정음하다",
+      "object": "악기",
+      "full_statement": "악기의 정음 업무를 수행한다.",
+      "source_sentence": "악기 조율, 조정, 정음 업무만 전담하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "결함 부품",
+      "full_statement": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거한다.",
+      "source_sentence": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거하고 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "교체하다",
+      "object": "결함 부품",
+      "full_statement": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 교체한다.",
+      "source_sentence": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거하고 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "갈라지거나 구멍 난 부위",
+      "full_statement": "접착제, 용접기 등을 사용하여 갈라지거나 구멍 난 부위를 수리한다.",
+      "source_sentence": "접착제, 용접기 등을 사용하여 갈라지거나 구멍 난 부위를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "연마하다",
+      "object": "악기 표면",
+      "full_statement": "사포, 광택제 등을 사용하여 악기의 표면을 연마한다.",
+      "source_sentence": "사포, 광택제 등을 사용하여 악기의 표면을 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "드라이버", "category": "도구", "evidence_span": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거하고 교체한다."},
+    {"name": "산소용접기", "category": "장비", "evidence_span": "파손된 악기는 드라이버, 산소용접기 등을 사용하여 결함이 있는 부품을 제거하고 교체한다."},
+    {"name": "접착제", "category": "도구", "evidence_span": "접착제, 용접기 등을 사용하여 갈라지거나 구멍 난 부위를 수리한다."},
+    {"name": "용접기", "category": "장비", "evidence_span": "접착제, 용접기 등을 사용하여 갈라지거나 구멍 난 부위를 수리한다."},
+    {"name": "사포", "category": "도구", "evidence_span": "사포, 광택제 등을 사용하여 악기의 표면을 연마한다."},
+    {"name": "광택제", "category": "도구", "evidence_span": "사포, 광택제 등을 사용하여 악기의 표면을 연마한다."}
+  ],
+  "work_context": []
+}

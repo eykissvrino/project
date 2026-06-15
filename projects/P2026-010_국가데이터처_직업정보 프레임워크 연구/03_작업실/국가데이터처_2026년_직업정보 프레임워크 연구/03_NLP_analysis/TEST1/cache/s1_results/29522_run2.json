@@ -1,0 +1,157 @@
+{
+  "ksco_code": "29522",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "소비자 특성과 기호",
+      "full_statement": "소비자의 성별·연령 등 특성에 따른 기호를 조사한다.",
+      "source_sentence": "소비자의 성별, 연령 등과 같은 특성에 따른 기호, 유행의 흐름 등에 부합하는 의상의 형태를 디자인하거나 스케치하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "유행 흐름",
+      "full_statement": "유행의 흐름을 분석한다.",
+      "source_sentence": "소비자의 성별, 연령 등과 같은 특성에 따른 기호, 유행의 흐름 등에 부합하는 의상의 형태를 디자인하거나 스케치하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "유행경향·재료·색의 조화 자료",
+      "full_statement": "유행경향, 재료, 색의 조화 등에 관한 자료를 종합적으로 비교·분석한다.",
+      "source_sentence": "유행경향, 재료, 색의 조화 등에 관한 자료를 종합적으로 비교‧분석하여 새로운 디자인을 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "새로운 의상 디자인",
+      "full_statement": "분석한 자료를 기초로 새로운 의상 디자인을 기획한다.",
+      "source_sentence": "유행경향, 재료, 색의 조화 등에 관한 자료를 종합적으로 비교‧분석하여 새로운 디자인을 기획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "디자인하다",
+      "object": "의상 형태",
+      "full_statement": "소비자 기호와 유행에 부합하는 의상의 형태를 디자인한다.",
+      "source_sentence": "유행의 흐름 등에 부합하는 의상의 형태를 디자인하거나 스케치하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "스케치하다",
+      "object": "의상 형태",
+      "full_statement": "의상의 형태를 스케치한다.",
+      "source_sentence": "유행의 흐름 등에 부합하는 의상의 형태를 디자인하거나 스케치하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "디자인",
+      "full_statement": "기획된 자료를 기초로 디자인을 설계한다.",
+      "source_sentence": "기획된 모든 자료를 기초로 디자인을 설계하고 샘플 제작서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "샘플 제작서",
+      "full_statement": "샘플 제작서를 작성한다.",
+      "source_sentence": "기획된 모든 자료를 기초로 디자인을 설계하고 샘플 제작서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "선택하다",
+      "object": "원단·부속품",
+      "full_statement": "의상 제조에 필요한 원단과 부속품을 선택한다.",
+      "source_sentence": "의상 제조에 필요한 원단, 부속품을 선택하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제작하다",
+      "object": "패턴",
+      "full_statement": "디자인과 샘플 제작서에 의해 패턴을 만든다.",
+      "source_sentence": "디자인과 샘플 제작서에 의해 패턴을 만들고 제작된 패턴으로 견본을 제작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "견본",
+      "full_statement": "제작된 패턴으로 견본을 제작한다.",
+      "source_sentence": "디자인과 샘플 제작서에 의해 패턴을 만들고 제작된 패턴으로 견본을 제작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "견본품",
+      "full_statement": "제작된 견본품을 평가한다.",
+      "source_sentence": "견본품을 평가하고 미비점을 수정‧보완한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수정하다",
+      "object": "미비점",
+      "full_statement": "견본품의 미비점을 수정·보완한다.",
+      "source_sentence": "견본품을 평가하고 미비점을 수정‧보완한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "출품하다",
+      "object": "의상",
+      "full_statement": "신상품 전시회나 패션쇼에 의상을 출품한다.",
+      "source_sentence": "신상품 전시회나 패션쇼에 의상을 출품하거나 행사를 기획하기도 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기획하다",
+      "object": "행사",
+      "full_statement": "신상품 전시회나 패션쇼 행사를 기획한다.",
+      "source_sentence": "신상품 전시회나 패션쇼에 의상을 출품하거나 행사를 기획하기도 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "해외 패션 흐름",
+      "full_statement": "해외의 패션 흐름 등을 분석한다.",
+      "source_sentence": "해외의 패션 흐름 등을 분석하고 시장조사를 거쳐 계절에 맞는 상품을 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "시장",
+      "full_statement": "계절 상품 기획을 위해 시장조사를 수행한다.",
+      "source_sentence": "해외의 패션 흐름 등을 분석하고 시장조사를 거쳐 계절에 맞는 상품을 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "기획하다",
+      "object": "계절 상품",
+      "full_statement": "시장조사를 거쳐 계절에 맞는 상품을 기획한다.",
+      "source_sentence": "해외의 패션 흐름 등을 분석하고 시장조사를 거쳐 계절에 맞는 상품을 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "전시회·패션쇼 등 행사 기반 작업",
+      "evidence_span": "신상품 전시회나 패션쇼에 의상을 출품하거나 행사를 기획하기도 하며"
+    }
+  ]
+}

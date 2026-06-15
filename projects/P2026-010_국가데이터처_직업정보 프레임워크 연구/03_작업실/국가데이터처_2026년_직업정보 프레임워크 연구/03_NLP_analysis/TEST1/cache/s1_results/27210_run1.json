@@ -1,0 +1,114 @@
+{
+  "ksco_code": "27210",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "정부정책과 관련 집행",
+      "full_statement": "정부정책과 그에 관련된 집행을 기획한다.",
+      "source_sentence": "정부정책과 그에 관련된 집행을 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "취급하다",
+      "object": "일반 행정 및 기획 업무",
+      "full_statement": "일반적인 행정과 기획 업무를 취급한다.",
+      "source_sentence": "일반적인 행정과 기획 업무를 취급하며 중앙 및 지방행정 기관의 부서에서 의사결정을 하고, 실무적인 책임을 지는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "행정 관련 의사",
+      "full_statement": "중앙 및 지방행정 기관의 부서에서 의사결정을 한다.",
+      "source_sentence": "중앙 및 지방행정 기관의 부서에서 의사결정을 하고, 실무적인 책임을 지는 자",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지다",
+      "object": "실무적 책임",
+      "full_statement": "행정 업무에 대한 실무적인 책임을 진다.",
+      "source_sentence": "정부기관에서 일반 행정과 관련된 의사결정을 하고 실무적인 책임을 진다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "고위공무원으로부터 위임받은 직무",
+      "full_statement": "고위공무원으로부터 위임받은 직무를 수행한다.",
+      "source_sentence": "예하 직원의 협조를 받아 고위공무원으로부터 위임받은 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "받다",
+      "object": "예하 직원의 협조",
+      "full_statement": "직무 수행을 위해 예하 직원의 협조를 받는다.",
+      "source_sentence": "일반적으로 예하 직원의 협조를 받아 고위공무원으로부터 위임받은 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.75
+    },
+    {
+      "verb": "기획하다",
+      "object": "총무 관련 업무",
+      "full_statement": "총무 관련 업무를 기획한다.",
+      "source_sentence": "총무, 인사, 구매 및 회계 관련 업무를 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "인사 관련 업무",
+      "full_statement": "인사 관련 업무를 기획한다.",
+      "source_sentence": "총무, 인사, 구매 및 회계 관련 업무를 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "구매 관련 업무",
+      "full_statement": "구매 관련 업무를 기획한다.",
+      "source_sentence": "총무, 인사, 구매 및 회계 관련 업무를 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "회계 관련 업무",
+      "full_statement": "회계 관련 업무를 기획한다.",
+      "source_sentence": "총무, 인사, 구매 및 회계 관련 업무를 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "대행하다",
+      "object": "행정기관 제출 서류 작성",
+      "full_statement": "고객의 위임을 받아 행정기관 제출 서류를 작성 대행한다.",
+      "source_sentence": "고객의 위임을 받아 행정기관 제출 서류를 작성 대행하거나 인․허가 및 면허 등을 받기 위해 행정기관에 하는 신청․청구 및 신고 등의 업무를 대리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "대리하다",
+      "object": "인·허가 및 면허 신청·청구·신고 업무",
+      "full_statement": "인·허가 및 면허 등을 받기 위해 행정기관에 하는 신청·청구 및 신고 업무를 대리한다.",
+      "source_sentence": "인․허가 및 면허 등을 받기 위해 행정기관에 하는 신청․청구 및 신고 등의 업무를 대리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "중앙 및 지방행정 기관의 부서",
+      "evidence_span": "중앙 및 지방행정 기관의 부서에서 의사결정을 하고"
+    },
+    {
+      "category": "사회적",
+      "value": "예하 직원의 협조를 받는 팀 기반 업무",
+      "evidence_span": "일반적으로 예하 직원의 협조를 받아 고위공무원으로부터 위임받은 직무를 수행한다"
+    }
+  ]
+}

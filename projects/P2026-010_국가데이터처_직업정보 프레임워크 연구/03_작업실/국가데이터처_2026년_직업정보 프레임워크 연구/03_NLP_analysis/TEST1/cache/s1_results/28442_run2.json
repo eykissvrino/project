@@ -1,0 +1,101 @@
+{
+  "ksco_code": "28442",
+  "tasks": [
+    {
+      "verb": "검사하다",
+      "object": "골동품·예술품 상태",
+      "full_statement": "골동품, 예술품 등의 상태를 검사한다.",
+      "source_sentence": "골동품, 예술품 등의 상태를 검사하고, 그 가치를 평가하여 최저경매가격을 산정하여, 구매자들에게 골동품, 예술품 등을 중개하거나 경매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "골동품·예술품 가치",
+      "full_statement": "골동품, 예술품 등의 가치를 평가한다.",
+      "source_sentence": "골동품, 예술품 등의 상태를 검사하고, 그 가치를 평가하여 최저경매가격을 산정하여, 구매자들에게 골동품, 예술품 등을 중개하거나 경매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산정하다",
+      "object": "최저경매가격",
+      "full_statement": "가치 평가를 토대로 최저경매가격을 산정한다.",
+      "source_sentence": "골동품, 예술품 등의 상태를 검사하고, 그 가치를 평가하여 최저경매가격을 산정하여, 구매자들에게 골동품, 예술품 등을 중개하거나 경매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "중개하다",
+      "object": "골동품·예술품",
+      "full_statement": "구매자들에게 골동품, 예술품 등을 중개한다.",
+      "source_sentence": "구매자들에게 골동품, 예술품 등을 중개하거나 경매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "경매하다",
+      "object": "골동품·예술품",
+      "full_statement": "구매자들에게 골동품, 예술품 등을 경매한다.",
+      "source_sentence": "구매자들에게 골동품, 예술품 등을 중개하거나 경매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "경매 출품 물품",
+      "full_statement": "경매에 내놓을 물품을 확인한 후 경매 우선순위를 결정한다.",
+      "source_sentence": "경매에 내놓을 물품을 확인한 후 경매 우선순위를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "경매 우선순위",
+      "full_statement": "경매 우선순위를 결정한다.",
+      "source_sentence": "경매에 내놓을 물품을 확인한 후 경매 우선순위를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "상장된 물품 가격",
+      "full_statement": "상장된 물품의 가격을 평가하여 경매최저가격을 설정한다.",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설정하다",
+      "object": "경매최저가격",
+      "full_statement": "물품 가격 평가를 토대로 경매최저가격을 설정한다.",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시행하다",
+      "object": "경매",
+      "full_statement": "경매를 시행하여 낙찰자를 결정한다.",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "낙찰자",
+      "full_statement": "경매를 시행하여 낙찰자를 결정한다.",
+      "source_sentence": "상장된 물품의 가격을 평가하여 경매최저가격을 설정하고, 경매를 시행하여 낙찰자를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "구매자 대상 중개·경매 진행(고객응대)",
+      "evidence_span": "구매자들에게 골동품, 예술품 등을 중개하거나 경매한다."
+    }
+  ]
+}

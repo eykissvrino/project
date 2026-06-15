@@ -1,0 +1,61 @@
+{
+  "ksco_code": "87408",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "덤프트럭",
+      "full_statement": "토사, 골재 운반용 덤프트럭을 운전한다.",
+      "source_sentence": "적재함을 동력으로 기울여서 적재물을 자동으로 내리는 토사, 골재 운반용 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "기울이다",
+      "object": "적재함",
+      "full_statement": "적재함을 동력으로 기울여서 적재물을 자동으로 내린다.",
+      "source_sentence": "적재함을 동력으로 기울여서 적재물을 자동으로 내리는 토사, 골재 운반용 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "운반하다",
+      "object": "토사·골재",
+      "full_statement": "토사와 골재를 운반한다.",
+      "source_sentence": "적재함을 동력으로 기울여서 적재물을 자동으로 내리는 토사, 골재 운반용 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "내리다",
+      "object": "적재물",
+      "full_statement": "적재함을 동력으로 기울여 적재물을 자동으로 내린다.",
+      "source_sentence": "적재함을 동력으로 기울여서 적재물을 자동으로 내리는 토사, 골재 운반용 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "이용하다",
+      "object": "운전 장치",
+      "full_statement": "손과 해당 운전 장치를 이용하여 운송장비의 운전을 수행한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "취득하다",
+      "object": "운전 면허",
+      "full_statement": "덤프트럭 운전에 요구되는 운전 면허를 취득한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "덤프트럭", "category": "장비", "evidence_span": "토사, 골재 운반용 덤프트럭을 운전한다"},
+    {"name": "적재함", "category": "장비", "evidence_span": "적재함을 동력으로 기울여서 적재물을 자동으로 내리는"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 운전 장치를 이용하는 조작 기술 필요", "evidence_span": "대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"},
+    {"category": "시간적", "value": "면허취득 요청(자격 요건)", "evidence_span": "면허취득이 요청된다"}
+  ]
+}

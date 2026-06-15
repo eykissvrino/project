@@ -1,0 +1,93 @@
+{
+  "ksco_code": "28153",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "상품 품질의 표준규격 부합성",
+      "full_statement": "상품의 품질에 대해 표준규격과의 부합성을 평가한다.",
+      "source_sentence": "상품의 품질에 대해 표준규격과의 부합성을 평가하여 품질인증여부를 심사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "심사하다",
+      "object": "품질인증여부",
+      "full_statement": "표준규격 부합성 평가 결과를 토대로 상품의 품질인증여부를 심사한다.",
+      "source_sentence": "상품의 품질에 대해 표준규격과의 부합성을 평가하여 품질인증여부를 심사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "심사하다",
+      "object": "국제표준기구 품질인증여부",
+      "full_statement": "국제표준기구의 품질인증여부를 심사한다.",
+      "source_sentence": "국제표준기구의 품질인증여부를 심사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "사업 및 조직체계",
+      "full_statement": "효율적인 경영을 위해 사업 및 조직체계를 검토한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "분석하다",
+      "object": "사업 및 조직체계",
+      "full_statement": "효율적인 경영을 위해 사업 및 조직체계를 분석한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "제안하다",
+      "object": "개선점",
+      "full_statement": "사업 및 조직체계 검토·분석 결과를 바탕으로 개선점을 제안한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "분석하다",
+      "object": "경영방법 및 조직",
+      "full_statement": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석한다.",
+      "source_sentence": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "자문하다",
+      "object": "경영방법 및 조직",
+      "full_statement": "공공이나 민간부문 사업체들의 경영방법 및 조직에 대해 자문한다.",
+      "source_sentence": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수행하다",
+      "object": "효율성·효과 판단 연구",
+      "full_statement": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "source_sentence": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "제안하다",
+      "object": "방법·체계·절차 개선점",
+      "full_statement": "기업운영, 인력자원 및 의사소통과정과 같은 영역의 효과적 방법, 체계 및 절차에 대한 개선점을 제안한다.",
+      "source_sentence": "기업운영, 인력자원 및 의사소통과정과 같은 영역의 효과적 방법, 체계 및 절차에 대한 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "경영컨설팅 회사·민간·공공부문 근무 및 독립 수행",
+      "evidence_span": "경영컨설팅 회사 및 민간, 공공부문에서 일하며 독립적으로 일하기도 한다."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "ksco_code": "71020",
+  "tasks": [
+    {
+      "verb": "계량하다",
+      "object": "재료",
+      "full_statement": "제품의 종류에 따라 필요한 찹쌀·쌀·콩·팥 등의 재료를 수동저울을 사용하여 계량한다.",
+      "source_sentence": "제품의 종류에 따라 필요한 재료를 수동저울을 사용하여 계량한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(재료 구체화)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "세척하다",
+      "object": "재료",
+      "full_statement": "상자나 통에 재료를 넣고 물을 투입하여 세척한다.",
+      "source_sentence": "상자나 통에 재료를 넣고 물을 투입하여 세척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "분쇄기의 롤러간격",
+      "full_statement": "수동핸들을 돌려 분쇄기의 롤러간격을 조정한다.",
+      "source_sentence": "수동핸들을 돌려 분쇄기의 롤러간격을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "세척한 재료",
+      "full_statement": "분쇄기를 가동하고 호퍼의 배출구를 열어 세척한 재료를 일정한 입도로 분쇄한다.",
+      "source_sentence": "분쇄기를 가동하고 호퍼의 배출구를 열어 세척한 재료를 일정한 입도로 분쇄한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(재료를 분쇄하여)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "반죽하다",
+      "object": "분쇄한 가루와 첨가물",
+      "full_statement": "반죽 통에 분쇄한 가루와 소금, 설탕 및 첨가물을 투입한 후에 적당한 점도를 가지도록 물 등을 넣어 반죽한다.",
+      "source_sentence": "반죽 통에 분쇄한 가루와 소금, 설탕 및 첨가물을 투입한 후에 적당한 점도를 가지도록 물 등을 넣어 반죽한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(반죽하고)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "가열하다",
+      "object": "증기 솥",
+      "full_statement": "혼합한 재료를 증자하기 위하여 증기 솥에 일정량을 넣고 증기밸브를 돌려 증기 솥을 가열한다.",
+      "source_sentence": "혼합한 재료를 증자하기 위하여 증기 솥에 일정량을 넣고, 증기밸브를 돌려 증기 솥을 가열한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(증자하는 장비를 조작)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "투입하다",
+      "object": "증자 완료된 재료",
+      "full_statement": "일정시간 동안 가열하여 증자가 완료되면 뚜껑을 열고 절구에 투입한다.",
+      "source_sentence": "일정시간 동안 가열하여 증자가 완료되면 뚜껑을 열고 절구에 투입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "절구질하다",
+      "object": "증자한 떡",
+      "full_statement": "일정시간 동안 절구질을 한다.",
+      "source_sentence": "일정시간 절구질을 하고 견본을 채취하여 떡의 점도와 탄성을 확인한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.86
+    },
+    {
+      "verb": "확인하다",
+      "object": "떡의 점도와 탄성",
+      "full_statement": "견본을 채취하여 떡의 점도와 탄성을 확인한다.",
+      "source_sentence": "일정시간 절구질을 하고 견본을 채취하여 떡의 점도와 탄성을 확인한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.86
+    },
+    {
+      "verb": "성형하다",
+      "object": "떡 모양",
+      "full_statement": "작업대 위에 떡을 올려놓고 제품의 형태에 따라 속을 넣으며 형틀로 눌러 모양을 만든다.",
+      "source_sentence": "작업대 위에 떡을 올려놓고 제품의 형태에 따라 속을 넣으며, 형틀로 눌러 모양을 만든 후 기름을 바르거나 고물을 묻힌다.",
+      "derived_from": "상속 주요업무→세세정의 특화(성형하거나 손으로 모양을 만든 후, 복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "기름",
+      "full_statement": "성형한 떡에 기름을 바른다.",
+      "source_sentence": "작업대 위에 떡을 올려놓고 제품의 형태에 따라 속을 넣으며, 형틀로 눌러 모양을 만든 후 기름을 바르거나 고물을 묻힌다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "묻히다",
+      "object": "고물",
+      "full_statement": "성형한 떡에 고물을 묻힌다.",
+      "source_sentence": "작업대 위에 떡을 올려놓고 제품의 형태에 따라 속을 넣으며, 형틀로 눌러 모양을 만든 후 기름을 바르거나 고물을 묻힌다.",
+      "derived_from": "상속 주요업무→세세정의 특화(고물이나 설탕 등 첨가물을 넣고, 복합행동 분할)",
+      "confidence": 0.87
+    },
+    {
+      "verb": "넣다",
+      "object": "고물이나 설탕 등 첨가물",
+      "full_statement": "성형한 떡에 고물이나 설탕 등 첨가물을 넣는다.",
+      "source_sentence": "손으로 모양을 만든 후 고물이나 설탕 등 첨가물을 넣고 찌거나 익히는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "찌다",
+      "object": "떡",
+      "full_statement": "첨가물을 넣은 떡을 찐다.",
+      "source_sentence": "고물이나 설탕 등 첨가물을 넣고 찌거나 익히는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "익히다",
+      "object": "떡",
+      "full_statement": "첨가물을 넣은 떡을 익힌다.",
+      "source_sentence": "고물이나 설탕 등 첨가물을 넣고 찌거나 익히는 일을 한다.",
+      "derived_from": "세세분류 정의(찌거나 익히는, 복합행동 분할)",
+      "confidence": 0.84
+    },
+    {
+      "verb": "제조하다",
+      "object": "각종 한식 떡",
+      "full_statement": "시루떡·인절미·경단 등 각종 한식 떡을 제조한다.",
+      "source_sentence": "시루떡‧인절미‧경단 등 각종 한식 떡을 제조하기 위하여 찹쌀‧쌀‧콩‧팥 등의 재료를 분쇄하여 반죽하고 증자‧성형하는 장비를 조작하거나 손으로 모양을 만든 후 고물이나 설탕 등 첨가물을 넣고 찌거나 익히는 일을 한다.",
+      "derived_from": "세세분류 정의(종합 활동)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "수동저울", "category": "장비", "evidence_span": "필요한 재료를 수동저울을 사용하여 계량한다"},
+    {"name": "분쇄기", "category": "장비", "evidence_span": "분쇄기를 가동하고 호퍼의 배출구를 열어 세척한 재료를 일정한 입도로 분쇄한다"},
+    {"name": "반죽 통", "category": "도구", "evidence_span": "반죽 통에 분쇄한 가루와 소금, 설탕 및 첨가물을 투입한 후에"},
+    {"name": "증기 솥", "category": "장비", "evidence_span": "증기 솥에 일정량을 넣고, 증기밸브를 돌려 증기 솥을 가열한다"},
+    {"name": "증기밸브", "category": "도구", "evidence_span": "증기밸브를 돌려 증기 솥을 가열한다"},
+    {"name": "절구", "category": "도구", "evidence_span": "뚜껑을 열고 절구에 투입한다"},
+    {"name": "형틀", "category": "도구", "evidence_span": "형틀로 눌러 모양을 만든 후"},
+    {"name": "수동핸들", "category": "도구", "evidence_span": "수동핸들을 돌려 분쇄기의 롤러간격을 조정한다"},
+    {"name": "작업대", "category": "장비", "evidence_span": "작업대 위에 떡을 올려놓고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손으로 모양을 만드는 수작업", "evidence_span": "증자‧성형하는 장비를 조작하거나 손으로 모양을 만든 후"},
+    {"category": "위험", "value": "증기 솥 가열에 따른 고온·증기 노출", "evidence_span": "증기 솥에 일정량을 넣고, 증기밸브를 돌려 증기 솥을 가열한다"},
+    {"category": "신체적", "value": "절구질 등 체력을 요하는 작업", "evidence_span": "일정시간 절구질을 하고"}
+  ]
+}

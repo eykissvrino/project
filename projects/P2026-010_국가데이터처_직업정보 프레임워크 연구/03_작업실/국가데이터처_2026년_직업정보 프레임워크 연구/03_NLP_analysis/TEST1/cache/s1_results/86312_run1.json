@@ -1,0 +1,127 @@
+{
+  "ksco_code": "86312",
+  "tasks": [
+    {
+      "verb": "혼합하다",
+      "object": "활물질",
+      "full_statement": "전지의 전극반응에 관여하는 물질인 활물질을 혼합하는 기계장치를 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(이차전지 전극혼합)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "코팅하다",
+      "object": "활물질",
+      "full_statement": "전극반응에 관여하는 활물질을 전극에 코팅하는 기계장치를 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(이차전지 전극혼합)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "압축하다",
+      "object": "활물질",
+      "full_statement": "코팅된 활물질을 압축하는 기계장치를 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(이차전지 전극혼합)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "활물질의 혼합·코팅·압축을 수행하는 각종 기계장치를 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "가공하다",
+      "object": "전극의 연결부",
+      "full_statement": "전극의 연결부를 가공한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "용접하다",
+      "object": "전극의 연결부",
+      "full_statement": "전극의 연결부를 용접한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "가공처리 정도",
+      "full_statement": "채취한 샘플로 가공처리 정도를 검사한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시험하다",
+      "object": "가공처리 정도",
+      "full_statement": "채취한 샘플로 가공처리 정도를 시험한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성품",
+      "full_statement": "완성된 이차전지 제품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품",
+      "full_statement": "완성된 이차전지 제품을 검사한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성품",
+      "full_statement": "완성된 이차전지 제품을 포장한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조립하다",
+      "object": "이차전지",
+      "full_statement": "전극을 결합하여 재충전성이 있는 이차전지를 조립하는 장비를 조작한다.",
+      "source_sentence": "재충전성이 있는 이차전지의 전극혼합, 조립 및 활성화와 관련한 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "활성화하다",
+      "object": "이차전지",
+      "full_statement": "조립된 이차전지를 활성화하는 장비를 조작한다.",
+      "source_sentence": "재충전성이 있는 이차전지의 전극혼합, 조립 및 활성화와 관련한 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "이차전지 제조 장비",
+      "full_statement": "이차전지의 전극혼합·조립·활성화와 관련한 장비를 조작한다.",
+      "source_sentence": "재충전성이 있는 이차전지의 전극혼합, 조립 및 활성화와 관련한 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

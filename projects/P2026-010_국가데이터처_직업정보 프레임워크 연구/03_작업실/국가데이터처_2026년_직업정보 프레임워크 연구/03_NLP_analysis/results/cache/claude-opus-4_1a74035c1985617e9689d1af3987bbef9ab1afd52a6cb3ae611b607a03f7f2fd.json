@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28452",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "부동산 정보",
+      "full_statement": "지가시세와 매도 희망 부동산 정보를 수집한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파악하다",
+      "object": "고객 희망",
+      "full_statement": "부동산 매입을 희망하는 고객의 종류와 금액을 파악한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "답사하다",
+      "object": "부동산",
+      "full_statement": "고객에게 알맞은 부동산을 선정하여 함께 답사한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "매매 가격",
+      "full_statement": "매도·매수자 간 매매 희망가격을 조정하고 계약을 주선한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "매매계약서",
+      "full_statement": "매매 대상물과 조건을 기재한 매매계약서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,85 @@
+{
+  "ksco_code": "29323",
+  "tasks": [
+    {
+      "verb": "연기하다",
+      "object": "목소리 연기",
+      "full_statement": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "source_sentence": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "암기하다",
+      "object": "대사",
+      "full_statement": "맡은 배역의 대사를 암기한다.",
+      "source_sentence": "대사를 암기하고 사실적으로 표현하기 위하여 극중 인물의 언어, 동작, 버릇 등을 연습하며, 역할에 맞는 분장을 하고 연기를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연습하다",
+      "object": "극중 인물의 언어",
+      "full_statement": "사실적으로 표현하기 위하여 극중 인물의 언어를 연습한다.",
+      "source_sentence": "대사를 암기하고 사실적으로 표현하기 위하여 극중 인물의 언어, 동작, 버릇 등을 연습하며, 역할에 맞는 분장을 하고 연기를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "표현하다",
+      "object": "극중 인물",
+      "full_statement": "극중 인물을 사실적으로 표현한다.",
+      "source_sentence": "대사를 암기하고 사실적으로 표현하기 위하여 극중 인물의 언어, 동작, 버릇 등을 연습하며, 역할에 맞는 분장을 하고 연기를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "더빙하다",
+      "object": "더빙영화",
+      "full_statement": "더빙영화에서 등장인물의 목소리를 더빙한다.",
+      "source_sentence": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "연기하다",
+      "object": "라디오 방송극 배역",
+      "full_statement": "라디오 방송극에서 배역을 목소리로 연기한다.",
+      "source_sentence": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "연기하다",
+      "object": "만화영화 캐릭터",
+      "full_statement": "만화영화에서 캐릭터의 목소리를 연기한다.",
+      "source_sentence": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "녹음하다",
+      "object": "광고 음성",
+      "full_statement": "광고에서 상품을 선전하는 음성을 녹음한다.",
+      "source_sentence": "라디오 방송극, 더빙영화, 만화영화, 광고 등에서 목소리로만 연기를 한다.",
+      "derived_from": "세세분류 정의→조상정의(소분류) 보강",
+      "confidence": 0.65
+    },
+    {
+      "verb": "연기하다",
+      "object": "감독 연출",
+      "full_statement": "대본과 감독의 연출에 따라 연기한다.",
+      "source_sentence": "영화, TV 드라마 및 방송 프로그램이나 연극, 뮤지컬 등 공연에 등장인물로 출연하여 대본과 감독의 연출에 따라 연기한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "감독의 연출에 따른 협업 작업",
+      "evidence_span": "대본과 감독의 연출에 따라 연기한다."
+    }
+  ]
+}

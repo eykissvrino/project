@@ -1,0 +1,114 @@
+{
+  "ksco_code": "44214",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "전시품·예술품",
+      "full_statement": "미술관 및 박물관에서 관련 지식을 바탕으로 전시품과 예술품에 대해 설명한다.",
+      "source_sentence": "미술관 및 박물관에서 관련 지식을 바탕으로 전시품, 예술품에 대해 설명‧해설하고 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "해설하다",
+      "object": "전시품·예술품",
+      "full_statement": "관련 지식을 바탕으로 전시품과 예술품에 대해 해설한다.",
+      "source_sentence": "미술관 및 박물관에서 관련 지식을 바탕으로 전시품, 예술품에 대해 설명‧해설하고 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "전시품·예술품",
+      "full_statement": "미술관 및 박물관에서 전시품과 예술품에 대해 관람객을 안내한다.",
+      "source_sentence": "미술관 및 박물관에서 관련 지식을 바탕으로 전시품, 예술품에 대해 설명‧해설하고 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설명하다",
+      "object": "전시 작품",
+      "full_statement": "관련 지식을 바탕으로 관람객에게 전시된 작품을 설명한다.",
+      "source_sentence": "관련 지식을 바탕으로 관람객에게 전시된 작품을 설명하고 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "전시 작품",
+      "full_statement": "관람객에게 전시된 작품을 안내한다.",
+      "source_sentence": "관련 지식을 바탕으로 관람객에게 전시된 작품을 설명하고 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "유도하다",
+      "object": "관람 예절",
+      "full_statement": "관람객 모두가 전시작품을 즐기도록 바람직한 관람예절을 유도한다.",
+      "source_sentence": "관람객 모두가 전시작품을 즐기고, 전시작품의 훼손을 막기 위해 관람객의 바람직한 관람예절을 유도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "방지하다",
+      "object": "전시작품 훼손",
+      "full_statement": "관람객의 관람예절을 유도하여 전시작품의 훼손을 막는다.",
+      "source_sentence": "관람객 모두가 전시작품을 즐기고, 전시작품의 훼손을 막기 위해 관람객의 바람직한 관람예절을 유도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "역사적 유물·유적지·명소",
+      "full_statement": "역사적 유물, 유적지 및 명소 등에 관해 관람객에게 설명한다.",
+      "source_sentence": "역사적 유물, 유적지 및 명소 등에 관해 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설명하다",
+      "object": "전시시설·전시품",
+      "full_statement": "박람회·전시회에서 전시시설과 전시품 등을 설명하고 안내한다.",
+      "source_sentence": "박람회, 전시회에서 전시시설과 전시품 등을 설명하고 안내한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "안내하다",
+      "object": "전시시설",
+      "full_statement": "방문객에게 전시시설을 안내한다.",
+      "source_sentence": "견학을 목적으로 방문한 방문객에게 시설을 설명하고 안내한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "습득하다",
+      "object": "전시품 관련 지식",
+      "full_statement": "전시품과 예술품에 대한 관련 지식을 습득한다.",
+      "source_sentence": "해설을 맡은 관광자원 전반과 역사, 문화 등에 대한 지식을 습득하고, 관광 해설을 위한 소양을 쌓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제고하다",
+      "object": "감상·체험 기회",
+      "full_statement": "관람객의 전시작품 감상과 체험 기회를 제고한다.",
+      "source_sentence": "관광자원에 대한 감상, 체험 기회를 제고하기 위하여 바람직한 관람 예절과 관광문화를 유도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "미술관·박물관 등 실내 전시시설",
+      "evidence_span": "미술관 및 박물관에서 관련 지식을 바탕으로 전시품, 예술품에 대해 설명‧해설하고 안내한다."
+    },
+    {
+      "category": "사회적",
+      "value": "관람객 응대·해설(대인 서비스)",
+      "evidence_span": "관련 지식을 바탕으로 관람객에게 전시된 작품을 설명하고 안내한다."
+    }
+  ]
+}

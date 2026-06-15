@@ -1,0 +1,88 @@
+{
+  "ksco_code": "92230",
+  "tasks": [
+    {
+      "verb": "받다",
+      "object": "배송 의뢰",
+      "full_statement": "전화나 온라인 플랫폼을 통해 배송 의뢰를 받는다.",
+      "source_sentence": "전화나 온라인 플랫폼을 통해 배송 의뢰를 받는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "주문·의뢰 내용",
+      "full_statement": "고객이 주문·의뢰한 소화물의 수령지와 배달지를 확인한다.",
+      "source_sentence": "고객이 주문‧의뢰한 소화물을 물류배송체계(화주-터미널-지점-배송지)를 거치지 않고 수령자에게 바로 배달한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "이동하다",
+      "object": "수집 장소",
+      "full_statement": "소화물을 수집하기 위해 주문·의뢰한 곳으로 이동한다.",
+      "source_sentence": "주문․의뢰한 곳에서 소화물을 바로 수집하여 전달한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수집하다",
+      "object": "소화물",
+      "full_statement": "주문·의뢰한 곳에서 소화물을 바로 수집한다.",
+      "source_sentence": "주문․의뢰한 곳에서 소화물을 바로 수집하여 전달한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "받다",
+      "object": "배송 소화물",
+      "full_statement": "지정한 장소에서 배송할 소화물(문서, 소포, 음식물 등)을 받는다.",
+      "source_sentence": "지정한 장소에서 배송할 소화물(문서, 소포, 음식물 등)을 받는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "취급하다",
+      "object": "도시 내 배송화물",
+      "full_statement": "주로 도시 내 배송화물을 취급한다.",
+      "source_sentence": "주로 도시 내 배송화물을 취급하며, 주문․의뢰한 곳에서 소화물을 바로 수집하여 전달한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "이용하다",
+      "object": "오토바이나 자전거",
+      "full_statement": "배송지로 이동하기 위해 주로 오토바이나 자전거를 이용한다.",
+      "source_sentence": "주로 오토바이나 자전거를 이용하여 배송지로 소화물을 빠르고 안전하게 전달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "전달하다",
+      "object": "소화물",
+      "full_statement": "물류배송체계를 거치지 않고 수령자에게 소화물을 바로 전달한다.",
+      "source_sentence": "고객이 주문‧의뢰한 소화물을 물류배송체계(화주-터미널-지점-배송지)를 거치지 않고 수령자에게 바로 배달한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "전달하다",
+      "object": "소화물",
+      "full_statement": "배송지로 소화물을 빠르고 안전하게 전달한다.",
+      "source_sentence": "주로 오토바이나 자전거를 이용하여 배송지로 소화물을 빠르고 안전하게 전달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "온라인 플랫폼", "category": "시스템", "evidence_span": "전화나 온라인 플랫폼을 통해 배송 의뢰를 받는다."},
+    {"name": "전화", "category": "장비", "evidence_span": "전화나 온라인 플랫폼을 통해 배송 의뢰를 받는다."},
+    {"name": "오토바이", "category": "장비", "evidence_span": "주로 오토바이나 자전거를 이용하여 배송지로 소화물을 빠르고 안전하게 전달한다."},
+    {"name": "자전거", "category": "장비", "evidence_span": "주로 오토바이나 자전거를 이용하여 배송지로 소화물을 빠르고 안전하게 전달한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "도시 내 이동(도시 권역 배송)", "evidence_span": "주로 도시 내 배송화물을 취급하며"},
+    {"category": "시간적", "value": "신속 배송(빠르고 안전하게 전달)", "evidence_span": "주로 오토바이나 자전거를 이용하여 배송지로 소화물을 빠르고 안전하게 전달한다."},
+    {"category": "사회적", "value": "고객 응대(주문·의뢰 접수 및 수령자 전달)", "evidence_span": "고객이 주문‧의뢰한 소화물을 ... 수령자에게 바로 배달한다."}
+  ]
+}

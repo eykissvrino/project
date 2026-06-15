@@ -1,0 +1,128 @@
+{
+  "ksco_code": "41120",
+  "tasks": [
+    {
+      "verb": "예방하다",
+      "object": "화재 및 사고",
+      "full_statement": "화재 및 사고를 예방한다.",
+      "source_sentence": "화재 및 사고를 예방하고, 화재 또는 사고가 발생하였을 경우 진화작업을 수행하며 인명과 재산을 구조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "진화작업",
+      "full_statement": "화재 또는 사고가 발생하였을 경우 진화작업을 수행한다.",
+      "source_sentence": "화재 및 사고를 예방하고, 화재 또는 사고가 발생하였을 경우 진화작업을 수행하며 인명과 재산을 구조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "구조하다",
+      "object": "인명과 재산",
+      "full_statement": "화재 또는 사고 발생 시 인명과 재산을 구조한다.",
+      "source_sentence": "화재 및 사고를 예방하고, 화재 또는 사고가 발생하였을 경우 진화작업을 수행하며 인명과 재산을 구조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "구조·구급 업무",
+      "full_statement": "화재, 재난·재해, 그 밖의 위급한 상황으로부터 구조·구급 업무를 수행한다.",
+      "source_sentence": "화재, 재난·재해, 그 밖의 위급한 상황으로부터 구조·구급 업무를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "소방장비",
+      "full_statement": "소방기구, 호스, 소화기 등의 각종 소방장비를 점검한다.",
+      "source_sentence": "소방기구, 호스, 소화기 등의 각종 소방장비와 건물의 소방 설비를 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "점검하다",
+      "object": "건물의 소방 설비",
+      "full_statement": "건물의 소방 설비를 점검한다.",
+      "source_sentence": "소방기구, 호스, 소화기 등의 각종 소방장비와 건물의 소방 설비를 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진압하다",
+      "object": "화재",
+      "full_statement": "화재를 진압한다.",
+      "source_sentence": "화재를 진압하고 인명을 구조한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "구조하다",
+      "object": "인명",
+      "full_statement": "인명을 구조한다.",
+      "source_sentence": "화재를 진압하고 인명을 구조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "감지하다",
+      "object": "화재위험",
+      "full_statement": "건물의 구조적 특징, 구성 재료 및 내용을 비교하여 화재위험을 감지한다.",
+      "source_sentence": "화재위험을 감지하거나 화재원인을 입증하기 위해 건물의 구조적 특징, 구성 재료 및 내용을 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "입증하다",
+      "object": "화재원인",
+      "full_statement": "건물의 구조적 특징, 구성 재료 및 내용을 비교하여 화재원인을 입증한다.",
+      "source_sentence": "화재위험을 감지하거나 화재원인을 입증하기 위해 건물의 구조적 특징, 구성 재료 및 내용을 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "비교하다",
+      "object": "건물의 구조적 특징 및 구성 재료",
+      "full_statement": "건물의 구조적 특징, 구성 재료 및 내용을 비교한다.",
+      "source_sentence": "화재위험을 감지하거나 화재원인을 입증하기 위해 건물의 구조적 특징, 구성 재료 및 내용을 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "운전하다",
+      "object": "소방차",
+      "full_statement": "소방차를 운전한다.",
+      "source_sentence": "소방차를 운전하고 펌프 장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "펌프 장비",
+      "full_statement": "펌프 장비를 조작한다.",
+      "source_sentence": "소방차를 운전하고 펌프 장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "대처하다",
+      "object": "안전사고 및 기타 위험",
+      "full_statement": "화재, 안전사고, 기타 위험에 대처한다.",
+      "source_sentence": "화재, 안전사고, 기타 위험에 대처하는 소방관",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "소방기구", "category": "장비", "evidence_span": "소방기구, 호스, 소화기 등의 각종 소방장비와 건물의 소방 설비를 점검한다."},
+    {"name": "호스", "category": "장비", "evidence_span": "소방기구, 호스, 소화기 등의 각종 소방장비와 건물의 소방 설비를 점검한다."},
+    {"name": "소화기", "category": "장비", "evidence_span": "소방기구, 호스, 소화기 등의 각종 소방장비와 건물의 소방 설비를 점검한다."},
+    {"name": "소방차", "category": "장비", "evidence_span": "소방차를 운전하고 펌프 장비를 조작한다."},
+    {"name": "펌프 장비", "category": "장비", "evidence_span": "소방차를 운전하고 펌프 장비를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화재·사고 등 위급 상황 대응", "evidence_span": "화재, 재난·재해, 그 밖의 위급한 상황으로부터 구조·구급 업무를 한다."},
+    {"category": "위험", "value": "화재·안전사고·기타 위험 노출", "evidence_span": "화재, 안전사고, 기타 위험에 대처하는 소방관"}
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28351",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "이벤트",
+      "full_statement": "축제·패션쇼·판촉행사 등 다양한 이벤트를 기획한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "섭외하다",
+      "object": "출연 단체",
+      "full_statement": "출연자·무대·음향을 전담할 단체를 섭외한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "행사 진행",
+      "full_statement": "예행연습과 실제 행사를 관리한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "총괄하다",
+      "object": "행사 서비스",
+      "full_statement": "숙박·운송·시설 등 행사서비스를 총괄한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

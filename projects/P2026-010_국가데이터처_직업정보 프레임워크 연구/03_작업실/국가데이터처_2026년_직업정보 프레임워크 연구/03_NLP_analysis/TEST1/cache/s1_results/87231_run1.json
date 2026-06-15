@@ -1,0 +1,85 @@
+{
+  "ksco_code": "87231",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "경형 화물차",
+      "full_statement": "배기량이 1000cc 미만인 경형 화물차를 운전한다.",
+      "source_sentence": "배기량이 1000cc 미만인 경형 화물차와, 최대 적재량이 1톤 이하이면서 총중량이 3.5톤 이하인 소형 화물차를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운전하다",
+      "object": "소형 화물차",
+      "full_statement": "최대 적재량이 1톤 이하이면서 총중량이 3.5톤 이하인 소형 화물차를 운전한다.",
+      "source_sentence": "배기량이 1000cc 미만인 경형 화물차와, 최대 적재량이 1톤 이하이면서 총중량이 3.5톤 이하인 소형 화물차를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수송하다",
+      "object": "화물",
+      "full_statement": "단거리 또는 장거리 화물을 수송한다.",
+      "source_sentence": "화물차 및 특수차 운전원은 단거리 또는 장거리 화물을 수송하기 위하여 트럭 등과 같은 차량을 운전한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "운송지역",
+      "full_statement": "운송지역을 확인한다.",
+      "source_sentence": "운송지역을 확인하고 엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "엔진오일·냉각수·타이어 공기압력",
+      "full_statement": "엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "source_sentence": "운송지역을 확인하고 엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전장치 이상 유무",
+      "full_statement": "특정화물의 안전한 수송을 위하여 각종 안전장치의 이상 유무를 확인한다.",
+      "source_sentence": "특정화물의 안전한 수송을 위하여 각종 안전장치의 이상 유무를 확인 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "화물 이상 유무",
+      "full_statement": "목적지에 도착하여 화물의 이상 유무를 확인한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정리하다",
+      "object": "서류",
+      "full_statement": "운송 관련 서류를 정리한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "인계하다",
+      "object": "서류",
+      "full_statement": "정리한 서류를 관련 부서에 인계한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "이동(차량 운전 중 도로 이동)",
+      "evidence_span": "단거리 또는 장거리 화물을 수송하기 위하여 트럭 등과 같은 차량을 운전한다."
+    }
+  ]
+}

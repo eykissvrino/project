@@ -1,0 +1,58 @@
+{
+  "ksco_code": "95391",
+  "tasks": [
+    {
+      "verb": "옮기다",
+      "object": "매장에 진열될 제품",
+      "full_statement": "매장에 진열될 제품을 진열대로 옮긴다.",
+      "source_sentence": "매장에 진열될 제품을 옮긴다.",
+      "derived_from": "상속 주요업무→세세정의 특화(매장에서 판매될 제품을 진열)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "진열하다",
+      "object": "판매될 제품",
+      "full_statement": "도소매업체 매장에서 판매될 제품을 진열한다.",
+      "source_sentence": "도소매업체 등 매장에서 판매될 제품을 진열하거나 쇼핑카트 등을 정리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "상품 진열상태",
+      "full_statement": "수시로 상품 진열상태를 확인한다.",
+      "source_sentence": "수시로 상품 진열상태를 확인하고 부족상품을 보충한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보충하다",
+      "object": "부족상품",
+      "full_statement": "진열대에서 부족한 상품을 보충한다.",
+      "source_sentence": "수시로 상품 진열상태를 확인하고 부족상품을 보충한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "정리하다",
+      "object": "쇼핑카트 등 운송수단",
+      "full_statement": "쇼핑카트 등 운송수단을 정리한다.",
+      "source_sentence": "쇼핑카터 등 운송수단을 정리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(쇼핑카트 등을 정리)",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "도소매업체 매장(실내)",
+      "evidence_span": "도소매업체 등 매장에서 판매될 제품을 진열하거나"
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 반복 업무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다"
+    }
+  ]
+}

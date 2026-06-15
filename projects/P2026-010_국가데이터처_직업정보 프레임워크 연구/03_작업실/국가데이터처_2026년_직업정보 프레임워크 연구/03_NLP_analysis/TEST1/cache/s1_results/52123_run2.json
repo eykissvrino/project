@@ -1,0 +1,114 @@
+{
+  "ksco_code": "52123",
+  "tasks": [
+    {
+      "verb": "응대하다",
+      "object": "고객",
+      "full_statement": "상점을 방문한 고객을 응대한다.",
+      "source_sentence": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "의논하다",
+      "object": "구매 희망 가전제품의 종류·품질·수량",
+      "full_statement": "고객이 구매하려는 가전제품의 종류, 품질, 수량에 대해 의논한다.",
+      "source_sentence": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "설명하다",
+      "object": "가전제품의 사용방법",
+      "full_statement": "텔레비전, 세탁기, 냉장고 등 가전제품의 사용방법을 설명한다.",
+      "source_sentence": "상점에서 가전제품의 사용방법, 특징, 장점을 설명하고 제품별 가격도 비교설명해 주며 텔레비전, 세탁기, 냉장고 등 가전제품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설명하다",
+      "object": "가전제품의 특징과 장점",
+      "full_statement": "가전제품의 특징과 장점을 설명한다.",
+      "source_sentence": "상점에서 가전제품의 사용방법, 특징, 장점을 설명하고 제품별 가격도 비교설명해 주며 텔레비전, 세탁기, 냉장고 등 가전제품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "비교설명하다",
+      "object": "제품별 가격",
+      "full_statement": "가전제품의 제품별 가격을 비교설명한다.",
+      "source_sentence": "상점에서 가전제품의 사용방법, 특징, 장점을 설명하고 제품별 가격도 비교설명해 주며 텔레비전, 세탁기, 냉장고 등 가전제품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "설명하다",
+      "object": "제품의 보관요령",
+      "full_statement": "가전제품의 보관요령에 대해 설명한다.",
+      "source_sentence": "제품의 사용법 및 보관요령에 대해 설명한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "협의하다",
+      "object": "가격·판매 조건·배달일자",
+      "full_statement": "고객과 가격, 판매 조건, 배달일자 등을 협의한다.",
+      "source_sentence": "가격, 판매 조건, 배달일자 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "판매하다",
+      "object": "가전제품",
+      "full_statement": "텔레비전, 세탁기, 냉장고 등 가전제품을 판매한다.",
+      "source_sentence": "상점에서 가전제품의 사용방법, 특징, 장점을 설명하고 제품별 가격도 비교설명해 주며 텔레비전, 세탁기, 냉장고 등 가전제품을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "계산하다",
+      "object": "구매 물품의 가격",
+      "full_statement": "고객이 구매한 가전제품의 가격을 계산한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "발급하다",
+      "object": "영수증",
+      "full_statement": "구매 대금에 대한 영수증을 발급한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "재고량",
+      "full_statement": "수시로 가전제품의 재고량을 조사한다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "알리다",
+      "object": "부족상품의 보충",
+      "full_statement": "재고가 부족한 상품의 보충을 알린다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "상점(매장) 실내",
+      "evidence_span": "상점에서 가전제품의 사용방법, 특징, 장점을 설명하고"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다."
+    }
+  ]
+}

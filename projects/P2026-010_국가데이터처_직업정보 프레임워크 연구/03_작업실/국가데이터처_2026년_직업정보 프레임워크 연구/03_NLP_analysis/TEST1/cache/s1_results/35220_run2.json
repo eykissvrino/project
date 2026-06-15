@@ -1,0 +1,127 @@
+{
+  "ksco_code": "35220",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "통관절차",
+      "full_statement": "수출 또는 수입을 위한 통관절차를 수행한다.",
+      "source_sentence": "수출 또는 수입을 위한 통관절차를 수행하고 보험, 수출입 허가서 및 기타 서류를 규정에 맞도록 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작성하다",
+      "object": "수출입 허가서",
+      "full_statement": "수출입 허가서를 규정에 맞도록 작성한다.",
+      "source_sentence": "수출 또는 수입을 위한 통관절차를 수행하고 보험, 수출입 허가서 및 기타 서류를 규정에 맞도록 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작성하다",
+      "object": "보험 서류",
+      "full_statement": "통관과 관련된 보험 서류를 규정에 맞도록 작성한다.",
+      "source_sentence": "수출 또는 수입을 위한 통관절차를 수행하고 보험, 수출입 허가서 및 기타 서류를 규정에 맞도록 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "통관 관련 기타 서류",
+      "full_statement": "통관에 필요한 기타 서류를 규정에 맞도록 작성한다.",
+      "source_sentence": "수출 또는 수입을 위한 통관절차를 수행하고 보험, 수출입 허가서 및 기타 서류를 규정에 맞도록 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "확인하다",
+      "object": "서류의 규정 부합 여부",
+      "full_statement": "작성한 서류가 규정에 맞는지 확인한다.",
+      "source_sentence": "보험, 수출입 허가서 및 기타 서류를 규정에 맞도록 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "행정 실무",
+      "full_statement": "중앙 및 지방행정기관에서 각종 행정 실무를 수행한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "민원 업무",
+      "full_statement": "통관 및 관세 관련 민원 업무를 수행한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "계획하다",
+      "object": "정부행정업무",
+      "full_statement": "법령과 업무처리규정에 따라 정부행정업무를 계획한다.",
+      "source_sentence": "법령과 업무처리규정에 따라 정부행정업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 기타 행정에 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "시행하다",
+      "object": "정부행정업무",
+      "full_statement": "법령과 업무처리규정에 따라 정부행정업무를 시행한다.",
+      "source_sentence": "법령과 업무처리규정에 따라 정부행정업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 기타 행정에 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "기안하다",
+      "object": "보고서 및 문서",
+      "full_statement": "각종 보고서나 문서를 기안한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 기타 행정에 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "적용하다",
+      "object": "법령 및 업무처리규정",
+      "full_statement": "통관 및 서류 처리 시 법령과 업무처리규정을 적용한다.",
+      "source_sentence": "법령과 업무처리규정에 따라 정부행정업무를 계획하고 시행하며",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "기록하다",
+      "object": "통관 관련 정보",
+      "full_statement": "통관 업무에 관련된 정보를 기록한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보관하다",
+      "object": "통관 서류 및 정보",
+      "full_statement": "통관 서류 및 관련 정보를 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검색하다",
+      "object": "통관 관련 정보",
+      "full_statement": "통관 업무에 필요한 정보를 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "안내하다",
+      "object": "통관 절차",
+      "full_statement": "민원인에게 통관 절차 및 관련 사항을 안내한다.",
+      "source_sentence": "금전취급 활동, 법률 및 감사, 상담, 안내 및 접수와 관련하여 사무적인 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

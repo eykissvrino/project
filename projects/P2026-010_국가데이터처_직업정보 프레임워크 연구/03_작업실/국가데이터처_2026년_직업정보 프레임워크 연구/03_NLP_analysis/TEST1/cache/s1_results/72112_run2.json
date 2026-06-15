@@ -1,0 +1,81 @@
+{
+  "ksco_code": "72112",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "디자인 스케치",
+      "full_statement": "가죽 의류의 디자인 스케치를 보고 제작할 옷본의 형태를 확인한다.",
+      "source_sentence": "가죽 의류의 디자인 스케치를 보고 패턴 제작원리를 이용하여 옷본을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "옷본",
+      "full_statement": "패턴 제작원리를 이용하여 가죽 의류의 옷본을 제작한다.",
+      "source_sentence": "가죽 의류의 디자인 스케치를 보고 패턴 제작원리를 이용하여 옷본을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "그리다",
+      "object": "패턴",
+      "full_statement": "작업지시서의 디자인을 보고 가죽 의류의 패턴을 종이에 그린다.",
+      "source_sentence": "작업지시서의 디자인을 보고 패턴을 종이에 그린다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "원단 재질의 축소여부",
+      "full_statement": "원단 재질의 축소여부를 확인하여 패턴제작에 반영한다.",
+      "source_sentence": "원단 재질의 축소여부를 확인하여 패턴제작에 반영하고, 패턴에 치수와 모양 등의 내용을 명시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "명시하다",
+      "object": "치수와 모양",
+      "full_statement": "패턴에 치수와 모양 등의 내용을 명시한다.",
+      "source_sentence": "원단 재질의 축소여부를 확인하여 패턴제작에 반영하고, 패턴에 치수와 모양 등의 내용을 명시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "그리다",
+      "object": "각기 다른 크기의 패턴",
+      "full_statement": "체형이나 크기에 따라서 각기 다른 크기의 패턴을 그린다.",
+      "source_sentence": "체형이나 크기에 따라서 각기 다른 크기의 패턴을 그리기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "그리다",
+      "object": "패턴 윤곽",
+      "full_statement": "옷감 위에 패턴의 윤곽을 그리기 위하여 재단용 초크로 패턴 둘레를 따라 그린다.",
+      "source_sentence": "옷감 위에 패턴의 윤곽을 그리기 위하여 재단용 초크로 패턴 둘레를 따라 그리기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "고려하다",
+      "object": "사람의 형태와 골격",
+      "full_statement": "옷본을 제작하기 위하여 사람의 형태와 골격 등을 고려한다.",
+      "source_sentence": "의류제조에서 패턴이란 사람의 형태, 골격 등을 고려하여 옷본을 제작하는 작업으로 원단을 재단하기 위해 각 부분별로 크기와 치수에 맞게 제작하는 것을 말한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제작하다",
+      "object": "부분별 패턴",
+      "full_statement": "원단을 재단하기 위해 각 부분별로 크기와 치수에 맞게 패턴을 제작한다.",
+      "source_sentence": "원단을 재단하기 위해 각 부분별로 크기와 치수에 맞게 제작하는 것을 말한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "재단용 초크", "category": "도구", "evidence_span": "재단용 초크로 패턴 둘레를 따라 그리기도 한다"}
+  ],
+  "work_context": []
+}

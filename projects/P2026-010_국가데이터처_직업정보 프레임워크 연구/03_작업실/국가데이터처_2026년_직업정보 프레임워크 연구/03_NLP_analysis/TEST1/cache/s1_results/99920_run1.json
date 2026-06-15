@@ -1,0 +1,53 @@
+{
+  "ksco_code": "99920",
+  "tasks": [
+    {
+      "verb": "세탁하다",
+      "object": "의류·섬유직물",
+      "full_statement": "의류 및 섬유직물을 손으로 세탁한다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 손으로 세탁하거나 구김을 펴는 정도의 단순한 다림질을 한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제거하다",
+      "object": "오염물",
+      "full_statement": "의류 및 섬유직물 등에 묻은 오염물을 손세탁으로 제거한다.",
+      "source_sentence": "의류, 섬유직물 등에 묻은 오염물을 세탁한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "세탁하다",
+      "object": "유사물품",
+      "full_statement": "유사물품을 손으로 세탁한다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 손으로 세탁하거나 구김을 펴는 정도의 단순한 다림질을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "다림질하다",
+      "object": "의류·섬유직물",
+      "full_statement": "의류 및 섬유직물의 구김을 펴는 정도의 간단한 다림질을 한다.",
+      "source_sentence": "구김을 펴는 정도의 간단한 다림질을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "펴다",
+      "object": "구김",
+      "full_statement": "다림질을 통해 의류의 구김을 펴서 정돈한다.",
+      "source_sentence": "구김을 펴는 정도의 단순한 다림질을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손을 사용한 단순 반복 수작업(손세탁)",
+      "evidence_span": "의류, 섬유직물 및 유사물품을 손으로 세탁하거나"
+    }
+  ]
+}

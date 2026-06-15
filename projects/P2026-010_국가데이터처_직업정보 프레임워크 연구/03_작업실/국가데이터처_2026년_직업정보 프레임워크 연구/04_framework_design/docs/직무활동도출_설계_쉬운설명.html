@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSCO 직무활동 도출 설계 — 쉬운 설명</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --navy:#16243f; --ink:#1f2937; --muted:#64748b; --line:#e5e9f0;
+    --bg:#f6f8fc; --card:#ffffff; --accent:#2d6cdf;
+    --task:#f59e0b; --dwa:#3b82f6; --iwa:#14b8a6; --gwa:#8b5cf6;
+    --good:#16a34a; --warn:#d97706; --soft:#eef3fc;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    line-height:1.7; font-size:16px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:980px; margin:0 auto; padding:0 22px}
+  /* HERO */
+  header.hero{
+    background:linear-gradient(135deg,#16243f 0%,#243b66 60%,#2d6cdf 130%);
+    color:#fff; padding:54px 0 46px; position:relative; overflow:hidden;
+  }
+  header.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;
+    background:radial-gradient(circle,rgba(255,255,255,.10),transparent 70%);border-radius:50%}
+  .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);
+    padding:5px 13px;border-radius:30px;font-size:13px;letter-spacing:.3px;margin-bottom:16px}
+  header.hero h1{margin:0 0 12px;font-size:32px;font-weight:800;letter-spacing:-.5px;line-height:1.3}
+  header.hero p{margin:0;font-size:17px;color:#dbe6fb;max-width:680px}
+  .hero-meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .hero-meta span{background:rgba(255,255,255,.10);padding:7px 13px;border-radius:8px;font-size:13.5px;color:#eaf1ff}
+  /* SECTION */
+  section{padding:40px 0; border-bottom:1px solid var(--line)}
+  h2{font-size:23px;font-weight:800;color:var(--navy);margin:0 0 6px;letter-spacing:-.3px;
+    display:flex;align-items:center;gap:11px}
+  h2 .n{flex:none;width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;
+    font-size:16px;display:grid;place-items:center;font-weight:800}
+  .lead{color:var(--muted);margin:2px 0 22px;font-size:15.5px}
+  h3{font-size:17.5px;font-weight:700;color:var(--navy);margin:26px 0 10px}
+  p{margin:11px 0}
+  /* CARD */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+    box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  @media(max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+  /* 비유 박스 */
+  .analogy{background:linear-gradient(180deg,#fffaf0,#fff);border:1px solid #f5e3c0;border-left:4px solid var(--task);
+    border-radius:10px;padding:14px 18px;margin:16px 0}
+  .analogy b{color:#b45309}
+  .note{background:#f0f7ff;border:1px solid #cfe2ff;border-left:4px solid var(--accent);border-radius:10px;padding:14px 18px;margin:16px 0}
+  .warnbox{background:#fff8ed;border:1px solid #fde3bd;border-left:4px solid var(--warn);border-radius:10px;padding:14px 18px;margin:16px 0}
+  .okbox{background:#f0fdf4;border:1px solid #c4eccf;border-left:4px solid var(--good);border-radius:10px;padding:14px 18px;margin:16px 0}
+  /* 4계층 라더 */
+  .ladder{display:flex;flex-direction:column;gap:0;margin:8px 0}
+  .rung{display:flex;align-items:stretch;gap:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-bottom:10px;background:#fff}
+  .rung .lab{flex:none;width:140px;color:#fff;padding:14px 16px;display:flex;flex-direction:column;justify-content:center}
+  .rung .lab b{font-size:17px}.rung .lab small{opacity:.9;font-size:12px}
+  .rung .body{padding:13px 18px;font-size:14.5px}
+  .rung .body .ex{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .lv-task{background:var(--task)}.lv-dwa{background:var(--dwa)}.lv-iwa{background:var(--iwa)}.lv-gwa{background:var(--gwa)}
+  /* 파이프라인 */
+  .pipe{display:flex;flex-direction:column;gap:12px}
+  .stage{display:flex;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .stage .sid{flex:none;width:92px;background:var(--soft);color:var(--navy);display:flex;flex-direction:column;
+    align-items:center;justify-content:center;font-weight:800;border-right:1px solid var(--line);padding:10px}
+  .stage .sid small{font-weight:600;color:var(--muted);font-size:11px}
+  .stage .sc{padding:14px 18px;flex:1}
+  .stage .sc b{color:var(--navy)}
+  .stage .sc .how{color:var(--muted);font-size:13.5px;margin-top:4px}
+  .stage .tool{display:inline-block;background:#eef2f8;color:#475569;font-size:12px;padding:2px 9px;border-radius:20px;margin:5px 5px 0 0}
+  /* 공식 카드 */
+  .formula{background:#0f1b30;color:#e8eefc;border-radius:12px;padding:18px 20px;margin:14px 0;font-family:"SF Mono",Consolas,monospace}
+  .formula .eq{font-size:18px;color:#9ec5ff;margin-bottom:8px}
+  .formula .say{color:#aebdd6;font-size:13.5px;font-family:"Pretendard",sans-serif}
+  /* 코드 */
+  pre{background:#0f1b30;color:#dbe7fb;border-radius:12px;padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.6;margin:8px 0}
+  pre .c{color:#7c93b8}.pre-k{color:#ff9d6e}.pre-s{color:#9ddb8f}
+  code.inl{background:#eef2f8;color:#b4341f;padding:2px 6px;border-radius:5px;font-size:13.5px;font-family:Consolas,monospace}
+  /* table */
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:var(--soft);color:var(--navy);font-weight:700}
+  tr:nth-child(even) td{background:#fafbfe}
+  .pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:700;color:#fff}
+  /* steps */
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:10px 0}
+  ol.steps li{position:relative;padding:10px 0 10px 44px;border-bottom:1px dashed var(--line)}
+  ol.steps li:last-child{border-bottom:none}
+  ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:9px;width:30px;height:30px;
+    background:var(--accent);color:#fff;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:14px}
+  ol.steps b{color:var(--navy)}
+  .kv{color:var(--muted);font-size:13.5px}
+  footer{padding:30px 0 60px;color:var(--muted);font-size:13px;text-align:center}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .toc a{background:#fff;border:1px solid var(--line);color:var(--navy);text-decoration:none;padding:7px 13px;border-radius:8px;font-size:13.5px;font-weight:600}
+  .toc a:hover{border-color:var(--accent);color:var(--accent)}
+  svg{max-width:100%;height:auto}
+  .big{font-size:15.5px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">국가데이터처 2026 · 직업정보 프레임워크 연구</span>
+    <h1>한국 직업의 "하는 일"을 4단계로 자동 정리하는 법<br>TASK → DWA → IWA → GWA 도출 설계</h1>
+    <p>한국표준직업분류(KSCO) 직업설명 글을 컴퓨터(AI)에게 읽혀, 직업들이 실제로 하는 일을 네 단계의 "작업활동 사전"으로 만들어내는 방법을 — AI 전문가가 아니어도 이해할 수 있게 — 정리했습니다.</p>
+    <div class="hero-meta">
+      <span>📥 입력 : KSCO 8차 직업설명 1,270개</span>
+      <span>📤 출력 : 4계층 작업활동 사전 + 연결망</span>
+      <span>🧠 핵심 도구 : Claude Opus 4.8 · 의미 임베딩 · 군집</span>
+      <span>📅 2026-06-09 · v1.0</span>
+    </div>
+    <div class="toc">
+      <a href="#why">① 왜·무엇을</a>
+      <a href="#layer">② 4계층이란</a>
+      <a href="#flow">③ 전체 흐름</a>
+      <a href="#stages">④ 단계별 방법</a>
+      <a href="#theory">⑤ 이론·공식 쉽게</a>
+      <a href="#code">⑥ 코드가 하는 일</a>
+      <a href="#trust">⑦ 믿을 수 있는 이유·한계</a>
+    </div>
+  </div>
+</header>
+
+<!-- ① -->
+<section id="why"><div class="wrap">
+  <h2><span class="n">1</span>우리가 풀려는 문제</h2>
+  <p class="lead">"이 직업은 무슨 일을 하는가"를 사람마다 다르게 적으면 직업끼리 비교할 수 없습니다. 그래서 <b>공통의 언어(작업활동 사전)</b>가 필요합니다.</p>
+
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0">지금의 문제</h3>
+      <p>KSCO 직업설명은 직업마다 문체·상세도가 제각각입니다. "회계사는 재무제표를 작성한다", "세무사는 세금 신고서를 만든다" — 글로는 달라 보이지만 <b>본질은 같은 활동</b>일 수 있습니다.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">목표</h3>
+      <p>모든 직업의 활동을 <b>같은 기준의 단계별 사전</b>으로 정리해서 ①같은 코드 안에서도 다른 직업을 구분하고 ②국제표준(O*NET)과 비교하고 ③직업 간 전환 가능성을 분석할 수 있게 만듭니다.</p>
+    </div>
+  </div>
+
+  <div class="analogy">
+    <b>🍳 비유로 이해하기.</b> 요리법 수천 개가 있다고 합시다. "양파를 썬다", "마늘을 다진다"는 서로 다른 문장이지만 묶으면 <b>'채소 손질'</b>이라는 더 큰 활동이 됩니다. 이걸 또 묶으면 <b>'조리 준비'</b>, 가장 크게 묶으면 <b>'음식 만들기'</b>가 됩니다. 우리가 하는 일이 바로 이것 — 수많은 "하는 일"을 <b>작은 단위 → 중간 단위 → 큰 단위</b>로 차곡차곡 묶어 올리는 것입니다.
+  </div>
+</div></section>
+
+<!-- ② -->
+<section id="layer"><div class="wrap">
+  <h2><span class="n">2</span>네 개의 계층 — 작은 일에서 큰 활동으로</h2>
+  <p class="lead">맨 아래 구체적인 "한 가지 일(TASK)"에서 출발해, 비슷한 것끼리 묶어 위로 올라갈수록 더 일반적인 활동이 됩니다. 미국 노동부 O*NET이 쓰는 4계층 구조를 그대로 따릅니다.</p>
+
+  <div class="ladder">
+    <div class="rung">
+      <div class="lab lv-gwa"><b>GWA</b><small>일반화 작업활동 · 41개</small></div>
+      <div class="body">가장 큰 활동 범주. 직업·산업과 무관한 보편 활동.
+        <div class="ex">예: <b>"정보 입수"</b>, "데이터·정보 분석" (명사형)</div></div>
+    </div>
+    <div class="rung">
+      <div class="lab lv-iwa"><b>IWA</b><small>중간 작업활동 · 약 300개</small></div>
+      <div class="body">여러 DWA를 포괄하는 중간 단계.
+        <div class="ex">예: <b>"재무·투자 정보를 분석하여 평가한다"</b></div></div>
+    </div>
+    <div class="rung">
+      <div class="lab lv-dwa"><b>DWA</b><small>상세 작업활동 · 약 2,000개</small></div>
+      <div class="body">여러 직업이 공유하는 구체적 활동.
+        <div class="ex">예: <b>"재무 기록을 조사하여 재무제표를 작성한다"</b> (회계사·세무사·신용분석가 공통)</div></div>
+    </div>
+    <div class="rung">
+      <div class="lab lv-task"><b>TASK</b><small>과업 · 직업당 8~30개</small></div>
+      <div class="body">한 직업이 하는 가장 구체적인 한 가지 일. "동사+목적어" 한 문장.
+        <div class="ex">예: <b>"도면을 검토하여 형태를 확인한다"</b></div></div>
+    </div>
+  </div>
+
+  <div class="note big">
+    <b>핵심 한 줄.</b> TASK(작은 일)를 비슷한 것끼리 <b>묶으면 DWA</b>, DWA를 또 묶으면 <b>IWA</b>, 마지막으로 가장 크게 묶으면 <b>GWA</b>. 아래에서 위로 쌓아 올리는 <b>"상향식(bottom-up)"</b> 방식입니다.
+  </div>
+
+  <h3>중요한 특징 : 깔끔한 나무가 아니라 "얽힌 그물"</h3>
+  <p>하나의 TASK가 꼭 하나의 DWA에만 속하는 건 아닙니다. 한 가지 일이 두세 개의 활동에 걸칠 수 있습니다(<b>최대 3개</b>). 그래서 전체 구조는 단순한 가계도가 아니라 <b>부분적으로 얽힌 그물망</b>이 됩니다. (O*NET 실측: 평균 1.26개, 최대 3개에 연결)</p>
+
+  <!-- 네트워크 SVG -->
+  <div class="card" style="padding:18px">
+  <svg viewBox="0 0 760 230" role="img" aria-label="직업-TASK-DWA-IWA-GWA 연결망">
+    <defs>
+      <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker>
+    </defs>
+    <!-- columns labels -->
+    <text x="70" y="20" text-anchor="middle" font-size="12" fill="#64748b">직업</text>
+    <text x="250" y="20" text-anchor="middle" font-size="12" fill="#64748b">TASK</text>
+    <text x="430" y="20" text-anchor="middle" font-size="12" fill="#64748b">DWA</text>
+    <text x="580" y="20" text-anchor="middle" font-size="12" fill="#64748b">IWA</text>
+    <text x="710" y="20" text-anchor="middle" font-size="12" fill="#64748b">GWA</text>
+    <!-- 직업 -->
+    <circle cx="70" cy="115" r="26" fill="#16243f"/><text x="70" y="119" text-anchor="middle" fill="#fff" font-size="12">회계사</text>
+    <!-- tasks -->
+    <g fill="#f59e0b">
+      <rect x="222" y="55" width="56" height="26" rx="6"/><rect x="222" y="102" width="56" height="26" rx="6"/><rect x="222" y="149" width="56" height="26" rx="6"/>
+    </g>
+    <g fill="#fff" font-size="11" text-anchor="middle"><text x="250" y="72">T1</text><text x="250" y="119">T2</text><text x="250" y="166">T3</text></g>
+    <!-- dwa -->
+    <g fill="#3b82f6"><rect x="404" y="68" width="54" height="26" rx="6"/><rect x="404" y="135" width="54" height="26" rx="6"/></g>
+    <g fill="#fff" font-size="11" text-anchor="middle"><text x="431" y="85">D1</text><text x="431" y="152">D2</text></g>
+    <!-- iwa -->
+    <rect x="556" y="100" width="50" height="26" rx="6" fill="#14b8a6"/><text x="581" y="117" text-anchor="middle" fill="#fff" font-size="11">I1</text>
+    <!-- gwa -->
+    <rect x="685" y="100" width="52" height="26" rx="6" fill="#8b5cf6"/><text x="711" y="117" text-anchor="middle" fill="#fff" font-size="11">G1</text>
+    <!-- edges 직업->task -->
+    <g stroke="#94a3b8" fill="none" marker-end="url(#ar)">
+      <path d="M96,108 L220,70"/><path d="M96,115 L220,115"/><path d="M96,122 L220,160"/>
+    </g>
+    <!-- task->dwa (multiple linkage; T2 -> D1 & D2) -->
+    <g fill="none" marker-end="url(#ar)">
+      <path d="M278,68 L402,80" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M278,115 L402,84" stroke="#f59e0b" stroke-width="2"/>
+      <path d="M278,118 L402,146" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+      <path d="M278,162 L402,150" stroke="#f59e0b" stroke-width="2"/>
+    </g>
+    <!-- dwa->iwa->gwa strict -->
+    <g stroke="#94a3b8" fill="none" marker-end="url(#ar)">
+      <path d="M458,81 L554,108"/><path d="M458,148 L554,118"/><path d="M606,113 L683,113"/>
+    </g>
+    <text x="340" y="210" font-size="11.5" fill="#b45309">↑ 점선 = 한 TASK가 두 DWA에 걸침 (Multiple Linkage, 최대 3)</text>
+  </svg>
+  </div>
+</div></section>
+
+<!-- ③ -->
+<section id="flow"><div class="wrap">
+  <h2><span class="n">3</span>전체 흐름 한눈에 (5단계)</h2>
+  <p class="lead">KSCO 원문에서 시작해 4계층 사전이 완성될 때까지의 자동 처리 과정입니다. 각 단계의 결과는 하나의 데이터베이스 파일(DuckDB)에 차곡차곡 저장됩니다.</p>
+
+  <div class="pipe">
+    <div class="stage">
+      <div class="sid">Stage 0<small>전처리</small></div>
+      <div class="sc"><b>읽기 좋게 다듬기</b> — 직업설명에서 페이지 머리말·잡음을 지우고, 하위 직업이 상위 직업의 "주요 업무"를 물려받게 정리.
+        <div class="how">사람·LLM 없이 규칙(정규식)만으로 처리. "깨끗한 입력"까지만 책임집니다.</div>
+        <span class="tool">규칙 기반</span><span class="tool">DuckDB 조회</span></div>
+    </div>
+    <div class="stage">
+      <div class="sid" style="background:#fff4e2;color:#b45309">Stage 1<small>TASK</small></div>
+      <div class="sc"><b>"하는 일" 뽑아내기</b> — AI가 직업설명을 읽고 "동사+목적어" 한 문장짜리 과업을 직업당 8~30개 추출. 동시에 쓰는 도구·작업환경도 함께.
+        <div class="how">최신 AI(Claude Opus 4.8)가 사람 분석가처럼 읽고 판단. 같은 글을 2번 읽혀 결과를 합칩니다(누락 방지).</div>
+        <span class="tool">Claude Opus 4.8</span><span class="tool">2회 합집합</span></div>
+    </div>
+    <div class="stage">
+      <div class="sid" style="background:#e7f0ff;color:#1d4ed8">Stage 2<small>DWA</small></div>
+      <div class="sc"><b>비슷한 일끼리 묶기</b> — 전체 TASK를 의미가 비슷한 것끼리 자동으로 묶어 DWA를 만들고, AI가 정식 이름을 붙임.
+        <div class="how">문장을 숫자로 바꿔(임베딩) 가까운 것끼리 묶습니다(군집). 한 TASK는 최대 3개 DWA에 연결.</div>
+        <span class="tool">bge-m3 임베딩</span><span class="tool">계층 군집</span><span class="tool">Opus 명명</span></div>
+    </div>
+    <div class="stage">
+      <div class="sid" style="background:#e6faf6;color:#0f766e">Stage 3<small>IWA</small></div>
+      <div class="sc"><b>한 단계 더 묶기</b> — DWA들을 더 크게 묶어 중간 활동(IWA)을 만듦. 같은 묶음 나무를 더 높은 곳에서 자르는 방식.
+        <div class="how">"같은 DWA는 반드시 같은 IWA에 속한다"가 수학적으로 보장됩니다.</div>
+        <span class="tool">상위 절단</span><span class="tool">Opus 명명</span></div>
+    </div>
+    <div class="stage">
+      <div class="sid" style="background:#f1ebfe;color:#6d28d9">Stage 4<small>GWA</small></div>
+      <div class="sc"><b>가장 큰 범주로 연결</b> — 국제표준 O*NET의 41개 GWA(한국어 번역)에 우리 IWA를 연결. 동시에 "한국 데이터만으로 뽑으면 몇 % 일치하나"도 별도 검증.
+        <div class="how">국제 정합성 확보 + 한국 고유 활동이 있으면 따로 표시.</div>
+        <span class="tool">O*NET 41 채택</span><span class="tool">매핑</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ④ -->
+<section id="stages"><div class="wrap">
+  <h2><span class="n">4</span>단계별 방법 — 무엇을·어떻게·왜</h2>
+  <p class="lead">각 단계가 실제로 무엇을 하는지, 왜 그렇게 하는지를 풀어 설명합니다.</p>
+
+  <h3><span class="pill" style="background:#b45309">Stage 1</span> &nbsp;TASK 추출 — AI가 직업설명을 읽는다</h3>
+  <p><b>방법.</b> 최신 AI 모델(Claude Opus 4.8)에게 "당신은 직무분석 전문가다. 이 직업설명에서 하는 일을 동사+목적어 형태로 뽑아라"라고 지시하고, 정해진 형식(JSON)으로만 답하게 합니다.</p>
+  <ol class="steps">
+    <li><b>2번 패스로 특화</b> — (1차) 상위 직업의 주요 업무로 활동 골격을 잡고 → (2차) 이 직업만의 정의·예시로 구체화.</li>
+    <li><b>같은 글을 2번 독립 추출</b> — AI도 매번 약간 다르게 답할 수 있으므로, 2번 읽혀 <b>둘을 합칩니다</b>(하나라도 나온 건 포함 = 누락 최소화). 두 번 다 나온 건 신뢰도를 높게 줍니다.</li>
+    <li><b>개수 기준</b> — 직업당 8~30개(상한 40). O*NET 실측(직업당 중앙값 20개)을 근거로 삼습니다.</li>
+    <li><b>추적 정보 기록</b> — 각 TASK에 "어느 문장에서 나왔는지"를 같이 적어, 엑셀만 봐도 출처를 알 수 있게 합니다.</li>
+  </ol>
+  <div class="warnbox"><b>정직한 한계.</b> 도구·작업환경은 직업설명에 <b>명시적으로 적혀 있을 때만</b> 추출합니다(추측 금지). 사무직처럼 도구 언급이 적으면 비워 둡니다 — KSCO 원문의 한계를 그대로 인정.</div>
+
+  <h3><span class="pill" style="background:#1d4ed8">Stage 2</span> &nbsp;DWA 도출 — 비슷한 일끼리 묶는다</h3>
+  <p><b>방법.</b> 컴퓨터는 글의 "의미"를 직접 모릅니다. 그래서 먼저 각 문장을 <b>숫자 목록(벡터)</b>으로 바꾼 뒤(=임베딩), 숫자가 가까운 것끼리 묶습니다(=군집).</p>
+  <div class="grid2">
+    <div class="card"><b>① 임베딩</b><br><span class="kv">문장 → 1,024개의 숫자. 의미가 비슷하면 비슷한 숫자가 됩니다. (모델: bge-m3, 다국어라 한국어·영어 비교 가능)</span></div>
+    <div class="card"><b>② 계층 군집</b><br><span class="kv">가장 가까운 둘부터 차례로 묶어 "묶음 나무(가계도)"를 만듭니다. 나무를 특정 높이에서 자르면 묶음(DWA)이 결정됩니다.</span></div>
+  </div>
+  <p><b>이름 붙이기.</b> 각 묶음의 대표 문장 5개를 AI에게 주고 <b>8가지 작성 규칙(O*NET 표준)</b>에 맞춰 정식 이름을 짓게 합니다. 규칙 위반 시 다시 쓰게 합니다(최대 3회).</p>
+  <p><b>채택 기준.</b> 너무 작은 묶음(4개 미만 TASK 또는 3개 미만 직업)은 잡음으로 보고 DWA로 인정하지 않습니다. (O*NET과 동일 기준)</p>
+
+  <h3><span class="pill" style="background:#0f766e">Stage 3</span> &nbsp;IWA 도출 — 한 단계 더 일반화</h3>
+  <p>Stage 2에서 만든 <b>같은 묶음 나무를 더 높은 곳에서 자릅니다.</b> 그러면 DWA들이 더 큰 묶음(IWA)으로 합쳐집니다. 같은 나무를 쓰기 때문에 "같은 DWA는 반드시 같은 IWA에 속한다"가 저절로 보장됩니다. 이름은 DWA보다 한 단계 일반적인 동사구로 AI가 작성.</p>
+
+  <h3><span class="pill" style="background:#6d28d9">Stage 4</span> &nbsp;GWA 도출 — 국제표준에 연결</h3>
+  <p>가장 큰 범주(GWA)는 데이터만으로 뽑기 어렵습니다(전문가가 설계한 분류라서). 그래서 <b>두 갈래</b>로 진행합니다.</p>
+  <table>
+    <tr><th>갈래</th><th>방법</th><th>목적</th></tr>
+    <tr><td><b>(주) 하이브리드</b></td><td>O*NET의 41개 GWA를 한국어로 번역해 <b>상위 범주로 채택</b>하고, 우리 IWA를 가장 가까운 GWA에 연결</td><td>국제 정합성 확보(정석)</td></tr>
+    <tr><td>(탐색) 순수 상향식</td><td>한국 데이터만으로 최상위까지 묶어보고 → O*NET과 <b>몇 % 일치</b>하는지 측정</td><td>한국 직업의 고유성 검증(학술)</td></tr>
+  </table>
+  <p>연결이 약한(유사도 0.55 미만) 활동은 <b>"한국 고유 GWA"</b>로 따로 표시합니다.</p>
+</div></section>
+
+<!-- ⑤ -->
+<section id="theory"><div class="wrap">
+  <h2><span class="n">5</span>이론과 공식 — 쉽게 풀이</h2>
+  <p class="lead">파이프라인을 떠받치는 4가지 핵심 아이디어. 수식은 "이게 무슨 뜻이냐면"으로 함께 설명합니다.</p>
+
+  <h3>① 왜 의미를 숫자로 바꿀 수 있나 — 분포가설</h3>
+  <p>언어학의 오래된 원리: <b>"비슷한 맥락에서 쓰이는 말은 비슷한 의미를 가진다"</b>(Harris 1954). "재무제표를 작성한다"와 "회계장부를 만든다"는 비슷한 단어·맥락이라, 숫자로 바꿔도 가까운 위치에 놓입니다. 이게 군집의 근거입니다.</p>
+
+  <h3>② 두 문장이 얼마나 비슷한가 — 코사인 유사도</h3>
+  <div class="grid2">
+    <div>
+      <p>문장을 숫자(화살표)로 바꾼 뒤, <b>두 화살표가 같은 방향을 가리키는 정도</b>를 잽니다. 같은 방향이면 1(같은 의미), 직각이면 0(무관).</p>
+      <div class="formula">
+        <div class="eq">cos(A, B) = A · B&nbsp;&nbsp;(길이를 1로 맞춘 경우)</div>
+        <div class="say">→ 값이 <b>1에 가까울수록 의미가 비슷</b>. DWA 묶음은 평균 0.70 이상이어야 "잘 뭉쳤다"고 봅니다.</div>
+      </div>
+    </div>
+    <div class="card" style="display:grid;place-items:center">
+      <svg viewBox="0 0 200 150" aria-label="코사인 유사도 그림">
+        <line x1="20" y1="130" x2="180" y2="130" stroke="#cbd5e1"/>
+        <line x1="20" y1="20" x2="20" y2="130" stroke="#cbd5e1"/>
+        <line x1="20" y1="130" x2="160" y2="45" stroke="#3b82f6" stroke-width="3" marker-end="url(#ar)"/>
+        <line x1="20" y1="130" x2="150" y2="60" stroke="#14b8a6" stroke-width="3" marker-end="url(#ar)"/>
+        <text x="165" y="42" font-size="12" fill="#3b82f6">문장 A</text>
+        <text x="150" y="76" font-size="12" fill="#14b8a6">문장 B</text>
+        <path d="M55,118 A40,40 0 0,1 70,108" fill="none" stroke="#f59e0b" stroke-width="2"/>
+        <text x="72" y="118" font-size="11" fill="#b45309">θ 작음 = 비슷</text>
+      </svg>
+    </div>
+  </div>
+
+  <h3>③ AI를 2번 돌린 결과가 얼마나 겹치나 — 자카드(Jaccard)</h3>
+  <p>같은 직업설명을 AI가 2번 읽으면 결과가 조금 다를 수 있습니다. 두 결과가 얼마나 겹치는지를 잽니다.</p>
+  <div class="formula">
+    <div class="eq">겹침 = (양쪽에 다 나온 개수) ÷ (전체 개수)</div>
+    <div class="say">→ 1이면 완전히 같음. 우리는 이 값을 <b>"기록"만</b> 하고, 실제 채택은 <b>둘을 합쳐서(합집합)</b> 합니다 — 누락을 최소화하기 위해. (두 번 다 나온 TASK는 신뢰도 0.95, 한 번만 나온 건 0.80)</div>
+  </div>
+
+  <h3>④ 비슷한 것끼리 자동으로 묶기 — 계층적 응집 군집</h3>
+  <p><b>가장 가까운 둘부터 차례차례 묶어 하나의 큰 나무로 만드는</b> 방법입니다. 이 나무를 낮게 자르면 작은 묶음(DWA), 높게 자르면 큰 묶음(IWA·GWA)이 됩니다.</p>
+  <div class="okbox"><b>왜 이 방법인가?</b> ①결과가 항상 같음(재현성 — 통계청 요건) ②모든 TASK가 반드시 어딘가에 속함(빠짐 없음) ③계층이 자동으로 일관됨. <br><span class="kv">※ 다른 후보였던 'HDBSCAN'은 38~62%가 어디에도 못 묶이는 문제로 <b>부적합 판정</b>되어 채택하지 않았습니다.</span></div>
+</div></section>
+
+<!-- ⑥ -->
+<section id="code"><div class="wrap">
+  <h2><span class="n">6</span>코드가 실제로 하는 일</h2>
+  <p class="lead">실제 가동 중인 현행 코드(<code class="inl">TEST1/</code> 폴더)의 핵심 부분입니다. 코드 옆의 회색 글이 "이게 하는 일"입니다.</p>
+
+  <h3>가. TASK 2회 결과 합치기 <span class="kv">(Stage 1 · s1_extract.py)</span></h3>
+  <pre><span class="c"># AI를 2번 독립 실행한 결과(outs)를 받아 하나로 합친다</span>
+CONF_BOTH = 0.95   <span class="c"># 2번 다 나온 TASK → 신뢰도 0.95</span>
+CONF_ONE  = 0.80   <span class="c"># 1번만 나온 TASK → 신뢰도 0.80</span>
+
+<span class="pre-k">def</span> union_runs(outs, code):
+    <span class="c"># 1) 두 결과가 얼마나 겹치는지 계산해서 "기록만" 한다 (채택 기준 아님)</span>
+    cross = jaccard(sets[0], sets[1])
+    <span class="c"># 2) (동사,목적어)가 같으면 같은 TASK로 보고 합친다 = 합집합</span>
+    <span class="pre-k">for</span> o <span class="pre-k">in</span> outs:
+        <span class="pre-k">for</span> t <span class="pre-k">in</span> o[<span class="pre-s">"tasks"</span>]:
+            counts[k] += 1            <span class="c"># 몇 번 나왔는지 센다</span>
+    <span class="c"># 3) 2번 이상 나왔으면 0.95, 아니면 0.80 신뢰도 부여</span>
+    tasks = [{**t, <span class="pre-s">"confidence"</span>: CONF_BOTH <span class="pre-k">if</span> counts[k]>=2 <span class="pre-k">else</span> CONF_ONE}]
+    <span class="pre-k">return</span> {<span class="pre-s">"tasks"</span>: tasks, <span class="pre-s">"cross_consistency"</span>: cross}</pre>
+  <p class="kv">→ 한 줄 요약: <b>"2번 읽힌 AI 결과를 합쳐서, 둘 다 나온 건 더 믿고, 겹침 정도는 참고용으로 적어 둔다."</b></p>
+
+  <h3>나. 의미가 거의 같은 문장 합치기 <span class="kv">(Stage 1 끝 · dedup.py)</span></h3>
+  <pre><span class="c"># 합집합 과정에서 생긴 "표현만 다른 같은 뜻" 문장을 미리 통합</span>
+NEAR_DUP_COS = 0.90   <span class="c"># 유사도 0.90 이상이면 사실상 같은 문장</span>
+
+<span class="pre-k">def</span> bge_m3_embed(texts):
+    <span class="c"># 문장들을 1,024개 숫자(벡터)로 변환 — 의미를 숫자로</span>
+    <span class="pre-k">return</span> model.encode(texts)[<span class="pre-s">"dense_vecs"</span>]
+
+<span class="pre-k">def</span> merge_near_dup(items, threshold=0.90):
+    sim = cosine_matrix(embed(texts))   <span class="c"># 모든 문장 쌍의 유사도 계산</span>
+    <span class="pre-k">for</span> i, j <span class="pre-k">in</span> 모든_문장쌍:
+        <span class="pre-k">if</span> sim[i][j] &gt;= threshold:        <span class="c"># 0.90 넘으면</span>
+            union(i, j)                  <span class="c"># 같은 묶음으로 합침</span>
+    <span class="c"># 대표는 신뢰도 가장 높은 문장 1개만 남기고 나머지는 기록</span></pre>
+  <p class="kv">→ 한 줄 요약: <b>"표현만 다르고 뜻은 같은 문장(유사도 0.90↑)을 하나로 합쳐, 다음 단계 묶기가 깨끗해지도록 미리 정리한다."</b></p>
+
+  <h3>다. 묶음이 잘 뭉쳤는지 점수 매기기 <span class="kv">(Stage 2 응집도)</span></h3>
+  <pre><span class="pre-k">def</span> mean_cosine(emb):
+    <span class="c"># 묶음 안 모든 문장 쌍의 평균 유사도 = 응집도</span>
+    sims = emb @ emb.T
+    <span class="pre-k">return</span> (sims.sum() - n) / (n*(n-1))   <span class="c"># 자기자신 제외 평균</span>
+    <span class="c"># 이 값이 0.70 이상이어야 "잘 뭉친 DWA"로 인정</span></pre>
+  <p class="kv">→ 한 줄 요약: <b>"한 묶음 안 문장들이 서로 얼마나 비슷한지 평균을 내, 0.70 미만이면 엉성한 묶음으로 보고 거른다."</b></p>
+
+  <div class="note"><b>저장 방식.</b> 모든 단계 결과는 <code class="inl">pipeline.duckdb</code> 파일 하나에 들어갑니다. <b>이 파일만 복사하면 전체 작업이 그대로 재현</b>됩니다 — "같은 입력 → 같은 결과"라는 통계청 요건을 만족합니다.</div>
+</div></section>
+
+<!-- ⑦ -->
+<section id="trust" style="border-bottom:none"><div class="wrap">
+  <h2><span class="n">7</span>믿을 수 있는 이유 — 그리고 정직한 한계</h2>
+
+  <div class="grid3">
+    <div class="card"><b style="color:var(--good)">✓ 재현성</b><br><span class="kv">모든 과정이 코드로 고정 → 누가 언제 돌려도 같은 결과. 파일 하나로 검증 가능.</span></div>
+    <div class="card"><b style="color:var(--good)">✓ 설명가능성</b><br><span class="kv">GWA → IWA → DWA → TASK → 원문장까지 거꾸로 추적 가능. "왜 이 분류인가"에 답할 수 있음.</span></div>
+    <div class="card"><b style="color:var(--good)">✓ 국제 정합성</b><br><span class="kv">O*NET의 검증된 절차를 그대로 차용 + O*NET과 직접 비교로 타당성 확인.</span></div>
+  </div>
+
+  <h3>방법론의 뿌리 (이론적 근거)</h3>
+  <table>
+    <tr><th>단계</th><th>기반 이론</th><th>출처</th></tr>
+    <tr><td>의미를 숫자로</td><td>분포가설</td><td>Harris 1954 · Firth 1957</td></tr>
+    <tr><td>4계층 절차</td><td>O*NET Work Activities Project</td><td>미국 노동부 2014</td></tr>
+    <tr><td>비슷한 것 묶기</td><td>계층적 응집 군집</td><td>군집분석 표준</td></tr>
+    <tr><td>O*NET 비교</td><td>구성타당도(수렴타당도)</td><td>Cronbach &amp; Meehl 1955</td></tr>
+    <tr><td>거꾸로 추적</td><td>개념 병목 모델(설명가능 AI)</td><td>Koh et al. 2020</td></tr>
+  </table>
+
+  <div class="warnbox">
+    <b>정직하게 밝히는 한계.</b>
+    <ul style="margin:8px 0 0">
+      <li>한국 데이터만으로 가장 큰 범주(GWA)를 뽑으면 O*NET의 41개가 <b>자연스럽게 재현되지는 않습니다</b>(자연 묶음 ≈ 5개). → 그래서 O*NET 41개를 채택하는 '하이브리드'를 <b>주 방법</b>으로 삼습니다.</li>
+      <li>한국어↔영어 비교에는 의미 손실이 있어, O*NET 라벨을 <b>한국어로 번역한 뒤</b> 비교해 정확도를 높입니다.</li>
+      <li>책무성(관리·감독·안전) 3축, 직업별 중요도 같은 <b>심화 분석은 이번 범위 밖</b>(후속 과제)으로 의도적으로 보류했습니다.</li>
+    </ul>
+  </div>
+
+  <h3>현재 어디까지 왔나</h3>
+  <table>
+    <tr><th>단계</th><th>상태</th></tr>
+    <tr><td>Stage 0 (전처리) · Stage 1 (TASK 추출)</td><td><span class="pill" style="background:#16a34a">완료·가동</span> 파일럿(경영금융 28) 통과</td></tr>
+    <tr><td>Stage 2~4 (DWA·IWA·GWA)</td><td><span class="pill" style="background:#d97706">설계 확정 · 구현 예정</span></td></tr>
+    <tr><td>다음 단계</td><td>중분류 1개로 전 과정 1회 관통 검증 → 전체 1,270개 직업으로 확대</td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap">
+  국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 &nbsp;|&nbsp; 종합설계 쉬운 설명본 v1.0 (2026-06-09)<br>
+  상세 기술 보고서: <code class="inl">04_framework_design/docs/15_종합설계_보고서_v1.md</code>
+</div></footer>
+
+</body>
+</html>

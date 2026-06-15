@@ -1,0 +1,103 @@
+{
+  "ksco_code": "87221",
+  "tasks": [
+    {
+      "verb": "배차받다",
+      "object": "차량",
+      "full_statement": "배차계획에 따라 차량을 배차 받는다.",
+      "source_sentence": "배차계획에 따라 차량을 배차 받고, 운행 전 일상점검표에 의거하여 연료, 타이어, 냉각수 및 차량의 각 부분을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "연료·타이어·냉각수 등 차량 각 부분",
+      "full_statement": "운행 전 일상점검표에 의거하여 연료, 타이어, 냉각수 및 차량의 각 부분을 점검한다.",
+      "source_sentence": "배차계획에 따라 차량을 배차 받고, 운행 전 일상점검표에 의거하여 연료, 타이어, 냉각수 및 차량의 각 부분을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "운전하다",
+      "object": "시내버스",
+      "full_statement": "운행시간과 노선에 따라 목적지까지 시내버스를 운전한다.",
+      "source_sentence": "운행시간과 노선, 또는 수송 운행표에 따라 또는 목적지까지 버스를 운전한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시내버스를 운전한다)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "여닫다",
+      "object": "출입문",
+      "full_statement": "정차 시 출입문을 여닫는다.",
+      "source_sentence": "출입문을 여닫고 정차 신호에 따라 정해진 정류장 또는 목적지에 정차하여 승객 또는 물건을 싣고 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "정차하다",
+      "object": "정류장",
+      "full_statement": "정차 신호에 따라 정해진 정류장에 정차한다.",
+      "source_sentence": "출입문을 여닫고 정차 신호에 따라 정해진 정류장 또는 목적지에 정차하여 승객 또는 물건을 싣고 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "승하차시키다",
+      "object": "승객",
+      "full_statement": "정류장에 정차하여 승객을 승하차시킨다.",
+      "source_sentence": "출입문을 여닫고 정차 신호에 따라 정해진 정류장 또는 목적지에 정차하여 승객 또는 물건을 싣고 내린다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시내버스 승객 운송)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "입고하다",
+      "object": "차량",
+      "full_statement": "운행이 종료되면 차량을 입고한다.",
+      "source_sentence": "운행이 종료되면 차량을 입고하고, 수입금을 납입하며 출발시간, 도착시간, 주행, 거리, 연료소모량, 고장‧장애 등에 대한 운행일지를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "납입하다",
+      "object": "수입금",
+      "full_statement": "운행 종료 후 수입금을 납입한다.",
+      "source_sentence": "운행이 종료되면 차량을 입고하고, 수입금을 납입하며 출발시간, 도착시간, 주행, 거리, 연료소모량, 고장‧장애 등에 대한 운행일지를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "작성하다",
+      "object": "운행일지",
+      "full_statement": "출발시간, 도착시간, 주행거리, 연료소모량, 고장·장애 등에 대한 운행일지를 작성한다.",
+      "source_sentence": "운행이 종료되면 차량을 입고하고, 수입금을 납입하며 출발시간, 도착시간, 주행, 거리, 연료소모량, 고장‧장애 등에 대한 운행일지를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "유지하다",
+      "object": "차량 청결",
+      "full_statement": "차량의 청결을 유지한다.",
+      "source_sentence": "차량의 청결을 유지하고, 교통법규를 준수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "준수하다",
+      "object": "교통법규",
+      "full_statement": "운행 중 교통법규를 준수한다.",
+      "source_sentence": "차량의 청결을 유지하고, 교통법규를 준수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "시내버스", "category": "장비", "evidence_span": "시내버스를 운전한다."},
+    {"name": "일상점검표", "category": "도구", "evidence_span": "운행 전 일상점검표에 의거하여 연료, 타이어, 냉각수 및 차량의 각 부분을 점검한다."},
+    {"name": "운행일지", "category": "도구", "evidence_span": "고장‧장애 등에 대한 운행일지를 작성한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "승객 응대·운송", "evidence_span": "정해진 정류장 또는 목적지에 정차하여 승객 또는 물건을 싣고 내린다."},
+    {"category": "시간적", "value": "운행시간·노선 일정 준수", "evidence_span": "운행시간과 노선, 또는 수송 운행표에 따라 또는 목적지까지 버스를 운전한다."},
+    {"category": "위험", "value": "교통법규 준수 요구(운전 중 안전)", "evidence_span": "차량의 청결을 유지하고, 교통법규를 준수한다."}
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "ksco_code": "15901",
+  "tasks": [
+    {
+      "verb": "대표하다",
+      "object": "산업단체·전문가 단체",
+      "full_statement": "산업단체, 전문가 단체 등을 대표한다.",
+      "source_sentence": "산업단체, 전문가 단체 등을 대표하여 사업 활동을 기획, 조정, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "기획하다",
+      "object": "단체의 사업 활동",
+      "full_statement": "단체를 대표하여 사업 활동을 기획한다.",
+      "source_sentence": "산업단체, 전문가 단체 등을 대표하여 사업 활동을 기획, 조정, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "단체의 사업 활동",
+      "full_statement": "단체의 사업 활동을 조정한다.",
+      "source_sentence": "산업단체, 전문가 단체 등을 대표하여 사업 활동을 기획, 조정, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관리하다",
+      "object": "단체의 사업 활동",
+      "full_statement": "단체의 사업 활동을 관리한다.",
+      "source_sentence": "산업단체, 전문가 단체 등을 대표하여 사업 활동을 기획, 조정, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "결정하다",
+      "object": "단체의 정책",
+      "full_statement": "이익단체의 정책을 결정한다.",
+      "source_sentence": "정부 및 공공이나 이익단체의 정책을 결정하고 이를 지휘‧조정한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "지휘하다",
+      "object": "결정된 정책",
+      "full_statement": "결정된 단체의 정책을 지휘한다.",
+      "source_sentence": "정부 및 공공이나 이익단체의 정책을 결정하고 이를 지휘‧조정한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "기획하다",
+      "object": "단체 내부 부서의 정책과 활동",
+      "full_statement": "단체 또는 그 내부 부서의 정책과 활동을 기획한다.",
+      "source_sentence": "정부, 기업, 단체 또는 그 내부 부서의 정책과 활동을 기획, 지휘 및 조정하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "지휘하다",
+      "object": "단체 내부 부서의 정책과 활동",
+      "full_statement": "단체 또는 그 내부 부서의 정책과 활동을 지휘한다.",
+      "source_sentence": "정부, 기업, 단체 또는 그 내부 부서의 정책과 활동을 기획, 지휘 및 조정하는 직무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "분석하다",
+      "object": "구성원의 직무",
+      "full_statement": "단체 구성원의 직무를 분석한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "평가하다",
+      "object": "구성원의 직무",
+      "full_statement": "단체 구성원의 직무를 평가한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "지시하다",
+      "object": "구성원의 직무",
+      "full_statement": "단체 구성원의 직무를 지시하고 조정한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "계획하다",
+      "object": "단체의 서비스 활동",
+      "full_statement": "단체의 서비스 활동을 계획한다.",
+      "source_sentence": "제조 및 도매업, 소매업체의 운송, 판매, 영업에 대한 서비스 활동을 계획하고 관리하고 조정한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.42
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

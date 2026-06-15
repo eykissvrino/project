@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28242",
+  "tasks": [
+    {
+      "verb": "중개하다",
+      "object": "선물 거래",
+      "full_statement": "원자재나 상품을 선물시장에서 개인·사업체를 대리하여 중개한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "시장 정보",
+      "full_statement": "선물시장 동향 정보를 수집한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "매매 전략",
+      "full_statement": "선물 매매 전략을 수립한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

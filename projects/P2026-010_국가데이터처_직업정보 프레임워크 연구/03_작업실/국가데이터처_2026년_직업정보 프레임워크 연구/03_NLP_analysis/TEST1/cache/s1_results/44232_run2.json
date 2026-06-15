@@ -1,0 +1,100 @@
+{
+  "ksco_code": "44232",
+  "tasks": [
+    {
+      "verb": "도와주다",
+      "object": "노래방 기기 사용",
+      "full_statement": "고객의 편의를 위하여 노래방 기기의 사용을 도와준다.",
+      "source_sentence": "노래방에서 고객의 편의를 위하여 기기의 사용을 도와주거나 음료를 판매하는 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "판매하다",
+      "object": "음료",
+      "full_statement": "고객에게 음료를 판매한다.",
+      "source_sentence": "노래방에서 고객의 편의를 위하여 기기의 사용을 도와주거나 음료를 판매하는 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 서비스",
+      "full_statement": "고객에게 각종 서비스를 제공한다.",
+      "source_sentence": "노래방에서 고객의 편의를 위하여 기기의 사용을 도와주거나 음료를 판매하는 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "노래방 설비 및 기기",
+      "full_statement": "노래방 설비 및 기기를 조작한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "노래방 설비 및 기기",
+      "full_statement": "노래방 설비 및 기기를 관리한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보수·수리하다",
+      "object": "노래방 기기",
+      "full_statement": "노래방 기기를 간단히 보수·수리한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설명하다",
+      "object": "기기 사용법",
+      "full_statement": "고객에게 노래방 기기의 사용법을 설명한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "기기",
+      "full_statement": "이용 종료 후 노래방 기기를 점검한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "알려주다",
+      "object": "사용료와 사용시간",
+      "full_statement": "고객에게 노래방 사용료와 사용시간을 알려준다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제공하다",
+      "object": "주류",
+      "full_statement": "고객의 편의를 위하여 주류를 제공한다.",
+      "source_sentence": "동전으로 운영되는 오락시설에서 동전을 교환해 주며, 클럽에서 주류 제공 등 고객의 편의와 안전을 위해 각종 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "고객의 물품을 보관하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "노래방 기기", "category": "장비", "evidence_span": "고객의 편의를 위하여 기기의 사용을 도와주거나"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객응대", "evidence_span": "고객의 편의를 위하여 기기의 사용을 도와주거나 음료를 판매하는 등 각종 서비스를 제공한다"},
+    {"category": "장소", "value": "노래방(실내)", "evidence_span": "노래방에서 고객의 편의를 위하여"}
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "ksco_code": "33202",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "조사표",
+      "full_statement": "통계자료 생산을 위해 설계된 조사표를 확인한다.",
+      "source_sentence": "통계자료를 생산하기 위해 설계된 조사표를 가지고 감독자의 지시를 받아 응답자를 면접하거나 전화로 조사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "받다",
+      "object": "감독자의 지시",
+      "full_statement": "조사 수행을 위해 감독자의 지시를 받는다.",
+      "source_sentence": "감독자의 지시를 받아 응답자를 면접하거나 전화로 조사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "면접하다",
+      "object": "응답자",
+      "full_statement": "조사표를 가지고 응답자를 면접하여 조사한다.",
+      "source_sentence": "조사 계획에 따라 조사표를 가지고 응답자를 면접 조사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조사하다",
+      "object": "응답자",
+      "full_statement": "전화로 응답자를 조사한다.",
+      "source_sentence": "감독자의 지시를 받아 응답자를 면접하거나 전화로 조사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기입하다",
+      "object": "부호",
+      "full_statement": "조사 내용에 부호를 기입한다.",
+      "source_sentence": "경우에 따라서는 부호를 기입하고 내용검사를 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "조사 내용",
+      "full_statement": "조사 내용의 내용검사를 한다.",
+      "source_sentence": "경우에 따라서는 부호를 기입하고 내용검사를 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수집하다",
+      "object": "데이터",
+      "full_statement": "일상적 또는 특별정보를 바탕으로 데이터를 수집한다.",
+      "source_sentence": "일상적 또는 특별정보를 바탕으로 데이터를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "완성하다",
+      "object": "설문지",
+      "full_statement": "응답자를 면접하여 설문지를 완성한다.",
+      "source_sentence": "조사 계획에 따라 작성된 설문지를 가지고 응답자를 면접하여 설문지를 완성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.84
+    },
+    {
+      "verb": "계산하다",
+      "object": "총계·평균·백분율",
+      "full_statement": "총계, 평균, 백분율 및 기타 세부사항을 계산한다.",
+      "source_sentence": "총계, 평균, 백분율 및 기타 세부사항을 계산하고 요구되는 형식으로 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "통계자료",
+      "full_statement": "계산 결과를 요구되는 형식으로 작성한다.",
+      "source_sentence": "총계, 평균, 백분율 및 기타 세부사항을 계산하고 요구되는 형식으로 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "집계하다",
+      "object": "수집된 데이터",
+      "full_statement": "수집된 데이터를 집계한다.",
+      "source_sentence": "또한 수집된 데이터의 집계 및 기초 분석, 통계표 작성 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분석하다",
+      "object": "수집된 데이터",
+      "full_statement": "수집된 데이터의 기초 분석을 수행한다.",
+      "source_sentence": "또한 수집된 데이터의 집계 및 기초 분석, 통계표 작성 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "작성하다",
+      "object": "통계표",
+      "full_statement": "집계 및 분석 결과로 통계표를 작성한다.",
+      "source_sentence": "또한 수집된 데이터의 집계 및 기초 분석, 통계표 작성 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "응답자 면접(대인 응대)",
+      "evidence_span": "응답자를 면접하거나 전화로 조사한다."
+    },
+    {
+      "category": "사회적",
+      "value": "전화 조사",
+      "evidence_span": "감독자의 지시를 받아 응답자를 면접하거나 전화로 조사한다."
+    },
+    {
+      "category": "사회적",
+      "value": "감독자의 지시 하에 작업",
+      "evidence_span": "감독자의 지시를 받아 응답자를 면접하거나 전화로 조사한다."
+    }
+  ]
+}

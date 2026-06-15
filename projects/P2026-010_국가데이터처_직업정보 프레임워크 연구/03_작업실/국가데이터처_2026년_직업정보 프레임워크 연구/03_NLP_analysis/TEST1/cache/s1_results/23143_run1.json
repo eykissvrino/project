@@ -1,0 +1,122 @@
+{
+  "ksco_code": "23143",
+  "tasks": [
+    {
+      "verb": "관리감독하다",
+      "object": "조경공사 현장",
+      "full_statement": "설계도면 및 시방서의 내용에 따라 조경공사가 이루어질 수 있도록 현장을 관리감독한다.",
+      "source_sentence": "설계도면 및 시방서의 내용에 따라 조경공사가 이루어질 수 있도록 현장을 관리감독하며, 현장에서 발생하는 기술적 문제를 해결하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "해결하다",
+      "object": "기술적 문제",
+      "full_statement": "현장에서 발생하는 기술적 문제를 해결한다.",
+      "source_sentence": "설계도면 및 시방서의 내용에 따라 조경공사가 이루어질 수 있도록 현장을 관리감독하며, 현장에서 발생하는 기술적 문제를 해결하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "산정하다",
+      "object": "조경공사 비용",
+      "full_statement": "조경공사의 비용을 산정한다.",
+      "source_sentence": "조경공사의 비용을 산정하거나 조경시공 과정에서 발생하는 각종 관리업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "조경시공 관리업무",
+      "full_statement": "조경시공 과정에서 발생하는 각종 관리업무를 수행한다.",
+      "source_sentence": "조경공사의 비용을 산정하거나 조경시공 과정에서 발생하는 각종 관리업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "조경건설 작업",
+      "full_statement": "조경건설 작업을 관리한다.",
+      "source_sentence": "조경건설 작업을 관리하고 감독하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "조경건설 작업",
+      "full_statement": "조경건설 작업을 감독한다.",
+      "source_sentence": "조경건설 작업을 관리하고 감독하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "내다",
+      "object": "비용견적",
+      "full_statement": "조경건설사업을 위한 비용견적을 낸다.",
+      "source_sentence": "비용견적을 내고 명세서를 작성하며 조경건설사업을 위한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "명세서",
+      "full_statement": "조경공사의 명세서를 작성한다.",
+      "source_sentence": "비용견적을 내고 명세서를 작성하며 조경건설사업을 위한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "조경건설사업 제안서",
+      "full_statement": "조경건설사업을 위한 제안서를 평가한다.",
+      "source_sentence": "비용견적을 내고 명세서를 작성하며 조경건설사업을 위한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "부지 상세 제도",
+      "full_statement": "나무, 관목, 정원, 조명, 산책로 등 특성을 포함한 부지의 상세한 제도작성을 준비한다.",
+      "source_sentence": "나무, 관목, 정원, 조명, 산책로, 안뜰, 바닥, 벤치, 울타리, 분수와 같은 특성들을 포함하여 부지의 상세한 제도작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "감독하다",
+      "object": "부지 상세 제도",
+      "full_statement": "부지의 상세한 제도작성을 감독한다.",
+      "source_sentence": "나무, 관목, 정원, 조명, 산책로, 안뜰, 바닥, 벤치, 울타리, 분수와 같은 특성들을 포함하여 부지의 상세한 제도작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "측량하다",
+      "object": "지정 대지",
+      "full_statement": "지정된 대지를 측량하고 평가한다.",
+      "source_sentence": "지정된 대지를 측량하고 평가하며 전망의 특성, 기후, 앞으로의 용도 및 기타 측면들을 고려하여 디자인을 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "협의하다",
+      "object": "고객",
+      "full_statement": "설계요구사항을 결정하기 위해 고객과 협의한다.",
+      "source_sentence": "설계요구사항을 결정하기 위해 고객과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "공사 현장",
+      "evidence_span": "조경공사가 이루어질 수 있도록 현장을 관리감독하며, 현장에서 발생하는 기술적 문제를 해결하기도 한다"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 협의",
+      "evidence_span": "설계요구사항을 결정하기 위해 고객과 협의한다"
+    }
+  ]
+}

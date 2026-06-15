@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28312",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "소비자 정보",
+      "full_statement": "상품·서비스의 판매수준과 소비자 평가 정보를 수집하고 연구한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "소비자 취향",
+      "full_statement": "소비자의 현재·장래 취향을 조사하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "판매 전략",
+      "full_statement": "효율적인 판매 전략을 수립하거나 조언한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,122 @@
+{
+  "ksco_code": "25491",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "신부의 미사 집전",
+      "full_statement": "천주교회에서 신부를 보조하여 미사 등의 집전을 보조한다.",
+      "source_sentence": "천주교회에서 신부를 보조하여 미사 등의 집전을 보조하며, 신자들에게 신앙 및 정신적‧도덕적 지도를 하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "신자의 신앙",
+      "full_statement": "신자들에게 신앙적 지도를 한다.",
+      "source_sentence": "신자들에게 신앙 및 정신적‧도덕적 지도를 하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지도하다",
+      "object": "신자의 정신적·도덕적 측면",
+      "full_statement": "신자들에게 정신적‧도덕적 지도를 한다.",
+      "source_sentence": "신자들에게 신앙 및 정신적‧도덕적 지도를 하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "교육하다",
+      "object": "수녀 및 수사 지원자",
+      "full_statement": "수녀 수련소와 수사 수련소에서 수녀 및 수사 지원자를 교육시킨다.",
+      "source_sentence": "수녀 수련소와 수사 수련소에서 수녀 및 수사 지원자를 교육시키기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수도하다",
+      "object": "신앙 고취를 위한 수도",
+      "full_statement": "일정한 수련과정을 거치며 신앙을 고취하기 위하여 수도를 한다.",
+      "source_sentence": "일정한 수련과정을 거치며 신앙을 고취하기 위하여 수도를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "거치다",
+      "object": "수련과정",
+      "full_statement": "일정한 수련과정을 거친다.",
+      "source_sentence": "일정한 수련과정을 거치며 신앙을 고취하기 위하여 수도를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가르치다",
+      "object": "종교의 교리",
+      "full_statement": "종교의 교리를 가르친다.",
+      "source_sentence": "종교의 교리를 가르치기도 하며 사회적인 봉사활동을 조직하여 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조직하다",
+      "object": "사회적 봉사활동",
+      "full_statement": "사회적인 봉사활동을 조직한다.",
+      "source_sentence": "종교의 교리를 가르치기도 하며 사회적인 봉사활동을 조직하여 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "사회적 봉사활동",
+      "full_statement": "조직된 사회적인 봉사활동을 수행한다.",
+      "source_sentence": "종교의 교리를 가르치기도 하며 사회적인 봉사활동을 조직하여 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "보조하다",
+      "object": "성직자",
+      "full_statement": "해당 종교의 한 구성원으로 성직자를 보조한다.",
+      "source_sentence": "해당 종교의 한 구성원으로 성직자를 보조하고 제반 종교적 활동을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "제반 종교적 활동",
+      "full_statement": "수녀원 등에서 제반 종교적 활동을 수행한다.",
+      "source_sentence": "수녀는 천주교회에서 신부를 보조하거나 수녀원 등에서 제반 종교적 활동을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설교하다",
+      "object": "특정 종교의 가르침",
+      "full_statement": "특정 종교의 가르침을 설교한다.",
+      "source_sentence": "기타 종교기관이나 종교단체 종사자로 종교적인 업무를 담당하거나 특정 종교의 가르침을 설교하고 전파하는 일을 한다.",
+      "derived_from": "조상정의(세분류)→세세 맥락 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "전파하다",
+      "object": "특정 종교의 가르침",
+      "full_statement": "특정 종교의 가르침을 전파한다.",
+      "source_sentence": "기타 종교기관이나 종교단체 종사자로 종교적인 업무를 담당하거나 특정 종교의 가르침을 설교하고 전파하는 일을 한다.",
+      "derived_from": "조상정의(세분류)→세세 맥락 특화",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "천주교회·수녀원·수련소(실내 종교시설)",
+      "evidence_span": "천주교회에서 신부를 보조하여 미사 등의 집전을 보조하며 ... 수녀 수련소와 수사 수련소에서 수녀 및 수사 지원자를 교육시키기도 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "신자 대상 신앙·정신적·도덕적 지도(대인 응대)",
+      "evidence_span": "신자들에게 신앙 및 정신적‧도덕적 지도를 하는 자를 말한다."
+    }
+  ]
+}

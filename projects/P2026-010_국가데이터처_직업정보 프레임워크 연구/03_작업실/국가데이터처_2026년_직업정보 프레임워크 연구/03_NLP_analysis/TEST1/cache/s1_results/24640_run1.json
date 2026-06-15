@@ -1,0 +1,121 @@
+{
+  "ksco_code": "24640",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "치과의사의 진료",
+      "full_statement": "치과의사를 보조하여 치주 질환을 예방·치료한다.",
+      "source_sentence": "치과의사를 보조하여 치주 질환을 예방‧치료하고 구강관리 안내 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "안내하다",
+      "object": "구강관리",
+      "full_statement": "환자에게 구강관리 방법을 안내한다.",
+      "source_sentence": "치과의사를 보조하여 치주 질환을 예방‧치료하고 구강관리 안내 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "소독하다",
+      "object": "치과 진료기구 및 장비",
+      "full_statement": "치과 진료기구 및 장비를 소독한다.",
+      "source_sentence": "치과 진료기구 및 장비를 소독하고 배치‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "배치하다",
+      "object": "치과 진료기구 및 장비",
+      "full_statement": "치과 진료기구 및 장비를 배치·관리한다.",
+      "source_sentence": "치과 진료기구 및 장비를 소독하고 배치‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "시진하다",
+      "object": "구강상태",
+      "full_statement": "구강상태를 간단히 시진하여 치료의 종류를 분석한다.",
+      "source_sentence": "구강상태를 간단히 시진하여 치료의 종류를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "치료의 종류",
+      "full_statement": "시진 결과를 바탕으로 치료의 종류를 분석한다.",
+      "source_sentence": "구강상태를 간단히 시진하여 치료의 종류를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "구강 내 침착물",
+      "full_statement": "구강 내의 여러 가지 침착물을 제거한다.",
+      "source_sentence": "구강 내의 여러 가지 침착물을 제거하고 치아표면을 매끈하게 하여 치주 질환을 예방한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연마하다",
+      "object": "치아표면",
+      "full_statement": "치아표면을 매끈하게 연마하여 치주 질환을 예방한다.",
+      "source_sentence": "구강 내의 여러 가지 침착물을 제거하고 치아표면을 매끈하게 하여 치주 질환을 예방한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "예방하다",
+      "object": "치주 질환",
+      "full_statement": "구강 내 침착물 제거와 치아표면 연마를 통해 치주 질환을 예방한다.",
+      "source_sentence": "구강 내의 여러 가지 침착물을 제거하고 치아표면을 매끈하게 하여 치주 질환을 예방한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "기록하다",
+      "object": "환자의 건강상태",
+      "full_statement": "환자의 건강상태를 기록한다.",
+      "source_sentence": "환자의 건강상태를 기록하고 기록카드를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "관리하다",
+      "object": "기록카드",
+      "full_statement": "환자의 기록카드를 관리한다.",
+      "source_sentence": "환자의 건강상태를 기록하고 기록카드를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "치료 후 유의사항",
+      "full_statement": "치료 후의 환자에게 유의사항을 설명한다.",
+      "source_sentence": "치료 후의 환자에게 유의사항을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "실시하다",
+      "object": "구강보건교육",
+      "full_statement": "개인 또는 대중을 상대로 구강보건교육을 실시한다.",
+      "source_sentence": "개인 또는 대중을 상대로 구강보건교육을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    }
+  ],
+  "tools": [
+    {"name": "치과 진료기구", "category": "도구", "evidence_span": "치과 진료기구 및 장비를 소독하고 배치‧관리한다."},
+    {"name": "치과 진료장비", "category": "장비", "evidence_span": "치과 진료기구 및 장비를 소독하고 배치‧관리한다."},
+    {"name": "기록카드", "category": "도구", "evidence_span": "환자의 건강상태를 기록하고 기록카드를 관리한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자 응대(치료 후 유의사항 설명)", "evidence_span": "치료 후의 환자에게 유의사항을 설명한다."},
+    {"category": "사회적", "value": "치과의사 보조·협업", "evidence_span": "치과의사를 보조하여 치주 질환을 예방‧치료하고"},
+    {"category": "사회적", "value": "개인 또는 대중 대상 교육", "evidence_span": "개인 또는 대중을 상대로 구강보건교육을 실시한다."},
+    {"category": "신체적", "value": "구강 내 정밀 작업(침착물 제거·치아표면 연마)", "evidence_span": "구강 내의 여러 가지 침착물을 제거하고 치아표면을 매끈하게 하여"},
+    {"category": "위험", "value": "생물학적 위험(구강 내 처치·기구 소독)", "evidence_span": "치과 진료기구 및 장비를 소독하고 배치‧관리한다."}
+  ]
+}

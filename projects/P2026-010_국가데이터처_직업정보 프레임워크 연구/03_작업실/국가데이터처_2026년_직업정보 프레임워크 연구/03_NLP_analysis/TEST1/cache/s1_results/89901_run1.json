@@ -1,0 +1,94 @@
+{
+  "ksco_code": "89901",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "포장 기계",
+      "full_statement": "출하 또는 보관을 위해 물건을 포장하는 기계를 조작한다.",
+      "source_sentence": "출하 또는 보관을 하기 위해 물건을 포장하거나 물품 및 액체물질을 주입, 봉함 하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "주입 기계",
+      "full_statement": "물품 및 액체물질을 용기에 주입하는 기계를 조작한다.",
+      "source_sentence": "출하 또는 보관을 하기 위해 물건을 포장하거나 물품 및 액체물질을 주입, 봉함 하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "봉함 기계",
+      "full_statement": "물품 및 액체물질을 담은 용기를 봉함하는 기계를 조작한다.",
+      "source_sentence": "출하 또는 보관을 하기 위해 물건을 포장하거나 물품 및 액체물질을 주입, 봉함 하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "제품 포장 기계",
+      "full_statement": "액체 제품을 포함하여 저장 및 출하하기 위해 각종 제품을 포장하는 기계를 조작한다.",
+      "source_sentence": "액체 제품을 포함하여 저장 및 출하하기 위하여 각종 제품을 포장 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "붙이다",
+      "object": "라벨",
+      "full_statement": "접착제 또는 기타 방법으로 제품에 라벨을 붙이는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "포장하다",
+      "object": "각종 용기",
+      "full_statement": "각종 용기에 제품을 포장하는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "첨부하다",
+      "object": "수입증지",
+      "full_statement": "제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "병포장기",
+      "full_statement": "병에 내용물을 채워 포장하는 병포장기를 조작한다.",
+      "source_sentence": "병포장기 조작원·캡핑기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "캡핑기",
+      "full_statement": "용기에 마개를 씌우는 캡핑기를 조작한다.",
+      "source_sentence": "병포장기 조작원·캡핑기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "래핑기",
+      "full_statement": "제품을 포장재로 감싸는 래핑기를 조작한다.",
+      "source_sentence": "포장기 조작원·래핑기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "병포장기", "category": "장비", "evidence_span": "병포장기 조작원·캡핑기 조작원"},
+    {"name": "캡핑기", "category": "장비", "evidence_span": "병포장기 조작원·캡핑기 조작원"},
+    {"name": "봉함기", "category": "장비", "evidence_span": "봉함기 조작원·주입기 조작원"},
+    {"name": "주입기", "category": "장비", "evidence_span": "봉함기 조작원·주입기 조작원"},
+    {"name": "포장기", "category": "장비", "evidence_span": "포장기 조작원·래핑기 조작원"},
+    {"name": "래핑기", "category": "장비", "evidence_span": "포장기 조작원·래핑기 조작원"}
+  ],
+  "work_context": []
+}

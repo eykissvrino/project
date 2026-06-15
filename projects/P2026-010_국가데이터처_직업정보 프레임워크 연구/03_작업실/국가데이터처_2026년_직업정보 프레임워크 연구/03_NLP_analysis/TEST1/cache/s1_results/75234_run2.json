@@ -1,0 +1,113 @@
+{
+  "ksco_code": "75234",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "여객차·화차의 차체",
+      "full_statement": "여객차와 화차의 차체를 점검한다.",
+      "source_sentence": "여객차, 화차(화물차)의 차체, 바퀴 등을 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "여객차·화차의 바퀴",
+      "full_statement": "여객차와 화차의 바퀴를 점검한다.",
+      "source_sentence": "여객차, 화차(화물차)의 차체, 바퀴 등을 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "여객차·화차의 차체",
+      "full_statement": "여객차와 화차의 차체를 수리한다.",
+      "source_sentence": "여객차, 화차(화물차)의 차체, 바퀴 등을 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "여객차·화차의 바퀴",
+      "full_statement": "여객차와 화차의 바퀴를 수리한다.",
+      "source_sentence": "여객차, 화차(화물차)의 차체, 바퀴 등을 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "여객차·화차",
+      "full_statement": "여객차와 화차를 정비한다.",
+      "source_sentence": "여객차, 화차(화물차)의 차체, 바퀴 등을 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "확인하다",
+      "object": "차체·바퀴·연결고리의 이상 유무",
+      "full_statement": "객차와 화차의 차체, 바퀴, 연결고리 등의 이상 유무를 확인한다.",
+      "source_sentence": "기관차나 전동차의 차체, 바퀴, 연결고리 등의 이상 유무를 확인하고 고장시에 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "차체·바퀴·연결고리의 고장",
+      "full_statement": "객차와 화차의 차체, 바퀴, 연결고리 등에 고장이 발생하면 이를 수리한다.",
+      "source_sentence": "기관차나 전동차의 차체, 바퀴, 연결고리 등의 이상 유무를 확인하고 고장시에 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "정비하다",
+      "object": "객차·화차",
+      "full_statement": "객차와 화차를 전문적으로 정비한다.",
+      "source_sentence": "객차, 화차를 전문적으로 정비, 수리하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "객차·화차",
+      "full_statement": "객차와 화차를 전문적으로 수리한다.",
+      "source_sentence": "객차, 화차를 전문적으로 정비, 수리하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "차체·바퀴의 노화 상태",
+      "full_statement": "객차와 화차의 차체, 바퀴 등의 노화 상태를 점검한다.",
+      "source_sentence": "전동차의 주요 기관 및 차체, 바퀴 등의 고장여부, 정상작동 여부, 노화 상태 등을 점검하고 정비한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "점검하다",
+      "object": "차체·바퀴의 정상작동 여부",
+      "full_statement": "객차와 화차의 차체, 바퀴 등의 정상작동 여부를 점검한다.",
+      "source_sentence": "전동차의 주요 기관 및 차체, 바퀴 등의 고장여부, 정상작동 여부, 노화 상태 등을 점검하고 정비한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조정하다",
+      "object": "운송장비",
+      "full_statement": "수공구 및 관련 장비를 사용하여 여객차와 화차를 조정한다.",
+      "source_sentence": "철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "교체하다",
+      "object": "운송장비 부품",
+      "full_statement": "여객차와 화차의 부품을 교체한다.",
+      "source_sentence": "철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다."}
+  ],
+  "work_context": []
+}

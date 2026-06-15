@@ -1,0 +1,148 @@
+{
+  "ksco_code": "24117",
+  "tasks": [
+    {
+      "verb": "진료하다",
+      "object": "피부와 비뇨 생식기관의 질병과 장애",
+      "full_statement": "피부와 비뇨 생식기관의 질병과 장애를 진료한다.",
+      "source_sentence": "피부와 비뇨 생식기관의 질병과 장애를 진료하는 자로",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "실시하다",
+      "object": "질병 판단을 위한 각종 검사",
+      "full_statement": "질병을 판단하기 위하여 각종 검사를 실시한다.",
+      "source_sentence": "질병을 판단하기 위하여, 각종 검사를 실시하거나 지시하고 검사자료를 분석하여 진단․ 치료한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지시하다",
+      "object": "질병 판단을 위한 각종 검사",
+      "full_statement": "질병을 판단하기 위하여 각종 검사를 지시한다.",
+      "source_sentence": "질병을 판단하기 위하여, 각종 검사를 실시하거나 지시하고 검사자료를 분석하여 진단․ 치료한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "검사자료",
+      "full_statement": "검사자료를 분석하여 질병을 진단한다.",
+      "source_sentence": "질병을 판단하기 위하여, 각종 검사를 실시하거나 지시하고 검사자료를 분석하여 진단․ 치료한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진단하다",
+      "object": "피부 및 비뇨 생식기관 질병",
+      "full_statement": "검사자료를 바탕으로 피부 및 비뇨 생식기관의 질병을 진단한다.",
+      "source_sentence": "검사자료를 분석하여 진단․ 치료한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치료하다",
+      "object": "남성의 성기능 장애",
+      "full_statement": "남성의 성기능 장애를 치료한다.",
+      "source_sentence": "남성의 성기능 장애, 피부질환 등을 치료하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치료하다",
+      "object": "피부질환",
+      "full_statement": "피부질환을 치료한다.",
+      "source_sentence": "남성의 성기능 장애, 피부질환 등을 치료하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수술하다",
+      "object": "피부질환·사마귀 등 피부의 불필요한 요소",
+      "full_statement": "피부질환, 사마귀, 기타 피부에 불필요한 요소 등을 수술한다.",
+      "source_sentence": "피부질환, 사마귀, 기타 피부에 불필요한 요소 등을 수술한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "분석하다",
+      "object": "의료검사·시험·진단 자료",
+      "full_statement": "처방·치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "결정하다",
+      "object": "치료의 종류와 순서",
+      "full_statement": "분석한 자료를 바탕으로 치료의 종류와 순서를 결정한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "사용하다",
+      "object": "내·외과적 기구 및 장비",
+      "full_statement": "진단 및 치료를 위하여 내․외과적 기구 및 장비를 사용한다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "알려주다",
+      "object": "처방된 치료와 건강상의 유의점",
+      "full_statement": "처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "처방하다",
+      "object": "투약을 비롯한 각종 치료행위",
+      "full_statement": "투약을 비롯한 각종 치료행위를 처방하고 지시한다.",
+      "source_sentence": "투약을 비롯한 각종 치료행위를 처방, 지시하고 환자들에게 식사, 질병예방 등에 관해 조언하며, 예방접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "조언하다",
+      "object": "식사·질병예방",
+      "full_statement": "환자들에게 식사, 질병예방 등에 관해 조언한다.",
+      "source_sentence": "투약을 비롯한 각종 치료행위를 처방, 지시하고 환자들에게 식사, 질병예방 등에 관해 조언하며, 예방접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "집도하다",
+      "object": "외과수술",
+      "full_statement": "특수기술 및 장비를 이용하여 외과수술을 집도한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "치료하다",
+      "object": "환자",
+      "full_statement": "특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "예방하다",
+      "object": "인체의 질병",
+      "full_statement": "전문 의학적 지식을 적용하여 피부 및 비뇨기 분야의 질병을 예방한다.",
+      "source_sentence": "전문 의사는 내과, 외과, 소아청소년과, 산부인과, 안과, 이비인후과, 피부과 등 각 전문 의료 분야별로 인체의 질병을 예방하고, 진단‧치료하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "내·외과적 기구 및 장비", "category": "장비", "evidence_span": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고"},
+    {"name": "특수기술 및 장비", "category": "장비", "evidence_span": "특수기술 및 장비를 이용하여 환자를 치료한다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자 응대(처방·유의점 안내, 조언)", "evidence_span": "처방된 치료와 건강상의 유의점을 환자에게 알려준다"}
+  ]
+}

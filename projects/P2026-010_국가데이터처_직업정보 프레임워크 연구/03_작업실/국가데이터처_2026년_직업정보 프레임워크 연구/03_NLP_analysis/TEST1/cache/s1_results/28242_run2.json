@@ -1,0 +1,82 @@
+{
+  "ksco_code": "28242",
+  "tasks": [
+    {
+      "verb": "중개하다",
+      "object": "선물거래",
+      "full_statement": "원자재 또는 상품을 선물시장에서 개인이나 사업체를 대리하여 중개한다.",
+      "source_sentence": "원자재 또는 상품을 선물시장에서 개인이나 사업체를 대리하여 중개한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "중개하다",
+      "object": "유가증권 매매",
+      "full_statement": "주식, 채권, 파생상품, 투자 신탁상품 등의 매매를 중개한다.",
+      "source_sentence": "주식, 채권, 파생상품, 투자 신탁상품 등의 매매를 중개한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "체크하다",
+      "object": "국내외 증시동향",
+      "full_statement": "투자 상담을 하기 위해 국내외 증시동향을 체크한다.",
+      "source_sentence": "투자 상담을 하기 위해 국내외 증시동향을 체크하고 신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집하고, 장세 전망 및 매매 전략을 수립한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수집하다",
+      "object": "투자 정보",
+      "full_statement": "신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집한다.",
+      "source_sentence": "투자 상담을 하기 위해 국내외 증시동향을 체크하고 신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집하고, 장세 전망 및 매매 전략을 수립한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수립하다",
+      "object": "매매 전략",
+      "full_statement": "장세 전망 및 매매 전략을 수립한다.",
+      "source_sentence": "투자 상담을 하기 위해 국내외 증시동향을 체크하고 신문, 연구 분석자료, 네트워크 등을 통해 정보를 수집하고, 장세 전망 및 매매 전략을 수립한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "교환하다",
+      "object": "각종 정보",
+      "full_statement": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고 시황을 전망한다.",
+      "source_sentence": "펀드매니저, 증권분석가 등과 각종 정보를 교환하고 시황을 전망한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "중개하다",
+      "object": "증권 및 외환의 매매",
+      "full_statement": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보한다.",
+      "source_sentence": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보하며, 중개매매에 따른 성과를 분석한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "분석하다",
+      "object": "중개매매 성과",
+      "full_statement": "중개매매에 따른 성과를 분석한다.",
+      "source_sentence": "증권 및 외환의 매매를 중개 또는 대리하고 매매결과를 통보하며, 중개매매에 따른 성과를 분석한다.",
+      "derived_from": "상속 주요업무(조상정의 함께·low_signal)",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "개인이나 사업체를 대리한 중개·투자 상담",
+      "evidence_span": "원자재 또는 상품을 선물시장에서 개인이나 사업체를 대리하여 중개한다."
+    },
+    {
+      "category": "장소",
+      "value": "증권회사·투자회사·주식 및 선물거래소 등",
+      "evidence_span": "증권회사, 투자회사, 신탁회사, 주식 및 선물거래소, 기타 유가증권업 관련 업체에서 일한다."
+    }
+  ]
+}

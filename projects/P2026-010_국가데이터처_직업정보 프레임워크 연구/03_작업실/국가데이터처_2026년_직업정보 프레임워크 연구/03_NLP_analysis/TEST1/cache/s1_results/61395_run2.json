@@ -1,0 +1,106 @@
+{
+  "ksco_code": "61395",
+  "tasks": [
+    {
+      "verb": "사육하다",
+      "object": "동물",
+      "full_statement": "동물원 등 관람 또는 공연을 위해 동물을 사육한다.",
+      "source_sentence": "동물원 등 관람 또는 공연을 위해 동물을 사육한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "주다",
+      "object": "먹이",
+      "full_statement": "동물의 습성과 성향에 대한 지식을 바탕으로 동물들에게 먹이를 준다.",
+      "source_sentence": "동물의 습성과 성향에 대한 지식을 바탕으로 동물들에게 먹이를 주며 건강상태를 상세하게 관찰한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관찰하다",
+      "object": "건강상태",
+      "full_statement": "동물의 건강상태를 상세하게 관찰한다.",
+      "source_sentence": "동물의 습성과 성향에 대한 지식을 바탕으로 동물들에게 먹이를 주며 건강상태를 상세하게 관찰한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "활용하다",
+      "object": "동물의 습성과 성향에 대한 지식",
+      "full_statement": "동물의 습성과 성향에 대한 지식을 바탕으로 사육 업무를 수행한다.",
+      "source_sentence": "동물의 습성과 성향에 대한 지식을 바탕으로 동물들에게 먹이를 주며 건강상태를 상세하게 관찰한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "동물원 시설물",
+      "full_statement": "동물원의 시설물을 관리한다.",
+      "source_sentence": "동물원의 시설물을 관리하거나 동물원 내의 동물에 대한 방사나 입사를 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "동물의 방사",
+      "full_statement": "동물원 내의 동물에 대한 방사를 관리한다.",
+      "source_sentence": "동물원의 시설물을 관리하거나 동물원 내의 동물에 대한 방사나 입사를 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "동물의 입사",
+      "full_statement": "동물원 내의 동물에 대한 입사를 관리한다.",
+      "source_sentence": "동물원의 시설물을 관리하거나 동물원 내의 동물에 대한 방사나 입사를 관리하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "번식시키다",
+      "object": "동물",
+      "full_statement": "동물 종의 개체를 보존하기 위해 동물을 번식시킨다.",
+      "source_sentence": "동물 종의 개체를 보존하기 위한 사육 관련 종사자 등의 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "보존하다",
+      "object": "동물 종의 개체",
+      "full_statement": "사육을 통해 동물 종의 개체를 보존한다.",
+      "source_sentence": "동물 종의 개체를 보존하기 위한 사육 관련 종사자 등의 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "번식시키다",
+      "object": "가축",
+      "full_statement": "동물을 번식·사육하는 데 필요한 활동을 수행한다.",
+      "source_sentence": "소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "기획하다",
+      "object": "사육에 필요한 활동",
+      "full_statement": "동물 사육에 필요한 활동을 기획한다.",
+      "source_sentence": "소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "관람 또는 공연을 위한 동물 사육(대중 관람 대상)",
+      "evidence_span": "동물원 등 관람 또는 공연을 위해 동물을 사육한다."
+    },
+    {
+      "category": "위험",
+      "value": "동물 취급에 따른 생물학적 위험",
+      "evidence_span": "동물의 습성과 성향에 대한 지식을 바탕으로 동물들에게 먹이를 주며 건강상태를 상세하게 관찰한다."
+    }
+  ]
+}

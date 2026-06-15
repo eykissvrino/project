@@ -1,0 +1,95 @@
+{
+  "ksco_code": "23760",
+  "tasks": [
+    {
+      "verb": "추출하다",
+      "object": "에너지 표본",
+      "full_statement": "안전한 양질의 에너지를 공급하기 위하여 표본을 추출한다.",
+      "source_sentence": "소비자에게 안전한 양질의 에너지를 보내기 위하여 표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "열량",
+      "full_statement": "추출한 표본의 열량을 분석한다.",
+      "source_sentence": "표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "측정하다",
+      "object": "부취농도",
+      "full_statement": "표본의 부취농도를 측정한다.",
+      "source_sentence": "표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "측정하다",
+      "object": "밀도",
+      "full_statement": "표본의 밀도를 측정한다.",
+      "source_sentence": "표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "유황농도",
+      "full_statement": "표본의 유황농도를 분석한다.",
+      "source_sentence": "표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "성분분석",
+      "full_statement": "추출한 표본의 성분분석 업무를 수행한다.",
+      "source_sentence": "표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시험하다",
+      "object": "가스 및 에너지 관련 기술",
+      "full_statement": "가스 및 에너지 관련 기술을 시험한다.",
+      "source_sentence": "가스 및 에너지 관련 기술을 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보조하다",
+      "object": "기술 개발 및 연구",
+      "full_statement": "가스 및 에너지 활용 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "가스 및 에너지 활용 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유지하다",
+      "object": "활용 시설 및 장비",
+      "full_statement": "가스 및 에너지 활용 시설 및 장비를 유지한다.",
+      "source_sentence": "가스 및 에너지 활용 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "보수하다",
+      "object": "활용 시설 및 장비",
+      "full_statement": "가스 및 에너지 활용 시설 및 장비를 보수한다.",
+      "source_sentence": "가스 및 에너지 활용 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "에너지 안전성",
+      "full_statement": "소비자에게 공급되는 에너지의 안전성과 품질을 검사한다.",
+      "source_sentence": "소비자에게 안전한 양질의 에너지를 보내기 위하여 표본을 추출하여 열량, 부취농도, 밀도, 유황농도 등의 성분분석 업무를 수행한다.",
+      "derived_from": "세세분류 정의→안전성 검사 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

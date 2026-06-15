@@ -1,0 +1,111 @@
+{
+  "ksco_code": "63012",
+  "tasks": [
+    {
+      "verb": "양식하다",
+      "object": "해조류",
+      "full_statement": "양식장에서 김, 미역, 다시마 등 해조류를 양식한다.",
+      "source_sentence": "양식장에서 김, 미역, 다시마 등 해조류를 양식한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "양식 시설 및 도구",
+      "full_statement": "해조류 양식에 필요한 어망, 기타 어로도구 및 장비를 준비한다.",
+      "source_sentence": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수선하다",
+      "object": "양식 시설 및 도구",
+      "full_statement": "해조류 양식에 사용되는 어망, 기타 어로도구 및 장비를 수선한다.",
+      "source_sentence": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "운영하다",
+      "object": "어선",
+      "full_statement": "양식장에서 어선을 운영한다.",
+      "source_sentence": "어장에서 어선을 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "설치하다",
+      "object": "양식 시설",
+      "full_statement": "양식장에 김, 미역, 다시마 등 해조류를 부착·생장시킬 양식 시설을 설치한다.",
+      "source_sentence": "어로도구에 미끼를 걸고, 어망을 설치하며 끌어올린다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "양식하다",
+      "object": "수생 식물",
+      "full_statement": "양식장에서 해조류 등 수생 식물을 양식한다.",
+      "source_sentence": "물고기, 굴, 조개 또는 기타 형태의 수생 동‧식물을 양식한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "채취하다",
+      "object": "해조류",
+      "full_statement": "성장한 김, 미역, 다시마 등 해조류를 채취한다.",
+      "source_sentence": "해안 및 얕은 물에서 수생 동‧식물을 채집한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "채집하다",
+      "object": "수생 식물",
+      "full_statement": "해안 및 얕은 물에서 수생 동‧식물을 채집한다.",
+      "source_sentence": "해안 및 얕은 물에서 수생 동‧식물을 채집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정비하다",
+      "object": "시설 및 장비",
+      "full_statement": "양식에 사용되는 시설, 기계 및 장비를 정비한다.",
+      "source_sentence": "시설, 기계 및 장비를 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정리하다",
+      "object": "채취물",
+      "full_statement": "선박 또는 해안에서 채취한 해조류를 정리한다.",
+      "source_sentence": "선박 또는 해안에서 물고기를 정리하고, 냉동, 냉장 또는 염장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "양식한 해조류 생산물을 공급한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "출하하다",
+      "object": "생산물",
+      "full_statement": "양식한 해조류 생산물을 출하한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "어망", "category": "도구", "evidence_span": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다."},
+    {"name": "어로도구", "category": "도구", "evidence_span": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다."},
+    {"name": "어선", "category": "장비", "evidence_span": "어장에서 어선을 운영한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "양식장", "evidence_span": "양식장에서 김, 미역, 다시마 등 해조류를 양식한다."},
+    {"category": "장소", "value": "해안 및 얕은 물(실외 수상)", "evidence_span": "해안 및 얕은 물에서 수생 동‧식물을 채집한다."},
+    {"category": "장소", "value": "선박(어선 운영)", "evidence_span": "어장에서 어선을 운영한다."}
+  ]
+}

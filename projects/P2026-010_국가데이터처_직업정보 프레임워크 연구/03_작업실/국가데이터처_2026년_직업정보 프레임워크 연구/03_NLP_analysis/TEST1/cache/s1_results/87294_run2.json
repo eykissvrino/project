@@ -1,0 +1,66 @@
+{
+  "ksco_code": "87294",
+  "tasks": [
+    {
+      "verb": "주차하다",
+      "object": "의뢰 차량",
+      "full_statement": "의뢰한 운전자를 대신하여 해당 차량을 주차한다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 주차한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운전하다",
+      "object": "차량",
+      "full_statement": "차량 소유주를 대신하여 해당 차량을 운전한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "인수하다",
+      "object": "의뢰 차량",
+      "full_statement": "의뢰한 운전자로부터 주차할 차량을 인수한다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 주차한다.",
+      "derived_from": "세세분류 정의→활동 도출",
+      "confidence": 0.55
+    },
+    {
+      "verb": "운전하다",
+      "object": "주차 위치까지의 차량",
+      "full_statement": "인수한 차량을 주차 위치까지 운전하여 이동시킨다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 주차한다.",
+      "derived_from": "세세분류 정의+조상정의(소분류)→활동 도출",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "운전 장치",
+      "full_statement": "손과 운전 장치를 이용하여 차량의 운전 장치를 조작한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "반환하다",
+      "object": "차량",
+      "full_statement": "의뢰한 운전자에게 주차된 차량을 인계하여 반환한다.",
+      "source_sentence": "의뢰한 운전자를 대신하여 해당 차량을 주차한다.",
+      "derived_from": "세세분류 정의→활동 도출",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "의뢰 운전자·차량 소유주 응대(대리 수행)",
+      "evidence_span": "의뢰한 운전자를 대신하여 해당 차량을 주차한다."
+    },
+    {
+      "category": "신체적",
+      "value": "손과 운전 장치 이용 기술 필요",
+      "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다."
+    }
+  ]
+}

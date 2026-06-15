@@ -1,0 +1,221 @@
+{
+  "ksco_code": "76225",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "발전기",
+      "full_statement": "발전기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "발전기",
+      "full_statement": "발전기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "전동기",
+      "full_statement": "전동기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "전동기",
+      "full_statement": "전동기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "전력변환기기",
+      "full_statement": "전력변환기기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "전력변환기기",
+      "full_statement": "전력변환기기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "변압기",
+      "full_statement": "변압기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의→직업예시(변압기 설치 및 정비원) 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "정비하다",
+      "object": "변압기",
+      "full_statement": "변압기를 정비한다.",
+      "source_sentence": "변압기 설치 및 정비원·태양열전기기기 설치 정비원",
+      "derived_from": "세세분류 정의→직업예시(변압기 설치 및 정비원) 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "축전지",
+      "full_statement": "축전지를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의→직업예시(축전지 설치 및 수리원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "축전지",
+      "full_statement": "축전지를 수리한다.",
+      "source_sentence": "축전지 설치 및 수리원",
+      "derived_from": "세세분류 정의→직업예시(축전지 설치 및 수리원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "직류기",
+      "full_statement": "직류기를 설치한다.",
+      "source_sentence": "직류기 설치 정비원·교류기 설치 정비원",
+      "derived_from": "세세분류 정의→직업예시(직류기 설치 정비원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "직류기",
+      "full_statement": "직류기를 정비한다.",
+      "source_sentence": "직류기 설치 정비원·교류기 설치 정비원",
+      "derived_from": "세세분류 정의→직업예시(직류기 설치 정비원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "교류기",
+      "full_statement": "교류기를 설치한다.",
+      "source_sentence": "직류기 설치 정비원·교류기 설치 정비원",
+      "derived_from": "세세분류 정의→직업예시(교류기 설치 정비원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "교류기",
+      "full_statement": "교류기를 정비한다.",
+      "source_sentence": "직류기 설치 정비원·교류기 설치 정비원",
+      "derived_from": "세세분류 정의→직업예시(교류기 설치 정비원) 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "개폐기",
+      "full_statement": "개폐기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "개폐기",
+      "full_statement": "개폐기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "차단기",
+      "full_statement": "차단기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무(차단기를 설치한다)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "차단기",
+      "full_statement": "차단기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "신호기기",
+      "full_statement": "신호기기를 설치한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정비하다",
+      "object": "신호기기",
+      "full_statement": "신호기기를 정비한다.",
+      "source_sentence": "발전기, 전동기, 전력변환기기, 변압기, 축전지, 직류기, 교류기, 개폐기, 차단기, 신호기기 등의 전기기기를 설치 및 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "태양열전기기기",
+      "full_statement": "태양열전기기기를 설치한다.",
+      "source_sentence": "변압기 설치 및 정비원·태양열전기기기 설치 정비원",
+      "derived_from": "세세분류 직업예시(태양열전기기기 설치 정비원) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정비하다",
+      "object": "태양열전기기기",
+      "full_statement": "태양열전기기기를 정비한다.",
+      "source_sentence": "변압기 설치 및 정비원·태양열전기기기 설치 정비원",
+      "derived_from": "세세분류 직업예시(태양열전기기기 설치 정비원) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "읽다",
+      "object": "도면",
+      "full_statement": "옥내배선도나 도면을 읽고 구조물 내부 상태와 인입 가능한 배전선로 위치 등을 파악한다.",
+      "source_sentence": "옥내배선도나 도면을 읽고 가옥구조, 구조물 내부 상태, 인입 가능한 배전선로 위치 등을 파악한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(설치 전 도면 검토 활동 보존)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연결하다",
+      "object": "접지선",
+      "full_statement": "접지선을 연결하여 땅속에 묻는다.",
+      "source_sentence": "접지선을 연결하여 땅속에 묻는다.",
+      "derived_from": "상속 주요업무(전기기기 설치 시 접지 작업으로 보존)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "결함",
+      "full_statement": "설치가 완료되면 회선단락·저항·결함을 메가 테스터기·후크메타 등으로 검사한다.",
+      "source_sentence": "배선이 완료되면 회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(설치 후 검사 활동 보존)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "가동하다",
+      "object": "시험가동",
+      "full_statement": "전류를 투입하여 시험가동을 한다.",
+      "source_sentence": "전류를 투입하여 시험가동을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(설치 후 시운전 활동 보존)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "메가 테스터기(절연저항 측정기)", "category": "장비", "evidence_span": "회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다."},
+    {"name": "후크메타(암페어측정기)", "category": "장비", "evidence_span": "회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "전류 투입·고전압 취급", "evidence_span": "전류를 투입하여 시험가동을 한다."},
+    {"category": "장소", "value": "접지선 매설 등 지하·옥외 작업", "evidence_span": "접지선을 연결하여 땅속에 묻는다."}
+  ]
+}

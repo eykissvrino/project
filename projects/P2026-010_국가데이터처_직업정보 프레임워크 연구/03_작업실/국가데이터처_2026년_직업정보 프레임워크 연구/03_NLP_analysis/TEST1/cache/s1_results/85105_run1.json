@@ -1,0 +1,118 @@
+{
+  "ksco_code": "85105",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "금속압연기",
+      "full_statement": "다이펀치 또는 기타 공구로 금속물을 절단·천공·성형하는 금속압연기를 조작한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "금속전단기",
+      "full_statement": "금속전단기를 조작하여 금속물을 절단한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "절단하다",
+      "object": "금속물",
+      "full_statement": "다이펀치 또는 기타 공구로 금속물을 절단한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "천공하다",
+      "object": "금속물",
+      "full_statement": "다이펀치 또는 기타 공구로 금속물을 천공한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "성형하다",
+      "object": "금속물",
+      "full_statement": "다이펀치 또는 기타 공구로 금속물을 성형한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "해석하다",
+      "object": "작업 주문서",
+      "full_statement": "작업 주문서를 해석하여 기계 조작 방법을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "해석하다",
+      "object": "청사진",
+      "full_statement": "청사진을 해석하여 작업 형태를 파악한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "결정하다",
+      "object": "기계 조작 방법",
+      "full_statement": "작업 내용에 따라 기계 조작 방법을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설치하다",
+      "object": "기계",
+      "full_statement": "절단·천공·성형 작업을 위해 기계를 설치한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "작동시키다",
+      "object": "기계",
+      "full_statement": "설치한 기계를 작동시켜 금속 가공 조작을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "장착하다",
+      "object": "다이펀치",
+      "full_statement": "절단·천공·성형에 필요한 다이펀치 또는 기타 공구를 기계에 장착한다.",
+      "source_sentence": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자와 금속전단기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "측정하다",
+      "object": "가공물 치수",
+      "full_statement": "정밀측정 기구를 사용하여 가공물의 치수를 측정한다.",
+      "source_sentence": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "반복하다",
+      "object": "작업",
+      "full_statement": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다.",
+      "source_sentence": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "금속압연기", "category": "장비", "evidence_span": "금속물을 절단, 천공, 성형하는 금속압연기를 조작하는 자"},
+    {"name": "금속전단기", "category": "장비", "evidence_span": "금속전단기를 조작한다"},
+    {"name": "다이펀치", "category": "도구", "evidence_span": "다이펀치 또는 기타 공구로 금속물을 절단, 천공, 성형하는"},
+    {"name": "정밀측정 기구", "category": "도구", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다"}
+  ],
+  "work_context": [
+    {"category": "시간적", "value": "반복적인 작업", "evidence_span": "자동 또는 반자동 금속 공작 기계를 조작하여 반복적인 작업을 수행한다"}
+  ]
+}

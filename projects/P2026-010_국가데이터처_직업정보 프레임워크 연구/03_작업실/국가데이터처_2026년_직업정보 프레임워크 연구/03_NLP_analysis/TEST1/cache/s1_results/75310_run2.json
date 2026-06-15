@@ -1,0 +1,101 @@
+{
+  "ksco_code": "75310",
+  "tasks": [
+    {
+      "verb": "배치하다",
+      "object": "로봇",
+      "full_statement": "제조·물류·서비스 등 분야에 맞게 제작된 로봇을 사용현장에 배치한다.",
+      "source_sentence": "제조 및 물류, 서비스 등 다양한 분야에 맞게 제작된 로봇을 사용현장에 배치하고 작동할 수 있도록 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "로봇",
+      "full_statement": "다목적 기능을 수행하는 자동 조정장치인 로봇을 작동할 수 있도록 설치한다.",
+      "source_sentence": "다목적 기능(용접, 도장, 하역·적하 및 양하, 절단, 조립·금속 기타 가공 등)을 수행하는 자동 조정장치인 로봇을 설치하고 성능이나 작동여부를 확인한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 결합",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "성능 및 작동여부",
+      "full_statement": "설치한 로봇의 성능이나 작동여부를 확인한다.",
+      "source_sentence": "자동 조정장치인 로봇을 설치하고 성능이나 작동여부를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "시운전하다",
+      "object": "로봇",
+      "full_statement": "로봇의 성능을 검사하기 위하여 시운전한다.",
+      "source_sentence": "성능을 검사하기 위하여 시운전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "유지보수하다",
+      "object": "로봇",
+      "full_statement": "로봇이 제 기능을 유지할 수 있도록 유지보수한다.",
+      "source_sentence": "로봇이 원활히 작동되고 제 기능을 유지할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "로봇",
+      "full_statement": "로봇이 원활히 작동되도록 정비한다.",
+      "source_sentence": "로봇이 원활히 작동되고 제 기능을 유지할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "로봇",
+      "full_statement": "로봇의 작동 상태를 점검한다.",
+      "source_sentence": "로봇이 원활히 작동되고 제 기능을 유지할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "분석하다",
+      "object": "고장원인 및 부위",
+      "full_statement": "로봇의 성능저하 및 작동불능 등에 대한 고장원인과 부위를 찾고 분석한다.",
+      "source_sentence": "로봇의 성능저하 및 작동불능 등에 대한 고장원인과 부위를 찾고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "파손되거나 규정 이상 마모된 부품을 신품으로 교체한다.",
+      "source_sentence": "파손되거나 규정 이상 마모된 부품을 신품으로 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수리하다",
+      "object": "로봇",
+      "full_statement": "고장이 발생한 로봇을 수리한다.",
+      "source_sentence": "로봇이 원활히 작동되고 제 기능을 유지할 수 있도록 유지보수, 정비, 수리, 점검 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조언하다",
+      "object": "문제점",
+      "full_statement": "수리과정에서 나타난 문제점을 취급자에게 조언한다.",
+      "source_sentence": "수리과정에서 나타난 문제점을 취급자에게 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "산업로봇", "category": "장비", "evidence_span": "다목적 기능(용접, 도장, 하역·적하 및 양하, 절단, 조립·금속 기타 가공 등)을 수행하는 자동 조정장치인 로봇"},
+    {"name": "자동 조정장치(자동화 로봇)", "category": "시스템", "evidence_span": "다목적 기능...을 수행하는 자동 조정장치인 로봇을 설치하고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "사용현장 배치·설치", "evidence_span": "다양한 분야에 맞게 제작된 로봇을 사용현장에 배치하고 작동할 수 있도록 설치한다"},
+    {"category": "사회적", "value": "취급자 대상 조언(대인 상호작용)", "evidence_span": "수리과정에서 나타난 문제점을 취급자에게 조언한다"}
+  ]
+}

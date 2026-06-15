@@ -1,0 +1,47 @@
+{
+  "ksco_code": "81123",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "면류 제조 기계",
+      "full_statement": "국수, 파스타, 마카로니 등 밀가루 면류 제품을 제조하는 기계를 조작한다.",
+      "source_sentence": "국수, 파스타, 마카로니 및 기타 유사한 밀가루 제품의 면류를 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 혼합 기계",
+      "full_statement": "면류 제품용 반죽을 가공하기 위하여 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 압출 기계",
+      "full_statement": "면류 제품을 제조하기 위하여 반죽을 압출하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 성형 기계",
+      "full_statement": "면류 제품을 제조하기 위하여 반죽을 성형하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물제품 제조 기계",
+      "full_statement": "곡물제품인 면류를 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

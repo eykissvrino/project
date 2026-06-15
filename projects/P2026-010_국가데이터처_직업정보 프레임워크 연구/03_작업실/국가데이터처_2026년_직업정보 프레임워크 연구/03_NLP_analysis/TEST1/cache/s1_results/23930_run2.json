@@ -1,0 +1,101 @@
+{
+  "ksco_code": "23930",
+  "tasks": [
+    {
+      "verb": "채취하다",
+      "object": "식품 시료",
+      "full_statement": "음식료품 또는 원료의 시험 대상물에서 시료를 채취한다.",
+      "source_sentence": "시험 대상물의 시료를 채취한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(음식료품·원료 대상물 구체화)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작동하다",
+      "object": "시험 기구·장비",
+      "full_statement": "시험 기구 또는 장비를 작동하여 시험 목적 및 기준에 따라 시험을 실시한다.",
+      "source_sentence": "시험 기구 또는 장비를 작동하여 시험 목적 및 기준에 따라 시험을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시험하다",
+      "object": "식품 중 중금속 성분",
+      "full_statement": "식품이나 원료 중의 비소·납을 비롯한 중금속 성분을 시험한다.",
+      "source_sentence": "각종 음식료품의 안전성을 높이기 위해 식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "식품 중 중금속 성분",
+      "full_statement": "식품이나 원료 중의 비소·납을 비롯한 중금속 성분을 분석한다.",
+      "source_sentence": "각종 음식료품의 안전성을 높이기 위해 식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시험하다",
+      "object": "식품 중 미네랄 성분",
+      "full_statement": "식품이나 원료 중의 미네랄 성분을 시험한다.",
+      "source_sentence": "각종 음식료품의 안전성을 높이기 위해 식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "식품 중 미네랄 성분",
+      "full_statement": "식품이나 원료 중의 미네랄 성분을 분석한다.",
+      "source_sentence": "각종 음식료품의 안전성을 높이기 위해 식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "음식료품 안전성",
+      "full_statement": "음식료품의 안전성을 높이기 위해 성분 시험을 통해 안전성을 확인한다.",
+      "source_sentence": "각종 음식료품의 안전성을 높이기 위해 식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "시험 결과 보고서",
+      "full_statement": "시험 결과를 규정된 보고서 형식에 따라 작성한다.",
+      "source_sentence": "시험 결과를 규정된 보고서 형식에 따라 작성․ 보고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보고하다",
+      "object": "시험 결과",
+      "full_statement": "작성한 시험 결과를 규정된 형식에 따라 보고한다.",
+      "source_sentence": "시험 결과를 규정된 보고서 형식에 따라 작성․ 보고한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "유지하다",
+      "object": "시험 기구·장비",
+      "full_statement": "시험 기구 및 장비를 유지한다.",
+      "source_sentence": "시험 기구 및 장비를 유지․ 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "시험 기구·장비",
+      "full_statement": "시험 기구 및 장비를 관리한다.",
+      "source_sentence": "시험 기구 및 장비를 유지․ 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "시험 기구", "category": "장비", "evidence_span": "시험 기구 또는 장비를 작동하여 시험 목적 및 기준에 따라 시험을 실시한다."},
+    {"name": "시험 장비", "category": "장비", "evidence_span": "시험 기구 또는 장비를 작동하여 시험 목적 및 기준에 따라 시험을 실시한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "비소·납 등 중금속 등 화학물질 취급", "evidence_span": "식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다."},
+    {"category": "신체적", "value": "성분 시험·분석에 따른 정밀 작업", "evidence_span": "식품이나 원료 중의 비소, 납을 비롯한 중금속과 미네랄 성분을 시험․ 분석한다."}
+  ]
+}

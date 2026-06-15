@@ -1,0 +1,135 @@
+{
+  "ksco_code": "29350",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "음향장비와 녹음장비",
+      "full_statement": "영화 또는 방송 드라마, 음반을 제작하기 위하여 음향장비와 녹음장비를 조작한다.",
+      "source_sentence": "영화 또는 방송 드라마, 음반을 제작하기 위하여 음향장비와 녹음장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조절하다",
+      "object": "이퀄라이저",
+      "full_statement": "적합한 음향을 연출하기 위하여 고음·중음·저음을 조작하는 이퀄라이저를 조절한다.",
+      "source_sentence": "적합한 음향을 연출하기 위하여 고음‧중음‧저음을 조작하는 이퀄라이저 (각각의 음색을 혼합하는 장치)를 조절하여 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "혼합하다",
+      "object": "음색",
+      "full_statement": "각각의 음색을 혼합하여 적합한 음향을 연출한다.",
+      "source_sentence": "적합한 음향을 연출하기 위하여 고음‧중음‧저음을 조작하는 이퀄라이저 (각각의 음색을 혼합하는 장치)를 조절하여 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선정하다",
+      "object": "드라마 삽입 음악",
+      "full_statement": "드라마에 삽입되는 음악을 선정한다.",
+      "source_sentence": "드라마에 삽입되는 음악을 선정하고 재생하여 각 장면에 맞도록 녹음한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "재생하다",
+      "object": "삽입 음악",
+      "full_statement": "선정한 음악을 재생한다.",
+      "source_sentence": "드라마에 삽입되는 음악을 선정하고 재생하여 각 장면에 맞도록 녹음한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "녹음하다",
+      "object": "음악",
+      "full_statement": "각 장면에 맞도록 음악을 녹음한다.",
+      "source_sentence": "드라마에 삽입되는 음악을 선정하고 재생하여 각 장면에 맞도록 녹음한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "방송장비",
+      "full_statement": "영상에 어울리는 음향, 대사 등을 녹음하기 위하여 방송장비를 조작한다.",
+      "source_sentence": "영상에 어울리는 음향, 대사 등을 녹음하기 위하여 방송장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "녹음하다",
+      "object": "음향과 대사",
+      "full_statement": "영상에 어울리는 음향과 대사를 녹음한다.",
+      "source_sentence": "영상에 어울리는 음향, 대사 등을 녹음하기 위하여 방송장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "확인하다",
+      "object": "카메라 연결 선로",
+      "full_statement": "카메라에 연결된 선로를 확인한다.",
+      "source_sentence": "카메라에 연결된 선로를 확인하고 녹음기의 가동상태를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "녹음기 가동상태",
+      "full_statement": "녹음기의 가동상태를 확인한다.",
+      "source_sentence": "카메라에 연결된 선로를 확인하고 녹음기의 가동상태를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "녹음기",
+      "full_statement": "프로그램의 음향신호를 저장매체에 기록하기 위하여 녹음기를 조작한다.",
+      "source_sentence": "녹음기를 조작하여 프로그램의 음향신호를 저장매체에 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "음향신호",
+      "full_statement": "프로그램의 음향신호를 저장매체에 기록한다.",
+      "source_sentence": "녹음기를 조작하여 프로그램의 음향신호를 저장매체에 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "편집기",
+      "full_statement": "방송시간에 맞도록 프로그램의 화면과 음향을 재편집하기 위하여 편집기를 조작한다.",
+      "source_sentence": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며 기기의 작동상태를 점검하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "재편집하다",
+      "object": "프로그램의 화면과 음향",
+      "full_statement": "방송시간에 맞도록 프로그램의 화면과 음향을 재편집한다.",
+      "source_sentence": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며 기기의 작동상태를 점검하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "기기 작동상태",
+      "full_statement": "기기의 작동상태를 점검한다.",
+      "source_sentence": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집 하기도 하며 기기의 작동상태를 점검하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "음향장비", "category": "장비", "evidence_span": "음향장비와 녹음장비를 조작한다"},
+    {"name": "녹음장비", "category": "장비", "evidence_span": "음향장비와 녹음장비를 조작한다"},
+    {"name": "이퀄라이저", "category": "장비", "evidence_span": "고음‧중음‧저음을 조작하는 이퀄라이저 (각각의 음색을 혼합하는 장치)를 조절하여 혼합한다"},
+    {"name": "방송장비", "category": "장비", "evidence_span": "음향, 대사 등을 녹음하기 위하여 방송장비를 조작한다"},
+    {"name": "녹음기", "category": "장비", "evidence_span": "녹음기를 조작하여 프로그램의 음향신호를 저장매체에 기록한다"},
+    {"name": "편집기", "category": "장비", "evidence_span": "편집기를 조작하여 방송시간에 맞도록 프로그램의 화면과 음향을 재편집"},
+    {"name": "저장매체", "category": "HW", "evidence_span": "프로그램의 음향신호를 저장매체에 기록한다"}
+  ],
+  "work_context": []
+}

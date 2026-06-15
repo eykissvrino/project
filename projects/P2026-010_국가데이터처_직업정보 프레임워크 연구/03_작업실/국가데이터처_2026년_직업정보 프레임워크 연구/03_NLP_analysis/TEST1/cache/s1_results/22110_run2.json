@@ -1,0 +1,207 @@
+{
+  "ksco_code": "22110",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "컴퓨터 및 컴퓨터 관련 장비",
+      "full_statement": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 연구한다.",
+      "source_sentence": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 연구, 설계, 개발 하고 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설계하다",
+      "object": "컴퓨터 및 컴퓨터 관련 장비",
+      "full_statement": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 설계한다.",
+      "source_sentence": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 연구, 설계, 개발 하고 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개발하다",
+      "object": "컴퓨터 및 컴퓨터 관련 장비",
+      "full_statement": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 개발한다.",
+      "source_sentence": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 연구, 설계, 개발 하고 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시험하다",
+      "object": "컴퓨터 및 컴퓨터 관련 장비",
+      "full_statement": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 시험한다.",
+      "source_sentence": "가정, 산업, 군사 또는 과학용 컴퓨터나 컴퓨터 관련 장비를 연구, 설계, 개발 하고 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "감독하다",
+      "object": "컴퓨터 관련 장비의 제조",
+      "full_statement": "컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 제조를 감독한다.",
+      "source_sentence": "또한 컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 제조, 설치를 감독하고 검사하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "컴퓨터 관련 장비의 설치",
+      "full_statement": "컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 설치를 감독한다.",
+      "source_sentence": "또한 컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 제조, 설치를 감독하고 검사하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "컴퓨터 관련 장비 및 구성요소",
+      "full_statement": "컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 제조와 설치를 검사한다.",
+      "source_sentence": "또한 컴퓨터와 컴퓨터 관련 장비 및 구성요소에 대한 제조, 설치를 감독하고 검사하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "컴퓨터 및 관련 장비의 개발",
+      "full_statement": "컴퓨터 및 관련 장비의 개발을 계획한다.",
+      "source_sentence": "컴퓨터 및 관련 장비의 개발을 계획, 설계하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설계하다",
+      "object": "컴퓨터 및 관련 장비의 개발",
+      "full_statement": "컴퓨터 및 관련 장비의 개발을 설계한다.",
+      "source_sentence": "컴퓨터 및 관련 장비의 개발을 계획, 설계하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "컴퓨터 및 관련 장비의 개발",
+      "full_statement": "컴퓨터 및 관련 장비의 개발을 조정한다.",
+      "source_sentence": "컴퓨터 및 관련 장비의 개발을 계획, 설계하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "테스트 장치 및 테스트 방식",
+      "full_statement": "컴퓨터 관련 부품, 회로 및 제어시스템을 테스트하기 위한 장치 및 테스트 방식을 개발한다.",
+      "source_sentence": "컴퓨터 관련 부품, 회로 및 제어시스템을 테스트하기 위한 장치 및 테스트 방식을 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설계하다",
+      "object": "컴퓨터시스템",
+      "full_statement": "컴퓨터의 중앙처리장치, 주변장치, 입력장치, 출력장치 및 보조 기억 장치들의 성능을 향상시키기 위하여 컴퓨터시스템을 설계한다.",
+      "source_sentence": "컴퓨터의 중앙처리장치, 주변장치, 입력장치, 출력장치 및 보조 기억 장치들의 성능을 향상시키기 위하여 컴퓨터시스템을 설계하고 개발하며 설치 및 운영에 대한 기술자문과 지도를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "컴퓨터시스템",
+      "full_statement": "컴퓨터의 중앙처리장치, 주변장치, 입력장치, 출력장치 및 보조 기억 장치들의 성능을 향상시키기 위하여 컴퓨터시스템을 개발한다.",
+      "source_sentence": "컴퓨터의 중앙처리장치, 주변장치, 입력장치, 출력장치 및 보조 기억 장치들의 성능을 향상시키기 위하여 컴퓨터시스템을 설계하고 개발하며 설치 및 운영에 대한 기술자문과 지도를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "설치 및 운영에 대한 기술자문과 지도",
+      "full_statement": "컴퓨터시스템의 설치 및 운영에 대한 기술자문과 지도를 수행한다.",
+      "source_sentence": "컴퓨터의 중앙처리장치, 주변장치, 입력장치, 출력장치 및 보조 기억 장치들의 성능을 향상시키기 위하여 컴퓨터시스템을 설계하고 개발하며 설치 및 운영에 대한 기술자문과 지도를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "컴퓨터 및 관련 장비의 설치, 설비, 변경 작업",
+      "full_statement": "컴퓨터 및 관련 장비의 설치, 설비, 변경 및 기타 작업을 감독한다.",
+      "source_sentence": "컴퓨터 및 관련 장비의 설치, 설비, 변경 및 기타 작업을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "컴퓨터 및 관련 장비의 설치, 설비, 변경 작업",
+      "full_statement": "컴퓨터 및 관련 장비의 설치, 설비, 변경 및 기타 작업을 검사한다.",
+      "source_sentence": "컴퓨터 및 관련 장비의 설치, 설비, 변경 및 기타 작업을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "제도사, 기술자 및 엔지니어",
+      "full_statement": "제도사, 기술자 및 기타 엔지니어를 관리한다.",
+      "source_sentence": "제도사, 기술자 및 기타 엔지니어를 관리하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "컴퓨터 네트워크 장비",
+      "full_statement": "컴퓨터 네트워크 장비를 개발한다.",
+      "source_sentence": "컴퓨터 네트워크 장비 개발자·컴퓨터 제어시스템 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "컴퓨터 제어시스템",
+      "full_statement": "컴퓨터 제어시스템을 개발한다.",
+      "source_sentence": "컴퓨터 네트워크 장비 개발자·컴퓨터 제어시스템 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "기록장치",
+      "full_statement": "자기, 광자기 등의 기록장치를 개발한다.",
+      "source_sentence": "기록장치 개발자(자기, 광자기 등)·디스크드라이브 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "디스크드라이브",
+      "full_statement": "디스크드라이브를 개발한다.",
+      "source_sentence": "기록장치 개발자(자기, 광자기 등)·디스크드라이브 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "하드디스크",
+      "full_statement": "하드디스크를 개발한다.",
+      "source_sentence": "하드디스크 개발자·컴퓨터 메인보드 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "컴퓨터 메인보드",
+      "full_statement": "컴퓨터 메인보드를 개발한다.",
+      "source_sentence": "하드디스크 개발자·컴퓨터 메인보드 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "콘트롤러",
+      "full_statement": "콘트롤러를 개발한다.",
+      "source_sentence": "콘트롤러 개발자·입‧출력 장치 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "개발하다",
+      "object": "입·출력 장치",
+      "full_statement": "입·출력 장치를 개발한다.",
+      "source_sentence": "콘트롤러 개발자·입‧출력 장치 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

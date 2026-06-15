@@ -1,0 +1,87 @@
+{
+  "ksco_code": "61320",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "사육할 동물의 종류와 양",
+      "full_statement": "한우, 육우 등 사육할 동물의 종류와 양을 결정한다.",
+      "source_sentence": "한우, 육우 등 사육할 동물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "구입하다",
+      "object": "사육에 필요한 원료와 도구",
+      "full_statement": "사육 시 필요한 원료와 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "번식시키다",
+      "object": "한우 및 육우",
+      "full_statement": "한우 및 육우를 번식시킨다.",
+      "source_sentence": "한우 및 육우를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "사육하다",
+      "object": "한우 및 육우",
+      "full_statement": "한우 및 육우를 사육한다.",
+      "source_sentence": "한우 및 육우를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "한우 및 육우",
+      "full_statement": "한우 및 육우를 관리한다.",
+      "source_sentence": "한우 및 육우를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "사육한 한우 및 육우의 생산물을 공급한다.",
+      "source_sentence": "한우 및 육우를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "출하하다",
+      "object": "생산물",
+      "full_statement": "사육한 한우 및 육우의 생산물을 출하한다.",
+      "source_sentence": "한우 및 육우를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "급여하다",
+      "object": "사료",
+      "full_statement": "한우 및 육우에게 사료를 급여한다.",
+      "source_sentence": "한우 및 육우를 번식, 사육시키는데 따르는 여러 가지 작업을 수행한다.",
+      "derived_from": "세세분류 정의→사육활동 구체화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "생산하다",
+      "object": "낙농제품",
+      "full_statement": "사육 과정에서 낙농제품을 생산한다.",
+      "source_sentence": "소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "기획하다",
+      "object": "사육에 필요한 활동",
+      "full_statement": "가축의 번식·사육에 필요한 활동을 기획한다.",
+      "source_sentence": "소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

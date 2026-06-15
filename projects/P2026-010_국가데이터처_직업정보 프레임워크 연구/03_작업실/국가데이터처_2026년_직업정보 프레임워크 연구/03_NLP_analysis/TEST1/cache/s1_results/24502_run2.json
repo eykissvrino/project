@@ -1,0 +1,127 @@
+{
+  "ksco_code": "24502",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "식단",
+      "full_statement": "균형 잡힌 급식 서비스를 제공하기 위해 식단을 계획한다.",
+      "source_sentence": "개인 및 단체에 균형 잡힌 급식 서비스를 제공하기 위해 식단을 계획하고 조리 및 공급을 감독하는 등 급식을 담당하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "감독하다",
+      "object": "조리 및 공급",
+      "full_statement": "급식 서비스 제공을 위해 조리 및 공급 과정을 감독한다.",
+      "source_sentence": "개인 및 단체에 균형 잡힌 급식 서비스를 제공하기 위해 식단을 계획하고 조리 및 공급을 감독하는 등 급식을 담당하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "관리하다",
+      "object": "영양서비스",
+      "full_statement": "산업체에서 급식관리 업무 외에 영양교육 및 상담, 영양지원 등 영양서비스를 관리한다.",
+      "source_sentence": "산업체에서 급식관리 업무 외에 영양교육 및 상담, 영양지원 등 영양서비스를 관리하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구·개발하다",
+      "object": "영양기법과 응용",
+      "full_statement": "영양기법과 응용에 관하여 연구·개발하고 이들을 적용한다.",
+      "source_sentence": "영양기법과 응용에 관하여 연구‧개발하고 이들을 적용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "검사하다",
+      "object": "사용식품의 신선도",
+      "full_statement": "사용식품의 신선도를 검사한다.",
+      "source_sentence": "사용식품의 신선도를 검사하고, 함유열량의 단위를 계산하며 섭취영양소의 양을 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "함유열량의 단위",
+      "full_statement": "사용식품의 함유열량 단위를 계산한다.",
+      "source_sentence": "사용식품의 신선도를 검사하고, 함유열량의 단위를 계산하며 섭취영양소의 양을 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "섭취영양소의 양",
+      "full_statement": "섭취영양소의 양을 분석한다.",
+      "source_sentence": "사용식품의 신선도를 검사하고, 함유열량의 단위를 계산하며 섭취영양소의 양을 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리·감독하다",
+      "object": "조리담당자의 조리·위생 상태",
+      "full_statement": "조리담당자의 조리·위생 상태를 관리·감독한다.",
+      "source_sentence": "조리담당자의 조리‧위생 상태를 관리‧감독하며, 조리된 음식의 조화‧맛‧질감을 평가하기 위하여 검식을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "검식하다",
+      "object": "조리된 음식",
+      "full_statement": "조리된 음식의 조화·맛·질감을 평가하기 위하여 검식을 한다.",
+      "source_sentence": "조리담당자의 조리‧위생 상태를 관리‧감독하며, 조리된 음식의 조화‧맛‧질감을 평가하기 위하여 검식을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검·감독하다",
+      "object": "주방기구·시설·설비의 위생",
+      "full_statement": "주방기구·시설·설비의 위생을 점검·감독한다.",
+      "source_sentence": "주방기구‧시설‧설비의 위생을 점검, 감독하고 일일 식품소비량을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "관리하다",
+      "object": "일일 식품소비량",
+      "full_statement": "일일 식품소비량을 관리한다.",
+      "source_sentence": "주방기구‧시설‧설비의 위생을 점검, 감독하고 일일 식품소비량을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "판정하다",
+      "object": "영양",
+      "full_statement": "영양문제 수집·분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "source_sentence": "영양문제 수집‧분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "실시하다",
+      "object": "영양상담 및 교육",
+      "full_statement": "영양상담 및 교육을 실시한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "영양모니터링",
+      "full_statement": "영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "자문·연구하다",
+      "object": "영양 관리 및 임상영양",
+      "full_statement": "영양불량상태 개선을 위한 영양 관리 및 임상영양에 대하여 자문 및 연구를 한다.",
+      "source_sentence": "영양불량상태 개선을 위한 영양 관리 및 임상영양에 대하여 자문 및 연구를 하며 그 밖에 임상영양과 관련된 업무를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

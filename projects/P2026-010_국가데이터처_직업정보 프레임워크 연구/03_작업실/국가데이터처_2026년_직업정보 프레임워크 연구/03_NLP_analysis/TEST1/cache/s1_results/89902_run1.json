@@ -1,0 +1,59 @@
+{
+  "ksco_code": "89902",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "상표 부착 기계",
+      "full_statement": "제품에 상표를 부착하는 기계를 조작한다.",
+      "source_sentence": "제품의 상표 또는 라벨을 부착하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "라벨 부착 기계",
+      "full_statement": "제품에 라벨을 부착하는 기계를 조작한다.",
+      "source_sentence": "제품의 상표 또는 라벨을 부착하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "붙이다",
+      "object": "라벨",
+      "full_statement": "접착제 또는 기타 방법으로 제품에 라벨을 붙이는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "첨부하다",
+      "object": "수입증지",
+      "full_statement": "제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "포장 기계",
+      "full_statement": "저장 및 출하하기 위하여 각종 제품을 포장하는 기계를 조작한다.",
+      "source_sentence": "액체 제품을 포함하여 저장 및 출하하기 위하여 각종 제품을 포장 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "기계",
+      "full_statement": "제품을 제조하기 위해 다양한 기기를 조작한다.",
+      "source_sentence": "금속부품이나 기타 다양한 제품을 제조하기 위해 다양한 기기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "상표 부착기", "category": "장비", "evidence_span": "제품의 상표 또는 라벨을 부착하는 기계를 조작한다."},
+    {"name": "라벨 부착기", "category": "장비", "evidence_span": "제품의 상표 또는 라벨을 부착하는 기계를 조작한다."},
+    {"name": "포장기계", "category": "장비", "evidence_span": "각종 제품을 포장 하는 기계를 조작한다."}
+  ],
+  "work_context": []
+}

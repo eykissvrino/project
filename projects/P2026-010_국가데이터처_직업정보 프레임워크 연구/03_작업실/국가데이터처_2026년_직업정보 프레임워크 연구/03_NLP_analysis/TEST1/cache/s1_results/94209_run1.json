@@ -1,0 +1,106 @@
+{
+  "ksco_code": "94209",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "방문자의 출입",
+      "full_statement": "건물에서 방문자의 출입을 점검한다.",
+      "source_sentence": "건물에서 방문자의 출입을 점검하고 필요한 정보를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제공하다",
+      "object": "필요한 정보",
+      "full_statement": "방문자에게 필요한 정보를 제공한다.",
+      "source_sentence": "건물에서 방문자의 출입을 점검하고 필요한 정보를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "관리하다",
+      "object": "건물",
+      "full_statement": "건물을 관리한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수선하다",
+      "object": "건물 시설",
+      "full_statement": "건물 시설에 대해 간단한 수선을 한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정비하다",
+      "object": "건물 시설",
+      "full_statement": "건물 시설에 대해 간단한 정비를 한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "규제하다",
+      "object": "소음·진동 유발 행위",
+      "full_statement": "타인에게 해를 주는 소음, 진동 등에 대해 거주자 및 기타 건물 사용자의 행위를 규제한다.",
+      "source_sentence": "타인에게 해를 주는 소음, 진동 등에 대해 거주자 및 기타 건물 사용자의 행위를 규제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "접수하다",
+      "object": "배달물",
+      "full_statement": "거주자를 대신해서 배달물을 접수한다.",
+      "source_sentence": "거주자를 대신해서 배달물을 접수하는 등 부재중인 거주자를 위하여 소규모의 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제공하다",
+      "object": "소규모 서비스",
+      "full_statement": "부재중인 거주자를 위하여 소규모의 서비스를 제공한다.",
+      "source_sentence": "거주자를 대신해서 배달물을 접수하는 등 부재중인 거주자를 위하여 소규모의 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "순찰하다",
+      "object": "공원·시설 구역",
+      "full_statement": "공원이나 시설 구역을 순찰하며 안전과 질서를 점검한다.",
+      "source_sentence": "공원 순찰원·공원 안전요원 / 공원 질서요원·건물 경비원(순찰 및 입·출입 관리) / 놀이시설 질서유지원",
+      "derived_from": "상속 주요업무→세세분류 예시 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "유지하다",
+      "object": "이용객 질서",
+      "full_statement": "공원이나 놀이시설에서 이용객의 질서를 유지한다.",
+      "source_sentence": "공원 질서요원·건물 경비원(순찰 및 입·출입 관리) / 놀이시설 질서유지원",
+      "derived_from": "상속 주요업무→세세분류 예시 특화",
+      "confidence": 0.52
+    },
+    {
+      "verb": "관리하다",
+      "object": "교회·성당·별장 건물",
+      "full_statement": "교회, 성당, 별장 등 특정 건물을 관리한다.",
+      "source_sentence": "교회 관리인·성당지기 / 별장 관리인",
+      "derived_from": "상속 주요업무→세세분류 예시 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순·일상 업무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"
+    },
+    {
+      "category": "사회적",
+      "value": "방문자·거주자 응대",
+      "evidence_span": "방문자의 출입을 점검하고 거주자를 대신하여 배달물을 접수하거나 방문자에게 필요한 정보를 제공한다"
+    }
+  ]
+}

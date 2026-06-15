@@ -1,0 +1,129 @@
+{
+  "ksco_code": "75103",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "자동차 전기·전자부분",
+      "full_statement": "자동차의 전기·전자부분을 점검한다.",
+      "source_sentence": "자동차의 전기‧전자부분을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "교체하다",
+      "object": "자동차 전기·전자부품",
+      "full_statement": "자동차의 전기·전자부분을 교체한다.",
+      "source_sentence": "자동차의 전기‧전자부분을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "자동차 전기·전자부분",
+      "full_statement": "자동차의 전기·전자부분을 수리한다.",
+      "source_sentence": "자동차의 전기‧전자부분을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진단하다",
+      "object": "전기·전자 각 부분",
+      "full_statement": "고장의 위치·범위·정도·성격 등을 확인하기 위하여 시험·측정 기구를 사용하여 전기·전자 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위를 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분해하다",
+      "object": "고장부위",
+      "full_statement": "고장부위를 분해한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "작동상태",
+      "full_statement": "전기·전자부품의 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "고장난 전기·전자부품을 교체한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 부품",
+      "full_statement": "사용가능한 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "모터·배터리 성능",
+      "full_statement": "전기자동차의 모터 및 배터리의 성능을 검사한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "수리하다",
+      "object": "모터·배터리",
+      "full_statement": "전기자동차의 모터 및 배터리를 수리한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "교체하다",
+      "object": "모터·배터리",
+      "full_statement": "전기자동차의 모터 및 배터리를 교체한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "작동상태",
+      "full_statement": "설치 또는 수리부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "배선하다",
+      "object": "차량 전기 배선",
+      "full_statement": "차량의 전기 배선을 연결한다.",
+      "source_sentence": "차량 배선원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "장비", "evidence_span": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다."}
+  ],
+  "work_context": []
+}

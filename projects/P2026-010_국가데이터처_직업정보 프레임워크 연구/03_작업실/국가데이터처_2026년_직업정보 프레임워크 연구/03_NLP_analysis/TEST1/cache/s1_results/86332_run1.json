@@ -1,0 +1,134 @@
+{
+  "ksco_code": "86332",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "전자제품 생산 기계",
+      "full_statement": "각종 전자제품을 생산하는 기계를 조작한다.",
+      "source_sentence": "각종 전자제품을 생산하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "웨이퍼 제조용 단결정성장·절단·연마·평탄화·식각·세정 기기",
+      "full_statement": "웨이퍼 제조를 위한 단결정성장, 절단, 연마, 평탄화, 식각, 세정을 위한 관련 기기를 조작한다.",
+      "source_sentence": "웨이퍼제조를 위한 단결정성장, 절단, 연마, 평탄화, 식가, 세정을 위한 관련 기기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수령하다",
+      "object": "자재",
+      "full_statement": "자재부서로부터 자재를 수령한다.",
+      "source_sentence": "자재부서로부터 자재를 수령하여 이상 유무를 확인하고 작업지시서, 부품 목록 등을 숙지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "자재 이상 유무",
+      "full_statement": "수령한 자재의 이상 유무를 확인한다.",
+      "source_sentence": "자재부서로부터 자재를 수령하여 이상 유무를 확인하고 작업지시서, 부품 목록 등을 숙지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "숙지하다",
+      "object": "작업지시서·부품 목록",
+      "full_statement": "작업지시서, 부품 목록 등을 숙지한다.",
+      "source_sentence": "자재부서로부터 자재를 수령하여 이상 유무를 확인하고 작업지시서, 부품 목록 등을 숙지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "입력하다",
+      "object": "프로그램",
+      "full_statement": "기계에 프로그램을 입력한다.",
+      "source_sentence": "기계에 프로그램을 입력하고 전자부품자재를 제품모델에 맞게 장착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장착하다",
+      "object": "전자부품 자재",
+      "full_statement": "전자부품 자재를 제품모델에 맞게 장착한다.",
+      "source_sentence": "기계에 프로그램을 입력하고 전자부품자재를 제품모델에 맞게 장착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설정하다",
+      "object": "전자부품 첫 좌표",
+      "full_statement": "인쇄회로기판에 삽입될 전자부품의 첫 좌표를 설정한다.",
+      "source_sentence": "인쇄회로기판에 삽입될 전자부품의 첫 좌표를 설정하고 파일을 보며 프로그램에 입력된 삽입위치에 부품이 삽입되도록 작동시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작동시키다",
+      "object": "부품 삽입 기계",
+      "full_statement": "파일을 보며 프로그램에 입력된 삽입위치에 부품이 삽입되도록 기계를 작동시킨다.",
+      "source_sentence": "인쇄회로기판에 삽입될 전자부품의 첫 좌표를 설정하고 파일을 보며 프로그램에 입력된 삽입위치에 부품이 삽입되도록 작동시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "전자부품 자재",
+      "full_statement": "작업 중 전자부품 자재를 수시로 확인하여 교체한다.",
+      "source_sentence": "작업 중 전자부품 자재를 수시로 확인하여 교체하고 기계의 작동상태를 관찰한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관찰하다",
+      "object": "기계 작동상태",
+      "full_statement": "기계의 작동상태를 관찰한다.",
+      "source_sentence": "작업 중 전자부품 자재를 수시로 확인하여 교체하고 기계의 작동상태를 관찰한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "삽입된 전자부품",
+      "full_statement": "삽입된 전자부품을 관찰하여 역삽·오삽·미삽 등을 검사한다.",
+      "source_sentence": "삽입된 전자부품을 관찰하여 역삽‧오삽‧미삽 등을 검사하고 양호하면 연속 작업을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "실시하다",
+      "object": "연속 작업",
+      "full_statement": "검사 결과가 양호하면 연속 작업을 실시한다.",
+      "source_sentence": "삽입된 전자부품을 관찰하여 역삽‧오삽‧미삽 등을 검사하고 양호하면 연속 작업을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "넘기다",
+      "object": "작업 완료된 인쇄회로기판",
+      "full_statement": "작업 완료된 인쇄회로기판을 차기공정으로 넘긴다.",
+      "source_sentence": "작업 완료된 인쇄회로기판을 차기공정으로 넘기고 작업일지를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "작업일지",
+      "full_statement": "작업일지를 작성한다.",
+      "source_sentence": "작업 완료된 인쇄회로기판을 차기공정으로 넘기고 작업일지를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "전자제품 생산 기계", "category": "장비", "evidence_span": "각종 전자제품을 생산하는 기계를 조작한다."},
+    {"name": "웨이퍼 제조용 단결정성장·절단·연마·평탄화·식각·세정 기기", "category": "장비", "evidence_span": "웨이퍼제조를 위한 단결정성장, 절단, 연마, 평탄화, 식가, 세정을 위한 관련 기기를 조작한다."},
+    {"name": "전자부품 삽입기계", "category": "장비", "evidence_span": "프로그램에 입력된 삽입위치에 부품이 삽입되도록 작동시킨다"},
+    {"name": "인쇄회로기판", "category": "장비", "evidence_span": "인쇄회로기판에 삽입될 전자부품의 첫 좌표를 설정하고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "전자부품 자재를 수시로 확인하며 작동상태를 지속 관찰하는 정밀·반복 작업", "evidence_span": "작업 중 전자부품 자재를 수시로 확인하여 교체하고 기계의 작동상태를 관찰한다."}
+  ]
+}

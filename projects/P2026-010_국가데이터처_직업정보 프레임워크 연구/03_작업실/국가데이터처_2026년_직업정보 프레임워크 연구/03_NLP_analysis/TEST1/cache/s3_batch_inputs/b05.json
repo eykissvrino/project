@@ -1,0 +1,282 @@
+[
+  {
+    "iwa_id": "I_0151",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "현상과 정서를 문학적 표현으로 창작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0152",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "책의 표지와 본문 레이아웃을 디자인한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0153",
+    "n_dwa": 1,
+    "n_task": 12,
+    "n_jobs": 6,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "관람객의 바람직한 관람예절을 유도한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0154",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 4,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "금속추출공정을 개발한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0155",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "벌통을 관리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0156",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "원료를 발효시켜 장류를 제조한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0157",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "자동차 차체 판금의 변형을 복구한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0158",
+    "n_dwa": 1,
+    "n_task": 8,
+    "n_jobs": 8,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "구조물에 구멍을 천공한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0159",
+    "n_dwa": 1,
+    "n_task": 7,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "도로포장재를 살포한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0160",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "시험시동용 보조물을 가설한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0161",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "마감작업 전 바탕면을 정리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0162",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "접합부에 실란트를 충진한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0163",
+    "n_dwa": 1,
+    "n_task": 9,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "유정천공기계를 조작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0164",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "부착면을 측정하여 시공자재 소요량을 산출한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0165",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "노래 가사를 작사한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0166",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "분야별 전통기법을 고증하고 적용한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0167",
+    "n_dwa": 1,
+    "n_task": 23,
+    "n_jobs": 11,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "전기공학연구를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0168",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 4,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "학원에서 외국어 과목을 가르친다"
+    ]
+  },
+  {
+    "iwa_id": "I_0169",
+    "n_dwa": 1,
+    "n_task": 6,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "공동주택 관리활동을 기획하고 관리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0170",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "기업경영정보를 수집하고 관리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0171",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 5,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "실시간 환경의 컴퓨터기술 적용요건을 분석한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0172",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "시장동향을 조사한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0173",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "생체전기활동을 측정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0174",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "고객에게 와인을 제공한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0175",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "체인점 운영을 지원한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0176",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "공연전시기관활동을 관리한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0177",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "고난도 대역연기를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0178",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "비약물요법으로 정신질환을 치료한다"
+    ]
+  }
+]

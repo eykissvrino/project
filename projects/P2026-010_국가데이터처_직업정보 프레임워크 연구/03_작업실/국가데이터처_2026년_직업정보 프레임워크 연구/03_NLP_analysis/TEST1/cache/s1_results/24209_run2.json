@@ -1,0 +1,109 @@
+{
+  "ksco_code": "24209",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "동물의 각종 질환",
+      "full_statement": "동물들의 각종 질환을 진단한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "치료하다",
+      "object": "동물의 각종 질환",
+      "full_statement": "동물들의 각종 질환을 치료한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "집도하다",
+      "object": "수술",
+      "full_statement": "동물에 대한 수술을 집도한다.",
+      "source_sentence": "동물들의 각종 질환을 진단, 치료하고 수술을 집도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "실시하다",
+      "object": "예방 접종",
+      "full_statement": "동물들을 대상으로 예방 접종을 실시한다.",
+      "source_sentence": "동물들을 대상으로 예방 접종을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(공중방역·축산물방역 수의사)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "예방하다",
+      "object": "가축의 질병",
+      "full_statement": "가축의 질병을 예방한다.",
+      "source_sentence": "가축의 질병 예방이나 가축의 개량 및 번식업무를 담당하거나 동물용 의약품의 안전성 확보를 위한 검정시험 실시 외에...",
+      "derived_from": "상속 주요업무(공직 수의사)→세세정의 특화(공중방역 수의사)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "담당하다",
+      "object": "가축의 개량 및 번식업무",
+      "full_statement": "가축의 개량 및 번식업무를 담당한다.",
+      "source_sentence": "가축의 질병 예방이나 가축의 개량 및 번식업무를 담당하거나...",
+      "derived_from": "상속 주요업무(공직 수의사)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "실시하다",
+      "object": "동물용 의약품의 검정시험",
+      "full_statement": "동물용 의약품의 안전성 확보를 위한 검정시험을 실시한다.",
+      "source_sentence": "동물용 의약품의 안전성 확보를 위한 검정시험 실시 외에 해외로부터 가축이나 축산물, 모피 등의 유입 시...",
+      "derived_from": "상속 주요업무(공직 수의사)→세세정의 특화(축산물방역 수의사)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "실시하다",
+      "object": "검역작업",
+      "full_statement": "가축·축산물·모피 등의 수입 또는 수출 시 전염병을 막기 위한 검역작업을 실시한다.",
+      "source_sentence": "해외로부터 가축이나 축산물, 모피 등의 유입 시 혹은 국내에서 생산한 모든 축산물을 해외로 수출할 경우에는 전염병을 막기 위한 검역작업을 실시한다.",
+      "derived_from": "상속 주요업무(공직 수의사)→세세정의 특화(축산물방역 수의사)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "담당하다",
+      "object": "국가 수의업무 전반",
+      "full_statement": "국가 수의업무 전반을 담당한다.",
+      "source_sentence": "공직에 있는 수의사는 국가 수의업무 전반을 담당하고 있다.",
+      "derived_from": "상속 주요업무(공직 수의사)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "예방하다",
+      "object": "동물의 질병과 상해",
+      "full_statement": "동물의 질병과 상해를 예방한다.",
+      "source_sentence": "동물의 질병과 상해를 예방, 진단, 치료하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 2420 수의사)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {
+      "name": "진료 기구",
+      "category": "도구",
+      "evidence_span": "검사를 위해 다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 및 축산농가 상담",
+      "evidence_span": "축산농가에서 궁금해 하는 여러 가지 축산문제나 경영상의 어려움 등의 질문에 상담을 해준다."
+    },
+    {
+      "category": "장소",
+      "value": "축산농가 왕진(이동)",
+      "evidence_span": "다양한 기구를 가지고 축산농가로 왕진을 나가 진료를 하며"
+    },
+    {
+      "category": "위험",
+      "value": "전염병·생물위험 노출",
+      "evidence_span": "전염병을 막기 위한 검역작업을 실시한다."
+    }
+  ]
+}

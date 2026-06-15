@@ -1,0 +1,58 @@
+{
+  "ksco_code": "44291",
+  "tasks": [
+    {
+      "verb": "진행하다",
+      "object": "카드놀이",
+      "full_statement": "호텔 내 카지노에서 카드놀이 게임을 진행한다.",
+      "source_sentence": "호텔 내 카지노에서 카드놀이, 주사위 놀이, 룰렛 등의 게임을 진행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "주사위 놀이",
+      "full_statement": "호텔 내 카지노에서 주사위 놀이 게임을 진행한다.",
+      "source_sentence": "호텔 내 카지노에서 카드놀이, 주사위 놀이, 룰렛 등의 게임을 진행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "룰렛",
+      "full_statement": "호텔 내 카지노에서 룰렛 게임을 진행한다.",
+      "source_sentence": "호텔 내 카지노에서 카드놀이, 주사위 놀이, 룰렛 등의 게임을 진행한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진행하다",
+      "object": "룰렛·카드놀이",
+      "full_statement": "카지노에서 룰렛, 카드놀이 등을 진행한다.",
+      "source_sentence": "카지노에서 룰렛, 카드놀이 등을 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설명하다",
+      "object": "게임의 방법·규칙",
+      "full_statement": "오락이나 게임의 방법·규칙 등에 대하여 개략적인 설명을 한다.",
+      "source_sentence": "오락이나 게임의 방법‧규칙 등에 대하여 개략적인 설명을 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "호텔 내 카지노(실내)",
+      "evidence_span": "호텔 내 카지노에서 카드놀이, 주사위 놀이, 룰렛 등의 게임을 진행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(게임 진행 및 규칙 설명)",
+      "evidence_span": "오락이나 게임의 방법‧규칙 등에 대하여 개략적인 설명을 한다."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "ksco_code": "22241",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "웹 콘텐츠",
+      "full_statement": "웹 기반 서비스의 콘텐츠를 기획한다.",
+      "source_sentence": "콘텐츠 및 디자인 기획은 웹 기획자가 담당한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "웹 디자인",
+      "full_statement": "웹사이트의 디자인을 기획한다.",
+      "source_sentence": "콘텐츠 및 디자인 기획은 웹 기획자가 담당한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "웹 기반 서비스",
+      "full_statement": "웹 기반의 각종 서비스를 개발한다.",
+      "source_sentence": "웹 기반의 각종 서비스를 개발하고 관련 정보를 제공하며, 이를 운영하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제공하다",
+      "object": "관련 정보",
+      "full_statement": "웹 서비스와 관련된 정보를 제공한다.",
+      "source_sentence": "웹 기반의 각종 서비스를 개발하고 관련 정보를 제공하며, 이를 운영하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "운영하다",
+      "object": "웹 서비스",
+      "full_statement": "개발된 웹 서비스를 운영한다.",
+      "source_sentence": "웹 기반의 각종 서비스를 개발하고 관련 정보를 제공하며, 이를 운영하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "웹 서비스",
+      "full_statement": "운영 중인 웹 서비스를 관리한다.",
+      "source_sentence": "웹 기반의 각종 서비스를 개발하고 관련 정보를 제공하며, 이를 운영하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "운영하다",
+      "object": "홈페이지",
+      "full_statement": "웹 서버를 기반으로 홈페이지를 운영한다.",
+      "source_sentence": "웹 서버를 구축하고 홈페이지를 운영하려면 기술 부분과 내용 부분의 운영이 필요하다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "갱신하다",
+      "object": "제공 정보",
+      "full_statement": "웹 기획자에게 제공되는 정보를 지속적으로 갱신한다.",
+      "source_sentence": "또한 웹 기획자에게 제공되는 정보를 지속적으로 갱신해야 하고 고객관리 능력도 필요하다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객",
+      "full_statement": "웹 서비스 운영을 위해 고객을 관리한다.",
+      "source_sentence": "또한 웹 기획자에게 제공되는 정보를 지속적으로 갱신해야 하고 고객관리 능력도 필요하다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "운영하다",
+      "object": "콘텐츠 부분",
+      "full_statement": "홈페이지의 내용 부분을 운영한다.",
+      "source_sentence": "웹 서버를 구축하고 홈페이지를 운영하려면 기술 부분과 내용 부분의 운영이 필요하다. 여기서 기술부분은 웹 개발자가 담당하고, 콘텐츠 및 디자인 기획은 웹 기획자가 담당한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객관리·고객응대",
+      "evidence_span": "고객관리 능력도 필요하다"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "ksco_code": "44299",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "오락·게임의 방법과 규칙",
+      "full_statement": "고객에게 오락이나 게임의 방법·규칙 등을 개략적으로 설명한다.",
+      "source_sentence": "오락이나 게임의 방법‧규칙 등에 대하여 개략적인 설명을 한다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "오락 설비·운동 장비·비품",
+      "full_statement": "오락 설비, 운동 장비, 비품 등을 관리한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "수리하다",
+      "object": "오락 설비·운동 장비·비품",
+      "full_statement": "오락 설비, 운동 장비, 비품 등의 간단한 수리를 한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.77
+    },
+    {
+      "verb": "안내하다",
+      "object": "휴게실·화장실·공중전화의 위치",
+      "full_statement": "휴게실, 화장실, 공중전화 등의 위치를 고객에게 알려준다.",
+      "source_sentence": "휴게실, 화장실, 공중전화 등의 위치를 알려준다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.77
+    },
+    {
+      "verb": "진행하다",
+      "object": "룰렛·카드놀이 등 게임",
+      "full_statement": "카지노에서 룰렛, 카드놀이 등을 진행한다.",
+      "source_sentence": "카지노에서 룰렛, 카드놀이 등을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "운반하다",
+      "object": "골프채",
+      "full_statement": "골프채를 운반한다.",
+      "source_sentence": "골프채를 운반하며, 골프의 진행을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "돕다",
+      "object": "골프의 진행",
+      "full_statement": "골프의 진행을 돕는다.",
+      "source_sentence": "골프채를 운반하며, 골프의 진행을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "유도하다",
+      "object": "관중의 호응",
+      "full_statement": "응원복을 입고 춤·동작 등을 취하여 관중들이 따라 하거나 함성을 지르도록 유도한다.",
+      "source_sentence": "응원복을 입고 춤, 동작 등을 취하여 관중들이 따라 하거나 함성을 지르도록 유도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "확인하다",
+      "object": "소속팀의 선수명단",
+      "full_statement": "소속팀의 선수명단을 확인한다.",
+      "source_sentence": "소속팀의 선수명단을 확인하고 명단이나 각종 구호를 연호하도록 선창한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "선창하다",
+      "object": "선수명단·구호",
+      "full_statement": "명단이나 각종 구호를 연호하도록 선창한다.",
+      "source_sentence": "소속팀의 선수명단을 확인하고 명단이나 각종 구호를 연호하도록 선창한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "리드하다",
+      "object": "응원",
+      "full_statement": "운동경기에서 응원복을 입고 응원을 리드한다.",
+      "source_sentence": "운동경기에서 응원복을 입고 응원을 리드하는 응원단원도 포함된다.",
+      "derived_from": "조상정의(세분류 4429)",
+      "confidence": 0.64
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(설명·안내·물품 보관)",
+      "evidence_span": "휴게실, 화장실, 공중전화 등의 위치를 알려준다."
+    },
+    {
+      "category": "사회적",
+      "value": "관중·대중 대상 응원 리드",
+      "evidence_span": "운동경기에서 응원복을 입고 응원을 리드하는 응원단원도 포함된다."
+    },
+    {
+      "category": "신체적",
+      "value": "춤·동작 등 신체 표현 수행",
+      "evidence_span": "응원복을 입고 춤, 동작 등을 취하여 관중들이 따라 하거나 함성을 지르도록 유도한다."
+    }
+  ]
+}

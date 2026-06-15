@@ -1,0 +1,21 @@
+{
+  "ksco_code": "28412",
+  "tasks": [
+    {
+      "verb": "감정하다",
+      "object": "예술품",
+      "full_statement": "미술품·골동품의 진품 여부를 감정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "문화재 가치",
+      "full_statement": "예술품과 문화재의 품질 및 가치를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,62 @@
+{
+  "ksco_code": "87295",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "구급차",
+      "full_statement": "환자나 부상자를 운반하기 위하여 구급차를 운전한다.",
+      "source_sentence": "환자나 부상자를 운반하기 위한 구급차를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운반하다",
+      "object": "환자나 부상자",
+      "full_statement": "구급차로 환자나 부상자를 목적지까지 운반한다.",
+      "source_sentence": "환자나 부상자를 운반하기 위한 구급차를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "이동시키다",
+      "object": "환자나 부상자",
+      "full_statement": "필요할 경우 환자나 부상자의 이동을 보조한다.",
+      "source_sentence": "필요할 경우 환자나 부상자의 이동, 응급조치 보조 등의 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보조하다",
+      "object": "응급조치",
+      "full_statement": "필요할 경우 환자나 부상자에 대한 응급조치를 보조한다.",
+      "source_sentence": "필요할 경우 환자나 부상자의 이동, 응급조치 보조 등의 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주차하다",
+      "object": "차량",
+      "full_statement": "운행을 마친 후 구급차를 지정된 장소에 주차한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "운전 장치",
+      "full_statement": "손과 운전 장치를 이용하여 차량을 조작한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "구급차", "category": "장비", "evidence_span": "환자나 부상자를 운반하기 위한 구급차를 운전한다."},
+    {"name": "운전 장치", "category": "장비", "evidence_span": "손과 해당 운전 장치를 이용하는 기술이 필요하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "차량 내 이동(운행)", "evidence_span": "환자나 부상자를 운반하기 위한 구급차를 운전한다."},
+    {"category": "사회적", "value": "환자·부상자 응대 및 보조", "evidence_span": "필요할 경우 환자나 부상자의 이동, 응급조치 보조 등의 업무를 수행하기도 한다."},
+    {"category": "신체적", "value": "환자 이동 보조 등 체력 요구", "evidence_span": "환자나 부상자의 이동, 응급조치 보조 등의 업무를 수행하기도 한다."}
+  ]
+}

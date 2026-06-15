@@ -1,0 +1,63 @@
+{
+  "ksco_code": "92241",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "약정 계약 내용",
+      "full_statement": "고객과 체결한 약정 계약 내용을 확인한다.",
+      "source_sentence": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파악하다",
+      "object": "배달 물품",
+      "full_statement": "배달할 식음료 물품을 파악하여 배달 준비를 한다.",
+      "source_sentence": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(식음료)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "배달하다",
+      "object": "식음료",
+      "full_statement": "우유, 녹즙, 발효유, 과일 등 식음료를 약정 계약에 따라 정기적으로 배달한다.",
+      "source_sentence": "우유, 녹즙, 발효유, 과일 등 식음료를 약정 계약에 따라 정기적으로 배달한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "배달하다",
+      "object": "식음료(지정 장소)",
+      "full_statement": "약정 계약자가 요구한 가정, 사무실 등 지정 장소로 식음료를 정기적으로 배달한다.",
+      "source_sentence": "약정 계약자가 요구한 지정 장소(가정, 사무실 등)로 식음료나 신문, 각종 물품 등을 정기적으로 배달한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화(식음료)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "이용하다",
+      "object": "자전거·오토바이",
+      "full_statement": "자전거, 오토바이 등을 이용하거나 도보로 식음료를 배달한다.",
+      "source_sentence": "자전거, 오토바이 등을 이용하거나 도보로 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수령하다",
+      "object": "배달 대금",
+      "full_statement": "음료, 신문 등 배달 물품의 대금을 수령하기도 한다.",
+      "source_sentence": "음료, 신문 등 대금을 수령하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "자전거", "category": "장비", "evidence_span": "자전거, 오토바이 등을 이용하거나 도보로 배달한다."},
+    {"name": "오토바이", "category": "장비", "evidence_span": "자전거, 오토바이 등을 이용하거나 도보로 배달한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "이동(가정, 사무실 등 지정 장소 방문 배달)", "evidence_span": "약정 계약자가 요구한 지정 장소(가정, 사무실 등)로 식음료나 신문, 각종 물품 등을 정기적으로 배달한다."},
+    {"category": "시간적", "value": "정기적 배달", "evidence_span": "우유, 녹즙, 발효유, 과일 등 식음료를 약정 계약에 따라 정기적으로 배달한다."},
+    {"category": "사회적", "value": "고객(약정 계약자) 응대 및 대금 수령", "evidence_span": "음료, 신문 등 대금을 수령하기도 한다."},
+    {"category": "신체적", "value": "상당한 육체적 노력 요구", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"}
+  ]
+}

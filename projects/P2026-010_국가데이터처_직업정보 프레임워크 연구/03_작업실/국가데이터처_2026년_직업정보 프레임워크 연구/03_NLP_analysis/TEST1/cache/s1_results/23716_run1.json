@@ -1,0 +1,98 @@
+{
+  "ksco_code": "23716",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "환경조건 자료",
+      "full_statement": "환경조건에 대한 자료를 조사하여 정리한다.",
+      "source_sentence": "환경조건에 대한 자료를 조사․ 정리하며 각 설비에 의한 지역 환경오염과 민원 발생 가능성을 예측, 방향을 수립하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "예측하다",
+      "object": "지역 환경오염과 민원 발생 가능성",
+      "full_statement": "각 설비에 의한 지역 환경오염과 민원 발생 가능성을 예측한다.",
+      "source_sentence": "각 설비에 의한 지역 환경오염과 민원 발생 가능성을 예측, 방향을 수립하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수립하다",
+      "object": "환경 관리 방향",
+      "full_statement": "환경오염과 민원 발생에 대응할 방향을 수립한다.",
+      "source_sentence": "각 설비에 의한 지역 환경오염과 민원 발생 가능성을 예측, 방향을 수립하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "현장조사",
+      "full_statement": "주기적으로 현장조사를 실시한다.",
+      "source_sentence": "주기적으로 현장조사를 실시하여 관련 부처에 통보하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "통보하다",
+      "object": "현장조사 결과",
+      "full_statement": "현장조사 결과를 관련 부처에 통보한다.",
+      "source_sentence": "주기적으로 현장조사를 실시하여 관련 부처에 통보하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "환경 영향 평가 신기술 국내외 자료",
+      "full_statement": "환경 영향 평가의 신기술에 대한 국내외 자료를 분석한다.",
+      "source_sentence": "환경 영향 평가의 신기술에 대한 국내외 자료를 분석 수집한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수집하다",
+      "object": "환경 영향 평가 신기술 국내외 자료",
+      "full_statement": "환경 영향 평가의 신기술에 대한 국내외 자료를 수집한다.",
+      "source_sentence": "환경 영향 평가의 신기술에 대한 국내외 자료를 분석 수집한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "평가하다",
+      "object": "개발 행위의 자연환경 영향",
+      "full_statement": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "source_sentence": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "환경보전 공학적 기술",
+      "full_statement": "환경보전에 필요한 다양한 공학적인 기술을 개발한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설계하다",
+      "object": "환경오염 방지 및 제어 처리시설",
+      "full_statement": "환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "현장조사(실외 현장 이동)",
+      "evidence_span": "주기적으로 현장조사를 실시하여 관련 부처에 통보하며"
+    },
+    {
+      "category": "시간적",
+      "value": "주기적 현장조사",
+      "evidence_span": "주기적으로 현장조사를 실시하여"
+    }
+  ]
+}

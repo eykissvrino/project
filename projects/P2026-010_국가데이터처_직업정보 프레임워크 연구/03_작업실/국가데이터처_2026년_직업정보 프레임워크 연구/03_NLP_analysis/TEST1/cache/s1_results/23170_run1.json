@@ -1,0 +1,84 @@
+{
+  "ksco_code": "23170",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "설계도",
+      "full_statement": "설계도를 검토하여 공종별·공기별 품질보증계획서 또는 품질시험계획서를 작성하기 위한 기초를 확인한다.",
+      "source_sentence": "설계도를 검토하여 공종별, 공기별로 품질보증계획서 혹은 품질시험계획서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "품질보증계획서·품질시험계획서",
+      "full_statement": "공종별·공기별로 품질보증계획서 또는 품질시험계획서를 작성한다.",
+      "source_sentence": "설계도를 검토하여 공종별, 공기별로 품질보증계획서 혹은 품질시험계획서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "채취하다",
+      "object": "공사현장의 흙",
+      "full_statement": "공사현장의 흙을 채취한다.",
+      "source_sentence": "공사현장의 흙을 채취하여 토질이 예정된 공사에 적합한지 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "토질 적합성",
+      "full_statement": "채취한 흙의 토질이 예정된 공사에 적합한지 조사한다.",
+      "source_sentence": "공사현장의 흙을 채취하여 토질이 예정된 공사에 적합한지 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "건설재료 품질시험",
+      "full_statement": "계측기와 시험 장비를 사용하여 각종 건설재료에 대한 품질시험을 실시한다.",
+      "source_sentence": "계측기와 시험 장비를 사용하여 각종 건설재료에 대한 품질시험을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(건설자재 품질시험)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "품질시험 결과",
+      "full_statement": "품질시험 결과를 분석한다.",
+      "source_sentence": "품질시험 결과를 분석하여 그에 따른 알맞은 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조치하다",
+      "object": "분석 결과에 따른 조치",
+      "full_statement": "품질시험 결과 분석에 따라 알맞은 조치를 취한다.",
+      "source_sentence": "품질시험 결과를 분석하여 그에 따른 알맞은 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "공정관리에 따른 건설자재 품질",
+      "full_statement": "양질의 건설품질을 유지·관리하기 위하여 공정관리에 따른 건설자재 품질을 관리한다.",
+      "source_sentence": "양질의 건설품질을 유지, 관리하기 위하여 공정관리에 따른 건설자재에 대한 품질시험을 실시하여 결함을 사전에 예방하거나 조치하도록 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "예방하다",
+      "object": "건설자재 결함",
+      "full_statement": "건설자재에 대한 품질시험을 통해 결함을 사전에 예방한다.",
+      "source_sentence": "공정관리에 따른 건설자재에 대한 품질시험을 실시하여 결함을 사전에 예방하거나 조치하도록 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "계측기", "category": "장비", "evidence_span": "계측기와 시험 장비를 사용하여 각종 건설재료에 대한 품질시험을 실시한다."},
+    {"name": "시험 장비", "category": "장비", "evidence_span": "계측기와 시험 장비를 사용하여 각종 건설재료에 대한 품질시험을 실시한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "공사현장(실외 시료 채취)", "evidence_span": "공사현장의 흙을 채취하여 토질이 예정된 공사에 적합한지 조사한다."}
+  ]
+}

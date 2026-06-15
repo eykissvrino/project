@@ -1,0 +1,138 @@
+{
+  "ksco_code": "24404",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "산모의 임신",
+      "full_statement": "산모의 임신 과정을 보조한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보조하다",
+      "object": "산모의 분만",
+      "full_statement": "산모의 분만을 보조한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "보조하다",
+      "object": "산후처치",
+      "full_statement": "산모의 산후처치를 보조한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "유도하다",
+      "object": "정상 분만",
+      "full_statement": "정상 분만을 유도한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "간호하다",
+      "object": "신생아",
+      "full_statement": "신생아를 간호한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "간호하다",
+      "object": "산전·산후의 산모",
+      "full_statement": "산전 및 산후의 산모를 간호한다.",
+      "source_sentence": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고 정상 분만을 유도하며 신생아 및 산전, 산후의 산모를 간호한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "돕다",
+      "object": "의사의 치료",
+      "full_statement": "의사의 치료를 돕는다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "행하다",
+      "object": "처방에 따른 치료",
+      "full_statement": "의사의 처방에 따라 치료를 행한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "취하다",
+      "object": "비상조치",
+      "full_statement": "의사 부재 시 비상조치를 취한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측정하다",
+      "object": "체온·맥박·혈압",
+      "full_statement": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "준비하다",
+      "object": "병실 및 침대",
+      "full_statement": "병실 및 침대를 준비한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "소독하다",
+      "object": "장비",
+      "full_statement": "장비를 소독한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "돕다",
+      "object": "분만시술 중인 의사 및 환자",
+      "full_statement": "분만시술 중인 의사 및 해당 환자를 돕는다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수집하다",
+      "object": "간호활동 기록",
+      "full_statement": "간호활동에 관한 기록을 수집한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조언하다",
+      "object": "관련 문제",
+      "full_statement": "수집한 기록을 바탕으로 관련 문제에 대해 조언한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "조산소·가정·산부인과 등 의료 기관",
+      "evidence_span": "조산소, 가정, 산부인과 등에서 산모의 임신, 분만, 산후처치를 보조하고"
+    },
+    {
+      "category": "사회적",
+      "value": "산모·신생아 대상 간호 및 의사와의 협업",
+      "evidence_span": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고"
+    }
+  ]
+}

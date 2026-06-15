@@ -1,0 +1,118 @@
+{
+  "ksco_code": "93099",
+  "tasks": [
+    {
+      "verb": "운반하다",
+      "object": "원재료",
+      "full_statement": "원재료를 운반한다.",
+      "source_sentence": "원재료를 운반한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "인양하다",
+      "object": "원재료 또는 완성된 제품",
+      "full_statement": "원재료 또는 완성된 제품을 인양한다.",
+      "source_sentence": "원재료 또는 완성된 제품을 인양, 적하 및 하차한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "적재하다",
+      "object": "원재료 및 생산품",
+      "full_statement": "원재료 및 생산품을 적재한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "하역하다",
+      "object": "원재료 및 생산품",
+      "full_statement": "원재료 및 생산품을 하역한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무→세세정의 특화(하차)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분류하다",
+      "object": "원재료 및 생산품",
+      "full_statement": "원재료 및 생산품을 분류한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "확인하다",
+      "object": "원재료 및 생산품",
+      "full_statement": "원재료 및 생산품을 확인한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "측정하다",
+      "object": "원재료 및 생산품의 무게",
+      "full_statement": "원재료 및 생산품의 무게를 단다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "공급하다",
+      "object": "원료",
+      "full_statement": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다.",
+      "source_sentence": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분류하다",
+      "object": "제품",
+      "full_statement": "제품을 분류한다.",
+      "source_sentence": "제품을 분류하고 구성품을 간단히 수동으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조립하다",
+      "object": "구성품",
+      "full_statement": "구성품을 간단히 수동으로 조립한다.",
+      "source_sentence": "제품을 분류하고 구성품을 간단히 수동으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보조하다",
+      "object": "숙달된 근로자",
+      "full_statement": "숙달된 근로자들을 보조한다.",
+      "source_sentence": "숙달된 근로자들을 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "제품 제조 관련 일상적 업무",
+      "full_statement": "제품 제조와 관련된 간단한 일상적인 업무를 수행한다.",
+      "source_sentence": "제품 제조와 관련된 간단한 일상적인 업무를 수행하거나 원재료 또는 완성된 제품을 인양, 적하 및 하차한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "컨베이어", "category": "장비", "evidence_span": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다."},
+    {"name": "분쇄기", "category": "장비", "evidence_span": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다."},
+    {"name": "톱", "category": "도구", "evidence_span": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다."},
+    {"name": "가공 기계", "category": "장비", "evidence_span": "컨베이어, 분쇄기, 톱 및 가공 기계와 같은 기계에 원료를 공급한다."},
+    {"name": "수동공구", "category": "도구", "evidence_span": "가공된 가구부분품을 수동공구를 사용하여 조립하며"},
+    {"name": "드라이버", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다."},
+    {"name": "동력공구", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다."},
+    {"name": "아교", "category": "도구", "evidence_span": "드라이버, 동력공구, 아교 등을 이용하여 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "상당한 육체적 노력이 요구되는 단순 반복 작업", "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"},
+    {"category": "신체적", "value": "원재료·제품의 인양·적재·하역 등 중량물 취급", "evidence_span": "원재료 또는 완성된 제품을 인양, 적하 및 하차한다."},
+    {"category": "신체적", "value": "수동 조립 등 반복 작업", "evidence_span": "제품을 분류하고 구성품을 간단히 수동으로 조립한다."},
+    {"category": "시간적", "value": "수 시간~수십 분의 직무 훈련으로 수행 가능한 저숙련 업무", "evidence_span": "몇 시간 혹은 몇 십 분의 직무 훈련(on the job training)으로 업무수행이 충분히 가능한 직업이 대부분이며"},
+    {"category": "사회적", "value": "숙달된 근로자를 보조하는 협업 작업", "evidence_span": "숙달된 근로자들을 보조한다."}
+  ]
+}

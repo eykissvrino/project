@@ -1,0 +1,100 @@
+{
+  "ksco_code": "82129",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "섬유제품 색상 처리 기계",
+      "full_statement": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "source_sentence": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "직물 강화 기계",
+      "full_statement": "천을 수축하거나 섬유를 맞물리게 하여 직물을 강하게 하는 기계를 조작한다.",
+      "source_sentence": "천을 수축하거나 섬유를 맞물리게 하여, 직물을 강하게 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "섬유 방수 기계",
+      "full_statement": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "source_sentence": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방수)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "실크 처리 기계",
+      "full_statement": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "source_sentence": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "세척하다",
+      "object": "섬유직물",
+      "full_statement": "섬유직물을 세척한다.",
+      "source_sentence": "섬유직물을 세척하고, 경우에 따라서는 세탁물을 분류하고, 방수, 염색과정을 동시 작업하기도 하고 건조도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분류하다",
+      "object": "세탁물",
+      "full_statement": "경우에 따라 세탁물을 분류한다.",
+      "source_sentence": "섬유직물을 세척하고, 경우에 따라서는 세탁물을 분류하고, 방수, 염색과정을 동시 작업하기도 하고 건조도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "방수 공정",
+      "full_statement": "섬유직물에 방수 처리를 한다.",
+      "source_sentence": "섬유직물을 세척하고, 경우에 따라서는 세탁물을 분류하고, 방수, 염색과정을 동시 작업하기도 하고 건조도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "염색하다",
+      "object": "섬유직물",
+      "full_statement": "섬유직물의 염색 과정을 작업한다.",
+      "source_sentence": "섬유직물을 세척하고, 경우에 따라서는 세탁물을 분류하고, 방수, 염색과정을 동시 작업하기도 하고 건조도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "건조하다",
+      "object": "섬유직물",
+      "full_statement": "세척·처리한 섬유직물을 건조한다.",
+      "source_sentence": "섬유직물을 세척하고, 경우에 따라서는 세탁물을 분류하고, 방수, 염색과정을 동시 작업하기도 하고 건조도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "표백하다",
+      "object": "섬유·방사·직물",
+      "full_statement": "섬유, 방사 또는 직물을 표백 처리하는 기계를 조작한다.",
+      "source_sentence": "섬유, 방사 또는 직물을 표백, 염색, 세척 및 기타 방법으로 처리하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "섬유제품 처리 기계", "category": "기계", "evidence_span": "섬유제품을 처리하는 기계를 조작한다"},
+    {"name": "직물 수축기", "category": "기계", "evidence_span": "직물 수축기 조작원"},
+    {"name": "섬유 방수기", "category": "기계", "evidence_span": "섬유 방수기 조작원"},
+    {"name": "직물 방수기", "category": "기계", "evidence_span": "직물 방수기 조작원"},
+    {"name": "섬유 카렌더기", "category": "기계", "evidence_span": "섬유 카렌더기 조작원"},
+    {"name": "섬유 압착기", "category": "기계", "evidence_span": "섬유 압착기 조작원"},
+    {"name": "인조가죽 카렌더기", "category": "기계", "evidence_span": "인조가죽 카렌더기 조작원"},
+    {"name": "직물 세척기", "category": "기계", "evidence_span": "직물 세척기 조작원"},
+    {"name": "연사 세척기", "category": "기계", "evidence_span": "연사 세척기 조작원"},
+    {"name": "섬유직물 세탁기", "category": "기계", "evidence_span": "섬유직물 세탁기 조작원"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급(방수 화학물 침투)", "evidence_span": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다"}
+  ]
+}

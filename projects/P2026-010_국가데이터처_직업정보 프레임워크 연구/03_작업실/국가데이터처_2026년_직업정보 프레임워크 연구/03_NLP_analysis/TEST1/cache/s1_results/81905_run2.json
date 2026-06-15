@@ -1,0 +1,77 @@
+{
+  "ksco_code": "81905",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "엽연초 가공 처리 기계",
+      "full_statement": "엽연초를 가공 처리하는 기계를 조작한다.",
+      "source_sentence": "엽연초를 가공 처리하고 담배를 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "담배 제조 기계",
+      "full_statement": "담배를 제조하는 기계를 조작한다.",
+      "source_sentence": "엽연초를 가공 처리하고 담배를 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "엽연초 배합기",
+      "full_statement": "엽연초 배합기를 조작하여 엽연초를 배합한다.",
+      "source_sentence": "엽연초 배합기 조작원·엽연초 절단기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "엽연초 절단기",
+      "full_statement": "엽연초 절단기를 조작하여 엽연초를 절단한다.",
+      "source_sentence": "엽연초 배합기 조작원·엽연초 절단기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "엽연초 진공조절기",
+      "full_statement": "엽연초 진공조절기를 조작하여 엽연초의 진공 상태를 조절한다.",
+      "source_sentence": "엽연초 진공조절기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "엽연초 제경기",
+      "full_statement": "엽연초 제경기를 조작하여 엽연초의 줄기를 제거한다.",
+      "source_sentence": "엽연초 제경기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제어하다",
+      "object": "산업용 기계",
+      "full_statement": "컴퓨터를 이용하여 산업용 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조작하다",
+      "object": "식품가공 기계",
+      "full_statement": "식품 및 음료를 가공하고 제조하는 기계를 조작한다.",
+      "source_sentence": "식품 및 음료를 가공하고 제조하는 기계를 조작하는 직군이 여기에 분류된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "엽연초 배합기", "category": "장비", "evidence_span": "엽연초 배합기 조작원"},
+    {"name": "엽연초 절단기", "category": "장비", "evidence_span": "엽연초 절단기 조작원"},
+    {"name": "엽연초 진공조절기", "category": "장비", "evidence_span": "엽연초 진공조절기 조작원"},
+    {"name": "엽연초 제경기", "category": "장비", "evidence_span": "엽연초 제경기 조작원"},
+    {"name": "담배 제조 기계", "category": "장비", "evidence_span": "담배를 제조하는 기계를 조작한다"}
+  ],
+  "work_context": []
+}

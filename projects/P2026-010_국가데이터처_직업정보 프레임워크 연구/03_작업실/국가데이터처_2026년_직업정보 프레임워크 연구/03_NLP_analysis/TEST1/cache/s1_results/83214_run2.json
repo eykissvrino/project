@@ -1,0 +1,178 @@
+{
+  "ksco_code": "83214",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "비료제조 기계",
+      "full_statement": "화학비료를 생산하는 비료제조 기계 또는 장비를 조작한다.",
+      "source_sentence": "화학비료를 생산하는 비료제조 기계 또는 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 처리온도",
+      "full_statement": "비료 원료를 처리하는 각종 기계장치의 처리온도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 압력",
+      "full_statement": "비료 원료를 처리하는 각종 기계장치의 압력을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "재료의 흐름",
+      "full_statement": "비료 원료를 처리하는 기계장치의 재료 흐름을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 속도",
+      "full_statement": "비료 원료를 처리하는 기계장치의 속도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "혼합하다",
+      "object": "비료 원료",
+      "full_statement": "비료 원료를 혼합하는 기계장치를 조작한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "비료 원료",
+      "full_statement": "비료 원료를 분쇄하는 기계장치를 조작한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "성형하다",
+      "object": "비료 제품",
+      "full_statement": "비료 제품을 성형하는 기계장치를 조작한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "충진하다",
+      "object": "비료 제품",
+      "full_statement": "비료 제품을 충진하는 기계장치를 조작한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "봉합하다",
+      "object": "비료 포장",
+      "full_statement": "비료 포장을 봉합하는 기계장치를 조작한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "관찰하다",
+      "object": "혼합물의 처리과정",
+      "full_statement": "비료 혼합물의 처리과정을 관찰한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "확인하다",
+      "object": "색의 변화·농도",
+      "full_statement": "처리 중인 비료 혼합물의 색의 변화와 농도를 확인한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성된 비료 제품",
+      "full_statement": "완성된 비료 제품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성된 비료 제품",
+      "full_statement": "완성된 비료 제품을 검사한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성된 비료 제품",
+      "full_statement": "완성된 비료 제품을 포장한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "탐지하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 탐지한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기능장애가 발생한 기계를 정비한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "세척하다",
+      "object": "기계",
+      "full_statement": "기계를 세척하고 소제한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [
+    {"name": "비료제조 기계", "category": "장비", "evidence_span": "화학비료를 생산하는 비료제조 기계 또는 장비를 조작한다."},
+    {"name": "비료 제조기", "category": "장비", "evidence_span": "비료 제조기 조작원"}
+  ],
+  "work_context": []
+}

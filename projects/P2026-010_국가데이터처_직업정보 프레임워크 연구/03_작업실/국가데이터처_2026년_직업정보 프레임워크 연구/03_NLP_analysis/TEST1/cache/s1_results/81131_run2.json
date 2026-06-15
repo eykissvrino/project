@@ -1,0 +1,123 @@
+{
+  "ksco_code": "81131",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "육류 훈제 기계",
+      "full_statement": "육류를 훈제하는 기계를 조작한다.",
+      "source_sentence": "육류를 훈제하거나 햄을 제조하는 등 육류 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "햄 제조 기계",
+      "full_statement": "햄을 제조하는 기계를 조작한다.",
+      "source_sentence": "육류를 훈제하거나 햄을 제조하는 등 육류 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 가공 기계",
+      "full_statement": "육류 및 기타 식품을 가공하는 기계를 조작한다.",
+      "source_sentence": "육류를 훈제하거나 햄을 제조하는 등 육류 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "소시지 제조 기계",
+      "full_statement": "소시지를 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 가공하고 소시지, 훈제육류 또는 훈제어류와 같은 육류 및 어류제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "훈제육류 제조 기계",
+      "full_statement": "훈제육류와 같은 육류제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 가공하고 소시지, 훈제육류 또는 훈제어류와 같은 육류 및 어류제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 통조림 제조 기계",
+      "full_statement": "육류를 통조림하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 통조림 또는 냉동하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 냉동 기계",
+      "full_statement": "육류를 냉동하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 통조림 또는 냉동하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 저장처리기",
+      "full_statement": "육류를 저장 처리하는 기계를 조작한다.",
+      "source_sentence": "육류 저장처리기 조작원·육류 살균조리기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 살균조리기",
+      "full_statement": "육류를 살균 조리하는 기계를 조작한다.",
+      "source_sentence": "육류 저장처리기 조작원·육류 살균조리기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 가압멸균기",
+      "full_statement": "육류를 가압 멸균하는 기계를 조작한다.",
+      "source_sentence": "육류 가압멸균기 조작원·육류 냉동기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "동물 세척기",
+      "full_statement": "동물을 세척하는 기계를 조작한다.",
+      "source_sentence": "동물 세척기 조작원·육류 가공처리기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "육류 저장조리기",
+      "full_statement": "육류를 저장 조리하는 기계를 조작한다.",
+      "source_sentence": "육류 저장조리기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "적응하다",
+      "object": "기계 제어 기술 혁신",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응하여 기계를 운용한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "육류 훈제기", "category": "장비", "evidence_span": "육류 훈제기 조작원·소시지 제조기 조작원"},
+    {"name": "소시지 제조기", "category": "장비", "evidence_span": "육류 훈제기 조작원·소시지 제조기 조작원"},
+    {"name": "햄 제조기", "category": "장비", "evidence_span": "햄 제조기 조작원·육류 통조림 제조기 조작원"},
+    {"name": "육류 통조림 제조기", "category": "장비", "evidence_span": "햄 제조기 조작원·육류 통조림 제조기 조작원"},
+    {"name": "육류 저장처리기", "category": "장비", "evidence_span": "육류 저장처리기 조작원·육류 살균조리기 조작원"},
+    {"name": "육류 살균조리기", "category": "장비", "evidence_span": "육류 저장처리기 조작원·육류 살균조리기 조작원"},
+    {"name": "육류 가압멸균기", "category": "장비", "evidence_span": "육류 가압멸균기 조작원·육류 냉동기 조작원"},
+    {"name": "육류 냉동기", "category": "장비", "evidence_span": "육류 가압멸균기 조작원·육류 냉동기 조작원"},
+    {"name": "동물 세척기", "category": "장비", "evidence_span": "동물 세척기 조작원·육류 가공처리기 조작원"},
+    {"name": "육류 가공처리기", "category": "장비", "evidence_span": "동물 세척기 조작원·육류 가공처리기 조작원"},
+    {"name": "육류 저장조리기", "category": "장비", "evidence_span": "육류 저장조리기 조작원"}
+  ],
+  "work_context": []
+}

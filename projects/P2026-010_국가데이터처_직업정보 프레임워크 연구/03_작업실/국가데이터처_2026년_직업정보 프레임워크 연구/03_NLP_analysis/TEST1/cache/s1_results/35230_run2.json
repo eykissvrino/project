@@ -1,0 +1,95 @@
+{
+  "ksco_code": "35230",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "병역자원",
+      "full_statement": "국토방위의 근간이 되는 병역자원을 관리한다.",
+      "source_sentence": "국토방위의 근간이 되는 병역자원을 관리하고 병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "부과하다",
+      "object": "징집 의무",
+      "full_statement": "병역 의무자에 대한 징집 의무를 부과한다.",
+      "source_sentence": "병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부과하다",
+      "object": "소집 의무",
+      "full_statement": "병역 의무자에 대한 소집 의무를 부과한다.",
+      "source_sentence": "병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부과하다",
+      "object": "전시 병력동원 의무",
+      "full_statement": "병역 의무자에 대한 전시 병력동원 의무를 부과한다.",
+      "source_sentence": "병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "산업 기능인력",
+      "full_statement": "산업 기능인력 지원 업무를 처리한다.",
+      "source_sentence": "병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "허가하다",
+      "object": "병역의무자 국외여행",
+      "full_statement": "병역의무자의 국외여행을 허가한다.",
+      "source_sentence": "병역 의무자에 대한 징집, 소집 및 전시 병력동원 등 의무 부과와 산업 기능인력 지원 및 병역의무자 국외여행 허가 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "계획하다",
+      "object": "병무행정 업무",
+      "full_statement": "병역자원관리, 의무자 징집 및 소집 등 병무행정 업무를 계획한다.",
+      "source_sentence": "병역자원관리, 의무자 징집 및 소집 등 병무행정 업무를 계획하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "병무행정 업무",
+      "full_statement": "병역자원관리, 의무자 징집 및 소집 등 병무행정 업무를 시행한다.",
+      "source_sentence": "병역자원관리, 의무자 징집 및 소집 등 병무행정 업무를 계획하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기안하다",
+      "object": "보고서나 문서",
+      "full_statement": "각종 보고서나 문서를 기안한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 시행하며 법령과 업무처리 규정에 따라 병무 행정업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처리하다",
+      "object": "병무 행정업무",
+      "full_statement": "법령과 업무처리 규정에 따라 병무 행정업무를 처리한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 시행하며 법령과 업무처리 규정에 따라 병무 행정업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "민원 업무",
+      "full_statement": "병무행정 관련 민원 업무를 처리한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

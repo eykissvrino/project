@@ -1,0 +1,61 @@
+{
+  "n_iwa": 178,
+  "n_onet_gwa": 41,
+  "used_gwa_embed_prior": 36,
+  "n_embed_ambiguous": 128,
+  "n_weak": 36,
+  "embed_cosine_median": 0.606,
+  "embed_cosine_min": 0.3803,
+  "top_gwa_embed_prior": [
+    {
+      "gwa_id": "4.A.3.a.2",
+      "label_kr": "물체 취급 및 이동",
+      "n_iwa": 56
+    },
+    {
+      "gwa_id": "4.A.4.b.1",
+      "label_kr": "타인의 업무 및 활동 조정",
+      "n_iwa": 23
+    },
+    {
+      "gwa_id": "4.A.1.b.2",
+      "label_kr": "장비·구조물·자재 검사",
+      "n_iwa": 13
+    },
+    {
+      "gwa_id": "4.A.1.a.2",
+      "label_kr": "공정·자재·주변 환경 점검",
+      "n_iwa": 9
+    },
+    {
+      "gwa_id": "4.A.3.a.4",
+      "label_kr": "차량·기계 장치·장비 운전",
+      "n_iwa": 8
+    },
+    {
+      "gwa_id": "4.A.3.b.1",
+      "label_kr": "컴퓨터 활용 작업",
+      "n_iwa": 5
+    },
+    {
+      "gwa_id": "4.A.4.a.5",
+      "label_kr": "타인 지원 및 돌봄",
+      "n_iwa": 4
+    },
+    {
+      "gwa_id": "4.A.4.c.3",
+      "label_kr": "자원 점검 및 관리",
+      "n_iwa": 4
+    },
+    {
+      "gwa_id": "4.A.2.a.1",
+      "label_kr": "대상·서비스·인물의 가치 판단",
+      "n_iwa": 4
+    },
+    {
+      "gwa_id": "4.A.2.a.2",
+      "label_kr": "정보 처리",
+      "n_iwa": 3
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "ksco_code": "23133",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "토목공사 시공",
+      "full_statement": "각종 도로 및 관련 구조물, 교량 등 각종 토목공사가 설계도와 시방서에 따라 시공되도록 관리한다.",
+      "source_sentence": "각종 도로 및 관련 구조물, 교량 등 각종 토목공사가 설계도, 시방서 등에 따라 시공될 수 있도록 관리, 감독, 기술적 업무 등을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "감독하다",
+      "object": "토목공사 시공",
+      "full_statement": "각종 토목공사가 설계도와 시방서에 맞게 시공되도록 현장을 감독한다.",
+      "source_sentence": "각종 도로 및 관련 구조물, 교량 등 각종 토목공사가 설계도, 시방서 등에 따라 시공될 수 있도록 관리, 감독, 기술적 업무 등을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "토목공사 시공 과정에서 발생하는 기술적 업무를 수행한다.",
+      "source_sentence": "각종 도로 및 관련 구조물, 교량 등 각종 토목공사가 설계도, 시방서 등에 따라 시공될 수 있도록 관리, 감독, 기술적 업무 등을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "예방하다",
+      "object": "품질 부적합 요인",
+      "full_statement": "토목공사의 품질 부적합 요인을 사전에 예방한다.",
+      "source_sentence": "토목공사의 품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수립하다",
+      "object": "해결대안",
+      "full_statement": "토목공사에서 품질저하 발생시 합리적 해결대안을 수립한다.",
+      "source_sentence": "토목공사의 품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실행하다",
+      "object": "해결대안",
+      "full_statement": "토목공사 품질저하에 대한 합리적 해결대안을 실행한다.",
+      "source_sentence": "토목공사의 품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산정하다",
+      "object": "토목공사 비용",
+      "full_statement": "토목공사의 비용을 산정한다.",
+      "source_sentence": "토목공사의 비용을 산정하고 토목시공 과정에서 발생하는 각종 대관업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "대관업무",
+      "full_statement": "토목시공 과정에서 발생하는 각종 대관업무를 수행한다.",
+      "source_sentence": "토목공사의 비용을 산정하고 토목시공 과정에서 발생하는 각종 대관업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "실시하다",
+      "object": "프로젝트 요건 조사",
+      "full_statement": "고객 및 관련 팀원들과 협의하여 프로젝트 요건을 결정하기 위한 조사를 실시한다.",
+      "source_sentence": "고객 및 관련 팀원들과 협의하여 프로젝트 요건들을 결정하기 위한 조사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수립하다",
+      "object": "건설 명세서 및 절차",
+      "full_statement": "토목 건설 명세서 및 절차를 수립한다.",
+      "source_sentence": "건설 명세서 및 절차를 수립하고 적절한 건설재료를 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "건설재료",
+      "full_statement": "적절한 건설재료를 평가한다.",
+      "source_sentence": "건설 명세서 및 절차를 수립하고 적절한 건설재료를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "측량 및 토목설계 작업",
+      "full_statement": "측량 및 토목설계 작업을 해석하고 검토한다.",
+      "source_sentence": "측량 및 토목설계 작업을 해석, 검토, 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "승인하다",
+      "object": "측량 및 토목설계 작업",
+      "full_statement": "측량 및 토목설계 작업을 승인한다.",
+      "source_sentence": "측량 및 토목설계 작업을 해석, 검토, 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "보증하다",
+      "object": "건설계획 적합성",
+      "full_statement": "건설계획이 규약, 명세사항 및 지침에 맞는지를 보증한다.",
+      "source_sentence": "건설계획이 규약, 명세사항 및 지침에 맞는지를 보증한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "건설작업 일정",
+      "full_statement": "토목 건설작업 일정을 수립한다.",
+      "source_sentence": "건설작업 일정을 세우고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설작업 일정",
+      "full_statement": "토목 건설작업 일정을 감독한다.",
+      "source_sentence": "건설작업 일정을 세우고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "수행하다",
+      "object": "예비조사 및 경제학적 분석",
+      "full_statement": "예비조사, 경제학적 분석, 도시 및 지역교통, 환경영향 연구 등을 수행한다.",
+      "source_sentence": "예비조사, 경제학적 분석, 도시 및 지역교통, 환경영향 연구 등을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "측량 및 현장 자료",
+      "full_statement": "지형학, 토양, 수문학 등 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행한다.",
+      "source_sentence": "지형학, 토양, 수문학이나 기타 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서",
+      "full_statement": "측량 및 현장 자료에 대한 기술적 분석 결과를 토대로 보고서를 작성한다.",
+      "source_sentence": "지형학, 토양, 수문학이나 기타 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "현장 감독",
+      "full_statement": "토지측량이나 건설작업에 대한 현장 감독으로서 활동을 수행한다.",
+      "source_sentence": "토지측량(평가)이나 건설작업에 대한 현장 감독으로서 활동하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.77
+    },
+    {
+      "verb": "산정하다",
+      "object": "토목공사 견적",
+      "full_statement": "교량, 도로, 공항 등 토목공사의 공사 견적을 산정한다.",
+      "source_sentence": "토목공사의 비용을 산정하고 토목시공 과정에서 발생하는 각종 대관업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의→직업예시(토목 견적원) 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설 현장",
+      "evidence_span": "토목공사가 설계도 및 시방서에 맞게 시공되고 있는지 현장을 관리하며"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 및 팀원과의 협의",
+      "evidence_span": "고객 및 관련 팀원들과 협의하여 프로젝트 요건들을 결정하기 위한 조사를 실시한다."
+    }
+  ]
+}

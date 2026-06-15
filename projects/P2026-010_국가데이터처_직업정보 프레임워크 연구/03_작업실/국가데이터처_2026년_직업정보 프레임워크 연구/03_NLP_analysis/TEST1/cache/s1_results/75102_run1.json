@@ -1,0 +1,122 @@
+{
+  "ksco_code": "75102",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "동력전달장치·조향장치·현가장치·제동장치",
+      "full_statement": "고장의 위치·범위·정도·성격을 확인하기 위하여 시험·측정 기구를 사용하여 섀시 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(동력전달·조향·현가·제동장치)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "동력전달장치",
+      "full_statement": "자동차의 동력전달장치를 점검한다.",
+      "source_sentence": "자동차의 엔진과 차체 판금을 제외한 동력전달장치, 조향장치, 현가장치, 제동장치 등을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 75102 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "점검하다",
+      "object": "조향장치",
+      "full_statement": "자동차의 조향장치를 점검한다.",
+      "source_sentence": "자동차의 엔진과 차체 판금을 제외한 동력전달장치, 조향장치, 현가장치, 제동장치 등을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 75102 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "점검하다",
+      "object": "현가장치",
+      "full_statement": "자동차의 현가장치를 점검한다.",
+      "source_sentence": "자동차의 엔진과 차체 판금을 제외한 동력전달장치, 조향장치, 현가장치, 제동장치 등을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 75102 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "점검하다",
+      "object": "제동장치",
+      "full_statement": "자동차의 제동장치를 점검한다.",
+      "source_sentence": "자동차의 엔진과 차체 판금을 제외한 동력전달장치, 조향장치, 현가장치, 제동장치 등을 점검하고 교체하거나 수리한다.",
+      "derived_from": "세세분류 75102 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "비교·검사하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위를 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분해하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체를 위하여 고장부위를 분해한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "평가하다",
+      "object": "작동상태",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 부품의 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "섀시 부품을 교체한다.",
+      "source_sentence": "자동차의 엔진과 차체 판금을 제외한 동력전달장치, 조향장치, 현가장치, 제동장치 등을 점검하고 교체하거나 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "부품",
+      "full_statement": "사용가능한 섀시 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "검사·확인하다",
+      "object": "작동상태",
+      "full_statement": "설치 또는 수리부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정렬하다",
+      "object": "차륜",
+      "full_statement": "주행 안정을 위하여 차륜을 정렬한다.",
+      "source_sentence": "자동차 차체 정비원·차륜 정렬원",
+      "derived_from": "세세분류 직업 예시→고유활동 추가",
+      "confidence": 0.62
+    },
+    {
+      "verb": "보링하다",
+      "object": "라이너",
+      "full_statement": "실린더 라이너를 보링한다.",
+      "source_sentence": "라이너 보링원",
+      "derived_from": "세세분류 직업 예시→고유활동 추가",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "장비", "evidence_span": "시험‧측정 기구를 사용하여 각 부분을 진단·검사한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "자동차의 엔진 및 모터·배터리, 차체 그리고 관련 부품 등을 수공구 및 관련 장비를 사용하여"}
+  ],
+  "work_context": []
+}

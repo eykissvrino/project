@@ -1,0 +1,115 @@
+{
+  "ksco_code": "71099",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "전통 술",
+      "full_statement": "전통 술을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의 + 직업 예시(전통 술 제조원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "고추장",
+      "full_statement": "고추장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의 + 직업 예시(고추장 제조원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "된장",
+      "full_statement": "된장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의 + 직업 예시(된장 제조원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "간장",
+      "full_statement": "간장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의 + 직업 예시(간장 제조원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가공하다",
+      "object": "장류",
+      "full_statement": "고추장·된장·간장 등 장류를 가공한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제조하다",
+      "object": "손두부",
+      "full_statement": "손두부를 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의 + 직업 예시(손두부 제조원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "반려동물 수제간식",
+      "full_statement": "반려동물 수제간식을 제조한다.",
+      "source_sentence": "반려동물 수제간식 제조원",
+      "derived_from": "세세분류 직업 예시(반려동물 수제간식 제조원)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수행하다",
+      "object": "식품가공 기능적 업무",
+      "full_statement": "특정 재료를 이용한 식품가공과 관련된 기능적 업무를 수행한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.6
+    },
+    {
+      "verb": "만들다",
+      "object": "건강식품",
+      "full_statement": "한약재를 이용하여 건강식품을 만든다.",
+      "source_sentence": "한약재를 이용하여 건강식품을 만들거나 어류 및 해조류를 가공하는 등 특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 7109)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "가공하다",
+      "object": "어류 및 해조류",
+      "full_statement": "어류 및 해조류를 가공한다.",
+      "source_sentence": "한약재를 이용하여 건강식품을 만들거나 어류 및 해조류를 가공하는 등 특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 7109)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "검사하다",
+      "object": "식품의 맛과 안전성",
+      "full_statement": "식품의 맛과 안전성을 검사한다.",
+      "source_sentence": "식품의 맛과 안전성을 검사하는 업무도 수행한다.",
+      "derived_from": "조상정의(소분류 710)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "재료",
+      "full_statement": "손과 수공구를 사용하여 식품 재료를 가공한다.",
+      "source_sentence": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다",
+      "derived_from": "조상정의(대분류 7)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {
+      "name": "수공구",
+      "category": "도구",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손과 수공구를 주로 사용하는 기능적 작업(사람의 기능이 중요)",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"
+    }
+  ]
+}

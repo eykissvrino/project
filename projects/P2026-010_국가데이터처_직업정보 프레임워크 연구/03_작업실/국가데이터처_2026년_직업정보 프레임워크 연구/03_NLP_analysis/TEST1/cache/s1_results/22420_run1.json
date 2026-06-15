@@ -1,0 +1,131 @@
+{
+  "ksco_code": "22420",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "정형·비정형 데이터",
+      "full_statement": "정형 또는 비정형 형태의 데이터를 수집한다.",
+      "source_sentence": "정형 또는 비정형 형태로 수집된 데이터를 활용 가능한 형태로 전환하고 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "전환하다",
+      "object": "수집된 데이터",
+      "full_statement": "수집된 데이터를 활용 가능한 형태로 전환한다.",
+      "source_sentence": "정형 또는 비정형 형태로 수집된 데이터를 활용 가능한 형태로 전환하고 가공한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 결합",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가공하다",
+      "object": "데이터",
+      "full_statement": "데이터(정형, 비정형 등)를 재처리·연계 등을 통해 활용 가능한 형태로 가공한다.",
+      "source_sentence": "데이터(정형, 비정형 등)를 활용가능한 형태로 재처리, 연계 등 가공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "재처리하다",
+      "object": "데이터",
+      "full_statement": "수집된 데이터를 활용 가능한 형태로 재처리한다.",
+      "source_sentence": "데이터(정형, 비정형 등)를 활용가능한 형태로 재처리, 연계 등 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연계하다",
+      "object": "데이터",
+      "full_statement": "여러 출처의 데이터를 활용 가능한 형태로 연계한다.",
+      "source_sentence": "데이터(정형, 비정형 등)를 활용가능한 형태로 재처리, 연계 등 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "분석하다",
+      "object": "데이터",
+      "full_statement": "가공한 데이터를 통계기법·모델링 등 전문지식을 활용하여 분석한다.",
+      "source_sentence": "데이터를 통계분석 방법론이나 모델링 등 전문 지식을 활용하여 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "적용하다",
+      "object": "통계기법",
+      "full_statement": "데이터 분석에 통계기법을 적용한다.",
+      "source_sentence": "가공한 데이터를 이용자의 수요에 맞추어 전문지식을 바탕으로 통계기법이나 모델링 등을 활용하여 분석하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "모델링",
+      "full_statement": "데이터 분석을 위해 모델링을 수행한다.",
+      "source_sentence": "가공한 데이터를 이용자의 수요에 맞추어 전문지식을 바탕으로 통계기법이나 모델링 등을 활용하여 분석하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적용하다",
+      "object": "머신러닝 등 최신 기법",
+      "full_statement": "데이터 분석에 머신러닝 등 최신 기법을 적용한다.",
+      "source_sentence": "최신 기법(머신러닝 등)을 통해 데이터 특성, 패턴, 규칙 등을 찾아 유의미한 데이터를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발견하다",
+      "object": "데이터 특성·패턴·규칙",
+      "full_statement": "데이터에 숨겨진 특성·패턴·규칙 등을 발견한다.",
+      "source_sentence": "최신 기법(머신러닝 등)을 통해 데이터 특성, 패턴, 규칙 등을 찾아 유의미한 데이터를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "추출하다",
+      "object": "유용한 정보",
+      "full_statement": "분석을 통해 의사결정에 도움이 되는 유용한 정보를 추출한다.",
+      "source_sentence": "데이터에 숨겨진 형태나 유형을 발견함으로써 의사결정에 도움이 되는 유용한 정보를 추출하고 부가가치가 높은 분석 결과를 도출한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "도출하다",
+      "object": "분석 결과",
+      "full_statement": "부가가치가 높은 분석 결과를 도출한다.",
+      "source_sentence": "의사결정에 도움이 되는 유용한 정보를 추출하고 부가가치가 높은 분석 결과를 도출한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "유의미한 데이터",
+      "full_statement": "분석을 통해 발견한 유의미한 데이터를 제공한다.",
+      "source_sentence": "최신 기법(머신러닝 등)을 통해 데이터 특성, 패턴, 규칙 등을 찾아 유의미한 데이터를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "데이터 기반 의사결정",
+      "full_statement": "데이터에 기반하여 고객서비스·마케팅·경영전략 등 의사결정을 지원한다.",
+      "source_sentence": "데이터에 기반하여 의사결정(고객서비스, 마케팅, 경영전략 등)을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "반영하다",
+      "object": "이용자 수요",
+      "full_statement": "분석 결과 도출 시 이용자의 수요를 반영한다.",
+      "source_sentence": "가공한 데이터를 이용자의 수요에 맞추어 전문지식을 바탕으로 통계기법이나 모델링 등을 활용하여 분석하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "통계기법", "category": "SW", "evidence_span": "통계기법이나 모델링 등을 활용하여 분석하여"},
+    {"name": "모델링", "category": "SW", "evidence_span": "통계기법이나 모델링 등을 활용하여 분석하여"},
+    {"name": "머신러닝", "category": "SW", "evidence_span": "최신 기법(머신러닝 등)을 통해 데이터 특성, 패턴, 규칙 등을 찾아"}
+  ],
+  "work_context": []
+}

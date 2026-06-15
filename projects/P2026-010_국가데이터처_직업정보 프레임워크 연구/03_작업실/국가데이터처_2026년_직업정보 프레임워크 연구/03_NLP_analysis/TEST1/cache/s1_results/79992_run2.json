@@ -1,0 +1,111 @@
+{
+  "ksco_code": "79992",
+  "tasks": [
+    {
+      "verb": "용해하다",
+      "object": "유리",
+      "full_statement": "유리를 용해하여 제품 제작에 사용한다.",
+      "source_sentence": "용해된 유리를 이용하여 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "만들다",
+      "object": "유리제품",
+      "full_statement": "용해된 유리를 이용하여 유리제품을 만든다.",
+      "source_sentence": "용해된 유리를 이용하여 제품을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바꾸다",
+      "object": "유리제품의 모양",
+      "full_statement": "유리제품의 모양을 바꾼다.",
+      "source_sentence": "유리제품의 모양을 바꾸거나 유리를 재단‧연마하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재단하다",
+      "object": "유리",
+      "full_statement": "유리를 재단한다.",
+      "source_sentence": "유리제품의 모양을 바꾸거나 유리를 재단‧연마하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연마하다",
+      "object": "유리",
+      "full_statement": "유리를 연마한다.",
+      "source_sentence": "유리제품의 모양을 바꾸거나 유리를 재단‧연마하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "불다",
+      "object": "용해된 유리",
+      "full_statement": "용해된 유리를 불어서 제품 형태를 성형한다.",
+      "source_sentence": "용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "만들다",
+      "object": "유리병",
+      "full_statement": "용해된 유리를 불어서 병을 만든다.",
+      "source_sentence": "용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의→예시 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "만들다",
+      "object": "전구",
+      "full_statement": "용해된 유리를 불어서 전구를 만든다.",
+      "source_sentence": "용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절단하다",
+      "object": "유리",
+      "full_statement": "유리를 절단한다.",
+      "source_sentence": "유리 취주원·유리 절단원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "식각하다",
+      "object": "유리 표면",
+      "full_statement": "유리 표면을 식각한다.",
+      "source_sentence": "유리 식각원·거울 제경원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.68
+    },
+    {
+      "verb": "제경하다",
+      "object": "거울",
+      "full_statement": "유리에 도금막을 입혀 거울을 제경한다.",
+      "source_sentence": "유리 식각원·거울 제경원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.62
+    },
+    {
+      "verb": "취주하다",
+      "object": "유리",
+      "full_statement": "용해된 유리를 취주하여 제품을 성형한다.",
+      "source_sentence": "유리 취주원·유리 절단원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.65
+    },
+    {
+      "verb": "연마하다",
+      "object": "공구",
+      "full_statement": "가위, 톱 등과 같은 공구를 연마한다.",
+      "source_sentence": "가위, 톱 등과 같은 공구를 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

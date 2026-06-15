@@ -1,0 +1,101 @@
+{
+  "ksco_code": "75101",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "자동차 엔진",
+      "full_statement": "자동차 기관(엔진)을 점검한다.",
+      "source_sentence": "자동차 기관(엔진)을 점검하고 분해하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분해하다",
+      "object": "자동차 엔진",
+      "full_statement": "자동차 기관(엔진)을 분해한다.",
+      "source_sentence": "자동차 기관(엔진)을 점검하고 분해하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "자동차 엔진",
+      "full_statement": "분해한 자동차 기관(엔진)을 수리한다.",
+      "source_sentence": "자동차 기관(엔진)을 점검하고 분해하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진단하다",
+      "object": "엔진 각 부분",
+      "full_statement": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험·측정 기구를 사용하여 엔진 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "비교검사하다",
+      "object": "고장부위",
+      "full_statement": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "엔진 작동상태",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 엔진의 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "교체하다",
+      "object": "엔진 부품",
+      "full_statement": "마모되거나 손상된 엔진 부품을 교체한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 엔진 부품",
+      "full_statement": "사용가능한 엔진 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재조립하다",
+      "object": "엔진 부품",
+      "full_statement": "수리한 엔진 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "세척하다",
+      "object": "엔진 및 부품",
+      "full_statement": "엔진 및 부품을 증기로 세척한다.",
+      "source_sentence": "엔진 및 부품을 증기로 세척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "수리부분 작동상태",
+      "full_statement": "설치 또는 수리부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "장비", "evidence_span": "시험‧측정 기구를 사용하여 각 부분을 진단·검사한다"},
+    {"name": "수공구", "category": "도구", "evidence_span": "자동차의 엔진 및 모터·배터리, 차체 그리고 관련 부품 등을 수공구 및 관련 장비를 사용하여"},
+    {"name": "증기 세척 장비", "category": "장비", "evidence_span": "엔진 및 부품을 증기로 세척한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "엔진 분해·재조립 등 정밀·체력 요하는 수작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

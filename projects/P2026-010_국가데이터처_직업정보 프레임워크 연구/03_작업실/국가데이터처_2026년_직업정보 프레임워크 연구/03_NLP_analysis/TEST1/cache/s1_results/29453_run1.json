@@ -1,0 +1,117 @@
+{
+  "ksco_code": "29453",
+  "tasks": [
+    {
+      "verb": "연주하다",
+      "object": "각종 악기",
+      "full_statement": "독주자, 반주자 또는 악단의 일원으로 피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다.",
+      "source_sentence": "독주자, 반주자 또는 악단의 일원으로 피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "연주하다",
+      "object": "독주",
+      "full_statement": "독주자로서 악기를 연주한다.",
+      "source_sentence": "독주자, 반주자 또는 악단의 일원으로 피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다.",
+      "derived_from": "세세분류 정의→역할별 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "반주하다",
+      "object": "연주",
+      "full_statement": "반주자로서 다른 연주나 가창에 맞추어 악기를 반주한다.",
+      "source_sentence": "독주자, 반주자 또는 악단의 일원으로 피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다.",
+      "derived_from": "세세분류 정의→역할별 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연주하다",
+      "object": "악단 합주",
+      "full_statement": "악단의 일원으로 소속되어 합주 형태로 악기를 연주한다.",
+      "source_sentence": "악단에 소속되어 연주하는 경우 악단원으로 호칭되기도 한다.",
+      "derived_from": "상속 주요업무(연주가)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "음악",
+      "full_statement": "연주를 위해 음악을 연구한다.",
+      "source_sentence": "음악을 연구하거나 연주연습을 하고 지휘자의 지시에 따라 연주한다.",
+      "derived_from": "상속 주요업무(연주가)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연습하다",
+      "object": "연주",
+      "full_statement": "연주를 위해 연주연습을 한다.",
+      "source_sentence": "음악을 연구하거나 연주연습을 하고 지휘자의 지시에 따라 연주한다.",
+      "derived_from": "상속 주요업무(연주가)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연주하다",
+      "object": "지휘자의 지시에 따른 연주",
+      "full_statement": "지휘자의 지시에 따라 연주한다.",
+      "source_sentence": "음악을 연구하거나 연주연습을 하고 지휘자의 지시에 따라 연주한다.",
+      "derived_from": "상속 주요업무(연주가)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "연주하다",
+      "object": "목관악기",
+      "full_statement": "플루트, 클라리넷 등 목관악기를 연주한다.",
+      "source_sentence": "목관악기 연주자",
+      "derived_from": "세세분류 직업 예시→악기군 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "연주하다",
+      "object": "금관악기",
+      "full_statement": "트럼펫, 트롬본 등 금관악기를 연주한다.",
+      "source_sentence": "금관악기 연주자",
+      "derived_from": "세세분류 직업 예시→악기군 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "연주하다",
+      "object": "현악기",
+      "full_statement": "바이올린, 첼로 등 현악기를 연주한다.",
+      "source_sentence": "현악기 연주자",
+      "derived_from": "세세분류 직업 예시→악기군 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "연주하다",
+      "object": "타악기",
+      "full_statement": "드럼 등 타악기를 연주한다.",
+      "source_sentence": "타악기 연주자",
+      "derived_from": "세세분류 직업 예시→악기군 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "연주하다",
+      "object": "건반악기",
+      "full_statement": "피아노 등 건반악기를 연주한다.",
+      "source_sentence": "건반악기 연주자",
+      "derived_from": "세세분류 직업 예시→악기군 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "피아노", "category": "장비", "evidence_span": "피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다."},
+    {"name": "바이올린", "category": "장비", "evidence_span": "피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다."},
+    {"name": "첼로", "category": "장비", "evidence_span": "피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다."},
+    {"name": "드럼", "category": "장비", "evidence_span": "피아노, 바이올린, 첼로, 드럼 등 각종 악기를 연주한다."},
+    {"name": "목관악기", "category": "장비", "evidence_span": "목관악기 연주자"},
+    {"name": "금관악기", "category": "장비", "evidence_span": "금관악기 연주자"},
+    {"name": "현악기", "category": "장비", "evidence_span": "현악기 연주자"},
+    {"name": "타악기", "category": "장비", "evidence_span": "타악기 연주자"},
+    {"name": "건반악기", "category": "장비", "evidence_span": "건반악기 연주자"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "악단 소속 팀 연주(합주)", "evidence_span": "악단에 소속되어 연주하는 경우 악단원으로 호칭되기도 한다."},
+    {"category": "사회적", "value": "독립 연주(독주자)", "evidence_span": "독주자, 반주자 또는 악단의 일원으로"},
+    {"category": "사회적", "value": "지휘자의 지시에 따른 협업 연주", "evidence_span": "지휘자의 지시에 따라 연주한다."}
+  ]
+}

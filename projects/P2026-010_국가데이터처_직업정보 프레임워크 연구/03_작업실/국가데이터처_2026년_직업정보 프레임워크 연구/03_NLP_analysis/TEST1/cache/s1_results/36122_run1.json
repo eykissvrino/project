@@ -1,0 +1,138 @@
+{
+  "ksco_code": "36122",
+  "tasks": [
+    {
+      "verb": "맞이하다",
+      "object": "고객",
+      "full_statement": "숙박시설·관광시설·백화점·빌딩·전시장 등 특정 장소의 출입구에서 고객을 맞이한다.",
+      "source_sentence": "호텔 등의 숙박시설이나 관광시설, 백화점, 빌딩, 전시장, 사업체의 사무실 공간의 출입구 등의 특정 장소에서 고객을 맞이하여 귀중품 보관이나 각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "안내 서비스",
+      "full_statement": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "source_sentence": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "시설위치",
+      "full_statement": "고객에게 각종 시설의 위치를 안내한다.",
+      "source_sentence": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "안내하다",
+      "object": "편의시설 및 운영시간",
+      "full_statement": "고객에게 편의시설과 운영시간 등의 정보를 안내한다.",
+      "source_sentence": "각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 정보",
+      "full_statement": "방문객에게 각종 정보를 제공한다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "접수하다",
+      "object": "요청사항",
+      "full_statement": "방문객의 요청사항을 처리하거나 접수한다.",
+      "source_sentence": "방문객에게 각종 정보를 제공하고, 요청사항을 처리 또는 접수해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연결하다",
+      "object": "업무 담당자",
+      "full_statement": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "source_sentence": "고객의 문의사항에 따라 해당 업무 담당자를 전화 또는 직접 연결해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "응대하다",
+      "object": "대표번호 전화",
+      "full_statement": "대표번호로 걸려온 전화에 응대하여 부서 및 담당자를 연결한다.",
+      "source_sentence": "대표번호로 걸려온 전화에 대해 부서 및 담당자 연결 업무를 수행하거나, 방문객의 방문 목적, 소속 등을 확인하고 방문증을 발급해 주기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "방문 목적 및 소속",
+      "full_statement": "방문객의 방문 목적, 소속 등을 확인한다.",
+      "source_sentence": "방문객의 방문 목적, 소속 등을 확인하고 동의를 받아 방문증을 발급 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "발급하다",
+      "object": "방문증",
+      "full_statement": "방문객의 동의를 받아 방문증을 발급한다.",
+      "source_sentence": "방문객의 방문 목적, 소속 등을 확인하고 동의를 받아 방문증을 발급 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보관하다",
+      "object": "귀중품",
+      "full_statement": "고객의 귀중품을 잠시 맡아 보관한다.",
+      "source_sentence": "고객 요청 시, 귀중품, 분실품, 반입금지 물품 등을 잠시 맡아주기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보관하다",
+      "object": "분실품 및 반입금지 물품",
+      "full_statement": "고객 요청 시 분실품이나 반입금지 물품 등을 잠시 맡아 보관한다.",
+      "source_sentence": "고객 요청 시, 귀중품, 분실품, 반입금지 물품 등을 잠시 맡아주기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "응답하다",
+      "object": "고객 질문",
+      "full_statement": "고객의 질문에 응답하여 정보를 제공한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "안내하다",
+      "object": "전화번호",
+      "full_statement": "고객의 질문에 응답하여 전화번호를 안내하고 연결한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "방송하다",
+      "object": "안내 방송",
+      "full_statement": "사업체 내의 안내 방송을 한다.",
+      "source_sentence": "고객의 질문에 응답하여 전화번호를 안내‧연결하거나 사업체 내의 안내 방송을 하는 자를 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "숙박시설·관광시설·백화점·빌딩·전시장 등 출입구의 특정 장소(실내)",
+      "evidence_span": "호텔 등의 숙박시설이나 관광시설, 백화점, 빌딩, 전시장, 사업체의 사무실 공간의 출입구 등의 특정 장소에서 고객을 맞이하여"
+    },
+    {
+      "category": "사회적",
+      "value": "고객·방문객 응대",
+      "evidence_span": "특정 장소에서 고객을 맞이하여 귀중품 보관이나 각종 시설위치, 편의시설, 운영시간 등 전반의 안내 서비스를 제공한다."
+    }
+  ]
+}

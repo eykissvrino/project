@@ -1,0 +1,90 @@
+{
+  "ksco_code": "27190",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "법률문제",
+      "full_statement": "법률문제에 관해 조사한다.",
+      "source_sentence": "법률 전문가는 법률문제에 관해 조사, 연구하고 문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "연구하다",
+      "object": "법률문제",
+      "full_statement": "법률문제에 관해 연구한다.",
+      "source_sentence": "법률 전문가는 법률문제에 관해 조사, 연구하고 문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조언하다",
+      "object": "고객",
+      "full_statement": "문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "source_sentence": "법률 전문가는 법률문제에 관해 조사, 연구하고 문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "변론하다",
+      "object": "사건",
+      "full_statement": "법정에서 사건을 변론한다.",
+      "source_sentence": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "기소하다",
+      "object": "사건",
+      "full_statement": "법정에서 사건을 기소한다.",
+      "source_sentence": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "주재하다",
+      "object": "소송과정",
+      "full_statement": "소송과정을 주재한다.",
+      "source_sentence": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "선고하다",
+      "object": "판결",
+      "full_statement": "판결 선고를 한다.",
+      "source_sentence": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "검토하다",
+      "object": "법적 측면",
+      "full_statement": "문제의 법적 측면을 검토한다.",
+      "source_sentence": "법률 전문가는 법률문제에 관해 조사, 연구하고 문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "derived_from": "조상정의(소분류 271)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "자문하다",
+      "object": "법률문제",
+      "full_statement": "해당 분야의 전문지식과 경험을 바탕으로 법률문제에 대한 자문을 제공한다.",
+      "source_sentence": "특정 분야의 전문지식과 경험을 바탕으로 개념과 이론을 이용하여 해당 분야에 대한 연구‧개발, 자문, 지도(교수) 등 전문 서비스를 제공하는 자를 말한다.",
+      "derived_from": "조상정의(대분류 2)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "법정",
+      "evidence_span": "또한 법정에서 사건을 변론하거나 기소하고, 소송과정을 주재하며 판결 선고를 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(법률 조언)",
+      "evidence_span": "문제의 법적 측면에 관하여 고객에게 조언한다."
+    }
+  ]
+}

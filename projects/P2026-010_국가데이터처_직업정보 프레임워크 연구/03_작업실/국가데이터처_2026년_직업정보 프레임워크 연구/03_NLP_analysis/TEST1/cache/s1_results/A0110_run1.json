@@ -1,0 +1,39 @@
+{
+  "ksco_code": "A0110",
+  "tasks": [
+    {
+      "verb": "지휘하다",
+      "object": "예하 부대",
+      "full_statement": "소령 이상 대장까지의 계급으로서 예하 부대를 지휘한다.",
+      "source_sentence": "육‧해‧공군의 소령 이상 대장까지의 계급을 포함한다.",
+      "derived_from": "세세분류 정의→계급 기반 직무 도출(low_signal: 조상정의 병용)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "수행하다",
+      "object": "국방 임무",
+      "full_statement": "현재 군인 신분을 유지하며 국방과 관련된 임무를 수행한다.",
+      "source_sentence": "의무 복무 여부를 불문하고 현재 군인 신분을 유지하고 있는 군인을 말한다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "통솔하다",
+      "object": "장병",
+      "full_statement": "영관급 이상 장교로서 휘하 장병을 통솔한다.",
+      "source_sentence": "육‧해‧공군의 소령 이상 대장까지의 계급을 포함한다.",
+      "derived_from": "세세분류 정의→계급 기반 직무 도출(low_signal: 조상정의 병용)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "발휘하다",
+      "object": "직무능력",
+      "full_statement": "제2수준 이상의 직무능력을 발휘하여 군사 업무를 수행한다.",
+      "source_sentence": "이 대분류에 포함되는 대부분의 직업은 제2수준 이상의 직무능력을 필요로 한다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

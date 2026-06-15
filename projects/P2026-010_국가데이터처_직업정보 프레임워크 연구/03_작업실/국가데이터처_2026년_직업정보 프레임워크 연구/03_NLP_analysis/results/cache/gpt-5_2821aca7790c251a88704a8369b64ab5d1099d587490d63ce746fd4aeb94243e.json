@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "verb": "a",
+      "object": "1",
+      "full_statement": "1 a",
+      "source_sentence": "원문"
+    },
+    {
+      "verb": "b",
+      "object": "2",
+      "full_statement": "2 b",
+      "source_sentence": "원문"
+    },
+    {
+      "verb": "c",
+      "object": "3",
+      "full_statement": "3 c",
+      "source_sentence": "원문"
+    },
+    {
+      "verb": "d",
+      "object": "4",
+      "full_statement": "4 d",
+      "source_sentence": "원문"
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

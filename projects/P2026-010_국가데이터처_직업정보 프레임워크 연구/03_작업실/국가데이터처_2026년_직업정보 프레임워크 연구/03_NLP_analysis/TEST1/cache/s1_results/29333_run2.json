@@ -1,0 +1,90 @@
+{
+  "ksco_code": "29333",
+  "tasks": [
+    {
+      "verb": "소개하다",
+      "object": "상품",
+      "full_statement": "홈쇼핑 방송에서 상품을 소개한다.",
+      "source_sentence": "홈쇼핑 방송에서 상품을 소개하고 판매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품",
+      "full_statement": "홈쇼핑 방송에서 상품을 판매한다.",
+      "source_sentence": "홈쇼핑 방송에서 상품을 소개하고 판매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "진행하다",
+      "object": "홈쇼핑 방송 프로그램",
+      "full_statement": "홈쇼핑 방송 프로그램을 진행한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품의 기능과 특징",
+      "full_statement": "방송에서 상품의 기능과 특징을 설명한다.",
+      "source_sentence": "홈쇼핑 방송에서 상품을 소개하고 판매한다.",
+      "derived_from": "세세분류 정의(목적어 구체화)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "소개하다",
+      "object": "방송내용",
+      "full_statement": "방송에서 방송내용을 소개한다.",
+      "source_sentence": "방송내용을 소개하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "소개하다",
+      "object": "출연진",
+      "full_statement": "쇼나 프로그램에서 출연진을 소개한다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "맡다",
+      "object": "쇼나 프로그램의 진행",
+      "full_statement": "쇼나 프로그램의 진행을 맡는다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "참여하다",
+      "object": "프로그램",
+      "full_statement": "교양, 오락 등의 프로그램에 참여한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램에 참여하여 보도 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "소개하다",
+      "object": "보도 내용",
+      "full_statement": "프로그램에 참여하여 보도 내용을 소개한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램에 참여하여 보도 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "방송을 통한 시청자 대상 상품 소개·판매(고객 응대 성격)",
+      "evidence_span": "홈쇼핑 방송에서 상품을 소개하고 판매한다."
+    },
+    {
+      "category": "장소",
+      "value": "홈쇼핑 방송(실내 스튜디오 방송)",
+      "evidence_span": "홈쇼핑 방송에서 상품을 소개하고 판매한다."
+    }
+  ]
+}

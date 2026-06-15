@@ -1,0 +1,59 @@
+{
+  "ksco_code": "72191",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "모자",
+      "full_statement": "펠트, 섬유 및 밀짚 등의 각종 재료로 모자를 제조한다.",
+      "source_sentence": "펠트, 섬유 및 밀짚 등의 각종 재료로 모자를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제조하다",
+      "object": "모자형",
+      "full_statement": "모자형을 제조한다.",
+      "source_sentence": "또한 모자형과 특수목적용 모자를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "특수목적용 모자",
+      "full_statement": "특수목적용 모자를 제조한다.",
+      "source_sentence": "또한 모자형과 특수목적용 모자를 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선별하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 펠트, 섬유 등 모자 제조용 천연섬유 재료를 선별한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "분류하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 모자 제조용 천연섬유 재료를 분류한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제조하다",
+      "object": "캡 모자",
+      "full_statement": "캡 모자를 제조한다.",
+      "source_sentence": "캡 모자 제조원·특수목적용 모자 제조원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "수동기계", "category": "장비", "evidence_span": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 수작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "ksco_code": "84154",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "금속 압출기",
+      "full_statement": "봉 또는 무계목 강관류를 제조하기 위하여 금속 압출기를 조작한다.",
+      "source_sentence": "봉 또는 무계목 강관류를 제조하는 금속 압출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "압출 공정 기기",
+      "full_statement": "금속가공 전체 공정 중 압출 공정에서 관련 기기를 준비한다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "압출 공정 기기",
+      "full_statement": "압출 공정에서 관련 기기를 조정한다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작동시키다",
+      "object": "압출 공정 기기",
+      "full_statement": "압출 공정에서 관련 기기를 작동시킨다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "압출 기계",
+      "full_statement": "압출과 같은 금속 가공과 관련한 기계를 조작한다.",
+      "source_sentence": "압연, 인발, 연선, 압출과 같은 금속 가공과 관련한 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "게이지·미터·컴퓨터출력물·비디오 모니터",
+      "full_statement": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰한다.",
+      "source_sentence": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고 적합한 제품이 만들어졌는가를 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 적합성",
+      "full_statement": "적합한 제품이 만들어졌는가를 검사한다.",
+      "source_sentence": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고 적합한 제품이 만들어졌는가를 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기기",
+      "full_statement": "필요한 경우 기기를 조정한다.",
+      "source_sentence": "필요한 경우 기기를 조정하거나 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "기기",
+      "full_statement": "필요한 경우 기기를 수리한다.",
+      "source_sentence": "필요한 경우 기기를 조정하거나 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "가열·냉각로",
+      "full_statement": "내부장력을 경감하고 연성을 회복하며 결정구조를 제련하기 위하여 금속 대상물을 가열 및 냉각하는 로를 조작한다.",
+      "source_sentence": "내부장력을 경감하고 연성을 회복하며 결정구조를 제련하기 위하여 금속 대상물을 가열 및 냉각하는 로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "경화로",
+      "full_statement": "강대상물을 경화시키는 로를 조작한다.",
+      "source_sentence": "강대상물을 경화시키는 로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학처리·열처리 장치",
+      "full_statement": "강대상물을 화학처리하고 가열 및 담금질 또는 냉각하여 겉표면을 강인하게 연성시켜 주는 장치를 조작한다.",
+      "source_sentence": "강대상물을 화학처리하고, 가열 및 담금질 또는 냉각하여 겉표면을 강인하게 연성시켜 주는 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "재가열로",
+      "full_statement": "경화된 강대상물의 장력을 경감하고 강인성을 주기 위한 재가열로를 조작한다.",
+      "source_sentence": "경화된 강대상물의 장력을 경감하고 강인성을 주기 위한 재가열로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "금속 압출기", "category": "장비", "evidence_span": "봉 또는 무계목 강관류를 제조하는 금속 압출기를 조작한다."},
+    {"name": "금속 압출프레스기", "category": "장비", "evidence_span": "금속 압출기 조작원·금속 압출프레스기 조작원"},
+    {"name": "게이지", "category": "장비", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "미터", "category": "장비", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "비디오 모니터", "category": "장비", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "가열 및 냉각로", "category": "장비", "evidence_span": "금속 대상물을 가열 및 냉각하는 로를 조작한다."},
+    {"name": "재가열로", "category": "장비", "evidence_span": "강인성을 주기 위한 재가열로를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "고온(가열·냉각·담금질 로 조작)", "evidence_span": "금속 대상물을 가열 및 냉각하는 로를 조작한다."},
+    {"category": "위험", "value": "화학물질 취급(강대상물 화학처리)", "evidence_span": "강대상물을 화학처리하고, 가열 및 담금질 또는 냉각하여"}
+  ]
+}

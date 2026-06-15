@@ -1,0 +1,119 @@
+{
+  "ksco_code": "41132",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "수용자",
+      "full_statement": "교도소, 구치소 및 보호감호소의 수용자를 관리한다.",
+      "source_sentence": "교도소, 구치소 및 보호감호소의 수용자를 관리하고 교정‧교화한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "교정하다",
+      "object": "수용자",
+      "full_statement": "수용자를 교정한다.",
+      "source_sentence": "교도소, 구치소 및 보호감호소의 수용자를 관리하고 교정‧교화한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "교화하다",
+      "object": "수용자",
+      "full_statement": "수용자를 교화한다.",
+      "source_sentence": "교도소, 구치소 및 보호감호소의 수용자를 관리하고 교정‧교화한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 도주",
+      "full_statement": "수용자의 도주를 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지하는 업무를 우선적으로 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.96
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 폭행",
+      "full_statement": "수용자의 폭행을 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지하는 업무를 우선적으로 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 소요",
+      "full_statement": "수용자의 소요를 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지하는 업무를 우선적으로 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.94
+    },
+    {
+      "verb": "방지하다",
+      "object": "수용자의 자살",
+      "full_statement": "수용자의 자살을 방지한다.",
+      "source_sentence": "수용자의 도주, 폭행, 소요, 자살 등을 방지하는 업무를 우선적으로 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "교화교육",
+      "full_statement": "수용자에게 교화교육을 수행한다.",
+      "source_sentence": "수용자에게 교화교육, 직업훈련 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "직업훈련",
+      "full_statement": "수용자에게 직업훈련을 실시한다.",
+      "source_sentence": "수용자에게 교화교육, 직업훈련 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "교정교육",
+      "full_statement": "수용자에게 교정교육을 수행한다.",
+      "source_sentence": "수용자에게 교화교육, 직업훈련 등 교정교육을 수행한다.",
+      "derived_from": "상속 주요업무→세분류 정의 일치",
+      "confidence": 0.91
+    },
+    {
+      "verb": "조직하다",
+      "object": "사회·오락 및 교육활동",
+      "full_statement": "범죄를 예방하거나 범죄자를 재활시키기 위하여 사회, 오락 및 교육활동을 조직한다.",
+      "source_sentence": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 조직, 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "사회·오락 및 교육활동",
+      "full_statement": "범죄를 예방하거나 범죄자를 재활시키기 위하여 사회, 오락 및 교육활동을 감독한다.",
+      "source_sentence": "범죄를 예방하거나 범죄자를 재활시키기 위하여 청소년 클럽, 지역공동체센터 유사조직에서 사회, 오락 및 교육활동을 조직, 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "교도소·구치소·보호감호소 등 교정시설",
+      "evidence_span": "교도소, 구치소 및 보호감호소의 수용자를 관리하고 교정‧교화한다."
+    },
+    {
+      "category": "위험",
+      "value": "수용자의 폭행·소요 등 신변 위험",
+      "evidence_span": "수용자의 도주, 폭행, 소요, 자살 등을 방지하는 업무를 우선적으로 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "수용자(교정대상자) 대면 관리·감독",
+      "evidence_span": "수감자를 교도, 감독, 관리하는 교도관"
+    }
+  ]
+}

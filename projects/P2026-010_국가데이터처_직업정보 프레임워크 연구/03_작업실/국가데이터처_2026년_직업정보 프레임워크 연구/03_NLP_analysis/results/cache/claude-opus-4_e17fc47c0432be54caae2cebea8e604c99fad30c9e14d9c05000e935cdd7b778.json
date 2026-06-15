@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28152",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "대상 기업",
+      "full_statement": "기업의 인수·합병을 위해 대상 기업을 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "인수합병 계획",
+      "full_statement": "인수·합병 계획을 수립한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검토하다",
+      "object": "거래 조건",
+      "full_statement": "인수합병의 조건 및 상황을 검토한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "M&A 자문",
+      "full_statement": "인수합병 진행에 대해 조언을 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

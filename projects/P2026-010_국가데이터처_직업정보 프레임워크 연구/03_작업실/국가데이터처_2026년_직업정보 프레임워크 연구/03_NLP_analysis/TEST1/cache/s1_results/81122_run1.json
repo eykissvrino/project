@@ -1,0 +1,55 @@
+{
+  "ksco_code": "81122",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "두부 제조 기계",
+      "full_statement": "두부를 제조하는 기계를 조작한다.",
+      "source_sentence": "두부, 유부 및 도토리묵, 메밀묵 등 전통 묵을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "유부 제조 기계",
+      "full_statement": "유부를 제조하는 기계를 조작한다.",
+      "source_sentence": "두부, 유부 및 도토리묵, 메밀묵 등 전통 묵을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "도토리묵·메밀묵 등 전통 묵 제조 기계",
+      "full_statement": "도토리묵, 메밀묵 등 전통 묵을 제조하는 기계를 조작한다.",
+      "source_sentence": "두부, 유부 및 도토리묵, 메밀묵 등 전통 묵을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "혼합하다",
+      "object": "원료 성분",
+      "full_statement": "두부·묵 등 제품의 반죽을 가공하려고 원료에 다른 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "성형하다",
+      "object": "반죽·앙금",
+      "full_statement": "두부·묵 등 제품을 제조하기 위한 반죽 또는 앙금을 압출·성형하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물제품 제조 기계",
+      "full_statement": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

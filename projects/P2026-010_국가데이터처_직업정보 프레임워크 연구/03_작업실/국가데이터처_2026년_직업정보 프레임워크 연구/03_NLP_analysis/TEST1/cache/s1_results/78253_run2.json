@@ -1,0 +1,134 @@
+{
+  "ksco_code": "78253",
+  "tasks": [
+    {
+      "verb": "세우다",
+      "object": "시공계획",
+      "full_statement": "도면과 시방서에 따라 석조물 시공계획을 세운다.",
+      "source_sentence": "도면과 시방서에 따라 시공계획을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "준비하다",
+      "object": "조적용 공구·장비 및 재료",
+      "full_statement": "석재 부설에 필요한 조적용 공구, 장비 및 재료를 준비한다.",
+      "source_sentence": "조적용 공구, 장비 및 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "측정하다",
+      "object": "조적위치",
+      "full_statement": "석조물의 조적위치를 측정하고 표시한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "설치하다",
+      "object": "규준틀",
+      "full_statement": "측정한 조적위치에 규준틀을 설치한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.74
+    },
+    {
+      "verb": "배합하다",
+      "object": "모르타르",
+      "full_statement": "석재를 쌓기 위한 모르타르를 배합한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "자르다",
+      "object": "석재",
+      "full_statement": "석재를 원하는 크기로 잘라서 가공한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "수직 및 수평",
+      "full_statement": "쌓는 면의 수직 및 수평을 조정한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "쌓다",
+      "object": "석조물",
+      "full_statement": "벽, 홍예받이, 홍예다리 등과 같은 석조물을 다양한 형태로 쌓는다.",
+      "source_sentence": "[세세분류 78253 석재 부설원] 벽, 홍예받이, 홍예다리 등과 같은 석조물을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "쌓다",
+      "object": "곡면 벽·교차부·개구부·아치형태",
+      "full_statement": "곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 석재를 쌓는다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "포설하다",
+      "object": "보도",
+      "full_statement": "보도 등 구조물의 바닥에 석재를 포설한다.",
+      "source_sentence": "[세분류 7825 조적공 및 석재 부설원] 흙손과 같은 조적용 공구, 장비와 다양한 재료의 벽돌, 블록을 사용하여 벽, 칸막이, 굴뚝, 용광로, 기둥, 보도 등과 같은 구조물의 바닥을 쌓거나 포설한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.66
+    },
+    {
+      "verb": "깔다",
+      "object": "보도블록",
+      "full_statement": "보도블록을 깐다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "쌓다",
+      "object": "내화벽돌",
+      "full_statement": "내화벽돌을 쌓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "제거하다",
+      "object": "오래된 조적재료",
+      "full_statement": "오래된 조적재료를 제거한다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "다시쌓다",
+      "object": "결함 부분",
+      "full_statement": "오래된 조적재료를 제거한 해당 부분만 다시 쌓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "확인하다",
+      "object": "시공의 결함유무",
+      "full_statement": "작업완료 후 시공의 결함유무를 확인하고 검사한다.",
+      "source_sentence": "작업완료 후 시공의 결함유무를 확인, 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    }
+  ],
+  "tools": [
+    {"name": "흙손", "category": "도구", "evidence_span": "흙손과 같은 조적용 공구, 장비와 다양한 재료의 벽돌, 블록을 사용하여"},
+    {"name": "조적용 공구", "category": "도구", "evidence_span": "조적용 공구, 장비 및 재료를 준비한다."},
+    {"name": "규준틀", "category": "장비", "evidence_span": "조적위치를 측정․ 표시하고 규준틀을 설치한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "석재 절단·조정 등 정밀 수작업", "evidence_span": "벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며"},
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

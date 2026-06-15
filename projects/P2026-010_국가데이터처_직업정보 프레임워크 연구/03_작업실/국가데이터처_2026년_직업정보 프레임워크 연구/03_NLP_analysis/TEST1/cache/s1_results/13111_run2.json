@@ -1,0 +1,135 @@
+{
+  "ksco_code": "13111",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "인문학 연구개발 활동",
+      "full_statement": "인문학에 대한 상업·비상업적 연구개발 활동을 기획한다.",
+      "source_sentence": "인문학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "인문학 연구개발 활동",
+      "full_statement": "인문학에 대한 상업·비상업적 연구개발 활동을 관리한다.",
+      "source_sentence": "인문학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "인문학 연구개발 활동",
+      "full_statement": "인문학에 대한 상업·비상업적 연구개발 활동을 조정한다.",
+      "source_sentence": "인문학에 대한 상업, 비상업적 연구개발 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "인문학 연구 정책개발",
+      "full_statement": "인문학에 해당되는 연구 활동 및 정책 등의 개발을 기획한다.",
+      "source_sentence": "인문 및 사회과학에 해당되는 연구 활동 및 정책 등의 개발을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관리하다",
+      "object": "인문학 연구 정책개발",
+      "full_statement": "인문학에 해당되는 연구 활동 및 정책 등의 개발을 관리한다.",
+      "source_sentence": "인문 및 사회과학에 해당되는 연구 활동 및 정책 등의 개발을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "인문학 연구 정책개발",
+      "full_statement": "인문학에 해당되는 연구 활동 및 정책 등의 개발을 조정한다.",
+      "source_sentence": "인문 및 사회과학에 해당되는 연구 활동 및 정책 등의 개발을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "참여하다",
+      "object": "정책개발",
+      "full_statement": "정부에 대한 자문을 통해 정책개발에 참여한다.",
+      "source_sentence": "정부에 대한 자문을 통해 정책개발에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "자문하다",
+      "object": "정부 정책",
+      "full_statement": "정부에 대한 자문을 제공한다.",
+      "source_sentence": "정부에 대한 자문을 통해 정책개발에 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "계획하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 계획한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "집행하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 집행한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "연구 예산",
+      "full_statement": "연구에 대한 예산을 관리한다.",
+      "source_sentence": "연구에 대한 예산을 계획하고 집행하며 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "연구소 운영",
+      "full_statement": "인문학 관련 연구소나 연구개발부서의 활동 및 운영을 계획한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "연구소 운영",
+      "full_statement": "인문학 관련 연구소나 연구개발부서의 활동 및 운영을 조정한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지시하다",
+      "object": "연구소 운영",
+      "full_statement": "인문학 관련 연구소나 연구개발부서의 활동 및 운영을 지시한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "연구소 운영",
+      "full_statement": "인문학 관련 연구소나 연구개발부서의 활동 및 운영을 관리한다.",
+      "source_sentence": "자연 및 생명과학, 공학 관련 연구소나 연구개발부서의 활동 및 운영을 계획, 조정, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "개발하다",
+      "object": "연구 방침·기준·절차",
+      "full_statement": "인문학 연구 작업에 대한 방침, 기준 및 절차를 개발한다.",
+      "source_sentence": "과학연구 및 기술적 작업에 대한 방침, 기준 및 절차를 개발한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

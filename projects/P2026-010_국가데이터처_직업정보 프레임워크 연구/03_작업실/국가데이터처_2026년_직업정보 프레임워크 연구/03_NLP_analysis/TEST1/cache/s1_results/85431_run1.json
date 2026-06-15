@@ -1,0 +1,126 @@
+{
+  "ksco_code": "85431",
+  "tasks": [
+    {
+      "verb": "조립하다",
+      "object": "내부 구성품",
+      "full_statement": "철도차량을 제작하기 위하여 내부 구성품을 조립한다.",
+      "source_sentence": "운송 및 수송차량 조립원들은 운송 및 수송 차량을 제작하기 위하여 내부 구성품을 조립하고 하위 부품으로 만든 후 완성품을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(철도차량)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제작하다",
+      "object": "하위 부품",
+      "full_statement": "내부 구성품을 결합하여 하위 부품으로 만든다.",
+      "source_sentence": "운송 및 수송차량 조립원들은 운송 및 수송 차량을 제작하기 위하여 내부 구성품을 조립하고 하위 부품으로 만든 후 완성품을 제작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제작하다",
+      "object": "완성품",
+      "full_statement": "하위 부품을 조립하여 철도차량 완성품을 제작한다.",
+      "source_sentence": "운송 및 수송차량 조립원들은 운송 및 수송 차량을 제작하기 위하여 내부 구성품을 조립하고 하위 부품으로 만든 후 완성품을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(철도차량)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조립하다",
+      "object": "내외부 구성품",
+      "full_statement": "철도 운송장비를 제작하기 위하여 내외부의 구성품을 조립한다.",
+      "source_sentence": "[세세분류 85431 철도차량 조립원] 철도 운송장비를 제작하기 위하여 내외부의 구성품, 부속품, 부품 등을 조립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조립하다",
+      "object": "부속품",
+      "full_statement": "철도 운송장비를 제작하기 위하여 부속품을 조립한다.",
+      "source_sentence": "[세세분류 85431 철도차량 조립원] 철도 운송장비를 제작하기 위하여 내외부의 구성품, 부속품, 부품 등을 조립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조립하다",
+      "object": "부품",
+      "full_statement": "철도 운송장비를 제작하기 위하여 부품을 조립한다.",
+      "source_sentence": "[세세분류 85431 철도차량 조립원] 철도 운송장비를 제작하기 위하여 내외부의 구성품, 부속품, 부품 등을 조립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조립하다",
+      "object": "철도 차체",
+      "full_statement": "철도 차체 및 차량바디를 조립한다.",
+      "source_sentence": "철도 차체 조립원·철도 차량바디 조립원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조립하다",
+      "object": "철도 차량섀시",
+      "full_statement": "철도 차량의 섀시를 조립한다.",
+      "source_sentence": "철도 차량의장 조립원·철도 차량섀시 조립원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조립하다",
+      "object": "철도 차량 의장",
+      "full_statement": "철도 차량의 의장품을 조립한다.",
+      "source_sentence": "철도 차량의장 조립원·철도 차량섀시 조립원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "조립하다",
+      "object": "철도 엔진",
+      "full_statement": "철도 차량용 엔진을 조립한다.",
+      "source_sentence": "철도 엔진 조립원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "탑재하다",
+      "object": "철도 차량 엔진",
+      "full_statement": "조립된 엔진을 철도 차량에 탑재한다.",
+      "source_sentence": "철도 차량조립 검사원·철도 차량엔진 탑재원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "사용하다",
+      "object": "손·공구·설비",
+      "full_statement": "조립 작업에 손과 공구 및 설비를 사용한다.",
+      "source_sentence": "이들은 손과 공구 및 설비를 사용하며, 로봇 및 고정자동설비 등과 같은 자동 조립설비 또한 사용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "사용하다",
+      "object": "자동 조립설비",
+      "full_statement": "조립 작업에 로봇 및 고정자동설비 등 자동 조립설비를 사용한다.",
+      "source_sentence": "이들은 손과 공구 및 설비를 사용하며, 로봇 및 고정자동설비 등과 같은 자동 조립설비 또한 사용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "철도 차량 조립 상태",
+      "full_statement": "조립된 철도 차량의 조립 상태를 검사한다.",
+      "source_sentence": "철도 차량조립 검사원·철도 차량엔진 탑재원",
+      "derived_from": "세세분류 정의→직업 예시 특화",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "공구", "category": "도구", "evidence_span": "이들은 손과 공구 및 설비를 사용하며"},
+    {"name": "조립 설비", "category": "장비", "evidence_span": "이들은 손과 공구 및 설비를 사용하며"},
+    {"name": "로봇(자동 조립설비)", "category": "장비", "evidence_span": "로봇 및 고정자동설비 등과 같은 자동 조립설비 또한 사용한다"},
+    {"name": "고정자동설비", "category": "장비", "evidence_span": "로봇 및 고정자동설비 등과 같은 자동 조립설비 또한 사용한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손 작업 등 신체적 수작업 수반", "evidence_span": "이들은 손과 공구 및 설비를 사용하며"}
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "ksco_code": "23126",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "건물 에너지 효율",
+      "full_statement": "각종 건물의 에너지 효율화를 위한 기술적 관리 업무를 수행한다.",
+      "source_sentence": "각종 건물에 관한 에너지 효율화를 위한 관리 및 평가 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "건물 에너지 효율",
+      "full_statement": "각종 건물의 에너지 효율화를 위한 기술적 평가 업무를 수행한다.",
+      "source_sentence": "각종 건물에 관한 에너지 효율화를 위한 관리 및 평가 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축에너지 기술적 업무",
+      "full_statement": "각종 건물의 건축에너지에 관한 기술적 업무를 수행한다.",
+      "source_sentence": "상업용, 공공시설 및 주거용 등 각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "고용하다",
+      "object": "건설 인력",
+      "full_statement": "에너지 관련 건설에 수반되는 도급업자와 인력을 고용한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설 인력",
+      "full_statement": "에너지 관련 건설에 수반되는 도급업자와 인력을 감독한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설현장 활동",
+      "full_statement": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "확인하다",
+      "object": "설계도 및 시방서 적합성",
+      "full_statement": "건설현장의 활동이 설계도 및 시방서와 맞는지 확인한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수행하다",
+      "object": "예비조사",
+      "full_statement": "건축사업의 예비조사를 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "분석하다",
+      "object": "재무",
+      "full_statement": "건축사업의 재무 분석을 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "준비하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 감독한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,138 @@
+{
+  "ksco_code": "23123",
+  "tasks": [
+    {
+      "verb": "자문하다",
+      "object": "건축물 형태 및 콘셉트",
+      "full_statement": "건축물에 대해 형태 및 콘셉트를 자문한다.",
+      "source_sentence": "건축물에 대해 형태 및 콘셉트를 자문하며, 각종 건축 시공에 관련된 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축 시공 관련 기술적 업무",
+      "full_statement": "각종 건축 시공에 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "건축물에 대해 형태 및 콘셉트를 자문하며, 각종 건축 시공에 관련된 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "예방하다",
+      "object": "품질 부적합 요인",
+      "full_statement": "품질 부적합 요인을 사전에 예방한다.",
+      "source_sentence": "품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수립하다",
+      "object": "품질저하 해결대안",
+      "full_statement": "품질저하 발생 시 합리적 해결대안을 수립한다.",
+      "source_sentence": "품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "실행하다",
+      "object": "품질저하 해결대안",
+      "full_statement": "수립한 품질저하 해결대안을 실행한다.",
+      "source_sentence": "품질 부적합 요인을 사전에 예방하고 품질저하 발생시 합리적 해결대안을 수립하고 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산정하다",
+      "object": "건축물 시공비용",
+      "full_statement": "건축물 시공비용을 산정한다.",
+      "source_sentence": "건축물 시공비용을 산정하거나 건축시공 과정에서 발생하는 각종 대관업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "대관업무",
+      "full_statement": "건축시공 과정에서 발생하는 각종 대관업무를 수행한다.",
+      "source_sentence": "건축물 시공비용을 산정하거나 건축시공 과정에서 발생하는 각종 대관업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "고용하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 고용한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 감독한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설현장 활동",
+      "full_statement": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "설계도 및 시방서 부합 여부",
+      "full_statement": "건설현장 활동이 설계도 및 시방서와 맞는지 확인한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축사업 예비조사",
+      "full_statement": "건축사업의 예비조사를 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "수행하다",
+      "object": "재무 분석",
+      "full_statement": "건축사업의 재무 분석을 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "준비하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 감독한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설현장(공사현장)",
+      "evidence_span": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다."
+    },
+    {
+      "category": "사회적",
+      "value": "도급업자 및 건설 인력 고용·감독",
+      "evidence_span": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "ksco_code": "44239",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 조작한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 관리한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등의 간단한 보수·수리를 한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "제공하다",
+      "object": "장비 비품",
+      "full_statement": "고객의 신체에 알맞은 장비 비품을 제공한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설명하다",
+      "object": "장비의 안전한 사용법",
+      "full_statement": "장비의 안전한 사용법을 설명한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "점검하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 점검한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "시험하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 시험한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "안내하다",
+      "object": "기구의 사용료와 사용시간",
+      "full_statement": "고객에게 기구의 사용료와 사용시간을 알려준다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(PC방·비디오방·만화방 이용요금·이용시간)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "관찰하다",
+      "object": "안전 상태",
+      "full_statement": "정원 초과와 안전벨트나 빗장의 안전 상태를 관찰한다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "교환하다",
+      "object": "동전",
+      "full_statement": "동전으로 운영되는 오락시설에서 동전을 교환해 준다.",
+      "source_sentence": "동전으로 운영되는 오락시설에서 동전을 교환해 주며, 클럽에서 주류 제공 등 고객의 편의와 안전을 위해 각종 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제공하다",
+      "object": "고객 편의 서비스",
+      "full_statement": "고객의 편의와 안전을 위해 각종 서비스를 제공한다.",
+      "source_sentence": "동전으로 운영되는 오락시설에서 동전을 교환해 주며, 클럽에서 주류 제공 등 고객의 편의와 안전을 위해 각종 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(노래방·PC방·게임방 등 각종 서비스 제공)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "고객의 물품을 보관하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(각종 편의·서비스 제공)",
+      "evidence_span": "고객에게 각종 편의를 제공한다. 이외에 노래방, PC방, 게임방 등에서 각종 서비스를 제공한다."
+    },
+    {
+      "category": "장소",
+      "value": "오락시설 실내(노래방·PC방·비디오방·만화방 등)",
+      "evidence_span": "노래방, PC방, 비디오방 등 여가 서비스 종사자가 여기에 분류된다."
+    }
+  ]
+}

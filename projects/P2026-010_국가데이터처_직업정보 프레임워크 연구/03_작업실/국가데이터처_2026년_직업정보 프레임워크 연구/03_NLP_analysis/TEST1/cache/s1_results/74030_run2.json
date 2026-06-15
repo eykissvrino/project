@@ -1,0 +1,108 @@
+{
+  "ksco_code": "74030",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "공구",
+      "full_statement": "가공할 제품의 종류와 형태에 따라 공구를 준비한다.",
+      "source_sentence": "가공할 제품의 종류와 형태에 따라 공구를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "살펴보다",
+      "object": "소재",
+      "full_statement": "단조할 금속 소재를 살펴보고 상태를 확인한다.",
+      "source_sentence": "소재를 살펴보고, 절단하여 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "절단하다",
+      "object": "소재",
+      "full_statement": "금속 소재를 절단하여 준비한다.",
+      "source_sentence": "소재를 살펴보고, 절단하여 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "두들기다",
+      "object": "금속",
+      "full_statement": "수공구 또는 단조기를 사용하여 금속을 두들긴다.",
+      "source_sentence": "수공구 또는 단조기를 사용하여 금속을 두들기거나 외력을 가하여 금속의 기계적 성질을 개선하고 유용한 형태로 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "가하다",
+      "object": "외력",
+      "full_statement": "금속에 외력을 가하여 형태를 변형시킨다.",
+      "source_sentence": "수공구 또는 단조기를 사용하여 금속을 두들기거나 외력을 가하여 금속의 기계적 성질을 개선하고 유용한 형태로 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개선하다",
+      "object": "금속의 기계적 성질",
+      "full_statement": "단조 작업을 통해 금속의 기계적 성질을 개선한다.",
+      "source_sentence": "수공구 또는 단조기를 사용하여 금속을 두들기거나 외력을 가하여 금속의 기계적 성질을 개선하고 유용한 형태로 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가공하다",
+      "object": "금속",
+      "full_statement": "금속을 유용한 형태로 가공한다.",
+      "source_sentence": "수공구 또는 단조기를 사용하여 금속을 두들기거나 외력을 가하여 금속의 기계적 성질을 개선하고 유용한 형태로 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "시험하다",
+      "object": "단조구조물",
+      "full_statement": "자유단조 및 형단조를 위한 단조구조물을 시험한다.",
+      "source_sentence": "자유단조(Free-forging) 및 형단조(Die-forging)를 위한 단조구조물의 시험, 검사, 열처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "단조구조물",
+      "full_statement": "자유단조 및 형단조를 위한 단조구조물을 검사한다.",
+      "source_sentence": "자유단조(Free-forging) 및 형단조(Die-forging)를 위한 단조구조물의 시험, 검사, 열처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "열처리하다",
+      "object": "단조구조물",
+      "full_statement": "자유단조 및 형단조를 위한 단조구조물을 열처리한다.",
+      "source_sentence": "자유단조(Free-forging) 및 형단조(Die-forging)를 위한 단조구조물의 시험, 검사, 열처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "트래쉬",
+      "full_statement": "단조 후 남는 트래쉬를 제거하는 트리밍 작업을 한다.",
+      "source_sentence": "단조 후 남는 트래쉬(trash)를 제거하는 트리밍(trimming)작업 등 표면 처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "표면",
+      "full_statement": "단조 후 제품의 표면 처리를 한다.",
+      "source_sentence": "단조 후 남는 트래쉬(trash)를 제거하는 트리밍(trimming)작업 등 표면 처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 또는 단조기를 사용하여 금속을 두들기거나"},
+    {"name": "단조기", "category": "장비", "evidence_span": "수공구 또는 단조기를 사용하여 금속을 두들기거나"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "금속을 두들기는 반복적 외력 작업", "evidence_span": "금속을 두들기거나 외력을 가하여"}
+  ]
+}

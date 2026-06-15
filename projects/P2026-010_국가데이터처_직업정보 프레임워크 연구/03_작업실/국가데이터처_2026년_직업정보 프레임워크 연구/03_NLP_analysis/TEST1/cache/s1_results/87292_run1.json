@@ -1,0 +1,79 @@
+{
+  "ksco_code": "87292",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "렌터카",
+      "full_statement": "고객에게 인도하기 위하여 렌터카를 인도 장소까지 운전한다.",
+      "source_sentence": "고객에게 인도하기 위하여 렌터카를 인도 장소까지 운전하거나 렌트계약이 만료된 차량을 인수하여 차고지로 가져온다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "인도하다",
+      "object": "렌터카",
+      "full_statement": "인도 장소에서 고객에게 렌터카를 인도한다.",
+      "source_sentence": "고객에게 인도하기 위하여 렌터카를 인도 장소까지 운전하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "인수하다",
+      "object": "차량",
+      "full_statement": "렌트계약이 만료된 차량을 인수한다.",
+      "source_sentence": "렌트계약이 만료된 차량을 인수하여 차고지로 가져온다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "가져오다",
+      "object": "차량",
+      "full_statement": "인수한 차량을 운전하여 차고지로 가져온다.",
+      "source_sentence": "렌트계약이 만료된 차량을 인수하여 차고지로 가져온다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "주차하다",
+      "object": "차량",
+      "full_statement": "차고지나 지정된 장소에 차량을 주차한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "확인하다",
+      "object": "운전면허",
+      "full_statement": "운송장비의 운전을 위하여 요청되는 면허를 취득하여 보유한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "운전 장치",
+      "full_statement": "손과 운전 장치를 이용하여 운송장비를 조작한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객에게 차량 인도(고객응대)",
+      "evidence_span": "고객에게 인도하기 위하여 렌터카를 인도 장소까지 운전하거나"
+    },
+    {
+      "category": "장소",
+      "value": "인도 장소·차고지 간 이동",
+      "evidence_span": "렌터카를 인도 장소까지 운전하거나 렌트계약이 만료된 차량을 인수하여 차고지로 가져온다"
+    },
+    {
+      "category": "신체적",
+      "value": "손과 운전 장치를 이용하는 기술 필요",
+      "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"
+    }
+  ]
+}

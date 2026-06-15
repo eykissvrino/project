@@ -1,0 +1,125 @@
+{
+  "ksco_code": "71099",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "전통 술",
+      "full_statement": "전통적인 방식으로 전통 술을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "고추장",
+      "full_statement": "원료를 발효·숙성시켜 고추장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "된장",
+      "full_statement": "메주 등을 발효·숙성시켜 된장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "간장",
+      "full_statement": "메주 등을 발효·숙성시켜 간장을 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "장류",
+      "full_statement": "고추장·된장·간장 등의 장류를 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제조하다",
+      "object": "손두부",
+      "full_statement": "콩을 가공하여 손두부를 제조한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "식품가공 기능 업무",
+      "full_statement": "특정 재료를 이용한 식품가공과 관련된 기능적 업무를 수행한다.",
+      "source_sentence": "전통 술이나 고추장, 된장, 간장등과 같은 장류, 손두부 등의 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "건강식품",
+      "full_statement": "한약재를 이용하여 건강식품을 제조한다.",
+      "source_sentence": "한약재를 이용하여 건강식품을 만들거나 어류 및 해조류를 가공하는 등 특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "어류 및 해조류",
+      "full_statement": "어류 및 해조류를 가공하여 식품을 제조한다.",
+      "source_sentence": "한약재를 이용하여 건강식품을 만들거나 어류 및 해조류를 가공하는 등 특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "특정 재료 및 식품",
+      "full_statement": "특정 재료 및 식품을 가공한다.",
+      "source_sentence": "특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "과실·채소",
+      "full_statement": "과실, 채소 및 관련 식품을 가공한다.",
+      "source_sentence": "과실, 채소 및 관련 식품을 가공하거나 보존처리 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "보존처리하다",
+      "object": "식품",
+      "full_statement": "과실·채소 등 관련 식품을 보존처리한다.",
+      "source_sentence": "과실, 채소 및 관련 식품을 가공하거나 보존처리 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검사하다",
+      "object": "식품의 맛과 안전성",
+      "full_statement": "식품의 맛과 안전성을 검사한다.",
+      "source_sentence": "식품의 맛과 안전성을 검사하는 업무도 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제조하다",
+      "object": "반려동물 수제간식",
+      "full_statement": "재료를 가공하여 반려동물 수제간식을 제조한다.",
+      "source_sentence": "반려동물 수제간식 제조원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손과 수공구를 주로 사용하는 기능적 작업",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "ksco_code": "72122",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면·견본·디자인 명세서",
+      "full_statement": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "source_sentence": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "표시하다",
+      "object": "재단·재봉·조립 선",
+      "full_statement": "갑피 재료 위에 재단, 재봉 및 조립 선을 표시한다.",
+      "source_sentence": "원단 위에 포켓이나 단추의 위치와 재단, 재봉 및 조립 선을 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "재단하다",
+      "object": "구두 갑피",
+      "full_statement": "구두의 갑피를 재단한다.",
+      "source_sentence": "구두의 갑피를 재단하고 재봉에 앞서 갑피를 손질하고 조립하며 신발 밑창을 재단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "손질하다",
+      "object": "구두 갑피",
+      "full_statement": "재봉에 앞서 갑피를 손질한다.",
+      "source_sentence": "구두의 갑피를 재단하고 재봉에 앞서 갑피를 손질하고 조립하며 신발 밑창을 재단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조립하다",
+      "object": "구두 갑피",
+      "full_statement": "재봉에 앞서 갑피를 조립한다.",
+      "source_sentence": "구두의 갑피를 재단하고 재봉에 앞서 갑피를 손질하고 조립하며 신발 밑창을 재단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재단하다",
+      "object": "신발 밑창",
+      "full_statement": "신발 밑창을 재단한다.",
+      "source_sentence": "구두의 갑피를 재단하고 재봉에 앞서 갑피를 손질하고 조립하며 신발 밑창을 재단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "손질하다",
+      "object": "마름질이 되지 않은 밑창",
+      "full_statement": "구두골에 조립하기 위해 마름질이 되지 않은 밑창을 손질한다.",
+      "source_sentence": "구두골에 조립하기 위해 마름질이 되지 않은 밑창을 손질하고, 갑피를 안창에 접합시키는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "접합하다",
+      "object": "갑피",
+      "full_statement": "갑피를 안창에 접합시킨다.",
+      "source_sentence": "구두골에 조립하기 위해 마름질이 되지 않은 밑창을 손질하고, 갑피를 안창에 접합시키는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "취급하다",
+      "object": "가위·칼 및 관련기계",
+      "full_statement": "갑피 및 밑창 재료를 재단, 정리, 표시, 구멍 내기 위하여 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "source_sentence": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "절단 날 및 기계 장치",
+      "full_statement": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "source_sentence": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조사하다",
+      "object": "완성품 결함",
+      "full_statement": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "비교하다",
+      "object": "설정된 표준",
+      "full_statement": "완성품을 설정된 표준과 비교한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "가위", "category": "도구", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"},
+    {"name": "칼", "category": "도구", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"},
+    {"name": "재단기", "category": "장비", "evidence_span": "재단기를 조작하여 자르고, 원단에 구멍을 내고 정리한다"},
+    {"name": "구두골", "category": "도구", "evidence_span": "구두골에 조립하기 위해 마름질이 되지 않은 밑창을 손질하고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "가위·칼 및 기계를 사용한 정밀 재단 및 수작업", "evidence_span": "재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다"}
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "ksco_code": "13501",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "컴퓨터설비 자문 활동",
+      "full_statement": "컴퓨터설비 자문과 관련된 활동을 기획한다.",
+      "source_sentence": "컴퓨터설비 자문, 개발 및 공급, 하드웨어의 유지, 보수 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "하드웨어 개발 및 공급 활동",
+      "full_statement": "하드웨어 개발 및 공급과 관련된 활동을 관리한다.",
+      "source_sentence": "컴퓨터설비 자문, 개발 및 공급, 하드웨어의 유지, 보수 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "하드웨어 유지·보수 활동",
+      "full_statement": "하드웨어의 유지 및 보수와 관련된 활동을 조정한다.",
+      "source_sentence": "컴퓨터설비 자문, 개발 및 공급, 하드웨어의 유지, 보수 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "컴퓨터 하드웨어 개발 사업체 및 부서의 운영",
+      "full_statement": "컴퓨터 하드웨어 개발 사업체 및 부서의 운영을 계획한다.",
+      "source_sentence": "컴퓨터 하드웨어와 소프트웨어 개발 사업체 및 부서의 운영을 계획, 지시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지시하다",
+      "object": "컴퓨터 하드웨어 개발 사업체 및 부서의 운영",
+      "full_statement": "컴퓨터 하드웨어 개발 사업체 및 부서의 운영을 지시한다.",
+      "source_sentence": "컴퓨터 하드웨어와 소프트웨어 개발 사업체 및 부서의 운영을 계획, 지시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수립하다",
+      "object": "하드웨어 개발 기준",
+      "full_statement": "컴퓨터 하드웨어 개발을 위한 기준을 수립한다.",
+      "source_sentence": "전자 자료처리와 컴퓨터시스템 운영 및 개발을 위한 기준을 수립하고 작업을평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "개발 작업",
+      "full_statement": "컴퓨터 하드웨어 개발 작업을 평가한다.",
+      "source_sentence": "전자 자료처리와 컴퓨터시스템 운영 및 개발을 위한 기준을 수립하고 작업을평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "협의하다",
+      "object": "시스템 요건 및 명세사항",
+      "full_statement": "하드웨어 관련 시스템 요건 및 명세사항을 사용자와 협의한다.",
+      "source_sentence": "자료처리, 시스템 요건 및 명세사항을 사용자와 협의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검토하다",
+      "object": "정보 요구사항",
+      "full_statement": "경영주 또는 기술진의 특정한 정보 요구사항을 검토한다.",
+      "source_sentence": "경영주 또는 기술진의 특정한 정보 요구사항을 검토하여 프로젝트의 성격을 규정하고",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "규정하다",
+      "object": "프로젝트의 성격",
+      "full_statement": "정보 요구사항을 검토하여 프로젝트의 성격을 규정한다.",
+      "source_sentence": "경영주 또는 기술진의 특정한 정보 요구사항을 검토하여 프로젝트의 성격을 규정하고",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.77
+    },
+    {
+      "verb": "협의하다",
+      "object": "전산 장비 구입에 관한 사항",
+      "full_statement": "전산 장비의 구입에 관한 사항을 협의하고 조정한다.",
+      "source_sentence": "컴퓨터 운영 계획 및 전산 장비의 구입에 관한 사항을 협의하고 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "인력 채용·훈련·업무수행",
+      "full_statement": "부서 인력의 채용, 훈련 및 업무수행을 감독한다.",
+      "source_sentence": "인력 채용, 훈련 및 업무수행을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "정보 통신 또는 전산 부서 종사자",
+      "full_statement": "정보 통신 또는 전산 부서의 종사자들을 관리·감독한다.",
+      "source_sentence": "정보 통신 또는 전산 부서의 종사자들을 관리‧감독하고",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

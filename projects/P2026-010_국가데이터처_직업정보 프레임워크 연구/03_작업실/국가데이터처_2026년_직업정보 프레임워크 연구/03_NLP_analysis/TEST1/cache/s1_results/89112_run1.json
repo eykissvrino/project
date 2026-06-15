@@ -1,0 +1,68 @@
+{
+  "ksco_code": "89112",
+  "tasks": [
+    {
+      "verb": "처리하다",
+      "object": "목재",
+      "full_statement": "부패와 부식을 방지하기 위하여 화학약품으로 목재를 처리한다.",
+      "source_sentence": "부패, 부식을 방지하기 위해 화학약품으로 목재를 처리하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "목재 처리 기계",
+      "full_statement": "화학약품으로 목재를 처리하는 기계를 조작한다.",
+      "source_sentence": "부패, 부식을 방지하기 위해 화학약품으로 목재를 처리하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "방지하다",
+      "object": "목재의 부패·부식",
+      "full_statement": "화학약품 처리를 통하여 목재의 부패와 부식을 방지한다.",
+      "source_sentence": "부패, 부식을 방지하기 위해 화학약품으로 목재를 처리하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "처리할 재료를 기계에 투입한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "작업표준에 따라 가공하기 위하여 기계장치를 조정한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기능장애가 발생한 기계를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "목재 처리 기계", "category": "장비", "evidence_span": "화학약품으로 목재를 처리하는 기계를 조작한다"},
+    {"name": "화학약품", "category": "도구", "evidence_span": "부패, 부식을 방지하기 위해 화학약품으로 목재를 처리하는"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급(부패·부식 방지용 화학약품)", "evidence_span": "화학약품으로 목재를 처리하는 기계를 조작한다"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "ksco_code": "84392",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "혼합 기계",
+      "full_statement": "연마재, 광택제를 제조하기 위해 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "연마재, 광택제를 제조하기 위해 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "혼합하다",
+      "object": "성분",
+      "full_statement": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "source_sentence": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합·분쇄 기계장치",
+      "full_statement": "성분을 혼합, 분쇄하기 위해 기계장치를 조작한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "성분",
+      "full_statement": "연마재, 광택제 제조를 위해 성분을 분쇄한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "혼합기", "category": "장비", "evidence_span": "성분을 혼합하는 기계를 조작한다"},
+    {"name": "분쇄 기계장치", "category": "장비", "evidence_span": "혼합, 분쇄하는 기계장치를 조작한다"}
+  ],
+  "work_context": []
+}

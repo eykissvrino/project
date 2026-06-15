@@ -1,0 +1,217 @@
+[
+  {
+    "dwa_id": "D_1171",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "투자 상품 및 계약 관련 고객의 문의사항에 답한다.",
+      "주류의 특성에 관한 고객의 질문에 답한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1172",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "부재중인 거주자를 위하여 소규모의 서비스를 제공한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1173",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "회계 연도 말에 각종 적립금, 준비금 등을 평가하여 보험계약준비금을 산정한다.",
+      "매월 말 또는 분기 말에 여신업무에 관한 각종 보고서를 작성한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1174",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "배상 요구자, 사고 목격자, 의사 및 기타 관련 사람들의 진술을 받는다."
+    ]
+  },
+  {
+    "dwa_id": "D_1175",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "보험사업 전반에 걸친 수리업무 및 통계분석 업무를 수행한다.",
+      "수학, 통계학, 확률, 재무이론 등의 지식을 적용하여 보험사업 전반에 걸친 수리업무 및 통계분석 업무를 수행한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1176",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "4대 사회보험 가입 및 신고 업무를 관리한다.",
+      "가입, 개통에 대한 전산 및 사무처리를 한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1177",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "회사의 고유자산을 회사의 명의와 자기계산으로 유가증권을 매매 운용한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1178",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "벤처를 양육하고 성장시켜 기업을 공개해 투자한 금액을 회수한다.",
+      "투자한 자금을 회수한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1179",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "고객의 재무 상태를 판단하기 위해 컴퓨터 프로그램을 이용하여 재정비율을 산출한다.",
+      "컴퓨터프로그램과 계산기를 사용하여 매일의 거래를 계정잔액이 맞는지 결산한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1180",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "투자배분상의 손실위험을 회피하기 위해 주식·채권·파생상품·현금 등으로 구분하여 운용하는 위험관리를 담당한다.",
+      "투자배분상의 손실위험을 회피하기 위해 주식, 채권, 파생상품, 현금 등으로 구분하여 위험관리를 담당한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1181",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "검침서류를 수용가 지역별로 구분한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1182",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "기록물 자료의 내용과 주제에 따라 분류한다.",
+      "자료의 내용과 주제에 따라 도서자료를 분류한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1183",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "처방한 한약재를 탕약으로 달인다."
+    ]
+  },
+  {
+    "dwa_id": "D_1184",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "헌 신문, 잡지, 기타 폐지를 물과 약품에 섞어서 작은 섬유입자로 풀어준다.",
+      "헌 신문이나 잡지, 기타 폐지를 물과 약품에 섞어서 작은 섬유입자로 풀어준다."
+    ]
+  },
+  {
+    "dwa_id": "D_1185",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "위탁된 영아의 건강상태와 발육경과를 계속 관찰한다.",
+      "제공되는 식사와 같은 개별 영유아 등의 활동 및 상태에 대한 기록을 한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1186",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "어린이의 피복을 수선한다.",
+      "유아차를 수리한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1187",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "장애인의 취업 후 사후관리를 수행한다.",
+      "자원봉사활동 종료 후 사후 관리 업무를 수행한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1188",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "돌봄 분야의 개인 생활 서비스 등 대인 서비스를 수행한다.",
+      "조리와 관련된 공공 사회서비스 및 개인 생활 서비스 등 대인 서비스를 제공한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1189",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "어긋난 뼈와 관절을 접골하여 교정한다.",
+      "발골한 고기를 일정하게 잘라 적당한 크기의 고깃덩이로 만든다."
+    ]
+  },
+  {
+    "dwa_id": "D_1190",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "신체 기능의 일부가 본래 기능을 못하게 된 경우 그 기능을 구현하기 위해 보조기 장비를 적용한다.",
+      "신체 기능의 일부가 본래 기능을 못하는 경우 그 기능을 구현하기 위한 보조기장비를 구현한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1191",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "구강질환을 정밀하게 진단하기 위해 X-ray 및 기타 의료기기를 이용한 병리검사를 지시한다.",
+      "구강질환을 정밀하게 진단하기 위해서 X-ray 및 기타 의료기기를 이용한 병리검사를 지시한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1192",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "스턴트맨은 배우가 하기 힘든 고난도의 연기를 대신한다.",
+      "배우가 하기 힘든 고난도의 연기를 대신한다."
+    ]
+  }
+]

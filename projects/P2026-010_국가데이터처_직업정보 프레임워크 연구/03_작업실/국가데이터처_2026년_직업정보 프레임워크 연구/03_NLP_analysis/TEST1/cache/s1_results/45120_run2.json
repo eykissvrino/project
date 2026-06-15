@@ -1,0 +1,98 @@
+{
+  "ksco_code": "45120",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "주문한 조리메뉴",
+      "full_statement": "고객이 주문한 조리메뉴를 확인한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "조리에 필요한 재료",
+      "full_statement": "조리에 필요한 재료를 준비한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "튀기다",
+      "object": "튀김 중식 요리",
+      "full_statement": "튀김 방식으로 중식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 중식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(각종 튀김)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "굽다",
+      "object": "구이 중식 요리",
+      "full_statement": "굽는 방식으로 중식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 중식 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "볶다",
+      "object": "볶음 중식 요리",
+      "full_statement": "볶는 방식으로 중식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 중식 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "끓이다",
+      "object": "탕 등 국물 중식 요리",
+      "full_statement": "끓이는 방식으로 탕 등 중식 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 중식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(각종 탕)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조리하다",
+      "object": "각종 탕",
+      "full_statement": "각종 탕을 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 중국식 음식점(반점) 등에서 각종 탕, 튀김, 면류 등의 중식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조리하다",
+      "object": "각종 튀김",
+      "full_statement": "각종 튀김을 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 중국식 음식점(반점) 등에서 각종 탕, 튀김, 면류 등의 중식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조리하다",
+      "object": "면류",
+      "full_statement": "면류를 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 중국식 음식점(반점) 등에서 각종 탕, 튀김, 면류 등의 중식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조리하다",
+      "object": "중식",
+      "full_statement": "호텔, 레스토랑, 중국식 음식점 등에서 중식을 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 중국식 음식점(반점) 등에서 각종 탕, 튀김, 면류 등의 중식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "호텔·레스토랑·중국식 음식점(반점) 등 실내 조리 공간",
+      "evidence_span": "호텔, 레스토랑, 중국식 음식점(반점) 등에서 각종 탕, 튀김, 면류 등의 중식을 조리한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 주문 응대",
+      "evidence_span": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다."
+    }
+  ]
+}

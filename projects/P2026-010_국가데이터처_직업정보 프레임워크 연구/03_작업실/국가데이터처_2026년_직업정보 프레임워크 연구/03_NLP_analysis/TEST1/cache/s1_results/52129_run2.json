@@ -1,0 +1,130 @@
+{
+  "ksco_code": "52129",
+  "tasks": [
+    {
+      "verb": "응대하다",
+      "object": "고객",
+      "full_statement": "매장을 방문한 고객을 응대하고 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "source_sentence": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품의 내용",
+      "full_statement": "고객에게 상품의 내용을 설명하고 다양한 모델 및 색상을 보여준다.",
+      "source_sentence": "고객에게 상품의 내용을 설명하고 다양한 모델 및 색상을 보여줌으로써 고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보여주다",
+      "object": "다양한 모델 및 색상",
+      "full_statement": "고객에게 상품의 다양한 모델 및 색상을 보여준다.",
+      "source_sentence": "다양한 모델 및 색상을 보여줌으로써 고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유도하다",
+      "object": "상품 선택·구매",
+      "full_statement": "고객이 상품을 선택·구매하도록 유도한다.",
+      "source_sentence": "고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설명하다",
+      "object": "제품의 사용법 및 보관요령",
+      "full_statement": "고객에게 제품의 사용법 및 보관요령에 대해 설명한다.",
+      "source_sentence": "제품의 사용법 및 보관요령에 대해 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "협의하다",
+      "object": "가격, 판매 조건, 배달일자",
+      "full_statement": "고객과 가격, 판매 조건, 배달일자 등을 협의한다.",
+      "source_sentence": "가격, 판매 조건, 배달일자 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "계산하다",
+      "object": "구매 물품의 가격",
+      "full_statement": "고객이 구매한 물품의 가격을 계산한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "발급하다",
+      "object": "영수증",
+      "full_statement": "구매 대금 결제 후 고객에게 영수증을 발급한다.",
+      "source_sentence": "고객이 구매한 물품의 가격을 계산하고 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "포장하다",
+      "object": "구매한 상품",
+      "full_statement": "고객이 구매한 상품을 포장한다.",
+      "source_sentence": "구매한 상품의 가격계산 및 포장등의 상품을 판매하는데 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조사하다",
+      "object": "재고량",
+      "full_statement": "수시로 매장의 재고량을 조사한다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "알리다",
+      "object": "부족상품의 보충",
+      "full_statement": "재고 부족 상품의 보충을 알린다.",
+      "source_sentence": "수시로 재고량을 조사하여 부족상품의 보충을 알린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "홍보하다",
+      "object": "상품의 품질과 기능",
+      "full_statement": "상품을 광고하거나 상품의 품질과 기능을 홍보한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며, 매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정산하다",
+      "object": "요금",
+      "full_statement": "매장에서 요금정산 등의 활동을 수행한다.",
+      "source_sentence": "매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "판매하다",
+      "object": "다양한 상품",
+      "full_statement": "도매 및 소매 매장에서 소비자에게 다양한 상품을 판매한다.",
+      "source_sentence": "도매 및 소매 매장에서 소비자에게 다양한 상품을 판매한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "도·소매 매장(상점) 실내",
+      "evidence_span": "도‧소매 업체가 개설한 매장에서 고객에게 상품의 내용을 설명하고"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(대면 판매)",
+      "evidence_span": "고객을 응대하고 고객이 구매하려는 상품의 종류, 품질, 수량에 대해 의논한다."
+    }
+  ]
+}

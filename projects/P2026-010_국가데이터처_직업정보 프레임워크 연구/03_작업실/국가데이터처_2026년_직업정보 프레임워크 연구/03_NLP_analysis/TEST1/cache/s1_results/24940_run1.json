@@ -1,0 +1,153 @@
+{
+  "ksco_code": "24940",
+  "tasks": [
+    {
+      "verb": "분류하다",
+      "object": "질병 및 수술",
+      "full_statement": "환자의 진료기록을 바탕으로 질병 및 수술을 분류한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "진료기록",
+      "full_statement": "진료기록을 분석한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "산출하다",
+      "object": "진료통계",
+      "full_statement": "진료기록을 토대로 진료통계를 산출한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "등록하다",
+      "object": "암",
+      "full_statement": "암 등 종양을 등록한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의→상속 주요업무(질환 등록·조사) 정합",
+      "confidence": 0.93
+    },
+    {
+      "verb": "전사하다",
+      "object": "의무기록",
+      "full_statement": "의무기록을 전사(傳寫)한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "유지·관리하다",
+      "object": "의무기록 및 정보",
+      "full_statement": "각종 의무에 관한 기록 및 정보를 유지·관리한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "확인하다",
+      "object": "의무기록 및 정보",
+      "full_statement": "유지·관리한 의무기록 및 정보를 확인한다.",
+      "source_sentence": "질병 및 수술 분류, 진료기록의 분석‧진료통계, 암등록, 전사(傳寫) 등 각종 의무에 관한 기록 및 정보를 유지‧관리하고 이를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "의료정보 DB",
+      "full_statement": "의료정보의 DB를 관리한다.",
+      "source_sentence": "의료정보의 DB를 관리하고 의무기록 정보의 서식을 개발, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "의무기록 정보 서식",
+      "full_statement": "의무기록 정보의 서식을 개발한다.",
+      "source_sentence": "의료정보의 DB를 관리하고 의무기록 정보의 서식을 개발, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "의무기록 정보 서식",
+      "full_statement": "의무기록 정보의 서식을 관리한다.",
+      "source_sentence": "의료정보의 DB를 관리하고 의무기록 정보의 서식을 개발, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분류하다",
+      "object": "의료행위 및 종양",
+      "full_statement": "의료행위·종양 등을 분류한다.",
+      "source_sentence": "질병‧의료행위‧종양 등을 분류하고 의무기록의 완전성을 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "의무기록 완전성",
+      "full_statement": "의무기록의 완전성을 관리한다.",
+      "source_sentence": "질병‧의료행위‧종양 등을 분류하고 의무기록의 완전성을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "조사하다",
+      "object": "질환",
+      "full_statement": "등록된 질환을 조사한다.",
+      "source_sentence": "질환을 등록하고 조사하며 의료정보 통계를 생성하고 정보를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "생성하다",
+      "object": "의료정보 통계",
+      "full_statement": "의료정보 통계를 생성한다.",
+      "source_sentence": "질환을 등록하고 조사하며 의료정보 통계를 생성하고 정보를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "제공하다",
+      "object": "의료정보",
+      "full_statement": "생성한 의료정보를 제공한다.",
+      "source_sentence": "질환을 등록하고 조사하며 의료정보 통계를 생성하고 정보를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "보호하다",
+      "object": "의무기록 정보",
+      "full_statement": "의무기록 정보를 보호한다.",
+      "source_sentence": "의무기록 정보를 보호하고 의료정보관리 질 향상 및 요양급여의 정보를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "향상시키다",
+      "object": "의료정보관리 질",
+      "full_statement": "의료정보관리의 질을 향상시킨다.",
+      "source_sentence": "의무기록 정보를 보호하고 의료정보관리 질 향상 및 요양급여의 정보를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "요양급여 정보",
+      "full_statement": "요양급여의 정보를 관리한다.",
+      "source_sentence": "의무기록 정보를 보호하고 의료정보관리 질 향상 및 요양급여의 정보를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "의료정보 데이터베이스(DB)", "category": "시스템", "evidence_span": "의료정보의 DB를 관리하고 의무기록 정보의 서식을 개발, 관리한다."}
+  ],
+  "work_context": []
+}

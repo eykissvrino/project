@@ -1,0 +1,133 @@
+{
+  "ksco_code": "61130",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "재배할 과수작물의 종류와 양",
+      "full_statement": "사과, 배, 단감, 포도 등 재배할 과수작물의 종류와 양을 결정한다.",
+      "source_sentence": "재배할 과수작물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "임차하다",
+      "object": "종자, 비료, 기타 농업용 재료 및 농업용 장비·기계",
+      "full_statement": "종자, 비료, 기타 농업용 재료 및 농업용 장비·기계를 임차 또는 구입한다.",
+      "source_sentence": "종자, 비료, 기타 농업용 재료 및 농업용 장비‧ 기계를 임차 또는 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "경지",
+      "full_statement": "과수 재배를 위한 경지를 준비한다.",
+      "source_sentence": "경지준비, 나무 및 관목 파종, 이식 및 관리, 작물수확과 같은 농업활동을 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "파종하다",
+      "object": "나무 및 관목",
+      "full_statement": "과수 나무 및 관목을 파종한다.",
+      "source_sentence": "경지준비, 나무 및 관목 파종, 이식 및 관리, 작물수확과 같은 농업활동을 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "이식하다",
+      "object": "과수 묘목",
+      "full_statement": "과수 묘목을 이식한다.",
+      "source_sentence": "경지준비, 나무 및 관목 파종, 이식 및 관리, 작물수확과 같은 농업활동을 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "과수목",
+      "full_statement": "이식한 과수목을 관리한다.",
+      "source_sentence": "경지준비, 나무 및 관목 파종, 이식 및 관리, 작물수확과 같은 농업활동을 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "꽃봉오리",
+      "full_statement": "과일의 품질과 수량을 조절하기 위해 꽃봉오리를 제거한다.",
+      "source_sentence": "꽃봉오리 제거, 꽃 솎기, 어린 과실 따기, 가지치기 등의 작업을 통하여 과일의 품질과 수량을 조절한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "솎다",
+      "object": "꽃",
+      "full_statement": "과일의 품질과 수량을 조절하기 위해 꽃을 솎는다.",
+      "source_sentence": "꽃봉오리 제거, 꽃 솎기, 어린 과실 따기, 가지치기 등의 작업을 통하여 과일의 품질과 수량을 조절한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "따다",
+      "object": "어린 과실",
+      "full_statement": "과일의 품질과 수량을 조절하기 위해 어린 과실을 딴다.",
+      "source_sentence": "꽃봉오리 제거, 꽃 솎기, 어린 과실 따기, 가지치기 등의 작업을 통하여 과일의 품질과 수량을 조절한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가지치기하다",
+      "object": "과수목 가지",
+      "full_statement": "과일의 품질과 수량을 조절하기 위해 과수목의 가지를 가지치기한다.",
+      "source_sentence": "꽃봉오리 제거, 꽃 솎기, 어린 과실 따기, 가지치기 등의 작업을 통하여 과일의 품질과 수량을 조절한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수확하다",
+      "object": "과일",
+      "full_statement": "사과, 배, 단감, 포도, 복숭아, 자두, 감귤 등의 과일을 수확한다.",
+      "source_sentence": "사과, 배, 단감, 포도, 복숭아, 자두, 감귤 등의 과일을 재배하고 수확한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "재배하다",
+      "object": "과일",
+      "full_statement": "사과, 배, 단감, 포도, 복숭아, 자두, 감귤 등의 과일을 재배한다.",
+      "source_sentence": "사과, 배, 단감, 포도, 복숭아, 자두, 감귤 등의 과일을 재배하고 수확한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "수확한 과일 생산물을 저장한다.",
+      "source_sentence": "생산물의 저장 및 일부 기초적인 가공활동을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "가공하다",
+      "object": "생산물",
+      "full_statement": "수확한 과일 생산물에 대한 기초적인 가공활동을 수행한다.",
+      "source_sentence": "생산물의 저장 및 일부 기초적인 가공활동을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "공급하다",
+      "object": "농산물",
+      "full_statement": "재배·수확한 농산물을 공급 및 출하한다.",
+      "source_sentence": "농산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "자기 계획과 판단에 따른 독립적 직무 수행",
+      "evidence_span": "자기 계획과 판단에 따라 농산물, 임산물 및 수산물의 생산에 필요한 지식과 경험을 기초로 작물을 재배‧수확하고"
+    }
+  ]
+}

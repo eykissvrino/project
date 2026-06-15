@@ -1,0 +1,60 @@
+{
+  "k_natural": 3,
+  "n_kr_gwa_natural": 2,
+  "natural_vs_onet": {
+    "n_clusters": 2,
+    "onet_distinct_matched": 1,
+    "onet_coverage_41": 0.024,
+    "mean_nearest_cosine": 0.5689,
+    "kr_unique_candidates": 1
+  },
+  "k41_vs_onet": {
+    "n_clusters": 31,
+    "onet_distinct_matched": 14,
+    "onet_coverage_41": 0.341,
+    "mean_nearest_cosine": 0.5842,
+    "kr_unique_candidates": 8
+  },
+  "cut_curve_head": [
+    {
+      "k": 3,
+      "cut_height": 0.60117,
+      "gap": 0.016209
+    },
+    {
+      "k": 4,
+      "cut_height": 0.58499,
+      "gap": 0.016185
+    },
+    {
+      "k": 13,
+      "cut_height": 0.54352,
+      "gap": 0.008594
+    },
+    {
+      "k": 5,
+      "cut_height": 0.57731,
+      "gap": 0.007682
+    },
+    {
+      "k": 10,
+      "cut_height": 0.55581,
+      "gap": 0.006807
+    },
+    {
+      "k": 7,
+      "cut_height": 0.56582,
+      "gap": 0.005859
+    },
+    {
+      "k": 6,
+      "cut_height": 0.57168,
+      "gap": 0.005626
+    },
+    {
+      "k": 22,
+      "cut_height": 0.53149,
+      "gap": 0.004059
+    }
+  ]
+}

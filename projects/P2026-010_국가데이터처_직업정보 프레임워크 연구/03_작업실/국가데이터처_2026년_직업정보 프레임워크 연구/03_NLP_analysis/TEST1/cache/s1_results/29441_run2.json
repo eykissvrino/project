@@ -1,0 +1,60 @@
+{
+  "ksco_code": "29441",
+  "tasks": [
+    {
+      "verb": "부르다",
+      "object": "판소리·민요 등의 창(唱)",
+      "full_statement": "판소리, 민요 등의 창(唱)을 부른다.",
+      "source_sentence": "판소리, 민요 등의 창(唱)을 부른다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연주하다",
+      "object": "거문고·가야금·향비파·대금 등의 악기",
+      "full_statement": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다.",
+      "source_sentence": "판소리, 민요 등의 창(唱)을 부르거나, 거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계승하다",
+      "object": "전통음악",
+      "full_statement": "오랫동안 전승되어 온 전통음악을 계승한다.",
+      "source_sentence": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 계승하거나 보존한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보존하다",
+      "object": "전통음악",
+      "full_statement": "전통음악을 보존한다.",
+      "source_sentence": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 계승하거나 보존한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "공연하다",
+      "object": "음악 예술작품",
+      "full_statement": "음악 예술작품을 공연한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "창작하다",
+      "object": "음악 예술작품",
+      "full_statement": "음악 예술작품을 창작한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "거문고", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "가야금", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "향비파", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "대금", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."}
+  ],
+  "work_context": []
+}

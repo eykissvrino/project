@@ -1,0 +1,127 @@
+{
+  "ksco_code": "95210",
+  "tasks": [
+    {
+      "verb": "씻다",
+      "object": "식재료",
+      "full_statement": "패스트푸드 체인점에서 식재료를 씻는다.",
+      "source_sentence": "식재료를 씻고 다듬거나 혼합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(패스트푸드 체인점 식재료)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "다듬다",
+      "object": "식재료",
+      "full_statement": "식재료를 다듬는다.",
+      "source_sentence": "식재료를 씻고 다듬거나 혼합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "혼합하다",
+      "object": "식재료",
+      "full_statement": "식재료를 혼합한다.",
+      "source_sentence": "식재료를 씻고 다듬거나 혼합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "해동하다",
+      "object": "냉동재료",
+      "full_statement": "미리 조리되거나 가공된 냉동재료를 해동한다.",
+      "source_sentence": "미리 조리되거나 가공된 냉동재료 등을 해동하거나 튀긴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "튀기다",
+      "object": "가공된 재료",
+      "full_statement": "미리 가공된 재료를 튀긴다.",
+      "source_sentence": "이미 조리가 되어 있는 음식을 데우거나 미리 가공된 재료를 굽고 튀기는 등 빠르게 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "굽다",
+      "object": "가공된 재료",
+      "full_statement": "미리 가공된 재료를 굽는다.",
+      "source_sentence": "이미 조리가 되어 있는 음식을 데우거나 미리 가공된 재료를 굽고 튀기는 등 빠르게 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "데우다",
+      "object": "조리된 음식",
+      "full_statement": "이미 조리가 되어 있는 음식을 데운다.",
+      "source_sentence": "이미 조리가 되어 있는 음식을 데우거나 미리 가공된 재료를 굽고 튀기는 등 빠르게 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "굽다",
+      "object": "패티",
+      "full_statement": "가공되어 있는 패티 등을 구워 음식을 만든다.",
+      "source_sentence": "가공되어 있는 패티 등을 굽거나 데워 음식을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "데우다",
+      "object": "패티",
+      "full_statement": "가공되어 있는 패티 등을 데워 음식을 만든다.",
+      "source_sentence": "가공되어 있는 패티 등을 굽거나 데워 음식을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "나눠 담다",
+      "object": "소스",
+      "full_statement": "음식에 곁들이는 소스를 작은 용기에 나눠 담는다.",
+      "source_sentence": "음식에 곁들이는 소스를 작은 용기에 나눠 담는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준비하다",
+      "object": "식기",
+      "full_statement": "고객에게 신속히 전달할 수 있도록 함께 제공할 식기를 준비한다.",
+      "source_sentence": "고객에게 신속히 전달할 수 있도록 함께 제공할 식기를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "담다",
+      "object": "완성된 음식",
+      "full_statement": "완성된 음식을 용기에 담아 쟁반에 올린다.",
+      "source_sentence": "완성된 음식을 용기에 담아 쟁반에 올리거나 포장봉투에 넣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성된 음식",
+      "full_statement": "완성된 음식을 포장봉투에 넣어 포장한다.",
+      "source_sentence": "완성된 음식을 용기에 담아 쟁반에 올리거나 포장봉투에 넣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객에게 신속히 음식·식기를 전달하는 고객 응대 맥락",
+      "evidence_span": "고객에게 신속히 전달할 수 있도록 함께 제공할 식기를 준비한다."
+    },
+    {
+      "category": "시간적",
+      "value": "신속한 조리·전달이 요구되는 빠른 작업 속도",
+      "evidence_span": "미리 가공된 재료를 굽고 튀기는 등 빠르게 조리한다."
+    },
+    {
+      "category": "신체적",
+      "value": "단순·반복적인 조리보조 작업",
+      "evidence_span": "조리 관련 단순 반복 작업을 수행하거나 조리장이나 조리사의 지시에 따라 각종 조리보조 업무를 수행한다."
+    }
+  ]
+}

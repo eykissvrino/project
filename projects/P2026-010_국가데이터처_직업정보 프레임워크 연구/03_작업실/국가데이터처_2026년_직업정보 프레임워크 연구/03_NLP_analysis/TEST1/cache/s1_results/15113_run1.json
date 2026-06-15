@@ -1,0 +1,95 @@
+{
+  "ksco_code": "15113",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "무역 및 무역중개 업체의 운영",
+      "full_statement": "무역 및 무역중개 업체의 운영을 기획한다.",
+      "source_sentence": "무역 및 무역중개 업체의 운영을 기획, 관리, 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "무역 및 무역중개 업체의 운영",
+      "full_statement": "무역 및 무역중개 업체의 운영을 관리한다.",
+      "source_sentence": "무역 및 무역중개 업체의 운영을 기획, 관리, 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "무역 및 무역중개 업체의 운영",
+      "full_statement": "무역 및 무역중개 업체의 운영을 조정한다.",
+      "source_sentence": "무역 및 무역중개 업체의 운영을 기획, 관리, 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "무역 영업 운영부서의 운영",
+      "full_statement": "무역 업체의 영업 운영부서의 운영을 계획한다.",
+      "source_sentence": "제조 및 도매업, 소매업체의 판매 운영부서, 영업 운영부서의 운영을 계획하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "무역 영업 운영부서의 운영",
+      "full_statement": "무역 업체의 영업 운영부서의 운영을 관리한다.",
+      "source_sentence": "제조 및 도매업, 소매업체의 판매 운영부서, 영업 운영부서의 운영을 계획하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검토하다",
+      "object": "시장조사 및 추세",
+      "full_statement": "고객의 요구, 잠재적인 판매량 및 경쟁사의 운영 효과를 판단하기 위해 시장조사 및 추세를 검토한다.",
+      "source_sentence": "고객의 요구, 잠재적인 판매량 및 판매에 있어서 경쟁사의 운영 효과를 판단하기 위해 시장조사 및 추세를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "결정하다",
+      "object": "판매할 상품 및 서비스",
+      "full_statement": "판매할 상품 및 서비스를 결정한다.",
+      "source_sentence": "판매할 상품 및 서비스를 결정하고 가격 및 신용판매 정책을 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "실행하다",
+      "object": "가격 및 신용판매 정책",
+      "full_statement": "가격 및 신용판매 정책을 실행한다.",
+      "source_sentence": "판매할 상품 및 서비스를 결정하고 가격 및 신용판매 정책을 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "준비하다",
+      "object": "견적서와 계약서",
+      "full_statement": "기술이 요구되는 장비나 서비스의 설치, 유지에 대한 견적서와 계약서를 준비한다.",
+      "source_sentence": "통신장비 또는 전자장비와 같은 기술이 요구되는 장비나 서비스의 설치, 유지에 대한 견적서와 계약서를 준비하고 관리하는 일을 총괄한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "관리하다",
+      "object": "견적서와 계약서",
+      "full_statement": "기술이 요구되는 장비나 서비스의 설치, 유지에 대한 견적서와 계약서를 관리하는 일을 총괄한다.",
+      "source_sentence": "통신장비 또는 전자장비와 같은 기술이 요구되는 장비나 서비스의 설치, 유지에 대한 견적서와 계약서를 준비하고 관리하는 일을 총괄한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "기획하다",
+      "object": "무역중개 활동",
+      "full_statement": "무역 중개 업체의 중개 활동을 기획한다.",
+      "source_sentence": "무역 및 무역 중개 업체의 운영을 기획, 관리, 조정하는 무역 관련 관리자도 포함된다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

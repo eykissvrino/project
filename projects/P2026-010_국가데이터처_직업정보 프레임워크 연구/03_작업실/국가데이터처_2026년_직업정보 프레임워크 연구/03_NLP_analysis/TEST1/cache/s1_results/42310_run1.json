@@ -1,0 +1,114 @@
+{
+  "ksco_code": "42310",
+  "tasks": [
+    {
+      "verb": "돕다",
+      "object": "노인의 거동",
+      "full_statement": "노인의 거동을 돕는다.",
+      "source_sentence": "노인의 거동을 돕거나 안전 또는 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "노인의 안전 또는 건강상태",
+      "full_statement": "노인의 안전 또는 건강상태를 확인한다.",
+      "source_sentence": "노인의 거동을 돕거나 안전 또는 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "보호하다",
+      "object": "노인",
+      "full_statement": "노인을 보호한다.",
+      "source_sentence": "노인의 거동을 돕거나 안전 또는 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "돌봄 서비스",
+      "full_statement": "노인에게 돌봄 서비스를 제공한다.",
+      "source_sentence": "노인의 거동을 돕거나 안전 또는 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "노인의 일상생활",
+      "full_statement": "노인의 일상생활을 지원한다.",
+      "source_sentence": "노인의 일상생활 및 가사생활, 사회생활 등을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지원하다",
+      "object": "노인의 가사생활",
+      "full_statement": "노인의 가사생활을 지원한다.",
+      "source_sentence": "노인의 일상생활 및 가사생활, 사회생활 등을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지원하다",
+      "object": "노인의 사회생활",
+      "full_statement": "노인의 사회생활을 지원한다.",
+      "source_sentence": "노인의 일상생활 및 가사생활, 사회생활 등을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보조하다",
+      "object": "생활지도원 또는 간호사",
+      "full_statement": "복지시설에서 생활지도원 또는 간호사 등을 보조한다.",
+      "source_sentence": "복지시설에서 생활지도원 또는 간호사 등을 보조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "혼자 사는 노인의 안전",
+      "full_statement": "주로 혼자 사는 노인의 안전을 확인한다.",
+      "source_sentence": "주로 혼자 사는 노인의 안전을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조언하다",
+      "object": "위험 노출 방지 방법",
+      "full_statement": "노인이 각종 위험에 노출되지 않도록 조언한다.",
+      "source_sentence": "각종 위험에 노출되지 않도록 조언하고 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "위험 노출 방지",
+      "full_statement": "노인이 각종 위험에 노출되지 않도록 지원한다.",
+      "source_sentence": "각종 위험에 노출되지 않도록 조언하고 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "전달하다",
+      "object": "후원 및 지원물품",
+      "full_statement": "노인에게 후원 및 지원물품 등을 전달한다.",
+      "source_sentence": "후원, 지원물품 등을 전달하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "복지시설(실내)",
+      "evidence_span": "복지시설에서 생활지도원 또는 간호사 등을 보조한다."
+    },
+    {
+      "category": "사회적",
+      "value": "노인 대상 대인 돌봄 서비스",
+      "evidence_span": "노인의 거동을 돕거나 안전 또는 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다."
+    }
+  ]
+}

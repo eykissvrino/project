@@ -1,0 +1,68 @@
+{
+  "ksco_code": "61392",
+  "tasks": [
+    {
+      "verb": "놓다",
+      "object": "덫",
+      "full_statement": "덫을 놓아 포유류, 조류 및 파충류를 사냥한다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이용하다",
+      "object": "무기",
+      "full_statement": "무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "사냥하다",
+      "object": "포유류, 조류 및 파충류",
+      "full_statement": "포유류, 조류 및 파충류를 사냥한다.",
+      "source_sentence": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "받다",
+      "object": "정부의 허가",
+      "full_statement": "정부의 허가를 받아 사냥을 한다.",
+      "source_sentence": "정부의 허가를 받아 사냥을 하며, 사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "출하하다",
+      "object": "사냥물",
+      "full_statement": "사냥물을 산채로 출하한다.",
+      "source_sentence": "정부의 허가를 받아 사냥을 하며, 사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "벗기다",
+      "object": "가죽",
+      "full_statement": "사냥물을 시판할 수 있도록 가죽을 벗긴다.",
+      "source_sentence": "정부의 허가를 받아 사냥을 하며, 사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "사냥물",
+      "full_statement": "사냥물을 시판할 수 있도록 기타 방법으로 처리한다.",
+      "source_sentence": "정부의 허가를 받아 사냥을 하며, 사냥물을 산채로 출하하거나 시판할 수 있도록 가죽을 벗기거나 기타 방법으로 처리를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "덫", "category": "도구", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."},
+    {"name": "무기", "category": "장비", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "야생 포유류·조류·파충류 사냥 및 무기 사용", "evidence_span": "덫을 놓거나 무기를 이용하여 포유류, 조류 및 파충류를 사냥한다."}
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "ksco_code": "21122",
+  "tasks": [
+    {
+      "verb": "개선하다",
+      "object": "화학 개념·이론·운영방법",
+      "full_statement": "화학에 관한 개념, 이론 및 운영방법을 개선·개발한다.",
+      "source_sentence": "화학에 관한 개념, 이론 및 운영방법을 개선, 개발한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개발하다",
+      "object": "화학 운영방법",
+      "full_statement": "화학에 관한 운영방법을 개발한다.",
+      "source_sentence": "화학에 관한 개념, 이론 및 운영방법을 개선, 개발한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시험하다",
+      "object": "천연·인조·합성물질의 화학적 성질",
+      "full_statement": "각종 천연, 인조 또는 합성물질, 재료 및 제품의 화학적 성질과 변화를 조사하기 위하여 시험한다.",
+      "source_sentence": "각종 천연, 인조 또는 합성물질, 재료 및 제품의 화학적 성질과 변화를 조사하기 위하여 시험 및 분석하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "재료 및 제품의 화학적 변화",
+      "full_statement": "각종 천연, 인조 또는 합성물질, 재료 및 제품의 화학적 성질과 변화를 조사하기 위하여 분석한다.",
+      "source_sentence": "각종 천연, 인조 또는 합성물질, 재료 및 제품의 화학적 성질과 변화를 조사하기 위하여 시험 및 분석하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조사하다",
+      "object": "물질의 화학적 성질과 변화",
+      "full_statement": "각종 물질, 재료 및 제품의 화학적 성질과 변화를 조사한다.",
+      "source_sentence": "각종 천연, 인조 또는 합성물질, 재료 및 제품의 화학적 성질과 변화를 조사하기 위하여 시험 및 분석하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "산업 재료·제품·제조공정",
+      "full_statement": "제약 등 각종 산업의 재료, 제품 및 제조공정을 개선, 개발하기 위하여 관련 과학지식을 응용한다.",
+      "source_sentence": "제약 등 각종 산업의 재료, 제품 및 제조공정을 개선, 개발하기 위하여 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "개선하다",
+      "object": "산업 제조공정",
+      "full_statement": "제약 등 각종 산업의 제조공정을 개선한다.",
+      "source_sentence": "제약 등 각종 산업의 재료, 제품 및 제조공정을 개선, 개발하기 위하여 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "응용하다",
+      "object": "화학 과학지식",
+      "full_statement": "산업의 재료, 제품 및 제조공정을 개선·개발하기 위하여 관련 과학지식을 응용한다.",
+      "source_sentence": "제약 등 각종 산업의 재료, 제품 및 제조공정을 개선, 개발하기 위하여 관련 과학지식을 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연구하다",
+      "object": "화학·지학 분야",
+      "full_statement": "화학, 지학에 관한 개념, 이론 및 운영방법을 연구한다.",
+      "source_sentence": "화학, 지학에 관한 개념, 이론 및 운영방법을 개선, 개발한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조언하다",
+      "object": "화학 원리·기법의 산업분야 응용",
+      "full_statement": "화학 등의 원리와 기법을 산업분야에 응용할 수 있도록 조언한다.",
+      "source_sentence": "물리학, 천문학, 우주과학, 화학, 지학 등의 원리와 기법을 산업분야에 응용 할 수 있도록 조언한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "과학 논문 및 보고서",
+      "full_statement": "과학적인 논문 및 보고서를 작성한다.",
+      "source_sentence": "과학적인 논문 및 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "연구원 및 시험원",
+      "full_statement": "기타 연구원 및 시험원을 감독한다.",
+      "source_sentence": "기타 연구원 및 시험원을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "연구원 및 시험원 감독(팀 감독)",
+      "evidence_span": "기타 연구원 및 시험원을 감독하기도 한다."
+    }
+  ]
+}

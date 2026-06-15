@@ -1,0 +1,103 @@
+{
+  "ksco_code": "61311",
+  "tasks": [
+    {
+      "verb": "번식시키다",
+      "object": "젖소",
+      "full_statement": "젖소를 번식시킨다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "사육하다",
+      "object": "젖소",
+      "full_statement": "젖소를 사육한다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "젖소",
+      "full_statement": "젖소를 관리한다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "짜다",
+      "object": "젖",
+      "full_statement": "젖소의 젖을 짠다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "여과하다",
+      "object": "우유",
+      "full_statement": "짜낸 우유를 여과한다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "냉각시키다",
+      "object": "우유",
+      "full_statement": "여과한 우유를 냉각시킨다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "우유",
+      "full_statement": "냉각시킨 우유를 우유 가공업체에 제공한다.",
+      "source_sentence": "젖소를 번식, 사육, 관리하며 젖을 짜고 여과한 후 냉각시켜 우유 가공업체에 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "사육할 젖소의 종류와 양",
+      "full_statement": "사육할 젖소의 종류와 양을 결정한다.",
+      "source_sentence": "젖소, 양 등 사육할 동물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "구입하다",
+      "object": "사육용 원료와 도구",
+      "full_statement": "젖소 사육 시 필요한 원료와 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "우유 등 생산물을 저장한다.",
+      "source_sentence": "생산물을 저장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "정비하다",
+      "object": "농장건물·기계·장비",
+      "full_statement": "농장건물, 기계 및 장비를 정비한다.",
+      "source_sentence": "농장건물, 기계 및 장비를 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "우유 등 생산물을 공급 및 출하한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

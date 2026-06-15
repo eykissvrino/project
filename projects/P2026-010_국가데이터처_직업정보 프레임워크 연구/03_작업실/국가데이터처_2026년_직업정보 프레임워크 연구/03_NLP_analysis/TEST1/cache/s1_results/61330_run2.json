@@ -1,0 +1,63 @@
+{
+  "ksco_code": "61330",
+  "tasks": [
+    {
+      "verb": "번식시키다",
+      "object": "돼지",
+      "full_statement": "돼지를 번식시킨다.",
+      "source_sentence": "돼지를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "사육하다",
+      "object": "돼지",
+      "full_statement": "돼지를 사육한다.",
+      "source_sentence": "돼지를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "돼지",
+      "full_statement": "사육 중인 돼지를 관리한다.",
+      "source_sentence": "돼지를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "돼지 사육으로 얻은 생산물을 공급한다.",
+      "source_sentence": "돼지를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "출하하다",
+      "object": "생산물",
+      "full_statement": "돼지 사육으로 얻은 생산물을 출하한다.",
+      "source_sentence": "돼지를 번식, 사육, 관리하며, 생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "구입하다",
+      "object": "원료",
+      "full_statement": "사육 시 필요한 원료를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구입하다",
+      "object": "도구",
+      "full_statement": "사육 시 필요한 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

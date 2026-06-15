@@ -1,0 +1,117 @@
+{
+  "ksco_code": "75109",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "각 부분",
+      "full_statement": "고장의 위치·범위·정도·성격을 확인하기 위하여 시험·측정 기구를 사용하여 자동차 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(그 외 자동차 정비)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "비교하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위를 분해하고 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "작동상태",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위의 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "정비를 위하여 자동차 부품을 교체한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 부품",
+      "full_statement": "사용가능한 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.79
+    },
+    {
+      "verb": "세척하다",
+      "object": "엔진 및 부품",
+      "full_statement": "엔진 및 부품을 증기로 세척한다.",
+      "source_sentence": "엔진 및 부품을 증기로 세척한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "전기자동차 모터 및 배터리 성능",
+      "full_statement": "전기자동차의 모터 및 배터리의 성능을 검사한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "수리하다",
+      "object": "전기자동차 모터 및 배터리",
+      "full_statement": "전기자동차의 모터 및 배터리를 수리하거나 교체한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "확인하다",
+      "object": "작동상태",
+      "full_statement": "설치 또는 수리한 부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "엔진 및 부품",
+      "full_statement": "수공구 및 관련 장비를 사용하여 자동차의 엔진·모터·배터리·차체 및 관련 부품을 조정한다.",
+      "source_sentence": "승용차, 버스, 트럭, 특장차 등 자동차의 엔진 및 모터·배터리, 차체 그리고 관련 부품 등을 수공구 및 관련 장비를 사용하여 조정하고 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(세분류 7510)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "부착하다",
+      "object": "선팅필름",
+      "full_statement": "자동차 유리에 선팅필름을 부착한다.",
+      "source_sentence": "자동차 선팅필름 부착원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.66
+    },
+    {
+      "verb": "해체하다",
+      "object": "폐차",
+      "full_statement": "폐차를 해체하는 작업을 수행한다.",
+      "source_sentence": "폐차해체작업원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.66
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "장비", "evidence_span": "시험‧측정 기구를 사용하여 각 부분을 진단·검사한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 및 관련 장비를 사용하여 조정하고 교체하거나 수리하여 정비한다."},
+    {"name": "선팅필름", "category": "도구", "evidence_span": "자동차 선팅필름 부착원"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "수공구 및 관련 장비를 사용하는 손·수공구 중심 정비 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

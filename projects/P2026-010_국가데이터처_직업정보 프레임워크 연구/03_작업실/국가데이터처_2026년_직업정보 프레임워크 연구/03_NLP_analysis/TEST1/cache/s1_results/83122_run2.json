@@ -1,0 +1,112 @@
+{
+  "ksco_code": "83122",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "가열 처리 장치",
+      "full_statement": "화학물 및 화학물 관련 공정에서 열처리를 수행하는 기계장비를 조작한다.",
+      "source_sentence": "화학물 및 화학물 관련 공정에서 조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "조세 처리",
+      "full_statement": "화학물에 조세(culture) 처리를 수행하는 기계장비를 조작한다.",
+      "source_sentence": "화학물 및 화학물 관련 공정에서 조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "하소 처리",
+      "full_statement": "화학물에 하소 처리를 수행하는 하소장치를 조작한다.",
+      "source_sentence": "화학물 및 화학물 관련 공정에서 조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의→직업예시(하소장치 조작원) 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "가공로",
+      "full_statement": "화학물 가공을 위한 가공로를 조작한다.",
+      "source_sentence": "가공로 조작원",
+      "derived_from": "세세분류 직업예시(가공로 조작원)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "조제장치",
+      "full_statement": "화학물 조제를 위한 조제장치를 조작한다.",
+      "source_sentence": "조제장치 조작원·하소장치 조작원",
+      "derived_from": "세세분류 직업예시(조제장치 조작원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "가열하다",
+      "object": "화학물",
+      "full_statement": "필요한 성질을 가진 제품을 얻기 위하여 화학물을 가열하는 기계장비를 조작한다.",
+      "source_sentence": "필요한 성질을 가진 제품을 얻기 위하여 파쇄, 가열, 혼합, 증류 또는 여과 등 화학물을 가공하는 기계 장비를 조작한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파쇄하다",
+      "object": "고형 화학물",
+      "full_statement": "고형 화학물 및 기타 재료를 파쇄하는 기계를 조작한다.",
+      "source_sentence": "고형 화학물 및 기타 재료를 파쇄하고 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "혼합하다",
+      "object": "고형 화학물",
+      "full_statement": "고형 화학물 및 기타 재료를 혼합하는 기계를 조작한다.",
+      "source_sentence": "고형 화학물 및 기타 재료를 파쇄하고 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정화하다",
+      "object": "재료",
+      "full_statement": "재료를 정화하여 특수한 성질로 만드는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "합성하다",
+      "object": "재료",
+      "full_statement": "재료를 합성하여 화학변화를 일으키는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "건조하다",
+      "object": "화학물 및 관련 재료",
+      "full_statement": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "source_sentence": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의(열처리) 정합",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "건조기",
+      "full_statement": "화학물 가공을 위해 건조기를 조작한다.",
+      "source_sentence": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "하소장치", "category": "장비", "evidence_span": "조제장치 조작원·하소장치 조작원"},
+    {"name": "조제장치", "category": "장비", "evidence_span": "조제장치 조작원·하소장치 조작원"},
+    {"name": "가공로", "category": "장비", "evidence_span": "가공로 조작원"},
+    {"name": "건조기", "category": "장비", "evidence_span": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다."},
+    {"name": "가열 처리 기계장비", "category": "장비", "evidence_span": "조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급", "evidence_span": "화학물 및 화학물 관련 공정에서 조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다."},
+    {"category": "위험", "value": "고온 열처리 공정", "evidence_span": "조세, 하소 및 기타 형태의 열처리를 수행하는 기계장비를 조작한다."}
+  ]
+}

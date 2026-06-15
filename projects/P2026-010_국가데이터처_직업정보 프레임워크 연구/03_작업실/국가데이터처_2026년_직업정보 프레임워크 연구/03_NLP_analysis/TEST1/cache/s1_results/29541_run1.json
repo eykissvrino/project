@@ -1,0 +1,159 @@
+{
+  "ksco_code": "29541",
+  "tasks": [
+    {
+      "verb": "도안하다",
+      "object": "광고물에 필요한 그림과 이미지",
+      "full_statement": "광고물에 필요한 그림과 이미지를 도안한다.",
+      "source_sentence": "광고 디자이너는 광고물에 필요한 그림과 이미지를 도안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "창출하다",
+      "object": "시각 이미지",
+      "full_statement": "그림이나 문자를 이용하여 시각 이미지를 창출한다.",
+      "source_sentence": "상품의 구매에 대해 대중을 설득하거나 상품 혹은 기업을 각인시킬 수 있도록 그림이나 문자를 이용하여 시각 이미지를 창출한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설득하다",
+      "object": "대중",
+      "full_statement": "상품의 구매에 대해 시각 이미지로 대중을 설득한다.",
+      "source_sentence": "상품의 구매에 대해 대중을 설득하거나 상품 혹은 기업을 각인시킬 수 있도록 그림이나 문자를 이용하여 시각 이미지를 창출한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "각인시키다",
+      "object": "상품 혹은 기업 이미지",
+      "full_statement": "상품 혹은 기업을 각인시킬 수 있도록 시각 이미지를 표현한다.",
+      "source_sentence": "상품의 구매에 대해 대중을 설득하거나 상품 혹은 기업을 각인시킬 수 있도록 그림이나 문자를 이용하여 시각 이미지를 창출한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "도안하다",
+      "object": "이미지",
+      "full_statement": "정보가 시각을 통하여 효율적으로 전달될 수 있도록 이미지를 도안한다.",
+      "source_sentence": "정보가 시각을 통하여 효율적으로 표현되고 전달될 수 있도록, 이미지를 도안하고 디자인된 결과를 시각적으로 표현한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "표현하다",
+      "object": "디자인 결과",
+      "full_statement": "디자인된 결과를 시각적으로 표현한다.",
+      "source_sentence": "정보가 시각을 통하여 효율적으로 표현되고 전달될 수 있도록, 이미지를 도안하고 디자인된 결과를 시각적으로 표현한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "디자인하다",
+      "object": "브랜드 아이덴티티(BI)",
+      "full_statement": "브랜드 아이덴티티(BI)를 디자인한다.",
+      "source_sentence": "BI(브랜드아이덴티티) 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "디자인하다",
+      "object": "기업이미지통합(CI)",
+      "full_statement": "기업이미지통합(CI)을 디자인한다.",
+      "source_sentence": "기업이미지통합 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "디자인하다",
+      "object": "심볼",
+      "full_statement": "기업이나 상품의 심볼을 디자인한다.",
+      "source_sentence": "심볼 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "디자인하다",
+      "object": "간판",
+      "full_statement": "광고용 간판을 디자인한다.",
+      "source_sentence": "간판 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "타이포그래픽",
+      "full_statement": "광고물의 타이포그래픽을 디자인한다.",
+      "source_sentence": "타이포그래픽 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "교통표지판 광고",
+      "full_statement": "교통표지판 광고를 디자인한다.",
+      "source_sentence": "광고 디자이너·교통표지판광고 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "사인물",
+      "full_statement": "광고용 사인물을 디자인한다.",
+      "source_sentence": "사인물 디자이너·현수막 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "현수막",
+      "full_statement": "광고용 현수막을 디자인한다.",
+      "source_sentence": "사인물 디자이너·현수막 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "홍보물",
+      "full_statement": "기업이나 상품의 홍보물을 디자인한다.",
+      "source_sentence": "홍보물 디자이너·전단지 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "전단지",
+      "full_statement": "광고용 전단지를 디자인한다.",
+      "source_sentence": "홍보물 디자이너·전단지 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "카탈로그",
+      "full_statement": "상품 카탈로그를 디자인한다.",
+      "source_sentence": "카탈로그 디자이너·POP광고 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "POP 광고물",
+      "full_statement": "매장용 POP 광고물을 디자인한다.",
+      "source_sentence": "카탈로그 디자이너·POP광고 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "디자인하다",
+      "object": "음반표지",
+      "full_statement": "음반표지를 디자인한다.",
+      "source_sentence": "음반표지 디자이너",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

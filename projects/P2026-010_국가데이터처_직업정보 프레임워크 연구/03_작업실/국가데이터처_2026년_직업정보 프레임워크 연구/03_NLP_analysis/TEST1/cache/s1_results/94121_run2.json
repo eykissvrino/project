@@ -1,0 +1,74 @@
+{
+  "ksco_code": "94121",
+  "tasks": [
+    {
+      "verb": "청소하다",
+      "object": "운송장비 내외부",
+      "full_statement": "비행기, 선박, 기관차 등 운송장비의 내부와 외부를 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "운송장비 바닥",
+      "full_statement": "비행기, 선박, 기관차 등 운송장비의 바닥을 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "닦다",
+      "object": "운송장비 유리창",
+      "full_statement": "비행기, 선박, 기관차 등 운송장비의 유리창을 닦는다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "털다",
+      "object": "먼지",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽에 있는 먼지를 턴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "쓸다",
+      "object": "바닥과 벽",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽을 쓴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "닦다",
+      "object": "바닥과 벽",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽을 닦는다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "유지하다",
+      "object": "운송수단 청결",
+      "full_statement": "운송수단의 청결을 유지하기 위하여 청소한다.",
+      "source_sentence": "운송수단이나 생산시설의 청결을 유지하기 위하여 청소한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "비행기·선박·기관차 등 운송장비 내부 작업",
+      "evidence_span": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

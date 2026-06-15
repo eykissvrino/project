@@ -1,0 +1,78 @@
+{
+  "ksco_code": "84391",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "혼합·분쇄 기계장치",
+      "full_statement": "유약을 제조하기 위해 성분을 혼합·분쇄하는 기계장치를 조작한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "투입하다",
+      "object": "유약 원료 성분",
+      "full_statement": "붕사, 납, 모래, 석회 등 유약 원료 성분을 기계장치에 투입한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "혼합하다",
+      "object": "유약 성분",
+      "full_statement": "붕사, 납, 모래, 석회 등 유약 성분을 혼합한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "유약 성분",
+      "full_statement": "유약 성분을 기계장치로 분쇄한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "유약 제조기",
+      "full_statement": "유약을 제조하기 위해 유약 제조기를 조작한다.",
+      "source_sentence": "유약 제조기 조작원·유약 분쇄기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "유약 분쇄기",
+      "full_statement": "유약 성분을 분쇄하기 위해 유약 분쇄기를 조작한다.",
+      "source_sentence": "유약 제조기 조작원·유약 분쇄기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "유약 혼합기",
+      "full_statement": "유약 성분을 혼합하기 위해 유약 혼합기를 조작한다.",
+      "source_sentence": "유약 혼합기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "혼합하다",
+      "object": "연마재·광택제 성분",
+      "full_statement": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "source_sentence": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "혼합·분쇄 기계장치", "category": "장비", "evidence_span": "성분을 혼합, 분쇄하는 기계장치를 조작한다"},
+    {"name": "유약 제조기", "category": "장비", "evidence_span": "유약 제조기 조작원"},
+    {"name": "유약 분쇄기", "category": "장비", "evidence_span": "유약 분쇄기 조작원"},
+    {"name": "유약 혼합기", "category": "장비", "evidence_span": "유약 혼합기 조작원"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "납 등 유해 중금속 성분 취급", "evidence_span": "붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는"}
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "ksco_code": "23110",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "주거용·상업용·공업용 건물",
+      "full_statement": "주거용, 상업 및 공업용 건물 등에 관하여 연구한다.",
+      "source_sentence": "주거용, 상업 및 공업용 건물 등에 관하여 연구하고, 이들을 설계하며 건설, 유지 및 보수를 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "건물",
+      "full_statement": "주거용, 상업 및 공업용 건물 등을 설계한다.",
+      "source_sentence": "주거용, 상업 및 공업용 건물 등에 관하여 연구하고, 이들을 설계하며 건설, 유지 및 보수를 기획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기획하다",
+      "object": "건물의 건설·유지·보수",
+      "full_statement": "건물의 건설, 유지 및 보수를 기획한다.",
+      "source_sentence": "주거용, 상업 및 공업용 건물 등에 관하여 연구하고, 이들을 설계하며 건설, 유지 및 보수를 기획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "건축 실내",
+      "full_statement": "건축의 실내에 대하여 연구한다.",
+      "source_sentence": "또한 건축의 실내에 대한 연구 및 유지‧보수를 기획하고 설계하며, 시공에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "건축 실내의 유지·보수",
+      "full_statement": "건축의 실내에 대한 유지‧보수를 기획한다.",
+      "source_sentence": "또한 건축의 실내에 대한 연구 및 유지‧보수를 기획하고 설계하며, 시공에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "건축 실내",
+      "full_statement": "건축의 실내를 설계한다.",
+      "source_sentence": "또한 건축의 실내에 대한 연구 및 유지‧보수를 기획하고 설계하며, 시공에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "시공",
+      "full_statement": "시공에 관한 전반적인 감독을 한다.",
+      "source_sentence": "또한 건축의 실내에 대한 연구 및 유지‧보수를 기획하고 설계하며, 시공에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "설계명세사항",
+      "full_statement": "건축물에 관한 설계명세사항 계획을 세운다.",
+      "source_sentence": "건축물을 설계하며 설계명세사항, 빌딩재료, 비용 및 건설일정에 관한 계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "빌딩재료",
+      "full_statement": "건축물에 사용할 빌딩재료에 관한 계획을 세운다.",
+      "source_sentence": "건축물을 설계하며 설계명세사항, 빌딩재료, 비용 및 건설일정에 관한 계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계획하다",
+      "object": "비용",
+      "full_statement": "건축물에 관한 비용 계획을 세운다.",
+      "source_sentence": "건축물을 설계하며 설계명세사항, 빌딩재료, 비용 및 건설일정에 관한 계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계획하다",
+      "object": "건설일정",
+      "full_statement": "건축물에 관한 건설일정 계획을 세운다.",
+      "source_sentence": "건축물을 설계하며 설계명세사항, 빌딩재료, 비용 및 건설일정에 관한 계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "준비하다",
+      "object": "스케치 및 모형",
+      "full_statement": "고객을 위해 스케치 및 모형을 준비한다.",
+      "source_sentence": "고객을 위해 스케치 및 모형을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "건물의 건설·유지·보수 활동",
+      "full_statement": "건물의 건설, 유지 또는 보수 활동을 관리한다.",
+      "source_sentence": "건물의 건설, 유지 또는 보수 활동을 관리하거나 그에 대해 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조언하다",
+      "object": "건물의 건설·유지·보수 활동",
+      "full_statement": "건물의 건설, 유지 또는 보수 활동에 대해 조언한다.",
+      "source_sentence": "건물의 건설, 유지 또는 보수 활동을 관리하거나 그에 대해 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(고객을 위한 스케치·모형 준비)",
+      "evidence_span": "고객을 위해 스케치 및 모형을 준비한다."
+    }
+  ]
+}

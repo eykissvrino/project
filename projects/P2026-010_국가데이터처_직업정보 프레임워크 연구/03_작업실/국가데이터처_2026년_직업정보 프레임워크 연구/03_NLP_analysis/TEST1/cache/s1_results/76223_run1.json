@@ -1,0 +1,154 @@
+{
+  "ksco_code": "76223",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "네온사인 등 조명간판",
+      "full_statement": "네온사인 등의 조명간판을 설치한다.",
+      "source_sentence": "네온사인 등의 조명간판을 설치, 수리하며, 극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "네온사인 등 조명간판",
+      "full_statement": "네온사인 등의 조명간판을 수리한다.",
+      "source_sentence": "네온사인 등의 조명간판을 설치, 수리하며, 극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "극장·방송스튜디오 전기장치·조명장치",
+      "full_statement": "극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치한다.",
+      "source_sentence": "극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "극장·방송스튜디오 전기장치·조명장치",
+      "full_statement": "극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 수리한다.",
+      "source_sentence": "극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "조명",
+      "full_statement": "무대 및 방송스튜디오의 조명을 조정한다.",
+      "source_sentence": "조명 조정원·무대 및 방송스튜디오 전기원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "읽다",
+      "object": "옥내배선도·도면",
+      "full_statement": "옥내배선도나 도면을 읽고 가옥구조, 구조물 내부 상태, 인입 가능한 배전선로 위치 등을 파악한다.",
+      "source_sentence": "옥내배선도나 도면을 읽고 가옥구조, 구조물 내부 상태, 인입 가능한 배전선로 위치 등을 파악한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "파악하다",
+      "object": "구조물 내부 상태",
+      "full_statement": "구조물의 내부 상태를 파악한다.",
+      "source_sentence": "구조물의 내부 상태를 파악하고 배선을 위한 슬래브배관, 노출배관, 벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "배관 및 장치물",
+      "full_statement": "배선을 위한 슬래브배관, 노출배관, 벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다.",
+      "source_sentence": "구조물의 내부 상태를 파악하고 배선을 위한 슬래브배관, 노출배관, 벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "인입하다",
+      "object": "전선",
+      "full_statement": "배관을 따라 전선을 인입선으로 인입·인출하여 연결한다.",
+      "source_sentence": "배관을 따라 전선을 인입선으로 인입‧인출하여 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설치하다",
+      "object": "가요전선관·맹커버",
+      "full_statement": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치하고 전선을 가선한다.",
+      "source_sentence": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치하고 전선을 가선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연결하다",
+      "object": "인입선",
+      "full_statement": "가공배전선에서 인입구까지 인입선을 케이블로 연결하고 차단기를 설치한다.",
+      "source_sentence": "가공배전선에서 인입구까지 인입선을 케이블로 연결하고 차단기를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "조명·콘센트·스위치·기구 등 설비물",
+      "full_statement": "건물내 조명·콘센트류·스위치·기구 등 설비물을 설치하고 인출선에 연결한다.",
+      "source_sentence": "건물내 조명‧콘센트류‧스위치‧기구 등 설비물을 설치하고 인출선에 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(조명 설비 중심)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연결하다",
+      "object": "접지선",
+      "full_statement": "접지선을 연결하여 땅속에 묻는다.",
+      "source_sentence": "접지선을 연결하여 땅속에 묻는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설치하다",
+      "object": "금속·플라스틱몰드",
+      "full_statement": "전선을 보호하기 위하여 금속 또는 플라스틱몰드를 설치한다.",
+      "source_sentence": "전선을 보호하기 위하여 금속 또는 플라스틱몰드를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설치하다",
+      "object": "배전함",
+      "full_statement": "배전함을 설치한다.",
+      "source_sentence": "배전함을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "회선단락·저항·배선 결함",
+      "full_statement": "배선이 완료되면 회선단락·저항·배선상의 결함을 메가 테스터기, 후크메타 등으로 검사한다.",
+      "source_sentence": "배선이 완료되면 회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시험가동하다",
+      "object": "전류",
+      "full_statement": "전류를 투입하여 시험가동을 한다.",
+      "source_sentence": "전류를 투입하여 시험가동을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "메가 테스터기(절연저항 측정기)", "category": "장비", "evidence_span": "메가 테스터기(절연저항 측정기)"},
+    {"name": "후크메타(암페어측정기)", "category": "장비", "evidence_span": "후크메타(암페어측정기)"},
+    {"name": "가요전선관(후렉시블관)", "category": "도구", "evidence_span": "가요전선관(후렉시블관)과 맹커버를 설치하고"},
+    {"name": "차단기", "category": "장비", "evidence_span": "인입선을 케이블로 연결하고 차단기를 설치한다"},
+    {"name": "분전반", "category": "장비", "evidence_span": "벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다"},
+    {"name": "배전함", "category": "장비", "evidence_span": "배전함을 설치한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "고전압·전류 취급(감전 위험)", "evidence_span": "전류를 투입하여 시험가동을 한다"},
+    {"category": "장소", "value": "극장·방송스튜디오 등 작업 현장", "evidence_span": "극장, 방송스튜디오에서 사용되는 전기장치나 조명장치를 설치하고 수리한다"},
+    {"category": "신체적", "value": "정밀 검사 작업", "evidence_span": "회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다"}
+  ]
+}

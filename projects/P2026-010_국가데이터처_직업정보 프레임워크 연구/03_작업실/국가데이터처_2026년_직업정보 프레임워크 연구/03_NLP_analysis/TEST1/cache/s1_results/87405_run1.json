@@ -1,0 +1,126 @@
+{
+  "ksco_code": "87405",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "역청물 살포 트랙터",
+      "full_statement": "도로 표면에 역청물이나 타르를 뿌리는 트랙터를 운전한다.",
+      "source_sentence": "도로 표면에 역청물이나 타르를 뿌리는 트랙터 또는 추진력을 가진 기계를 운전하거나 콘크리트 포장 분사기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운전하다",
+      "object": "추진력을 가진 역청물 살포 기계",
+      "full_statement": "도로 표면에 역청물이나 타르를 뿌리는 추진력을 가진 기계를 운전한다.",
+      "source_sentence": "도로 표면에 역청물이나 타르를 뿌리는 트랙터 또는 추진력을 가진 기계를 운전하거나 콘크리트 포장 분사기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "콘크리트 포장 분사기",
+      "full_statement": "콘크리트 포장 분사기를 조작한다.",
+      "source_sentence": "도로 표면에 역청물이나 타르를 뿌리는 트랙터 또는 추진력을 가진 기계를 운전하거나 콘크리트 포장 분사기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운전하다",
+      "object": "도로포장기",
+      "full_statement": "도로, 활주로의 건설과 경기장을 위해 땅에 깔은 재료를 다지고 고르게 하는 도로포장기를 운전한다.",
+      "source_sentence": "또한 도로, 활주로의 건설과 기타 경기장을 위해 땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 다지고 고르게 하는 도로포장기를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "다지다",
+      "object": "포장 재료",
+      "full_statement": "땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 다진다.",
+      "source_sentence": "또한 도로, 활주로의 건설과 기타 경기장을 위해 땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 다지고 고르게 하는 도로포장기를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고르게하다",
+      "object": "포장 재료",
+      "full_statement": "땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 고르게 한다.",
+      "source_sentence": "또한 도로, 활주로의 건설과 기타 경기장을 위해 땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 다지고 고르게 하는 도로포장기를 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "동력 롤러",
+      "full_statement": "도로, 포장 및 유사물을 제조하기 위하여 다지고 물질을 고르게 포장하는 동력 롤러를 조작한다.",
+      "source_sentence": "도로, 포장 및 유사물을 제조하기 위하여 다지고 물질을 고르게 포장하는 동력 롤러를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "역청·타르 가공품 살포 기계",
+      "full_statement": "노반, 도로 또는 유사물을 건설하기 위하여 콘크리트, 역청 질 또는 타르 가공품을 살포하고 고르는 기계를 조작한다.",
+      "source_sentence": "노반, 도로 또는 유사물을 건설하기 위하여 콘크리트, 역청 질 또는 타르 가공품을 살포하고 고르는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "살포하다",
+      "object": "타르 가공품",
+      "full_statement": "도로 표면에 타르 또는 역청 질 가공품을 살포한다.",
+      "source_sentence": "도로 표면에 역청물이나 타르를 뿌리는 트랙터 또는 추진력을 가진 기계를 운전하거나 콘크리트 포장 분사기를 조작한다.",
+      "derived_from": "세세분류 정의→예시(타르살포기·아스팔트살포기) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분사하다",
+      "object": "콘크리트",
+      "full_statement": "콘크리트 포장 분사기를 이용하여 도로 표면에 콘크리트를 분사한다.",
+      "source_sentence": "콘크리트 포장 분사기를 조작한다.",
+      "derived_from": "세세분류 정의→예시(콘크리트포장 분사기 운전원) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "살포하다",
+      "object": "석재",
+      "full_statement": "도로포장을 위해 깔린 석재를 살포한다.",
+      "source_sentence": "건설용 석재살포기 운전원",
+      "derived_from": "세세분류 예시(건설용 석재살포기 운전원)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "터널굴착기",
+      "full_statement": "터널 건설을 위해 터널굴착기를 조작한다.",
+      "source_sentence": "터널굴착기 운전원",
+      "derived_from": "세세분류 예시(터널굴착기 운전원)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "건설용 운토보링기",
+      "full_statement": "건설 작업을 위해 건설용 운토보링기를 조작한다.",
+      "source_sentence": "건설용 운토보링기 운전원",
+      "derived_from": "세세분류 예시(건설용 운토보링기 운전원)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "역청물 살포 트랙터", "category": "장비", "evidence_span": "도로 표면에 역청물이나 타르를 뿌리는 트랙터"},
+    {"name": "콘크리트 포장 분사기", "category": "장비", "evidence_span": "콘크리트 포장 분사기를 조작한다"},
+    {"name": "도로포장기", "category": "장비", "evidence_span": "재료를 다지고 고르게 하는 도로포장기를 운전한다"},
+    {"name": "동력 롤러", "category": "장비", "evidence_span": "고르게 포장하는 동력 롤러를 조작한다"},
+    {"name": "타르살포기", "category": "장비", "evidence_span": "스팀롤러 운전원·타르살포기 운전원"},
+    {"name": "아스팔트살포기", "category": "장비", "evidence_span": "콘크리트포장 분사기 운전원·아스팔트살포기 운전원"},
+    {"name": "석재살포기", "category": "장비", "evidence_span": "건설용 석재살포기 운전원"},
+    {"name": "로드롤러", "category": "장비", "evidence_span": "로드롤러 운전원·롤러 운전원"},
+    {"name": "스팀롤러", "category": "장비", "evidence_span": "스팀롤러 운전원·타르살포기 운전원"},
+    {"name": "터널굴착기", "category": "장비", "evidence_span": "터널굴착기 운전원"},
+    {"name": "건설용 운토보링기", "category": "장비", "evidence_span": "건설용 운토보링기 운전원"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "도로·활주로·경기장 등 옥외 건설 현장", "evidence_span": "도로, 활주로의 건설과 기타 경기장을 위해 땅에 깔은 돌, 자갈, 흙, 콘크리트 및 아스팔트 등의 재료를 다지고 고르게 하는 도로포장기를 운전한다"},
+    {"category": "위험", "value": "역청물·타르 등 고온 화학물질 취급", "evidence_span": "도로 표면에 역청물이나 타르를 뿌리는"}
+  ]
+}

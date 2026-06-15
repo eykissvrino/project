@@ -1,0 +1,97 @@
+{
+  "ksco_code": "78370",
+  "tasks": [
+    {
+      "verb": "재다",
+      "object": "설치 위치 규격",
+      "full_statement": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다.",
+      "source_sentence": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "표시하다",
+      "object": "재료 사이즈",
+      "full_statement": "각종 재료의 사이즈를 표시한다.",
+      "source_sentence": "각종 재료의 사이즈를 표시하고 쇠톱, 동력톱으로 스테인리스, 철, 알루미늄, PVC를 잘라 알맞은 모양으로 제작한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "자르다",
+      "object": "스테인리스·철·알루미늄·PVC 재료",
+      "full_statement": "쇠톱, 동력톱으로 스테인리스, 철, 알루미늄, PVC를 알맞은 모양으로 자른다.",
+      "source_sentence": "각종 재료의 사이즈를 표시하고 쇠톱, 동력톱으로 스테인리스, 철, 알루미늄, PVC를 잘라 알맞은 모양으로 제작한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제작하다",
+      "object": "규격에 맞는 창호",
+      "full_statement": "규격에 맞게 알루미늄, 스테인리스, 철재, PVC 창호를 제작한다.",
+      "source_sentence": "규격에 맞게 알루미늄, 스테인리스, 철재, PVC 창호를 제작하고 볼팅, 용접 등으로 고정, 접합시켜 설치한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "놓다",
+      "object": "제작된 새시",
+      "full_statement": "제작된 새시를 설치 위치에 놓는다.",
+      "source_sentence": "제작된 새시를 설치 위치에 놓고 볼팅, 용접 등으로 고정, 접합시킨다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고정하다",
+      "object": "새시",
+      "full_statement": "볼팅, 용접 등으로 새시를 고정한다.",
+      "source_sentence": "제작된 새시를 설치 위치에 놓고 볼팅, 용접 등으로 고정, 접합시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "접합하다",
+      "object": "새시",
+      "full_statement": "볼팅, 용접 등으로 새시를 접합시킨다.",
+      "source_sentence": "제작된 새시를 설치 위치에 놓고 볼팅, 용접 등으로 고정, 접합시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설치하다",
+      "object": "창호",
+      "full_statement": "규격에 맞게 제작한 창호를 고정·접합시켜 설치한다.",
+      "source_sentence": "규격에 맞게 알루미늄, 스테인리스, 철재, PVC 창호를 제작하고 볼팅, 용접 등으로 고정, 접합시켜 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "다듬다",
+      "object": "용접된 부위의 거친 면",
+      "full_statement": "용접된 부위의 거친 면을 다듬는다.",
+      "source_sentence": "용접된 부위의 거친 면을 다듬는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "칠하다",
+      "object": "페인트",
+      "full_statement": "만들어진 새시에 색상을 내거나 녹을 방지하기 위해 페인트칠을 한다.",
+      "source_sentence": "만들어진 새시에 색상을 내거나 녹을 방지하기 위해 페인트칠을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "자", "category": "도구", "evidence_span": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다."},
+    {"name": "콤파스", "category": "도구", "evidence_span": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다."},
+    {"name": "줄자", "category": "도구", "evidence_span": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다."},
+    {"name": "쇠톱", "category": "도구", "evidence_span": "각종 재료의 사이즈를 표시하고 쇠톱, 동력톱으로 스테인리스, 철, 알루미늄, PVC를 잘라 알맞은 모양으로 제작한다."},
+    {"name": "동력톱", "category": "장비", "evidence_span": "각종 재료의 사이즈를 표시하고 쇠톱, 동력톱으로 스테인리스, 철, 알루미늄, PVC를 잘라 알맞은 모양으로 제작한다."},
+    {"name": "용접기", "category": "장비", "evidence_span": "볼팅, 용접 등으로 고정, 접합시켜 설치한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀 측정·재단 작업(규격 측정 및 알맞은 모양 재단)", "evidence_span": "자, 콤파스, 줄자를 사용하여 새시를 설치할 위치의 규격을 잰다."},
+    {"category": "위험", "value": "용접 작업 수반", "evidence_span": "볼팅, 용접 등으로 고정, 접합시켜 설치한다."}
+  ]
+}

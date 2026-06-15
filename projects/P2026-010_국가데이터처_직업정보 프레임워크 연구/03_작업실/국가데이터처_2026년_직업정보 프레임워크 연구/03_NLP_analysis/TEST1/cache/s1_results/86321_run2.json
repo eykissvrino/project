@@ -1,0 +1,103 @@
+{
+  "ksco_code": "86321",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "전기 부품 제조 기계",
+      "full_statement": "전기 장비에 사용되는 부품을 제조하는 기계를 조작한다.",
+      "source_sentence": "전기 장비에 사용되는 부품을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감다",
+      "object": "코일",
+      "full_statement": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다.",
+      "source_sentence": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다.",
+      "derived_from": "상속 주요업무→세세 예시(코일·필라멘트·고정자코일 권선기 조작원) 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "코일 권선기",
+      "full_statement": "교류전동기·발전기·변압기 등의 부품에 코일을 감기 위해 코일 권선기를 조작한다.",
+      "source_sentence": "코일 권선기 조작원·필라멘트 권선기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "필라멘트 권선기",
+      "full_statement": "필라멘트를 감기 위해 필라멘트 권선기를 조작한다.",
+      "source_sentence": "코일 권선기 조작원·필라멘트 권선기 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "고정자코일 권선기",
+      "full_statement": "고정자코일을 감기 위해 고정자코일 권선기를 조작한다.",
+      "source_sentence": "고정자코일 권선기 조작원·코아적층프레스 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "코아적층프레스",
+      "full_statement": "철심 등을 적층하기 위해 코아적층프레스를 조작한다.",
+      "source_sentence": "고정자코일 권선기 조작원·코아적층프레스 조작원",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.68
+    },
+    {
+      "verb": "관리하다",
+      "object": "충전전지 격자 처리 장비",
+      "full_statement": "성형된 건조 충전전지 격자를 세척·약품처리·건조하는 장비를 관리한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "세척하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 세척한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "약품처리하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 약품처리한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "건조하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 건조한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조작하다",
+      "object": "각종 기기",
+      "full_statement": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "source_sentence": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "코일 권선기", "category": "장비", "evidence_span": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다."},
+    {"name": "필라멘트 권선기", "category": "장비", "evidence_span": "코일 권선기 조작원·필라멘트 권선기 조작원"},
+    {"name": "고정자코일 권선기", "category": "장비", "evidence_span": "고정자코일 권선기 조작원·코아적층프레스 조작원"},
+    {"name": "코아적층프레스", "category": "장비", "evidence_span": "고정자코일 권선기 조작원·코아적층프레스 조작원"},
+    {"name": "세척·약품처리·건조 장비", "category": "장비", "evidence_span": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "약품(화학물질) 취급", "evidence_span": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다."}
+  ]
+}

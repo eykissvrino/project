@@ -1,0 +1,189 @@
+{
+  "ksco_code": "79129",
+  "tasks": [
+    {
+      "verb": "검사하다",
+      "object": "보석의 특성",
+      "full_statement": "보석의 가치, 순도, 물리적 구조, 색 등급 및 기타 관련 요소를 판단하기 위해 그 특성을 검사한다.",
+      "source_sentence": "보석의 가치, 순도, 물리적 구조, 색 등급 및 기타 관련 요소를 판단하기 위해 그 특성을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "측정하다",
+      "object": "원석",
+      "full_statement": "원석을 측정하여 보석 가공을 위한 치수를 확인한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "절단하다",
+      "object": "원석",
+      "full_statement": "원석을 절단한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연마하다",
+      "object": "원석",
+      "full_statement": "원석을 연마하고 광택을 내어 보석으로 가공한다.",
+      "source_sentence": "원석을 측정, 절단, 연마하고 광택을 내어 보석으로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "주조하다",
+      "object": "귀금속 재료",
+      "full_statement": "귀금속 재료를 주조하여 특정한 형태로 가공한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조각하다",
+      "object": "귀금속 재료",
+      "full_statement": "귀금속 재료를 조각하여 특정한 형태로 가공한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "용접하다",
+      "object": "귀금속 재료",
+      "full_statement": "귀금속 재료를 용접하여 특정한 형태로 가공한다.",
+      "source_sentence": "귀금속 재료를 주조, 조각, 용접하여 특정한 형태로 가공한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "고정하다",
+      "object": "보석",
+      "full_statement": "보석을 접착·고정시키고 광택을 낸다.",
+      "source_sentence": "보석을 접착·고정시키고 광택을 낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "세공하다",
+      "object": "장신구",
+      "full_statement": "귀석을 측정, 표시, 절단, 연마, 광택 및 접착하고 반지, 귀걸이, 팔찌 등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다.",
+      "source_sentence": "귀석을 측정, 표시, 절단, 연마, 광택 및 접착하고 반지, 귀걸이, 팔찌등의 장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "수공구·동력공구·광학 보조기구 및 관련 장비",
+      "full_statement": "귀금속, 보석, 장신구를 세공하기 위하여 다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작·취급한다.",
+      "source_sentence": "귀금속, 보석, 장신구를 세공하기 위하여 다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품의 품질과 가치",
+      "full_statement": "완성품의 품질과 가치를 검사한다.",
+      "source_sentence": "완성품의 품질과 가치를 검사하고 결함을 수리한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수리하다",
+      "object": "결함",
+      "full_statement": "완성품의 결함을 수리한다.",
+      "source_sentence": "완성품의 품질과 가치를 검사하고 결함을 수리한다.",
+      "derived_from": "상속 주요업무 (복합행동 분할)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제작하다",
+      "object": "모조장신구",
+      "full_statement": "각종 모조장신구를 제작한다.",
+      "source_sentence": "각종 모조장신구를 제작․ 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화 (복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조립하다",
+      "object": "모조장신구",
+      "full_statement": "각종 모조장신구를 조립한다.",
+      "source_sentence": "각종 모조장신구를 제작․ 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화 (복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장식하다",
+      "object": "장신구",
+      "full_statement": "색칠이나 에나멜칠로 장신구를 장식한다.",
+      "source_sentence": "색칠이나 에나멜칠로 장신구를 장식하고 모조 장신구를 제조, 수리하거나 장신구 제품의 틀을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제조하다",
+      "object": "모조 장신구",
+      "full_statement": "모조 장신구를 제조한다.",
+      "source_sentence": "색칠이나 에나멜칠로 장신구를 장식하고 모조 장신구를 제조, 수리하거나 장신구 제품의 틀을 만든다.",
+      "derived_from": "세세분류 정의 (복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "모조 장신구",
+      "full_statement": "모조 장신구를 수리한다.",
+      "source_sentence": "색칠이나 에나멜칠로 장신구를 장식하고 모조 장신구를 제조, 수리하거나 장신구 제품의 틀을 만든다.",
+      "derived_from": "세세분류 정의 (복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "만들다",
+      "object": "장신구 제품의 틀",
+      "full_statement": "장신구 제품의 틀을 만든다.",
+      "source_sentence": "색칠이나 에나멜칠로 장신구를 장식하고 모조 장신구를 제조, 수리하거나 장신구 제품의 틀을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "압연하다",
+      "object": "장신구용 금속",
+      "full_statement": "장신구를 위한 금속을 압연한다.",
+      "source_sentence": "장신구를 위한 금속 압연원, 귀금속 박판원 등이 포함되며, 장신구에 문자와 장식의 모양을 새기는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제조하다",
+      "object": "귀금속 박판",
+      "full_statement": "귀금속을 가공하여 박판을 제조한다.",
+      "source_sentence": "장신구를 위한 금속 압연원, 귀금속 박판원 등이 포함되며, 장신구에 문자와 장식의 모양을 새기는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "새기다",
+      "object": "문자와 장식의 모양",
+      "full_statement": "장신구에 문자와 장식의 모양을 새긴다.",
+      "source_sentence": "장신구에 문자와 장식의 모양을 새기는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "주조하다",
+      "object": "장신구 주형",
+      "full_statement": "장신구 주형을 주조한다.",
+      "source_sentence": "장신구 주형 주조원·장신구 수리원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.74
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다"},
+    {"name": "동력공구", "category": "도구", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다"},
+    {"name": "광학 보조기구", "category": "장비", "evidence_span": "다양한 수공구, 동력공구, 광학 보조기구 및 관련 장비를 조작․ 취급한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀공차 작업 등 정밀 작업", "evidence_span": "장신구나 귀금속을 세공할 때 정밀공차의 작업을 수행한다"}
+  ]
+}

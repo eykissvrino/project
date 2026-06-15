@@ -1,0 +1,63 @@
+{
+  "ksco_code": "71042",
+  "tasks": [
+    {
+      "verb": "고르다",
+      "object": "견본",
+      "full_statement": "여러 단계의 담배 가공 공정마다 견본을 고른다.",
+      "source_sentence": "여러 단계의 가공 공정마다 견본을 고른다.",
+      "derived_from": "상속 주요업무→세세정의 특화(담배)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "담배의 외양",
+      "full_statement": "담배의 외양, 맛, 냄새 등이 표준에 맞는지를 검사한다.",
+      "source_sentence": "외양, 맛, 냄새 등이 표준에 맞는지를 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(담배)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "결정하다",
+      "object": "담배의 품질",
+      "full_statement": "담배의 품질을 결정한다.",
+      "source_sentence": "담배의 품질을 결정하고 선별하여 적합한 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선별하다",
+      "object": "담배",
+      "full_statement": "담배를 선별한다.",
+      "source_sentence": "담배의 품질을 결정하고 선별하여 적합한 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "매기다",
+      "object": "담배의 등급",
+      "full_statement": "담배에 적합한 등급을 매긴다.",
+      "source_sentence": "담배의 품질을 결정하고 선별하여 적합한 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "원료와 최종 생산품",
+      "full_statement": "원료와 최종 생산품이 표준에 맞는지를 검사한다.",
+      "source_sentence": "원료와 최종 생산품이 표준에 맞는지를 검사하고 등급을 매긴다.",
+      "derived_from": "조상정의(세분류 7104)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "분류하다",
+      "object": "담배",
+      "full_statement": "담배를 등급에 따라 분류한다.",
+      "source_sentence": "원료 또는 최종 생산품의 등급을 매기고 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(담배)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

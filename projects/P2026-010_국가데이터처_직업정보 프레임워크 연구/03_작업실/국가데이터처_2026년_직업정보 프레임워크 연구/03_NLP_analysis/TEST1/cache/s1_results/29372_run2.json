@@ -1,0 +1,58 @@
+{
+  "ksco_code": "29372",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "영사기",
+      "full_statement": "영사기를 조작한다.",
+      "source_sentence": "[세세분류 29372 영사기사] 영사기 및 음향재생장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "음향재생장비",
+      "full_statement": "음향재생장비를 조작한다.",
+      "source_sentence": "[세세분류 29372 영사기사] 영사기 및 음향재생장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "가동시키다",
+      "object": "영사기",
+      "full_statement": "영사기를 가동시킨다.",
+      "source_sentence": "[세분류 2937 조명기사 및 영사기사] 연극, 영화, 무용, 방송 드라마, 공연 등을 제작하기 위하여 조명 설비를 설치하고 조절하거나, 영사기를 가동시켜 음향과 상의 초점을 조정한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "상의 초점",
+      "full_statement": "영사기를 가동시켜 상의 초점을 조정한다.",
+      "source_sentence": "[세분류 2937 조명기사 및 영사기사] … 영사기를 가동시켜 음향과 상의 초점을 조정한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "음향",
+      "full_statement": "영사기를 가동시켜 음향을 조정한다.",
+      "source_sentence": "[세분류 2937 조명기사 및 영사기사] … 영사기를 가동시켜 음향과 상의 초점을 조정한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {
+      "name": "영사기",
+      "category": "장비",
+      "evidence_span": "[세세분류 29372 영사기사] 영사기 및 음향재생장비를 조작한다."
+    },
+    {
+      "name": "음향재생장비",
+      "category": "장비",
+      "evidence_span": "[세세분류 29372 영사기사] 영사기 및 음향재생장비를 조작한다."
+    }
+  ],
+  "work_context": []
+}

@@ -1,0 +1,55 @@
+{
+  "ksco_code": "45191",
+  "tasks": [
+    {
+      "verb": "조리하다",
+      "object": "면류",
+      "full_statement": "각종 분식점 등에서 면류를 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 튀김, 떡볶이 등의 분식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "김밥",
+      "full_statement": "각종 분식점 등에서 김밥을 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 튀김, 떡볶이 등의 분식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "튀김",
+      "full_statement": "각종 분식점 등에서 튀김을 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 튀김, 떡볶이 등의 분식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "떡볶이",
+      "full_statement": "각종 분식점 등에서 떡볶이를 조리한다.",
+      "source_sentence": "각종 분식점 등에서 면류, 김밥, 튀김, 떡볶이 등의 분식을 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "음식 재료",
+      "full_statement": "조리에 사용할 음식 재료를 준비한다.",
+      "source_sentence": "각종 사업체, 시설, 가정, 선박 또는 여객열차에서 음식을 준비 및 조리하고 음식료품을 제공하는 것과 관련된 여러 가지 일을 수행한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제공하다",
+      "object": "음식료품",
+      "full_statement": "조리한 음식료품을 고객에게 제공한다.",
+      "source_sentence": "각종 사업체, 시설, 가정, 선박 또는 여객열차에서 음식을 준비 및 조리하고 음식료품을 제공하는 것과 관련된 여러 가지 일을 수행한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

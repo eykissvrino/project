@@ -1,0 +1,85 @@
+{
+  "ksco_code": "71032",
+  "tasks": [
+    {
+      "verb": "도살하다",
+      "object": "가축",
+      "full_statement": "소, 돼지, 닭 등 가축을 식용 목적으로 도살한다.",
+      "source_sentence": "도축장에서 소, 돼지, 닭 등을 식용에 사용할 목적으로 도살하고 뼈를 발라내며 일정하게 잘라 적당한 크기의 고깃덩이로 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "발라내다",
+      "object": "뼈",
+      "full_statement": "도살한 가축의 뼈를 발라낸다.",
+      "source_sentence": "도축장에서 소, 돼지, 닭 등을 식용에 사용할 목적으로 도살하고 뼈를 발라내며 일정하게 잘라 적당한 크기의 고깃덩이로 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "절단하다",
+      "object": "고기",
+      "full_statement": "고기를 일정하게 잘라 적당한 크기의 고깃덩이로 만든다.",
+      "source_sentence": "도축장에서 소, 돼지, 닭 등을 식용에 사용할 목적으로 도살하고 뼈를 발라내며 일정하게 잘라 적당한 크기의 고깃덩이로 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "벗기다",
+      "object": "가죽",
+      "full_statement": "도살한 가축의 가죽을 벗긴다.",
+      "source_sentence": "가죽을 벗기고 뼈를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "뼈",
+      "full_statement": "육류에서 뼈를 제거한다.",
+      "source_sentence": "가죽을 벗기고 뼈를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "세척하다",
+      "object": "육류",
+      "full_statement": "시장출하 또는 가공을 위해 육류를 세척한다.",
+      "source_sentence": "시장출하 또는 가공을 하기 위해 육류 및 어류를 세척, 절단 등 손질 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "손질하다",
+      "object": "육류",
+      "full_statement": "시장출하 또는 가공을 위해 육류를 손질한다.",
+      "source_sentence": "시장출하 또는 가공을 하기 위해 육류 및 어류를 세척, 절단 등 손질 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "가공하다",
+      "object": "가축",
+      "full_statement": "도살한 가축을 가공 처리한다.",
+      "source_sentence": "가축을 도살하고 가공 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "저장하다",
+      "object": "육류",
+      "full_statement": "육류 및 관련 식품을 저장 처리한다.",
+      "source_sentence": "육류 및 관련 식품을 저장 처리하며, 조리 또는 기타 방법으로 가공 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "도축장(실내 작업장)",
+      "evidence_span": "도축장에서 소, 돼지, 닭 등을 식용에 사용할 목적으로 도살하고"
+    }
+  ]
+}

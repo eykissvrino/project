@@ -1,0 +1,154 @@
+{
+  "ksco_code": "14121",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "전력공급시스템 운영",
+      "full_statement": "발전소, 변전소 및 공급 네트워크를 포함한 전력공급시스템의 운영을 계획한다.",
+      "source_sentence": "전기와 관련된 회사나 발전소, 변전소 및 공급 네트워크를 포함한 전력공급시스템의 운영 및 관련 활동을 계획하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "전력공급시스템 운영",
+      "full_statement": "발전소, 변전소 및 공급 네트워크를 포함한 전력공급시스템의 운영을 관리한다.",
+      "source_sentence": "전기와 관련된 회사나 발전소, 변전소 및 공급 네트워크를 포함한 전력공급시스템의 운영 및 관련 활동을 계획하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "유지하다",
+      "object": "전기 공급 및 시스템",
+      "full_statement": "전기 공급 및 시스템을 유지한다.",
+      "source_sentence": "전기 공급 및 시스템을 유지, 관리, 계획, 조직하고 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조직하다",
+      "object": "전기 공급 및 시스템",
+      "full_statement": "전기 공급 및 시스템을 조직한다.",
+      "source_sentence": "전기 공급 및 시스템을 유지, 관리, 계획, 조직하고 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "전기 공급 및 시스템",
+      "full_statement": "전기 공급 및 시스템을 조정한다.",
+      "source_sentence": "전기 공급 및 시스템을 유지, 관리, 계획, 조직하고 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기획하다",
+      "object": "신재생에너지 기술 개발 및 연구",
+      "full_statement": "신재생에너지 기술 개발 및 연구를 기획한다.",
+      "source_sentence": "신재생에너지 기술 개발 및 연구 기획, 조정 및 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "신재생에너지 기술 개발 및 연구",
+      "full_statement": "신재생에너지 기술 개발 및 연구를 조정한다.",
+      "source_sentence": "신재생에너지 기술 개발 및 연구 기획, 조정 및 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "신재생에너지 기술 개발 및 연구",
+      "full_statement": "신재생에너지 기술 개발 및 연구를 관리한다.",
+      "source_sentence": "신재생에너지 기술 개발 및 연구 기획, 조정 및 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "현장 작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 하기 위하여 현장에서 작업자들을 관리한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 하기 위하여 현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "현장 작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 하기 위하여 현장에서 작업자들을 감독한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 하기 위하여 현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고용하다",
+      "object": "하도급업자 및 부하직원",
+      "full_statement": "하도급업자 및 부하직원을 고용한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "하도급업자 및 부하직원의 활동",
+      "full_statement": "하도급업자 및 부하직원의 활동을 감독한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "전기 산업 운영",
+      "full_statement": "전기 산업에서 운영을 감독한다.",
+      "source_sentence": "전기, 수도, 가스, 증기 및 온수, 신재생에너지 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "전기 산업 운영",
+      "full_statement": "전기 산업에서 운영을 분석한다.",
+      "source_sentence": "전기, 수도, 가스, 증기 및 온수, 신재생에너지 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "판단하다",
+      "object": "인력·장비·기술의 적정성",
+      "full_statement": "인력, 장비 및 사용되는 기술이 적정한지 판단한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "평가하다",
+      "object": "생산현장의 효율성",
+      "full_statement": "필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전규정 준수 여부",
+      "full_statement": "안전규정을 지키고 있는지 확인한다.",
+      "source_sentence": "안전규정을 지키고 있는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "생산현장 등 현장 근무",
+      "evidence_span": "작업절차가 명세서와 맞도록 하기 위하여 현장에서 작업자들을 관리하고 감독한다."
+    },
+    {
+      "category": "사회적",
+      "value": "작업자·하도급업자·부하직원 관리 및 감독(인력 관리)",
+      "evidence_span": "하도급업자 및 부하직원을 고용하고 활동을 감독한다."
+    }
+  ]
+}

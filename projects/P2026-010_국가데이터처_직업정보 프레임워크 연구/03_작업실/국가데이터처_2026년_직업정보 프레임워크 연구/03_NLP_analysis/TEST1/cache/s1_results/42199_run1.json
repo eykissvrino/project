@@ -1,0 +1,87 @@
+{
+  "ksco_code": "42199",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "가정",
+      "full_statement": "아동을 돌보기 위해 가정을 방문한다.",
+      "source_sentence": "가정을 방문하여 아동을 돌보거나, 상기 세분류에 속하지 않은 기타 교사 보조 및 아동 돌봄 종사원이 여기에 분류된다.",
+      "derived_from": "조상정의(세분류 4219)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "돌보다",
+      "object": "아동",
+      "full_statement": "가정을 방문하여 아동을 돌본다.",
+      "source_sentence": "가정을 방문하여 아동을 돌보거나, 상기 세분류에 속하지 않은 기타 교사 보조 및 아동 돌봄 종사원이 여기에 분류된다.",
+      "derived_from": "조상정의(세분류 4219)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "보호하다",
+      "object": "영유아",
+      "full_statement": "보육 관련 시설에서 영유아를 보호한다.",
+      "source_sentence": "유치원이나 학교의 방과후 돌봄 및 아동 복지시설, 키즈카페, 탁아기관 등 보육 관련 시설에서 영유아를 보호하고 돌보는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 421)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "돌보다",
+      "object": "영유아",
+      "full_statement": "보육 관련 시설에서 영유아를 돌본다.",
+      "source_sentence": "유치원이나 학교의 방과후 돌봄 및 아동 복지시설, 키즈카페, 탁아기관 등 보육 관련 시설에서 영유아를 보호하고 돌보는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 421)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보조하다",
+      "object": "교사",
+      "full_statement": "유치원 및 학교에서 수업을 원활하게 하기 위해 교사를 보조한다.",
+      "source_sentence": "유치원 및 학교에서 교사를 보조하여 수업을 원활하게 하기 위해 관련된 업무를 수행하거나",
+      "derived_from": "조상정의(소분류 421)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제공하다",
+      "object": "아동 돌봄 및 보육 서비스",
+      "full_statement": "보육 관련 시설에서 아동 돌봄 및 보육 서비스를 제공한다.",
+      "source_sentence": "학교 및 유치원, 보육 관련 시설에서 아동 돌봄 및 보육 서비스를 제공하거나",
+      "derived_from": "조상정의(중분류 42)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "지도하다",
+      "object": "공부방 아동의 학습",
+      "full_statement": "공부방에서 아동의 학습을 지도한다.",
+      "source_sentence": "지역아동센터 돌봄종사원·공부방 돌보미",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.45
+    },
+    {
+      "verb": "돌보다",
+      "object": "지역아동센터 이용 아동",
+      "full_statement": "지역아동센터에서 이용 아동을 돌본다.",
+      "source_sentence": "지역아동센터 돌봄종사원·공부방 돌보미",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "가정 방문",
+      "evidence_span": "가정을 방문하여 아동을 돌보거나"
+    },
+    {
+      "category": "장소",
+      "value": "보육 관련 시설(아동복지시설·키즈카페·탁아기관·방과후 돌봄)",
+      "evidence_span": "유치원이나 학교의 방과후 돌봄 및 아동 복지시설, 키즈카페, 탁아기관 등 보육 관련 시설에서"
+    },
+    {
+      "category": "사회적",
+      "value": "아동 대상 대인 돌봄 서비스",
+      "evidence_span": "영유아를 보호하고 돌보는 업무를 수행한다"
+    }
+  ]
+}

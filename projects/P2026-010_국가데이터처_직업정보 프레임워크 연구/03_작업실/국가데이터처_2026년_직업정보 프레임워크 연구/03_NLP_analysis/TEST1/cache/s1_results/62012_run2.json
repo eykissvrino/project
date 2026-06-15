@@ -1,0 +1,119 @@
+{
+  "ksco_code": "62012",
+  "tasks": [
+    {
+      "verb": "베다",
+      "object": "숲의 나무",
+      "full_statement": "숲의 나무를 벤다.",
+      "source_sentence": "숲의 나무를 베고, 통나무로 자르는 등 벌목작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "자르다",
+      "object": "통나무",
+      "full_statement": "벤 나무를 통나무로 자른다.",
+      "source_sentence": "숲의 나무를 베고, 통나무로 자르는 등 벌목작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정하다",
+      "object": "벌목할 나무의 위치",
+      "full_statement": "벌목할 나무의 위치를 정한다.",
+      "source_sentence": "벌목할 나무의 위치를 정하고 목재의 양을 예측한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "예측하다",
+      "object": "목재의 양",
+      "full_statement": "벌목 대상 목재의 양을 예측한다.",
+      "source_sentence": "벌목할 나무의 위치를 정하고 목재의 양을 예측한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "벌목하다",
+      "object": "나무",
+      "full_statement": "선정된 나무를 벌목한다.",
+      "source_sentence": "벌목하고 통나무를 제재한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제재하다",
+      "object": "통나무",
+      "full_statement": "벌목한 통나무를 제재한다.",
+      "source_sentence": "벌목하고 통나무를 제재한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "다듬다",
+      "object": "통나무",
+      "full_statement": "벌목지에서 통나무를 일차목재로 다듬는다.",
+      "source_sentence": "벌목지에서 통나무를 일차목재로 다듬는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "쌓다",
+      "object": "통나무",
+      "full_statement": "다듬은 통나무를 쌓는다.",
+      "source_sentence": "통나무를 쌓고 운송 장치에 싣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "싣다",
+      "object": "통나무",
+      "full_statement": "쌓은 통나무를 운송 장치에 싣는다.",
+      "source_sentence": "통나무를 쌓고 운송 장치에 싣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조성하다",
+      "object": "수목",
+      "full_statement": "수목을 조성한다.",
+      "source_sentence": "수목을 조성하고 보호한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보호하다",
+      "object": "수목",
+      "full_statement": "조성한 수목을 보호한다.",
+      "source_sentence": "수목을 조성하고 보호한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "채취하다",
+      "object": "임산물",
+      "full_statement": "자연 상태의 산림에서 출하되는 임산물을 채취한다.",
+      "source_sentence": "산림을 보존하고, 조성, 육성하는 등 산림을 경영하며 자연 상태의 산림에서 출하되는 임산물을 채취하는 일을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "숲·벌목지 등 실외 산림 현장",
+      "evidence_span": "숲의 나무를 베고, 통나무로 자르는 등 벌목작업을 수행한다."
+    },
+    {
+      "category": "장소",
+      "value": "벌목지",
+      "evidence_span": "벌목지에서 통나무를 일차목재로 다듬는다."
+    },
+    {
+      "category": "신체적",
+      "value": "통나무 적재·운송 등 중량물 취급",
+      "evidence_span": "통나무를 쌓고 운송 장치에 싣는다."
+    }
+  ]
+}

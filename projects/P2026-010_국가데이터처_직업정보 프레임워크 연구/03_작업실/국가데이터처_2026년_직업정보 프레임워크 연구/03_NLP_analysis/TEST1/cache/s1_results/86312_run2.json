@@ -1,0 +1,145 @@
+{
+  "ksco_code": "86312",
+  "tasks": [
+    {
+      "verb": "혼합하다",
+      "object": "이차전지 활물질",
+      "full_statement": "이차전지의 전극반응에 관여하는 활물질을 혼합하는 기계장치를 조정하여 전극혼합 공정을 수행한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(이차전지 전극혼합)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "코팅하다",
+      "object": "전극 활물질",
+      "full_statement": "전극 활물질을 집전체에 코팅하는 코팅 장치를 조작한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(코팅 장치 조작원)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "압축하다",
+      "object": "전극",
+      "full_statement": "코팅된 전극을 압축하는 프레스 장치를 조작한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(프레스 장치 조작원)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "전극 제조 기계장치",
+      "full_statement": "활물질을 혼합·코팅·압축하는 각종 기계장치의 작동 조건을 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절단하다",
+      "object": "전극",
+      "full_statement": "전극을 일정 폭으로 절단하는 슬리팅 장치를 조작한다.",
+      "source_sentence": "슬리팅 장치 조작원",
+      "derived_from": "세세분류 직업 예시(슬리팅 장치 조작원)→활동 도출",
+      "confidence": 0.68
+    },
+    {
+      "verb": "가공하다",
+      "object": "전극 탭",
+      "full_statement": "전극의 탭 형태를 만들기 위해 노칭 장치를 조작하여 전극을 가공한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(노칭 장치 조작원)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "용접하다",
+      "object": "전극 연결부",
+      "full_statement": "전극의 연결부를 용접한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "적층하다",
+      "object": "전극",
+      "full_statement": "전극과 분리막을 적층하여 전극 조립체를 만드는 스태킹 장치를 조작한다.",
+      "source_sentence": "스태킹 장치 조작원",
+      "derived_from": "세세분류 직업 예시(스태킹 장치 조작원)→세세정의(조립) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조립하다",
+      "object": "이차전지",
+      "full_statement": "전극 조립체를 케이스에 넣어 이차전지를 조립하는 장비를 조작한다.",
+      "source_sentence": "재충전성이 있는 이차전지의 전극혼합, 조립 및 활성화와 관련한 장비를 조작한다.",
+      "derived_from": "세세분류 정의(조립)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "활성화하다",
+      "object": "이차전지",
+      "full_statement": "조립된 이차전지를 충방전하여 활성화하는 장치를 조작한다.",
+      "source_sentence": "재충전성이 있는 이차전지의 전극혼합, 조립 및 활성화와 관련한 장비를 조작한다.",
+      "derived_from": "세세분류 정의(활성화)→예시 특화(활성화 장치 조작원)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "전지 내부 가스",
+      "full_statement": "활성화 과정에서 발생한 전지 내부의 가스를 제거하는 디개싱 장치를 조작한다.",
+      "source_sentence": "디개싱 장치 조작원",
+      "derived_from": "세세분류 직업 예시(디개싱 장치 조작원)→활동 도출",
+      "confidence": 0.68
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "가공처리 정도",
+      "full_statement": "채취한 샘플로 가공처리 정도를 검사·시험한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성품",
+      "full_statement": "제조된 이차전지 완성품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품 외관",
+      "full_statement": "완성된 이차전지의 외관을 검사한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세분류 정의(외관검사) 보강",
+      "confidence": 0.75
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성품",
+      "full_statement": "검사를 마친 이차전지 완성품을 포장하는 패키징 장치를 조작한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→예시 특화(패키징 장치 조작원)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "믹싱 장치", "category": "장비", "evidence_span": "믹싱 장치 조작원"},
+    {"name": "코팅 장치", "category": "장비", "evidence_span": "코팅 장치 조작원"},
+    {"name": "프레스 장치", "category": "장비", "evidence_span": "프레스 장치 조작원"},
+    {"name": "슬리팅 장치", "category": "장비", "evidence_span": "슬리팅 장치 조작원"},
+    {"name": "노칭 장치", "category": "장비", "evidence_span": "노칭 장치 조작원"},
+    {"name": "스태킹 장치", "category": "장비", "evidence_span": "스태킹 장치 조작원"},
+    {"name": "패키징 장치", "category": "장비", "evidence_span": "패키징 장치 조작원"},
+    {"name": "활성화 장치", "category": "장비", "evidence_span": "활성화 장치 조작원"},
+    {"name": "디개싱 장치", "category": "장비", "evidence_span": "디개싱 장치 조작원"}
+  ],
+  "work_context": []
+}

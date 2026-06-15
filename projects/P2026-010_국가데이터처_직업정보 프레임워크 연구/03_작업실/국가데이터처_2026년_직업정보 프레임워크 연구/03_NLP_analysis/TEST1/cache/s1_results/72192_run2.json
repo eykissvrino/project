@@ -1,0 +1,100 @@
+{
+  "ksco_code": "72192",
+  "tasks": [
+    {
+      "verb": "선별하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분류하다",
+      "object": "천연섬유",
+      "full_statement": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 분류한다.",
+      "source_sentence": "손이나 수동기계를 이용하여 양모, 면화, 아마, 황마, 대마 및 기타 천연섬유를 선별하고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "방적하다",
+      "object": "섬유",
+      "full_statement": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "직조하다",
+      "object": "직물",
+      "full_statement": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다.",
+      "source_sentence": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "레이스",
+      "full_statement": "수단식 기법으로 레이스를 제조한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "직조하다",
+      "object": "의복 및 가정용 섬유",
+      "full_statement": "의복 및 가정용 섬유를 직조한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "편직하다",
+      "object": "의복 및 가정용 섬유",
+      "full_statement": "의복 및 가정용 섬유를 편직한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "제조하다",
+      "object": "카펫",
+      "full_statement": "직조 또는 편직하여 카펫을 제조한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "시트",
+      "full_statement": "직조 또는 편직하여 시트를 제조한다.",
+      "source_sentence": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고 레이스 제조와 의복 및 가정용 섬유를 직조, 편직하여 카펫, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "짜다",
+      "object": "카펫",
+      "full_statement": "매듭기법으로 카펫을 짠다.",
+      "source_sentence": "매듭기법으로 카펫을 짠다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "가발",
+      "full_statement": "가발을 제조한다.",
+      "source_sentence": "또한 가발을 제조하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "수동식 기계", "category": "장비", "evidence_span": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고"},
+    {"name": "수동직기", "category": "장비", "evidence_span": "수동직기로 평직 또는 무늬직, 레이스, 카펫 및 기타 직물을 직조한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손 작업 중심의 수공 기능 작업", "evidence_span": "손 또는 수동식 기계를 사용하여 양모, 면화 및 기타 섬유를 방적하고"}
+  ]
+}

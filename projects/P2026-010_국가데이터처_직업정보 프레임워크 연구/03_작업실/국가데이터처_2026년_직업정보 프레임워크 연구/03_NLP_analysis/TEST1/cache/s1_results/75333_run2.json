@@ -1,0 +1,159 @@
+{
+  "ksco_code": "75333",
+  "tasks": [
+    {
+      "verb": "읽다",
+      "object": "설계도면",
+      "full_statement": "설계도면을 읽고 궤도, 모터, 실린더, 피스톤 등의 설치 위치를 설정한다.",
+      "source_sentence": "설계도면을 읽고 궤도, 모터, 실린더, 피스톤 등의 위치를 설정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설정하다",
+      "object": "구성부품 위치",
+      "full_statement": "궤도, 모터, 실린더, 피스톤 등 휠체어 리프트 구성부품의 위치를 설정한다.",
+      "source_sentence": "설계도면을 읽고 궤도, 모터, 실린더, 피스톤 등의 위치를 설정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "뚫다",
+      "object": "구멍",
+      "full_statement": "휴대용 전기드릴을 이용하여 콘크리트 또는 철제건축물에 구멍을 뚫는다.",
+      "source_sentence": "휴대용 전기드릴을 이용하여 콘크리트 또는 철제건축물에 구멍을 뚫고 강레일을 설치하여 승강기 궤도를 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설치하다",
+      "object": "강레일",
+      "full_statement": "강레일을 설치하여 휠체어 리프트의 승강 궤도를 만든다.",
+      "source_sentence": "휴대용 전기드릴을 이용하여 콘크리트 또는 철제건축물에 구멍을 뚫고 강레일을 설치하여 승강기 궤도를 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절단하다",
+      "object": "리프트 본체·궤도·부품",
+      "full_statement": "아세틸렌 토치, 전기톱 등을 사용하여 리프트 본체, 궤도, 부품을 설치구조에 맞게 절단한다.",
+      "source_sentence": "아세틸렌 토치, 전기톱 등을 사용하여 승강기본체, 궤도, 승강기부품등을 설치구조에 맞게 절단, 가공, 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가공하다",
+      "object": "리프트 본체·궤도·부품",
+      "full_statement": "아세틸렌 토치, 전기톱 등을 사용하여 리프트 본체, 궤도, 부품을 설치구조에 맞게 가공한다.",
+      "source_sentence": "아세틸렌 토치, 전기톱 등을 사용하여 승강기본체, 궤도, 승강기부품등을 설치구조에 맞게 절단, 가공, 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "리프트 본체·궤도·부품",
+      "full_statement": "리프트 본체, 궤도, 부품을 설치구조에 맞게 설치한다.",
+      "source_sentence": "아세틸렌 토치, 전기톱 등을 사용하여 승강기본체, 궤도, 승강기부품등을 설치구조에 맞게 절단, 가공, 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설치하다",
+      "object": "부속설비",
+      "full_statement": "수동 및 동력공구를 사용하여 케이블, 모터펌프, 궤도 조정판 등 휠체어 리프트 부속설비를 설치한다.",
+      "source_sentence": "수동 및 동력공구를 사용하여 케이블, 모터펌프, 궤도 조정판 등 승강기 부속설비를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설치하다",
+      "object": "권양기",
+      "full_statement": "기중기와 케이블을 이용하여 리프트 상층부에 권양기를 설치한다.",
+      "source_sentence": "기중기와 케이블을 이용하여 승강기 상층부에 권양기를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설치하다",
+      "object": "자동제어장치",
+      "full_statement": "휠체어 리프트의 자동제어장치를 설치한다.",
+      "source_sentence": "승강기 자동제어장치를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "휠체어 리프트",
+      "full_statement": "휠체어 리프트를 정상작동이 될 수 있도록 설치한다.",
+      "source_sentence": "휠체어 리프트를 설치하고 정상작동이 될 수 있도록 운행, 제어, 스위치, 신호 등을 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "운행장치",
+      "full_statement": "휠체어 리프트가 정상작동되도록 운행장치를 정비한다.",
+      "source_sentence": "휠체어 리프트를 설치하고 정상작동이 될 수 있도록 운행, 제어, 스위치, 신호 등을 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "제어장치",
+      "full_statement": "휠체어 리프트가 정상작동되도록 제어장치를 정비한다.",
+      "source_sentence": "휠체어 리프트를 설치하고 정상작동이 될 수 있도록 운행, 제어, 스위치, 신호 등을 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "스위치",
+      "full_statement": "휠체어 리프트가 정상작동되도록 스위치를 정비한다.",
+      "source_sentence": "휠체어 리프트를 설치하고 정상작동이 될 수 있도록 운행, 제어, 스위치, 신호 등을 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "신호장치",
+      "full_statement": "휠체어 리프트가 정상작동되도록 신호장치를 정비한다.",
+      "source_sentence": "휠체어 리프트를 설치하고 정상작동이 될 수 있도록 운행, 제어, 스위치, 신호 등을 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "제동장치·스위치·신호·조정장치",
+      "full_statement": "제동장치, 스위치, 신호 및 조정장치 등을 점검한다.",
+      "source_sentence": "제동장치, 스위치, 신호 및 조정장치 등을 점검, 조정하고 고장이 발생 할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "제동장치·스위치·신호·조정장치",
+      "full_statement": "제동장치, 스위치, 신호 및 조정장치 등을 조정한다.",
+      "source_sentence": "제동장치, 스위치, 신호 및 조정장치 등을 점검, 조정하고 고장이 발생 할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "고장",
+      "full_statement": "고장이 발생할 경우 해당 장치를 수리한다.",
+      "source_sentence": "제동장치, 스위치, 신호 및 조정장치 등을 점검, 조정하고 고장이 발생 할 경우 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "휴대용 전기드릴", "category": "도구", "evidence_span": "휴대용 전기드릴을 이용하여 콘크리트 또는 철제건축물에 구멍을 뚫고"},
+    {"name": "아세틸렌 토치", "category": "도구", "evidence_span": "아세틸렌 토치, 전기톱 등을 사용하여"},
+    {"name": "전기톱", "category": "도구", "evidence_span": "아세틸렌 토치, 전기톱 등을 사용하여"},
+    {"name": "수동공구", "category": "도구", "evidence_span": "수동 및 동력공구를 사용하여 케이블, 모터펌프, 궤도 조정판 등 승강기 부속설비를 설치한다."},
+    {"name": "동력공구", "category": "도구", "evidence_span": "수동 및 동력공구를 사용하여 케이블, 모터펌프, 궤도 조정판 등 승강기 부속설비를 설치한다."},
+    {"name": "기중기", "category": "장비", "evidence_span": "기중기와 케이블을 이용하여 승강기 상층부에 권양기를 설치한다."},
+    {"name": "강레일", "category": "장비", "evidence_span": "강레일을 설치하여 승강기 궤도를 만든다."}
+  ],
+  "work_context": []
+}

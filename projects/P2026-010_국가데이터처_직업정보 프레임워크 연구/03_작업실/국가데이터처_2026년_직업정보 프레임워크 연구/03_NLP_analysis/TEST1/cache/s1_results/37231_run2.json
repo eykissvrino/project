@@ -1,0 +1,96 @@
+{
+  "ksco_code": "37231",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "약국의 제반 업무",
+      "full_statement": "약사를 보조하여 약국의 제반 업무를 돕는다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "입력하다",
+      "object": "의료보험 관련 사항",
+      "full_statement": "의료보험 관련 사항을 컴퓨터에 입력한다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "입력하다",
+      "object": "환자의 투약 자료",
+      "full_statement": "환자의 투약 자료를 컴퓨터에 입력한다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정리하다",
+      "object": "입력할 자료",
+      "full_statement": "입력할 자료를 순서대로 정리한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "키보드",
+      "full_statement": "키보드를 조작하여 투약 자료를 입력한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "입력 완료된 자료",
+      "full_statement": "입력이 완료되면 자료를 검토한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "전송하다",
+      "object": "자료가 저장된 매체",
+      "full_statement": "자료가 저장된 매체를 전송한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "대행하다",
+      "object": "행정기록",
+      "full_statement": "고객의 의뢰에 의해 행정기록을 대신해 준다.",
+      "source_sentence": "고객의 의뢰에 의해 행정기록을 대신해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "스캔하다",
+      "object": "전산자료",
+      "full_statement": "약국의 전산자료를 스캔한다.",
+      "source_sentence": "약국, 사업체 등에서 전산자료를 스캔하거나 입력하며, 인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "업로드하다",
+      "object": "문서 및 자료",
+      "full_statement": "인터넷 홈페이지에 문서 및 자료를 반복적으로 업로드한다.",
+      "source_sentence": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다"},
+    {"name": "키보드", "category": "HW", "evidence_span": "키보드를 조작하여 입력한다"},
+    {"name": "스캐너", "category": "장비", "evidence_span": "전산자료를 스캔하거나 입력하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "약국(실내)", "evidence_span": "약국의 제반 업무를 돕거나"},
+    {"category": "사회적", "value": "고객 응대(의뢰 처리)", "evidence_span": "고객의 의뢰에 의해 행정기록을 대신해 준다"},
+    {"category": "사회적", "value": "약사 보조(보조 업무)", "evidence_span": "약사를 보조하여 약국의 제반 업무를 돕거나"},
+    {"category": "신체적", "value": "반복 입력 작업", "evidence_span": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드한다"}
+  ]
+}

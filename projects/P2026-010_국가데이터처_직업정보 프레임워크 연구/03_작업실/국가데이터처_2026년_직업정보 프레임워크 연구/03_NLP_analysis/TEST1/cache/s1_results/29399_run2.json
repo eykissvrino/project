@@ -1,0 +1,103 @@
+{
+  "ksco_code": "29399",
+  "tasks": [
+    {
+      "verb": "감독하다",
+      "object": "제작",
+      "full_statement": "연극·영화·라디오 및 TV프로그램·광고 등의 제작을 총괄적으로 감독한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "연출하다",
+      "object": "제작",
+      "full_statement": "연극·영화·라디오 및 TV프로그램·광고 등의 제작을 연출한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "계획하다",
+      "object": "기술적 업무",
+      "full_statement": "연출에 필요한 촬영·무대장치·편집 등의 기술적인 업무를 계획한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧ 조정한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "지도하다",
+      "object": "기술적 업무",
+      "full_statement": "연출에 필요한 촬영·무대장치·편집 등의 기술적인 업무를 지도한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧ 조정한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "조정하다",
+      "object": "기술적 업무",
+      "full_statement": "연출에 필요한 촬영·무대장치·편집 등의 기술적인 업무를 조정한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧ 조정한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "촬영하다",
+      "object": "영상",
+      "full_statement": "연출에 필요한 영상을 촬영한다.",
+      "source_sentence": "촬영 전반에 대한 조명감독, 미술감독, 무대감독, 음향감독과 촬영과정 전반을 기록하는 스크립터도 여기에 분류한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "기록하다",
+      "object": "촬영과정",
+      "full_statement": "촬영과정 전반을 기록한다.",
+      "source_sentence": "촬영 전반에 대한 조명감독, 미술감독, 무대감독, 음향감독과 촬영과정 전반을 기록하는 스크립터도 여기에 분류한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "편집하다",
+      "object": "영상",
+      "full_statement": "제작된 영상을 편집한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧ 조정한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "설치하다",
+      "object": "무대장치",
+      "full_statement": "공연·촬영에 필요한 무대장치를 설치한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧ 조정한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "제작하다",
+      "object": "미디어 콘텐츠",
+      "full_statement": "MCN을 기반으로 하는 미디어 콘텐츠를 제작한다.",
+      "source_sentence": "연기자, 모델, 아나운서와 그 밖에 비디오 저널리스트, MCN(multi channel network)을 기반으로 하는 미디어 콘텐츠 창작자 등도 이 분류에 포함한다.",
+      "derived_from": "조상정의(소분류 293)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "연기하다",
+      "object": "배역",
+      "full_statement": "영화·방송 및 연극에서 배역을 연기한다.",
+      "source_sentence": "미술, 음악, 무용, 스포츠 및 기타 예술작품을 창작하고, 영화, 방송 및 연극에서 연기를 하거나 감독한다.",
+      "derived_from": "조상정의(중분류 29)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "창작하다",
+      "object": "예술작품",
+      "full_statement": "영상·연극 분야의 예술작품을 창작한다.",
+      "source_sentence": "미술, 음악, 무용, 스포츠 및 기타 예술작품을 창작하고, 영화, 방송 및 연극에서 연기를 하거나 감독한다.",
+      "derived_from": "조상정의(중분류 29)",
+      "confidence": 0.35
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

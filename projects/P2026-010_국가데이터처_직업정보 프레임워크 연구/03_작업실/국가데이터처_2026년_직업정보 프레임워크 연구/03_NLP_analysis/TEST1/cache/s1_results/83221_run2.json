@@ -1,0 +1,164 @@
+{
+  "ksco_code": "83221",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "타이어 경화기",
+      "full_statement": "타이어 경화기를 조작하여 타이어를 경화한다.",
+      "source_sentence": "타이어 경화기를 조작하거나, 고무타이어를 성형기에 넣어 조작하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "투입하다",
+      "object": "고무타이어",
+      "full_statement": "고무타이어를 성형기에 넣어 성형 작업을 한다.",
+      "source_sentence": "타이어 경화기를 조작하거나, 고무타이어를 성형기에 넣어 조작하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "타이어 성형기",
+      "full_statement": "타이어 성형기를 조작하여 고무타이어를 성형한다.",
+      "source_sentence": "타이어 경화기를 조작하거나, 고무타이어를 성형기에 넣어 조작하는 자를 말한다.",
+      "derived_from": "세세분류 정의→예시(타이어성형기 조작원)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "굳히다",
+      "object": "공기주머니나 튜브",
+      "full_statement": "공기주머니나 튜브를 굳히는 작업을 수행한다.",
+      "source_sentence": "경우에 따라서는 공기주머니나 튜브를 굳히는 일을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "타이어 외피 재생기계",
+      "full_statement": "중고 타이어의 외피를 다시 입히는 기계를 조작한다.",
+      "source_sentence": "또한 중고 타이어의 외피를 다시 입히는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→예시(타이어재생기 조작원)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "버팅 업무",
+      "full_statement": "버팅 업무를 별도로 수행한다.",
+      "source_sentence": "버팅, 외피 재부착 또는 주형업무를 별도로 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "재부착하다",
+      "object": "외피",
+      "full_statement": "타이어 외피를 재부착하는 작업을 수행한다.",
+      "source_sentence": "버팅, 외피 재부착 또는 주형업무를 별도로 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "주형업무",
+      "full_statement": "타이어 주형업무를 별도로 수행한다.",
+      "source_sentence": "버팅, 외피 재부착 또는 주형업무를 별도로 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "계량하다",
+      "object": "고무원료 및 화공약품",
+      "full_statement": "고무원료 및 화공약품을 계량한다.",
+      "source_sentence": "고무원료 및 화공약품을 계량하고 일정비율로 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "혼합하다",
+      "object": "고무원료 및 화공약품",
+      "full_statement": "고무원료 및 화공약품을 일정비율로 혼합한다.",
+      "source_sentence": "고무원료 및 화공약품을 계량하고 일정비율로 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "장착하다",
+      "object": "다이·롤러·칼·연마 휠 등 부착물",
+      "full_statement": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "source_sentence": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "기계 또는 호퍼에 재료를 투입한다.",
+      "source_sentence": "기계 또는 호퍼에 재료를 투입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조작하다",
+      "object": "가황 기계장치",
+      "full_statement": "각종 재료 및 부품을 가황하는 기계장치를 조정·조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가황은 타이어 경화 핵심 공정)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "사출·접착 기계장치",
+      "full_statement": "각종 재료 및 부품을 사출·접착하는 기계장치를 조정·조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "절단·조립·마무리 기계장치",
+      "full_statement": "각종 재료 및 부품을 절단·조립·마무리하는 기계장치를 조정·조작한다.",
+      "source_sentence": "각종 재료 및 부품을 혼합, 사출, 접착, 경화, 가황, 절단, 조립, 마무리하는 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "가이드·밸브·조종 장치",
+      "full_statement": "롤러의 온도와 압력, 고무접착제 및 재료의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "source_sentence": "롤러의 온도와 압력, 고무접착제 및 재료의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성된 제품의 치수",
+      "full_statement": "완성된 제품의 치수를 측정한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 결함",
+      "full_statement": "완성된 제품의 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    }
+  ],
+  "tools": [
+    {"name": "타이어 경화기", "category": "장비", "evidence_span": "타이어 경화기를 조작하거나"},
+    {"name": "타이어 성형기", "category": "장비", "evidence_span": "고무타이어를 성형기에 넣어 조작하는 자를 말한다"},
+    {"name": "타이어 외피 재생기계", "category": "장비", "evidence_span": "중고 타이어의 외피를 다시 입히는 기계를 조작한다"},
+    {"name": "호퍼", "category": "장비", "evidence_span": "기계 또는 호퍼에 재료를 투입한다"},
+    {"name": "다이", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "롤러", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "연마 휠", "category": "도구", "evidence_span": "기계에 다이, 롤러, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "가이드·밸브·조종 장치", "category": "장비", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "치수 측정 및 결함 검사 등 정밀 검사 작업", "evidence_span": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함을 검사한다"},
+    {"category": "위험", "value": "화공약품 취급", "evidence_span": "고무원료 및 화공약품을 계량하고 일정비율로 혼합한다"},
+    {"category": "위험", "value": "고온 경화·가황 공정(롤러 온도·압력 조정)", "evidence_span": "롤러의 온도와 압력, 고무접착제 및 재료의 흐름과 기계부품의 움직임을 조정하기 위하여"}
+  ]
+}

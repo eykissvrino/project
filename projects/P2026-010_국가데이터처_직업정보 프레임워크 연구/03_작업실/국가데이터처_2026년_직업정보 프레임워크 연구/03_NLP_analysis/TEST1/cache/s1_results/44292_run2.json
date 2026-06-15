@@ -1,0 +1,95 @@
+{
+  "ksco_code": "44292",
+  "tasks": [
+    {
+      "verb": "운반하다",
+      "object": "골프백",
+      "full_statement": "골퍼의 골프백을 운반한다.",
+      "source_sentence": "골프장에서 고객이 원활한 경기를 할 수 있도록 도와주고 골프백을 운반하거나 카트를 이동시키는 등 골퍼들을 위한 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이동시키다",
+      "object": "카트",
+      "full_statement": "경기 진행에 맞추어 카트를 이동시킨다.",
+      "source_sentence": "골프장에서 고객이 원활한 경기를 할 수 있도록 도와주고 골프백을 운반하거나 카트를 이동시키는 등 골퍼들을 위한 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "운반하다",
+      "object": "골프채",
+      "full_statement": "고객의 골프채를 운반한다.",
+      "source_sentence": "골프채를 운반하며, 골프의 진행을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "돕다",
+      "object": "골프 진행",
+      "full_statement": "고객이 원활하게 경기할 수 있도록 골프의 진행을 돕는다.",
+      "source_sentence": "골프채를 운반하며, 골프의 진행을 돕는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "골퍼 대상 서비스",
+      "full_statement": "골퍼들을 위한 경기 보조 서비스를 제공한다.",
+      "source_sentence": "골프장에서 고객이 원활한 경기를 할 수 있도록 도와주고 골프백을 운반하거나 카트를 이동시키는 등 골퍼들을 위한 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관리하다",
+      "object": "운동 장비",
+      "full_statement": "운동 장비와 비품 등을 관리한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "운동 장비",
+      "full_statement": "운동 장비의 간단한 수리를 한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "오락 설비, 운동 장비, 비품 등을 관리 및 간단한 수리를 하며 고객의 물품을 보관한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "설명하다",
+      "object": "경기 방법·규칙",
+      "full_statement": "게임의 방법·규칙 등에 대하여 개략적인 설명을 한다.",
+      "source_sentence": "오락이나 게임의 방법‧규칙 등에 대하여 개략적인 설명을 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "안내하다",
+      "object": "편의시설 위치",
+      "full_statement": "휴게실, 화장실 등의 위치를 알려준다.",
+      "source_sentence": "휴게실, 화장실, 공중전화 등의 위치를 알려준다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "골프백", "category": "장비", "evidence_span": "골프백을 운반하거나"},
+    {"name": "골프 카트", "category": "장비", "evidence_span": "카트를 이동시키는 등"},
+    {"name": "골프채", "category": "장비", "evidence_span": "골프채를 운반하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "골프장 실외 코스에서 경기를 따라 이동하며 작업", "evidence_span": "골프장에서 고객이 원활한 경기를 할 수 있도록 도와주고"},
+    {"category": "사회적", "value": "골퍼(고객) 응대 및 경기 보조", "evidence_span": "골퍼들을 위한 서비스를 제공한다"},
+    {"category": "신체적", "value": "골프백·골프채 운반 등 중량물 취급", "evidence_span": "골프백을 운반하거나"}
+  ]
+}

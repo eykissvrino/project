@@ -1,0 +1,77 @@
+{
+  "ksco_code": "24692",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "장애 증상",
+      "full_statement": "정신적·육체적 장애가 있는 사람의 증상을 평가한다.",
+      "source_sentence": "정신적, 육체적인 장애가 있는 사람에게 음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.62
+    },
+    {
+      "verb": "치료하다",
+      "object": "증상",
+      "full_statement": "음악 활동을 통해 장애가 있는 사람의 증상을 치료한다.",
+      "source_sentence": "정신적, 육체적인 장애가 있는 사람에게 음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "치료하다",
+      "object": "증상",
+      "full_statement": "미술 활동을 통해 장애가 있는 사람의 증상을 치료한다.",
+      "source_sentence": "정신적, 육체적인 장애가 있는 사람에게 음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적용하다",
+      "object": "음악 활동",
+      "full_statement": "치료 목적에 맞는 음악 활동을 대상자에게 적용한다.",
+      "source_sentence": "음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "적용하다",
+      "object": "미술 활동",
+      "full_statement": "치료 목적에 맞는 미술 활동을 대상자에게 적용한다.",
+      "source_sentence": "음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "치료하다",
+      "object": "정신질환",
+      "full_statement": "정신질환이나 정서 불안정 등의 장애를 치료한다.",
+      "source_sentence": "신체적 장애, 정신질환이나 불안정 등의 장애를 치료한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "치료하다",
+      "object": "신체적 장애",
+      "full_statement": "신체적 장애를 치료한다.",
+      "source_sentence": "신체적 장애, 정신질환이나 불안정 등의 장애를 치료한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제공하다",
+      "object": "다양한 치료 방법",
+      "full_statement": "음악, 놀이, 연극, 예술 등 다양한 방법으로 대상자의 증상을 치료한다.",
+      "source_sentence": "정신적‧육체적인 장애가 있는 사람에게 음악, 놀이, 연극, 예술 등의 다양한 방법으로 증상을 치료하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "장애가 있는 대상자(고객) 응대",
+      "evidence_span": "정신적, 육체적인 장애가 있는 사람에게 음악이나 미술 활동을 통해 증상을 치료하는 업무를 수행한다."
+    }
+  ]
+}

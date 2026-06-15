@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28451",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "부동산 정보",
+      "full_statement": "지가시세와 부동산에 관한 정보를 수집하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대행하다",
+      "object": "부동산 관리",
+      "full_statement": "소유자를 위해 부동산을 관리하고 처분하는 업무를 대행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대행하다",
+      "object": "부동산 개발",
+      "full_statement": "부동산을 유용한 시설로 개발하는 업무를 대행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "부동산 법규",
+      "full_statement": "부동산 세무·법규·인허가·경매에 관하여 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

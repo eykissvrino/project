@@ -1,0 +1,86 @@
+{
+  "ksco_code": "78310",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "미장표면",
+      "full_statement": "콘크리트 또는 조적면 등 미장표면을 점검한다.",
+      "source_sentence": "콘크리트 또는 조적면 등 미장표면을 점검하고 재료와 공구를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "준비하다",
+      "object": "재료와 공구",
+      "full_statement": "미장 작업에 필요한 재료와 공구를 준비한다.",
+      "source_sentence": "콘크리트 또는 조적면 등 미장표면을 점검하고 재료와 공구를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준비하다",
+      "object": "미장 시공면",
+      "full_statement": "미장 시공면을 평탄하고 꺼칠꺼칠하게 준비한다.",
+      "source_sentence": "미장 시공면을 평탄하고 꺼칠꺼칠하게 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "혼합하다",
+      "object": "시멘트, 모르타르, 회반죽",
+      "full_statement": "시멘트, 모르타르, 회반죽 등을 혼합한다.",
+      "source_sentence": "시멘트, 모르타르, 회반죽 등을 혼합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(모르타르·회반죽·석회)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "바르다",
+      "object": "미장재",
+      "full_statement": "초벌, 재벌, 정벌 등 단계별로 미장재를 시공면에 바른다.",
+      "source_sentence": "초벌, 재벌, 정벌 등 단계별로 미장재를 시공면에 바른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "바르다",
+      "object": "모르타르, 회반죽 및 석회",
+      "full_statement": "건축구조물 내‧외부에 모르타르, 회반죽 및 석회 등을 바른다.",
+      "source_sentence": "건축구조물 내‧외부의 미관, 방습, 방음효과를 높이기 위하여 모르타르, 회반죽 및 석회 등을 바르는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "작업의 결함여부",
+      "full_statement": "작업의 결함여부를 확인한다.",
+      "source_sentence": "작업의 결함여부를 확인하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "수정하다",
+      "object": "결함",
+      "full_statement": "확인된 작업 결함을 수정한다.",
+      "source_sentence": "작업의 결함여부를 확인하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "높이다",
+      "object": "미관, 방습, 방음효과",
+      "full_statement": "건축구조물 내‧외부의 미관, 방습, 방음효과를 높인다.",
+      "source_sentence": "건축구조물 내‧외부의 미관, 방습, 방음효과를 높이기 위하여 모르타르, 회반죽 및 석회 등을 바르는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "모르타르", "category": "도구", "evidence_span": "모르타르, 회반죽 및 석회 등을 바르는 업무를 수행한다"},
+    {"name": "회반죽", "category": "도구", "evidence_span": "모르타르, 회반죽 및 석회 등을 바르는 업무를 수행한다"},
+    {"name": "석회", "category": "도구", "evidence_span": "모르타르, 회반죽 및 석회 등을 바르는 업무를 수행한다"},
+    {"name": "시멘트", "category": "도구", "evidence_span": "시멘트, 모르타르, 회반죽 등을 혼합한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건축구조물 내‧외부(실내·실외)", "evidence_span": "건축구조물 내‧외부의 미관, 방습, 방음효과를 높이기 위하여"}
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "ksco_code": "27112",
+  "tasks": [
+    {
+      "verb": "수사하다",
+      "object": "범죄",
+      "full_statement": "범죄를 수사하여 사건의 실체를 규명한다.",
+      "source_sentence": "범죄를 수사하여 공소를 제기하고 법의 정당한 적용을 법원에 청구하며 기소를 관리, 감독한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제기하다",
+      "object": "공소",
+      "full_statement": "범죄 혐의가 인정되면 공소를 제기한다.",
+      "source_sentence": "범죄를 수사하여 공소를 제기하고 법의 정당한 적용을 법원에 청구하며 기소를 관리, 감독한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "청구하다",
+      "object": "법의 정당한 적용",
+      "full_statement": "법의 정당한 적용을 법원에 청구한다.",
+      "source_sentence": "범죄를 수사하여 공소를 제기하고 법의 정당한 적용을 법원에 청구하며 기소를 관리, 감독한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "기소",
+      "full_statement": "제기한 기소를 관리하고 감독한다.",
+      "source_sentence": "범죄를 수사하여 공소를 제기하고 법의 정당한 적용을 법원에 청구하며 기소를 관리, 감독한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "사법경찰관",
+      "full_statement": "형사사건이 접수되면 사법경찰관을 관리·감독한다.",
+      "source_sentence": "형사사건이 접수되면 사법경찰관을 관리, 감독하여 범죄의 증거를 수집하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "범죄의 증거",
+      "full_statement": "범죄의 증거를 수집한다.",
+      "source_sentence": "형사사건이 접수되면 사법경찰관을 관리, 감독하여 범죄의 증거를 수집하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "범죄의 증거",
+      "full_statement": "수집한 범죄의 증거를 분석한다.",
+      "source_sentence": "형사사건이 접수되면 사법경찰관을 관리, 감독하여 범죄의 증거를 수집하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제시하다",
+      "object": "반대증거",
+      "full_statement": "피고를 기소하거나 방면하기 위한 반대증거를 제시한다.",
+      "source_sentence": "공소를 제기하고 피고를 기소 또는 방면하기 위한 반대증거를 제시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기소하다",
+      "object": "피고",
+      "full_statement": "증거에 근거하여 피고를 기소한다.",
+      "source_sentence": "공소를 제기하고 피고를 기소 또는 방면하기 위한 반대증거를 제시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청구하다",
+      "object": "정당한 법령의 적용",
+      "full_statement": "법원에 정당한 법령의 적용을 청구한다.",
+      "source_sentence": "법원에 정당한 법령의 적용을 청구하고 형사재판을 집행, 관리, 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "집행하다",
+      "object": "형사재판",
+      "full_statement": "형사재판을 집행한다.",
+      "source_sentence": "법원에 정당한 법령의 적용을 청구하고 형사재판을 집행, 관리, 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "형사재판 집행",
+      "full_statement": "형사재판의 집행을 관리·감독한다.",
+      "source_sentence": "법원에 정당한 법령의 적용을 청구하고 형사재판을 집행, 관리, 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검토하다",
+      "object": "법정 제출 증거",
+      "full_statement": "법정에 제출된 증거를 검토하고 추론한다.",
+      "source_sentence": "변호사와 검사의 논쟁을 경청하고, 변호인 및 증인의 진술과 법정에 제출된 증거를 검토․ 추론한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조사하다",
+      "object": "법률문제",
+      "full_statement": "법률문제에 관하여 조사·연구한다.",
+      "source_sentence": "법률 전문가는 법률문제에 관해 조사, 연구하고 문제의 법적 측면에 관하여 고객에게 조언한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "사법경찰관 관리·감독(팀/지휘 협업)",
+      "evidence_span": "형사사건이 접수되면 사법경찰관을 관리, 감독하여 범죄의 증거를 수집하고 분석한다."
+    },
+    {
+      "category": "장소",
+      "value": "법정(법원)에서의 활동",
+      "evidence_span": "법원에 정당한 법령의 적용을 청구하고 형사재판을 집행, 관리, 감독한다."
+    }
+  ]
+}

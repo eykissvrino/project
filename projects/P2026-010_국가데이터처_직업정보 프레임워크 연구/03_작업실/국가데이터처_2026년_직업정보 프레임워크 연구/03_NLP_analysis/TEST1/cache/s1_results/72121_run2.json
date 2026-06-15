@@ -1,0 +1,128 @@
+{
+  "ksco_code": "72121",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면, 견본 및 디자인 명세서",
+      "full_statement": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "source_sentence": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "패턴 부품의 수량·형태·규격 및 재료의 형태·양",
+      "full_statement": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정한다.",
+      "source_sentence": "패턴 부품의 수량, 형태, 규격과 요구되는 재료의 형태 및 양을 결정하기 위하여 도면, 견본 및 디자인 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "올려놓다",
+      "object": "패턴",
+      "full_statement": "원단 위에 패턴을 올려놓는다.",
+      "source_sentence": "원단위에 패턴을 올려놓고 각 부분별로 초크로 선을 표시한 후 원단에 그려진 선을 따라 적당한 시접을 두면서 재단기나 칼 또는 가위를 사용하여 절단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "표시하다",
+      "object": "선",
+      "full_statement": "각 부분별로 초크로 원단에 선을 표시한다.",
+      "source_sentence": "원단위에 패턴을 올려놓고 각 부분별로 초크로 선을 표시한 후 원단에 그려진 선을 따라 적당한 시접을 두면서 재단기나 칼 또는 가위를 사용하여 절단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "표시하다",
+      "object": "포켓·단추 위치 및 재단·재봉·조립 선",
+      "full_statement": "원단 위에 포켓이나 단추의 위치와 재단, 재봉 및 조립 선을 표시한다.",
+      "source_sentence": "원단 위에 포켓이나 단추의 위치와 재단, 재봉 및 조립 선을 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "두다",
+      "object": "시접",
+      "full_statement": "원단에 그려진 선을 따라 적당한 시접을 둔다.",
+      "source_sentence": "원단위에 패턴을 올려놓고 각 부분별로 초크로 선을 표시한 후 원단에 그려진 선을 따라 적당한 시접을 두면서 재단기나 칼 또는 가위를 사용하여 절단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절단하다",
+      "object": "원단",
+      "full_statement": "재단기나 칼 또는 가위를 사용하여 원단에 그려진 선을 따라 원단을 절단한다.",
+      "source_sentence": "원단위에 패턴을 올려놓고 각 부분별로 초크로 선을 표시한 후 원단에 그려진 선을 따라 적당한 시접을 두면서 재단기나 칼 또는 가위를 사용하여 절단한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "겹쳐놓다",
+      "object": "원단",
+      "full_statement": "대량생산일 경우 원단을 여러 겹으로 겹쳐 놓고 재단한다.",
+      "source_sentence": "이때 대량생산일 경우에는 원단을 여러 겹으로 겹쳐 놓고 재단을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "취급하다",
+      "object": "재료와 가위·칼 및 관련기계",
+      "full_statement": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "source_sentence": "재료를 재단, 정리, 표시, 구멍 내기 등을 하기 위하여 재료와 가위, 칼 및 기타 관련기계를 기술적으로 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "내다",
+      "object": "구멍",
+      "full_statement": "원단에 구멍을 낸다.",
+      "source_sentence": "의류나 직물제품, 모피, 가죽 등을 원하는 모양으로 재단하기 위해 선을 표시하고, 재단기를 조작하여 자르고, 원단에 구멍을 내고 정리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 가이드 절단 날 및 기타 장치",
+      "full_statement": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "source_sentence": "기계의 가이드 절단 날 및 기타 장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "조사하다",
+      "object": "완성품의 결함",
+      "full_statement": "완성품의 결함을 조사한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "비교하다",
+      "object": "완성품과 설정된 표준",
+      "full_statement": "완성품을 설정된 표준과 비교한다.",
+      "source_sentence": "완성품의 결함을 조사하고 설정된 표준과 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "정리하다",
+      "object": "재단된 재료",
+      "full_statement": "재단된 재료를 정리한다.",
+      "source_sentence": "의류나 직물제품, 모피, 가죽 등을 원하는 모양으로 재단하기 위해 선을 표시하고, 재단기를 조작하여 자르고, 원단에 구멍을 내고 정리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.76
+    }
+  ],
+  "tools": [
+    {"name": "재단기", "category": "장비", "evidence_span": "재단기나 칼 또는 가위를 사용하여 절단한다"},
+    {"name": "칼", "category": "도구", "evidence_span": "재단기나 칼 또는 가위를 사용하여 절단한다"},
+    {"name": "가위", "category": "도구", "evidence_span": "재단기나 칼 또는 가위를 사용하여 절단한다"},
+    {"name": "초크", "category": "도구", "evidence_span": "각 부분별로 초크로 선을 표시한 후"},
+    {"name": "패턴", "category": "도구", "evidence_span": "원단위에 패턴을 올려놓고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀 작업(선을 따라 적당한 시접을 두면서 절단)", "evidence_span": "원단에 그려진 선을 따라 적당한 시접을 두면서 재단기나 칼 또는 가위를 사용하여 절단한다"},
+    {"category": "위험", "value": "예리한 절단 도구(재단기·칼·가위) 취급", "evidence_span": "재단기나 칼 또는 가위를 사용하여 절단한다"}
+  ]
+}

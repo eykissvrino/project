@@ -1,0 +1,136 @@
+{
+  "ksco_code": "99212",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "가스 사용 가정 및 사업체",
+      "full_statement": "도시가스 또는 LP가스를 사용하는 가정 및 사업체를 방문한다.",
+      "source_sentence": "도시가스 또는 LP가스를 사용하는 가정 및 사업체를 방문하여 가스누출 여부 등 가스사용의 안전을 점검하고, 경우에 따라 필요한 조치를 요구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "가스누출 여부",
+      "full_statement": "가스누출 여부 등 가스사용의 안전을 점검한다.",
+      "source_sentence": "도시가스 또는 LP가스를 사용하는 가정 및 사업체를 방문하여 가스누출 여부 등 가스사용의 안전을 점검하고, 경우에 따라 필요한 조치를 요구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "요구하다",
+      "object": "필요한 조치",
+      "full_statement": "경우에 따라 가스사용 안전을 위해 필요한 조치를 요구한다.",
+      "source_sentence": "도시가스 또는 LP가스를 사용하는 가정 및 사업체를 방문하여 가스누출 여부 등 가스사용의 안전을 점검하고, 경우에 따라 필요한 조치를 요구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "가스 사용량",
+      "full_statement": "가스의 사용량을 점검·확인한다.",
+      "source_sentence": "가스의 사용량, 안전사항을 점검‧확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "가스 안전사항",
+      "full_statement": "가스 사용의 안전사항을 점검·확인한다.",
+      "source_sentence": "가스의 사용량, 안전사항을 점검‧확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "방문하다",
+      "object": "담당구역 수용가",
+      "full_statement": "정기적으로 담당구역의 수용가를 방문한다.",
+      "source_sentence": "정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "읽다",
+      "object": "계량기 지침",
+      "full_statement": "계량기의 지침을 읽는다.",
+      "source_sentence": "정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기록하다",
+      "object": "검침카드 사용량",
+      "full_statement": "검침카드에 사용량을 기록한다.",
+      "source_sentence": "정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "계량기 가동상태",
+      "full_statement": "계량기의 가동상태를 확인한다.",
+      "source_sentence": "계량기의 가동상태를 확인하고 표면에 부착된 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "계량기 표면 이물질",
+      "full_statement": "계량기 표면에 부착된 이물질을 제거한다.",
+      "source_sentence": "계량기의 가동상태를 확인하고 표면에 부착된 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "구분하다",
+      "object": "검침서류",
+      "full_statement": "검침서류를 수용가 지역별로 구분한다.",
+      "source_sentence": "검침서류를 수용가 지역별로 구분하고 전산 입력 자료를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "전산 입력 자료",
+      "full_statement": "전산 입력 자료를 작성한다.",
+      "source_sentence": "검침서류를 수용가 지역별로 구분하고 전산 입력 자료를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "현장용도",
+      "full_statement": "수용가의 계약관계상 위약여부 확인 등을 위해 현장용도를 확인한다.",
+      "source_sentence": "수용가가 계약관계상 위약여부 확인 등의 목적을 위해 현장용도를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제시하다",
+      "object": "소비자 질문 해결방법",
+      "full_statement": "요금징수와 계산방법, 문제점 등에 대한 소비자의 질문에 해결방법을 제시한다.",
+      "source_sentence": "요금징수와 계산방법, 문제점 등에 대한 소비자의 질문에 해결방법을 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "불량계량기 또는 도용 사항",
+      "full_statement": "불량계량기 또는 도용 사항을 점검·확인한다.",
+      "source_sentence": "불량계량기 또는 도용 사항을 점검‧확인하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "계량기", "category": "장비", "evidence_span": "계량기의 지침을 읽고 검침카드에 사용량을 기록한다."},
+    {"name": "검침카드", "category": "도구", "evidence_span": "검침카드에 사용량을 기록한다."},
+    {"name": "전산 입력 시스템", "category": "시스템", "evidence_span": "전산 입력 자료를 작성한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "이동(담당구역 수용가·가정 및 사업체 방문)", "evidence_span": "도시가스 또는 LP가스를 사용하는 가정 및 사업체를 방문하여"},
+    {"category": "사회적", "value": "고객(소비자) 응대", "evidence_span": "소비자의 질문에 해결방법을 제시한다."},
+    {"category": "위험", "value": "가스누출 등 안전 점검 대상 환경", "evidence_span": "가스누출 여부 등 가스사용의 안전을 점검하고"},
+    {"category": "시간적", "value": "정기적 방문", "evidence_span": "정기적으로 담당구역의 수용가를 방문하여"}
+  ]
+}

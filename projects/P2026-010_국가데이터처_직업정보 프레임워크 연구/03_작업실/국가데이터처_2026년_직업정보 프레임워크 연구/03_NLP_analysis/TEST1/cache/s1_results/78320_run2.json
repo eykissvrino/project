@@ -1,0 +1,145 @@
+{
+  "ksco_code": "78320",
+  "tasks": [
+    {
+      "verb": "검사하다",
+      "object": "방수 시공면",
+      "full_statement": "방수 시공면을 검사하여 요철 및 결함 부분을 확인한다.",
+      "source_sentence": "방수 시공면을 검사하고 망치‧정‧연삭기 등을 이용하여 요철부분을 다듬는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "다듬다",
+      "object": "요철부분",
+      "full_statement": "망치‧정‧연삭기 등을 이용하여 시공면의 요철부분을 다듬는다.",
+      "source_sentence": "방수 시공면을 검사하고 망치‧정‧연삭기 등을 이용하여 요철부분을 다듬는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "메우다",
+      "object": "공극",
+      "full_statement": "시공면에 생긴 공극을 모르타르나 방수 콤파운드로 메운다.",
+      "source_sentence": "시공면에 생긴 공극을 모르타르나 방수 콤파운드로 메운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "희석하다",
+      "object": "방수액과 시멘트",
+      "full_statement": "방수액과 시멘트를 희석하여 방수 시멘트풀을 만든다.",
+      "source_sentence": "방수액과 시멘트를 희석하여 만든 방수 시멘트풀을 시공면에 바르고 모르타르를 두껍게 입힌다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "방수 시멘트풀",
+      "full_statement": "방수 시멘트풀을 시공면에 바른다.",
+      "source_sentence": "방수액과 시멘트를 희석하여 만든 방수 시멘트풀을 시공면에 바르고 모르타르를 두껍게 입힌다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "입히다",
+      "object": "모르타르",
+      "full_statement": "시공면에 모르타르를 두껍게 입힌다.",
+      "source_sentence": "방수액과 시멘트를 희석하여 만든 방수 시멘트풀을 시공면에 바르고 모르타르를 두껍게 입힌다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "아스팔트 접착제",
+      "full_statement": "아스팔트 접착제를 시공면에 바른다.",
+      "source_sentence": "아스팔트 접착제를 시공면에 바른 후 녹인 아스팔트 콤파운드를 바르면서 루핑을 깔고 보호용 시멘트 모르타르를 입힌다.",
+      "derived_from": "상속 주요업무→세세정의 특화(아스팔트 방수)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "아스팔트 콤파운드",
+      "full_statement": "녹인 아스팔트 콤파운드를 시공면에 바른다.",
+      "source_sentence": "아스팔트 접착제를 시공면에 바른 후 녹인 아스팔트 콤파운드를 바르면서 루핑을 깔고 보호용 시멘트 모르타르를 입힌다.",
+      "derived_from": "상속 주요업무→세세정의 특화(아스팔트 방수)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "깔다",
+      "object": "루핑",
+      "full_statement": "아스팔트 콤파운드를 바르면서 루핑을 깐다.",
+      "source_sentence": "아스팔트 접착제를 시공면에 바른 후 녹인 아스팔트 콤파운드를 바르면서 루핑을 깔고 보호용 시멘트 모르타르를 입힌다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "입히다",
+      "object": "보호용 시멘트 모르타르",
+      "full_statement": "루핑 위에 보호용 시멘트 모르타르를 입힌다.",
+      "source_sentence": "아스팔트 접착제를 시공면에 바른 후 녹인 아스팔트 콤파운드를 바르면서 루핑을 깔고 보호용 시멘트 모르타르를 입힌다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "칠하다",
+      "object": "프라이머",
+      "full_statement": "롤러로 프라이머를 시공면에 칠한다.",
+      "source_sentence": "롤러로 프라이머를 시공면에 칠하고 합성수지 시트(sheet)를 붙인 다음 시트가 겹친 부분을 토치램프로 녹여서 접착시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시트 방수)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "붙이다",
+      "object": "합성수지 시트",
+      "full_statement": "프라이머를 칠한 시공면에 합성수지 시트를 붙인다.",
+      "source_sentence": "롤러로 프라이머를 시공면에 칠하고 합성수지 시트(sheet)를 붙인 다음 시트가 겹친 부분을 토치램프로 녹여서 접착시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시트 방수)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "접착시키다",
+      "object": "시트 겹친 부분",
+      "full_statement": "시트가 겹친 부분을 토치램프로 녹여서 접착시킨다.",
+      "source_sentence": "롤러로 프라이머를 시공면에 칠하고 합성수지 시트(sheet)를 붙인 다음 시트가 겹친 부분을 토치램프로 녹여서 접착시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "바르다",
+      "object": "우레탄 또는 에폭시 액상",
+      "full_statement": "시공면에 우레탄 또는 에폭시 액상을 롤러나 붓으로 곱게 바른다.",
+      "source_sentence": "시공면에 우레탄 또는 에폭시 액상을 롤러나 붓으로 곱게 바르고 보호용 시멘트 모르타르를 바른다.",
+      "derived_from": "상속 주요업무→세세정의 특화(도막 방수)",
+      "confidence": 0.91
+    },
+    {
+      "verb": "바르다",
+      "object": "보호용 시멘트 모르타르",
+      "full_statement": "도막 위에 보호용 시멘트 모르타르를 바른다.",
+      "source_sentence": "시공면에 우레탄 또는 에폭시 액상을 롤러나 붓으로 곱게 바르고 보호용 시멘트 모르타르를 바른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "바르다",
+      "object": "방수재료",
+      "full_statement": "건축구조물의 바닥‧지붕‧벽체에 물이 스며드는 것을 방지하기 위하여 방수재료를 바른다.",
+      "source_sentence": "건축구조물의 바닥‧지붕‧벽체 등에 물이 스며드는 것을 방지하기 위하여 모르타르‧아스팔트‧합성수지시트와 같은 방수재료를 바른다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "망치", "category": "도구", "evidence_span": "망치‧정‧연삭기 등을 이용하여 요철부분을 다듬는다"},
+    {"name": "정", "category": "도구", "evidence_span": "망치‧정‧연삭기 등을 이용하여 요철부분을 다듬는다"},
+    {"name": "연삭기", "category": "장비", "evidence_span": "망치‧정‧연삭기 등을 이용하여 요철부분을 다듬는다"},
+    {"name": "토치램프", "category": "장비", "evidence_span": "시트가 겹친 부분을 토치램프로 녹여서 접착시킨다"},
+    {"name": "롤러", "category": "도구", "evidence_span": "롤러로 프라이머를 시공면에 칠하고"},
+    {"name": "붓", "category": "도구", "evidence_span": "우레탄 또는 에폭시 액상을 롤러나 붓으로 곱게 바르고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "수공구를 이용한 정밀·반복 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"},
+    {"category": "장소", "value": "건축구조물의 바닥‧지붕‧벽체 등 건설 현장", "evidence_span": "건축구조물의 바닥‧지붕‧벽체 등에 물이 스며드는 것을 방지하기 위하여"}
+  ]
+}

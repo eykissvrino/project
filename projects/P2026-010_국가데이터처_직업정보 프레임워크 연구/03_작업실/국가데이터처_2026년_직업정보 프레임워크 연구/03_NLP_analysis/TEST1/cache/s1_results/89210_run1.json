@@ -1,0 +1,146 @@
+{
+  "ksco_code": "89210",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "인쇄물의 종류·용지·잉크·인쇄방식",
+      "full_statement": "인쇄물의 종류, 용지, 잉크, 인쇄방식, 인쇄량, 고객의 요구 등을 검토한다.",
+      "source_sentence": "인쇄물의 종류, 용지, 잉크, 인쇄방식, 인쇄량, 고객의 요구 등을 검토 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "인쇄기",
+      "full_statement": "인쇄기를 점검한다.",
+      "source_sentence": "인쇄기를 점검하고 인쇄판, 인쇄용지 등을 기계에 장착하고 기계의 속도, 인쇄용지와 인쇄판의 간격 등을 조정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.92
+    },
+    {
+      "verb": "장착하다",
+      "object": "인쇄판·인쇄용지",
+      "full_statement": "인쇄판, 인쇄용지 등을 기계에 장착한다.",
+      "source_sentence": "인쇄기를 점검하고 인쇄판, 인쇄용지 등을 기계에 장착하고 기계의 속도, 인쇄용지와 인쇄판의 간격 등을 조정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 속도·인쇄용지와 인쇄판의 간격",
+      "full_statement": "기계의 속도, 인쇄용지와 인쇄판의 간격 등을 조정한다.",
+      "source_sentence": "인쇄기를 점검하고 인쇄판, 인쇄용지 등을 기계에 장착하고 기계의 속도, 인쇄용지와 인쇄판의 간격 등을 조정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조합하다",
+      "object": "잉크",
+      "full_statement": "잉크를 조합하여 잉크통에 투입한다.",
+      "source_sentence": "잉크를 조합하여 잉크통에 투입하고 교정인쇄를 통해 원고와 비교하여 색도, 망점 등을 검사 및 교정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.9
+    },
+    {
+      "verb": "투입하다",
+      "object": "잉크통",
+      "full_statement": "조합한 잉크를 잉크통에 투입한다.",
+      "source_sentence": "잉크를 조합하여 잉크통에 투입하고 교정인쇄를 통해 원고와 비교하여 색도, 망점 등을 검사 및 교정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "색도·망점",
+      "full_statement": "교정인쇄를 통해 원고와 비교하여 색도, 망점 등을 검사한다.",
+      "source_sentence": "잉크를 조합하여 잉크통에 투입하고 교정인쇄를 통해 원고와 비교하여 색도, 망점 등을 검사 및 교정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교정하다",
+      "object": "색도·망점",
+      "full_statement": "교정인쇄 결과에 따라 색도, 망점 등을 교정한다.",
+      "source_sentence": "잉크를 조합하여 잉크통에 투입하고 교정인쇄를 통해 원고와 비교하여 색도, 망점 등을 검사 및 교정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "급지상황·잉크상황·인쇄물의 상태",
+      "full_statement": "인쇄 중에 급지상황, 잉크상황, 인쇄물의 상태를 점검한다.",
+      "source_sentence": "인쇄 중에 급지상황, 잉크상황, 인쇄물의 상태를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "급지상황·잉크상황",
+      "full_statement": "인쇄 중에 급지상황, 잉크상황 등을 조정한다.",
+      "source_sentence": "인쇄 중에 급지상황, 잉크상황, 인쇄물의 상태를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "추리다",
+      "object": "인쇄물",
+      "full_statement": "인쇄물을 추리고 정리한다.",
+      "source_sentence": "인쇄물을 추리고 정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "소제하다",
+      "object": "인쇄판",
+      "full_statement": "인쇄가 끝난 인쇄판을 소제하고 건조시켜 보관한다.",
+      "source_sentence": "인쇄가 끝난 인쇄판을 소제, 건조시켜 보관하고 기계장치에 주유하며, 일상적인 점검 및 정비를 한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "주유하다",
+      "object": "기계장치",
+      "full_statement": "기계장치에 주유한다.",
+      "source_sentence": "인쇄가 끝난 인쇄판을 소제, 건조시켜 보관하고 기계장치에 주유하며, 일상적인 점검 및 정비를 한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "인쇄기계",
+      "full_statement": "인쇄기계의 일상적인 점검 및 정비를 한다.",
+      "source_sentence": "인쇄가 끝난 인쇄판을 소제, 건조시켜 보관하고 기계장치에 주유하며, 일상적인 점검 및 정비를 한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "인쇄기",
+      "full_statement": "종이, 주석판 및 기타 재료 위에 인쇄하는 활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작한다.",
+      "source_sentence": "종이, 주석판 및 기타 재료 위에 인쇄하는 활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작하거나 인쇄물을 모아 완성하는 단계에서 제책 관련 기기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "제책 관련 기기",
+      "full_statement": "인쇄물을 모아 완성하는 단계에서 제책 관련 기기를 조작한다.",
+      "source_sentence": "종이, 주석판 및 기타 재료 위에 인쇄하는 활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작하거나 인쇄물을 모아 완성하는 단계에서 제책 관련 기기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "활판인쇄기", "category": "장비", "evidence_span": "활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작"},
+    {"name": "평판인쇄기", "category": "장비", "evidence_span": "활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작"},
+    {"name": "윤전인쇄기", "category": "장비", "evidence_span": "활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작"},
+    {"name": "오프셋인쇄기", "category": "장비", "evidence_span": "활판, 평판, 윤전, 오프셋 등의 인쇄기를 조작"},
+    {"name": "제책기", "category": "장비", "evidence_span": "인쇄물을 모아 완성하는 단계에서 제책 관련 기기를 조작한다"},
+    {"name": "인쇄판", "category": "도구", "evidence_span": "인쇄판, 인쇄용지 등을 기계에 장착하고"},
+    {"name": "잉크통", "category": "도구", "evidence_span": "잉크를 조합하여 잉크통에 투입하고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "인쇄 중 급지·잉크·인쇄물 상태 상시 점검 및 조정", "evidence_span": "인쇄 중에 급지상황, 잉크상황, 인쇄물의 상태를 점검, 조정한다."},
+    {"category": "사회적", "value": "고객의 요구 검토(고객 응대 맥락)", "evidence_span": "인쇄물의 종류, 용지, 잉크, 인쇄방식, 인쇄량, 고객의 요구 등을 검토 한다."}
+  ]
+}

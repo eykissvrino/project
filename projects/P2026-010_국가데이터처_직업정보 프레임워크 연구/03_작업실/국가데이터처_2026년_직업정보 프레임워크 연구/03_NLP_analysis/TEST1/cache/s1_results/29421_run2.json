@@ -1,0 +1,121 @@
+{
+  "ksco_code": "29421",
+  "tasks": [
+    {
+      "verb": "답사하다",
+      "object": "현장",
+      "full_statement": "바닷가, 산 등의 현장을 답사한다.",
+      "source_sentence": "바닷가, 산, 등의 현장을 답사하여 작품의 소재를 구성하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "구성하다",
+      "object": "작품의 소재",
+      "full_statement": "현장 답사를 통해 작품의 소재를 구성한다.",
+      "source_sentence": "바닷가, 산, 등의 현장을 답사하여 작품의 소재를 구성하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "선정하다",
+      "object": "모델이나 대상, 장소",
+      "full_statement": "사진을 촬영할 수 있는 모델이나 대상, 장소를 선정한다.",
+      "source_sentence": "사진을 촬영할 수 있는 모델이나 대상, 장소를 선정하여 예술성 있는 작품을 촬영하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "촬영하다",
+      "object": "예술성 있는 작품",
+      "full_statement": "선정한 대상으로 예술성 있는 작품을 촬영한다.",
+      "source_sentence": "예술성 있는 작품을 촬영하며 촬영방법 및 현상기술을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "촬영방법",
+      "full_statement": "촬영방법을 연구한다.",
+      "source_sentence": "예술성 있는 작품을 촬영하며 촬영방법 및 현상기술을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "현상기술",
+      "full_statement": "현상기술을 연구한다.",
+      "source_sentence": "예술성 있는 작품을 촬영하며 촬영방법 및 현상기술을 연구한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "날씨, 조도 등",
+      "full_statement": "촬영 전 날씨, 조도 등을 확인한다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조절하다",
+      "object": "카메라",
+      "full_statement": "날씨, 조도 등을 확인하여 카메라를 조절한다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "잡다",
+      "object": "구도",
+      "full_statement": "촬영 구도를 잡는다.",
+      "source_sentence": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "현상하다",
+      "object": "필름",
+      "full_statement": "촬영한 필름을 현상액에 넣어 현상한다.",
+      "source_sentence": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선별하다",
+      "object": "예술성이 있는 작품",
+      "full_statement": "현상한 필름을 조명에 비추어 예술성이 있는 작품을 선별한다.",
+      "source_sentence": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "절단하다",
+      "object": "인화지",
+      "full_statement": "일정규격으로 인화지를 절단한다.",
+      "source_sentence": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "완성하다",
+      "object": "사진작품",
+      "full_statement": "현상한 필름에 인화지를 맞추어 사진작품을 완성한다.",
+      "source_sentence": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "카메라", "category": "장비", "evidence_span": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다."},
+    {"name": "현상액", "category": "도구", "evidence_span": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다."},
+    {"name": "필름", "category": "도구", "evidence_span": "촬영한 필름은 현상액에 넣어 현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다."},
+    {"name": "조명", "category": "장비", "evidence_span": "현상한 후 조명에 비추어 예술성이 있는 작품을 선별한다."},
+    {"name": "인화지", "category": "도구", "evidence_span": "일정규격으로 인화지를 절단하여 현상한 필름에 맞추어 사진작품을 완성한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "바닷가·산 등 야외 현장 답사", "evidence_span": "바닷가, 산, 등의 현장을 답사하여 작품의 소재를 구성하고"},
+    {"category": "신체적", "value": "날씨·조도 조건에 맞춘 정밀한 카메라 조절 및 구도 작업", "evidence_span": "날씨, 조도 등을 확인하여 카메라를 조절하고 구도를 잡아 촬영한다."},
+    {"category": "사회적", "value": "촬영 모델·대상을 상대하는 작업", "evidence_span": "사진을 촬영할 수 있는 모델이나 대상, 장소를 선정하여"}
+  ]
+}

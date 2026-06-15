@@ -1,0 +1,90 @@
+{
+  "ksco_code": "23954",
+  "tasks": [
+    {
+      "verb": "작성하다",
+      "object": "전기제품 시공도",
+      "full_statement": "전기기기 및 전자장비 등 전기제품의 제조, 설치 또는 가선용 시공도를 작성한다.",
+      "source_sentence": "전기기기 및 전자장비 등 전기제품의 제조, 설치 또는 가선용 시공도와 상세한 설계서를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작성하다",
+      "object": "상세 설계서",
+      "full_statement": "전기기기 및 전자장비 등 전기제품의 상세한 설계서를 작성한다.",
+      "source_sentence": "전기기기 및 전자장비 등 전기제품의 제조, 설치 또는 가선용 시공도와 상세한 설계서를 작성한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작성하다",
+      "object": "전기·전자장비 실시 설계도",
+      "full_statement": "전기 및 전자 장비가 실제 생산될 수 있도록 실시 설계도를 그리고 작성한다.",
+      "source_sentence": "여러 분야의 기술자, 건축가 또는 산업디자이너의 관리하에 건축물과 제품이 실제 생산될 수 있도록 실시 설계도를 그리고 작성한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "전개하다",
+      "object": "설계 및 도면",
+      "full_statement": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 설계 및 도면을 전개하여 작성한다.",
+      "source_sentence": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 설계 및 도면, 다이어그램이나 레이아웃을 전개하여 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "전개하다",
+      "object": "다이어그램",
+      "full_statement": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 다이어그램을 전개하여 작성한다.",
+      "source_sentence": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 설계 및 도면, 다이어그램이나 레이아웃을 전개하여 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "전개하다",
+      "object": "레이아웃",
+      "full_statement": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 레이아웃을 전개하여 작성한다.",
+      "source_sentence": "기본개념, 스케치, 공학적 계산, 명세서 및 기타 자료로부터 설계 및 도면, 다이어그램이나 레이아웃을 전개하여 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "활용하다",
+      "object": "엔지니어링 실무 및 수학지식",
+      "full_statement": "건축재료, 엔지니어링 실무 및 수학지식을 도면을 그리는 데 활용한다.",
+      "source_sentence": "건축재료, 엔지니어링 실무 및 수학지식 도면을 그리는데 활용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "컴퓨터지원설계(CAD) 스테이션",
+      "full_statement": "컴퓨터지원설계(CAD) 및 드래프팅 스테이션을 조작한다.",
+      "source_sentence": "컴퓨터지원설계(CAD: computer aided design) 및 드래프팅 스테이션을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "전개하다",
+      "object": "설계 스케치",
+      "full_statement": "설계 스케치를 전개하고 작성한다.",
+      "source_sentence": "설계 스케치를 전개하고 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "도면",
+      "full_statement": "설계도면이 명세서 및 설계 자료와 일치하는지, 틀린 곳이 없는지 점검하기 위해 도면을 검사한다.",
+      "source_sentence": "설계도면이 명세서 및 설계 자료와 일치하는지, 틀린 곳이 없는지 점검하기 위해 도면을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터지원설계(CAD) 소프트웨어", "category": "SW", "evidence_span": "컴퓨터지원설계(CAD: computer aided design) 및 드래프팅 스테이션을 조작한다."},
+    {"name": "드래프팅 스테이션", "category": "장비", "evidence_span": "컴퓨터지원설계(CAD: computer aided design) 및 드래프팅 스테이션을 조작한다."}
+  ],
+  "work_context": []
+}

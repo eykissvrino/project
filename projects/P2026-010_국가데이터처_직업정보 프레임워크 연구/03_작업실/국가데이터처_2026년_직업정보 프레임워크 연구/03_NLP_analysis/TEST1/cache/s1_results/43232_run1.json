@@ -1,0 +1,95 @@
+{
+  "ksco_code": "43232",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "장례 물품 및 장례절차",
+      "full_statement": "장례하는 분에게 필요한 물품이나 장례절차 등을 설명한다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "안내하다",
+      "object": "필요한 물품",
+      "full_statement": "유가족에게 장례에 필요한 물품을 안내하고 선택을 돕는다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지원하다",
+      "object": "유가족",
+      "full_statement": "장례 진행 과정에서 유가족 옆에서 필요한 사항을 도와준다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주선하다",
+      "object": "장례의식",
+      "full_statement": "장례의식 및 매장에 관하여 주선한다.",
+      "source_sentence": "장례의식 및 매장에 관하여 주선하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "장례의식",
+      "full_statement": "장례의식 및 매장을 시행한다.",
+      "source_sentence": "장례의식 및 매장에 관하여 주선하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "장례절차",
+      "full_statement": "장례절차와 관련된 제반 업무를 진행한다.",
+      "source_sentence": "장례절차와 관련된 모든 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.72
+    },
+    {
+      "verb": "처리하다",
+      "object": "시체 방부",
+      "full_statement": "부패과정을 지연 또는 억제하기 위하여 시체 방부 처리를 한다.",
+      "source_sentence": "부패과정을 지연 또는 억제하기 위하여 시체 방부 처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "억제하다",
+      "object": "부패과정",
+      "full_statement": "시체의 부패과정을 지연 또는 억제한다.",
+      "source_sentence": "부패과정을 지연 또는 억제하기 위하여 시체 방부 처리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수행하다",
+      "object": "염습",
+      "full_statement": "고인의 시신을 정결히 하는 염습을 수행한다.",
+      "source_sentence": "염사·장례 지도사",
+      "derived_from": "세세분류 직업 예시(염사)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "장례업체·병원장례식장·전문장례식장 등 실내 시설",
+      "evidence_span": "이들은 장례업체, 병원장례식장, 전문장례식장 등에서 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "유가족 응대 및 지원",
+      "evidence_span": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다."
+    },
+    {
+      "category": "위험",
+      "value": "시신 취급에 따른 생물학적 위험",
+      "evidence_span": "부패과정을 지연 또는 억제하기 위하여 시체 방부 처리를 한다."
+    }
+  ]
+}

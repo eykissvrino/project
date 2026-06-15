@@ -1,0 +1,133 @@
+{
+  "ksco_code": "24670",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "내담자의 인지능력",
+      "full_statement": "정신적 문제를 겪는 환자 및 내담자의 인지능력을 평가한다.",
+      "source_sentence": "정신적 문제를 겪는 환자 및 내담자들에 대한 정확한 평가를 위하여 인지능력, 정서, 성격, 적성 등 정신건강 제반사항에 대한 평가를 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "평가하다",
+      "object": "내담자의 정서",
+      "full_statement": "환자 및 내담자의 정서 상태를 평가한다.",
+      "source_sentence": "정신적 문제를 겪는 환자 및 내담자들에 대한 정확한 평가를 위하여 인지능력, 정서, 성격, 적성 등 정신건강 제반사항에 대한 평가를 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "내담자의 성격",
+      "full_statement": "환자 및 내담자의 성격을 평가한다.",
+      "source_sentence": "정신적 문제를 겪는 환자 및 내담자들에 대한 정확한 평가를 위하여 인지능력, 정서, 성격, 적성 등 정신건강 제반사항에 대한 평가를 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "내담자의 적성",
+      "full_statement": "환자 및 내담자의 적성을 평가한다.",
+      "source_sentence": "정신적 문제를 겪는 환자 및 내담자들에 대한 정확한 평가를 위하여 인지능력, 정서, 성격, 적성 등 정신건강 제반사항에 대한 평가를 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "평가하다",
+      "object": "정신건강 제반사항",
+      "full_statement": "환자 및 내담자의 정신건강 제반사항에 대한 평가를 내린다.",
+      "source_sentence": "정신적 문제를 겪는 환자 및 내담자들에 대한 정확한 평가를 위하여 인지능력, 정서, 성격, 적성 등 정신건강 제반사항에 대한 평가를 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개입하다",
+      "object": "내담자의 정서적 문제",
+      "full_statement": "내담자의 정서적 문제에 개입하여 문제해결을 돕는다.",
+      "source_sentence": "내담자의 정서적, 성격적, 행동적 문제들에 개입하여 문제해결을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개입하다",
+      "object": "내담자의 성격적 문제",
+      "full_statement": "내담자의 성격적 문제에 개입하여 문제해결을 돕는다.",
+      "source_sentence": "내담자의 정서적, 성격적, 행동적 문제들에 개입하여 문제해결을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개입하다",
+      "object": "내담자의 행동적 문제",
+      "full_statement": "내담자의 행동적 문제에 개입하여 문제해결을 돕는다.",
+      "source_sentence": "내담자의 정서적, 성격적, 행동적 문제들에 개입하여 문제해결을 돕는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "치료하다",
+      "object": "강박증",
+      "full_statement": "약물치료를 하지 않으면서 강박증을 치료한다.",
+      "source_sentence": "정신적인 장애가 있는 사람에게 약물치료를 하지 않으면서 강박증, 조울증, 신경증 등의 병을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치료하다",
+      "object": "조울증",
+      "full_statement": "약물치료를 하지 않으면서 조울증을 치료한다.",
+      "source_sentence": "정신적인 장애가 있는 사람에게 약물치료를 하지 않으면서 강박증, 조울증, 신경증 등의 병을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치료하다",
+      "object": "신경증",
+      "full_statement": "약물치료를 하지 않으면서 신경증을 치료한다.",
+      "source_sentence": "정신적인 장애가 있는 사람에게 약물치료를 하지 않으면서 강박증, 조울증, 신경증 등의 병을 치료하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "개발하다",
+      "object": "정신건강 관련 프로그램",
+      "full_statement": "정신건강과 관련된 제반 문제들에 대한 프로그램을 개발한다.",
+      "source_sentence": "정신건강과 관련된 제반 문제들에 대한 프로그램개발을 위한 작업을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "심리치료",
+      "full_statement": "심리치료에 관한 연구를 수행한다.",
+      "source_sentence": "심리치료에 관한 연구를 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "자문하다",
+      "object": "심리치료",
+      "full_statement": "심리치료 컨설턴트로서 자문 활동을 수행한다.",
+      "source_sentence": "심리치료 컨설턴트 또는 교육자로 활동하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "교육하다",
+      "object": "심리치료 교육",
+      "full_statement": "심리치료 교육자로서 교육 활동을 수행한다.",
+      "source_sentence": "심리치료 컨설턴트 또는 교육자로 활동하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "환자 및 내담자 응대(상담·치료 대상자와의 직접 대면)",
+      "evidence_span": "내담자의 정서적, 성격적, 행동적 문제들에 개입하여 문제해결을 돕는다."
+    }
+  ]
+}

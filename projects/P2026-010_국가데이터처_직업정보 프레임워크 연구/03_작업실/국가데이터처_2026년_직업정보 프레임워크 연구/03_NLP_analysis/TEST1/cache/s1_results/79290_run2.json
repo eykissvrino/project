@@ -1,0 +1,79 @@
+{
+  "ksco_code": "79290",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "배관",
+      "full_statement": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관을 설치한다.",
+      "source_sentence": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관과 관련 시설을 설치, 수리하는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 792 배관공)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "배관",
+      "full_statement": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관을 수리한다.",
+      "source_sentence": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관과 관련 시설을 설치, 수리하는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 792 배관공)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설치하다",
+      "object": "관련 시설",
+      "full_statement": "배관에 부속된 관련 시설을 설치한다.",
+      "source_sentence": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관과 관련 시설을 설치, 수리하는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 792 배관공)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수리하다",
+      "object": "관련 시설",
+      "full_statement": "배관에 부속된 관련 시설을 수리한다.",
+      "source_sentence": "물, 가스, 공기, 증기 또는 기타 물질을 배급하는 배관과 관련 시설을 설치, 수리하는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류 792 배관공)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "설치하다",
+      "object": "연관시설",
+      "full_statement": "물, 가스, 공기 등을 배급하는 연관시설을 설치한다.",
+      "source_sentence": "또한 물, 가스, 공기 등을 배급하는 배관, 연관시설을 설치, 수리한다.",
+      "derived_from": "조상정의(중분류 79 기타 기능 관련직)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수리하다",
+      "object": "연관시설",
+      "full_statement": "물, 가스, 공기 등을 배급하는 연관시설을 수리한다.",
+      "source_sentence": "또한 물, 가스, 공기 등을 배급하는 배관, 연관시설을 설치, 수리한다.",
+      "derived_from": "조상정의(중분류 79 기타 기능 관련직)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "설치하다",
+      "object": "철도차량 배관",
+      "full_statement": "철도차량의 배관을 설치한다.",
+      "source_sentence": "철도차량 배관공·배관누수 탐지원",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 792) 특화",
+      "confidence": 0.45
+    },
+    {
+      "verb": "정비하다",
+      "object": "철도차량 배관",
+      "full_statement": "철도차량의 배관을 정비한다.",
+      "source_sentence": "철도차량 배관공·배관누수 탐지원",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 792) 특화",
+      "confidence": 0.45
+    },
+    {
+      "verb": "탐지하다",
+      "object": "배관 누수",
+      "full_statement": "배관의 누수 지점을 탐지한다.",
+      "source_sentence": "철도차량 배관공·배관누수 탐지원",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 792) 특화",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

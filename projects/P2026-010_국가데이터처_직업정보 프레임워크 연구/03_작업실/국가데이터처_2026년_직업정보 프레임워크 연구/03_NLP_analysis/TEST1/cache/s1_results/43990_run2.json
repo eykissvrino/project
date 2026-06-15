@@ -1,0 +1,69 @@
+{
+  "ksco_code": "43990",
+  "tasks": [
+    {
+      "verb": "제공하다",
+      "object": "개인 생활 서비스",
+      "full_statement": "상기 세분류에 포함되지 않은 개인 생활 관련 서비스를 고객에게 제공한다.",
+      "source_sentence": "상기 세분류의 항목에 포함되지 않은 개인 생활 서비스 관련 직무를 수행하는 사람이 여기에 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제공하다",
+      "object": "대인 서비스",
+      "full_statement": "고객에게 대인 서비스를 제공한다.",
+      "source_sentence": "미용, 혼례 및 장례, 운송, 여가, 조리와 관련된 공공 사회서비스 및 개인 생활 서비스 등 대인 서비스를 제공하는 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 헤어 및 외모",
+      "full_statement": "고객의 헤어 및 외모 관리 관련 개인 생활 서비스를 수행한다.",
+      "source_sentence": "헤어 및 외모 관리, 결혼 및 장례, 반려동물 관리 등 개인 생활 관련 서비스직이 여기에 포함된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "수립하다",
+      "object": "노년기 생활 계획",
+      "full_statement": "고객의 노년기 생활 설계를 위한 계획을 수립한다.",
+      "source_sentence": "노년 플래너·생활 코치",
+      "derived_from": "세세분류 직업 예시(노년 플래너)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "상담하다",
+      "object": "고객의 노후 생활",
+      "full_statement": "고객의 노후 생활 전반에 관해 상담한다.",
+      "source_sentence": "노년 플래너·생활 코치",
+      "derived_from": "세세분류 직업 예시(노년 플래너)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "지도하다",
+      "object": "고객의 생활 습관",
+      "full_statement": "고객의 생활 습관 개선과 목표 달성을 지도한다.",
+      "source_sentence": "노년 플래너·생활 코치",
+      "derived_from": "세세분류 직업 예시(생활 코치)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "코칭하다",
+      "object": "고객의 일상 생활",
+      "full_statement": "고객의 일상 생활 관리와 자기계발을 코칭한다.",
+      "source_sentence": "노년 플래너·생활 코치",
+      "derived_from": "세세분류 직업 예시(생활 코치)",
+      "confidence": 0.35
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(대인 서비스 제공)",
+      "evidence_span": "대인 서비스를 제공하는 업무를 주로 수행한다."
+    }
+  ]
+}

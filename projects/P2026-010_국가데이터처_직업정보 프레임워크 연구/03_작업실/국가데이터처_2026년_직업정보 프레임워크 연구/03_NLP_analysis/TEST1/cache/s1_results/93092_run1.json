@@ -1,0 +1,82 @@
+{
+  "ksco_code": "93092",
+  "tasks": [
+    {
+      "verb": "부착하다",
+      "object": "상표",
+      "full_statement": "수동으로 상표를 제품에 부착한다.",
+      "source_sentence": "수동으로 상표나 라벨을 부착한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "부착하다",
+      "object": "라벨",
+      "full_statement": "수동으로 라벨을 제품에 부착한다.",
+      "source_sentence": "수동으로 상표나 라벨을 부착한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분류하다",
+      "object": "제품",
+      "full_statement": "상표나 라벨을 부착하기 위해 제품을 분류한다.",
+      "source_sentence": "제품을 분류하고 구성품을 간단히 수동으로 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "확인하다",
+      "object": "생산품",
+      "full_statement": "상표나 라벨이 부착된 생산품을 확인한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "운반하다",
+      "object": "원재료",
+      "full_statement": "작업에 필요한 원재료를 운반한다.",
+      "source_sentence": "원재료를 운반한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "적재하다",
+      "object": "생산품",
+      "full_statement": "원재료 및 생산품들을 적재한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "하역하다",
+      "object": "생산품",
+      "full_statement": "원재료 및 생산품들을 하역한다.",
+      "source_sentence": "원재료 및 생산품들을 적재, 하역, 분류, 확인 및 무게를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.4
+    },
+    {
+      "verb": "보조하다",
+      "object": "숙달된 근로자",
+      "full_statement": "숙달된 근로자들을 보조한다.",
+      "source_sentence": "숙달된 근로자들을 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "수동(수작업) 부착 작업",
+      "evidence_span": "수동으로 상표나 라벨을 부착한다."
+    },
+    {
+      "category": "신체적",
+      "value": "단순 반복 작업",
+      "evidence_span": "단순 반복 작업을 담당하거나 보조업무를 수행한다."
+    }
+  ]
+}

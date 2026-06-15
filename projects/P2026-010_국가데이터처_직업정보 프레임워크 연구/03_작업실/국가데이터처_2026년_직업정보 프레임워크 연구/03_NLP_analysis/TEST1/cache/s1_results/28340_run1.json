@@ -1,0 +1,162 @@
+{
+  "ksco_code": "28340",
+  "tasks": [
+    {
+      "verb": "설계하다",
+      "object": "조사",
+      "full_statement": "기초 자료 수집을 위해 조사를 설계한다.",
+      "source_sentence": "조사를 설계‧기획하고, 자료수집 과정 전반을 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기획하다",
+      "object": "조사",
+      "full_statement": "기초 자료 수집을 위해 조사를 기획한다.",
+      "source_sentence": "조사를 설계‧기획하고, 자료수집 과정 전반을 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "자료수집 과정",
+      "full_statement": "자료수집 과정 전반을 관리한다.",
+      "source_sentence": "조사를 설계‧기획하고, 자료수집 과정 전반을 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "조사 결과",
+      "full_statement": "조사 결과를 분석하여 발견한 사실과 함축된 의미를 도출한다.",
+      "source_sentence": "조사 결과를 분석하여 발견한 사실과 함축된 의미를 보고서 등의 형태로 작성하여 보고한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서",
+      "full_statement": "발견한 사실과 함축된 의미를 보고서 등의 형태로 작성한다.",
+      "source_sentence": "조사 결과를 분석하여 발견한 사실과 함축된 의미를 보고서 등의 형태로 작성하여 보고한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보고하다",
+      "object": "조사 결과",
+      "full_statement": "작성한 보고서를 통해 조사 결과를 보고한다.",
+      "source_sentence": "조사 결과를 분석하여 발견한 사실과 함축된 의미를 보고서 등의 형태로 작성하여 보고한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설계하다",
+      "object": "자료수집 방식",
+      "full_statement": "조사방법론을 토대로 설문조사나 인터뷰, 좌담회와 같은 자료수집 방식을 설계한다.",
+      "source_sentence": "조사방법론을 토대로 설문조사나 인터뷰, 좌담회와 같은 자료수집 방식을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수행하다",
+      "object": "사회·경제조사",
+      "full_statement": "잠재적 및 장래의 경향을 평가하기 위해 사회 또는 경제조사를 수행한다.",
+      "source_sentence": "잠재적 및 장래의 경향을 평가하기 위해 사회 또는 경제조사를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "실시하다",
+      "object": "구매습관·선호도 조사",
+      "full_statement": "도매나 소매 소비자들의 구매습관 및 선호도에 관한 조사를 실시한다.",
+      "source_sentence": "도매나 소매 소비자들의 구매습관 및 선호도에 관한 조사를 실시하고 자료를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "구매습관·선호도 자료",
+      "full_statement": "구매습관 및 선호도 조사 자료를 분석한다.",
+      "source_sentence": "도매나 소매 소비자들의 구매습관 및 선호도에 관한 조사를 실시하고 자료를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교육하다",
+      "object": "면접원·조사원",
+      "full_statement": "조사를 수행하는 면접원이나 조사원들을 교육한다.",
+      "source_sentence": "조사를 수행하는 면접원이나 조사원들을 교육하거나 실사관리자를 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "실사관리자",
+      "full_statement": "실사관리자를 감독한다.",
+      "source_sentence": "조사를 수행하는 면접원이나 조사원들을 교육하거나 실사관리자를 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "발표하다",
+      "object": "조사 결과",
+      "full_statement": "조사 결과를 의뢰인에게 발표한다.",
+      "source_sentence": "결과에 대한 보고서를 작성하며, 의뢰인에게 발표하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조사하다",
+      "object": "시장 상황",
+      "full_statement": "제품이나 서비스의 잠재적인 판매를 판단하기 위해 시장 상황을 조사한다.",
+      "source_sentence": "제품이나 서비스의 잠재적인 판매를 판단하기 위해 시장 상황을 조사하고 경쟁사, 가격, 판매, 마케팅 및 유통방법에 관한 정보를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수집하다",
+      "object": "경쟁사·가격·유통 정보",
+      "full_statement": "경쟁사, 가격, 판매, 마케팅 및 유통방법에 관한 정보를 수집한다.",
+      "source_sentence": "제품이나 서비스의 잠재적인 판매를 판단하기 위해 시장 상황을 조사하고 경쟁사, 가격, 판매, 마케팅 및 유통방법에 관한 정보를 수집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조사하다",
+      "object": "여론·소비자동향·수요 잠재력",
+      "full_statement": "여론의 흐름, 시장의 흐름 및 변화, 소비자동향, 수요 잠재력 등을 조사·분석·연구한다.",
+      "source_sentence": "여론의 흐름, 제품의 유통경로, 시장의 흐름 및 변화 양상, 소비자동향, 소비성향, 수요 잠재력, 정부정책의 실효성 등을 조사․분석․연구하여, 그 결과를 보고하거나 결과에 대한 자문을 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "자문하다",
+      "object": "조사 결과",
+      "full_statement": "조사·분석·연구 결과에 대한 자문을 제공한다.",
+      "source_sentence": "여론의 흐름, 제품의 유통경로, 시장의 흐름 및 변화 양상, 소비자동향, 소비성향, 수요 잠재력, 정부정책의 실효성 등을 조사․분석․연구하여, 그 결과를 보고하거나 결과에 대한 자문을 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "이용하다",
+      "object": "조사결과",
+      "full_statement": "지역선호도 및 구매습관에 기초한 마케팅 캠페인에 조사결과를 이용한다.",
+      "source_sentence": "지역선호도 및 구매습관에 기초한 마케팅 캠페인에 조사결과를 이용하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "면접원·조사원 교육 및 실사관리자 감독 등 팀 운영",
+      "evidence_span": "조사를 수행하는 면접원이나 조사원들을 교육하거나 실사관리자를 감독하기도 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "의뢰인 대상 결과 발표·자문",
+      "evidence_span": "결과에 대한 보고서를 작성하며, 의뢰인에게 발표하기도 한다."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "ksco_code": "99121",
+  "tasks": [
+    {
+      "verb": "단속하다",
+      "object": "산림 및 산림 인접지역의 불놓기 행위자",
+      "full_statement": "산림 안과 산림 인접지역에서 불놓기 행위를 하는 사람들을 단속한다.",
+      "source_sentence": "산림 안과 산림 인접지역에서 불놓기 행위하는 사람들을 단속한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "단속하다",
+      "object": "입산통제구역 무단입산자",
+      "full_statement": "입산통제구역의 무단입산자를 단속한다.",
+      "source_sentence": "입산통제구역 무단입산자 및 화기물 소지 입산자를 단속한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(입산통제구역 무단입산자 감시)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "단속하다",
+      "object": "화기물 소지 입산자",
+      "full_statement": "화기물을 소지한 입산자를 단속한다.",
+      "source_sentence": "입산통제구역 무단입산자 및 화기물 소지 입산자를 단속한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(화기물 소지 입산자 단속)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "예방하다",
+      "object": "산불",
+      "full_statement": "화기물 소지 입산자 단속 등을 통해 산불을 예방한다.",
+      "source_sentence": "화기물 소지 입산자 단속 등 산불 예방 업무나 산불확산방지를 위한 초동진화작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "출동하다",
+      "object": "산불신고 현장",
+      "full_statement": "산불신고를 접수하면 현장으로 출동한다.",
+      "source_sentence": "산불신고 현장 출동 및 산불확산방지를 위한 초동진화작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "초동진화작업",
+      "full_statement": "산불확산방지를 위한 초동진화작업을 수행한다.",
+      "source_sentence": "산불신고 현장 출동 및 산불확산방지를 위한 초동진화작업을 한다.",
+      "derived_from": "상속 주요업무→세세정의 일치(산불확산방지 초동진화작업)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "보조하다",
+      "object": "천연산림 및 영림장 작업",
+      "full_statement": "천연산림이나 영림장에서 이루어지는 작업을 보조한다.",
+      "source_sentence": "천연산림이나 영림장에서 작업을 보조하며, 간단한 영림 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "간단한 영림 업무",
+      "full_statement": "숙련된 임업종사원을 도와 간단한 영림 업무를 수행한다.",
+      "source_sentence": "천연산림이나 영림장에서 작업을 보조하며, 간단한 영림 업무를 수행한다.",
+      "derived_from": "상속 주요업무→조상정의(세분류) 보강",
+      "confidence": 0.78
+    },
+    {
+      "verb": "파다",
+      "object": "구덩이",
+      "full_statement": "나무를 심기 위하여 구덩이를 판다.",
+      "source_sentence": "나무를 심기 위하여 구덩이를 파고 통나무 및 목재를 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "쌓다",
+      "object": "통나무 및 목재",
+      "full_statement": "통나무 및 목재를 쌓는다.",
+      "source_sentence": "나무를 심기 위하여 구덩이를 파고 통나무 및 목재를 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "산림 및 산림 인접지역(실외)",
+      "evidence_span": "산림 안과 산림 인접지역에서 불놓기 행위하는 사람들을 단속한다."
+    },
+    {
+      "category": "위험",
+      "value": "산불·화기 관련 화재 위험",
+      "evidence_span": "산불확산방지를 위한 초동진화작업을 수행한다."
+    },
+    {
+      "category": "신체적",
+      "value": "구덩이 파기·목재 쌓기 등 육체적 노력 요구",
+      "evidence_span": "나무를 심기 위하여 구덩이를 파고 통나무 및 목재를 쌓는다."
+    },
+    {
+      "category": "사회적",
+      "value": "무단입산자·화기물 소지자 대상 단속(대인 응대)",
+      "evidence_span": "입산통제구역 무단입산자 및 화기물 소지 입산자를 단속한다."
+    }
+  ]
+}

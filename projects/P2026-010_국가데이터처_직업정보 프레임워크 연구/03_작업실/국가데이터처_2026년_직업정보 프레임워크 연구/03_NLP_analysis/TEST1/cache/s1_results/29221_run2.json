@@ -1,0 +1,146 @@
+{
+  "ksco_code": "29221",
+  "tasks": [
+    {
+      "verb": "구입하다",
+      "object": "도서와 자료",
+      "full_statement": "도서관 장서 확보를 위해 도서와 자료를 구입한다.",
+      "source_sentence": "도서와 자료를 구입하고 구입 도서에 등록번호를 부여하고 도서 원부를 정리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(장서의 취득)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부여하다",
+      "object": "등록번호",
+      "full_statement": "구입한 도서에 등록번호를 부여한다.",
+      "source_sentence": "도서와 자료를 구입하고 구입 도서에 등록번호를 부여하고 도서 원부를 정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정리하다",
+      "object": "도서 원부",
+      "full_statement": "도서 원부를 정리한다.",
+      "source_sentence": "도서와 자료를 구입하고 구입 도서에 등록번호를 부여하고 도서 원부를 정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분류하다",
+      "object": "도서자료",
+      "full_statement": "자료의 내용과 주제에 따라 도서자료를 분류한다.",
+      "source_sentence": "자료의 내용, 주제에 따라 도서자료를 분류하고, 규정된 분류체계에 따라 분류번호와 표제를 결정하고 목록카드를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(장서의 분류)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "결정하다",
+      "object": "분류번호와 표제",
+      "full_statement": "규정된 분류체계에 따라 분류번호와 표제를 결정한다.",
+      "source_sentence": "자료의 내용, 주제에 따라 도서자료를 분류하고, 규정된 분류체계에 따라 분류번호와 표제를 결정하고 목록카드를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "목록카드",
+      "full_statement": "분류된 자료의 목록카드를 작성한다.",
+      "source_sentence": "자료의 내용, 주제에 따라 도서자료를 분류하고, 규정된 분류체계에 따라 분류번호와 표제를 결정하고 목록카드를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목록작성)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "도서 대출",
+      "full_statement": "도서의 대출 업무를 수행한다.",
+      "source_sentence": "도서의 대출, 열람, 반납업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지원하다",
+      "object": "도서 열람",
+      "full_statement": "이용자의 도서 열람을 지원한다.",
+      "source_sentence": "도서의 대출, 열람, 반납업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "처리하다",
+      "object": "도서 반납",
+      "full_statement": "도서의 반납 업무를 처리한다.",
+      "source_sentence": "도서의 대출, 열람, 반납업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "진열하다",
+      "object": "장서",
+      "full_statement": "취득한 장서를 진열한다.",
+      "source_sentence": "장서, 정기간행물, 기록문헌 등을 체계적으로 정리하여 도서관 이용자에게 제공하며, 장서의 취득, 분류, 목록작성 및 진열 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의(진열)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정리하다",
+      "object": "장서·정기간행물·기록문헌",
+      "full_statement": "장서, 정기간행물, 기록문헌 등을 체계적으로 정리한다.",
+      "source_sentence": "장서, 정기간행물, 기록문헌 등을 체계적으로 정리하여 도서관 이용자에게 제공하며, 장서의 취득, 분류, 목록작성 및 진열 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "자료",
+      "full_statement": "정리한 자료를 도서관 이용자에게 제공한다.",
+      "source_sentence": "장서, 정기간행물, 기록문헌 등을 체계적으로 정리하여 도서관 이용자에게 제공하며, 장서의 취득, 분류, 목록작성 및 진열 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의(이용자 제공)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "취득하다",
+      "object": "장서",
+      "full_statement": "도서관 장서를 취득한다.",
+      "source_sentence": "장서, 정기간행물, 기록문헌 등을 체계적으로 정리하여 도서관 이용자에게 제공하며, 장서의 취득, 분류, 목록작성 및 진열 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의(취득)",
+      "confidence": 0.86
+    },
+    {
+      "verb": "수집하다",
+      "object": "정기간행물",
+      "full_statement": "정기간행물을 수집한다.",
+      "source_sentence": "도서관에서 이용자의 편의를 위해 서적, 정기간행물, 시청각자료 등을 수집하고 일정한 기준에 의거하여 분류, 정리, 보관하는 업무를 수행하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수집하다",
+      "object": "시청각자료",
+      "full_statement": "시청각자료를 수집한다.",
+      "source_sentence": "도서관에서 이용자의 편의를 위해 서적, 정기간행물, 시청각자료 등을 수집하고 일정한 기준에 의거하여 분류, 정리, 보관하는 업무를 수행하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "보관하다",
+      "object": "수집 자료",
+      "full_statement": "수집한 자료를 일정한 기준에 의거하여 보관한다.",
+      "source_sentence": "도서관에서 이용자의 편의를 위해 서적, 정기간행물, 시청각자료 등을 수집하고 일정한 기준에 의거하여 분류, 정리, 보관하는 업무를 수행하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "도서관 실내 작업",
+      "evidence_span": "도서관에서 이용자의 편의를 위해 서적, 정기간행물, 시청각자료 등을 수집하고"
+    },
+    {
+      "category": "사회적",
+      "value": "도서관 이용자 응대·제공",
+      "evidence_span": "체계적으로 정리하여 도서관 이용자에게 제공하며"
+    }
+  ]
+}

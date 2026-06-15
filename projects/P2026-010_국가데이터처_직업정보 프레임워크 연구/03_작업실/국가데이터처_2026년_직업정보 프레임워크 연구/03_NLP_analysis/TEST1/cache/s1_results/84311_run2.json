@@ -1,0 +1,162 @@
+{
+  "ksco_code": "84311",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "유리 제조로",
+      "full_statement": "광물로부터 유리를 제조하기 위해 유리 제조로를 조작한다.",
+      "source_sentence": "유리 제조로를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(광물로부터 유리 제조에 사용되는 로)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리 소둔로",
+      "full_statement": "내부장력을 방지하거나 제거하기 위해 유리 소둔로를 조작한다.",
+      "source_sentence": "내부장력 방지 또는 제거용 유리 소둔로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "보강유리 경화로",
+      "full_statement": "유리를 강화하기 위해 보강유리 경화로를 조작한다.",
+      "source_sentence": "보강유리 경화로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리 성형용 기계",
+      "full_statement": "압축성형에 의해 유리를 성형하기 위한 기계를 조작한다.",
+      "source_sentence": "압축성형에 의한 유리 성형용 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "용융유리 인발 또는 압연용 기계",
+      "full_statement": "연속판유리를 생산하기 위해 용융유리 인발 또는 압연용 기계를 조작한다.",
+      "source_sentence": "연속판유리 생산용 용융유리 인발 또는 압연용 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "부유유리 생산장치",
+      "full_statement": "부유유리를 생산하기 위해 부유유리 생산장치를 조작한다.",
+      "source_sentence": "부유유리 생산장치를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "판유리 표면 광택 및 수평기",
+      "full_statement": "판유리 표면을 광택내고 수평을 맞추기 위해 판유리 표면 광택 및 수평기를 조작한다.",
+      "source_sentence": "판유리 표면 광택 및 수평기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리봉 및 관 제조 기계",
+      "full_statement": "인발 또는 취주로 용융유리로부터 유리봉 및 관을 제조하는 기계를 조작한다.",
+      "source_sentence": "인발 또는 취주로 용융유리로부터 유리봉 및 관을 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운전하다",
+      "object": "절단기",
+      "full_statement": "판유리나 접합유리를 절단하기 위해 절단기를 운전·조작한다.",
+      "source_sentence": "판유리나 접합유리를 절단하기 위해 절단기를 운전‧조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재단하다",
+      "object": "유리",
+      "full_statement": "기계 및 장치를 조작하여 유리를 재단한다.",
+      "source_sentence": "기계 및 장치를 조작하여 유리제품의 모양을 바꾸거나 유리를 재단‧연마하고, 용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연마하다",
+      "object": "유리",
+      "full_statement": "기계 및 장치를 조작하여 유리를 연마한다.",
+      "source_sentence": "기계 및 장치를 조작하여 유리제품의 모양을 바꾸거나 유리를 재단‧연마하고, 용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "바꾸다",
+      "object": "유리제품의 모양",
+      "full_statement": "기계 및 장치를 조작하여 유리제품의 모양을 바꾼다.",
+      "source_sentence": "기계 및 장치를 조작하여 유리제품의 모양을 바꾸거나 유리를 재단‧연마하고, 용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "불다",
+      "object": "용해된 유리",
+      "full_statement": "병, 전구 등과 같은 제품을 만들기 위해 용해된 유리를 불어서 성형한다.",
+      "source_sentence": "용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리섬유 제조 기기",
+      "full_statement": "유리섬유 및 기타 유리제품을 제조하기 위해 관련 기기를 조작한다.",
+      "source_sentence": "용융석영, 용융 실리카를 포함하여 각종 형태, 용도의 유리, 유리섬유 및 기타 유리제품, 렌즈, 프리즘을 제조하는 기기를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "렌즈·프리즘 제조 기기",
+      "full_statement": "렌즈, 프리즘을 제조하기 위한 기기를 조작한다.",
+      "source_sentence": "용융석영, 용융 실리카를 포함하여 각종 형태, 용도의 유리, 유리섬유 및 기타 유리제품, 렌즈, 프리즘을 제조하는 기기를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "장식·착색·강화 가공유리 생산 기계",
+      "full_statement": "망입·장식·착색·강화 또는 적층·식각 및 기타 가공 유리를 생산하기 위해 기계를 조작한다.",
+      "source_sentence": "유리솜 및 유리사 제조, 망입‧장식‧착색‧강화 또는 적층· 식각 및 기타 가공 유리를 생산하는 기계를 조작하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성하고 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성된 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "유리 제조로", "category": "장비", "evidence_span": "유리 제조로를 조작한다."},
+    {"name": "유리 소둔로", "category": "장비", "evidence_span": "내부장력 방지 또는 제거용 유리 소둔로를 조작한다."},
+    {"name": "보강유리 경화로", "category": "장비", "evidence_span": "보강유리 경화로를 조작한다."},
+    {"name": "유리 성형용 기계", "category": "장비", "evidence_span": "압축성형에 의한 유리 성형용 기계를 조작한다."},
+    {"name": "용융유리 인발 또는 압연용 기계", "category": "장비", "evidence_span": "연속판유리 생산용 용융유리 인발 또는 압연용 기계를 조작한다."},
+    {"name": "부유유리 생산장치", "category": "장비", "evidence_span": "부유유리 생산장치를 조작한다."},
+    {"name": "판유리 표면 광택 및 수평기", "category": "장비", "evidence_span": "판유리 표면 광택 및 수평기를 조작한다."},
+    {"name": "절단기", "category": "장비", "evidence_span": "판유리나 접합유리를 절단하기 위해 절단기를 운전‧조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "고온 용해/용융 유리 취급", "evidence_span": "용해된 유리를 불어서 병, 전구 등과 같은 제품을 만든다."}
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "ksco_code": "78251",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "시공계획",
+      "full_statement": "도면과 시방서에 따라 조적 시공계획을 세운다.",
+      "source_sentence": "도면과 시방서에 따라 시공계획을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화(조적)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면과 시방서를 검토하여 조적할 형태와 위치를 확인한다.",
+      "source_sentence": "도면과 시방서에 따라 시공계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "준비하다",
+      "object": "조적용 공구와 장비",
+      "full_statement": "조적용 공구, 장비 및 재료를 준비한다.",
+      "source_sentence": "조적용 공구, 장비 및 재료를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(조적용 공구)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "벽돌과 블록 재료",
+      "full_statement": "벽돌이나 블록 등 조적 재료를 준비한다.",
+      "source_sentence": "조적용 공구, 장비 및 재료를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(벽돌)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측정하다",
+      "object": "조적위치",
+      "full_statement": "조적위치를 측정하고 표시한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "설치하다",
+      "object": "규준틀",
+      "full_statement": "조적위치에 규준틀을 설치한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "배합하다",
+      "object": "모르타르",
+      "full_statement": "모르타르를 배합한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "절단하다",
+      "object": "벽돌이나 블록",
+      "full_statement": "벽돌이나 블록을 원하는 크기로 자른다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "조정하다",
+      "object": "평벽의 수직과 수평",
+      "full_statement": "평벽의 수직 및 수평을 조정한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "쌓다",
+      "object": "벽돌",
+      "full_statement": "흙손과 같은 조적용 공구와 장비를 이용하여 벽돌을 쌓는다.",
+      "source_sentence": "흙손과 같은 조적용 공구와 장비를 이용하여 벽돌을 쌓는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "쌓다",
+      "object": "다양한 형태의 벽",
+      "full_statement": "곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 벽돌이나 블록을 쌓는다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "쌓다",
+      "object": "내화벽돌",
+      "full_statement": "내화벽돌을 쌓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무→세세예시 특화(내화재 조적공)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "깔다",
+      "object": "보도블록",
+      "full_statement": "보도블록을 깐다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제거하다",
+      "object": "오래된 조적재료",
+      "full_statement": "오래된 조적재료를 제거한다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재시공하다",
+      "object": "손상된 조적 부분",
+      "full_statement": "손상된 해당 부분만 다시 쌓아 보수한다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무→조상정의(소분류) 보수활동",
+      "confidence": 0.77
+    },
+    {
+      "verb": "검사하다",
+      "object": "시공 결함유무",
+      "full_statement": "작업완료 후 시공의 결함유무를 확인하고 검사한다.",
+      "source_sentence": "작업완료 후 시공의 결함유무를 확인, 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "흙손", "category": "도구", "evidence_span": "흙손과 같은 조적용 공구와 장비를 이용하여 벽돌을 쌓는다."},
+    {"name": "조적용 공구", "category": "도구", "evidence_span": "흙손과 같은 조적용 공구와 장비를 이용하여 벽돌을 쌓는다."},
+    {"name": "규준틀", "category": "장비", "evidence_span": "조적위치를 측정․ 표시하고 규준틀을 설치한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내·외부 및 기타 건설물 현장", "evidence_span": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다."},
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

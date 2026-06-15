@@ -1,0 +1,119 @@
+{
+  "ksco_code": "78242",
+  "tasks": [
+    {
+      "verb": "짜맞추다",
+      "object": "목구조물",
+      "full_statement": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 뼈대를 나무로 짜 맞추어 목구조물을 제작한다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "목구조물",
+      "full_statement": "제작한 목구조물을 건물에 세워 설치한다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "세우다",
+      "object": "벽체",
+      "full_statement": "건물의 벽체 뼈대를 나무로 짜 맞추어 세운다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의→목적어 구체화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "세우다",
+      "object": "기둥",
+      "full_statement": "건물의 기둥 뼈대를 나무로 짜 맞추어 세운다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의→목적어 구체화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "마루바닥",
+      "full_statement": "건물의 마루바닥 뼈대를 나무로 짜 맞추어 설치한다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의→목적어 구체화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "지붕",
+      "full_statement": "건물의 지붕 뼈대를 나무로 짜 맞추어 설치한다.",
+      "source_sentence": "건물의 벽체, 기둥, 마루바닥, 지붕 등의 중요한 뼈대를 나무로 짜 맞추어 세우는 목구조물을 제작허고 설치한다.",
+      "derived_from": "세세분류 정의→목적어 구체화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시공하다",
+      "object": "건축물의 벽·기둥·토대",
+      "full_statement": "목부재를 사용하여 건축물의 벽, 기둥, 토대 등을 시공한다.",
+      "source_sentence": "목부채를 사용하여 건축물의 벽, 기둥, 토대 등을 시공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "신축하다",
+      "object": "전통 건물",
+      "full_statement": "전통 건물을 신축한다.",
+      "source_sentence": "전통 건물를 신축하거나 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보수하다",
+      "object": "전통 건물",
+      "full_statement": "전통 건물을 보수한다.",
+      "source_sentence": "전통 건물를 신축하거나 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조립하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "지주 및 거푸집을 조립한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검사하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "지주 및 거푸집을 검사한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제거하다",
+      "object": "지주 및 거푸집",
+      "full_statement": "지주 및 거푸집을 제거한다.",
+      "source_sentence": "지주 및 거푸집을 조립, 검사, 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "가공하다",
+      "object": "목재",
+      "full_statement": "건축물 내외부 공사에 필요한 목재가공 작업을 수행한다.",
+      "source_sentence": "건축물 내‧외부의 각종 공사에 필요한 목재가공 작업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "목부재", "category": "장비", "evidence_span": "목부채를 사용하여 건축물의 벽, 기둥, 토대 등을 시공한다."},
+    {"name": "거푸집", "category": "장비", "evidence_span": "지주 및 거푸집을 조립, 검사, 제거한다."},
+    {"name": "지주", "category": "장비", "evidence_span": "지주 및 거푸집을 조립, 검사, 제거한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건설 현장(건물 내외부)", "evidence_span": "건축물 내‧외부의 각종 공사에 필요한 목재가공 작업을 수행한다."},
+    {"category": "신체적", "value": "손과 수공구 중심의 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

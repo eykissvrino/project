@@ -1,0 +1,111 @@
+{
+  "ksco_code": "22121",
+  "tasks": [
+    {
+      "verb": "설계하다",
+      "object": "통신기기 회로",
+      "full_statement": "스마트폰, 태블릿 PC 등 휴대용 단말기와 전화기, 송·수신기 등 통신기기의 회로를 설계한다.",
+      "source_sentence": "스마트폰, 태블릿 PC 등 휴대용 단말기와 전화기, 송‧수신기 등 통신기기의 회로를 설계하고 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개발하다",
+      "object": "통신기기 회로",
+      "full_statement": "스마트폰, 태블릿 PC 등 휴대용 단말기와 전화기, 송·수신기 등 통신기기의 회로를 개발한다.",
+      "source_sentence": "스마트폰, 태블릿 PC 등 휴대용 단말기와 전화기, 송‧수신기 등 통신기기의 회로를 설계하고 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "RF 회로설계·안테나·통신시스템",
+      "full_statement": "RF 회로설계, 안테나, 통신시스템, 이동 통신 및 데이터망 등을 연구한다.",
+      "source_sentence": "RF 회로설계, 안테나, 통신시스템, 이동 통신 및 데이터망 등을 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(통신기기 회로)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개발하다",
+      "object": "핸드폰 회로",
+      "full_statement": "핸드폰 등 휴대용 단말기의 회로를 개발한다.",
+      "source_sentence": "핸드폰 회로 개발자·무선 전화기 개발자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "무선 전화기",
+      "full_statement": "무선 전화기를 개발한다.",
+      "source_sentence": "핸드폰 회로 개발자·무선 전화기 개발자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설계하다",
+      "object": "모뎀",
+      "full_statement": "모뎀을 개발하고 설계한다.",
+      "source_sentence": "모뎀 개발 및 설계 기술자·디지털 수신기 개발자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.78
+    },
+    {
+      "verb": "개발하다",
+      "object": "디지털 수신기",
+      "full_statement": "디지털 수신기를 개발한다.",
+      "source_sentence": "모뎀 개발 및 설계 기술자·디지털 수신기 개발자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.78
+    },
+    {
+      "verb": "개발하다",
+      "object": "인터폰 및 전화기",
+      "full_statement": "인터폰 및 전화기를 개발한다.",
+      "source_sentence": "인터폰 및 전화기 개발자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "각종 통신장비",
+      "full_statement": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 연구·개발한다.",
+      "source_sentence": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 연구‧개발, 설계하고, 이들의 설치, 유지 또는 보수 활동을 계획하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(통신기기)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "각종 통신장비",
+      "full_statement": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 설계한다.",
+      "source_sentence": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 연구‧개발, 설계하고, 이들의 설치, 유지 또는 보수 활동을 계획하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(통신기기)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "통신장비 설치·유지·보수 활동",
+      "full_statement": "통신장비의 설치, 유지 또는 보수 활동을 계획한다.",
+      "source_sentence": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 연구‧개발, 설계하고, 이들의 설치, 유지 또는 보수 활동을 계획하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(통신기기)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "감독하다",
+      "object": "통신장비 설치·유지·보수 활동",
+      "full_statement": "통신장비의 설치, 유지 또는 보수 활동을 감독한다.",
+      "source_sentence": "전화기, 교환기, 전송기, 단말기, 송수신기 등 각종 통신장비를 연구‧개발, 설계하고, 이들의 설치, 유지 또는 보수 활동을 계획하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(통신기기)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "연구개발하다",
+      "object": "신공법",
+      "full_statement": "새로운 통신방법에 의한 신공법을 연구개발한다.",
+      "source_sentence": "새로운 통신방법에 의한 신공법을 연구개발하고 현장시공과 연계시키기 위해 각종 현장조건을 조사‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

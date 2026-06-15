@@ -1,0 +1,131 @@
+{
+  "ksco_code": "84141",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "용광로",
+      "full_statement": "철 또는 비철금속이나 강철을 생산하기 위하여 용광로를 조작한다.",
+      "source_sentence": "철 또는 비철금속이나 강철을 생산하기 위하여 용광로, 제강로 및 정련로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "제강로",
+      "full_statement": "철 또는 비철금속이나 강철을 생산하기 위하여 제강로를 조작한다.",
+      "source_sentence": "철 또는 비철금속이나 강철을 생산하기 위하여 용광로, 제강로 및 정련로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "정련로",
+      "full_statement": "철 또는 비철금속이나 강철을 생산하기 위하여 정련로를 조작한다.",
+      "source_sentence": "철 또는 비철금속이나 강철을 생산하기 위하여 용광로, 제강로 및 정련로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "금속 제련·정련과정",
+      "full_statement": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련·정련과정을 조정한다.",
+      "source_sentence": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제어하다",
+      "object": "금속 제련·정련과정",
+      "full_statement": "중앙조정실의 제어장치와 통제시스템을 통해 금속 제련·정련과정을 제어한다.",
+      "source_sentence": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "컴퓨터 출력정보·모니터 자료",
+      "full_statement": "컴퓨터 출력정보, 모니터 자료 등을 관찰한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "측정하다",
+      "object": "가공조건",
+      "full_statement": "적절한 가공조건인지 측정한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조치하다",
+      "object": "필요한 조치",
+      "full_statement": "가공조건에 따라 필요한 조치를 취한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조정하다",
+      "object": "기기조작원의 활동",
+      "full_statement": "기기조작원의 활동을 조정한다.",
+      "source_sentence": "기기조작원의 활동을 조정하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "기기조작원의 활동",
+      "full_statement": "기기조작원의 활동을 감독한다.",
+      "source_sentence": "기기조작원의 활동을 조정하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가동하다",
+      "object": "생산시스템",
+      "full_statement": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시킨다.",
+      "source_sentence": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "중단하다",
+      "object": "생산시스템",
+      "full_statement": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 중단시킨다.",
+      "source_sentence": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "용광로", "category": "장비", "evidence_span": "용광로, 제강로 및 정련로를 조작한다"},
+    {"name": "제강로", "category": "장비", "evidence_span": "용광로, 제강로 및 정련로를 조작한다"},
+    {"name": "정련로", "category": "장비", "evidence_span": "용광로, 제강로 및 정련로를 조작한다"},
+    {"name": "제어장치", "category": "시스템", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "컴퓨터 터미널", "category": "HW", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "통제시스템", "category": "시스템", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "다기능 공정통제장치", "category": "시스템", "evidence_span": "제련, 정련하는 과정에서 다기능 공정통제 장치를 조작하거나 제어한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "중앙조정실", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"category": "사회적", "value": "기기조작원 감독·조정(팀 감독)", "evidence_span": "기기조작원의 활동을 조정하고 감독한다"},
+    {"category": "시간적", "value": "긴급 상황 대응 및 작업 일정 기반 가동·중단", "evidence_span": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다"}
+  ]
+}

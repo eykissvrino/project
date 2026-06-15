@@ -1,0 +1,149 @@
+{
+  "ksco_code": "75379",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "건설현장이나 장비 설치환경",
+      "full_statement": "건설용 기계의 안전한 설치를 위해 건설현장이나 장비 설치환경을 점검한다.",
+      "source_sentence": "불도저, 모터 그레이더, 로더 등의 건설용 기계의 안전한 설치를 위해 건설현장이나 장비 설치환경을 점검한 후 기계를 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "건설용 기계",
+      "full_statement": "불도저, 모터 그레이더, 로더 등의 건설용 기계를 설치한다.",
+      "source_sentence": "불도저, 모터 그레이더, 로더 등의 건설용 기계의 안전한 설치를 위해 건설현장이나 장비 설치환경을 점검한 후 기계를 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "장비의 작동상태",
+      "full_statement": "장비의 작동상태를 점검한다.",
+      "source_sentence": "장비의 작동상태를 점검하고 부품의 균열 마모상태를 점검하여 교체하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "부품의 균열·마모상태",
+      "full_statement": "부품의 균열·마모상태를 점검한다.",
+      "source_sentence": "장비의 작동상태를 점검하고 부품의 균열 마모상태를 점검하여 교체하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 통합",
+      "confidence": 0.91
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "균열·마모된 부품을 교체한다.",
+      "source_sentence": "장비의 작동상태를 점검하고 부품의 균열 마모상태를 점검하여 교체하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "수리하다",
+      "object": "부품",
+      "full_statement": "균열·마모된 부품을 수리하여 정비한다.",
+      "source_sentence": "장비의 작동상태를 점검하고 부품의 균열 마모상태를 점검하여 교체하거나 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "점검하다",
+      "object": "장비 및 부품의 고장부위",
+      "full_statement": "요구되는 수리의 범위를 결정하기 위하여 장비 및 부품의 균열, 마모상태 고장부위를 점검한다.",
+      "source_sentence": "요구되는 수리의 범위를 결정하기 위하여 장비 및 부품의 균열, 마모상태 고장부위를 점검하고 필요한 시험을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시험하다",
+      "object": "장비 및 부품",
+      "full_statement": "수리의 범위를 결정하기 위하여 장비 및 부품에 필요한 시험을 한다.",
+      "source_sentence": "요구되는 수리의 범위를 결정하기 위하여 장비 및 부품의 균열, 마모상태 고장부위를 점검하고 필요한 시험을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분해하다",
+      "object": "고장 또는 결함이 있는 부품",
+      "full_statement": "고장 또는 결함이 있는 부품을 분해·수리한다.",
+      "source_sentence": "고장 또는 결함이 있는 부품을 분해‧수리하거나 교체하여 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "교체하다",
+      "object": "고장 또는 결함이 있는 부품",
+      "full_statement": "고장 또는 결함이 있는 부품을 교체한다.",
+      "source_sentence": "고장 또는 결함이 있는 부품을 분해‧수리하거나 교체하여 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리하거나 교체한 부품을 재조립한다.",
+      "source_sentence": "고장 또는 결함이 있는 부품을 분해‧수리하거나 교체하여 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "시험하다",
+      "object": "성능",
+      "full_statement": "엔진동력계, 유압측정기 등의 측정 기구를 사용하여 성능을 시험한다.",
+      "source_sentence": "엔진동력계, 유압측정기 등의 측정 기구를 사용하여 성능을 시험하고 필요한 조정을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "성능",
+      "full_statement": "성능 시험 결과에 따라 필요한 조정을 한다.",
+      "source_sentence": "엔진동력계, 유압측정기 등의 측정 기구를 사용하여 성능을 시험하고 필요한 조정을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "수리한 장비의 작동상태",
+      "full_statement": "수리한 장비의 작동상태를 명세서와 비교·검사한다.",
+      "source_sentence": "수리한 장비의 작동상태를 명세서와 비교‧검사하고 필요한 조정을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조정하다",
+      "object": "수리한 장비",
+      "full_statement": "수리한 장비의 작동상태를 검사한 후 필요한 조정을 한다.",
+      "source_sentence": "수리한 장비의 작동상태를 명세서와 비교‧검사하고 필요한 조정을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "시동하다",
+      "object": "엔진",
+      "full_statement": "기능장애를 진단하기 위해 엔진을 시동하고 관찰한다.",
+      "source_sentence": "기능장애를 진단하기 위해 엔진을 시동, 관찰하고 소리를 듣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "진단하다",
+      "object": "기능장애",
+      "full_statement": "엔진을 시동·관찰하고 소리를 들어 기능장애를 진단한다.",
+      "source_sentence": "기능장애를 진단하기 위해 엔진을 시동, 관찰하고 소리를 듣는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "엔진동력계", "category": "장비", "evidence_span": "엔진동력계, 유압측정기 등의 측정 기구를 사용하여 성능을 시험하고"},
+    {"name": "유압측정기", "category": "장비", "evidence_span": "엔진동력계, 유압측정기 등의 측정 기구를 사용하여 성능을 시험하고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건설현장", "evidence_span": "건설용 기계의 안전한 설치를 위해 건설현장이나 장비 설치환경을 점검한 후 기계를 설치한다."},
+    {"category": "신체적", "value": "중량물(불도저·모터 그레이더·로더 등 건설용 기계) 취급", "evidence_span": "불도저, 모터 그레이더, 로더 등의 건설용 기계의 안전한 설치를 위해"}
+  ]
+}

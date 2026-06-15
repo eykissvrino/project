@@ -1,0 +1,144 @@
+{
+  "ksco_code": "78399",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "건물 보수 작업",
+      "full_statement": "건물을 보수하는 작업을 기획한다.",
+      "source_sentence": "건물을 보수하는 작업을 기획하고 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "건물 보수 작업",
+      "full_statement": "건물을 보수하는 작업을 수행한다.",
+      "source_sentence": "건물을 보수하는 작업을 기획하고 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "읽다",
+      "object": "제작도면",
+      "full_statement": "제작도면을 읽는다.",
+      "source_sentence": "제작도면을 읽고 평함석 위에 마킹작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "마킹하다",
+      "object": "평함석",
+      "full_statement": "평함석 위에 마킹작업을 한다.",
+      "source_sentence": "제작도면을 읽고 평함석 위에 마킹작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "절단하다",
+      "object": "함석",
+      "full_statement": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 함석을 절단한다.",
+      "source_sentence": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 절단, 절곡, 프레싱하며 납땜, 용접, 리벳 등으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절곡하다",
+      "object": "함석",
+      "full_statement": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 함석을 절곡한다.",
+      "source_sentence": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 절단, 절곡, 프레싱하며 납땜, 용접, 리벳 등으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "프레싱하다",
+      "object": "함석",
+      "full_statement": "프레스를 이용하여 사용목적에 맞게 함석을 프레싱한다.",
+      "source_sentence": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 절단, 절곡, 프레싱하며 납땜, 용접, 리벳 등으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조립하다",
+      "object": "함석",
+      "full_statement": "납땜, 용접, 리벳 등으로 함석을 조립한다.",
+      "source_sentence": "함석가위, 프레스, 재단기 등을 이용하여 사용목적에 맞게 절단, 절곡, 프레싱하며 납땜, 용접, 리벳 등으로 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "깔다",
+      "object": "방수지",
+      "full_statement": "건축물의 지붕, 벽체 등에 방수지를 깐다.",
+      "source_sentence": "건축물의 지붕, 벽체 등에 방수지를 깔고 평함석 또는 성형된 골함석을 설치하여 못이나 리벳 등으로 고정시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(지붕잇기)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설치하다",
+      "object": "평함석 또는 골함석",
+      "full_statement": "건축물의 지붕, 벽체 등에 평함석 또는 성형된 골함석을 설치한다.",
+      "source_sentence": "건축물의 지붕, 벽체 등에 방수지를 깔고 평함석 또는 성형된 골함석을 설치하여 못이나 리벳 등으로 고정시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(지붕잇기)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "고정하다",
+      "object": "함석",
+      "full_statement": "설치한 함석을 못이나 리벳 등으로 고정시킨다.",
+      "source_sentence": "건축물의 지붕, 벽체 등에 방수지를 깔고 평함석 또는 성형된 골함석을 설치하여 못이나 리벳 등으로 고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "씌우다",
+      "object": "용마루",
+      "full_statement": "함석판이 경사지게 맞닿는 곳에 용마루를 씌운다.",
+      "source_sentence": "함석판이 경사지게 맞닿는 곳에 용마루를 씌우고 못으로 고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "고정하다",
+      "object": "용마루",
+      "full_statement": "씌운 용마루를 못으로 고정시킨다.",
+      "source_sentence": "함석판이 경사지게 맞닿는 곳에 용마루를 씌우고 못으로 고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "바르다",
+      "object": "방수용 콤파운드",
+      "full_statement": "못, 볼트 등이 끼워진 부위에 방수용 콤파운드를 바른다.",
+      "source_sentence": "못, 볼트 등이 끼워진 부위에 방수용 콤파운드를 바른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설치하다",
+      "object": "물받이와 홈통",
+      "full_statement": "처마폭에 앵글을 이용하여 물받이와 홈통을 설치한다.",
+      "source_sentence": "처마폭에 앵글을 이용하여 물받이와 홈통을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "충진하다",
+      "object": "실란트(실리콘)",
+      "full_statement": "건축구조물의 기밀성 및 수밀성을 확보하기 위하여 간격 및 접합부에 실란트(실리콘)를 충진한다.",
+      "source_sentence": "건축구조물의 기밀성 및 수밀성을 확보하여 소음을 차단하고 이물질 및 물의 유입을 막기 위하여 간격 및 접합부에 실란트(실리콘)를 충진한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "함석가위", "category": "도구", "evidence_span": "함석가위, 프레스, 재단기 등을 이용하여"},
+    {"name": "프레스", "category": "장비", "evidence_span": "함석가위, 프레스, 재단기 등을 이용하여"},
+    {"name": "재단기", "category": "장비", "evidence_span": "함석가위, 프레스, 재단기 등을 이용하여"},
+    {"name": "용접기", "category": "장비", "evidence_span": "납땜, 용접, 리벳 등으로 조립한다"},
+    {"name": "앵글", "category": "도구", "evidence_span": "처마폭에 앵글을 이용하여 물받이와 홈통을 설치한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건축물의 지붕·벽체 등 고소 작업", "evidence_span": "건축물의 지붕, 벽체 등에 방수지를 깔고 평함석 또는 성형된 골함석을 설치하여"},
+    {"category": "신체적", "value": "수공구를 주로 사용하는 기능 중심 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

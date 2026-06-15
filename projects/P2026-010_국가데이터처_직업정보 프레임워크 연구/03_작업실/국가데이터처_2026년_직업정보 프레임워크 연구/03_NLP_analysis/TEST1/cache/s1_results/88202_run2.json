@@ -1,0 +1,70 @@
+{
+  "ksco_code": "88202",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "소각로",
+      "full_statement": "소각장에서 폐기물을 소각하는 소각로를 조작한다.",
+      "source_sentence": "소각장에서 폐기물을 소각시키는 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "장비",
+      "full_statement": "폐기물을 소각시키는 소각 장비를 조작한다.",
+      "source_sentence": "소각장에서 폐기물을 소각시키는 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "중앙통제장치",
+      "full_statement": "중앙통제장치를 통하여 쓰레기와 기타 폐기물을 소각하는 소각로를 조작한다.",
+      "source_sentence": "중앙통제장치를 통하여 쓰레기와 기타 폐기물을 소각하는 소각로를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "소각하다",
+      "object": "쓰레기와 기타 폐기물",
+      "full_statement": "소각로를 이용하여 쓰레기와 기타 폐기물을 소각한다.",
+      "source_sentence": "쓰레기와 기타 폐기물을 소각하는 소각로를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "소각 상태",
+      "full_statement": "쓰레기가 제대로 소각되었는가를 확인한다.",
+      "source_sentence": "쓰레기가 제대로 소각되었는가를 확인하고 관련 기기 조작자에게 지시와 명령을 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지시하다",
+      "object": "관련 기기 조작자",
+      "full_statement": "관련 기기 조작자에게 지시와 명령을 내린다.",
+      "source_sentence": "쓰레기가 제대로 소각되었는가를 확인하고 관련 기기 조작자에게 지시와 명령을 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터를 이용하여 소각 관련 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "소각로", "category": "장비", "evidence_span": "쓰레기와 기타 폐기물을 소각하는 소각로를 조작한다."},
+    {"name": "중앙통제장치", "category": "시스템", "evidence_span": "중앙통제장치를 통하여 쓰레기와 기타 폐기물을 소각하는 소각로를 조작한다."},
+    {"name": "소각 장비", "category": "장비", "evidence_span": "소각장에서 폐기물을 소각시키는 장비를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "소각장", "evidence_span": "소각장에서 폐기물을 소각시키는 장비를 조작한다."},
+    {"category": "사회적", "value": "관련 기기 조작자에게 지시·명령(팀 지휘)", "evidence_span": "관련 기기 조작자에게 지시와 명령을 내린다."}
+  ]
+}

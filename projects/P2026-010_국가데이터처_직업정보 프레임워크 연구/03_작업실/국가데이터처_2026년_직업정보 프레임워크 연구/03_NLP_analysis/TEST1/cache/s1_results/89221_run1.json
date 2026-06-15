@@ -1,0 +1,93 @@
+{
+  "ksco_code": "89221",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "인화지 제조기",
+      "full_statement": "디지털카메라 사진과 필름을 인화지 제조기로 조작한다.",
+      "source_sentence": "디지털카메라 사진·필름 등을 인화지 제조기로 조작하며, 노출된 사진필름을 가공하고 인화하는데 사용되는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가공하다",
+      "object": "노출된 사진필름",
+      "full_statement": "노출된 사진필름을 가공한다.",
+      "source_sentence": "노출된 사진필름을 가공하고 인화하는데 사용되는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "인화용 기계장비",
+      "full_statement": "사진필름을 인화하는 데 사용되는 기계장비를 조작한다.",
+      "source_sentence": "노출된 사진필름을 가공하고 인화하는데 사용되는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "사진필름 및 인화지 제조용 장비",
+      "full_statement": "사진필름 및 인화지 제조용 장비를 조작한다.",
+      "source_sentence": "사진필름 및 인화지 제조용 장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "사진판 코팅 및 보강용 장비",
+      "full_statement": "사진판 코팅 및 보강용 장비를 조작한다.",
+      "source_sentence": "사진판 코팅 및 보강용 장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "천연색 및 흑백필름 가공 장비",
+      "full_statement": "음화 또는 투명한 양화를 얻기 위하여 천연색 및 흑백필름을 가공하는 장비를 조작한다.",
+      "source_sentence": "음화 또는 투명한 양화를 얻기 위하여 천연색 및 흑백필름을 가공하는 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "흑백 및 컬러사진 인화용 장비",
+      "full_statement": "흑백 및 컬러사진을 인화하는 장비를 조작한다.",
+      "source_sentence": "흑백 및 컬러사진 인화, 확대 또는 축소용 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "사진 확대 또는 축소용 장비",
+      "full_statement": "사진을 확대 또는 축소하는 장비를 조작한다.",
+      "source_sentence": "흑백 및 컬러사진 인화, 확대 또는 축소용 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "찾아내다",
+      "object": "현상된 필름의 결함",
+      "full_statement": "현상된 필름의 결함을 찾아낸다.",
+      "source_sentence": "현상된 필름의 결함을 찾아내고 수정할 부분을 교정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교정하다",
+      "object": "수정할 부분",
+      "full_statement": "현상된 필름에서 수정할 부분을 교정한다.",
+      "source_sentence": "현상된 필름의 결함을 찾아내고 수정할 부분을 교정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "인화지 제조기", "category": "장비", "evidence_span": "디지털카메라 사진·필름 등을 인화지 제조기로 조작하며"},
+    {"name": "사진필름 및 인화지 제조용 장비", "category": "장비", "evidence_span": "사진필름 및 인화지 제조용 장비를 조작한다."},
+    {"name": "사진판 코팅 및 보강용 장비", "category": "장비", "evidence_span": "사진판 코팅 및 보강용 장비를 조작한다."},
+    {"name": "필름 가공 장비", "category": "장비", "evidence_span": "천연색 및 흑백필름을 가공하는 장비를 조작한다."},
+    {"name": "사진 인화·확대·축소용 장비", "category": "장비", "evidence_span": "흑백 및 컬러사진 인화, 확대 또는 축소용 장비를 조작한다."}
+  ],
+  "work_context": []
+}

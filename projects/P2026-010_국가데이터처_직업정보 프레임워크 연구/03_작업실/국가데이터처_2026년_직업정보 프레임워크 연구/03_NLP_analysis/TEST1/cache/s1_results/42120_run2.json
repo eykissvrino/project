@@ -1,0 +1,119 @@
+{
+  "ksco_code": "42120",
+  "tasks": [
+    {
+      "verb": "보호하다",
+      "object": "영유아",
+      "full_statement": "어린이집, 아동 복지시설, 탁아기관 등 보육 관련 시설에서 영유아 등을 보호한다.",
+      "source_sentence": "어린이집, 아동 복지시설, 탁아기관 등 보육 관련 시설에서 영유아 등을 보호하고 돌보는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "돌보다",
+      "object": "영유아",
+      "full_statement": "보육 관련 시설에서 영유아 등을 돌본다.",
+      "source_sentence": "어린이집, 아동 복지시설, 탁아기관 등 보육 관련 시설에서 영유아 등을 보호하고 돌보는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "영유아의 씻기",
+      "full_statement": "영유아 등이 스스로 씻을 수 있도록 지원한다.",
+      "source_sentence": "영유아 등이 스스로 씻고 옷을 입고 먹을 수 있도록 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "영유아의 옷 입기",
+      "full_statement": "영유아 등이 스스로 옷을 입을 수 있도록 지원한다.",
+      "source_sentence": "영유아 등이 스스로 씻고 옷을 입고 먹을 수 있도록 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "영유아의 식사",
+      "full_statement": "영유아 등이 스스로 먹을 수 있도록 지원한다.",
+      "source_sentence": "영유아 등이 스스로 씻고 옷을 입고 먹을 수 있도록 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "동반하다",
+      "object": "영유아",
+      "full_statement": "영유아 등의 통학 시 동반한다.",
+      "source_sentence": "통학 시 또는 야외 활동 시 동반한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "동반하다",
+      "object": "영유아",
+      "full_statement": "야외 활동 시 영유아 등을 동반한다.",
+      "source_sentence": "통학 시 또는 야외 활동 시 동반한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "하다",
+      "object": "게임",
+      "full_statement": "영유아 등과 함께 게임을 한다.",
+      "source_sentence": "영유아 등과 함께 게임을 하거나 책을 읽어주고, 이야기를 들려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "읽어주다",
+      "object": "책",
+      "full_statement": "영유아 등에게 책을 읽어준다.",
+      "source_sentence": "영유아 등과 함께 게임을 하거나 책을 읽어주고, 이야기를 들려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "들려주다",
+      "object": "이야기",
+      "full_statement": "영유아 등에게 이야기를 들려준다.",
+      "source_sentence": "영유아 등과 함께 게임을 하거나 책을 읽어주고, 이야기를 들려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "놀이 활동",
+      "full_statement": "영유아 등의 놀이 활동을 관찰한다.",
+      "source_sentence": "영유아 등의 놀이 활동을 관찰하고 제공되는 식사와 같은 개별 영유아 등의 활동 및 상태에 대한 기록을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기록하다",
+      "object": "개별 영유아의 활동 및 상태",
+      "full_statement": "제공되는 식사와 같은 개별 영유아 등의 활동 및 상태에 대한 기록을 한다.",
+      "source_sentence": "영유아 등의 놀이 활동을 관찰하고 제공되는 식사와 같은 개별 영유아 등의 활동 및 상태에 대한 기록을 하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "보육 관련 시설(어린이집, 아동 복지시설, 탁아기관)",
+      "evidence_span": "어린이집, 아동 복지시설, 탁아기관 등 보육 관련 시설에서 영유아 등을 보호하고 돌보는 업무를 수행한다."
+    },
+    {
+      "category": "장소",
+      "value": "야외 활동 시 시설 외부",
+      "evidence_span": "통학 시 또는 야외 활동 시 동반한다."
+    },
+    {
+      "category": "사회적",
+      "value": "영유아 대상 돌봄(대인 서비스)",
+      "evidence_span": "영유아 등을 보호하고 돌보는 업무를 수행한다."
+    }
+  ]
+}

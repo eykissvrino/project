@@ -1,0 +1,86 @@
+{
+  "ksco_code": "87233",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "운송지역",
+      "full_statement": "운행 전 운송지역을 확인한다.",
+      "source_sentence": "운송지역을 확인하고 엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "엔진오일·냉각수·타이어 공기압력",
+      "full_statement": "운행 전 엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "source_sentence": "운송지역을 확인하고 엔진오일, 냉각수, 타이어의 공기압력 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전장치 이상 유무",
+      "full_statement": "특정화물의 안전한 수송을 위하여 각종 안전장치의 이상 유무를 확인한다.",
+      "source_sentence": "특정화물의 안전한 수송을 위하여 각종 안전장치의 이상 유무를 확인 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운전하다",
+      "object": "대형 화물차",
+      "full_statement": "최대 적재량이 5톤 이상이거나 총중량이 10톤 이상인 대형 화물차를 운전한다.",
+      "source_sentence": "최대 적재량이 5톤 이상이거나 총중량이 10톤 이상인 대형 화물차나 건설기계로 등록되지 않은 12톤 이상 20톤 미만 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운전하다",
+      "object": "덤프트럭",
+      "full_statement": "건설기계로 등록되지 않은 12톤 이상 20톤 미만 덤프트럭을 운전한다.",
+      "source_sentence": "최대 적재량이 5톤 이상이거나 총중량이 10톤 이상인 대형 화물차나 건설기계로 등록되지 않은 12톤 이상 20톤 미만 덤프트럭을 운전한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수송하다",
+      "object": "화물",
+      "full_statement": "단거리 또는 장거리 화물을 수송하기 위하여 차량을 운전하여 화물을 수송한다.",
+      "source_sentence": "화물차 및 특수차 운전원은 단거리 또는 장거리 화물을 수송하기 위하여 트럭 등과 같은 차량을 운전한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "화물 이상 유무",
+      "full_statement": "목적지에 도착하여 화물의 이상 유무를 확인한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정리하다",
+      "object": "서류",
+      "full_statement": "수송 완료 후 관련 서류를 정리한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "인계하다",
+      "object": "서류",
+      "full_statement": "정리한 서류를 관련 부서에 인계한다.",
+      "source_sentence": "목적지에 도착하여 화물의 이상 유무를 확인하고, 서류를 정리하여 관련 부서에 인계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "대형 화물차", "category": "장비", "evidence_span": "최대 적재량이 5톤 이상이거나 총중량이 10톤 이상인 대형 화물차"},
+    {"name": "덤프트럭", "category": "장비", "evidence_span": "건설기계로 등록되지 않은 12톤 이상 20톤 미만 덤프트럭을 운전한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "중량물(대형 화물·5톤 이상) 취급", "evidence_span": "특정화물의 안전한 수송을 위하여 각종 안전장치의 이상 유무를 확인 한다"},
+    {"category": "시간적", "value": "단거리 또는 장거리 운행", "evidence_span": "단거리 또는 장거리 화물을 수송하기 위하여 트럭 등과 같은 차량을 운전한다"},
+    {"category": "신체적", "value": "손과 운전 장치 조작 기술 요구", "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"}
+  ]
+}

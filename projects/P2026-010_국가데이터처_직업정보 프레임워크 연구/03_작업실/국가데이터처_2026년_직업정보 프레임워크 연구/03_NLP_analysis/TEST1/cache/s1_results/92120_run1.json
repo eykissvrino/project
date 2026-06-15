@@ -1,0 +1,79 @@
+{
+  "ksco_code": "92120",
+  "tasks": [
+    {
+      "verb": "분류하다",
+      "object": "배송대상 화물",
+      "full_statement": "물류집결지에서 배송대상 화물을 배송지별로 분류한다.",
+      "source_sentence": "물류집결지에서 화물들을 배송지별로 분류하고, 배송차량에 실을 수 있도록 분류된 화물을 운반한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "화물의 배송지 정보",
+      "full_statement": "화물에 표기된 배송지 정보를 확인한다.",
+      "source_sentence": "물류집결지에서 화물들을 배송지별로 분류하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "부착하다",
+      "object": "배송지 정보",
+      "full_statement": "화물에 배송지 정보를 부착한다.",
+      "source_sentence": "화물을 옮기거나 배송지 정보를 부착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운반하다",
+      "object": "분류된 화물",
+      "full_statement": "분류된 화물을 배송차량에 실을 수 있도록 운반한다.",
+      "source_sentence": "배송차량에 실을 수 있도록 분류된 화물을 운반한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "옮기다",
+      "object": "화물",
+      "full_statement": "화물을 손으로 옮긴다.",
+      "source_sentence": "화물을 옮기거나 배송지 정보를 부착한다.",
+      "derived_from": "상속 주요업무→조상정의(중분류) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적재하다",
+      "object": "화물",
+      "full_statement": "분류된 화물을 배송차량에 적재한다.",
+      "source_sentence": "배송차량에 실을 수 있도록 분류된 화물을 운반한다.",
+      "derived_from": "세세분류 정의→조상정의(소분류) 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "하역하다",
+      "object": "화물",
+      "full_statement": "물류집결지에서 화물을 손으로 하역한다.",
+      "source_sentence": "화물을 손으로 하역, 적재, 분류하거나 도보나 차량 등을 이용하여 배달한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "물류집결지(실내 작업장)",
+      "evidence_span": "물류집결지에서 화물들을 배송지별로 분류하고"
+    },
+    {
+      "category": "신체적",
+      "value": "중량물 취급·상당한 육체적 노력",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    },
+    {
+      "category": "신체적",
+      "value": "손으로 하역·적재 등 수작업",
+      "evidence_span": "화물을 손으로 하역, 적재, 분류하거나"
+    }
+  ]
+}

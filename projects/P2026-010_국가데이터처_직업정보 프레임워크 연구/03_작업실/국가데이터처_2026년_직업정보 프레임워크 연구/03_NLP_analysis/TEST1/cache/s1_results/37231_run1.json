@@ -1,0 +1,70 @@
+{
+  "ksco_code": "37231",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "약사",
+      "full_statement": "약사를 보조하여 약국의 제반 업무를 돕는다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "입력하다",
+      "object": "의료보험 관련 사항",
+      "full_statement": "의료보험 관련 사항을 컴퓨터에 입력한다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "입력하다",
+      "object": "환자의 투약 자료",
+      "full_statement": "환자의 투약 자료를 컴퓨터에 입력한다.",
+      "source_sentence": "약사를 보조하여 약국의 제반 업무를 돕거나 의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정리하다",
+      "object": "입력할 자료",
+      "full_statement": "입력할 자료를 순서대로 정리한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "키보드",
+      "full_statement": "키보드를 조작하여 자료를 입력한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "입력 자료",
+      "full_statement": "입력이 완료되면 입력 자료를 검토한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "전송하다",
+      "object": "자료가 저장된 매체",
+      "full_statement": "검토 후 자료가 저장된 매체를 전송한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "의료보험 관련 사항 및 환자의 투약 자료를 컴퓨터에 입력한다."},
+    {"name": "키보드", "category": "HW", "evidence_span": "키보드를 조작하여 입력한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "약국(실내)", "evidence_span": "약사를 보조하여 약국의 제반 업무를 돕거나"},
+    {"category": "사회적", "value": "약사 보조(지원 업무)", "evidence_span": "약사를 보조하여 약국의 제반 업무를 돕거나"},
+    {"category": "신체적", "value": "반복적 자료 입력", "evidence_span": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드한다."}
+  ]
+}

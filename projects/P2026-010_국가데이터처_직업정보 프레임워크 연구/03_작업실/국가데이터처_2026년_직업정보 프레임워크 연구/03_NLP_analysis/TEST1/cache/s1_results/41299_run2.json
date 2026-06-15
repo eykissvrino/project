@@ -1,0 +1,119 @@
+{
+  "ksco_code": "41299",
+  "tasks": [
+    {
+      "verb": "순찰하다",
+      "object": "공사장·위험시설",
+      "full_statement": "공사장, 위험시설 등 위험한 장소를 정기적으로 순찰한다.",
+      "source_sentence": "공사장, 위험시설 등의 위험한 장소에서 안전여부를 정기적으로 순찰조사하고, 일반인들의 접근을 막아 사고방지를 하는 안전 순찰원",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조사하다",
+      "object": "안전 여부",
+      "full_statement": "위험한 장소의 안전 여부를 정기적으로 조사한다.",
+      "source_sentence": "위험한 장소에서 안전여부를 정기적으로 순찰 조사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "차단하다",
+      "object": "일반인 접근",
+      "full_statement": "위험 장소에 대한 일반인들의 접근을 막아 차단한다.",
+      "source_sentence": "일반인들의 접근을 막아 사고방지를 하는 안전 순찰원",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "방지하다",
+      "object": "사고",
+      "full_statement": "위험 장소에서 사고를 미연에 방지한다.",
+      "source_sentence": "일반인들의 접근을 막아 사고방지를 하는 안전 순찰원",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "순찰하다",
+      "object": "건물 내·외부",
+      "full_statement": "도난, 화재 등으로 인한 피해를 방지하기 위하여 건물의 내·외부를 순찰한다.",
+      "source_sentence": "도난, 화재 등으로 인한 피해를 미연에 방지하기 위하여 건물의 내·외부를 순찰하여 안전을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전",
+      "full_statement": "건물의 내·외부를 순찰하여 안전을 확인한다.",
+      "source_sentence": "도난, 화재 등으로 인한 피해를 미연에 방지하기 위하여 건물의 내·외부를 순찰하여 안전을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "단속하다",
+      "object": "불법주차",
+      "full_statement": "불법주차를 단속한다.",
+      "source_sentence": "불법주차를 단속한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수송하다",
+      "object": "귀중품",
+      "full_statement": "귀중품을 안전하게 수송한다.",
+      "source_sentence": "안전 순찰원·귀중품 수송원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "호송하다",
+      "object": "귀중품",
+      "full_statement": "도난·강탈을 방지하기 위하여 귀중품의 운송 과정을 호송한다.",
+      "source_sentence": "안전 순찰원·귀중품 수송원",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류) 보안 활동 결합",
+      "confidence": 0.68
+    },
+    {
+      "verb": "예방하다",
+      "object": "불법적 출입·도난·폭력",
+      "full_statement": "불법적 출입, 도난, 폭력 등 불법적인 행위를 예방한다.",
+      "source_sentence": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰하는 경호원과 청원경찰",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "감시하다",
+      "object": "보관 물건",
+      "full_statement": "창고나 매장에 보관된 물건의 손상 및 도난을 방지하기 위하여 대상을 감시한다.",
+      "source_sentence": "창고나 매장에 보관된 물건의 손상 및 도난을 방지하기 위하여 고객을 감시하거나 불법주차를 확인하고 증거를 채집하며 단속하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "채집하다",
+      "object": "증거",
+      "full_statement": "도난·손상 등 사건의 증거를 채집한다.",
+      "source_sentence": "창고나 매장에 보관된 물건의 손상 및 도난을 방지하기 위하여 고객을 감시하거나 불법주차를 확인하고 증거를 채집하며 단속하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "공사장·위험시설 등 위험한 장소(실외)",
+      "evidence_span": "공사장, 위험시설 등의 위험한 장소에서 안전여부를 정기적으로 순찰조사하고"
+    },
+    {
+      "category": "위험",
+      "value": "위험시설 등 위험 환경 노출",
+      "evidence_span": "공사장, 위험시설 등의 위험한 장소에서"
+    },
+    {
+      "category": "신체적",
+      "value": "정기적 순찰·이동(보행 순찰)",
+      "evidence_span": "안전여부를 정기적으로 순찰조사하고"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "ksco_code": "14132",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "섬유 및 의복제품 생산 활동",
+      "full_statement": "섬유 및 의복제품과 관련된 생산 활동을 기획한다.",
+      "source_sentence": "섬유 및 의복제품과 관련된 생산 활동을 기획‧관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "섬유 및 의복제품 생산 활동",
+      "full_statement": "섬유 및 의복제품과 관련된 생산 활동을 관리한다.",
+      "source_sentence": "섬유 및 의복제품과 관련된 생산 활동을 기획‧관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "섬유 및 의복제품 생산 활동",
+      "full_statement": "섬유 및 의복제품과 관련된 생산 활동을 조정한다.",
+      "source_sentence": "섬유 및 의복제품과 관련된 생산 활동을 기획‧관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "유지하다",
+      "object": "생산시스템",
+      "full_statement": "섬유 및 의복제품 생산시스템을 유지한다.",
+      "source_sentence": "생산시스템을 유지, 관리, 계획, 조직하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계획하다",
+      "object": "생산시스템",
+      "full_statement": "섬유 및 의복제품 생산시스템을 계획한다.",
+      "source_sentence": "생산시스템을 유지, 관리, 계획, 조직하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조직하다",
+      "object": "생산시스템",
+      "full_statement": "섬유 및 의복제품 생산시스템을 조직한다.",
+      "source_sentence": "생산시스템을 유지, 관리, 계획, 조직하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 섬유 및 의복 생산현장에서 작업자들을 관리한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 생산현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "감독하다",
+      "object": "작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 섬유 및 의복 생산현장에서 작업자들을 감독한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 생산현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "고용하다",
+      "object": "하도급업자 및 부하직원",
+      "full_statement": "하도급업자 및 부하직원을 고용한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동 을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "하도급업자 및 부하직원 활동",
+      "full_statement": "하도급업자 및 부하직원의 활동을 감독한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동 을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "운영",
+      "full_statement": "섬유 산업에서 운영을 감독한다.",
+      "source_sentence": "식품, 섬유, 화학, 금속, 기계 등의 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(섬유 관련만 보존)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "운영",
+      "full_statement": "섬유 산업에서 운영을 분석한다.",
+      "source_sentence": "식품, 섬유, 화학, 금속, 기계 등의 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(섬유 관련만 보존)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "판단하다",
+      "object": "인력, 장비 및 기술의 적정성",
+      "full_statement": "인력, 장비 및 사용되는 기술이 적정한지 판단한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "생산현장의 효율성",
+      "full_statement": "작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "생산제품의 품질 및 안전 규정 준수",
+      "full_statement": "품질향상, 안전성 등 생산제품의 품질 및 안전 규정을 지키는지 확인한다.",
+      "source_sentence": "품질향상, 안전성 등 생산제품의 품질 및 안전 규정을 지키는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "생산현장(섬유 및 의복 공장)",
+      "evidence_span": "작업절차가 명세서와 맞도록 생산현장에서 작업자들을 관리하고 감독한다."
+    },
+    {
+      "category": "사회적",
+      "value": "작업자 관리·감독(팀 관리)",
+      "evidence_span": "생산현장에서 작업자들을 관리하고 감독한다."
+    }
+  ]
+}

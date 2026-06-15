@@ -1,0 +1,69 @@
+{
+  "ksco_code": "84222",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "전해 도금 기계장치",
+      "full_statement": "전해방식으로 금속물체에 비철금속을 도금하는 기계장치를 조작한다.",
+      "source_sentence": "전해방식으로 금속물체에 비철금속을 도금하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "휘젓다",
+      "object": "도금액",
+      "full_statement": "도금처리하는 중에 도금액을 휘저어 섞는다.",
+      "source_sentence": "경우에 따라서는 도금처리하는 중에 도금액을 휘저어 섞거나 농도 등을 검사하기도 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "도금액 농도",
+      "full_statement": "도금처리 중에 도금액의 농도 등을 검사한다.",
+      "source_sentence": "경우에 따라서는 도금처리하는 중에 도금액을 휘저어 섞거나 농도 등을 검사하기도 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "건져내다",
+      "object": "귀금속 잔여분",
+      "full_statement": "도금처리가 끝난 뒤 도금액 속에서 귀금속의 잔여분을 건져낸다.",
+      "source_sentence": "도금처리가 끝난 뒤 도금액 속에서 귀금속의 잔여분을 건져내기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "금속 제품 세척 장비",
+      "full_statement": "전기도금 등 도금 준비과정에서 금속 제품을 청결하게 하는 장비를 조작한다.",
+      "source_sentence": "전기도금, 아연도금, 법랑처리 또는 유사가공을 위한 준비과정에서 금속 제품을 청결하게 하는 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "전기도금 장비",
+      "full_statement": "금속물체에 비철금속을 도금하기 위한 전기도금 장비를 조작한다.",
+      "source_sentence": "전기도금 장비와 철강제품 도포용 용해로 장비를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "도금 처리 상태",
+      "full_statement": "도금처리가 균일하게 이루어지는지 처리 상태를 검사한다.",
+      "source_sentence": "경우에 따라서는 도금처리하는 중에 도금액을 휘저어 섞거나 농도 등을 검사하기도 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "전해 도금 기계장치", "category": "장비", "evidence_span": "전해방식으로 금속물체에 비철금속을 도금하는 기계장치를 조작한다."},
+    {"name": "전기도금 장비", "category": "장비", "evidence_span": "전기도금 장비와 철강제품 도포용 용해로 장비를 조작한다."},
+    {"name": "금속 제품 세척 장비", "category": "장비", "evidence_span": "준비과정에서 금속 제품을 청결하게 하는 장비를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질(도금액) 취급", "evidence_span": "도금처리하는 중에 도금액을 휘저어 섞거나 농도 등을 검사하기도 하며"}
+  ]
+}

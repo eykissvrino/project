@@ -1,0 +1,95 @@
+{
+  "ksco_code": "35290",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "국가행정 및 지방행정 업무",
+      "full_statement": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획한다.",
+      "source_sentence": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "국가행정 및 지방행정 업무",
+      "full_statement": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 시행한다.",
+      "source_sentence": "법령과 업무처리 규정에 따라 국가행정 및 지방행정 업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기안하다",
+      "object": "각종 보고서나 문서",
+      "full_statement": "각종 보고서나 문서를 기안한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "기안한 보고서나 문서",
+      "full_statement": "기안한 보고서나 문서를 시행한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "공공행정 업무",
+      "full_statement": "기타 국가행정·지방행정·공공행정 업무를 수행한다.",
+      "source_sentence": "각종 보고서나 문서를 기안하고 시행하며 기타 국가행정, 지방행정, 공공행정 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "처리하다",
+      "object": "각종 행정 실무",
+      "full_statement": "중앙 및 지방행정기관에서 각종 행정 실무를 처리한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "처리하다",
+      "object": "민원 업무",
+      "full_statement": "중앙 및 지방행정기관에서 민원 업무를 처리한다.",
+      "source_sentence": "중앙 및 지방행정기관에서 각종 행정 실무 및 민원 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "적용하다",
+      "object": "법령과 업무처리규정",
+      "full_statement": "정부행정업무 수행 시 법령과 업무처리규정을 적용한다.",
+      "source_sentence": "법령과 업무처리규정에 따라 정부행정업무를 계획하고 시행하며, 각종 보고서나 문서를 기안하고 기타 행정에 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "기록하다",
+      "object": "행정 관련 정보",
+      "full_statement": "행정 업무에 관련된 정보를 기록한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "보관하다",
+      "object": "행정 관련 문서·정보",
+      "full_statement": "행정 업무에 관련된 문서와 정보를 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "검색하다",
+      "object": "행정 관련 정보",
+      "full_statement": "필요 시 보관된 행정 관련 정보를 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

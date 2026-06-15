@@ -1,0 +1,85 @@
+{
+  "ksco_code": "83119",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무(세분류 8311)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "펌프",
+      "full_statement": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "source_sentence": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "derived_from": "상속 주요업무(세분류 8311)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무(세분류 8311)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합 기계",
+      "full_statement": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "source_sentence": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무(세분류 8311)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "조작하다",
+      "object": "천연가스 정제·증류·처리 기계",
+      "full_statement": "천연가스를 정제, 증류 및 처리하는 기계를 조작한다.",
+      "source_sentence": "천연가스 정제, 증류 및 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무(세분류 8311)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "조작하다",
+      "object": "액화가스제조기",
+      "full_statement": "천연가스 등을 액화하여 액화가스를 제조하는 액화가스제조기를 조작한다.",
+      "source_sentence": "[세세분류 직업 예시] 액화가스제조기 조작원",
+      "derived_from": "세세분류 직업 예시→상속 주요업무 특화",
+      "confidence": 0.66
+    },
+    {
+      "verb": "분리하다",
+      "object": "화학물 성분",
+      "full_statement": "화학물이나 천연원료를 성분별로 분리하기 위하여 관련 장치를 조작한다.",
+      "source_sentence": "석유 및 천연가스 제조를 위하여 화학물이나 천연원료를 성분별로 분리하거나 정제하는 관련 장치를 조작한다.",
+      "derived_from": "조상정의(세분류 8311)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "정제하다",
+      "object": "화학물·천연원료",
+      "full_statement": "석유 및 천연가스 제조를 위하여 화학물이나 천연원료를 정제하는 관련 장치를 조작한다.",
+      "source_sentence": "석유 및 천연가스 제조를 위하여 화학물이나 천연원료를 성분별로 분리하거나 정제하는 관련 장치를 조작한다.",
+      "derived_from": "조상정의(세분류 8311)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "제어하다",
+      "object": "산업용 기계·장비",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 자동화된 산업용 기계 및 장비를 제어하여 제품을 생산한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류 8)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "증류기", "category": "장비", "evidence_span": "분리 또는 정제하는 증류기를 조작한다"},
+    {"name": "펌프", "category": "장비", "evidence_span": "정제과정으로 순환시키는 펌프를 조작한다"},
+    {"name": "혼합 기계", "category": "장비", "evidence_span": "석유와 혼합하는 기계를 조작한다"},
+    {"name": "천연가스 정제·증류·처리 기계", "category": "장비", "evidence_span": "천연가스 정제, 증류 및 처리하는 기계를 조작한다"},
+    {"name": "액화가스제조기", "category": "장비", "evidence_span": "액화가스제조기 조작원"}
+  ],
+  "work_context": []
+}

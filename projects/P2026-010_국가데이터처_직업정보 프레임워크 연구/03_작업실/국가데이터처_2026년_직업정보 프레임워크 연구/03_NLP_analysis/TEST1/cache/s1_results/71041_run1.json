@@ -1,0 +1,109 @@
+{
+  "ksco_code": "71041",
+  "tasks": [
+    {
+      "verb": "고르다",
+      "object": "견본",
+      "full_statement": "여러 단계의 가공 공정마다 견본을 고른다.",
+      "source_sentence": "여러 단계의 가공 공정마다 견본을 고른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "외양·맛·냄새",
+      "full_statement": "원료와 최종 생산품의 외양, 맛, 냄새 등이 표준에 맞는지를 검사한다.",
+      "source_sentence": "외양, 맛, 냄새 등이 표준에 맞는지를 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "매기다",
+      "object": "등급",
+      "full_statement": "원료 또는 최종 생산품의 등급을 매기고 분류한다.",
+      "source_sentence": "원료 또는 최종 생산품의 등급을 매기고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분류하다",
+      "object": "최종 생산품",
+      "full_statement": "원료 또는 최종 생산품을 등급에 따라 분류한다.",
+      "source_sentence": "원료 또는 최종 생산품의 등급을 매기고 분류한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "품질",
+      "full_statement": "식품의 맛이나 색깔, 부패 여부 등 원료와 최종 생산품이 표준에 맞는지 품질을 결정한다.",
+      "source_sentence": "식품의 맛이나 색깔, 부패 여부 등 원료와 최종 생산품이 표준에 맞는지 품질을 결정하고 적합한 등급으로 선별하기 위하여 각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선별하다",
+      "object": "농산물·식품·음료",
+      "full_statement": "각종 농산물, 식품 및 음료를 적합한 등급으로 선별한다.",
+      "source_sentence": "적합한 등급으로 선별하기 위하여 각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "농산물·식품·음료",
+      "full_statement": "각종 농산물, 식품 및 음료를 검사한다.",
+      "source_sentence": "각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시식하다",
+      "object": "식품",
+      "full_statement": "식품을 시식하여 맛과 품질을 확인한다.",
+      "source_sentence": "각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시음하다",
+      "object": "음료",
+      "full_statement": "음료를 시음하여 맛과 품질을 확인한다.",
+      "source_sentence": "각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "시향하다",
+      "object": "식품·음료",
+      "full_statement": "식품 및 음료의 향을 시향하여 품질을 확인한다.",
+      "source_sentence": "각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "확인하다",
+      "object": "부패 여부",
+      "full_statement": "식품의 부패 여부를 확인하여 표준 적합성을 판단한다.",
+      "source_sentence": "식품의 맛이나 색깔, 부패 여부 등 원료와 최종 생산품이 표준에 맞는지 품질을 결정하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "색깔",
+      "full_statement": "식품의 색깔이 표준에 맞는지를 확인한다.",
+      "source_sentence": "식품의 맛이나 색깔, 부패 여부 등 원료와 최종 생산품이 표준에 맞는지 품질을 결정하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "맛·냄새·색깔·향 등 감각을 이용한 정밀 관능 검사",
+      "evidence_span": "각종 농산물, 식품 및 음료를 검사, 시식, 시음 및 시향하고 등급을 매긴다."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "ksco_code": "44229",
+  "tasks": [
+    {
+      "verb": "맞이하다",
+      "object": "손님",
+      "full_statement": "콘도, 모텔 및 그 외 숙박시설에서 손님을 맞이한다.",
+      "source_sentence": "콘도, 모텔 및 그 외 숙박시설에서 손님에게 시중을 들고 서비스를 제공한다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "들다",
+      "object": "손님 시중",
+      "full_statement": "숙박시설에서 손님에게 시중을 든다.",
+      "source_sentence": "콘도, 모텔 및 그 외 숙박시설에서 손님에게 시중을 들고 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.72
+    },
+    {
+      "verb": "제공하다",
+      "object": "서비스",
+      "full_statement": "숙박시설에서 손님에게 서비스를 제공한다.",
+      "source_sentence": "콘도, 모텔 및 그 외 숙박시설에서 손님에게 시중을 들고 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.68
+    },
+    {
+      "verb": "열다",
+      "object": "승용차 문",
+      "full_statement": "숙박시설 정문에서 승용차의 문을 열고 고객을 맞이한다.",
+      "source_sentence": "호텔의 정문에서 승용차의 문을 열고 고객을 맞이하고 호텔로 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "안내하다",
+      "object": "고객",
+      "full_statement": "맞이한 고객을 숙박시설 내부로 안내한다.",
+      "source_sentence": "호텔의 정문에서 승용차의 문을 열고 고객을 맞이하고 호텔로 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "운송하다",
+      "object": "고객의 짐",
+      "full_statement": "고객의 짐을 객실로 운송한다.",
+      "source_sentence": "고객의 짐이나 요구물품 등을 룸으로 운송한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.66
+    },
+    {
+      "verb": "운송하다",
+      "object": "요구물품",
+      "full_statement": "고객이 요구한 물품을 객실로 운송한다.",
+      "source_sentence": "고객의 짐이나 요구물품 등을 룸으로 운송한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.64
+    },
+    {
+      "verb": "안내하다",
+      "object": "시설",
+      "full_statement": "고객에게 숙박시설 이용 관련 시설을 안내한다.",
+      "source_sentence": "각종 숙박시설에서 고객에게 문을 열어주며 고객을 맞이하거나, 고객의 짐을 운반해 주거나 시설안내 등 숙박 관련 편의서비스를 제공한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "제공하다",
+      "object": "편의서비스",
+      "full_statement": "고객에게 숙박 관련 편의서비스를 제공한다.",
+      "source_sentence": "각종 숙박시설에서 고객에게 문을 열어주며 고객을 맞이하거나, 고객의 짐을 운반해 주거나 시설안내 등 숙박 관련 편의서비스를 제공한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수행하다",
+      "object": "고객 편의 관련 서비스 업무",
+      "full_statement": "기타 숙박시설에서 고객의 편의와 관련된 서비스 업무를 수행한다.",
+      "source_sentence": "기타 숙박시설에서 고객의 편의와 관련된 서비스 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(손님에게 시중·서비스 제공)",
+      "evidence_span": "콘도, 모텔 및 그 외 숙박시설에서 손님에게 시중을 들고 서비스를 제공한다."
+    },
+    {
+      "category": "장소",
+      "value": "숙박시설 실내(콘도·모텔·여관 등)",
+      "evidence_span": "콘도, 모텔 및 그 외 숙박시설에서 손님에게 시중을 들고 서비스를 제공한다."
+    },
+    {
+      "category": "신체적",
+      "value": "고객의 짐 운반(중량물 취급)",
+      "evidence_span": "고객의 짐을 운반해 주거나"
+    }
+  ]
+}

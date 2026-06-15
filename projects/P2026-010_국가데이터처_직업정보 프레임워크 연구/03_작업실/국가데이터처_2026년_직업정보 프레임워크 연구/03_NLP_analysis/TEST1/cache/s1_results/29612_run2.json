@@ -1,0 +1,130 @@
+{
+  "ksco_code": "29612",
+  "tasks": [
+    {
+      "verb": "지도하다",
+      "object": "선수",
+      "full_statement": "선수의 기량 향상을 위해 선수를 개인적으로 또는 집단적으로 지도한다.",
+      "source_sentence": "선수의 기량향상을 위해 가르칠 운동기술의 시범을 보여주면서 선수를 개인적으로 또는 집단적으로 지도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시범보이다",
+      "object": "운동기술",
+      "full_statement": "선수에게 가르칠 운동기술의 시범을 보여준다.",
+      "source_sentence": "선수의 기량향상을 위해 가르칠 운동기술의 시범을 보여주면서 선수를 개인적으로 또는 집단적으로 지도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지도하다",
+      "object": "운동기술",
+      "full_statement": "선수의 기량 향상을 위해 운동기술을 가르친다.",
+      "source_sentence": "선수의 기량향상을 위해 가르칠 운동기술의 시범을 보여주면서 선수를 개인적으로 또는 집단적으로 지도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "선수의 기량",
+      "full_statement": "선수의 기량을 평가하여 적절한 위치에 배치한다.",
+      "source_sentence": "선수의 기량을 평가하여 적절한 위치에 배치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "배치하다",
+      "object": "선수",
+      "full_statement": "선수의 기량 평가 결과에 따라 선수를 적절한 위치에 배치한다.",
+      "source_sentence": "선수의 기량을 평가하여 적절한 위치에 배치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "자기 팀이나 상대팀의 전력",
+      "full_statement": "시합에 임하기 전에 자기 팀이나 상대팀의 전력을 평가·분석한다.",
+      "source_sentence": "시합에 임하기 전에 자기 팀이나 상대팀의 전력을 평가‧ 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "자기 팀이나 상대팀의 전력",
+      "full_statement": "시합에 임하기 전에 자기 팀이나 상대팀의 전력을 분석한다.",
+      "source_sentence": "시합에 임하기 전에 자기 팀이나 상대팀의 전력을 평가‧ 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "관전하다",
+      "object": "관련 경기",
+      "full_statement": "유능한 선수를 발굴하기 위하여 관련 경기를 관전한다.",
+      "source_sentence": "유능한 선수를 발굴하기 위하여 관련 경기를 관전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "발굴하다",
+      "object": "유능한 선수",
+      "full_statement": "관련 경기 관전을 통해 유능한 선수를 발굴한다.",
+      "source_sentence": "유능한 선수를 발굴하기 위하여 관련 경기를 관전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "운동선수의 지식·능력·실력",
+      "full_statement": "운동선수의 지식, 능력, 실력을 개발시키기 위하여 지도한다.",
+      "source_sentence": "운동선수의 지식, 능력, 실력을 개발시키기 위하여 지도하고 경기에서 승리하기 위한 전략과 작전을 수립한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수립하다",
+      "object": "전략과 작전",
+      "full_statement": "경기에서 승리하기 위한 전략과 작전을 수립한다.",
+      "source_sentence": "운동선수의 지식, 능력, 실력을 개발시키기 위하여 지도하고 경기에서 승리하기 위한 전략과 작전을 수립한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "관리하다",
+      "object": "경기훈련",
+      "full_statement": "운동경기에 참여하고 경기훈련을 관리한다.",
+      "source_sentence": "운동경기에 참여하고 경기훈련을 관리하며 경기 규칙을 준수하도록 유도하고, 이들 경기의 진행을 관리하며, 체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "유도하다",
+      "object": "경기 규칙 준수",
+      "full_statement": "선수가 경기 규칙을 준수하도록 유도한다.",
+      "source_sentence": "운동경기에 참여하고 경기훈련을 관리하며 경기 규칙을 준수하도록 유도하고, 이들 경기의 진행을 관리하며, 체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "체력훈련",
+      "full_statement": "체력훈련을 통하여 선수의 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "source_sentence": "체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "선수를 개인적으로 또는 집단적으로 지도(대면 지도·집단 지도)",
+      "evidence_span": "선수를 개인적으로 또는 집단적으로 지도한다."
+    },
+    {
+      "category": "신체적",
+      "value": "운동기술 시범을 직접 보임(신체 실연)",
+      "evidence_span": "가르칠 운동기술의 시범을 보여주면서"
+    }
+  ]
+}

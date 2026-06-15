@@ -1,0 +1,123 @@
+{
+  "ksco_code": "21321",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "전답작물과 목초 및 원예작물 관련 기술적 업무",
+      "full_statement": "농경학자 및 원예학자의 관리 하에 전답작물과 목초 및 원예작물에 관한 연구 관련 기술적 업무를 수행한다.",
+      "source_sentence": "농경학자 및 원예학자의 관리 하에 전답작물과 목초 및 원예작물에 관한 연구와 관련된 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보조하다",
+      "object": "전답작물·목초·원예작물 연구",
+      "full_statement": "농경학자 및 원예학자의 관리·감독 하에 전답작물·목초·원예작물 연구를 보조한다.",
+      "source_sentence": "농림어업의 개념, 이론 및 운영방법의 개선, 개발과 관련하여 관련 전문가의 관리, 감독 하에 기술적인 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수집하다",
+      "object": "자료",
+      "full_statement": "전답작물 및 원예작물 연구에 필요한 자료를 수집한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "실험",
+      "full_statement": "전답작물·목초·원예작물에 관한 실험을 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "검사",
+      "full_statement": "전답작물 및 원예작물에 관한 검사를 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수행하다",
+      "object": "분석",
+      "full_statement": "전답작물 및 원예작물에 관한 분석을 보조하거나 직접 수행한다.",
+      "source_sentence": "자료를 수집하고 실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "세부 견적서",
+      "full_statement": "주어진 명세서에 따라 연구에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "source_sentence": "주어진 명세서에 따라 연구에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "연구과정에서 야기되는 문제",
+      "full_statement": "연구과정에서 야기되는 문제를 확인한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "응용하다",
+      "object": "기술적 지식",
+      "full_statement": "연구과정에서 야기되는 문제를 해결하기 위하여 기술적 지식을 응용한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "유지하다",
+      "object": "실험기기",
+      "full_statement": "연구에 사용되는 실험기기를 유지한다.",
+      "source_sentence": "실험기기를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "보수하다",
+      "object": "실험기기",
+      "full_statement": "연구에 사용되는 실험기기를 보수한다.",
+      "source_sentence": "실험기기를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "연구하다",
+      "object": "화훼·채소·과수 재배",
+      "full_statement": "화훼·채소·과수 등 원예작물의 재배에 관한 기술적 연구를 수행한다.",
+      "source_sentence": "화훼재배 시험원·채소재배 시험원, 원예 시험원·과수재배 시험원",
+      "derived_from": "세세분류 정의→직업예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "연구하다",
+      "object": "토양",
+      "full_statement": "전답작물 및 원예작물 재배와 관련된 토양에 관한 기술적 연구를 수행한다.",
+      "source_sentence": "토양학 시험원·원예학 시험원",
+      "derived_from": "직업예시 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "지도하다",
+      "object": "농업·축산 기술",
+      "full_statement": "농업 및 축산 분야의 기술을 지도한다.",
+      "source_sentence": "농업지도원·축산지도원",
+      "derived_from": "직업예시 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "실험기기", "category": "장비", "evidence_span": "실험기기를 유지 및 보수한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "농경학자 및 원예학자의 관리·감독 하에 업무 수행", "evidence_span": "농경학자 및 원예학자의 관리 하에 전답작물과 목초 및 원예작물에 관한 연구와 관련된 기술적 업무를 수행한다."}
+  ]
+}

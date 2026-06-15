@@ -1,0 +1,109 @@
+{
+  "ksco_code": "43220",
+  "tasks": [
+    {
+      "verb": "정리하다",
+      "object": "예식장 의자",
+      "full_statement": "결혼식 진행을 위하여 예식장 내의 의자를 정리·정돈한다.",
+      "source_sentence": "예식장내의 의자, 마이크시설, 카펫 등을 정리·정돈한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "정돈하다",
+      "object": "마이크시설",
+      "full_statement": "예식 진행을 위하여 마이크시설을 정리·정돈한다.",
+      "source_sentence": "예식장내의 의자, 마이크시설, 카펫 등을 정리·정돈한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정돈하다",
+      "object": "카펫",
+      "full_statement": "예식장 내의 카펫을 정리·정돈한다.",
+      "source_sentence": "예식장내의 의자, 마이크시설, 카펫 등을 정리·정돈한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준비하다",
+      "object": "성혼선언문",
+      "full_statement": "예식 진행에 필요한 성혼선언문을 준비한다.",
+      "source_sentence": "예식진행에 필요한 성혼선언문, 장갑, 꽃 등을 준비하고 방송시설을 이용하여 하객을 장내로 유도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "준비하다",
+      "object": "장갑·꽃 등 예식 자료",
+      "full_statement": "예식 진행에 필요한 장갑, 꽃 등의 자료를 준비한다.",
+      "source_sentence": "예식진행에 필요한 성혼선언문, 장갑, 꽃 등을 준비하고 방송시설을 이용하여 하객을 장내로 유도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "유도하다",
+      "object": "하객",
+      "full_statement": "방송시설을 이용하여 하객을 장내로 유도한다.",
+      "source_sentence": "예식진행에 필요한 성혼선언문, 장갑, 꽃 등을 준비하고 방송시설을 이용하여 하객을 장내로 유도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "예식 진행과정",
+      "full_statement": "예식의 진행과정을 관찰한다.",
+      "source_sentence": "예식의 진행과정을 관찰하여 신랑‧신부의 의상과 결혼식순을 도와준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "교정하다",
+      "object": "신랑·신부의 의상과 행동",
+      "full_statement": "예식 진행과정을 관찰하여 신랑‧신부의 의상과 행동을 교정해준다.",
+      "source_sentence": "예식 진행과정을 관찰하여 신랑‧신부의 의상과 행동을 교정해주는 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "도와주다",
+      "object": "결혼식순",
+      "full_statement": "신랑‧신부가 결혼식순을 따르도록 도와준다.",
+      "source_sentence": "예식의 진행과정을 관찰하여 신랑‧신부의 의상과 결혼식순을 도와준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "진행하다",
+      "object": "결혼식",
+      "full_statement": "예식을 진행한다.",
+      "source_sentence": "결혼을 주선하거나 예식을 진행하며, 장례 관련 업무에 종사한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "담당하다",
+      "object": "주례",
+      "full_statement": "요청 시 주례를 담당한다.",
+      "source_sentence": "전문주례사는 요청 시 주례를 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "대행하다",
+      "object": "주례업무",
+      "full_statement": "요청 시 주례업무를 대행한다.",
+      "source_sentence": "요청 시 주례업무를 대행하는 사람도 이 직종에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "마이크시설", "category": "장비", "evidence_span": "예식장내의 의자, 마이크시설, 카펫 등을 정리·정돈한다."},
+    {"name": "방송시설", "category": "장비", "evidence_span": "방송시설을 이용하여 하객을 장내로 유도한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "예식장 내 실내 작업", "evidence_span": "예식장내의 의자, 마이크시설, 카펫 등을 정리·정돈한다."},
+    {"category": "사회적", "value": "하객·신랑신부 응대 등 대인 서비스", "evidence_span": "방송시설을 이용하여 하객을 장내로 유도한다."}
+  ]
+}

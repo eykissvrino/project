@@ -1,0 +1,58 @@
+{
+  "ksco_code": "41292",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "불법주차",
+      "full_statement": "불법주차 차량을 확인한다.",
+      "source_sentence": "주로 지방자치단체에 고용되어 불법주차를 확인하고 증거를 채집하며 단속하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "채집하다",
+      "object": "증거",
+      "full_statement": "불법주차 단속을 위한 증거를 채집한다.",
+      "source_sentence": "주로 지방자치단체에 고용되어 불법주차를 확인하고 증거를 채집하며 단속하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "단속하다",
+      "object": "불법주차",
+      "full_statement": "불법주차를 단속한다.",
+      "source_sentence": "불법주차를 단속한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "순찰하다",
+      "object": "위험한 장소",
+      "full_statement": "위험한 장소에서 안전여부를 정기적으로 순찰 조사한다.",
+      "source_sentence": "위험한 장소에서 안전여부를 정기적으로 순찰 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조사하다",
+      "object": "안전여부",
+      "full_statement": "정기적으로 안전여부를 조사한다.",
+      "source_sentence": "위험한 장소에서 안전여부를 정기적으로 순찰 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "지방자치단체 고용(소속 기관 단속 업무)",
+      "evidence_span": "주로 지방자치단체에 고용되어 불법주차를 확인하고 증거를 채집하며 단속하는 업무를 수행한다."
+    },
+    {
+      "category": "장소",
+      "value": "이동·실외 순찰",
+      "evidence_span": "위험한 장소에서 안전여부를 정기적으로 순찰 조사한다."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "ksco_code": "37291",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "출판물의 디자인",
+      "full_statement": "출판물의 디자인을 검토한다.",
+      "source_sentence": "출판물의 디자인을 검토하고 작업순서와 방법을 설정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "설정하다",
+      "object": "작업순서와 방법",
+      "full_statement": "출판물 제작의 작업순서와 방법을 설정한다.",
+      "source_sentence": "출판물의 디자인을 검토하고 작업순서와 방법을 설정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "입력하다",
+      "object": "문자나 그림, 로고, 사진",
+      "full_statement": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력한다.",
+      "source_sentence": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력하고 색채, 크기, 위치를 조정․편집한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "색채, 크기, 위치",
+      "full_statement": "입력한 요소의 색채, 크기, 위치를 조정한다.",
+      "source_sentence": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력하고 색채, 크기, 위치를 조정․편집한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "편집하다",
+      "object": "출판물",
+      "full_statement": "각종 출판물을 편집한다.",
+      "source_sentence": "컴퓨터를 이용하여 자료를 입력하고 각종 출판물을 편집하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "입력하다",
+      "object": "자료",
+      "full_statement": "컴퓨터를 이용하여 자료를 입력한다.",
+      "source_sentence": "컴퓨터를 이용하여 자료를 입력하고 각종 출판물을 편집하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "출력하다",
+      "object": "시험출력물",
+      "full_statement": "시험출력을 하여 결과물을 확인한다.",
+      "source_sentence": "시험출력을 하여 문제점을 파악․보완하고 인쇄공정에 넘길 판을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "파악하다",
+      "object": "문제점",
+      "full_statement": "시험출력 결과의 문제점을 파악하여 보완한다.",
+      "source_sentence": "시험출력을 하여 문제점을 파악․보완하고 인쇄공정에 넘길 판을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "만들다",
+      "object": "인쇄공정에 넘길 판",
+      "full_statement": "인쇄공정에 넘길 판을 만든다.",
+      "source_sentence": "시험출력을 하여 문제점을 파악․보완하고 인쇄공정에 넘길 판을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.77
+    },
+    {
+      "verb": "지원하다",
+      "object": "일반적인 사무",
+      "full_statement": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원한다.",
+      "source_sentence": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "작성하다",
+      "object": "문서",
+      "full_statement": "다른 사무 종사자의 지시를 받아 문서를 작성한다.",
+      "source_sentence": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "컴퓨터를 이용하여 자료를 입력하고 각종 출판물을 편집하는 업무를 수행한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "다른 사무 종사자의 지시를 받아 업무 수행(지원·보조 관계)", "evidence_span": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다."}
+  ]
+}

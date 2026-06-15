@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28340",
+  "tasks": [
+    {
+      "verb": "설계하다",
+      "object": "조사",
+      "full_statement": "설문조사·인터뷰 등 자료수집 방식을 설계하고 기획한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "사회·경제 조사",
+      "full_statement": "장래 경향을 평가하기 위해 사회 또는 경제조사를 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "구매 습관",
+      "full_statement": "소비자의 구매습관 및 선호도를 조사하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "조사원",
+      "full_statement": "면접원이나 조사원을 교육하고 실사를 감독한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "조사 보고서",
+      "full_statement": "조사 결과를 분석하여 보고서를 작성하고 발표한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

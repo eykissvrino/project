@@ -1,0 +1,111 @@
+{
+  "ksco_code": "29444",
+  "tasks": [
+    {
+      "verb": "추다",
+      "object": "궁중무용 정재",
+      "full_statement": "처용무, 학무 등의 궁중무용인 정재(呈才)를 춘다.",
+      "source_sentence": "처용무, 학무, 궁중무용인 정재(呈才)와 승무, 살풀이 등의 민속 무용을 추거나 전통적인 가면극이나 연극을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "추다",
+      "object": "민속 무용",
+      "full_statement": "승무, 살풀이 등의 민속 무용을 춘다.",
+      "source_sentence": "처용무, 학무, 궁중무용인 정재(呈才)와 승무, 살풀이 등의 민속 무용을 추거나 전통적인 가면극이나 연극을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "하다",
+      "object": "전통적인 가면극이나 연극",
+      "full_statement": "전통적인 가면극이나 연극을 한다.",
+      "source_sentence": "처용무, 학무, 궁중무용인 정재(呈才)와 승무, 살풀이 등의 민속 무용을 추거나 전통적인 가면극이나 연극을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "벌이다",
+      "object": "전통적인 가면극이나 연극",
+      "full_statement": "양주별산대놀이, 봉산탈춤 등 전통적인 가면극이나 연극을 벌인다.",
+      "source_sentence": "전통적인 가면극이나 연극을 벌인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "춘다",
+      "object": "정재",
+      "full_statement": "처용무, 학무, 연화대무, 진주검무, 통영승전무 등의 궁중무용인 정재(呈才)를 춘다.",
+      "source_sentence": "처용무, 학무, 연화대무, 진주검무, 통영승전무 등의 궁중무용인 정재(呈才)와 승무, 살풀이, 남무, 한량무, 태평무 등의 민속 무용을 춘다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "춘다",
+      "object": "민속 무용",
+      "full_statement": "승무, 살풀이, 남무, 한량무, 태평무 등의 민속 무용을 춘다.",
+      "source_sentence": "처용무, 학무, 연화대무, 진주검무, 통영승전무 등의 궁중무용인 정재(呈才)와 승무, 살풀이, 남무, 한량무, 태평무 등의 민속 무용을 춘다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "부르다",
+      "object": "판소리, 민요 등의 창",
+      "full_statement": "판소리, 민요 등의 창(唱)을 부른다.",
+      "source_sentence": "판소리, 민요 등의 창(唱)을 부르거나, 거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연주하다",
+      "object": "전통 악기",
+      "full_statement": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다.",
+      "source_sentence": "판소리, 민요 등의 창(唱)을 부르거나, 거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "하다",
+      "object": "고유 무예",
+      "full_statement": "우리 민족 고유의 무예인 궁술, 택견 등을 한다.",
+      "source_sentence": "우리 민족 고유의 무예인 궁술, 택견 등을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계승하다",
+      "object": "전통 음악·무용·연극",
+      "full_statement": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 계승한다.",
+      "source_sentence": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 계승하거나 보존한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "보존하다",
+      "object": "전통 음악·무용·연극",
+      "full_statement": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 보존한다.",
+      "source_sentence": "오랫동안 전승되어 온 음악이나 무용, 연극, 각종 놀이와 의식 등을 계승하거나 보존한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "공연하다",
+      "object": "전통 공연 예술작품",
+      "full_statement": "무용 및 기타 전통 예술작품을 공연한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "거문고", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "가야금", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "향비파", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."},
+    {"name": "대금", "category": "도구", "evidence_span": "거문고, 가야금, 향비파, 대금 등과 같은 악기를 연주한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "공연(관객 대상 무대 공연)", "evidence_span": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다."},
+    {"category": "신체적", "value": "무용·무예 등 신체 동작 수행", "evidence_span": "처용무, 학무, 궁중무용인 정재(呈才)와 승무, 살풀이 등의 민속 무용을 추거나"}
+  ]
+}

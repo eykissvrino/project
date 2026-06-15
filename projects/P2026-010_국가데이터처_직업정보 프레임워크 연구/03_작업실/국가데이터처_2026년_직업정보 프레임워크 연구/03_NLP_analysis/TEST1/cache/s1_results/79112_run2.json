@@ -1,0 +1,92 @@
+{
+  "ksco_code": "79112",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "목재 및 관련 재료",
+      "full_statement": "나무 등 공예에 사용할 재료를 준비한다.",
+      "source_sentence": "종이, 나무, 짚, 갈대 및 기타 재료를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목재 중심)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조각하다",
+      "object": "목재",
+      "full_statement": "손이나 간단한 도구를 이용하여 목재를 조각한다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 목재를 조각하거나 붙여서 각종 목제품을 제조한다.",
+      "derived_from": "세세분류 79112 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "붙이다",
+      "object": "목재",
+      "full_statement": "손이나 간단한 도구를 이용하여 목재를 붙인다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 목재를 조각하거나 붙여서 각종 목제품을 제조한다.",
+      "derived_from": "세세분류 79112 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "목제품",
+      "full_statement": "각종 목제품을 제조한다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 목재를 조각하거나 붙여서 각종 목제품을 제조한다.",
+      "derived_from": "세세분류 79112 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조립하다",
+      "object": "목제품 구성품",
+      "full_statement": "목제품의 여러 구성품을 조립한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목제품 중심)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "도장하다",
+      "object": "목제품 표면",
+      "full_statement": "목제품의 표면을 도장한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목제품 중심)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "장식하다",
+      "object": "목제품",
+      "full_statement": "목제품을 장식한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목제품 중심)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조각하다",
+      "object": "문양",
+      "full_statement": "목재 표면에 문양을 조각한다.",
+      "source_sentence": "전통장(箭筒匠) : 대나무 몸통 속의 마디를 제거하고 문양을 조각하며 마개와 덮개 및 끈을 달고 필요한 칠을 하여 화살통을 만든다.",
+      "derived_from": "상속 주요업무(목재 가공 활동)→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "칠하다",
+      "object": "목제품",
+      "full_statement": "완성된 목제품에 필요한 칠을 한다.",
+      "source_sentence": "전통장(箭筒匠) : 대나무 몸통 속의 마디를 제거하고 문양을 조각하며 마개와 덮개 및 끈을 달고 필요한 칠을 하여 화살통을 만든다.",
+      "derived_from": "상속 주요업무(목재 가공 활동)→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "옻칠하다",
+      "object": "목재",
+      "full_statement": "목재에 옻칠을 한다.",
+      "source_sentence": "나전장(螺鈿匠) : 전복껍질의 외피를 숫돌에 갈아 내피만을 종잇장처럼 만들어 자개를 만들고 자개로 무늬를 놓은 후 목재에 옻칠을 한다.",
+      "derived_from": "상속 주요업무(목재 가공 활동)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "간단한 도구(수공구)", "category": "도구", "evidence_span": "손이나 간단한 도구를 이용하여 목재를 조각하거나 붙여서 각종 목제품을 제조한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 이용한 수작업(기능 중심)", "evidence_span": "손이나 간단한 도구를 이용하여 목재를 조각하거나 붙여서 각종 목제품을 제조한다."},
+    {"category": "신체적", "value": "사람의 기능이 기계 성능보다 중요한 정밀 수작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

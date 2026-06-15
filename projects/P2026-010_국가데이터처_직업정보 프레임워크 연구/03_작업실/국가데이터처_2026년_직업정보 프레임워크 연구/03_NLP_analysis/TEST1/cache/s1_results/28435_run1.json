@@ -1,0 +1,117 @@
+{
+  "ksco_code": "28435",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "산업용 기계장비 영업활동",
+      "full_statement": "산업용 기계장비의 사용법·보수에 관한 전문적 지식과 기술을 활용하여 산업용 기계장비를 판매하기 위한 영업활동을 수행한다.",
+      "source_sentence": "산업용 기계장비의 사용법, 보수에 관한 전문적 지식과 기술을 활용하여 산업용 기계장비를 판매하기 위한 영업활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "촉진하다",
+      "object": "기존 고객 대상 판매",
+      "full_statement": "기존 고객을 대상으로 판매를 촉진시킬 수 있는 영업활동을 한다.",
+      "source_sentence": "기존 고객을 대상으로 판매를 촉진시킬 수 있는 영업활동을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파악하다",
+      "object": "잠재적 구매고객",
+      "full_statement": "잠재적인 구매고객을 파악한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설득하다",
+      "object": "구매고객",
+      "full_statement": "구매가 이루어지도록 고객을 설득한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파악하다",
+      "object": "고객의 필요 및 구매능력",
+      "full_statement": "고객의 필요 및 구매능력을 파악한다.",
+      "source_sentence": "고객의 필요 및 구매능력을 파악해 적합한 제품이나 서비스를 추천한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추천하다",
+      "object": "적합한 제품·서비스",
+      "full_statement": "고객의 필요 및 구매능력에 맞춰 적합한 제품이나 서비스를 추천한다.",
+      "source_sentence": "고객의 필요 및 구매능력을 파악해 적합한 제품이나 서비스를 추천한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "반영하다",
+      "object": "제품·서비스 조정사항",
+      "full_statement": "제품 또는 서비스가 고객의 요구사항에 맞춰 조정될 필요가 있을 시에는 이를 반영한다.",
+      "source_sentence": "제품 또는 서비스가 고객의 요구사항에 맞춰 조정될 필요가 있을 시에는 이를 반영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서·제안서",
+      "full_statement": "제품 또는 서비스의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "source_sentence": "제품 또는 서비스의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추산하다",
+      "object": "설치·유지비용",
+      "full_statement": "장비 또는 서비스의 설치, 유지비용을 추산한다.",
+      "source_sentence": "장비 또는 서비스의 설치, 유지비용을 추산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "판매계약서",
+      "full_statement": "판매계약서를 작성한다.",
+      "source_sentence": "판매계약서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "판매 후 발생 문제",
+      "full_statement": "제품 또는 서비스의 판매 후 문제가 발생했을 경우 이를 처리한다.",
+      "source_sentence": "제품 또는 서비스의 판매 후 문제가 발생했을 경우 이를 처리해주고, 계속적인 지원서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "지원서비스",
+      "full_statement": "판매 후 계속적인 지원서비스를 제공한다.",
+      "source_sentence": "제품 또는 서비스의 판매 후 문제가 발생했을 경우 이를 처리해주고, 계속적인 지원서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지도하다",
+      "object": "고객 기술 지도",
+      "full_statement": "기계나 장비, 설비 등의 사용법이나 보수 등 기술에 관한 전문적 지식을 활용하여 고객에게 기술적인 지도를 수행한다.",
+      "source_sentence": "산업용장비, 정보통신장비, 그 외의 부품이나 제품, 설비의 사용법이나 보수(A/S) 등 기술에 관한 전문적 지식을 활용하여 기계나 장비, 설비 등을 판매하고 고객에게 기술적인 지도를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대·설득",
+      "evidence_span": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다."
+    }
+  ]
+}

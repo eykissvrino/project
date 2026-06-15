@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28119",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "인사 정책",
+      "full_statement": "인사 및 노사관계 정책과 절차를 개발하고 실행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "인사 정보",
+      "full_statement": "인사관리에 필요한 기술적 정보를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "인사 정책",
+      "full_statement": "관리자와 종업원에게 인사정책 해석 등 자문을 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

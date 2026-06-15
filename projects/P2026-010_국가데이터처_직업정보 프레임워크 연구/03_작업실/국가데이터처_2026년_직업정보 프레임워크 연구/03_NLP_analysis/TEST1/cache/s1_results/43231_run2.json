@@ -1,0 +1,74 @@
+{
+  "ksco_code": "43231",
+  "tasks": [
+    {
+      "verb": "상담하다",
+      "object": "장례절차와 방법",
+      "full_statement": "의뢰인의 사전 방문에 따라 장례절차와 방법에 대해 상담한다.",
+      "source_sentence": "보통 장례와 관련하여 의뢰인의 사전 방문에 따라 장례절차와 방법에 대해 상담을 해주는 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "응대하다",
+      "object": "의뢰인의 사전 방문",
+      "full_statement": "장례를 준비하는 의뢰인의 사전 방문을 응대한다.",
+      "source_sentence": "보통 장례와 관련하여 의뢰인의 사전 방문에 따라 장례절차와 방법에 대해 상담을 해주는 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "필요한 물품",
+      "full_statement": "장례하는 분에게 필요한 물품을 설명한다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설명하다",
+      "object": "장례절차",
+      "full_statement": "장례하는 분에게 장례절차를 설명한다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "장례 진행",
+      "full_statement": "장례하는 분의 곁에서 장례 진행을 지원한다.",
+      "source_sentence": "장례하시는 분의 필요한 물품이나 장례절차 등을 설명하고 옆에서 도와주는 일을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "주선하다",
+      "object": "장례의식 및 매장",
+      "full_statement": "장례의식 및 매장에 관하여 주선한다.",
+      "source_sentence": "장례의식 및 매장에 관하여 주선하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "안내하다",
+      "object": "매장 관련 절차",
+      "full_statement": "장례의식 및 매장에 관한 절차를 의뢰인에게 안내한다.",
+      "source_sentence": "장례의식 및 매장에 관하여 주선하고 시행한다.",
+      "derived_from": "상속 주요업무→세세정의(상담) 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "의뢰인 대상 상담·응대(고객응대)",
+      "evidence_span": "의뢰인의 사전 방문에 따라 장례절차와 방법에 대해 상담을 해주는 업무를 한다."
+    },
+    {
+      "category": "장소",
+      "value": "장례업체·병원 장례식장·전문장례식장 등 실내 근무",
+      "evidence_span": "이들은 장례업체, 병원 장례식장, 전문장례식장 등에 고용되어 있다."
+    }
+  ]
+}

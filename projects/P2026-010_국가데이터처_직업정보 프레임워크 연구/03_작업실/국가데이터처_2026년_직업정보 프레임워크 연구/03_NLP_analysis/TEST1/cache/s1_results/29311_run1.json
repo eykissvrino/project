@@ -1,0 +1,191 @@
+{
+  "ksco_code": "29311",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "시나리오",
+      "full_statement": "영화제작을 위하여 시나리오를 검토한다.",
+      "source_sentence": "영화, TV프로그램, 광고 등을 제작하기 위해 시나리오를 검토하고, 영화배우를 결정하며, 촬영 및 기술을 관리하는 등 영화제작의 모든 과정을 감독, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "영화배우",
+      "full_statement": "출연할 영화배우를 결정한다.",
+      "source_sentence": "영화, TV프로그램, 광고 등을 제작하기 위해 시나리오를 검토하고, 영화배우를 결정하며, 촬영 및 기술을 관리하는 등 영화제작의 모든 과정을 감독, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "촬영 및 기술",
+      "full_statement": "영화제작의 촬영 및 기술을 관리한다.",
+      "source_sentence": "영화, TV프로그램, 광고 등을 제작하기 위해 시나리오를 검토하고, 영화배우를 결정하며, 촬영 및 기술을 관리하는 등 영화제작의 모든 과정을 감독, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "감독하다",
+      "object": "영화제작 전 과정",
+      "full_statement": "영화제작의 모든 과정을 감독하고 관리한다.",
+      "source_sentence": "영화, TV프로그램, 광고 등을 제작하기 위해 시나리오를 검토하고, 영화배우를 결정하며, 촬영 및 기술을 관리하는 등 영화제작의 모든 과정을 감독, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "작품의 주제와 성격",
+      "full_statement": "작품의 주제와 성격 등을 분석한다.",
+      "source_sentence": "작품의 주제, 성격 등을 분석하고 다양한 제작방침을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "제작방침",
+      "full_statement": "다양한 제작방침을 결정한다.",
+      "source_sentence": "작품의 주제, 성격 등을 분석하고 다양한 제작방침을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선정하다",
+      "object": "배역",
+      "full_statement": "배역을 선정한다.",
+      "source_sentence": "배역을 선정하고 후원자, 작가 및 제작진과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "후원자·작가·제작진",
+      "full_statement": "후원자, 작가 및 제작진과 협의한다.",
+      "source_sentence": "배역을 선정하고 후원자, 작가 및 제작진과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "해석하다",
+      "object": "작품",
+      "full_statement": "작품을 해석한다.",
+      "source_sentence": "작품을 해석하고 바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "출연자 및 제작진",
+      "full_statement": "바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독하고 관리한다.",
+      "source_sentence": "작품을 해석하고 바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "리허설",
+      "full_statement": "리허설을 감독한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "연기",
+      "full_statement": "출연자의 연기를 지도한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "편집하다",
+      "object": "작품",
+      "full_statement": "작품을 편집한다.",
+      "source_sentence": "리허설을 감독하고 연기를 지도하며 작품을 편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지시하다",
+      "object": "조명 관련 사항",
+      "full_statement": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등에 대한 조명 관련 사항을 조명기사에게 지시한다.",
+      "source_sentence": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등에 대한 조명 관련 사항에 대해 조명기사에게 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "음향장비 및 녹음장비의 기술적 분야",
+      "full_statement": "음향장비 및 녹음장비의 기술적인 분야를 계획한다.",
+      "source_sentence": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "지도하다",
+      "object": "음향장비 및 녹음장비의 기술적 분야",
+      "full_statement": "음향장비 및 녹음장비의 기술적인 분야를 지도하고 조정한다.",
+      "source_sentence": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검토하다",
+      "object": "대본",
+      "full_statement": "대본을 검토하고 장면의 해석과 촬영효과에 관하여 연출자와 협의한다.",
+      "source_sentence": "대본을 검토하고 장면의 해석과 촬영효과에 관하여 연출자와 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "협의하다",
+      "object": "조명 설치",
+      "full_statement": "조명 설치를 위하여 조명감독과 협의한다.",
+      "source_sentence": "조명 설치를 위하여 조명감독과 협의하고 화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지시하다",
+      "object": "촬영 사항",
+      "full_statement": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "source_sentence": "조명 설치를 위하여 조명감독과 협의하고 화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등을 감안하여 촬영기사에게 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "검토하다",
+      "object": "촬영기록",
+      "full_statement": "대본을 확인하고 영화촬영 시에 작성한 촬영기록을 검토한다.",
+      "source_sentence": "대본을 확인하고 영화촬영 시에 작성한 촬영기록을 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "결정하다",
+      "object": "연결·삭제부위",
+      "full_statement": "화면을 보면서 연결‧삭제부위를 결정하여 편집한다.",
+      "source_sentence": "화면을 보면서 연결‧삭제부위를 결정해 편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재편집하다",
+      "object": "영상",
+      "full_statement": "영화제작자 또는 영화 감독과 협의하여 편집한 영상을 확인하고 의견을 수렴하여 재편집한다.",
+      "source_sentence": "영화제작자 또는 영화 감독과 협의하여 편집한 영상을 확인하고 의견을 수렴하여 재편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "음향장비", "category": "장비", "evidence_span": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다."},
+    {"name": "녹음장비", "category": "장비", "evidence_span": "음향장비 및 녹음장비의 기술적인 분야를 계획하고 지도‧조정한다."},
+    {"name": "카메라", "category": "장비", "evidence_span": "화면의 노출조절, 촬영대상, 카메라의 움직임, 촬영거리 등에 대한 조명 관련 사항에 대해 조명기사에게 지시한다."},
+    {"name": "조명", "category": "장비", "evidence_span": "조명 설치를 위하여 조명감독과 협의하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "후원자·작가·제작진과 협의하는 협업", "evidence_span": "배역을 선정하고 후원자, 작가 및 제작진과 협의한다."},
+    {"category": "사회적", "value": "출연자 및 제작진 감독·관리(팀 지휘)", "evidence_span": "작품을 해석하고 바람직한 분위기 연출을 위하여 출연자 및 제작진을 감독‧관리한다."}
+  ]
+}

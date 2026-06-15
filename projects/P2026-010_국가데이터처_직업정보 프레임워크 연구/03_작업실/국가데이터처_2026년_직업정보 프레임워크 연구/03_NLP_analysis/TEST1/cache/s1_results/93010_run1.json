@@ -1,0 +1,62 @@
+{
+  "ksco_code": "93010",
+  "tasks": [
+    {
+      "verb": "조립하다",
+      "object": "가공된 가구부분품",
+      "full_statement": "가공된 가구부분품을 정해진 방법에 따라 조립한다.",
+      "source_sentence": "가공된 가구부품을 정해진 방법에 따라 간단히 조립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "사용하다",
+      "object": "수동공구",
+      "full_statement": "드라이버, 동력공구, 아교 등 수동공구를 사용하여 가구부분품을 조립한다.",
+      "source_sentence": "가공된 가구부분품을 드라이버, 동력공구, 아교 등 수동공구를 사용하여 조립하며, 손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "붙이다",
+      "object": "손잡이",
+      "full_statement": "조립한 가구에 손잡이를 붙인다.",
+      "source_sentence": "손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "붙이다",
+      "object": "경첩",
+      "full_statement": "조립한 가구에 경첩을 붙인다.",
+      "source_sentence": "손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "붙이다",
+      "object": "걸쇠",
+      "full_statement": "조립한 가구에 걸쇠를 붙인다.",
+      "source_sentence": "손잡이, 경첩, 걸쇠 등의 부착물을 붙인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "놓다",
+      "object": "완성한 가구",
+      "full_statement": "조립하여 완성한 가구를 의뢰인이 원하는 자리에 놓아준다.",
+      "source_sentence": "조립하여 완성한 가구를 의뢰인이 원하는 자리에 놓아준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    }
+  ],
+  "tools": [
+    {"name": "드라이버", "category": "도구", "evidence_span": "가공된 가구부분품을 드라이버, 동력공구, 아교 등 수동공구를 사용하여 조립하며"},
+    {"name": "동력공구", "category": "장비", "evidence_span": "가공된 가구부분품을 드라이버, 동력공구, 아교 등 수동공구를 사용하여 조립하며"},
+    {"name": "아교", "category": "도구", "evidence_span": "가공된 가구부분품을 드라이버, 동력공구, 아교 등 수동공구를 사용하여 조립하며"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "의뢰인이 원하는 자리에 가구를 설치하는 고객 응대 작업", "evidence_span": "조립하여 완성한 가구를 의뢰인이 원하는 자리에 놓아준다."},
+    {"category": "신체적", "value": "수공구 사용과 단순 반복 작업, 상당한 육체적 노력 요구", "evidence_span": "주로 간단한 수공구의 사용과 단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"}
+  ]
+}

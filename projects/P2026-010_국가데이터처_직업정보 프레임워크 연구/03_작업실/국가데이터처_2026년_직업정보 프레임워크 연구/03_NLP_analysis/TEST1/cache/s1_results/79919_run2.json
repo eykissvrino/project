@@ -1,0 +1,95 @@
+{
+  "ksco_code": "79919",
+  "tasks": [
+    {
+      "verb": "배합하다",
+      "object": "세제 및 세척용 약품",
+      "full_statement": "세제 및 세척용 약품을 적절히 배합한다.",
+      "source_sentence": "세제 및 세척용 약품을 적절히 배합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "뿌리다",
+      "object": "물",
+      "full_statement": "급수장비를 사용하여 물을 뿌린다.",
+      "source_sentence": "급수장비를 사용하여 물을 뿌리고 세제를 사용하여 이물질을 제거한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제거하다",
+      "object": "이물질",
+      "full_statement": "세제를 사용하여 이물질을 제거한다.",
+      "source_sentence": "급수장비를 사용하여 물을 뿌리고 세제를 사용하여 이물질을 제거한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "세척하다",
+      "object": "대상물",
+      "full_statement": "각종 약품, 모래 등을 이용하여 대상물을 세척한다.",
+      "source_sentence": "각종 약품, 모래 등을 이용하여 세척하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제거하다",
+      "object": "수조 퇴적물",
+      "full_statement": "수조의 퇴적물을 각종 화학약품 등을 사용하여 제거한다.",
+      "source_sentence": "[세분류 7991 세정원] 가스관, 통풍관 등의 연결관 또는 보일러 배관, 건물 외벽이나 유리창, 수조 등의 퇴적물을 각종 화약품 등을 사용하여 제거하거나 청소한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화(수조 청소원·물탱크 청결원)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "청소하다",
+      "object": "수조",
+      "full_statement": "수조 내부를 청소한다.",
+      "source_sentence": "건물 수조 청소원",
+      "derived_from": "세세분류 직업 예시→고유활동 도출",
+      "confidence": 0.72
+    },
+    {
+      "verb": "청소하다",
+      "object": "아파트 물탱크",
+      "full_statement": "아파트 물탱크 내부를 청소한다.",
+      "source_sentence": "아파트 물탱크 청결원",
+      "derived_from": "세세분류 직업 예시→고유활동 도출",
+      "confidence": 0.72
+    },
+    {
+      "verb": "관리하다",
+      "object": "수족관 청결",
+      "full_statement": "수족관의 청결 상태를 관리한다.",
+      "source_sentence": "수족관 청결원",
+      "derived_from": "세세분류 직업 예시→고유활동 도출",
+      "confidence": 0.68
+    },
+    {
+      "verb": "제거하다",
+      "object": "배관 내 먼지·퇴적물",
+      "full_statement": "배관 내 먼지나 퇴적물을 제거하여 청소한다.",
+      "source_sentence": "[소분류 799 기타 기능 관련 종사자] 배관 내 먼지나 퇴적물을 제거하여 청소하거나 주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "소독하다",
+      "object": "주택·사업체 내외부",
+      "full_statement": "주택, 사업체 등의 내외부를 살균하기 위하여 소독한다.",
+      "source_sentence": "[소분류 799 기타 기능 관련 종사자] 배관 내 먼지나 퇴적물을 제거하여 청소하거나 주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "급수장비", "category": "장비", "evidence_span": "급수장비를 사용하여 물을 뿌리고"},
+    {"name": "세제 및 세척용 약품", "category": "도구", "evidence_span": "세제 및 세척용 약품을 적절히 배합한다."},
+    {"name": "화학약품", "category": "도구", "evidence_span": "수조 등의 퇴적물을 각종 화약품 등을 사용하여 제거하거나 청소한다."},
+    {"name": "모래", "category": "도구", "evidence_span": "각종 약품, 모래 등을 이용하여 세척하기도 한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학약품 취급", "evidence_span": "각종 화약품 등을 사용하여 제거하거나 청소한다."},
+    {"category": "장소", "value": "수조·물탱크 등 한정·밀폐 공간", "evidence_span": "건물 수조 청소원 / 아파트 물탱크 청결원"}
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "ksco_code": "29554",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "사용자 요구사항",
+      "full_statement": "사용자의 편의성과 활용성을 증대할 수 있도록 사용자의 요구사항 등을 수집한다.",
+      "source_sentence": "사용자 경험에 입각하여 사용자의 편의성과 활용성을 증대할 수 있도록 사용자의 요구사항 등을 수집하고, 사용자 중심의 디자인을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설계하다",
+      "object": "사용자 중심의 디자인",
+      "full_statement": "수집된 요구사항을 바탕으로 사용자 중심의 디자인을 설계한다.",
+      "source_sentence": "사용자 경험에 입각하여 사용자의 편의성과 활용성을 증대할 수 있도록 사용자의 요구사항 등을 수집하고, 사용자 중심의 디자인을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "사용자 환경(UI)",
+      "full_statement": "웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경을 편의성과 활용성을 극대화할 수 있도록 연구한다.",
+      "source_sentence": "웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경(UI, User Interface)을 사용자 경험(UX, User Experience)에 입각하여 편의성과 활용성을 극대화할 수 있도록 연구‧개발하고, 제품이나 서비스에 그 결과를 반영하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "사용자 환경(UI)",
+      "full_statement": "사용자 환경을 편의성과 활용성을 극대화할 수 있도록 개발한다.",
+      "source_sentence": "웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경(UI, User Interface)을 사용자 경험(UX, User Experience)에 입각하여 편의성과 활용성을 극대화할 수 있도록 연구‧개발하고, 제품이나 서비스에 그 결과를 반영하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "반영하다",
+      "object": "연구개발 결과",
+      "full_statement": "연구‧개발한 결과를 제품이나 서비스에 반영한다.",
+      "source_sentence": "웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경(UI, User Interface)을 사용자 경험(UX, User Experience)에 입각하여 편의성과 활용성을 극대화할 수 있도록 연구‧개발하고, 제품이나 서비스에 그 결과를 반영하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "디자인하다",
+      "object": "제품이나 서비스의 사용자 환경",
+      "full_statement": "연구개발 결과를 반영하여 제품이나 서비스를 디자인한다.",
+      "source_sentence": "웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경(UI, User Interface)을 사용자 경험(UX, User Experience)에 입각하여 편의성과 활용성을 극대화할 수 있도록 연구‧개발하고, 제품이나 서비스에 그 결과를 반영하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결합하다",
+      "object": "시각적 디자인 요소",
+      "full_statement": "도출된 UX/UI 시안에 따라 사용자 환경에 기획 목적을 극대화할 수 있도록 시각적 디자인 요소 등을 결합한다.",
+      "source_sentence": "도출된 UX/UI의 시안에 따라 제품과 서비스 등의 사용자 환경에 기획 목적을 극대화할 수 있도록 시각적 디자인 요소 등을 결합하여 디자인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "디자인하다",
+      "object": "사용자 환경",
+      "full_statement": "도출된 UX/UI 시안에 따라 시각적 디자인 요소를 결합하여 제품과 서비스의 사용자 환경을 디자인한다.",
+      "source_sentence": "도출된 UX/UI의 시안에 따라 제품과 서비스 등의 사용자 환경에 기획 목적을 극대화할 수 있도록 시각적 디자인 요소 등을 결합하여 디자인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "실감 콘텐츠",
+      "full_statement": "VR, AR, 홀로그램, CG 등을 활용하여 사용자가 실감할 수 있는 콘텐츠를 기획한다.",
+      "source_sentence": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "디자인하다",
+      "object": "실감 콘텐츠",
+      "full_statement": "VR, AR, 홀로그램, CG 등을 활용하여 사용자가 실감할 수 있는 콘텐츠를 디자인한다.",
+      "source_sentence": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "활용하다",
+      "object": "융복합 전문지식",
+      "full_statement": "인지공학, 인체공학, 심리학, 산업디자인 등의 융복합 전문지식을 활용하여 사용자 환경을 설계한다.",
+      "source_sentence": "인지공학, 인체공학, 심리학, 산업디자인 등의 융복합 전문지식을 활용하여, 웹페이지, 애플리케이션, 컴퓨터 및 모바일 기기 등의 사용자 환경(UI, User Interface)을 사용자 경험(UX, User Experience)에 입각하여 편의성과 활용성을 극대화할 수 있도록 연구‧개발하고, 제품이나 서비스에 그 결과를 반영하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "디자인하다",
+      "object": "시각적 구성요소",
+      "full_statement": "미디어 콘텐츠에 필요한 아이콘, 자막, 이미지, 영상효과 등의 시각적 구성요소를 디자인한다.",
+      "source_sentence": "컴퓨터 그래픽 등을 활용하여 웹페이지, 동영상, 게임, 컴퓨터 및 모바일 애플리케이션과 같은 미디어 콘텐츠에 필요한 아이콘, 자막, 이미지, 영상효과 등의 시각적 구성요소 및 사용자 환경을 디자인 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "VR", "category": "도구", "evidence_span": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다."},
+    {"name": "AR", "category": "도구", "evidence_span": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다."},
+    {"name": "홀로그램", "category": "도구", "evidence_span": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다."},
+    {"name": "CG", "category": "도구", "evidence_span": "VR, AR , 홀로그램, CG 등을 활용하여 사용자의 실감할 수 있는 콘텐츠를 기획하고 디자인 한다."}
+  ],
+  "work_context": []
+}

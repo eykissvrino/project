@@ -1,0 +1,142 @@
+{
+  "ksco_code": "23811",
+  "tasks": [
+    {
+      "verb": "조종하다",
+      "object": "항공기",
+      "full_statement": "승객이나 화물을 수송하기 위해 항공기를 조종한다.",
+      "source_sentence": "승객이나 화물을 운반하기 위해 항공기나 헬리콥터를 조종한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(비행기 한정, 헬리콥터 제외)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "기체",
+      "full_statement": "항공운송 서비스를 제공하기 위해 비행 전 기체를 점검한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "항로",
+      "full_statement": "안전한 항공운송을 위해 항로를 점검한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "기후",
+      "full_statement": "안전한 운항을 위해 비행 전 기후를 확인한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "항공승무원의 활동",
+      "full_statement": "비행 동안 항공기의 장으로서 항공승무원의 활동을 관리한다.",
+      "source_sentence": "비행동안에 항공기의 장으로서 항공승무원의 활동을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "기장의 업무",
+      "full_statement": "부조종사로서 필요시 기장의 업무를 수행한다.",
+      "source_sentence": "부조종사는 필요시 기장의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "테스트하다",
+      "object": "새로운 항공기",
+      "full_statement": "항공기 성능을 평가하기 위해 새로운 항공기를 테스트한다.",
+      "source_sentence": "항공기 성능을 평가하기 위해 새로운 항공기나 헬리콥터를 테스트한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(비행기 한정)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "탐색·구조 서비스",
+      "full_statement": "탐색이나 구조와 같은 서비스를 제공한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "항공측량",
+      "full_statement": "항공기를 이용하여 항공측량을 수행한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "살포하다",
+      "object": "농약",
+      "full_statement": "항공기를 이용하여 농약을 살포한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분무하다",
+      "object": "소독약",
+      "full_statement": "항공기를 이용하여 소독약을 분무한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "훈련하다",
+      "object": "새로운 장비 사용",
+      "full_statement": "새로운 장비의 사용을 위해 훈련한다.",
+      "source_sentence": "새로운 장비의 사용, 기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "면허 갱신 시험",
+      "full_statement": "기존 면허의 갱신 및 등급을 올리기 위한 시험을 준비한다.",
+      "source_sentence": "새로운 장비의 사용, 기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수송하다",
+      "object": "승객이나 화물",
+      "full_statement": "항공기를 운항하여 승객이나 화물을 수송한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "항공운송 서비스",
+      "full_statement": "항공기를 운항하여 항공운송 서비스를 제공한다.",
+      "source_sentence": "항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 기능",
+      "full_statement": "가동과 운전상의 안전을 위하여 기술적 기능을 수행한다.",
+      "source_sentence": "항공기‧선박 기관사는 선박 및 항공기를 제어하고 조종하며, 가동과 운전상의 안전을 위하여 기술적 기능을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "항공기", "category": "장비", "evidence_span": "항공기를 조종하는 자를 말한다"},
+    {"name": "비행기", "category": "장비", "evidence_span": "[세세분류 23811 비행기 조종사]"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "항공승무원 관리·팀작업", "evidence_span": "비행동안에 항공기의 장으로서 항공승무원의 활동을 관리한다."},
+    {"category": "위험", "value": "농약·소독약 살포 등 화학물질 취급", "evidence_span": "소독약 분무, 농약살포와 같은 서비스를 제공한다"},
+    {"category": "시간적", "value": "면허 갱신·등급 상향을 위한 주기적 훈련", "evidence_span": "기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다"}
+  ]
+}

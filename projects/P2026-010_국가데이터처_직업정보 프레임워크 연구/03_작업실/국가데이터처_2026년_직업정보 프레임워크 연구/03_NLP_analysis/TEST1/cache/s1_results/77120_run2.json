@@ -1,0 +1,47 @@
+{
+  "ksco_code": "77120",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "액정화면 상태",
+      "full_statement": "이동전화기의 액정화면 상태를 점검한다.",
+      "source_sentence": "액정화면 상태나 통화품질을 점검하고, 파손된 부품의 교체 등 이동전화기를 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "통화품질",
+      "full_statement": "이동전화기의 통화품질을 점검한다.",
+      "source_sentence": "액정화면 상태나 통화품질을 점검하고, 파손된 부품의 교체 등 이동전화기를 수리한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "교체하다",
+      "object": "파손된 부품",
+      "full_statement": "이동전화기의 파손된 부품을 교체한다.",
+      "source_sentence": "액정화면 상태나 통화품질을 점검하고, 파손된 부품의 교체 등 이동전화기를 수리한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "이동전화기",
+      "full_statement": "이동전화기를 수리한다.",
+      "source_sentence": "액정화면 상태나 통화품질을 점검하고, 파손된 부품의 교체 등 이동전화기를 수리한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설치하다",
+      "object": "정보 통신기기",
+      "full_statement": "컴퓨터 및 이동전화기 등의 정보 통신기기를 설치한다.",
+      "source_sentence": "컴퓨터 및 이동전화기 등의 정보 통신기기를 설치하고 수리한다.",
+      "derived_from": "조상정의(소분류 771)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

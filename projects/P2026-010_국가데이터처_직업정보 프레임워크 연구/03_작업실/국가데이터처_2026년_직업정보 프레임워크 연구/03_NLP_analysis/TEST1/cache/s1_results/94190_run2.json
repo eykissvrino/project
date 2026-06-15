@@ -1,0 +1,88 @@
+{
+  "ksco_code": "94190",
+  "tasks": [
+    {
+      "verb": "청소하다",
+      "object": "건물",
+      "full_statement": "건물을 청소하여 청결하게 한다.",
+      "source_sentence": "건물, 운송 및 시설 장비, 거리 및 공공장소 등을 청소하거나 재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류 941)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "청소하다",
+      "object": "운송 및 시설 장비",
+      "full_statement": "운송 및 시설 장비를 청소하여 청결하게 한다.",
+      "source_sentence": "건물, 운송 및 시설 장비, 거리 및 공공장소 등을 청소하거나 재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류 941)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "청소하다",
+      "object": "거리 및 공공장소",
+      "full_statement": "거리 및 공공장소를 청소하여 청결하게 한다.",
+      "source_sentence": "건물, 운송 및 시설 장비, 거리 및 공공장소 등을 청소하거나 재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류 941)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수거하다",
+      "object": "재활용품",
+      "full_statement": "재활용품을 수거한다.",
+      "source_sentence": "건물, 운송 및 시설 장비, 거리 및 공공장소 등을 청소하거나 재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류 941)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수거하다",
+      "object": "쓰레기",
+      "full_statement": "쓰레기를 수거한다.",
+      "source_sentence": "건물, 운송 및 시설 장비, 거리 및 공공장소 등을 청소하거나 재활용품 및 쓰레기를 수거하여 청결하게 한다.",
+      "derived_from": "조상정의(소분류 941)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "청소하다",
+      "object": "거리",
+      "full_statement": "거리를 청소한다.",
+      "source_sentence": "거리를 청소하거나 쓰레기를 수거하고, 건물 입출입 관리나 배달 물품 접수 등 관련 단순 업무를 수행한다.",
+      "derived_from": "조상정의(중분류 94)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "청소하다",
+      "object": "놀이공원 시설",
+      "full_statement": "놀이공원의 시설과 구역을 청소하여 청결하게 한다.",
+      "source_sentence": "[세세분류 직업 예시] - 놀이공원 청소원",
+      "derived_from": "세세분류 직업 예시→조상정의(소분류 941) 특화",
+      "confidence": 0.45
+    },
+    {
+      "verb": "사용하다",
+      "object": "간단한 수공구",
+      "full_statement": "간단한 수공구를 사용하여 청소 업무를 수행한다.",
+      "source_sentence": "주로 간단한 수공구의 사용과 단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다.",
+      "derived_from": "조상정의(대분류 9)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [
+    {
+      "name": "간단한 수공구",
+      "category": "도구",
+      "evidence_span": "주로 간단한 수공구의 사용과 단순하고 일상적이며"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구됨",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    },
+    {
+      "category": "신체적",
+      "value": "단순하고 일상적인 반복 업무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다"
+    }
+  ]
+}

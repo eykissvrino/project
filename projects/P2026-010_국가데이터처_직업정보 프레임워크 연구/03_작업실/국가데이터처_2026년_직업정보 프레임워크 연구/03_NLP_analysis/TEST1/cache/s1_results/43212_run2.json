@@ -1,0 +1,93 @@
+{
+  "ksco_code": "43212",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "결혼 준비 전 과정",
+      "full_statement": "결혼하기 전 준비에서부터 신혼여행에 이르기까지의 전 과정을 기획한다.",
+      "source_sentence": "결혼하기 전 준비에서부터 신혼여행에 이르기까지의 전 과정을 기획하고 대행하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "대행하다",
+      "object": "결혼 준비 전 과정",
+      "full_statement": "결혼하기 전 준비에서부터 신혼여행에 이르기까지의 전 과정을 대행한다.",
+      "source_sentence": "결혼하기 전 준비에서부터 신혼여행에 이르기까지의 전 과정을 기획하고 대행하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설계하다",
+      "object": "결혼식",
+      "full_statement": "고객의 결혼식을 설계해 준다.",
+      "source_sentence": "결혼식을 설계해주고 합리적인 가격으로 비용 견적을 산출해 준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "산출하다",
+      "object": "비용 견적",
+      "full_statement": "합리적인 가격으로 결혼식 비용 견적을 산출해 준다.",
+      "source_sentence": "결혼식을 설계해주고 합리적인 가격으로 비용 견적을 산출해 준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "동행하다",
+      "object": "혼수 준비 과정",
+      "full_statement": "혼수 준비 과정에 고객과 직접 동행해 준다.",
+      "source_sentence": "혼수, 신혼여행, 웨딩드레스, 신부화장, 사진촬영 등 결혼준비의 많은 과정을 직접 동행해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "동행하다",
+      "object": "신혼여행 준비 과정",
+      "full_statement": "신혼여행 준비 과정에 고객과 직접 동행해 준다.",
+      "source_sentence": "혼수, 신혼여행, 웨딩드레스, 신부화장, 사진촬영 등 결혼준비의 많은 과정을 직접 동행해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "동행하다",
+      "object": "웨딩드레스 준비 과정",
+      "full_statement": "웨딩드레스 준비 과정에 고객과 직접 동행해 준다.",
+      "source_sentence": "혼수, 신혼여행, 웨딩드레스, 신부화장, 사진촬영 등 결혼준비의 많은 과정을 직접 동행해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "동행하다",
+      "object": "신부화장 과정",
+      "full_statement": "신부화장 과정에 고객과 직접 동행해 준다.",
+      "source_sentence": "혼수, 신혼여행, 웨딩드레스, 신부화장, 사진촬영 등 결혼준비의 많은 과정을 직접 동행해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "동행하다",
+      "object": "사진촬영 과정",
+      "full_statement": "사진촬영 과정에 고객과 직접 동행해 준다.",
+      "source_sentence": "혼수, 신혼여행, 웨딩드레스, 신부화장, 사진촬영 등 결혼준비의 많은 과정을 직접 동행해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "컨설팅하다",
+      "object": "결혼준비 관련 사항",
+      "full_statement": "결혼준비와 관련하여 고객에게 컨설팅을 해준다.",
+      "source_sentence": "결혼준비와 관련하여 컨설팅을 해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객응대(결혼 준비 과정 직접 동행)",
+      "evidence_span": "결혼준비의 많은 과정을 직접 동행해 준다."
+    }
+  ]
+}

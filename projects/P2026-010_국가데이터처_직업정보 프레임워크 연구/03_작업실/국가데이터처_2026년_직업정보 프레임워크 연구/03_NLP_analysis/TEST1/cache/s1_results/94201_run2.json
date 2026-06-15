@@ -1,0 +1,95 @@
+{
+  "ksco_code": "94201",
+  "tasks": [
+    {
+      "verb": "순찰하다",
+      "object": "아파트 내외부",
+      "full_statement": "아파트의 내부와 외부를 순찰한다.",
+      "source_sentence": "아파트의 내‧외부를 순찰하거나 방문자의 출입을 점검하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "방문자의 출입",
+      "full_statement": "아파트를 출입하는 방문자의 출입을 점검한다.",
+      "source_sentence": "아파트의 내‧외부를 순찰하거나 방문자의 출입을 점검하고 거주자를 대신하여 배달물을 접수하거나",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "접수하다",
+      "object": "배달물",
+      "full_statement": "부재중인 거주자를 대신하여 배달물을 접수한다.",
+      "source_sentence": "거주자를 대신하여 배달물을 접수하거나 방문자에게 필요한 정보를 제공한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무(거주자를 대신해서 배달물을 접수)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "필요한 정보",
+      "full_statement": "방문자에게 필요한 정보를 제공한다.",
+      "source_sentence": "방문자에게 필요한 정보를 제공한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무(방문자의 출입을 점검하고 필요한 정보를 제공)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "건물",
+      "full_statement": "아파트 건물을 관리한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(아파트)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수선하다",
+      "object": "건물 시설",
+      "full_statement": "건물 시설의 간단한 수선을 한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "정비하다",
+      "object": "건물 시설",
+      "full_statement": "건물 시설의 간단한 정비를 한다.",
+      "source_sentence": "건물을 관리하며 간단한 수선 및 정비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "규제하다",
+      "object": "거주자의 소음·진동 행위",
+      "full_statement": "타인에게 해를 주는 소음·진동 등에 대해 거주자 및 기타 건물 사용자의 행위를 규제한다.",
+      "source_sentence": "타인에게 해를 주는 소음, 진동 등에 대해 거주자 및 기타 건물 사용자의 행위를 규제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제공하다",
+      "object": "소규모 서비스",
+      "full_statement": "부재중인 거주자를 위하여 소규모의 서비스를 제공한다.",
+      "source_sentence": "거주자를 대신해서 배달물을 접수하는 등 부재중인 거주자를 위하여 소규모의 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "아파트 내·외부(실내외 순찰)",
+      "evidence_span": "아파트의 내‧외부를 순찰하거나"
+    },
+    {
+      "category": "사회적",
+      "value": "방문자·거주자 응대",
+      "evidence_span": "방문자의 출입을 점검하고 거주자를 대신하여 배달물을 접수하거나 방문자에게 필요한 정보를 제공한다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

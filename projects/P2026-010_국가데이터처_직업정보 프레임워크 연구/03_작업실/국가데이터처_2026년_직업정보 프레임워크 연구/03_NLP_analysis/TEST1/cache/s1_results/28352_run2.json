@@ -1,0 +1,124 @@
+{
+  "ksco_code": "28352",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "전시 행사",
+      "full_statement": "행사 전시회, 박람회, 시사회 등 다양한 전시회 중심의 행사를 기획한다.",
+      "source_sentence": "행사 전시회, 박람회, 시사회 등 다양한 전시회 중심의 행사를 기획하고, 섭외, 준비, 실행 등 일련의 전시 행사를 총괄한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "총괄하다",
+      "object": "전시 행사",
+      "full_statement": "섭외, 준비, 실행 등 일련의 전시 행사를 총괄한다.",
+      "source_sentence": "행사 전시회, 박람회, 시사회 등 다양한 전시회 중심의 행사를 기획하고, 섭외, 준비, 실행 등 일련의 전시 행사를 총괄한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "만나다",
+      "object": "업계협회·전문협회",
+      "full_statement": "행사 개최를 논의하기 위해 업계협회, 전문협회 및 기타 집단들과 만난다.",
+      "source_sentence": "협의회나 회견, 컨벤션 등의 행사 개최를 논의하기 위해 업계협회, 전문협회및 기타 집단들과 만난다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계획하다",
+      "object": "행사의 범위 및 형식",
+      "full_statement": "행사의 범위 및 형식을 계획한다.",
+      "source_sentence": "행사의 범위 및 형식을 계획하고, 예산을 편성하며, 행사 관리절차 및 진행 사항을 수시로 모니터한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "편성하다",
+      "object": "예산",
+      "full_statement": "행사 예산을 편성한다.",
+      "source_sentence": "행사의 범위 및 형식을 계획하고, 예산을 편성하며, 행사 관리절차 및 진행 사항을 수시로 모니터한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "모니터하다",
+      "object": "행사 관리절차 및 진행사항",
+      "full_statement": "행사 관리절차 및 진행 사항을 수시로 모니터한다.",
+      "source_sentence": "행사의 범위 및 형식을 계획하고, 예산을 편성하며, 행사 관리절차 및 진행 사항을 수시로 모니터한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "총괄하다",
+      "object": "행사서비스",
+      "full_statement": "참가자들에 대한 숙박 및 운송, 시설, 연회, 통역, 비디오‧오디오장비, 인쇄물 및 보안과 같은 행사서비스를 총괄한다.",
+      "source_sentence": "참가자들에 대한 숙박 및 운송, 컨퍼런스 및 기타 시설, 연회, 표시물, 디스플레이, 통역, 비디오‧오디오장비, 인쇄물 및 보안과 같은 행사서비스를 총괄한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조직화하다",
+      "object": "참가자 등록",
+      "full_statement": "참가자의 등록을 조직화한다.",
+      "source_sentence": "참가자의 등록을 조직화하고 프로그램 및 홍보자료를 준비하고 행사를 선전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "프로그램 및 홍보자료",
+      "full_statement": "프로그램 및 홍보자료를 준비한다.",
+      "source_sentence": "참가자의 등록을 조직화하고 프로그램 및 홍보자료를 준비하고 행사를 선전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선전하다",
+      "object": "행사",
+      "full_statement": "행사를 선전한다.",
+      "source_sentence": "참가자의 등록을 조직화하고 프로그램 및 홍보자료를 준비하고 행사를 선전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "고용하다",
+      "object": "행사지원자",
+      "full_statement": "행사에 필요한 행사지원자들을 고용한다.",
+      "source_sentence": "행사에 필요한 행사지원자들을 고용하고 교육시키며 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교육하다",
+      "object": "행사지원자",
+      "full_statement": "행사지원자들을 교육시킨다.",
+      "source_sentence": "행사에 필요한 행사지원자들을 고용하고 교육시키며 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "행사지원자",
+      "full_statement": "행사지원자들을 감독한다.",
+      "source_sentence": "행사에 필요한 행사지원자들을 고용하고 교육시키며 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "비디오‧오디오장비", "category": "장비", "evidence_span": "통역, 비디오‧오디오장비, 인쇄물 및 보안과 같은 행사서비스를 총괄한다."}
+  ],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "업계협회·전문협회 등과의 협의 및 참가자 응대",
+      "evidence_span": "행사 개최를 논의하기 위해 업계협회, 전문협회및 기타 집단들과 만난다."
+    },
+    {
+      "category": "사회적",
+      "value": "행사지원자 고용·교육·감독(인력 관리)",
+      "evidence_span": "행사에 필요한 행사지원자들을 고용하고 교육시키며 감독한다."
+    }
+  ]
+}

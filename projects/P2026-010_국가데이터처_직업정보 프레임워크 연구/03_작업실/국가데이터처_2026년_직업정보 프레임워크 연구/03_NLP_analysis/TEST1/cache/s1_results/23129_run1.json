@@ -1,0 +1,114 @@
+{
+  "ksco_code": "23129",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "작업계획 및 설계서",
+      "full_statement": "고객에게 작업계획 및 설계서를 설명한다.",
+      "source_sentence": "고객에게 작업계획 및 설계서를 설명해 주고 설계서를 건설관리 규정에 맞도록 조정해 주는 자도 여기로 분류한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "설계서",
+      "full_statement": "설계서를 건설관리 규정에 맞도록 조정한다.",
+      "source_sentence": "고객에게 작업계획 및 설계서를 설명해 주고 설계서를 건설관리 규정에 맞도록 조정해 주는 자도 여기로 분류한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "고용하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 고용한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 감독한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설현장의 활동",
+      "full_statement": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축사업의 예비조사",
+      "full_statement": "건축사업의 예비조사를 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "재무 분석",
+      "full_statement": "건축사업의 재무 분석을 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 감독한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "공사현장",
+      "full_statement": "건축 설계도 및 시방서에 따라 건축물이 시공될 수 있도록 공사현장을 관리한다.",
+      "source_sentence": "건축 설계도 및 시방서에 따라 건축물이 시공될 수 있도록 공사현장을 관리하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축물 감리 업무",
+      "full_statement": "각종 건물의 건설 및 수리를 위한 감리 업무를 수행한다.",
+      "source_sentence": "상업용, 공공시설 및 주거용 등 각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수행하다",
+      "object": "설비 안전 기술 업무",
+      "full_statement": "각종 건물의 건설 및 수리를 위한 설비 안전 관련 기술적 업무를 수행한다.",
+      "source_sentence": "상업용, 공공시설 및 주거용 등 각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(작업계획·설계서 설명)",
+      "evidence_span": "고객에게 작업계획 및 설계서를 설명해 주고"
+    },
+    {
+      "category": "장소",
+      "value": "건설현장·공사현장",
+      "evidence_span": "건설현장의 활동을 감독한다 / 공사현장을 관리하기도 한다"
+    }
+  ]
+}

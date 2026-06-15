@@ -1,0 +1,99 @@
+{
+  "ksco_code": "86322",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "전기제품 생산 기계",
+      "full_statement": "각종 전기제품을 생산하는 기계를 조작한다.",
+      "source_sentence": "각종 전기제품을 생산하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "각종 기기",
+      "full_statement": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "source_sentence": "전기 장비 제조와 관련된 각종 기기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감다",
+      "object": "코일",
+      "full_statement": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다.",
+      "source_sentence": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "전지 격자 처리 장비",
+      "full_statement": "성형된 건조 충전전지 격자를 세척·약품처리·건조하는 장비를 관리한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "세척하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 세척하는 장비를 조작한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.55
+    },
+    {
+      "verb": "약품처리하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 약품처리하는 장비를 조작한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.55
+    },
+    {
+      "verb": "건조하다",
+      "object": "충전전지 격자",
+      "full_statement": "성형된 건조 충전전지 격자를 건조하는 장비를 조작한다.",
+      "source_sentence": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제조하다",
+      "object": "전기 부품",
+      "full_statement": "전기 장비에 사용되는 부분품을 제조하는 기계를 조작한다.",
+      "source_sentence": "전기장비 제조업체 등에서 전기 장비에 사용되는 부분품을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "광섬유",
+      "full_statement": "광섬유를 제조하는 기계를 조작한다.",
+      "source_sentence": "광섬유 제조원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제조하다",
+      "object": "전구",
+      "full_statement": "전구를 제조하는 기계를 조작한다.",
+      "source_sentence": "전구 제조기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "제조하다",
+      "object": "전선",
+      "full_statement": "전선을 제조하는 기계를 조작한다.",
+      "source_sentence": "전선 제조원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "코일 권선기", "category": "장비", "evidence_span": "코일 권선기를 사용하여 교류전동기, 발전기, 변압기 등에 사용되는 부품에 코일을 감는다."},
+    {"name": "전구 제조기", "category": "장비", "evidence_span": "전구 제조기 조작원"},
+    {"name": "전지 격자 세척·약품처리·건조 장비", "category": "장비", "evidence_span": "성형된 건조 충전전지 격자를 세척‧약품처리‧건조하는 장비를 관리한다."}
+  ],
+  "work_context": []
+}

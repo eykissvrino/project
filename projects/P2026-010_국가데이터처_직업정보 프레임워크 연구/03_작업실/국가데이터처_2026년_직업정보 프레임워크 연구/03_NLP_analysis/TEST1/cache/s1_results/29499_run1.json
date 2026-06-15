@@ -1,0 +1,114 @@
+{
+  "ksco_code": "29499",
+  "tasks": [
+    {
+      "verb": "활용하다",
+      "object": "마술 용품",
+      "full_statement": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용하여 마술을 선보인다.",
+      "source_sentence": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용한 재빠른 손기술이나 환상적인 장치 등을 활용하고 개발하여 관중 앞에서 선보인다.",
+      "derived_from": "상속 주요업무→세세정의 특화(마술사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "구사하다",
+      "object": "손기술",
+      "full_statement": "재빠른 손기술을 구사하여 마술을 연출한다.",
+      "source_sentence": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용한 재빠른 손기술이나 환상적인 장치 등을 활용하고 개발하여 관중 앞에서 선보인다.",
+      "derived_from": "상속 주요업무(마술사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "마술 장치",
+      "full_statement": "환상적인 장치 등 마술 기법을 개발한다.",
+      "source_sentence": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용한 재빠른 손기술이나 환상적인 장치 등을 활용하고 개발하여 관중 앞에서 선보인다.",
+      "derived_from": "상속 주요업무(마술사)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선보이다",
+      "object": "마술",
+      "full_statement": "관중 앞에서 마술을 선보인다.",
+      "source_sentence": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용한 재빠른 손기술이나 환상적인 장치 등을 활용하고 개발하여 관중 앞에서 선보인다.",
+      "derived_from": "상속 주요업무(마술사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "사용하다",
+      "object": "곡예 장비",
+      "full_statement": "사다리, 의자, 뜀틀 및 기타 장비를 사용하여 묘기를 연출한다.",
+      "source_sentence": "사다리, 의자, 뜀틀 및 기타장비를 사용하여 뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다.",
+      "derived_from": "상속 주요업무(곡예사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연출하다",
+      "object": "공중곡예",
+      "full_statement": "공중곡예 묘기를 연출한다.",
+      "source_sentence": "사다리, 의자, 뜀틀 및 기타장비를 사용하여 뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(곡예사)",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수행하다",
+      "object": "그네뛰기",
+      "full_statement": "그네뛰기 묘기를 수행한다.",
+      "source_sentence": "사다리, 의자, 뜀틀 및 기타장비를 사용하여 뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다.",
+      "derived_from": "상속 주요업무(곡예사)",
+      "confidence": 0.84
+    },
+    {
+      "verb": "잡다",
+      "object": "균형",
+      "full_statement": "균형 잡기 묘기를 수행하며 신체 균형을 잡는다.",
+      "source_sentence": "사다리, 의자, 뜀틀 및 기타장비를 사용하여 뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다.",
+      "derived_from": "상속 주요업무(곡예사)",
+      "confidence": 0.84
+    },
+    {
+      "verb": "뛰어넘다",
+      "object": "장애물",
+      "full_statement": "뜀틀 등을 이용하여 뛰어넘기 묘기를 수행한다.",
+      "source_sentence": "사다리, 의자, 뜀틀 및 기타장비를 사용하여 뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다.",
+      "derived_from": "상속 주요업무(곡예사)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "훈련하다",
+      "object": "동물",
+      "full_statement": "관중을 즐겁게 하기 위하여 동물이 재주를 부리도록 훈련한다.",
+      "source_sentence": "관중을 즐겁게 하기 위하여 동물을 재주부리도록 훈련한다.",
+      "derived_from": "상속 주요업무(공연목적 동물조련사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "공연하다",
+      "object": "예술작품",
+      "full_statement": "기타 예술작품을 구상하고 관중 앞에서 공연한다.",
+      "source_sentence": "[소분류 294 시각 및 공연 예술가] 미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "구연하다",
+      "object": "동화",
+      "full_statement": "관객을 대상으로 동화를 구연한다.",
+      "source_sentence": "공연 목적 동물 조련사·동화 구연사",
+      "derived_from": "세세분류 직업 예시 특화",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "마술 상자", "category": "도구", "evidence_span": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품을 활용한"},
+    {"name": "스카프", "category": "도구", "evidence_span": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품"},
+    {"name": "카드", "category": "도구", "evidence_span": "마술 상자, 스카프, 카드, 비둘기 등 마술에 필요한 용품"},
+    {"name": "사다리", "category": "장비", "evidence_span": "사다리, 의자, 뜀틀 및 기타장비를 사용하여"},
+    {"name": "뜀틀", "category": "장비", "evidence_span": "사다리, 의자, 뜀틀 및 기타장비를 사용하여"},
+    {"name": "의자", "category": "장비", "evidence_span": "사다리, 의자, 뜀틀 및 기타장비를 사용하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "관중 앞 공연(고객/관객 응대)", "evidence_span": "관중 앞에서 선보인다"},
+    {"category": "사회적", "value": "관중을 즐겁게 하기 위한 공연 목적", "evidence_span": "관중을 즐겁게 하기 위하여 동물을 재주부리도록 훈련한다"},
+    {"category": "신체적", "value": "공중곡예·균형 잡기 등 정밀하고 고난도의 신체 묘기", "evidence_span": "뛰어넘기, 공중곡예, 그네뛰기, 균형 잡기 등의 묘기를 연출한다"}
+  ]
+}

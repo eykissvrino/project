@@ -1,0 +1,87 @@
+{
+  "ksco_code": "83242",
+  "tasks": [
+    {
+      "verb": "올려놓다",
+      "object": "플라스틱 부품",
+      "full_statement": "압축·성형된 플라스틱 부품을 작업대 위에 올려놓는다.",
+      "source_sentence": "압출·성형된 고무 또는 플라스틱 부품을 작업대 위에 올려놓는다.",
+      "derived_from": "상속 주요업무→세세정의 특화(고무 제거, 플라스틱 한정)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "부품의 제조 상태",
+      "full_statement": "부품의 제조 상태를 점검한다.",
+      "source_sentence": "부품의 제조 상태를 점검하여 파손되거나 규격미달인 부품을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제거하다",
+      "object": "파손·규격미달 부품",
+      "full_statement": "파손되거나 규격미달인 부품을 제거한다.",
+      "source_sentence": "부품의 제조 상태를 점검하여 파손되거나 규격미달인 부품을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "늘어놓다",
+      "object": "부품",
+      "full_statement": "컨베이어 벨트 또는 작업대 위에 조립하기 쉽도록 부품을 나란히 늘어놓는다.",
+      "source_sentence": "컨베이어 벨트 또는 작업대 위에 조립하기 쉽도록 부품을 나란히 늘어놓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "맞추다",
+      "object": "부품을 홈이나 틀",
+      "full_statement": "손가락으로 부품을 눌러 주름이 발생하지 않도록 홈이나 틀에 맞춘다.",
+      "source_sentence": "손가락으로 부품을 눌러 주름이 발생하지 않도록 홈이나 틀에 맞춘다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "부착하다",
+      "object": "플라스틱 부품",
+      "full_statement": "접착제나 나사를 사용하여 플라스틱 부품을 부착한다.",
+      "source_sentence": "접착제나 나사를 사용하여 고무 플라스틱 부품을 부착한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(플라스틱 한정)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제거하다",
+      "object": "조립품의 군더더기",
+      "full_statement": "조립품의 군더더기를 제거한다.",
+      "source_sentence": "조립품의 군더더기를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조립하다",
+      "object": "플라스틱 제품",
+      "full_statement": "가방, 장난감 등 압축·성형된 플라스틱 제품을 조립한다.",
+      "source_sentence": "가방, 장난감 등 압축, 성형된 플라스틱 제품을 조립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "맞추다",
+      "object": "플라스틱 부품을 홈",
+      "full_statement": "압출·성형한 플라스틱 부품을 홈에 맞추어 완제품 또는 부분품으로 조립한다.",
+      "source_sentence": "압출·성형한 고무 또는 플라스틱 제품을 접착제·나사 등을 사용하거나 홈에 맞추어 완제품 또는 부분품으로 조립한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화(플라스틱 한정)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "접착제", "category": "도구", "evidence_span": "접착제나 나사를 사용하여 고무 플라스틱 부품을 부착한다."},
+    {"name": "나사", "category": "도구", "evidence_span": "접착제나 나사를 사용하여 고무 플라스틱 부품을 부착한다."},
+    {"name": "컨베이어 벨트", "category": "장비", "evidence_span": "컨베이어 벨트 또는 작업대 위에 조립하기 쉽도록 부품을 나란히 늘어놓는다."},
+    {"name": "작업대", "category": "장비", "evidence_span": "압출·성형된 고무 또는 플라스틱 부품을 작업대 위에 올려놓는다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손가락으로 부품을 눌러 맞추는 정밀·수작업", "evidence_span": "손가락으로 부품을 눌러 주름이 발생하지 않도록 홈이나 틀에 맞춘다."},
+    {"category": "신체적", "value": "컨베이어 벨트 기반 반복 조립작업", "evidence_span": "컨베이어 벨트 또는 작업대 위에 조립하기 쉽도록 부품을 나란히 늘어놓는다."}
+  ]
+}

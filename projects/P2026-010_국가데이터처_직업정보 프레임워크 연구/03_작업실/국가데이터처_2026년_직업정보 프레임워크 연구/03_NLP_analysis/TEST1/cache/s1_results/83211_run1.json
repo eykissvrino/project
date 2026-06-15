@@ -1,0 +1,146 @@
+{
+  "ksco_code": "83211",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "약제품 생산기",
+      "full_statement": "의약품 생산에 사용되는 재료를 성형·여과·가열·혼합·분쇄·충전 및 봉합하는 각종 약제품 생산기를 조작한다.",
+      "source_sentence": "의약품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄, 충전 및 봉합하는 각종 약제품 생산기, 의약품 과립기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "의약품 과립기",
+      "full_statement": "의약품 생산에 사용되는 재료를 처리하는 의약품 과립기를 조작한다.",
+      "source_sentence": "의약품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄, 충전 및 봉합하는 각종 약제품 생산기, 의약품 과립기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 처리온도",
+      "full_statement": "의약품 원료를 혼합·분쇄·여과·가열하는 기계장치의 처리온도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 압력",
+      "full_statement": "의약품 원료를 처리하는 각종 기계장치의 압력을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "조정하다",
+      "object": "재료의 흐름",
+      "full_statement": "기계장치에 투입되는 의약품 재료의 흐름을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 속도",
+      "full_statement": "약제품 생산기의 기계 속도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "혼합물의 처리과정",
+      "full_statement": "의약품 혼합물의 처리과정을 관찰한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "확인하다",
+      "object": "색의 변화·농도",
+      "full_statement": "처리 중인 혼합물의 색의 변화와 농도 등을 확인한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성품",
+      "full_statement": "생산이 완료된 약제품 완성품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품",
+      "full_statement": "약제품 완성품의 상태를 검사한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성품",
+      "full_statement": "검사를 마친 약제품 완성품을 포장한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "탐지하다",
+      "object": "기계의 기능장애",
+      "full_statement": "약제품 생산기의 기능장애를 탐지한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기능장애가 발견된 기계를 정비한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "세척하다",
+      "object": "기계",
+      "full_statement": "약제품 생산기를 세척 및 소제한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "약제품 생산기", "category": "장비", "evidence_span": "각종 약제품 생산기, 의약품 과립기를 조작한다"},
+    {"name": "의약품 과립기", "category": "장비", "evidence_span": "각종 약제품 생산기, 의약품 과립기를 조작한다"}
+  ],
+  "work_context": []
+}

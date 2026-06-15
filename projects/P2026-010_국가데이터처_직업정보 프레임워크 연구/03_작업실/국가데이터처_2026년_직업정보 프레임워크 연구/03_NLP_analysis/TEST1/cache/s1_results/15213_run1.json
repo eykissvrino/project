@@ -1,0 +1,130 @@
+{
+  "ksco_code": "15213",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "오락·스포츠 사업체나 부서의 운영",
+      "full_statement": "오락, 스포츠 관련 사업체나 부서의 운영을 기획한다.",
+      "source_sentence": "오락, 스포츠 관련 사업체나 부서의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "오락·스포츠 사업체나 부서의 운영",
+      "full_statement": "오락, 스포츠 관련 사업체나 부서의 운영을 관리한다.",
+      "source_sentence": "오락, 스포츠 관련 사업체나 부서의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "오락·스포츠 사업체나 부서의 운영",
+      "full_statement": "오락, 스포츠 관련 사업체나 부서의 운영을 조정한다.",
+      "source_sentence": "오락, 스포츠 관련 사업체나 부서의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수립하다",
+      "object": "운영 정책 및 절차",
+      "full_statement": "사업체나 부서의 운영을 위한 정책 및 절차를 세우고 조직한다.",
+      "source_sentence": "사업체나 부서의 운영을 위한 정책 및 절차를 세우고 조직하며, 조정‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조직하다",
+      "object": "운영 정책 및 절차",
+      "full_statement": "사업체나 부서의 운영을 위한 정책 및 절차를 조직한다.",
+      "source_sentence": "사업체나 부서의 운영을 위한 정책 및 절차를 세우고 조직하며, 조정‧관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "개발하다",
+      "object": "오락·스포츠 프로그램 및 서비스",
+      "full_statement": "오락 및 스포츠 관련 프로그램 및 서비스를 개발한다.",
+      "source_sentence": "미용, 숙박 및 여행 관련 프로그램 및 서비스를 개발하고 운영한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "운영하다",
+      "object": "오락·스포츠 프로그램 및 서비스",
+      "full_statement": "오락 및 스포츠 관련 프로그램 및 서비스를 운영한다.",
+      "source_sentence": "미용, 숙박 및 여행 관련 프로그램 및 서비스를 개발하고 운영한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "개발하다",
+      "object": "서비스 가격 및 마케팅 전략",
+      "full_statement": "서비스의 가격 및 광고, 선전, 마케팅 전략을 개발하는 데 참여한다.",
+      "source_sentence": "서비스의 가격 및 광고, 선전, 마케팅 전략을 개발하는데 참여한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "대응하다",
+      "object": "고객의 요구나 불만",
+      "full_statement": "고객의 요구나 불만에 대응한다.",
+      "source_sentence": "고객의 요구나 불만에 대응하고 문제를 해결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "해결하다",
+      "object": "고객 관련 문제",
+      "full_statement": "고객 관련 문제를 해결한다.",
+      "source_sentence": "고객의 요구나 불만에 대응하고 문제를 해결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "채용하다",
+      "object": "관련 종사자",
+      "full_statement": "오락·스포츠 관련 종사자를 채용한다.",
+      "source_sentence": "관련 종사자를 채용하고, 교육훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "담당하다",
+      "object": "종사자 교육훈련",
+      "full_statement": "관련 종사자의 교육훈련을 담당한다.",
+      "source_sentence": "관련 종사자를 채용하고, 교육훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분석하다",
+      "object": "다른 사람의 직무",
+      "full_statement": "다른 사람의 직무를 분석하고 평가한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "지시하다",
+      "object": "부서 구성원의 직무",
+      "full_statement": "부서 구성원의 직무를 지시하고 조정한다.",
+      "source_sentence": "직무시간의 80% 이상을 다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(요구·불만 대응)",
+      "evidence_span": "고객의 요구나 불만에 대응하고 문제를 해결한다."
+    },
+    {
+      "category": "사회적",
+      "value": "부서 구성원 지휘·관리(타인 직무 분석·지시·조정)",
+      "evidence_span": "다른 사람의 직무를 분석, 평가, 결정하거나 지시하고 조정하는데 사용하는 경우에만 관리자 직군으로 분류한다."
+    }
+  ]
+}

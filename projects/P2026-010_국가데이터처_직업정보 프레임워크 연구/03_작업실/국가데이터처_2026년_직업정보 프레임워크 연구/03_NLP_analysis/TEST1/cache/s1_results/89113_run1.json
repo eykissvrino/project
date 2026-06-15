@@ -1,0 +1,102 @@
+{
+  "ksco_code": "89113",
+  "tasks": [
+    {
+      "verb": "놓다",
+      "object": "베니어 겉장과 속장",
+      "full_statement": "합판을 제조하기 위해 베니어(단판)의 겉장과 속장을 일렬로 놓는다.",
+      "source_sentence": "합판을 제조하기 위해 베니어(단판)의 겉장과 속장을 일렬로 놓고 속장에 아교를 살포하는 기계나 접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "살포하다",
+      "object": "아교",
+      "full_statement": "베니어 속장에 아교를 살포하는 기계를 조작한다.",
+      "source_sentence": "합판을 제조하기 위해 베니어(단판)의 겉장과 속장을 일렬로 놓고 속장에 아교를 살포하는 기계나 접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "도포하다",
+      "object": "접착제",
+      "full_statement": "베니어장에 접착제를 도포한다.",
+      "source_sentence": "속장에 아교를 살포하는 기계나 접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "모으다",
+      "object": "접착제를 도포한 베니어장",
+      "full_statement": "접착제를 도포한 베니어장을 모은다.",
+      "source_sentence": "접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "열판 압착기",
+      "full_statement": "베니어장을 모아 접착하기 위하여 열판 압착기를 조작한다.",
+      "source_sentence": "접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판절삭기",
+      "full_statement": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "source_sentence": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "아교 살포·접착 기계",
+      "full_statement": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "source_sentence": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "가공을 위하여 재료를 투입한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "작업표준에 따라 가공하기 위하여 기계장치를 조정한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기계의 기능장애를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "열판 압착기", "category": "장비", "evidence_span": "접착제를 도포한 베니어장을 모아 접착하는 열판 압착기를 조작한다"},
+    {"name": "단판절삭기", "category": "장비", "evidence_span": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다"},
+    {"name": "아교 살포 기계", "category": "장비", "evidence_span": "속장에 아교를 살포하는 기계"},
+    {"name": "베니어압착기", "category": "장비", "evidence_span": "베니어압착기 조작원"},
+    {"name": "단판건조기", "category": "장비", "evidence_span": "단판건조기 조작원"},
+    {"name": "접착제 도포기", "category": "장비", "evidence_span": "접착제 도포기"}
+  ],
+  "work_context": []
+}

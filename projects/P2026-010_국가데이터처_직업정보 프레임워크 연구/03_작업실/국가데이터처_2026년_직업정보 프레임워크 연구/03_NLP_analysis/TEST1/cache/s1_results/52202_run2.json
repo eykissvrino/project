@@ -1,0 +1,133 @@
+{
+  "ksco_code": "52202",
+  "tasks": [
+    {
+      "verb": "응대하다",
+      "object": "고객",
+      "full_statement": "생활용품을 대여하려는 고객을 응대한다.",
+      "source_sentence": "고객을 응대하고 고객이 임대하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(생활용품 대여)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "의논하다",
+      "object": "대여 상품의 종류·품질·수량",
+      "full_statement": "고객이 대여하려는 생활용품의 종류, 품질, 수량에 대해 의논한다.",
+      "source_sentence": "고객을 응대하고 고객이 임대하려는 상품의 종류, 품질, 수량에 대해 의논한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(생활용품 대여)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설명하다",
+      "object": "제품 사용법",
+      "full_statement": "대여하는 생활용품의 사용법을 설명한다.",
+      "source_sentence": "사용법, 파손시의 조건, 대여기간 및 비용 등을 설명하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설명하다",
+      "object": "보관요령",
+      "full_statement": "생활용품의 보관요령을 설명한다.",
+      "source_sentence": "제품의 사용법 및 보관요령에 대해 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설명하다",
+      "object": "파손시 조건",
+      "full_statement": "대여 물품의 파손시 조건을 설명한다.",
+      "source_sentence": "사용법, 파손시의 조건, 대여기간 및 비용 등을 설명하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설명하다",
+      "object": "대여기간 및 비용",
+      "full_statement": "대여기간 및 비용을 설명한다.",
+      "source_sentence": "사용법, 파손시의 조건, 대여기간 및 비용 등을 설명하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "협의하다",
+      "object": "가격·임대 조건",
+      "full_statement": "생활용품의 가격 및 임대 조건을 협의한다.",
+      "source_sentence": "가격, 임대 조건, 배달일자 등을 협의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "협의하다",
+      "object": "배달일자",
+      "full_statement": "물품의 배달일자를 협의한다.",
+      "source_sentence": "가격, 임대 조건, 배달일자 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계산하다",
+      "object": "대여료",
+      "full_statement": "고객이 임대한 물품의 대여료를 계산한다.",
+      "source_sentence": "고객이 임대한 물품의 대여료를 계산하고 임차인의 인적사항 등을 기록한 후 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기록하다",
+      "object": "임차인 인적사항",
+      "full_statement": "임차인의 인적사항 등을 기록한다.",
+      "source_sentence": "고객이 임대한 물품의 대여료를 계산하고 임차인의 인적사항 등을 기록한 후 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "발급하다",
+      "object": "영수증",
+      "full_statement": "대여료 정산 후 영수증을 발급한다.",
+      "source_sentence": "고객이 임대한 물품의 대여료를 계산하고 임차인의 인적사항 등을 기록한 후 영수증을 발급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "확인하다",
+      "object": "대여물품 반납상황",
+      "full_statement": "정기적으로 대여물품의 반납상황을 확인한다.",
+      "source_sentence": "정기적으로 대여물품의 반납상황을 확인하고 미납자나 장기연체자에게 연락하여 반납을 요청한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연락하다",
+      "object": "미납자·장기연체자",
+      "full_statement": "미납자나 장기연체자에게 연락한다.",
+      "source_sentence": "정기적으로 대여물품의 반납상황을 확인하고 미납자나 장기연체자에게 연락하여 반납을 요청한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "요청하다",
+      "object": "물품 반납",
+      "full_statement": "미납자나 장기연체자에게 물품 반납을 요청한다.",
+      "source_sentence": "정기적으로 대여물품의 반납상황을 확인하고 미납자나 장기연체자에게 연락하여 반납을 요청한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "대여하다",
+      "object": "생활용품",
+      "full_statement": "소비자에게 생활용품을 대여한다.",
+      "source_sentence": "생활용품 대여업체에서 소비자에게 생활용품을 대여하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "고객을 응대하고 고객이 임대하려는 상품의 종류, 품질, 수량에 대해 의논한다."
+    }
+  ]
+}

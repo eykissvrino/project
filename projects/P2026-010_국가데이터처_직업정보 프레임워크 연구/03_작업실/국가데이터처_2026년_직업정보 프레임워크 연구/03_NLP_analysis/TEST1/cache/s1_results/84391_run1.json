@@ -1,0 +1,59 @@
+{
+  "ksco_code": "84391",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "혼합 기계장치",
+      "full_statement": "유약을 제조하기 위해 붕사, 납, 모래, 석회와 같은 성분을 혼합하는 기계장치를 조작한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "분쇄 기계장치",
+      "full_statement": "유약을 제조하기 위해 붕사, 납, 모래, 석회와 같은 성분을 분쇄하는 기계장치를 조작한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "투입하다",
+      "object": "유약 원료 성분",
+      "full_statement": "붕사, 납, 모래, 석회와 같은 유약 원료 성분을 기계장치에 투입한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "유약",
+      "full_statement": "원료 성분을 혼합·분쇄하여 유약을 제조한다.",
+      "source_sentence": "유약을 제조하기 위해 붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "혼합하다",
+      "object": "성분",
+      "full_statement": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "source_sentence": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제조하다",
+      "object": "연마재·광택제",
+      "full_statement": "성분을 혼합하여 연마재, 광택제를 제조한다.",
+      "source_sentence": "연마재, 광택제를 제조하기 위해 성분을 혼합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "혼합·분쇄 기계장치", "category": "장비", "evidence_span": "붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "납 등 중금속·화학물질 취급", "evidence_span": "붕사, 납, 모래 및 석회와 같은 성분을 혼합, 분쇄하는 기계장치를 조작한다"}
+  ]
+}

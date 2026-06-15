@@ -1,0 +1,79 @@
+{
+  "ksco_code": "24960",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "몸의 상태",
+      "full_statement": "혈액순환 상태나 위축된 근육 등 몸의 상태를 파악한다.",
+      "source_sentence": "혈액순환 상태나 위축된 근육 등 몸의 상태를 파악한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "혈액순환 상태",
+      "full_statement": "안마 대상자의 혈액순환 상태를 확인한다.",
+      "source_sentence": "혈액순환 상태나 위축된 근육 등 몸의 상태를 파악한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "확인하다",
+      "object": "위축된 근육",
+      "full_statement": "신장이 필요한 위축된 근육 부위를 확인한다.",
+      "source_sentence": "위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "안마하다",
+      "object": "특정 부위",
+      "full_statement": "원활하지 않은 몸의 특정 부위를 안마한다.",
+      "source_sentence": "원활하지 않은 몸의 특정 부위를 안마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "원활히 하다",
+      "object": "혈액순환",
+      "full_statement": "혈액순환을 원활히 하기 위하여 안마한다.",
+      "source_sentence": "혈액순환을 원활히 하고 신경을 진정 또는 자극하여 위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진정시키다",
+      "object": "신경",
+      "full_statement": "안마를 통해 신경을 진정시킨다.",
+      "source_sentence": "혈액순환을 원활히 하고 신경을 진정 또는 자극하여 위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "자극하다",
+      "object": "신경",
+      "full_statement": "안마를 통해 신경을 자극한다.",
+      "source_sentence": "혈액순환을 원활히 하고 신경을 진정 또는 자극하여 위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "신장시키다",
+      "object": "위축된 근육",
+      "full_statement": "위축된 근육을 신장시키기 위하여 안마한다.",
+      "source_sentence": "위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "증진하다",
+      "object": "요법적 효과",
+      "full_statement": "기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "source_sentence": "혈액순환을 원활히 하고 신경을 진정 또는 자극하여 위축된 근육의 신장 및 기타 요법적 효과를 증진하기 위하여 안마한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28292",
+  "tasks": [
+    {
+      "verb": "심사하다",
+      "object": "보험 리스크",
+      "full_statement": "보험물건의 리스크 정도를 심사하여 인수 여부를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검토하다",
+      "object": "보험 신청",
+      "full_statement": "개인 및 그룹단위 보험 신청을 검토한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "보험 계약 조건",
+      "full_statement": "보험 할증금·보상범위 등 계약 조건을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "인수심사 보고서",
+      "full_statement": "인수심사(언더라이팅) 보고서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

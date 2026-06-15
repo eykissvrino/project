@@ -1,0 +1,50 @@
+{
+  "ksco_code": "89904",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "공기압축기",
+      "full_statement": "압축공기를 발생·공급하기 위해 공기압축기를 조작한다.",
+      "source_sentence": "압축공기를 이용하는 도구, 호이스트 또는 기타 장비에 압축공기를 발생 공급해주기 위해 공기압축기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "공급하다",
+      "object": "압축공기",
+      "full_statement": "압축공기를 이용하는 도구에 압축공기를 공급한다.",
+      "source_sentence": "압축공기를 이용하는 도구, 호이스트 또는 기타 장비에 압축공기를 발생 공급해주기 위해 공기압축기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "공급하다",
+      "object": "압축공기",
+      "full_statement": "호이스트 또는 기타 장비에 압축공기를 공급한다.",
+      "source_sentence": "압축공기를 이용하는 도구, 호이스트 또는 기타 장비에 압축공기를 발생 공급해주기 위해 공기압축기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "발생시키다",
+      "object": "압축공기",
+      "full_statement": "공기압축기를 가동하여 압축공기를 발생시킨다.",
+      "source_sentence": "압축공기를 이용하는 도구, 호이스트 또는 기타 장비에 압축공기를 발생 공급해주기 위해 공기압축기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "기기",
+      "full_statement": "제품을 제조하기 위해 다양한 기기를 조작한다.",
+      "source_sentence": "금속부품이나 기타 다양한 제품을 제조하기 위해 다양한 기기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "공기압축기", "category": "장비", "evidence_span": "압축공기를 발생 공급해주기 위해 공기압축기를 조작한다"},
+    {"name": "호이스트", "category": "장비", "evidence_span": "압축공기를 이용하는 도구, 호이스트 또는 기타 장비에 압축공기를 발생 공급"}
+  ],
+  "work_context": []
+}

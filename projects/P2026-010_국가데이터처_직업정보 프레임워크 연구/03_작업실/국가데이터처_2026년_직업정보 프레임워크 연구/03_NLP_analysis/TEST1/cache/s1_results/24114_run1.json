@@ -1,0 +1,148 @@
+{
+  "ksco_code": "24114",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "임산부와 태아의 건강상태",
+      "full_statement": "임산부와 태아의 건강상태를 진단한다.",
+      "source_sentence": "임산부와 태아의 건강상태를 진단하고 질병을 치료하며 신생아의 분만을 돕는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "치료하다",
+      "object": "임산부와 태아의 질병",
+      "full_statement": "임산부와 태아의 질병을 치료한다.",
+      "source_sentence": "임산부와 태아의 건강상태를 진단하고 질병을 치료하며 신생아의 분만을 돕는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "진료하다",
+      "object": "여성 생식기관의 질환",
+      "full_statement": "태아 출생 전·후의 임산부와 여성 생식기관의 질환을 진료한다.",
+      "source_sentence": "태아 출생 전‧후의 임산부와 여성 생식기관의 질환을 진료하는 자로",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "돕다",
+      "object": "신생아의 분만",
+      "full_statement": "신생아의 분만을 돕는다.",
+      "source_sentence": "임산부와 태아의 건강상태를 진단하고 질병을 치료하며 신생아의 분만을 돕는다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "실시하다",
+      "object": "제왕절개 수술",
+      "full_statement": "필요한 경우에는 제왕절개 수술을 실시한다.",
+      "source_sentence": "필요한 경우에는 제왕절개 수술이나 기타 외과수술을 실시하고 피임수술을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "실시하다",
+      "object": "기타 외과수술",
+      "full_statement": "필요한 경우에는 기타 외과수술을 실시한다.",
+      "source_sentence": "필요한 경우에는 제왕절개 수술이나 기타 외과수술을 실시하고 피임수술을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "피임수술",
+      "full_statement": "피임수술을 수행한다.",
+      "source_sentence": "필요한 경우에는 제왕절개 수술이나 기타 외과수술을 실시하고 피임수술을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진단하다",
+      "object": "여성의 각종 질환",
+      "full_statement": "여성의 각종 질환을 진단한다.",
+      "source_sentence": "또한 여성의 각종 질환을 진단하고 치료를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치료하다",
+      "object": "여성의 각종 질환",
+      "full_statement": "여성의 각종 질환을 치료한다.",
+      "source_sentence": "또한 여성의 각종 질환을 진단하고 치료를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "의료검사·시험·진단 자료",
+      "full_statement": "처방·치료의 범위 및 방법을 결정하기 위하여 의료검사·시험·진단을 통하여 얻은 자료를 분석한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "치료의 종류와 순서",
+      "full_statement": "치료의 종류와 순서를 결정한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사용하다",
+      "object": "내·외과적 기구 및 장비",
+      "full_statement": "진단 및 치료를 위하여 내·외과적 기구 및 장비를 사용한다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "알려주다",
+      "object": "처방된 치료와 건강상의 유의점",
+      "full_statement": "처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "처방하다",
+      "object": "투약을 비롯한 각종 치료행위",
+      "full_statement": "투약을 비롯한 각종 치료행위를 처방·지시한다.",
+      "source_sentence": "투약을 비롯한 각종 치료행위를 처방, 지시하고 환자들에게 식사, 질병예방 등에 관해 조언하며, 예방접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조언하다",
+      "object": "식사·질병예방",
+      "full_statement": "환자들에게 식사·질병예방 등에 관해 조언한다.",
+      "source_sentence": "투약을 비롯한 각종 치료행위를 처방, 지시하고 환자들에게 식사, 질병예방 등에 관해 조언하며, 예방접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "집도하다",
+      "object": "외과수술",
+      "full_statement": "외과수술을 집도한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "치료하다",
+      "object": "환자",
+      "full_statement": "특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "내·외과적 기구 및 장비", "category": "장비", "evidence_span": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고"},
+    {"name": "특수기술 및 장비", "category": "장비", "evidence_span": "특수기술 및 장비를 이용하여 환자를 치료한다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자(임산부·여성) 응대 및 진료", "evidence_span": "처방된 치료와 건강상의 유의점을 환자에게 알려준다"}
+  ]
+}

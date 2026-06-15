@@ -1,0 +1,117 @@
+{
+  "ksco_code": "83119",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분리하다",
+      "object": "천연 액체성 화학물",
+      "full_statement": "천연 액체성 화학물을 화학적 성분별로 분리한다.",
+      "source_sentence": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.72
+    },
+    {
+      "verb": "정제하다",
+      "object": "천연 액체성 화학물",
+      "full_statement": "천연 액체성 화학물을 화학적 성분별로 정제한다.",
+      "source_sentence": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조작하다",
+      "object": "펌프",
+      "full_statement": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "source_sentence": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "순환시키다",
+      "object": "석유생산품·물·화학용액",
+      "full_statement": "석유생산품, 물, 화학용액들을 정제과정으로 순환시킨다.",
+      "source_sentence": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "증류하다",
+      "object": "석유생산품",
+      "full_statement": "석유생산품을 증류한다.",
+      "source_sentence": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정제하다",
+      "object": "석유생산품",
+      "full_statement": "석유생산품을 정제한다.",
+      "source_sentence": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합 기계",
+      "full_statement": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "source_sentence": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "혼합하다",
+      "object": "화학약품 및 첨가제",
+      "full_statement": "화학약품 및 기타 첨가제를 석유와 혼합한다.",
+      "source_sentence": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "천연가스 처리 기계",
+      "full_statement": "천연가스를 정제, 증류 및 처리하는 기계를 조작한다.",
+      "source_sentence": "천연가스 정제, 증류 및 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "정제하다",
+      "object": "천연가스",
+      "full_statement": "천연가스를 정제한다.",
+      "source_sentence": "천연가스 정제, 증류 및 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→복합행동 분할",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "액화가스제조기",
+      "full_statement": "천연가스를 액화하여 액화가스를 제조하는 액화가스제조기를 조작한다.",
+      "source_sentence": "액화가스제조기 조작원",
+      "derived_from": "상속 주요업무→세세분류 예시 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "증류기", "category": "장비", "evidence_span": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다."},
+    {"name": "펌프", "category": "장비", "evidence_span": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다."},
+    {"name": "혼합 기계", "category": "장비", "evidence_span": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다."},
+    {"name": "천연가스 처리 기계", "category": "장비", "evidence_span": "천연가스 정제, 증류 및 처리하는 기계를 조작한다."},
+    {"name": "액화가스제조기", "category": "장비", "evidence_span": "액화가스제조기 조작원"}
+  ],
+  "work_context": []
+}

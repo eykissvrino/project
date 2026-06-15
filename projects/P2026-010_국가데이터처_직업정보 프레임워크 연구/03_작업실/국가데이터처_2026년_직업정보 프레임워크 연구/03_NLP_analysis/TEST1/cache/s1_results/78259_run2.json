@@ -1,0 +1,158 @@
+{
+  "ksco_code": "78259",
+  "tasks": [
+    {
+      "verb": "세우다",
+      "object": "시공계획",
+      "full_statement": "도면과 시방서에 따라 시공계획을 세운다.",
+      "source_sentence": "도면과 시방서에 따라 시공계획을 세운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "조적용 공구·장비 및 재료",
+      "full_statement": "조적용 공구, 장비 및 재료를 준비한다.",
+      "source_sentence": "조적용 공구, 장비 및 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "조적위치",
+      "full_statement": "조적위치를 측정하고 표시한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "설치하다",
+      "object": "규준틀",
+      "full_statement": "규준틀을 설치한다.",
+      "source_sentence": "조적위치를 측정․ 표시하고 규준틀을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "배합하다",
+      "object": "모르타르",
+      "full_statement": "모르타르를 배합한다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "자르다",
+      "object": "벽돌이나 블록",
+      "full_statement": "벽돌이나 블록을 원하는 크기로 자른다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "쌓다",
+      "object": "벽돌·블록",
+      "full_statement": "곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 벽돌이나 블록을 쌓는다.",
+      "source_sentence": "모르타르를 배합하고 벽돌이나 블록을 원하는 크기로 잘라서 평벽의 수직 및 수평을 조정하며 곡면 벽, 교차부, 개구부, 아치형태 등 다양한 형태로 쌓는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "시공 결함유무",
+      "full_statement": "작업완료 후 시공의 결함유무를 확인하고 검사한다.",
+      "source_sentence": "작업완료 후 시공의 결함유무를 확인, 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "건설하다",
+      "object": "맨홀",
+      "full_statement": "상하수도를 보호하는 맨홀을 건설하기 위해 벽돌, 콘크리트 블록 또는 타일을 부착한다.",
+      "source_sentence": "상하수도를 보호하는 맨홀을 건설하기 위해 벽돌, 콘크리트 블록 또는 타일을 부착하고, 물과 증기 파이프를 단열시키고 보호하기 위해 배관에 타일을 붙인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "붙이다",
+      "object": "배관 타일",
+      "full_statement": "물과 증기 파이프를 단열시키고 보호하기 위해 배관에 타일을 붙인다.",
+      "source_sentence": "물과 증기 파이프를 단열시키고 보호하기 위해 배관에 타일을 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "재건하다",
+      "object": "고적의 석조물",
+      "full_statement": "고적의 석조물을 재건한다.",
+      "source_sentence": "고적의 석조물을 재건하거나 표면을 수리하고 기념비에 재단 또는 다듬은 장식용 석재를 붙이며, 땅의 침식을 막기 위해 제방이나 도랑에 석재를 깔고 분괴 주형안에 내화벽돌과 모르타르 도안을 대는 등의 업무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "수리하다",
+      "object": "석조물 표면",
+      "full_statement": "고적의 석조물 표면을 수리한다.",
+      "source_sentence": "고적의 석조물을 재건하거나 표면을 수리하고 기념비에 재단 또는 다듬은 장식용 석재를 붙이며, 땅의 침식을 막기 위해 제방이나 도랑에 석재를 깔고 분괴 주형안에 내화벽돌과 모르타르 도안을 대는 등의 업무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "붙이다",
+      "object": "장식용 석재",
+      "full_statement": "기념비에 재단 또는 다듬은 장식용 석재를 붙인다.",
+      "source_sentence": "고적의 석조물을 재건하거나 표면을 수리하고 기념비에 재단 또는 다듬은 장식용 석재를 붙이며, 땅의 침식을 막기 위해 제방이나 도랑에 석재를 깔고 분괴 주형안에 내화벽돌과 모르타르 도안을 대는 등의 업무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "깔다",
+      "object": "석재",
+      "full_statement": "땅의 침식을 막기 위해 제방이나 도랑에 석재를 깐다.",
+      "source_sentence": "땅의 침식을 막기 위해 제방이나 도랑에 석재를 깔고 분괴 주형안에 내화벽돌과 모르타르 도안을 대는 등의 업무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "대다",
+      "object": "내화벽돌과 모르타르 도안",
+      "full_statement": "분괴 주형안에 내화벽돌과 모르타르 도안을 댄다.",
+      "source_sentence": "분괴 주형안에 내화벽돌과 모르타르 도안을 대는 등의 업무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "깔다",
+      "object": "보도블록",
+      "full_statement": "보도블록을 깐다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "쌓다",
+      "object": "내화벽돌",
+      "full_statement": "내화벽돌을 쌓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "제거하다",
+      "object": "오래된 조적재료",
+      "full_statement": "오래된 조적재료를 제거하고 해당 부분만 다시 쌓는다.",
+      "source_sentence": "보도블록을 깔거나 내화벽돌을 쌓으며, 오래된 조적재료를 제거하고 해당 부분만 다시 쌓기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.81
+    }
+  ],
+  "tools": [
+    {"name": "흙손", "category": "도구", "evidence_span": "흙손과 같은 조적용 공구, 장비와 다양한 재료의 벽돌, 블록을 사용하여"},
+    {"name": "조적용 공구", "category": "도구", "evidence_span": "조적용 공구, 장비 및 재료를 준비한다."},
+    {"name": "규준틀", "category": "장비", "evidence_span": "조적위치를 측정․ 표시하고 규준틀을 설치한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "벽돌·블록·석재 등 중량물 취급", "evidence_span": "다양한 재료의 벽돌, 블록을 사용하여 벽, 칸막이, 굴뚝, 용광로, 기둥, 보도 등과 같은 구조물의 바닥을 쌓거나 포설한다."},
+    {"category": "장소", "value": "지하 구조물(맨홀) 작업", "evidence_span": "상하수도를 보호하는 맨홀을 건설하기 위해 벽돌, 콘크리트 블록 또는 타일을 부착하고"}
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "ksco_code": "79211",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "건물설계도",
+      "full_statement": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토한다.",
+      "source_sentence": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토하고 현장검증을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검증하다",
+      "object": "현장",
+      "full_statement": "요구되는 재료, 장비, 노동력을 판단하기 위하여 현장검증을 한다.",
+      "source_sentence": "요구되는 재료, 장비, 노동력을 판단하기 위하여 건물설계도를 검토하고 현장검증을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "측정하다",
+      "object": "파이프의 길이와 구경",
+      "full_statement": "파이프의 길이와 구경을 측정하고 표시한다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절단하다",
+      "object": "파이프",
+      "full_statement": "명세서에 따라 파이프를 절단한다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "성형하다",
+      "object": "나사",
+      "full_statement": "파이프에 나사를 낸다.",
+      "source_sentence": "파이프의 길이와 구경을 측정, 표시하고 명세서에 따라 절단하고 나사를 낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "뚫다",
+      "object": "건축구조물의 구멍",
+      "full_statement": "배관설비를 부설하기 위하여 건축구조물에 구멍을 뚫는다.",
+      "source_sentence": "배관설비를 부설하기 위하여 건축구조물에 구멍을 뚫는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시설하다",
+      "object": "파이프",
+      "full_statement": "파이프를 시설한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "밀봉하다",
+      "object": "연결부위",
+      "full_statement": "연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "source_sentence": "파이프를 시설하고 연결부위를 봉합, 납땜, 용접하여 밀봉한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "수리하다",
+      "object": "낡거나 고장난 배관 및 연관",
+      "full_statement": "낡거나 고장난 배관 및 연관을 수리한다.",
+      "source_sentence": "낡거나 고장난 배관 및 연관을 수리 또는 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교체하다",
+      "object": "낡거나 고장난 배관 및 연관",
+      "full_statement": "낡거나 고장난 배관 및 연관을 교체한다.",
+      "source_sentence": "낡거나 고장난 배관 및 연관을 수리 또는 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "시험하다",
+      "object": "배관시설",
+      "full_statement": "누수 또는 결함부위를 찾아내기 위하여 배관시설을 시험한다.",
+      "source_sentence": "누수 또는 결함부위를 찾아내기 위하여 배관시설을 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "사용하다",
+      "object": "수공구 및 동력공구",
+      "full_statement": "파이프 및 기타 재료를 절단, 절곡, 나사성형, 납땜, 용접, 조립하기 위하여 다양한 수공구 및 동력공구를 기술적으로 사용한다.",
+      "source_sentence": "파이프 및 기타 재료를 절단, 절곡, 나사성형, 납땜, 용접, 조립하기 위하여 다양한 수공구 및 동력공구를 기술적으로 사용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "작업물",
+      "full_statement": "작업물이 명세서와 일치하는지 확인 및 검사한다.",
+      "source_sentence": "작업물이 명세서와 일치하는지 확인 및 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "제작하다",
+      "object": "옥내 급수관",
+      "full_statement": "옥내 급수관을 만든다.",
+      "source_sentence": "옥내 급수관, 상수도, 하수도 및 케이블용 도관을 만들고 토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제작하다",
+      "object": "상수도관",
+      "full_statement": "상수도용 도관을 만든다.",
+      "source_sentence": "옥내 급수관, 상수도, 하수도 및 케이블용 도관을 만들고 토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제작하다",
+      "object": "하수도관",
+      "full_statement": "하수도용 도관을 만든다.",
+      "source_sentence": "옥내 급수관, 상수도, 하수도 및 케이블용 도관을 만들고 토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제작하다",
+      "object": "케이블용 도관",
+      "full_statement": "케이블용 도관을 만든다.",
+      "source_sentence": "옥내 급수관, 상수도, 하수도 및 케이블용 도관을 만들고 토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "매설하다",
+      "object": "토관, 콘크리트관, 주철관 및 기타 재료의 관",
+      "full_statement": "토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "source_sentence": "옥내 급수관, 상수도, 하수도 및 케이블용 도관을 만들고 토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "묻다",
+      "object": "주철관",
+      "full_statement": "경우에 따라 주철관을 묻는다.",
+      "source_sentence": "경우에 따라서는 주철관을 묻고 연결구로 접속시키기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "접속하다",
+      "object": "주철관",
+      "full_statement": "주철관을 연결구로 접속시킨다.",
+      "source_sentence": "경우에 따라서는 주철관을 묻고 연결구로 접속시키기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구 및 동력공구를 기술적으로 사용한다"},
+    {"name": "동력공구", "category": "도구", "evidence_span": "다양한 수공구 및 동력공구를 기술적으로 사용한다"},
+    {"name": "연결구", "category": "도구", "evidence_span": "주철관을 묻고 연결구로 접속시키기도 한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "지하 매설 작업(관 매설)", "evidence_span": "토관, 콘크리트관, 주철관 및 기타 재료의 관을 매설한다"},
+    {"category": "신체적", "value": "납땜·용접 등 정밀 접합 작업", "evidence_span": "연결부위를 봉합, 납땜, 용접하여 밀봉한다"}
+  ]
+}

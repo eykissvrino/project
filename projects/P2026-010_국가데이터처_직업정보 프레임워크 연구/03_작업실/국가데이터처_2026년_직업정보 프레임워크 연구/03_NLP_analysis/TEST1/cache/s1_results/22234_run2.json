@@ -1,0 +1,119 @@
+{
+  "ksco_code": "22234",
+  "tasks": [
+    {
+      "verb": "프로그래밍하다",
+      "object": "게임 배경과 상황",
+      "full_statement": "게임 시나리오의 순서에 따라 배경과 상황 등을 각종 언어로 프로그래밍한다.",
+      "source_sentence": "게임 시나리오의 순서에 따라 배경과 상황 등을 각종 언어로 프로그래밍하며 컴퓨터 게임의 운용을 위한 프로그램을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제작하다",
+      "object": "컴퓨터 게임 운용 프로그램",
+      "full_statement": "컴퓨터 게임의 운용을 위한 프로그램을 제작한다.",
+      "source_sentence": "게임 시나리오의 순서에 따라 배경과 상황 등을 각종 언어로 프로그래밍하며 컴퓨터 게임의 운용을 위한 프로그램을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "게임 소프트웨어 기능·성능 및 사용자 요구사항",
+      "full_statement": "게임 소프트웨어의 기능·성능 및 사용자의 요구사항을 분석하고 정의한다.",
+      "source_sentence": "응용 소프트웨어 기능‧성능 및 사용자의 요구사항을 분석하고 정의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "게임 소프트웨어",
+      "full_statement": "요구사항을 기본으로 게임 소프트웨어를 설계한다.",
+      "source_sentence": "요구사항을 기본으로 응용 소프트웨어를 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "프로그래밍하다",
+      "object": "게임 소프트웨어",
+      "full_statement": "게임 소프트웨어를 프로그래밍하고 제작한다.",
+      "source_sentence": "응용 소프트웨어를 프로그래밍하고 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "프로그래머의 작업",
+      "full_statement": "프로그래머의 작업을 감독한다.",
+      "source_sentence": "프로그래머의 작업을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설정하다",
+      "object": "오퍼레이션 명세서",
+      "full_statement": "오퍼레이션 명세서를 설정하고 게임 소프트웨어 요건을 체계화한다.",
+      "source_sentence": "오퍼레이션 명세서를 설정하고 응용 소프트웨어 요건을 체계화한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "작성하다",
+      "object": "게임 소프트웨어 설명서",
+      "full_statement": "게임 소프트웨어 설명서를 작성하는 데 참여한다.",
+      "source_sentence": "응용 소프트웨어 설명서를 작성하는데 참여하며 컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "유지하다",
+      "object": "컴퓨터 프로그램",
+      "full_statement": "컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "source_sentence": "응용 소프트웨어 설명서를 작성하는데 참여하며 컴퓨터 프로그램을 설계, 작성하고 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "분석하다",
+      "object": "게임 개발의 목적 및 문제",
+      "full_statement": "게임 소프트웨어 개발에서 명기한 목적 및 문제들을 분석한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 명기한 목적 및 문제들을 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "전환하다",
+      "object": "형식화된 솔루션",
+      "full_statement": "제시된 형식화된 솔루션을 상세한 프로그램 명세서로 전환한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 제시한 형식화된 솔루션을 상세한 프로그램 명세서로 전환하고, 프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "검사하다",
+      "object": "프로그램의 타당성과 로직",
+      "full_statement": "프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "source_sentence": "응용 소프트웨어 개발자가 제시한 형식화된 솔루션을 상세한 프로그램 명세서로 전환하고, 프로그램의 타당성과 로직을 검사하고 수정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "소프트웨어 보고서·매뉴얼·문서",
+      "full_statement": "소프트웨어의 상태, 작동 및 유지관리에 관한 보고서, 매뉴얼 및 문서를 작성한다.",
+      "source_sentence": "소프트웨어의 상태, 작동 및 유지관리에 관한 보고서, 매뉴얼 및 문서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "변경하다",
+      "object": "소프트웨어 환경",
+      "full_statement": "컴퓨터 시스템의 사용 환경에 따라 게임 소프트웨어의 환경을 변경한다.",
+      "source_sentence": "컴퓨터 시스템의 사용 환경에 따라 소프트웨어의 환경을 변경한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

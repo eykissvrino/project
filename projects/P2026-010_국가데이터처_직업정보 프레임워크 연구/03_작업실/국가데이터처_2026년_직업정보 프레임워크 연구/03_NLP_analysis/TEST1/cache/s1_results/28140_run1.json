@@ -1,0 +1,101 @@
+{
+  "ksco_code": "28140",
+  "tasks": [
+    {
+      "verb": "분류하다",
+      "object": "수출입 물품의 세목·세율",
+      "full_statement": "타인의 의뢰를 받아 수출입 물품에 대하여 세목·세율을 분류한다.",
+      "source_sentence": "타인의 의뢰를 받아 수출입 물품에 대하여 세목‧세율의 분류와 과세 가격의 확인과 세액을 계산하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "과세 가격",
+      "full_statement": "수출입 물품에 대한 과세 가격을 확인한다.",
+      "source_sentence": "타인의 의뢰를 받아 수출입 물품에 대하여 세목‧세율의 분류와 과세 가격의 확인과 세액을 계산하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "계산하다",
+      "object": "세액",
+      "full_statement": "수출입 물품에 대한 세액을 계산한다.",
+      "source_sentence": "세목‧세율의 분류와 과세 가격의 확인과 세액을 계산하고",
+      "derived_from": "세세분류 정의→상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "신고하다",
+      "object": "수출입",
+      "full_statement": "수출입의 신고 및 이와 관련되는 절차의 이행을 대리한다.",
+      "source_sentence": "수출입의 신고 및 이와 관련되는 절차의 이행과 관세법에 의한 이의신청‧소원‧심판 청구 등을 대리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이행하다",
+      "object": "수출입 통관절차",
+      "full_statement": "수출입 통관절차를 이행한다.",
+      "source_sentence": "수출입 통관절차를 이행하거나 화주나 납세의무자를 대리하여 관세법상 관련된 행정업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "처리하다",
+      "object": "관세법상 행정업무",
+      "full_statement": "화주나 납세의무자를 대리하여 관세법상 관련된 행정업무를 처리한다.",
+      "source_sentence": "수출입 통관절차를 이행하거나 화주나 납세의무자를 대리하여 관세법상 관련된 행정업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "대리하다",
+      "object": "이의신청",
+      "full_statement": "관세법에 의한 이의신청을 대리한다.",
+      "source_sentence": "관세법에 의한 이의신청, 소원 및 심판청구의 대리, 관세에 대한 상담 및 자문 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "대리하다",
+      "object": "소원",
+      "full_statement": "관세법에 의한 소원을 대리한다.",
+      "source_sentence": "관세법에 의한 이의신청, 소원 및 심판청구의 대리, 관세에 대한 상담 및 자문 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "대리하다",
+      "object": "심판 청구",
+      "full_statement": "관세법에 의한 심판 청구를 대리한다.",
+      "source_sentence": "관세법에 의한 이의신청, 소원 및 심판청구의 대리, 관세에 대한 상담 및 자문 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "상담하다",
+      "object": "관세",
+      "full_statement": "관세에 대한 상담 업무를 수행한다.",
+      "source_sentence": "관세에 대한 상담 및 자문 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "관세",
+      "full_statement": "관세에 대한 자문 업무를 수행한다.",
+      "source_sentence": "관세에 대한 상담 및 자문 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "타인의 의뢰를 받아 대리하는 고객 대리 업무",
+      "evidence_span": "타인의 의뢰를 받아 수출입 물품에 대하여"
+    }
+  ]
+}

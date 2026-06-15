@@ -1,0 +1,66 @@
+{
+  "ksco_code": "99910",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "사무실이나 식당",
+      "full_statement": "구두를 수집하기 위해 사무실이나 식당 등을 방문한다.",
+      "source_sentence": "사무실이나 식당 등을 방문하여 구두를 수집하고, 구두를 닦아주거나 광내고 간단한 수선을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "구두",
+      "full_statement": "사무실이나 식당 등을 방문하여 구두를 수집한다.",
+      "source_sentence": "사무실이나 식당 등을 방문하여 구두를 수집하고, 구두를 닦아주거나 광내고 간단한 수선을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "닦다",
+      "object": "구두",
+      "full_statement": "수집한 구두를 닦아준다.",
+      "source_sentence": "구두를 닦아주거나 광택을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "광내다",
+      "object": "구두",
+      "full_statement": "구두에 광택을 낸다.",
+      "source_sentence": "구두를 닦아주거나 광택을 낸다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수선하다",
+      "object": "구두",
+      "full_statement": "구두를 간단하게 수선한다.",
+      "source_sentence": "구두를 닦아주거나 광내고 간단한 수선을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교체하다",
+      "object": "구두 밑창",
+      "full_statement": "구두 밑창 등을 교체하여 간단한 수리를 한다.",
+      "source_sentence": "구두 빝창교체 등 간단한 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "사무실·식당 등 방문(이동)",
+      "evidence_span": "사무실이나 식당 등을 방문하여 구두를 수집하고"
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "ksco_code": "23125",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "각종 건물에 관한 연구",
+      "full_statement": "각종 건물에 관한 연구를 수행한다.",
+      "source_sentence": "각종 건물에 관한 연구와 건물 건설, 유지 및 보수를 기획하고 설계하며 건축안전에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "기획하다",
+      "object": "건물 건설",
+      "full_statement": "건물의 건설을 기획한다.",
+      "source_sentence": "각종 건물에 관한 연구와 건물 건설, 유지 및 보수를 기획하고 설계하며 건축안전에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "건물의 유지 및 보수",
+      "full_statement": "건물의 유지 및 보수를 기획한다.",
+      "source_sentence": "각종 건물에 관한 연구와 건물 건설, 유지 및 보수를 기획하고 설계하며 건축안전에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    },
+    {
+      "verb": "설계하다",
+      "object": "건물 건설",
+      "full_statement": "건물의 건설을 설계한다.",
+      "source_sentence": "각종 건물에 관한 연구와 건물 건설, 유지 및 보수를 기획하고 설계하며 건축안전에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축안전에 관한 전반",
+      "full_statement": "건축안전에 관한 전반적인 감독을 수행한다.",
+      "source_sentence": "각종 건물에 관한 연구와 건물 건설, 유지 및 보수를 기획하고 설계하며 건축안전에 관한 전반적인 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고용하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 고용한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "도급업자들과 건설에 수반되는 인력들을 감독한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설현장의 활동",
+      "full_statement": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무→건축안전 감독 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "설계도 및 시방서 부합 여부",
+      "full_statement": "건설현장의 활동이 설계도 및 시방서와 맞는지 확인한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축사업 예비조사",
+      "full_statement": "건축사업의 예비조사를 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "건축사업 재무",
+      "full_statement": "건축사업의 재무 분석을 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    },
+    {
+      "verb": "준비하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 감독한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설현장",
+      "evidence_span": "건설현장의 활동을 감독한다"
+    }
+  ]
+}

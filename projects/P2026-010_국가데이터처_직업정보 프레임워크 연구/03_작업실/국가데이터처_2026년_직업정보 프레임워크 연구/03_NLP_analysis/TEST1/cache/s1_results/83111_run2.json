@@ -1,0 +1,99 @@
+{
+  "ksco_code": "83111",
+  "tasks": [
+    {
+      "verb": "제거하다",
+      "object": "침전물과 수분",
+      "full_statement": "원유로부터 침전물과 수분을 제거한다.",
+      "source_sentence": "원유로부터 침전물, 수분을 제거하기 위해 유전에서 화학, 전기 또는 원심력 설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학 설비",
+      "full_statement": "원유의 침전물과 수분을 제거하기 위해 화학 설비를 조작한다.",
+      "source_sentence": "원유로부터 침전물, 수분을 제거하기 위해 유전에서 화학, 전기 또는 원심력 설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "전기 설비",
+      "full_statement": "원유의 침전물과 수분을 제거하기 위해 전기 설비를 조작한다.",
+      "source_sentence": "원유로부터 침전물, 수분을 제거하기 위해 유전에서 화학, 전기 또는 원심력 설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "원심력 설비",
+      "full_statement": "원유의 침전물과 수분을 제거하기 위해 원심력 설비를 조작한다.",
+      "source_sentence": "원유로부터 침전물, 수분을 제거하기 위해 유전에서 화학, 전기 또는 원심력 설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "펌프",
+      "full_statement": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "source_sentence": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "증류기",
+      "full_statement": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "source_sentence": "석유생산품을 증류 또는 정제하는 증류기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합 기계",
+      "full_statement": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "source_sentence": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "처리하다",
+      "object": "원유 탈황",
+      "full_statement": "원유 처리 과정에서 탈황처리기를 조작하여 황 성분을 처리한다.",
+      "source_sentence": "탈황처리기 조작원·펌프 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "탈수기",
+      "full_statement": "원유로부터 수분을 제거하기 위해 탈수기를 조작한다.",
+      "source_sentence": "탈수기 조작원, 유전·원유처리장비 조작원, 유전",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "화학 설비", "category": "장비", "evidence_span": "유전에서 화학, 전기 또는 원심력 설비를 조작한다"},
+    {"name": "전기 설비", "category": "장비", "evidence_span": "유전에서 화학, 전기 또는 원심력 설비를 조작한다"},
+    {"name": "원심력 설비", "category": "장비", "evidence_span": "유전에서 화학, 전기 또는 원심력 설비를 조작한다"},
+    {"name": "증류기", "category": "장비", "evidence_span": "천연 액체성 화학물을 화학적 성분별로 분리 또는 정제하는 증류기를 조작한다"},
+    {"name": "펌프", "category": "장비", "evidence_span": "석유생산품, 물, 화학용액들을 정제과정으로 순환시키는 펌프를 조작한다"},
+    {"name": "혼합 기계", "category": "장비", "evidence_span": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다"},
+    {"name": "탈수기", "category": "장비", "evidence_span": "탈수기 조작원, 유전·원유처리장비 조작원"},
+    {"name": "탈황처리기", "category": "장비", "evidence_span": "탈황처리기 조작원·펌프 조작원"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "유전(원유 생산 현장)", "evidence_span": "원유로부터 침전물, 수분을 제거하기 위해 유전에서 화학, 전기 또는 원심력 설비를 조작한다"},
+    {"category": "위험", "value": "화학물질 취급", "evidence_span": "화학약품 및 기타 첨가제를 석유와 혼합하는 기계를 조작한다"}
+  ]
+}

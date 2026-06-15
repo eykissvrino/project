@@ -1,0 +1,141 @@
+{
+  "ksco_code": "24501",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "임상영양치료",
+      "full_statement": "영양문제가 있거나 잠재적 위험요인을 지닌 개인 및 집단을 대상으로 질병의 예방과 관리를 위하여 임상영양치료를 전문적으로 수행한다.",
+      "source_sentence": "영양문제가 있거나 잠재적 위험요인을 지닌 개인 및 집단을 대상으로 질병의 예방과 관리를 위하여 임상영양치료를 전문적으로 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수집하다",
+      "object": "영양문제",
+      "full_statement": "대상자의 영양문제를 수집한다.",
+      "source_sentence": "영양문제 수집‧분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "영양문제",
+      "full_statement": "수집한 영양문제를 분석한다.",
+      "source_sentence": "영양문제 수집‧분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산정하다",
+      "object": "영양요구량",
+      "full_statement": "대상자의 영양요구량을 산정한다.",
+      "source_sentence": "영양문제 수집‧분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "판정하다",
+      "object": "영양상태",
+      "full_statement": "대상자의 영양상태를 판정한다.",
+      "source_sentence": "영양문제 수집‧분석 및 영양요구량 산정 등의 영양을 판정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "영양상담",
+      "full_statement": "대상자를 대상으로 영양상담을 실시한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실시하다",
+      "object": "영양교육",
+      "full_statement": "대상자를 대상으로 영양교육을 실시한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "영양모니터링",
+      "full_statement": "영양관리상태 점검을 위하여 영양모니터링을 실시한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "영양관리상태",
+      "full_statement": "영양관리상태 점검을 위하여 영양상태를 평가한다.",
+      "source_sentence": "영양상담 및 교육을 실시하고, 영양관리상태 점검을 위한 영양모니터링 및 평가를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "영양",
+      "full_statement": "영양불량상태 개선을 위하여 대상자의 영양을 관리한다.",
+      "source_sentence": "영양불량상태 개선을 위한 영양 관리 및 임상영양에 대하여 자문 및 연구를 하며 그 밖에 임상영양과 관련된 업무를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "임상영양",
+      "full_statement": "임상영양에 대하여 자문한다.",
+      "source_sentence": "영양불량상태 개선을 위한 영양 관리 및 임상영양에 대하여 자문 및 연구를 하며 그 밖에 임상영양과 관련된 업무를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연구하다",
+      "object": "임상영양",
+      "full_statement": "임상영양에 대하여 연구한다.",
+      "source_sentence": "영양불량상태 개선을 위한 영양 관리 및 임상영양에 대하여 자문 및 연구를 하며 그 밖에 임상영양과 관련된 업무를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "영양기법과 응용",
+      "full_statement": "영양기법과 응용에 관하여 연구‧개발한다.",
+      "source_sentence": "영양기법과 응용에 관하여 연구‧개발하고 이들을 적용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "적용하다",
+      "object": "영양기법과 응용",
+      "full_statement": "연구‧개발한 영양기법과 응용을 임상에 적용한다.",
+      "source_sentence": "영양기법과 응용에 관하여 연구‧개발하고 이들을 적용한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "섭취영양소의 양",
+      "full_statement": "대상자의 섭취영양소의 양을 분석한다.",
+      "source_sentence": "사용식품의 신선도를 검사하고, 함유열량의 단위를 계산하며 섭취영양소의 양을 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "계산하다",
+      "object": "함유열량의 단위",
+      "full_statement": "식품의 함유열량의 단위를 계산한다.",
+      "source_sentence": "사용식품의 신선도를 검사하고, 함유열량의 단위를 계산하며 섭취영양소의 양을 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "개인 및 집단 대상 영양상담·교육 등 고객 응대",
+      "evidence_span": "영양문제가 있거나 잠재적 위험요인을 지닌 개인 및 집단을 대상으로"
+    }
+  ]
+}

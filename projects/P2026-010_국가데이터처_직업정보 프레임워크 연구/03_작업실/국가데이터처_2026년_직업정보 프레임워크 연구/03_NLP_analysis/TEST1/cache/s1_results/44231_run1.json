@@ -1,0 +1,138 @@
+{
+  "ksco_code": "44231",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "오락용 승차기구",
+      "full_statement": "놀이시설에 설치된 오락용 승차기구를 운전한다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "알려주다",
+      "object": "운전방법",
+      "full_statement": "고객에게 오락용 승차기구의 운전방법을 알려준다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 편의",
+      "full_statement": "고객에게 각종 편의를 제공한다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 조작한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 관리한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "놀이기구",
+      "full_statement": "놀이기구 등에 대해 간단한 보수·수리를 한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제공하다",
+      "object": "장비 비품",
+      "full_statement": "고객의 신체에 알맞은 장비 비품을 제공한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설명하다",
+      "object": "장비의 안전한 사용법",
+      "full_statement": "고객에게 장비의 안전한 사용법을 설명한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 점검한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시험하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 시험한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "알려주다",
+      "object": "기구의 사용료와 사용시간",
+      "full_statement": "고객에게 기구의 사용료와 사용시간을 알려준다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관찰하다",
+      "object": "정원 초과 및 안전벨트·빗장의 안전 상태",
+      "full_statement": "정원 초과와 안전벨트나 빗장의 안전 상태를 관찰한다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교환하다",
+      "object": "동전",
+      "full_statement": "동전으로 운영되는 오락시설에서 동전을 교환해 준다.",
+      "source_sentence": "동전으로 운영되는 오락시설에서 동전을 교환해 주며, 클럽에서 주류 제공 등 고객의 편의와 안전을 위해 각종 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "고객의 물품을 보관하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "안내하다",
+      "object": "놀이시설",
+      "full_statement": "고객에게 놀이시설을 안내한다.",
+      "source_sentence": "놀이시설 안내원·놀이기구 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대 및 편의 제공",
+      "evidence_span": "고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다."
+    },
+    {
+      "category": "위험",
+      "value": "안전사고 방지 필요(승차기구 운행)",
+      "evidence_span": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다."
+    }
+  ]
+}

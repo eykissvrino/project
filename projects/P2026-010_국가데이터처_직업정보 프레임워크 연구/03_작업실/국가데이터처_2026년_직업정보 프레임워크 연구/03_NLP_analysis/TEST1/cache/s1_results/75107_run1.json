@@ -1,0 +1,105 @@
+{
+  "ksco_code": "75107",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "차체나 부품",
+      "full_statement": "승용차, 택시 등의 차체나 부품을 점검한다.",
+      "source_sentence": "자동차 기관(엔진)을 제외한 승용차, 택시 등의 차체나 부품을 점검하고 간단한 정비업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "간단한 정비업무",
+      "full_statement": "엔진을 제외한 차체나 부품에 대한 간단한 정비업무를 수행한다.",
+      "source_sentence": "자동차 기관(엔진)을 제외한 승용차, 택시 등의 차체나 부품을 점검하고 간단한 정비업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진단하다",
+      "object": "각 부분",
+      "full_statement": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험·측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위를 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분해하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체를 위하여 고장부위를 분해한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "작동상태",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "정비가 필요한 부품을 교체한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 부품",
+      "full_statement": "사용가능한 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "작동상태",
+      "full_statement": "설치 또는 수리부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교체하다",
+      "object": "자동차 타이어",
+      "full_statement": "자동차 타이어를 교체한다.",
+      "source_sentence": "자동차 타이어 교체원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "정비하다",
+      "object": "자동차 유리",
+      "full_statement": "자동차 유리를 정비한다.",
+      "source_sentence": "자동차 유리 정비원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "시험·측정 기구", "category": "장비", "evidence_span": "시험‧측정 기구를 사용하여 각 부분을 진단·검사한다"}
+  ],
+  "work_context": []
+}

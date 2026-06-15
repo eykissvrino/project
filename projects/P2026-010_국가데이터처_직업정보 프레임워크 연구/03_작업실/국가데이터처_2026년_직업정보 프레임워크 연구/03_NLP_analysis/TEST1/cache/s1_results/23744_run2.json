@@ -1,0 +1,88 @@
+{
+  "ksco_code": "23744",
+  "tasks": [
+    {
+      "verb": "측정하다",
+      "object": "작업장 소음",
+      "full_statement": "소음측정기를 통해 작업장의 소음 수준을 측정한다.",
+      "source_sentence": "소음 진동 기술자 및 연구원의 감독 하에 소음측정기를 통해 작업장이나 공간의 소음 진동 문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "공간 진동",
+      "full_statement": "소음측정기를 통해 공간의 진동 수준을 측정한다.",
+      "source_sentence": "소음 진동 기술자 및 연구원의 감독 하에 소음측정기를 통해 작업장이나 공간의 소음 진동 문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시험하다",
+      "object": "소음 진동 문제",
+      "full_statement": "작업장이나 공간의 소음 진동 문제를 시험한다.",
+      "source_sentence": "소음 진동 기술자 및 연구원의 감독 하에 소음측정기를 통해 작업장이나 공간의 소음 진동 문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보조하다",
+      "object": "기술 개발 및 연구",
+      "full_statement": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시험하다",
+      "object": "환경영향 평가",
+      "full_statement": "환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "유지하다",
+      "object": "시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 유지한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소음측정 장비)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "보수하다",
+      "object": "시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 보수한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소음측정 장비)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 기술적 업무를 수행한다.",
+      "source_sentence": "환경공학과 관련된 연구 및 개발과 관련하여 환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {
+      "name": "소음측정기",
+      "category": "장비",
+      "evidence_span": "소음측정기를 통해 작업장이나 공간의 소음 진동 문제를 시험한다"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "작업장",
+      "evidence_span": "작업장이나 공간의 소음 진동 문제를 시험한다"
+    },
+    {
+      "category": "사회적",
+      "value": "소음 진동 기술자 및 연구원의 감독 하에 수행",
+      "evidence_span": "소음 진동 기술자 및 연구원의 감독 하에"
+    }
+  ]
+}

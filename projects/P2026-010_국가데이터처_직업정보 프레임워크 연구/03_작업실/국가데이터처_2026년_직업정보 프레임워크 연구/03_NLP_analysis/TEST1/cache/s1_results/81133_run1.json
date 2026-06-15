@@ -1,0 +1,120 @@
+{
+  "ksco_code": "81133",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "치즈 가공 기계",
+      "full_statement": "치즈를 가공하는 기계를 조작한다.",
+      "source_sentence": "치즈, 크림 또는 기타 낙농제품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "크림 가공 기계",
+      "full_statement": "크림을 가공하는 기계를 조작한다.",
+      "source_sentence": "치즈, 크림 또는 기타 낙농제품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "기타 낙농제품 가공 기계",
+      "full_statement": "기타 낙농제품을 가공하는 기계를 조작한다.",
+      "source_sentence": "치즈, 크림 또는 기타 낙농제품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "저온살균 기계",
+      "full_statement": "우유와 크림을 저온살균하는 기계를 조작한다.",
+      "source_sentence": "우유와 크림을 저온살균, 균질화 및 가열 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "균질화 기계",
+      "full_statement": "우유와 크림을 균질화하는 기계를 조작한다.",
+      "source_sentence": "우유와 크림을 저온살균, 균질화 및 가열 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "가열 처리 기계",
+      "full_statement": "우유와 크림을 가열 처리하는 기계를 조작한다.",
+      "source_sentence": "우유와 크림을 저온살균, 균질화 및 가열 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "연유 제조기",
+      "full_statement": "연유 제조기를 조작한다.",
+      "source_sentence": "연유, 분유제조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "분유 제조기",
+      "full_statement": "분유 제조기를 조작한다.",
+      "source_sentence": "연유, 분유제조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "버터 제조 기계",
+      "full_statement": "버터 제조용 기계를 조작한다.",
+      "source_sentence": "버터, 치즈 및 기타 우유제품 제조용 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "치즈 제조 기계",
+      "full_statement": "치즈 제조용 기계를 조작한다.",
+      "source_sentence": "버터, 치즈 및 기타 우유제품 제조용 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "기타 우유제품 제조 기계",
+      "full_statement": "기타 우유제품 제조용 기계를 조작한다.",
+      "source_sentence": "버터, 치즈 및 기타 우유제품 제조용 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "우유 살균기",
+      "full_statement": "우유 살균기를 조작한다.",
+      "source_sentence": "우유 살균기 조작원·분유 생산기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "아이스크림 제조기",
+      "full_statement": "아이스크림 제조기를 조작한다.",
+      "source_sentence": "치즈 제조기 조작원·아이스크림 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "저온살균기", "category": "장비", "evidence_span": "우유와 크림을 저온살균, 균질화 및 가열 처리하는 기계를 조작한다."},
+    {"name": "균질화기", "category": "장비", "evidence_span": "우유와 크림을 저온살균, 균질화 및 가열 처리하는 기계를 조작한다."},
+    {"name": "연유제조기", "category": "장비", "evidence_span": "연유, 분유제조기를 조작한다."},
+    {"name": "분유제조기", "category": "장비", "evidence_span": "연유, 분유제조기를 조작한다."},
+    {"name": "버터 제조기", "category": "장비", "evidence_span": "버터, 치즈 및 기타 우유제품 제조용 기계를 조작한다."},
+    {"name": "치즈 제조기", "category": "장비", "evidence_span": "치즈 제조기 조작원·아이스크림 제조기 조작원"},
+    {"name": "아이스크림 제조기", "category": "장비", "evidence_span": "치즈 제조기 조작원·아이스크림 제조기 조작원"},
+    {"name": "우유 살균기", "category": "장비", "evidence_span": "우유 살균기 조작원·분유 생산기 조작원"}
+  ],
+  "work_context": []
+}

@@ -1,0 +1,4452 @@
+{
+  "I_0001": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.7005,
+    "method": "mapped",
+    "margin": 0.0243,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.7005
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6762
+      },
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.676
+      }
+    ]
+  },
+  "I_0002": {
+    "gwa_id": "4.A.4.a.6",
+    "cosine": 0.6667,
+    "method": "mapped",
+    "margin": 0.0156,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.6667
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6511
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6491
+      }
+    ]
+  },
+  "I_0003": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.729,
+    "method": "mapped",
+    "margin": 0.0328,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.729
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6962
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.6904
+      }
+    ]
+  },
+  "I_0004": {
+    "gwa_id": "4.A.2.a.2",
+    "cosine": 0.6986,
+    "method": "mapped",
+    "margin": 0.0133,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.6986
+      },
+      {
+        "gwa_id": "4.A.1.a.1",
+        "label_kr": "정보 입수",
+        "cosine": 0.6853
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.68
+      }
+    ]
+  },
+  "I_0005": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.7454,
+    "method": "mapped",
+    "margin": 0.0239,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.7454
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.7215
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6727
+      }
+    ]
+  },
+  "I_0006": {
+    "gwa_id": "4.A.2.b.3",
+    "cosine": 0.6635,
+    "method": "mapped",
+    "margin": 0.0027,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.6635
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6608
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.66
+      }
+    ]
+  },
+  "I_0007": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.7204,
+    "method": "mapped",
+    "margin": 0.0359,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.7204
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6845
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6708
+      }
+    ]
+  },
+  "I_0008": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6731,
+    "method": "mapped",
+    "margin": 0.0107,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6731
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6625
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6575
+      }
+    ]
+  },
+  "I_0009": {
+    "gwa_id": "4.A.4.a.5",
+    "cosine": 0.6646,
+    "method": "mapped",
+    "margin": 0.0121,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.6646
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6526
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.6385
+      }
+    ]
+  },
+  "I_0010": {
+    "gwa_id": "4.A.4.b.3",
+    "cosine": 0.7144,
+    "method": "mapped",
+    "margin": 0.0338,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.7144
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6806
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.659
+      }
+    ]
+  },
+  "I_0011": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.65,
+    "method": "mapped",
+    "margin": 0.0028,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.65
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.6473
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.645
+      }
+    ]
+  },
+  "I_0012": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6586,
+    "method": "mapped",
+    "margin": 0.0241,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6586
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6345
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.6156
+      }
+    ]
+  },
+  "I_0013": {
+    "gwa_id": "4.A.3.b.1",
+    "cosine": 0.7194,
+    "method": "mapped",
+    "margin": 0.0267,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.7194
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.6927
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.6566
+      }
+    ]
+  },
+  "I_0014": {
+    "gwa_id": "4.A.3.b.2",
+    "cosine": 0.6265,
+    "method": "mapped",
+    "margin": 0.0012,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.6265
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6253
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6128
+      }
+    ]
+  },
+  "I_0015": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6504,
+    "method": "mapped",
+    "margin": 0.0628,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6504
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5875
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5856
+      }
+    ]
+  },
+  "I_0016": {
+    "gwa_id": "4.A.3.b.1",
+    "cosine": 0.7103,
+    "method": "mapped",
+    "margin": 0.0134,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.7103
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6969
+      },
+      {
+        "gwa_id": "4.A.4.b.6",
+        "label_kr": "자문 및 조언 제공",
+        "cosine": 0.683
+      }
+    ]
+  },
+  "I_0017": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6521,
+    "method": "mapped",
+    "margin": 0.0077,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6521
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.6444
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6275
+      }
+    ]
+  },
+  "I_0018": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.7216,
+    "method": "mapped",
+    "margin": 0.0288,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.7216
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6928
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.6838
+      }
+    ]
+  },
+  "I_0019": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6083,
+    "method": "mapped",
+    "margin": 0.0106,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6083
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5977
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5851
+      }
+    ]
+  },
+  "I_0020": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.6867,
+    "method": "mapped",
+    "margin": 0.0255,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6867
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6612
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6236
+      }
+    ]
+  },
+  "I_0021": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.715,
+    "method": "mapped",
+    "margin": 0.043,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.715
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.672
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.6357
+      }
+    ]
+  },
+  "I_0022": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6612,
+    "method": "mapped",
+    "margin": 0.0246,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6612
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6366
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6186
+      }
+    ]
+  },
+  "I_0023": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6159,
+    "method": "mapped",
+    "margin": 0.0386,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6159
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5773
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.5688
+      }
+    ]
+  },
+  "I_0024": {
+    "gwa_id": "4.A.2.a.3",
+    "cosine": 0.6592,
+    "method": "mapped",
+    "margin": 0.032,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6592
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6272
+      },
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.6208
+      }
+    ]
+  },
+  "I_0025": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5897,
+    "method": "mapped",
+    "margin": 0.0271,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5897
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5626
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5549
+      }
+    ]
+  },
+  "I_0026": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5817,
+    "method": "mapped",
+    "margin": 0.014,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5817
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5677
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5644
+      }
+    ]
+  },
+  "I_0027": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6409,
+    "method": "mapped",
+    "margin": 0.0632,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6409
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5777
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5739
+      }
+    ]
+  },
+  "I_0028": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6529,
+    "method": "mapped",
+    "margin": 0.0311,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6529
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6218
+      },
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.6079
+      }
+    ]
+  },
+  "I_0029": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6705,
+    "method": "mapped",
+    "margin": 0.002,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6705
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.6686
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6588
+      }
+    ]
+  },
+  "I_0030": {
+    "gwa_id": "4.A.4.c.3",
+    "cosine": 0.6578,
+    "method": "mapped",
+    "margin": 0.0197,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6578
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6381
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.6117
+      }
+    ]
+  },
+  "I_0031": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.6999,
+    "method": "mapped",
+    "margin": 0.0427,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.6999
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6572
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6565
+      }
+    ]
+  },
+  "I_0032": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6211,
+    "method": "mapped",
+    "margin": 0.0065,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6211
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6146
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.582
+      }
+    ]
+  },
+  "I_0033": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6314,
+    "method": "mapped",
+    "margin": 0.0174,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6314
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6141
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5931
+      }
+    ]
+  },
+  "I_0034": {
+    "gwa_id": "4.A.4.c.3",
+    "cosine": 0.6673,
+    "method": "mapped",
+    "margin": 0.0028,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6673
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.6645
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6578
+      }
+    ]
+  },
+  "I_0035": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6654,
+    "method": "mapped",
+    "margin": 0.0585,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6654
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6069
+      },
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.5979
+      }
+    ]
+  },
+  "I_0036": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.5904,
+    "method": "mapped",
+    "margin": 0.0089,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5904
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5815
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5695
+      }
+    ]
+  },
+  "I_0037": {
+    "gwa_id": "4.A.4.b.6",
+    "cosine": 0.7343,
+    "method": "mapped",
+    "margin": 0.024,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.6",
+        "label_kr": "자문 및 조언 제공",
+        "cosine": 0.7343
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.7103
+      },
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.6851
+      }
+    ]
+  },
+  "I_0038": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.671,
+    "method": "mapped",
+    "margin": 0.02,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.671
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.651
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.6324
+      }
+    ]
+  },
+  "I_0039": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6393,
+    "method": "mapped",
+    "margin": 0.0003,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6393
+      },
+      {
+        "gwa_id": "4.A.1.b.3",
+        "label_kr": "수량적 특성 추정",
+        "cosine": 0.639
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6386
+      }
+    ]
+  },
+  "I_0040": {
+    "gwa_id": "4.A.4.c.1",
+    "cosine": 0.663,
+    "method": "mapped",
+    "margin": 0.0185,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.663
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6446
+      },
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.6407
+      }
+    ]
+  },
+  "I_0041": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6228,
+    "method": "mapped",
+    "margin": 0.0267,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6228
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5961
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5908
+      }
+    ]
+  },
+  "I_0042": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5563,
+    "method": "mapped",
+    "margin": 0.0065,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5563
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.5498
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5398
+      }
+    ]
+  },
+  "I_0043": {
+    "gwa_id": "4.A.4.a.4",
+    "cosine": 0.6161,
+    "method": "mapped",
+    "margin": 0.0013,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.6161
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6148
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6093
+      }
+    ]
+  },
+  "I_0044": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.62,
+    "method": "mapped",
+    "margin": 0.0115,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.62
+      },
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.6085
+      },
+      {
+        "gwa_id": "4.A.4.b.2",
+        "label_kr": "팀 개발 및 구축",
+        "cosine": 0.6065
+      }
+    ]
+  },
+  "I_0045": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6184,
+    "method": "mapped",
+    "margin": 0.0066,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6184
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6118
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.6098
+      }
+    ]
+  },
+  "I_0046": {
+    "gwa_id": "4.A.4.a.5",
+    "cosine": 0.7485,
+    "method": "mapped",
+    "margin": 0.0925,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.7485
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.656
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6413
+      }
+    ]
+  },
+  "I_0047": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.637,
+    "method": "mapped",
+    "margin": 0.0094,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.637
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6276
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6146
+      }
+    ]
+  },
+  "I_0048": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5946,
+    "method": "mapped",
+    "margin": 0.0251,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5946
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5695
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5531
+      }
+    ]
+  },
+  "I_0049": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6524,
+    "method": "mapped",
+    "margin": 0.0145,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6524
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6379
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5925
+      }
+    ]
+  },
+  "I_0050": {
+    "gwa_id": "4.A.2.a.4",
+    "cosine": 0.6578,
+    "method": "mapped",
+    "margin": 0.0204,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.4",
+        "label_kr": "데이터·정보 분석",
+        "cosine": 0.6578
+      },
+      {
+        "gwa_id": "4.A.1.b.1",
+        "label_kr": "대상·행위·사건 식별",
+        "cosine": 0.6375
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.6339
+      }
+    ]
+  },
+  "I_0051": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.638,
+    "method": "mapped",
+    "margin": 0.0056,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.638
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6323
+      },
+      {
+        "gwa_id": "4.A.4.b.2",
+        "label_kr": "팀 개발 및 구축",
+        "cosine": 0.6194
+      }
+    ]
+  },
+  "I_0052": {
+    "gwa_id": "4.A.4.a.5",
+    "cosine": 0.6363,
+    "method": "mapped",
+    "margin": 0.0149,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.6363
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6214
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.6193
+      }
+    ]
+  },
+  "I_0053": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.5921,
+    "method": "mapped",
+    "margin": 0.0109,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5921
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.5812
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5729
+      }
+    ]
+  },
+  "I_0054": {
+    "gwa_id": "4.A.3.a.1",
+    "cosine": 0.6576,
+    "method": "mapped",
+    "margin": 0.026,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.6576
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6316
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5878
+      }
+    ]
+  },
+  "I_0055": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5437,
+    "method": "mapped",
+    "margin": 0.0022,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5437
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5415
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.5408
+      }
+    ]
+  },
+  "I_0056": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.6722,
+    "method": "mapped",
+    "margin": 0.0431,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.6722
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6291
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6253
+      }
+    ]
+  },
+  "I_0057": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.6479,
+    "method": "mapped",
+    "margin": 0.0504,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.6479
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5976
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5938
+      }
+    ]
+  },
+  "I_0058": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6368,
+    "method": "mapped",
+    "margin": 0.049,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6368
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5878
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5539
+      }
+    ]
+  },
+  "I_0059": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6912,
+    "method": "mapped",
+    "margin": 0.0532,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6912
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.638
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6364
+      }
+    ]
+  },
+  "I_0060": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6421,
+    "method": "mapped",
+    "margin": 0.0458,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6421
+      },
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.5963
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5926
+      }
+    ]
+  },
+  "I_0061": {
+    "gwa_id": "4.A.4.c.1",
+    "cosine": 0.6726,
+    "method": "mapped",
+    "margin": 0.0039,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.6726
+      },
+      {
+        "gwa_id": "4.A.4.b.4",
+        "label_kr": "부하 지도·지휘·동기부여",
+        "cosine": 0.6687
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.6592
+      }
+    ]
+  },
+  "I_0062": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6616,
+    "method": "mapped",
+    "margin": 0.008,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6616
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6536
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6397
+      }
+    ]
+  },
+  "I_0063": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6842,
+    "method": "mapped",
+    "margin": 0.0093,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6842
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6748
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6529
+      }
+    ]
+  },
+  "I_0064": {
+    "gwa_id": "4.A.4.a.1",
+    "cosine": 0.661,
+    "method": "mapped",
+    "margin": 0.0363,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.1",
+        "label_kr": "타인을 위한 정보 의미 해석",
+        "cosine": 0.661
+      },
+      {
+        "gwa_id": "4.A.1.a.1",
+        "label_kr": "정보 입수",
+        "cosine": 0.6246
+      },
+      {
+        "gwa_id": "4.A.3.b.6",
+        "label_kr": "정보 문서화 및 기록",
+        "cosine": 0.6146
+      }
+    ]
+  },
+  "I_0065": {
+    "gwa_id": "4.A.4.c.3",
+    "cosine": 0.6952,
+    "method": "mapped",
+    "margin": 0.0516,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6952
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.6436
+      },
+      {
+        "gwa_id": "4.A.4.b.6",
+        "label_kr": "자문 및 조언 제공",
+        "cosine": 0.6315
+      }
+    ]
+  },
+  "I_0066": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6346,
+    "method": "mapped",
+    "margin": 0.0089,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6346
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.6257
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.6045
+      }
+    ]
+  },
+  "I_0067": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.5617,
+    "method": "mapped",
+    "margin": 0.0046,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5617
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5571
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.5556
+      }
+    ]
+  },
+  "I_0068": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6272,
+    "method": "mapped",
+    "margin": 0.0196,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6272
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6076
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5946
+      }
+    ]
+  },
+  "I_0069": {
+    "gwa_id": "4.A.3.a.3",
+    "cosine": 0.5779,
+    "method": "mapped",
+    "margin": 0.028,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.5779
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.5499
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5434
+      }
+    ]
+  },
+  "I_0070": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.583,
+    "method": "mapped",
+    "margin": 0.023,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.583
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.56
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5551
+      }
+    ]
+  },
+  "I_0071": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6337,
+    "method": "mapped",
+    "margin": 0.0057,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6337
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.628
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6041
+      }
+    ]
+  },
+  "I_0072": {
+    "gwa_id": "4.A.3.b.1",
+    "cosine": 0.6595,
+    "method": "mapped",
+    "margin": 0.0529,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.6595
+      },
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.6067
+      },
+      {
+        "gwa_id": "4.A.4.a.1",
+        "label_kr": "타인을 위한 정보 의미 해석",
+        "cosine": 0.5727
+      }
+    ]
+  },
+  "I_0073": {
+    "gwa_id": "4.A.4.b.5",
+    "cosine": 0.5845,
+    "method": "mapped",
+    "margin": 0.0088,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5845
+      },
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.5757
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5725
+      }
+    ]
+  },
+  "I_0074": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.6668,
+    "method": "mapped",
+    "margin": 0.0312,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6668
+      },
+      {
+        "gwa_id": "4.A.1.b.1",
+        "label_kr": "대상·행위·사건 식별",
+        "cosine": 0.6356
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6343
+      }
+    ]
+  },
+  "I_0075": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6005,
+    "method": "mapped",
+    "margin": 0.0182,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6005
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5824
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.5769
+      }
+    ]
+  },
+  "I_0076": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6579,
+    "method": "mapped",
+    "margin": 0.0088,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6579
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6491
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6376
+      }
+    ]
+  },
+  "I_0077": {
+    "gwa_id": "4.A.4.a.5",
+    "cosine": 0.5698,
+    "method": "mapped",
+    "margin": 0.0079,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.5698
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5619
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5566
+      }
+    ]
+  },
+  "I_0078": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.561,
+    "method": "mapped",
+    "margin": 0.014,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.561
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.547
+      },
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.5376
+      }
+    ]
+  },
+  "I_0079": {
+    "gwa_id": "4.A.2.a.1",
+    "cosine": 0.7576,
+    "method": "mapped",
+    "margin": 0.0866,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.7576
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.671
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.6507
+      }
+    ]
+  },
+  "I_0080": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5469,
+    "method": "mapped",
+    "margin": 0.0435,
+    "ambiguous": false,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5469
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.5034
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.4974
+      }
+    ]
+  },
+  "I_0081": {
+    "gwa_id": "4.A.4.a.8",
+    "cosine": 0.6074,
+    "method": "mapped",
+    "margin": 0.0804,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.6074
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.5271
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5188
+      }
+    ]
+  },
+  "I_0082": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5736,
+    "method": "mapped",
+    "margin": 0.0105,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5736
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.563
+      },
+      {
+        "gwa_id": "4.A.3.b.6",
+        "label_kr": "정보 문서화 및 기록",
+        "cosine": 0.5405
+      }
+    ]
+  },
+  "I_0083": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5721,
+    "method": "mapped",
+    "margin": 0.0146,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5721
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5575
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5375
+      }
+    ]
+  },
+  "I_0084": {
+    "gwa_id": "4.A.2.b.1",
+    "cosine": 0.602,
+    "method": "mapped",
+    "margin": 0.001,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.602
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6009
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.589
+      }
+    ]
+  },
+  "I_0085": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.5797,
+    "method": "mapped",
+    "margin": 0.0134,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5797
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5663
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5523
+      }
+    ]
+  },
+  "I_0086": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5219,
+    "method": "mapped",
+    "margin": 0.0014,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5219
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5205
+      },
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.496
+      }
+    ]
+  },
+  "I_0087": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6027,
+    "method": "mapped",
+    "margin": 0.0354,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6027
+      },
+      {
+        "gwa_id": "4.A.1.a.1",
+        "label_kr": "정보 입수",
+        "cosine": 0.5672
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.565
+      }
+    ]
+  },
+  "I_0088": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.6655,
+    "method": "mapped",
+    "margin": 0.0383,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.6655
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6272
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6256
+      }
+    ]
+  },
+  "I_0089": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5829,
+    "method": "mapped",
+    "margin": 0.0452,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5829
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5376
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5342
+      }
+    ]
+  },
+  "I_0090": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5949,
+    "method": "mapped",
+    "margin": 0.027,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5949
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5679
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5157
+      }
+    ]
+  },
+  "I_0091": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5703,
+    "method": "mapped",
+    "margin": 0.054,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5703
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5163
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5013
+      }
+    ]
+  },
+  "I_0092": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5681,
+    "method": "mapped",
+    "margin": 0.069,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5681
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4991
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.4955
+      }
+    ]
+  },
+  "I_0093": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5869,
+    "method": "mapped",
+    "margin": 0.0161,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5869
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5709
+      },
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.5678
+      }
+    ]
+  },
+  "I_0094": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.5864,
+    "method": "mapped",
+    "margin": 0.0082,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5864
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5782
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.5414
+      }
+    ]
+  },
+  "I_0095": {
+    "gwa_id": "4.A.4.a.8",
+    "cosine": 0.578,
+    "method": "mapped",
+    "margin": 0.0103,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.578
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.5677
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5424
+      }
+    ]
+  },
+  "I_0096": {
+    "gwa_id": "4.A.4.a.4",
+    "cosine": 0.6167,
+    "method": "mapped",
+    "margin": 0.0037,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.6167
+      },
+      {
+        "gwa_id": "4.A.4.a.1",
+        "label_kr": "타인을 위한 정보 의미 해석",
+        "cosine": 0.613
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5922
+      }
+    ]
+  },
+  "I_0097": {
+    "gwa_id": "4.A.2.a.3",
+    "cosine": 0.6211,
+    "method": "mapped",
+    "margin": 0.0042,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.6211
+      },
+      {
+        "gwa_id": "4.A.1.b.1",
+        "label_kr": "대상·행위·사건 식별",
+        "cosine": 0.6169
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.6085
+      }
+    ]
+  },
+  "I_0098": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.5388,
+    "method": "mapped",
+    "margin": 0.0038,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5388
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5349
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5254
+      }
+    ]
+  },
+  "I_0099": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6127,
+    "method": "mapped",
+    "margin": 0.0212,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6127
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5914
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5548
+      }
+    ]
+  },
+  "I_0100": {
+    "gwa_id": "4.A.4.b.3",
+    "cosine": 0.5326,
+    "method": "mapped",
+    "margin": 0.0017,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.5326
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.5309
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5298
+      }
+    ]
+  },
+  "I_0101": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5791,
+    "method": "mapped",
+    "margin": 0.0196,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5791
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5594
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.544
+      }
+    ]
+  },
+  "I_0102": {
+    "gwa_id": "4.A.3.b.2",
+    "cosine": 0.5395,
+    "method": "mapped",
+    "margin": 0.0038,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5395
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5357
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5344
+      }
+    ]
+  },
+  "I_0103": {
+    "gwa_id": "4.A.4.a.2",
+    "cosine": 0.6002,
+    "method": "mapped",
+    "margin": 0.0197,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.2",
+        "label_kr": "상사·동료·부하와의 의사소통",
+        "cosine": 0.6002
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.5805
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5745
+      }
+    ]
+  },
+  "I_0104": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.5301,
+    "method": "mapped",
+    "margin": 0.0013,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5301
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5287
+      },
+      {
+        "gwa_id": "4.A.1.b.1",
+        "label_kr": "대상·행위·사건 식별",
+        "cosine": 0.5272
+      }
+    ]
+  },
+  "I_0105": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5707,
+    "method": "mapped",
+    "margin": 0.0056,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5707
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5652
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5417
+      }
+    ]
+  },
+  "I_0106": {
+    "gwa_id": "4.A.1.a.1",
+    "cosine": 0.5861,
+    "method": "mapped",
+    "margin": 0.0172,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.1",
+        "label_kr": "정보 입수",
+        "cosine": 0.5861
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5688
+      },
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.5554
+      }
+    ]
+  },
+  "I_0107": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4865,
+    "method": "mapped",
+    "margin": 0.0104,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4865
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.4761
+      },
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.4758
+      }
+    ]
+  },
+  "I_0108": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5503,
+    "method": "mapped",
+    "margin": 0.0105,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5503
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.5398
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5183
+      }
+    ]
+  },
+  "I_0109": {
+    "gwa_id": "4.A.3.b.5",
+    "cosine": 0.6298,
+    "method": "mapped",
+    "margin": 0.0685,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6298
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5613
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.56
+      }
+    ]
+  },
+  "I_0110": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.6268,
+    "method": "mapped",
+    "margin": 0.0249,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6268
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6019
+      },
+      {
+        "gwa_id": "4.A.4.a.1",
+        "label_kr": "타인을 위한 정보 의미 해석",
+        "cosine": 0.6
+      }
+    ]
+  },
+  "I_0111": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.5793,
+    "method": "mapped",
+    "margin": 0.0014,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5793
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.5779
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5513
+      }
+    ]
+  },
+  "I_0112": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5924,
+    "method": "mapped",
+    "margin": 0.0281,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5924
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5643
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.5234
+      }
+    ]
+  },
+  "I_0113": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5074,
+    "method": "mapped",
+    "margin": 0.0094,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5074
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.498
+      },
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.4927
+      }
+    ]
+  },
+  "I_0114": {
+    "gwa_id": "4.A.4.b.5",
+    "cosine": 0.6047,
+    "method": "mapped",
+    "margin": 0.0079,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6047
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.5969
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5882
+      }
+    ]
+  },
+  "I_0115": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.5236,
+    "method": "mapped",
+    "margin": 0.0206,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5236
+      },
+      {
+        "gwa_id": "4.A.2.b.4",
+        "label_kr": "목표 및 전략 수립",
+        "cosine": 0.503
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.4968
+      }
+    ]
+  },
+  "I_0116": {
+    "gwa_id": "4.A.3.b.5",
+    "cosine": 0.6076,
+    "method": "mapped",
+    "margin": 0.005,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6076
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6026
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.6013
+      }
+    ]
+  },
+  "I_0117": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4932,
+    "method": "mapped",
+    "margin": 0.0358,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4932
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4574
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.4482
+      }
+    ]
+  },
+  "I_0118": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5659,
+    "method": "mapped",
+    "margin": 0.0188,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5659
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5472
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5332
+      }
+    ]
+  },
+  "I_0119": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5577,
+    "method": "mapped",
+    "margin": 0.0089,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5577
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5488
+      },
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.537
+      }
+    ]
+  },
+  "I_0120": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5237,
+    "method": "mapped",
+    "margin": 0.0002,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5237
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5235
+      },
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.5101
+      }
+    ]
+  },
+  "I_0121": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6329,
+    "method": "mapped",
+    "margin": 0.04,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6329
+      },
+      {
+        "gwa_id": "4.A.1.b.3",
+        "label_kr": "수량적 특성 추정",
+        "cosine": 0.5928
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5887
+      }
+    ]
+  },
+  "I_0122": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6356,
+    "method": "mapped",
+    "margin": 0.0285,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6356
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6071
+      },
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.584
+      }
+    ]
+  },
+  "I_0123": {
+    "gwa_id": "4.A.2.a.1",
+    "cosine": 0.5878,
+    "method": "mapped",
+    "margin": 0.0017,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.5878
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.5861
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.577
+      }
+    ]
+  },
+  "I_0124": {
+    "gwa_id": "4.A.4.c.3",
+    "cosine": 0.6078,
+    "method": "mapped",
+    "margin": 0.0364,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.6078
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5714
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.5645
+      }
+    ]
+  },
+  "I_0125": {
+    "gwa_id": "4.A.4.a.7",
+    "cosine": 0.5844,
+    "method": "mapped",
+    "margin": 0.0022,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.5844
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.5821
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5808
+      }
+    ]
+  },
+  "I_0126": {
+    "gwa_id": "4.A.4.a.3",
+    "cosine": 0.6576,
+    "method": "mapped",
+    "margin": 0.0614,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.3",
+        "label_kr": "조직 외부와의 의사소통",
+        "cosine": 0.6576
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5962
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5756
+      }
+    ]
+  },
+  "I_0127": {
+    "gwa_id": "4.A.1.b.3",
+    "cosine": 0.5835,
+    "method": "mapped",
+    "margin": 0.0166,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.3",
+        "label_kr": "수량적 특성 추정",
+        "cosine": 0.5835
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.5669
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5629
+      }
+    ]
+  },
+  "I_0128": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.6299,
+    "method": "mapped",
+    "margin": 0.0093,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6299
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6206
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6198
+      }
+    ]
+  },
+  "I_0129": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.6878,
+    "method": "mapped",
+    "margin": 0.1105,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.6878
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5773
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5598
+      }
+    ]
+  },
+  "I_0130": {
+    "gwa_id": "4.A.3.a.3",
+    "cosine": 0.6806,
+    "method": "mapped",
+    "margin": 0.0564,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.6806
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6242
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.616
+      }
+    ]
+  },
+  "I_0131": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.5982,
+    "method": "mapped",
+    "margin": 0.0041,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5982
+      },
+      {
+        "gwa_id": "4.A.1.b.3",
+        "label_kr": "수량적 특성 추정",
+        "cosine": 0.5941
+      },
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.5798
+      }
+    ]
+  },
+  "I_0132": {
+    "gwa_id": "4.A.2.a.1",
+    "cosine": 0.5952,
+    "method": "mapped",
+    "margin": 0.0001,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.5952
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.5952
+      },
+      {
+        "gwa_id": "4.A.1.b.1",
+        "label_kr": "대상·행위·사건 식별",
+        "cosine": 0.5809
+      }
+    ]
+  },
+  "I_0133": {
+    "gwa_id": "4.A.3.a.1",
+    "cosine": 0.5839,
+    "method": "mapped",
+    "margin": 0.0726,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5839
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.5113
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5089
+      }
+    ]
+  },
+  "I_0134": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.62,
+    "method": "mapped",
+    "margin": 0.0929,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.62
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5271
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.4792
+      }
+    ]
+  },
+  "I_0135": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.576,
+    "method": "mapped",
+    "margin": 0.0173,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.576
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5587
+      },
+      {
+        "gwa_id": "4.A.3.a.3",
+        "label_kr": "기계 및 공정 제어",
+        "cosine": 0.5548
+      }
+    ]
+  },
+  "I_0136": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4669,
+    "method": "mapped",
+    "margin": 0.0368,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4669
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.4301
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.4063
+      }
+    ]
+  },
+  "I_0137": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4336,
+    "method": "mapped",
+    "margin": 0.009,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4336
+      },
+      {
+        "gwa_id": "4.A.1.a.1",
+        "label_kr": "정보 입수",
+        "cosine": 0.4246
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.415
+      }
+    ]
+  },
+  "I_0138": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4402,
+    "method": "mapped",
+    "margin": 0.0125,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4402
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.4277
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.3942
+      }
+    ]
+  },
+  "I_0139": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5011,
+    "method": "mapped",
+    "margin": 0.0449,
+    "ambiguous": false,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5011
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.4562
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4304
+      }
+    ]
+  },
+  "I_0140": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.554,
+    "method": "mapped",
+    "margin": 0.0083,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.554
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5457
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5049
+      }
+    ]
+  },
+  "I_0141": {
+    "gwa_id": "4.A.3.b.6",
+    "cosine": 0.5378,
+    "method": "mapped",
+    "margin": 0.0181,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.6",
+        "label_kr": "정보 문서화 및 기록",
+        "cosine": 0.5378
+      },
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.5197
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.5044
+      }
+    ]
+  },
+  "I_0142": {
+    "gwa_id": "4.A.4.b.5",
+    "cosine": 0.6116,
+    "method": "mapped",
+    "margin": 0.0351,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.6116
+      },
+      {
+        "gwa_id": "4.A.4.a.2",
+        "label_kr": "상사·동료·부하와의 의사소통",
+        "cosine": 0.5766
+      },
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.5422
+      }
+    ]
+  },
+  "I_0143": {
+    "gwa_id": "4.A.4.a.2",
+    "cosine": 0.5429,
+    "method": "mapped",
+    "margin": 0.0064,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.2",
+        "label_kr": "상사·동료·부하와의 의사소통",
+        "cosine": 0.5429
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.5366
+      },
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.5189
+      }
+    ]
+  },
+  "I_0144": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.4628,
+    "method": "mapped",
+    "margin": 0.0021,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.4628
+      },
+      {
+        "gwa_id": "4.A.4.a.2",
+        "label_kr": "상사·동료·부하와의 의사소통",
+        "cosine": 0.4607
+      },
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.4554
+      }
+    ]
+  },
+  "I_0145": {
+    "gwa_id": "4.A.3.b.1",
+    "cosine": 0.4757,
+    "method": "mapped",
+    "margin": 0.0076,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.4757
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.4681
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.455
+      }
+    ]
+  },
+  "I_0146": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5075,
+    "method": "mapped",
+    "margin": 0.0247,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5075
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.4829
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.4817
+      }
+    ]
+  },
+  "I_0147": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5045,
+    "method": "mapped",
+    "margin": 0.0606,
+    "ambiguous": false,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5045
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.4439
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.4413
+      }
+    ]
+  },
+  "I_0148": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5406,
+    "method": "mapped",
+    "margin": 0.0175,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5406
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5231
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.5106
+      }
+    ]
+  },
+  "I_0149": {
+    "gwa_id": "4.A.2.b.5",
+    "cosine": 0.6147,
+    "method": "mapped",
+    "margin": 0.0198,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.5",
+        "label_kr": "업무 및 활동 일정 관리",
+        "cosine": 0.6147
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.595
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.5936
+      }
+    ]
+  },
+  "I_0150": {
+    "gwa_id": "4.A.2.b.2",
+    "cosine": 0.5242,
+    "method": "mapped",
+    "margin": 0.0128,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.5242
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5114
+      },
+      {
+        "gwa_id": "4.A.4.b.4",
+        "label_kr": "부하 지도·지휘·동기부여",
+        "cosine": 0.5033
+      }
+    ]
+  },
+  "I_0151": {
+    "gwa_id": "4.A.4.a.1",
+    "cosine": 0.5879,
+    "method": "mapped",
+    "margin": 0.01,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.1",
+        "label_kr": "타인을 위한 정보 의미 해석",
+        "cosine": 0.5879
+      },
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.5779
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5671
+      }
+    ]
+  },
+  "I_0152": {
+    "gwa_id": "4.A.2.a.1",
+    "cosine": 0.4833,
+    "method": "mapped",
+    "margin": 0.0291,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.1",
+        "label_kr": "대상·서비스·인물의 가치 판단",
+        "cosine": 0.4833
+      },
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.4543
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.4508
+      }
+    ]
+  },
+  "I_0153": {
+    "gwa_id": "4.A.4.a.4",
+    "cosine": 0.563,
+    "method": "mapped",
+    "margin": 0.0132,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.563
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.5497
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.542
+      }
+    ]
+  },
+  "I_0154": {
+    "gwa_id": "4.A.2.a.2",
+    "cosine": 0.5556,
+    "method": "mapped",
+    "margin": 0.0117,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.5556
+      },
+      {
+        "gwa_id": "4.A.4.c.2",
+        "label_kr": "조직 인력 충원",
+        "cosine": 0.544
+      },
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.5372
+      }
+    ]
+  },
+  "I_0155": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5288,
+    "method": "mapped",
+    "margin": 0.0644,
+    "ambiguous": false,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5288
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.4643
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4626
+      }
+    ]
+  },
+  "I_0156": {
+    "gwa_id": "4.A.4.b.2",
+    "cosine": 0.4675,
+    "method": "mapped",
+    "margin": 0.0133,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.2",
+        "label_kr": "팀 개발 및 구축",
+        "cosine": 0.4675
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.4542
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.4491
+      }
+    ]
+  },
+  "I_0157": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.5709,
+    "method": "mapped",
+    "margin": 0.0159,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5709
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.555
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5487
+      }
+    ]
+  },
+  "I_0158": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.5755,
+    "method": "mapped",
+    "margin": 0.0609,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5755
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5146
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5055
+      }
+    ]
+  },
+  "I_0159": {
+    "gwa_id": "4.A.3.a.4",
+    "cosine": 0.5312,
+    "method": "mapped",
+    "margin": 0.0004,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5312
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5308
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4904
+      }
+    ]
+  },
+  "I_0160": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.5367,
+    "method": "mapped",
+    "margin": 0.0701,
+    "ambiguous": false,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5367
+      },
+      {
+        "gwa_id": "4.A.3.b.4",
+        "label_kr": "기계 장비 수리 및 정비",
+        "cosine": 0.4666
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.4555
+      }
+    ]
+  },
+  "I_0161": {
+    "gwa_id": "4.A.2.b.6",
+    "cosine": 0.5104,
+    "method": "mapped",
+    "margin": 0.0089,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.6",
+        "label_kr": "업무 조직화·계획·우선순위 설정",
+        "cosine": 0.5104
+      },
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.5015
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4967
+      }
+    ]
+  },
+  "I_0162": {
+    "gwa_id": "4.A.3.b.2",
+    "cosine": 0.4875,
+    "method": "mapped",
+    "margin": 0.0016,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.2",
+        "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+        "cosine": 0.4875
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.4859
+      },
+      {
+        "gwa_id": "4.A.4.b.2",
+        "label_kr": "팀 개발 및 구축",
+        "cosine": 0.4633
+      }
+    ]
+  },
+  "I_0163": {
+    "gwa_id": "4.A.3.a.2",
+    "cosine": 0.6087,
+    "method": "mapped",
+    "margin": 0.0493,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.a.2",
+        "label_kr": "물체 취급 및 이동",
+        "cosine": 0.6087
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5594
+      },
+      {
+        "gwa_id": "4.A.3.a.4",
+        "label_kr": "차량·기계 장치·장비 운전",
+        "cosine": 0.5504
+      }
+    ]
+  },
+  "I_0164": {
+    "gwa_id": "4.A.1.b.3",
+    "cosine": 0.5938,
+    "method": "mapped",
+    "margin": 0.0421,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.3",
+        "label_kr": "수량적 특성 추정",
+        "cosine": 0.5938
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.5517
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5385
+      }
+    ]
+  },
+  "I_0165": {
+    "gwa_id": "4.A.2.b.2",
+    "cosine": 0.457,
+    "method": "mapped",
+    "margin": 0.0203,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.2",
+        "label_kr": "창의적 사고",
+        "cosine": 0.457
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.4367
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.4365
+      }
+    ]
+  },
+  "I_0166": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.5521,
+    "method": "mapped",
+    "margin": 0.0113,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5521
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5408
+      },
+      {
+        "gwa_id": "4.A.2.a.3",
+        "label_kr": "기준 부합 여부 평가",
+        "cosine": 0.5373
+      }
+    ]
+  },
+  "I_0167": {
+    "gwa_id": "4.A.3.b.5",
+    "cosine": 0.6216,
+    "method": "mapped",
+    "margin": 0.0378,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.6216
+      },
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.5837
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.5786
+      }
+    ]
+  },
+  "I_0168": {
+    "gwa_id": "4.A.4.b.3",
+    "cosine": 0.5898,
+    "method": "mapped",
+    "margin": 0.0391,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.3",
+        "label_kr": "타인 훈련 및 교육",
+        "cosine": 0.5898
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.5508
+      },
+      {
+        "gwa_id": "4.A.4.b.6",
+        "label_kr": "자문 및 조언 제공",
+        "cosine": 0.499
+      }
+    ]
+  },
+  "I_0169": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.6183,
+    "method": "mapped",
+    "margin": 0.0342,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.6183
+      },
+      {
+        "gwa_id": "4.A.4.a.4",
+        "label_kr": "대인관계 형성 및 유지",
+        "cosine": 0.5841
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.581
+      }
+    ]
+  },
+  "I_0170": {
+    "gwa_id": "4.A.2.a.2",
+    "cosine": 0.6284,
+    "method": "mapped",
+    "margin": 0.0163,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.a.2",
+        "label_kr": "정보 처리",
+        "cosine": 0.6284
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.6121
+      },
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.6032
+      }
+    ]
+  },
+  "I_0171": {
+    "gwa_id": "4.A.3.b.1",
+    "cosine": 0.6499,
+    "method": "mapped",
+    "margin": 0.0171,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.3.b.1",
+        "label_kr": "컴퓨터 활용 작업",
+        "cosine": 0.6499
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.6328
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5726
+      }
+    ]
+  },
+  "I_0172": {
+    "gwa_id": "4.A.1.a.2",
+    "cosine": 0.5925,
+    "method": "mapped",
+    "margin": 0.042,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5925
+      },
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5506
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.5474
+      }
+    ]
+  },
+  "I_0173": {
+    "gwa_id": "4.A.1.b.2",
+    "cosine": 0.5539,
+    "method": "mapped",
+    "margin": 0.0077,
+    "ambiguous": true,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.1.b.2",
+        "label_kr": "장비·구조물·자재 검사",
+        "cosine": 0.5539
+      },
+      {
+        "gwa_id": "4.A.3.b.5",
+        "label_kr": "전자 장비 수리 및 정비",
+        "cosine": 0.5462
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.545
+      }
+    ]
+  },
+  "I_0174": {
+    "gwa_id": "4.A.4.b.6",
+    "cosine": 0.5001,
+    "method": "mapped",
+    "margin": 0.0023,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.6",
+        "label_kr": "자문 및 조언 제공",
+        "cosine": 0.5001
+      },
+      {
+        "gwa_id": "4.A.4.a.8",
+        "label_kr": "대중 응대 및 직접 서비스",
+        "cosine": 0.4978
+      },
+      {
+        "gwa_id": "4.A.4.a.6",
+        "label_kr": "판매 및 타인 설득",
+        "cosine": 0.4937
+      }
+    ]
+  },
+  "I_0175": {
+    "gwa_id": "4.A.2.b.3",
+    "cosine": 0.5157,
+    "method": "mapped",
+    "margin": 0.0083,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.3",
+        "label_kr": "지식 갱신 및 활용",
+        "cosine": 0.5157
+      },
+      {
+        "gwa_id": "4.A.1.a.2",
+        "label_kr": "공정·자재·주변 환경 점검",
+        "cosine": 0.5075
+      },
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.5048
+      }
+    ]
+  },
+  "I_0176": {
+    "gwa_id": "4.A.2.b.5",
+    "cosine": 0.6274,
+    "method": "mapped",
+    "margin": 0.0327,
+    "ambiguous": false,
+    "weak": false,
+    "top3": [
+      {
+        "gwa_id": "4.A.2.b.5",
+        "label_kr": "업무 및 활동 일정 관리",
+        "cosine": 0.6274
+      },
+      {
+        "gwa_id": "4.A.4.c.3",
+        "label_kr": "자원 점검 및 관리",
+        "cosine": 0.5947
+      },
+      {
+        "gwa_id": "4.A.4.c.1",
+        "label_kr": "행정 업무 수행",
+        "cosine": 0.5788
+      }
+    ]
+  },
+  "I_0177": {
+    "gwa_id": "4.A.4.b.1",
+    "cosine": 0.3976,
+    "method": "mapped",
+    "margin": 0.0017,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.b.1",
+        "label_kr": "타인의 업무 및 활동 조정",
+        "cosine": 0.3976
+      },
+      {
+        "gwa_id": "4.A.3.a.1",
+        "label_kr": "일반 신체 활동 수행",
+        "cosine": 0.3959
+      },
+      {
+        "gwa_id": "4.A.4.b.5",
+        "label_kr": "타인 코칭 및 역량 개발",
+        "cosine": 0.3567
+      }
+    ]
+  },
+  "I_0178": {
+    "gwa_id": "4.A.4.a.7",
+    "cosine": 0.3803,
+    "method": "mapped",
+    "margin": 0.0135,
+    "ambiguous": true,
+    "weak": true,
+    "top3": [
+      {
+        "gwa_id": "4.A.4.a.7",
+        "label_kr": "갈등 해결 및 협상",
+        "cosine": 0.3803
+      },
+      {
+        "gwa_id": "4.A.4.a.5",
+        "label_kr": "타인 지원 및 돌봄",
+        "cosine": 0.3668
+      },
+      {
+        "gwa_id": "4.A.2.b.1",
+        "label_kr": "의사결정 및 문제해결",
+        "cosine": 0.3645
+      }
+    ]
+  }
+}

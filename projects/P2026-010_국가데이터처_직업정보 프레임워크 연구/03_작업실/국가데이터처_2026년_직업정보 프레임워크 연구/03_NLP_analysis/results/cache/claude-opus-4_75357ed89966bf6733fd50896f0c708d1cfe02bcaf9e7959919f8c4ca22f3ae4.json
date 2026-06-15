@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28432",
+  "tasks": [
+    {
+      "verb": "제안하다",
+      "object": "전자통신 장비",
+      "full_statement": "전자·통신 장비와 전산 솔루션을 고객에게 제안한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "관련 장비",
+      "full_statement": "고객 요구에 맞는 통신장비와 부품을 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추산하다",
+      "object": "설치 비용",
+      "full_statement": "장비의 설치 및 유지 비용을 추산한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "판매계약서",
+      "full_statement": "판매계약서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 기술 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

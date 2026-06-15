@@ -1,0 +1,127 @@
+{
+  "ksco_code": "73040",
+  "tasks": [
+    {
+      "verb": "디자인하다",
+      "object": "간판",
+      "full_statement": "LED 등 다양한 소재를 활용하여 목적에 맞는 간판을 디자인한다.",
+      "source_sentence": "LED 등 다양한 소재를 활용하여 목적에 맞는 간판을 디자인하여 고객에게 제시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선전·광고용 각종 간판을 디자인하여 광고효과를 높일 수 있도록)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제시하다",
+      "object": "디자인 시안",
+      "full_statement": "디자인한 간판 시안을 고객에게 제시한다.",
+      "source_sentence": "LED 등 다양한 소재를 활용하여 목적에 맞는 간판을 디자인하여 고객에게 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "재료 및 공구",
+      "full_statement": "간판 제작에 필요한 재료 및 공구를 준비한다.",
+      "source_sentence": "필요한 재료 및 공구를 준비하고 문자, 상표, 무늬 등을 도안한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(재료를 준비하고)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "도안하다",
+      "object": "문자·상표·무늬",
+      "full_statement": "문자, 상표, 무늬 등을 도안한다.",
+      "source_sentence": "필요한 재료 및 공구를 준비하고 문자, 상표, 무늬 등을 도안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "배합하다",
+      "object": "페인트",
+      "full_statement": "바탕이나 도안에 필요한 색의 페인트를 배합한다.",
+      "source_sentence": "바탕이나 도안에 필요한 색의 페인트를 배합하고 칠한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "칠하다",
+      "object": "페인트",
+      "full_statement": "바탕이나 도안에 필요한 색의 페인트를 칠한다.",
+      "source_sentence": "바탕이나 도안에 필요한 색의 페인트를 배합하고 칠한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(색칠을 하거나)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "자르다",
+      "object": "재료",
+      "full_statement": "수공구 및 동력공구를 사용하여 재료를 자른다.",
+      "source_sentence": "수공구 및 동력공구를 사용하여 재료를 자르고 다듬으며, 접착제나 못 또는 나사로 접착‧고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "다듬다",
+      "object": "재료",
+      "full_statement": "수공구 및 동력공구를 사용하여 재료를 다듬는다.",
+      "source_sentence": "수공구 및 동력공구를 사용하여 재료를 자르고 다듬으며, 접착제나 못 또는 나사로 접착‧고정시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "고정하다",
+      "object": "부착물",
+      "full_statement": "접착제나 못 또는 나사로 부착물을 접착·고정시킨다.",
+      "source_sentence": "수공구 및 동력공구를 사용하여 재료를 자르고 다듬으며, 접착제나 못 또는 나사로 접착‧고정시킨다.",
+      "derived_from": "상속 주요업무→세세정의 특화(부착물을 부착하여)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "제작하다",
+      "object": "간판",
+      "full_statement": "준비된 재료에 색칠과 부착물 부착을 거쳐 간판을 제작한다.",
+      "source_sentence": "재료를 준비하고 색칠을 하거나 부착물을 부착하여 간판을 제작, 수리, 설치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설치하다",
+      "object": "간판",
+      "full_statement": "제작한 간판을 지정된 장소에 설치한다.",
+      "source_sentence": "제작한 간판을 지정된 장소에 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(간판을 제작, 수리, 설치한다)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "간판",
+      "full_statement": "낡거나 색이 바랜 간판을 수리한다.",
+      "source_sentence": "낡거나 색이 바랜 간판을 수리하고 세척하여 페인트를 칠한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(간판을 제작, 수리, 설치한다)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "세척하다",
+      "object": "간판",
+      "full_statement": "낡거나 색이 바랜 간판을 세척한다.",
+      "source_sentence": "낡거나 색이 바랜 간판을 수리하고 세척하여 페인트를 칠한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "칠하다",
+      "object": "간판 페인트",
+      "full_statement": "세척한 간판에 페인트를 다시 칠한다.",
+      "source_sentence": "낡거나 색이 바랜 간판을 수리하고 세척하여 페인트를 칠한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "수공구 및 동력공구를 사용하여 재료를 자르고 다듬으며"},
+    {"name": "동력공구", "category": "도구", "evidence_span": "수공구 및 동력공구를 사용하여 재료를 자르고 다듬으며"},
+    {"name": "페인트", "category": "도구", "evidence_span": "바탕이나 도안에 필요한 색의 페인트를 배합하고 칠한다."},
+    {"name": "LED", "category": "장비", "evidence_span": "LED 등 다양한 소재를 활용하여 목적에 맞는 간판을 디자인하여"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대(디자인 시안 제시)", "evidence_span": "목적에 맞는 간판을 디자인하여 고객에게 제시한다."},
+    {"category": "장소", "value": "지정된 설치 장소(현장 설치)", "evidence_span": "제작한 간판을 지정된 장소에 설치한다."}
+  ]
+}

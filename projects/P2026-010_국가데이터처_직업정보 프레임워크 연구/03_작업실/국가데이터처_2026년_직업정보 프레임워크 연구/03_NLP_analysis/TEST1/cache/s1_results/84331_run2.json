@@ -1,0 +1,201 @@
+{
+  "ksco_code": "84331",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "시멘트 가공로",
+      "full_statement": "시멘트 및 석회를 제조하기 위하여 시멘트 가공로를 조작한다.",
+      "source_sentence": "시멘트 및 석회를 제조하거나 시멘트 가공로의 조작, 건물용 판, 슬레이트, 파이프, 전선도관, 환풍장치, 연기‧먼지추출 도관과 같은 석면 시멘트 가공기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "석면 시멘트 가공기",
+      "full_statement": "건물용 판, 슬레이트, 파이프, 전선도관, 환풍장치, 연기‧먼지추출 도관과 같은 제품을 만들기 위하여 석면 시멘트 가공기를 조작한다.",
+      "source_sentence": "건물용 판, 슬레이트, 파이프, 전선도관, 환풍장치, 연기‧먼지추출 도관과 같은 석면 시멘트 가공기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "재료 혼합 장치",
+      "full_statement": "명세서 및 배합비율에 따라 재료를 투입하고 혼합하는 장치를 조작한다.",
+      "source_sentence": "명세서 및 배합비율에 따라 재료를 투입하고 혼합하는 장치를 조작 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "명세서 및 배합비율에 따라 재료를 투입한다.",
+      "source_sentence": "명세서 및 배합비율에 따라 재료를 투입하고 혼합하는 장치를 조작 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "설치하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "재료를 성형, 압출, 롤링하는 기계를 설치한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "재료를 성형, 압출, 롤링하는 기계를 조작한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "취급하다",
+      "object": "성형·압출·롤링 기계",
+      "full_statement": "재료를 성형, 압출, 롤링하는 기계를 취급한다.",
+      "source_sentence": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "성형장치의 압력·유출량",
+      "full_statement": "성형장치의 압력, 유출량을 조정한다.",
+      "source_sentence": "성형장치의 압력, 유출량, 컨베이어의 속도를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "조정하다",
+      "object": "컨베이어의 속도",
+      "full_statement": "컨베이어의 속도를 조정한다.",
+      "source_sentence": "성형장치의 압력, 유출량, 컨베이어의 속도를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조립하다",
+      "object": "주형",
+      "full_statement": "주형을 맞추어 조립한다.",
+      "source_sentence": "주형을 맞추어 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "구부리다",
+      "object": "석면·시멘트 파이프",
+      "full_statement": "명세된 직경, 길이로 굽은 관을 성형하기 위하여 손으로 석면‧시멘트 파이프를 구부린다.",
+      "source_sentence": "명세된 직경, 길이로 굽은 관을 성형하기 위하여 손으로 석면‧시멘트 파이프를 구부리거나 절단한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "절단하다",
+      "object": "석면·시멘트 파이프",
+      "full_statement": "명세된 직경, 길이에 맞추어 손으로 석면‧시멘트 파이프를 절단한다.",
+      "source_sentence": "명세된 직경, 길이로 굽은 관을 성형하기 위하여 손으로 석면‧시멘트 파이프를 구부리거나 절단한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성제품",
+      "full_statement": "완성제품을 측정한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "계량하다",
+      "object": "완성제품",
+      "full_statement": "완성제품을 계량한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성제품",
+      "full_statement": "완성제품을 검사한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "비교하다",
+      "object": "완성제품과 명세서",
+      "full_statement": "완성제품을 명세서와 비교한다.",
+      "source_sentence": "완성제품을 측정, 계량, 검사하고 명세서와 비교한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "세척하다",
+      "object": "기계장치",
+      "full_statement": "기계장치를 세척한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "탐지하다",
+      "object": "기능장애",
+      "full_statement": "기계장치의 기능장애를 탐지한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수리하다",
+      "object": "기계장치",
+      "full_statement": "탐지된 기능장애에 따라 기계장치를 수리한다.",
+      "source_sentence": "기계장치를 세척하고 기능장애를 탐지하여 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "소성하다",
+      "object": "석회석·석고",
+      "full_statement": "각종 형태의 시멘트, 석회 및 플라스터를 제조하기 위하여 석회석 및 석고를 소성한다.",
+      "source_sentence": "석회석 및 석고를 소성하여 각종 형태의 시멘트, 석회 및 플라스터를 제조하는 기기를 조작하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "시멘트·석회·플라스터 제조 기기",
+      "full_statement": "각종 형태의 시멘트, 석회 및 플라스터를 제조하는 기기를 조작한다.",
+      "source_sentence": "석회석 및 석고를 소성하여 각종 형태의 시멘트, 석회 및 플라스터를 제조하는 기기를 조작하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "시멘트 가공로", "category": "장비", "evidence_span": "시멘트 가공로의 조작"},
+    {"name": "석면 시멘트 가공기", "category": "장비", "evidence_span": "석면 시멘트 가공기를 조작한다"},
+    {"name": "재료 혼합 장치", "category": "장비", "evidence_span": "재료를 투입하고 혼합하는 장치를 조작 한다"},
+    {"name": "성형·압출·롤링 기계", "category": "장비", "evidence_span": "재료를 성형, 압출, 롤링하는 기계를 설치, 조작, 취급한다"},
+    {"name": "컨베이어", "category": "장비", "evidence_span": "컨베이어의 속도를 조정한다"},
+    {"name": "주형", "category": "도구", "evidence_span": "주형을 맞추어 조립한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손으로 파이프를 구부리거나 절단하는 수작업", "evidence_span": "손으로 석면‧시멘트 파이프를 구부리거나 절단한다"},
+    {"category": "위험", "value": "석면 시멘트 가공 관련 분진·물질 취급", "evidence_span": "연기‧먼지추출 도관과 같은 석면 시멘트 가공기를 조작한다"}
+  ]
+}

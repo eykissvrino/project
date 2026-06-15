@@ -1,0 +1,95 @@
+{
+  "ksco_code": "21339",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "표본",
+      "full_statement": "수학·통계학·지구물리학 분야의 시험·분석에 필요한 표본을 수집한다.",
+      "source_sentence": "표본을 수집하고 실험, 검사 및 분석용 재료와 장비를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(수학·통계학·지구물리학)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "준비하다",
+      "object": "실험·검사·분석용 재료와 장비",
+      "full_statement": "실험, 검사 및 분석에 사용할 재료와 장비를 준비한다.",
+      "source_sentence": "표본을 수집하고 실험, 검사 및 분석용 재료와 장비를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "실험·검사·분석",
+      "full_statement": "관련 과학자의 관리·감독 하에 실험, 검사 및 분석을 직접 수행한다.",
+      "source_sentence": "실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "실험·검사·분석",
+      "full_statement": "관련 과학자가 수행하는 실험, 검사 및 분석을 보조한다.",
+      "source_sentence": "실험, 검사 및 분석을 보조하거나 직접 수행한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "작성하다",
+      "object": "재료·인력·비용 견적서",
+      "full_statement": "주어진 명세서에 따라 프로젝트에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "source_sentence": "주어진 명세서에 따라 프로젝트에 필요한 재료 및 인력의 양과 비용의 세부 견적서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "응용하다",
+      "object": "기술적 지식",
+      "full_statement": "연구과정에서 야기되는 문제를 확인·해결하기 위하여 기술적 지식을 응용한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "확인하다",
+      "object": "연구과정 문제",
+      "full_statement": "연구과정에서 야기되는 문제를 확인한다.",
+      "source_sentence": "연구과정에서 야기되는 문제를 확인, 해결하기 위하여 기술적 지식을 응용한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "유지하다",
+      "object": "조사·연구 장비",
+      "full_statement": "조사 및 연구에 사용되는 장비를 유지한다.",
+      "source_sentence": "조사, 연구 장비를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "보수하다",
+      "object": "조사·연구 장비",
+      "full_statement": "조사 및 연구에 사용되는 장비를 보수한다.",
+      "source_sentence": "조사, 연구 장비를 유지 및 보수한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "수학·통계학 분야 기술적 업무",
+      "full_statement": "수학, 통계학 및 지구물리학 등의 분야에서 관련 과학자의 관리·감독 하에 기술적 업무를 수행한다.",
+      "source_sentence": "수학, 통계학 및 지구물리학 등의 분야에서 기술적 업무를 수행하는 자 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.6
+    },
+    {
+      "verb": "개선하다",
+      "object": "개념·이론·운영방법",
+      "full_statement": "수학, 통계학, 지구물리학 등의 분야에서 개념, 이론 및 운영방법의 개선·개발과 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "수학, 통계학, 물리학, 천문학, 화학, 지질학 등의 분야에서 개념, 이론 및 운영방법의 개선, 개발과 관련하여 관련 과학자의 관리, 감독 하에 기술적인 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

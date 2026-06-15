@@ -1,0 +1,84 @@
+{
+  "ksco_code": "81113",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "도정기",
+      "full_statement": "벼, 보리 등을 목적에 맞게 도정하는 기계를 조작한다.",
+      "source_sentence": "벼, 보리 등을 식용이나 동물 사료 등 목적에 맞게 도정하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "도정하다",
+      "object": "벼",
+      "full_statement": "벼를 식용이나 동물 사료 목적에 맞게 도정한다.",
+      "source_sentence": "벼, 보리 등을 식용이나 동물 사료 등 목적에 맞게 도정하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "도정하다",
+      "object": "보리",
+      "full_statement": "보리를 식용이나 동물 사료 목적에 맞게 도정한다.",
+      "source_sentence": "벼, 보리 등을 식용이나 동물 사료 등 목적에 맞게 도정하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물 가공용 기계",
+      "full_statement": "쌀, 밀가루 및 동물사료의 가공을 위하여 사용되는 기계를 조작한다.",
+      "source_sentence": "쌀, 밀가루 및 동물사료의 가공을 위하여 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "제분기",
+      "full_statement": "곡물 및 양념분쇄용 제분기를 조작한다.",
+      "source_sentence": "곡물 및 양념분쇄용 제분기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "곡물",
+      "full_statement": "곡물을 식료품으로 만들기 위하여 분쇄한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "마쇄하다",
+      "object": "곡물",
+      "full_statement": "곡물을 식료품으로 만들기 위하여 마쇄한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "혼합하다",
+      "object": "곡물",
+      "full_statement": "곡물을 식료품으로 만들기 위하여 혼합한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.52
+    },
+    {
+      "verb": "제조하다",
+      "object": "식품",
+      "full_statement": "사람·동물소비용 식품 및 관련제품을 제조하는 기계를 조작하여 식료품을 가공한다.",
+      "source_sentence": "식료품을 가공하고 사람‧동물소비용 식품 및 관련제품을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "도정기", "category": "장비", "evidence_span": "목적에 맞게 도정하는 기계를 조작한다"},
+    {"name": "제분기", "category": "장비", "evidence_span": "곡물 및 양념분쇄용 제분기를 조작한다"},
+    {"name": "정미기", "category": "장비", "evidence_span": "마찰식 정미기 조작원"},
+    {"name": "곡물 박피기", "category": "장비", "evidence_span": "곡물 박피기 조작원"}
+  ],
+  "work_context": []
+}

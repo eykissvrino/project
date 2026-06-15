@@ -1,0 +1,95 @@
+{
+  "ksco_code": "32122",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "생산된 제품의 품질",
+      "full_statement": "생산된 제품의 기능, 안전성 등 품질을 측정하고 관리한다.",
+      "source_sentence": "생산된 제품의 기능향상, 안전성 등을 위하여 ... 품질을 측정하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "측정하다",
+      "object": "제품의 품질",
+      "full_statement": "생산된 제품의 품질을 측정한다.",
+      "source_sentence": "품질을 측정하고 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "제품의 안전도·기능·디자인",
+      "full_statement": "생산된 제품의 안전도, 기능, 디자인 등 품질을 관리한다.",
+      "source_sentence": "생산된 제품의 안전도, 기능, 디자인 등 품질을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제공하다",
+      "object": "기술적인 지원과 서비스",
+      "full_statement": "생산방법, 시설 및 시스템 개발, 작업계획, 견적평가, 측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "source_sentence": "생산방법, 시설 및 시스템 개발, 작업계획, 견적평가, 측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "생산방법 및 시설·시스템 개발",
+      "full_statement": "생산방법, 시설 및 시스템 개발에 관한 기술적 지원을 한다.",
+      "source_sentence": "생산방법, 시설 및 시스템 개발 ... 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "견적",
+      "full_statement": "작업계획 및 견적평가를 수행한다.",
+      "source_sentence": "작업계획, 견적평가, 측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수립하다",
+      "object": "측정 작업일정계획",
+      "full_statement": "측정 작업일정계획을 수립한다.",
+      "source_sentence": "측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계산하다",
+      "object": "재료의 수량·품질·종류",
+      "full_statement": "생산계획에 의거하여 요구되는 재료의 수량, 품질 및 종류를 계산한다.",
+      "source_sentence": "생산계획에 의거하여 요구되는 재료의 수량, 품질 및 종류를 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수집하다",
+      "object": "자료",
+      "full_statement": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집·기록한다.",
+      "source_sentence": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집‧기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "기록 및 보고서",
+      "full_statement": "생산일정, 기록, 보고서를 준비한다.",
+      "source_sentence": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집‧기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조정하다",
+      "object": "작업 및 자재의 흐름",
+      "full_statement": "생산부 내 또는 관련 부서간의 작업 및 자재의 흐름을 조정한다.",
+      "source_sentence": "생산부 내 또는 관련 부서간의 작업 및 자재의 흐름을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

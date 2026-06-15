@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28449",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "상품 가치",
+      "full_statement": "상품의 가치를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시행하다",
+      "object": "경매",
+      "full_statement": "경매를 시행하여 낙찰자를 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "중개하다",
+      "object": "거래",
+      "full_statement": "공급자와 구매자 간 거래를 중개한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

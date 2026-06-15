@@ -1,0 +1,101 @@
+{
+  "ksco_code": "78492",
+  "tasks": [
+    {
+      "verb": "착용하다",
+      "object": "잠수복",
+      "full_statement": "수중 작업을 위하여 잠수복을 착용한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작업하다",
+      "object": "수중",
+      "full_statement": "잠수복을 입고 수중에서 작업한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "시설과 구조물",
+      "full_statement": "수중에서 시설과 구조물을 검사한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수리하다",
+      "object": "시설과 구조물",
+      "full_statement": "수중에서 시설과 구조물을 수리한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "철거하다",
+      "object": "시설과 구조물",
+      "full_statement": "수중에서 시설과 구조물을 철거한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설치하다",
+      "object": "시설과 구조물",
+      "full_statement": "수중에서 시설과 구조물을 설치한다.",
+      "source_sentence": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수행하다",
+      "object": "침몰 선체 구난·회수 관련 수중업무",
+      "full_statement": "침몰된 선체의 구난 또는 회수와 관련된 수중업무를 수행한다.",
+      "source_sentence": "침몰된 선체의 구난 또는 회수와 관련된 여러 가지 수중업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "구난하다",
+      "object": "침몰된 선체",
+      "full_statement": "침몰된 선체를 구난한다.",
+      "source_sentence": "침몰된 선체의 구난 또는 회수와 관련된 여러 가지 수중업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "회수하다",
+      "object": "침몰된 선체",
+      "full_statement": "침몰된 선체를 회수한다.",
+      "source_sentence": "침몰된 선체의 구난 또는 회수와 관련된 여러 가지 수중업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "수중 장비나 구조물",
+      "full_statement": "수중에 장비나 구조물을 설치한다.",
+      "source_sentence": "수중에 장비나 구조물을 설치하거나 설치된 구조물을 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "설치된 수중 구조물",
+      "full_statement": "수중에 설치된 구조물을 검사한다.",
+      "source_sentence": "수중에 장비나 구조물을 설치하거나 설치된 구조물을 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "잠수복", "category": "장비", "evidence_span": "잠수복을 입고 수중에서 작업한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "수중 작업", "evidence_span": "잠수복을 입고 수중에서 작업한다"},
+    {"category": "위험", "value": "수중 잠수 작업 환경", "evidence_span": "잠수복을 입고 수중에서 작업한다"},
+    {"category": "신체적", "value": "잠수복 착용 수중 작업으로 인한 체력 부담", "evidence_span": "시설과 구조물을 검사, 수리, 철거 및 설치하기 위하여 잠수복을 입고 수중에서 작업한다"}
+  ]
+}

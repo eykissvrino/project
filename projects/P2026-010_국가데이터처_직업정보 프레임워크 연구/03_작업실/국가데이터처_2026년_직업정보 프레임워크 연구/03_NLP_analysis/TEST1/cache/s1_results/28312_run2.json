@@ -1,0 +1,89 @@
+{
+  "ksco_code": "28312",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "판매수준·소비자 평가 정보",
+      "full_statement": "특정상품 및 서비스에 관한 현재의 판매수준, 소비자의 평가 등에 관한 정보를 체계적으로 수집·연구한다.",
+      "source_sentence": "특정상품 및 서비스에 관한 현재의 판매수준, 소비자의 평가 등에 관한 정보를 체계적으로 수집‧연구하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "조사하다",
+      "object": "소비자 취향",
+      "full_statement": "소비자의 현재 또는 장래취향을 조사·분석한다.",
+      "source_sentence": "소비자의 현재 또는 장래취향을 조사‧분석하여 효율적인 판매 전략을 수립하거나 그에 대해 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "수립하다",
+      "object": "판매 전략",
+      "full_statement": "소비자 취향 분석을 토대로 효율적인 판매 전략을 수립한다.",
+      "source_sentence": "소비자의 현재 또는 장래취향을 조사‧분석하여 효율적인 판매 전략을 수립하거나 그에 대해 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "제공하다",
+      "object": "판매 전략 조언",
+      "full_statement": "효율적인 판매 전략에 대해 조언을 제공한다.",
+      "source_sentence": "효율적인 판매 전략을 수립하거나 그에 대해 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "수집하다",
+      "object": "시장 상황·구매 패턴 정보",
+      "full_statement": "현재의 시장 상황, 소비자 행동 및 구매 패턴, 미래의 변화 양상 등에 관한 객관적인 정보를 수집·분석한다.",
+      "source_sentence": "현재의 시장 상황, 소비자 행동 및 구매 패턴, 미래의 변화 양상 등에 관한 객관적인 정보를 수집‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "소비자 행동",
+      "full_statement": "소비자의 수요예측과 소비자 행동분석을 수행한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 광고전문가와 광고 전략을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "협의하다",
+      "object": "광고 전략",
+      "full_statement": "소비자 수요예측과 행동분석을 통하여 광고전문가와 광고 전략을 협의한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 광고전문가와 광고 전략을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "예측하다",
+      "object": "소비자 수요",
+      "full_statement": "소비자의 수요를 예측한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 광고전문가와 광고 전략을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "총괄하다",
+      "object": "상품흐름 전 과정",
+      "full_statement": "상품의 기획부터 생산, 개발, 판매, 재고조절 등 상품흐름의 전 과정을 총괄한다.",
+      "source_sentence": "상품의 기획부터 생산, 개발, 판매, 재고조절 등 상품흐름의 전 과정을 총괄 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "자문하다",
+      "object": "판매 전략",
+      "full_statement": "특정상품 및 서비스에 대한 판매수준·소비자 취향을 조사 분석하여 효율적인 판매 전략을 자문한다.",
+      "source_sentence": "특정상품 및 서비스에 대한 현재의 판매수준, 소비자의 취향을 조사 분석하여 효율적인 판매 전략을 수립하거나 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {"category": "사회적", "value": "광고전문가와 협의", "evidence_span": "광고전문가와 광고 전략을 협의한다"}
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "ksco_code": "99110",
+  "tasks": [
+    {
+      "verb": "돕다",
+      "object": "숙련 농업종사원",
+      "full_statement": "숙련된 농업종사원을 도와 간단한 농사일의 일부를 수행한다.",
+      "source_sentence": "정기적이지 않고 일시적으로 숙련된 농업종사원을 도와서 간단한 농사일 중의 일부를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파다",
+      "object": "도랑",
+      "full_statement": "도랑을 판다.",
+      "source_sentence": "도랑을 파거나 삽질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "삽질하다",
+      "object": "흙",
+      "full_statement": "삽으로 흙을 삽질한다.",
+      "source_sentence": "도랑을 파거나 삽질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "싣다",
+      "object": "농작물 및 기타 물질",
+      "full_statement": "여러 가지 농작물 및 기타 물질을 싣는다.",
+      "source_sentence": "여러 가지 농작물 및 기타 물질을 싣고 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "내리다",
+      "object": "농작물 및 기타 물질",
+      "full_statement": "여러 가지 농작물 및 기타 물질을 내린다.",
+      "source_sentence": "여러 가지 농작물 및 기타 물질을 싣고 내린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "갈퀴질하다",
+      "object": "건초",
+      "full_statement": "건초를 갈퀴질한다.",
+      "source_sentence": "건초를 갈퀴질하고 쌓으며 손질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "쌓다",
+      "object": "건초",
+      "full_statement": "건초를 쌓는다.",
+      "source_sentence": "건초를 갈퀴질하고 쌓으며 손질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "손질하다",
+      "object": "건초",
+      "full_statement": "건초를 손질한다.",
+      "source_sentence": "건초를 갈퀴질하고 쌓으며 손질한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주다",
+      "object": "물",
+      "full_statement": "농산물에 물을 준다.",
+      "source_sentence": "농산물에 물을 주고 제초작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제초하다",
+      "object": "잡초",
+      "full_statement": "농작물의 잡초를 제거하는 제초작업을 한다.",
+      "source_sentence": "농산물에 물을 주고 제초작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수확하다",
+      "object": "과실·채소 및 식물",
+      "full_statement": "과실, 채소 및 여러 가지 식물을 수확한다.",
+      "source_sentence": "과실, 채소 및 여러 가지 식물을 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(과실 수확원 예시)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "주다",
+      "object": "사료 또는 물",
+      "full_statement": "동물에게 사료 또는 물을 준다.",
+      "source_sentence": "동물에게 사료 또는 물을 주거나 이들을 씻어주고, 축사를 청소한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목동·목장·낙농장 예시)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "씻기다",
+      "object": "동물",
+      "full_statement": "동물을 씻어준다.",
+      "source_sentence": "동물에게 사료 또는 물을 주거나 이들을 씻어주고, 축사를 청소한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목동·목장·낙농장 예시)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "청소하다",
+      "object": "축사",
+      "full_statement": "축사를 청소한다.",
+      "source_sentence": "동물에게 사료 또는 물을 주거나 이들을 씻어주고, 축사를 청소한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(목장·낙농장 예시)",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순·일상적 노무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"
+    },
+    {
+      "category": "신체적",
+      "value": "간단한 수공구 사용",
+      "evidence_span": "주로 간단한 수공구의 사용과"
+    },
+    {
+      "category": "시간적",
+      "value": "정기적이지 않고 일시적인 작업 수행",
+      "evidence_span": "정기적이지 않고 일시적으로 숙련된 농업종사원을 도와서"
+    },
+    {
+      "category": "사회적",
+      "value": "숙련 농업종사원을 보조하는 협업",
+      "evidence_span": "숙련된 농업종사원을 도와서 간단한 농사일 중의 일부를 수행한다"
+    }
+  ]
+}

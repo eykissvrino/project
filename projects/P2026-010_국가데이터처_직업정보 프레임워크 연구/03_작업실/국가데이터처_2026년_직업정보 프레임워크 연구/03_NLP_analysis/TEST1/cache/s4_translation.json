@@ -1,0 +1,289 @@
+[
+  {
+    "onet_gwa_id": "4.A.1.a.1",
+    "onet_label_en": "Getting Information",
+    "label_kr": "정보 입수",
+    "definition_kr": "관련 있는 모든 원천으로부터 정보를 관찰하고 수집하여 확보하는 활동이다.",
+    "domain": "정보 입력"
+  },
+  {
+    "onet_gwa_id": "4.A.1.a.2",
+    "onet_label_en": "Monitoring Processes, Materials, or Surroundings",
+    "label_kr": "공정·자재·주변 환경 점검",
+    "definition_kr": "자재, 상황, 주변 환경에서 나오는 정보를 지속적으로 관찰하고 검토하여 문제를 발견하거나 평가하는 활동이다.",
+    "domain": "정보 입력"
+  },
+  {
+    "onet_gwa_id": "4.A.1.b.1",
+    "onet_label_en": "Identifying Objects, Actions, and Events",
+    "label_kr": "대상·행위·사건 식별",
+    "definition_kr": "정보를 분류하고 추정하며, 차이점이나 유사점을 인식하고 상황이나 사건의 변화를 감지하여 파악하는 활동이다.",
+    "domain": "정보 입력"
+  },
+  {
+    "onet_gwa_id": "4.A.1.b.2",
+    "onet_label_en": "Inspecting Equipment, Structures, or Materials",
+    "label_kr": "장비·구조물·자재 검사",
+    "definition_kr": "장비, 구조물, 자재를 검사하여 오류, 문제, 결함의 원인을 찾아내는 활동이다.",
+    "domain": "정보 입력"
+  },
+  {
+    "onet_gwa_id": "4.A.1.b.3",
+    "onet_label_en": "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+    "label_kr": "수량적 특성 추정",
+    "definition_kr": "크기, 거리, 수량을 가늠하거나, 작업 수행에 필요한 시간·비용·자원·자재를 산정하는 활동이다.",
+    "domain": "정보 입력"
+  },
+  {
+    "onet_gwa_id": "4.A.2.a.1",
+    "onet_label_en": "Judging the Qualities of Objects, Services, or People",
+    "label_kr": "대상·서비스·인물의 가치 판단",
+    "definition_kr": "사물이나 사람의 가치, 중요도, 품질을 가늠하여 평가하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.a.2",
+    "onet_label_en": "Processing Information",
+    "label_kr": "정보 처리",
+    "definition_kr": "정보나 데이터를 집계, 부호화, 분류, 계산, 표 작성, 감사, 검증하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.a.3",
+    "onet_label_en": "Evaluating Information to Determine Compliance with Standards",
+    "label_kr": "기준 부합 여부 평가",
+    "definition_kr": "관련 정보와 개인의 판단을 활용하여 사건이나 절차가 법규, 규정, 기준에 부합하는지 가려내는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.a.4",
+    "onet_label_en": "Analyzing Data or Information",
+    "label_kr": "데이터·정보 분석",
+    "definition_kr": "정보나 데이터를 개별 요소로 분해하여 그 바탕에 있는 원리, 이유, 사실을 밝혀내는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.1",
+    "onet_label_en": "Making Decisions and Solving Problems",
+    "label_kr": "의사결정 및 문제해결",
+    "definition_kr": "정보를 분석하고 결과를 평가하여 최선의 해법을 선택하고 문제를 해결하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.2",
+    "onet_label_en": "Thinking Creatively",
+    "label_kr": "창의적 사고",
+    "definition_kr": "예술적 기여를 포함하여 새로운 적용 방안, 아이디어, 관계, 체계, 제품을 개발하고 설계하며 창출하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.3",
+    "onet_label_en": "Updating and Using Relevant Knowledge",
+    "label_kr": "지식 갱신 및 활용",
+    "definition_kr": "기술적으로 최신 수준을 유지하고 새로 습득한 지식을 자신의 업무에 적용하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.4",
+    "onet_label_en": "Developing Objectives and Strategies",
+    "label_kr": "목표 및 전략 수립",
+    "definition_kr": "장기 목표를 설정하고 이를 달성하기 위한 전략과 실행 방안을 구체화하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.5",
+    "onet_label_en": "Scheduling Work and Activities",
+    "label_kr": "업무 및 활동 일정 관리",
+    "definition_kr": "행사, 프로그램, 활동은 물론 타인의 업무에 대한 일정을 편성하는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.2.b.6",
+    "onet_label_en": "Organizing, Planning, and Prioritizing Work",
+    "label_kr": "업무 조직화·계획·우선순위 설정",
+    "definition_kr": "자신의 업무를 우선순위에 따라 정리하고 조직하여 완수하기 위한 구체적인 목표와 계획을 세우는 활동이다.",
+    "domain": "정신 과정"
+  },
+  {
+    "onet_gwa_id": "4.A.3.a.1",
+    "onet_label_en": "Performing General Physical Activities",
+    "label_kr": "일반 신체 활동 수행",
+    "definition_kr": "오르기, 들어올리기, 균형 잡기, 걷기, 구부리기, 자재 다루기 등 팔다리를 상당히 사용하고 온몸을 움직이는 신체 활동을 수행하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.a.2",
+    "onet_label_en": "Handling and Moving Objects",
+    "label_kr": "물체 취급 및 이동",
+    "definition_kr": "손과 팔을 사용하여 자재를 다루고 설치하며 자리를 잡고 옮기는 등 물체를 조작하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.a.3",
+    "onet_label_en": "Controlling Machines and Processes",
+    "label_kr": "기계 및 공정 제어",
+    "definition_kr": "제어 장치를 다루거나 직접적인 신체 활동을 통해 기계나 공정을 가동하는 활동이다(컴퓨터와 차량은 제외).",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.a.4",
+    "onet_label_en": "Operating Vehicles, Mechanized Devices, or Equipment",
+    "label_kr": "차량·기계 장치·장비 운전",
+    "definition_kr": "지게차, 승용차, 항공기, 선박 등의 차량이나 기계화된 장비를 운행하고 조종하며 운항하거나 운전하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.b.1",
+    "onet_label_en": "Working with Computers",
+    "label_kr": "컴퓨터 활용 작업",
+    "definition_kr": "하드웨어와 소프트웨어를 포함한 컴퓨터와 컴퓨터 시스템을 사용하여 프로그래밍, 소프트웨어 작성, 기능 설정, 데이터 입력, 정보 처리를 수행하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.b.2",
+    "onet_label_en": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+    "label_kr": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+    "definition_kr": "장치, 부품, 장비, 구조물을 제작·시공·조립·개조·정비·사용하는 방법을 타인에게 전달하기 위해 문서, 상세 지침, 도면, 사양서를 제공하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.b.4",
+    "onet_label_en": "Repairing and Maintaining Mechanical Equipment",
+    "label_kr": "기계 장비 수리 및 정비",
+    "definition_kr": "주로 기계적 원리로 작동하는 기계, 장치, 가동 부품, 장비를 점검, 수리, 조정, 시험하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.b.5",
+    "onet_label_en": "Repairing and Maintaining Electronic Equipment",
+    "label_kr": "전자 장비 수리 및 정비",
+    "definition_kr": "주로 전기적·전자적 원리로 작동하는 기계, 장치, 장비를 점검, 수리, 교정, 조정, 미세 조율, 시험하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.3.b.6",
+    "onet_label_en": "Documenting/Recording Information",
+    "label_kr": "정보 문서화 및 기록",
+    "definition_kr": "정보를 문서 형태나 전자·자기 형태로 입력, 전사, 기록, 저장, 관리하는 활동이다.",
+    "domain": "작업 산출"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.1",
+    "onet_label_en": "Interpreting the Meaning of Information for Others",
+    "label_kr": "타인을 위한 정보 의미 해석",
+    "definition_kr": "정보가 무엇을 의미하며 어떻게 활용될 수 있는지를 타인에게 풀어 설명하거나 전달하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.2",
+    "onet_label_en": "Communicating with Supervisors, Peers, or Subordinates",
+    "label_kr": "상사·동료·부하와의 의사소통",
+    "definition_kr": "전화, 문서, 전자우편, 대면 등의 방식으로 상사, 동료, 부하에게 정보를 전달하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.3",
+    "onet_label_en": "Communicating with People Outside the Organization",
+    "label_kr": "조직 외부와의 의사소통",
+    "definition_kr": "고객, 일반 대중, 정부 등 조직 외부의 상대와 소통하며 조직을 대표하는 활동으로, 대면, 문서, 전화, 전자우편을 통해 이루어진다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.4",
+    "onet_label_en": "Establishing and Maintaining Interpersonal Relationships",
+    "label_kr": "대인관계 형성 및 유지",
+    "definition_kr": "타인과 건설적이고 협력적인 업무 관계를 발전시키고 이를 지속적으로 유지하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.5",
+    "onet_label_en": "Assisting and Caring for Others",
+    "label_kr": "타인 지원 및 돌봄",
+    "definition_kr": "동료, 고객, 환자 등 타인에게 개인적 도움, 의료적 보살핌, 정서적 지지, 그 밖의 돌봄을 제공하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.6",
+    "onet_label_en": "Selling or Influencing Others",
+    "label_kr": "판매 및 타인 설득",
+    "definition_kr": "타인이 상품을 구매하도록 하거나 생각 또는 행동을 바꾸도록 설득하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.7",
+    "onet_label_en": "Resolving Conflicts and Negotiating with Others",
+    "label_kr": "갈등 해결 및 협상",
+    "definition_kr": "불만을 처리하고 분쟁을 조정하며 고충과 갈등을 해소하거나 타인과 협상하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.a.8",
+    "onet_label_en": "Performing for or Working Directly with the Public",
+    "label_kr": "대중 응대 및 직접 서비스",
+    "definition_kr": "대중 앞에서 공연하거나 일반 대중을 직접 상대하는 활동으로, 음식점과 매장에서의 고객 응대 및 고객·손님 접대를 포함한다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.1",
+    "onet_label_en": "Coordinating the Work and Activities of Others",
+    "label_kr": "타인의 업무 및 활동 조정",
+    "definition_kr": "집단 구성원들이 협력하여 과업을 완수하도록 이끄는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.2",
+    "onet_label_en": "Developing and Building Teams",
+    "label_kr": "팀 개발 및 구축",
+    "definition_kr": "팀 구성원 사이의 상호 신뢰, 존중, 협력을 북돋우고 다져 나가는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.3",
+    "onet_label_en": "Training and Teaching Others",
+    "label_kr": "타인 훈련 및 교육",
+    "definition_kr": "타인의 교육 요구를 파악하고 정규 교육·훈련 프로그램이나 강좌를 개발하며 가르치고 지도하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.4",
+    "onet_label_en": "Guiding, Directing, and Motivating Subordinates",
+    "label_kr": "부하 지도·지휘·동기부여",
+    "definition_kr": "성과 기준을 설정하고 성과를 점검하는 것을 포함하여 부하에게 지침과 방향을 제시하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.5",
+    "onet_label_en": "Coaching and Developing Others",
+    "label_kr": "타인 코칭 및 역량 개발",
+    "definition_kr": "타인의 성장 요구를 파악하고 코칭, 멘토링 등을 통해 그들의 지식이나 기술 향상을 돕는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.b.6",
+    "onet_label_en": "Providing Consultation and Advice to Others",
+    "label_kr": "자문 및 조언 제공",
+    "definition_kr": "기술, 시스템, 절차와 관련된 주제에 대해 경영진이나 다른 집단에 지침과 전문적 조언을 제공하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.c.1",
+    "onet_label_en": "Performing Administrative Activities",
+    "label_kr": "행정 업무 수행",
+    "definition_kr": "자료 파일을 관리하고 서류를 처리하는 등 일상적인 행정 업무를 수행하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.c.2",
+    "onet_label_en": "Staffing Organizational Units",
+    "label_kr": "조직 인력 충원",
+    "definition_kr": "조직의 직원을 모집, 면접, 선발, 채용하고 승진시키는 활동이다.",
+    "domain": "타인과의 상호작용"
+  },
+  {
+    "onet_gwa_id": "4.A.4.c.3",
+    "onet_label_en": "Monitoring and Controlling Resources",
+    "label_kr": "자원 점검 및 관리",
+    "definition_kr": "자원을 점검하고 통제하며 자금 지출을 관리·감독하는 활동이다.",
+    "domain": "타인과의 상호작용"
+  }
+]

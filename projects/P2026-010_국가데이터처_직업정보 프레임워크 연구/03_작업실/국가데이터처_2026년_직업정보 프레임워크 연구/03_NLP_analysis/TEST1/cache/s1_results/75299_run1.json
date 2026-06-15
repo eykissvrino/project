@@ -1,0 +1,137 @@
+{
+  "ksco_code": "75299",
+  "tasks": [
+    {
+      "verb": "정비하다",
+      "object": "오토바이의 기관",
+      "full_statement": "오토바이의 기관을 정비한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "오토바이의 기관",
+      "full_statement": "오토바이의 기관을 수리한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "점검하다",
+      "object": "오토바이의 기관",
+      "full_statement": "오토바이의 기관을 점검한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "정비하다",
+      "object": "자전거의 기관",
+      "full_statement": "자전거의 기관을 정비한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "자전거의 기관",
+      "full_statement": "자전거의 기관을 수리한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "점검하다",
+      "object": "자전거의 기관",
+      "full_statement": "자전거의 기관을 점검한다.",
+      "source_sentence": "오토바이, 자전거의 기관을 정비, 수리, 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "확인하다",
+      "object": "바퀴, 연결고리 등의 이상 유무",
+      "full_statement": "바퀴, 연결고리 등의 이상 유무를 확인한다.",
+      "source_sentence": "바퀴, 연결고리 등의 이상 유무를 확인하고 고장 시에 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "고장난 바퀴, 연결고리",
+      "full_statement": "바퀴, 연결고리의 고장 시에 이를 수리한다.",
+      "source_sentence": "바퀴, 연결고리 등의 이상 유무를 확인하고 고장 시에 이를 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "정비하다",
+      "object": "기타 운송장비",
+      "full_statement": "오토바이, 자전거 등 기타 운송장비를 정비한다.",
+      "source_sentence": "오토바이, 자전거 등 기타 운송장비를 정비한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "조정하다",
+      "object": "기타 운송장비",
+      "full_statement": "기타 운송장비를 수공구 및 관련 장비를 사용하여 조정한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "교체하다",
+      "object": "기타 운송장비의 부품",
+      "full_statement": "기타 운송장비의 부품을 수공구 및 관련 장비를 사용하여 교체한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수리하다",
+      "object": "기타 운송장비",
+      "full_statement": "기타 운송장비를 수공구 및 관련 장비를 사용하여 수리한다.",
+      "source_sentence": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수리하다",
+      "object": "유아차",
+      "full_statement": "유아차를 수리한다.",
+      "source_sentence": "유아차수리원",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "휠체어",
+      "full_statement": "휠체어를 수리한다.",
+      "source_sentence": "휠체어수리원",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정비하다",
+      "object": "운송용 무인 항공기",
+      "full_statement": "운송용 무인 항공기를 정비한다.",
+      "source_sentence": "운송용 무인 항공기 정비원",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정비하다",
+      "object": "운송용 드론기기",
+      "full_statement": "운송용 드론기기를 정비한다.",
+      "source_sentence": "운송용 드론기기 정비원",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "항공기, 선박, 철도 및 기타 운송장비들을 수공구 및 관련 장비를 사용하여 조정하고, 교체하거나 수리하여 정비한다."}
+  ],
+  "work_context": []
+}

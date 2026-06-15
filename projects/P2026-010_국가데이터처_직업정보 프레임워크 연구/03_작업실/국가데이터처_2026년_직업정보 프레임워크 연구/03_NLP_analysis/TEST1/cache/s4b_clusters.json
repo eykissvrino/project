@@ -1,0 +1,1022 @@
+{
+  "k": 41,
+  "k_eff": 41,
+  "domains": [
+    {
+      "domain_id": "D_1",
+      "n_iwa": 76,
+      "nearest_onet_domain": "작업 산출",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_cosine": 0.6874,
+      "rep_iwa_labels": [
+        "기계·공구를 조작하여 제품을 생산한다",
+        "원단·재료를 다루어 의복·외형을 손질한다",
+        "재료를 가공하여 공예 제품을 제작한다",
+        "건축 마감재를 시공하여 표면을 마무리한다",
+        "생산품·상품을 보관하여 관리한다",
+        "전기·통신·배관 설비를 설치하여 운영한다",
+        "공구·기계로 소재를 절단한다",
+        "원료를 배합하여 처리한다",
+        "도안을 구성하여 시각물을 제작한다",
+        "수목·임산자원을 가꾸어 생산한다",
+        "건설 중장비를 운전하여 토목 작업을 수행한다",
+        "표면의 이물질·잔존물을 제거한다"
+      ]
+    },
+    {
+      "domain_id": "D_2",
+      "n_iwa": 38,
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_cosine": 0.6794,
+      "rep_iwa_labels": [
+        "사회·복지 프로그램을 운영하여 지원한다",
+        "환자를 진료하여 치료한다",
+        "작품의 인물을 구상하여 연기한다",
+        "예술작품을 창작하여 공연한다",
+        "영상·방송장비를 조작하여 콘텐츠를 제작한다",
+        "교과를 강의하여 학생을 지도한다",
+        "전문분야 상담·자문 서비스를 제공한다",
+        "운동경기를 수행하고 지원한다",
+        "신체적 특성에 맞게 미용·이미지를 연출한다",
+        "행사를 진행하여 내방객을 응대한다",
+        "전문 분야를 연구하여 기술을 개발한다",
+        "신체부위를 교정하여 조절한다"
+      ]
+    },
+    {
+      "domain_id": "D_3",
+      "n_iwa": 34,
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_cosine": 0.7009,
+      "rep_iwa_labels": [
+        "조직의 운영을 기획하여 관리한다",
+        "고객을 응대하여 상품을 판매한다",
+        "자료를 처리하여 문서를 작성한다",
+        "금융·거래 업무를 처리한다",
+        "건설·토목 사업을 기획하여 검토한다",
+        "금융·신용 신청을 심사한다",
+        "법률사무를 수행한다",
+        "정보시스템을 설계하여 운영한다",
+        "기계·전자·통신 장비를 설계하여 개발한다",
+        "보험 상품과 청구를 심사한다",
+        "투자 정보를 분석하여 자산을 운용한다",
+        "전력·방송 장비를 운용하여 관리한다"
+      ]
+    },
+    {
+      "domain_id": "D_4",
+      "n_iwa": 30,
+      "nearest_onet_domain": "정보 입력",
+      "nearest_onet_label": "장비·구조물·자재 검사",
+      "nearest_cosine": 0.7002,
+      "rep_iwa_labels": [
+        "설비·제품의 상태를 점검하여 진단한다",
+        "운송수단을 운용하여 화물·승객을 운반한다",
+        "재해·환경 위험을 점검하여 관리한다",
+        "대상 구역·인원을 경비하여 보호한다",
+        "철도차량을 운행하고 운행상태를 관리한다",
+        "위험상황에 대처하여 안전을 확보한다",
+        "방역·위생 처리를 수행한다",
+        "신호·조명 설비를 조작하여 운용한다",
+        "품질·환경안전 기준을 수립하여 관리한다",
+        "항공기를 정비하여 관리한다",
+        "운항정보를 기록하고 전달한다",
+        "수로의 선박교통을 관제한다"
+      ]
+    }
+  ],
+  "gwas": [
+    {
+      "kr_gwa_id": "KG_01",
+      "domain_id": "D_1",
+      "n_iwa": 12,
+      "cohesion": 0.9127,
+      "member_iwa_ids": [
+        "I_0012",
+        "I_0014",
+        "I_0022",
+        "I_0027",
+        "I_0029",
+        "I_0032",
+        "I_0039",
+        "I_0059",
+        "I_0060",
+        "I_0102",
+        "I_0108",
+        "I_0121"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.689,
+      "rep_iwa_labels": [
+        "도안을 구성하여 시각물을 제작한다",
+        "원단·재료를 다루어 의복·외형을 손질한다",
+        "재료를 가공하여 공예 제품을 제작한다",
+        "생산품·상품을 보관하여 관리한다",
+        "섬유·소재를 분석하여 제품에 활용한다",
+        "원료를 배합하여 처리한다",
+        "제작물 표면을 가공하여 마감한다",
+        "설계도면을 해석하여 작업 위치를 결정한다",
+        "재료로 시각예술 작품을 제작한다",
+        "성형재료로 입체조형물을 제작한다",
+        "도구를 다루어 생활 서비스를 제공한다",
+        "섬유제품을 재단하여 제조한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_02",
+      "domain_id": "D_2",
+      "n_iwa": 11,
+      "cohesion": 0.9147,
+      "member_iwa_ids": [
+        "I_0009",
+        "I_0010",
+        "I_0018",
+        "I_0037",
+        "I_0043",
+        "I_0045",
+        "I_0046",
+        "I_0051",
+        "I_0054",
+        "I_0077",
+        "I_0114"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6949,
+      "rep_iwa_labels": [
+        "환자를 진료하여 치료한다",
+        "사회·복지 프로그램을 운영하여 지원한다",
+        "전문분야 상담·자문 서비스를 제공한다",
+        "환자·대상자에게 보건복지 서비스를 제공한다",
+        "교과를 강의하여 학생을 지도한다",
+        "신체부위를 교정하여 조절한다",
+        "영유아·아동을 돌보고 발달을 지원한다",
+        "신체적 특성에 맞게 미용·이미지를 연출한다",
+        "운동경기를 수행하고 지원한다",
+        "시력 교정을 위한 처방을 한다",
+        "동물을 진료하여 관리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_03",
+      "domain_id": "D_1",
+      "n_iwa": 10,
+      "cohesion": 0.8984,
+      "member_iwa_ids": [
+        "I_0001",
+        "I_0008",
+        "I_0035",
+        "I_0048",
+        "I_0070",
+        "I_0094",
+        "I_0105",
+        "I_0119",
+        "I_0120",
+        "I_0163"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6741,
+      "rep_iwa_labels": [
+        "기계·공구를 조작하여 제품을 생산한다",
+        "전기·통신·배관 설비를 설치하여 운영한다",
+        "배관·철구조물을 제작한다",
+        "공구·기계로 소재를 절단한다",
+        "설비의 운전조건을 조정한다",
+        "설비를 설치하여 자원을 공급한다",
+        "보호·단열 자재를 시공한다",
+        "분사장치를 조작하여 표면을 처리한다",
+        "권선기로 코일을 가공한다",
+        "천공 기계를 조작한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_04",
+      "domain_id": "D_1",
+      "n_iwa": 10,
+      "cohesion": 0.8935,
+      "member_iwa_ids": [
+        "I_0015",
+        "I_0021",
+        "I_0038",
+        "I_0049",
+        "I_0058",
+        "I_0089",
+        "I_0090",
+        "I_0091",
+        "I_0148",
+        "I_0161"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6845,
+      "rep_iwa_labels": [
+        "건축 마감재를 시공하여 표면을 마무리한다",
+        "건축·토목 구조물을 시공한다",
+        "건설 중장비를 운전하여 토목 작업을 수행한다",
+        "목재를 가공하여 목구조물을 제작한다",
+        "콘크리트를 타설하여 시공한다",
+        "건축자재를 시공한다",
+        "거푸집·지주를 설치하여 시공한다",
+        "자재·부재를 가공하여 구조물을 설치한다",
+        "건물 칸막이를 설치한다",
+        "시공 전 바탕면을 정리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_05",
+      "domain_id": "D_3",
+      "n_iwa": 9,
+      "cohesion": 0.9238,
+      "member_iwa_ids": [
+        "I_0002",
+        "I_0003",
+        "I_0004",
+        "I_0011",
+        "I_0013",
+        "I_0016",
+        "I_0076",
+        "I_0127",
+        "I_0170"
+      ],
+      "nearest_onet": "4.A.2.a.2",
+      "nearest_onet_label": "정보 처리",
+      "nearest_onet_domain": "정신 과정",
+      "nearest_cosine": 0.6967,
+      "rep_iwa_labels": [
+        "자료를 처리하여 문서를 작성한다",
+        "건설·토목 사업을 기획하여 검토한다",
+        "조직의 운영을 기획하여 관리한다",
+        "정보시스템을 설계하여 운영한다",
+        "고객을 응대하여 상품을 판매한다",
+        "기계·전자·통신 장비를 설계하여 개발한다",
+        "전력·방송 장비를 운용하여 관리한다",
+        "교통정책 요인을 분석한다",
+        "경영 정보를 수집하여 관리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_06",
+      "domain_id": "D_2",
+      "n_iwa": 9,
+      "cohesion": 0.878,
+      "member_iwa_ids": [
+        "I_0006",
+        "I_0050",
+        "I_0064",
+        "I_0074",
+        "I_0096",
+        "I_0097",
+        "I_0110",
+        "I_0151",
+        "I_0166"
+      ],
+      "nearest_onet": "4.A.1.a.2",
+      "nearest_onet_label": "공정·자재·주변 환경 점검",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.6732,
+      "rep_iwa_labels": [
+        "전문 분야를 연구하여 기술을 개발한다",
+        "학문·자연 분야를 연구한다",
+        "예술·역사 자료를 조사하여 분석한다",
+        "언어·문서를 통번역하여 전달한다",
+        "언어를 연구하거나 통역한다",
+        "공정 상태를 관찰하여 판독한다",
+        "전통 기법을 고증하여 적용한다",
+        "자료를 기준에 따라 분류한다",
+        "현상과 정서를 문학 작품으로 창작한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_07",
+      "domain_id": "D_4",
+      "n_iwa": 9,
+      "cohesion": 0.8995,
+      "member_iwa_ids": [
+        "I_0007",
+        "I_0017",
+        "I_0031",
+        "I_0056",
+        "I_0057",
+        "I_0068",
+        "I_0088",
+        "I_0104",
+        "I_0118"
+      ],
+      "nearest_onet": "4.A.3.a.4",
+      "nearest_onet_label": "차량·기계 장치·장비 운전",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6889,
+      "rep_iwa_labels": [
+        "운송수단을 운용하여 화물·승객을 운반한다",
+        "철도차량을 운행하고 운행상태를 관리한다",
+        "대상 구역·인원을 경비하여 보호한다",
+        "신호·조명 설비를 조작하여 운용한다",
+        "항공기를 정비하여 관리한다",
+        "운항정보를 기록하고 전달한다",
+        "수로의 선박교통을 관제한다",
+        "홍보물을 제작하여 설치한다",
+        "선로를 연결하여 상태를 점검한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_08",
+      "domain_id": "D_1",
+      "n_iwa": 9,
+      "cohesion": 0.8586,
+      "member_iwa_ids": [
+        "I_0023",
+        "I_0071",
+        "I_0078",
+        "I_0093",
+        "I_0098",
+        "I_0116",
+        "I_0117",
+        "I_0157",
+        "I_0159"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6597,
+      "rep_iwa_labels": [
+        "표면의 이물질·잔존물을 제거한다",
+        "건축물을 시공하거나 보수한다",
+        "설비·기기를 설치하여 정비한다",
+        "치과 보철물을 제작하거나 치료한다",
+        "약제·원료를 조제하여 가공한다",
+        "차체의 손상 부위를 복구한다",
+        "시공·설비를 총괄하여 관리한다",
+        "도로 시공자재를 살포한다",
+        "충전면을 고르게 다듬는다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_09",
+      "domain_id": "D_3",
+      "n_iwa": 9,
+      "cohesion": 0.9035,
+      "member_iwa_ids": [
+        "I_0024",
+        "I_0030",
+        "I_0034",
+        "I_0040",
+        "I_0052",
+        "I_0065",
+        "I_0079",
+        "I_0124",
+        "I_0132"
+      ],
+      "nearest_onet": "4.A.4.c.3",
+      "nearest_onet_label": "자원 점검 및 관리",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.681,
+      "rep_iwa_labels": [
+        "금융·거래 업무를 처리한다",
+        "금융·신용 신청을 심사한다",
+        "보험 상품과 청구를 심사한다",
+        "법률사무를 수행한다",
+        "투자 정보를 분석하여 자산을 운용한다",
+        "자산의 경제적 가치를 평가한다",
+        "생활용품·자산을 판매하거나 대여한다",
+        "채권을 회수한다",
+        "부동산 중개업무를 처리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_10",
+      "domain_id": "D_4",
+      "n_iwa": 8,
+      "cohesion": 0.9063,
+      "member_iwa_ids": [
+        "I_0005",
+        "I_0020",
+        "I_0047",
+        "I_0053",
+        "I_0063",
+        "I_0085",
+        "I_0087",
+        "I_0128"
+      ],
+      "nearest_onet": "4.A.1.b.2",
+      "nearest_onet_label": "장비·구조물·자재 검사",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.6971,
+      "rep_iwa_labels": [
+        "재해·환경 위험을 점검하여 관리한다",
+        "설비·제품의 상태를 점검하여 진단한다",
+        "방역·위생 처리를 수행한다",
+        "위험상황에 대처하여 안전을 확보한다",
+        "품질·환경안전 기준을 수립하여 관리한다",
+        "유해요인을 방제하여 예방한다",
+        "위반행위를 단속한다",
+        "소음·진동을 측정하여 관리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_11",
+      "domain_id": "D_1",
+      "n_iwa": 7,
+      "cohesion": 0.8926,
+      "member_iwa_ids": [
+        "I_0028",
+        "I_0067",
+        "I_0082",
+        "I_0083",
+        "I_0084",
+        "I_0113",
+        "I_0156"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6043,
+      "rep_iwa_labels": [
+        "식재료를 조리하여 음식을 만든다",
+        "음료를 제조하여 제공한다",
+        "반죽을 처리하여 가공한다",
+        "식품을 냉장·냉동하여 보관한다",
+        "식품원료를 가공하여 제품을 만든다",
+        "음식·영양을 연구하여 개발한다",
+        "원료를 발효하여 식품을 제조한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_12",
+      "domain_id": "D_3",
+      "n_iwa": 7,
+      "cohesion": 0.8622,
+      "member_iwa_ids": [
+        "I_0061",
+        "I_0062",
+        "I_0066",
+        "I_0125",
+        "I_0126",
+        "I_0169",
+        "I_0176"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.7173,
+      "rep_iwa_labels": [
+        "국방·군사 임무를 지휘하여 수행한다",
+        "입법활동을 수행한다",
+        "담당 분야의 운영을 총괄하여 관리한다",
+        "전문가 감독하에 과학·기술 업무를 보조한다",
+        "집단의 이익을 대표한다",
+        "문화시설 활동을 관리한다",
+        "시설 운영 활동을 관리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_13",
+      "domain_id": "D_2",
+      "n_iwa": 6,
+      "cohesion": 0.9258,
+      "member_iwa_ids": [
+        "I_0019",
+        "I_0033",
+        "I_0036",
+        "I_0044",
+        "I_0072",
+        "I_0073"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6412,
+      "rep_iwa_labels": [
+        "영상·방송장비를 조작하여 콘텐츠를 제작한다",
+        "작품의 인물을 구상하여 연기한다",
+        "공연·영상 제작을 기획한다",
+        "예술작품을 창작하여 공연한다",
+        "방송 프로그램을 진행한다",
+        "그래픽 도구로 시각 콘텐츠를 제작한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_14",
+      "domain_id": "D_1",
+      "n_iwa": 6,
+      "cohesion": 0.8655,
+      "member_iwa_ids": [
+        "I_0055",
+        "I_0069",
+        "I_0080",
+        "I_0111",
+        "I_0137",
+        "I_0154"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.599,
+      "rep_iwa_labels": [
+        "석유·화학 자원을 연구하여 처리한다",
+        "원료를 처리하여 정제·추출한다",
+        "광물·암석을 채굴한다",
+        "원료를 배합하여 펄프로 가공한다",
+        "소재 처리 공정을 개발한다",
+        "바닷물을 증발시켜 천일염을 생산한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_15",
+      "domain_id": "D_1",
+      "n_iwa": 5,
+      "cohesion": 0.9172,
+      "member_iwa_ids": [
+        "I_0025",
+        "I_0026",
+        "I_0042",
+        "I_0112",
+        "I_0155"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6212,
+      "rep_iwa_labels": [
+        "가축·작물을 길러 농축산물을 생산한다",
+        "수목·임산자원을 가꾸어 생산한다",
+        "수산·축산물을 채취하여 가공한다",
+        "기구를 조작하여 작업량을 조절한다",
+        "사육 설비를 관리한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_16",
+      "domain_id": "D_2",
+      "n_iwa": 5,
+      "cohesion": 0.8828,
+      "member_iwa_ids": [
+        "I_0041",
+        "I_0075",
+        "I_0081",
+        "I_0095",
+        "I_0100"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6348,
+      "rep_iwa_labels": [
+        "행사를 진행하여 내방객을 응대한다",
+        "종교 의례·활동을 수행한다",
+        "고객에게 상품·체험을 직접 제공한다",
+        "방문객을 영접하여 응대한다",
+        "종교 활동을 보조하거나 지원자를 교육한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_17",
+      "domain_id": "D_1",
+      "n_iwa": 4,
+      "cohesion": 0.8696,
+      "member_iwa_ids": [
+        "I_0086",
+        "I_0092",
+        "I_0146",
+        "I_0147"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6043,
+      "rep_iwa_labels": [
+        "방수·마감 자재를 시공한다",
+        "펌프를 설치한다",
+        "직물 경사를 처리하여 가공한다",
+        "석고보드를 부착한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_18",
+      "domain_id": "D_4",
+      "n_iwa": 4,
+      "cohesion": 0.8698,
+      "member_iwa_ids": [
+        "I_0109",
+        "I_0130",
+        "I_0167",
+        "I_0171"
+      ],
+      "nearest_onet": "4.A.3.b.5",
+      "nearest_onet_label": "전자 장비 수리 및 정비",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.693,
+      "rep_iwa_labels": [
+        "제어계측 시스템을 설계하여 운용한다",
+        "전자장치를 설계하여 설정한다",
+        "공학 연구를 수행한다",
+        "기술 적용 요건을 분석한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_19",
+      "domain_id": "D_1",
+      "n_iwa": 4,
+      "cohesion": 0.881,
+      "member_iwa_ids": [
+        "I_0122",
+        "I_0123",
+        "I_0131",
+        "I_0164"
+      ],
+      "nearest_onet": "4.A.1.b.3",
+      "nearest_onet_label": "수량적 특성 추정",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.6516,
+      "rep_iwa_labels": [
+        "연출용 재료와 영향요인을 조사한다",
+        "생산방안과 물량을 결정한다",
+        "조경설계와 도면을 작성한다",
+        "시공 면을 측정하여 자재 소요량을 산출한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_20",
+      "domain_id": "D_1",
+      "n_iwa": 3,
+      "cohesion": 0.9012,
+      "member_iwa_ids": [
+        "I_0101",
+        "I_0139",
+        "I_0140"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.6044,
+      "rep_iwa_labels": [
+        "바느질로 의류를 제작한다",
+        "전통 수공예품을 제작한다",
+        "전통기법으로 구조물을 시공한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_21",
+      "domain_id": "D_4",
+      "n_iwa": 3,
+      "cohesion": 0.8721,
+      "member_iwa_ids": [
+        "I_0103",
+        "I_0115",
+        "I_0143"
+      ],
+      "nearest_onet": "4.A.4.a.2",
+      "nearest_onet_label": "상사·동료·부하와의 의사소통",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6116,
+      "rep_iwa_labels": [
+        "업무 처리를 위한 조치를 결정한다",
+        "우편물을 처리하여 배달한다",
+        "난해사안을 전문가와 협의한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_22",
+      "domain_id": "D_4",
+      "n_iwa": 2,
+      "cohesion": 0.8873,
+      "member_iwa_ids": [
+        "I_0099",
+        "I_0160"
+      ],
+      "nearest_onet": "4.A.1.b.2",
+      "nearest_onet_label": "장비·구조물·자재 검사",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.6477,
+      "rep_iwa_labels": [
+        "작업용 보조 설비를 가설한다",
+        "제품 인증을 위한 시험·검사를 수행한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_23",
+      "domain_id": "D_3",
+      "n_iwa": 2,
+      "cohesion": 0.915,
+      "member_iwa_ids": [
+        "I_0106",
+        "I_0149"
+      ],
+      "nearest_onet": "4.A.2.b.5",
+      "nearest_onet_label": "업무 및 활동 일정 관리",
+      "nearest_onet_domain": "정신 과정",
+      "nearest_cosine": 0.6385,
+      "rep_iwa_labels": [
+        "행사서비스를 총괄한다",
+        "서비스 과정을 기획하여 총괄한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_24",
+      "domain_id": "D_2",
+      "n_iwa": 2,
+      "cohesion": 0.9064,
+      "member_iwa_ids": [
+        "I_0107",
+        "I_0133"
+      ],
+      "nearest_onet": "4.A.3.a.1",
+      "nearest_onet_label": "일반 신체 활동 수행",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.5782,
+      "rep_iwa_labels": [
+        "오락시설에서 게임 운영을 진행한다",
+        "전통 무용과 연희를 공연한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_25",
+      "domain_id": "D_4",
+      "n_iwa": 2,
+      "cohesion": 0.9137,
+      "member_iwa_ids": [
+        "I_0129",
+        "I_0173"
+      ],
+      "nearest_onet": "4.A.1.b.2",
+      "nearest_onet_label": "장비·구조물·자재 검사",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.6795,
+      "rep_iwa_labels": [
+        "생체 신호를 측정한다",
+        "측정기로 결함을 검사한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_26",
+      "domain_id": "D_3",
+      "n_iwa": 2,
+      "cohesion": 0.9111,
+      "member_iwa_ids": [
+        "I_0135",
+        "I_0168"
+      ],
+      "nearest_onet": "4.A.4.b.3",
+      "nearest_onet_label": "타인 훈련 및 교육",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6081,
+      "rep_iwa_labels": [
+        "세분류 미포함 직무를 수행한다",
+        "교육 과목을 가르친다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_27",
+      "domain_id": "D_1",
+      "n_iwa": 2,
+      "cohesion": 0.8969,
+      "member_iwa_ids": [
+        "I_0144",
+        "I_0145"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.5087,
+      "rep_iwa_labels": [
+        "통신설비를 유선으로 연결한다",
+        "광케이블을 절단·접속한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_28",
+      "domain_id": "D_2",
+      "n_iwa": 2,
+      "cohesion": 0.9044,
+      "member_iwa_ids": [
+        "I_0152",
+        "I_0153"
+      ],
+      "nearest_onet": "4.A.4.a.4",
+      "nearest_onet_label": "대인관계 형성 및 유지",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.5593,
+      "rep_iwa_labels": [
+        "출판물의 지면을 디자인한다",
+        "이용객의 질서 있는 이용을 유도한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_29",
+      "domain_id": "D_3",
+      "n_iwa": 2,
+      "cohesion": 0.8939,
+      "member_iwa_ids": [
+        "I_0174",
+        "I_0175"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.5477,
+      "rep_iwa_labels": [
+        "고객에게 음료를 제공한다",
+        "가맹점 운영을 지원한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_30",
+      "domain_id": "D_4",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0134"
+      ],
+      "nearest_onet": "4.A.3.a.4",
+      "nearest_onet_label": "차량·기계 장치·장비 운전",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.62,
+      "rep_iwa_labels": [
+        "화물차를 운전한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_31",
+      "domain_id": "D_1",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0136"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.4669,
+      "rep_iwa_labels": [
+        "저장용기를 만든다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_32",
+      "domain_id": "D_1",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0138"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.4402,
+      "rep_iwa_labels": [
+        "원목을 기계로 파쇄한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_33",
+      "domain_id": "D_3",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0141"
+      ],
+      "nearest_onet": "4.A.3.b.6",
+      "nearest_onet_label": "정보 문서화 및 기록",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.5378,
+      "rep_iwa_labels": [
+        "판매기록부를 작성한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_34",
+      "domain_id": "D_4",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0142"
+      ],
+      "nearest_onet": "4.A.4.b.5",
+      "nearest_onet_label": "타인 코칭 및 역량 개발",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.6116,
+      "rep_iwa_labels": [
+        "청각장애학생에게 대화기술을 지도한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_35",
+      "domain_id": "D_3",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0150"
+      ],
+      "nearest_onet": "4.A.2.b.2",
+      "nearest_onet_label": "창의적 사고",
+      "nearest_onet_domain": "정신 과정",
+      "nearest_cosine": 0.5242,
+      "rep_iwa_labels": [
+        "종교의식을 관장한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_36",
+      "domain_id": "D_1",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0158"
+      ],
+      "nearest_onet": "4.A.3.a.2",
+      "nearest_onet_label": "물체 취급 및 이동",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.5755,
+      "rep_iwa_labels": [
+        "구조물에 구멍을 가공한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_37",
+      "domain_id": "D_1",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0162"
+      ],
+      "nearest_onet": "4.A.3.b.2",
+      "nearest_onet_label": "기술 장치·부품·장비 도면 작성 및 사양 규정",
+      "nearest_onet_domain": "작업 산출",
+      "nearest_cosine": 0.4875,
+      "rep_iwa_labels": [
+        "접합부에 충전재를 시공한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_38",
+      "domain_id": "D_2",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0165"
+      ],
+      "nearest_onet": "4.A.2.b.2",
+      "nearest_onet_label": "창의적 사고",
+      "nearest_onet_domain": "정신 과정",
+      "nearest_cosine": 0.457,
+      "rep_iwa_labels": [
+        "노래 가사를 창작한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_39",
+      "domain_id": "D_3",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0172"
+      ],
+      "nearest_onet": "4.A.1.a.2",
+      "nearest_onet_label": "공정·자재·주변 환경 점검",
+      "nearest_onet_domain": "정보 입력",
+      "nearest_cosine": 0.5925,
+      "rep_iwa_labels": [
+        "시장 동향을 조사한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_40",
+      "domain_id": "D_2",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0177"
+      ],
+      "nearest_onet": "4.A.4.b.1",
+      "nearest_onet_label": "타인의 업무 및 활동 조정",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.3976,
+      "rep_iwa_labels": [
+        "고난도 대역 연기를 수행한다"
+      ]
+    },
+    {
+      "kr_gwa_id": "KG_41",
+      "domain_id": "D_2",
+      "n_iwa": 1,
+      "cohesion": 1.0,
+      "member_iwa_ids": [
+        "I_0178"
+      ],
+      "nearest_onet": "4.A.4.a.7",
+      "nearest_onet_label": "갈등 해결 및 협상",
+      "nearest_onet_domain": "타인과의 상호작용",
+      "nearest_cosine": 0.3803,
+      "rep_iwa_labels": [
+        "비약물 방법으로 정신질환을 치료한다"
+      ]
+    }
+  ]
+}

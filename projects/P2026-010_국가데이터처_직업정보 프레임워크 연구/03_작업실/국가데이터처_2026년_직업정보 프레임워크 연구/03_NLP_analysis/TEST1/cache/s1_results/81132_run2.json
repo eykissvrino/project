@@ -1,0 +1,87 @@
+{
+  "ksco_code": "81132",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "수산물 가공 기계",
+      "full_statement": "수산물 및 기타 식품을 가공하는 기계를 조작한다.",
+      "source_sentence": "어류 훈제품, 어류 소시지 및 통조림 제조 등 수산물 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 훈제 기계",
+      "full_statement": "어류를 훈제하여 어류 훈제품을 제조하는 기계를 조작한다.",
+      "source_sentence": "어류 훈제품, 어류 소시지 및 통조림 제조 등 수산물 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 소시지 제조 기계",
+      "full_statement": "어류를 가공하여 어류 소시지를 제조하는 기계를 조작한다.",
+      "source_sentence": "어류 훈제품, 어류 소시지 및 통조림 제조 등 수산물 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 통조림 제조 기계",
+      "full_statement": "어류를 통조림으로 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "어류 훈제품, 어류 소시지 및 통조림 제조 등 수산물 및 기타 식품을 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의→상속 주요업무(통조림) 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 제품 제조 기계",
+      "full_statement": "어류를 가공하여 어류제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 가공하고 소시지, 훈제육류 또는 훈제어류와 같은 육류 및 어류제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→어패류 특화(육류 제거)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 냉동 기계",
+      "full_statement": "어류를 냉동하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "육류 및 어류를 통조림 또는 냉동하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→어패류 특화(육류 제거); 직업 예시(어류 냉동기 조작원)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 가공 기계",
+      "full_statement": "어류를 가공 처리하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "어류 가공기 조작원",
+      "derived_from": "세세분류 직업 예시(어류 가공기 조작원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 저장처리 기계",
+      "full_statement": "어류를 저장 처리하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "어류 저장처리기 조작원",
+      "derived_from": "세세분류 직업 예시(어류 저장처리기 조작원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 살균조리 기계",
+      "full_statement": "어류를 살균 조리하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "어류 살균조리기 조작원",
+      "derived_from": "세세분류 직업 예시(어류 살균조리기 조작원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "어류 가압멸균 기계",
+      "full_statement": "어류를 가압 멸균하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "어류 가압멸균기 조작원",
+      "derived_from": "세세분류 직업 예시(어류 가압멸균기 조작원)",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

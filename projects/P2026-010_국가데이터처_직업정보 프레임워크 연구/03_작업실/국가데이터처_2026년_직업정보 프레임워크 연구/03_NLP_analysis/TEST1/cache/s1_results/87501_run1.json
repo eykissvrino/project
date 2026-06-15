@@ -1,0 +1,131 @@
+{
+  "ksco_code": "87501",
+  "tasks": [
+    {
+      "verb": "조타하다",
+      "object": "선박",
+      "full_statement": "지침에 따라 선박을 조타한다.",
+      "source_sentence": "지침에 따라 선박을 조타한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(지침에 따라 선박을 조타하거나)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "근무하다",
+      "object": "감시탑",
+      "full_statement": "해상 및 입출항시 또는 기타 협곡에서 감시탑에 근무한다.",
+      "source_sentence": "해상 및 입출항시 또는 기타 협곡에서 감시탑에 근무한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "취급하다",
+      "object": "계류선",
+      "full_statement": "선상에서 계류선을 취급한다.",
+      "source_sentence": "선상에서 계류선을 취급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "선박의 장비",
+      "full_statement": "선박의 장비를 조작한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 조작한다)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "적하장치",
+      "full_statement": "적하장치를 조작한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "삭구",
+      "full_statement": "삭구를 조작한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "구명 장비",
+      "full_statement": "구명 장비를 조작한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "소화 장비",
+      "full_statement": "소화 장비를 조작한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "선박의 장비 및 적하장치",
+      "full_statement": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비한다.",
+      "source_sentence": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "갑판 및 선체",
+      "full_statement": "갑판 및 선체를 청소한다.",
+      "source_sentence": "갑판 및 선체 청소, 녹제거, 도장 및 기타 필요한 정비 임무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "녹",
+      "full_statement": "선체의 녹을 제거한다.",
+      "source_sentence": "갑판 및 선체 청소, 녹제거, 도장 및 기타 필요한 정비 임무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "도장하다",
+      "object": "선체",
+      "full_statement": "선체를 도장한다.",
+      "source_sentence": "갑판 및 선체 청소, 녹제거, 도장 및 기타 필요한 정비 임무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "등대",
+      "full_statement": "등대를 관리한다.",
+      "source_sentence": "등대를 관리하고 지정된 시간에 소리나 빛 신호를 보낸다.",
+      "derived_from": "상속 주요업무(조상정의 세분류: 등대의 정상적인 작동을 위한 준비와 등대의 조작을 한다)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보내다",
+      "object": "소리나 빛 신호",
+      "full_statement": "지정된 시간에 소리나 빛 신호를 보낸다.",
+      "source_sentence": "등대를 관리하고 지정된 시간에 소리나 빛 신호를 보낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "적하장치", "category": "장비", "evidence_span": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다."},
+    {"name": "삭구", "category": "장비", "evidence_span": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다."},
+    {"name": "구명 장비", "category": "장비", "evidence_span": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다."},
+    {"name": "소화 장비", "category": "장비", "evidence_span": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다."},
+    {"name": "계류선", "category": "장비", "evidence_span": "선상에서 계류선을 취급한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "선상(선박 갑판)", "evidence_span": "선상에서 계류선을 취급한다."},
+    {"category": "장소", "value": "해상 및 입출항 구역", "evidence_span": "해상 및 입출항시 또는 기타 협곡에서 감시탑에 근무한다."},
+    {"category": "위험", "value": "화재 대응(소화 장비 조작)", "evidence_span": "선박의 장비, 적하장치, 삭구, 구명 및 소화 장비를 정비 및 조작한다."},
+    {"category": "신체적", "value": "체력 부담(녹제거·도장 등 정비 임무)", "evidence_span": "갑판 및 선체 청소, 녹제거, 도장 및 기타 필요한 정비 임무를 수행한다."},
+    {"category": "시간적", "value": "지정된 시간 신호 송출", "evidence_span": "등대를 관리하고 지정된 시간에 소리나 빛 신호를 보낸다."}
+  ]
+}

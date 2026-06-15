@@ -1,0 +1,39 @@
+{
+  "ksco_code": "29632",
+  "tasks": [
+    {
+      "verb": "기록하다",
+      "object": "경기진행",
+      "full_statement": "경기의 진행 상황을 기록한다.",
+      "source_sentence": "경기기록원은 경기진행 및 결과를 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기록하다",
+      "object": "경기 결과",
+      "full_statement": "경기의 결과를 기록한다.",
+      "source_sentence": "경기기록원은 경기진행 및 결과를 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "경기 참가자들의 동작",
+      "full_statement": "경기 참가자들의 동작을 관찰한다.",
+      "source_sentence": "경기심판은 경기 참가자들의 동작을 관찰하여 규칙위반을 찾아내어 경적․신호․ 깃발로 알리고 벌칙을 적용한다.",
+      "derived_from": "상속 주요업무(경기진행·기록 관찰 골격 보존)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "관리하다",
+      "object": "경기 진행",
+      "full_statement": "경기의 진행을 관리한다.",
+      "source_sentence": "운동경기에 참여하고 경기훈련을 관리하며 경기 규칙을 준수하도록 유도하고, 이들 경기의 진행을 관리하며, 체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류 296)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

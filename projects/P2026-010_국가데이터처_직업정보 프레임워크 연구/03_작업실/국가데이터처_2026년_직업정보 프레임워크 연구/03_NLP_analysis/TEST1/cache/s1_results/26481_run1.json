@@ -1,0 +1,94 @@
+{
+  "ksco_code": "26481",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "회원의 가정",
+      "full_statement": "학습지를 받아보는 회원의 가정을 방문한다.",
+      "source_sentence": "학습지를 받아보는 회원의 가정을 방문하여 국어, 영어 등 분야별 학습내용을 지도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "분야별 학습내용",
+      "full_statement": "국어, 영어 등 분야별 학습내용을 지도한다.",
+      "source_sentence": "학습지를 받아보는 회원의 가정을 방문하여 국어, 영어 등 분야별 학습내용을 지도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "학습지 내용",
+      "full_statement": "가정을 방문하여 학습지 내용을 지도한다.",
+      "source_sentence": "가정 방문하여 학습지 내용을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "국어 학습내용",
+      "full_statement": "국어 분야의 학습내용을 지도한다.",
+      "source_sentence": "국어, 영어 등 분야별 학습내용을 지도한다. / 국어 학습지교사·영어 학습지교사",
+      "derived_from": "상속 주요업무→세세정의 특화(예시)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지도하다",
+      "object": "영어 학습내용",
+      "full_statement": "영어 분야의 학습내용을 지도한다.",
+      "source_sentence": "국어, 영어 등 분야별 학습내용을 지도한다. / 국어 학습지교사·영어 학습지교사",
+      "derived_from": "상속 주요업무→세세정의 특화(예시)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지도하다",
+      "object": "수학 학습내용",
+      "full_statement": "수학 분야의 학습내용을 지도한다.",
+      "source_sentence": "수학 학습지교사·한문 학습지교사",
+      "derived_from": "세세분류 예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "한문 학습내용",
+      "full_statement": "한문 분야의 학습내용을 지도한다.",
+      "source_sentence": "수학 학습지교사·한문 학습지교사",
+      "derived_from": "세세분류 예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "활용하다",
+      "object": "교재나 교구",
+      "full_statement": "학습지 이외의 교재나 교구를 활용하여 학습을 지도한다.",
+      "source_sentence": "가정 방문하여 학습지 이외 교재나 교구를 활용하여 학습을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "가르치다",
+      "object": "아동이나 학생",
+      "full_statement": "회원의 가정을 직접 방문하여 아동이나 학생들을 가르친다.",
+      "source_sentence": "회원의 가정을 직접 방문하여 학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "이용하다",
+      "object": "학습지나 교육 교구",
+      "full_statement": "학습지나 교육 교구를 이용하여 학생을 가르친다.",
+      "source_sentence": "회원의 가정을 직접 방문하여 학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "학습지", "category": "도구", "evidence_span": "학습지를 받아보는 회원의 가정을 방문하여 국어, 영어 등 분야별 학습내용을 지도한다."},
+    {"name": "교육 교구", "category": "도구", "evidence_span": "학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다."},
+    {"name": "교재", "category": "도구", "evidence_span": "가정 방문하여 학습지 이외 교재나 교구를 활용하여 학습을 지도한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "회원의 가정 방문(이동 근무)", "evidence_span": "학습지를 받아보는 회원의 가정을 방문하여"},
+    {"category": "사회적", "value": "회원·학생 대면 지도(고객응대)", "evidence_span": "회원의 가정을 직접 방문하여 학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다."}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "ksco_code": "89905",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "3D프린터",
+      "full_statement": "합성수지 또는 금속 부품이나 상품을 생산하기 위하여 3D프린터를 조작한다.",
+      "source_sentence": "합성수지 혹은 금속으로 된 부품이나 상품을 생산하기 위하여 3D프린터를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제작하다",
+      "object": "시제품",
+      "full_statement": "고객의 요구에 따라 3D프린터를 활용하여 시제품을 제작한다.",
+      "source_sentence": "3D프린터를 활용하여 고객의 요구에 따라 시제품을 제작하고, 부품이나 최종 상품을 생산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "생산하다",
+      "object": "부품·최종 상품",
+      "full_statement": "고객의 요구에 따라 3D프린터를 활용하여 부품이나 최종 상품을 생산한다.",
+      "source_sentence": "3D프린터를 활용하여 고객의 요구에 따라 시제품을 제작하고, 부품이나 최종 상품을 생산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "출력물 표면처리",
+      "full_statement": "출력물의 완성도를 높이기 위해 출력물의 표면처리를 실시한다.",
+      "source_sentence": "출력물의 완성도를 높이기 위해 출력물의 표면처리와 도장을 실시하고 최종 검수하여 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실시하다",
+      "object": "출력물 도장",
+      "full_statement": "출력물의 완성도를 높이기 위해 출력물의 도장을 실시한다.",
+      "source_sentence": "출력물의 완성도를 높이기 위해 출력물의 표면처리와 도장을 실시하고 최종 검수하여 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검수하다",
+      "object": "출력물",
+      "full_statement": "출하 전 출력물을 최종 검수한다.",
+      "source_sentence": "출력물의 완성도를 높이기 위해 출력물의 표면처리와 도장을 실시하고 최종 검수하여 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "출하하다",
+      "object": "출력물",
+      "full_statement": "최종 검수한 출력물을 출하한다.",
+      "source_sentence": "출력물의 완성도를 높이기 위해 출력물의 표면처리와 도장을 실시하고 최종 검수하여 출하한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "세척하다",
+      "object": "최종 생산품",
+      "full_statement": "최종 생산품을 세척한다.",
+      "source_sentence": "최종 생산품을 세척하고 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연마하다",
+      "object": "최종 생산품",
+      "full_statement": "최종 생산품을 연마한다.",
+      "source_sentence": "최종 생산품을 세척하고 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "포장 기계",
+      "full_statement": "각종 제품을 저장 및 출하하기 위하여 포장하는 기계를 조작한다.",
+      "source_sentence": "액체 제품을 포함하여 저장 및 출하하기 위하여 각종 제품을 포장 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "라벨 부착 기계",
+      "full_statement": "접착제 또는 기타 방법으로 제품에 라벨을 붙이는 기계를 조작한다.",
+      "source_sentence": "접착제 또는 기타 방법으로 제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "3D프린터", "category": "장비", "evidence_span": "합성수지 혹은 금속으로 된 부품이나 상품을 생산하기 위하여 3D프린터를 조작한다."},
+    {"name": "포장 기계", "category": "장비", "evidence_span": "각종 제품을 포장 하는 기계를 조작한다."},
+    {"name": "라벨 부착 기계", "category": "장비", "evidence_span": "제품에 라벨을 붙이고 각종 용기에 포장 하고 제품에 수입증지를 첨부하는 기계를 조작한다."}
+  ],
+  "work_context": []
+}

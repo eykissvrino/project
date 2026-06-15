@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28113",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "인력 요건",
+      "full_statement": "기업이 원하는 임원급·전문 인력의 요건을 파악한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발굴하다",
+      "object": "후보 인력",
+      "full_statement": "고도의 전문지식을 갖춘 후보 인력을 조사하여 발굴한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "후보",
+      "full_statement": "여러 단계의 조사 과정을 거쳐 후보를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "알선하다",
+      "object": "적정 인력",
+      "full_statement": "기업체에 적정 인력을 소개하고 알선한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

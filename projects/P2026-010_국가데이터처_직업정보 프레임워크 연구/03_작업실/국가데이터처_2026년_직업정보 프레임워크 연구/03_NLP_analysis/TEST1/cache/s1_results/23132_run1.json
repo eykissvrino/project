@@ -1,0 +1,162 @@
+{
+  "ksco_code": "23132",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "시공계획 및 공정표",
+      "full_statement": "시공계획 및 공정표를 검토한다.",
+      "source_sentence": "시공계획 및 공정표의 검토, 건설업자 또는 주택건설등록업자가 작성한 시공 상세도면 등을 검토하고 설계도면 및 시방서의 내용에 따라 토목시공이 적합하게 행하여지고 있는지에 대한 확인 등 토목에 대한 감리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검토하다",
+      "object": "시공 상세도면",
+      "full_statement": "건설업자 또는 주택건설등록업자가 작성한 시공 상세도면을 검토한다.",
+      "source_sentence": "건설업자 또는 주택건설등록업자가 작성한 시공 상세도면 등을 검토하고 설계도면 및 시방서의 내용에 따라 토목시공이 적합하게 행하여지고 있는지에 대한 확인 등 토목에 대한 감리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "토목시공 적합성",
+      "full_statement": "설계도면 및 시방서의 내용에 따라 토목시공이 적합하게 행하여지고 있는지를 확인한다.",
+      "source_sentence": "설계도면 및 시방서의 내용에 따라 토목시공이 적합하게 행하여지고 있는지에 대한 확인 등 토목에 대한 감리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "토목 감리업무",
+      "full_statement": "토목에 대한 감리업무를 수행한다.",
+      "source_sentence": "토목에 대한 감리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "프로젝트 요건 결정을 위한 조사",
+      "full_statement": "고객 및 관련 팀원들과 협의하여 프로젝트 요건들을 결정하기 위한 조사를 실시한다.",
+      "source_sentence": "고객 및 관련 팀원들과 협의하여 프로젝트 요건들을 결정하기 위한 조사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "해석하다",
+      "object": "측량 및 토목설계 작업",
+      "full_statement": "측량 및 토목설계 작업을 해석한다.",
+      "source_sentence": "측량 및 토목설계 작업을 해석, 검토, 승인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "검토하다",
+      "object": "측량 및 토목설계 작업",
+      "full_statement": "측량 및 토목설계 작업을 검토한다.",
+      "source_sentence": "측량 및 토목설계 작업을 해석, 검토, 승인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "승인하다",
+      "object": "측량 및 토목설계 작업",
+      "full_statement": "측량 및 토목설계 작업을 승인한다.",
+      "source_sentence": "측량 및 토목설계 작업을 해석, 검토, 승인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보증하다",
+      "object": "건설계획 적합성",
+      "full_statement": "건설계획이 규약, 명세사항 및 지침에 맞는지를 보증한다.",
+      "source_sentence": "건설계획이 규약, 명세사항 및 지침에 맞는지를 보증한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "건설작업 일정",
+      "full_statement": "건설작업 일정을 세운다.",
+      "source_sentence": "건설작업 일정을 세우고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설작업 일정",
+      "full_statement": "건설작업 일정을 감독한다.",
+      "source_sentence": "건설작업 일정을 세우고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "건설 명세서 및 절차",
+      "full_statement": "건설 명세서 및 절차를 수립한다.",
+      "source_sentence": "건설 명세서 및 절차를 수립하고 적절한 건설재료를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "평가하다",
+      "object": "건설재료",
+      "full_statement": "적절한 건설재료를 평가한다.",
+      "source_sentence": "건설 명세서 및 절차를 수립하고 적절한 건설재료를 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "현장 자료에 대한 기술적 분석",
+      "full_statement": "지형학, 토양, 수문학이나 기타 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행한다.",
+      "source_sentence": "지형학, 토양, 수문학이나 기타 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서",
+      "full_statement": "측량 및 현장 자료에 대한 기술적 분석 결과에 대한 보고서를 작성한다.",
+      "source_sentence": "지형학, 토양, 수문학이나 기타 정보 개발을 위한 측량 및 현장 자료에 대한 기술적 분석을 수행하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "활동하다",
+      "object": "건설작업 현장 감독",
+      "full_statement": "토지측량이나 건설작업에 대한 현장 감독으로서 활동한다.",
+      "source_sentence": "토지측량(평가)이나 건설작업에 대한 현장 감독으로서 활동하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "토목공사 시공 현장",
+      "full_statement": "토목공사가 설계도 및 시방서에 맞게 시공되고 있는지 현장을 관리한다.",
+      "source_sentence": "토목공사가 설계도 및 시방서에 맞게 시공되고 있는지 현장을 관리하며 기술적 문제 발생시 해결하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "해결하다",
+      "object": "기술적 문제",
+      "full_statement": "시공 과정에서 기술적 문제가 발생하면 이를 해결한다.",
+      "source_sentence": "토목공사가 설계도 및 시방서에 맞게 시공되고 있는지 현장을 관리하며 기술적 문제 발생시 해결하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "토목공사 현장(현장 감독·현장 관리)",
+      "evidence_span": "토지측량(평가)이나 건설작업에 대한 현장 감독으로서 활동하기도 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 및 관련 팀원과의 협의",
+      "evidence_span": "고객 및 관련 팀원들과 협의하여 프로젝트 요건들을 결정하기 위한 조사를 실시한다."
+    }
+  ]
+}

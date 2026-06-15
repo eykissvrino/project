@@ -1,0 +1,125 @@
+{
+  "ksco_code": "28152",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "인수·합병 대상 기업",
+      "full_statement": "기업의 인수, 합병을 위해 대상 기업을 분석한다.",
+      "source_sentence": "기업의 인수, 합병을 위해 기업을 분석하고 계획을 수립하고 조건 및 상황을 검토하여 진행하거나 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수립하다",
+      "object": "인수·합병 계획",
+      "full_statement": "기업의 인수, 합병을 위해 계획을 수립한다.",
+      "source_sentence": "기업의 인수, 합병을 위해 기업을 분석하고 계획을 수립하고 조건 및 상황을 검토하여 진행하거나 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "검토하다",
+      "object": "인수·합병 조건 및 상황",
+      "full_statement": "기업의 인수, 합병을 위해 조건 및 상황을 검토한다.",
+      "source_sentence": "기업의 인수, 합병을 위해 기업을 분석하고 계획을 수립하고 조건 및 상황을 검토하여 진행하거나 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "진행하다",
+      "object": "인수·합병 절차",
+      "full_statement": "검토한 조건 및 상황을 바탕으로 인수·합병을 진행한다.",
+      "source_sentence": "기업의 인수, 합병을 위해 기업을 분석하고 계획을 수립하고 조건 및 상황을 검토하여 진행하거나 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "인수·합병 관련 조언",
+      "full_statement": "기업의 인수, 합병에 관하여 조언을 제공한다.",
+      "source_sentence": "기업의 인수, 합병을 위해 기업을 분석하고 계획을 수립하고 조건 및 상황을 검토하여 진행하거나 조언을 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검토하다",
+      "object": "사업 및 조직체계",
+      "full_statement": "효율적인 경영을 위해 사업 및 조직체계를 검토한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "사업 및 조직체계",
+      "full_statement": "효율적인 경영을 위해 사업 및 조직체계를 분석한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "제안하다",
+      "object": "경영 개선점",
+      "full_statement": "사업 및 조직체계 분석을 바탕으로 개선점을 제안한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "조직에 대한 연구 및 평가",
+      "full_statement": "조직에 대한 연구 및 평가를 수행한다.",
+      "source_sentence": "조직에 대한 연구 및 평가를 수행하며, 조직 체계 및 업무 절차를 설계하고 기업 운영 및 업무 절차매뉴얼을 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "사업체의 경영방법 및 조직",
+      "full_statement": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석한다.",
+      "source_sentence": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.81
+    },
+    {
+      "verb": "자문하다",
+      "object": "사업체의 경영방법 및 조직",
+      "full_statement": "공공이나 민간부문 사업체들의 경영방법 및 조직에 대하여 자문한다.",
+      "source_sentence": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.81
+    },
+    {
+      "verb": "수행하다",
+      "object": "경영정책·계획의 효율성·효과 판단 연구",
+      "full_statement": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "source_sentence": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제안하다",
+      "object": "기업운영·인력자원·의사소통 영역 개선점",
+      "full_statement": "기업운영, 인력자원 및 의사소통과정과 같은 영역의 효과적 방법, 체계 및 절차에 대한 개선점을 제안한다.",
+      "source_sentence": "기업운영, 인력자원 및 의사소통과정과 같은 영역의 효과적 방법, 체계 및 절차에 대한 개선점을 제안한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.79
+    },
+    {
+      "verb": "계획하다",
+      "object": "사업체 조직의 재조직화",
+      "full_statement": "사업체 조직에 대한 재 조직화를 계획한다.",
+      "source_sentence": "사업체 조직에 대한 재 조직화를 계획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "기업 대상 조언·자문(고객응대)",
+      "evidence_span": "조언을 제공한다 / 공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다"
+    }
+  ]
+}

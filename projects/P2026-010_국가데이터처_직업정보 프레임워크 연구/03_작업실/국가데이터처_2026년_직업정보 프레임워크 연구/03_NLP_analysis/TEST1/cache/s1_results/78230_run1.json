@@ -1,0 +1,138 @@
+{
+  "ksco_code": "78230",
+  "tasks": [
+    {
+      "verb": "측정하다",
+      "object": "벽면·바닥",
+      "full_statement": "석재를 붙일 벽면·바닥 등을 측정한다.",
+      "source_sentence": "화강암‧대리석 등 건축용 석재를 붙일 벽면‧바닥 등을 측정하여 도면에 지시된 치수로 표시하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "표시하다",
+      "object": "치수",
+      "full_statement": "측정한 벽면·바닥에 도면에 지시된 치수를 표시한다.",
+      "source_sentence": "벽면‧바닥 등을 측정하여 도면에 지시된 치수로 표시하고 석재를 재단‧절단‧가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "재단하다",
+      "object": "석재",
+      "full_statement": "건축용 석재를 도면 치수에 맞추어 재단한다.",
+      "source_sentence": "석재를 재단‧절단‧가공한다.",
+      "derived_from": "세세분류 정의→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "절단하다",
+      "object": "석재",
+      "full_statement": "건축용 석재를 도면 치수에 맞추어 절단한다.",
+      "source_sentence": "석재를 재단‧절단‧가공한다.",
+      "derived_from": "세세분류 정의→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "가공하다",
+      "object": "석재",
+      "full_statement": "화강암·대리석 등 건축용 석재를 가공한다.",
+      "source_sentence": "석재를 재단‧절단‧가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "선별하다",
+      "object": "가공된 돌",
+      "full_statement": "가공된 돌을 지정된 위치·번호·크기·형태·색상에 따라 선별한다.",
+      "source_sentence": "가공된 돌을 지정된 위치‧번호‧크기‧형태‧색상에 따라 선별한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "바르다",
+      "object": "모르타르",
+      "full_statement": "공법에 맞추어 시공 면에 모르타르를 바른다.",
+      "source_sentence": "공법에 맞추어 시공 면에 모르타르를 바르거나 제작된 앵글을 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조립하다",
+      "object": "앵글",
+      "full_statement": "공법에 맞추어 제작된 앵글을 조립한다.",
+      "source_sentence": "공법에 맞추어 시공 면에 모르타르를 바르거나 제작된 앵글을 조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "들어올리다",
+      "object": "가공 석재",
+      "full_statement": "손 또는 인양장비를 이용하여 가공 석재를 들어 올린다.",
+      "source_sentence": "손 또는 인양장비를 이용하여 가공 석재를 들어 올려 모르타르면 위에 붙이거나 앵글에 고정시키고 망치로 두들겨 면을 고르게 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "붙이다",
+      "object": "가공 석재",
+      "full_statement": "가공 석재를 모르타르면 위에 붙인다.",
+      "source_sentence": "손 또는 인양장비를 이용하여 가공 석재를 들어 올려 모르타르면 위에 붙이거나 앵글에 고정시키고 망치로 두들겨 면을 고르게 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "고정하다",
+      "object": "가공 석재",
+      "full_statement": "가공 석재를 앵글에 고정시킨다.",
+      "source_sentence": "손 또는 인양장비를 이용하여 가공 석재를 들어 올려 모르타르면 위에 붙이거나 앵글에 고정시키고 망치로 두들겨 면을 고르게 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고르다",
+      "object": "석재 면",
+      "full_statement": "붙인 석재를 망치로 두들겨 면을 고르게 한다.",
+      "source_sentence": "망치로 두들겨 면을 고르게 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "채우다",
+      "object": "모르타르·치장용재",
+      "full_statement": "흙손을 사용하여 돌의 연결부분에 모르타르나 치장용재를 채운다.",
+      "source_sentence": "흙손을 사용하여 돌의 연결부분에 모르타르나 치장용재를 채운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "석재 정위치 상태",
+      "full_statement": "수평기·측연추 등을 사용하여 석재의 정위치 상태와 무늬·형태를 점검한다.",
+      "source_sentence": "수평기‧측연추 등을 사용하여 석재의 정위치 상태와 무늬‧형태를 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면을 검토하여 지시된 치수와 형태를 확인한다.",
+      "source_sentence": "도면에 지시된 치수로 표시하고",
+      "derived_from": "세세분류 정의→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "망치", "category": "도구", "evidence_span": "망치로 두들겨 면을 고르게 한다."},
+    {"name": "흙손", "category": "도구", "evidence_span": "흙손을 사용하여 돌의 연결부분에 모르타르나 치장용재를 채운다."},
+    {"name": "수평기", "category": "도구", "evidence_span": "수평기‧측연추 등을 사용하여 석재의 정위치 상태와 무늬‧형태를 점검한다."},
+    {"name": "측연추", "category": "도구", "evidence_span": "수평기‧측연추 등을 사용하여 석재의 정위치 상태와 무늬‧형태를 점검한다."},
+    {"name": "인양장비", "category": "장비", "evidence_span": "손 또는 인양장비를 이용하여 가공 석재를 들어 올려"},
+    {"name": "수동공구", "category": "도구", "evidence_span": "수동공구와 동력공구를 사용하여 석재를 시공에 편리하도록 재단‧절단‧ 가공 하기도 한다."},
+    {"name": "동력공구", "category": "장비", "evidence_span": "수동공구와 동력공구를 사용하여 석재를 시공에 편리하도록 재단‧절단‧ 가공 하기도 한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "중량물 취급(가공 석재 인양·운반)", "evidence_span": "손 또는 인양장비를 이용하여 가공 석재를 들어 올려"},
+    {"category": "신체적", "value": "정밀 측정·점검 작업", "evidence_span": "수평기‧측연추 등을 사용하여 석재의 정위치 상태와 무늬‧형태를 점검한다."}
+  ]
+}

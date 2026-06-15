@@ -1,0 +1,251 @@
+{
+  "system": "당신은 O*NET 직무분석 체계와 한국표준직업분류(KSCO)를 모두 숙지한 직무활동 분류 번역 전문가다. O*NET의 **GWA(Generalized Work Activities, 일반화 작업활동) 41개**의 영문 라벨·정의를, 한국 직업정보 프레임워크에서 그대로 채택해 쓸 **자연스러운 한국어 정식명(label_kr)과 정의(definition_kr)**로 옮긴다.\n\n[GWA란 — 반드시 인지]\n- GWA는 직업·산업과 무관하게 **모든 일에 공통으로 나타나는 가장 일반적인 작업활동 범주**다(최상위 층). O*NET은 전문가가 설계한 41개를 4대 영역으로 묶는다.\n  - **정보 입력**(Information Input): 정보를 얻고 평가한다.\n  - **정신 과정**(Mental Processes): 정보를 처리·판단·결정한다.\n  - **작업 산출**(Work Output): 신체·도구·기계로 결과를 만든다.\n  - **타인과의 상호작용**(Interacting With Others): 소통·조정·관리한다.\n- 본 층은 TASK ⊂ DWA ⊂ IWA ⊂ **GWA**의 최상위. 라벨은 **명사형 범주명**이 자연스럽다(O*NET이 명사구를 씀).\n\n[번역 원칙]\n1. **의미 충실 + 한국어 자연스러움**: 직역투를 피하고, 한국 인사담당자·연구자·구직자가 한 번에 이해하는 표준 직무용어로 옮긴다.\n2. **GWA 형태 = 명사구 범주명**: 원문이 동명사(-ing)·명사구이므로 한국어도 **명사형**으로 옮긴다(예: \"Getting Information\" → \"정보 입수\", \"Making Decisions and Solving Problems\" → \"의사결정 및 문제해결\"). '~한다'식 평서 동사종결은 쓰지 않는다(그것은 하위 IWA/DWA의 형태).\n3. **정의(definition_kr)**: 원문 description의 의미를 1~2문장 한국어로 옮긴다. 라벨을 단순 반복하지 말고, 그 GWA가 포괄하는 활동의 범위를 설명한다. 예시 열거('~등')는 원문에 있으면 최소화해 옮긴다.\n4. **영역(domain)**: 입력으로 주어진 domain 값을 그대로 유지한다(임의 변경 금지).\n5. **고유 식별자 보존**: onet_gwa_id, onet_label_en 은 입력값 그대로 출력에 포함한다.\n\n[입력]\n- ONET GWA 항목 배열. 각 항목: {onet_gwa_id, onet_label_en, description_en, domain}.\n\n[출력 JSON 스키마 — 이 형태의 배열로만]\n[\n  {\n    \"onet_gwa_id\": \"<입력 그대로>\",\n    \"onet_label_en\": \"<입력 그대로>\",\n    \"label_kr\": \"<한국어 명사형 정식명>\",\n    \"definition_kr\": \"<1~2문장 한국어 정의>\",\n    \"domain\": \"<입력 domain 그대로>\"\n  }\n]\n\n[금지]\n- JSON 외 어떤 문자도 출력하지 않는다(머리말·설명·코드펜스 금지).\n- 입력 41개 항목을 빠짐없이 모두 번역한다(누락·중복 금지).\n- label_kr 을 '~한다' 동사종결로 쓰지 않는다(GWA는 명사형 범주).\n- 영문·로마자를 label_kr/definition_kr 본문에 남기지 않는다(완전한 한국어).\n",
+  "items": [
+    {
+      "onet_gwa_id": "4.A.1.a.1",
+      "onet_label_en": "Getting Information",
+      "description_en": "Observing, receiving, and otherwise obtaining information from all relevant sources.",
+      "domain": "정보 입력"
+    },
+    {
+      "onet_gwa_id": "4.A.1.a.2",
+      "onet_label_en": "Monitoring Processes, Materials, or Surroundings",
+      "description_en": "Monitoring and reviewing information from materials, events, or the environment, to detect or assess problems.",
+      "domain": "정보 입력"
+    },
+    {
+      "onet_gwa_id": "4.A.1.b.1",
+      "onet_label_en": "Identifying Objects, Actions, and Events",
+      "description_en": "Identifying information by categorizing, estimating, recognizing differences or similarities, and detecting changes in circumstances or events.",
+      "domain": "정보 입력"
+    },
+    {
+      "onet_gwa_id": "4.A.1.b.2",
+      "onet_label_en": "Inspecting Equipment, Structures, or Materials",
+      "description_en": "Inspecting equipment, structures, or materials to identify the cause of errors or other problems or defects.",
+      "domain": "정보 입력"
+    },
+    {
+      "onet_gwa_id": "4.A.1.b.3",
+      "onet_label_en": "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+      "description_en": "Estimating sizes, distances, and quantities; or determining time, costs, resources, or materials needed to perform a work activity.",
+      "domain": "정보 입력"
+    },
+    {
+      "onet_gwa_id": "4.A.2.a.1",
+      "onet_label_en": "Judging the Qualities of Objects, Services, or People",
+      "description_en": "Assessing the value, importance, or quality of things or people.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.a.2",
+      "onet_label_en": "Processing Information",
+      "description_en": "Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.a.3",
+      "onet_label_en": "Evaluating Information to Determine Compliance with Standards",
+      "description_en": "Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.a.4",
+      "onet_label_en": "Analyzing Data or Information",
+      "description_en": "Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.1",
+      "onet_label_en": "Making Decisions and Solving Problems",
+      "description_en": "Analyzing information and evaluating results to choose the best solution and solve problems.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.2",
+      "onet_label_en": "Thinking Creatively",
+      "description_en": "Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.3",
+      "onet_label_en": "Updating and Using Relevant Knowledge",
+      "description_en": "Keeping up-to-date technically and applying new knowledge to your job.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.4",
+      "onet_label_en": "Developing Objectives and Strategies",
+      "description_en": "Establishing long-range objectives and specifying the strategies and actions to achieve them.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.5",
+      "onet_label_en": "Scheduling Work and Activities",
+      "description_en": "Scheduling events, programs, and activities, as well as the work of others.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.2.b.6",
+      "onet_label_en": "Organizing, Planning, and Prioritizing Work",
+      "description_en": "Developing specific goals and plans to prioritize, organize, and accomplish your work.",
+      "domain": "정신 과정"
+    },
+    {
+      "onet_gwa_id": "4.A.3.a.1",
+      "onet_label_en": "Performing General Physical Activities",
+      "description_en": "Performing general physical activities includes doing activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling materials.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.a.2",
+      "onet_label_en": "Handling and Moving Objects",
+      "description_en": "Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.a.3",
+      "onet_label_en": "Controlling Machines and Processes",
+      "description_en": "Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.a.4",
+      "onet_label_en": "Operating Vehicles, Mechanized Devices, or Equipment",
+      "description_en": "Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or watercraft.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.b.1",
+      "onet_label_en": "Working with Computers",
+      "description_en": "Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.b.2",
+      "onet_label_en": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+      "description_en": "Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.b.4",
+      "onet_label_en": "Repairing and Maintaining Mechanical Equipment",
+      "description_en": "Servicing, repairing, adjusting, and testing machines, devices, moving parts, and equipment that operate primarily on the basis of mechanical (not electronic) principles.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.b.5",
+      "onet_label_en": "Repairing and Maintaining Electronic Equipment",
+      "description_en": "Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.3.b.6",
+      "onet_label_en": "Documenting/Recording Information",
+      "description_en": "Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic form.",
+      "domain": "작업 산출"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.1",
+      "onet_label_en": "Interpreting the Meaning of Information for Others",
+      "description_en": "Translating or explaining what information means and how it can be used.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.2",
+      "onet_label_en": "Communicating with Supervisors, Peers, or Subordinates",
+      "description_en": "Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.3",
+      "onet_label_en": "Communicating with People Outside the Organization",
+      "description_en": "Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.4",
+      "onet_label_en": "Establishing and Maintaining Interpersonal Relationships",
+      "description_en": "Developing constructive and cooperative working relationships with others, and maintaining them over time.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.5",
+      "onet_label_en": "Assisting and Caring for Others",
+      "description_en": "Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.6",
+      "onet_label_en": "Selling or Influencing Others",
+      "description_en": "Convincing others to buy merchandise/goods or to otherwise change their minds or actions.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.7",
+      "onet_label_en": "Resolving Conflicts and Negotiating with Others",
+      "description_en": "Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.a.8",
+      "onet_label_en": "Performing for or Working Directly with the Public",
+      "description_en": "Performing for people or dealing directly with the public. This includes serving customers in restaurants and stores, and receiving clients or guests.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.1",
+      "onet_label_en": "Coordinating the Work and Activities of Others",
+      "description_en": "Getting members of a group to work together to accomplish tasks.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.2",
+      "onet_label_en": "Developing and Building Teams",
+      "description_en": "Encouraging and building mutual trust, respect, and cooperation among team members.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.3",
+      "onet_label_en": "Training and Teaching Others",
+      "description_en": "Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.4",
+      "onet_label_en": "Guiding, Directing, and Motivating Subordinates",
+      "description_en": "Providing guidance and direction to subordinates, including setting performance standards and monitoring performance.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.5",
+      "onet_label_en": "Coaching and Developing Others",
+      "description_en": "Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.b.6",
+      "onet_label_en": "Providing Consultation and Advice to Others",
+      "description_en": "Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.c.1",
+      "onet_label_en": "Performing Administrative Activities",
+      "description_en": "Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.c.2",
+      "onet_label_en": "Staffing Organizational Units",
+      "description_en": "Recruiting, interviewing, selecting, hiring, and promoting employees in an organization.",
+      "domain": "타인과의 상호작용"
+    },
+    {
+      "onet_gwa_id": "4.A.4.c.3",
+      "onet_label_en": "Monitoring and Controlling Resources",
+      "description_en": "Monitoring and controlling resources and overseeing the spending of money.",
+      "domain": "타인과의 상호작용"
+    }
+  ]
+}

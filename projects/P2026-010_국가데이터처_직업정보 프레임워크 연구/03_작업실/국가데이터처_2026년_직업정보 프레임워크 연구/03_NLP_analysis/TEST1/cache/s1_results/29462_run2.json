@@ -1,0 +1,114 @@
+{
+  "ksco_code": "29462",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "악보",
+      "full_statement": "작사·작곡된 악보를 보고 곡의 리듬과 멜로디를 확인한다.",
+      "source_sentence": "작사‧작곡된 악보를 보고 피아노, 기타 또는 녹음된 악단의 반주에 맞추어 리듬을 확인하고 노래를 연습한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "연습하다",
+      "object": "노래",
+      "full_statement": "피아노, 기타 또는 녹음된 악단의 반주에 맞추어 노래를 연습한다.",
+      "source_sentence": "작사‧작곡된 악보를 보고 피아노, 기타 또는 녹음된 악단의 반주에 맞추어 리듬을 확인하고 노래를 연습한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "부르다",
+      "object": "성악 독창",
+      "full_statement": "성악 독창으로 가곡 등을 부른다.",
+      "source_sentence": "성악 독창이나 합창단의 일원으로 혹은 오페라 공연에서 가곡 등을 부른다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부르다",
+      "object": "합창",
+      "full_statement": "합창단의 일원으로 노래를 부른다.",
+      "source_sentence": "성악 독창이나 합창단의 일원으로 혹은 오페라 공연에서 가곡 등을 부른다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부르다",
+      "object": "오페라 곡",
+      "full_statement": "오페라 공연에서 곡을 부른다.",
+      "source_sentence": "성악 독창이나 합창단의 일원으로 혹은 오페라 공연에서 가곡 등을 부른다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "부르다",
+      "object": "가곡",
+      "full_statement": "콘서트 무대에서 가곡을 부른다.",
+      "source_sentence": "악단이나 녹음된 반주에 맞추어 방송국의 공연장이나 콘서트 무대에서 대중적인 노래나 가곡을 부른다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "부르다",
+      "object": "노래",
+      "full_statement": "녹음실의 연주장비에 맞추어 노래를 부른다.",
+      "source_sentence": "녹음실의 연주장비에 맞추어 노래를 부른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "공연하다",
+      "object": "노래",
+      "full_statement": "공연장에서 청중을 위하여 음악에 맞추어 노래를 공연한다.",
+      "source_sentence": "방송국의 공연장에서 대중을 즐겁게 하기 위하여 음악에 맞추어 노래를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "맞추다",
+      "object": "반주",
+      "full_statement": "악단이나 녹음된 반주에 맞추어 노래를 부른다.",
+      "source_sentence": "악단이나 녹음된 반주에 맞추어 방송국의 공연장이나 콘서트 무대에서 대중적인 노래나 가곡을 부른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "활용하다",
+      "object": "발성 지식",
+      "full_statement": "화음, 멜로디, 리듬, 발성에 대한 지식을 기초로 노래를 한다.",
+      "source_sentence": "화음, 멜로디, 리듬, 발성에 대한 지식을 기초로 노래를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작사하다",
+      "object": "가사",
+      "full_statement": "가수에 따라서는 직접 가사를 작사한다.",
+      "source_sentence": "가수에 따라서는 직접 작사, 작곡을 겸하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "작곡하다",
+      "object": "곡",
+      "full_statement": "가수에 따라서는 직접 곡을 작곡한다.",
+      "source_sentence": "가수에 따라서는 직접 작사, 작곡을 겸하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "악보", "category": "도구", "evidence_span": "작사‧작곡된 악보를 보고 피아노, 기타 또는 녹음된 악단의 반주에 맞추어"},
+    {"name": "피아노", "category": "장비", "evidence_span": "피아노, 기타 또는 녹음된 악단의 반주에 맞추어"},
+    {"name": "기타", "category": "장비", "evidence_span": "피아노, 기타 또는 녹음된 악단의 반주에 맞추어"},
+    {"name": "녹음실 연주장비", "category": "장비", "evidence_span": "녹음실의 연주장비에 맞추어 노래를 부른다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "녹음실(실내)", "evidence_span": "녹음실의 연주장비에 맞추어 노래를 부른다."},
+    {"category": "장소", "value": "공연장·콘서트 무대", "evidence_span": "방송국의 공연장이나 콘서트 무대에서 대중적인 노래나 가곡을 부른다."},
+    {"category": "사회적", "value": "합창단 일원으로 팀 협업", "evidence_span": "성악 독창이나 합창단의 일원으로 혹은 오페라 공연에서"},
+    {"category": "사회적", "value": "독창(독립 공연)", "evidence_span": "성악 독창이나 합창단의 일원으로"},
+    {"category": "사회적", "value": "대중·청중 앞 공연", "evidence_span": "방송국의 공연장에서 대중을 즐겁게 하기 위하여 음악에 맞추어 노래를 한다."}
+  ]
+}

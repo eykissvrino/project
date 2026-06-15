@@ -1,0 +1,63 @@
+{
+  "ksco_code": "71051",
+  "tasks": [
+    {
+      "verb": "선별하다",
+      "object": "김치 재료",
+      "full_statement": "배추, 무, 파 등 김치 제조에 사용할 식품 원료를 선별한다.",
+      "source_sentence": "식품의 원료를 선별한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(배추김치·열무김치·갓김치 등 재료)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "자르다",
+      "object": "재료",
+      "full_statement": "무, 배추 등 재료를 만들려는 김치의 종류에 맞게 크기와 모양으로 자른다.",
+      "source_sentence": "크기, 모양을 만들려는 식품에 맞게 자르거나, 소금에 절인다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절이다",
+      "object": "배추",
+      "full_statement": "배추 등 원료를 소금에 절인다.",
+      "source_sentence": "크기, 모양을 만들려는 식품에 맞게 자르거나, 소금에 절인다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)·조상정의(세분류: 원료를 소금이나 식초 등에 절여)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "첨가하다",
+      "object": "양념 재료",
+      "full_statement": "고춧가루, 파, 젓갈 등 음식의 특성에 맞는 양념 재료를 첨가한다.",
+      "source_sentence": "고춧가루, 무, 파, 젓갈 등 음식의 특성에 맞는 재료를 첨가하여 배추김치, 열무김치, 갓김치 등 김치를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "버무리다",
+      "object": "양념",
+      "full_statement": "절인 재료에 알맞은 양념을 넣고 버무려 조리한다.",
+      "source_sentence": "알맞은 양념을 넣고 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(김치 양념 버무리기)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "제조하다",
+      "object": "김치",
+      "full_statement": "배추김치, 열무김치, 갓김치 등 김치를 제조한다.",
+      "source_sentence": "고춧가루, 무, 파, 젓갈 등 음식의 특성에 맞는 재료를 첨가하여 배추김치, 열무김치, 갓김치 등 김치를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보관하다",
+      "object": "김치",
+      "full_statement": "제조한 김치를 종류에 따라 보관방법을 달리하여 보관한다.",
+      "source_sentence": "음식의 종류에 따라 보관방법을 달리하여 보관한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(김치 보관)",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

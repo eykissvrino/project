@@ -1,0 +1,119 @@
+{
+  "ksco_code": "42320",
+  "tasks": [
+    {
+      "verb": "돕다",
+      "object": "장애인의 거동",
+      "full_statement": "장애인의 거동을 돕는다.",
+      "source_sentence": "장애인의 거동을 돕거나 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "건강상태",
+      "full_statement": "장애인의 건강상태를 확인한다.",
+      "source_sentence": "장애인의 거동을 돕거나 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "보호하다",
+      "object": "장애인",
+      "full_statement": "장애인을 보호한다.",
+      "source_sentence": "장애인의 거동을 돕거나 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "돌봄 서비스",
+      "full_statement": "장애인에게 돌봄 서비스를 제공한다.",
+      "source_sentence": "장애인의 거동을 돕거나 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보조하다",
+      "object": "간호사 등의 업무",
+      "full_statement": "장애인을 위한 복지시설에서 간호사 등을 보조한다.",
+      "source_sentence": "장애인을 위한 복지시설에서 간호사 등을 보조하는 일을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "돕다",
+      "object": "장애인의 자립생활",
+      "full_statement": "장애인이 스스로 생활할 수 있도록 도와준다.",
+      "source_sentence": "장애인의 거동을 돕고 스스로 생활할 수 있도록 도와준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "위생관리",
+      "full_statement": "장애인의 위생관리를 지원한다.",
+      "source_sentence": "장애인의 위생관리, 신체기능유지 증진, 가사활동 등을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지원하다",
+      "object": "신체기능유지 증진",
+      "full_statement": "장애인의 신체기능유지 및 증진을 지원한다.",
+      "source_sentence": "장애인의 위생관리, 신체기능유지 증진, 가사활동 등을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "가사활동",
+      "full_statement": "장애인의 가사활동을 지원한다.",
+      "source_sentence": "장애인의 위생관리, 신체기능유지 증진, 가사활동 등을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "지원하다",
+      "object": "커뮤니케이션 보조",
+      "full_statement": "장애인의 커뮤니케이션 보조와 같은 사회활동을 지원한다.",
+      "source_sentence": "커뮤니케이션 보조와 같은 사회활동을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "지원하다",
+      "object": "사회활동",
+      "full_statement": "장애인의 사회활동을 지원한다.",
+      "source_sentence": "커뮤니케이션 보조와 같은 사회활동을 지원한다.",
+      "derived_from": "상속 주요업무→조상정의(소분류) 보강",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지원하다",
+      "object": "일상생활",
+      "full_statement": "혼자서 사는 장애인의 일상생활을 지원한다.",
+      "source_sentence": "주로 혼자서 사는 노인과 장애인 등의 일상생활 및 가사생활, 사회생활 등을 지원한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "장애인 복지시설",
+      "evidence_span": "장애인을 위한 복지시설에서 간호사 등을 보조하는 일을 하기도 한다."
+    },
+    {
+      "category": "사회적",
+      "value": "장애인 대상 대인 돌봄 서비스(고객/대상자 응대)",
+      "evidence_span": "장애인의 거동을 돕거나 건강상태를 확인하고 보호하는 등 돌봄 서비스를 제공한다."
+    },
+    {
+      "category": "신체적",
+      "value": "거동 보조·신체기능유지 등 신체적 지원",
+      "evidence_span": "장애인의 위생관리, 신체기능유지 증진, 가사활동 등을 지원한다."
+    }
+  ]
+}

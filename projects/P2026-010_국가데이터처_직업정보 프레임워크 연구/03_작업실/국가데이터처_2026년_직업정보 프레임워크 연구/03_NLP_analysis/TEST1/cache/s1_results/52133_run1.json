@@ -1,0 +1,130 @@
+{
+  "ksco_code": "52133",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "정원이나 예약상황",
+      "full_statement": "매표소에서 입장권 판매를 위해 정원이나 예약상황을 검토한다.",
+      "source_sentence": "정원이나 예약상황을 검토한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "매표 수",
+      "full_statement": "고객의 요구에 따라 매표 수를 확인한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기록하다",
+      "object": "시간이나 좌석번호",
+      "full_statement": "시간이나 좌석번호 등을 입장표에 기록한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "판매하다",
+      "object": "입장표",
+      "full_statement": "고객에게 정해진 요금을 받고 입장표를 판매한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발행하다",
+      "object": "입장표",
+      "full_statement": "고객이 입장을 할 수 있도록 입장표를 발행한다.",
+      "source_sentence": "극장, 공원 및 유원지 등의 매표소에서 정해진 요금을 받고 입장을 할 수 있도록 고객에게 입장표를 발행하고 현금을 받는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수령하다",
+      "object": "표의 대금",
+      "full_statement": "입장표 판매에 대한 표의 대금을 받는다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계산하다",
+      "object": "거스름돈",
+      "full_statement": "수령한 대금에 대한 거스름돈을 계산한다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "지급하다",
+      "object": "거스름돈",
+      "full_statement": "고객에게 계산한 거스름돈을 지급한다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "수령하다",
+      "object": "현금",
+      "full_statement": "입장표 발행과 함께 고객에게서 현금을 받는다.",
+      "source_sentence": "극장, 공원 및 유원지 등의 매표소에서 정해진 요금을 받고 입장을 할 수 있도록 고객에게 입장표를 발행하고 현금을 받는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정산하다",
+      "object": "일일매표내역",
+      "full_statement": "일일매표내역을 정산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "계산하다",
+      "object": "이용률",
+      "full_statement": "정산한 일일매표내역을 바탕으로 이용률을 계산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "계산하다",
+      "object": "판매대금",
+      "full_statement": "일일매표내역을 정산하여 판매대금을 계산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접수하다",
+      "object": "전화예매",
+      "full_statement": "고객의 전화예매를 받는다.",
+      "source_sentence": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객의 질문",
+      "full_statement": "고객의 질문에 대답한다.",
+      "source_sentence": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "극장, 공원 및 유원지 등의 매표소",
+      "evidence_span": "극장, 공원 및 유원지 등의 매표소에서 정해진 요금을 받고 입장을 할 수 있도록 고객에게 입장표를 발행하고 현금을 받는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(입장표 판매·질문 대답)",
+      "evidence_span": "고객에게 입장표를 발행하고 현금을 받는 업무를 수행한다."
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>직업정보 프레임워크 연구 — 전체 로드맵 및 진행현황</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#1a2230; --body:#28303e; --muted:#697587; --faint:#8a94a3;
+    --line:#dde3ec; --line2:#eef1f6; --bg:#ffffff; --paper:#fbfcfe;
+    --navy:#152544; --accent:#1f4e8c; --accent2:#7a2e3a;
+    --task:#9a6212; --dwa:#1f4e8c; --iwa:#0f6b5f; --gwa:#5b3a8a;
+    --soft:#f1f5fb; --done:#1f6b3a; --now:#1f4e8c; --todo:#9a6212;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    font-size:16px;line-height:1.78;letter-spacing:-.1px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:0 30px}
+  header.cover{border-bottom:3px solid var(--navy);padding:52px 0 26px;margin-bottom:8px}
+  .docmeta{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.6px;margin-bottom:14px}
+  header.cover h1{font-size:30px;line-height:1.32;font-weight:800;color:var(--navy);margin:0 0 8px;letter-spacing:-.6px}
+  header.cover .sub{font-size:18px;color:var(--muted);font-weight:600;margin:0 0 22px}
+  .coverbar{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .coverbar div{flex:1;min-width:150px;padding:11px 16px;border-right:1px solid var(--line2);font-size:13.5px}
+  .coverbar div:last-child{border-right:none}
+  .coverbar b{display:block;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:.4px;margin-bottom:2px}
+  .abstract{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:18px 22px;margin:24px 0 6px;font-size:15px;color:var(--body)}
+  .abstract b{color:var(--navy)}
+  nav.toc{margin:26px 0 8px;padding:18px 22px;background:var(--soft);border-radius:8px}
+  nav.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.5px;color:var(--faint);font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px;font-size:14px}
+  @media(max-width:680px){nav.toc ol{columns:1}}
+  nav.toc a{color:var(--accent);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{padding:34px 0;border-bottom:1px solid var(--line2)}
+  h2{font-size:21px;font-weight:800;color:var(--navy);margin:0 0 4px;letter-spacing:-.3px;
+    padding-bottom:9px;border-bottom:2px solid var(--line)}
+  h2 .num{color:var(--accent);margin-right:9px}
+  h3{font-size:16.5px;font-weight:700;color:var(--ink);margin:24px 0 8px}
+  h3 .num{color:var(--accent);font-weight:700;margin-right:7px}
+  p{margin:10px 0}
+  .lead{font-size:15px;color:var(--muted);margin:6px 0 18px}
+  strong,b{color:var(--ink)}
+  .interp{border:1px solid var(--line);border-left:3px solid var(--iwa);background:#f4faf8;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .interp b{color:#0f6b5f}
+  .method{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--paper);
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat{border:1px solid #ecd9c2;border-left:3px solid var(--accent2);background:#fdf8f3;
+    border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat b{color:var(--accent2)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:12.5px;color:var(--faint);font-weight:700;margin-bottom:6px;letter-spacing:.3px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--navy);background:transparent;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.2px}
+  tbody tr:hover td{background:var(--paper)}
+  td code,p code,li code{background:var(--soft);color:var(--accent2);padding:1px 6px;border-radius:4px;font-size:13px;font-family:Consolas,monospace}
+  ul.tight{margin:8px 0;padding-left:20px}ul.tight li{margin:5px 0}
+  .figwrap{border:1px solid var(--line);border-radius:8px;padding:16px;margin:14px 0;background:#fff}
+  .figcap{font-size:12.5px;color:var(--faint);margin-top:8px;text-align:center}
+  svg{max-width:100%;height:auto}
+  .badge{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:4px;color:#fff;vertical-align:middle}
+  .b-done{background:#1f6b3a}.b-now{background:#1f4e8c}.b-todo{background:#9a6212}.b-design{background:#5b3a8a}
+  /* KPI 카드 */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+  @media(max-width:680px){.kpis{grid-template-columns:repeat(2,1fr)}}
+  .kpi{border:1px solid var(--line);border-radius:9px;padding:14px 16px;background:var(--paper)}
+  .kpi .v{font-size:26px;font-weight:800;color:var(--navy);line-height:1.1}
+  .kpi .l{font-size:12px;color:var(--muted);margin-top:4px;font-weight:600}
+  .kpi .s{font-size:11px;color:var(--faint);margin-top:2px}
+  /* 진행 바 */
+  .pbar{height:11px;border-radius:6px;background:#e8edf4;overflow:hidden;margin:3px 0}
+  .pbar i{display:block;height:100%;border-radius:6px}
+  .stagerow{display:grid;grid-template-columns:90px 1fr 64px;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line2);font-size:13.5px}
+  .stagerow:last-child{border-bottom:none}
+  .stagerow .nm{font-weight:700;color:var(--ink)}
+  .stagerow .pct{text-align:right;font-weight:700;font-size:13px;color:var(--muted)}
+  footer{padding:26px 0 56px;color:var(--faint);font-size:12.5px;border-top:2px solid var(--navy);margin-top:8px}
+  .crossref{display:inline-block;background:#eef4fb;border:1px solid #cfe0f2;color:var(--accent);
+    font-size:12.5px;font-weight:600;padding:2px 10px;border-radius:5px;margin:6px 0;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="cover">
+  <div class="docmeta">국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 — 연구진 내부 보고 [2/2]</div>
+  <h1>전체 로드맵 및 진행현황</h1>
+  <p class="sub">5단계 파이프라인 전수 완료 · 직무활동체계 4계층(TASK→DWA→IWA→GWA) 구축 · 마일스톤 로드맵</p>
+  <div class="coverbar">
+    <div><b>문서 위상</b>진행현황 보고 v2.0</div>
+    <div><b>기준일</b>2026-06-11</div>
+    <div><b>사업 기간</b>8개월 · 6,500만원</div>
+    <div><b>함께 보는 문서</b>직무활동체계 도출 방법론</div>
+  </div>
+
+  <div class="abstract">
+    본 문서는 직업정보 프레임워크 연구의 <b>전체 진행 상황과 로드맵</b>을 보고한다. 도출 방법의 이론·절차는 「직무활동체계 도출 방법론」 문서에서 다루며, 본 문서는 ① 5단계 파이프라인 진척, ② <b>전 단계 전수 실행 실측 결과</b>, ③ 마일스톤 로드맵, ④ 연구진 검토 요청사항에 집중한다. <b>핵심 진척(2026-06-11): 직무활동체계 4계층(TASK→DWA→IWA→GWA)을 전수 구축 완료</b>하였다 — 1단계 TASK 16,168개(1,270직업 100%), 2단계 DWA 1,192개(8조항 100%·전 TASK 연결), 3단계 IWA 178개(DWA→IWA strict 1:1), 4단계 GWA. <b>특히 4단계 GWA는 세 방식을 모두 구현·실측</b>하였다 — ⓐ ONET 41 채택(국제정합), ⓑ 순수 상향식(가설검증), ⓒ <b>연역적 한국형 GWA 36개(ONET '방법' 복제·ONET 41 목록 미사용, 권장)</b>. 다음은 국면 2(직업별 측정, 시범 2개 중분류)이다.
+  </div>
+
+  <nav class="toc">
+    <h4>목 차 — 진행현황</h4>
+    <ol>
+      <li><a href="#s1">사업 개요와 산출물</a></li>
+      <li><a href="#s2">5단계 파이프라인 진척 현황</a></li>
+      <li><a href="#s3">Stage 1 전수 실행 결과 (실측)</a></li>
+      <li><a href="#sdwa">Stage 2 전수 실행 결과 (실측)</a></li>
+      <li><a href="#siwa">Stage 3 전수 실행 결과 (실측)</a></li>
+      <li><a href="#sgwa">Stage 4 GWA — 세 방식 실측</a></li>
+      <li><a href="#sdec">단계별 이슈 및 의사결정 로그</a></li>
+      <li><a href="#s4">마일스톤 로드맵</a></li>
+      <li><a href="#s5">연구진 검토 요청사항</a></li>
+    </ol>
+  </nav>
+</header>
+
+<!-- 1 -->
+<section id="s1">
+  <h2><span class="num">1.</span>사업 개요와 산출물</h2>
+  <p class="lead">8개월·6,500만원 규모. 6대 직업정보 차원 중 가장 차별화·정책활용성이 높은 <b>"업무(Work Activities) 차원 + 책무성 3축"</b>에 자원을 집중한다(나머지 5차원은 차기 KSCO 9차 또는 후속 과제).</p>
+
+  <table>
+    <caption>표 1. 본 연구 공식 산출물</caption>
+    <thead><tr><th>코드</th><th>산출물</th><th>형식</th><th>대응 단계</th></tr></thead>
+    <tbody>
+      <tr><td>ⓐ</td><td>KSCO 직업별 직무기술 정의서</td><td>엑셀·문서</td><td>1~4단계 + 책무성</td></tr>
+      <tr><td>ⓑ</td><td>한국형 GWA / IWA / DWA 사전</td><td>엑셀·DB</td><td>2~4단계</td></tr>
+      <tr><td>ⓒ</td><td>KSCO 책무성(Responsibility) 맵</td><td>엑셀</td><td>직업별 측정</td></tr>
+      <tr><td>ⓓ</td><td>KSCO ↔ ISCO·O*NET 매핑표</td><td>엑셀</td><td>4단계</td></tr>
+      <tr><td>ⓔ</td><td>시범적용 보고서 + 분류개편 시뮬레이션</td><td>docx · pptx</td><td>전 단계</td></tr>
+    </tbody>
+  </table>
+  <div class="method"><b>방법 요약 — 두 국면.</b> ① <b>직무활동체계 구축</b>(TASK→DWA→IWA→GWA)은 <b>인공지능</b>(대형언어모델·의미분석 AI)이 수행하여 8개월 내 전수 구축을 가능케 한다 — 미국 O*NET이 직업분석가 수작업으로 11년 걸린 일을 자동화. ② <b>직업별 측정</b>(GWA 중요도·수준 + 책무성)은 <b>도메인 전문가</b>가 평정한다(시범 2개 중분류). 상세 방법은 「직무활동체계 도출 방법론」 문서 참조.</p></div>
+</section>
+
+<!-- 2 -->
+<section id="s2">
+  <h2><span class="num">2.</span>5단계 파이프라인 진척 현황</h2>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">16,168</div><div class="l">전수 TASK</div><div class="s">1,270직업 100%</div></div>
+    <div class="kpi"><div class="v">1,192</div><div class="l">전수 DWA</div><div class="s">전 TASK 연결·고아 0</div></div>
+    <div class="kpi"><div class="v">178</div><div class="l">전수 IWA</div><div class="s">DWA→IWA strict 1:1</div></div>
+    <div class="kpi"><div class="v">5 / 5</div><div class="l">단계 완료</div><div class="s">4계층 전수 구축</div></div>
+  </div>
+
+  <h3><span class="num">2.1</span>단계별 진척률</h3>
+  <div style="border:1px solid var(--line);border-radius:9px;padding:14px 18px;margin:14px 0">
+    <div class="stagerow"><span class="nm">Stage 0 전처리</span>
+      <span class="pbar"><i style="width:100%;background:var(--done)"></i></span><span class="pct">완료</span></div>
+    <div class="stagerow"><span class="nm">Stage 1 TASK</span>
+      <span class="pbar"><i style="width:100%;background:var(--done)"></i></span><span class="pct">전수 완료</span></div>
+    <div class="stagerow"><span class="nm">Stage 2 DWA</span>
+      <span class="pbar"><i style="width:100%;background:var(--done)"></i></span><span class="pct">전수 완료</span></div>
+    <div class="stagerow"><span class="nm">Stage 3 IWA</span>
+      <span class="pbar"><i style="width:100%;background:var(--done)"></i></span><span class="pct">전수 완료</span></div>
+    <div class="stagerow"><span class="nm">Stage 4 GWA</span>
+      <span class="pbar"><i style="width:100%;background:var(--done)"></i></span><span class="pct">전수 완료(3방식)</span></div>
+  </div>
+
+  <table>
+    <caption>표 2. 단계별 구현 현황 상세</caption>
+    <thead><tr><th>단계</th><th>상태</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>Stage 0 입력·전처리</td><td><span class="badge b-done">구현·가동</span></td><td>상속·정제·플래그·coverage 완료</td></tr>
+      <tr><td>Stage 1 TASK 도출</td><td><span class="badge b-done">전수 완료</span></td><td><b>1,270직업 전수 · 16,168 TASK(100%)</b> · 합집합·near-dup·8~30 준거 89.8%</td></tr>
+      <tr><td>Stage 2 DWA 도출</td><td><span class="badge b-done">전수 완료</span></td><td><b>1,192 DWA · 8조항 100% · 전 16,168 TASK 연결(고아 0)</b> · 단일 응집트리·채택임계 3작업·2직업·다중연결(평균 1.30)</td></tr>
+      <tr><td>Stage 3 IWA 도출</td><td><span class="badge b-done">전수 완료</span></td><td><b>178 IWA · DWA→IWA 1,192 strict 1:1(중복·고아 0)</b> · 동일 트리 상위절단(k=214)·7조항 100%(R4 완화)·DWA:IWA 6.7:1 (2026-06-11)</td></tr>
+      <tr><td>Stage 4 GWA 도출</td><td><span class="badge b-done">전수 완료(3방식)</span></td><td><b>ⓐ ONET 41 채택(IWA→GWA 178, 사용 33/41) · ⓑ 순수 상향식(41 자생, ONET 19/41 표출) · ⓒ 연역적 한국형 GWA 36개(ONET 방법 복제, ONET 28/41 정합, 권장)</b> (2026-06-11)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 3 -->
+<section id="s3">
+  <h2><span class="num">3.</span>Stage 1 전수 실행 결과 (실측) <span class="badge b-done">전수 완료</span></h2>
+  <p class="lead">2026-06-10 기준, 1단계(작업 도출)를 <b>전체 세세분류 1,270개에 전수 완료</b>. 아래 수치는 통합 데이터베이스 직접 집계값이다.</p>
+
+  <table>
+    <caption>표 3. Stage 1 전수 핵심 지표</caption>
+    <thead><tr><th>지표</th><th>값</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>총 TASK 수</td><td><b>16,168</b></td><td>의미중복 병합 후 적재</td></tr>
+      <tr><td>TASK 보유 직업</td><td><b>1,270 / 1,270 (100%)</b></td><td>전 세세분류 커버리지</td></tr>
+      <tr><td>LLM 호출(전직업)</td><td>1,270</td><td>전량 캐시(<code>llm_call_log</code>) → 재현 보장</td></tr>
+      <tr><td>직업당 TASK 분포</td><td>최소 3 · <b>평균 12.7 · 중앙값 12</b> · 최대 35</td><td>O*NET 중앙값 20과 비교(아래 해석)</td></tr>
+      <tr><td>도구(tool) 추출</td><td>3,056건 / 649개 직업(51%)</td><td>명시 단서 한정(사무직 약함=정상)</td></tr>
+      <tr><td>작업환경(work context)</td><td>3,149건 / 1,030개 직업(81%)</td><td>장소·위험·사회·신체·시간 5범주</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">3.1</span>직업당 TASK 개수 분포</h3>
+  <div class="figwrap">
+  <svg viewBox="0 0 720 230" role="img" aria-label="직업당 TASK 개수 구간 분포">
+    <line x1="60" y1="180" x2="700" y2="180" stroke="#cbd5e1"/>
+    <!-- 막대: 4구간 -->
+    <!-- <8: 128 -->
+    <rect x="110" y="120" width="90" height="60" fill="#9a6212" opacity="0.8"/>
+    <text x="155" y="112" font-size="13" fill="#152544" text-anchor="middle" font-weight="700">128</text>
+    <text x="155" y="198" font-size="12" fill="#697587" text-anchor="middle">&lt;8 (정보부족)</text>
+    <text x="155" y="214" font-size="11" fill="#a98a55" text-anchor="middle">10.1%</text>
+    <!-- 8~30: 1141 -->
+    <rect x="280" y="30" width="120" height="150" fill="#1f6b3a" opacity="0.85"/>
+    <text x="340" y="22" font-size="14" fill="#152544" text-anchor="middle" font-weight="800">1,141</text>
+    <text x="340" y="198" font-size="12" fill="#697587" text-anchor="middle">8~30 (ONET 준거)</text>
+    <text x="340" y="214" font-size="11" fill="#1f6b3a" text-anchor="middle" font-weight="700">89.8% ✅</text>
+    <!-- 31~40: 1 -->
+    <rect x="470" y="174" width="80" height="6" fill="#1f4e8c" opacity="0.8"/>
+    <text x="510" y="166" font-size="13" fill="#152544" text-anchor="middle" font-weight="700">1</text>
+    <text x="510" y="198" font-size="12" fill="#697587" text-anchor="middle">31~40 (상한내)</text>
+    <!-- >40: 0 -->
+    <rect x="610" y="178" width="70" height="2" fill="#7a2e3a"/>
+    <text x="645" y="170" font-size="13" fill="#7a2e3a" text-anchor="middle" font-weight="700">0</text>
+    <text x="645" y="198" font-size="12" fill="#697587" text-anchor="middle">&gt;40 (과추출)</text>
+    <text x="645" y="214" font-size="11" fill="#1f6b3a" text-anchor="middle">통제 완전</text>
+  </svg>
+  <div class="figcap">그림 1. 직업당 TASK 개수 구간 분포. 89.8%가 O*NET 준거 구간(8~30)에 들고, 과추출(&gt;40)은 0건.</div>
+  </div>
+
+  <div class="interp"><b>O*NET 대비 해석.</b> 직업당 중앙값이 <b>본 연구 12 vs O*NET 20</b>으로 낮다. 이는 추출 누락이 아니라 <b>입력 자료원의 정보 밀도 차이</b>다 — O*NET은 재직자·SME 현장수집 task inventory인 반면, 본 연구 입력은 KSCO 해설서 텍스트로 직업당 기술량이 더 적다. 채택 원칙이 <em>합집합(포괄)</em>임에도 평균 12.7로 절제된 것은 해설서가 제공하는 활동 정보의 상한을 반영한 결과다. <b>과추출 0건</b>은 LLM 환각·중복 팽창이 상한 규약·near-dup 병합으로 통제되었음을 보여준다.</div>
+
+  <div class="caveat"><b>보강 후보 식별.</b> &lt;8 TASK 직업 128개(10.1%)는 해설서 단독으로 직무 변별이 약한 직업군(일부 군인·단순노무·기능)이다. 각 TASK의 <code>derived_from</code>·<code>low_signal</code> 플래그로 자동 식별되므로 후속 단계에서 <b>한국직업사전(KJD)·NCS 능력단위 보강</b> 대상으로 우선 투입한다(현재는 표시만).</div>
+
+  <div class="method"><b>Stage 2 입력 확보 → 결과 확정.</b> 전수 16,168 TASK가 군집 입력으로 확정되어 Stage 2로 투입 완료. O*NET 비율 band(TASK ÷ 6~12) 예상 1,350~2,700개 범위 내에서 <b>실측 1,192개 DWA</b>로 도출되었다(다음 절 참조).</div>
+</section>
+
+<!-- 3a · Stage 2 결과 -->
+<section id="sdwa">
+  <h2><span class="num">4.</span>Stage 2 전수 실행 결과 (실측) <span class="badge b-done">전수 완료</span></h2>
+  <p class="lead">2026-06-11 기준, 2단계(DWA 도출)를 <b>전수 16,168 TASK에 대해 완료</b>. 의미 유사도 기반 단일 응집트리로 군집한 뒤, 각 군집을 대형언어모델(Opus)이 8조항 작성규칙에 따라 명명하였다. 아래 수치는 통합 데이터베이스 직접 집계값이다.</p>
+
+  <table>
+    <caption>표 4. Stage 2 전수 핵심 지표</caption>
+    <thead><tr><th>지표</th><th>값</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>도출 DWA 수</td><td><b>1,192</b></td><td>TASK:DWA ≈ 13.6:1 (O*NET 9:1 대비 압축)</td></tr>
+      <tr><td>8조항 작성규칙 준수</td><td><b>1,192 / 1,192 (100%)</b></td><td>자동검증 → 위반분 LLM 재작성 후 전수 통과</td></tr>
+      <tr><td>TASK→DWA 연결</td><td><b>21,090건</b> · 전 16,168 TASK 연결(고아 0)</td><td>다중연결(Multiple Linkage) 1차 16,168·2차 3,639·3차 1,283</td></tr>
+      <tr><td>TASK당 평균 연결</td><td><b>1.30</b></td><td>O*NET 실측 1.26과 정합(한 작업이 평균 1.3개 DWA에 기여)</td></tr>
+      <tr><td>군집 응집도(평균 코사인)</td><td>중앙값 <b>0.895</b> · 전 군집 ≥0.70</td><td>의미 동질성 기준(사양 ≥0.70) 100% 충족</td></tr>
+      <tr><td>DWA당 TASK 분포</td><td>최소 2 · <b>중앙값 7</b> · 최대 430</td><td>대형=범용활동, 소형=직업특화활동</td></tr>
+      <tr><td>직업군 교차(Cross-Family)</td><td><b>494개 (41.4%)</b></td><td>서로 다른 대분류 직업이 공유하는 활동(아래 해석)</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">4.1</span>채택 임계와 절단 수준</h3>
+  <p>16,168 TASK를 평균연결·코사인 단일 응집트리로 묶고, O*NET 비율 band(1,347~2,694) 안에서 가장 자연스러운 절단점(군집 1,510개)을 택했다. 여기에 <b>한국형 채택임계(3작업 또는 2직업 이상)</b>를 적용해 잡음 소군집을 인접 DWA로 흡수하고 <b>1,192개</b>를 정식 DWA로 확정했다(미채택 군집의 작업도 최근접 DWA로 연결되어 누락 0).</p>
+
+  <div class="interp"><b>Cross-Family 41%는 결함이 아니라 핵심 발견이다.</b> "기계를 조작하여 제품을 생산한다"(129개 직업 공유), "부품 및 기기의 상태를 점검한다"(178개 직업), "고객 문의에 응대한다"(94개 직업)처럼 <b>여러 대분류에 걸쳐 공유되는 범용 작업활동</b>이 그대로 포착된 결과다. 이는 본 연구가 목표한 <b>직업 간 공통활동(직업전환·변별 분석의 기초)</b> 그 자체이며, DWA 사전의 정책 활용성(전직 경로·스킬 이전 가능성 분석)을 뒷받침한다.</div>
+
+  <div class="caveat"><b>추상 수준에 대한 주의.</b> O*NET의 Cross-Family 비율(약 12%)보다 높은데, 이는 KSCO 해설서가 활동을 다소 범용적으로 기술하는 자료원 특성을 반영한다. 일부 대형 DWA("기계를 조작하여 제품을 생산한다" 등)는 O*NET 기준으로는 한 단계 위(IWA)에 가까운 추상도일 수 있으며, 이는 <b>3단계(IWA 도출)에서 상위 군집으로 한 번 더 정리</b>되어 계층이 자연스럽게 분리된다.</p></div>
+
+  <div class="method"><b>다음 단계 입력 확보.</b> 1,192개 DWA가 strict-tree 백본의 하단 계층으로 확정되어 Stage 3(IWA) 입력으로 준비됨. 임베딩·응집트리는 캐시되어 재계산 없이 상위 절단만 수행한다. 산출물: <code>S2_DWA도출.xlsx</code>(DWA·TASK연결·DWA별TASK·커버리지, 추적성 100%).</div>
+</section>
+
+<!-- 3b · Stage 3 결과 -->
+<section id="siwa">
+  <h2><span class="num">5.</span>Stage 3 전수 실행 결과 (실측) <span class="badge b-done">전수 완료</span></h2>
+  <p class="lead">2026-06-11 기준, 3단계(IWA 도출)를 <b>전수 1,192 DWA에 대해 완료</b>. 2단계와 <b>같은 응집트리를 더 높은 높이에서 절단</b>(방법 A)하여 IWA를 만들고, 각 묶음을 대형언어모델이 한 단계 더 일반화하여 명명하였다.</p>
+  <table>
+    <caption>표 5. Stage 3 전수 핵심 지표</caption>
+    <thead><tr><th>지표</th><th>값</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>도출 IWA 수</td><td><b>178</b></td><td>DWA:IWA ≈ 6.7:1 (O*NET 6.3:1과 정합)</td></tr>
+      <tr><td>DWA→IWA 연결</td><td><b>1,192 / 1,192 (strict 1:1)</b></td><td>중복배정·고아 0 — 같은 트리라 포함관계 수학적 보장</td></tr>
+      <tr><td>절단 수준</td><td>k=214 (유효 IWA 178)</td><td>자연 gap 평탄 → ONET 비율(6.3:1) 기준선으로 선택</td></tr>
+      <tr><td>형식 7조항 준수</td><td><b>100%</b></td><td>R4(광의 일반어)는 IWA에서 경고로 완화 — IWA는 본질상 일반적</td></tr>
+      <tr><td>군집 응집도(중앙값)</td><td>0.905</td><td>참고 지표(게이트 아님)</td></tr>
+    </tbody>
+  </table>
+  <div class="interp"><b>계층이 자연스럽게 분리된다.</b> 2단계에서 다소 추상적이던 대형 DWA들이 3단계 상위 절단으로 IWA에 흡수되어, "상세활동(DWA) ↔ 중간활동(IWA)"의 입도 차이가 정리되었다. 같은 나무를 쓰므로 한 DWA가 두 IWA에 걸치는 모순은 0건이다.</div>
+  <div class="method"><b>다음 단계 입력 확보.</b> 178개 IWA가 GWA(최상위) 도출 입력으로 확정. 산출물: <code>S3_IWA도출.xlsx</code>. 절단수준 의사결정 검토서(HTML) 별도 회람.</div>
+</section>
+
+<!-- 3c · Stage 4 결과 -->
+<section id="sgwa">
+  <h2><span class="num">6.</span>Stage 4 GWA — 세 방식 실측 <span class="badge b-done">전수 완료</span></h2>
+  <p class="lead">최상위(GWA)는 데이터 군집이 아니라 <b>직무분석 이론으로 설계된 분류체계</b>다(O*NET 사실). 이 특성 때문에 본 연구는 GWA를 <b>세 가지 방식으로 모두 도출·실측</b>하여 비교했다. 178개 IWA를 입력으로, 셋 모두 strict 1:1 매핑(중복·고아 0)을 달성하였다.</p>
+  <table>
+    <caption>표 6. GWA 도출 세 방식 비교 (실측)</caption>
+    <thead><tr><th>방식</th><th>GWA 수</th><th>프레임</th><th>ONET 정합</th><th>성격</th></tr></thead>
+    <tbody>
+      <tr><td><b>ⓐ ONET 41 채택</b><br>(국제정합)</td><td>41<br>(사용 33)</td><td>ONET 4영역</td><td>100%(동일 어휘)</td><td>ONET 41을 한국어 번역·채택, IWA를 매핑. 국제 비교 보장</td></tr>
+      <tr><td><b>ⓑ 순수 상향식</b><br>(가설검증)</td><td>41 자생</td><td>데이터 자생</td><td>표출 19 / 미표출 22</td><td>데이터만으로 묶음 → ONET 41 중 19개만 자생, 22개는 미표출(주로 추상 인지·관리·대인 활동). "GWA는 상향식 재현 어렵다"는 가설 실증</td></tr>
+      <tr><td><b>ⓒ 연역적 한국형 GWA</b><br><span class="badge b-now">권장</span></td><td><b>36</b><br>(4영역)</td><td>정보처리 4영역<br>(이론)</td><td><b>28 / 41 distinct</b></td><td>ONET의 <b>방법</b>(이론 우선→데이터 검증)만 복제하고 <b>ONET 41 목록은 미사용</b>. 한국 데이터+이론으로 자체 설계</td></tr>
+    </tbody>
+  </table>
+
+  <div class="interp"><b>핵심 성과 — 연역적 방식(ⓒ)이 ONET과 가장 동형이다.</b> 순수 상향식(ⓑ)이 못 잡던 추상 인지·관리 활동(의사결정·문제해결, 목표·전략 수립, 전문지식 적용·갱신, 조정·협업)을 <b>이론으로 복원</b>했고, ONET 정합도 19/41 → <b>28/41</b>로 향상되었다. 36개 GWA는 정보처리 4영역(정보입력 5·정신과정 8·작업산출 11·타인상호작용 12)에 배치된다.</div>
+
+  <div class="caveat"><b>정직한 한계 — 추상 활동은 "추출"이 아니라 "측정"으로 채운다.</b> 연역 설계 36개 중 1개(<b>목표·전략의 수립</b>)는 KSCO 직업설명에 명시되지 않아 데이터 추출만으로는 0건이다(basis=theory). O*NET도 이런 추상활동을 추출이 아니라 <b>전 직업 평정(중요도·수준)</b>으로 채웠다. 즉 <b>연역 골격(ⓒ) + 직업별 측정(국면 2)이 한 세트</b>여야 ONET 수준으로 완성된다.</div>
+
+  <div class="method"><b>산출물.</b> <code>S4_GWA도출.xlsx</code>(ⓐ) · <code>S4b_상향식GWA도출.xlsx</code>(ⓑ, ★미매칭ONET 시트 포함) · <code>S4c_연역적GWA도출.xlsx</code>(ⓒ, 설계기준·basis 포함). 각 결과해설서(<code>stages/results/Stage4·4b·4c_*.md</code>) 별도.</div>
+</section>
+
+<!-- 의사결정 로그 -->
+<section id="sdec">
+  <h2><span class="num">7.</span>단계별 이슈 및 의사결정 로그</h2>
+  <p class="lead">각 단계에서 내린(또는 내려야 할) 주요 의사결정을 <b>[이슈 → 선택지의 특징·장점·단점 → 결정·근거 데이터]</b> 형식으로 정리한다. <span class="badge b-done">확정</span>은 적용 완료, <span class="badge b-todo">미확정</span>은 연구진 결정 대기 항목이다.</p>
+
+  <h3><span class="num">7.1</span>Stage 1 (TASK) 의사결정</h3>
+  <p><b>D1-1. 2회 추출 결과 통합 방식 — 합집합 vs 교집합</b> <span class="badge b-done">확정: 합집합</span></p>
+  <table>
+    <caption>표 7. 추출 안정화 방식 비교</caption>
+    <thead><tr><th>선택지</th><th>특징</th><th>장점</th><th>단점</th><th>채택</th></tr></thead>
+    <tbody>
+      <tr><td><b>합집합(∪)</b></td><td>2회 중 하나라도 나온 작업 모두 채택</td><td>누락 최소화 — 체계 구축 단계에 적합. 과추출분은 후단 군집·검증에서 흡수</td><td>일시적 과추출 가능(중복·잡음)</td><td><b>○</b></td></tr>
+      <tr><td>교집합(∩)</td><td>2회 모두 나온 작업만 채택</td><td>정밀(고신뢰)</td><td><b>누락 위험</b> — 빠진 작업은 체계에 영영 없음(치명)</td><td>✗</td></tr>
+    </tbody>
+  </table>
+  <div class="why"><b>근거 데이터.</b> 합집합 채택에도 직업당 <b>중앙값 12·평균 12.7</b>로 절제, <b>과추출(&gt;40) 0건</b>(상한 규약·near-dup cos≥0.9 병합으로 통제). 2회 일치분(신뢰도 0.95) 51.7%·1회분(0.80) 48.3% — 신뢰도 컬럼으로 투명 표기.</div>
+  <p><b>D1-2. 정의빈약 직업 보완 — 조상 정의 결합</b> <span class="badge b-done">확정</span> · 자기 정의 50자 미만 또는 영문·기호 45% 초과 시 <code>low_signal</code> 표시 후 상위분류(세→소→중→대) 정의를 함께 근거로 추출. 전수 중 정의빈약 385개.</p>
+  <div class="caveat"><b>이슈(미해결).</b> ① 직업당 중앙값 <b>12 vs O*NET 20</b> — 자료원 차이(KSCO 해설서 텍스트 vs 현장 수집)로, 발주기관 설명 프레이밍 필요. ② <b>&lt;8 작업 직업 128개(10.1%)</b> — KJD·NCS 보강 대상, <b>보강 범위·우선순위 미확정</b>.</div>
+
+  <h3><span class="num">7.2</span>Stage 2 (DWA) 의사결정</h3>
+  <p><b>D2-1. 군집 알고리즘 선택</b> <span class="badge b-done">확정: 계층적 응집군집</span></p>
+  <table>
+    <caption>표 8. 군집 알고리즘 비교(요건: ⓐ위계 ⓑ빠짐없음 ⓒ재현성)</caption>
+    <thead><tr><th>방법</th><th>특징</th><th>장점</th><th>단점</th><th>판정</th></tr></thead>
+    <tbody>
+      <tr><td><b>계층적 응집군집</b></td><td>하나의 나무를 높이별로 절단</td><td>위계 자동 보장·전수 포함·결정론적(ⓐⓑⓒ 모두 ◎)</td><td>대용량 거리계산 비용(캐시로 해소)</td><td><b>채택</b></td></tr>
+      <tr><td>밀도기반(HDBSCAN)</td><td>밀집 영역만 군집</td><td>잡음 분리</td><td><b>38~62% 미분류</b> → 직업 프로파일 구멍</td><td>부적합</td></tr>
+      <tr><td>K-평균</td><td>중심점 기반 분할</td><td>빠름·전수 포함</td><td><b>위계 생성 불가</b>·초기값 의존</td><td>부적합</td></tr>
+    </tbody>
+  </table>
+  <p><b>D2-2. 채택 최소조건 — 3작업·2직업 (O*NET 4작업·3직업 완화)</b> <span class="badge b-done">확정</span></p>
+  <div class="why"><b>근거.</b> 한국은 직업 수가 많고(1,270 vs 미국 923) 직업당 작업은 적어(평균 12.7) ONET의 4작업 기준이 과도하게 빡빡. 한 단계 완화하되 잡음은 응집도(≥0.70)·8조항으로 통제. 결과: DWA 1,192개·8조항 100%·응집도 중앙값 0.895.</div>
+  <p><b>D2-3. DWA 절단 수준</b> <span class="badge b-todo">미확정 — 검토서 회람 중</span></p>
+  <table>
+    <caption>표 9. DWA 절단 수준 선택지</caption>
+    <thead><tr><th>선택지</th><th>DWA 수</th><th>특징·장점</th><th>단점</th></tr></thead>
+    <tbody>
+      <tr><td>A. 재절단(세분)</td><td>~1,766</td><td>ONET 9:1 비율 정렬·국제 비교성↑</td><td>Stage 3(IWA) 재실행 필요(라벨만, 군집은 캐시)</td></tr>
+      <tr><td>B. 현행 유지</td><td><b>1,192</b></td><td>이미 전수 완료·추가 작업 0</td><td>TASK:DWA 13.6:1로 ONET보다 압축적</td></tr>
+      <tr><td>C. 절충</td><td>~1,586</td><td>A·B 중간</td><td>재실행 필요</td></tr>
+    </tbody>
+  </table>
+  <div class="interp"><b>의사결정 함의(실증).</b> IWA·GWA 골격은 같은 트리의 상위 절단이라 <b>DWA 절단 선택과 무관하게 동일</b>하다. DWA 절단이 좌우하는 것은 ① DWA층 상세도·ONET 비교가능성 ② 하위 라벨(명명)뿐. 따라서 본 결정은 "상세도 vs 기완료" 트레이드오프이며, 상위 계층 품질에는 영향이 없다.</div>
+  <div class="caveat"><b>이슈(특성).</b> Cross-Family 41%(vs ONET 12%)·TASK:DWA 13.6:1(vs 9:1) — KSCO 해설서가 활동을 범용적으로 기술하는 자료원 특성. 결함이 아니라 직업 간 공통활동(전직·변별 분석 기초)이라는 발견.</div>
+
+  <h3><span class="num">7.3</span>Stage 3 (IWA) 의사결정</h3>
+  <p><b>D3-1. 도출 방법 — 같은 트리 상위절단(방법 A) vs DWA 재군집</b> <span class="badge b-done">확정: 방법 A</span> · 같은 나무를 더 높이 자르면 "같은 DWA는 반드시 같은 IWA"가 수학적으로 보장(중복배정 0). 재군집은 이 일관성이 깨질 위험.</p>
+  <p><b>D3-2. 절단 수준 k=214</b> <span class="badge b-done">확정 2026-06-11</span> · 자연 gap이 평탄(단일 정답 없음)하여 ONET 비율(DWA:IWA 6.3:1)을 기준선으로 채택 → 유효 IWA 178·6.7:1. 절단수준 검토서(HTML)에 k 120~290 스윕 정량 비교 수록.</p>
+  <p><b>D3-3. 조항4(광의 일반어) — 완화 vs 엄격</b> <span class="badge b-done">확정: IWA서 경고로 완화</span></p>
+  <table>
+    <caption>표 10. IWA 조항4 처리</caption>
+    <thead><tr><th>선택지</th><th>장점</th><th>단점</th><th>채택</th></tr></thead>
+    <tbody>
+      <tr><td><b>완화(경고)</b></td><td>"문서·자료를 읽어 활용한다"식 정당한 포괄 목적어 허용(ONET IWA 규약 일치)</td><td>일반화 과도 가능 → 프롬프트·추상도 QC로 보완</td><td><b>○</b></td></tr>
+      <tr><td>엄격 유지</td><td>형식 일관</td><td><b>정상 IWA 차단</b>(IWA는 본질상 일반적)</td><td>✗</td></tr>
+    </tbody>
+  </table>
+  <p>※ 조항1(단일 핵심 서술어)은 <b>엄격 유지</b> — "~하여 ~하고 ~한다" 나열을 막아 한 상위 동사로 흡수. 결과 7조항 100%.</p>
+
+  <h3><span class="num">7.4</span>Stage 4 (GWA) 의사결정</h3>
+  <p><b>D4-1. GWA 정본 방식 선택</b> <span class="badge b-todo">미확정 — ⓒ 권장</span></p>
+  <table>
+    <caption>표 11. GWA 도출 세 방식 — 특징·장단점</caption>
+    <thead><tr><th>방식</th><th>특징</th><th>장점</th><th>단점</th><th>ONET 정합</th></tr></thead>
+    <tbody>
+      <tr><td><b>ⓐ ONET 41 채택</b></td><td>ONET 41 번역·채택, IWA 매핑</td><td>국제 비교 100% 보장·즉시 호환</td><td>한국 고유성 약함·미사용 8개 발생</td><td>동일 어휘</td></tr>
+      <tr><td><b>ⓑ 순수 상향식</b></td><td>데이터만으로 자생</td><td>가설검증·학술 기여(자생 구조 실증)</td><td>직종 축으로 갈림·추상활동 22개 미표출</td><td>표출 19/41</td></tr>
+      <tr><td><b>ⓒ 연역적 한국형</b> <span class="badge b-now">권장</span></td><td>ONET <b>방법</b>만 복제(이론→검증), 41목록 미사용. 한국 데이터+이론 자체 설계 36개</td><td>형태는 ONET형(4영역)·내용은 한국 고유·추상활동 복원</td><td>theory 범주는 데이터 얇음→국면2 측정 필요</td><td>28/41 distinct</td></tr>
+    </tbody>
+  </table>
+  <p><b>D4-2. IWA→GWA 매핑 방식 — 임베딩 단독 vs Opus 전수 분류</b> <span class="badge b-done">확정: Opus 전수 분류</span></p>
+  <div class="why"><b>근거 데이터.</b> GWA는 추상 수준이 높아 임베딩 최근접의 변별력이 낮다 — 상위 후보 간 cosine 격차 <b>중앙값 0.017</b>, 178개 중 임베딩만으로 확실 분리는 <b>19개뿐</b>. 따라서 41(또는 36) 범주를 in-context로 주고 전문가형 AI가 zero-shot 분류(ONET이 전문가 판단으로 한 것과 동형). 임베딩은 후보 생성·cosine 참고치로 격하.</div>
+  <p><b>D4-3. 이론보강(basis=theory) 범주의 채움</b> <span class="badge b-todo">설계 동의 대기</span> · "목표·전략의 수립" 등 추출로는 얇은 추상활동을 <b>국면 2(직업별 측정)</b>로 채우는 설계 — ONET도 평정으로 채웠다.</p>
+
+  <h3><span class="num">7.5</span>미확정 의사결정 요약</h3>
+  <table>
+    <caption>표 12. 연구진 결정 대기 항목</caption>
+    <thead><tr><th>코드</th><th>의사결정</th><th>현재 권고</th><th>기한</th></tr></thead>
+    <tbody>
+      <tr><td>D2-3</td><td>DWA 절단 수준(A/B/C)</td><td>검토서 회람 후 결정</td><td>7월 보완 전</td></tr>
+      <tr><td>D4-1</td><td>GWA 정본 방식(ⓐ/ⓑ/ⓒ)</td><td><b>ⓒ 연역적(병행 ⓐ 제공)</b></td><td>7월 방식 확정</td></tr>
+      <tr><td>D1-2</td><td>&lt;8 작업 직업 보강 범위(KJD·NCS)</td><td>시범적용 단계 우선 투입</td><td>8월 시범 전</td></tr>
+      <tr><td>국면2</td><td>직업별 측정 6대 결정(§8.2)</td><td>시범 2개 중분류 가동 전 일괄</td><td>8월 시범 전</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 4 -->
+<section id="s4">
+  <h2><span class="num">8.</span>마일스톤 로드맵</h2>
+  <p class="lead">목차안 일정표 정렬. 현재(2026-06-11)는 <b>직무활동체계 4계층(TASK→DWA→IWA→GWA)을 전수 구축 완료</b>하여 일정을 선행하는 상태다. 다음은 검토·보완 및 국면 2(직업별 측정, 시범 2개 중분류)이다.</p>
+
+  <div class="figwrap">
+  <svg viewBox="0 0 740 280" role="img" aria-label="6월~11월 마일스톤 간트">
+    <!-- 월 눈금 -->
+    <g font-size="11.5" fill="#697587" text-anchor="middle" font-weight="700">
+      <text x="120" y="20">6월</text><text x="230" y="20">7월</text><text x="340" y="20">8월</text><text x="450" y="20">9월</text><text x="560" y="20">10월</text><text x="660" y="20">11월</text></g>
+    <g stroke="#eef1f6"><line x1="175" y1="28" x2="175" y2="255"/><line x1="285" y1="28" x2="285" y2="255"/><line x1="395" y1="28" x2="395" y2="255"/><line x1="505" y1="28" x2="505" y2="255"/><line x1="615" y1="28" x2="615" y2="255"/></g>
+    <!-- 오늘 라인 -->
+    <line x1="143" y1="28" x2="143" y2="262" stroke="#7a2e3a" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="143" y="276" font-size="11" fill="#7a2e3a" text-anchor="middle" font-weight="700">오늘 6/11</text>
+    <!-- 바 -->
+    <g font-size="11.5" fill="#fff" font-weight="700">
+      <rect x="65" y="36" width="110" height="22" rx="4" fill="#1f6b3a"/><text x="120" y="51" text-anchor="middle">Stage0~2 전수완료</text>
+      <rect x="65" y="64" width="110" height="22" rx="4" fill="#1f4e8c"/><text x="120" y="79" text-anchor="middle">IWA·GWA 초안</text>
+      <rect x="175" y="92" width="110" height="22" rx="4" fill="#0f6b5f" opacity="0.85"/><text x="230" y="107" text-anchor="middle">검토·보완</text>
+      <rect x="285" y="120" width="220" height="22" rx="4" fill="#5b3a8a" opacity="0.85"/><text x="395" y="135" text-anchor="middle">중분류 2개 시범적용</text>
+      <rect x="505" y="148" width="130" height="22" rx="4" fill="#9a6212" opacity="0.85"/><text x="570" y="163" text-anchor="middle">최종보고</text>
+    </g>
+    <!-- 마일스톤 마커 -->
+    <g font-size="10.5" fill="#152544">
+      <circle cx="175" cy="195" r="5" fill="#7a2e3a"/><text x="175" y="212" text-anchor="middle">6/30 초안</text>
+      <circle cx="285" cy="195" r="5" fill="#7a2e3a"/><text x="285" y="212" text-anchor="middle">7/30 중간</text>
+      <circle cx="395" cy="195" r="5" fill="#7a2e3a"/><text x="395" y="212" text-anchor="middle">8/30 시범</text>
+      <circle cx="505" cy="195" r="5" fill="#7a2e3a"/><text x="505" y="212" text-anchor="middle">9/30 검증</text>
+      <circle cx="615" cy="195" r="5" fill="#7a2e3a"/><text x="640" y="212" text-anchor="middle">11초 최종</text></g>
+    <text x="60" y="250" font-size="10.5" fill="#a98a55">※ 직무활동체계(TASK→GWA)는 전수 구축, 직업별 측정은 중분류 2개 시범 — 전수확대는 향후 과제</text>
+  </svg>
+  <div class="figcap">그림 2. 6~11월 마일스톤 간트. 막대=가동 구간, 적색 점=납품 마일스톤.</div>
+  </div>
+
+  <table>
+    <caption>표 13. 마일스톤 일정·산출</caption>
+    <thead><tr><th>시기</th><th>마일스톤</th><th>산출</th></tr></thead>
+    <tbody>
+      <tr><td>~2026-06</td><td>직무활동체계 초안</td><td><b>TASK→DWA→IWA→GWA 4계층 전수 구축 완료</b> <span class="badge b-done">선행 달성</span> · GWA 3방식(ONET채택·상향식·연역적) 실측 + 설계서·결과해설서</td></tr>
+      <tr><td>2026-07~</td><td>검토·보완 착수</td><td>4계층 검토·보완, <b>GWA 방식 확정(연역적 ⓒ 권장)</b>, 중분류 2개 시범적용 설계, 검토 웹 베타, ONET 매핑 검증</td></tr>
+      <tr><td>2026-08</td><td>시범적용</td><td><b>중분류 2개</b> 직업별 GWA 중요도·수준 측정 + 책무성(R3축) 전문가 평정</td></tr>
+      <tr><td>2026-09</td><td>분석·검증</td><td>시범 결과 분석, 전문가 검토 반영, 한국형 GWA·IWA·DWA 사전 잠정안</td></tr>
+      <tr><td>2026-11-초</td><td>최종보고서</td><td>시범 2개 중분류 결과 + 사전 확정 + 분류개편 시뮬레이션 + <b>전수확대 로드맵(향후 과제)</b></td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">8.1</span>다음 권장 진행 — 2단 구조</h3>
+  <p><b>① 직무활동체계 전수 구축</b> (진행 중, ~6월 초안): 4계층 중 <b>TASK·DWA 2계층 전수 완료</b>(2026-06-11). 남은 3단계(IWA)·4단계(GWA)를 동일 응집트리의 상위 절단으로 이어 가동 → <b>6월 내 GWA까지 4계층 전수 초안 완성</b>. 임베딩·트리는 캐시되어 재계산 없이 진행하며, 0~2단계 산출은 데이터베이스에 저장돼 있어 다시 돌릴 필요가 없다. 7월부터 검토·보완.</p>
+  <p><b>② 직업별 측정</b> (체계 초안 후, <b>중분류 2개 시범적용</b>): 구축된 체계 위에서 각 직업의 GWA 중요도·수준 + 책무성을 <b>도메인 전문가 평정</b>으로 측정 → 프레임워크 검증 → KSCO 개편 근거. <b>전 직업 전수 확대는 본 사업 이후 향후 과제</b>로 둔다.</p>
+
+  <h3><span class="num">8.2</span>직업별 측정(②) 가동 전 필수 의사결정 <span class="badge b-todo">미확정</span></h3>
+  <p class="lead">아래 6개 의사결정이 확정되기 전에는 직업별 측정을 가동하지 않는다.</p>
+  <table>
+    <caption>표 14. 직업별 측정 가동 전 의사결정 체크리스트</caption>
+    <thead><tr><th>항목</th><th>방안(요약)</th></tr></thead>
+    <tbody>
+      <tr><td>A. 직업별 GWA 선별</td><td>전부 측정·전부제시 / 전부측정·임계(≥3.0)제시 / 상위 N개 / <b>2단계 스크리닝(권장 후보)</b></td></tr>
+      <tr><td>B. 측정 척도·주체</td><td>중요도 1~5 · 수준 0~7(0~100 표준화 병기), 도메인 전문가 평정(보조: 작업 빈도 추정)</td></tr>
+      <tr><td>Responsibility</td><td>관리·자원·안전 3축(ISCO 개정안 정렬) — 축·척도·GWA 관계 결정</td></tr>
+      <tr><td>프레임워크 범위</td><td>1안(Task·GWA) / <b>2안(+Responsibility·작업환경·도구, 권장)</b> / 3안(+지식·기술·임금 — NCS·임금포털·직업사전)</td></tr>
+      <tr><td>시범 2개 중분류 선정</td><td>직무활동체계 전수 완료 후 선정(후보: 28·22·24)</td></tr>
+      <tr><td>전문가 풀·평정 운영</td><td>중분류별 전문가 섭외·평정 매뉴얼·검토 웹(Streamlit)</td></tr>
+    </tbody>
+  </table>
+  <div class="caveat"><b>참고.</b> 미국 O*NET은 "41개 전부 측정 + 평균 중요도 3.0 이상만 의미있게 제시"의 절충을 쓴다. 전부냐 상위냐는 둘 중 하나를 고르는 문제가 아니다 — 본 연구도 이 절충(전부 측정 후 임계 이상 제시, 또는 2단계 방식)을 우선 검토한다.</div>
+
+  <a class="crossref" href="#">▷ 각 단계의 도출 방법·이론은 「직무활동체계 도출 방법론」 문서 참조</a>
+</section>
+
+<!-- 5 -->
+<section id="s5">
+  <h2><span class="num">9.</span>연구진 검토 요청사항</h2>
+  <ul class="tight">
+    <li><b>★ GWA 도출 방식 확정</b> — 세 방식 중 정본 선택. ⓐ ONET 41 채택(국제정합 최강), ⓑ 순수 상향식(가설검증·학술), <b>ⓒ 연역적 한국형 GWA 36개(권장 — ONET 방법 복제, 한국 내용, ONET 28/41 정합)</b>. 보고서 내 비중과 KSCO 개편 적용안 결정.</li>
+    <li><b>연역적 GWA(ⓒ) 36개 목록·4영역 배치 검토</b> — 명사형 범주명·영역 귀속(정보입력5·정신과정8·작업산출11·타인상호작용12)의 적정성, 한국 맥락 세분(기능·제작·돌봄) 수용 여부.</li>
+    <li><b>이론보강(basis=theory) 범주의 측정 연계</b> — "목표·전략의 수립" 등 추출로는 얇은 추상활동을 국면 2 직업별 측정으로 채우는 설계 동의 여부(ONET도 평정으로 채움).</li>
+    <li><b>DWA 추상 수준·Cross-Family 41%</b> — 범용활동 일반화 수준 적정성(IWA 단계서 자연 분리 확인됨).</li>
+    <li><b>DWA·IWA 이름 작성 규칙(한국어판)</b> — 명사 일반화 수준·예시구 허용 범위 적정성(전수 준수율 100%, IWA는 R4 완화).</li>
+    <li><b>&lt;8 TASK 직업 128개 보강 정책</b> — KJD·NCS 보강 범위·우선순위, 시범적용 단계 반영 여부.</li>
+    <li><b>직업당 중앙값 12(vs O*NET 20) 설명 프레이밍</b> — 자료원 차이(해설서 텍스트 vs 현장 수집)임을 명확히 하는 보고 문구.</li>
+  </ul>
+</section>
+
+<footer>
+  국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 — 연구진 내부 보고 [2/2 진행현황]<br>
+  전체 로드맵 및 진행현황 v2.0 (2026-06-11, 직무활동체계 4계층 전수 구축 완료 기준)<br>
+  함께 보는 문서: 직무활동체계 도출 방법론
+</footer>
+
+</div>
+</body>
+</html>

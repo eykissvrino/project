@@ -1,0 +1,111 @@
+{
+  "ksco_code": "75399",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "농업용 기계장비",
+      "full_statement": "농업용 기계장비를 설치한다.",
+      "source_sentence": "농업용 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검사하다",
+      "object": "농업용 기계장비",
+      "full_statement": "농업용 기계장비를 검사한다.",
+      "source_sentence": "농업용 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "정비하다",
+      "object": "농업용 기계장비",
+      "full_statement": "농업용 기계장비를 정비한다.",
+      "source_sentence": "농업용 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수리하다",
+      "object": "농업용 기계장비",
+      "full_statement": "농업용 기계장비를 수리한다.",
+      "source_sentence": "농업용 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "주입하다",
+      "object": "차량 윤활유 및 그리스",
+      "full_statement": "기계에 차량 윤활유 및 그리스를 주입한다.",
+      "source_sentence": "기계에 차량 윤활유 및 그리스를 주입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설치하다",
+      "object": "기타 기계장비",
+      "full_statement": "농업용 또는 기타 기계장비를 설치한다.",
+      "source_sentence": "농업용 또는 기타 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "검사하다",
+      "object": "기타 기계장비",
+      "full_statement": "기타 기계장비를 검사한다.",
+      "source_sentence": "농업용 또는 기타 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "정비하다",
+      "object": "기타 기계장비",
+      "full_statement": "기타 기계장비를 정비한다.",
+      "source_sentence": "농업용 또는 기타 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수리하다",
+      "object": "기타 기계장비",
+      "full_statement": "기타 기계장비를 수리한다.",
+      "source_sentence": "농업용 또는 기타 기계장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.5
+    },
+    {
+      "verb": "설치하다",
+      "object": "기계식 장비",
+      "full_statement": "공업용 기계 및 기계식 장비를 설치한다.",
+      "source_sentence": "기계장비설치 및 정비원은 농업용 또는 공업용 기계(운송 기계 제외) 및 기계식 장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계식 장비",
+      "full_statement": "공업용 기계 및 기계식 장비를 정비한다.",
+      "source_sentence": "기계장비설치 및 정비원은 농업용 또는 공업용 기계(운송 기계 제외) 및 기계식 장비를 설치, 검사, 정비 및 수리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "설치하다",
+      "object": "제설용 기계",
+      "full_statement": "제설용 기계를 설치한다.",
+      "source_sentence": "제설용 기계설치 및 정비원",
+      "derived_from": "세세분류 직업 예시→상속 활동 특화",
+      "confidence": 0.4
+    },
+    {
+      "verb": "정비하다",
+      "object": "제설용 기계",
+      "full_statement": "제설용 기계를 정비한다.",
+      "source_sentence": "제설용 기계설치 및 정비원",
+      "derived_from": "세세분류 직업 예시→상속 활동 특화",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

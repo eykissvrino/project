@@ -1,0 +1,16 @@
+{
+  "k_requested": 41,
+  "k_effective": 41,
+  "n_iwa": 178,
+  "iwa_per_gwa": 4.34,
+  "onet_ratio_ref": 8.1,
+  "max_cluster": 12,
+  "max_cluster_pct": 6.7,
+  "min_cluster": 1,
+  "singletons": 12,
+  "onet_distinct_matched": 19,
+  "onet_distinct_matched_strong(cos>=.55)": 15,
+  "onet_coverage_41": 0.463,
+  "mean_nearest_cosine": 0.602,
+  "domain_self_consistency": 0.659
+}

@@ -1,0 +1,143 @@
+{
+  "ksco_code": "44121",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "선실관리 및 음식물 조달 작업",
+      "full_statement": "선실관리 및 음식물 조달 작업을 계획한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "선실관리 및 음식물 조달 작업",
+      "full_statement": "선실관리 및 음식물 조달 작업을 조정한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "선실관리 및 음식물 조달 작업",
+      "full_statement": "선실관리 및 음식물 조달 작업을 감독한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "도모하다",
+      "object": "승객의 요청에 대한 편의",
+      "full_statement": "승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "안내하다",
+      "object": "선실",
+      "full_statement": "승선하는 승객에게 선실을 안내한다.",
+      "source_sentence": "승선하는 승객에게 선실을 안내하고 선박의 편의장소에 대하여 설명한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "선박의 편의장소",
+      "full_statement": "선박의 편의장소에 대하여 설명한다.",
+      "source_sentence": "승선하는 승객에게 선실을 안내하고 선박의 편의장소에 대하여 설명한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "구명조끼의 착용법",
+      "full_statement": "승객에게 구명조끼의 착용법을 설명한다.",
+      "source_sentence": "승객에게 구명조끼의 착용법, 구명보트의 탑승요령 등을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "구명보트의 탑승요령",
+      "full_statement": "승객에게 구명보트의 탑승요령을 설명한다.",
+      "source_sentence": "승객에게 구명조끼의 착용법, 구명보트의 탑승요령 등을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "선박의 규모 및 항로, 도착예정시간",
+      "full_statement": "선박의 규모 및 항로, 도착예정시간 등을 설명한다.",
+      "source_sentence": "선박의 규모 및 항로, 도착예정시간 등을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "식사나 음료",
+      "full_statement": "승객에게 식사나 음료를 제공한다.",
+      "source_sentence": "식사나 음료를 제공하며, 요금을 수령하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수령하다",
+      "object": "요금",
+      "full_statement": "식사나 음료에 대한 요금을 수령한다.",
+      "source_sentence": "식사나 음료를 제공하며, 요금을 수령하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조달하다",
+      "object": "음식물",
+      "full_statement": "선실 운영에 필요한 음식물을 조달한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "선실",
+      "full_statement": "여객선이나 화물선의 선실을 관리한다.",
+      "source_sentence": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고 승객의 전반적인 요청에 대하여 편의를 도모한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "안내하다",
+      "object": "승객에게 필요한 정보",
+      "full_statement": "승객에게 필요한 정보를 안내한다.",
+      "source_sentence": "선박과 열차에서 음료를 제공하는 등 여객이 안전하고 편안한 여행을 할 수 있도록 각종 편의를 도모하며, 승객에게 필요한 정보를 안내한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "도모하다",
+      "object": "여객의 안전하고 편안한 여행을 위한 편의",
+      "full_statement": "여객이 안전하고 편안한 여행을 할 수 있도록 각종 편의를 도모한다.",
+      "source_sentence": "선박과 열차에서 음료를 제공하는 등 여객이 안전하고 편안한 여행을 할 수 있도록 각종 편의를 도모하며, 승객에게 필요한 정보를 안내한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "여객선이나 화물선 선상",
+      "evidence_span": "여객선이나 화물선에서 선실관리 및 음식물 조달에 종사하는 자의 작업을 계획, 조정, 감독하고"
+    },
+    {
+      "category": "사회적",
+      "value": "승객 응대(고객 요청 대응·편의 도모)",
+      "evidence_span": "승객의 전반적인 요청에 대하여 편의를 도모한다."
+    },
+    {
+      "category": "위험",
+      "value": "비상 안전(구명조끼·구명보트) 관련 업무",
+      "evidence_span": "승객에게 구명조끼의 착용법, 구명보트의 탑승요령 등을 설명한다."
+    }
+  ]
+}

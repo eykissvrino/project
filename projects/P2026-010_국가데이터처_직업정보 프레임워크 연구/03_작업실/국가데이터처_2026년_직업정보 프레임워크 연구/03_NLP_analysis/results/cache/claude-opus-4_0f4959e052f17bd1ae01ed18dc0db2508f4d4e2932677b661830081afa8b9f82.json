@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28332",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "PR 프로그램",
+      "full_statement": "대중 인지도 향상을 위해 PR프로그램을 기획한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "홍보 매체",
+      "full_statement": "미디어·인쇄·전자매체 등 적절한 홍보매체를 개발한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "홍보 제작",
+      "full_statement": "PR프로그램의 제작 과정을 감독하고 조정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "홍보 효과",
+      "full_statement": "PR프로그램 실행 후 효과를 조사하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

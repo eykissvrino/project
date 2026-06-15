@@ -1,0 +1,138 @@
+{
+  "ksco_code": "14114",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "광물 채굴 및 채취 활동",
+      "full_statement": "석탄, 석유, 천연가스, 금속·비금속광물의 채굴 및 채취와 관련된 활동을 기획한다.",
+      "source_sentence": "석탄, 석유, 천연가스, 금속‧비금속광물 채굴 및 채취 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "광물 채굴 및 채취 활동",
+      "full_statement": "석탄, 석유, 천연가스, 금속·비금속광물의 채굴 및 채취와 관련된 활동을 관리한다.",
+      "source_sentence": "석탄, 석유, 천연가스, 금속‧비금속광물 채굴 및 채취 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "광물 채굴 및 채취 활동",
+      "full_statement": "석탄, 석유, 천연가스, 금속·비금속광물의 채굴 및 채취와 관련된 활동을 조정한다.",
+      "source_sentence": "석탄, 석유, 천연가스, 금속‧비금속광물 채굴 및 채취 등과 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기획하다",
+      "object": "광산·정유 업체 운영",
+      "full_statement": "광산이나 정유 업체의 운영을 기획한다.",
+      "source_sentence": "광업 관리자는 광산이나 정유 업체의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "광산·석유·가스 산업 운영",
+      "full_statement": "광산, 석유 및 가스 산업에서 운영을 감독한다.",
+      "source_sentence": "광산, 석유 및 가스 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분석하다",
+      "object": "광산·석유·가스 산업 운영",
+      "full_statement": "광산, 석유 및 가스 산업에서 운영을 분석한다.",
+      "source_sentence": "광산, 석유 및 가스 산업에서 운영을 감독하고 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "광산 작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 하기 위하여 채굴현장에서 작업자들을 관리한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 하기 위하여 건설현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "광산 작업자",
+      "full_statement": "작업절차가 명세서와 맞도록 하기 위하여 채굴현장에서 작업자들을 감독한다.",
+      "source_sentence": "작업절차가 명세서와 맞도록 하기 위하여 건설현장에서 작업자들을 관리하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "고용하다",
+      "object": "하도급업자 및 부하직원",
+      "full_statement": "하도급업자 및 부하직원을 고용한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "하도급업자 및 부하직원의 활동",
+      "full_statement": "하도급업자 및 부하직원의 활동을 감독한다.",
+      "source_sentence": "하도급업자 및 부하직원을 고용하고 활동을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "판단하다",
+      "object": "인력·장비·기술의 적정성",
+      "full_statement": "채굴 운영에 투입되는 인력, 장비 및 사용되는 기술이 적정한지 판단한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "생산현장 효율성",
+      "full_statement": "작업스케줄이나 장비를 바꾸기 위해 채취 생산현장의 효율성을 평가한다.",
+      "source_sentence": "인력, 장비 및 사용되는 기술이 적정한지 판단하고 필요할 때 작업스케줄이나 장비를 바꾸기 위해 생산현장의 효율성을 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전규정 준수 여부",
+      "full_statement": "안전규정을 지키고 있는지 확인한다.",
+      "source_sentence": "안전규정을 지키고 있는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "시설 유지관리 활동",
+      "full_statement": "광산 구조물, 시설 및 시스템의 유지관리와 관련된 활동을 관리한다.",
+      "source_sentence": "건설, 구조물, 시설, 조경 및 시스템의 유지관리와 관련된 활동을 계획, 조직하고 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "계획하다",
+      "object": "시설 유지관리 활동",
+      "full_statement": "광산 구조물, 시설 및 시스템의 유지관리와 관련된 활동을 계획한다.",
+      "source_sentence": "건설, 구조물, 시설, 조경 및 시스템의 유지관리와 관련된 활동을 계획, 조직하고 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "위험",
+      "value": "안전규정 준수 관리가 요구되는 작업환경",
+      "evidence_span": "안전규정을 지키고 있는지 확인한다."
+    },
+    {
+      "category": "사회적",
+      "value": "작업자·하도급업자 관리 및 감독(팀 관리)",
+      "evidence_span": "건설현장에서 작업자들을 관리하고 감독한다."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "ksco_code": "24930",
+  "tasks": [
+    {
+      "verb": "검사하다",
+      "object": "고객의 시력",
+      "full_statement": "고객의 시력을 검사한다.",
+      "source_sentence": "고객의 시력을 검사하고 안경, 콘택트렌즈 또는 기타 시력증진을 위한 처방을 하며 의학적 치료가 요구되는 경우는 안과 의사에게 보낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "처방하다",
+      "object": "안경·콘택트렌즈",
+      "full_statement": "고객에게 안경 및 콘택트렌즈를 처방한다.",
+      "source_sentence": "고객에게 안경 및 콘택트렌즈를 처방하고 맞추어 주며, 시력 보조구의 사용법을 알려준다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "처방하다",
+      "object": "시력증진용 처방",
+      "full_statement": "안경, 콘택트렌즈 또는 기타 시력증진을 위한 처방을 한다.",
+      "source_sentence": "고객의 시력을 검사하고 안경, 콘택트렌즈 또는 기타 시력증진을 위한 처방을 하며 의학적 치료가 요구되는 경우는 안과 의사에게 보낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "의뢰하다",
+      "object": "안과 의사",
+      "full_statement": "의학적 치료가 요구되는 경우 고객을 안과 의사에게 보낸다.",
+      "source_sentence": "고객의 시력을 검사하고 안경, 콘택트렌즈 또는 기타 시력증진을 위한 처방을 하며 의학적 치료가 요구되는 경우는 안과 의사에게 보낸다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "얼굴형태·눈 크기·동공간 거리·각막 두께·코 높이",
+      "full_statement": "얼굴형태, 눈의 크기, 두 눈동자간의 거리, 각막의 두께 및 코의 높이 등을 측정한다.",
+      "source_sentence": "얼굴형태, 눈의 크기, 두 눈동자간의 거리, 각막의 두께 및 코의 높이 등을 측정하여 고객의 얼굴에 가장 맞는 크기와 모양의 안경테를 추천한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "추천하다",
+      "object": "안경테",
+      "full_statement": "고객의 얼굴에 가장 맞는 크기와 모양의 안경테를 추천한다.",
+      "source_sentence": "얼굴형태, 눈의 크기, 두 눈동자간의 거리, 각막의 두께 및 코의 높이 등을 측정하여 고객의 얼굴에 가장 맞는 크기와 모양의 안경테를 추천한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "선택하다",
+      "object": "렌즈",
+      "full_statement": "시력에 맞는 렌즈를 선택한다.",
+      "source_sentence": "시력에 맞는 렌즈를 선택하여 안경테에 끼우고 고객의 얼굴에 어울리도록 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "끼우다",
+      "object": "렌즈",
+      "full_statement": "선택한 렌즈를 안경테에 끼운다.",
+      "source_sentence": "시력에 맞는 렌즈를 선택하여 안경테에 끼우고 고객의 얼굴에 어울리도록 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "안경",
+      "full_statement": "안경을 고객의 얼굴에 어울리도록 조정한다.",
+      "source_sentence": "시력에 맞는 렌즈를 선택하여 안경테에 끼우고 고객의 얼굴에 어울리도록 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "맞추다",
+      "object": "안경·콘택트렌즈",
+      "full_statement": "고객에게 안경 및 콘택트렌즈를 맞추어 준다.",
+      "source_sentence": "고객에게 안경 및 콘택트렌즈를 처방하고 맞추어 주며, 시력 보조구의 사용법을 알려준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설명하다",
+      "object": "렌즈·콘택트렌즈 세척 및 조정방법",
+      "full_statement": "렌즈 또는 콘택트렌즈의 세척 및 조정방법을 설명한다.",
+      "source_sentence": "렌즈 또는 콘택트렌즈의 세척 및 조정방법을 설명하고 시력보호를 위한 적합한 조명 및 시력 보조기구에 관하여 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조언하다",
+      "object": "조명 및 시력 보조기구",
+      "full_statement": "시력보호를 위한 적합한 조명 및 시력 보조기구에 관하여 조언한다.",
+      "source_sentence": "렌즈 또는 콘택트렌즈의 세척 및 조정방법을 설명하고 시력보호를 위한 적합한 조명 및 시력 보조기구에 관하여 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "시력 보조구 사용법",
+      "full_statement": "고객에게 시력 보조구의 사용법을 알려준다.",
+      "source_sentence": "고객에게 안경 및 콘택트렌즈를 처방하고 맞추어 주며, 시력 보조구의 사용법을 알려준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "판매하다",
+      "object": "보안경·색안경·특수 안경",
+      "full_statement": "보안경, 색안경 및 기타 특수 안경을 판매한다.",
+      "source_sentence": "보안경, 색안경 및 기타 특수 안경을 판매하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "고객에게 안경 및 콘택트렌즈를 처방하고 맞추어 주며, 시력 보조구의 사용법을 알려준다."
+    }
+  ]
+}

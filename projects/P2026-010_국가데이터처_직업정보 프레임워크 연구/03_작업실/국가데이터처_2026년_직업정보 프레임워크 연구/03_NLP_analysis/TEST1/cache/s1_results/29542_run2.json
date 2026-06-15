@@ -1,0 +1,71 @@
+{
+  "ksco_code": "29542",
+  "tasks": [
+    {
+      "verb": "디자인하다",
+      "object": "포장용기",
+      "full_statement": "각종 제품의 포장용기를 홍보성과 실용성을 고려하여 디자인한다.",
+      "source_sentence": "각종 제품의 포장용기, 포장지, 포장상자 등을 홍보성, 실용성 등을 고려하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "디자인하다",
+      "object": "포장지",
+      "full_statement": "각종 제품의 포장지를 홍보성과 실용성을 고려하여 디자인한다.",
+      "source_sentence": "각종 제품의 포장용기, 포장지, 포장상자 등을 홍보성, 실용성 등을 고려하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "디자인하다",
+      "object": "포장상자",
+      "full_statement": "각종 제품의 포장상자를 홍보성과 실용성을 고려하여 디자인한다.",
+      "source_sentence": "각종 제품의 포장용기, 포장지, 포장상자 등을 홍보성, 실용성 등을 고려하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "디자인하다",
+      "object": "화장품 포장용기",
+      "full_statement": "화장품 포장용기, 포장지, 포장상자 등을 디자인한다.",
+      "source_sentence": "포장 디자이너는 화장품 포장용기, 포장지, 포장상자 등을 디자인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "고려하다",
+      "object": "홍보성과 실용성",
+      "full_statement": "포장 디자인 시 제품의 홍보성과 실용성을 고려한다.",
+      "source_sentence": "각종 제품의 포장용기, 포장지, 포장상자 등을 홍보성, 실용성 등을 고려하여 디자인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "도안하다",
+      "object": "이미지",
+      "full_statement": "정보가 시각을 통해 효율적으로 전달되도록 이미지를 도안한다.",
+      "source_sentence": "정보가 시각을 통하여 효율적으로 표현되고 전달될 수 있도록, 이미지를 도안하고 디자인된 결과를 시각적으로 표현한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "표현하다",
+      "object": "디자인 결과",
+      "full_statement": "디자인된 결과를 시각적으로 표현한다.",
+      "source_sentence": "정보가 시각을 통하여 효율적으로 표현되고 전달될 수 있도록, 이미지를 도안하고 디자인된 결과를 시각적으로 표현한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "설계하다",
+      "object": "제품",
+      "full_statement": "생활에 필요한 제품을 시각적으로 아름답거나 실용성 있게 설계한다.",
+      "source_sentence": "생활하는데 필요한 제품, 패션, 인테리어, 미디어 콘텐츠 등을 시각적으로 아름답게 혹은 실용성 있게 설계하고 디자인한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

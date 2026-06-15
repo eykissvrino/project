@@ -1,0 +1,114 @@
+{
+  "ksco_code": "26442",
+  "tasks": [
+    {
+      "verb": "가르치다",
+      "object": "요양보호 이론",
+      "full_statement": "수강생들에게 요양보호 분야에 관한 이론을 가르친다.",
+      "source_sentence": "수강생들에게 요양보호 및 간병 분야에 관한 이론과 기술을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가르치다",
+      "object": "요양보호 기술",
+      "full_statement": "수강생들에게 요양보호 분야에 관한 기술을 가르친다.",
+      "source_sentence": "수강생들에게 요양보호 및 간병 분야에 관한 이론과 기술을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가르치다",
+      "object": "간병 이론",
+      "full_statement": "수강생들에게 간병 분야에 관한 이론을 가르친다.",
+      "source_sentence": "수강생들에게 요양보호 및 간병 분야에 관한 이론과 기술을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "가르치다",
+      "object": "간병 기술",
+      "full_statement": "수강생들에게 간병 분야에 관한 기술을 가르친다.",
+      "source_sentence": "수강생들에게 요양보호 및 간병 분야에 관한 이론과 기술을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지도하다",
+      "object": "요양보호 이론",
+      "full_statement": "요양보호학원에서 요양보호에 관한 이론을 지도한다.",
+      "source_sentence": "요양보호학원에서 환자보호, 간병요령 등 요양보호에 관한 이론과 실습을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "요양보호 실습",
+      "full_statement": "요양보호학원에서 요양보호에 관한 실습을 지도한다.",
+      "source_sentence": "요양보호학원에서 환자보호, 간병요령 등 요양보호에 관한 이론과 실습을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가르치다",
+      "object": "환자보호 요령",
+      "full_statement": "수강생들에게 환자보호 요령을 가르친다.",
+      "source_sentence": "요양보호학원에서 환자보호, 간병요령 등 요양보호에 관한 이론과 실습을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가르치다",
+      "object": "간병요령",
+      "full_statement": "수강생들에게 간병요령을 가르친다.",
+      "source_sentence": "요양보호학원에서 환자보호, 간병요령 등 요양보호에 관한 이론과 실습을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안",
+      "full_statement": "요양보호 교육을 위한 강의안을 작성한다.",
+      "source_sentence": "다양한 교육수준에서 학문에 대한 이론 및 실제를 가르치고 해당 학문분야를 연구하여 그에 대한 개념 및 운영기법을 개선, 개발하고 강의안, 교재 등을 작성한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "작성하다",
+      "object": "교재",
+      "full_statement": "요양보호 교육을 위한 교재를 작성한다.",
+      "source_sentence": "다양한 교육수준에서 학문에 대한 이론 및 실제를 가르치고 해당 학문분야를 연구하여 그에 대한 개념 및 운영기법을 개선, 개발하고 강의안, 교재 등을 작성한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "지도하다",
+      "object": "수강생 취업",
+      "full_statement": "특정 직업에 필요한 취업을 위하여 배우려는 수강생을 지도한다.",
+      "source_sentence": "초‧중‧고등학교 및 대학을 제외한 각급 교육기관 또는 가정에서 특정 직업에 필요한 직업훈련, 취업, 진학을 위하여 배우려는 학생을 가르친다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "교습하다",
+      "object": "직업훈련 과정",
+      "full_statement": "요양보호 직업에 필요한 직업훈련 과정을 교습한다.",
+      "source_sentence": "초‧중‧고등학교 및 대학을 제외한 각급 교육기관 또는 가정에서 특정 직업에 필요한 직업훈련, 취업, 진학을 위하여 배우려는 학생을 가르친다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "요양보호학원(실내 교육기관)",
+      "evidence_span": "요양보호학원에서 환자보호, 간병요령 등 요양보호에 관한 이론과 실습을 지도한다."
+    },
+    {
+      "category": "사회적",
+      "value": "수강생 대상 교육·강의",
+      "evidence_span": "수강생들에게 요양보호 및 간병 분야에 관한 이론과 기술을 가르친다."
+    }
+  ]
+}

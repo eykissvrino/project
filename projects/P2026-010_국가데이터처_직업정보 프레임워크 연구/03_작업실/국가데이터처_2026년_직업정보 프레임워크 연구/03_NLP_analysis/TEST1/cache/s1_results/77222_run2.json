@@ -1,0 +1,135 @@
+{
+  "ksco_code": "77222",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "기지국",
+      "full_statement": "무선전화통신에 필요한 기지국을 설치한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "기지국",
+      "full_statement": "무선전화통신에 필요한 기지국을 수리한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "무선중계기",
+      "full_statement": "무선전화통신에 필요한 무선중계기를 설치한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수리하다",
+      "object": "무선중계기",
+      "full_statement": "무선전화통신에 필요한 무선중계기를 수리한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설치하다",
+      "object": "무선전화통신 각종 장비",
+      "full_statement": "무선전화통신에 필요한 각종 장비를 설치한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "무선전화통신 각종 장비",
+      "full_statement": "무선전화통신에 필요한 각종 장비를 수리한다.",
+      "source_sentence": "무선전화통신에 필요한 기지국이나 무선중계기 등의 각종장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "무선 송신기",
+      "full_statement": "무선 송신기를 설치한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수리하다",
+      "object": "무선 송신기",
+      "full_statement": "무선 송신기를 수리한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "정보 통신장비",
+      "full_statement": "정보 통신장비를 설치한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수리하다",
+      "object": "정보 통신장비",
+      "full_statement": "정보 통신장비를 수리한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "설치하다",
+      "object": "휴대용 무선 통신장비",
+      "full_statement": "휴대용 무선 통신장비를 설치한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수리하다",
+      "object": "휴대용 무선 통신장비",
+      "full_statement": "휴대용 무선 통신장비를 수리한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설치하다",
+      "object": "무선전신기",
+      "full_statement": "무선전신기를 설치한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수리하다",
+      "object": "무선전신기",
+      "full_statement": "무선전신기를 수리한다.",
+      "source_sentence": "무선 송신기, 정보 통신장비, 휴대용 무선 통신장비, 통신위성, 무선전신기 및 기타 무선 통신기를 설치하고 수리한다.",
+      "derived_from": "상속 주요업무(무선통신장비 설치 및 수리원)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "설치하다",
+      "object": "기지국중계기",
+      "full_statement": "기지국중계기를 설치한다.",
+      "source_sentence": "기지국중계기 설치 및 수리원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수리하다",
+      "object": "기지국중계기",
+      "full_statement": "기지국중계기를 수리한다.",
+      "source_sentence": "무선중계기 수리원·무선기지국 설치 및 수리원 / 기지국중계기 설치 및 수리원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

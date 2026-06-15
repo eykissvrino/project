@@ -1,0 +1,50 @@
+{
+  "ksco_code": "99930",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "입장객의 표",
+      "full_statement": "공원, 영화관, 공연장, 운동 경기장, 유원지, 전시장 등의 입장객이 제시한 표를 확인한다.",
+      "source_sentence": "공원, 영화관, 공연장, 운동 경기장, 유원지, 전시장 등 입장객의 표를 확인하고 입장시키는 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "표",
+      "full_statement": "시설 입장 시 제시된 표를 검사한다.",
+      "source_sentence": "시설 입장시 표를 검사하고 자리를 안내한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "입장시키다",
+      "object": "입장객",
+      "full_statement": "표가 확인된 입장객을 시설 내부로 입장시킨다.",
+      "source_sentence": "공원, 영화관, 공연장, 운동 경기장, 유원지, 전시장 등 입장객의 표를 확인하고 입장시키는 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "안내하다",
+      "object": "자리",
+      "full_statement": "입장객에게 자리를 안내한다.",
+      "source_sentence": "시설 입장시 표를 검사하고 자리를 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "입장객 응대",
+      "evidence_span": "입장객의 표를 확인하고 입장시키는 업무를 한다"
+    },
+    {
+      "category": "장소",
+      "value": "공원·영화관·공연장·운동 경기장·유원지·전시장 등 입장 게이트",
+      "evidence_span": "공원, 영화관, 공연장, 운동 경기장, 유원지, 전시장 등 입장객의 표를 확인하고"
+    }
+  ]
+}

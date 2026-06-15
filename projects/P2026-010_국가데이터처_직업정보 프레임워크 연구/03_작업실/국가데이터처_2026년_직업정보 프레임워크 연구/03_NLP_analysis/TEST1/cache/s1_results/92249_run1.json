@@ -1,0 +1,103 @@
+{
+  "ksco_code": "92249",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "약정 계약 내용",
+      "full_statement": "고객과 체결한 약정 계약 내용을 확인한다.",
+      "source_sentence": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "파악하다",
+      "object": "배달 물품",
+      "full_statement": "배달할 물품을 파악한다.",
+      "source_sentence": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "배달",
+      "full_statement": "정기 배달을 위한 준비를 한다.",
+      "source_sentence": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지정하다",
+      "object": "배달 장소",
+      "full_statement": "약정 계약자가 요구한 지정 장소를 확인한다.",
+      "source_sentence": "약정 계약자가 요구한 지정 장소(가정, 사무실 등)로 식음료나 신문, 각종 물품 등을 정기적으로 배달한다.",
+      "derived_from": "조상정의(세분류 9224)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "배달하다",
+      "object": "물품",
+      "full_statement": "약정 계약자가 요구한 지정 장소로 물품을 정기적으로 배달한다.",
+      "source_sentence": "약정 계약자가 요구한 지정 장소(가정, 사무실 등)로 식음료나 신문, 각종 물품 등을 정기적으로 배달한다.",
+      "derived_from": "조상정의(세분류 9224)→세세 예시(학습지·도서) 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "배송하다",
+      "object": "학습지",
+      "full_statement": "학습지를 정기적으로 배송한다.",
+      "source_sentence": "학습지 정기배송원",
+      "derived_from": "세세분류 직업 예시→상속 주요업무 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "배송하다",
+      "object": "도서",
+      "full_statement": "도서를 정기적으로 배송한다.",
+      "source_sentence": "도서 정기배송원",
+      "derived_from": "세세분류 직업 예시→상속 주요업무 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "이용하다",
+      "object": "자전거",
+      "full_statement": "자전거를 이용하여 배달한다.",
+      "source_sentence": "자전거, 오토바이 등을 이용하거나 도보로 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "이용하다",
+      "object": "오토바이",
+      "full_statement": "오토바이를 이용하여 배달한다.",
+      "source_sentence": "자전거, 오토바이 등을 이용하거나 도보로 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "이동하다",
+      "object": "도보",
+      "full_statement": "도보로 이동하며 배달한다.",
+      "source_sentence": "자전거, 오토바이 등을 이용하거나 도보로 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수령하다",
+      "object": "대금",
+      "full_statement": "음료, 신문 등의 대금을 수령한다.",
+      "source_sentence": "음료, 신문 등 대금을 수령하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [
+    {"name": "자전거", "category": "장비", "evidence_span": "자전거, 오토바이 등을 이용하거나 도보로 배달한다."},
+    {"name": "오토바이", "category": "장비", "evidence_span": "자전거, 오토바이 등을 이용하거나 도보로 배달한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "이동(가정·사무실 등 지정 장소로 이동 배달)", "evidence_span": "약정 계약자가 요구한 지정 장소(가정, 사무실 등)로 식음료나 신문, 각종 물품 등을 정기적으로 배달한다."},
+    {"category": "사회적", "value": "고객 응대(약정 계약 고객 대상 배달·대금 수령)", "evidence_span": "고객과 체결한 약정 계약 내용을 확인하고, 물품 파악 등 배달 준비를 한다."},
+    {"category": "시간적", "value": "정기적 반복 배달", "evidence_span": "식음료나 신문, 각종 물품 등을 정기적으로 배달한다."},
+    {"category": "신체적", "value": "상당한 육체적 노력 요구(단순노무)", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."}
+  ]
+}

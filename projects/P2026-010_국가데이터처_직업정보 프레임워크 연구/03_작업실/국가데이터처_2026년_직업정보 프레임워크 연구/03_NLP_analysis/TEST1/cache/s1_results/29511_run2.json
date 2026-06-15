@@ -1,0 +1,71 @@
+{
+  "ksco_code": "29511",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "자동차 디자인 자료",
+      "full_statement": "디자인할 자동차나 주제에 관한 자료를 수집한다.",
+      "source_sentence": "디자인할 대상물이나 주제에 관한 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(자동차)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "수집한 자료",
+      "full_statement": "수집한 자동차 디자인 관련 자료를 분석한다.",
+      "source_sentence": "디자인할 대상물이나 주제에 관한 자료를 수집‧분석한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제작하다",
+      "object": "디자인 시안",
+      "full_statement": "디자인 기법과 재료에 대한 지식을 토대로 자동차 디자인 시안을 제작한다.",
+      "source_sentence": "디자인 기법과 재료에 대한 지식을 토대로 시안을 제작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(자동차)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "디자인하다",
+      "object": "자동차 외형",
+      "full_statement": "새로운 차의 상품성을 높이기 위해 자동차 외형을 디자인한다.",
+      "source_sentence": "새로운 차를 개발하여 상품성을 높이기 위해, 자동차 외형과 내장을 디자인한다.",
+      "derived_from": "세세분류 정의(고유활동)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "디자인하다",
+      "object": "자동차 내장",
+      "full_statement": "새로운 차의 상품성을 높이기 위해 자동차 내장을 디자인한다.",
+      "source_sentence": "새로운 차를 개발하여 상품성을 높이기 위해, 자동차 외형과 내장을 디자인한다.",
+      "derived_from": "세세분류 정의(고유활동·복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "디자인",
+      "full_statement": "여러 시안 중 최종 디자인을 결정한다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "완료하다",
+      "object": "스케치",
+      "full_statement": "결정된 디자인의 스케치를 완료한다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "넘기다",
+      "object": "디자인 결과물",
+      "full_statement": "완료된 디자인 결과물을 제작공정으로 넘긴다.",
+      "source_sentence": "디자인을 결정하고 스케치를 완료하여 제작공정으로 넘긴다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

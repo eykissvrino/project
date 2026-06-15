@@ -1,0 +1,95 @@
+{
+  "ksco_code": "95392",
+  "tasks": [
+    {
+      "verb": "배포하다",
+      "object": "광고 전단지",
+      "full_statement": "각종 점포나 상품의 광고 전단지를 거리에서 행인들에게 배포한다.",
+      "source_sentence": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "배포하다",
+      "object": "전단지",
+      "full_statement": "지하철역과 버스 정류장에서 행인들에게 전단지를 배포한다.",
+      "source_sentence": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "배포하다",
+      "object": "카탈로그",
+      "full_statement": "점포나 상품을 홍보하는 카탈로그를 행인들에게 배포한다.",
+      "source_sentence": "카탈로그 배포원·벽보원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배포하다",
+      "object": "홍보지",
+      "full_statement": "광고 또는 홍보 목적의 홍보지를 거리에서 배포한다.",
+      "source_sentence": "홍보지 배포원·스티커 부착원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.84
+    },
+    {
+      "verb": "붙이다",
+      "object": "포스터",
+      "full_statement": "포스터와 같은 홍보물을 전봇대나 벽에 붙인다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.96
+    },
+    {
+      "verb": "붙이다",
+      "object": "홍보물",
+      "full_statement": "홍보물을 지정된 게시판에 붙인다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "부착하다",
+      "object": "벽보",
+      "full_statement": "벽보를 벽이나 전봇대 등 지정된 위치에 부착한다.",
+      "source_sentence": "카탈로그 배포원·벽보원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "부착하다",
+      "object": "광고스티커",
+      "full_statement": "광고스티커를 지정된 게시 위치에 부착한다.",
+      "source_sentence": "광고스티커 부착원·포스터 부착원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.86
+    },
+    {
+      "verb": "확인하다",
+      "object": "게시 위치",
+      "full_statement": "홍보물을 부착할 전봇대·벽·지정 게시판 등 게시 위치를 확인한다.",
+      "source_sentence": "포스터와 같은 홍보물을 전봇대나 벽 또는 지정된 게시판 등에 붙인다.",
+      "derived_from": "세세분류 정의→활동 도출",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "거리·지하철역·버스 정류장 등 실외 이동 공간",
+      "evidence_span": "각종 점포나 상품의 광고 전단지를 거리나 지하철역, 버스 정류장에서 행인들에게 배포한다."
+    },
+    {
+      "category": "사회적",
+      "value": "행인 대상 대면 배포(고객·일반인 응대)",
+      "evidence_span": "거리나 지하철역, 버스 정류장에서 행인들에게 배포한다."
+    },
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "ksco_code": "84341",
+  "tasks": [
+    {
+      "verb": "압착하다",
+      "object": "광물괴",
+      "full_statement": "광물괴를 압착하여 파쇄하는 기계 장치를 조작한다.",
+      "source_sentence": "화학물을 제외한 광물괴를 압착하여 파쇄 또는 선광, 재단, 연마 또는 분말화 하는 기계 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "선광하다",
+      "object": "광물괴",
+      "full_statement": "광물괴를 선광하는 기계 장치를 조작한다.",
+      "source_sentence": "화학물을 제외한 광물괴를 압착하여 파쇄 또는 선광, 재단, 연마 또는 분말화 하는 기계 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "재단하다",
+      "object": "광물괴",
+      "full_statement": "광물괴를 재단하는 기계 장치를 조작한다.",
+      "source_sentence": "화학물을 제외한 광물괴를 압착하여 파쇄 또는 선광, 재단, 연마 또는 분말화 하는 기계 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연마하다",
+      "object": "광물괴",
+      "full_statement": "광물괴를 연마하는 기계 장치를 조작한다.",
+      "source_sentence": "화학물을 제외한 광물괴를 압착하여 파쇄 또는 선광, 재단, 연마 또는 분말화 하는 기계 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분말화하다",
+      "object": "광물괴",
+      "full_statement": "광물괴를 분말화하는 기계 장치를 조작한다.",
+      "source_sentence": "화학물을 제외한 광물괴를 압착하여 파쇄 또는 선광, 재단, 연마 또는 분말화 하는 기계 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "석재",
+      "full_statement": "석재료를 만들기 위해 석재를 분쇄하여 자갈로 만드는 기계를 조작한다.",
+      "source_sentence": "석재료를 만들기 위해 석재를 분쇄하여 자갈로 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "절단하다",
+      "object": "석재",
+      "full_statement": "화강암, 대리석, 판석 및 기타 석재를 절단 가공하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "성형하다",
+      "object": "석재",
+      "full_statement": "화강암, 대리석, 판석 및 기타 석재를 성형 가공하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "석제품",
+      "full_statement": "건물 및 기념비용 석제품, 포장용 판석을 제조하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "산업용 다이아몬드 제조기",
+      "full_statement": "산업용 다이아몬드 제조기를 조작한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절단하다",
+      "object": "모자이크",
+      "full_statement": "모자이크 절단기를 조작하여 모자이크를 절단한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "제조하다",
+      "object": "연마석 제품",
+      "full_statement": "연마석 제품 제조기를 조작하여 연마석 제품을 제조한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "파쇄기", "category": "장비", "evidence_span": "석탄 파쇄기 조작원·광물 파쇄기 조작원"},
+    {"name": "분쇄기", "category": "장비", "evidence_span": "광물 분쇄기 조작원·석재 분쇄기 조작원"},
+    {"name": "선광기", "category": "장비", "evidence_span": "선광기 조작원·석재 재단기 조작원"},
+    {"name": "재단기", "category": "장비", "evidence_span": "선광기 조작원·석재 재단기 조작원"},
+    {"name": "연마기", "category": "장비", "evidence_span": "연마기 조작원"},
+    {"name": "산업용 다이아몬드 제조기", "category": "장비", "evidence_span": "산업용 다이아몬드 제조기를 조작하는 자"},
+    {"name": "모자이크 절단기", "category": "장비", "evidence_span": "모자이크 절단기 조작원"},
+    {"name": "연마석 제품 제조기", "category": "장비", "evidence_span": "연마석 제품 제조기 조작원"}
+  ],
+  "work_context": []
+}

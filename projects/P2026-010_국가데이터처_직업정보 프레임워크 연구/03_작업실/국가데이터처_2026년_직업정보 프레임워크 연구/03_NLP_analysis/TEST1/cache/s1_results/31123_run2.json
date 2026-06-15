@@ -1,0 +1,159 @@
+{
+  "ksco_code": "31123",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "분양 관련 사무",
+      "full_statement": "주거용 또는 비주거용 건물의 분양과 관련된 사무를 수행한다.",
+      "source_sentence": "주택‧아파트 등 주거용이나 비주거용 건물의 분양, 임대 및 매매와 관련된 사무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "임대 관련 사무",
+      "full_statement": "주거용 또는 비주거용 건물의 임대와 관련된 사무를 수행한다.",
+      "source_sentence": "주택‧아파트 등 주거용이나 비주거용 건물의 분양, 임대 및 매매와 관련된 사무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "매매 관련 사무",
+      "full_statement": "주거용 또는 비주거용 건물의 매매와 관련된 사무를 수행한다.",
+      "source_sentence": "주택‧아파트 등 주거용이나 비주거용 건물의 분양, 임대 및 매매와 관련된 사무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "예측하다",
+      "object": "소비자 수요",
+      "full_statement": "건물 분양·임대 수요를 파악하기 위해 소비자의 수요를 예측한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 마케팅 전략과 광고매체에 대한 전략을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분석하다",
+      "object": "소비자 행동",
+      "full_statement": "분양·임대 대상 고객의 소비자 행동을 분석한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 마케팅 전략과 광고매체에 대한 전략을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수립하다",
+      "object": "마케팅 전략",
+      "full_statement": "건물 분양·임대를 위한 마케팅 전략을 수립한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 마케팅 전략과 광고매체에 대한 전략을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수립하다",
+      "object": "광고매체 전략",
+      "full_statement": "분양·임대 홍보를 위한 광고매체에 대한 전략을 수립한다.",
+      "source_sentence": "소비자의 수요예측과 소비자 행동분석을 통하여 마케팅 전략과 광고매체에 대한 전략을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "조사하다",
+      "object": "시장상황 자료",
+      "full_statement": "분양·임대 대상의 경쟁상황, 시장상황, 판매기간 등에 대한 자료를 조사한다.",
+      "source_sentence": "광고대상 상품의 경쟁상황, 시장상황, 판매기간 등에 대한 자료를 조사‧ 분석하고 광고매체에 대한 효과분석을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분석하다",
+      "object": "시장상황 자료",
+      "full_statement": "분양·임대 대상의 경쟁상황, 시장상황, 판매기간 등에 대한 자료를 분석한다.",
+      "source_sentence": "광고대상 상품의 경쟁상황, 시장상황, 판매기간 등에 대한 자료를 조사‧ 분석하고 광고매체에 대한 효과분석을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "실시하다",
+      "object": "광고매체 효과분석",
+      "full_statement": "광고매체에 대한 효과분석을 실시한다.",
+      "source_sentence": "광고대상 상품의 경쟁상황, 시장상황, 판매기간 등에 대한 자료를 조사‧ 분석하고 광고매체에 대한 효과분석을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "제시하다",
+      "object": "마케팅·매체전략 시안",
+      "full_statement": "마케팅전략과 매체전략에 대한 시안을 제시한다.",
+      "source_sentence": "마케팅전략과 매체전략에 대한 시안을 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설정하다",
+      "object": "광고 목표",
+      "full_statement": "분양·임대 홍보를 위한 광고의 목표를 설정한다.",
+      "source_sentence": "광고의 목표를 설정하고, 광고 표현 및 제작계획을 수립하며, 광고의 제작 상황을 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "수립하다",
+      "object": "광고 제작계획",
+      "full_statement": "광고 표현 및 제작계획을 수립한다.",
+      "source_sentence": "광고의 목표를 설정하고, 광고 표현 및 제작계획을 수립하며, 광고의 제작 상황을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "점검하다",
+      "object": "광고 제작 상황",
+      "full_statement": "광고의 제작 상황을 점검한다.",
+      "source_sentence": "광고의 목표를 설정하고, 광고 표현 및 제작계획을 수립하며, 광고의 제작 상황을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "검토하다",
+      "object": "제작된 광고",
+      "full_statement": "제작된 광고를 검토하고 평가한다.",
+      "source_sentence": "제작된 광고를 검토‧평가하고 광고를 실시하며, 시행광고의 효과를 조사‧ 분석하는 등 그 외 사업체의 홍보에 필요한 제반 직무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "실시하다",
+      "object": "광고",
+      "full_statement": "분양·임대 홍보를 위한 광고를 실시한다.",
+      "source_sentence": "제작된 광고를 검토‧평가하고 광고를 실시하며, 시행광고의 효과를 조사‧ 분석하는 등 그 외 사업체의 홍보에 필요한 제반 직무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "분석하다",
+      "object": "시행광고 효과",
+      "full_statement": "시행한 광고의 효과를 조사하고 분석한다.",
+      "source_sentence": "제작된 광고를 검토‧평가하고 광고를 실시하며, 시행광고의 효과를 조사‧ 분석하는 등 그 외 사업체의 홍보에 필요한 제반 직무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "관리하다",
+      "object": "영업사원 활동",
+      "full_statement": "영업목표를 달성하기 위해 영업사원의 활동을 관리한다.",
+      "source_sentence": "영업목표를 달성하기 위해 영업사원의 활동을 관리, 지원하는 일을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "지원하다",
+      "object": "영업사원 활동",
+      "full_statement": "영업목표를 달성하기 위해 영업사원의 활동을 지원한다.",
+      "source_sentence": "영업목표를 달성하기 위해 영업사원의 활동을 관리, 지원하는 일을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

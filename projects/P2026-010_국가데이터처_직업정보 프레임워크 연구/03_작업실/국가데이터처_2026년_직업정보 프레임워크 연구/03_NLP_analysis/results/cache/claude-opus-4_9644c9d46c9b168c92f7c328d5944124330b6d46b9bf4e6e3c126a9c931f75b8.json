@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28431",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "자동차 부품",
+      "full_statement": "자동차 부품의 사용법과 보수에 관한 전문지식을 고객에게 설명한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "부품",
+      "full_statement": "고객의 필요를 파악하여 적합한 자동차 부품을 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "제안서",
+      "full_statement": "부품 이용 이익을 설명하기 위해 제안서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "판매계약서",
+      "full_statement": "판매계약서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 문제를 처리하고 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

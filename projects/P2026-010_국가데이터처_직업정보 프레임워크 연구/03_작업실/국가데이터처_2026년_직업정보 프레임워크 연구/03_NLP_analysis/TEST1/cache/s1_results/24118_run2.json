@@ -1,0 +1,152 @@
+{
+  "ksco_code": "24118",
+  "tasks": [
+    {
+      "verb": "이용하다",
+      "object": "X-ray 및 특수 조영술",
+      "full_statement": "X-ray와 특수 조영술을 이용하여 환자의 질병을 진단한다.",
+      "source_sentence": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, 환자의 조직 및 세포검체 또는 조직 및 세포에서 유래하는 유전체 등을 이용하여 환자의 질병을 진단‧치료 하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "이용하다",
+      "object": "방사선 동위원소 및 방사선",
+      "full_statement": "방사선 동위원소와 방사선을 이용하여 환자의 질병을 치료한다.",
+      "source_sentence": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, 환자의 조직 및 세포검체 또는 조직 및 세포에서 유래하는 유전체 등을 이용하여 환자의 질병을 진단‧치료 하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "환자의 조직 및 세포검체",
+      "full_statement": "환자의 조직 및 세포검체를 검사하여 질병을 진단한다.",
+      "source_sentence": "환자의 조직 및 세포검체 또는 조직 및 세포에서 유래하는 유전체 등을 이용하여 환자의 질병을 진단‧치료 하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "분석하다",
+      "object": "조직 및 세포 유래 유전체",
+      "full_statement": "조직 및 세포에서 유래하는 유전체를 분석하여 질병을 진단한다.",
+      "source_sentence": "조직 및 세포에서 유래하는 유전체 등을 이용하여 환자의 질병을 진단‧치료 하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "점검하다",
+      "object": "환자 신체의 각종 징후",
+      "full_statement": "수술 전·후 환자의 안전을 위해 환자의 신체에서 발생하는 각종 징후를 점검한다.",
+      "source_sentence": "수술 전‧후 환자의 안전을 위해 환자의 신체에서 발생하는 각종 징후를 점검하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관장하다",
+      "object": "마취 관리",
+      "full_statement": "환자의 마취 관리를 관장한다.",
+      "source_sentence": "마취 관리, 중환자 관리 및 급만성 통증 관리를 관장하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "관장하다",
+      "object": "중환자 관리",
+      "full_statement": "중환자 관리를 관장한다.",
+      "source_sentence": "마취 관리, 중환자 관리 및 급만성 통증 관리를 관장하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관장하다",
+      "object": "급만성 통증 관리",
+      "full_statement": "환자의 급만성 통증 관리를 관장한다.",
+      "source_sentence": "마취 관리, 중환자 관리 및 급만성 통증 관리를 관장하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진단하다",
+      "object": "질병의 원인",
+      "full_statement": "환자에 대한 검사를 통해 질병의 원인을 진단·규명한다.",
+      "source_sentence": "환자에 대한 검사를 통해 질병의 원인 등을 진단‧규명하고, 치료의 방향을 제시한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제시하다",
+      "object": "치료의 방향",
+      "full_statement": "검사 결과를 바탕으로 치료의 방향을 제시한다.",
+      "source_sentence": "환자에 대한 검사를 통해 질병의 원인 등을 진단‧규명하고, 치료의 방향을 제시한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "분석하다",
+      "object": "의료검사·시험·진단 자료",
+      "full_statement": "의료검사, 시험 및 진단을 통하여 얻은 자료를 분석한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "결정하다",
+      "object": "치료의 범위 및 방법",
+      "full_statement": "환자의 질병·장애에 대한 처방, 치료의 범위 및 방법을 결정한다.",
+      "source_sentence": "환자의 질병, 장애에 대한 처방, 치료의 범위 및 방법을 결정하기 위하여 의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "결정하다",
+      "object": "치료의 종류와 순서",
+      "full_statement": "분석한 자료를 바탕으로 치료의 종류와 순서를 결정한다.",
+      "source_sentence": "의료검사, 시험 및 진단을 통하여 얻은 자료를 분석하고 치료의 종류와 순서를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "사용하다",
+      "object": "내·외과적 기구 및 장비",
+      "full_statement": "진단 및 치료를 위하여 내·외과적 기구 및 장비를 사용한다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "알려주다",
+      "object": "처방된 치료와 건강상의 유의점",
+      "full_statement": "처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "source_sentence": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고, 처방된 치료와 건강상의 유의점을 환자에게 알려준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "의학실험",
+      "full_statement": "의학실험을 수행한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "이용하다",
+      "object": "특수기술 및 장비",
+      "full_statement": "특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "source_sentence": "의학실험을 수행하고, 외과수술을 집도하며, 특수기술 및 장비를 이용하여 환자를 치료한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "X-ray", "category": "장비", "evidence_span": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, … 등을 이용하여 환자의 질병을 진단‧치료"},
+    {"name": "특수 조영술", "category": "장비", "evidence_span": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, … 등을 이용하여 환자의 질병을 진단‧치료"},
+    {"name": "방사선 동위원소", "category": "장비", "evidence_span": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, … 등을 이용하여 환자의 질병을 진단‧치료"},
+    {"name": "방사선", "category": "장비", "evidence_span": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, … 등을 이용하여 환자의 질병을 진단‧치료"},
+    {"name": "내·외과적 기구 및 장비", "category": "장비", "evidence_span": "진단 및 치료를 위하여 내‧외과적 기구 및 장비를 사용하고"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "방사선 노출", "evidence_span": "X-ray, 특수 조영술, 방사선 동위원소, 방사선, … 등을 이용하여 환자의 질병을 진단‧치료"},
+    {"category": "사회적", "value": "환자 응대(검사·진단 설명)", "evidence_span": "처방된 치료와 건강상의 유의점을 환자에게 알려준다"}
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "ksco_code": "76193",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "포스시스템",
+      "full_statement": "전기 및 장치를 이용하여 포스시스템(POS System)이 작동될 수 있도록 설치한다.",
+      "source_sentence": "포스시스템(POS System)이 작동될 수 있도록 전기 및 장치를 이용하여 설치하고, 전기회로의 이상 유무 전자제어시스템의 오작동여부 등을 점검한 후 수리하거나 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "전기회로의 이상 유무",
+      "full_statement": "포스시스템의 전기회로 이상 유무를 점검한다.",
+      "source_sentence": "전기회로의 이상 유무 전자제어시스템의 오작동여부 등을 점검한 후 수리하거나 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "전자제어시스템의 오작동여부",
+      "full_statement": "포스시스템의 전자제어시스템 오작동여부를 점검한다.",
+      "source_sentence": "전기회로의 이상 유무 전자제어시스템의 오작동여부 등을 점검한 후 수리하거나 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "포스시스템",
+      "full_statement": "점검 결과 이상이 있는 포스시스템을 수리한다.",
+      "source_sentence": "전기회로의 이상 유무 전자제어시스템의 오작동여부 등을 점검한 후 수리하거나 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "정비하다",
+      "object": "포스시스템",
+      "full_statement": "포스시스템을 정비한다.",
+      "source_sentence": "전기회로의 이상 유무 전자제어시스템의 오작동여부 등을 점검한 후 수리하거나 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "전기회로·부품의 단락·잘못된 연결·결함 위치",
+      "full_statement": "검사계기를 사용하여 전기회로·부품의 단락, 잘못된 연결, 결함 있는 부품의 위치를 찾아내기 위하여 검사한다.",
+      "source_sentence": "검사계기를 사용하여 전기회로‧부품의 단락․ 잘못된 연결․ 결함 있는 부품의 위치를 찾아내기 위하여 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "땜질하다",
+      "object": "엉성한 연결부위",
+      "full_statement": "납땜인두를 사용하여 엉성한 연결부위를 땜질한다.",
+      "source_sentence": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고, 변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "교체하다",
+      "object": "변압기·저항기·콘덴서·스위치 등 결합부품",
+      "full_statement": "변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "source_sentence": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고, 변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분해하다",
+      "object": "장치",
+      "full_statement": "수리를 위하여 장치를 분해한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수선하다",
+      "object": "잘못된 기계부품",
+      "full_statement": "잘못된 기계부품을 수선한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "교체하다",
+      "object": "잘못된 기계부품",
+      "full_statement": "잘못된 기계부품을 교체한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "검사계기", "category": "장비", "evidence_span": "검사계기를 사용하여 전기회로‧부품의 단락․ 잘못된 연결․ 결함 있는 부품의 위치를 찾아내기 위하여 검사한다."},
+    {"name": "납땜인두", "category": "도구", "evidence_span": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고"},
+    {"name": "포스시스템(POS System)", "category": "시스템", "evidence_span": "포스시스템(POS System)이 작동될 수 있도록 전기 및 장치를 이용하여 설치하고"}
+  ],
+  "work_context": []
+}

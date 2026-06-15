@@ -1,0 +1,95 @@
+{
+  "ksco_code": "23940",
+  "tasks": [
+    {
+      "verb": "채취하다",
+      "object": "섬유견본",
+      "full_statement": "섬유의 성형처리 및 제작공정의 품질관리를 위하여 섬유견본을 채취한다.",
+      "source_sentence": "섬유의 성형처리 및 제작공정의 품질관리를 위하여 섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "측정하다",
+      "object": "실의 특성",
+      "full_statement": "섬유견본을 가지고 실의 특성을 측정한다.",
+      "source_sentence": "섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "측정하다",
+      "object": "인장력",
+      "full_statement": "섬유견본의 인장력을 측정한다.",
+      "source_sentence": "섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "측정하다",
+      "object": "수축의 정도",
+      "full_statement": "섬유견본의 수축 정도를 측정한다.",
+      "source_sentence": "섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "손상의 정도",
+      "full_statement": "섬유견본의 손상 정도를 검사한다.",
+      "source_sentence": "섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "염료의 특성",
+      "full_statement": "섬유견본의 염료 특성을 분석한다.",
+      "source_sentence": "섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "섬유견본",
+      "full_statement": "섬유견본을 검사한다.",
+      "source_sentence": "섬유 견본을 측정, 검사, 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분석하다",
+      "object": "섬유견본",
+      "full_statement": "섬유견본을 분석한다.",
+      "source_sentence": "섬유 견본을 측정, 검사, 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "섬유 제작공정의 품질",
+      "full_statement": "섬유 제작공정의 품질관리 업무를 수행한다.",
+      "source_sentence": "섬유 제작공정의 개선을 지원하거나 품질관리 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지원하다",
+      "object": "섬유 제작공정의 개선",
+      "full_statement": "섬유 제작공정의 개선을 지원한다.",
+      "source_sentence": "섬유 제작공정의 개선을 지원하거나 품질관리 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관리하다",
+      "object": "섬유 성형처리 품질",
+      "full_statement": "섬유의 성형처리 공정의 품질을 관리한다.",
+      "source_sentence": "섬유의 성형처리 및 제작공정의 품질관리를 위하여 섬유견본을 가지고 실의 특성, 인장력, 수축 및 손상의 정도, 염료의 특성 등을 측정․ 검사‧분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

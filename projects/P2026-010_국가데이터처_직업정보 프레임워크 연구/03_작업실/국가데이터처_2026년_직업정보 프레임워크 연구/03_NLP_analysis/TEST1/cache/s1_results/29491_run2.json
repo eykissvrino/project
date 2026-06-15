@@ -1,0 +1,51 @@
+{
+  "ksco_code": "29491",
+  "tasks": [
+    {
+      "verb": "활용하다",
+      "object": "영상 매체",
+      "full_statement": "벽, 바닥 등 다양한 공간에 영상 매체를 활용한다.",
+      "source_sentence": "벽, 바닥 등 댜양한 공간에 영상 매체를 활용하여 시각 예술적으로 창작활동을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "창작하다",
+      "object": "시각 예술 작품",
+      "full_statement": "영상 매체를 활용하여 시각 예술적으로 창작활동을 한다.",
+      "source_sentence": "벽, 바닥 등 댜양한 공간에 영상 매체를 활용하여 시각 예술적으로 창작활동을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "구상하다",
+      "object": "예술작품",
+      "full_statement": "벽, 바닥 등 다양한 공간을 대상으로 영상 예술작품을 구상한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "활용하다",
+      "object": "다양한 공간",
+      "full_statement": "벽, 바닥 등 다양한 공간을 작품 매개 공간으로 활용한다.",
+      "source_sentence": "벽, 바닥 등 댜양한 공간에 영상 매체를 활용하여 시각 예술적으로 창작활동을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "공연하다",
+      "object": "예술작품",
+      "full_statement": "구상한 영상 예술작품을 공간에 공연 형태로 선보인다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "영상 매체", "category": "장비", "evidence_span": "벽, 바닥 등 댜양한 공간에 영상 매체를 활용하여 시각 예술적으로 창작활동을 한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "벽, 바닥 등 다양한 공간", "evidence_span": "벽, 바닥 등 댜양한 공간에 영상 매체를 활용하여 시각 예술적으로 창작활동을 한다."}
+  ]
+}

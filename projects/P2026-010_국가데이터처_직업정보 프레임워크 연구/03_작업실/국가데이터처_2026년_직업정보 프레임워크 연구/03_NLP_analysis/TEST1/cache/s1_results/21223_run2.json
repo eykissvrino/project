@@ -1,0 +1,119 @@
+{
+  "ksco_code": "21223",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "조직의 운영 및 경영방법",
+      "full_statement": "경영 관련 개선점을 제안하기 위해 조직의 운영, 경영방법이나 기능을 분석한다.",
+      "source_sentence": "경영과 관련된 개선점을 제안하고 계획하며 실행하기 위해 운영, 경영방법이나 조직의 기능을 분석하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "조직의 기능",
+      "full_statement": "경영 개선을 위해 조직의 기능을 분석한다.",
+      "source_sentence": "운영, 경영방법이나 조직의 기능을 분석하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연구하다",
+      "object": "경영 개선·개발 방안",
+      "full_statement": "경영 개선 및 개발을 위하여 연구한다.",
+      "source_sentence": "경영 개선, 개발을 위하여 연구하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제안하다",
+      "object": "경영 관련 개선점",
+      "full_statement": "경영과 관련된 개선점을 제안한다.",
+      "source_sentence": "경영과 관련된 개선점을 제안하고 계획하며 실행하기 위해",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "경영 개선점의 실행 계획",
+      "full_statement": "경영 관련 개선점을 실행하기 위해 계획한다.",
+      "source_sentence": "경영과 관련된 개선점을 제안하고 계획하며 실행하기 위해",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실행하다",
+      "object": "경영 개선점",
+      "full_statement": "제안하고 계획한 경영 개선점을 실행한다.",
+      "source_sentence": "경영과 관련된 개선점을 제안하고 계획하며 실행하기 위해",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수립하다",
+      "object": "경영문제 해결안",
+      "full_statement": "현재 또는 예측된 경영문제의 해결안을 수립한다.",
+      "source_sentence": "현재 또는 예측된 경영문제의 해결안을 수립하는데 조언 및 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조언하다",
+      "object": "경영문제 해결안",
+      "full_statement": "현재 또는 예측된 경영문제의 해결안 수립에 대해 조언한다.",
+      "source_sentence": "현재 또는 예측된 경영문제의 해결안을 수립하는데 조언 및 응용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "응용하다",
+      "object": "경영 개념·이론·운영기법",
+      "full_statement": "경영문제 해결을 위해 관련 개념과 운영기법을 응용한다.",
+      "source_sentence": "현재 또는 예측된 경영문제의 해결안을 수립하는데 조언 및 응용한다.",
+      "derived_from": "세세분류 정의→조상정의(세분류) 결합",
+      "confidence": 0.83
+    },
+    {
+      "verb": "개선하다",
+      "object": "경영 개념·이론 및 운영기법",
+      "full_statement": "경영학 관련 개념, 이론 및 운영기법을 개선한다.",
+      "source_sentence": "사회과학을 연구하여 그에 대한 개념, 이론 및 운영기법을 개선, 개발하고",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "경영 개념·이론 및 운영기법",
+      "full_statement": "경영학 관련 개념, 이론 및 운영기법을 개발한다.",
+      "source_sentence": "사회과학을 연구하여 그에 대한 개념, 이론 및 운영기법을 개선, 개발하고",
+      "derived_from": "조상정의(세분류)→세세 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "학술적 논문 및 보고서",
+      "full_statement": "연구 결과에 대한 학술적 논문 및 보고서를 작성한다.",
+      "source_sentence": "학술적 논문 및 보고서를 작성한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "경영 운영기법",
+      "full_statement": "경영방법과 운영기법을 이해하고 개선하기 위하여 연구한다.",
+      "source_sentence": "경제개념, 이론 및 운영기법을 개선‧개발하기 위하여 연구하며",
+      "derived_from": "상속 주요업무→세세 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조언하다",
+      "object": "예측된 경영문제 해결안",
+      "full_statement": "현재 또는 예측된 경영문제의 해결안 수립에 대해 조언한다.",
+      "source_sentence": "현재 또는 예측된 경제문제의 해결안을 수립하는 데 조언한다.",
+      "derived_from": "상속 주요업무→세세 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

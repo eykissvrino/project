@@ -1,0 +1,127 @@
+{
+  "ksco_code": "23712",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "수질 환경문제와 예방",
+      "full_statement": "수질 환경문제와 그 예방을 위한 연구를 수행한다.",
+      "source_sentence": "수질 환경문제와 예방을 위한 연구를 수행하고, 오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 연구, 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진단하다",
+      "object": "오폐수 처리장 시설",
+      "full_statement": "오폐수 처리장의 시설을 진단한다.",
+      "source_sentence": "오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 연구, 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "점검하다",
+      "object": "오염물 상태",
+      "full_statement": "오염물의 상태를 점검한다.",
+      "source_sentence": "오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 연구, 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "수질 환경문제",
+      "full_statement": "수질 환경문제를 분석한다.",
+      "source_sentence": "오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 연구, 분석한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "수질 환경상태",
+      "full_statement": "수질 환경상태를 평가한다.",
+      "source_sentence": "수질 환경상태를 평가하고 기준을 세우며 수질환경 개선을 위해 연구, 진단, 처치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "수립하다",
+      "object": "수질 환경 기준",
+      "full_statement": "수질 환경에 대한 기준을 세운다.",
+      "source_sentence": "수질 환경상태를 평가하고 기준을 세우며 수질환경 개선을 위해 연구, 진단, 처치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처치하다",
+      "object": "수질환경 개선 조치",
+      "full_statement": "수질환경 개선을 위해 처치한다.",
+      "source_sentence": "수질환경 개선을 위해 연구, 진단, 처치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "개발하다",
+      "object": "수질 환경보전 공학 기술",
+      "full_statement": "수질 환경보전에 필요한 공학적 기술을 개발한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "수질오염 방지 처리시설",
+      "full_statement": "수질오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "source_sentence": "환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "설계하다",
+      "object": "오폐수 정화 공정",
+      "full_statement": "오폐수 등 오염물질을 정화하기 위한 공정을 설계한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "시공하다",
+      "object": "오폐수 정화 공정",
+      "full_statement": "오폐수 정화 공정을 시공한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "운전하다",
+      "object": "오폐수 정화 공정",
+      "full_statement": "오폐수 정화 공정을 운전한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수립하다",
+      "object": "기존 처리시설 효율적 이용계획",
+      "full_statement": "오폐수 처리장 기존시설의 효율적인 이용계획을 수립한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "처리시설 발전계획",
+      "full_statement": "오폐수 처리장 시설의 발전 계획을 수립한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "평가하다",
+      "object": "개발 행위의 자연환경 영향",
+      "full_statement": "각종 개발 행위가 자연환경에 미치는 영향을 사전 평가한다.",
+      "source_sentence": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

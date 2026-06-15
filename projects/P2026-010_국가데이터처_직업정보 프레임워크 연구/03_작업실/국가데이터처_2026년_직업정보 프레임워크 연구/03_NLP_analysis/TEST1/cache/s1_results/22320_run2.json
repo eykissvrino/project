@@ -1,0 +1,134 @@
+{
+  "ksco_code": "22320",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "다양한 해킹방법",
+      "full_statement": "인터넷을 이용하여 다양한 해킹방법을 조사한다.",
+      "source_sentence": "인터넷을 이용하여 다양한 해킹방법을 조사하고 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "다양한 해킹방법",
+      "full_statement": "인터넷을 이용하여 다양한 해킹방법을 연구한다.",
+      "source_sentence": "인터넷을 이용하여 다양한 해킹방법을 조사하고 연구한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "시험도구(test tool)",
+      "full_statement": "해당시스템의 보안 상태를 점검하기 위하여 시험도구(test tool)를 개발한다.",
+      "source_sentence": "해당시스템의 보안 상태를 점검하기 위하여 시험도구(test tool)를 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "보안프로그램",
+      "full_statement": "온라인·오프라인 전산망의 보안을 유지하기 위하여 필요한 보안프로그램을 개발한다.",
+      "source_sentence": "온라인, 오프라인 전산망의 보안을 유지하기 위하여 필요한 보안프로그램을 개발하고, 보안 상태를 점검하며 보안을 위한 다각적인 해결책을 제시한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시뮬레이션하다",
+      "object": "해킹방법",
+      "full_statement": "해킹방법을 가상으로 시뮬레이션하여 특정 인터넷 또는 서버 및 PC에 직접 침투한다.",
+      "source_sentence": "해킹방법을 가상으로 시뮬레이션 하여 특정 인터넷 또는 서버 및 PC에 직접 침투함으로써 보안 상태를 점검하고, 운영체계버전의 업그레이드 등 필요한 해결책을 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "보안 상태",
+      "full_statement": "특정 인터넷 또는 서버 및 PC에 직접 침투함으로써 보안 상태를 점검한다.",
+      "source_sentence": "해킹방법을 가상으로 시뮬레이션 하여 특정 인터넷 또는 서버 및 PC에 직접 침투함으로써 보안 상태를 점검하고, 운영체계버전의 업그레이드 등 필요한 해결책을 제시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(보안 상태 점검)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제시하다",
+      "object": "필요한 해결책",
+      "full_statement": "운영체계버전의 업그레이드 등 보안을 위한 다각적인 해결책을 제시한다.",
+      "source_sentence": "보안 상태를 점검하고, 운영체계버전의 업그레이드 등 필요한 해결책을 제시한다.",
+      "derived_from": "상속 주요업무 + 세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "자료처리시스템",
+      "full_statement": "자료처리활동과 보안대책 기능을 확보하기 위한 자료처리시스템을 검사한다.",
+      "source_sentence": "자료처리활동과 보안대책 기능을 확보하기 위한 자료처리시스템을 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수정하다",
+      "object": "컴퓨터 보안 파일",
+      "full_statement": "새로운 소프트웨어를 통합하기 위해 컴퓨터 보안 파일을 수정한다.",
+      "source_sentence": "새로운 소프트웨어를 통합하기 위해 컴퓨터 보안 파일을 수정하고 에러를 고치거나 개인별 접근상태를 변경한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "고치다",
+      "object": "에러",
+      "full_statement": "컴퓨터 보안 파일의 에러를 고친다.",
+      "source_sentence": "새로운 소프트웨어를 통합하기 위해 컴퓨터 보안 파일을 수정하고 에러를 고치거나 개인별 접근상태를 변경한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "변경하다",
+      "object": "개인별 접근상태",
+      "full_statement": "개인별 접근상태를 변경한다.",
+      "source_sentence": "새로운 소프트웨어를 통합하기 위해 컴퓨터 보안 파일을 수정하고 에러를 고치거나 개인별 접근상태를 변경한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "의논하다",
+      "object": "보안 관련 문제",
+      "full_statement": "컴퓨터 자료 접근·보안침해·프로그래밍 변경과 같은 문제들을 논의하기 위해 전산 및 보안 책임자와 의논한다.",
+      "source_sentence": "컴퓨터 자료 접근, 보안침해, 프로그래밍 변경과 같은 문제들을 논의하기 위해 전산 및 보안 책임자와 의논한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서",
+      "full_statement": "컴퓨터 보안 및 비상대책방침·절차 및 테스트 결과에 대한 보고서를 작성한다.",
+      "source_sentence": "컴퓨터 보안 및 비상대책방침, 절차 및 테스트 결과에 대한 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "막다",
+      "object": "개인정보의 유출",
+      "full_statement": "정보 시스템 상 개인정보의 유출을 막는다.",
+      "source_sentence": "정보 시스템 상 개인정보의 유출을 막고 관련 보안 체계를 개발하는 전문가도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "개발하다",
+      "object": "개인정보 관련 보안 체계",
+      "full_statement": "개인정보 보호를 위한 관련 보안 체계를 개발한다.",
+      "source_sentence": "정보 시스템 상 개인정보의 유출을 막고 관련 보안 체계를 개발하는 전문가도 이 분류에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    }
+  ],
+  "tools": [
+    {"name": "시험도구(test tool)", "category": "도구", "evidence_span": "보안 상태를 점검하기 위하여 시험도구(test tool)를 개발한다"},
+    {"name": "보안프로그램", "category": "SW", "evidence_span": "필요한 보안프로그램을 개발하고"},
+    {"name": "자료처리시스템", "category": "시스템", "evidence_span": "보안대책 기능을 확보하기 위한 자료처리시스템을 검사한다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "전산 및 보안 책임자와의 협의(대인 의논)", "evidence_span": "문제들을 논의하기 위해 전산 및 보안 책임자와 의논한다"},
+    {"category": "장소", "value": "온라인·오프라인 전산망 환경", "evidence_span": "온라인, 오프라인 전산망의 보안을 유지하기 위하여"}
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "ksco_code": "23610",
+  "tasks": [
+    {
+      "verb": "설계하다",
+      "object": "방재·재난 시설",
+      "full_statement": "자연재해를 방지하고 줄이기 위하여 법령에 정해진 절차에 따라 시설을 설계한다.",
+      "source_sentence": "법령에 정해진 절차에 따라 시설을 설계, 시공, 감리 하고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시공하다",
+      "object": "방재 시설",
+      "full_statement": "법령에 정해진 절차에 따라 방재 시설을 시공한다.",
+      "source_sentence": "법령에 정해진 절차에 따라 시설을 설계, 시공, 감리 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "감리하다",
+      "object": "방재 시설 공사",
+      "full_statement": "법령에 정해진 절차에 따라 방재 시설 공사를 감리한다.",
+      "source_sentence": "법령에 정해진 절차에 따라 시설을 설계, 시공, 감리 하고",
+      "derived_from": "세세분류 정의→예시(방재공사 감리 기술자) 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "방재·재난 시설",
+      "full_statement": "재난으로부터 국민의 생명과 재산을 보호하기 위하여 방재·재난 시설을 관리한다.",
+      "source_sentence": "재난으로부터 국민의 생명과 재산을 보호하기 위하여 방재‧재난 시설을 설계 및 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조사하다",
+      "object": "위험요인 및 유해요소",
+      "full_statement": "재해 예방을 위하여 위험요인 및 유해요소를 조사한다.",
+      "source_sentence": "위험요인 및 유해요소를 조사‧분석하여 제반 안전 예방대책을 위한 계획 및 관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "위험요인 및 유해요소",
+      "full_statement": "재해 예방을 위하여 위험요인 및 유해요소를 분석한다.",
+      "source_sentence": "위험요인 및 유해요소를 조사‧분석하여 제반 안전 예방대책을 위한 계획 및 관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수립하다",
+      "object": "안전 예방대책 계획",
+      "full_statement": "조사·분석 결과를 바탕으로 제반 안전 예방대책을 위한 계획을 수립한다.",
+      "source_sentence": "제반 안전 예방대책을 위한 계획 및 관리 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무(계획 수립) 보강",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "방재 안전 대책 계획",
+      "full_statement": "방재 안전 대책 등에 대한 계획을 수립한다.",
+      "source_sentence": "방재 안전 대책 등에 대한 계획을 수립하여 운영하거나 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운영하다",
+      "object": "방재 안전 대책",
+      "full_statement": "수립된 방재 안전 대책을 운영한다.",
+      "source_sentence": "방재 안전 대책 등에 대한 계획을 수립하여 운영하거나 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "감독하다",
+      "object": "방재 안전 대책",
+      "full_statement": "방재 안전 대책의 운영을 감독한다.",
+      "source_sentence": "방재 안전 대책 등에 대한 계획을 수립하여 운영하거나 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수행하다",
+      "object": "방재·안전 관련 기술적 조사",
+      "full_statement": "방재·안전과 관련된 기술적 조사를 수행한다.",
+      "source_sentence": "방재‧안전 관련의 기술적 조사와 건의, 홍보 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "건의하다",
+      "object": "방재·안전 관련 개선사항",
+      "full_statement": "방재·안전과 관련된 개선사항을 건의한다.",
+      "source_sentence": "방재‧안전 관련의 기술적 조사와 건의, 홍보 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "홍보하다",
+      "object": "방재·안전 관련 정보",
+      "full_statement": "방재·안전과 관련된 정보를 홍보한다.",
+      "source_sentence": "방재‧안전 관련의 기술적 조사와 건의, 홍보 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "위험",
+      "value": "폭풍·호우·폭설·홍수·고조·지진·해일 등 자연재해 환경",
+      "evidence_span": "폭풍, 호우, 폭설, 홍수, 고조, 지진, 해일 등 자연현상에 의한 재해를 방지 하고 줄이기 위하여"
+    },
+    {
+      "category": "시간적",
+      "value": "법령에 정해진 절차 준수",
+      "evidence_span": "법령에 정해진 절차에 따라 시설을 설계, 시공, 감리 하고"
+    }
+  ]
+}

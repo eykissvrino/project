@@ -1,0 +1,314 @@
+[
+  {
+    "iwa_id": "I_0121",
+    "n_dwa": 2,
+    "n_task": 10,
+    "n_jobs": 6,
+    "mean_cosine": 0.946,
+    "member_dwa_labels": [
+      "성형물질로 입체조형물을 제작한다",
+      "보정값을 반영하여 주조모형을 제작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0122",
+    "n_dwa": 2,
+    "n_task": 10,
+    "n_jobs": 3,
+    "mean_cosine": 0.9257,
+    "member_dwa_labels": [
+      "디스플레이 영향 요인을 조사한다",
+      "장식연출용 기초재료를 선정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0123",
+    "n_dwa": 2,
+    "n_task": 17,
+    "n_jobs": 12,
+    "mean_cosine": 0.9298,
+    "member_dwa_labels": [
+      "재배사육물량을 결정한다",
+      "용탕 주조방안을 결정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0124",
+    "n_dwa": 2,
+    "n_task": 7,
+    "n_jobs": 1,
+    "mean_cosine": 0.9432,
+    "member_dwa_labels": [
+      "미수채권을 회수한다",
+      "위임받은 채권회수 업무를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0125",
+    "n_dwa": 2,
+    "n_task": 17,
+    "n_jobs": 5,
+    "mean_cosine": 0.946,
+    "member_dwa_labels": [
+      "의회 회의에 참여하거나 주재한다",
+      "법령을 제정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0126",
+    "n_dwa": 2,
+    "n_task": 14,
+    "n_jobs": 11,
+    "mean_cosine": 0.9404,
+    "member_dwa_labels": [
+      "국민과 소속집단의 이익을 대변한다",
+      "조직을 대외적으로 대표한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0127",
+    "n_dwa": 2,
+    "n_task": 27,
+    "n_jobs": 4,
+    "mean_cosine": 0.9389,
+    "member_dwa_labels": [
+      "교통상태 영향요인을 연구한다",
+      "교통세수의 인상효과를 분석한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0128",
+    "n_dwa": 2,
+    "n_task": 11,
+    "n_jobs": 6,
+    "mean_cosine": 0.9247,
+    "member_dwa_labels": [
+      "소음진동을 측정한다",
+      "소음·진동 유발행위를 규제한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0129",
+    "n_dwa": 2,
+    "n_task": 14,
+    "n_jobs": 9,
+    "mean_cosine": 0.9067,
+    "member_dwa_labels": [
+      "비파괴검사를 수행한다",
+      "배선결함을 측정기로 검사한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0130",
+    "n_dwa": 2,
+    "n_task": 10,
+    "n_jobs": 2,
+    "mean_cosine": 0.941,
+    "member_dwa_labels": [
+      "제어계측분야의 정보를 연구하고 운용한다",
+      "전기제어 패널을 설계하고 계장제어를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0131",
+    "n_dwa": 2,
+    "n_task": 6,
+    "n_jobs": 4,
+    "mean_cosine": 0.9129,
+    "member_dwa_labels": [
+      "조경디자인을 개발한다",
+      "부지의 상세제도작성을 준비한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0132",
+    "n_dwa": 2,
+    "n_task": 11,
+    "n_jobs": 2,
+    "mean_cosine": 0.9303,
+    "member_dwa_labels": [
+      "중개의뢰 부동산정보를 파악한다",
+      "매매계약서를 작성한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0133",
+    "n_dwa": 1,
+    "n_task": 6,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "전통 무용 및 연희를 공연한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0134",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "적재량과 중량에 따라 화물차를 운전한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0135",
+    "n_dwa": 1,
+    "n_task": 13,
+    "n_jobs": 11,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "세분류 미포함 직무를 수행한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0136",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "저장용기를 만든다"
+    ]
+  },
+  {
+    "iwa_id": "I_0137",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "바닷물을 증발시켜 천일염을 생산한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0138",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "원목을 쇄목기로 파쇄한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0139",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "전통 수공예품을 제작한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0140",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "전통기법으로 구조물을 시공한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0141",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 4,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "일일판매기록부를 작성한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0142",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "청각장애학생에게 대화기술을 지도한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0143",
+    "n_dwa": 1,
+    "n_task": 2,
+    "n_jobs": 2,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "난해사안을 전문가와 협의한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0144",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "철탑 안테나와 지상 기지국을 유선으로 연결한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0145",
+    "n_dwa": 1,
+    "n_task": 6,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "광케이블을 절단·접속한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0146",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "펌프를 설치하고 고정한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0147",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "석고보드를 금속막대에 부착한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0148",
+    "n_dwa": 1,
+    "n_task": 3,
+    "n_jobs": 1,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "건물 칸막이를 설치한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0149",
+    "n_dwa": 1,
+    "n_task": 5,
+    "n_jobs": 3,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "행사서비스를 총괄한다"
+    ]
+  },
+  {
+    "iwa_id": "I_0150",
+    "n_dwa": 1,
+    "n_task": 4,
+    "n_jobs": 4,
+    "mean_cosine": 1.0,
+    "member_dwa_labels": [
+      "종교의식을 관장한다"
+    ]
+  }
+]

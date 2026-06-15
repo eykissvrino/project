@@ -1,0 +1,106 @@
+{
+  "ksco_code": "45211",
+  "tasks": [
+    {
+      "verb": "끓이다",
+      "object": "물이나 우유",
+      "full_statement": "음료 제조를 위하여 물이나 우유를 끓인다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "얼리다",
+      "object": "얼음",
+      "full_statement": "음료 제조를 위하여 얼음을 얼린다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "혼합하다",
+      "object": "재료",
+      "full_statement": "제조 방법에 따라 재료를 적당히 혼합한다.",
+      "source_sentence": "물이나 우유을 끓이고 얼음을 얼려서 커피나 차 등을 만들기 위하여 제조 하는 방법에 따라 적당히 혼합하여 음료를 만든다",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "만들다",
+      "object": "다양한 커피",
+      "full_statement": "커피전문점, 커피숍 등에서 다양한 커피를 만든다.",
+      "source_sentence": "커피전문점, 커피숍 등에서 다양한 커피를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "커피",
+      "full_statement": "만든 커피를 고객에게 제공한다.",
+      "source_sentence": "커피전문점, 커피숍 등에서 다양한 커피를 만들어 고객에게 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "차나 주스 등의 음료",
+      "full_statement": "커피, 차, 주스 등의 음료를 조리한다.",
+      "source_sentence": "호텔, 레스토랑, 카페, 음료 전문점 등에서 커피, 차, 주스 등의 음료를 조리한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "기록하다",
+      "object": "일일판매기록부",
+      "full_statement": "매일 판매된 커피와 차를 일일판매기록부에 기록한다.",
+      "source_sentence": "매일 판매된 커피와 차를 일일판매기록부에 기록‧정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정리하다",
+      "object": "일일판매기록",
+      "full_statement": "매일 판매된 커피와 차의 판매기록을 정리한다.",
+      "source_sentence": "매일 판매된 커피와 차를 일일판매기록부에 기록‧정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "연구하다",
+      "object": "새로운 커피와 차를 만드는 방법",
+      "full_statement": "새로운 커피와 차를 만드는 방법을 연구한다.",
+      "source_sentence": "새로운 커피와 차를 만드는 방법을 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보관하다",
+      "object": "커피잔이나 찻잔",
+      "full_statement": "필요한 커피잔이나 찻잔 등을 보관한다.",
+      "source_sentence": "필요한 커피잔이나 찻잔 등을 보관 및 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "유지하다",
+      "object": "커피잔이나 찻잔",
+      "full_statement": "필요한 커피잔이나 찻잔 등을 유지한다.",
+      "source_sentence": "필요한 커피잔이나 찻잔 등을 보관 및 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "커피전문점·커피숍 등 실내 영업장",
+      "evidence_span": "커피전문점, 커피숍 등에서 다양한 커피를 만들어 고객에게 제공한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(음료 제공)",
+      "evidence_span": "다양한 커피를 만들어 고객에게 제공한다."
+    }
+  ]
+}

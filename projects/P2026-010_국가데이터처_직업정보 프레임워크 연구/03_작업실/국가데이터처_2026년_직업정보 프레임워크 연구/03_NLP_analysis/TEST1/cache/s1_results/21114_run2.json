@@ -1,0 +1,141 @@
+{
+  "ksco_code": "21114",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "전답작물",
+      "full_statement": "전답작물에 관한 조사를 실시한다.",
+      "source_sentence": "전답작물과 목초, 원예에 관한 조사, 연구를 실시하여 새롭고 개선된 생산방법을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "목초",
+      "full_statement": "목초에 관한 연구를 실시한다.",
+      "source_sentence": "전답작물과 목초, 원예에 관한 조사, 연구를 실시하여 새롭고 개선된 생산방법을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연구하다",
+      "object": "원예",
+      "full_statement": "원예에 관한 조사와 연구를 실시한다.",
+      "source_sentence": "전답작물과 목초, 원예에 관한 조사, 연구를 실시하여 새롭고 개선된 생산방법을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "개발하다",
+      "object": "생산방법",
+      "full_statement": "새롭고 개선된 작물 생산방법을 개발한다.",
+      "source_sentence": "전답작물과 목초, 원예에 관한 조사, 연구를 실시하여 새롭고 개선된 생산방법을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "연구하다",
+      "object": "식물의 종자번식",
+      "full_statement": "식물의 종자번식을 연구한다.",
+      "source_sentence": "또한 식물의 종자번식, 해충구제와 같은 전답작물 재배의 특정분야를 연구하는 자도 여기에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연구하다",
+      "object": "해충구제",
+      "full_statement": "전답작물 재배의 해충구제 방법을 연구한다.",
+      "source_sentence": "또한 식물의 종자번식, 해충구제와 같은 전답작물 재배의 특정분야를 연구하는 자도 여기에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연구하다",
+      "object": "전답작물 재배의 특정분야",
+      "full_statement": "전답작물 재배의 특정분야를 연구한다.",
+      "source_sentence": "또한 식물의 종자번식, 해충구제와 같은 전답작물 재배의 특정분야를 연구하는 자도 여기에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연구하다",
+      "object": "경작의 개선방법",
+      "full_statement": "농작물 경작의 개선방법을 연구한다.",
+      "source_sentence": "농업연구원은 경작의 개선방법, 가공, 출하 및 제품의 저장과 관련된 활동을 포함하여 농업, 축산 및 원예와 관련된 문제를 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연구하다",
+      "object": "농작물의 가공",
+      "full_statement": "농작물의 가공과 관련된 문제를 연구한다.",
+      "source_sentence": "농업연구원은 경작의 개선방법, 가공, 출하 및 제품의 저장과 관련된 활동을 포함하여 농업, 축산 및 원예와 관련된 문제를 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연구하다",
+      "object": "농작물의 출하",
+      "full_statement": "농작물의 출하와 관련된 문제를 연구한다.",
+      "source_sentence": "농업연구원은 경작의 개선방법, 가공, 출하 및 제품의 저장과 관련된 활동을 포함하여 농업, 축산 및 원예와 관련된 문제를 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "연구하다",
+      "object": "제품의 저장",
+      "full_statement": "농산물 제품의 저장과 관련된 문제를 연구한다.",
+      "source_sentence": "농업연구원은 경작의 개선방법, 가공, 출하 및 제품의 저장과 관련된 활동을 포함하여 농업, 축산 및 원예와 관련된 문제를 연구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "기초 연구와 응용연구",
+      "full_statement": "농업과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "source_sentence": "의약 및 농업과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "천연자원",
+      "full_statement": "농업 분야의 천연자원을 관리한다.",
+      "source_sentence": "생물학 연구원은 살아있는 유기체에 관한 지식을 넓히고 천연자원을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분석하다",
+      "object": "연구 자료",
+      "full_statement": "농업 분야별 연구 자료를 분석한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "연구보고서",
+      "full_statement": "연구 자료를 분석하여 연구보고서를 작성한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "기타 연구원·시험원",
+      "full_statement": "기타 연구원과 시험원을 감독한다.",
+      "source_sentence": "기타 연구원, 시험원을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "기타 연구원·시험원 감독(팀 작업·지휘)",
+      "evidence_span": "기타 연구원, 시험원을 감독하기도 한다."
+    }
+  ]
+}

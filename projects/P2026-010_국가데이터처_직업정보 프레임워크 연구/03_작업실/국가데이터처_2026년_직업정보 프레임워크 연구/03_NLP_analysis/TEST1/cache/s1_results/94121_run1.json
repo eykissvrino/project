@@ -1,0 +1,71 @@
+{
+  "ksco_code": "94121",
+  "tasks": [
+    {
+      "verb": "청소하다",
+      "object": "비행기 내외부",
+      "full_statement": "비행기의 내부와 외부를 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "선박 내외부",
+      "full_statement": "선박의 내부와 외부를 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "기관차 내외부",
+      "full_statement": "기관차의 내부와 외부를 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "운송장비 바닥",
+      "full_statement": "운송장비의 바닥을 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "청소하다",
+      "object": "유리창",
+      "full_statement": "운송장비의 유리창을 청소한다.",
+      "source_sentence": "비행기, 선박, 기관차의 내외부, 바닥, 유리창 등 운송장비를 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "털다",
+      "object": "먼지",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽에 있는 먼지를 턴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "쓸다",
+      "object": "바닥과 벽",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽을 쓴다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "닦다",
+      "object": "바닥과 벽",
+      "full_statement": "비행기, 선박, 기관차 등의 바닥과 벽을 닦는다.",
+      "source_sentence": "비행기, 선박, 기관차 등의 바닥, 벽에 있는 먼지를 털거나 쓸고 닦는다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

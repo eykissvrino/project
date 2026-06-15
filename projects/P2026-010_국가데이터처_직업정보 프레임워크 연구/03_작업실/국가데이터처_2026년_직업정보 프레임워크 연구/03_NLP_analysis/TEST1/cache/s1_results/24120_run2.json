@@ -1,0 +1,117 @@
+{
+  "ksco_code": "24120",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "일반적인 질환·장애·질병",
+      "full_statement": "일반적인 질환, 장애 및 질병을 진단한다.",
+      "source_sentence": "일반적인 질환, 장애 및 질병에 대해 진단 및 처방, 치료범위 및 방법 등을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "결정하다",
+      "object": "치료범위 및 방법",
+      "full_statement": "질환에 대한 치료범위 및 방법을 결정한다.",
+      "source_sentence": "일반적인 질환, 장애 및 질병에 대해 진단 및 처방, 치료범위 및 방법 등을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진찰하다",
+      "object": "환자",
+      "full_statement": "간단한 의료 기구를 사용하여 환자를 진찰한다.",
+      "source_sentence": "간단한 의료 기구를 사용하여 환자를 진찰하고 검사하며 결과를 분석하여 치료 및 약물을 처방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "환자",
+      "full_statement": "의료 기구를 사용하여 환자를 검사한다.",
+      "source_sentence": "간단한 의료 기구를 사용하여 환자를 진찰하고 검사하며 결과를 분석하여 치료 및 약물을 처방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "검사 결과",
+      "full_statement": "검사 결과를 분석한다.",
+      "source_sentence": "간단한 의료 기구를 사용하여 환자를 진찰하고 검사하며 결과를 분석하여 치료 및 약물을 처방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "처방하다",
+      "object": "치료 및 약물",
+      "full_statement": "분석 결과에 따라 치료 및 약물을 처방한다.",
+      "source_sentence": "간단한 의료 기구를 사용하여 환자를 진찰하고 검사하며 결과를 분석하여 치료 및 약물을 처방한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "투약하다",
+      "object": "환자",
+      "full_statement": "환자에게 투약을 비롯한 치료행위를 한다.",
+      "source_sentence": "환자들에게 투약을 비롯한 치료행위를 하고 식사, 질병예방 등에 관해 조언하거나 예방접종을 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실시하다",
+      "object": "전염병 예방접종",
+      "full_statement": "전염병 예방접종을 실시한다.",
+      "source_sentence": "또한 전염병 예방접종을 실시하고 환자에게 식사, 질병 예방 등에 관하여 조언한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조언하다",
+      "object": "식사 및 질병 예방",
+      "full_statement": "환자에게 식사, 질병 예방 등에 관하여 조언한다.",
+      "source_sentence": "또한 전염병 예방접종을 실시하고 환자에게 식사, 질병 예방 등에 관하여 조언한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 일치",
+      "confidence": 0.95
+    },
+    {
+      "verb": "왕진하다",
+      "object": "환자",
+      "full_statement": "경우에 따라 환자를 위해 왕진을 한다.",
+      "source_sentence": "경우에 따라서는 환자를 위해 왕진을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "예방하다",
+      "object": "질환",
+      "full_statement": "일반적인 질환 및 질병을 예방한다.",
+      "source_sentence": "의료 부분의 일반적인 질환, 장애 및 질병을 진료‧예방하는 자로",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {
+      "name": "간단한 의료 기구",
+      "category": "장비",
+      "evidence_span": "간단한 의료 기구를 사용하여 환자를 진찰하고 검사하며"
+    }
+  ],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "환자 진료·응대(대인 서비스)",
+      "evidence_span": "환자에게 식사, 질병 예방 등에 관하여 조언한다"
+    },
+    {
+      "category": "장소",
+      "value": "왕진(이동·환자 가정 방문)",
+      "evidence_span": "경우에 따라서는 환자를 위해 왕진을 하기도 한다"
+    },
+    {
+      "category": "위험",
+      "value": "전염병·생물학적 노출(예방접종·진료)",
+      "evidence_span": "전염병 예방접종을 실시하고"
+    }
+  ]
+}

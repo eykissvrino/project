@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O*NET 체계 종합 분석 — 한국 직업분류 개편 방안</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    color: #1a1a1a;
+    background: #fafaf7;
+    line-height: 1.65;
+    font-size: 15px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 28px 20px;
+    border-right: 1px solid #e5e1d8;
+    background: #f5f3ec;
+  }
+  .sidebar h1 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: #c54a1a;
+    letter-spacing: 0.3px;
+  }
+  .sidebar .meta {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 22px;
+    line-height: 1.5;
+  }
+  .sidebar nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: section;
+  }
+  .sidebar nav li {
+    counter-increment: section;
+    margin: 4px 0;
+  }
+  .sidebar nav a {
+    display: block;
+    padding: 7px 10px 7px 28px;
+    font-size: 13px;
+    color: #4a4a4a;
+    text-decoration: none;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.15s;
+  }
+  .sidebar nav a::before {
+    content: counter(section);
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    font-size: 11px;
+    color: #c97a4f;
+    font-weight: 700;
+    width: 14px;
+    text-align: right;
+  }
+  .sidebar nav a:hover {
+    background: #ebe6da;
+    color: #1a1a1a;
+  }
+  .sidebar nav a.active {
+    background: #fff;
+    color: #c54a1a;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  /* Content */
+  .content {
+    padding: 48px 56px 80px;
+    max-width: 980px;
+    background: #fff;
+    min-height: 100vh;
+  }
+  .content header {
+    border-bottom: 2px solid #c54a1a;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .content header h1 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.4px;
+  }
+  .content header .subtitle {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .content header .subtitle strong { color: #1a1a1a; font-weight: 600; }
+  .content section {
+    margin-bottom: 56px;
+    scroll-margin-top: 24px;
+  }
+  .content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e1d8;
+    color: #1a1a1a;
+  }
+  .content h2 .num {
+    color: #c54a1a;
+    margin-right: 8px;
+    font-weight: 800;
+  }
+  .content h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 28px 0 10px;
+    color: #1a1a1a;
+  }
+  .content h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 18px 0 6px;
+    color: #4a4a4a;
+  }
+  .content p { margin: 8px 0 12px; }
+  .content ul, .content ol { padding-left: 22px; margin: 8px 0 14px; }
+  .content li { margin: 4px 0; }
+  .content strong { font-weight: 600; }
+  .content em { color: #555; }
+  .content code {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: #f4f1ea;
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: #c54a1a;
+  }
+  .content a { color: #3a5d7a; text-decoration: underline; text-decoration-color: #b3c5d8; }
+  .content a:hover { color: #c54a1a; text-decoration-color: #c54a1a; }
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 18px;
+    font-size: 13px;
+  }
+  th, td {
+    text-align: left;
+    padding: 9px 12px;
+    border-bottom: 1px solid #e5e1d8;
+    vertical-align: top;
+  }
+  th {
+    background: #f5f3ec;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 2px solid #d4cfc0;
+  }
+  tr:hover { background: #fafaf7; }
+  /* Callouts */
+  .callout {
+    border-left: 3px solid #c54a1a;
+    background: #fff8e8;
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+  }
+  .callout.green { border-left-color: #5b9572; background: #eef7f0; }
+  .callout.blue { border-left-color: #3a5d7a; background: #f1f5fb; }
+  .callout strong { color: #c54a1a; }
+  .callout.green strong { color: #5b9572; }
+  .callout.blue strong { color: #3a5d7a; }
+  .source {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+    border-top: 1px dashed #d4cfc0;
+    padding-top: 8px;
+    margin-top: 14px;
+  }
+  .source::before { content: "출처 — "; color: #c97a4f; font-weight: 600; font-style: normal; }
+  /* SVG container */
+  .figure {
+    margin: 20px 0 24px;
+    padding: 14px;
+    background: #fafaf7;
+    border: 1px solid #e5e1d8;
+    border-radius: 6px;
+  }
+  .figure svg { width: 100%; height: auto; display: block; }
+  .figure .caption {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  /* Star marker */
+  .star {
+    color: #c54a1a;
+    font-weight: 800;
+  }
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; height: auto; }
+    .content { padding: 32px 24px; }
+  }
+  /* Print */
+  @media print {
+    .sidebar { display: none; }
+    .content { max-width: 100%; padding: 20px; }
+    body { background: #fff; font-size: 11pt; }
+    .figure { page-break-inside: avoid; }
+    section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+<aside class="sidebar">
+  <h1>O*NET 종합 분석</h1>
+  <div class="meta">
+    P2026-010<br>
+    국가데이터처 직업정보 프레임워크 연구<br>
+    2026-05-04 작성
+  </div>
+  <nav>
+    <ol>
+      <li>
+        <a href="#s1">서론 — 프레임워크 의의</a>
+      </li>
+      <li><a href="#s2">O*NET-SOC 분류 체계</a></li>
+      <li><a href="#s3">콘텐츠 모델</a></li>
+      <li><a href="#s4">4계층 활동 체계</a></li>
+      <li><a href="#s5">측정 척도</a></li>
+      <li><a href="#s6">직업과 콘텐츠 모델 결합</a></li>
+      <li><a href="#s7">2단계 운영 파이프라인</a></li>
+      <li><a href="#s8">SOC ↔ O*NET 양방향 관계</a></li>
+      <li><a href="#s9">한국 직업분류 현황</a></li>
+      <li><a href="#s10">고도화 옵션 (재구성)</a></li>
+      <li><a href="#s11">단계적 로드맵</a></li>
+      <li><a href="#s12">정정 사항</a></li>
+      <li><a href="#s13">참고문헌</a></li>
+    </ol>
+  </nav>
+</aside>
+
+<main class="content">
+
+<header>
+  <h1>O*NET 체계 종합 분석<br>— 한국 직업분류 개편 방안</h1>
+  <div class="subtitle">
+    <strong>작성 맥락</strong> — P2026-010 국가데이터처 직업정보 프레임워크 연구 / 제안발표 준비<br>
+    <strong>검증 기준일</strong> — 2026-05-04<br>
+    <strong>핵심 1차 출처</strong> — onetcenter.org · onetonline.org · bls.gov/soc · 통계청 고시 제2024-328호 · 고용노동부 고시 제2024-63호<br>
+    <strong>위상</strong> — 본 프로젝트 심층분석의 종합 정리본
+  </div>
+</header>
+
+<section id="s1">
+<h2><span class="num">1</span>서론 — 본 연구 목적과 직업정보 프레임워크의 의의</h2>
+
+<h3>1.1 본 연구의 목적과 분석 방향</h3>
+<p>본 연구의 정식 과제명은 <strong>"직업분류 고도화를 위한 직업정보 프레임워크 연구"</strong>이다. 이 명칭에서 직업정보 프레임워크는 <em>수단</em>이고 직업분류의 개정·고도화가 <em>목적</em>임을 분명히 할 필요가 있다. 미국 O*NET은 이 <em>수단</em>의 가장 성숙한 사례로, 1991년부터 30년 이상 운영되며 SOC 표준직업분류 개정의 데이터 인프라 역할을 동시에 수행해 왔다.</p>
+
+<p>따라서 본 분석은 두 층위에서 진행된다 — ① O*NET 시스템 자체의 구조와 운영 방식, ② 그 운영이 어떻게 SOC 분류의 개정·고도화에 기여하는지. 한국 적용 방안은 후자에 초점을 맞춰 도출된다.</p>
+
+<h4>Peterson 외(2001)가 제시한 O*NET의 3대 설계 원칙</h4>
+<ul>
+  <li><strong>Multiple Windows (다중 관점)</strong> — 사람·직무·환경·시장을 다축으로 동시 기술</li>
+  <li><strong>Common Language (공통 언어)</strong> — 모든 직업에 동일 디스크립터 적용 → 직업 간 직접 비교</li>
+  <li><strong>Hierarchical Taxonomies (위계적 분류)</strong> — 분석 목적별 추상도 선택 가능</li>
+</ul>
+<div class="source">Peterson, N. G. et al. (2001). <em>Understanding Work Using O*NET</em>. Personnel Psychology, 54(2), 451-492.</div>
+
+<h3>1.2 직업정보 프레임워크의 개념</h3>
+<p>직업정보 프레임워크(occupational information framework)는 각 직업의 수행 활동, 요구 역량, 직무 특성 등을 체계적으로 설명하기 위한 정보 구조를 의미한다. 직업정보 프레임워크는 직업의 내용을 구성하는 다양한 요소를 구조화하여 직업 간 비교와 분석을 가능하게 하는 역할을 한다.</p>
+
+<p>일반적으로 직업정보 프레임워크는 다음과 같은 요소로 구성된다.</p>
+<ul>
+  <li>직무 과업 (tasks)</li>
+  <li>업무활동 (work activities)</li>
+  <li>요구 기술 (skills)</li>
+  <li>요구 지식 (knowledge)</li>
+  <li>업무 환경 (work context)</li>
+</ul>
+
+<p>대표적인 사례로는 미국 노동부가 구축한 O*NET 직업정보 시스템이 있으며, O*NET에서는 직업정보를 업무활동, 기술, 지식, 능력 등 다양한 요소로 구조화하여 직업 간 관계를 분석할 수 있도록 하고 있다.</p>
+
+<p>이와 같은 직업정보 프레임워크는 직업의 수행 활동과 요구 역량을 체계적으로 설명함으로써 직업분류 체계의 분석 기반을 제공하는 중요한 역할을 한다.</p>
+
+<h3>1.3 한국표준직업분류에서 직업정보의 한계</h3>
+<p>한국표준직업분류는 직업 간 구조적 관계를 체계적으로 제시하는 분류 체계라는 점에서 중요한 역할을 수행하고 있으나, 직업정보 측면에서는 몇 가지 한계를 가진다.</p>
+
+<p><strong>첫째, 직업의 수행 활동이 서술형 문장 형태로 제시되어 있어 직무 구조 분석에 활용하기 어렵다.</strong> 한국표준직업분류에서는 각 직업의 주요 업무를 문장 형태로 설명하고 있으나, 이러한 설명은 직무활동 단위로 구조화되어 있지 않아 직업 간 비교 분석에 활용하기에는 한계가 있다.</p>
+
+<p><strong>둘째, 직무활동의 표준화된 분류 체계가 부족하다.</strong> 동일한 업무활동이 서로 다른 표현으로 기술되는 경우가 많아 직업 간 업무활동의 유사성을 체계적으로 분석하기 어렵다.</p>
+
+<p><strong>셋째, 직업정보가 데이터 구조 형태로 구축되어 있지 않다.</strong> 현재의 직업 설명은 문장 형태로 제시되어 있어 직업정보 데이터베이스 구축이나 직업 분석 연구에 활용하기에는 제한적인 측면이 있다.</p>
+
+<p>이러한 한계는 직업 간 업무활동 구조를 분석하고 직업분류 체계를 고도화하는 데 있어 제약 요인으로 작용할 수 있다.</p>
+
+<h3>1.4 직업정보 프레임워크 개선과 직업분류 개정의 관계</h3>
+<p>직업분류 체계는 노동시장 변화와 산업구조 변화에 대응하기 위하여 지속적으로 개정될 필요가 있다. 특히 최근에는 기술혁신, 디지털 전환, 새로운 산업의 등장 등으로 인해 직업 구조가 빠르게 변화하고 있으며, 이러한 변화는 직업분류 체계의 고도화를 요구하고 있다.</p>
+
+<p>직업분류 개정 과정에서 중요한 분석 기반으로 활용되는 것이 바로 직업정보 프레임워크이다. 직업정보 프레임워크는 직업의 수행 활동과 요구 역량을 체계적으로 구조화함으로써 직업 간 유사성과 차이를 분석할 수 있는 기준을 제공한다.</p>
+
+<p>예를 들어 직업 간 업무활동을 비교 분석하면 다음과 같은 분석이 가능하다.</p>
+<ul>
+  <li>직업 간 업무활동 유사성 분석</li>
+  <li>신규 직업의 기능적 위치 파악</li>
+  <li>직업군 재구성 가능성 검토</li>
+  <li>직업 경계 조정</li>
+</ul>
+
+<p>이러한 분석 결과는 직업분류 체계를 개정하거나 새로운 직업을 분류하는 과정에서 중요한 기초 자료로 활용된다.</p>
+
+<p>국제적으로도 직업분류 개정 과정에서는 직업정보 프레임워크가 중요한 역할을 수행하고 있다. 예를 들어 미국의 O*NET 시스템은 직업의 업무활동과 요구 역량을 체계적으로 분석하여 직업 간 관계를 파악하는 데 활용되며, 이러한 정보는 미국 표준직업분류(SOC) 개정 과정에서 중요한 분석 기반으로 활용된다.</p>
+
+<div class="callout">
+<strong>핵심 명제</strong> — 직업정보 프레임워크의 개선은 단순히 직업정보를 확충하는 차원을 넘어 <em>직업분류 체계의 고도화를 위한 핵심 기반</em>으로 작용한다. 직업정보를 업무활동 중심으로 구조화하고 표준화된 직무요소를 구축함으로써 직업 간 관계를 보다 체계적으로 분석할 수 있으며, 이는 향후 직업분류 개정과 직업 구조 분석에 중요한 기반을 제공할 수 있다.
+</div>
+
+<div class="source">본 연구 제안서 (P2026-010, 2026)</div>
+</section>
+
+<section id="s2">
+<h2><span class="num">2</span>O*NET-SOC 직업 분류 체계 (5계층)</h2>
+
+<table>
+<thead><tr><th>수준</th><th>항목 수</th><th>코드 자리수</th><th>예시</th></tr></thead>
+<tbody>
+<tr><td>Major Group (대분류)</td><td>23</td><td>2자리</td><td>13- Business and Financial</td></tr>
+<tr><td>Minor Group (소분류)</td><td>98</td><td>3자리</td><td>13-2 Financial Specialists</td></tr>
+<tr><td>Broad Occupation (광범위)</td><td>459</td><td>5자리</td><td>13-201 Accountants and Auditors</td></tr>
+<tr><td>Detailed Occupation (SOC)</td><td>867</td><td>6자리</td><td>13-2011</td></tr>
+<tr><td><strong>O*NET-SOC</strong></td><td><strong>1,016</strong></td><td><strong>8자리</strong></td><td><strong>13-2011.00 / .01 / .02</strong></td></tr>
+</tbody>
+</table>
+
+<h3>핵심 사실</h3>
+<ul>
+  <li>1,016개 중 <strong>923개</strong>가 O*NET data-level 직업 (실제 측정값 보유)</li>
+  <li>첫 6자리는 SOC와 동일, 뒤 <code>.XX</code>가 O*NET 자체 세분</li>
+  <li>2019년에 SOC 2018 기반으로 갱신 완료 (2020.11)</li>
+  <li>최신 데이터베이스: O*NET 30.2 (2026.2.24 릴리즈)</li>
+</ul>
+
+<div class="source"><a href="https://www.onetcenter.org/taxonomy.html">O*NET-SOC Taxonomy</a> · <a href="https://www.onetcenter.org/dl_files/Taxonomy2019_Summary.pdf">Updating O*NET-SOC Taxonomy 2019</a></div>
+</section>
+
+<section id="s3">
+<h2><span class="num">3</span>콘텐츠 모델 — 직업을 기술하는 표준 분류 체계</h2>
+
+<p>콘텐츠 모델은 직업을 기술하기 위한 <strong>표준 분류 체계</strong>(클래스)이며, 각 직업은 이 모델 위의 <strong>인스턴스</strong>로서 측정값을 보유한다. 직업마다 콘텐츠 모델이 따로 있는 것이 아니라, 하나의 표준 모델 위에 1,016개 직업이 각자의 좌표값을 채워 넣는 구조다.</p>
+
+<h3>3.1 6대 도메인 구성</h3>
+
+<div class="figure">
+<svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+  <!-- 6 domain cards -->
+  <g>
+    <rect x="10" y="20" width="135" height="280" rx="6" fill="#fdf3eb" stroke="#c97a4f"/>
+    <rect x="10" y="20" width="135" height="22" rx="6" fill="#c97a4f"/>
+    <text x="20" y="36" fill="#fff" font-size="10" font-weight="700">1. Worker Characteristics</text>
+    <text x="20" y="62" font-size="11" fill="#1a1a1a">근로자 특성</text>
+    <text x="20" y="86" font-size="10" fill="#555">• Abilities (52)</text>
+    <text x="20" y="102" font-size="10" fill="#555">• Interests (RIASEC 6)</text>
+    <text x="20" y="118" font-size="10" fill="#555">• Work Values (6)</text>
+    <text x="20" y="134" font-size="10" fill="#555">• Work Styles (16)</text>
+    <text x="20" y="280" font-size="10" font-style="italic" fill="#888">사람의 안정적 속성</text>
+  </g>
+  <g>
+    <rect x="155" y="20" width="135" height="280" rx="6" fill="#f4f0fa" stroke="#7e6aaa"/>
+    <rect x="155" y="20" width="135" height="22" rx="6" fill="#7e6aaa"/>
+    <text x="165" y="36" fill="#fff" font-size="10" font-weight="700">2. Worker Requirements</text>
+    <text x="165" y="62" font-size="11" fill="#1a1a1a">근로자 요구</text>
+    <text x="165" y="86" font-size="10" fill="#555">• Skills (35)</text>
+    <text x="165" y="102" font-size="10" fill="#555">  - Basic 10</text>
+    <text x="165" y="118" font-size="10" fill="#555">  - Cross-Functional 25</text>
+    <text x="165" y="134" font-size="10" fill="#555">• Knowledge (33)</text>
+    <text x="165" y="150" font-size="10" fill="#555">• Education</text>
+    <text x="165" y="280" font-size="10" font-style="italic" fill="#888">개발 가능 요건</text>
+  </g>
+  <g>
+    <rect x="300" y="20" width="135" height="280" rx="6" fill="#ecf3f9" stroke="#5786a8"/>
+    <rect x="300" y="20" width="135" height="22" rx="6" fill="#5786a8"/>
+    <text x="310" y="36" fill="#fff" font-size="10" font-weight="700">3. Experience Reqs</text>
+    <text x="310" y="62" font-size="11" fill="#1a1a1a">경험 요구</text>
+    <text x="310" y="86" font-size="10" fill="#555">• Experience &amp; Training</text>
+    <text x="310" y="102" font-size="10" fill="#555">• Skills (Entry)</text>
+    <text x="310" y="118" font-size="10" fill="#555">• Licensing</text>
+    <text x="310" y="134" font-size="10" fill="#555">• Job Zones</text>
+    <text x="310" y="280" font-size="10" font-style="italic" fill="#888">진입 자격</text>
+  </g>
+  <g>
+    <rect x="445" y="20" width="135" height="280" rx="6" fill="#eef7f0" stroke="#5b9572" stroke-width="2"/>
+    <rect x="445" y="20" width="135" height="22" rx="6" fill="#5b9572"/>
+    <text x="455" y="36" fill="#fff" font-size="10" font-weight="700">★ 4. Occupational Reqs</text>
+    <text x="455" y="62" font-size="11" fill="#1a1a1a" font-weight="700">직업 요구</text>
+    <text x="455" y="86" font-size="10" fill="#1a1a1a" font-weight="700">• GWA (41)</text>
+    <text x="455" y="102" font-size="10" fill="#1a1a1a" font-weight="700">• IWA (325)</text>
+    <text x="455" y="118" font-size="10" fill="#1a1a1a" font-weight="700">• DWA (2,000+)</text>
+    <text x="455" y="134" font-size="10" fill="#555">• Work Context (57)</text>
+    <text x="455" y="150" font-size="10" fill="#555">• Org Context</text>
+    <text x="455" y="280" font-size="10" font-style="italic" fill="#5b9572" font-weight="700">교차직업 활동 위계</text>
+  </g>
+  <g>
+    <rect x="590" y="20" width="135" height="280" rx="6" fill="#fdf4f4" stroke="#bf6b6b" stroke-width="2"/>
+    <rect x="590" y="20" width="135" height="22" rx="6" fill="#bf6b6b"/>
+    <text x="600" y="36" fill="#fff" font-size="10" font-weight="700">★ 5. Occupation-Specific</text>
+    <text x="600" y="62" font-size="11" fill="#1a1a1a" font-weight="700">직업특수 정보</text>
+    <text x="600" y="86" font-size="10" fill="#1a1a1a" font-weight="700">• Tasks (19,000+)</text>
+    <text x="600" y="102" font-size="10" fill="#555">• Tools &amp; Technology</text>
+    <text x="600" y="118" font-size="10" fill="#555">• Tech Skills</text>
+    <text x="600" y="280" font-size="10" font-style="italic" fill="#bf6b6b" font-weight="700">직업별 고유 행동</text>
+  </g>
+  <g>
+    <rect x="735" y="20" width="135" height="280" rx="6" fill="#f7f7f0" stroke="#9a9665"/>
+    <rect x="735" y="20" width="135" height="22" rx="6" fill="#9a9665"/>
+    <text x="745" y="36" fill="#fff" font-size="10" font-weight="700">6. Workforce Chars</text>
+    <text x="745" y="62" font-size="11" fill="#1a1a1a">인력 특성</text>
+    <text x="745" y="86" font-size="10" fill="#555">• Labor Market Info</text>
+    <text x="745" y="102" font-size="10" fill="#555">• Wages</text>
+    <text x="745" y="118" font-size="10" fill="#555">• Occupational Outlook</text>
+    <text x="745" y="280" font-size="10" font-style="italic" fill="#888">외부 BLS 연계</text>
+  </g>
+</svg>
+<div class="caption">콘텐츠 모델 6대 도메인 구성 — ★ 표시는 4계층 활동 체계가 위치하는 두 도메인</div>
+</div>
+
+<p>총 <strong>277개 디스크립터</strong>가 콘텐츠 모델에 등재되어 있으며, 그 중 실제 측정에 사용되는 디스크립터는 239개로 400개 척도가 적용된다.</p>
+
+<div class="callout">
+<strong>핵심 인사이트</strong> — 4계층 활동 체계는 콘텐츠 모델의 <em>부분 구조</em>이다. GWA·IWA·DWA는 도메인 4 안에, Task는 도메인 5 안에 위치한다. 능력·지식·기술·임금 등 다른 도메인의 디스크립터는 4계층 체계와 무관하다.
+</div>
+
+<div class="source"><a href="https://www.onetcenter.org/content.html">The O*NET Content Model</a> · <a href="https://www.onetcenter.org/dataCollection.html">O*NET Data Collection Overview</a></div>
+</section>
+
+<section id="s4">
+<h2><span class="num">4</span>4계층 활동 체계 — GWA · IWA · DWA · Task</h2>
+
+<h3>4.1 정의와 개수</h3>
+<table>
+<thead><tr><th>계층</th><th>개수</th><th>정의</th><th>도메인</th><th>측정값</th></tr></thead>
+<tbody>
+<tr><td><strong>GWA</strong> (Generalized Work Activities)</td><td><strong>41</strong></td><td>모든 직업에 공통적인 최상위 추상 활동</td><td>4</td><td>✓ Level + Importance</td></tr>
+<tr><td><strong>IWA</strong> (Intermediate Work Activities)</td><td><strong>325</strong></td><td>GWA와 DWA 사이의 의미적 중간 군집</td><td>4</td><td>✗ 분류 단위만</td></tr>
+<tr><td><strong>DWA</strong> (Detailed Work Activities)</td><td><strong>2,000+</strong></td><td>직업 간 공유 가능한 세부 활동</td><td>4</td><td>✗ Task 매핑만</td></tr>
+<tr><td><strong>Task</strong></td><td><strong>19,000+</strong></td><td>특정 직업 고유의 SME 작성 진술문</td><td>5</td><td>✓ Importance + Relevance + Frequency</td></tr>
+</tbody>
+</table>
+
+<div class="figure">
+<svg viewBox="0 0 880 160" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+  <rect x="20" y="20" width="180" height="120" rx="8" fill="#1a1a1a"/>
+  <text x="32" y="42" fill="#fff" font-size="11" font-weight="700">GWA · 일반 업무활동</text>
+  <text x="32" y="74" fill="#ff9966" font-size="28" font-weight="800">41</text>
+  <text x="32" y="100" fill="#bbb" font-size="10">최상위 추상</text>
+  <text x="32" y="118" fill="#bbb" font-size="10">"정보 수집" "분석"</text>
+  <text x="32" y="134" fill="#5b9572" font-size="10" font-weight="700">↑ 도메인 4</text>
+
+  <path d="M 200 80 L 220 80" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+  <rect x="220" y="20" width="180" height="120" rx="8" fill="#3a3a3a"/>
+  <text x="232" y="42" fill="#fff" font-size="11" font-weight="700">IWA · 중간 업무활동</text>
+  <text x="232" y="74" fill="#ff9966" font-size="28" font-weight="800">325</text>
+  <text x="232" y="100" fill="#bbb" font-size="10">분류 위계 단위</text>
+  <text x="232" y="118" fill="#bbb" font-size="10">측정값 없음</text>
+  <text x="232" y="134" fill="#5b9572" font-size="10" font-weight="700">↑ 도메인 4</text>
+
+  <path d="M 400 80 L 420 80" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+  <rect x="420" y="20" width="180" height="120" rx="8" fill="#3a3a3a"/>
+  <text x="432" y="42" fill="#fff" font-size="11" font-weight="700">DWA · 세부 업무활동</text>
+  <text x="432" y="74" fill="#ff9966" font-size="28" font-weight="800">2,000+</text>
+  <text x="432" y="100" fill="#bbb" font-size="10">교차직업 (multi-link)</text>
+  <text x="432" y="118" fill="#bbb" font-size="10">"고객 인터뷰"</text>
+  <text x="432" y="134" fill="#5b9572" font-size="10" font-weight="700">↑ 도메인 4</text>
+
+  <path d="M 600 80 L 620 80" stroke="#c54a1a" stroke-width="2" fill="none" marker-end="url(#arrK)"/>
+
+  <rect x="620" y="20" width="240" height="120" rx="8" fill="#c54a1a"/>
+  <text x="632" y="42" fill="#fff" font-size="11" font-weight="700">★ Task · 직업특수 과업</text>
+  <text x="632" y="74" fill="#ffe6cc" font-size="28" font-weight="800">19,000+</text>
+  <text x="632" y="100" fill="#ffe0cc" font-size="10">직업당 평균 ~21개</text>
+  <text x="632" y="118" fill="#ffe0cc" font-size="10">SME 작성 진술문</text>
+  <text x="632" y="134" fill="#ffd0a8" font-size="10" font-weight="700">↑ 도메인 5</text>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/></marker>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#c54a1a"/></marker>
+  </defs>
+</svg>
+<div class="caption">4계층 활동 체계의 위계 — 군집화로 상위로 올라갈수록 추상화</div>
+</div>
+
+<h3>4.2 GWA 4대 범주</h3>
+<ul>
+  <li><strong>A. 정보 입력 (Information Input)</strong> — Getting Information, Identifying Objects, Monitoring, Inspecting</li>
+  <li><strong>B. 정신적 과정 (Mental Processes)</strong> — Analyzing Data, Decision-Making, Planning, Creative Thinking</li>
+  <li><strong>C. 업무 산출 (Work Output)</strong> — Physical Activity, Operating, Documenting, Computer Interaction</li>
+  <li><strong>D. 타인과 상호작용 (Interacting)</strong> — Communicating, Coaching, Coordinating, Selling, Conflict Resolution</li>
+</ul>
+
+<div class="callout">
+<strong>핵심 비대칭 — 측정 vs 분류</strong><br>
+GWA·Task만 측정값을 보유하고, IWA·DWA는 분류 단위로만 존재한다. 이는 단순 사실이 아니라 방법론적 설계 — IWA·DWA는 Task의 의미적 군집화 결과이므로 별도 측정이 불필요하다.
+</div>
+
+<h3>4.3 DWA 도출 방법론 (NCO-NET, 2018)</h3>
+<p>O*NET 18.0의 19,450개 Task를 군집화하여 2,069개 DWA + 332개 IWA를 도출한 4단계 절차(이후 정제하여 현재 IWA 325개로 확정):</p>
+<ol>
+  <li>Job Family 분류 (22개 직무군으로 1차 정렬)</li>
+  <li>GWA 할당 (평가자 2인 독립 + 합의 워크시트)</li>
+  <li>GWA 내 군집화 (의미 유사성 기준)</li>
+  <li>DWA 진술문 작성 (행동 동사 + 구체 대상 + 맥락 최소화)</li>
+</ol>
+<p><strong>DWA 채택 임계치</strong>: 최소 4개 작업 또는 3개 직업에서 언급</p>
+
+<div class="source"><a href="https://www.onetcenter.org/dl_files/Related_DWA.pdf">O*NET Work Activities Project Technical Report (NCO-NET, 2018)</a> · 본 프로젝트 심층분석 02</div>
+</section>
+
+<section id="s5">
+<h2><span class="num">5</span>측정 척도 — Level과 Importance</h2>
+
+<h3>5.1 척도 정의</h3>
+<table>
+<thead><tr><th>척도</th><th>범위</th><th>의미</th><th>표준화</th></tr></thead>
+<tbody>
+<tr><td><strong>Level</strong></td><td>0~7 (8단계)</td><td>직무가 요구하는 복잡성·난이도</td><td>0~100</td></tr>
+<tr><td><strong>Importance</strong></td><td>1~5 (5단계)</td><td>직무 수행에서의 중요도</td><td>0~100</td></tr>
+<tr><td>Frequency</td><td>1~7</td><td>활동 빈도 (Task 한정)</td><td>—</td></tr>
+<tr><td>Relevance</td><td>%</td><td>응답자 관련성 동의율</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>이 척도들은 <strong>변경된 적 없다.</strong> O*NET 30.0(2024~2025)에서 변한 것은 척도 자체가 아니라 <em>Level Scale 안의 행동 앵커 텍스트</em> 60개 항목(Knowledge·GWA 도메인)이다.</p>
+
+<h3>5.2 Level Scale Anchors (BARS 행동 앵커)</h3>
+
+<div class="figure">
+<svg viewBox="0 0 880 200" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+  <text x="20" y="30" font-size="12" font-weight="700">예시: GWA "정보 수집(Getting Information)"</text>
+
+  <line x1="50" y1="80" x2="850" y2="80" stroke="#666" stroke-width="2"/>
+  <g>
+    <circle cx="50" cy="80" r="5" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="50" y="105" text-anchor="middle" font-size="11">0</text>
+    <circle cx="164" cy="80" r="5" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="164" y="105" text-anchor="middle" font-size="11">1</text>
+    <circle cx="278" cy="80" r="9" fill="#82b596" stroke="#5b9572" stroke-width="2"/>
+    <text x="278" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#5b9572">2 Low</text>
+    <circle cx="392" cy="80" r="5" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="392" y="105" text-anchor="middle" font-size="11">3</text>
+    <circle cx="506" cy="80" r="9" fill="#e8a87c" stroke="#c97a4f" stroke-width="2"/>
+    <text x="506" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#c97a4f">4 Mod</text>
+    <circle cx="620" cy="80" r="5" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="620" y="105" text-anchor="middle" font-size="11">5</text>
+    <circle cx="734" cy="80" r="9" fill="#bf6b6b" stroke="#a84444" stroke-width="2"/>
+    <text x="734" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#a84444">6 High</text>
+    <circle cx="848" cy="80" r="5" fill="#fff" stroke="#666" stroke-width="2"/>
+    <text x="848" y="105" text-anchor="middle" font-size="11">7</text>
+  </g>
+
+  <rect x="200" y="125" width="170" height="60" rx="5" fill="#fff" stroke="#5b9572"/>
+  <text x="208" y="142" font-size="11" font-weight="700" fill="#5b9572">2점 · Low</text>
+  <text x="208" y="158" font-size="10" fill="#555">"매장에서 거스름돈 계산을</text>
+  <text x="208" y="172" font-size="10" fill="#555">  위한 가격표 읽기"</text>
+
+  <rect x="430" y="125" width="170" height="60" rx="5" fill="#fff" stroke="#c97a4f"/>
+  <text x="438" y="142" font-size="11" font-weight="700" fill="#c97a4f">4점 · Moderate</text>
+  <text x="438" y="158" font-size="10" fill="#555">"공급업체와 통화로</text>
+  <text x="438" y="172" font-size="10" fill="#555">  주문 상태 정보 파악"</text>
+
+  <rect x="660" y="125" width="200" height="60" rx="5" fill="#fff" stroke="#a84444"/>
+  <text x="668" y="142" font-size="11" font-weight="700" fill="#a84444">6점 · High</text>
+  <text x="668" y="158" font-size="10" fill="#555">"합병 검토를 위한 다부서</text>
+  <text x="668" y="172" font-size="10" fill="#555">  재무·전략 데이터 종합"</text>
+</svg>
+<div class="caption">Level 척도 0~7점 + Low/Moderate/High 3개 위치의 행동 앵커</div>
+</div>
+
+<h3>5.3 디스크립터별 측정 매트릭스</h3>
+<table>
+<thead><tr><th>디스크립터</th><th>Level (0~7)</th><th>Importance (1~5)</th><th>기타 척도</th></tr></thead>
+<tbody>
+<tr><td>Knowledge · Skills · Abilities · GWA</td><td>✓</td><td>✓</td><td>—</td></tr>
+<tr><td>Work Styles</td><td>✗</td><td>✓</td><td>—</td></tr>
+<tr><td>Tasks</td><td>✗</td><td>✓</td><td>+ Relevance · Frequency</td></tr>
+<tr><td><strong>IWA · DWA</strong></td><td><strong>✗</strong></td><td><strong>✗</strong></td><td><strong>측정값 없음 — 분류 단위</strong></td></tr>
+<tr><td>Work Context</td><td>✗</td><td>✗</td><td>Context 척도 (빈도·정도)</td></tr>
+<tr><td>Tools and Technology</td><td>✗</td><td>✗</td><td>사용 여부</td></tr>
+</tbody>
+</table>
+
+<h3>5.4 O*NET 30.0 / 30.2 최신 변경 사항</h3>
+<ul>
+  <li><strong>30.0 (2024~2025)</strong>: Knowledge·GWA 도메인의 Level Scale Anchor <em>텍스트 60개</em> 갱신 (척도·앵커 위치는 동일)</li>
+  <li><strong>30.2 (2026.2.24)</strong>: Job Zones 5단계 → <strong>4단계로 통합</strong> (Job Zone 1+2 통합), 325개 직업 재할당, 871개 직업 vocational interest 데이터 갱신, 635개 직업 alternate title 갱신</li>
+</ul>
+
+<div class="source"><a href="https://www.onetonline.org/help/online/scales">O*NET OnLine Help: Scales</a> · <a href="https://www.onetcenter.org/reports/Anchors_Update_KG.html">Anchors_Update_KG</a> · <a href="https://www.onetcenter.org/reports/Anchors_Update_AS.html">Anchors_Update_AS</a> · <a href="https://www.onetcenter.org/db_releases.html">Database Releases Archive</a></div>
+</section>
+
+<section id="s6">
+<h2><span class="num">6</span>직업과 콘텐츠 모델의 결합 방식</h2>
+
+<h3>6.1 데이터 모델 — 직업×디스크립터 매트릭스</h3>
+
+<p>직업, 콘텐츠 모델, 4계층 활동 체계의 통합 관계는 아래 다이어그램으로 한눈에 정리된다 — <em>콘텐츠 모델은 분류 체계(클래스)이고, 4계층 활동 체계는 그중 두 도메인의 부분 구조이며, 직업은 전체에 대한 측정값을 갖는 인스턴스</em>라는 3개 레이어 구조다.</p>
+
+<div class="figure">
+  <object data="onet_three_layer_integration_model.svg" type="image/svg+xml" style="width: 100%; height: auto; display: block;">
+    <img src="onet_three_layer_integration_model.svg" alt="직업–콘텐츠 모델–4계층 활동 체계 통합 관계" style="width: 100%; height: auto;">
+  </object>
+  <div class="caption">3개 레이어 통합 관계 — 콘텐츠 모델(분류 체계) ⊃ 4계층 활동 체계(부분 구조) + 직업(인스턴스)</div>
+</div>
+
+<p>각 직업은 콘텐츠 모델 277개 디스크립터에 대해 측정값(좌표)을 갖는다. 1직업당 약 500~700개 측정값/매핑이 채워지며, 1,016개 직업 전체로는 수십만 건의 데이터가 형성된다.</p>
+
+<h3>6.2 계층별 결합 방식 (서로 다른 데이터 모델)</h3>
+<p>데이터 모델 이해를 위해 회계사(13-2011.00)를 예시로 들되, <strong>O*NET 전체 통계</strong>와 <strong>회계사 직업의 실제 검증값</strong>을 구분해서 제시한다. 회계사 실제 수치는 onetonline.org 직접 검증 시점(2026-05-04) 기준이며, 분기 릴리즈에 따라 변동될 수 있다.</p>
+
+<table>
+<thead><tr><th>계층</th><th>데이터 모델</th><th>O*NET 전체 통계</th><th>회계사 13-2011.00 실제 (2026-05-04 검증)</th></tr></thead>
+<tbody>
+<tr><td><strong>GWA</strong></td><td>전체 매트릭스 + 절대 점수</td><td>모든 직업이 41개 GWA 전부에 점수 보유</td><td>41개 × (Level + Importance) = 82개 점수 (모든 직업 공통 구조)</td></tr>
+<tr><td><strong>IWA</strong></td><td>분류 위계 (참조만)</td><td>직접 데이터 없음 — DWA → IWA → GWA로 역산</td><td>직접 데이터 없음 (모든 직업 공통)</td></tr>
+<tr><td><strong>DWA</strong></td><td>매핑 집합 (yes/no)</td><td>직업당 매핑 DWA 수치는 직업마다 다름 (전체 DWA 2,000+)</td><td><strong>25개</strong> DWA 매핑 (onetonline.org 직접 확인)</td></tr>
+<tr><td><strong>Task</strong></td><td>직업 고유 진술 + 3평정</td><td>전체 19,000+ Task / 923 data-level 직업 → 직업당 <em>평균</em> 약 21개</td><td>onetonline.org Tasks 섹션에서 직접 확인 (Core/Supplemental 분류, 기본 상위 10개 표시 + "Show all" 버튼)</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<strong>주의</strong> — 위 표의 "회계사 실제" 컬럼은 <a href="https://www.onetonline.org/link/details/13-2011.00">onetonline.org/link/details/13-2011.00</a>에서 직접 확인 가능하며, 분기 릴리즈 갱신 시 수치가 바뀔 수 있다. 학습용 예시이므로 정확한 최신값은 사용 시점에 직접 검증할 것.
+</div>
+
+<p>핵심: <strong>"비중(%)" 형태는 어디에도 없다.</strong> 모든 GWA에 절대 점수가 있고, 점수의 <em>상대적 분포</em>로 직업 특성이 드러난다. 회계사의 "Performing General Physical Activities" GWA가 낮은 점수로 <em>측정</em>된 것일 뿐, 매핑이 빠진 것이 아니다.</p>
+
+<h4>Task의 Core / Supplemental 분류 (공식 기준)</h4>
+<p>회계사 Tasks 섹션을 보면 일부에 <em>Core</em> 표시가 있는데, 이는 다음 기준의 결과다.</p>
+<ul>
+  <li><strong>Core Task</strong>: Relevance ≥ 67% <strong>AND</strong> Mean Importance ≥ 3.0</li>
+  <li><strong>Supplemental Task</strong>: Relevance ≥ 67%이지만 Importance < 3.0, 또는 Relevance < 67%</li>
+</ul>
+<p>즉 <em>Core 표시</em>가 곧 <em>직무에 핵심적인 Task</em>라는 의미이며, IM·RT 평정의 결과로 자동 분류된다.</p>
+
+<h3>6.3 데이터 접근 방법</h3>
+<ul>
+  <li><strong>Details 페이지</strong>: <code>https://www.onetonline.org/link/details/13-2011.00</code> — Tasks 섹션은 페이지 상단 근처, 기본 상위 10개만 표시(전체 보기 버튼 클릭). DWA 섹션은 별도 항목으로 25개 모두 표시.</li>
+  <li><strong>Custom Report</strong>: <code>https://www.onetonline.org/link/custom/13-2011.00</code> — Importance·Level·Relevance·Frequency 모든 척도를 컬럼으로 동시 표시 가능.</li>
+  <li><strong>Raw 데이터</strong>: <code>https://www.onetcenter.org/database.html</code> (<code>work_activities.txt</code>, <code>tasks.txt</code>, <code>tasks_to_dwas.txt</code>, <code>task_ratings.txt</code> 등) — 모든 직업의 모든 평정값 다운로드.</li>
+</ul>
+<div class="callout">
+<strong>참고</strong> — 13-2011.01(Accountants 단독)은 더 이상 사용되지 않으며 13-2011.00(Accountants and Auditors)으로 통합되었다. URL에 .01을 사용하면 .00으로 자동 리다이렉트된다.
+</div>
+
+<div class="source"><a href="https://www.onetcenter.org/database.html">O*NET Database structure</a></div>
+</section>
+
+<section id="s7">
+<h2><span class="num">7</span>O*NET 운영 절차 — 2단계 파이프라인</h2>
+
+<p>O*NET의 운영은 <strong>두 개의 별개 단계</strong>로 구성된다 — <em>직업 등재(Stage 1)</em>와 <em>측정값 부여(Stage 2)</em>. 두 단계는 다른 기관·다른 절차로 운영되며, 하나의 직업이 등재된 후 측정값이 채워지기까지 1~수년의 시차가 발생한다.</p>
+
+<div class="figure">
+<svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+  <!-- Stage 1 -->
+  <rect x="20" y="20" width="840" height="120" rx="8" fill="#ecf3f9" stroke="#3a5d7a" stroke-width="2"/>
+  <rect x="20" y="20" width="840" height="24" rx="8" fill="#3a5d7a"/>
+  <text x="32" y="38" fill="#fff" font-size="12" font-weight="700">STAGE 1 · 직업 등재 — National Center for O*NET Development</text>
+
+  <rect x="40" y="58" width="390" height="70" rx="6" fill="#fff" stroke="#5786a8"/>
+  <text x="52" y="78" font-size="11" font-weight="700" fill="#5786a8">경로 A · OCA (Occupational Code Assignment)</text>
+  <text x="52" y="98" font-size="10" fill="#555">사용자 신청 → 직업분석가 검토 → 코드 매칭/이관</text>
+  <text x="52" y="116" font-size="10" font-style="italic" fill="#888">"실제 시장에 존재하나 분류에 빠진 직업" 발견 통로</text>
+
+  <rect x="450" y="58" width="390" height="70" rx="6" fill="#fff" stroke="#5786a8"/>
+  <text x="462" y="78" font-size="11" font-weight="700" fill="#5786a8">경로 B · N&amp;E (New &amp; Emerging Occupations)</text>
+  <text x="462" y="98" font-size="10" fill="#555">고성장 산업 클러스터 분석 → 후보 수집 → ETA 승인</text>
+  <text x="462" y="116" font-size="10" font-style="italic" fill="#888">2009년: 17개 클러스터 → 153개 신생 직업 추가</text>
+
+  <!-- Arrow -->
+  <path d="M 440 150 L 440 175" stroke="#c54a1a" stroke-width="2.5" fill="none" marker-end="url(#arr2)"/>
+  <text x="450" y="170" font-size="10" fill="#c54a1a" font-weight="700">코드만 부여, 측정값 없음</text>
+
+  <!-- Stage 2 -->
+  <rect x="20" y="180" width="840" height="120" rx="8" fill="#fdf3eb" stroke="#c97a4f" stroke-width="2"/>
+  <rect x="20" y="180" width="840" height="24" rx="8" fill="#c97a4f"/>
+  <text x="32" y="198" fill="#fff" font-size="12" font-weight="700">STAGE 2 · 측정값 부여 — RTI International (DOL ETA 위탁)</text>
+
+  <rect x="40" y="218" width="180" height="70" rx="6" fill="#fff" stroke="#c97a4f"/>
+  <text x="50" y="234" font-size="10" font-weight="700" fill="#c97a4f">Step 1 · 표본 설계</text>
+  <text x="50" y="252" font-size="9" fill="#555">사업체 명부 → 재직자</text>
+  <text x="50" y="266" font-size="9" fill="#555">직업당 100명+ 모집</text>
+
+  <rect x="230" y="218" width="180" height="70" rx="6" fill="#fff" stroke="#c97a4f"/>
+  <text x="240" y="234" font-size="10" font-weight="700" fill="#c97a4f">Step 2 · 4분할 설문</text>
+  <text x="240" y="252" font-size="9" fill="#555">Knowledge · Skills</text>
+  <text x="240" y="266" font-size="9" fill="#555">GWA · Work Context</text>
+
+  <rect x="420" y="218" width="200" height="70" rx="6" fill="#fff" stroke="#c97a4f"/>
+  <text x="430" y="234" font-size="10" font-weight="700" fill="#c97a4f">Step 3 · 척도 평정</text>
+  <text x="430" y="252" font-size="9" fill="#555">Level 0~7 · Importance 1~5</text>
+  <text x="430" y="266" font-size="9" fill="#555">239 디스크립터 × 400척도</text>
+
+  <rect x="630" y="218" width="210" height="70" rx="6" fill="#fff" stroke="#c97a4f"/>
+  <text x="640" y="234" font-size="10" font-weight="700" fill="#c97a4f">Step 4 · 통계 처리·발간</text>
+  <text x="640" y="252" font-size="9" fill="#555">가중치·평균·신뢰도</text>
+  <text x="640" y="266" font-size="9" fill="#c54a1a" font-weight="700">분기 릴리즈 (30.0/30.1/30.2…)</text>
+
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#c54a1a"/></marker>
+  </defs>
+</svg>
+<div class="caption">2단계 파이프라인 — 분류 등재(Stage 1)와 측정값 부여(Stage 2)는 별개 절차</div>
+</div>
+
+<h3>7.1 Stage 1 — 직업 등재 (분류 자체에 새 코드 부여)</h3>
+
+<h4>경로 A — OCA (Occupational Code Assignment)</h4>
+<p>사용자(기업·기관·연구자)가 직무 정보를 제출해 코드 매핑을 요청하는 절차.</p>
+<ol>
+  <li>사용자가 onetcodeconnector.org/oca/step1 에 신청</li>
+  <li>O*NET 직업분석가가 직무 정보 검토</li>
+  <li>기존 1,016개 코드 중 매칭 검토</li>
+  <li>매칭 시 → 코드 회신 / 미매칭 시 → 신규 직업 후보 풀로 이관</li>
+</ol>
+<p>OCA의 핵심 가치: "실제 시장에 존재하나 분류에 빠진 직업"을 발견하는 통로. 매년 누적된 미매칭 사례가 N&E 절차의 입력 데이터가 된다.</p>
+
+<h4>경로 B — N&E (New & Emerging Occupations) 방법론</h4>
+<p>기술·사회·법·비즈니스 변화로 출현하는 신생 직업의 정식 등재 절차.</p>
+<ol>
+  <li>고성장·고수요 산업 클러스터 식별 (예: 17개 클러스터)</li>
+  <li>산업·연구·언론·채용공고에서 후보 직업 수집</li>
+  <li>N&E 채택 기준 적용:
+    <ul>
+      <li>기존 직업과 <em>현저히 다른 일</em> 수행</li>
+      <li>기존 O*NET-SOC 구조에 <em>충분히 반영되지 않음</em></li>
+    </ul>
+  </li>
+  <li>ETA 최종 승인 → O*NET-SOC 코드 부여</li>
+</ol>
+<p><strong>사례</strong>: 2009년 17개 산업 클러스터 분석으로 153개 신생 직업 추가 (Wind Turbine Service Tech, Solar Energy Installer 등).</p>
+
+<h3>7.2 Stage 2 — 측정값 부여 (Data Collection Program)</h3>
+<p><strong>담당</strong>: RTI International (DOL ETA 위탁)<br><strong>산출물</strong>: 콘텐츠 모델 277개 디스크립터 측정값 — 등재된 직업을 <em>데이터 직업</em>으로 격상</p>
+
+<h4>Step 1 — 표본 설계</h4>
+<p>BLS QCEW 사업체 명부에서 대상 직업이 존재하는 사업체 추출. 직업당 100명 이상 재직자 모집(필드테스트 기준). 2단계 표본(사업체 → 재직자)으로 통계적 대표성 확보.</p>
+
+<h4>Step 2 — 4분할 설문 송부</h4>
+<p>한 응답자에게 1개 설문만 배정해 응답 부담을 60~90분으로 분산. 4가지 설문지 운영 — Knowledge / Skills / GWA / Work Context. Organizational Context는 관리자에게 별도 송부.</p>
+
+<h4>Step 3 — 척도 평정</h4>
+<p>각 디스크립터에 대해 Level 0~7(BARS 앵커 비교) + Importance 1~5 평정. Task는 추가로 Frequency와 Relevance 평정. 239개 디스크립터 × 400척도 적용.</p>
+
+<h4>Step 4 — 통계 처리·발간</h4>
+<p>RTI 응답 클리닝 → 표본 가중치 부여 → 직업×디스크립터 매트릭스 평균 산출 → 평가자 신뢰도 분석 → 분기 릴리즈에 반영.</p>
+
+<h3>7.3 6대 도메인의 차등적 채움 — 4가지 데이터 소스의 결합</h3>
+<p>콘텐츠 모델 6대 도메인은 한 번의 설문이 아니라 <strong>4가지 다른 데이터 소스의 결합</strong>으로 채워진다.</p>
+<table>
+<thead><tr><th>데이터 소스</th><th>측정 도메인</th><th>근거</th></tr></thead>
+<tbody>
+<tr><td>재직자 자기보고</td><td>Knowledge · Skills · GWA · Work Context · Tasks</td><td>실제 수행자가 가장 정확</td></tr>
+<tr><td>관리자 별도 응답</td><td>Organizational Context</td><td>재직자 가시성이 낮은 조직 변수</td></tr>
+<tr><td>직업 분석가 평정 (SME)</td><td>Abilities · Tasks 진술 작성</td><td>객관 평정 항목</td></tr>
+<tr><td>외부 행정 데이터</td><td>Workforce Characteristics</td><td>BLS OEWS·OOH 행정통계 연계</td></tr>
+</tbody>
+</table>
+
+<h3>7.4 빈출 질문에 대한 직답</h3>
+<ul>
+  <li><em>"OCA/N&E를 통해 6대 도메인을 연결하는가?"</em> → 아니다. OCA/N&E는 분류 등재만 담당하고, 6대 도메인 측정값 부여는 별개의 Data Collection Program이 담당한다.</li>
+  <li><em>"신생 직업이 N&E로 등재되면 즉시 데이터가 채워지는가?"</em> → 아니다. 등재 후 측정값이 채워지기까지 <em>1~수년</em>이 걸린다.</li>
+  <li><em>"분기 릴리즈에서 모든 직업이 한번에 갱신되는가?"</em> → 아니다. 분기 릴리즈는 두 단계 산출물의 통합본이며, 어떤 직업은 신규 등재, 어떤 직업은 측정값 갱신이 일어난다.</li>
+</ul>
+
+<div class="source"><a href="https://www.dol.gov/agencies/eta/onet/data-collection">O*NET Data Collection Program</a> · <a href="https://www.onetcenter.org/dataCollection.html">Data Collection Overview</a> · <a href="https://www.onetcenter.org/dl_files/NewEmerging.pdf">N&E Methodology Report</a> · <a href="https://onet.rti.org/survey.cfm">RTI International</a></div>
+</section>
+
+<section id="s8">
+<h2><span class="num">8</span>미국 SOC ↔ O*NET-SOC 양방향 관계</h2>
+
+<p>미국 모델의 본질은 <strong>통계 분류(SOC)와 직업 정보(O*NET-SOC)를 분리하되, 둘이 서로의 개정에 영향을 주는 양방향 관계</strong>에 있다.</p>
+
+<h3>8.1 이원 구조</h3>
+<table>
+<thead><tr><th>구분</th><th>SOC 2018</th><th>O*NET-SOC 2019</th></tr></thead>
+<tbody>
+<tr><td>관리</td><td>OMB · BLS · SOCPC</td><td>DOL ETA · National Center for O*NET Development</td></tr>
+<tr><td>법적 위상</td><td>연방 통계 표준</td><td>SOC 산하 운영 분류 (OMB 권장)</td></tr>
+<tr><td>목적</td><td>통계 작성·집계</td><td>직업 데이터 측정값 보유</td></tr>
+<tr><td>직업 수</td><td>867</td><td>1,016 (923 data-level)</td></tr>
+<tr><td>코드</td><td>6자리</td><td>8자리 (.XX)</td></tr>
+<tr><td>개정 주기</td><td><strong>약 10년</strong> (2010 → 2018 → 2028 예정)</td><td>SOC 따라 + <strong>분기 부분 갱신</strong></td></tr>
+</tbody>
+</table>
+
+<h3>8.2 SOC 개정 절차 (약 4년 소요)</h3>
+<ol>
+  <li>Federal Register 1차 공고 (검토 시작 발표)</li>
+  <li>SOCPC 위원회 심의 + 공공 의견 수렴</li>
+  <li>Federal Register 2차 공고 (잠정 구조·정의 공개)</li>
+  <li>공공 의견 추가 수렴</li>
+  <li>Federal Register 3차 공고 (최종 SOC 확정)</li>
+  <li>통계 데이터 적용 (1~2년 후)</li>
+</ol>
+
+<h3>8.3 O*NET이 SOC 개정에 기여하는 메커니즘</h3>
+<p>O*NET은 SOC를 단순히 <em>사용</em>하는 것이 아니라 <em>개정에 영향</em>을 미친다. 이 양방향 관계가 본 연구의 한국 적용에 가장 중요한 시사점이다.</p>
+<ul>
+  <li><strong>N&E 신생 직업 식별</strong> → SOC 개정 시 신규 직업 후보로 제안</li>
+  <li><strong>OCA 누적 미매칭 사례</strong> → SOC 개정 의제로 이관</li>
+  <li><strong>콘텐츠 모델 데이터</strong> → 직업 정의 정밀화·중복·공백 발견의 근거 자료</li>
+  <li><strong>분기 릴리즈</strong> → 노동시장 변화 신호를 통계 기관에 정기 공급</li>
+</ul>
+
+<div class="callout">
+<strong>미국 모델의 핵심 철학</strong> — "분류는 천천히, 정보는 빠르게, 정보가 분류 개정의 데이터 근거" — 통계 표준(SOC)은 시계열 안정성을 위해 보수적으로, 직업 정보(O*NET)는 노동시장 변화 반영을 위해 신속하게, 그리고 정보가 분류 개정의 <em>근거 데이터</em> 역할을 수행한다.
+</div>
+
+<div class="source"><a href="https://www.bls.gov/soc/2018/">SOC 2018 — BLS</a> · <a href="https://www.federalregister.gov/documents/2017/11/28/2017-25622/">Federal Register Final Notice</a> · <a href="https://www.bls.gov/soc/revising_the_standard_occupational_classification_2018.pdf">Revising SOC 2018</a></div>
+
+<h3>8.5 직업 간 비교분석 및 정책적 활용 사례</h3>
+<p>O*NET의 양방향 관계가 만드는 가장 큰 가치는 SOC 분류 자체의 개선뿐 아니라, <em>직업 간 비교분석 데이터 인프라</em>를 학술 연구와 정부 정책 양쪽에 동시 제공한다는 점이다. 본 절은 그 활용을 4가지 영역으로 정리한다.</p>
+
+<h4>8.5.1 학술 연구 — 자동화·AI 노출도 분석</h4>
+<p>직업 간 비교분석에서 O*NET이 가장 광범위하게 활용된 영역은 <em>기술 변화의 직업별 영향 추정</em>이다.</p>
+<ul>
+  <li><strong>Frey &amp; Osborne (2017)</strong> — Oxford 연구진은 O*NET의 246개 직업 특성을 자동화 가능성 추정 모델(Gaussian process classifier)의 입력으로 사용해 702개 직업의 컴퓨터화 위험을 산출했다. <strong>47%의 미국 일자리가 고위험군</strong>이라는 결과는 자동화 영향 정책 논의의 출발점이 되었으며, 이후 모든 후속 연구가 O*NET Task·GWA 데이터를 표준 입력으로 채택했다.</li>
+  <li><strong>ILO (2025) Generative AI and Jobs: Refined Global Index</strong> — ILO와 폴란드 NASK 공동 연구는 폴란드 직업분류의 29,753개 task와 1,640명 재직자 설문, 전문가 델파이를 결합해 ISCO-08 기반 GenAI 노출 4단계 그라디언트를 구축했다. <strong>전 세계 노동자 4명 중 1명이 GenAI 노출 직업</strong>이며 3.3%가 최고 노출 등급(여성 4.7% vs 남성 2.4%, HIC 34% vs LIC 11%)이다. 이 분석의 task-level 분해 방식이 본 연구의 한국형 직무활동 추출 방법론에 직접 시사점을 준다.</li>
+  <li><strong>NRC (2010) <em>A Database for a Changing Economy</em></strong> — 미국 국립연구회의의 O*NET 10년 평가 보고서는 O*NET이 "노동력 개발의 광범위한 미션을 달성하기 위한 핵심 인프라(critical infrastructure)"라고 명시했다.</li>
+</ul>
+<p>이러한 학술 연구가 가능한 것은 <em>모든 직업이 동일한 디스크립터 좌표축에서 비교</em>되는 O*NET의 Common Language 설계 덕분이다.</p>
+
+<h4>8.5.2 노동력 개발 정책 — Workforce Development</h4>
+<p>미국 노동부(DOL ETA)는 1998년 WIA(Workforce Investment Act)와 후속 WIOA(Workforce Innovation and Opportunity Act)에서 O*NET을 <em>노동력 개발의 핵심 정보 인프라</em>로 지정했다. 주 정부와 민간 개발사들은 O*NET 디스크립터를 기반으로 다음 시스템을 구축했다.</p>
+<ul>
+  <li><strong>기술 이전성(Skills Transferability) 시스템</strong> — 인디애나주 Workforce Development는 해고 노동자의 보유 기술을 O*NET 디스크립터로 측정한 뒤, 동일·유사 디스크립터 분포를 갖는 직업을 자동 매칭하는 시스템을 구축했다. NRC(2010)는 이를 모범 사례로 인용했다.</li>
+  <li><strong>CareerOneStop</strong> — DOL이 운영하는 공공 진로 상담 포털. 900+ 직업과 직접 연결되어 사용자가 자신의 흥미·가치·능력을 직업 디스크립터와 매칭할 수 있다.</li>
+  <li><strong>O*NET Career Exploration Tools</strong> — Interest Profiler, Work Importance Locator, Ability Profiler 등 자기평가 도구. 사용자 응답을 직업의 디스크립터 점수와 비교해 적합 직업을 추천한다.</li>
+</ul>
+
+<h4>8.5.3 비자·이민 정책 — DOL 외국인 노동 인증</h4>
+<p>DOL의 OFLC(Office of Foreign Labor Certification)는 <em>PERM 노동 인증</em>과 <em>LCA(Labor Condition Application — H-1B·H-1B1·E-3 비자)</em> 프로그램 운영에 O*NET 데이터를 직접 활용한다.</p>
+<ul>
+  <li>사용자가 ETA Form 9141로 prevailing wage(예상 임금) 결정을 신청하면, DOL 분석가가 해당 직업의 <strong>최소 요건과 Job Zone SVP 범위를 비교</strong>해 임금 등급을 부여한다.</li>
+  <li>USCIS와 DOL 심사관은 H-1B 신청 직무가 <em>전공 직업(specialty occupation)</em>에 해당하는지 평가할 때 O*NET 데이터를 표준 참조로 사용한다.</li>
+  <li><strong>2026.2.24 O*NET 30.2가 Job Zones를 5단계에서 4단계로 통합</strong>한 변경은 2026.7.1부터 FLAG 시스템에 반영되어 H-1B·PERM 임금 결정에 직접 영향을 미친다.</li>
+  <li><strong>2026.3.27 H-1B 임금 결정 룰 변경 제안</strong> — DOL은 H-1B·H-1B1·E-3·PERM의 최저 임금을 상향 조정하는 규칙을 발표했으며, 이 산정의 핵심 근거가 O*NET 직업 데이터다.</li>
+</ul>
+
+<h4>8.5.4 노동시장 통계·전망</h4>
+<ul>
+  <li><strong>BLS Employment Projections</strong> — BLS는 10년 단위 직업 전망 작성 시 O*NET의 GWA·Skills 데이터로 직업 변화 시그널을 분석한다.</li>
+  <li><strong>OEWS(Occupational Employment and Wage Statistics)</strong> — O*NET-SOC 코드 단위로 임금·고용 수치를 발표하며, 직업정보 시스템과 통계 시스템의 직접 연계 경로다.</li>
+  <li><strong>Mapping Employment Projections and O*NET data</strong> (BLS Monthly Labor Review, 2021) — 두 시스템 간 매핑 방법론을 공식 문서화한 자료.</li>
+</ul>
+<p>이런 정책·통계 활용이 가능한 근거는 <em>O*NET-SOC 코드가 SOC와 첫 6자리를 공유하기 때문</em>이다. 양방향 관계가 데이터 수준에서 보장되어, O*NET의 풍부한 디스크립터를 BLS 통계에 직접 결합할 수 있다.</p>
+
+<h4>8.5.5 본 연구 시사점 — 한국 적용</h4>
+<div class="callout green">
+미국이 O*NET을 통해 누리는 4가지 활용 영역(학술·노동력 개발·비자정책·통계)은 모두 한국에서 부재하거나 분산되어 있다. 본 연구가 검토하는 직업정보 프레임워크는 단순히 분류 개정 근거 제공을 넘어, 한국에서도 동일한 활용 가능성을 열어주는 <strong>데이터 인프라</strong>가 될 수 있다.
+</div>
+<ul>
+  <li>한국의 자동화·AI 노출도 분석은 현재 ILO 2025 GenAI 지수처럼 task-level 데이터에 의존하나, KSCO에는 task가 구조화되어 있지 않음 → 본 연구가 그 공백을 메우는 출발점</li>
+  <li>KECO·NCS·워크넷·KNOW로 분산된 노동력 개발 정보를 통합 데이터 인프라로 결합하는 후속 작업의 토대 마련</li>
+  <li>외국인 노동자 비자·임금 결정 시 직업 요건 정보의 표준 데이터 부재 → 본 연구가 향후 정책 데이터 표준의 시작점</li>
+  <li>통계청 OEWS 격 임금·고용 통계와의 연계 경로 설계 — 한국 BLS 격 데이터(통계청 임금구조기본통계 등)와의 매핑이 향후 과제</li>
+</ul>
+
+<div class="source">
+Frey, C. &amp; Osborne, M. (2017). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0040162516302244">The future of employment: How susceptible are jobs to computerisation?</a> <em>Technological Forecasting &amp; Social Change</em>, 114, 254-280. ·
+<a href="https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf">ILO (2025) <em>Generative AI and Jobs: A Refined Global Index of Occupational Exposure</em> (WP140)</a> ·
+<a href="https://www.nationalacademies.org/read/12814/chapter/10">NRC (2010) <em>A Database for a Changing Economy: Review of the O*NET</em></a> ·
+<a href="https://www.bls.gov/opub/mlr/2021/article/mapping-employment-projections-and-onet-data.htm">BLS (2021) <em>Mapping Employment Projections and O*NET data</em></a> ·
+<a href="https://www.dol.gov/agencies/eta/foreign-labor">DOL ETA <em>Foreign Labor Certification</em></a> ·
+<a href="https://www.dol.gov/agencies/eta/onet/tools">DOL ETA <em>O*NET Career Exploration Tools</em></a>
+</div>
+</section>
+
+<section id="s9">
+<h2><span class="num">9</span>한국 직업분류 현황</h2>
+
+<h3>9.1 KSCO 8차 (2024.7.1 고시 / 2025.1.1 시행)</h3>
+<table>
+<tbody>
+<tr><td>관리</td><td>통계청</td></tr>
+<tr><td>법적 근거</td><td>통계법 제22조 제1항 (표준분류)</td></tr>
+<tr><td>분류 기준</td><td><strong>대분류: 직능수준 우선</strong> + 중분류 이하: 직능유형 + 수준</td></tr>
+<tr><td>분류 체계</td><td>대 10 / 중 57 / 소 167 / <strong>세 495</strong> / 세세 1,270</td></tr>
+<tr><td>7차→8차 변화</td><td>분리·신설 31세분류, 분류이동 25, 명칭변경 38</td></tr>
+<tr><td>활용</td><td>국가통계 112종 + 법령 준용 24개</td></tr>
+</tbody>
+</table>
+
+<h3>9.2 KECO 2025 (2024.12.12 고시)</h3>
+<table>
+<tbody>
+<tr><td>관리</td><td>고용노동부 (한국고용정보원)</td></tr>
+<tr><td>법적 근거</td><td>통계법 제22조 제2항 + 고용정책기본법 제15조</td></tr>
+<tr><td>분류 기준</td><td><strong>대분류: 직무유형 우선</strong> + 중분류 이하: 직능유형 + 수준</td></tr>
+<tr><td>분류 체계</td><td>대 10 / 중 35 / 소 140 / <strong>세 495</strong> (KSCO와 1:1)</td></tr>
+<tr><td>개정 변화</td><td>분리·신설 53 / 통합 4 / 분류이동 3 / 명칭변경 183</td></tr>
+<tr><td>주요 신설</td><td>데이터/AI(134~136) · 반려동물(513) · 청소·방역·가사(561~563) · 미디어 크리에이터(4168) · 늘찬배달원(6242)</td></tr>
+</tbody>
+</table>
+
+<h3>9.3 한국 현황의 3가지 비대칭 — 진단</h3>
+<ol>
+  <li><strong>두 분류의 분류기준 충돌</strong> — KSCO 직능수준 우선 vs KECO 직무유형 우선 → 같은 직업의 위계 위치가 두 체계에서 다름</li>
+  <li><strong>직업정보 측정 시스템 부재</strong> — KNOW(직업사전), NCS(능력단위), 워크넷이 분산. 미국 O*NET 같은 통합 데이터 시스템 없음</li>
+  <li><strong>정기 갱신 거버넌스 부재</strong> — 5~7년 주기 개정 외에 신생 직업 데이터 공백 대응 메커니즘 없음. 분기·연차 갱신 없이 분류 개정 시점까지 노동시장 변화 신호 부재</li>
+</ol>
+
+<div class="source">통계청 고시 제2024-328호 · 고용노동부 고시 제2024-63호 · 본 프로젝트 심층분석 05·06</div>
+</section>
+
+<section id="s10">
+<h2><span class="num">10</span>직업분류 고도화 옵션 — 본 연구 목적 관점에서 재구성</h2>
+
+<div class="callout">
+<strong>관점 전환</strong> — 본 연구의 목적은 <em>직업분류 자체의 개정·고도화</em>다. 직업정보 프레임워크는 그 목적의 <em>수단</em>이다. 이 관점에서 4가지 옵션은 "정보 시스템이 분류 개정에 어떻게 기여하는가"의 정도(degree)에 따라 구분된다.
+</div>
+
+<h3>10.1 옵션 A — 단발성 분석 지원</h3>
+<p>본 연구 8개월 산출물을 KSCO 9차 개정(2029 예상) 시 1회성 참고자료로 제공하고 종료. 직업정보 프레임워크는 후속 사업으로 이어지지 않음.</p>
+<table>
+<tbody>
+<tr><td>장점</td><td>사업 부담 최소, 정치적 합의 용이, 통계청·고용부 권한 침범 없음</td></tr>
+<tr><td>단점</td><td>8개월 연구 가치 1회 소비 종료, 직업정보 시스템 부재 지속, 분기적 신생 직업 대응 불가</td></tr>
+<tr><td>실현성</td><td>매우 높음</td></tr>
+<tr><td>분류 고도화 기여</td><td>낮음</td></tr>
+<tr><td>정책 활용 가능성</td><td>학술·노동력개발·비자·통계 4개 영역 모두 부재 지속 (8.5절 활용 가치 미실현)</td></tr>
+</tbody>
+</table>
+
+<h3>10.2 <span class="star">★</span> 옵션 B — 정기 분석 인프라 (본 연구 권고)</h3>
+<p>직업정보 프레임워크를 정기 갱신 데이터 인프라로 발전시켜, KSCO 5년 주기 개정의 <em>근거 데이터</em>로 활용. 미국 N&E 방법론을 차용해 신생 직업을 정기 식별하고 KSCO 개정 의제 제공.</p>
+
+<div class="callout">
+<strong>옵션 B의 이중 가치</strong> — 분류 개정 근거 제공에 그치지 않는다. 정기 갱신 인프라는 동시에 ① 한국형 GenAI/자동화 노출도 분석(ILO 2025 격), ② 노동력 개발·진로상담 도구(CareerOneStop 격), ③ 외국인 노동 인증 데이터(E-9·E-7 등 비자 정책 표준), ④ 임금·고용 통계 직접 연계 — 미국 O*NET이 30년에 걸쳐 누적한 4개 정책 활용 영역 모두의 한국 도입 통로를 제공한다 (8.5절 참조).
+</div>
+
+<table>
+<tbody>
+<tr><td>장점</td><td>분류는 통계청·고용부 그대로 유지(권한 갈등 없음), 정보 인프라가 분류 개정의 데이터 근거 제공, 미국 모델 핵심 차용(분기 갱신·근거 데이터), 국가데이터처가 정보 인프라 운영 주체로 적합 (RFP 발주기관 위치 정합)</td></tr>
+<tr><td>단점</td><td>후속 사업 연속성 확보 필요, 통계청·고용부와의 데이터 공유 협약 필요</td></tr>
+<tr><td>실현성</td><td>높음</td></tr>
+<tr><td>분류 고도화 기여</td><td>높음</td></tr>
+<tr><td>정책 활용 가능성</td><td><strong>4개 영역 단계적 도입 가능</strong> — Phase 2 학술 분석(GenAI 지수), Phase 3 노동력개발·비자·통계 연계</td></tr>
+<tr><td>본 연구 8개월 위치</td><td>Phase 1 시작점, 5년 로드맵으로 본 연구 가치 보존</td></tr>
+</tbody>
+</table>
+
+<h3>10.3 옵션 C — 분류·정보 양방향 진화</h3>
+<p>미국 SOC ↔ O*NET-SOC 모델을 한국에 정식 도입. 분류(KSCO/KECO)와 정보 시스템이 상호 갱신 — 정보가 분류 개정 의제 제공, 분류 개정 시 정보 재정렬. 한국형 8자리 코드 신설(분류 6자리 + 정보 .XX 2자리).</p>
+<table>
+<tbody>
+<tr><td>장점</td><td>가장 정교한 시스템, 미국 30년 운영 경험 직접 차용, 국제 비교 가능성</td></tr>
+<tr><td>단점</td><td>거버넌스 복잡도 매우 높음, 통계청·고용부·국가데이터처 3자 협력 체계 필수, 5~10년 단계적 구축 필요</td></tr>
+<tr><td>실현성</td><td>중</td></tr>
+<tr><td>분류 고도화 기여</td><td>매우 높음</td></tr>
+<tr><td>정책 활용 가능성</td><td>4개 영역 모두 미국 수준 도입 + ESCO·ISCO·OECD 국제 비교 + ILO GenAI 지수 한국 데이터 직접 기여</td></tr>
+<tr><td>본 연구 단계 적용</td><td>권고 범위 밖, Phase 3~4의 장기 목표로 적합</td></tr>
+</tbody>
+</table>
+
+<h3>10.4 옵션 D — 분류 통합</h3>
+<p>KSCO와 KECO를 단일 분류로 통합하면서 정보 시스템도 동시 부착. 분류 기준 충돌(직능수준 vs 직무유형) 근본 해결.</p>
+<table>
+<tbody>
+<tr><td>장점</td><td>사용자 단순화, 중복 비용 제거, 분류 정합성 최대</td></tr>
+<tr><td>단점</td><td>통계청·고용부 권한 갈등이 정치적으로 매우 큼, 본 연구 범위 초과, 법령 24개·통계 112종 영향 광범위</td></tr>
+<tr><td>실현성</td><td>낮음</td></tr>
+<tr><td>분류 고도화 기여</td><td>최대</td></tr>
+<tr><td>정책 활용 가능성</td><td>통합 시스템으로 4개 영역 + 단일 데이터 표준 (이론적 최대치)</td></tr>
+<tr><td>본 연구 단계 적용</td><td>권고 범위 밖, 5~10년 후 본 연구 결과 평가 후 재검토</td></tr>
+</tbody>
+</table>
+
+<div class="callout green">
+<strong>★ 권고 경로 — 옵션 B로 시작, 옵션 C로 진화</strong><br>
+본 연구 8개월은 <strong>옵션 B의 Phase 1</strong>로 위치한다. 본 연구 결과가 1회성 보고서로 끝나지 않고 정기 갱신 데이터 인프라로 발전해야 분류 개정의 근거 데이터 역할이 가능하다. 옵션 C 진화는 5~10년에 걸쳐 단계적으로 검토하며, 옵션 D는 본 연구 결과 평가 시점에 재검토 의제로 위치시킨다.
+</div>
+
+<h4>옵션 B 권고의 이중 근거</h4>
+<p>옵션 B를 권고하는 근거는 <strong>두 가지</strong>다.</p>
+<ol>
+  <li><strong>분류 개정의 근거 데이터 제공</strong> — 본 연구 정식 과제명에 명시된 <em>"직업분류 고도화"</em> 목적 직접 충족. KSCO 9차 개정(2029 예상) 시 신생 직업 식별·기존 직업 정의 정밀화·직업 경계 조정의 데이터 근거 제공.</li>
+  <li><strong>4개 정책 활용 영역의 한국 도입 통로</strong> — 8.5절에서 논의한 미국 O*NET의 30년 운영 가치(학술·노동력개발·비자·통계)를 한국에 단계적으로 이식하는 인프라. 단발성 옵션 A는 이 두 번째 가치를 실현하지 못한다.</li>
+</ol>
+<p>이 이중 가치가 옵션 B를 <em>최소 권고</em>가 아니라 <em>최적 권고</em>로 만드는 핵심이다. 단순 1회성 자문(옵션 A)은 분류 개정 근거 1회 제공에 그치고 정책 활용 인프라가 부재한 상태로 회귀하지만, 옵션 B는 후속 5년 동안 정책 활용 영역을 단계적으로 확장하면서 옵션 C 진화의 토대를 마련한다.</p>
+</section>
+
+<section id="s11">
+<h2><span class="num">11</span>본 연구 단계적 로드맵</h2>
+
+<div class="figure">
+<svg viewBox="0 0 880 220" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+  <rect x="20" y="20" width="200" height="180" rx="8" fill="#f1f5fb" stroke="#3a5d7a" stroke-width="1.5"/>
+  <text x="32" y="42" font-size="12" font-weight="700" fill="#3a5d7a">Phase 1 · 본 연구</text>
+  <text x="32" y="58" font-size="11" fill="#1a1a1a">8개월</text>
+  <text x="32" y="80" font-size="10" fill="#555">프레임워크 설계</text>
+  <text x="32" y="96" font-size="10" fill="#555">시뮬레이션 검증</text>
+  <text x="32" y="116" font-size="9" fill="#888">• 다차원 프레임워크 안 도출</text>
+  <text x="32" y="130" font-size="9" fill="#888">• 직무기술 정의서 양식</text>
+  <text x="32" y="144" font-size="9" fill="#888">• 중분류 2~3개 시뮬레이션</text>
+  <text x="32" y="158" font-size="9" fill="#888">• 거버넌스 권고안</text>
+
+  <path d="M 220 110 L 240 110" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arr3)"/>
+
+  <rect x="240" y="20" width="200" height="180" rx="8" fill="#f1f5fb" stroke="#3a5d7a" stroke-width="1.5"/>
+  <text x="252" y="42" font-size="12" font-weight="700" fill="#3a5d7a">Phase 2 · 후속</text>
+  <text x="252" y="58" font-size="11" fill="#1a1a1a">1~2년</text>
+  <text x="252" y="80" font-size="10" fill="#555">전체 KSCO 495 구축</text>
+  <text x="252" y="96" font-size="10" fill="#555">N&amp;E 한국형 도입</text>
+  <text x="252" y="116" font-size="9" fill="#888">• NLP + 전문가 검증</text>
+  <text x="252" y="130" font-size="9" fill="#888">• 직업×디스크립터 매트릭스</text>
+  <text x="252" y="144" font-size="9" fill="#888">• KSCO 9차(2029) 데이터</text>
+  <text x="252" y="158" font-size="9" fill="#888">• 데이터베이스 v1.0</text>
+
+  <path d="M 440 110 L 460 110" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arr3)"/>
+
+  <rect x="460" y="20" width="200" height="180" rx="8" fill="#f1f5fb" stroke="#3a5d7a" stroke-width="1.5"/>
+  <text x="472" y="42" font-size="12" font-weight="700" fill="#3a5d7a">Phase 3 · 정착</text>
+  <text x="472" y="58" font-size="11" fill="#1a1a1a">3~5년</text>
+  <text x="472" y="80" font-size="10" fill="#555">정기 갱신 거버넌스</text>
+  <text x="472" y="96" font-size="10" fill="#555">행정 데이터 연계</text>
+  <text x="472" y="116" font-size="9" fill="#888">• 분기 부분 갱신</text>
+  <text x="472" y="130" font-size="9" fill="#888">• OCA 절차 한국형</text>
+  <text x="472" y="144" font-size="9" fill="#888">• API/Open Data</text>
+  <text x="472" y="158" font-size="9" fill="#888">• 통계청·고용부 협업</text>
+
+  <path d="M 660 110 L 680 110" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arr3)"/>
+
+  <rect x="680" y="20" width="180" height="180" rx="8" fill="#f1f5fb" stroke="#3a5d7a" stroke-width="1.5"/>
+  <text x="692" y="42" font-size="12" font-weight="700" fill="#3a5d7a">Phase 4 · 국제</text>
+  <text x="692" y="58" font-size="11" fill="#1a1a1a">5년+</text>
+  <text x="692" y="80" font-size="10" fill="#555">옵션 C 진화 검토</text>
+  <text x="692" y="96" font-size="10" fill="#555">국제 비교 가능성</text>
+  <text x="692" y="116" font-size="9" fill="#888">• ESCO/O*NET 매핑</text>
+  <text x="692" y="130" font-size="9" fill="#888">• 8자리 코드 의제화</text>
+  <text x="692" y="144" font-size="9" fill="#888">• ISCO-28 대응</text>
+  <text x="692" y="158" font-size="9" fill="#888">• AI/녹색 직업 평가</text>
+
+  <defs>
+    <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/></marker>
+  </defs>
+</svg>
+<div class="caption">본 연구 8개월 → 5년+ 단계적 로드맵 (옵션 B → 옵션 C로의 진화 경로)</div>
+</div>
+
+<div class="callout">
+각 Phase는 <strong>분류 개정 기여</strong>(주 목적)와 <strong>정책 활용 마일스톤</strong>(부수 가치) 두 트랙으로 진행된다. 정책 활용 마일스톤은 8.5절에서 논의한 미국 4개 영역(학술·노동력개발·비자·통계)을 한국에 단계적으로 이식하는 경로다.
+</div>
+
+<h3>Phase 1 — 본 연구 (8개월)</h3>
+<p>직업정보 프레임워크 <em>설계</em> 및 시뮬레이션 검증.</p>
+
+<h4>분류 개정 트랙 (주 산출물)</h4>
+<ul>
+  <li>O*NET·ESCO·NOC·KNOW·KQF 등 국내외 사례 분석 (영역 2)</li>
+  <li>본 연구가 검토하는 다차원 프레임워크 안 도출 (영역 3) — 차원의 개수와 구성은 본 연구 결과로 확정될 사항</li>
+  <li>KSCO 8차 중분류 2~3개 시뮬레이션 (영역 4) — 후보: 26 정보통신 / 14 보건 / 73 전기·전자 정비</li>
+  <li>직무기술 정의서 4섹션 양식 표준화 (영역 1) — 직업개요 / 주요업무내용 / 핵심직무활동 / 표준화직무요소</li>
+  <li>후속 사업 거버넌스 권고안</li>
+</ul>
+
+<h4>정책 활용 트랙 (Phase 2~4 연결고리)</h4>
+<ul>
+  <li>시뮬레이션 직업군의 task-level 데이터 시범 구축 → ILO GenAI 지수 한국 시범 적용 가능성 검토</li>
+  <li>진로상담·교육·HR 등 외부 활용 시나리오 1차 도출</li>
+</ul>
+
+<h3>Phase 2 — 본 연구 후속 (1~2년)</h3>
+<p>KSCO 495개 세분류 전체 직업 데이터 구축 및 N&E 방법론 한국형 도입.</p>
+
+<h4>분류 개정 트랙</h4>
+<ul>
+  <li>NLP 자동 추출 + 전문가 패널 검증</li>
+  <li>직업×디스크립터 매트릭스 1차 구축</li>
+  <li>KSCO 9차 개정(2029 예상) 시 신생 직업 후보·정의 정밀화 데이터 제공</li>
+  <li>1차 데이터베이스(v1.0) + OnLine 베타 서비스</li>
+</ul>
+
+<h4>정책 활용 마일스톤</h4>
+<ul>
+  <li><strong>학술 영역</strong>: 한국형 GenAI/자동화 노출도 시범 분석 (Frey&Osborne·ILO 2025 방법론 한국 적용)</li>
+  <li><strong>노동력 개발 영역</strong>: 한국형 CareerOneStop 격 진로상담 도구 베타 (KECO·KNOW 통합)</li>
+  <li><strong>통계 영역</strong>: 통계청 임금구조기본통계 시범 매핑</li>
+</ul>
+
+<h3>Phase 3 — 정착 (3~5년)</h3>
+<p>분기·연차 갱신 거버넌스 정착 및 행정 데이터 연계.</p>
+
+<h4>분류 개정 트랙</h4>
+<ul>
+  <li>분기별 데이터 부분 갱신 거버넌스 정착</li>
+  <li>신생 직업 OCA 절차 한국형 운영</li>
+  <li>한국 행정 데이터(임금·고용 통계) 연계</li>
+  <li>API/Open Data 가동</li>
+</ul>
+
+<h4>정책 활용 마일스톤</h4>
+<ul>
+  <li><strong>노동력 개발 영역</strong>: WIOA 격 한국형 노동력 개발 정보 인프라 정식 가동, NCS·KQF·워크넷 통합</li>
+  <li><strong>비자 영역</strong>: 외국인 노동 인증(E-9·E-7·E-3) 직무 표준 데이터 제공, 법무부·고용부 협업</li>
+  <li><strong>학술 영역</strong>: AI·녹색 직업 영향 정기 평가 메커니즘 정착</li>
+  <li><strong>통계 영역</strong>: 통계청 OEWS 격 임금·고용 통계와 직업정보 시스템 정식 연계</li>
+</ul>
+
+<h3>Phase 4 — 국제 (5년+)</h3>
+<p>옵션 C로 진화 검토 및 국제 비교 가능성 확보.</p>
+
+<h4>분류 개정 트랙</h4>
+<ul>
+  <li>ESCO·O*NET 매핑으로 국제 비교 가능성 확보</li>
+  <li>한국형 8자리 코드 도입 의제 공식화</li>
+  <li>ISCO-28 대응 (2028 예상)</li>
+</ul>
+
+<h4>정책 활용 마일스톤</h4>
+<ul>
+  <li><strong>국제 영역</strong>: ILO Global Index of Occupational Exposure 한국 데이터 정식 기여</li>
+  <li><strong>국제 영역</strong>: OECD Skills Outlook·PIAAC 등 국제 직업·역량 분석에 한국 데이터 직접 기여</li>
+  <li><strong>국제 영역</strong>: ESCO Skills-Occupation Matrix 한국형 매핑으로 EU·미국 직업 호환 데이터 제공</li>
+  <li><strong>학술 영역</strong>: AI/녹색 전환 직업정책 글로벌 비교 연구 한국 거점 확립</li>
+</ul>
+</section>
+
+<section id="s12">
+<h2><span class="num">12</span>이전 분석 과정에서 발견된 정정 사항</h2>
+
+<p>본 분석 과정에서 발견된 부정확한 표현을 기록 보존용으로 정리한다.</p>
+
+<table>
+<thead><tr><th>정정 전</th><th>정정 후</th><th>근거</th></tr></thead>
+<tbody>
+<tr><td>IWA 332개</td><td><strong>IWA 325개</strong></td><td>공식 onetcenter.org 통계 (2018 OWA 보고서 초기 도출 332는 정제 후 325로 확정)</td></tr>
+<tr><td>"30.2가 Level Scale을 3점으로 정규화"</td><td><strong>척도는 0~7 그대로</strong>, 30.0에서 <em>Level Scale Anchor 텍스트 60개</em>만 갱신. 30.2의 핵심은 Job Zone 5→4단계 통합</td><td><a href="https://www.onetcenter.org/reports/Anchors_Update_KG.html">Anchors_Update_KG</a></td></tr>
+<tr><td>"한국형 6차원" 등 확정적 표현</td><td><strong>"본 연구가 검토하는 다차원 프레임워크 안"</strong></td><td>차원 개수·구성은 본 연구 결과로 확정될 사항</td></tr>
+<tr><td>"4가지 옵션 중 옵션 D 추천"</td><td><strong>본 연구 목적(분류 고도화) 관점에서 재구성. 옵션 B 권고</strong></td><td>본 연구는 분류 개정 기여가 목적</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="s13">
+<h2><span class="num">13</span>참고문헌 종합</h2>
+
+<h3>13.1 미국 O*NET 1차 자료</h3>
+<ul>
+  <li>Peterson, N. G. et al. (2001). <em>Understanding Work Using O*NET</em>. Personnel Psychology, 54(2), 451-492.</li>
+  <li><a href="https://www.onetcenter.org/content.html">The O*NET Content Model</a></li>
+  <li><a href="https://www.onetcenter.org/taxonomy.html">O*NET-SOC Taxonomy</a></li>
+  <li><a href="https://www.onetonline.org/help/online/scales">O*NET OnLine Help: Scales, Ratings, and Standardized Scores</a></li>
+  <li><a href="https://www.onetcenter.org/database.html">O*NET Database</a></li>
+  <li><a href="https://www.onetcenter.org/db_releases.html">O*NET Database Releases Archive</a></li>
+  <li><a href="https://www.onetcenter.org/dl_files/Related_DWA.pdf">O*NET Work Activities Project Technical Report (NCO-NET, 2018)</a></li>
+  <li><a href="https://www.onetcenter.org/reports/Anchors_Update_KG.html">O*NET Level Scale Anchor Updates: Knowledge & GWA</a></li>
+  <li><a href="https://www.onetcenter.org/reports/Anchors_Update_AS.html">O*NET Level Scale Anchor Updates: Abilities & Skills</a></li>
+</ul>
+
+<h3>13.2 미국 SOC 1차 자료</h3>
+<ul>
+  <li><a href="https://www.bls.gov/soc/2018/">SOC 2018 — BLS</a></li>
+  <li><a href="https://www.federalregister.gov/documents/2017/11/28/2017-25622/">Federal Register: SOC 2018 Final Notice (2017.11.28)</a></li>
+  <li><a href="https://www.bls.gov/soc/revising_the_standard_occupational_classification_2018.pdf">Revising the Standard Occupational Classification 2018</a></li>
+</ul>
+
+<h3>13.3 O*NET 운영·갱신 자료</h3>
+<ul>
+  <li><a href="https://www.dol.gov/agencies/eta/onet/data-collection">O*NET Data Collection Program (DOL)</a></li>
+  <li><a href="https://www.onetcenter.org/dataCollection.html">O*NET Data Collection Overview</a></li>
+  <li><a href="https://www.onetcenter.org/questionnaires.html">O*NET Questionnaires</a></li>
+  <li><a href="https://www.onetcenter.org/dl_files/Taxonomy2019_Summary.pdf">Updating O*NET-SOC Taxonomy: Incorporating 2018 SOC Structure</a></li>
+  <li><a href="https://www.onetcodeconnector.org/oca/step1">Occupational Code Assignment (OCA)</a></li>
+  <li><a href="https://www.onetcenter.org/dl_files/NewEmerging.pdf">New and Emerging Occupations Methodology</a></li>
+  <li><a href="https://onet.rti.org/survey.cfm">RTI International — O*NET Data Collection</a></li>
+</ul>
+
+<h3>13.4 O*NET 활용 학술·정책 문헌</h3>
+
+<h4>학술 — 자동화·AI 노출도 분석</h4>
+<ul>
+  <li>Frey, C. B. &amp; Osborne, M. A. (2017). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0040162516302244">The future of employment: How susceptible are jobs to computerisation?</a> <em>Technological Forecasting &amp; Social Change</em>, 114, 254-280.</li>
+  <li>ILO (2025). <a href="https://www.ilo.org/sites/default/files/2025-05/WP140_web.pdf"><em>Generative AI and Jobs: A Refined Global Index of Occupational Exposure</em> (Working Paper 140)</a>. International Labour Organization &amp; NASK.</li>
+  <li>ILO (2025). <a href="https://www.ilo.org/publications/generative-ai-and-jobs-2025-update">Generative AI and Jobs: A 2025 Update</a>.</li>
+  <li>NRC (2010). <a href="https://www.nationalacademies.org/read/12814/chapter/10"><em>A Database for a Changing Economy: Review of the Occupational Information Network (O*NET)</em></a>. National Research Council, National Academies Press.</li>
+</ul>
+
+<h4>정책 — 노동력 개발·진로 상담</h4>
+<ul>
+  <li>DOL ETA. <a href="https://www.dol.gov/agencies/eta/onet/tools">O*NET Career Exploration Tools</a>.</li>
+  <li>DOL ETA. <a href="https://oui.doleta.gov/dmstree/tein/tein2k/tein_16-00.htm">O*NET Resource Center: Career Exploration Tools Release</a>.</li>
+  <li>Workforce Investment Act (1998) / Workforce Innovation and Opportunity Act (WIOA, 2014) — 미국 노동력 개발의 법적 근거.</li>
+</ul>
+
+<h4>정책 — 외국인 노동 인증·이민</h4>
+<ul>
+  <li>DOL ETA. <a href="https://www.dol.gov/agencies/eta/foreign-labor">Foreign Labor Certification</a>.</li>
+  <li>DOL. <a href="https://www.dol.gov/agencies/eta/foreign-labor/programs/h-1b">H-1B, H-1B1 and E-3 Specialty Workers</a>.</li>
+  <li>DOL (2026). <a href="https://public-inspection.federalregister.gov/2026-06017.pdf">Federal Register: H-1B Prevailing Wage NPRM (2026.3.27)</a>.</li>
+</ul>
+
+<h4>정책 — 노동시장 통계</h4>
+<ul>
+  <li>BLS (2021). <a href="https://www.bls.gov/opub/mlr/2021/article/mapping-employment-projections-and-onet-data.htm">Mapping Employment Projections and O*NET data: a methodological overview</a>. <em>Monthly Labor Review</em>.</li>
+  <li>BLS. <a href="https://www.bls.gov/oes/">Occupational Employment and Wage Statistics (OEWS)</a>.</li>
+</ul>
+
+<h3>13.5 한국 1차 자료</h3>
+<ul>
+  <li>통계청 고시 제2024-328호 (KSCO 8차, 2024.7.1)</li>
+  <li>고용노동부 고시 제2024-63호 (KECO 2025, 2024.12.12)</li>
+  <li><a href="https://www.keis.or.kr/keis/ko/proj/114/pblc/detail.do?pubIdx=11171">한국고용정보원 KECO 해설서</a></li>
+</ul>
+
+<h3>13.6 본 프로젝트 작성 심층분석 자료</h3>
+<ul>
+  <li><code>07_references/심층분석/01_ONET_콘텐츠모델_심층분석.md</code></li>
+  <li><code>07_references/심층분석/02_ONET_WorkActivities_DWA_심층분석.md</code></li>
+  <li><code>07_references/심층분석/03_ISCO08_Companion_Guide_심층분석.md</code></li>
+  <li><code>07_references/심층분석/04_HumRRO_작업기술_품질관리_심층분석.md</code></li>
+  <li><code>07_references/심층분석/05_KSCO_8차_심층분석.md</code></li>
+  <li><code>07_references/심층분석/06_KECO_2025_심층분석.md</code></li>
+</ul>
+</section>
+
+<footer style="margin-top: 60px; padding-top: 24px; border-top: 1px solid #e5e1d8; color: #888; font-size: 12px; text-align: center;">
+  문서 끝 — 2026-05-04 작성, P2026-010 종합 분석본
+</footer>
+
+</main>
+
+</div>
+
+<script>
+  // Smooth scroll + active section tracking
+  const links = document.querySelectorAll('.sidebar nav a');
+  const sections = document.querySelectorAll('.content section');
+
+  function setActive() {
+    let current = '';
+    sections.forEach(s => {
+      const top = s.getBoundingClientRect().top;
+      if (top <= 100) current = s.id;
+    });
+    links.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', setActive);
+  setActive();
+
+  links.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>

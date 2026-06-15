@@ -1,0 +1,170 @@
+{
+  "ksco_code": "76221",
+  "tasks": [
+    {
+      "verb": "읽다",
+      "object": "옥내배선도·도면",
+      "full_statement": "옥내배선도나 도면을 읽고 가옥구조와 구조물 내부 상태, 인입 가능한 배전선로 위치를 파악한다.",
+      "source_sentence": "옥내배선도나 도면을 읽고 가옥구조, 구조물 내부 상태, 인입 가능한 배전선로 위치 등을 파악한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설치하다",
+      "object": "배관 및 장치물",
+      "full_statement": "구조물의 내부 상태를 파악하고 배선을 위한 슬래브배관·노출배관·벽체배관·분전반·덕트 등 배관 및 장치물을 설치한다.",
+      "source_sentence": "구조물의 내부 상태를 파악하고 배선을 위한 슬래브배관, 노출배관, 벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "인입하다",
+      "object": "전선",
+      "full_statement": "배관을 따라 전선을 인입선으로 인입·인출하여 연결한다.",
+      "source_sentence": "배관을 따라 전선을 인입선으로 인입‧인출하여 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "가요전선관·맹커버",
+      "full_statement": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치한다.",
+      "source_sentence": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치하고 전선을 가선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가선하다",
+      "object": "전선",
+      "full_statement": "설치된 가요전선관을 따라 전선을 가선한다.",
+      "source_sentence": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치하고 전선을 가선한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연결하다",
+      "object": "인입선",
+      "full_statement": "가공배전선에서 인입구까지 인입선을 케이블로 연결한다.",
+      "source_sentence": "가공배전선에서 인입구까지 인입선을 케이블로 연결하고 차단기를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "차단기",
+      "full_statement": "인입선 연결 구간에 차단기를 설치한다.",
+      "source_sentence": "가공배전선에서 인입구까지 인입선을 케이블로 연결하고 차단기를 설치한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "설치하다",
+      "object": "조명·콘센트·스위치 등 설비물",
+      "full_statement": "건물 내 조명·콘센트류·스위치·기구 등 설비물을 설치하고 인출선에 연결한다.",
+      "source_sentence": "건물내 조명‧콘센트류‧스위치‧기구 등 설비물을 설치하고 인출선에 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연결하다",
+      "object": "접지선",
+      "full_statement": "접지선을 연결하여 땅속에 묻는다.",
+      "source_sentence": "접지선을 연결하여 땅속에 묻는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "금속·플라스틱몰드",
+      "full_statement": "전선을 보호하기 위하여 금속 또는 플라스틱몰드를 설치한다.",
+      "source_sentence": "전선을 보호하기 위하여 금속 또는 플라스틱몰드를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "배전함",
+      "full_statement": "배전함을 설치한다.",
+      "source_sentence": "배전함을 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "회선단락·저항·배선결함",
+      "full_statement": "배선이 완료되면 회선단락·저항·배선상의 결함을 메가 테스터기와 후크메타 등으로 검사한다.",
+      "source_sentence": "배선이 완료되면 회선단락‧저항‧배선상의 결함을 메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "시험가동하다",
+      "object": "전류",
+      "full_statement": "전류를 투입하여 시험가동을 한다.",
+      "source_sentence": "전류를 투입하여 시험가동을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "가설하다",
+      "object": "전선 및 관계 장비",
+      "full_statement": "빌딩이나 기타 건축물에 전선 및 관계 장비를 가설한다.",
+      "source_sentence": "빌딩이나 기타 건축물에 전선 및 관계 장비를 가설한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "배선 및 전기 장비",
+      "full_statement": "주택·공장·상점·학교·병원 등에서 배선 및 전기 장비를 수리한다.",
+      "source_sentence": "주택, 공장 및 상점, 학교, 병원 등에서 배선 및 전기 장비를 수리하고 유지한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "유지하다",
+      "object": "배선 및 전기 장비",
+      "full_statement": "주택·공장·상점·학교·병원 등에서 배선 및 전기 장비를 유지한다.",
+      "source_sentence": "주택, 공장 및 상점, 학교, 병원 등에서 배선 및 전기 장비를 수리하고 유지한다.",
+      "derived_from": "세세분류 정의(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "재권선하다",
+      "object": "코일",
+      "full_statement": "경우에 따라 코일을 재권선한다.",
+      "source_sentence": "경우에 따라서는 새로운 전기장비의 설치, 코일의 재 권선, 장비의 분해 및 수리를 하기도 하며 장비별 정비계획에 준하여 시설상태를 기록하고 유지·관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "분해하다",
+      "object": "장비",
+      "full_statement": "장비를 분해하여 수리한다.",
+      "source_sentence": "경우에 따라서는 새로운 전기장비의 설치, 코일의 재 권선, 장비의 분해 및 수리를 하기도 하며 장비별 정비계획에 준하여 시설상태를 기록하고 유지·관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "기록하다",
+      "object": "시설상태",
+      "full_statement": "장비별 정비계획에 준하여 시설상태를 기록하고 유지·관리한다.",
+      "source_sentence": "장비별 정비계획에 준하여 시설상태를 기록하고 유지·관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "메가 테스터기(절연저항 측정기)", "category": "장비", "evidence_span": "메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다"},
+    {"name": "후크메타(암페어측정기)", "category": "장비", "evidence_span": "메가 테스터기(절연저항 측정기), 후크메타(암페어측정기) 등으로 검사한다"},
+    {"name": "가요전선관(후렉시블관)", "category": "도구", "evidence_span": "배선루트를 따라 가요전선관(후렉시블관)과 맹커버를 설치하고"},
+    {"name": "차단기", "category": "장비", "evidence_span": "인입선을 케이블로 연결하고 차단기를 설치한다"},
+    {"name": "분전반", "category": "장비", "evidence_span": "슬래브배관, 노출배관, 벽체배관, 분전반, 덕트 등 배관 및 장치물을 설치한다"},
+    {"name": "배전함", "category": "장비", "evidence_span": "배전함을 설치한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내부·실내(주택·공장·상점·학교·병원 등)", "evidence_span": "주택, 공장 및 상점, 학교, 병원 등에서 배선 및 전기 장비를 수리하고 유지한다"},
+    {"category": "위험", "value": "전기·전류 취급(고전압·감전 위험)", "evidence_span": "전류를 투입하여 시험가동을 한다"},
+    {"category": "신체적", "value": "수공구·기능 중심 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

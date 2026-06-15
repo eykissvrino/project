@@ -1,0 +1,93 @@
+{
+  "ksco_code": "23743",
+  "tasks": [
+    {
+      "verb": "시험하다",
+      "object": "토양 환경문제",
+      "full_statement": "토양 환경 기술자 및 연구원의 감독 하에 토양 환경문제를 시험한다.",
+      "source_sentence": "토양 환경 기술자 및 연구원의 감독 하에 폐기물, 매립지 안전진단 및 안전대책 등 토양 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "시험하다",
+      "object": "폐기물",
+      "full_statement": "폐기물 관련 토양 환경문제를 시험한다.",
+      "source_sentence": "폐기물, 매립지 안전진단 및 안전대책 등 토양 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "진단하다",
+      "object": "매립지 안전",
+      "full_statement": "매립지 안전진단을 수행한다.",
+      "source_sentence": "폐기물, 매립지 안전진단 및 안전대책 등 토양 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "매립지 안전대책",
+      "full_statement": "매립지 안전대책을 수립한다.",
+      "source_sentence": "폐기물, 매립지 안전진단 및 안전대책 등 토양 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시험하다",
+      "object": "토양 오염",
+      "full_statement": "토양 오염을 시험한다.",
+      "source_sentence": "[세세분류 직업 예시] 토양 오염 시험원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보조하다",
+      "object": "환경공학 관련 기술 개발 및 연구",
+      "full_statement": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "시험하다",
+      "object": "환경영향 평가",
+      "full_statement": "토양 환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유지하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 유지한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보수하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 보수한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 기술적 업무를 수행한다.",
+      "source_sentence": "환경공학과 관련된 연구 및 개발과 관련하여 환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "토양 환경 기술자 및 연구원의 감독 하에 업무 수행",
+      "evidence_span": "토양 환경 기술자 및 연구원의 감독 하에 폐기물, 매립지 안전진단 및 안전대책 등 토양 환경문제를 시험한다."
+    }
+  ]
+}

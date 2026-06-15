@@ -1,0 +1,122 @@
+{
+  "ksco_code": "24403",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "학생 건강 계획",
+      "full_statement": "학교에서 학생들의 건강에 관한 계획을 수립한다.",
+      "source_sentence": "학교 등에서 학생들의 건강에 관한 계획을 수립하고 학교의 보건활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "학교 보건활동",
+      "full_statement": "학교의 보건활동을 수행한다.",
+      "source_sentence": "학교 등에서 학생들의 건강에 관한 계획을 수립하고 학교의 보건활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "측정하다",
+      "object": "체온·맥박·혈압",
+      "full_statement": "학생의 건강 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "점검하다",
+      "object": "건강 상태",
+      "full_statement": "학생의 건강 상태를 점검한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "씻다",
+      "object": "환부",
+      "full_statement": "학생의 환부를 씻는다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "소독하다",
+      "object": "장비",
+      "full_statement": "보건 처치에 사용하는 장비를 소독한다.",
+      "source_sentence": "환자의 상태를 점검하기 위해 체온, 맥박, 혈압 등을 측정하며, 병실 및 침대를 준비하고 환부를 씻거나 장비를 소독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "취하다",
+      "object": "비상조치",
+      "full_statement": "의사 부재 시 학생에게 비상조치를 취한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "행하다",
+      "object": "응급처치",
+      "full_statement": "규정된 간호기술에 따라 학생에게 응급처치를 행한다.",
+      "source_sentence": "의사의 치료를 돕고, 의사의 처방에 따라 치료를 행하며, 의사 부재 시 비상조치를 취한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수집하다",
+      "object": "보건활동 기록",
+      "full_statement": "보건활동에 관한 기록을 수집한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "조언하다",
+      "object": "건강 관련 문제",
+      "full_statement": "수집한 기록을 바탕으로 학생의 건강 관련 문제에 대해 조언한다.",
+      "source_sentence": "수술 또는 분만시술 중인 의사 및 해당 환자를 돕고, 간호활동에 관한 기록을 수집하여 관련 문제에 대해 조언하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "설명하다",
+      "object": "질병예방",
+      "full_statement": "학생이나 가족에게 질병예방에 대한 설명을 해준다.",
+      "source_sentence": "환자의 상태를 점검, 기록하고 환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "기록하다",
+      "object": "건강 상태",
+      "full_statement": "학생의 건강 상태를 기록한다.",
+      "source_sentence": "환자의 상태를 점검, 기록하고 환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "지도하다",
+      "object": "학생 건강",
+      "full_statement": "전문지식을 이용하여 각급 학교 학생의 건강을 지도한다.",
+      "source_sentence": "전문지식을 이용하여 의료 진료활동과 각 급 학교 학생을 지도하고 예술적인 창작활동이나 스포츠 활동 등을 수행한다.",
+      "derived_from": "조상정의(대분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "학교(실내)",
+      "evidence_span": "학교 등에서 학생들의 건강에 관한 계획을 수립하고 학교의 보건활동을 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "학생·가족 대상 설명 및 응대",
+      "evidence_span": "환자나 가족들에게 치료, 질병예방에 대한 설명을 해준다."
+    }
+  ]
+}

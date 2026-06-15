@@ -1,0 +1,135 @@
+{
+  "ksco_code": "44221",
+  "tasks": [
+    {
+      "verb": "맞이하다",
+      "object": "고객",
+      "full_statement": "호텔 정문에서 승용차의 문을 열고 고객을 맞이한다.",
+      "source_sentence": "호텔의 정문에서 승용차의 문을 열고 고객을 맞이하고 호텔로 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "고객",
+      "full_statement": "고객을 호텔로 안내한다.",
+      "source_sentence": "호텔의 정문에서 승용차의 문을 열고 고객을 맞이하고 호텔로 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "안내하다",
+      "object": "객실",
+      "full_statement": "고객에게 객실을 안내한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "영접하다",
+      "object": "고객",
+      "full_statement": "호텔에서 고객을 영접한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운송하다",
+      "object": "고객의 짐",
+      "full_statement": "고객의 짐이나 요구물품을 룸으로 운송한다.",
+      "source_sentence": "고객의 짐이나 요구물품 등을 룸으로 운송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "운반하다",
+      "object": "짐",
+      "full_statement": "호텔에서 고객의 짐을 운반한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "접수하다",
+      "object": "우편물",
+      "full_statement": "고객의 우편물을 접수한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "배달하다",
+      "object": "우편물",
+      "full_statement": "고객의 우편물을 배달한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "객실 열쇠",
+      "full_statement": "객실 열쇠를 관리한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보급하다",
+      "object": "세탁물",
+      "full_statement": "고객에게 세탁물을 보급한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "음식",
+      "full_statement": "고객에게 음식을 제공한다.",
+      "source_sentence": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "열다",
+      "object": "문",
+      "full_statement": "고객에게 문을 열어주며 고객을 맞이한다.",
+      "source_sentence": "각종 숙박시설에서 고객에게 문을 열어주며 고객을 맞이하거나, 고객의 짐을 운반해 주거나 시설안내 등 숙박 관련 편의서비스를 제공한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "안내하다",
+      "object": "시설",
+      "full_statement": "고객에게 시설안내 등 숙박 관련 편의서비스를 안내한다.",
+      "source_sentence": "각종 숙박시설에서 고객에게 문을 열어주며 고객을 맞이하거나, 고객의 짐을 운반해 주거나 시설안내 등 숙박 관련 편의서비스를 제공한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "편의 서비스 업무",
+      "full_statement": "기타 숙박시설에서 고객의 편의와 관련된 서비스 업무를 수행한다.",
+      "source_sentence": "기타 숙박시설에서 고객의 편의와 관련된 서비스 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(영접·안내·서비스 제공)",
+      "evidence_span": "호텔에서 고객에게 영접, 객실 안내, 짐 운반, 우편물의 접수와 배달, 객실 열쇠 관리, 세탁물 보급, 음식 제공 등 각종 서비스를 제공한다."
+    },
+    {
+      "category": "신체적",
+      "value": "짐·물품 운반",
+      "evidence_span": "고객의 짐이나 요구물품 등을 룸으로 운송한다."
+    },
+    {
+      "category": "장소",
+      "value": "호텔 정문·객실 등 이동",
+      "evidence_span": "호텔의 정문에서 승용차의 문을 열고 고객을 맞이하고 호텔로 안내한다."
+    }
+  ]
+}

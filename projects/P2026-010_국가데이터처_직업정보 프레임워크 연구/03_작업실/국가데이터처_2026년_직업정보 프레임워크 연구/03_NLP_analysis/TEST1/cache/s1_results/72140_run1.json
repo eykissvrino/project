@@ -1,0 +1,125 @@
+{
+  "ksco_code": "72140",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "설명서·도안·명세서",
+      "full_statement": "정형 신발 제작을 위해 설명서, 도안 또는 명세서를 검토한다.",
+      "source_sentence": "발, 다리의 기형을 교정하기 위하여 개인의 요청에 따라 설명서, 도안 또는 명세서를 보고 정형 신발을 전문적으로 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "디자인하다",
+      "object": "가죽신발",
+      "full_statement": "가죽을 이용하여 신발을 디자인한다.",
+      "source_sentence": "가죽을 이용하여 디자인 및 재단을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재단하다",
+      "object": "가죽",
+      "full_statement": "가죽을 재단한다.",
+      "source_sentence": "가죽을 이용하여 디자인 및 재단을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "가죽신발",
+      "full_statement": "고객의 요청에 따라 가죽신발을 제조한다.",
+      "source_sentence": "고객의 요청에 따라 가죽신발을 제조 또는 수선한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "재봉하다",
+      "object": "신발",
+      "full_statement": "재봉기를 이용하여 신발을 재봉한다.",
+      "source_sentence": "재봉기를 이용하여 신발을 만든다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "잘라내다",
+      "object": "불필요한 부분",
+      "full_statement": "가위를 사용해서 불필요한 부분을 잘라낸다.",
+      "source_sentence": "가위를 사용해서 불필요한 부분을 잘라내고 모양을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "만들다",
+      "object": "신발 모양",
+      "full_statement": "신발의 모양을 만든다.",
+      "source_sentence": "가위를 사용해서 불필요한 부분을 잘라내고 모양을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "내다",
+      "object": "광택",
+      "full_statement": "신발에 광택을 낸다.",
+      "source_sentence": "광택을 내고 상품이 될 수 있도록 장식 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장식하다",
+      "object": "신발",
+      "full_statement": "상품이 될 수 있도록 신발을 장식한다.",
+      "source_sentence": "광택을 내고 상품이 될 수 있도록 장식 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수선하다",
+      "object": "가죽신발",
+      "full_statement": "고객의 요청에 따라 가죽신발을 수선한다.",
+      "source_sentence": "고객의 요청에 따라 가죽신발을 제조 또는 수선한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제작하다",
+      "object": "정형 신발",
+      "full_statement": "발과 다리의 기형을 교정하기 위하여 정형 신발을 제작한다.",
+      "source_sentence": "발, 다리의 기형을 교정하기 위하여 개인의 요청에 따라 설명서, 도안 또는 명세서를 보고 정형 신발을 전문적으로 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "최종 제품",
+      "full_statement": "최종 제품을 검사한다.",
+      "source_sentence": "최종 제품을 검사, 분류하고 사이즈, 종류, 세탁방법이 표시된 꼬리표를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분류하다",
+      "object": "최종 제품",
+      "full_statement": "최종 제품을 분류한다.",
+      "source_sentence": "최종 제품을 검사, 분류하고 사이즈, 종류, 세탁방법이 표시된 꼬리표를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "달다",
+      "object": "꼬리표",
+      "full_statement": "사이즈, 종류, 세탁방법이 표시된 꼬리표를 단다.",
+      "source_sentence": "최종 제품을 검사, 분류하고 사이즈, 종류, 세탁방법이 표시된 꼬리표를 단다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [
+    {"name": "재봉기", "category": "장비", "evidence_span": "재봉기를 이용하여 신발을 만든다."},
+    {"name": "가위", "category": "도구", "evidence_span": "가위를 사용해서 불필요한 부분을 잘라내고 모양을 만든다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 요청에 따른 맞춤 제작·응대", "evidence_span": "고객의 요청에 따라 가죽신발을 제조 또는 수선한다."},
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 정밀 수작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

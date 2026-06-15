@@ -1,0 +1,79 @@
+{
+  "ksco_code": "29461",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "악보",
+      "full_statement": "작사·작곡된 악보를 보고 노래의 리듬을 확인한다.",
+      "source_sentence": "작사‧작곡된 악보를 보고 피아노, 기타 또는 녹음된 악단의 반주에 맞추어 리듬을 확인하고 노래를 연습한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연습하다",
+      "object": "노래",
+      "full_statement": "반주에 맞추어 노래를 연습한다.",
+      "source_sentence": "작사‧작곡된 악보를 보고 피아노, 기타 또는 녹음된 악단의 반주에 맞추어 리듬을 확인하고 노래를 연습한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "부르다",
+      "object": "노래",
+      "full_statement": "녹음실의 연주장비에 맞추어 노래를 부른다.",
+      "source_sentence": "녹음실의 연주장비에 맞추어 노래를 부른다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "부르다",
+      "object": "대중가요",
+      "full_statement": "방송국의 공연장이나 콘서트 무대에서 반주에 맞추어 대중가요를 부른다.",
+      "source_sentence": "화음, 멜로디, 리듬, 발성 등에 대한 지식 및 기술을 기초로 반주에 맞추어 방송국의 공연장이나 콘서트 무대에서 대중가요를 부른다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.96
+    },
+    {
+      "verb": "공연하다",
+      "object": "노래",
+      "full_statement": "방송국의 공연장에서 대중을 즐겁게 하기 위하여 음악에 맞추어 노래를 공연한다.",
+      "source_sentence": "방송국의 공연장에서 대중을 즐겁게 하기 위하여 음악에 맞추어 노래를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "활용하다",
+      "object": "화음·멜로디·리듬·발성 지식",
+      "full_statement": "화음, 멜로디, 리듬, 발성에 대한 지식과 기술을 활용하여 노래를 부른다.",
+      "source_sentence": "화음, 멜로디, 리듬, 발성에 대한 지식을 기초로 노래를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작사하다",
+      "object": "가사",
+      "full_statement": "가수에 따라서는 노래의 가사를 직접 작사한다.",
+      "source_sentence": "가수에 따라서는 직접 작사, 작곡을 겸하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작곡하다",
+      "object": "곡",
+      "full_statement": "가수에 따라서는 노래의 곡을 직접 작곡한다.",
+      "source_sentence": "가수에 따라서는 직접 작사, 작곡을 겸하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "피아노", "category": "장비", "evidence_span": "피아노, 기타 또는 녹음된 악단의 반주에 맞추어"},
+    {"name": "기타", "category": "장비", "evidence_span": "피아노, 기타 또는 녹음된 악단의 반주에 맞추어"},
+    {"name": "녹음실 연주장비", "category": "장비", "evidence_span": "녹음실의 연주장비에 맞추어 노래를 부른다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "방송국의 공연장·콘서트 무대", "evidence_span": "방송국의 공연장이나 콘서트 무대에서 대중가요를 부른다"},
+    {"category": "장소", "value": "녹음실", "evidence_span": "녹음실의 연주장비에 맞추어 노래를 부른다"},
+    {"category": "사회적", "value": "대중 대상 공연(관객 응대)", "evidence_span": "방송국의 공연장에서 대중을 즐겁게 하기 위하여 음악에 맞추어 노래를 한다"}
+  ]
+}

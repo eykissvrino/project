@@ -1,0 +1,173 @@
+{
+  "ksco_code": "82219",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "명세서",
+      "full_statement": "원사의 종류, 제조직물의 조직과 무늬에 대한 명세서를 검토한다.",
+      "source_sentence": "원사의 종류, 제조직물의 조직과 무늬에 대한 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "정경기",
+      "full_statement": "경사를 정경 비임에 감기 위하여 정경기를 조작한다.",
+      "source_sentence": "정경기의 조작, 통경기 또는 연경기의 조작, 망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감다",
+      "object": "경사",
+      "full_statement": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다.",
+      "source_sentence": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "호부기",
+      "full_statement": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정한다.",
+      "source_sentence": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "호부기",
+      "full_statement": "실에 풀을 입히는 호부기를 조작한다.",
+      "source_sentence": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "통경기",
+      "full_statement": "준비된 경사를 종광과 바디에 꿰기 위하여 통경기를 조작한다.",
+      "source_sentence": "정경기의 조작, 통경기 또는 연경기의 조작, 망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "꿰다",
+      "object": "경사",
+      "full_statement": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고 통경바늘을 사용하여 꿴다.",
+      "source_sentence": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고, 두 사람이 마주앉아 통경바늘을 사용하여 꿴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "연경기",
+      "full_statement": "경사를 정리하기 위하여 연경기를 조작한다.",
+      "source_sentence": "정경기의 조작, 통경기 또는 연경기의 조작, 망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "감다",
+      "object": "위사용 원사",
+      "full_statement": "위사용 원사를 목관에 감는다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "공급하다",
+      "object": "위사용 원사",
+      "full_statement": "목관에 감은 위사용 원사를 직기에 공급한다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "가동하다",
+      "object": "직기",
+      "full_statement": "직물을 생산하기 위하여 직기를 가동한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "제반조건",
+      "full_statement": "직물의 무늬, 무게, 속도 등 제반조건을 확인한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "연결하다",
+      "object": "끊어진 실",
+      "full_statement": "제직 중 끊어진 실을 연결한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 조정한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연결하다",
+      "object": "빔",
+      "full_statement": "경사를 다 사용하면 남은 부분과 새로운 빔을 연결한다.",
+      "source_sentence": "경사를 다 사용하면 남은 부분과 새로운 빔을 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "망 직조기",
+      "full_statement": "망을 직조하기 위하여 직조기를 조작한다.",
+      "source_sentence": "망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조작하다",
+      "object": "자수기",
+      "full_statement": "직물에 자수를 놓기 위하여 자수기를 조작한다.",
+      "source_sentence": "망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조작하다",
+      "object": "자카르식 카드재단기",
+      "full_statement": "자카르식 카드재단기를 조작한다.",
+      "source_sentence": "망을 직조하는 직조기의 조작, 자수기의 조작, 자카르식 카드재단기의 조작 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "정경기", "category": "장비", "evidence_span": "정경기의 조작, 통경기 또는 연경기의 조작"},
+    {"name": "통경기", "category": "장비", "evidence_span": "통경기 또는 연경기의 조작"},
+    {"name": "연경기", "category": "장비", "evidence_span": "통경기 또는 연경기의 조작"},
+    {"name": "호부기", "category": "장비", "evidence_span": "실에 풀을 입히는 호부기를 조정, 조작한다"},
+    {"name": "직기", "category": "장비", "evidence_span": "위사용 원사를 목관에 감고 직기에 공급한다"},
+    {"name": "망 직조기", "category": "장비", "evidence_span": "망을 직조하는 직조기의 조작"},
+    {"name": "자수기", "category": "장비", "evidence_span": "자수기의 조작"},
+    {"name": "자카르식 카드재단기", "category": "장비", "evidence_span": "자카르식 카드재단기의 조작 등이 여기에 분류된다"},
+    {"name": "통경바늘", "category": "도구", "evidence_span": "두 사람이 마주앉아 통경바늘을 사용하여 꿴다"},
+    {"name": "정경 비임", "category": "장비", "evidence_span": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "두 사람이 마주앉아 협업하여 작업함", "evidence_span": "두 사람이 마주앉아 통경바늘을 사용하여 꿴다"},
+    {"category": "신체적", "value": "경사를 한 가닥씩 끼우는 정밀 수작업", "evidence_span": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고"}
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "ksco_code": "79912",
+  "tasks": [
+    {
+      "verb": "배합하다",
+      "object": "세제 및 세척용 약품",
+      "full_statement": "건물 외벽 청소를 위해 세제 및 세척용 약품을 적절히 배합한다.",
+      "source_sentence": "세제 및 세척용 약품을 적절히 배합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "뿌리다",
+      "object": "물",
+      "full_statement": "급수장비를 사용하여 건물 외벽에 물을 뿌린다.",
+      "source_sentence": "급수장비를 사용하여 물을 뿌리고 세제를 사용하여 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "이물질",
+      "full_statement": "세제를 사용하여 건물 외벽의 이물질을 제거한다.",
+      "source_sentence": "급수장비를 사용하여 물을 뿌리고 세제를 사용하여 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "세척하다",
+      "object": "외부 표면",
+      "full_statement": "각종 약품과 모래 등을 이용하여 건물 또는 구조물의 외부 표면을 세척한다.",
+      "source_sentence": "각종 약품, 모래 등을 이용하여 세척하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "청소하다",
+      "object": "건물 외부 표면",
+      "full_statement": "물, 수증기나 모래를 이용하여 돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면을 청소한다.",
+      "source_sentence": "물, 수증기나 모래를 이용하여 돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면 및 유리창을 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "청소하다",
+      "object": "유리창",
+      "full_statement": "물, 수증기나 모래를 이용하여 건물의 유리창을 청소한다.",
+      "source_sentence": "물, 수증기나 모래를 이용하여 돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면 및 유리창을 청소한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분사하다",
+      "object": "수증기",
+      "full_statement": "증기분사기를 이용하여 건물 외벽 표면에 수증기를 분사한다.",
+      "source_sentence": "물, 수증기나 모래를 이용하여 돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면 및 유리창을 청소한다.",
+      "derived_from": "세세분류 정의→예시(증기분사기 조작원) 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "살포하다",
+      "object": "모래",
+      "full_statement": "건물 외부 표면 세척을 위해 모래를 살포한다.",
+      "source_sentence": "물, 수증기나 모래를 이용하여 돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면 및 유리창을 청소한다.",
+      "derived_from": "세세분류 정의→예시(건물외벽 모래 살포원) 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제거하다",
+      "object": "퇴적물",
+      "full_statement": "각종 화학품 등을 사용하여 건물 외벽이나 유리창의 퇴적물을 제거한다.",
+      "source_sentence": "가스관, 통풍관 등의 연결관 또는 보일러 배관, 건물 외벽이나 유리창, 수조 등의 퇴적물을 각종 화약품 등을 사용하여 제거하거나 청소한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "급수장비", "category": "장비", "evidence_span": "급수장비를 사용하여 물을 뿌리고"},
+    {"name": "증기분사기", "category": "장비", "evidence_span": "증기분사기 조작원"},
+    {"name": "세제 및 세척용 약품", "category": "도구", "evidence_span": "세제 및 세척용 약품을 적절히 배합한다."},
+    {"name": "화학품", "category": "도구", "evidence_span": "각종 화약품 등을 사용하여 제거하거나 청소한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 외벽·구조물 외부(고소 작업 가능성)", "evidence_span": "돌, 벽돌 및 금속으로 된 건물 또는 구조물의 외부 표면 및 유리창을 청소한다."},
+    {"category": "위험", "value": "화학물질 취급", "evidence_span": "각종 화약품 등을 사용하여 제거하거나 청소한다."}
+  ]
+}

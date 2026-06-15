@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28411",
+  "tasks": [
+    {
+      "verb": "감정하다",
+      "object": "부동산",
+      "full_statement": "토지 및 건축물 등 부동산의 경제적 가치를 감정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "부동산 가치",
+      "full_statement": "판매·과세·자산처분 목적으로 부동산 가치를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "표시하다",
+      "object": "감정 가액",
+      "full_statement": "평가 결과를 가액으로 표시한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

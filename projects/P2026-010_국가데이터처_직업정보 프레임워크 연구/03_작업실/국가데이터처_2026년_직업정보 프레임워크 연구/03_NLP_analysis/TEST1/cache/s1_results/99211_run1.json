@@ -1,0 +1,102 @@
+{
+  "ksco_code": "99211",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "수용가",
+      "full_statement": "정기적으로 담당구역의 수용가를 방문한다.",
+      "source_sentence": "정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스·수도·전력 검침을 위한 수용가 방문)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "읽다",
+      "object": "계량기 지침",
+      "full_statement": "수용가를 방문하여 계량기의 지침을 읽는다.",
+      "source_sentence": "정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(계량기를 검침)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "기록하다",
+      "object": "사용량",
+      "full_statement": "검침카드에 가스·수도·전력 사용량을 기록한다.",
+      "source_sentence": "가스‧수도‧전력사용량을 검침하기 위하여 수용가를 방문하여 계량기를 검침하여 기록한다. / 정기적으로 담당구역의 수용가를 방문하여 계량기의 지침을 읽고 검침카드에 사용량을 기록한다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "확인하다",
+      "object": "계량기 가동상태",
+      "full_statement": "계량기의 가동상태를 확인한다.",
+      "source_sentence": "계량기의 가동상태를 확인하고 표면에 부착된 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제거하다",
+      "object": "이물질",
+      "full_statement": "계량기 표면에 부착된 이물질을 제거한다.",
+      "source_sentence": "계량기의 가동상태를 확인하고 표면에 부착된 이물질을 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "구분하다",
+      "object": "검침서류",
+      "full_statement": "검침서류를 수용가 지역별로 구분한다.",
+      "source_sentence": "검침서류를 수용가 지역별로 구분하고 전산 입력 자료를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "전산 입력 자료",
+      "full_statement": "전산 입력 자료를 작성한다.",
+      "source_sentence": "검침서류를 수용가 지역별로 구분하고 전산 입력 자료를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "현장용도",
+      "full_statement": "계약관계상 위약여부 확인 등의 목적을 위해 수용가의 현장용도를 확인한다.",
+      "source_sentence": "수용가가 계약관계상 위약여부 확인 등의 목적을 위해 현장용도를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제시하다",
+      "object": "해결방법",
+      "full_statement": "요금징수와 계산방법, 문제점 등에 대한 소비자의 질문에 해결방법을 제시한다.",
+      "source_sentence": "요금징수와 계산방법, 문제점 등에 대한 소비자의 질문에 해결방법을 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "점검하다",
+      "object": "불량계량기",
+      "full_statement": "불량계량기 또는 도용 사항을 점검·확인한다.",
+      "source_sentence": "불량계량기 또는 도용 사항을 점검‧확인하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "점검하다",
+      "object": "가스 사용량 및 안전사항",
+      "full_statement": "가스의 사용량과 안전사항을 점검·확인한다.",
+      "source_sentence": "가스의 사용량, 안전사항을 점검‧확인한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(가스 검침)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "계량기", "category": "장비", "evidence_span": "수용가를 방문하여 계량기를 검침하여 기록한다"},
+    {"name": "검침카드", "category": "도구", "evidence_span": "계량기의 지침을 읽고 검침카드에 사용량을 기록한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "수용가 방문(이동·현장)", "evidence_span": "정기적으로 담당구역의 수용가를 방문하여"},
+    {"category": "사회적", "value": "소비자 응대(질문 해결)", "evidence_span": "소비자의 질문에 해결방법을 제시한다"},
+    {"category": "시간적", "value": "정기적 검침", "evidence_span": "정기적으로 담당구역의 수용가를 방문하여"}
+  ]
+}

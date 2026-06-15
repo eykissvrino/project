@@ -1,0 +1,77 @@
+{
+  "ksco_code": "23741",
+  "tasks": [
+    {
+      "verb": "시험하다",
+      "object": "대기 환경 및 오염 문제",
+      "full_statement": "대기 환경 기술자 및 연구원의 감독 하에 대기 환경 및 오염 문제를 시험한다.",
+      "source_sentence": "대기 환경 기술자 및 연구원의 감독 하에 대기 환경 및 오염 문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시험하다",
+      "object": "대기 오염",
+      "full_statement": "대기 오염 문제를 시험한다.",
+      "source_sentence": "대기 환경 기술자 및 연구원의 감독 하에 대기 환경 및 오염 문제를 시험한다.",
+      "derived_from": "세세분류 정의→직업예시(대기 오염 시험원) 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보조하다",
+      "object": "환경공학 관련 기술 개발 및 연구",
+      "full_statement": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보조하다",
+      "object": "대기 환경 관련 기술 개발 및 연구",
+      "full_statement": "대기 환경 기술자 및 연구원의 감독 하에 대기 환경 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무→세세정의(대기 환경) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "시험하다",
+      "object": "환경영향 평가",
+      "full_statement": "환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "유지보수하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비의 유지·보수 업무를 수행한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학과 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "환경공학과 관련된 연구 및 개발과 관련하여 환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 2374)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "응용하다",
+      "object": "환경공학 관련 지식",
+      "full_statement": "환경공학 개발 및 생산에 대하여 관련 지식을 응용한다.",
+      "source_sentence": "환경공학‧가스‧에너지 기술자 및 시험원은 환경공학 및 가스‧에너지 개발 및 생산에 대하여 연구, 조언, 설계 및 관리하며 관련 지식을 응용한다.",
+      "derived_from": "조상정의(소분류 237)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "기술자 및 연구원의 감독 하 업무 수행(감독·관리 하 보조 역할)",
+      "evidence_span": "대기 환경 기술자 및 연구원의 감독 하에 대기 환경 및 오염 문제를 시험한다."
+    }
+  ]
+}

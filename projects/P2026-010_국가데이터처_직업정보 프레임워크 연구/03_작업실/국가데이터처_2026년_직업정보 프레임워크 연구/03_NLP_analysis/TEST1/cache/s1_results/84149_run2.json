@@ -1,0 +1,148 @@
+{
+  "ksco_code": "84149",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "압연장치",
+      "full_statement": "빌릿(소강편)으로 이음새가 없는 파이프 및 튜브를 제조하기 위해 압연장치를 조작한다.",
+      "source_sentence": "빌릿(소강편)으로 이음새가 없는 파이프 및 튜브를 제조하는 압연장치를 조작하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "압연 정련장치의 조절장치",
+      "full_statement": "압연기 조작원의 신호에 따라 압연 정련장치의 조절장치를 조작한다.",
+      "source_sentence": "압연기 조작원의 신호에 따라 압연 정련장치의 조절장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "배합하다",
+      "object": "금속",
+      "full_statement": "미리 지시받은 비율에 따라 철 또는 비철금속의 합금을 생산하기 위해 금속을 배합한다.",
+      "source_sentence": "미리 지시받은 비율에 따라 금속을 배합, 용해하여 철 또는 비철금속의 합금을 생산하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "용해하다",
+      "object": "금속",
+      "full_statement": "철 또는 비철금속의 합금을 생산하기 위해 금속을 용해한다.",
+      "source_sentence": "미리 지시받은 비율에 따라 금속을 배합, 용해하여 철 또는 비철금속의 합금을 생산하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "생산하다",
+      "object": "철 또는 비철금속의 합금",
+      "full_statement": "철 또는 비철금속의 합금을 생산한다.",
+      "source_sentence": "금속을 배합, 용해하여 철 또는 비철금속의 합금을 생산하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "장입하다",
+      "object": "원료",
+      "full_statement": "로 작업에 있어 원료를 장입한다.",
+      "source_sentence": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분사하다",
+      "object": "로 작업 분사물",
+      "full_statement": "로 작업에 있어 분사 작업을 한다.",
+      "source_sentence": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "가열조절장치",
+      "full_statement": "로 작업에 있어 가열조절장치를 조작한다.",
+      "source_sentence": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "채취하다",
+      "object": "용융물",
+      "full_statement": "로 작업에 있어 용융물을 채취한다.",
+      "source_sentence": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "이전하다",
+      "object": "용융물",
+      "full_statement": "로 작업에 있어 채취한 용융물을 이전한다.",
+      "source_sentence": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "금속 제련·정련과정",
+      "full_statement": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다.",
+      "source_sentence": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "컴퓨터 출력정보 및 모니터 자료",
+      "full_statement": "컴퓨터 출력정보, 모니터 자료 등을 관찰한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "가공조건",
+      "full_statement": "적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "감독하다",
+      "object": "기기조작원의 활동",
+      "full_statement": "기기조작원의 활동을 조정하고 감독한다.",
+      "source_sentence": "기기조작원의 활동을 조정하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "가동시키다",
+      "object": "생산시스템",
+      "full_statement": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "source_sentence": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성하고 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [
+    {"name": "압연장치", "category": "장비", "evidence_span": "이음새가 없는 파이프 및 튜브를 제조하는 압연장치를 조작하거나"},
+    {"name": "압연 정련장치의 조절장치", "category": "장비", "evidence_span": "압연 정련장치의 조절장치를 조작한다."},
+    {"name": "가열조절장치", "category": "장비", "evidence_span": "장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다."},
+    {"name": "중앙조정실 제어장치", "category": "시스템", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "컴퓨터 터미널", "category": "HW", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "통제시스템", "category": "시스템", "evidence_span": "기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "중앙조정실 작업", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"category": "사회적", "value": "압연기 조작원의 신호에 따른 협업", "evidence_span": "압연기 조작원의 신호에 따라 압연 정련장치의 조절장치를 조작한다."},
+    {"category": "사회적", "value": "기기조작원 감독·조정", "evidence_span": "기기조작원의 활동을 조정하고 감독한다."},
+    {"category": "위험", "value": "용융물·고온 로 작업", "evidence_span": "로 작업에 있어 장입, 분사, 가열조절장치 조작, 용융믈 채취 및 이전 등의 업무를 수행한다."},
+    {"category": "시간적", "value": "긴급 상황 및 작업 일정 대응", "evidence_span": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다."}
+  ]
+}

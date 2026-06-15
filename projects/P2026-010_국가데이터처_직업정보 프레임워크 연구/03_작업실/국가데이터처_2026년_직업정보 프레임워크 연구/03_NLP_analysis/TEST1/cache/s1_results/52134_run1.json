@@ -1,0 +1,98 @@
+{
+  "ksco_code": "52134",
+  "tasks": [
+    {
+      "verb": "판매하다",
+      "object": "복권",
+      "full_statement": "발행된 복권을 고객에게 판매한다.",
+      "source_sentence": "발행된 복권 및 마권을 고객에게 판매하고 추첨 또는 경기결과에 따라 환급금을 지불하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "판매하다",
+      "object": "마권",
+      "full_statement": "발행된 마권을 고객에게 판매한다.",
+      "source_sentence": "발행된 복권 및 마권을 고객에게 판매하고 추첨 또는 경기결과에 따라 환급금을 지불하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지불하다",
+      "object": "환급금",
+      "full_statement": "추첨 또는 경기결과에 따라 환급금을 고객에게 지불한다.",
+      "source_sentence": "발행된 복권 및 마권을 고객에게 판매하고 추첨 또는 경기결과에 따라 환급금을 지불하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "구매 매수",
+      "full_statement": "고객의 요구에 따라 복권 및 마권의 구매 매수를 확인한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "받다",
+      "object": "판매대금",
+      "full_statement": "복권 및 마권의 대금을 받는다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계산하다",
+      "object": "거스름돈",
+      "full_statement": "거스름돈을 계산하여 고객에게 지급한다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정산하다",
+      "object": "일일판매내역",
+      "full_statement": "일일판매내역을 정산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "계산하다",
+      "object": "판매대금",
+      "full_statement": "판매대금을 계산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "대답하다",
+      "object": "고객의 질문",
+      "full_statement": "고객의 질문에 대답한다.",
+      "source_sentence": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품 내용",
+      "full_statement": "고객에게 복권 및 마권 상품의 내용을 설명한다.",
+      "source_sentence": "도‧소매 업체가 개설한 매장에서 고객에게 상품의 내용을 설명하고 다양한 모델 및 색상을 보여줌으로써 고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대",
+      "evidence_span": "발행된 복권 및 마권을 고객에게 판매하고"
+    },
+    {
+      "category": "사회적",
+      "value": "전화 응대",
+      "evidence_span": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다."
+    }
+  ]
+}

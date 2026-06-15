@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28439",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "제품 사양",
+      "full_statement": "제품의 기술적 사양을 고객에게 설명한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "추천하다",
+      "object": "제품",
+      "full_statement": "고객 필요에 맞는 제품을 추천한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "사후 지원",
+      "full_statement": "판매 후 지원 서비스를 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

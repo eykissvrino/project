@@ -1,0 +1,103 @@
+{
+  "ksco_code": "41210",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "경호임무",
+      "full_statement": "요인, 유명인사, 연예인의 신변안전을 위하여 경호임무를 수행한다.",
+      "source_sentence": "요인, 유명인사, 연예인의 신변안전을 위하여 경호임무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "보호하다",
+      "object": "개인의 신변",
+      "full_statement": "개인의 신변을 보호한다.",
+      "source_sentence": "개인의 신변을 보호하는 자로서 개인을 호위하여 신체적 상해나 납치를 방지하고 사생활의 침해를 예방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "호위하다",
+      "object": "개인",
+      "full_statement": "개인을 호위한다.",
+      "source_sentence": "개인을 호위하여 신체적 상해나 납치를 방지하고 사생활의 침해를 예방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "방지하다",
+      "object": "신체적 상해",
+      "full_statement": "경호 대상자의 신체적 상해를 방지한다.",
+      "source_sentence": "개인을 호위하여 신체적 상해나 납치를 방지하고 사생활의 침해를 예방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "방지하다",
+      "object": "납치",
+      "full_statement": "경호 대상자의 납치를 방지한다.",
+      "source_sentence": "개인을 호위하여 신체적 상해나 납치를 방지하고 사생활의 침해를 예방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "예방하다",
+      "object": "사생활의 침해",
+      "full_statement": "경호 대상자의 사생활 침해를 예방한다.",
+      "source_sentence": "개인을 호위하여 신체적 상해나 납치를 방지하고 사생활의 침해를 예방한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "순찰하다",
+      "object": "건물과 지역",
+      "full_statement": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰한다.",
+      "source_sentence": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰하는 경호원과 청원경찰, 무인경비시스템 종사자 및 기타 경비 관련 종사자를 포함한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "예방하다",
+      "object": "불법적 출입",
+      "full_statement": "건물과 지역에 대한 불법적 출입을 예방한다.",
+      "source_sentence": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰하는 경호원과 청원경찰, 무인경비시스템 종사자 및 기타 경비 관련 종사자를 포함한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "예방하다",
+      "object": "도난",
+      "full_statement": "경호 대상 구역의 도난을 예방한다.",
+      "source_sentence": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰하는 경호원과 청원경찰, 무인경비시스템 종사자 및 기타 경비 관련 종사자를 포함한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "예방하다",
+      "object": "폭력",
+      "full_statement": "경호 대상자에 대한 폭력을 예방한다.",
+      "source_sentence": "불법적 출입, 도난, 폭력 및 기타 불법적인 행위를 예방하기 위하여 건물과 지역을 순찰하는 경호원과 청원경찰, 무인경비시스템 종사자 및 기타 경비 관련 종사자를 포함한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "경호 대상자(개인) 밀착 호위·대인 서비스",
+      "evidence_span": "개인을 호위하여 신체적 상해나 납치를 방지하고"
+    },
+    {
+      "category": "위험",
+      "value": "신체적 상해·납치·폭력 등 물리적 위협 노출",
+      "evidence_span": "신체적 상해나 납치를 방지하고"
+    },
+    {
+      "category": "장소",
+      "value": "건물과 지역 순찰(이동·실내외)",
+      "evidence_span": "건물과 지역을 순찰하는"
+    }
+  ]
+}

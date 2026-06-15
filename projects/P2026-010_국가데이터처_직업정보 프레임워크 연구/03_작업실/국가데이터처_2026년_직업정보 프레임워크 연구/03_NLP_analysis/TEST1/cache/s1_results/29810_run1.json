@@ -1,0 +1,119 @@
+{
+  "ksco_code": "29810",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "문화상품의 경쟁 환경 및 소비시장",
+      "full_statement": "공연문화 상품의 경쟁 환경 및 소비시장을 분석한다.",
+      "source_sentence": "문화상품의 경쟁 환경 및 소비시장을 분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선정하다",
+      "object": "문화상품의 소재",
+      "full_statement": "콘서트·뮤지컬·연극·발레 등 공연문화 상품의 소재를 선정한다.",
+      "source_sentence": "문화상품의 소재 및 유통 플랫폼을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(소재선정)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선정하다",
+      "object": "유통 플랫폼",
+      "full_statement": "공연문화 상품의 유통 플랫폼을 선정한다.",
+      "source_sentence": "문화상품의 소재 및 유통 플랫폼을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "예산",
+      "full_statement": "공연 제작을 위한 예산을 수립한다.",
+      "source_sentence": "문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의(예산수립)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기획하다",
+      "object": "제작인력 구성",
+      "full_statement": "공연 제작을 위한 제작인력 구성을 기획한다.",
+      "source_sentence": "문화상품의 소재 및 유통 플랫폼을 선정하고, 예산 및 제작인력 구성을 기획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "섭외하다",
+      "object": "제작인원",
+      "full_statement": "공연 제작에 참여할 제작인원을 섭외한다.",
+      "source_sentence": "문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의(제작인원 섭외)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "구성하다",
+      "object": "기획안",
+      "full_statement": "투자 유치를 위한 기획안을 구성한다.",
+      "source_sentence": "기획안을 구성, 발표하여 투자를 유치하거나 판권 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "발표하다",
+      "object": "기획안",
+      "full_statement": "구성한 기획안을 발표한다.",
+      "source_sentence": "기획안을 구성, 발표하여 투자를 유치하거나 판권 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "유치하다",
+      "object": "투자",
+      "full_statement": "기획안 발표를 통해 공연 제작 투자를 유치한다.",
+      "source_sentence": "문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의(투자유치)→상속 주요업무 부합",
+      "confidence": 0.92
+    },
+    {
+      "verb": "판매하다",
+      "object": "판권",
+      "full_statement": "공연문화 상품의 판권을 판매한다.",
+      "source_sentence": "기획안을 구성, 발표하여 투자를 유치하거나 판권 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지원하다",
+      "object": "마케팅 및 홍보",
+      "full_statement": "공연문화 상품의 마케팅 및 홍보를 지원한다.",
+      "source_sentence": "기획안을 구성, 발표하여 투자를 유치하거나 판권 판매나 마케팅 및 홍보를 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "제작 과정",
+      "full_statement": "공연문화 상품의 제작 과정을 기획한다.",
+      "source_sentence": "문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의(제작 과정을 기획)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실행하다",
+      "object": "제작 과정",
+      "full_statement": "기획된 공연 제작 과정을 실행한다.",
+      "source_sentence": "문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의(제작 과정을 실행)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "극대화하다",
+      "object": "문화상품의 부가가치",
+      "full_statement": "공연문화 상품의 부가가치를 극대화하도록 제작 과정을 운영한다.",
+      "source_sentence": "콘서트 뮤지컬, 연극, 발레 등 공연문화 상품의 부가가치를 극대화할 수 있도록 문화상품의 소재선정, 투자유치, 예산수립, 제작인원 섭외 등 제작 과정을 기획 및 실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

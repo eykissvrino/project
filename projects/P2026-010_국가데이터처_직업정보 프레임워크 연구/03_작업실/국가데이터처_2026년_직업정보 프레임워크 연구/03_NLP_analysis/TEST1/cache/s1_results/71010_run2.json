@@ -1,0 +1,111 @@
+{
+  "ksco_code": "71010",
+  "tasks": [
+    {
+      "verb": "배합하다",
+      "object": "재료",
+      "full_statement": "밀가루, 쇼트닝, 설탕, 소금, 팽창제, 물 등의 재료를 배합한다.",
+      "source_sentence": "밀가루, 쇼트닝, 설탕, 소금, 팽창제, 물 등을 배합하고 제빵용 기계와 기구를 이용하여 반죽, 성형, 굽기, 장식 등의 과정을 통해 빵을 만들거나, 케이크, 파이, 과자 등을 제조하거나 장식한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "계량하다",
+      "object": "각종 재료",
+      "full_statement": "제품의 배합표에 따라 각종 재료를 계량한다.",
+      "source_sentence": "제품의 배합표에 따라 각종 재료를 계량하고 손 또는 혼합기를 사용하여 반죽을 완성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "완성하다",
+      "object": "반죽",
+      "full_statement": "손 또는 혼합기를 사용하여 반죽을 완성한다.",
+      "source_sentence": "제품의 배합표에 따라 각종 재료를 계량하고 손 또는 혼합기를 사용하여 반죽을 완성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "발효시키다",
+      "object": "반죽",
+      "full_statement": "일정한 온도와 습도하에서 규정된 시간 동안 반죽을 발효시킨다.",
+      "source_sentence": "일정한 온도, 습도하에서 규정된 시간동안 발효시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "성형하다",
+      "object": "반죽",
+      "full_statement": "손 또는 기계를 사용하여 반죽을 성형한다.",
+      "source_sentence": "손 또는 기계를 사용하여 반죽을 성형하고 숙성시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "숙성시키다",
+      "object": "반죽",
+      "full_statement": "성형한 반죽을 숙성시킨다.",
+      "source_sentence": "손 또는 기계를 사용하여 반죽을 성형하고 숙성시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "굽다",
+      "object": "반죽",
+      "full_statement": "오븐에 넣고 온도와 시간을 조절하여 반죽을 굽는다.",
+      "source_sentence": "오븐에 넣고 온도와 시간을 조절하여 굽는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "냉각시키다",
+      "object": "제품",
+      "full_statement": "냉각기를 사용하거나 자연 상태에서 제품을 냉각시킨다.",
+      "source_sentence": "냉각기를 사용하거나 또는 자연 상태에서 제품을 냉각시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "장식하다",
+      "object": "제품",
+      "full_statement": "제품의 종류에 따라 크림, 잼 등으로 제품을 장식한다.",
+      "source_sentence": "제품의 종류에 따라 크림, 잼 등으로 장식을 하고, 손 또는 기계를 사용하여 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "포장하다",
+      "object": "제품",
+      "full_statement": "손 또는 기계를 사용하여 제품을 포장한다.",
+      "source_sentence": "제품의 종류에 따라 크림, 잼 등으로 장식을 하고, 손 또는 기계를 사용하여 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "만들다",
+      "object": "빵",
+      "full_statement": "반죽, 성형, 굽기, 장식 등의 과정을 통해 빵을 만든다.",
+      "source_sentence": "제빵용 기계와 기구를 이용하여 반죽, 성형, 굽기, 장식 등의 과정을 통해 빵을 만들거나, 케이크, 파이, 과자 등을 제조하거나 장식한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "제조하다",
+      "object": "케이크·파이·과자",
+      "full_statement": "케이크, 파이, 과자 등을 제조한다.",
+      "source_sentence": "케이크, 파이, 과자 등을 제조하거나 장식한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    }
+  ],
+  "tools": [
+    {"name": "제빵용 기계와 기구", "category": "장비", "evidence_span": "제빵용 기계와 기구를 이용하여 반죽, 성형, 굽기, 장식 등의 과정을 통해 빵을 만들거나"},
+    {"name": "혼합기", "category": "장비", "evidence_span": "손 또는 혼합기를 사용하여 반죽을 완성한다"},
+    {"name": "오븐", "category": "장비", "evidence_span": "오븐에 넣고 온도와 시간을 조절하여 굽는다"},
+    {"name": "냉각기", "category": "장비", "evidence_span": "냉각기를 사용하거나 또는 자연 상태에서 제품을 냉각시킨다"}
+  ],
+  "work_context": [
+    {"category": "시간적", "value": "일정한 온도·습도하에서 규정된 시간 동안 발효시키는 시간 관리", "evidence_span": "일정한 온도, 습도하에서 규정된 시간동안 발효시킨다"},
+    {"category": "신체적", "value": "손을 사용한 정밀·반복 작업(계량·반죽·성형·포장)", "evidence_span": "손 또는 혼합기를 사용하여 반죽을 완성한다"}
+  ]
+}

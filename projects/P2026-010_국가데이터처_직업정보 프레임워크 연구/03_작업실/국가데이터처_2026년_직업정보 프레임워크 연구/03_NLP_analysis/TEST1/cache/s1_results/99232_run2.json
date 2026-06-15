@@ -1,0 +1,103 @@
+{
+  "ksco_code": "99232",
+  "tasks": [
+    {
+      "verb": "안내하다",
+      "object": "주차시설",
+      "full_statement": "차량의 무료 또는 유료 주차시설을 안내한다.",
+      "source_sentence": "차량의 무료 또는 유료 주차시설을 안내한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "주차공간",
+      "full_statement": "주차공간을 찾아 안내한다.",
+      "source_sentence": "주차공간을 찾아 안내한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(안내)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지정하다",
+      "object": "주차위치",
+      "full_statement": "차량의 주차위치를 지정한다.",
+      "source_sentence": "차량의 주차위치를 지정하고 차량번호 및 주차예정 시간을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기록하다",
+      "object": "차량번호 및 주차예정 시간",
+      "full_statement": "차량번호 및 주차예정 시간을 기록한다.",
+      "source_sentence": "차량의 주차위치를 지정하고 차량번호 및 주차예정 시간을 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "차단기",
+      "full_statement": "차량의 주차장 출입을 유도하기 위하여 차단기를 조작한다.",
+      "source_sentence": "차량의 주차장 출입을 유도하기 위하여 차단기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "유도하다",
+      "object": "차량의 주차장 출입",
+      "full_statement": "차량의 주차장 출입을 유도한다.",
+      "source_sentence": "차량의 주차장 출입을 유도하기 위하여 차단기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(안내)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "통제하다",
+      "object": "노상 유료 주차장 출입 차량",
+      "full_statement": "노상의 유료 주차장을 출입하는 차량을 통제한다.",
+      "source_sentence": "노상의 유료 주차장을 출입하는 차량을 통제하기도 하며 일정요금을 징수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "징수하다",
+      "object": "일정요금",
+      "full_statement": "유료 주차장을 이용하는 차량으로부터 일정요금을 징수한다.",
+      "source_sentence": "노상의 유료 주차장을 출입하는 차량을 통제하기도 하며 일정요금을 징수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "파악하다",
+      "object": "주차대수",
+      "full_statement": "기계식 주차설비의 경우 주차대수를 파악한다.",
+      "source_sentence": "기계식 주차설비의 경우 주차대수를 파악하여 고객 차량의 인출차를 돕고, 승강기를 작동한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "돕다",
+      "object": "고객 차량의 인출",
+      "full_statement": "고객 차량의 인출을 돕는다.",
+      "source_sentence": "기계식 주차설비의 경우 주차대수를 파악하여 고객 차량의 인출차를 돕고, 승강기를 작동한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "작동하다",
+      "object": "승강기",
+      "full_statement": "기계식 주차설비의 승강기를 작동한다.",
+      "source_sentence": "기계식 주차설비의 경우 주차대수를 파악하여 고객 차량의 인출차를 돕고, 승강기를 작동한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "차단기", "category": "장비", "evidence_span": "차량의 주차장 출입을 유도하기 위하여 차단기를 조작한다."},
+    {"name": "기계식 주차설비", "category": "장비", "evidence_span": "기계식 주차설비의 경우 주차대수를 파악하여 고객 차량의 인출차를 돕고, 승강기를 작동한다."},
+    {"name": "승강기", "category": "장비", "evidence_span": "기계식 주차설비의 경우 주차대수를 파악하여 고객 차량의 인출차를 돕고, 승강기를 작동한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 차량 응대 및 주차 안내", "evidence_span": "고객 차량의 인출차를 돕고"},
+    {"category": "장소", "value": "노상 주차장 등 실외 주차시설", "evidence_span": "노상의 유료 주차장을 출입하는 차량을 통제하기도 하며"},
+    {"category": "신체적", "value": "단순하고 일상적이며 상당한 육체적 노력이 요구되는 업무", "evidence_span": "단순하고 일상적이며, 어떤 경우에는 상당한 육체적 노력이 요구되고"}
+  ]
+}

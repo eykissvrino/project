@@ -1,0 +1,86 @@
+{
+  "ksco_code": "87402",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "유정 천공 기계장비",
+      "full_statement": "유정 천공 기계장비를 조작한다.",
+      "source_sentence": "유정 천공 기계장비를 조작하고 시굴에 관련된 작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "시굴 관련 작업",
+      "full_statement": "시굴에 관련된 작업을 수행한다.",
+      "source_sentence": "유정 천공 기계장비를 조작하고 시굴에 관련된 작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "인양 및 천공업무",
+      "full_statement": "유정, 가스천의 천공을 위해 인양 및 천공업무를 수행한다.",
+      "source_sentence": "유정, 가스천의 천공을 위해 인양 및 천공업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "회전식 또는 타격식 천공기계 장치",
+      "full_statement": "유정, 가스천의 착공을 위해 회전식 천공기계 장치를 조작한다.",
+      "source_sentence": "유정, 가스천의 착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "타격식 천공기계 장치",
+      "full_statement": "유정, 가스천의 착공을 위해 타격식 천공기계 장치를 조작한다.",
+      "source_sentence": "유정, 가스천의 착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "새 지점의 천공 또는 착공 작업",
+      "full_statement": "새로운 유정과 가스천의 발견을 위해 새 지점의 천공 또는 착공 작업을 한다.",
+      "source_sentence": "새로운 유정과 가스천의 발견을 위해 새 지점의 천공 또는 착공 작업을 할 수 있도록 천공기계 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "천공기계 장치",
+      "full_statement": "새로운 유정과 가스천의 발견을 위해 천공기계 장치를 조작한다.",
+      "source_sentence": "새로운 유정과 가스천의 발견을 위해 새 지점의 천공 또는 착공 작업을 할 수 있도록 천공기계 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "폭발물 매설을 위한 천공기계",
+      "full_statement": "폭발물 매설을 위한 천공기계를 조작한다.",
+      "source_sentence": "폭발물 매설을 위한 천공기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "갱도 착굴 기계",
+      "full_statement": "광산에서 갱도 착굴에 쓰이는 기계를 조작한다.",
+      "source_sentence": "광산에서 갱도 착굴에 쓰이는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "유정 천공 기계장비", "category": "장비", "evidence_span": "유정 천공 기계장비를 조작하고 시굴에 관련된 작업을 수행한다."},
+    {"name": "회전식 천공기계 장치", "category": "장비", "evidence_span": "유정, 가스천의 착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다."},
+    {"name": "타격식 천공기계 장치", "category": "장비", "evidence_span": "유정, 가스천의 착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "폭발물 매설 작업", "evidence_span": "폭발물 매설을 위한 천공기계를 조작한다."},
+    {"category": "장소", "value": "지하 갱도(광산)", "evidence_span": "광산에서 갱도 착굴에 쓰이는 기계를 조작한다."}
+  ]
+}

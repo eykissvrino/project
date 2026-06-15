@@ -1,0 +1,114 @@
+{
+  "ksco_code": "51092",
+  "tasks": [
+    {
+      "verb": "발굴하다",
+      "object": "가맹점 후보",
+      "full_statement": "피자·커피·한우·식당 등 체인점 가맹점을 확보하기 위하여 가맹 후보를 발굴한다.",
+      "source_sentence": "피자체인점, 커피체인점, 한우체인점, 식당체인점 등 가맹점을 확보하기 위하여 회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "소개하다",
+      "object": "회사 운영 실태",
+      "full_statement": "가맹 희망자에게 회사의 운영 실태를 소개한다.",
+      "source_sentence": "회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "소개하다",
+      "object": "메뉴 및 제품",
+      "full_statement": "가맹 희망자에게 회사의 메뉴와 제품을 소개한다.",
+      "source_sentence": "회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "영업하다",
+      "object": "체인점 개설",
+      "full_statement": "가맹점이 체인점을 개설할 수 있도록 영업한다.",
+      "source_sentence": "회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확보하다",
+      "object": "가맹점",
+      "full_statement": "신규 가맹점을 모집하여 확보한다.",
+      "source_sentence": "가맹점을 확보하기 위하여 회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조사하다",
+      "object": "기존 체인점 운영 실태",
+      "full_statement": "기존 체인점에 대하여 운영 실태를 조사한다.",
+      "source_sentence": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "공급하다",
+      "object": "자재",
+      "full_statement": "기존 체인점에 운영에 필요한 자재를 공급한다.",
+      "source_sentence": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "지도하다",
+      "object": "경영",
+      "full_statement": "기존 체인점의 경영을 지도한다.",
+      "source_sentence": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "지원하다",
+      "object": "운영 관리 서비스",
+      "full_statement": "기존 체인점의 운영 관리에 필요한 제반 서비스를 지원한다.",
+      "source_sentence": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "기존 체인점",
+      "full_statement": "기존 체인점의 운영 상태를 관리한다.",
+      "source_sentence": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품 또는 서비스",
+      "full_statement": "영업활동을 통해 상품이나 서비스를 판매한다.",
+      "source_sentence": "영업활동을 통해 상품이나 서비스를 판매하는 일을 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "홍보하다",
+      "object": "상품 품질 및 기능",
+      "full_statement": "상품의 품질과 기능을 홍보한다.",
+      "source_sentence": "상품을 광고하거나 상품의 품질과 기능을 홍보하며, 매장에서 계산을 하거나 요금정산 등의 활동을 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "가맹 희망자 대상 영업 및 고객응대",
+      "evidence_span": "회사의 운영 실태 및 메뉴, 제품을 소개하여 체인점을 개설할 수 있도록 영업한다."
+    },
+    {
+      "category": "사회적",
+      "value": "기존 체인점 경영지도 등 대면 지원",
+      "evidence_span": "기존의 체인점에 대해서는 운영 실태 조사, 자재 공급, 경영지도 등의 운영 관리에 필요한 제반 서비스를 지원하기도 한다."
+    }
+  ]
+}

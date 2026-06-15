@@ -1,0 +1,63 @@
+{
+  "ksco_code": "42902",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "치료사",
+      "full_statement": "치료사를 보조하여 치료 관련 활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보조하다",
+      "object": "재활치료 활동",
+      "full_statement": "치료사를 보조하여 재활치료에 관련된 활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보조하다",
+      "object": "물리치료 활동",
+      "full_statement": "치료사를 보조하여 물리치료에 관련된 활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보조하다",
+      "object": "언어치료 활동",
+      "full_statement": "치료사를 보조하여 언어치료에 관련된 활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "보조하다",
+      "object": "작업치료 활동",
+      "full_statement": "치료사를 보조하여 작업치료에 관련된 활동을 수행한다.",
+      "source_sentence": "치료사를 보조하여 재활, 물리, 언어, 작업치료 등에 관련된 활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제공하다",
+      "object": "보건의료분야 보조 서비스",
+      "full_statement": "환자 등에게 보건·의료분야 보조 서비스를 제공한다.",
+      "source_sentence": "공공안전이나 신변보호, 돌봄, 보건‧의료분야 보조 서비스와 미용, 혼례 및 장례, 운송, 여가, 조리와 관련된 공공 사회서비스 및 개인 생활 서비스 등 대인 서비스를 제공하는 업무를 주로 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "제공하다",
+      "object": "돌봄 서비스",
+      "full_statement": "노인·장애인·환자 등에게 돌봄 서비스를 제공한다.",
+      "source_sentence": "노인‧장애인‧환자 등에게 돌봄 서비스를 제공하는 자가 여기에 포함된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

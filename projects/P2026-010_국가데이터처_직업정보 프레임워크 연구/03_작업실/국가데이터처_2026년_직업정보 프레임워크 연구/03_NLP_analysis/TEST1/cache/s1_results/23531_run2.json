@@ -1,0 +1,95 @@
+{
+  "ksco_code": "23531",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "기계공학 연구",
+      "full_statement": "기계공학 기술자 및 연구원의 관리·감독 하에 기계공학 연구를 보조한다.",
+      "source_sentence": "기계공학 및 로봇공학 연구를 보조한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(기계공학)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "기계공학 개발기술",
+      "full_statement": "기계공학 및 로봇공학 개발기술을 시험한다.",
+      "source_sentence": "기계공학 및 로봇공학 개발기술 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실시하다",
+      "object": "기계설비 시험",
+      "full_statement": "각종 기계설비에 대하여 시험을 실시한다.",
+      "source_sentence": "각종 기계설비 및 장비 또는 부품 등에 대하여 시험을 실시하여 기존 설비 및 장비의 성능을 개선하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "실시하다",
+      "object": "장비 시험",
+      "full_statement": "각종 장비에 대하여 시험을 실시한다.",
+      "source_sentence": "각종 기계설비 및 장비 또는 부품 등에 대하여 시험을 실시하여 기존 설비 및 장비의 성능을 개선하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "실시하다",
+      "object": "부품 시험",
+      "full_statement": "각종 부품에 대하여 시험을 실시한다.",
+      "source_sentence": "각종 기계설비 및 장비 또는 부품 등에 대하여 시험을 실시하여 기존 설비 및 장비의 성능을 개선하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개선하다",
+      "object": "설비 성능",
+      "full_statement": "기존 설비의 성능을 개선한다.",
+      "source_sentence": "시험을 실시하여 기존 설비 및 장비의 성능을 개선하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "개선하다",
+      "object": "장비 성능",
+      "full_statement": "기존 장비의 성능을 개선한다.",
+      "source_sentence": "시험을 실시하여 기존 설비 및 장비의 성능을 개선하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지원하다",
+      "object": "신제품 개발",
+      "full_statement": "새로운 제품의 개발에 도움을 준다.",
+      "source_sentence": "새로운 제품 및 장비의 개발에 도움을 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지원하다",
+      "object": "신규 장비 개발",
+      "full_statement": "새로운 장비의 개발에 도움을 준다.",
+      "source_sentence": "새로운 제품 및 장비의 개발에 도움을 준다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "기계공학 연구원의 관리·감독 하에 기술적 업무를 수행한다.",
+      "source_sentence": "기계공학 및 로봇공학 연구원의 관리‧감독하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 안전성",
+      "full_statement": "제품의 안전성을 검사한다.",
+      "source_sentence": "제품의 안전성 검사 등을 지시하거나 수행한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

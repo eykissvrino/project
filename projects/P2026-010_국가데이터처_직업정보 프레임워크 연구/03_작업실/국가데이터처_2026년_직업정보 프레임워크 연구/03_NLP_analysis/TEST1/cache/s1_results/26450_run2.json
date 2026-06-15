@@ -1,0 +1,77 @@
+{
+  "ksco_code": "26450",
+  "tasks": [
+    {
+      "verb": "교습하다",
+      "object": "자동차 운전",
+      "full_statement": "교습생에게 자동차 운전을 교습한다.",
+      "source_sentence": "자동차 운전을 교습시키는 자로서 운전술을 설명하고, 견습생과 동승하여 주요 기술의 시범을 보이고 운전관련 법령을 설명한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설명하다",
+      "object": "운전술",
+      "full_statement": "교습생에게 운전술을 설명한다.",
+      "source_sentence": "자동차 운전을 교습시키는 자로서 운전술을 설명하고, 견습생과 동승하여 주요 기술의 시범을 보이고 운전관련 법령을 설명한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "동승하다",
+      "object": "견습생",
+      "full_statement": "견습생과 동승하여 운전 교습을 진행한다.",
+      "source_sentence": "견습생과 동승하여 주요 기술의 시범을 보이고 운전관련 법령을 설명한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시범하다",
+      "object": "주요 운전 기술",
+      "full_statement": "견습생에게 주요 운전 기술의 시범을 보인다.",
+      "source_sentence": "견습생과 동승하여 주요 기술의 시범을 보이고 운전관련 법령을 설명한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 결합",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설명하다",
+      "object": "운전 관련 법령",
+      "full_statement": "교습생에게 운전 관련 법령을 설명한다.",
+      "source_sentence": "견습생과 동승하여 주요 기술의 시범을 보이고 운전관련 법령을 설명한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "자동차 실기기능",
+      "full_statement": "운전학원에서 교습생에게 자동차의 실기기능을 지도한다.",
+      "source_sentence": "운전학원에서 교습생에게 자동차의 실기기능과 이론을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지도하다",
+      "object": "운전 이론",
+      "full_statement": "운전학원에서 교습생에게 운전 이론을 지도한다.",
+      "source_sentence": "운전학원에서 교습생에게 자동차의 실기기능과 이론을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연습시키다",
+      "object": "운전",
+      "full_statement": "운전 교습생과 동승하여 운전을 연습시킨다.",
+      "source_sentence": "운전 교습생과 동승하여 운전시범을 보여주며 연습시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    }
+  ],
+  "tools": [
+    {"name": "자동차", "category": "장비", "evidence_span": "자동차 운전을 교습시키는 자로서 운전술을 설명하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "교습생 대상 교육·응대", "evidence_span": "자동차 운전을 교습시키는 자로서 운전술을 설명하고"},
+    {"category": "사회적", "value": "견습생과 동승하여 함께 작업", "evidence_span": "견습생과 동승하여 주요 기술의 시범을 보이고"},
+    {"category": "장소", "value": "운전학원 내 작업", "evidence_span": "운전학원에서 교습생에게 자동차의 실기기능과 이론을 지도한다."}
+  ]
+}

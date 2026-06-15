@@ -1,0 +1,98 @@
+{
+  "ksco_code": "78352",
+  "tasks": [
+    {
+      "verb": "측정하다",
+      "object": "넓이",
+      "full_statement": "유리 등 자재의 소요량을 산출하기 위해 부착할 면의 넓이를 측정한다.",
+      "source_sentence": "도배지, 풀 등의 양을 산출하기 위해 넓이를 측정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "디자인하다",
+      "object": "유리",
+      "full_statement": "부착 형태와 용도에 맞게 유리를 디자인한다.",
+      "source_sentence": "유리를 디자인, 절단, 연마, 운반한 후 유리를 부착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.62
+    },
+    {
+      "verb": "절단하다",
+      "object": "각종 유리",
+      "full_statement": "각종 유리를 필요한 치수와 형태로 절단한다.",
+      "source_sentence": "각종 유리를 절단하여 창문, 문, 진열장 및 기타 틀에 부착하여 고정시킨다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "연마하다",
+      "object": "유리",
+      "full_statement": "절단한 유리의 가장자리를 연마한다.",
+      "source_sentence": "유리를 디자인, 절단, 연마, 운반한 후 유리를 부착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "운반하다",
+      "object": "유리",
+      "full_statement": "절단·가공한 유리를 부착 위치로 운반한다.",
+      "source_sentence": "유리를 디자인, 절단, 연마, 운반한 후 유리를 부착한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "부착하다",
+      "object": "유리",
+      "full_statement": "창문, 문, 진열장 및 기타 틀에 유리를 부착한다.",
+      "source_sentence": "각종 유리를 절단하여 창문, 문, 진열장 및 기타 틀에 부착하여 고정시킨다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "고정하다",
+      "object": "유리",
+      "full_statement": "틀에 부착한 유리를 고정시킨다.",
+      "source_sentence": "각종 유리를 절단하여 창문, 문, 진열장 및 기타 틀에 부착하여 고정시킨다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "유리",
+      "full_statement": "지붕, 마루, 벽, 창 또는 문틀 등에 유리를 설치한다.",
+      "source_sentence": "건축물 및 기타 건설에서 배관, 파이프 및 전기 조직을 포함하여 지붕, 마루, 벽, 창 또는 문틀 등에 유리를 부착, 설치 또는 유지, 수리한다.",
+      "derived_from": "조상정의(소분류 783)",
+      "confidence": 0.58
+    },
+    {
+      "verb": "유지하다",
+      "object": "유리",
+      "full_statement": "설치된 유리를 유지·관리한다.",
+      "source_sentence": "지붕, 마루, 벽, 창 또는 문틀 등에 유리를 부착, 설치 또는 유지, 수리한다.",
+      "derived_from": "조상정의(소분류 783)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수리하다",
+      "object": "유리",
+      "full_statement": "손상되거나 파손된 유리를 수리한다.",
+      "source_sentence": "지붕, 마루, 벽, 창 또는 문틀 등에 유리를 부착, 설치 또는 유지, 수리한다.",
+      "derived_from": "조상정의(소분류 783)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손과 수공구를 주로 사용하는 기능 중심 작업",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"
+    },
+    {
+      "category": "장소",
+      "value": "건축물·건설 현장(지붕, 마루, 벽, 창, 문틀 등)",
+      "evidence_span": "건축물 및 기타 건설에서 배관, 파이프 및 전기 조직을 포함하여 지붕, 마루, 벽, 창 또는 문틀 등에 유리를 부착, 설치 또는 유지, 수리한다."
+    }
+  ]
+}

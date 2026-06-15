@@ -1,0 +1,135 @@
+{
+  "ksco_code": "21129",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "물리학·지구 및 기상과학",
+      "full_statement": "물리학, 지구 및 기상과학을 연구하여 관련 개념, 이론 및 운영방법을 개선·개발한다.",
+      "source_sentence": "물리학, 지구 및 기상과학을 연구하여 관련 개념, 이론 및 운영방법을 개선, 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "화학·지학의 개념·이론",
+      "full_statement": "화학, 지학에 관한 개념, 이론 및 운영방법을 연구하여 개선·개발한다.",
+      "source_sentence": "화학, 지학에 관한 개념, 이론 및 운영방법을 개선, 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연구하다",
+      "object": "측지학",
+      "full_statement": "측지학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "측지학 연구원·지구 자기학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "연구하다",
+      "object": "지구 자기학",
+      "full_statement": "지구 자기학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "측지학 연구원·지구 자기학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "연구하다",
+      "object": "지형학",
+      "full_statement": "지형학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "지형학 연구원·화산학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "연구하다",
+      "object": "화산학",
+      "full_statement": "화산학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "지형학 연구원·화산학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "연구하다",
+      "object": "지구 물리학",
+      "full_statement": "지구 물리학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "지구 물리학 연구원·지진학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "연구하다",
+      "object": "지진학",
+      "full_statement": "지진학 분야의 이론과 응용에 관한 연구를 수행한다.",
+      "source_sentence": "지구 물리학 연구원·지진학 연구원",
+      "derived_from": "상속 주요업무→세세분류 직업 예시 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "조언하다",
+      "object": "원리·기법의 산업분야 응용",
+      "full_statement": "물리학, 천문학, 우주과학, 화학, 지학 등의 원리와 기법을 산업분야에 응용할 수 있도록 조언한다.",
+      "source_sentence": "물리학, 천문학, 우주과학, 화학, 지학 등의 원리와 기법을 산업분야에 응용 할 수 있도록 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수행하다",
+      "object": "수학적 지식 확장 연구",
+      "full_statement": "전통적인 수학분야와 자연과학·엔지니어링·컴퓨터공학 등 기타분야의 문제해결을 위해 수학적 지식을 확장하기 위한 연구를 수행한다.",
+      "source_sentence": "대수학, 기하학, 확률과 같은 전통적인 수학분야와 자연과학, 엔지니어링, 컴퓨터공학이나 연산연구, 사업이나 경영과 같은 기타분야의 문제해결을 위한 논리학 및 응용수학기술과 같은 분야에서 수학적 지식을 확장하기 위한 연구를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수행하다",
+      "object": "통계학 수학적 기초 연구",
+      "full_statement": "통계학의 수학적 기초에 대한 연구를 수행한다.",
+      "source_sentence": "통계학의 수학적 기초에 대한 연구를 수행하고 통계학적 방법론을 개발하고 통계방법론의 실무적 적용에 관해 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "개발하다",
+      "object": "통계학적 방법론",
+      "full_statement": "통계학적 방법론을 개발한다.",
+      "source_sentence": "통계학의 수학적 기초에 대한 연구를 수행하고 통계학적 방법론을 개발하고 통계방법론의 실무적 적용에 관해 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.66
+    },
+    {
+      "verb": "조언하다",
+      "object": "통계방법론의 실무적 적용",
+      "full_statement": "통계방법론의 실무적 적용에 관해 조언한다.",
+      "source_sentence": "통계학의 수학적 기초에 대한 연구를 수행하고 통계학적 방법론을 개발하고 통계방법론의 실무적 적용에 관해 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.64
+    },
+    {
+      "verb": "응용하다",
+      "object": "통계이론 및 통계방법",
+      "full_statement": "생물학·농학·경제학·자연과학·공학·사회과학과 같은 분야에 정보를 제공하기 위해 통계이론 및 통계방법을 응용한다.",
+      "source_sentence": "또한 생물학 및 농학, 경제학, 자연과학 및 공학, 사회과학과 같은 분야에 정보를 제공하기 위해 통계이론 및 통계방법을 응용한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.64
+    },
+    {
+      "verb": "작성하다",
+      "object": "과학 논문 및 보고서",
+      "full_statement": "과학적인 논문 및 보고서를 작성한다.",
+      "source_sentence": "과학적인 논문 및 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "연구원 및 시험원",
+      "full_statement": "기타 연구원 및 시험원을 감독한다.",
+      "source_sentence": "기타 연구원 및 시험원을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

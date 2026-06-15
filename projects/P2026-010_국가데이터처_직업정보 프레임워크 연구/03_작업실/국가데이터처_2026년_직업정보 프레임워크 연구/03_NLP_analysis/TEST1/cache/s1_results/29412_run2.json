@@ -1,0 +1,90 @@
+{
+  "ksco_code": "29412",
+  "tasks": [
+    {
+      "verb": "창작하다",
+      "object": "삼원적 장식·구상적 형체",
+      "full_statement": "목재, 석재, 진흙, 금속 등의 성형물질로 삼원적인 장식과 구상적인 형체를 창작한다.",
+      "source_sentence": "목재, 석재, 진흙, 금속 등의 성형물질로서 삼원적인 장식과 구상적인 형체를 창작하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조판하다",
+      "object": "금속·목재 등 재료",
+      "full_statement": "금속, 목재 또는 기타 재료에 조판하고 시각한다.",
+      "source_sentence": "금속, 목재 또는 기타 재료에 조판, 시각하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "묘사하다",
+      "object": "조각품의 형체",
+      "full_statement": "계획된 조각품의 형체를 묘사한다.",
+      "source_sentence": "계획된 조각품의 형체를 묘사하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "만들다",
+      "object": "밀초·석고 모형",
+      "full_statement": "밀초나 석고로 모형을 만들어 본 조각품의 조형척도로 사용한다.",
+      "source_sentence": "밀초나 석고로 모형을 만들어 본 조각품의 조형척도로 사용하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "만들다",
+      "object": "주형",
+      "full_statement": "금속으로 조각품을 만들기 위해 주형을 만든다.",
+      "source_sentence": "또는 금속으로 조각품을 만들기 위해 주형을 만든다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "새기다",
+      "object": "조각대상",
+      "full_statement": "연마기, 끌, 정, 망치 등의 도구를 사용하여 석재, 콘크리트, 목재 등의 재료에 조각대상을 새긴다.",
+      "source_sentence": "연마기, 끌, 정, 망치 등의 도구를 사용하여 석재, 콘크리트, 목재 등의 재료에 조각대상을 새긴다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "제작하다",
+      "object": "가소성 재료 모형",
+      "full_statement": "석재 또는 콘크리트 등의 재료로 조각상을 제작하기 위하여 진흙, 왁스 등의 가소성 재료를 사용하여 모형을 제작한다.",
+      "source_sentence": "석재 또는 콘크리트 등의 재료로 조각상을 제작하기 위하여 진흙, 왁스 등의 가소성 재료를 사용하여 모형을 제작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "비교하다",
+      "object": "모형 외관과 재료 외형",
+      "full_statement": "완성된 모형의 외관과 가공하고자 하는 재료의 외형을 비교한다.",
+      "source_sentence": "완성된 모형의 외관과 가공하고자 하는 재료의 외형을 비교하면서 용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연마하다",
+      "object": "금속·석재",
+      "full_statement": "용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다.",
+      "source_sentence": "완성된 모형의 외관과 가공하고자 하는 재료의 외형을 비교하면서 용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    }
+  ],
+  "tools": [
+    {"name": "연마기", "category": "도구", "evidence_span": "연마기, 끌, 정, 망치 등의 도구를 사용하여"},
+    {"name": "끌", "category": "도구", "evidence_span": "연마기, 끌, 정, 망치 등의 도구를 사용하여"},
+    {"name": "정", "category": "도구", "evidence_span": "연마기, 끌, 정, 망치 등의 도구를 사용하여"},
+    {"name": "망치", "category": "도구", "evidence_span": "연마기, 끌, 정, 망치 등의 도구를 사용하여"},
+    {"name": "용접기", "category": "장비", "evidence_span": "용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다"},
+    {"name": "금속세공도구", "category": "도구", "evidence_span": "용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다"},
+    {"name": "석공도구", "category": "도구", "evidence_span": "용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "끌·정·망치 등 수공구를 사용한 정밀 조각 작업", "evidence_span": "연마기, 끌, 정, 망치 등의 도구를 사용하여 석재, 콘크리트, 목재 등의 재료에 조각대상을 새긴다."},
+    {"category": "위험", "value": "용접기 및 금속·석재 가공에 따른 작업 위험", "evidence_span": "용접기, 금속세공도구, 석공도구 등을 사용하여 금속 또는 석재를 연마한다"}
+  ]
+}

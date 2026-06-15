@@ -1,0 +1,165 @@
+{
+  "ksco_code": "84342",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "석재제품 가공 기계장비",
+      "full_statement": "석재제품을 가공·완성하거나 처리하는 기계장비를 조작한다.",
+      "source_sentence": "석재제품 또는 인조석 제품을 가공‧완성하거나 처리하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "인조석제품 가공 기계장비",
+      "full_statement": "인조석 제품을 가공·완성하거나 처리하는 기계장비를 조작한다.",
+      "source_sentence": "석재제품 또는 인조석 제품을 가공‧완성하거나 처리하는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의→직업예시(인조석제품 가공기 조작원) 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "석재",
+      "full_statement": "석재료를 만들기 위해 석재를 분쇄하여 자갈로 만드는 기계를 조작한다.",
+      "source_sentence": "석재료를 만들기 위해 석재를 분쇄하여 자갈로 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "절단하다",
+      "object": "화강암·대리석·판석 등 석재",
+      "full_statement": "화강암, 대리석, 판석 및 기타 석재를 절단하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류 8434)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "성형하다",
+      "object": "화강암·대리석·판석 등 석재",
+      "full_statement": "화강암, 대리석, 판석 및 기타 석재를 성형 가공하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류 8434)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제조하다",
+      "object": "건물 및 기념비용 석제품",
+      "full_statement": "건물 및 기념비용 석제품을 제조하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류 8434)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "제조하다",
+      "object": "포장용 판석",
+      "full_statement": "포장용 판석을 제조하는 기계를 조작한다.",
+      "source_sentence": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여 건물 및 기념비용 석제품, 포장용 판석, 가구 및 장치물, 조상, 병, 그릇 및 용기 등을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류 8434)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "절할하다",
+      "object": "석재",
+      "full_statement": "석재 절할기를 조작하여 석재를 쪼갠다.",
+      "source_sentence": "석재 절할기 조작원·광물 세척기 조작원, 석제품",
+      "derived_from": "세세분류 직업예시(석재 절할기 조작원) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "세척하다",
+      "object": "광물",
+      "full_statement": "광물 세척기를 조작하여 광물을 세척한다.",
+      "source_sentence": "석재 절할기 조작원·광물 세척기 조작원, 석제품",
+      "derived_from": "세세분류 직업예시(광물 세척기 조작원) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "세척하다",
+      "object": "석재",
+      "full_statement": "석재 세척장치를 조작하여 석재를 세척한다.",
+      "source_sentence": "석재 세척장치 조작원·석재 세공기 조작원",
+      "derived_from": "세세분류 직업예시(석재 세척장치 조작원) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "세공하다",
+      "object": "석재",
+      "full_statement": "석재 세공기를 조작하여 석재를 세공한다.",
+      "source_sentence": "석재 세척장치 조작원·석재 세공기 조작원",
+      "derived_from": "세세분류 직업예시(석재 세공기 조작원) 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "가공하다",
+      "object": "석재",
+      "full_statement": "석재 가공선반을 조작하여 석재를 가공한다.",
+      "source_sentence": "석재 가공선반 조작원·석제품 조각기 조작원",
+      "derived_from": "세세분류 직업예시(석재 가공선반 조작원) 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조각하다",
+      "object": "석제품",
+      "full_statement": "석제품 조각기를 조작하여 석제품을 조각한다.",
+      "source_sentence": "석재 가공선반 조작원·석제품 조각기 조작원",
+      "derived_from": "세세분류 직업예시(석제품 조각기 조작원) 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "가공하다",
+      "object": "인조석제품",
+      "full_statement": "인조석제품 가공기를 조작하여 인조석제품을 가공한다.",
+      "source_sentence": "인조석제품 가공기 조작원·주형석제품 제조기 조작원",
+      "derived_from": "세세분류 직업예시(인조석제품 가공기 조작원) 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "제조하다",
+      "object": "주형석제품",
+      "full_statement": "주형석제품 제조기를 조작하여 주형석제품을 제조한다.",
+      "source_sentence": "인조석제품 가공기 조작원·주형석제품 제조기 조작원",
+      "derived_from": "세세분류 직업예시(주형석제품 제조기 조작원) 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "제조하다",
+      "object": "산업용 다이아몬드",
+      "full_statement": "산업용 다이아몬드 제조기를 조작하여 산업용 다이아몬드를 제조한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무(직업예시)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "절단하다",
+      "object": "모자이크",
+      "full_statement": "모자이크 절단기를 조작하여 모자이크를 절단한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무(직업예시)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "연마석 제품",
+      "full_statement": "연마석 제품 제조기를 조작하여 연마석 제품을 제조한다.",
+      "source_sentence": "산업용 다이아몬드 제조기를 조작하는 자, 모자이크 절단기 조작원, 연마석 제품 제조기 조작원 등도 여기에 포함된다.",
+      "derived_from": "상속 주요업무(직업예시)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "석재 분쇄기", "category": "장비", "evidence_span": "석재를 분쇄하여 자갈로 만든다"},
+    {"name": "석재 절단기", "category": "장비", "evidence_span": "화강암, 대리석, 판석 및 기타 석재를 절단‧성형 가공하여"},
+    {"name": "석재 절할기", "category": "장비", "evidence_span": "석재 절할기 조작원"},
+    {"name": "광물 세척기", "category": "장비", "evidence_span": "광물 세척기 조작원"},
+    {"name": "석재 세척장치", "category": "장비", "evidence_span": "석재 세척장치 조작원"},
+    {"name": "석재 세공기", "category": "장비", "evidence_span": "석재 세공기 조작원"},
+    {"name": "석재 가공선반", "category": "장비", "evidence_span": "석재 가공선반 조작원"},
+    {"name": "석제품 조각기", "category": "장비", "evidence_span": "석제품 조각기 조작원"},
+    {"name": "인조석제품 가공기", "category": "장비", "evidence_span": "인조석제품 가공기 조작원"},
+    {"name": "주형석제품 제조기", "category": "장비", "evidence_span": "주형석제품 제조기 조작원"},
+    {"name": "산업용 다이아몬드 제조기", "category": "장비", "evidence_span": "산업용 다이아몬드 제조기를 조작하는 자"},
+    {"name": "모자이크 절단기", "category": "장비", "evidence_span": "모자이크 절단기 조작원"},
+    {"name": "연마석 제품 제조기", "category": "장비", "evidence_span": "연마석 제품 제조기 조작원"}
+  ],
+  "work_context": []
+}

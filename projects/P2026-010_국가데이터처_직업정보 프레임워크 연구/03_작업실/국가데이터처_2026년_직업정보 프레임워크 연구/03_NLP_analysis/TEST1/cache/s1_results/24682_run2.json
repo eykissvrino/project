@@ -1,0 +1,141 @@
+{
+  "ksco_code": "24682",
+  "tasks": [
+    {
+      "verb": "상담하다",
+      "object": "청각능력 장애 환자",
+      "full_statement": "청각능력 장애 환자와 상담한다.",
+      "source_sentence": "청각능력 장애 환자를 치료하는 자로 환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "검사하다",
+      "object": "청각능력 장애 환자",
+      "full_statement": "환자와의 검사를 통하여 청각능력 장애 상태를 검사한다.",
+      "source_sentence": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진단하다",
+      "object": "장애의 원인",
+      "full_statement": "상담 및 검사를 통하여 청각능력 장애의 원인을 진단한다.",
+      "source_sentence": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "평가하다",
+      "object": "청각능력 장애",
+      "full_statement": "청각능력 장애의 상태와 정도를 평가한다.",
+      "source_sentence": "언어 및 청각장애 환자와 상담 및 검사를 통해 장애원인 진단, 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "청각능력",
+      "full_statement": "환자의 청각능력을 측정한다.",
+      "source_sentence": "청각능력 측정과 보청기 등 보조장치의 처방과 사용방법을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처방하다",
+      "object": "보청기 등 보조장치",
+      "full_statement": "보청기 등 청각 보조장치를 처방한다.",
+      "source_sentence": "청각능력 측정과 보청기 등 보조장치의 처방과 사용방법을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개선하다",
+      "object": "청각능력",
+      "full_statement": "보청기 등을 이용하여 환자의 청각능력을 개선한다.",
+      "source_sentence": "보청기 등을 이용하여 청각능력을 개선하고 관련 장치의 기술적 보완과 조정, 착용방법 등 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "보완하다",
+      "object": "관련 장치",
+      "full_statement": "보청기 등 관련 장치의 기술적 보완을 수행한다.",
+      "source_sentence": "관련 장치의 기술적 보완과 조정, 착용방법 등 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "조정하다",
+      "object": "관련 장치",
+      "full_statement": "보청기 등 관련 장치를 기술적으로 조정한다.",
+      "source_sentence": "관련 장치의 기술적 보완과 조정, 착용방법 등 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "지도하다",
+      "object": "장치 착용방법",
+      "full_statement": "보청기 등 장치의 착용방법을 지도한다.",
+      "source_sentence": "관련 장치의 기술적 보완과 조정, 착용방법 등 지도활동을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "보조장치 사용방법",
+      "full_statement": "보청기 등 보조장치의 사용방법을 지도한다.",
+      "source_sentence": "청각능력 측정과 보청기 등 보조장치의 처방과 사용방법을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.89
+    },
+    {
+      "verb": "계획하다",
+      "object": "치료프로그램",
+      "full_statement": "환자에게 적합한 치료프로그램을 계획한다.",
+      "source_sentence": "적절한 도구(글자, 카드 등)를 활용하여 치료프로그램을 계획하고 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "치료프로그램",
+      "full_statement": "계획한 청각능력 치료프로그램을 수행한다.",
+      "source_sentence": "적절한 도구(글자, 카드 등)를 활용하여 치료프로그램을 계획하고 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "치료하다",
+      "object": "청각능력 장애 환자",
+      "full_statement": "청각능력 장애 환자를 치료한다.",
+      "source_sentence": "청각능력 장애 환자를 치료하는 자로",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.87
+    },
+    {
+      "verb": "상담하다",
+      "object": "환자가족 또는 지도교사",
+      "full_statement": "환자가족이나 지도교사를 상대로 상담한다.",
+      "source_sentence": "환자가족이나 지도교사를 상대로 상담하거나 지도활동을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지도하다",
+      "object": "환자가족 또는 지도교사",
+      "full_statement": "환자가족이나 지도교사를 상대로 지도활동을 수행한다.",
+      "source_sentence": "환자가족이나 지도교사를 상대로 상담하거나 지도활동을 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "보청기", "category": "장비", "evidence_span": "보청기 등을 이용하여 청각능력을 개선하고"},
+    {"name": "청각능력 보조장치", "category": "장비", "evidence_span": "청각능력 측정과 보청기 등 보조장치의 처방과 사용방법을 지도한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "환자와의 상담 등 고객(환자)응대 중심 업무", "evidence_span": "환자와의 상담 및 검사를 통하여 장애의 원인을 진단하며"},
+    {"category": "사회적", "value": "환자가족·지도교사 상대 상담 및 지도(대인 협업)", "evidence_span": "환자가족이나 지도교사를 상대로 상담하거나 지도활동을 수행한다."}
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "ksco_code": "81902",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "천연조미제품 생산 기계",
+      "full_statement": "천연조미제품을 생산하기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미제품, 식품 첨가물을 생산하거나 장류, 식초를 발효시키거나 화학조미료를 만들기 위하여 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "생산하다",
+      "object": "식품 첨가물",
+      "full_statement": "식품 첨가물을 생산하기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미제품, 식품 첨가물을 생산하거나 장류, 식초를 발효시키거나 화학조미료를 만들기 위하여 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발효시키다",
+      "object": "장류",
+      "full_statement": "장류를 발효시키기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미제품, 식품 첨가물을 생산하거나 장류, 식초를 발효시키거나 화학조미료를 만들기 위하여 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "발효시키다",
+      "object": "식초",
+      "full_statement": "식초를 발효시키기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미제품, 식품 첨가물을 생산하거나 장류, 식초를 발효시키거나 화학조미료를 만들기 위하여 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "제조하다",
+      "object": "화학조미료",
+      "full_statement": "화학조미료를 만들기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미제품, 식품 첨가물을 생산하거나 장류, 식초를 발효시키거나 화학조미료를 만들기 위하여 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "제조하다",
+      "object": "정제염",
+      "full_statement": "정제염을 제조하는 기계 및 장비를 조작한다.",
+      "source_sentence": "정제염 및 가공염을 제조하는 기계 및 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제조하다",
+      "object": "가공염",
+      "full_statement": "가공염을 제조하는 기계 및 장비를 조작한다.",
+      "source_sentence": "정제염 및 가공염을 제조하는 기계 및 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합조제 조미료 제조 기계",
+      "full_statement": "혼합조제 조미료를 제조하기 위하여 기계를 조작한다.",
+      "source_sentence": "천연조미식품 제조기 조작원·혼합조제 조미료 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제조하다",
+      "object": "효모",
+      "full_statement": "효모를 제조하는 기계를 조작한다.",
+      "source_sentence": "효모 제조기 조작원·식용색소 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "식용색소",
+      "full_statement": "식용색소를 제조하는 기계를 조작한다.",
+      "source_sentence": "효모 제조기 조작원·식용색소 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "죽염",
+      "full_statement": "죽염을 제조하는 기계를 조작한다.",
+      "source_sentence": "정제염 제조기 조작원·죽염 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.76
+    },
+    {
+      "verb": "제조하다",
+      "object": "커피크리머",
+      "full_statement": "커피크리머를 제조하는 기계를 조작한다.",
+      "source_sentence": "커피크리머 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터를 이용하여 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계 성능",
+      "full_statement": "생산성을 유지하기 위하여 기계의 성능을 점검한다.",
+      "source_sentence": "기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "천연조미식품 제조기", "category": "장비", "evidence_span": "천연조미식품 제조기 조작원"},
+    {"name": "혼합조제 조미료 제조기", "category": "장비", "evidence_span": "혼합조제 조미료 제조기 조작원"},
+    {"name": "장류 생산기", "category": "장비", "evidence_span": "장류 생산기 조작원"},
+    {"name": "식초 제조기", "category": "장비", "evidence_span": "식초 제조기 조작원"},
+    {"name": "효모 제조기", "category": "장비", "evidence_span": "효모 제조기 조작원"},
+    {"name": "식용색소 제조기", "category": "장비", "evidence_span": "식용색소 제조기 조작원"},
+    {"name": "정제염 제조기", "category": "장비", "evidence_span": "정제염 제조기 조작원"},
+    {"name": "죽염 제조기", "category": "장비", "evidence_span": "죽염 제조기 조작원"},
+    {"name": "커피크리머 제조기", "category": "장비", "evidence_span": "커피크리머 제조기 조작원"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "산업용 기계·장비 조작 및 이해 요구", "evidence_span": "기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다."}
+  ]
+}

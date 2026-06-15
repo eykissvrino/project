@@ -1,0 +1,119 @@
+{
+  "ksco_code": "26479",
+  "tasks": [
+    {
+      "verb": "가르치다",
+      "object": "예능분야 이론",
+      "full_statement": "수강생들에게 기타 예능분야의 기능을 기르기 위한 이론을 가르친다.",
+      "source_sentence": "수강생들에게 상기 세세분류에 포함되지 않은 예능분야의 기능을 기르기 위한 이론과 실기를 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "가르치다",
+      "object": "예능분야 실기",
+      "full_statement": "수강생들에게 기타 예능분야의 기능을 기르기 위한 실기를 가르친다.",
+      "source_sentence": "수강생들에게 상기 세세분류에 포함되지 않은 예능분야의 기능을 기르기 위한 이론과 실기를 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "예능분야",
+      "full_statement": "웅변, 모델, 연기, 바둑, 꽃꽂이, 종이접기, 장기 등의 예능분야를 전문으로 지도한다.",
+      "source_sentence": "음악, 미술, 서예, 영화배우, 성우, 무용 등의 예능분야를 전문으로 지도한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가르치다",
+      "object": "기본 이론",
+      "full_statement": "수강생에게 해당 예능분야의 기본적인 이론을 가르친다.",
+      "source_sentence": "기본적인 이론을 가르치고 기능을 시범한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시범하다",
+      "object": "기능",
+      "full_statement": "수강생에게 해당 예능분야의 기능을 시범한다.",
+      "source_sentence": "기본적인 이론을 가르치고 기능을 시범한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지도하다",
+      "object": "실기실습 교육",
+      "full_statement": "실기실습 위주로 교육을 지도한다.",
+      "source_sentence": "실기실습 위주로 교육을 지도하고 실습작품으로 실기기능을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "평가하다",
+      "object": "실기기능",
+      "full_statement": "실습작품으로 수강생의 실기기능을 평가한다.",
+      "source_sentence": "실기실습 위주로 교육을 지도하고 실습작품으로 실기기능을 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가르치다",
+      "object": "웅변 기능",
+      "full_statement": "수강생에게 웅변에 필요한 이론과 기능을 가르친다.",
+      "source_sentence": "웅변 강사·모델 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "연기",
+      "full_statement": "수강생에게 연기 실기를 지도한다.",
+      "source_sentence": "연기 강사·바둑 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "바둑",
+      "full_statement": "수강생에게 바둑의 이론과 기능을 지도한다.",
+      "source_sentence": "연기 강사·바둑 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "꽃꽂이",
+      "full_statement": "수강생에게 꽃꽂이 실기를 지도한다.",
+      "source_sentence": "꽃꽂이 강사·종이접기 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "종이접기",
+      "full_statement": "수강생에게 종이접기 실기를 지도한다.",
+      "source_sentence": "꽃꽂이 강사·종이접기 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "장기",
+      "full_statement": "수강생에게 장기의 이론과 기능을 지도한다.",
+      "source_sentence": "장기 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지도하다",
+      "object": "모델 자세",
+      "full_statement": "수강생에게 모델에 필요한 자세와 기능을 지도한다.",
+      "source_sentence": "웅변 강사·모델 강사",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

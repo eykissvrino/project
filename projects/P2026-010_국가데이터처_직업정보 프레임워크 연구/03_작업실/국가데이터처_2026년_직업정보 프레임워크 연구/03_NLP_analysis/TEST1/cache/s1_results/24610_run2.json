@@ -1,0 +1,174 @@
+{
+  "ksco_code": "24610",
+  "tasks": [
+    {
+      "verb": "채취하다",
+      "object": "검사물",
+      "full_statement": "환자의 질병을 진단·치료·예방하기 위하여 혈액·체액·세포·조직 등의 검사물을 채취한다.",
+      "source_sentence": "의사의 지시에 따라 환자의 질병을 진단, 치료, 예방하기 위하여 혈액, 체액, 세포, 조직 등의 검사물을 채취하고 검사하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "검사하다",
+      "object": "검사물",
+      "full_statement": "채취한 혈액·체액·세포·조직 등의 검사물을 검사한다.",
+      "source_sentence": "의사의 지시에 따라 환자의 질병을 진단, 치료, 예방하기 위하여 혈액, 체액, 세포, 조직 등의 검사물을 채취하고 검사하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "검사물",
+      "full_statement": "응고·착색 등의 기법을 적용하여 인체의 기관·조직·세포·혈액·분비물 등의 검사물을 준비한다.",
+      "source_sentence": "응고, 착색 등의 기법을 적용하여 인체의 기관, 조직, 세포, 혈액, 분비물 등의 검사물을 준비하고 검사‧분석‧실험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "적용하다",
+      "object": "응고·착색 기법",
+      "full_statement": "검사물 처리를 위하여 응고·착색 등의 기법을 적용한다.",
+      "source_sentence": "응고, 착색 등의 기법을 적용하여 인체의 기관, 조직, 세포, 혈액, 분비물 등의 검사물을 준비하고 검사‧분석‧실험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "검사물",
+      "full_statement": "인체의 기관·조직·세포·혈액·분비물 등의 검사물을 분석한다.",
+      "source_sentence": "응고, 착색 등의 기법을 적용하여 인체의 기관, 조직, 세포, 혈액, 분비물 등의 검사물을 준비하고 검사‧분석‧실험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "실험하다",
+      "object": "검사물",
+      "full_statement": "인체의 기관·조직·세포·혈액·분비물 등의 검사물을 실험한다.",
+      "source_sentence": "응고, 착색 등의 기법을 적용하여 인체의 기관, 조직, 세포, 혈액, 분비물 등의 검사물을 준비하고 검사‧분석‧실험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "감염여부",
+      "full_statement": "검사물의 감염여부를 조사한다.",
+      "source_sentence": "감염여부를 조사하고, 병원체에 대한 각종 약품의 효과를 관찰하기 위하여 현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "약품의 효과",
+      "full_statement": "병원체에 대한 각종 약품의 효과를 관찰한다.",
+      "source_sentence": "감염여부를 조사하고, 병원체에 대한 각종 약품의 효과를 관찰하기 위하여 현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "실험기구",
+      "full_statement": "현미경·광전비색계·혈액세포 측정계 등의 실험기구를 조정한다.",
+      "source_sentence": "감염여부를 조사하고, 병원체에 대한 각종 약품의 효과를 관찰하기 위하여 현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "실험기구",
+      "full_statement": "현미경·광전비색계·혈액세포 측정계 등의 실험기구를 조작한다.",
+      "source_sentence": "감염여부를 조사하고, 병원체에 대한 각종 약품의 효과를 관찰하기 위하여 현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기록하다",
+      "object": "검사·실험·분석내용",
+      "full_statement": "검사·실험·분석내용을 기록한다.",
+      "source_sentence": "검사, 실험, 분석내용을 기록하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서",
+      "full_statement": "검사·실험·분석 결과에 대한 보고서를 작성한다.",
+      "source_sentence": "검사, 실험, 분석내용을 기록하고 보고서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "예방액",
+      "full_statement": "질병 예방을 위한 예방액을 준비한다.",
+      "source_sentence": "예방액을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "혈액",
+      "full_statement": "혈액검사를 수행하여 혈액 성분을 검사한다.",
+      "source_sentence": "혈액검사기사·근전도기사",
+      "derived_from": "상속 주요업무→세세 예시 특화(혈액검사기사)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "검사하다",
+      "object": "세균",
+      "full_statement": "병원체 검출을 위하여 세균검사를 수행한다.",
+      "source_sentence": "병원세균검사기사·해부병리기사",
+      "derived_from": "상속 주요업무→세세 예시 특화(병원세균검사기사)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "측정하다",
+      "object": "근전도",
+      "full_statement": "근전도검사를 통해 근육과 신경의 전기활동을 측정한다.",
+      "source_sentence": "혈액검사기사·근전도기사",
+      "derived_from": "세세 예시 특화(근전도기사)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "측정하다",
+      "object": "뇌파",
+      "full_statement": "뇌파검사를 통해 뇌의 전기활동을 측정한다.",
+      "source_sentence": "뇌파기사·폐기능검사기사",
+      "derived_from": "세세 예시 특화(뇌파기사)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검사하다",
+      "object": "폐기능",
+      "full_statement": "폐기능검사를 수행하여 호흡기능을 검사한다.",
+      "source_sentence": "뇌파기사·폐기능검사기사",
+      "derived_from": "세세 예시 특화(폐기능검사기사)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "측정하다",
+      "object": "심전도",
+      "full_statement": "심전도검사를 통해 심장의 전기활동을 측정한다.",
+      "source_sentence": "심전도기사·인공심폐기기사",
+      "derived_from": "세세 예시 특화(심전도기사)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "검사하다",
+      "object": "성분수혈",
+      "full_statement": "성분수혈검사를 수행하여 수혈 적합성을 검사한다.",
+      "source_sentence": "성분수혈검사기사",
+      "derived_from": "세세 예시 특화(성분수혈검사기사)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "현미경", "category": "장비", "evidence_span": "현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다"},
+    {"name": "광전비색계", "category": "장비", "evidence_span": "현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다"},
+    {"name": "혈액세포 측정계", "category": "장비", "evidence_span": "현미경, 광전비색계, 혈액세포 측정계 등의 실험기구를 조정‧조작한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "병원체·감염성 검사물 취급(생물위험)", "evidence_span": "감염여부를 조사하고, 병원체에 대한 각종 약품의 효과를 관찰하기"},
+    {"category": "신체적", "value": "현미경 관찰 등 정밀 작업", "evidence_span": "병원체에 대한 각종 약품의 효과를 관찰하기 위하여 현미경"}
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "ksco_code": "83123",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "여과기계장비",
+      "full_statement": "화학물과 관련 물질을 여과시키는 기계장비를 조작한다.",
+      "source_sentence": "화학물과 관련 물질을 여과, 분리시키는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "분리기계장비",
+      "full_statement": "화학물과 관련 물질을 분리시키는 기계장비를 조작한다.",
+      "source_sentence": "화학물과 관련 물질을 여과, 분리시키는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "용액 여과장치",
+      "full_statement": "용액을 여과하는 장치를 조작한다.",
+      "source_sentence": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "용액 분리기계",
+      "full_statement": "용액을 분리시키는 기계를 조작한다.",
+      "source_sentence": "용액을 여과하는 장치 및 분리시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "원심분리기",
+      "full_statement": "화학물을 분리하기 위하여 원심분리기를 조작한다.",
+      "source_sentence": "여과기 조작원·원심분리기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학물 추출기",
+      "full_statement": "화학물을 추출하기 위하여 추출기를 조작한다.",
+      "source_sentence": "화학물 추출기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "조작하다",
+      "object": "정화기계장비",
+      "full_statement": "재료를 정화하는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "합성기계장비",
+      "full_statement": "재료를 합성하여 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "source_sentence": "재료를 정화, 혼합 또는 합성하고 특수한 성질로 만들거나 화학변화를 일으키는 기계장비를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조작하다",
+      "object": "혼합기계",
+      "full_statement": "고형 화학물 및 기타 재료를 혼합하는 기계를 조작한다.",
+      "source_sentence": "고형 화학물 및 기타 재료를 파쇄하고 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "조작하다",
+      "object": "건조기",
+      "full_statement": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "source_sentence": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "여과기", "category": "장비", "evidence_span": "여과기 조작원·원심분리기 조작원"},
+    {"name": "원심분리기", "category": "장비", "evidence_span": "여과기 조작원·원심분리기 조작원"},
+    {"name": "화학물 추출기", "category": "장비", "evidence_span": "화학물 추출기 조작원"},
+    {"name": "건조기", "category": "장비", "evidence_span": "화학물 및 관련 재료의 가공을 위해 건조기를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급", "evidence_span": "화학물과 관련 물질을 여과, 분리시키는 기계장비를 조작한다."}
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "ksco_code": "21116",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "바다 및 담수의 수산자원",
+      "full_statement": "바다 및 담수의 수산자원을 전문으로 연구한다.",
+      "source_sentence": "바다 및 담수의 수산자원을 전문으로 연구하고 자연과학 지식을 응용하여 수산 자원을 개발하고 활용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "응용하다",
+      "object": "자연과학 지식",
+      "full_statement": "자연과학 지식을 응용하여 수산 자원 연구에 활용한다.",
+      "source_sentence": "바다 및 담수의 수산자원을 전문으로 연구하고 자연과학 지식을 응용하여 수산 자원을 개발하고 활용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "수산 자원",
+      "full_statement": "수산 자원을 개발한다.",
+      "source_sentence": "바다 및 담수의 수산자원을 전문으로 연구하고 자연과학 지식을 응용하여 수산 자원을 개발하고 활용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "활용하다",
+      "object": "수산 자원",
+      "full_statement": "수산 자원을 활용한다.",
+      "source_sentence": "바다 및 담수의 수산자원을 전문으로 연구하고 자연과학 지식을 응용하여 수산 자원을 개발하고 활용한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "천연자원",
+      "full_statement": "수산 분야의 천연자원에 관한 지식을 넓히고 천연자원을 관리한다.",
+      "source_sentence": "생물학 연구원은 살아있는 유기체에 관한 지식을 넓히고 천연자원을 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "살아있는 유기체에 관한 지식",
+      "full_statement": "살아있는 수산 유기체에 관한 지식을 넓히기 위해 연구한다.",
+      "source_sentence": "생물학 연구원은 살아있는 유기체에 관한 지식을 넓히고 천연자원을 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "연구하다",
+      "object": "수질오염의 발생원인과 처리방법",
+      "full_statement": "수질오염 등 환경오염의 발생원인과 처리방법을 연구한다.",
+      "source_sentence": "환경과 관련하여 대기오염, 수질오염 등 환경오염의 발생원인과 처리방법을 연구‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분석하다",
+      "object": "수질오염의 발생원인과 처리방법",
+      "full_statement": "수질오염 등 환경오염의 발생원인과 처리방법을 분석한다.",
+      "source_sentence": "환경과 관련하여 대기오염, 수질오염 등 환경오염의 발생원인과 처리방법을 연구‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "해수의 흐름 등 해양학 문제",
+      "full_statement": "해수의 흐름과 같은 해양학의 여러 문제를 연구한다.",
+      "source_sentence": "해수의 흐름과 같은 해양학의 여러 문제를 연구‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "해수의 흐름 등 해양학 문제",
+      "full_statement": "해수의 흐름과 같은 해양학의 여러 문제를 분석한다.",
+      "source_sentence": "해수의 흐름과 같은 해양학의 여러 문제를 연구‧분석한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수행하다",
+      "object": "기초 연구와 응용연구",
+      "full_statement": "새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "source_sentence": "의약 및 농업과 관련된 새로운 실행 및 제품을 개발하기 위한 기초 연구와 응용연구를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분석하다",
+      "object": "연구 자료",
+      "full_statement": "수산학 분야별 연구 자료를 분석한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "연구보고서",
+      "full_statement": "연구 자료를 분석하여 연구보고서를 작성한다.",
+      "source_sentence": "생물학, 농업, 임업 등 해당 분야별 연구 자료를 분석하여 연구보고서를 작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "기타 연구원, 시험원",
+      "full_statement": "기타 연구원과 시험원을 감독한다.",
+      "source_sentence": "기타 연구원, 시험원을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

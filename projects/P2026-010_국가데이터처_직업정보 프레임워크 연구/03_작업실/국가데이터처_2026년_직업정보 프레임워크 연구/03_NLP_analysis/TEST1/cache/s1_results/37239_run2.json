@@ -1,0 +1,134 @@
+{
+  "ksco_code": "37239",
+  "tasks": [
+    {
+      "verb": "정리하다",
+      "object": "입력할 자료",
+      "full_statement": "입력할 자료를 순서대로 정리한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "키보드",
+      "full_statement": "키보드를 조작하여 자료를 전산 입력한다.",
+      "source_sentence": "입력할 자료를 순서대로 정리하고 키보드를 조작하여 입력한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "입력하다",
+      "object": "데이터",
+      "full_statement": "데이터를 전산으로 입력한다.",
+      "source_sentence": "데이터를 전산 입력하거나 인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드하는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "검토하다",
+      "object": "입력 완료된 자료",
+      "full_statement": "입력이 완료되면 자료를 검토한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "전송하다",
+      "object": "자료가 저장된 매체",
+      "full_statement": "자료가 저장된 매체를 전송한다.",
+      "source_sentence": "입력이 완료되면 검토 후 자료가 저장된 매체를 전송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "입력하다",
+      "object": "인터넷 홈페이지 문서 및 자료",
+      "full_statement": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력한다.",
+      "source_sentence": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드하는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "업로드하다",
+      "object": "인터넷 홈페이지 문서 및 자료",
+      "full_statement": "인터넷 홈페이지에 문서 및 자료를 업로드한다.",
+      "source_sentence": "인터넷 홈페이지에 문서 및 자료를 반복적으로 입력하거나 업로드하는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "스캔하다",
+      "object": "전산자료",
+      "full_statement": "약국·사업체 등에서 전산자료를 스캔한다.",
+      "source_sentence": "약국, 사업체 등에서 전산자료를 스캔하거나 입력하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "부호화하다",
+      "object": "이미지 등 비수량적 정보",
+      "full_statement": "이미지 등 비수량적 정보를 부호화하는 전산 작업을 수행한다.",
+      "source_sentence": "또한 이미지 등 비수량적 정보에 부호화하는 전산 작업도 포함된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검색하다",
+      "object": "인터넷 정보",
+      "full_statement": "인터넷에서 필요한 정보를 검색한다.",
+      "source_sentence": "인터넷 정보 검색사·정보 검색원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.68
+    },
+    {
+      "verb": "입력하다",
+      "object": "데이터베이스(DB) 자료",
+      "full_statement": "데이터베이스(DB)에 자료를 입력한다.",
+      "source_sentence": "DB 입력원·자료 입력원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "입력하다",
+      "object": "매출자료",
+      "full_statement": "매출자료를 전산으로 입력한다.",
+      "source_sentence": "매출자료 입력원·홈페이지 자료 입력원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "입력하다",
+      "object": "명세표",
+      "full_statement": "명세표를 전산으로 입력한다.",
+      "source_sentence": "명세표 입력원·전산 입력원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "라벨링하다",
+      "object": "데이터",
+      "full_statement": "데이터에 라벨을 부여하는 작업을 수행한다.",
+      "source_sentence": "데이터 라벨러",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "대행하다",
+      "object": "행정기록",
+      "full_statement": "고객의 의뢰에 따라 행정기록을 대신 작성한다.",
+      "source_sentence": "고객의 의뢰에 의해 행정기록을 대신해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "키보드", "category": "HW", "evidence_span": "키보드를 조작하여 입력한다"},
+    {"name": "스캐너", "category": "장비", "evidence_span": "전산자료를 스캔하거나"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "반복적 입력 작업", "evidence_span": "문서 및 자료를 반복적으로 입력하거나 업로드하는 자"},
+    {"category": "사회적", "value": "고객 의뢰 응대", "evidence_span": "고객의 의뢰에 의해 행정기록을 대신해 준다"},
+    {"category": "장소", "value": "약국·사업체 등 실내 사무 환경", "evidence_span": "약국, 사업체 등에서 전산자료를 스캔하거나 입력하며"}
+  ]
+}

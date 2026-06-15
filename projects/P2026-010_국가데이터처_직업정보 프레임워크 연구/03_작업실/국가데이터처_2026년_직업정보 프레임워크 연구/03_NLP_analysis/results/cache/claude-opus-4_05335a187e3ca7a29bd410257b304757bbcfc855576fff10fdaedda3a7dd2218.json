@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28353",
+  "tasks": [
+    {
+      "verb": "편성하다",
+      "object": "회의 예산",
+      "full_statement": "회의 개최 계획과 예산을 편성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "회의장 시설",
+      "full_statement": "회의장 제반 시설을 점검한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "총괄하다",
+      "object": "회의 개최",
+      "full_statement": "국내외 회의·세미나 개최에 필요한 업무를 총괄한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조직하다",
+      "object": "참가자",
+      "full_statement": "참가자 등록과 프로그램을 조직화한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

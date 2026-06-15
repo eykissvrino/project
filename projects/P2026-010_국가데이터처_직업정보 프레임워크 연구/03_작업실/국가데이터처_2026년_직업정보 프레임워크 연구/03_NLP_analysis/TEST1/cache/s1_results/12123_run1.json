@@ -1,0 +1,103 @@
+{
+  "ksco_code": "12123",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "재무 부서 활동",
+      "full_statement": "재무, 회계, 예산 등 소관 부서의 활동을 기획하고 관리 및 조정한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "예산 편성 및 재정운용",
+      "full_statement": "예산 편성 및 각종 재정운용을 감독한다.",
+      "source_sentence": "기업 또는 단체 내부의 예산, 회계 및 재정 업무와 재무상황 평가, 예산 편성 및 각종 재정운용을 감독하고 재정정책 수립에 참여하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "평가하다",
+      "object": "재무상황",
+      "full_statement": "기업 또는 단체 내부의 재무상황을 평가한다.",
+      "source_sentence": "기업 또는 단체 내부의 예산, 회계 및 재정 업무와 재무상황 평가, 예산 편성 및 각종 재정운용을 감독하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "참여하다",
+      "object": "재정정책 수립",
+      "full_statement": "기업 또는 단체의 재정정책 수립에 참여한다.",
+      "source_sentence": "재무상황 평가, 예산 편성 및 각종 재정운용을 감독하고 재정정책 수립에 참여하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "회계 및 경리 직원 활동",
+      "full_statement": "회계 및 경리 업무에 종사하는 직원의 활동을 관리하고 감독 및 조정한다.",
+      "source_sentence": "회계 및 경리 업무에 종사하는 직원의 활동을 관리하고 감독‧조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.91
+    },
+    {
+      "verb": "수립하다",
+      "object": "장단기 및 연간 사업계획",
+      "full_statement": "다른 부서의 관리자들과 함께 장단기 및 연간 사업계획을 수립한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "성과",
+      "full_statement": "수립한 사업계획에 따른 성과를 분석한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "대표하다",
+      "object": "부서",
+      "full_statement": "다른 부서나 외부기관에 대해 부서를 대표한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "통제하다",
+      "object": "부서의 지출",
+      "full_statement": "부서의 지출을 통제한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관장하다",
+      "object": "자원의 효율적 사용",
+      "full_statement": "자원의 효율적 사용을 관장한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "입안하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "운영 및 관리절차를 입안한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "입안한 운영 및 관리절차를 관리한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,84 @@
+{
+  "ksco_code": "43149",
+  "tasks": [
+    {
+      "verb": "관찰하다",
+      "object": "고객의 피부",
+      "full_statement": "고객의 피부 상태를 관찰하여 적합한 미용적 처치를 결정한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시행하다",
+      "object": "미용적 처치",
+      "full_statement": "특별한 제품이나 기술을 사용하여 얼굴이나 피부에 적합한 미용적 처치를 시행한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 피부",
+      "full_statement": "고객의 피부를 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "source_sentence": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "제모하다",
+      "object": "고객의 신체 부위",
+      "full_statement": "전기기구를 이용해 고객의 신체 부위를 제모한다.",
+      "source_sentence": "전기기구를 이용해 제모를 해주기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 체형",
+      "full_statement": "체형에 맞게 고객의 체형을 관리한다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 체력 상태",
+      "full_statement": "고객의 체형에 맞게 체력 상태를 관리한다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 영양 상태",
+      "full_statement": "고객의 체형에 맞게 영양 상태를 관리한다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "돕다",
+      "object": "손님의 목욕",
+      "full_statement": "손님의 목욕을 도와주는 일을 한다.",
+      "source_sentence": "손님의 목욕을 도와주는 일을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    },
+    {
+      "verb": "개선하다",
+      "object": "고객의 용모",
+      "full_statement": "고객의 용모를 개선하기 위하여 여러 가지 처리를 한다.",
+      "source_sentence": "피부 관리, 화장 등 고객의 용모를 개선하기 위하여 여러 가지 처리를 하는 피부미용 및 체형 관리사",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "전기기구(제모기)", "category": "장비", "evidence_span": "전기기구를 이용해 제모를 해주기도 한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 대상 대인 서비스(고객응대)", "evidence_span": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다."},
+    {"category": "장소", "value": "미용실·피부 관리실 등 실내 미용 관련 업체", "evidence_span": "이들은 미용실, 피부 관리실, 기타 미용 관련 업체에서 주로 일하며 자영업을 할 수도 있다."}
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "ksco_code": "84120",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "단조기",
+      "full_statement": "철 및 비철금속 주물을 생산하기 위하여 각종 단조기를 조작한다.",
+      "source_sentence": "철 및 비철금속 주물을 생산하기 위하여 각종 단조기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "금형",
+      "full_statement": "단조기에 금형을 설치하여 고정한다.",
+      "source_sentence": "단조기에 금형을 설치하여 고정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "고정하다",
+      "object": "금형",
+      "full_statement": "단조기에 설치한 금형을 고정한다.",
+      "source_sentence": "단조기에 금형을 설치하여 고정한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "올려놓다",
+      "object": "단조성형 재료",
+      "full_statement": "단조성형할 재료를 금형 위에 올려 놓는다.",
+      "source_sentence": "단조성형할 재료를 금형 위에 올려 놓고 기계를 가동하여 성형한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가동하다",
+      "object": "단조기",
+      "full_statement": "재료를 올려 놓은 후 기계를 가동한다.",
+      "source_sentence": "단조성형할 재료를 금형 위에 올려 놓고 기계를 가동하여 성형한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "성형하다",
+      "object": "재료",
+      "full_statement": "단조기를 가동하여 재료를 성형한다.",
+      "source_sentence": "단조성형할 재료를 금형 위에 올려 놓고 기계를 가동하여 성형한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "생산하다",
+      "object": "철 및 비철금속 주물",
+      "full_statement": "각종 단조기를 조작하여 철 및 비철금속 주물을 생산한다.",
+      "source_sentence": "철 및 비철금속 주물을 생산하기 위하여 각종 단조기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "단일 기능 기기",
+      "full_statement": "제1차 형태의 금속제품을 제조하는 과정에서 단일 기능을 가진 기기를 조작한다.",
+      "source_sentence": "제1차 형태의 금속제품을 제조하는 과정에서 단일 기능을 가진 기기를 조작하거나 전체 생산 공정의 일부분에 해당되는 기기를 조작하기도 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "생산 공정 일부 기기",
+      "full_statement": "전체 생산 공정의 일부분에 해당되는 기기를 조작한다.",
+      "source_sentence": "제1차 형태의 금속제품을 제조하는 과정에서 단일 기능을 가진 기기를 조작하거나 전체 생산 공정의 일부분에 해당되는 기기를 조작하기도 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "단조기", "category": "장비", "evidence_span": "각종 단조기를 조작한다."},
+    {"name": "단조프레스기", "category": "장비", "evidence_span": "단조프레스기 조작원"},
+    {"name": "단조압연기", "category": "장비", "evidence_span": "단조압연기 조작원"},
+    {"name": "단조압출기", "category": "장비", "evidence_span": "단조압출기 조작원"},
+    {"name": "금형", "category": "도구", "evidence_span": "단조기에 금형을 설치하여 고정한다."}
+  ],
+  "work_context": []
+}

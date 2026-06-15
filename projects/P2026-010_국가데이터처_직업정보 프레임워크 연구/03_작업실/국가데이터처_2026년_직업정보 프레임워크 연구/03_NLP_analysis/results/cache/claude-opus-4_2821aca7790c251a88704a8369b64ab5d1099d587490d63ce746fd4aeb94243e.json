@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "사양",
+      "full_statement": "사양 설명하다",
+      "source_sentence": "원문"
+    }
+  ],
+  "tools": [
+    {
+      "name": "진단기",
+      "category": "장비"
+    }
+  ],
+  "work_context": []
+}

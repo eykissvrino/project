@@ -1,0 +1,101 @@
+{
+  "ksco_code": "71031",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "소비자의 요구",
+      "full_statement": "정육점에서 소비자의 요구를 확인한다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "구분하다",
+      "object": "육류 부위",
+      "full_statement": "소고기, 돼지고기 등을 부위에 따라 구분한다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자르다",
+      "object": "육류",
+      "full_statement": "소고기, 돼지고기 등을 부위에 따라 절단기를 이용하여 자른다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "부수다",
+      "object": "육류",
+      "full_statement": "분쇄기를 이용하여 육류를 잘게 부순다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "계량하다",
+      "object": "육류",
+      "full_statement": "절단하거나 분쇄한 육류를 계량한다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "판매하다",
+      "object": "육류",
+      "full_statement": "계량한 육류를 소비자에게 판매한다.",
+      "source_sentence": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을 부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고 계량을 하여 판매하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "세척하다",
+      "object": "육류",
+      "full_statement": "가공을 하기 위해 육류를 세척한다.",
+      "source_sentence": "시장출하 또는 가공을 하기 위해 육류 및 어류를 세척, 절단 등 손질 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "손질하다",
+      "object": "육류",
+      "full_statement": "가공을 하기 위해 육류를 손질한다.",
+      "source_sentence": "시장출하 또는 가공을 하기 위해 육류 및 어류를 세척, 절단 등 손질 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제거하다",
+      "object": "뼈",
+      "full_statement": "육류를 손질하면서 뼈를 제거한다.",
+      "source_sentence": "가죽을 벗기고 뼈를 제거한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "가공하다",
+      "object": "육류 및 관련 식품",
+      "full_statement": "육류 및 관련 식품을 조리 또는 기타 방법으로 가공 처리한다.",
+      "source_sentence": "육류 및 관련 식품을 저장 처리하며, 조리 또는 기타 방법으로 가공 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "저장하다",
+      "object": "육류 및 관련 식품",
+      "full_statement": "육류 및 관련 식품을 저장 처리한다.",
+      "source_sentence": "육류 및 관련 식품을 저장 처리하며, 조리 또는 기타 방법으로 가공 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "절단기", "category": "장비", "evidence_span": "부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고"},
+    {"name": "분쇄기", "category": "장비", "evidence_span": "부위에 따라 절단기와 분쇄기를 이용하여 자르거나 잘게 부수고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "정육점(실내)", "evidence_span": "정육점에서 소비자의 요구에 따라 소고기, 돼지고기 등을"},
+    {"category": "사회적", "value": "소비자 요구 응대·판매", "evidence_span": "소비자의 요구에 따라 ... 계량을 하여 판매하기도 한다"}
+  ]
+}

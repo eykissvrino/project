@@ -1,0 +1,106 @@
+{
+  "ksco_code": "45110",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "조리메뉴",
+      "full_statement": "고객이 주문한 조리메뉴를 확인한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준비하다",
+      "object": "조리 재료",
+      "full_statement": "조리에 필요한 각종 식료품 재료를 준비한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(각종 식료품 준비)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "익히다",
+      "object": "식료품",
+      "full_statement": "한국음식을 만들기 위하여 각종 식료품을 익힌다.",
+      "source_sentence": "호텔, 음식점 등에서 한국음식을 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "튀기다",
+      "object": "요리",
+      "full_statement": "재료를 튀기는 방식으로 해당 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "굽다",
+      "object": "요리",
+      "full_statement": "재료를 굽는 방식으로 해당 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "볶다",
+      "object": "요리",
+      "full_statement": "재료를 볶는 방식으로 해당 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "끓이다",
+      "object": "요리",
+      "full_statement": "재료를 끓이는 방식으로 해당 요리를 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 해당 요리를 조리한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조리하다",
+      "object": "국·찌개·국물요리",
+      "full_statement": "국, 찌개, 국물요리 등의 한국 음식을 조리한다.",
+      "source_sentence": "국, 찌개, 국물요리, 찜, 조림, 무침 등의 다양한 한국 음식을 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(한국 음식)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조리하다",
+      "object": "찜·조림",
+      "full_statement": "찜, 조림 등의 한국 음식을 조리한다.",
+      "source_sentence": "국, 찌개, 국물요리, 찜, 조림, 무침 등의 다양한 한국 음식을 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(한국 음식)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조리하다",
+      "object": "무침",
+      "full_statement": "무침 등의 한국 음식을 조리한다.",
+      "source_sentence": "국, 찌개, 국물요리, 찜, 조림, 무침 등의 다양한 한국 음식을 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(한국 음식)",
+      "confidence": 0.89
+    },
+    {
+      "verb": "조리하다",
+      "object": "외국음식",
+      "full_statement": "간단한 외국음식 조리를 함께 수행한다.",
+      "source_sentence": "간단한 외국음식 조리를 함께하기도 한다.",
+      "derived_from": "세세분류 정의(고유활동)",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "호텔·음식점 등 조리 현장",
+      "evidence_span": "호텔, 음식점 등에서 한국음식을 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 주문 응대",
+      "evidence_span": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다."
+    }
+  ]
+}

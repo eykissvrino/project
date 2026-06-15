@@ -1,0 +1,147 @@
+{
+  "ksco_code": "37299",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "출판물의 디자인",
+      "full_statement": "출판물의 디자인을 검토한다.",
+      "source_sentence": "출판물의 디자인을 검토하고 작업순서와 방법을 설정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "설정하다",
+      "object": "작업순서와 방법",
+      "full_statement": "출판물 제작의 작업순서와 방법을 설정한다.",
+      "source_sentence": "출판물의 디자인을 검토하고 작업순서와 방법을 설정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "입력하다",
+      "object": "문자나 그림, 로고, 사진",
+      "full_statement": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력한다.",
+      "source_sentence": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력하고 색채, 크기, 위치를 조정․편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "편집하다",
+      "object": "색채, 크기, 위치",
+      "full_statement": "입력한 요소의 색채, 크기, 위치를 조정하여 편집한다.",
+      "source_sentence": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력하고 색채, 크기, 위치를 조정․편집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "출력하다",
+      "object": "시험출력물",
+      "full_statement": "시험출력을 하여 문제점을 파악하고 보완한다.",
+      "source_sentence": "시험출력을 하여 문제점을 파악․보완하고 인쇄공정에 넘길 판을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "만들다",
+      "object": "인쇄공정에 넘길 판",
+      "full_statement": "인쇄공정에 넘길 판을 만든다.",
+      "source_sentence": "시험출력을 하여 문제점을 파악․보완하고 인쇄공정에 넘길 판을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "지원하다",
+      "object": "일반적인 사무",
+      "full_statement": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원한다.",
+      "source_sentence": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "작성하다",
+      "object": "문서",
+      "full_statement": "다른 사무 종사자의 지시에 따라 문서를 작성한다.",
+      "source_sentence": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "정리하다",
+      "object": "문서",
+      "full_statement": "주요업무에 수반되는 문서를 정리한다.",
+      "source_sentence": "주요업무에 수반되는 문서정리 및 수발, 자료집계, 자료복사 등을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수발하다",
+      "object": "문서",
+      "full_statement": "주요업무에 수반되는 문서를 수발한다.",
+      "source_sentence": "주요업무에 수반되는 문서정리 및 수발, 자료집계, 자료복사 등을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "집계하다",
+      "object": "자료",
+      "full_statement": "주요업무에 수반되는 자료를 집계한다.",
+      "source_sentence": "주요업무에 수반되는 문서정리 및 수발, 자료집계, 자료복사 등을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "복사하다",
+      "object": "자료",
+      "full_statement": "주요업무에 수반되는 자료를 복사한다.",
+      "source_sentence": "주요업무에 수반되는 문서정리 및 수발, 자료집계, 자료복사 등을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "작성하다",
+      "object": "의사록",
+      "full_statement": "회의 등의 의사록을 작성하고 정리한다.",
+      "source_sentence": "의사록 작성 및 정리, 자료입력 및 전산화 등의 각종 업무를 효과적으로 처리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "입력하다",
+      "object": "자료",
+      "full_statement": "각종 자료를 입력하여 전산화한다.",
+      "source_sentence": "의사록 작성 및 정리, 자료입력 및 전산화 등의 각종 업무를 효과적으로 처리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "기록하다",
+      "object": "정보(data)",
+      "full_statement": "당해 작업에 관련된 정보(data)를 기록하고 보관한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "검색하다",
+      "object": "정보(data)",
+      "full_statement": "당해 작업에 관련된 정보(data)를 계산하고 검색한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "편집하다",
+      "object": "출판물 및 자료",
+      "full_statement": "출판 및 자료 편집 사무를 처리한다.",
+      "source_sentence": "여기에는 출판 및 자료 편집 사무원 등 일반적인 사무지원 업무가 포함된다.",
+      "derived_from": "세세분류 정의→세분류 정의 특화",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "구성 체계에 따라 컴퓨터에 문자나 그림, 로고, 사진 등을 입력하고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "다른 사무 종사자의 지시를 받는 보조·지원 업무", "evidence_span": "다른 사무 종사자의 지시를 받아 문서작성 등 일반적인 사무를 지원 한다."}
+  ]
+}

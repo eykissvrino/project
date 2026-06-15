@@ -1,0 +1,97 @@
+{
+  "n_dwa": 1192,
+  "k_iwa_cut": 214,
+  "n_iwa": 178,
+  "band_k": [
+    149,
+    238
+  ],
+  "ratio_dwa_per_iwa": 6.7,
+  "nesting_method": "A_tree_node",
+  "nesting_fully_nested": 1005,
+  "nesting_fully_rate": 0.8431,
+  "nesting_mean_purity": 0.9856,
+  "nesting_split": 187,
+  "cohesion_median": 0.905,
+  "cohesion_ge_055": 178,
+  "n_batches": 6,
+  "cut_curve_head": [
+    {
+      "k": 149,
+      "cut_height": 0.45764,
+      "gap": 4e-06
+    },
+    {
+      "k": 150,
+      "cut_height": 0.45756,
+      "gap": 8.3e-05
+    },
+    {
+      "k": 151,
+      "cut_height": 0.45711,
+      "gap": 0.000455
+    },
+    {
+      "k": 152,
+      "cut_height": 0.45621,
+      "gap": 0.000901
+    },
+    {
+      "k": 153,
+      "cut_height": 0.45593,
+      "gap": 0.000273
+    }
+  ],
+  "split_examples": [
+    {
+      "dwa_id": "D_0007",
+      "n_task": 123,
+      "purity": 0.984
+    },
+    {
+      "dwa_id": "D_0290",
+      "n_task": 16,
+      "purity": 0.938
+    },
+    {
+      "dwa_id": "D_0089",
+      "n_task": 36,
+      "purity": 0.972
+    },
+    {
+      "dwa_id": "D_0005",
+      "n_task": 135,
+      "purity": 0.993
+    },
+    {
+      "dwa_id": "D_0160",
+      "n_task": 26,
+      "purity": 0.962
+    },
+    {
+      "dwa_id": "D_0161",
+      "n_task": 25,
+      "purity": 0.96
+    },
+    {
+      "dwa_id": "D_0088",
+      "n_task": 35,
+      "purity": 0.971
+    },
+    {
+      "dwa_id": "D_0231",
+      "n_task": 20,
+      "purity": 0.95
+    },
+    {
+      "dwa_id": "D_0543",
+      "n_task": 9,
+      "purity": 0.889
+    },
+    {
+      "dwa_id": "D_0081",
+      "n_task": 39,
+      "purity": 0.949
+    }
+  ]
+}

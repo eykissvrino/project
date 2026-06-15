@@ -1,0 +1,91 @@
+{
+  "ksco_code": "89132",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "판지 라이닝기",
+      "full_statement": "카드지에 종이를 발라 일정한 길이로 절단하는 판지 라이닝기를 조작한다.",
+      "source_sentence": "카드지에 종이를 발라 일정한 길이로 절단하는 판지 라이닝기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "바르다",
+      "object": "카드지에 종이",
+      "full_statement": "카드지에 종이를 발라 라이닝 처리를 한다.",
+      "source_sentence": "카드지에 종이를 발라 일정한 길이로 절단하는 판지 라이닝기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절단하다",
+      "object": "판지",
+      "full_statement": "라이닝한 판지를 일정한 길이로 절단한다.",
+      "source_sentence": "카드지에 종이를 발라 일정한 길이로 절단하는 판지 라이닝기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "카드지·판지 절단 및 접는 기계",
+      "full_statement": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "source_sentence": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "붙이다",
+      "object": "카드에 종이",
+      "full_statement": "필요한 길이로 절단한 후 카드에 종이를 붙인다.",
+      "source_sentence": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "접다",
+      "object": "카드지·판지",
+      "full_statement": "상자형태로 제조하기 위해 카드지나 판지를 접는다.",
+      "source_sentence": "필요한 길이로 절단하여 카드에 종이를 붙이거나 상자형태로 제조하기 위해 카드지나 판지를 절단하고 접는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조작하다",
+      "object": "압착 용기 제조 기계",
+      "full_statement": "종이, 판지 또는 카드지를 압착해 음료용 컵이나 기타 용기를 제조하는 기계를 조작한다.",
+      "source_sentence": "종이, 판지 또는 카드지를 압착해 음료용 컵이나 기타 용기를 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "봉투·포대 제조 기계",
+      "full_statement": "종이를 재단하고 접어 풀칠해서 봉투, 포대를 제조하거나 셀로판지 또는 기타 유사 재료로 봉투를 만드는 기계를 조작한다.",
+      "source_sentence": "종이를 재단하고 접어 풀칠해서 봉투, 포대를 제조하거나 셀로판지 또는 기타 유사 재료로 봉투를 만드는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기계의 기능장애를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "판지 라이닝기", "category": "장비", "evidence_span": "카드지에 종이를 발라 일정한 길이로 절단하는 판지 라이닝기를 조작한다."},
+    {"name": "골판지 라이닝기", "category": "장비", "evidence_span": "판지 라이닝기 조작원·골판지 라이닝기 조작원"},
+    {"name": "절단 및 접는 기계", "category": "장비", "evidence_span": "카드지나 판지를 절단하고 접는 기계를 조작한다."}
+  ],
+  "work_context": []
+}

@@ -1,0 +1,146 @@
+{
+  "ksco_code": "12110",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "부서 행정업무",
+      "full_statement": "부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획한다.",
+      "source_sentence": "고위공무원의 포괄적인 관리 하에 부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획, 관리 및 조정하거나, 또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "부서 행정업무",
+      "full_statement": "부처 내 해당 부서의 행정업무를 관리한다.",
+      "source_sentence": "고위공무원의 포괄적인 관리 하에 부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획, 관리 및 조정하거나, 또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "부서 행정업무",
+      "full_statement": "부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 조정한다.",
+      "source_sentence": "고위공무원의 포괄적인 관리 하에 부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획, 관리 및 조정하거나, 또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기획하다",
+      "object": "지방관서 행정업무",
+      "full_statement": "지방관서 기관장으로서 지방관서의 행정업무를 기획한다.",
+      "source_sentence": "또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "지방관서 행정업무",
+      "full_statement": "지방관서 기관장으로서 지방관서의 행정업무를 관리한다.",
+      "source_sentence": "또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조정하다",
+      "object": "지방관서 행정업무",
+      "full_statement": "지방관서 기관장으로서 지방관서의 행정업무를 조정한다.",
+      "source_sentence": "또한 지방관서 기관장으로서 지방관서의 행정업무를 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "의논하다",
+      "object": "다른 부서 관리자",
+      "full_statement": "부처 내 다른 부서 관리자와 행정업무에 관하여 의논한다.",
+      "source_sentence": "고위공무원의 포괄적인 관리 하에 부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획, 관리 및 조정하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수립하다",
+      "object": "행정 분야별 정책",
+      "full_statement": "행정 분야별 정책을 수립한다.",
+      "source_sentence": "행정 분야별 정책을 수립하고 집행하며, 예산을 편성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "집행하다",
+      "object": "행정 분야별 정책",
+      "full_statement": "행정 분야별 정책을 집행한다.",
+      "source_sentence": "행정 분야별 정책을 수립하고 집행하며, 예산을 편성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "편성하다",
+      "object": "예산",
+      "full_statement": "행정 분야의 예산을 편성한다.",
+      "source_sentence": "행정 분야별 정책을 수립하고 집행하며, 예산을 편성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "교섭하다",
+      "object": "고객·정부기관·다른 기관",
+      "full_statement": "고객, 정부기관 및 다른 기관과 교섭한다.",
+      "source_sentence": "고객, 정부기관 및 다른 기관과 교섭한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "기획하다",
+      "object": "인적 및 예산의 이용",
+      "full_statement": "인적 자원 및 예산의 이용을 기획한다.",
+      "source_sentence": "인적 및 예산의 이용을 기획‧통제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "통제하다",
+      "object": "인적 및 예산의 이용",
+      "full_statement": "인적 자원 및 예산의 이용을 통제한다.",
+      "source_sentence": "인적 및 예산의 이용을 기획‧통제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수립하다",
+      "object": "종합적 행정업무 수행 계획",
+      "full_statement": "종합적 행정업무 수행 계획을 수립한다.",
+      "source_sentence": "종합적 행정업무 수행 계획을 수립하고 집행을 관리하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "행정업무 수행 계획의 집행",
+      "full_statement": "종합적 행정업무 수행 계획의 집행을 관리한다.",
+      "source_sentence": "종합적 행정업무 수행 계획을 수립하고 집행을 관리하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "행정업무 수행 계획의 집행",
+      "full_statement": "종합적 행정업무 수행 계획의 집행을 조정한다.",
+      "source_sentence": "종합적 행정업무 수행 계획을 수립하고 집행을 관리하며 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "다른 부서 관리자와 의논하는 협업 업무",
+      "evidence_span": "부처 내 다른 부서 관리자와 의논하여 해당 부서의 행정업무를 기획, 관리 및 조정"
+    },
+    {
+      "category": "사회적",
+      "value": "고객·정부기관·타 기관과의 교섭",
+      "evidence_span": "고객, 정부기관 및 다른 기관과 교섭한다."
+    }
+  ]
+}

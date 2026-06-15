@@ -1,0 +1,63 @@
+{
+  "ksco_code": "85302",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "산업용 로봇",
+      "full_statement": "기계 제조 및 조립과정에서 산업용 로봇을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 산업용 로봇을 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "자동 조립라인",
+      "full_statement": "기계 제조 및 조립과정에서 자동 조립라인을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "반자동 조립라인",
+      "full_statement": "기계 제조 및 조립과정에서 반자동 조립라인을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "장착하다",
+      "object": "로봇 부품",
+      "full_statement": "상황에 따라 로봇 부품을 장착한다.",
+      "source_sentence": "상황에 따라 로봇 부품을 장착 및 탈착하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "탈착하다",
+      "object": "로봇 부품",
+      "full_statement": "상황에 따라 로봇 부품을 탈착한다.",
+      "source_sentence": "상황에 따라 로봇 부품을 장착 및 탈착하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {
+      "name": "산업용 로봇",
+      "category": "장비",
+      "evidence_span": "기계 제조 및 조립과정에서 산업용 로봇을 조작하며"
+    },
+    {
+      "name": "자동 조립라인",
+      "category": "장비",
+      "evidence_span": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다."
+    },
+    {
+      "name": "반자동 조립라인",
+      "category": "장비",
+      "evidence_span": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다."
+    }
+  ],
+  "work_context": []
+}

@@ -1,0 +1,93 @@
+{
+  "ksco_code": "61212",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "재배할 화훼작물의 종류와 양",
+      "full_statement": "재배할 육묘 및 화훼작물의 종류와 양을 결정한다.",
+      "source_sentence": "재배할 육묘 및 화훼작물의 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "구입하다",
+      "object": "종자, 비료 및 기타 공급물",
+      "full_statement": "종자, 비료 및 기타 공급물을 구입한다.",
+      "source_sentence": "종자, 비료 및 기타 공급물을 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "생산하다",
+      "object": "묘목, 구근 및 종자",
+      "full_statement": "묘목, 구근 및 종자를 생산한다.",
+      "source_sentence": "묘목, 구근 및 종자를 생산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "재배하다",
+      "object": "화훼작물",
+      "full_statement": "선인장, 난, 장미, 튜울립 등의 화훼작물을 재배한다.",
+      "source_sentence": "선인장, 난, 장미, 튜울립 등의 화훼작물을 재배한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "재배하다",
+      "object": "교목 및 관목",
+      "full_statement": "꽃, 교목, 관목 기타 원예작물을 재배한다.",
+      "source_sentence": "꽃, 교목, 관목 기타 원예작물을 밑둥, 눈틔움 등의 방법으로 재배하거나 증식시키고, 종자, 구근을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "증식하다",
+      "object": "원예작물",
+      "full_statement": "꽃, 교목, 관목 기타 원예작물을 밑둥, 눈틔움 등의 방법으로 증식시킨다.",
+      "source_sentence": "꽃, 교목, 관목 기타 원예작물을 밑둥, 눈틔움 등의 방법으로 재배하거나 증식시키고, 종자, 구근을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "생산하다",
+      "object": "종자 및 구근",
+      "full_statement": "화훼작물의 종자와 구근을 생산한다.",
+      "source_sentence": "꽃, 교목, 관목 기타 원예작물을 밑둥, 눈틔움 등의 방법으로 재배하거나 증식시키고, 종자, 구근을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "접목하다",
+      "object": "관목 싹",
+      "full_statement": "관목의 싹을 접목한다.",
+      "source_sentence": "원예사·관목 싹 접목자",
+      "derived_from": "세세분류 직업 예시→활동 도출",
+      "confidence": 0.6
+    },
+    {
+      "verb": "공급하다",
+      "object": "재배된 묘목, 구근, 종자 및 꽃",
+      "full_statement": "재배된 묘목, 구근 및 종자, 꽃 등을 공급한다.",
+      "source_sentence": "재배된 묘목, 구근 및 종자, 꽃 등을 공급‧출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "출하하다",
+      "object": "재배된 묘목, 구근, 종자 및 꽃",
+      "full_statement": "재배된 묘목, 구근 및 종자, 꽃 등을 출하한다.",
+      "source_sentence": "재배된 묘목, 구근 및 종자, 꽃 등을 공급‧출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "온실 등 원예 재배 환경",
+      "evidence_span": "온실 정원사·공원 정원사"
+    }
+  ]
+}

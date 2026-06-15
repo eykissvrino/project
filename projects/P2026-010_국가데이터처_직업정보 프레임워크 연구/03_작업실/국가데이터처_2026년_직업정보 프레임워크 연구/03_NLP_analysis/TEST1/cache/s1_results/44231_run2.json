@@ -1,0 +1,135 @@
+{
+  "ksco_code": "44231",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "오락용 승차기구",
+      "full_statement": "놀이시설에 설치된 오락용 승차기구를 운전한다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "안내하다",
+      "object": "기구 운전방법",
+      "full_statement": "고객에게 오락용 승차기구의 운전방법을 알려준다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 편의",
+      "full_statement": "고객에게 각종 편의를 제공한다.",
+      "source_sentence": "놀이시설에 설치된 오락용 승차기구를 운전하거나 고객에게 운전방법을 알려주며, 고객에게 각종 편의를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 조작한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "오락·게임 설비 및 놀이기구",
+      "full_statement": "오락, 게임 설비 및 놀이기구 등을 관리한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수리하다",
+      "object": "놀이기구",
+      "full_statement": "놀이기구 등의 간단한 보수·수리를 한다.",
+      "source_sentence": "오락, 게임 설비 및 놀이기구 등을 조작하고 관리하고 간단한 보수·수리를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제공하다",
+      "object": "장비 비품",
+      "full_statement": "고객의 신체에 알맞은 장비 비품을 제공한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "장비의 안전한 사용법",
+      "full_statement": "고객에게 장비의 안전한 사용법을 설명한다.",
+      "source_sentence": "고객의 신체에 알맞은 장비 비품을 제공하며, 장비의 안전한 사용법을 설명한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 점검한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시험하다",
+      "object": "기구",
+      "full_statement": "안전사고 방지를 위하여 운행종료 후 기구를 시험한다.",
+      "source_sentence": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "안내하다",
+      "object": "사용료와 사용시간",
+      "full_statement": "고객에게 기구의 사용료와 사용시간을 알려준다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관찰하다",
+      "object": "정원 초과 상태",
+      "full_statement": "기구의 정원 초과 상태를 관찰한다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "확인하다",
+      "object": "안전벨트·빗장의 안전 상태",
+      "full_statement": "안전벨트나 빗장의 안전 상태를 관찰하여 확인한다.",
+      "source_sentence": "고객에게 기구의 사용료와 사용시간을 알려주기도 하며, 정원 초과와 안전벨트나 빗장의 안전 상태를 관찰하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보관하다",
+      "object": "고객의 물품",
+      "full_statement": "고객의 물품을 보관한다.",
+      "source_sentence": "고객의 물품을 보관하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "안내하다",
+      "object": "놀이시설 이용",
+      "full_statement": "고객에게 놀이시설 이용을 안내한다.",
+      "source_sentence": "놀이시설 안내원·놀이기구 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "오락용 승차기구", "category": "장비", "evidence_span": "놀이시설에 설치된 오락용 승차기구를 운전하거나"},
+    {"name": "놀이기구", "category": "장비", "evidence_span": "오락, 게임 설비 및 놀이기구 등을 조작하고"},
+    {"name": "오락·게임 설비", "category": "장비", "evidence_span": "오락, 게임 설비 및 놀이기구 등을 조작하고"},
+    {"name": "안전벨트·빗장", "category": "장비", "evidence_span": "안전벨트나 빗장의 안전 상태를 관찰하기도 한다"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객응대(편의·안전 서비스 제공)", "evidence_span": "고객에게 각종 편의를 제공한다"},
+    {"category": "위험", "value": "안전사고 위험(운행 후 점검 필요)", "evidence_span": "안전사고 방지를 위하여 운행종료 후 기구를 점검․ 시험한다"}
+  ]
+}

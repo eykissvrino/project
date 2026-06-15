@@ -1,0 +1,107 @@
+{
+  "ksco_code": "53120",
+  "tasks": [
+    {
+      "verb": "선정하다",
+      "object": "판매 상품",
+      "full_statement": "온라인 쇼핑몰에 판매할 상품을 선정한다.",
+      "source_sentence": "온라인 쇼핑몰상에 판매할 상품을 선정하여 등록하고 재고를 관리하며, 고객문의에 응대하거나 주문상품을 발송하기 위한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제작하다",
+      "object": "상품 상세내역",
+      "full_statement": "판매할 상품의 이미지와 함께 상품명·제조사·제조일자·소재·사이즈·색상·사용방법 등의 상품 상세내역을 제작한다.",
+      "source_sentence": "판매할 상품의 이미지와 함께 상품명, 제조사, 제조일자, 소재, 사이즈, 색상, 사용방법 등의 상품 상세내역을 제작하여 등록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "등록하다",
+      "object": "상품 상세내역",
+      "full_statement": "제작한 상품 상세내역을 온라인 쇼핑몰에 등록한다.",
+      "source_sentence": "판매할 상품의 이미지와 함께 상품명, 제조사, 제조일자, 소재, 사이즈, 색상, 사용방법 등의 상품 상세내역을 제작하여 등록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "판매 상품의 재고",
+      "full_statement": "판매 상품의 재고를 관리한다.",
+      "source_sentence": "판매 상품의 재고를 관리하고 구매상품의 발송을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "준비하다",
+      "object": "구매상품의 발송",
+      "full_statement": "구매상품의 발송을 준비한다.",
+      "source_sentence": "판매 상품의 재고를 관리하고 구매상품의 발송을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발송하다",
+      "object": "주문상품",
+      "full_statement": "주문상품을 고객에게 발송한다.",
+      "source_sentence": "고객문의에 응대하거나 주문상품을 발송하기 위한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객문의",
+      "full_statement": "고객문의에 응대한다.",
+      "source_sentence": "고객문의에 응대하거나 주문상품을 발송하기 위한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "고객의 구매상담",
+      "full_statement": "고객의 구매상담을 처리한다.",
+      "source_sentence": "고객의 구매상담, 배송문의, 교환 및 환불 요구, 사후서비스(AS)요청 등을 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처리하다",
+      "object": "배송문의",
+      "full_statement": "고객의 배송문의를 처리한다.",
+      "source_sentence": "고객의 구매상담, 배송문의, 교환 및 환불 요구, 사후서비스(AS)요청 등을 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처리하다",
+      "object": "교환 및 환불 요구",
+      "full_statement": "고객의 교환 및 환불 요구를 처리한다.",
+      "source_sentence": "고객의 구매상담, 배송문의, 교환 및 환불 요구, 사후서비스(AS)요청 등을 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "처리하다",
+      "object": "사후서비스(AS) 요청",
+      "full_statement": "고객의 사후서비스(AS) 요청을 처리한다.",
+      "source_sentence": "고객의 구매상담, 배송문의, 교환 및 환불 요구, 사후서비스(AS)요청 등을 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "판매하다",
+      "object": "각종 상품",
+      "full_statement": "인터넷을 통하여 온라인 쇼핑몰에서 각종 상품을 판매한다.",
+      "source_sentence": "인터넷을 통하여 각종 상품을 판매하기 위해 온라인 쇼핑몰상에 판매할 상품을 선정하여 등록하고 재고를 관리하며, 고객문의에 응대하거나 주문상품을 발송하기 위한 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "온라인 쇼핑몰", "category": "시스템", "evidence_span": "온라인 쇼핑몰상에 판매할 상품을 선정하여 등록하고 재고를 관리하며"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대(구매상담·배송문의·교환환불·AS)", "evidence_span": "고객의 구매상담, 배송문의, 교환 및 환불 요구, 사후서비스(AS)요청 등을 처리한다."}
+  ]
+}

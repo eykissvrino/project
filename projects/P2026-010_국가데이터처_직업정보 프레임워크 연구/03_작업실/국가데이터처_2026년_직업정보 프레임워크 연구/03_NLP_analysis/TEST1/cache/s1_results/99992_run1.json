@@ -1,0 +1,78 @@
+{
+  "ksco_code": "99992",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "작업계획서",
+      "full_statement": "작업계획서를 확인하여 정리수납 작업의 내용과 순서를 파악한다.",
+      "source_sentence": "작업계획서에 따라 다양한 물건들을 정리수납한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "정리하다",
+      "object": "다양한 물건",
+      "full_statement": "작업계획서에 따라 다양한 물건들을 정리수납한다.",
+      "source_sentence": "작업계획서에 따라 다양한 물건들을 정리수납한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "파악하다",
+      "object": "물건의 사용 용도",
+      "full_statement": "물건의 사용 용도나 동선을 파악하여 적절한 위치를 결정한다.",
+      "source_sentence": "사용 용도나 동선에 맞게 적절한 위치로 옮기거나 수납용품을 활용하여 정리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "옮기다",
+      "object": "물건",
+      "full_statement": "사용 용도나 동선에 맞게 물건을 적절한 위치로 옮긴다.",
+      "source_sentence": "사용 용도나 동선에 맞게 적절한 위치로 옮기거나 수납용품을 활용하여 정리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "활용하다",
+      "object": "수납용품",
+      "full_statement": "수납용품을 활용하여 물건을 정리한다.",
+      "source_sentence": "사용 용도나 동선에 맞게 적절한 위치로 옮기거나 수납용품을 활용하여 정리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "선별하다",
+      "object": "불필요한 물건",
+      "full_statement": "필요하지 않은 물건을 선별하여 버린다.",
+      "source_sentence": "필요하지 않는 물건은 버리기도 하며, 현장에서 문제점이 발생하면 기획자와 상의하여 조치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "상의하다",
+      "object": "기획자",
+      "full_statement": "현장에서 문제점이 발생하면 기획자와 상의한다.",
+      "source_sentence": "필요하지 않는 물건은 버리기도 하며, 현장에서 문제점이 발생하면 기획자와 상의하여 조치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조치하다",
+      "object": "현장 문제점",
+      "full_statement": "현장에서 발생한 문제점을 기획자와 상의하여 조치한다.",
+      "source_sentence": "필요하지 않는 물건은 버리기도 하며, 현장에서 문제점이 발생하면 기획자와 상의하여 조치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [
+    {"name": "수납용품", "category": "도구", "evidence_span": "수납용품을 활용하여 정리한다"},
+    {"name": "작업계획서", "category": "도구", "evidence_span": "작업계획서에 따라 다양한 물건들을 정리수납한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "현장 작업", "evidence_span": "현장에서 문제점이 발생하면 기획자와 상의하여 조치한다"},
+    {"category": "사회적", "value": "기획자와의 협업·상의", "evidence_span": "기획자와 상의하여 조치한다"},
+    {"category": "신체적", "value": "물건 이동 등 육체적 노력", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"}
+  ]
+}

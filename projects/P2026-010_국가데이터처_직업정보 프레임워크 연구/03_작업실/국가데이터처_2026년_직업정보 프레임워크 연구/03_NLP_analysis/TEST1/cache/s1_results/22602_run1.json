@@ -1,0 +1,103 @@
+{
+  "ksco_code": "22602",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "텔레비전 방송장비",
+      "full_statement": "텔레비전의 방송장비를 조작한다.",
+      "source_sentence": "텔레비전의 방송장비를 조작하는 자로서",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "마이크로폰 및 앰프",
+      "full_statement": "마이크로폰 및 앰프를 조작한다.",
+      "source_sentence": "마이크로폰 및 앰프를 조작하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "유지하다",
+      "object": "음악·대화·음향효과 간 조화",
+      "full_statement": "음악, 대화 및 음향효과 사이에 조화를 유지한다.",
+      "source_sentence": "음악, 대화 및 음향효과 사이에 조화를 유지하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "계기 및 제어장치",
+      "full_statement": "TV 화면과 방송의 기술성능을 유지시키기 위하여 계기 및 제어장치를 조작한다.",
+      "source_sentence": "정규방송을 위한 TV 화면과 방송의 기술성능을 유지시키기 위하여 계기 및 제어장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "유지하다",
+      "object": "TV 화면 및 방송 기술성능",
+      "full_statement": "정규방송을 위한 TV 화면과 방송의 기술성능을 유지시킨다.",
+      "source_sentence": "정규방송을 위한 TV 화면과 방송의 기술성능을 유지시키기 위하여 계기 및 제어장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "라디오 관련 장비",
+      "full_statement": "라디오 관련 장비를 조작한다.",
+      "source_sentence": "라디오 관련 장비의 조작을 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "송신 장비 등 방송 송출 장비",
+      "full_statement": "송신 장비 등 방송 송출에 필요한 각종 장비를 관리한다.",
+      "source_sentence": "위성통신, 무선통신 장비, 송신 장비, 전신 장비, 무선기지국 관리에 필요한 각종 장비를 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "실시하다",
+      "object": "방송망 관제",
+      "full_statement": "방송 송출망의 관제를 실시한다.",
+      "source_sentence": "통신망의 관제를 실시하고 장애 발생 시 간단한 응급복구를 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "실시하다",
+      "object": "응급복구",
+      "full_statement": "장애 발생 시 간단한 응급복구를 실시한다.",
+      "source_sentence": "통신망의 관제를 실시하고 장애 발생 시 간단한 응급복구를 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "운용하다",
+      "object": "방송 송출망",
+      "full_statement": "방송장비를 이용하여 송출망을 운용한다.",
+      "source_sentence": "인공위성통신, 무선통신, 유선통신장비를 이용하여 통신망을 운용한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수행하다",
+      "object": "방송장비 운용·보수 기술업무",
+      "full_statement": "방송기술자의 관리 감독 하에 방송장비의 운용 및 보수에 관련된 기술적 업무를 수행한다.",
+      "source_sentence": "통신 및 방송기술자의 관리 감독 하에 통신 및 방송장비의 개발, 운용 및 보수에 관련된 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [
+    {"name": "마이크로폰", "category": "장비", "evidence_span": "마이크로폰 및 앰프를 조작하고"},
+    {"name": "앰프", "category": "장비", "evidence_span": "마이크로폰 및 앰프를 조작하고"},
+    {"name": "텔레비전 방송장비", "category": "장비", "evidence_span": "텔레비전의 방송장비를 조작하는 자로서"},
+    {"name": "계기", "category": "장비", "evidence_span": "기술성능을 유지시키기 위하여 계기 및 제어장치를 조작한다"},
+    {"name": "제어장치", "category": "장비", "evidence_span": "기술성능을 유지시키기 위하여 계기 및 제어장치를 조작한다"},
+    {"name": "송신 장비", "category": "장비", "evidence_span": "위성통신, 무선통신 장비, 송신 장비, 전신 장비, 무선기지국 관리에 필요한 각종 장비를 관리한다"},
+    {"name": "라디오 방송장비", "category": "장비", "evidence_span": "라디오 관련 장비의 조작을 포함한다"}
+  ],
+  "work_context": []
+}

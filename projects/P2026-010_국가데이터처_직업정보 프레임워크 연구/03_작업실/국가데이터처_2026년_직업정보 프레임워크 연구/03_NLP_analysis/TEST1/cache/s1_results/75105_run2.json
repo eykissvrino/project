@@ -1,0 +1,128 @@
+{
+  "ksco_code": "75105",
+  "tasks": [
+    {
+      "verb": "점검하다",
+      "object": "전기자동차 모터",
+      "full_statement": "전기자동차의 엔진이라 할 수 있는 모터를 점검한다.",
+      "source_sentence": "전기자동차의 엔진이라 할 수 있는 모터를 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "전기자동차 모터",
+      "full_statement": "전기자동차의 모터를 수리하여 정비한다.",
+      "source_sentence": "전기자동차의 엔진이라 할 수 있는 모터를 점검하고 수리하여 정비한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "진단하다",
+      "object": "모터 각 부분",
+      "full_statement": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험·측정 기구를 사용하여 모터 각 부분을 진단·검사한다.",
+      "source_sentence": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "비교검사하다",
+      "object": "고장부위",
+      "full_statement": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교·검사한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분해하다",
+      "object": "고장부위",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 고장부위를 분해한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "작동상태",
+      "full_statement": "수리 또는 교체의 필요성을 판단하기 위하여 작동상태를 평가한다.",
+      "source_sentence": "고장부위를 분해하고 수리 또는 교체의 필요성을 판단하기 위하여 명세서와 비교‧검사하고 작동상태를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "교체하다",
+      "object": "부품",
+      "full_statement": "부품을 교체한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수리하다",
+      "object": "사용가능 부품",
+      "full_statement": "사용가능한 부품은 수리한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "재조립하다",
+      "object": "부품",
+      "full_statement": "수리한 부품을 재조립한다.",
+      "source_sentence": "부품을 교체하거나 사용가능 부품은 수리하고 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "모터 성능",
+      "full_statement": "전기자동차의 모터의 성능을 검사한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수리하다",
+      "object": "모터",
+      "full_statement": "전기자동차의 모터의 성능을 검사하여 수리한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "교체하다",
+      "object": "모터",
+      "full_statement": "전기자동차의 모터의 성능을 검사하여 교체한다.",
+      "source_sentence": "전기자동차의 모터 및 배터리의 성능을 검사하여 수리하거나 교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "설치 또는 수리부분 작동상태",
+      "full_statement": "설치 또는 수리부분의 작동상태를 검사·확인한다.",
+      "source_sentence": "설치 또는 수리부분의 작동상태를 검사‧확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {
+      "name": "시험·측정 기구",
+      "category": "장비",
+      "evidence_span": "고장의 위치, 범위, 정도, 성격 등을 확인하기 위하여 시험‧측정 기구를 사용하여 각 부분을 진단·검사한다."
+    },
+    {
+      "name": "수공구",
+      "category": "도구",
+      "evidence_span": "자동차의 엔진 및 모터·배터리, 차체 그리고 관련 부품 등을 수공구 및 관련 장비를 사용하여 조정하고 교체하거나 수리하여 정비한다."
+    }
+  ],
+  "work_context": [
+    {
+      "category": "위험",
+      "value": "고전압(전기자동차 모터·배터리 취급)",
+      "evidence_span": "전기자동차의 엔진이라 할 수 있는 모터를 점검하고 수리하여 정비한다."
+    }
+  ]
+}

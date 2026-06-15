@@ -1,0 +1,93 @@
+{
+  "ksco_code": "84312",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "광학기구 유리 부속품 제조기계",
+      "full_statement": "정밀렌즈, 프리즘, 거울 등 광학기구의 유리 부속품을 제조하는 기계를 조작한다.",
+      "source_sentence": "정밀렌즈, 프리즘, 거울 등 광학기구의 유리 부속품을 제조하거나 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "광학기구 유리 부속품 가공기계",
+      "full_statement": "정밀렌즈, 프리즘, 거울 등 광학기구의 유리 부속품을 가공하는 기계를 조작한다.",
+      "source_sentence": "정밀렌즈, 프리즘, 거울 등 광학기구의 유리 부속품을 제조하거나 가공하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리 제조로",
+      "full_statement": "광학용 유리를 녹이기 위해 유리 제조로를 조작한다.",
+      "source_sentence": "유리 제조로를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리 소둔로",
+      "full_statement": "내부장력을 방지하거나 제거하기 위해 유리 소둔로를 조작한다.",
+      "source_sentence": "내부장력 방지 또는 제거용 유리 소둔로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "유리 성형용 기계",
+      "full_statement": "압축성형에 의해 렌즈 등 유리 부속품을 성형하기 위해 유리 성형용 기계를 조작한다.",
+      "source_sentence": "압축성형에 의한 유리 성형용 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "운전하다",
+      "object": "절단기",
+      "full_statement": "광학용 유리를 절단하기 위해 절단기를 운전·조작한다.",
+      "source_sentence": "판유리나 접합유리를 절단하기 위해 절단기를 운전‧조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "보강유리 경화로",
+      "full_statement": "유리 부속품을 강화하기 위해 보강유리 경화로를 조작한다.",
+      "source_sentence": "보강유리 경화로를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성하고 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성된 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "가공하다",
+      "object": "광학용 유리",
+      "full_statement": "식각 및 기타 가공을 통해 광학용 유리를 가공한다.",
+      "source_sentence": "유리솜 및 유리사 제조, 망입‧장식‧착색‧강화 또는 적층· 식각 및 기타 가공 유리를 생산하는 기계를 조작하기도 한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "유리 제조로", "category": "장비", "evidence_span": "유리 제조로를 조작한다."},
+    {"name": "유리 소둔로", "category": "장비", "evidence_span": "내부장력 방지 또는 제거용 유리 소둔로를 조작한다."},
+    {"name": "보강유리 경화로", "category": "장비", "evidence_span": "보강유리 경화로를 조작한다."},
+    {"name": "유리 성형용 기계", "category": "장비", "evidence_span": "압축성형에 의한 유리 성형용 기계를 조작한다."},
+    {"name": "절단기", "category": "장비", "evidence_span": "판유리나 접합유리를 절단하기 위해 절단기를 운전‧조작한다."}
+  ],
+  "work_context": []
+}

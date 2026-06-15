@@ -1,0 +1,98 @@
+{
+  "ksco_code": "29691",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "모임의 성격",
+      "full_statement": "모임의 성격, 인원, 배정시간 등을 파악한다.",
+      "source_sentence": "모임의 성격, 인원, 배정시간 등에 따라 프로그램을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "레크리에이션 프로그램",
+      "full_statement": "모임의 성격, 인원, 배정시간 등에 따라 레크리에이션 프로그램을 준비한다.",
+      "source_sentence": "모임의 성격, 인원, 배정시간 등에 따라 프로그램을 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "레크리에이션 프로그램",
+      "full_statement": "모임의 특성에 따라 레크리에이션 프로그램을 개발한다.",
+      "source_sentence": "모임의 특성에 따라 레크리에이션 프로그램을 개발한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보다",
+      "object": "오락프로그램의 사회",
+      "full_statement": "각종 모임에서 오락프로그램의 사회를 본다.",
+      "source_sentence": "오락프로그램의 사회를 보며 노래, 율동, 게임 등을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지도하다",
+      "object": "노래",
+      "full_statement": "모임 참가자에게 노래를 지도한다.",
+      "source_sentence": "오락프로그램의 사회를 보며 노래, 율동, 게임 등을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "율동",
+      "full_statement": "모임 참가자에게 율동을 지도한다.",
+      "source_sentence": "오락프로그램의 사회를 보며 노래, 율동, 게임 등을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지도하다",
+      "object": "게임",
+      "full_statement": "모임 참가자에게 게임을 지도한다.",
+      "source_sentence": "오락프로그램의 사회를 보며 노래, 율동, 게임 등을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "오락프로그램",
+      "full_statement": "양육시설, 노인요양시설, 군부대, 단체교육 등에 참가하여 오락프로그램을 진행한다.",
+      "source_sentence": "양육시설, 노인요양시설, 군부대, 단체교육 등에 참가하여 오락프로그램을 진행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "참가하다",
+      "object": "각종 시설 및 단체교육",
+      "full_statement": "양육시설, 노인요양시설, 군부대, 단체교육 등에 참가한다.",
+      "source_sentence": "양육시설, 노인요양시설, 군부대, 단체교육 등에 참가하여 오락프로그램을 진행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "계획하다",
+      "object": "오락프로그램",
+      "full_statement": "캠프, 사교모임 등에서 오락프로그램을 계획한다.",
+      "source_sentence": "캠프, 사교모임 등에서 오락프로그램을 계획하고 진행하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "각종 모임에서 사회를 보며 참가자를 대상으로 프로그램을 진행하는 대면 응대 업무",
+      "evidence_span": "각종 모임에서 오락프로그램의 사회를 보고 노래, 율동, 게임 등을 지도하며"
+    },
+    {
+      "category": "장소",
+      "value": "양육시설, 노인요양시설, 군부대, 단체교육 등 다양한 현장으로 이동하여 진행",
+      "evidence_span": "양육시설, 노인요양시설, 군부대, 단체교육 등에 참가하여 오락프로그램을 진행하기도 한다."
+    }
+  ]
+}

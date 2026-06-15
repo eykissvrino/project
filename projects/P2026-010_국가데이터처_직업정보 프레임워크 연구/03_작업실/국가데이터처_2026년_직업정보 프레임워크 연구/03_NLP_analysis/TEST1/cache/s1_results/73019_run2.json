@@ -1,0 +1,122 @@
+{
+  "ksco_code": "73019",
+  "tasks": [
+    {
+      "verb": "검수하다",
+      "object": "목재와 합판",
+      "full_statement": "규정된 규격에 따라 목재와 합판을 검수한다.",
+      "source_sentence": "규정된 규격에 따라 목재, 합판을 검수하고, 개개의 목재, 합판 또는 적재해 놓은 목재, 합판 위에 품질등급을 표시한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "표시하다",
+      "object": "품질등급",
+      "full_statement": "개개의 목재, 합판 또는 적재해 놓은 목재, 합판 위에 품질등급을 표시한다.",
+      "source_sentence": "규정된 규격에 따라 목재, 합판을 검수하고, 개개의 목재, 합판 또는 적재해 놓은 목재, 합판 위에 품질등급을 표시한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "표시하다",
+      "object": "불량품",
+      "full_statement": "기준치에 미달하는 목재와 합판을 표시하여 불량 처리한다.",
+      "source_sentence": "기준치에 미달하면 표시하여 불량 처리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "선별하다",
+      "object": "목재",
+      "full_statement": "품질등급에 따라 목재를 선별한다.",
+      "source_sentence": "목재 선별원·목재 등급원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "목재 품질",
+      "full_statement": "목재의 품질 상태를 검사한다.",
+      "source_sentence": "목재 검사원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검토하다",
+      "object": "도면과 명세서",
+      "full_statement": "재료의 형태, 치수 및 요구되는 기계가공을 결정하기 위하여 도면과 명세서를 검토·분석한다.",
+      "source_sentence": "재료의 형태, 치수 및 요구되는 기계가공을 결정하기 위하여 도면과 명세서를 검토·분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "절단하다",
+      "object": "목재",
+      "full_statement": "목재를 필요한 규격으로 절단한다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "뚫다",
+      "object": "구멍",
+      "full_statement": "목재에 필요한 구멍을 뚫는다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "대패질하다",
+      "object": "목재",
+      "full_statement": "목재를 대패질하여 표면을 가공한다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "수공구와 목공기계",
+      "full_statement": "다양한 수공구 및 목공기계를 조정·조작한다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "접착하다",
+      "object": "목재 부품",
+      "full_statement": "목재 부품을 접착한다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조립하다",
+      "object": "목제품",
+      "full_statement": "목재 부품을 조립하여 목제품을 제조한다.",
+      "source_sentence": "목재를 필요한 규격으로 절단하여 구멍을 뚫고, 대패질하며 다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "확인하다",
+      "object": "완성제품 품질",
+      "full_statement": "완성제품이 제작명세서와 일치하는지, 불량 및 결함이 있는지 품질 상태를 확인한다.",
+      "source_sentence": "완성제품이 제작명세서와 일치하는지, 불량 및 결함이 있는지 품질 상태를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수선하다",
+      "object": "부품과 완성품의 결함",
+      "full_statement": "부품 및 완성품의 결함을 수선한다.",
+      "source_sentence": "부품 및 완성품의 결함을 수선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다."},
+    {"name": "목공기계", "category": "장비", "evidence_span": "다양한 수공구 및 목공기계를 조정‧조작하여 접착‧조립한다."}
+  ],
+  "work_context": []
+}

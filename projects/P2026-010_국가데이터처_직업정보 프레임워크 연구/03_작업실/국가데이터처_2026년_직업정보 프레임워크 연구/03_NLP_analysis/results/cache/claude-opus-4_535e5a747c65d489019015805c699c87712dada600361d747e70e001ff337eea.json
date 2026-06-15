@@ -1,0 +1,21 @@
+{
+  "ksco_code": "28419",
+  "tasks": [
+    {
+      "verb": "감정하다",
+      "object": "동산",
+      "full_statement": "기계·자동차·선박 등의 경제적 가치를 감정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "평가하다",
+      "object": "기술 가치",
+      "full_statement": "지적재산권 등 기술이 창출하는 경제적 가치를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

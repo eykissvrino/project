@@ -1,0 +1,109 @@
+{
+  "ksco_code": "23321",
+  "tasks": [
+    {
+      "verb": "시험하다",
+      "object": "금속과 합금의 특성",
+      "full_statement": "금속과 합금의 특성을 시험한다.",
+      "source_sentence": "금속공학 기술자 및 연구원의 감독 하에 금속과 합금, 금속추출의 특성을 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "시험하다",
+      "object": "금속추출의 특성",
+      "full_statement": "금속추출의 특성을 시험한다.",
+      "source_sentence": "금속공학 기술자 및 연구원의 감독 하에 금속과 합금, 금속추출의 특성을 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지원하다",
+      "object": "금속·광석 관련 산업의 공정 설계",
+      "full_statement": "금속, 광석 등 관련 산업의 공정 설계를 지원한다.",
+      "source_sentence": "금속, 광석 등 관련 산업의 공정 설계나 개발을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지원하다",
+      "object": "금속·광석 관련 산업의 공정 개발",
+      "full_statement": "금속, 광석 등 관련 산업의 공정 개발을 지원한다.",
+      "source_sentence": "금속, 광석 등 관련 산업의 공정 설계나 개발을 지원한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "시험하다",
+      "object": "금속 및 재료 관련 새로운 제품",
+      "full_statement": "금속 및 재료 관련 새로운 제품을 시험한다.",
+      "source_sentence": "금속 및 재료 관련 새로운 제품을 시험하거나 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "금속 및 재료 관련 새로운 제품",
+      "full_statement": "금속 및 재료 관련 새로운 제품을 검사한다.",
+      "source_sentence": "금속 및 재료 관련 새로운 제품을 시험하거나 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "분석하다",
+      "object": "금속의 성분",
+      "full_statement": "금속의 성분을 분석한다.",
+      "source_sentence": "금속분석 시험원·금속표면처리 시험원",
+      "derived_from": "상속 주요업무→세세 예시(금속분석 시험원) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "시험하다",
+      "object": "금속의 물리적 특성",
+      "full_statement": "금속의 물리적 특성을 시험한다.",
+      "source_sentence": "금속물리 시험원",
+      "derived_from": "세세 예시(금속물리 시험원)→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "시험하다",
+      "object": "금속 표면처리 상태",
+      "full_statement": "금속의 표면처리 상태를 시험한다.",
+      "source_sentence": "금속분석 시험원·금속표면처리 시험원",
+      "derived_from": "세세 예시(금속표면처리 시험원)→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "시험하다",
+      "object": "금속 도금 상태",
+      "full_statement": "금속의 도금 상태를 시험한다.",
+      "source_sentence": "금속도금 시험원·금속탐상 시험원",
+      "derived_from": "세세 예시(금속도금 시험원)→세세정의 특화",
+      "confidence": 0.58
+    },
+    {
+      "verb": "검사하다",
+      "object": "금속의 결함",
+      "full_statement": "탐상을 통해 금속의 결함을 검사한다.",
+      "source_sentence": "금속도금 시험원·금속탐상 시험원",
+      "derived_from": "세세 예시(금속탐상 시험원)→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "금속 및 재료공학 기술자 및 연구원의 관리·감독 하에 기술적 업무를 수행한다.",
+      "source_sentence": "금속및 재료공학과 관련된 연구 및 개발과 관련하여 금속 및 재료공학 기술자 및 연구원의 관리‧감독하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "기술자 및 연구원의 감독 하 업무 수행(독립성 낮음)",
+      "evidence_span": "금속공학 기술자 및 연구원의 감독 하에 금속과 합금, 금속추출의 특성을 시험한다."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "ksco_code": "84153",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "인발기",
+      "full_statement": "인발기를 조절하여 특정 직경의 금속선을 제조하는 장치를 조작한다.",
+      "source_sentence": "인발기를 조절하여 특정 길이의 직경으로 된 금속선을 제조하는 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조절하다",
+      "object": "인발기",
+      "full_statement": "특정 직경의 금속선을 얻기 위하여 인발기를 조절한다.",
+      "source_sentence": "인발기를 조절하여 특정 길이의 직경으로 된 금속선을 제조하는 장치를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "연선 기계",
+      "full_statement": "연선 공정에서 관련 금속가공 기계를 조작한다.",
+      "source_sentence": "압연, 인발, 연선, 압출과 같은 금속 가공과 관련한 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "기기",
+      "full_statement": "금속가공 공정 중 해당 공정에서 관련 기기를 준비한다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기기",
+      "full_statement": "금속가공 공정 중 해당 공정에서 관련 기기를 조정한다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작동시키다",
+      "object": "기기",
+      "full_statement": "금속가공 공정 중 해당 공정에서 관련 기기를 작동시킨다.",
+      "source_sentence": "금속가공 전체 공정 중 해당 공정에서 관련 기기를 준비, 조정, 작동 시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관찰하다",
+      "object": "게이지·미터·컴퓨터출력물·비디오 모니터",
+      "full_statement": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰한다.",
+      "source_sentence": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고 적합한 제품이 만들어졌는가를 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품",
+      "full_statement": "적합한 제품이 만들어졌는가를 검사한다.",
+      "source_sentence": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고 적합한 제품이 만들어졌는가를 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기기",
+      "full_statement": "필요한 경우 기기를 조정한다.",
+      "source_sentence": "필요한 경우 기기를 조정하거나 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "기기",
+      "full_statement": "필요한 경우 기기를 수리한다.",
+      "source_sentence": "필요한 경우 기기를 조정하거나 수리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "제조하다",
+      "object": "케이블",
+      "full_statement": "케이블 제조기를 조작하여 케이블을 제조한다.",
+      "source_sentence": "케이블 제조기 조작원·와이어로프 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "와이어로프",
+      "full_statement": "와이어로프 제조기를 조작하여 와이어로프를 제조한다.",
+      "source_sentence": "케이블 제조기 조작원·와이어로프 제조기 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "인발기", "category": "장비", "evidence_span": "인발기를 조절하여 특정 길이의 직경으로 된 금속선을 제조하는 장치를 조작한다."},
+    {"name": "연선기", "category": "장비", "evidence_span": "압연, 인발, 연선, 압출과 같은 금속 가공과 관련한 기계를 조작한다."},
+    {"name": "게이지", "category": "도구", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "미터", "category": "도구", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "비디오 모니터", "category": "HW", "evidence_span": "게이지, 미터, 컴퓨터출력물, 비디오 모니터를 관찰하고"},
+    {"name": "케이블 제조기", "category": "장비", "evidence_span": "케이블 제조기 조작원·와이어로프 제조기 조작원"},
+    {"name": "와이어로프 제조기", "category": "장비", "evidence_span": "케이블 제조기 조작원·와이어로프 제조기 조작원"}
+  ],
+  "work_context": []
+}

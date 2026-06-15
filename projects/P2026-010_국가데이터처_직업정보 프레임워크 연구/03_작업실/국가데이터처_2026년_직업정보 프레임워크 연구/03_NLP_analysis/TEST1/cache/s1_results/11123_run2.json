@@ -1,0 +1,93 @@
+{
+  "ksco_code": "11123",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "특수 이익단체의 정책",
+      "full_statement": "정당조직, 노동조합, 경영자단체, 시민단체 등 특수 이익단체의 정책을 수립한다.",
+      "source_sentence": "전국망의 정당조직, 노동조합, 경영자단체, 환경보호나 시민운동을 하는 시민단체, 자선단체, 경기단체 등과 같은 특수 이익단체의 정책을 수립하고 그 집행을 관리하며 조직을 대표하고 대리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "정책 집행",
+      "full_statement": "수립한 정책의 집행을 관리한다.",
+      "source_sentence": "특수 이익단체의 정책을 수립하고 그 집행을 관리하며 조직을 대표하고 대리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "대표하다",
+      "object": "조직",
+      "full_statement": "특수 이익단체 조직을 대표한다.",
+      "source_sentence": "특수 이익단체의 정책을 수립하고 그 집행을 관리하며 조직을 대표하고 대리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "대리하다",
+      "object": "조직",
+      "full_statement": "특수 이익단체 조직을 대리한다.",
+      "source_sentence": "특수 이익단체의 정책을 수립하고 그 집행을 관리하며 조직을 대표하고 대리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "결정하다",
+      "object": "정당 및 단체의 정책·정관·규칙",
+      "full_statement": "정당 및 단체의 정책, 정관 및 규칙을 결정한다.",
+      "source_sentence": "정당 및 단체의 정책, 정관 및 규칙을 결정‧작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "작성하다",
+      "object": "정당 및 단체의 정책·정관·규칙",
+      "full_statement": "정당 및 단체의 정책, 정관 및 규칙을 작성한다.",
+      "source_sentence": "정당 및 단체의 정책, 정관 및 규칙을 결정‧작성한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "대변하다",
+      "object": "정당·단체 및 구성원의 이익",
+      "full_statement": "정당 및 단체, 그 구성원 및 해당 집단의 이익을 대변한다.",
+      "source_sentence": "정당 및 단체, 그 구성원 및 해당 집단의 이익을 대변한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조달하다",
+      "object": "운영자금",
+      "full_statement": "정당 및 단체의 운영자금을 조달한다.",
+      "source_sentence": "정당 및 단체를 대표하고 운영자금을 조달‧집행 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영자금 집행",
+      "full_statement": "정당 및 단체의 운영자금 집행을 관리한다.",
+      "source_sentence": "정당 및 단체를 대표하고 운영자금을 조달‧집행 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지휘하다",
+      "object": "정책 집행",
+      "full_statement": "수립한 단체 정책의 집행을 지휘한다.",
+      "source_sentence": "정당 및 특수단체 임원으로서 관련 단체의 정책을 수립하고 그 집행을 지휘하며 조직을 대표‧대리 한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "조직 대표·대리 등 대외 활동",
+      "evidence_span": "조직을 대표하고 대리한다"
+    }
+  ]
+}

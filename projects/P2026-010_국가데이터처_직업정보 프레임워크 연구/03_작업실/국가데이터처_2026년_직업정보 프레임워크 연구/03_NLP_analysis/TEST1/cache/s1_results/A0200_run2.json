@@ -1,0 +1,39 @@
+{
+  "ksco_code": "A0200",
+  "tasks": [
+    {
+      "verb": "유지하다",
+      "object": "군인 신분",
+      "full_statement": "현재 군인 신분을 유지한다.",
+      "source_sentence": "의무 복무 여부를 불문하고 현재 군인 신분을 유지하고 있는 군인을 말한다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "수행하다",
+      "object": "준위 계급의 군 직무",
+      "full_statement": "육·해·공군의 준위 계급으로서 군 직무를 수행한다.",
+      "source_sentence": "[세세분류 A0200 준사관] 육‧해‧공군의 준위를 포함한다.",
+      "derived_from": "세세분류 정의 + 조상정의(대분류 A 군인)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수행하다",
+      "object": "국방 관련 임무",
+      "full_statement": "국방과 관련된 군사 임무를 수행한다.",
+      "source_sentence": "국방과 관련된 정부기업에 고용된 민간인, 국가의 요청에 따라 단기간 군사훈련 또는 재훈련을 위해 일시적으로 소집된 자 및 예비군은 제외된다.",
+      "derived_from": "조상정의(대분류 A 군인)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "이행하다",
+      "object": "의무 복무 또는 직업 군 복무",
+      "full_statement": "의무 복무 여부와 무관하게 군 복무를 이행한다.",
+      "source_sentence": "직업 분류에서의 군인은 의무복무 여부를 구분하지 않은 모든 군인을 포괄한다.",
+      "derived_from": "조상정의(중분류 A0 군인)",
+      "confidence": 0.35
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28331",
+  "tasks": [
+    {
+      "verb": "자문하다",
+      "object": "광고 전략",
+      "full_statement": "기업·상품의 광고 필요성과 전략에 대해 전문 자문을 제공한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "작성하다",
+      "object": "광고 기획서",
+      "full_statement": "광고할 상품 자료를 조사·분석하여 광고 기획서를 작성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "결정하다",
+      "object": "제작 방향",
+      "full_statement": "광고주와 협의하여 광고의 제작방향을 결정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "광고 제작",
+      "full_statement": "광고의 제작계획을 수립하고 제작 상황을 감독한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "광고 효과",
+      "full_statement": "시행된 광고의 사후 효과를 조사하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

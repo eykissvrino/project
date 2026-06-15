@@ -1,0 +1,109 @@
+{
+  "ksco_code": "82124",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "염색기",
+      "full_statement": "직물과 실을 염색하기 위하여 염색기를 조작한다.",
+      "source_sentence": "직물, 실을 염색하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "투입하다",
+      "object": "피염물과 조액된 염료",
+      "full_statement": "피염물 및 조액된 염료를 염색기에 투입한다.",
+      "source_sentence": "피염물 및 조액된 염료를 염색기에 투입, 기계를 작동하여 일정한 온도 및 습도에서 염색하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작동하다",
+      "object": "기계",
+      "full_statement": "일정한 온도 및 습도에서 염색하기 위하여 기계를 작동한다.",
+      "source_sentence": "기계를 작동하여 일정한 온도 및 습도에서 염색하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관찰하다",
+      "object": "염색 과정",
+      "full_statement": "염색 상태를 확인하기 위하여 염색 과정을 관찰한다.",
+      "source_sentence": "염색 과정을 관찰하여 염색 상태가 불량할 경우 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "취하다",
+      "object": "조치",
+      "full_statement": "염색 상태가 불량할 경우 필요한 조치를 취한다.",
+      "source_sentence": "염색 과정을 관찰하여 염색 상태가 불량할 경우 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "세척하다",
+      "object": "피염물",
+      "full_statement": "염색이 완료된 후 피염물을 세척한다.",
+      "source_sentence": "염색이 완료된 후 피염물을 세척, 탈수 및 건조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "탈수하다",
+      "object": "피염물",
+      "full_statement": "염색이 완료된 후 피염물을 탈수한다.",
+      "source_sentence": "염색이 완료된 후 피염물을 세척, 탈수 및 건조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "건조하다",
+      "object": "피염물",
+      "full_statement": "염색이 완료된 후 피염물을 건조한다.",
+      "source_sentence": "염색이 완료된 후 피염물을 세척, 탈수 및 건조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "조작하다",
+      "object": "섬유제품 처리 기계",
+      "full_statement": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "source_sentence": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "직물 강화 기계",
+      "full_statement": "천을 수축하거나 섬유를 맞물리게 하여 직물을 강하게 하는 기계를 조작한다.",
+      "source_sentence": "천을 수축하거나 섬유를 맞물리게 하여, 직물을 강하게 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학물 침투 기계",
+      "full_statement": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "source_sentence": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    },
+    {
+      "verb": "조작하다",
+      "object": "실크 처리 기계",
+      "full_statement": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "source_sentence": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [
+    {"name": "염색기", "category": "장비", "evidence_span": "직물, 실을 염색하는 기계를 조작한다."},
+    {"name": "염료", "category": "도구", "evidence_span": "피염물 및 조액된 염료를 염색기에 투입"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "일정한 온도 및 습도 조건에서의 작업", "evidence_span": "기계를 작동하여 일정한 온도 및 습도에서 염색하며"},
+    {"category": "위험", "value": "염료 등 화학물질 취급", "evidence_span": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다."}
+  ]
+}

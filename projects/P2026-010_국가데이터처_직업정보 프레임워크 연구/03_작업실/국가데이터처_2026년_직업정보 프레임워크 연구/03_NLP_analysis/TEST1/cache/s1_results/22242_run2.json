@@ -1,0 +1,82 @@
+{
+  "ksco_code": "22242",
+  "tasks": [
+    {
+      "verb": "제작하다",
+      "object": "웹 프로그램",
+      "full_statement": "웹 기획자가 기획하고 웹 디자이너가 포맷을 잡은 내용을 웹상에서 그대로 보여주기 위해 필요한 프로그램을 제작한다.",
+      "source_sentence": "웹상에서 웹 기획자가 기획한대로 웹 디자이너가 포맷을 잡으면 이를 그대로 보여주기 위해 필요한 프로그램을 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "구축하다",
+      "object": "웹 서버",
+      "full_statement": "홈페이지 운영을 위해 웹 서버를 구축한다.",
+      "source_sentence": "웹 서버를 구축하고 홈페이지를 운영하려면 기술 부분과 내용 부분의 운영이 필요하다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "운영하다",
+      "object": "홈페이지의 기술 부분",
+      "full_statement": "홈페이지 운영에서 기술 부분의 운영을 담당한다.",
+      "source_sentence": "여기서 기술부분은 웹 개발자가 담당하고, 콘텐츠 및 디자인 기획은 웹 기획자가 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "갱신하다",
+      "object": "웹 기획자에게 제공되는 정보",
+      "full_statement": "웹 기획자에게 제공되는 정보를 지속적으로 갱신한다.",
+      "source_sentence": "또한 웹 기획자에게 제공되는 정보를 지속적으로 갱신해야 하고 고객관리 능력도 필요하다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객",
+      "full_statement": "홈페이지 운영과 관련하여 고객을 관리한다.",
+      "source_sentence": "또한 웹 기획자에게 제공되는 정보를 지속적으로 갱신해야 하고 고객관리 능력도 필요하다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "습득하다",
+      "object": "웹 신기술",
+      "full_statement": "웹 분야의 신기술을 습득한다.",
+      "source_sentence": "웹서버 구축 및 운영에 대한 기술적인 책임을 지며 웹의 신기술을 습득하고 적용하며, 시험하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "적용하다",
+      "object": "웹 신기술",
+      "full_statement": "습득한 웹 신기술을 실제 개발에 적용한다.",
+      "source_sentence": "웹의 신기술을 습득하고 적용하며, 시험하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "시험하다",
+      "object": "웹 신기술",
+      "full_statement": "적용한 웹 신기술을 시험한다.",
+      "source_sentence": "웹의 신기술을 습득하고 적용하며, 시험하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객관리(고객응대)",
+      "evidence_span": "웹 기획자에게 제공되는 정보를 지속적으로 갱신해야 하고 고객관리 능력도 필요하다."
+    },
+    {
+      "category": "사회적",
+      "value": "웹 기획자·웹 디자이너와의 협업(팀작업)",
+      "evidence_span": "기술부분은 웹 개발자가 담당하고, 콘텐츠 및 디자인 기획은 웹 기획자가 담당한다."
+    }
+  ]
+}

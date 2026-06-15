@@ -1,0 +1,21 @@
+[embed] 캐시 사용: (16168, 1024)
+[linkage] pdist(cosine) 16168×16168 → condensed 130,694,028쌍 …
+[linkage] average linkage 계산 중…
+[linkage] 저장: (16167, 4) → cache\linkage.npy
+[cut] k=1510 (band 1347~2694) → 실제 군집 1510개
+[adopt] 채택 DWA 1192 · 미채택군집 task 430 (최근접 채택DWA로 재배정)
+[mlink] τ=0.81 → 평균 연결 1.304/task (목표 1.3, ONET 1.26)
+
+── Stage2 군집 요약 ──
+  n_task: 16168
+  k_cut: 1510
+  n_dwa: 1192
+  band: [1347, 2694]
+  tau: 0.81
+  avg_links: 1.304
+  cohesion_median: 0.8949
+  cohesion_ge_070: 1192
+  cross_family: 494
+  cross_family_pct: 0.4144
+  ratio_task_per_dwa: 13.56
+  명명요청 1192건 → cache\s2_requests

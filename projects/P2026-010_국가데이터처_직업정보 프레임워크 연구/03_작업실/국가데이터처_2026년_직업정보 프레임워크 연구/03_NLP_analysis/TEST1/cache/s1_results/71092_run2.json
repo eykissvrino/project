@@ -1,0 +1,119 @@
+{
+  "ksco_code": "71092",
+  "tasks": [
+    {
+      "verb": "썰다",
+      "object": "어류",
+      "full_statement": "어류를 잘게 썰어 가공 재료를 준비한다.",
+      "source_sentence": "어류를 잘게 썰거나 갈아서 생선소시지나 생선어묵 등을 제조하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "갈다",
+      "object": "어류",
+      "full_statement": "어류를 갈아서 가공용 어육을 만든다.",
+      "source_sentence": "어류를 잘게 썰거나 갈아서 생선소시지나 생선어묵 등을 제조하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "생선소시지",
+      "full_statement": "어육을 가공하여 생선소시지를 제조한다.",
+      "source_sentence": "어류를 잘게 썰거나 갈아서 생선소시지나 생선어묵 등을 제조하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제조하다",
+      "object": "생선어묵",
+      "full_statement": "어육을 가공하여 생선어묵을 제조한다.",
+      "source_sentence": "어류를 잘게 썰거나 갈아서 생선소시지나 생선어묵 등을 제조하거나",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "가공하다",
+      "object": "해수 수산품",
+      "full_statement": "해수 수산품을 판매 또는 저장을 위해 가공한다.",
+      "source_sentence": "해수 및 담수 수산품을 판매 또는 저장을 위해 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "가공하다",
+      "object": "담수 수산품",
+      "full_statement": "담수 수산품을 판매 또는 저장을 위해 가공한다.",
+      "source_sentence": "해수 및 담수 수산품을 판매 또는 저장을 위해 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "가공하다",
+      "object": "해조류",
+      "full_statement": "해조류를 가공한다.",
+      "source_sentence": "또한 해조류를 가공하는 직무도 여기에 포함한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "생선뼈",
+      "full_statement": "생선의 뼈를 제거한다.",
+      "source_sentence": "생선뼈 제거원·생선 절단원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "절단하다",
+      "object": "생선",
+      "full_statement": "생선을 용도에 맞게 절단한다.",
+      "source_sentence": "생선뼈 제거원·생선 절단원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "건조하다",
+      "object": "수산물",
+      "full_statement": "수산물을 건조하여 저장성을 높인다.",
+      "source_sentence": "수산물 건조원·한천 제조원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.78
+    },
+    {
+      "verb": "제조하다",
+      "object": "한천",
+      "full_statement": "해조류를 원료로 한천을 제조한다.",
+      "source_sentence": "수산물 건조원·한천 제조원",
+      "derived_from": "세세분류 직업 예시→세세정의(해조류 가공) 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "가공하다",
+      "object": "김",
+      "full_statement": "김을 가공한다.",
+      "source_sentence": "김 가공원·어묵 제조원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.8
+    },
+    {
+      "verb": "염장하다",
+      "object": "어류",
+      "full_statement": "어류를 소금에 절여 염장한다.",
+      "source_sentence": "어류 염장원",
+      "derived_from": "세세분류 직업 예시→세세정의(저장을 위한 가공) 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "저장하다",
+      "object": "수산품",
+      "full_statement": "가공한 수산품을 저장 처리한다.",
+      "source_sentence": "해수 및 담수 수산품을 판매 또는 저장을 위해 가공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

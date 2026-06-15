@@ -1,0 +1,173 @@
+{
+  "ksco_code": "23513",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "냉난방·환기·공기조절용 장비",
+      "full_statement": "건물에 사용되는 냉난방, 환기 및 공기조절용 장비에 관하여 연구한다.",
+      "source_sentence": "산업용, 상업용, 주거용 등의 건물에 사용되는 냉난방, 환기 및 공기조절용 장비와 제빙, 선박의 화물 창고를 포함한 냉장 시설에 관하여 연구, 설계, 자문을 하고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설계하다",
+      "object": "냉난방·환기·공기조절용 장비",
+      "full_statement": "건물에 사용되는 냉난방, 환기 및 공기조절용 장비를 설계한다.",
+      "source_sentence": "산업용, 상업용, 주거용 등의 건물에 사용되는 냉난방, 환기 및 공기조절용 장비와 제빙, 선박의 화물 창고를 포함한 냉장 시설에 관하여 연구, 설계, 자문을 하고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "설계하다",
+      "object": "냉장 시설",
+      "full_statement": "제빙 및 선박의 화물 창고를 포함한 냉장 시설을 설계한다.",
+      "source_sentence": "냉난방, 환기 및 공기조절용 장비와 제빙, 선박의 화물 창고를 포함한 냉장 시설에 관하여 연구, 설계, 자문을 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "냉난방·공조·냉장 시설",
+      "full_statement": "냉난방, 환기, 공기조절용 장비 및 냉장 시설에 관하여 자문한다.",
+      "source_sentence": "냉난방, 환기 및 공기조절용 장비와 제빙, 선박의 화물 창고를 포함한 냉장 시설에 관하여 연구, 설계, 자문을 하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기획하다",
+      "object": "장비의 개발·제조",
+      "full_statement": "냉난방·공조·냉장 장비의 개발 및 제조를 기획한다.",
+      "source_sentence": "이들의 개발, 제조, 유지 및 수리를 기획, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "관리하다",
+      "object": "장비의 유지·수리",
+      "full_statement": "냉난방·공조·냉장 장비의 유지 및 수리를 관리한다.",
+      "source_sentence": "이들의 개발, 제조, 유지 및 수리를 기획, 관리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.89
+    },
+    {
+      "verb": "연구하다",
+      "object": "기계 시스템의 실현가능성·성능",
+      "full_statement": "냉난방·공조 기계 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "source_sentence": "메커니즘(기계류), 구성요소, 시스템의 실현가능성, 설계, 운영 및 성능에 관해 연구한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "견적서·보고서",
+      "full_statement": "재료, 비용, 견적서 및 보고서를 작성한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설계하다",
+      "object": "기계 및 시스템 세부사항",
+      "full_statement": "냉난방·공조 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "source_sentence": "재료, 비용, 견적서, 보고서를 작성하고 기계 및 시스템에 대한 세부사항을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "기계 시스템의 설치·변경",
+      "full_statement": "건설 현장이나 산업설비에서 냉난방·공조 기계 시스템의 설치, 변경, 위탁을 감독한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "검사하다",
+      "object": "기계 시스템의 설치",
+      "full_statement": "건설 현장이나 산업설비에서 냉난방·공조 기계 시스템의 설치를 검사한다.",
+      "source_sentence": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조사하다",
+      "object": "기계적 고장·관리 문제",
+      "full_statement": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "source_sentence": "기계적 고장이나 예상치 못한 관리 문제를 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "계약 서류",
+      "full_statement": "계약 서류를 작성한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "평가하다",
+      "object": "제안서",
+      "full_statement": "산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "source_sentence": "계약 서류를 작성하고 산업건설이나 유지관리에 대한 제안서를 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "기술자 및 엔지니어",
+      "full_statement": "기술자 및 다른 엔지니어를 감독한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검토하다",
+      "object": "설계·계산·견적서",
+      "full_statement": "설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "source_sentence": "기술자 및 다른 엔지니어를 감독하고 설계, 계산 및 비용 견적서를 검토하고 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "개발하다",
+      "object": "열교환기",
+      "full_statement": "냉난방·공조 시스템에 사용되는 열교환기를 개발한다.",
+      "source_sentence": "열교환기 설계원·클린룸공조설비 설계기술자 / 열교환기 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "설계하다",
+      "object": "클린룸 공조 설비",
+      "full_statement": "클린룸용 공조 설비를 설계한다.",
+      "source_sentence": "클린룸공조설비 설계기술자 / 클린룸공조 설계원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "개발하다",
+      "object": "가스히팅펌프(GHP)",
+      "full_statement": "가스히팅펌프(GHP)를 개발한다.",
+      "source_sentence": "가스히팅펌프(GHP) 개발자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.73
+    },
+    {
+      "verb": "설계하다",
+      "object": "공기정화 장치",
+      "full_statement": "공기정화 장치를 설계한다.",
+      "source_sentence": "공기정화설계 기술자",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설 현장 또는 산업설비",
+      "evidence_span": "건설 현장이나 산업설비에서 기계시스템의 설치, 변경, 위탁을 감독하고 검사한다."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "ksco_code": "42220",
+  "tasks": [
+    {
+      "verb": "목욕시키다",
+      "object": "거동이 불편한 환자",
+      "full_statement": "거동이 불편한 환자를 목욕시킨다.",
+      "source_sentence": "거동이 불편한 환자를 목욕시키고 옷을 갈아입히며, 병실을 청소하고 침대보를 바꾼다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "갈아입히다",
+      "object": "환자의 옷",
+      "full_statement": "거동이 불편한 환자의 옷을 갈아입힌다.",
+      "source_sentence": "거동이 불편한 환자를 목욕시키고 옷을 갈아입히며, 병실을 청소하고 침대보를 바꾼다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "청소하다",
+      "object": "병실",
+      "full_statement": "병실을 청소한다.",
+      "source_sentence": "거동이 불편한 환자를 목욕시키고 옷을 갈아입히며, 병실을 청소하고 침대보를 바꾼다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "바꾸다",
+      "object": "침대보",
+      "full_statement": "침대보를 바꾼다.",
+      "source_sentence": "거동이 불편한 환자를 목욕시키고 옷을 갈아입히며, 병실을 청소하고 침대보를 바꾼다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "준비하다",
+      "object": "약이나 음식",
+      "full_statement": "약이나 음식을 준비한다.",
+      "source_sentence": "약이나 음식을 준비하여 환자에게 먹이고 음‧식료를 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "먹이다",
+      "object": "환자에게 약이나 음식",
+      "full_statement": "준비한 약이나 음식을 환자에게 먹인다.",
+      "source_sentence": "약이나 음식을 준비하여 환자에게 먹이고 음‧식료를 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "공급하다",
+      "object": "음‧식료",
+      "full_statement": "환자에게 음‧식료를 공급한다.",
+      "source_sentence": "약이나 음식을 준비하여 환자에게 먹이고 음‧식료를 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "마사지하다",
+      "object": "환자의 등",
+      "full_statement": "환자의 등을 마사지한다.",
+      "source_sentence": "등 마사지 및 운동 또는 대소변을 수발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "운동시키다",
+      "object": "환자",
+      "full_statement": "환자의 운동을 돕는다.",
+      "source_sentence": "등 마사지 및 운동 또는 대소변을 수발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수발하다",
+      "object": "환자의 대소변",
+      "full_statement": "환자의 대소변을 수발한다.",
+      "source_sentence": "등 마사지 및 운동 또는 대소변을 수발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "동행하다",
+      "object": "통원치료 환자",
+      "full_statement": "통원치료 시 환자와 동행한다.",
+      "source_sentence": "통원치료 시 환자와 동행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돌보다",
+      "object": "병원이나 가정의 환자",
+      "full_statement": "병원이나 가정에서 환자들을 돌본다.",
+      "source_sentence": "병원이나 가정에서 환자들을 돌보는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지원하다",
+      "object": "일상생활을 혼자 수행하기 어려운 성인의 신체활동 및 일상생활",
+      "full_statement": "일상생활을 혼자서 수행하기 어려운 성인에게 신체활동 및 일상생활을 지원한다.",
+      "source_sentence": "고령이나 노인성 질환 등을 사유로 일상생활을 혼자서 수행하기 어려운 성인에게 신체활동 및 일상생활을 지원하거나, 병원, 요양소, 기타 관련기관 및 가정에서 환자들을 돌보는 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "병원·가정 등 실내(환자 거주·치료 공간)",
+      "evidence_span": "병원이나 가정에서 환자들을 돌보는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "환자 대상 대인 돌봄 서비스(고객·대상자 응대)",
+      "evidence_span": "병원이나 가정에서 환자들을 돌보는 업무를 수행한다."
+    },
+    {
+      "category": "신체적",
+      "value": "거동이 불편한 환자를 목욕·이동시키는 신체 부담 동반",
+      "evidence_span": "거동이 불편한 환자를 목욕시키고 옷을 갈아입히며"
+    },
+    {
+      "category": "장소",
+      "value": "통원치료 동행 등 이동",
+      "evidence_span": "통원치료 시 환자와 동행한다."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "ksco_code": "45130",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "고객이 주문한 조리메뉴",
+      "full_statement": "고객이 주문한 조리메뉴를 확인한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "조리에 필요한 재료",
+      "full_statement": "조리에 필요한 재료를 준비한다.",
+      "source_sentence": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "각종 식료품",
+      "full_statement": "서양식 요리를 만들기 위하여 각종 식료품을 준비한다.",
+      "source_sentence": "각종 육류, 면류 등의 서양식 요리를 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "익히다",
+      "object": "각종 식료품",
+      "full_statement": "각종 식료품을 익힌다.",
+      "source_sentence": "각종 육류, 면류 등의 서양식 요리를 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조리하다",
+      "object": "서양식 요리",
+      "full_statement": "각종 육류, 면류 등의 서양식 요리를 조리한다.",
+      "source_sentence": "각종 육류, 면류 등의 서양식 요리를 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "튀기다",
+      "object": "양식 요리",
+      "full_statement": "양식 요리를 튀기는 방식으로 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 양식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "굽다",
+      "object": "양식 요리",
+      "full_statement": "양식 요리를 굽는 방식으로 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 양식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "볶다",
+      "object": "양식 요리",
+      "full_statement": "양식 요리를 볶는 방식으로 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 양식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "끓이다",
+      "object": "양식 요리",
+      "full_statement": "양식 요리를 끓이는 방식으로 조리한다.",
+      "source_sentence": "튀기고, 굽고, 볶고, 끓이는 등의 방식으로 양식 요리를 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조리하다",
+      "object": "육류 요리",
+      "full_statement": "각종 육류를 이용한 서양식 요리를 조리한다.",
+      "source_sentence": "각종 육류, 면류 등의 서양식 요리를 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조리하다",
+      "object": "면류 요리",
+      "full_statement": "면류를 이용한 서양식 요리를 조리한다.",
+      "source_sentence": "각종 육류, 면류 등의 서양식 요리를 만들기 위하여 각종 식료품을 준비하고 익히고 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "호텔·레스토랑·양식점 주방",
+      "evidence_span": "호텔, 레스토랑, 양식점 등에서 각종 육류, 면류 등의 서양식 요리를 만들기 위하여"
+    },
+    {
+      "category": "사회적",
+      "value": "고객 주문 응대",
+      "evidence_span": "고객이 주문한 조리메뉴를 확인하고 조리에 필요한 재료를 준비한다."
+    }
+  ]
+}

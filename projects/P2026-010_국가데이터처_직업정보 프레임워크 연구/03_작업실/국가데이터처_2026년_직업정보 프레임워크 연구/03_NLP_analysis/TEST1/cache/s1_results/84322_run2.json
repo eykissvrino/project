@@ -1,0 +1,123 @@
+{
+  "ksco_code": "84322",
+  "tasks": [
+    {
+      "verb": "성형하다",
+      "object": "특정 모형의 벽돌 및 타일",
+      "full_statement": "손으로 특정 모형의 벽돌 및 타일을 성형한다.",
+      "source_sentence": "손으로 특정 모형의 벽돌 및 타일을 성형하거나, 벽돌과 타일을 적당한 경도로 굽기 위한 소성로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "소성로",
+      "full_statement": "벽돌과 타일을 적당한 경도로 굽기 위한 소성로를 조작한다.",
+      "source_sentence": "손으로 특정 모형의 벽돌 및 타일을 성형하거나, 벽돌과 타일을 적당한 경도로 굽기 위한 소성로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "점토가공용 기계",
+      "full_statement": "도기 및 벽돌생산을 위한 점토가공용 기계를 조작한다.",
+      "source_sentence": "도기 및 벽돌생산을 위한 점토가공용 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(벽돌·타일 점토가공)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "적재하다",
+      "object": "성형제품",
+      "full_statement": "가마에 성형제품을 적재한다.",
+      "source_sentence": "가마에 성형제품을 적재하거나 적재된 대차를 가마 또는 로에 투입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "투입하다",
+      "object": "적재된 대차",
+      "full_statement": "적재된 대차를 가마 또는 로에 투입한다.",
+      "source_sentence": "가마에 성형제품을 적재하거나 적재된 대차를 가마 또는 로에 투입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점화하다",
+      "object": "가스나 오일분사기",
+      "full_statement": "가스나 오일분사기를 점화하여 로를 가동한다.",
+      "source_sentence": "가스나 오일분사기를 점화하여 로를 가동한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조절하다",
+      "object": "연료공급과 공기량",
+      "full_statement": "연료공급과 공기량을 조절하여 가마의 온도를 조절한다.",
+      "source_sentence": "연료공급과 공기량을 조절하여 가마의 온도를 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관찰하다",
+      "object": "재료의 용융상태 또는 소성상태",
+      "full_statement": "관찰 창을 통하여 재료의 용융상태 또는 소성상태를 관찰한다.",
+      "source_sentence": "관찰 창을 통하여 재료의 용융상태 또는 소성상태를 관찰하고 원료의 투입량과 가열온도를 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조절하다",
+      "object": "원료의 투입량과 가열온도",
+      "full_statement": "원료의 투입량과 가열온도를 조절한다.",
+      "source_sentence": "관찰 창을 통하여 재료의 용융상태 또는 소성상태를 관찰하고 원료의 투입량과 가열온도를 조절한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "로 또는 가마",
+      "full_statement": "로 또는 가마를 점검한다.",
+      "source_sentence": "로 또는 가마를 점검하고 고장난 부분을 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정비하다",
+      "object": "고장난 부분",
+      "full_statement": "고장난 부분을 정비한다.",
+      "source_sentence": "로 또는 가마를 점검하고 고장난 부분을 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성하고 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "소성로", "category": "장비", "evidence_span": "벽돌과 타일을 적당한 경도로 굽기 위한 소성로를 조작한다"},
+    {"name": "점토가공용 기계", "category": "장비", "evidence_span": "도기 및 벽돌생산을 위한 점토가공용 기계를 조작한다"},
+    {"name": "가마", "category": "장비", "evidence_span": "가마에 성형제품을 적재하거나 적재된 대차를 가마 또는 로에 투입한다"},
+    {"name": "로", "category": "장비", "evidence_span": "적재된 대차를 가마 또는 로에 투입한다"},
+    {"name": "대차", "category": "장비", "evidence_span": "적재된 대차를 가마 또는 로에 투입한다"},
+    {"name": "가스분사기", "category": "장비", "evidence_span": "가스나 오일분사기를 점화하여 로를 가동한다"},
+    {"name": "오일분사기", "category": "장비", "evidence_span": "가스나 오일분사기를 점화하여 로를 가동한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "고온 소성·가열 작업(소성로·가마 가동)", "evidence_span": "벽돌과 타일을 적당한 경도로 굽기 위한 소성로를 조작한다"},
+    {"category": "위험", "value": "가스·오일 연료 점화 취급", "evidence_span": "가스나 오일분사기를 점화하여 로를 가동한다"},
+    {"category": "신체적", "value": "손 성형 등 수작업", "evidence_span": "손으로 특정 모형의 벽돌 및 타일을 성형하거나"}
+  ]
+}

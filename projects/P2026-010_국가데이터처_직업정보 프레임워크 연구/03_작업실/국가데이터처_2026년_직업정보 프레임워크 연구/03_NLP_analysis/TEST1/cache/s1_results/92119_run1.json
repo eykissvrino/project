@@ -1,0 +1,110 @@
+{
+  "ksco_code": "92119",
+  "tasks": [
+    {
+      "verb": "운반하다",
+      "object": "사무실 또는 가정용 가구 및 기기",
+      "full_statement": "한 장소에서 다른 장소로 옮기기 위하여 사무실 또는 가정용 가구 및 기기를 운반한다.",
+      "source_sentence": "한 장소에서 다른 장소로 운반하기 위하여 사무실 또는 가정용 가구 및 기기를 운반, 하역하는 직무가 여기에 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "하역하다",
+      "object": "사무실 또는 가정용 가구 및 기기",
+      "full_statement": "사무실 또는 가정용 가구 및 기기를 하역한다.",
+      "source_sentence": "한 장소에서 다른 장소로 운반하기 위하여 사무실 또는 가정용 가구 및 기기를 운반, 하역하는 직무가 여기에 포함된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "계획하다",
+      "object": "화물의 처리방법 및 적재순서",
+      "full_statement": "화물의 크기와 종류에 따라 처리방법과 적재순서를 계획한다.",
+      "source_sentence": "화물의 크기와 종류에 따라 처리방법, 적재순서를 계획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적재하다",
+      "object": "화물",
+      "full_statement": "자동차, 선박, 항공기에 화물을 적재한다.",
+      "source_sentence": "자동차, 선박, 항공기에 화물을 적재, 하역하거나 운반 장치 및 적재 장치에 화물을 올려놓고 물품의 이동을 주시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "하역하다",
+      "object": "화물",
+      "full_statement": "자동차, 선박, 항공기에서 화물을 하역한다.",
+      "source_sentence": "자동차, 선박, 항공기에 화물을 적재, 하역하거나 운반 장치 및 적재 장치에 화물을 올려놓고 물품의 이동을 주시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "올려놓다",
+      "object": "화물",
+      "full_statement": "운반 장치 및 적재 장치에 화물을 올려놓는다.",
+      "source_sentence": "자동차, 선박, 항공기에 화물을 적재, 하역하거나 운반 장치 및 적재 장치에 화물을 올려놓고 물품의 이동을 주시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "주시하다",
+      "object": "물품의 이동",
+      "full_statement": "물품의 이동을 주시한다.",
+      "source_sentence": "자동차, 선박, 항공기에 화물을 적재, 하역하거나 운반 장치 및 적재 장치에 화물을 올려놓고 물품의 이동을 주시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "포장하다",
+      "object": "상품",
+      "full_statement": "손 또는 각종 포장기계를 사용하여 상품을 포장한다.",
+      "source_sentence": "손 또는 각종 포장기계를 사용하여 상품을 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "붙이다",
+      "object": "화물표",
+      "full_statement": "물품에 화물표를 붙인다.",
+      "source_sentence": "물품에 화물표를 붙이고, 취급물품의 기록을 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "유지하다",
+      "object": "취급물품의 기록",
+      "full_statement": "취급물품의 기록을 유지한다.",
+      "source_sentence": "물품에 화물표를 붙이고, 취급물품의 기록을 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "포장하다",
+      "object": "이삿짐",
+      "full_statement": "이삿짐을 포장한다.",
+      "source_sentence": "이삿짐을 포장하거나 옮기는 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "옮기다",
+      "object": "이삿짐",
+      "full_statement": "이삿짐을 옮긴다.",
+      "source_sentence": "이삿짐을 포장하거나 옮기는 직무도 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "포장기계", "category": "장비", "evidence_span": "손 또는 각종 포장기계를 사용하여 상품을 포장한다."},
+    {"name": "운반 장치", "category": "장비", "evidence_span": "운반 장치 및 적재 장치에 화물을 올려놓고"},
+    {"name": "적재 장치", "category": "장비", "evidence_span": "운반 장치 및 적재 장치에 화물을 올려놓고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "상당한 육체적 노력이 요구되는 중량물 취급", "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고"},
+    {"category": "장소", "value": "한 장소에서 다른 장소로 운반(이동 작업)", "evidence_span": "한 장소에서 다른 장소로 운반하기 위하여"}
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "ksco_code": "76120",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "가전제품",
+      "full_statement": "텔레비전, 냉장고, 세탁기 등 가전제품을 설치한다.",
+      "source_sentence": "텔레비전, 냉장고, 세탁기 등 가전제품을 설치해 주고, 시운전하여 작동상태를 확인한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "시운전하다",
+      "object": "가전제품",
+      "full_statement": "설치한 가전제품을 시운전하여 작동상태를 확인한다.",
+      "source_sentence": "텔레비전, 냉장고, 세탁기 등 가전제품을 설치해 주고, 시운전하여 작동상태를 확인한다.",
+      "derived_from": "세세분류 정의 + 상속 주요업무(가전제품을 시운전하여 작동상태를 확인하고…)",
+      "confidence": 0.96
+    },
+    {
+      "verb": "수리하다",
+      "object": "오작동 가전제품",
+      "full_statement": "오작동되는 경우 부품교체나 납땜 등을 이용하여 가전제품을 수리한다.",
+      "source_sentence": "오작동되는 경우에는 부품교체나 납땜 등을 이용하여 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.96
+    },
+    {
+      "verb": "확인하다",
+      "object": "파손부위",
+      "full_statement": "각종 전기‧전자 계측기를 사용하여 파손부위를 확인한다.",
+      "source_sentence": "각종 전기‧전자 계측기를 사용하여 파손부위를 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "분리하다",
+      "object": "파손된 부품",
+      "full_statement": "드라이버, 렌치 등의 수동공구를 사용하여 파손된 부품을 분리한다.",
+      "source_sentence": "드라이버, 렌치 등의 수동공구를 사용하여 파손된 부품을 분리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "교체하다",
+      "object": "파손된 부품",
+      "full_statement": "전기인두를 사용하여 파손된 부품을 교체한다.",
+      "source_sentence": "전기인두(납으로 각종 전자부품을 용접하는 장치)를 사용하여 파손된 부품을 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "재조립하다",
+      "object": "가전제품",
+      "full_statement": "수동공구를 사용하여 가전제품을 재조립한다.",
+      "source_sentence": "가전제품을 시운전하여 작동상태를 확인하고 수동공구를 사용하여 재조립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "교체 부품 종류 및 수량",
+      "full_statement": "교체한 부품의 종류 및 수량을 작업일지에 기록한다.",
+      "source_sentence": "교체한 부품의 종류 및 수량을 작업일지에 기록하고 수리비용을 산출한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "산출하다",
+      "object": "수리비용",
+      "full_statement": "수리 내역을 바탕으로 수리비용을 산출한다.",
+      "source_sentence": "교체한 부품의 종류 및 수량을 작업일지에 기록하고 수리비용을 산출한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    }
+  ],
+  "tools": [
+    {"name": "전기‧전자 계측기", "category": "장비", "evidence_span": "각종 전기‧전자 계측기를 사용하여 파손부위를 확인한다."},
+    {"name": "드라이버", "category": "도구", "evidence_span": "드라이버, 렌치 등의 수동공구를 사용하여 파손된 부품을 분리한다."},
+    {"name": "렌치", "category": "도구", "evidence_span": "드라이버, 렌치 등의 수동공구를 사용하여 파손된 부품을 분리한다."},
+    {"name": "수동공구", "category": "도구", "evidence_span": "드라이버, 렌치 등의 수동공구를 사용하여 파손된 부품을 분리한다."},
+    {"name": "전기인두", "category": "장비", "evidence_span": "전기인두(납으로 각종 전자부품을 용접하는 장치)를 사용하여 파손된 부품을 교체한다."},
+    {"name": "작업일지", "category": "도구", "evidence_span": "교체한 부품의 종류 및 수량을 작업일지에 기록하고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "납땜·부품 용접 등 정밀 작업", "evidence_span": "오작동되는 경우에는 부품교체나 납땜 등을 이용하여 수리한다."},
+    {"category": "이동", "value": "가전제품 설치 현장 방문 작업", "evidence_span": "텔레비전, 냉장고, 세탁기 등 가전제품을 설치해 주고"}
+  ]
+}

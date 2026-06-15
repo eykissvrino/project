@@ -1,0 +1,103 @@
+{
+  "ksco_code": "29472",
+  "tasks": [
+    {
+      "verb": "고안하다",
+      "object": "무용 동작",
+      "full_statement": "노래나 음악에 맞추어 무용의 동작을 고안한다.",
+      "source_sentence": "노래나 음악에 맞추어서 무용의 동작을 고안하여 연기자에게 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "가르치다",
+      "object": "연기자",
+      "full_statement": "고안한 무용의 동작을 연기자에게 가르친다.",
+      "source_sentence": "노래나 음악에 맞추어서 무용의 동작을 고안하여 연기자에게 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "구성하다",
+      "object": "춤",
+      "full_statement": "리듬과 악센트가 담긴 동작으로 표현하려는 이미지를 감정을 곁들여 춤으로 구성한다.",
+      "source_sentence": "리듬과 악센트가 담긴 동작으로 표현하려는 이미지를 감정을 곁들어 춤으로 구성한다.",
+      "derived_from": "상속 주요업무(안무가)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "선택하다",
+      "object": "연기자",
+      "full_statement": "특수한 역할을 맡을 수 있는 연기자를 선택한다.",
+      "source_sentence": "특수한 역할을 맡을 수 있는 연기자를 선택하거나 자신이 직접 춤을 추기도 한다.",
+      "derived_from": "상속 주요업무(안무가)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추다",
+      "object": "춤",
+      "full_statement": "필요에 따라 자신이 직접 춤을 춘다.",
+      "source_sentence": "특수한 역할을 맡을 수 있는 연기자를 선택하거나 자신이 직접 춤을 추기도 한다.",
+      "derived_from": "상속 주요업무(안무가)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지휘하다",
+      "object": "무대공연",
+      "full_statement": "전문적인 지식을 활용하여 무대공연을 지휘한다.",
+      "source_sentence": "전문적인 지식을 활용하여 무대공연을 지휘하기도 한다.",
+      "derived_from": "상속 주요업무(안무가)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "고안하다",
+      "object": "춤",
+      "full_statement": "무대‧영화‧텔레비전 등에서 공연하기 위하여 춤을 고안한다.",
+      "source_sentence": "무대‧영화‧텔레비전 등에서 공연하기 위하여 춤을 고안하거나 가르친다.",
+      "derived_from": "조상정의(세분류 2947)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "표현하다",
+      "object": "이미지",
+      "full_statement": "표현하려는 이미지를 감정을 곁들여 동작으로 표현한다.",
+      "source_sentence": "리듬과 악센트가 담긴 동작으로 표현하려는 이미지를 감정을 곁들어 춤으로 구성한다.",
+      "derived_from": "상속 주요업무(안무가)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "구상하다",
+      "object": "무용 예술작품",
+      "full_statement": "무용 예술작품을 예술적으로 구상한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류 294)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "창작하다",
+      "object": "무용 예술작품",
+      "full_statement": "무용 예술작품을 창작한다.",
+      "source_sentence": "미술, 음악, 무용 및 기타 예술작품을 구상하고 창작 또는 공연한다.",
+      "derived_from": "조상정의(소분류 294)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "무대‧영화‧텔레비전 등 공연 현장",
+      "evidence_span": "무대‧영화‧텔레비전 등에서 공연하기 위하여 춤을 고안하거나 가르친다."
+    },
+    {
+      "category": "사회적",
+      "value": "연기자를 가르치고 무대공연을 지휘하는 협업·지도",
+      "evidence_span": "노래나 음악에 맞추어서 무용의 동작을 고안하여 연기자에게 가르친다."
+    },
+    {
+      "category": "신체적",
+      "value": "음악에 맞춘 무용 동작 수행(직접 춤)",
+      "evidence_span": "특수한 역할을 맡을 수 있는 연기자를 선택하거나 자신이 직접 춤을 추기도 한다."
+    }
+  ]
+}

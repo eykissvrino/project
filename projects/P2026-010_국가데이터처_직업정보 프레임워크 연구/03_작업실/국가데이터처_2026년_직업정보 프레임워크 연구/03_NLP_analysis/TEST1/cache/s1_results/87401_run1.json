@@ -1,0 +1,90 @@
+{
+  "ksco_code": "87401",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "갱도 천공 기계장비",
+      "full_statement": "광산이나 채석장에서 갱도를 뚫는 기계장비를 조작한다.",
+      "source_sentence": "광산, 채석장에서 갱도를 뚫거나 발파용 구멍을 뚫는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "발파용 구멍 천공 기계장비",
+      "full_statement": "광산이나 채석장에서 발파용 구멍을 뚫는 기계장비를 조작한다.",
+      "source_sentence": "광산, 채석장에서 갱도를 뚫거나 발파용 구멍을 뚫는 기계장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "갱도 착굴 기계",
+      "full_statement": "광산에서 갱도 착굴에 쓰이는 기계를 조작한다.",
+      "source_sentence": "광산에서 갱도 착굴에 쓰이는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "폭발물 매설용 천공기계",
+      "full_statement": "폭발물 매설을 위한 천공기계를 조작한다.",
+      "source_sentence": "폭발물 매설을 위한 천공기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "연속 채광기",
+      "full_statement": "지하탄광에서 연속 채광기를 조작한다.",
+      "source_sentence": "지하탄광에서 연속 채광기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "회전식 또는 타격식 천공기계 장치",
+      "full_statement": "착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다.",
+      "source_sentence": "유정, 가스천의 착공을 위해 회전식 또는 타격식 천공기계 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "수행하다",
+      "object": "인양 및 천공업무",
+      "full_statement": "천공을 위해 인양 및 천공업무를 수행한다.",
+      "source_sentence": "유정, 가스천의 천공을 위해 인양 및 천공업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "운전하다",
+      "object": "채굴기계",
+      "full_statement": "건설 및 채굴기계를 운전한다.",
+      "source_sentence": "흙 및 유사물질을 파고, 고르고, 정지하며 다지는 기계와 아스팔트 및 콘크리트를 포장하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응하여 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "갱도 천공 기계장비", "category": "장비", "evidence_span": "갱도를 뚫거나 발파용 구멍을 뚫는 기계장비를 조작한다"},
+    {"name": "착암기", "category": "장비", "evidence_span": "착암기 조작원"},
+    {"name": "굴착기", "category": "장비", "evidence_span": "굴착기 조작원"},
+    {"name": "채광기", "category": "장비", "evidence_span": "채광기 조작원"},
+    {"name": "연속 채광기", "category": "장비", "evidence_span": "지하탄광에서 연속 채광기를 조작한다"},
+    {"name": "회전식 또는 타격식 천공기계 장치", "category": "장비", "evidence_span": "회전식 또는 타격식 천공기계 장치를 조작한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "광산·채석장(현장)", "evidence_span": "광산, 채석장에서 갱도를 뚫거나 발파용 구멍을 뚫는"},
+    {"category": "장소", "value": "지하(지하탄광)", "evidence_span": "지하탄광에서 연속 채광기를 조작한다"},
+    {"category": "위험", "value": "폭발물(발파)", "evidence_span": "폭발물 매설을 위한 천공기계를 조작한다"}
+  ]
+}

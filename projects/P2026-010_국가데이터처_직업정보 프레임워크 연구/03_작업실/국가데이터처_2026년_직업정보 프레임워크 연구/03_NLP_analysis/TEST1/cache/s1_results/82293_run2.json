@@ -1,0 +1,74 @@
+{
+  "ksco_code": "82293",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "자동 재봉설비",
+      "full_statement": "양복, 양장 및 기타 의복을 제조하기 위해 자동 재봉설비를 조작한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 제조하는 자동 재봉설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "섬유 또는 유사재료",
+      "full_statement": "재봉 작업에 사용할 섬유 또는 유사재료를 준비한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 제조하는 자동 재봉설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제조하다",
+      "object": "양복·양장 및 기타 의복",
+      "full_statement": "자동 재봉설비를 이용하여 양복, 양장 및 기타 의복을 제조한다.",
+      "source_sentence": "섬유 또는 유사재료를 가지고 양복, 양장 및 기타 의복을 제조하는 자동 재봉설비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "직물·신발 관련 기계",
+      "full_statement": "직물 및 신발 제조와 관련된 기계를 조작한다.",
+      "source_sentence": "직조 및 편직기를 조작하거나 신발제조와 관련된 기계를 조작하며 가죽, 모피 등 섬유가공과 관련된 직무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "섬유 제조 기계",
+      "full_statement": "섬유, 방사 등 섬유제품을 제조하는 기계를 조작한다.",
+      "source_sentence": "섬유, 방사 또는 원피, 펠트 가공용 섬유와 모피, 가죽제품을 제조 또는 세탁하는 기계를 조작한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제어하다",
+      "object": "산업용 기계",
+      "full_statement": "컴퓨터에 의한 기계 제어 등을 통해 산업용 기계 및 장비를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계 성능",
+      "full_statement": "생산성을 유지하기 위해 기계 및 장비의 성능을 점검한다.",
+      "source_sentence": "기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "수행하다",
+      "object": "자수재봉 작업",
+      "full_statement": "자동 자수재봉기계를 조작하여 자수재봉 작업을 수행한다.",
+      "source_sentence": "섬유제품제조 자동재봉기 조작원·자동 자수재봉기계 조작원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "자동 재봉설비", "category": "장비", "evidence_span": "양복, 양장 및 기타 의복을 제조하는 자동 재봉설비를 조작한다"},
+    {"name": "자동 자수재봉기계", "category": "장비", "evidence_span": "자동 자수재봉기계 조작원"}
+  ],
+  "work_context": []
+}

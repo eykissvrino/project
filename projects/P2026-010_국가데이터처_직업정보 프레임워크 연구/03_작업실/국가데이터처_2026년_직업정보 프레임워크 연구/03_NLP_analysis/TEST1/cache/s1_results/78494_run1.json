@@ -1,0 +1,43 @@
+{
+  "ksco_code": "78494",
+  "tasks": [
+    {
+      "verb": "끌어들이다",
+      "object": "바닷물",
+      "full_statement": "바닷물을 염전에 끌어들인다.",
+      "source_sentence": "바닷물을 염전에 끌어들여 햇빛으로부터 열을 받아 증발시켜 천일염을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "증발시키다",
+      "object": "바닷물",
+      "full_statement": "염전에 끌어들인 바닷물을 햇빛의 열로 증발시킨다.",
+      "source_sentence": "바닷물을 염전에 끌어들여 햇빛으로부터 열을 받아 증발시켜 천일염을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "생산하다",
+      "object": "천일염",
+      "full_statement": "바닷물을 증발시켜 천일염을 생산한다.",
+      "source_sentence": "바닷물을 염전에 끌어들여 햇빛으로부터 열을 받아 증발시켜 천일염을 생산한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "채취하다",
+      "object": "소금",
+      "full_statement": "염전에서 소금을 채취한다.",
+      "source_sentence": "염전 및 노천광에서 소금이나 광물을 채취한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "염전", "category": "장비", "evidence_span": "바닷물을 염전에 끌어들여 햇빛으로부터 열을 받아 증발시켜 천일염을 생산한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "실외 염전(햇빛 노출 작업)", "evidence_span": "바닷물을 염전에 끌어들여 햇빛으로부터 열을 받아 증발시켜 천일염을 생산한다."}
+  ]
+}

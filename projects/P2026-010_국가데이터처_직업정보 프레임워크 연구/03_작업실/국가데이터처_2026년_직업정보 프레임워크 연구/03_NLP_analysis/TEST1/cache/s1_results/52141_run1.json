@@ -1,0 +1,125 @@
+{
+  "ksco_code": "52141",
+  "tasks": [
+    {
+      "verb": "파악하다",
+      "object": "제품·서비스의 가격",
+      "full_statement": "제품, 서비스의 가격을 파악한다.",
+      "source_sentence": "제품, 서비스의 가격을 파악하고 금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "사용하다",
+      "object": "금전등록기·바코드 스캐너",
+      "full_statement": "금전등록기나 바코드 스캐너를 사용하여 상품의 가격을 입력한다.",
+      "source_sentence": "제품, 서비스의 가격을 파악하고 금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제시하다",
+      "object": "청구서",
+      "full_statement": "고객에게 판매 금액의 청구서를 제시한다.",
+      "source_sentence": "제품, 서비스의 가격을 파악하고 금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "판매액",
+      "full_statement": "제품이나 서비스의 판매액을 계산한다.",
+      "source_sentence": "상점, 레스토랑 등 제품이나 서비스의 판매가 이루어지는 장소에서 판매액을 계산하고 금액을 직접 수령하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의→상속 주요업무 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수령하다",
+      "object": "판매 금액",
+      "full_statement": "고객으로부터 판매 금액을 직접 수령한다.",
+      "source_sentence": "상점, 레스토랑 등 제품이나 서비스의 판매가 이루어지는 장소에서 판매액을 계산하고 금액을 직접 수령하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "처리하다",
+      "object": "현금 결제",
+      "full_statement": "현금으로 결제를 처리한다.",
+      "source_sentence": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "수표 결제",
+      "full_statement": "수표로 결제를 처리한다.",
+      "source_sentence": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "처리하다",
+      "object": "신용카드 결제",
+      "full_statement": "신용카드로 결제를 처리한다.",
+      "source_sentence": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "처리하다",
+      "object": "전자화폐 결제",
+      "full_statement": "전자화폐로 결제를 처리한다.",
+      "source_sentence": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정산하다",
+      "object": "매일의 수납액",
+      "full_statement": "매일의 수납액을 정산한다.",
+      "source_sentence": "매일의 수납액과 판매액을 정산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정산하다",
+      "object": "매일의 판매액",
+      "full_statement": "매일의 판매액을 정산한다.",
+      "source_sentence": "매일의 수납액과 판매액을 정산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "포장하다",
+      "object": "제품",
+      "full_statement": "판매한 제품을 포장한다.",
+      "source_sentence": "제품을 포장하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {
+      "name": "금전등록기",
+      "category": "장비",
+      "evidence_span": "금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다."
+    },
+    {
+      "name": "바코드 스캐너",
+      "category": "장비",
+      "evidence_span": "금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다."
+    }
+  ],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "상점·레스토랑 등 판매가 이루어지는 매장",
+      "evidence_span": "상점, 레스토랑 등 제품이나 서비스의 판매가 이루어지는 장소에서 판매액을 계산하고 금액을 직접 수령하는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(금액 수령)",
+      "evidence_span": "금액을 직접 수령하는 업무를 수행한다."
+    }
+  ]
+}

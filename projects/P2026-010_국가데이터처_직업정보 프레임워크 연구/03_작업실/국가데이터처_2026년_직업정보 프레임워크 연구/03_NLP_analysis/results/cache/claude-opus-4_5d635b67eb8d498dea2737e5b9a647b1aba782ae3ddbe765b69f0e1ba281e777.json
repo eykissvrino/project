@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28159",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "행정 자료",
+      "full_statement": "기업의 효율적 행정을 위해 자료를 수집하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "경영 연구",
+      "full_statement": "경영 개선을 위한 연구를 수행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "기업 행정",
+      "full_statement": "기업 행정에 대해 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

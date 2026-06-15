@@ -1,0 +1,111 @@
+{
+  "ksco_code": "43141",
+  "tasks": [
+    {
+      "verb": "관찰하다",
+      "object": "피부",
+      "full_statement": "고객의 피부 유형과 특성을 관찰하여 피부 상태를 파악한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "처치하다",
+      "object": "얼굴이나 피부",
+      "full_statement": "특별한 제품이나 기술을 사용하여 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "source_sentence": "피부를 관찰하고 특별한 제품이나 기술을 사용해서 얼굴이나 피부에 적합한 미용적 처치를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "피부",
+      "full_statement": "화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리한다.",
+      "source_sentence": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "이용하다",
+      "object": "마사지",
+      "full_statement": "피부 유형과 특성에 맞게 마사지를 이용해 피부를 관리한다.",
+      "source_sentence": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "적용하다",
+      "object": "팩",
+      "full_statement": "피부 유형과 특성에 맞게 팩을 적용하여 피부를 관리한다.",
+      "source_sentence": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설명하다",
+      "object": "화장품의 종류",
+      "full_statement": "피부 성향에 알맞은 화장품의 종류를 설명한다.",
+      "source_sentence": "피부 성향에 알맞은 화장품의 종류를 설명하고 피부 관리법에 대해 조언한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조언하다",
+      "object": "피부 관리법",
+      "full_statement": "고객에게 피부 관리법에 대해 조언한다.",
+      "source_sentence": "피부 성향에 알맞은 화장품의 종류를 설명하고 피부 관리법에 대해 조언한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "신체의 모든 부분",
+      "full_statement": "얼굴뿐만 아니라 신체의 모든 부분을 아름답고 건강하게 관리한다.",
+      "source_sentence": "또한 얼굴뿐만 아니라 신체의 모든 부분을 아름답고 건강하게 관리해 주는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제모하다",
+      "object": "신체 부위",
+      "full_statement": "전기기구를 이용해 고객의 신체 부위에 제모를 해준다.",
+      "source_sentence": "전기기구를 이용해 제모를 해주기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "체력과 영양 상태",
+      "full_statement": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "source_sentence": "체형에 맞게 고객의 체력과 영양 상태를 관리해 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시행하다",
+      "object": "관리방법",
+      "full_statement": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "source_sentence": "고객의 피부 및 체형을 관리하기 위해 필요한 각종 관리방법을 시행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "돕다",
+      "object": "목욕",
+      "full_statement": "손님의 목욕을 도와주는 일을 한다.",
+      "source_sentence": "손님의 목욕을 도와주는 일을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "화장품", "category": "도구", "evidence_span": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며"},
+    {"name": "미용 기구", "category": "장비", "evidence_span": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며"},
+    {"name": "팩", "category": "도구", "evidence_span": "피부 유형과 특성에 맞는 화장품, 미용 기구, 마사지, 팩 등을 이용해 피부를 전문적으로 관리하는 일을 하며"},
+    {"name": "전기기구", "category": "장비", "evidence_span": "전기기구를 이용해 제모를 해주기도 한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "고객 응대(설명·조언·관리)", "evidence_span": "피부 성향에 알맞은 화장품의 종류를 설명하고 피부 관리법에 대해 조언한다."},
+    {"category": "장소", "value": "미용실, 피부 관리실 등 실내 업체", "evidence_span": "이들은 미용실, 피부 관리실, 기타 미용 관련 업체에서 주로 일하며 자영업을 할 수도 있다."}
+  ]
+}

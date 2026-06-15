@@ -1,0 +1,47 @@
+{
+  "ksco_code": "A0300",
+  "tasks": [
+    {
+      "verb": "수행하다",
+      "object": "군 복무",
+      "full_statement": "군인 신분을 유지하며 군 복무를 수행한다.",
+      "source_sentence": "[대분류 A 군인] 의무 복무 여부를 불문하고 현재 군인 신분을 유지하고 있는 군인을 말한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "담당하다",
+      "object": "국방 관련 직무",
+      "full_statement": "국방과 관련된 군사 직무를 담당한다.",
+      "source_sentence": "[대분류 A 군인] 국방과 관련된 정부기업에 고용된 민간인, … 은 제외된다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "지휘하다",
+      "object": "예하 병력",
+      "full_statement": "하사 이상 원사까지의 계급에 따라 예하 병력을 지휘·통솔한다.",
+      "source_sentence": "[세세분류 A0300 부사관] 육‧해‧공군의 하사 이상 원사까지의 계급을 포함한다.",
+      "derived_from": "세세분류 정의→조상정의(대분류) 보강",
+      "confidence": 0.4
+    },
+    {
+      "verb": "유지하다",
+      "object": "군인 신분",
+      "full_statement": "부사관 계급으로 현역 군인 신분을 유지한다.",
+      "source_sentence": "[대분류 A 군인] 현재 군인 신분을 유지하고 있는 군인을 말한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "활용하다",
+      "object": "제2수준 이상 직무능력",
+      "full_statement": "제2수준 이상의 직무능력을 활용하여 군사 직무를 처리한다.",
+      "source_sentence": "[대분류 A 군인] 이 대분류에 포함되는 대부분의 직업은 제2수준 이상의 직무능력을 필요로 한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.35
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

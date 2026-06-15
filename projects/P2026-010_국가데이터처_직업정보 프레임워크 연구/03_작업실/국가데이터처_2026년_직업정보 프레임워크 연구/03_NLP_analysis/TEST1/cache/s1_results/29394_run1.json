@@ -1,0 +1,74 @@
+{
+  "ksco_code": "29394",
+  "tasks": [
+    {
+      "verb": "진행하다",
+      "object": "스튜디오 촬영",
+      "full_statement": "스튜디오 내에서 촬영 진행을 맡아 진행한다.",
+      "source_sentence": "스튜디오 내에서는 촬영 진행을 맡고 야외 로케에서는 조연출자를 보조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보조하다",
+      "object": "조연출자",
+      "full_statement": "야외 로케이션에서 조연출자를 보조한다.",
+      "source_sentence": "스튜디오 내에서는 촬영 진행을 맡고 야외 로케에서는 조연출자를 보조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지원하다",
+      "object": "촬영 기술 업무",
+      "full_statement": "연출에 필요한 촬영 등 기술적인 업무를 지원한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧조정한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "보조하다",
+      "object": "무대장치 업무",
+      "full_statement": "무대장치 설치 등 기술적인 업무를 보조한다.",
+      "source_sentence": "또한 연출에 필요한 촬영, 무대장치, 편집 등의 기술적인 업무를 계획하고 지도‧조정한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "보조하다",
+      "object": "프로그램 제작",
+      "full_statement": "라디오 및 TV프로그램 등의 제작 과정을 보조한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조율하다",
+      "object": "촬영 현장 진행",
+      "full_statement": "촬영 현장에서 진행 사항을 조율한다.",
+      "source_sentence": "스튜디오 내에서는 촬영 진행을 맡고 야외 로케에서는 조연출자를 보조한다.",
+      "derived_from": "세세분류 정의→직업예시(FD) 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "관리하다",
+      "object": "출연자 캐스팅",
+      "full_statement": "프로그램 출연자의 캐스팅을 관리한다.",
+      "source_sentence": "- FD(Floor Director)·캐스팅 매니저",
+      "derived_from": "세세분류 직업예시(캐스팅 매니저)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "스튜디오 실내",
+      "evidence_span": "스튜디오 내에서는 촬영 진행을 맡고"
+    },
+    {
+      "category": "장소",
+      "value": "야외 로케이션",
+      "evidence_span": "야외 로케에서는 조연출자를 보조한다."
+    }
+  ]
+}

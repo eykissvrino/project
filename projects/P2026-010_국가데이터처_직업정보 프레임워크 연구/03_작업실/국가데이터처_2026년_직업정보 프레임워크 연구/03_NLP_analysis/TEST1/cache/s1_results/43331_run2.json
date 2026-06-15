@@ -1,0 +1,90 @@
+{
+  "ksco_code": "43331",
+  "tasks": [
+    {
+      "verb": "씻기다",
+      "object": "반려동물",
+      "full_statement": "반려동물을 씻긴다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화(반려동물 미용사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "다듬다",
+      "object": "반려동물의 털",
+      "full_statement": "반려동물의 털을 다듬는다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화(반려동물 미용사)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "장식하다",
+      "object": "반려동물",
+      "full_statement": "반려동물에게 각종 장식을 해준다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화(반려동물 미용사)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "가꾸다",
+      "object": "반려동물",
+      "full_statement": "반려동물을 가꾼다.",
+      "source_sentence": "반려동물을 가꾸고 꾸며주는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "꾸미다",
+      "object": "반려동물",
+      "full_statement": "반려동물을 꾸며준다.",
+      "source_sentence": "반려동물을 가꾸고 꾸며주는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "반려동물의 미용",
+      "full_statement": "반려동물의 청결 유지를 위해 미용을 관리한다.",
+      "source_sentence": "반려동물의 씻기고, 가꾸는 등 청결 유지를 위해 미용 및 위생을 관리하는 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 4333)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관리하다",
+      "object": "반려동물의 위생",
+      "full_statement": "반려동물의 청결 유지를 위해 위생을 관리한다.",
+      "source_sentence": "반려동물의 씻기고, 가꾸는 등 청결 유지를 위해 미용 및 위생을 관리하는 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 4333)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관찰하다",
+      "object": "동물의 상태",
+      "full_statement": "동물의 상태를 지속적으로 관찰한다.",
+      "source_sentence": "동물의 상태를 지속적으로 관찰하고 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "기록하다",
+      "object": "동물의 상태",
+      "full_statement": "동물의 상태를 기록한다.",
+      "source_sentence": "동물의 상태를 지속적으로 관찰하고 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "반려동물 미용실, 동물병원 등 실내 작업장",
+      "evidence_span": "이들은 주로 반려동물 미용실, 동물병원 등에서 일한다."
+    },
+    {
+      "category": "사회적",
+      "value": "동물 관련 서비스(대인 서비스) 제공",
+      "evidence_span": "동물 관련 각종 서비스 업무를 수행한다."
+    }
+  ]
+}

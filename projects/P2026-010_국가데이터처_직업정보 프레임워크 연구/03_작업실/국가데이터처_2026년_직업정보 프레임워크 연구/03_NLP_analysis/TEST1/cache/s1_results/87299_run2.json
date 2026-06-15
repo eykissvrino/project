@@ -1,0 +1,104 @@
+{
+  "ksco_code": "87299",
+  "tasks": [
+    {
+      "verb": "운전하다",
+      "object": "자동차",
+      "full_statement": "손과 운전 장치를 이용하여 자동차를 운전한다.",
+      "source_sentence": "택시, 버스, 트럭, 특수차 등 자동차를 운전한다.",
+      "derived_from": "조상정의(소분류 872)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "운전 장치",
+      "full_statement": "운송장비의 운전 장치를 손으로 조작하여 차량을 제어한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류 87)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "운전하다",
+      "object": "차량",
+      "full_statement": "차량 소유주를 대신하여 차량을 운전한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류 8729)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "주차하다",
+      "object": "차량",
+      "full_statement": "차량 소유주를 대신하여 차량을 주차한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류 8729)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "운전하다",
+      "object": "렌터카",
+      "full_statement": "고객에게 임대된 렌터카를 운전한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류 8729)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "운전하다",
+      "object": "구급차",
+      "full_statement": "구급차를 운전한다.",
+      "source_sentence": "차량 소유주를 대신하여 운전 및 주차를 하거나 렌터카, 구급차 등을 운전하기도 한다.",
+      "derived_from": "조상정의(세분류 8729)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "운전하다",
+      "object": "우편배달차",
+      "full_statement": "우편물 배달을 위해 우편배달차를 운전한다.",
+      "source_sentence": "우편배달차 운전원·자동차선적 운전원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.5
+    },
+    {
+      "verb": "운반하다",
+      "object": "선적 자동차",
+      "full_statement": "자동차 선적을 위해 차량을 운전하여 운반한다.",
+      "source_sentence": "우편배달차 운전원·자동차선적 운전원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.5
+    },
+    {
+      "verb": "배달하다",
+      "object": "신차",
+      "full_statement": "출고된 신차를 목적지까지 운전하여 배달한다.",
+      "source_sentence": "신차 출고 배달원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.5
+    },
+    {
+      "verb": "취득하다",
+      "object": "운전면허",
+      "full_statement": "차량 운전에 필요한 운전면허를 취득한다.",
+      "source_sentence": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며, 면허취득이 요청된다.",
+      "derived_from": "조상정의(중분류 87)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "적응하다",
+      "object": "기계 제어 기술",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류 8)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [
+    {"name": "자동차", "category": "장비", "evidence_span": "택시, 버스, 트럭, 특수차 등 자동차를 운전한다."},
+    {"name": "운전 장치", "category": "장비", "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"},
+    {"name": "렌터카", "category": "장비", "evidence_span": "렌터카, 구급차 등을 운전하기도 한다."},
+    {"name": "구급차", "category": "장비", "evidence_span": "렌터카, 구급차 등을 운전하기도 한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "차량 소유주 대행 서비스", "evidence_span": "차량 소유주를 대신하여 운전 및 주차를 하거나"},
+    {"category": "신체적", "value": "손과 운전 장치를 이용하는 기술 요구", "evidence_span": "운송장비의 운전을 수행하는 작업은 대체로 손과 해당 운전 장치를 이용하는 기술이 필요하며"},
+    {"category": "시간적", "value": "면허취득 요구", "evidence_span": "면허취득이 요청된다."}
+  ]
+}

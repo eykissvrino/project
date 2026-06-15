@@ -1,0 +1,79 @@
+{
+  "ksco_code": "23749",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "환경공학 관련 기술 개발 및 연구",
+      "full_statement": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "개발하다",
+      "object": "환경공학 관련 기술",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 기술을 개발한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무→복합행동 분할(개발/연구)→조상정의(세분류) 보강",
+      "confidence": 0.7
+    },
+    {
+      "verb": "연구하다",
+      "object": "환경공학 관련 분야",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 분야를 연구한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무→복합행동 분할(개발/연구)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "시험하다",
+      "object": "환경영향 평가",
+      "full_statement": "환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유지하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 유지한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→복합행동 분할(유지/보수)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "보수하다",
+      "object": "환경공학 관련 시설 및 장비",
+      "full_statement": "환경공학 관련 시설 및 장비를 보수한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→복합행동 분할(유지/보수)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 업무",
+      "full_statement": "환경공학 기술자 및 연구원의 관리·감독 하에 환경공학 관련 기술적 업무를 수행한다.",
+      "source_sentence": "환경공학과 관련된 연구 및 개발과 관련하여 환경공학 기술자 및 연구원의 관리․감독 하에 기술적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "관리하다",
+      "object": "환경 시설",
+      "full_statement": "환경 시설을 관리한다.",
+      "source_sentence": "환경 관리원·배출시설 관리원",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.52
+    },
+    {
+      "verb": "관리하다",
+      "object": "배출시설",
+      "full_statement": "오염물질 배출시설을 관리한다.",
+      "source_sentence": "환경 관리원·배출시설 관리원",
+      "derived_from": "세세분류 직업 예시→상속 골격 특화",
+      "confidence": 0.52
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

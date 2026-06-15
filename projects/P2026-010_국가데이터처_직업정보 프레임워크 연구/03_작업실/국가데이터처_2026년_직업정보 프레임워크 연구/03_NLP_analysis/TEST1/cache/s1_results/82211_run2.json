@@ -1,0 +1,155 @@
+{
+  "ksco_code": "82211",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "명세서",
+      "full_statement": "원사의 종류와 제조직물의 조직 및 무늬에 대한 명세서를 검토한다.",
+      "source_sentence": "원사의 종류, 제조직물의 조직과 무늬에 대한 명세서를 검토한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "감다",
+      "object": "경사",
+      "full_statement": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다.",
+      "source_sentence": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "호부기",
+      "full_statement": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정한다.",
+      "source_sentence": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "호부기",
+      "full_statement": "실에 풀을 입히는 호부기를 조작한다.",
+      "source_sentence": "실의 강도를 높이고 제직 중 마찰로 인한 끊어짐을 방지하기 위하여 실에 풀을 입히는 호부기를 조정, 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "끼우다",
+      "object": "경사",
+      "full_statement": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼운다.",
+      "source_sentence": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고, 두 사람이 마주앉아 통경바늘을 사용하여 꿴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "꿰다",
+      "object": "경사",
+      "full_statement": "통경바늘을 사용하여 경사를 꿴다.",
+      "source_sentence": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고, 두 사람이 마주앉아 통경바늘을 사용하여 꿴다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감다",
+      "object": "위사용 원사",
+      "full_statement": "위사용 원사를 목관에 감는다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "공급하다",
+      "object": "위사용 원사",
+      "full_statement": "목관에 감은 위사용 원사를 직기에 공급한다.",
+      "source_sentence": "위사용 원사를 목관에 감고 직기에 공급한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "가동하다",
+      "object": "직기",
+      "full_statement": "직기를 가동한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "제반조건",
+      "full_statement": "직물의 무늬, 무게, 속도 등 제반조건을 확인한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연결하다",
+      "object": "끊어진 실",
+      "full_statement": "제직 중 끊어진 실을 연결한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계 기능장애",
+      "full_statement": "기계의 기능장애를 조정한다.",
+      "source_sentence": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고, 끊어진 실을 연결하며, 기계의 기능장애를 점검, 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연결하다",
+      "object": "새로운 빔",
+      "full_statement": "경사를 다 사용하면 남은 부분과 새로운 빔을 연결한다.",
+      "source_sentence": "경사를 다 사용하면 남은 부분과 새로운 빔을 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "자카르식 직조기",
+      "full_statement": "자카르식 직조기를 포함한 각종 섬유직물가공 직조기를 조작한다.",
+      "source_sentence": "자카르식 직조기를 포함한 각종 섬유직물가공 직조기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "레이스직조기",
+      "full_statement": "레이스직조기를 조작한다.",
+      "source_sentence": "레이스직조기를 조작하는 분야와 카펫 또는 양탄자를 직조하는 직조기를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "카펫 직조기",
+      "full_statement": "카펫 또는 양탄자를 직조하는 직조기를 조작한다.",
+      "source_sentence": "레이스직조기를 조작하는 분야와 카펫 또는 양탄자를 직조하는 직조기를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "자카르식 직조기", "category": "장비", "evidence_span": "자카르식 직조기를 포함한 각종 섬유직물가공 직조기를 조작한다."},
+    {"name": "레이스직조기", "category": "장비", "evidence_span": "레이스직조기를 조작하는 분야와 카펫 또는 양탄자를 직조하는 직조기를 조작하기도 한다."},
+    {"name": "카펫 직조기", "category": "장비", "evidence_span": "카펫 또는 양탄자를 직조하는 직조기를 조작하기도 한다."},
+    {"name": "직기", "category": "장비", "evidence_span": "직기를 가동하고 직물의 무늬, 무게, 속도 등 제반조건을 확인하고"},
+    {"name": "호부기", "category": "장비", "evidence_span": "실에 풀을 입히는 호부기를 조정, 조작한다."},
+    {"name": "정경 비임", "category": "장비", "evidence_span": "소정의 밀도와 올수에 맞추어 경사를 정경 비임에 감는다."},
+    {"name": "통경바늘", "category": "도구", "evidence_span": "두 사람이 마주앉아 통경바늘을 사용하여 꿴다."},
+    {"name": "통경대", "category": "장비", "evidence_span": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "2인 협업 작업", "evidence_span": "두 사람이 마주앉아 통경바늘을 사용하여 꿴다."},
+    {"category": "신체적", "value": "정밀 수작업(경사를 한 가닥씩 끼움)", "evidence_span": "준비된 경사를 통경대에서 종광과 바디에 한 가닥씩 끼우고"}
+  ]
+}

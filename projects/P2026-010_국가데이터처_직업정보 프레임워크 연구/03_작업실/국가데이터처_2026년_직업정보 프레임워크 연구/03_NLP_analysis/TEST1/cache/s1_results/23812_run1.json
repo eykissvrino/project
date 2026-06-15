@@ -1,0 +1,149 @@
+{
+  "ksco_code": "23812",
+  "tasks": [
+    {
+      "verb": "조종하다",
+      "object": "헬리콥터",
+      "full_statement": "항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종한다.",
+      "source_sentence": "항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종하는 자를 말한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "운반하다",
+      "object": "승객이나 화물",
+      "full_statement": "승객이나 화물을 운반하기 위해 헬리콥터를 조종한다.",
+      "source_sentence": "승객이나 화물을 운반하기 위해 항공기나 헬리콥터를 조종한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "항공승무원의 활동",
+      "full_statement": "비행하는 동안 항공기의 장으로서 항공승무원의 활동을 관리한다.",
+      "source_sentence": "비행동안에 항공기의 장으로서 항공승무원의 활동을 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "기장의 업무",
+      "full_statement": "부조종사는 필요시 기장의 업무를 수행한다.",
+      "source_sentence": "부조종사는 필요시 기장의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "테스트하다",
+      "object": "새로운 헬리콥터",
+      "full_statement": "헬리콥터 성능을 평가하기 위해 새로운 헬리콥터를 테스트한다.",
+      "source_sentence": "항공기 성능을 평가하기 위해 새로운 항공기나 헬리콥터를 테스트한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(헬리콥터 시험조종사 예시)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "탐색·구조 서비스",
+      "full_statement": "탐색 및 구조 서비스를 제공한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "제공하다",
+      "object": "항공측량 서비스",
+      "full_statement": "항공측량 서비스를 제공한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분무하다",
+      "object": "소독약",
+      "full_statement": "소독약을 분무한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살포하다",
+      "object": "농약",
+      "full_statement": "농약을 살포한다.",
+      "source_sentence": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "기체",
+      "full_statement": "헬리콥터 운항 전 기체를 점검한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하거나 항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "점검하다",
+      "object": "항로",
+      "full_statement": "비행 전 항로를 점검한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하거나 항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "확인하다",
+      "object": "기후",
+      "full_statement": "비행에 영향을 미치는 기후를 확인한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하거나 항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "관리하다",
+      "object": "승무원",
+      "full_statement": "비행 전후 승무원을 관리한다.",
+      "source_sentence": "승객이나 화물을 수송하기 위해 기체점검, 승무원관리, 항로점검, 기후 등 항공운송 및 기타 서비스를 제공하기 위해 항공기를 조종하거나 항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술적 기능",
+      "full_statement": "헬리콥터의 가동과 운전상의 안전을 위하여 기술적 기능을 수행한다.",
+      "source_sentence": "항공기‧선박 기관사는 선박 및 항공기를 제어하고 조종하며, 가동과 운전상의 안전을 위하여 기술적 기능을 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "훈련하다",
+      "object": "새로운 장비 사용",
+      "full_statement": "새로운 장비의 사용을 위해 훈련한다.",
+      "source_sentence": "새로운 장비의 사용, 기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "면허 갱신 시험",
+      "full_statement": "기존 면허의 갱신을 위한 시험을 준비한다.",
+      "source_sentence": "새로운 장비의 사용, 기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "등급 상향 시험",
+      "full_statement": "등급을 올리기 위한 시험을 준비한다.",
+      "source_sentence": "새로운 장비의 사용, 기존 면허의 갱신 및 등급을 올리기 위한 시험 준비를위해 훈련한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.76
+    }
+  ],
+  "tools": [
+    {"name": "헬리콥터", "category": "장비", "evidence_span": "항공운송 및 기타 서비스를 제공하기 위해 헬리콥터를 조종하는 자를 말한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "공중(비행)", "evidence_span": "비행동안에 항공기의 장으로서 항공승무원의 활동을 관리한다."},
+    {"category": "사회적", "value": "항공승무원 관리(팀 지휘)", "evidence_span": "비행동안에 항공기의 장으로서 항공승무원의 활동을 관리한다."},
+    {"category": "위험", "value": "농약·소독약 분무 작업", "evidence_span": "탐색, 구조, 항공측량이나 소독약 분무, 농약살포와 같은 서비스를 제공한다."}
+  ]
+}

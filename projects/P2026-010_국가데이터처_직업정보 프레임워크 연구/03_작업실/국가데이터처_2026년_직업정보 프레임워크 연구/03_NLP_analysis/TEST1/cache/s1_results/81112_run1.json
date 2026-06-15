@@ -1,0 +1,84 @@
+{
+  "ksco_code": "81112",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "조미료 제분기",
+      "full_statement": "양념용 농산물을 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다.",
+      "source_sentence": "양념용 농산물을 제분기에 넣고 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "투입하다",
+      "object": "양념용 농산물",
+      "full_statement": "양념용 농산물을 제분기에 투입한다.",
+      "source_sentence": "양념용 농산물을 제분기에 넣고 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "빻다",
+      "object": "양념용 농산물",
+      "full_statement": "양념용 농산물을 일정한 밀도로 빻는다.",
+      "source_sentence": "양념용 농산물을 제분기에 넣고 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "가공하다",
+      "object": "조미료",
+      "full_statement": "빻은 양념용 농산물을 조미료로 가공한다.",
+      "source_sentence": "양념용 농산물을 제분기에 넣고 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "양념분쇄용 제분기",
+      "full_statement": "곡물 및 양념분쇄용 제분기를 조작한다.",
+      "source_sentence": "곡물 및 양념분쇄용 제분기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분쇄하다",
+      "object": "양념용 농산물",
+      "full_statement": "양념용 농산물을 분쇄하는 기계를 조작하여 분쇄한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "마쇄하다",
+      "object": "양념용 농산물",
+      "full_statement": "양념용 농산물을 마쇄하는 기계를 조작한다.",
+      "source_sentence": "곡물, 채소 등을 사람이나 반려동물 또는 사육동물의 식료품으로 만들기 위하여 분쇄, 마쇄, 혼합하는 기계를 조작한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "조작하다",
+      "object": "식료품 가공 기계",
+      "full_statement": "사람·동물 소비용 식품 및 관련제품을 제조하는 식료품 가공 기계를 조작한다.",
+      "source_sentence": "식료품을 가공하고 사람‧동물소비용 식품 및 관련제품을 제조하는 기계를 조작한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "적응하다",
+      "object": "기계 제어 기술",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응하여 기계를 조작한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "조미료 제분기", "category": "장비", "evidence_span": "양념용 농산물을 제분기에 넣고 일정한 밀도로 빻아 조미료를 가공하는 제분기를 조작한다."},
+    {"name": "양념분쇄용 제분기", "category": "장비", "evidence_span": "곡물 및 양념분쇄용 제분기를 조작한다."},
+    {"name": "고춧가루 기계", "category": "장비", "evidence_span": "고춧가루 기계 조작원·조미료 압착기 조작원"},
+    {"name": "조미료 압착기", "category": "장비", "evidence_span": "고춧가루 기계 조작원·조미료 압착기 조작원"}
+  ],
+  "work_context": []
+}

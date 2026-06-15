@@ -1,0 +1,28 @@
+{
+  "ksco_code": "28293",
+  "tasks": [
+    {
+      "verb": "관리하다",
+      "object": "신탁",
+      "full_statement": "개인·회사·부동산의 신탁을 관리한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지시하다",
+      "object": "신탁계좌 투자",
+      "full_statement": "신탁계좌 투자를 지시한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지불하다",
+      "object": "신탁자금",
+      "full_statement": "투자소득을 수취하고 신탁자금을 지불한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

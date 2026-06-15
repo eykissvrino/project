@@ -1,0 +1,90 @@
+{
+  "ksco_code": "23742",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "오폐수 처리장 시설",
+      "full_statement": "오폐수 처리장의 시설을 진단한다.",
+      "source_sentence": "수질 환경 기술자 및 연구원의 감독 하에 오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "점검하다",
+      "object": "오염물 상태",
+      "full_statement": "오폐수의 오염물 상태를 점검한다.",
+      "source_sentence": "수질 환경 기술자 및 연구원의 감독 하에 오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "시험하다",
+      "object": "수질 환경문제",
+      "full_statement": "수질 환경문제를 시험한다.",
+      "source_sentence": "수질 환경 기술자 및 연구원의 감독 하에 오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "시험하다",
+      "object": "수질 오염도",
+      "full_statement": "수질 오염도를 시험한다.",
+      "source_sentence": "수질 오염 시험원·수질 오염 관리원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "수질 오염",
+      "full_statement": "수질 오염 상태를 관리한다.",
+      "source_sentence": "수질 오염 시험원·수질 오염 관리원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "보조하다",
+      "object": "수질 환경공학 기술 개발 및 연구",
+      "full_statement": "수질 환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "source_sentence": "환경공학 관련 기술 개발 및 연구를 보조한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "시험하다",
+      "object": "수질 환경영향 평가",
+      "full_statement": "수질 관련 환경영향 평가를 시험한다.",
+      "source_sentence": "환경영향 평가를 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "유지하다",
+      "object": "수질 환경 시설 및 장비",
+      "full_statement": "수질 환경 관련 시설 및 장비를 유지한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "보수하다",
+      "object": "수질 환경 시설 및 장비",
+      "full_statement": "수질 환경 관련 시설 및 장비를 보수한다.",
+      "source_sentence": "환경공학 관련 시설 및 장비를 유지, 보수업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "수질 환경 기술자 및 연구원의 감독 하에 업무 수행",
+      "evidence_span": "수질 환경 기술자 및 연구원의 감독 하에 오폐수 처리장 시설진단 및 오염물상태 점검 등 수질 환경문제를 시험한다."
+    },
+    {
+      "category": "장소",
+      "value": "오폐수 처리장",
+      "evidence_span": "오폐수 처리장 시설진단 및 오염물상태 점검"
+    }
+  ]
+}

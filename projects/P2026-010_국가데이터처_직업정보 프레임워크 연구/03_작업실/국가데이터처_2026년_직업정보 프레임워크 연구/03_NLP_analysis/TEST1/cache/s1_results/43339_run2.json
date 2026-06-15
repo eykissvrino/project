@@ -1,0 +1,92 @@
+{
+  "ksco_code": "43339",
+  "tasks": [
+    {
+      "verb": "관찰하다",
+      "object": "동물의 상태",
+      "full_statement": "반려동물의 상태를 지속적으로 관찰한다.",
+      "source_sentence": "동물의 상태를 지속적으로 관찰하고 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "기록하다",
+      "object": "동물의 상태",
+      "full_statement": "관찰한 반려동물의 상태를 기록한다.",
+      "source_sentence": "동물의 상태를 지속적으로 관찰하고 기록한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "씻기다",
+      "object": "반려동물",
+      "full_statement": "반려동물을 씻긴다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "다듬다",
+      "object": "반려동물의 털",
+      "full_statement": "반려동물의 털을 다듬는다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "장식하다",
+      "object": "반려동물",
+      "full_statement": "반려동물에게 각종 장식을 해준다.",
+      "source_sentence": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "확인하다",
+      "object": "사육장의 청결상태",
+      "full_statement": "사육장의 청결상태를 확인한다.",
+      "source_sentence": "사육장의 청결상태를 확인하고, 물이나 소독약 등을 사용하여 오물을 청소한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "청소하다",
+      "object": "오물",
+      "full_statement": "물이나 소독약 등을 사용하여 사육장의 오물을 청소한다.",
+      "source_sentence": "사육장의 청결상태를 확인하고, 물이나 소독약 등을 사용하여 오물을 청소한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "관리하다",
+      "object": "반려동물의 미용 및 위생",
+      "full_statement": "반려동물의 청결 유지를 위해 미용 및 위생을 관리한다.",
+      "source_sentence": "반려동물의 씻기고, 가꾸는 등 청결 유지를 위해 미용 및 위생을 관리하는 등의 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제공하다",
+      "object": "동물 관련 상담 서비스",
+      "full_statement": "동물 관련 각종 상담 서비스를 제공한다.",
+      "source_sentence": "미용과 훈련, 동물관련 상담 등 동물 관련 각종 서비스 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "증진하다",
+      "object": "동물의 건강과 복지",
+      "full_statement": "동물의 건강과 복지를 증진하기 위한 서비스를 제공한다.",
+      "source_sentence": "동물과 사람과의 공존 및 동물의 건강과 복지를 증진하기 위해 동물의 질병예방 및 치료를 하거나, 미용과 훈련, 동물관련 상담 등 동물 관련 각종 서비스 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [
+    {"name": "소독약", "category": "도구", "evidence_span": "물이나 소독약 등을 사용하여 오물을 청소한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "동물(반려동물) 응대·돌봄", "evidence_span": "반려동물을 씻기고, 털을 다듬은 후 각종 장식을 해준다."},
+    {"category": "신체적", "value": "씻기·다듬기 등 정밀·반복 수작업", "evidence_span": "반려동물의 씻기고, 가꾸는 등 청결 유지를 위해 미용 및 위생을 관리하는 등의 업무를 수행한다."}
+  ]
+}

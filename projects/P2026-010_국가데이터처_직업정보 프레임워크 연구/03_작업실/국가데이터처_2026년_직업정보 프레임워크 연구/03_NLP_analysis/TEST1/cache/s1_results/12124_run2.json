@@ -1,0 +1,146 @@
+{
+  "ksco_code": "12124",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "자재 및 구매 부서의 활동",
+      "full_statement": "자재, 구매 등 소관 부서의 활동을 기획한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(자재·구매)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "자재 및 구매 부서의 활동",
+      "full_statement": "자재, 구매 등 소관 부서의 활동을 관리한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(자재·구매)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "자재 및 구매 부서의 활동",
+      "full_statement": "자재, 구매 등 소관 부서의 활동을 조정한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(자재·구매)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "기획하다",
+      "object": "공급·보관·분배활동",
+      "full_statement": "기업 또는 단체의 공급, 보관 및 분배활동을 기획한다.",
+      "source_sentence": "기업 또는 단체의 공급, 보관 및 분배활동을 기획, 관리 및 조정하는 자로서, 구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "공급·보관·분배활동",
+      "full_statement": "기업 또는 단체의 공급, 보관 및 분배활동을 관리한다.",
+      "source_sentence": "기업 또는 단체의 공급, 보관 및 분배활동을 기획, 관리 및 조정하는 자로서, 구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "공급·보관·분배활동",
+      "full_statement": "기업 또는 단체의 공급, 보관 및 분배활동을 조정한다.",
+      "source_sentence": "기업 또는 단체의 공급, 보관 및 분배활동을 기획, 관리 및 조정하는 자로서, 구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "체결하다",
+      "object": "구매계약",
+      "full_statement": "구매계약을 체결한다.",
+      "source_sentence": "구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "협의하다",
+      "object": "공급자와의 가격",
+      "full_statement": "공급자와 가격을 협의한다.",
+      "source_sentence": "구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "확보하다",
+      "object": "구매상품의 품질",
+      "full_statement": "구매상품의 품질을 확보한다.",
+      "source_sentence": "구매계약의 체결, 공급자와의 가격협의, 구매상품의 품질 확보 등 구매 및 자재 관련 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "장·단기 및 연간 사업계획",
+      "full_statement": "다른 부서의 관리자들과 함께 장·단기 및 연간 사업계획을 수립한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "성과",
+      "full_statement": "부서의 성과를 분석한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "대표하다",
+      "object": "부서",
+      "full_statement": "다른 부서나 외부기관에 대해 부서를 대표한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "통제하다",
+      "object": "부서의 지출",
+      "full_statement": "부서의 지출을 통제한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관장하다",
+      "object": "자원의 효율적 사용",
+      "full_statement": "자원의 효율적 사용을 관장한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "입안하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "운영 및 관리절차를 입안한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "운영 및 관리절차를 관리한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "공급자와의 가격협의 등 외부 거래처 응대·협상",
+      "evidence_span": "공급자와의 가격협의"
+    },
+    {
+      "category": "사회적",
+      "value": "다른 부서의 관리자들과 함께 협업",
+      "evidence_span": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "ksco_code": "82309",
+  "tasks": [
+    {
+      "verb": "세탁하다",
+      "object": "의류·섬유직물 및 유사물품",
+      "full_statement": "의류, 섬유직물 및 유사물품을 일반세탁기로 세탁한다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 일반세탁기로 세탁 또는 다림질, 세탁물에 풀을 먹인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "다림질하다",
+      "object": "의류·섬유직물 및 유사물품",
+      "full_statement": "의류, 섬유직물 및 유사물품을 일반세탁기로 다림질한다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 일반세탁기로 세탁 또는 다림질, 세탁물에 풀을 먹인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "먹이다",
+      "object": "세탁물에 풀",
+      "full_statement": "세탁물에 풀을 먹인다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 일반세탁기로 세탁 또는 다림질, 세탁물에 풀을 먹인다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "정련기",
+      "full_statement": "정련기를 조작한다.",
+      "source_sentence": "또한 정련기를 조작하고 직물의 견착과 강화를 위해 마전기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "마전기",
+      "full_statement": "직물의 견착과 강화를 위해 마전기를 조작한다.",
+      "source_sentence": "또한 정련기를 조작하고 직물의 견착과 강화를 위해 마전기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "조작하다",
+      "object": "가중기",
+      "full_statement": "직물에 중량과 밀도를 더해 주기 위해 가중기를 조작한다.",
+      "source_sentence": "직물에 중량과 밀도를 더해 주기 위해 가중기를 조작하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제거하다",
+      "object": "섬유제품의 얼룩 및 더러움",
+      "full_statement": "섬유제품의 얼룩 및 더러움을 제거하기 위하여 기계로 세탁한다.",
+      "source_sentence": "섬유제품의 얼룩 및 더러움을 제거하기 위하여 기계로 세탁을 하거나 용제와 세제를 사용하여 세탁한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "세탁하다",
+      "object": "섬유제품",
+      "full_statement": "용제와 세제를 사용하여 섬유제품을 세탁한다.",
+      "source_sentence": "섬유제품의 얼룩 및 더러움을 제거하기 위하여 기계로 세탁을 하거나 용제와 세제를 사용하여 세탁한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "투입하다",
+      "object": "세탁물",
+      "full_statement": "드라이클리닝이 필요한 경우 세탁물을 드라이클리닝기에 넣는다.",
+      "source_sentence": "드라이클리닝이 필요한 경우 세탁물을 드라이클리닝기에 넣고 세탁방법, 시간, 회전수 등을 조정하는 기계를 가동하며 세탁이 완료되면 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한 후 건조장치를 가동하여 물기를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조정하다",
+      "object": "세탁방법·시간·회전수",
+      "full_statement": "세탁방법, 시간, 회전수 등을 조정하여 드라이클리닝 기계를 가동한다.",
+      "source_sentence": "드라이클리닝이 필요한 경우 세탁물을 드라이클리닝기에 넣고 세탁방법, 시간, 회전수 등을 조정하는 기계를 가동하며 세탁이 완료되면 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한 후 건조장치를 가동하여 물기를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조작하다",
+      "object": "여과장치",
+      "full_statement": "세탁이 완료되면 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한다.",
+      "source_sentence": "드라이클리닝이 필요한 경우 세탁물을 드라이클리닝기에 넣고 세탁방법, 시간, 회전수 등을 조정하는 기계를 가동하며 세탁이 완료되면 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한 후 건조장치를 가동하여 물기를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "가동하다",
+      "object": "건조장치",
+      "full_statement": "건조장치를 가동하여 세탁물의 물기를 제거한다.",
+      "source_sentence": "드라이클리닝이 필요한 경우 세탁물을 드라이클리닝기에 넣고 세탁방법, 시간, 회전수 등을 조정하는 기계를 가동하며 세탁이 완료되면 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한 후 건조장치를 가동하여 물기를 제거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "잡다",
+      "object": "주름",
+      "full_statement": "세탁·건조한 세탁물의 종류와 형태에 따라 주름을 잡아준다.",
+      "source_sentence": "세탁‧건조한 세탁물의 종류와 형태에 따라 주름을 잡아주고 여러 형태의 받침판을 사용하여 광택 및 탄력을 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주다",
+      "object": "광택 및 탄력",
+      "full_statement": "여러 형태의 받침판을 사용하여 세탁물에 광택 및 탄력을 준다.",
+      "source_sentence": "세탁‧건조한 세탁물의 종류와 형태에 따라 주름을 잡아주고 여러 형태의 받침판을 사용하여 광택 및 탄력을 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "점검하다",
+      "object": "의류의 각 부위",
+      "full_statement": "다림질이 끝나면 의류의 각 부위를 점검하여 다림질 상태를 확인한다.",
+      "source_sentence": "다림질이 끝나면 의류의 각 부위를 점검하여 다림질 상태를 확인하고 옷걸이에 건다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "걸다",
+      "object": "의류",
+      "full_statement": "다림질이 끝난 의류를 옷걸이에 건다.",
+      "source_sentence": "다림질이 끝나면 의류의 각 부위를 점검하여 다림질 상태를 확인하고 옷걸이에 건다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "조작하다",
+      "object": "호부처리기",
+      "full_statement": "세탁물에 풀을 먹이기 위해 호부처리기를 조작한다.",
+      "source_sentence": "호부처리기 조작원",
+      "derived_from": "세세분류 정의→예시 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "축융기",
+      "full_statement": "직물을 축융하기 위해 축융기를 조작한다.",
+      "source_sentence": "축융기 조작원·견직물 가중기 조작원",
+      "derived_from": "세세분류 예시",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "일반세탁기", "category": "장비", "evidence_span": "의류, 섬유직물 및 유사물품을 일반세탁기로 세탁 또는 다림질"},
+    {"name": "정련기", "category": "장비", "evidence_span": "또한 정련기를 조작하고"},
+    {"name": "마전기", "category": "장비", "evidence_span": "직물의 견착과 강화를 위해 마전기를 조작한다"},
+    {"name": "가중기", "category": "장비", "evidence_span": "직물에 중량과 밀도를 더해 주기 위해 가중기를 조작하기도 한다"},
+    {"name": "드라이클리닝기", "category": "장비", "evidence_span": "세탁물을 드라이클리닝기에 넣고"},
+    {"name": "여과장치", "category": "장비", "evidence_span": "용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한"},
+    {"name": "건조장치", "category": "장비", "evidence_span": "건조장치를 가동하여 물기를 제거한다"},
+    {"name": "받침판", "category": "도구", "evidence_span": "여러 형태의 받침판을 사용하여 광택 및 탄력을 준다"},
+    {"name": "호부처리기", "category": "장비", "evidence_span": "호부처리기 조작원"},
+    {"name": "축융기", "category": "장비", "evidence_span": "축융기 조작원"},
+    {"name": "용제·세제", "category": "도구", "evidence_span": "용제와 세제를 사용하여 세탁한다"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "드라이클리닝 용제 등 화학물질 취급", "evidence_span": "용제와 세제를 사용하여 세탁한다 / 용제를 회수하기 위해 드라이클리닝의 여과장치를 조작한"},
+    {"category": "신체적", "value": "다림질 상태 점검 등 정밀 확인 작업", "evidence_span": "다림질이 끝나면 의류의 각 부위를 점검하여 다림질 상태를 확인하고"}
+  ]
+}

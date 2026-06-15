@@ -1,0 +1,122 @@
+{
+  "ksco_code": "29331",
+  "tasks": [
+    {
+      "verb": "읽다",
+      "object": "뉴스 원고",
+      "full_statement": "준비된 뉴스 원고를 읽어 중요한 정보와 새로운 소식을 전한다.",
+      "source_sentence": "준비된 뉴스, 광고, 특별 공지사항 등의 원고를 읽거나 기타 방송 프로그램의 진행을 통해 중요한 정보와 새로운 소식을 전해 주는 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "읽다",
+      "object": "광고 원고",
+      "full_statement": "준비된 광고 원고를 읽어 청취자·시청자에게 전달한다.",
+      "source_sentence": "준비된 뉴스, 광고, 특별 공지사항 등의 원고를 읽거나 기타 방송 프로그램의 진행을 통해 중요한 정보와 새로운 소식을 전해 주는 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "읽다",
+      "object": "특별 공지사항 원고",
+      "full_statement": "준비된 특별 공지사항 원고를 읽어 전달한다.",
+      "source_sentence": "준비된 뉴스, 광고, 특별 공지사항 등의 원고를 읽거나 기타 방송 프로그램의 진행을 통해 중요한 정보와 새로운 소식을 전해 주는 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "진행하다",
+      "object": "방송 프로그램",
+      "full_statement": "기타 방송 프로그램의 진행을 통해 중요한 정보와 새로운 소식을 전한다.",
+      "source_sentence": "준비된 뉴스, 광고, 특별 공지사항 등의 원고를 읽거나 기타 방송 프로그램의 진행을 통해 중요한 정보와 새로운 소식을 전해 주는 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "사람 및 사건에 대한 정보",
+      "full_statement": "사람 및 사건에 대한 정보를 수집한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "사람 및 사건에 대한 정보",
+      "full_statement": "사람 및 사건에 대한 정보를 분석한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "준비하다",
+      "object": "원고",
+      "full_statement": "수집·분석한 정보를 바탕으로 뉴스 원고를 준비한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "뉴스",
+      "full_statement": "준비된 원고를 바탕으로 뉴스를 진행한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "진행하다",
+      "object": "교양 프로그램",
+      "full_statement": "텔레비전과 라디오 방송에서 교양 프로그램을 진행한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "진행하다",
+      "object": "오락 프로그램",
+      "full_statement": "텔레비전과 라디오 방송에서 오락 프로그램을 진행한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "소개하다",
+      "object": "출연진이나 연예인",
+      "full_statement": "쇼나 프로그램에서 출연진이나 연예인을 소개한다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "진행하다",
+      "object": "쇼나 프로그램",
+      "full_statement": "쇼나 프로그램의 진행을 맡는다.",
+      "source_sentence": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "소개하다",
+      "object": "보도 내용",
+      "full_statement": "텔레비전과 라디오 방송에서 교양·오락 등의 프로그램에 참여하여 보도 내용을 소개한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램에 참여하여 보도 내용을 소개한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "텔레비전·라디오 방송 환경(방송 스튜디오)",
+      "evidence_span": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "출연진·연예인 소개 및 프로그램 진행 등 대중 응대",
+      "evidence_span": "출연진이나 연예인을 소개하고 쇼나 프로그램의 진행을 맡는다."
+    }
+  ]
+}

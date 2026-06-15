@@ -1,0 +1,76 @@
+{
+  "ksco_code": "61391",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "벌통",
+      "full_statement": "벌꿀을 얻기 위하여 벌통을 설치한다.",
+      "source_sentence": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동, 꿀의 채취 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "벌통",
+      "full_statement": "설치한 벌통을 관리한다.",
+      "source_sentence": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동, 꿀의 채취 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이동하다",
+      "object": "벌통",
+      "full_statement": "꽃의 개화 시기를 고려하여 벌통을 이동한다.",
+      "source_sentence": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동, 꿀의 채취 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "고려하다",
+      "object": "꽃의 개화 시기",
+      "full_statement": "벌통 이동을 위해 꽃의 개화 시기를 고려한다.",
+      "source_sentence": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동, 꿀의 채취 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "채취하다",
+      "object": "꿀",
+      "full_statement": "벌통에서 꿀을 채취한다.",
+      "source_sentence": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동, 꿀의 채취 등의 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "번식하다",
+      "object": "벌",
+      "full_statement": "양봉을 목적으로 벌을 번식한다.",
+      "source_sentence": "양봉, 양잠, 수렵, 동물부화, 품종 개량을 목적으로 브리더 등 기타 사육 관련 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "사육하다",
+      "object": "벌",
+      "full_statement": "벌꿀 생산을 위하여 벌을 사육한다.",
+      "source_sentence": "조류, 파충류, 모피생산 동물, 가금, 엽조류를 포함하여 소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "기획하다",
+      "object": "사육 활동",
+      "full_statement": "벌꿀 생산에 필요한 사육 활동을 기획한다.",
+      "source_sentence": "조류, 파충류, 모피생산 동물, 가금, 엽조류를 포함하여 소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며 낙농제품을 생산하는데 필요한 활동을 기획하고 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "벌통", "category": "장비", "evidence_span": "벌꿀을 얻기 위하여 벌통의 설치 및 관리, 꽃의 개화 시기를 고려한 벌통의 이동"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "꽃의 개화 시기에 따라 벌통을 이동하는 이동성 작업", "evidence_span": "꽃의 개화 시기를 고려한 벌통의 이동"},
+    {"category": "위험", "value": "벌(생물) 취급 작업", "evidence_span": "벌꿀을 얻기 위하여 벌통의 설치 및 관리"}
+  ]
+}

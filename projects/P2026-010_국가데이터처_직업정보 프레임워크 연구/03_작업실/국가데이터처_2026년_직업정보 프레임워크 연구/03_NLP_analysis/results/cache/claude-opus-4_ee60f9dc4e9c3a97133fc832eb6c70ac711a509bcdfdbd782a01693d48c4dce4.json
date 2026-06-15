@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28320",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "고객 요구",
+      "full_statement": "고객의 요구와 생활패턴 정보를 수집하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "여행 상품",
+      "full_statement": "고객 요구에 부합하는 여행 상품을 기획하고 개발한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "관광 코스",
+      "full_statement": "교통·숙박 자료를 토대로 관광코스와 일정을 기획하고 경비를 산출한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "답사하다",
+      "object": "코스",
+      "full_statement": "기획된 코스를 답사하고 문제점을 보완하여 확정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "상담하다",
+      "object": "여행 상품",
+      "full_statement": "고객과 상담하여 상품의 특징과 장점을 소개하고 권유한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,120 @@
+{
+  "ksco_code": "23824",
+  "tasks": [
+    {
+      "verb": "승선하다",
+      "object": "선박",
+      "full_statement": "도선 구역을 통과하는 선박에 승선한다.",
+      "source_sentence": "일정한 자격을 가지고 연해의 도선 구역을 통과하는 선박에 승선하여 뱃길을 인도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "인도하다",
+      "object": "뱃길",
+      "full_statement": "도선 구역을 통과하는 선박의 뱃길을 인도한다.",
+      "source_sentence": "일정한 자격을 가지고 연해의 도선 구역을 통과하는 선박에 승선하여 뱃길을 인도한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "인도하다",
+      "object": "선박",
+      "full_statement": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박을 인도한다.",
+      "source_sentence": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박들을 인도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "운전하다",
+      "object": "소형선박",
+      "full_statement": "배와 배 사이나 배와 해안 사이에서 승객 및 화물을 나르는 소형선박을 운전한다.",
+      "source_sentence": "배와 배 사이나 또는 배와 해안사이에서 승객 및 화물을 나르는 소형선박을 운전한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "순찰하다",
+      "object": "항구나 해변지역",
+      "full_statement": "항구나 해변지역을 순찰한다.",
+      "source_sentence": "항구나 해변지역을 순찰하기도 하며 항해활동을 보조하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "보조하다",
+      "object": "항해활동",
+      "full_statement": "항해활동을 보조한다.",
+      "source_sentence": "항구나 해변지역을 순찰하기도 하며 항해활동을 보조하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "계획하다",
+      "object": "안전항해",
+      "full_statement": "안전항해를 계획한다.",
+      "source_sentence": "안전항해를 계획하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "실행하다",
+      "object": "안전항해",
+      "full_statement": "안전항해를 실행한다.",
+      "source_sentence": "안전항해를 계획하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "판단하다",
+      "object": "지리적 위치",
+      "full_statement": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다.",
+      "source_sentence": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "통솔하다",
+      "object": "선박",
+      "full_statement": "승객이나 화물을 운송하기 위해 선박을 통솔한다.",
+      "source_sentence": "승객이나 화물을 운송하기 위해 선박 또는 화물선이나 삭구장비와 같은 자체추진의 함선을 통솔하고 움직인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "움직이다",
+      "object": "선박",
+      "full_statement": "승객이나 화물을 운송하기 위해 선박을 움직인다.",
+      "source_sentence": "승객이나 화물을 운송하기 위해 선박 또는 화물선이나 삭구장비와 같은 자체추진의 함선을 통솔하고 움직인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "유지관리하다",
+      "object": "선박의 항해기기 및 장비",
+      "full_statement": "선박의 항해기기 및 장비를 유지 관리한다.",
+      "source_sentence": "선박의 항해기기 및 장비를 유지 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "기록하다",
+      "object": "선박의 진행사항 및 해양상태",
+      "full_statement": "선박의 진행사항, 승무원의 활동, 날씨 및 해양상태를 기록한다.",
+      "source_sentence": "선박의 진행사항, 승무원의 활동, 날씨 및 배의 측정기상에 나온 해양상태를 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [
+    {"name": "항해기구", "category": "장비", "evidence_span": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다."},
+    {"name": "지도", "category": "도구", "evidence_span": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다."},
+    {"name": "차트", "category": "도구", "evidence_span": "항해기구, 지도, 차트를 사용하여 지리적 위치를 판단한다."},
+    {"name": "선박의 항해기기 및 장비", "category": "장비", "evidence_span": "선박의 항해기기 및 장비를 유지 관리한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "연해의 도선 구역(강·해협 등 좁거나 위험한 수로)", "evidence_span": "연해의 도선 구역을 통과하는 선박에 승선하여 뱃길을 인도한다."},
+    {"category": "위험", "value": "좁거나 위험한 바다 및 수로", "evidence_span": "강, 해협 및 기타 좁거나 위험한 바다 및 수로에서 선박들을 인도한다."},
+    {"category": "장소", "value": "선박 승선(이동 중 해상)", "evidence_span": "도선 구역을 통과하는 선박에 승선하여 뱃길을 인도한다."}
+  ]
+}

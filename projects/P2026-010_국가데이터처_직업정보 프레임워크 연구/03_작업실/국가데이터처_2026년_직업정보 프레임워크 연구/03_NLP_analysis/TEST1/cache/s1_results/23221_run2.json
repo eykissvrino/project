@@ -1,0 +1,77 @@
+{
+  "ksco_code": "23221",
+  "tasks": [
+    {
+      "verb": "가공하다",
+      "object": "석유화학 제품",
+      "full_statement": "기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공한다.",
+      "source_sentence": "석유화학 기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공‧분석하여 기존 제품을 개선하고 새로운 제품을 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "분석하다",
+      "object": "석유화학 제품",
+      "full_statement": "석유화학 제품을 분석한다.",
+      "source_sentence": "석유화학 기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공‧분석하여 기존 제품을 개선하고 새로운 제품을 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개선하다",
+      "object": "기존 석유화학 제품",
+      "full_statement": "기존 석유화학 제품을 개선한다.",
+      "source_sentence": "석유화학 기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공‧분석하여 기존 제품을 개선하고 새로운 제품을 시험한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시험하다",
+      "object": "새로운 석유화학 제품",
+      "full_statement": "새로운 석유화학 제품을 시험한다.",
+      "source_sentence": "석유화학 기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공‧분석하여 기존 제품을 개선하고 새로운 제품을 시험한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지원하다",
+      "object": "석유화학 산업의 공정 개발·개선",
+      "full_statement": "석유화학 등 관련 산업의 공정 개발이나 개선을 지원한다.",
+      "source_sentence": "화학, 석유, 펄프 및 제지 등 관련 산업의 공정 및 재료 개발이나 개선을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지원하다",
+      "object": "석유화학 재료 개발·개선",
+      "full_statement": "석유화학 등 관련 산업의 재료 개발이나 개선을 지원한다.",
+      "source_sentence": "화학, 석유, 펄프 및 제지 등 관련 산업의 공정 및 재료 개발이나 개선을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "운영하다",
+      "object": "화학 공정",
+      "full_statement": "연구원 및 기술자 관리하에 화학 공정을 운영한다.",
+      "source_sentence": "연구원 및 기술자 관리하에 화학 공정 및 장비 운영를 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "운영하다",
+      "object": "화학 장비",
+      "full_statement": "연구원 및 기술자 관리하에 화학 장비를 운영한다.",
+      "source_sentence": "연구원 및 기술자 관리하에 화학 공정 및 장비 운영를 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "기술자 및 연구원의 관리·감독 하에 작업",
+      "evidence_span": "석유화학 기술자 및 연구원의 관리·감독 하에 석유화학 제품을 가공‧분석하여"
+    }
+  ]
+}

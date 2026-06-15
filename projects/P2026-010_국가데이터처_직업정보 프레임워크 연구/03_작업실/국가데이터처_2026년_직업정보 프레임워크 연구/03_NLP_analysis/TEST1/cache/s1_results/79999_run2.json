@@ -1,0 +1,127 @@
+{
+  "ksco_code": "79999",
+  "tasks": [
+    {
+      "verb": "제작하다",
+      "object": "인쇄물",
+      "full_statement": "인쇄물을 제작한다.",
+      "source_sentence": "인쇄물을 제작하거나 제본·제책한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제본하다",
+      "object": "인쇄물",
+      "full_statement": "인쇄물을 제본·제책한다.",
+      "source_sentence": "인쇄물을 제작하거나 제본·제책한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "만들다",
+      "object": "유리제품",
+      "full_statement": "유리를 이용하여 병, 전구 등 유리제품을 만든다.",
+      "source_sentence": "유리를 이용하여 병, 전구 등 유리제품을 만든다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "연마하다",
+      "object": "공구",
+      "full_statement": "가위, 톱 등과 같은 공구를 연마한다.",
+      "source_sentence": "가위, 톱 등과 같은 공구를 연마한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "생산하다",
+      "object": "공예품",
+      "full_statement": "손이나 간단한 도구를 이용하여 장식 및 실용 목적의 각종 공예품을 생산한다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 장식 및 실용 목적의 각종 공예품을 생산하며, 보석 및 귀금속을 세공, 제작, 수리한다.",
+      "derived_from": "조상정의(중분류 79)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "세공하다",
+      "object": "보석 및 귀금속",
+      "full_statement": "보석 및 귀금속을 세공한다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 장식 및 실용 목적의 각종 공예품을 생산하며, 보석 및 귀금속을 세공, 제작, 수리한다.",
+      "derived_from": "조상정의(중분류 79)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "수리하다",
+      "object": "보석 및 귀금속",
+      "full_statement": "보석 및 귀금속을 수리한다.",
+      "source_sentence": "손이나 간단한 도구를 이용하여 장식 및 실용 목적의 각종 공예품을 생산하며, 보석 및 귀금속을 세공, 제작, 수리한다.",
+      "derived_from": "조상정의(중분류 79)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "설치하다",
+      "object": "배관·연관시설",
+      "full_statement": "물, 가스, 공기 등을 배급하는 배관, 연관시설을 설치한다.",
+      "source_sentence": "또한 물, 가스, 공기 등을 배급하는 배관, 연관시설을 설치, 수리한다.",
+      "derived_from": "조상정의(중분류 79)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수리하다",
+      "object": "배관·연관시설",
+      "full_statement": "물, 가스, 공기 등을 배급하는 배관, 연관시설을 수리한다.",
+      "source_sentence": "또한 물, 가스, 공기 등을 배급하는 배관, 연관시설을 설치, 수리한다.",
+      "derived_from": "조상정의(중분류 79)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "청소하다",
+      "object": "배관 내 먼지·퇴적물",
+      "full_statement": "배관 내 먼지나 퇴적물을 제거하여 청소한다.",
+      "source_sentence": "배관 내 먼지나 퇴적물을 제거하여 청소하거나 주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류 799)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "소독하다",
+      "object": "주택·사업체 내외부",
+      "full_statement": "주택, 사업체 등의 내외부를 살균하기 위하여 소독한다.",
+      "source_sentence": "배관 내 먼지나 퇴적물을 제거하여 청소하거나 주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류 799)",
+      "confidence": 0.45
+    },
+    {
+      "verb": "가공하다",
+      "object": "골프클럽",
+      "full_statement": "골프클럽을 가공한다.",
+      "source_sentence": "골프클럽가공원·박제제작원",
+      "derived_from": "세세분류 직업 예시→세세활동 특화",
+      "confidence": 0.4
+    },
+    {
+      "verb": "제작하다",
+      "object": "박제",
+      "full_statement": "박제를 제작한다.",
+      "source_sentence": "골프클럽가공원·박제제작원",
+      "derived_from": "세세분류 직업 예시→세세활동 특화",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수리하다",
+      "object": "열쇠",
+      "full_statement": "열쇠를 수리한다.",
+      "source_sentence": "열쇠수리공",
+      "derived_from": "세세분류 직업 예시→세세활동 특화",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [
+    {"name": "가위", "category": "도구", "evidence_span": "가위, 톱 등과 같은 공구를 연마한다."},
+    {"name": "톱", "category": "도구", "evidence_span": "가위, 톱 등과 같은 공구를 연마한다."},
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 수작업 중심(사람의 기능 역할 중요)", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"},
+    {"category": "위험", "value": "살균·소독을 위한 소독제(화학물질) 취급", "evidence_span": "주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다."},
+    {"category": "장소", "value": "주택·사업체 등 내외부 현장 작업", "evidence_span": "주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다."}
+  ]
+}

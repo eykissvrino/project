@@ -1,0 +1,53 @@
+{
+  "ksco_code": "29395",
+  "tasks": [
+    {
+      "verb": "등장하다",
+      "object": "엑스트라",
+      "full_statement": "연극, 영화, 방송 등에서 엑스트라로 등장한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연기하다",
+      "object": "배역",
+      "full_statement": "연극, 영화, 방송 등에서 배정된 배역을 연기한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "연기",
+      "full_statement": "영화, 방송 및 연극에서 연기를 수행한다.",
+      "source_sentence": "미술, 음악, 무용, 스포츠 및 기타 예술작품을 창작하고, 영화, 방송 및 연극에서 연기를 하거나 감독한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    },
+    {
+      "verb": "참여하다",
+      "object": "프로그램 제작",
+      "full_statement": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작에 출연자로 참여한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "출연하다",
+      "object": "광고",
+      "full_statement": "광고 제작 현장에 보조 출연자로 출연한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "촬영·공연 현장에서의 팀작업(연출·감독 지휘 하 출연)",
+      "evidence_span": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다."
+    }
+  ]
+}

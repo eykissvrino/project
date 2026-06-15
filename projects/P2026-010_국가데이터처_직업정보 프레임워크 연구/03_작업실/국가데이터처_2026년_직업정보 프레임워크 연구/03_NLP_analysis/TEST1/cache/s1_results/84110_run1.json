@@ -1,0 +1,98 @@
+{
+  "ksco_code": "84110",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "주조기",
+      "full_statement": "철 및 비철금속 주물을 생산하기 위하여 각종 주조기를 조작한다.",
+      "source_sentence": "철 및 비철금속 주물을 생산하기 위하여 각종 주조기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "붓다",
+      "object": "녹은 금속",
+      "full_statement": "녹은 금속을 주형으로 붓는다.",
+      "source_sentence": "녹은 금속을 주형으로 붓고 주조기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "주조기",
+      "full_statement": "녹은 금속을 주형으로 부은 뒤 주조기를 조작한다.",
+      "source_sentence": "녹은 금속을 주형으로 붓고 주조기를 조작한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "연속 주조기",
+      "full_statement": "용융된 금속재료를 연속적으로 생산하는 연속 주조기를 조작한다.",
+      "source_sentence": "용융된 금속재료를 연속적으로 생산하는 연속 주조기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "금형주조기",
+      "full_statement": "금형주조기를 조작하여 주물을 생산한다.",
+      "source_sentence": "금형주조기 조작원·금형주조기 금형설치원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "설치하다",
+      "object": "금형",
+      "full_statement": "금형주조기에 금형을 설치한다.",
+      "source_sentence": "금형주조기 조작원·금형주조기 금형설치원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "저압주조기",
+      "full_statement": "저압주조기를 조작하여 주물을 생산한다.",
+      "source_sentence": "저압주조기 조작원·원심분리식 주조기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "원심분리식 주조기",
+      "full_statement": "원심분리식 주조기를 조작하여 주물을 생산한다.",
+      "source_sentence": "저압주조기 조작원·원심분리식 주조기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "챔버형 금속주조기",
+      "full_statement": "챔버형 금속주조기를 조작하여 주물을 생산한다.",
+      "source_sentence": "챔버형 금속주조기 조작원·연속주조기 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "다이캐스팅",
+      "full_statement": "다이캐스팅 기기를 조작하여 주물을 생산한다.",
+      "source_sentence": "다이캐스팅 조작원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "주조기", "category": "장비", "evidence_span": "철 및 비철금속 주물을 생산하기 위하여 각종 주조기를 조작한다."},
+    {"name": "연속 주조기", "category": "장비", "evidence_span": "용융된 금속재료를 연속적으로 생산하는 연속 주조기를 조작한다."},
+    {"name": "금형주조기", "category": "장비", "evidence_span": "금형주조기 조작원·금형주조기 금형설치원"},
+    {"name": "저압주조기", "category": "장비", "evidence_span": "저압주조기 조작원·원심분리식 주조기 조작원"},
+    {"name": "원심분리식 주조기", "category": "장비", "evidence_span": "저압주조기 조작원·원심분리식 주조기 조작원"},
+    {"name": "챔버형 금속주조기", "category": "장비", "evidence_span": "챔버형 금속주조기 조작원·연속주조기 조작원"},
+    {"name": "다이캐스팅", "category": "장비", "evidence_span": "다이캐스팅 조작원"},
+    {"name": "주형", "category": "도구", "evidence_span": "녹은 금속을 주형으로 붓고 주조기를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "녹은(용융) 금속 취급에 따른 고열 위험", "evidence_span": "녹은 금속을 주형으로 붓고 주조기를 조작한다."}
+  ]
+}

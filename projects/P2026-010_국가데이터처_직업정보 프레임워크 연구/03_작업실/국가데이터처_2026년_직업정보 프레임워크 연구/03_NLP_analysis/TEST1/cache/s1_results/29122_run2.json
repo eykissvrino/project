@@ -1,0 +1,138 @@
+{
+  "ksco_code": "29122",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "편집방침",
+      "full_statement": "출판물의 편집방침을 결정한다.",
+      "source_sentence": "편집방침을 결정하고 부서별로 업무를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조정하다",
+      "object": "부서별 업무",
+      "full_statement": "편집방침에 따라 부서별로 업무를 조정한다.",
+      "source_sentence": "편집방침을 결정하고 부서별로 업무를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "출판물 편집",
+      "full_statement": "내용과 그림 등 필요한 내용을 첨삭하여 출판물 편집을 기획한다.",
+      "source_sentence": "편집방침을 결정하고 내용, 그림 등 필요한 내용을 첨삭하여 출판물을 편집을 기획‧실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실행하다",
+      "object": "출판물 편집",
+      "full_statement": "기획된 출판물 편집을 실행한다.",
+      "source_sentence": "편집방침을 결정하고 내용, 그림 등 필요한 내용을 첨삭하여 출판물을 편집을 기획‧실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "첨삭하다",
+      "object": "원고 내용과 그림",
+      "full_statement": "출판물에 수록될 내용과 그림 등 필요한 내용을 첨삭한다.",
+      "source_sentence": "편집방침을 결정하고 내용, 그림 등 필요한 내용을 첨삭하여 출판물을 편집을 기획‧실행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "수록 원고",
+      "full_statement": "출판물에 수록될 원고를 조정한다.",
+      "source_sentence": "출판물 기획이나 편집 방향을 세우고 출판물에 수록될 원고를 조정한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "수립하다",
+      "object": "일정계획",
+      "full_statement": "출판물 제작을 위한 일정계획을 수립한다.",
+      "source_sentence": "일정계획을 세우고 주제와 관련된 자료의 수집을 취재기자 혹은 정보수집 담당자에게 분담한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분담하다",
+      "object": "자료 수집",
+      "full_statement": "주제와 관련된 자료의 수집을 취재기자 혹은 정보수집 담당자에게 분담한다.",
+      "source_sentence": "일정계획을 세우고 주제와 관련된 자료의 수집을 취재기자 혹은 정보수집 담당자에게 분담한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "요구하다",
+      "object": "그림·삽화·사진",
+      "full_statement": "내용상 필요한 그림, 삽화, 사진을 미술가와 사진사에게 요구한다.",
+      "source_sentence": "내용상 필요한 그림, 삽화, 사진을 미술가, 사진사에게 요구한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "배정하다",
+      "object": "도해자료·인쇄자료 크기와 위치",
+      "full_statement": "도해자료 및 인쇄자료의 크기와 위치를 배정한다.",
+      "source_sentence": "도해자료 및 인쇄자료의 크기와 위치를 배정하고 활자를 선정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "선정하다",
+      "object": "활자",
+      "full_statement": "출판물에 사용할 활자를 선정한다.",
+      "source_sentence": "도해자료 및 인쇄자료의 크기와 위치를 배정하고 활자를 선정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "검토하다",
+      "object": "최종교정",
+      "full_statement": "출판물의 최종교정을 검토한다.",
+      "source_sentence": "최종교정을 검토 및 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.89
+    },
+    {
+      "verb": "승인하다",
+      "object": "최종교정",
+      "full_statement": "검토한 최종교정을 승인한다.",
+      "source_sentence": "최종교정을 검토 및 승인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "상의하다",
+      "object": "출판일자·판권·인쇄 부수",
+      "full_statement": "출판일자, 판권, 인쇄 부수 등을 조정하기 위하여 저자 및 출판업자와 상의한다.",
+      "source_sentence": "출판일자, 판권, 인쇄 부수 등을 조정하기 위하여 저자 및 출판업자와 상의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "세우다",
+      "object": "편집 방향",
+      "full_statement": "출판물의 기획이나 편집 방향을 세운다.",
+      "source_sentence": "출판물 기획이나 편집 방향을 세우고 출판물에 수록될 원고를 조정한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "저자 및 출판업자와의 협의(외부 이해관계자 응대)",
+      "evidence_span": "출판일자, 판권, 인쇄 부수 등을 조정하기 위하여 저자 및 출판업자와 상의한다."
+    },
+    {
+      "category": "사회적",
+      "value": "부서·취재기자·미술가·사진사 등과의 팀 협업",
+      "evidence_span": "주제와 관련된 자료의 수집을 취재기자 혹은 정보수집 담당자에게 분담한다."
+    }
+  ]
+}

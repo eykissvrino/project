@@ -1,0 +1,54 @@
+{
+  "ksco_code": "72194",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "무늬 조각 롤러",
+      "full_statement": "각종 무늬가 조각된 롤러를 손의 힘으로 조작한다.",
+      "source_sentence": "각종 무늬가 조각이 된 롤러 등을 손의 힘으로 조작하여 직물을 염색(수날염 手捺染)한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "염색하다",
+      "object": "직물",
+      "full_statement": "무늬 조각 롤러를 손으로 조작하여 직물을 수날염으로 염색한다.",
+      "source_sentence": "각종 무늬가 조각이 된 롤러 등을 손의 힘으로 조작하여 직물을 염색(수날염 手捺染)한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "혼합하다",
+      "object": "잉크",
+      "full_statement": "필요한 색상을 구현하기 위해 잉크를 혼합한다.",
+      "source_sentence": "경우에 따라서는 필요한 색상을 구현하기 위해 잉크를 혼합하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "구현하다",
+      "object": "색상",
+      "full_statement": "잉크를 혼합하여 필요한 색상을 구현한다.",
+      "source_sentence": "경우에 따라서는 필요한 색상을 구현하기 위해 잉크를 혼합하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "날염하다",
+      "object": "직물",
+      "full_statement": "수동스크린을 이용하여 직물에 무늬를 날염한다.",
+      "source_sentence": "수공 날염원·수동스크린 날염원",
+      "derived_from": "세세분류 직업 예시→세세정의 특화",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "무늬 조각 롤러", "category": "장비", "evidence_span": "각종 무늬가 조각이 된 롤러 등을 손의 힘으로 조작하여"},
+    {"name": "수동스크린", "category": "장비", "evidence_span": "수동스크린 날염원"},
+    {"name": "잉크", "category": "도구", "evidence_span": "필요한 색상을 구현하기 위해 잉크를 혼합하기도 한다"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "손의 힘으로 롤러를 조작하는 수작업", "evidence_span": "각종 무늬가 조각이 된 롤러 등을 손의 힘으로 조작하여"},
+    {"category": "위험", "value": "염색 잉크 등 화학물질 취급", "evidence_span": "필요한 색상을 구현하기 위해 잉크를 혼합하기도 한다"}
+  ]
+}

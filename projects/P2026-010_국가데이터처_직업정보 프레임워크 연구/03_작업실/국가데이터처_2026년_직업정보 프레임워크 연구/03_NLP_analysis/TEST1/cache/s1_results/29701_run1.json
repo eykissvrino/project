@@ -1,0 +1,119 @@
+{
+  "ksco_code": "29701",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "음식 조리법",
+      "full_statement": "음식의 조리법을 개발한다.",
+      "source_sentence": "음식의 조리법을 개발하고, 판매할 음식의 품목을 정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(음식점에서 음식 조리법 개발)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "정하다",
+      "object": "판매 음식 품목",
+      "full_statement": "판매할 음식의 품목을 정한다.",
+      "source_sentence": "음식의 조리법을 개발하고, 판매할 음식의 품목을 정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(메뉴 선정)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "선정하다",
+      "object": "메뉴",
+      "full_statement": "음식점의 메뉴를 선정한다.",
+      "source_sentence": "음식점에서 음식 조리법 개발, 메뉴 선정 등 조리계획을 세우고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수립하다",
+      "object": "조리계획",
+      "full_statement": "음식 조리법 개발과 메뉴 선정 등 조리계획을 세운다.",
+      "source_sentence": "음식점에서 음식 조리법 개발, 메뉴 선정 등 조리계획을 세우고 조리 관련 업무 전반을 책임지는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "담당하다",
+      "object": "식자재 원가·품질 관리",
+      "full_statement": "조리에 필요한 식자재의 원가 및 품질 관리를 담당한다.",
+      "source_sentence": "조리에 필요한 식자재의 원가‧ 품질 관리 및 구매‧저장 관리를 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "담당하다",
+      "object": "식자재 구매·저장 관리",
+      "full_statement": "조리에 필요한 식자재의 구매 및 저장 관리를 담당한다.",
+      "source_sentence": "조리에 필요한 식자재의 원가‧ 품질 관리 및 구매‧저장 관리를 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "주방 인력계획",
+      "full_statement": "조리사와 조리실 보조원 등 주방 내 인력의 인력계획을 세운다.",
+      "source_sentence": "조리사와 조리실 보조원 등 주방 내 인력의 인력계획을 세우고, 작업을 감독하거나 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(주방 내 인력에 대한 감독, 조정)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "감독하다",
+      "object": "조리 작업",
+      "full_statement": "조리사와 조리실 보조원 등 주방 내 인력의 작업을 감독한다.",
+      "source_sentence": "조리사와 조리실 보조원 등 주방 내 인력의 인력계획을 세우고, 작업을 감독하거나 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(주방 내 인력에 대한 감독)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "조정하다",
+      "object": "주방 인력 작업",
+      "full_statement": "조리사와 조리실 보조원 등 주방 내 인력의 작업을 조정한다.",
+      "source_sentence": "조리사와 조리실 보조원 등 주방 내 인력의 인력계획을 세우고, 작업을 감독하거나 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(주방 내 인력에 대한 조정)",
+      "confidence": 0.93
+    },
+    {
+      "verb": "담당하다",
+      "object": "조리사 교육·훈련",
+      "full_statement": "조리사의 기술을 향상시키기 위한 교육 및 훈련을 담당한다.",
+      "source_sentence": "조리사의 기술을 향상시키기 위한 교육 및 훈련을 담당한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(교육‧훈련을 담당)",
+      "confidence": 0.94
+    },
+    {
+      "verb": "참여하다",
+      "object": "경영계획 의사결정",
+      "full_statement": "음식점의 경영계획을 수립하거나 실행하기 위한 의사결정에 참여한다.",
+      "source_sentence": "음식점의 경영계획을 수립하거나 실행하기 위한 의사결정에 참여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(음식점의 경영계획에 참여)",
+      "confidence": 0.92
+    },
+    {
+      "verb": "책임지다",
+      "object": "조리 관련 업무 전반",
+      "full_statement": "음식점의 조리 관련 업무 전반을 책임진다.",
+      "source_sentence": "음식점에서 음식 조리법 개발, 메뉴 선정 등 조리계획을 세우고 조리 관련 업무 전반을 책임지는 자",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "음식점 주방(실내 외식업체)",
+      "evidence_span": "음식점에서 음식 조리법 개발, 메뉴 선정 등 조리계획을 세우고"
+    },
+    {
+      "category": "사회적",
+      "value": "주방 내 인력에 대한 감독·조정·교육 등 관리·감독",
+      "evidence_span": "조리사와 조리실 보조원 등 주방 내 인력에 대한 감독, 조정 및 교육‧훈련을 담당한다"
+    },
+    {
+      "category": "사회적",
+      "value": "주방인력의 수장 역할",
+      "evidence_span": "주방장은 조리사 등 주방인력의 수장 역할을 하며"
+    }
+  ]
+}

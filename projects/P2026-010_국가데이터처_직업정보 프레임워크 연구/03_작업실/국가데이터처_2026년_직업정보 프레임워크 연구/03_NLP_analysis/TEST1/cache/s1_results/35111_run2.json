@@ -1,0 +1,130 @@
+{
+  "ksco_code": "35111",
+  "tasks": [
+    {
+      "verb": "조사하다",
+      "object": "법률 기록",
+      "full_statement": "심리 중에 있는 사건에 관련된 자료를 작성하기 위하여 법률에 관한 기록을 조사한다",
+      "source_sentence": "심리 중에 있는 사건에 관련된 자료를 작성하기 위하여 법률에 관한 기록을 조사하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "작성하다",
+      "object": "사건 관련 자료",
+      "full_statement": "심리 중에 있는 사건에 관련된 자료를 작성한다",
+      "source_sentence": "심리 중에 있는 사건에 관련된 자료를 작성하기 위하여 법률에 관한 기록을 조사하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "심사하다",
+      "object": "권리 기재 문서",
+      "full_statement": "재산의 소유권이나 유언장에 의한 권리 등을 기재할 문서를 심사한다",
+      "source_sentence": "재산의 소유권이나 유언장에 의한 권리 등을 기재할 문서를 심사하거나 심사준비를 담당한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "준비하다",
+      "object": "문서 심사 자료",
+      "full_statement": "재산의 소유권이나 유언장에 의한 권리 등을 기재할 문서의 심사준비를 담당한다",
+      "source_sentence": "재산의 소유권이나 유언장에 의한 권리 등을 기재할 문서를 심사하거나 심사준비를 담당한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "법률 관련 전문 사무",
+      "full_statement": "법률문제와 관련된 전문적인 사무를 수행한다",
+      "source_sentence": "법률문제와 관련된 전문적인 사무를 수행하는 자로서",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수행하다",
+      "object": "변호사·법무사 사무실 법률 사무업무",
+      "full_statement": "변호사 사무실, 법무사 사무실 또는 기업체에서 법률문제와 관련된 전문적 사무업무를 수행한다",
+      "source_sentence": "변호사 사무실, 법무사 사무실 또는 기업체에서 법률문제와 관련된 전문적 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "소송·재판 서류",
+      "full_statement": "법률문제와 관련된 소송이나 재판의 서류를 작성한다",
+      "source_sentence": "법률문제와 관련된 소송이나 재판의 서류작성‧고지, 특허권의 출원‧등록 등의 전문적인 법률사무 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "고지하다",
+      "object": "소송·재판 서류",
+      "full_statement": "법률문제와 관련된 소송이나 재판의 서류를 고지한다",
+      "source_sentence": "법률문제와 관련된 소송이나 재판의 서류작성‧고지, 특허권의 출원‧등록 등의 전문적인 법률사무 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "권리화하다",
+      "object": "발명·고안",
+      "full_statement": "의뢰인에 의해 고안된 발명이나 고안을 권리화한다",
+      "source_sentence": "의뢰인에 의해 고안된 발명이나 고안을 권리화 하고 등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "방어하다",
+      "object": "등록된 권리",
+      "full_statement": "등록된 권리를 방어하고 보존한다",
+      "source_sentence": "등록된 권리를 방어‧보존하기 위하여 특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "출원하다",
+      "object": "특허권",
+      "full_statement": "특허권의 출원에 관련된 사무업무를 수행한다",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "등록하다",
+      "object": "특허권",
+      "full_statement": "특허권의 등록에 관련된 사무업무를 수행한다",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "신청하다",
+      "object": "이의신청",
+      "full_statement": "특허권에 관한 이의신청에 관련된 사무업무를 수행한다",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "청구하다",
+      "object": "심판",
+      "full_statement": "특허권에 관한 심판청구에 관련된 사무업무를 수행한다",
+      "source_sentence": "특허권의 출원‧등록‧이의신청‧심판청구 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "변호사 사무실·법무사 사무실 또는 기업체",
+      "evidence_span": "변호사 사무실, 법무사 사무실 또는 기업체에서 법률문제와 관련된 전문적 사무업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "의뢰인 응대(의뢰인 고안 발명·고안 권리화)",
+      "evidence_span": "의뢰인에 의해 고안된 발명이나 고안을 권리화 하고"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "ksco_code": "26462",
+  "tasks": [
+    {
+      "verb": "교육하다",
+      "object": "이·미용 이론",
+      "full_statement": "이·미용학원에서 수강생에게 이·미용에 대한 이론을 교육한다.",
+      "source_sentence": "이‧미용학원에서 수강생들에게 이‧미용에 대한 이론과 기술을 습득시키고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "이·미용 기술",
+      "full_statement": "이·미용학원에서 수강생에게 이·미용 기술을 습득하도록 지도한다.",
+      "source_sentence": "이‧미용학원에서 수강생들에게 이‧미용에 대한 이론과 기술을 습득시키고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설명하다",
+      "object": "기본이론",
+      "full_statement": "이·미용의 기본이론을 수강생에게 설명한다.",
+      "source_sentence": "기본이론, 공구 및 기계의 사용에 관하여 설명하고 실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설명하다",
+      "object": "공구 및 기계의 사용법",
+      "full_statement": "이·미용에 사용하는 공구 및 기계의 사용법을 수강생에게 설명한다.",
+      "source_sentence": "기본이론, 공구 및 기계의 사용에 관하여 설명하고 실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "지도하다",
+      "object": "실습",
+      "full_statement": "수강생의 이·미용 실습을 지도한다.",
+      "source_sentence": "기본이론, 공구 및 기계의 사용에 관하여 설명하고 실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.94
+    },
+    {
+      "verb": "감독하다",
+      "object": "실습",
+      "full_statement": "수강생의 이·미용 실습을 감독한다.",
+      "source_sentence": "기본이론, 공구 및 기계의 사용에 관하여 설명하고 실습을 지도‧감독한다",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시범하다",
+      "object": "기술 시범",
+      "full_statement": "이·미용 기술에 대한 시범을 수강생에게 보인다.",
+      "source_sentence": "기술계학원에서 기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고 시범을 보인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "설명하다",
+      "object": "안전관리",
+      "full_statement": "공구 및 기계 사용 시의 안전관리에 대해 수강생에게 설명한다.",
+      "source_sentence": "기술계학원에서 기술의 기본이론, 공구 및 기계의 사용, 안전관리에 대해 설명하고 시범을 보인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "지도하다",
+      "object": "이·미용 실기 교육",
+      "full_statement": "이·미용 관련 기술·기능 이론 교육과 실습을 지도한다.",
+      "source_sentence": "디자인, 이‧미용, 요리 광고, 방송, 디자인 관련 기술‧기능 이론 교육과 실습을 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안 및 교재",
+      "full_statement": "이·미용 교육을 위한 강의안과 교재를 작성한다.",
+      "source_sentence": "강의안, 교재 등을 작성한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "평가하다",
+      "object": "수강생의 학습 성취",
+      "full_statement": "수강생의 이론 및 실기 학습 성취를 평가한다.",
+      "source_sentence": "이‧미용에 대한 이론과 기술을 습득시키고",
+      "derived_from": "세세분류 정의→일반 교수활동 도출",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "이·미용 공구", "category": "도구", "evidence_span": "공구 및 기계의 사용에 관하여 설명하고"},
+    {"name": "이·미용 기계", "category": "장비", "evidence_span": "공구 및 기계의 사용에 관하여 설명하고"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "이·미용학원(실내 교육시설)", "evidence_span": "이‧미용학원에서 수강생들에게"},
+    {"category": "사회적", "value": "수강생 대상 교육·지도(대인 응대)", "evidence_span": "수강생들에게 이‧미용에 대한 이론과 기술을 습득시키고"}
+  ]
+}

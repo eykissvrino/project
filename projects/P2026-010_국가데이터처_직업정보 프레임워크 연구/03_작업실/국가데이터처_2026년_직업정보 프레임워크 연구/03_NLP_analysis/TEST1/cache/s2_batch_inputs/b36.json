@@ -1,0 +1,297 @@
+[
+  {
+    "dwa_id": "D_1081",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "껍질을 벗긴 나무를 쇄목기에 넣어 파쇄하여 죽처럼 만든다.",
+      "껍질을 벗긴 나무를 쇄목기에 넣어 죽처럼 파쇄한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1082",
+    "cluster_size": 3,
+    "n_jobs": 2,
+    "n_unique_stmt": 3,
+    "rep_statements": [
+      "전통적인 기법으로 옥을 장신구 및 장식용으로 만든다.",
+      "전통적인 건축기법으로 가옥, 마구간 등과 같은 소규모의 구조물을 건축한다.",
+      "미장바름재를 사용하여 한식벽체, 양벽, 온돌, 외역기 등을 전통기법대로 시공한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1083",
+    "cluster_size": 3,
+    "n_jobs": 2,
+    "n_unique_stmt": 3,
+    "rep_statements": [
+      "배달 불능 우편물을 사고 우편물 처리원에게 인계한다.",
+      "우편배달차를 운전하여 우편물을 배달한다.",
+      "주소불명, 수취인불명 및 기타 배달 불능 우편물은 부전사유를 기재한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1084",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "해결하기 곤란한 문제에 대해 지도의사와 유무선통신으로 협의하여 조치한다.",
+      "해결하기 곤란한 문제에 대해 지도의사와 유‧무선통신으로 협의하여 조치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1085",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "상품의 기획부터 생산, 개발, 판매, 재고조절 등 상품흐름의 전 과정을 총괄한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1086",
+    "cluster_size": 3,
+    "n_jobs": 3,
+    "n_unique_stmt": 3,
+    "rep_statements": [
+      "음식점의 조리 관련 업무 전반을 책임진다.",
+      "가구제조의 전 공정을 담당한다.",
+      "공직 수의사는 국가 수의업무 전반을 담당한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1087",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "동전으로 운영되는 오락시설에서 동전을 교환해 준다."
+    ]
+  },
+  {
+    "dwa_id": "D_1088",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "여러 형태의 받침판을 사용하여 세탁물에 광택 및 탄력을 준다.",
+      "여러 형태의 받침판을 사용하여 광택 및 탄력을 준다."
+    ]
+  },
+  {
+    "dwa_id": "D_1089",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "여러 가지 점치는 도구를 이용하여 점을 친다.",
+      "고객을 점치기 위해 여러 가지 점치는 도구를 이용한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1090",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "외부손님 내왕 시 차를 접대한다.",
+      "외부손님이 내왕할 때 차를 접대한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1091",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "사전에 예약된 외국인 관광객을 공항으로 마중 나가 관광일정을 개략적으로 설명한다.",
+      "사전에 예약된 외국인 관광객을 공항으로 마중 나간다."
+    ]
+  },
+  {
+    "dwa_id": "D_1092",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "염전에서 소금을 채취한다.",
+      "염전 및 노천광에서 소금이나 광물을 채취한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1093",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "석산에서 암석을 채석하기 위하여 버너를 사용하여 암석을 절단한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1094",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "나무에서 테레빈을 추출하기 위하여 간단한 침지기를 조작한다.",
+      "나무에서 테레빈을 추출한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1095",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "도랑을 만들기 위해 블록을 깔아 시공한다.",
+      "도랑을 판다."
+    ]
+  },
+  {
+    "dwa_id": "D_1096",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "벌목할 나무의 목재의 양을 예측한다.",
+      "벌목할 나무에서 산출되는 목재의 양을 예측한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1097",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "교목, 관목, 꽃, 기타 작물을 증식한다.",
+      "꽃, 교목, 관목 기타 원예작물을 밑둥, 눈틔움 등의 방법으로 증식시킨다."
+    ]
+  },
+  {
+    "dwa_id": "D_1098",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "가금 부화장을 운영한다.",
+      "가금의 알을 인공적으로 부화시킨다."
+    ]
+  },
+  {
+    "dwa_id": "D_1099",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "제조한 김치를 종류에 따라 보관방법을 달리하여 보관한다.",
+      "음식의 종류에 따라 보관방법을 달리하여 제조한 밑반찬을 보관한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1100",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "김을 가공하여 식용 제품으로 만든다.",
+      "김을 구워 구이김을 제조한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1101",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "음식을 놓고 먹는 음식상 또는 밥상을 만든다."
+    ]
+  },
+  {
+    "dwa_id": "D_1102",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "급식대상자의 기호·영양가·조리능력·비용 등을 기초로 하여 식단을 계획한다.",
+      "개인 및 단체에 균형 잡힌 급식 서비스를 제공하기 위해 식단을 계획한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1103",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "나무의 병해충을 방지한다.",
+      "농작물의 잡초를 제거하는 제초작업을 한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1104",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "경사를 다 사용하면 남은 부분과 새로운 빔을 연결한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1105",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "두 사람이 마주앉아 통경바늘을 사용하여 경사를 꿴다."
+    ]
+  },
+  {
+    "dwa_id": "D_1106",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "감시카메라가 작동될 수 있도록 전기 및 장치를 이용하여 감시카메라를 설치한다.",
+      "전기 및 장치를 이용하여 포스시스템(POS System)이 작동될 수 있도록 설치한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1107",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "응급처치에 사용한 의료용 소모품이나 비품을 귀환 즉시 보충한다.",
+      "환자의 응급처치에 사용한 의료용 소모품이나 비품은 귀환 즉시 보충한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1108",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "수금이 불가능한 경우 법적 조치를 권고한다."
+    ]
+  },
+  {
+    "dwa_id": "D_1109",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 2,
+    "rep_statements": [
+      "정규 운항이 불가능한 경우 임시운항계획을 마련한다.",
+      "상황이 확실하다면 비행을 지연시키거나 취소시킨다."
+    ]
+  },
+  {
+    "dwa_id": "D_1110",
+    "cluster_size": 2,
+    "n_jobs": 2,
+    "n_unique_stmt": 1,
+    "rep_statements": [
+      "국제조직 범죄와 연계된 각종 밀수 범죄를 단속한다."
+    ]
+  }
+]

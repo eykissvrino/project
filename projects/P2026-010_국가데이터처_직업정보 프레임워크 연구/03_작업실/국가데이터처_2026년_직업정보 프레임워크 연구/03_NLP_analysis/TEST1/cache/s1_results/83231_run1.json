@@ -1,0 +1,128 @@
+{
+  "ksco_code": "83231",
+  "tasks": [
+    {
+      "verb": "녹이다",
+      "object": "플라스틱 수지",
+      "full_statement": "플라스틱 수지를 녹여 실린더에 저장한다.",
+      "source_sentence": "플라스틱 수지를 녹여 실린더에 저장한 후 이를 일정한 압력으로 금형에 주입하여 제품을 성형하는 사출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "주입하다",
+      "object": "용융 수지",
+      "full_statement": "용융된 수지를 일정한 압력으로 금형에 주입한다.",
+      "source_sentence": "플라스틱 수지를 녹여 실린더에 저장한 후 이를 일정한 압력으로 금형에 주입하여 제품을 성형하는 사출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "성형하다",
+      "object": "제품",
+      "full_statement": "금형에 주입된 수지로 제품을 성형한다.",
+      "source_sentence": "플라스틱 수지를 녹여 실린더에 저장한 후 이를 일정한 압력으로 금형에 주입하여 제품을 성형하는 사출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "사출기",
+      "full_statement": "제품을 성형하기 위하여 사출기를 조작한다.",
+      "source_sentence": "플라스틱 수지를 녹여 실린더에 저장한 후 이를 일정한 압력으로 금형에 주입하여 제품을 성형하는 사출기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "계량하다",
+      "object": "합성수지·안료 등 재료",
+      "full_statement": "합성수지, 안료 등의 각종 재료를 계량한다.",
+      "source_sentence": "합성수지, 안료 등의 각종 재료를 계량하고 일정비율로 배합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배합하다",
+      "object": "각종 재료",
+      "full_statement": "각종 재료를 일정비율로 배합한다.",
+      "source_sentence": "합성수지, 안료 등의 각종 재료를 계량하고 일정비율로 배합한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장착하다",
+      "object": "금형 등 부착물",
+      "full_statement": "사출기에 금형 등의 부착물을 장착한다.",
+      "source_sentence": "기계에 다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "투입하다",
+      "object": "배합된 재료",
+      "full_statement": "기계 또는 호퍼에 배합된 재료를 투입한다.",
+      "source_sentence": "기계 또는 호퍼에 배합된 재료를 투입한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "사출 기계장치",
+      "full_statement": "재료를 사출·성형하는 기계장치를 조정한다.",
+      "source_sentence": "재료 및 부품을 혼합, 사출, 압출, 압착, 주입, 성형, 조립, 마무리하는 각종 기계장치를 조정, 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "가이드·밸브·조종 장치",
+      "full_statement": "온도와 압력, 재료 및 공기·물·증기·기름의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "source_sentence": "롤러의 온도와 압력, 재료 및 공기, 물, 증기, 기름의 흐름과 기계부품의 움직임을 조정하기 위하여 가이드, 밸브, 조종 장치를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측정하다",
+      "object": "완성 제품의 치수",
+      "full_statement": "완성된 제품의 치수를 측정한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "제품 결함",
+      "full_statement": "성형된 제품의 기포, 균열, 뒤틀림 및 기타 결함여부를 검사한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제거하다",
+      "object": "군더더기",
+      "full_statement": "성형 제품의 군더더기를 제거하여 마무리한다.",
+      "source_sentence": "완성된 제품의 치수를 측정하고, 기포, 균열, 뒤틀림 및 기타 결함여부를 검사하고 군더더기를 제거하여 마무리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성하고 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "사출기", "category": "장비", "evidence_span": "제품을 성형하는 사출기를 조작한다"},
+    {"name": "금형", "category": "도구", "evidence_span": "이를 일정한 압력으로 금형에 주입하여"},
+    {"name": "실린더", "category": "장비", "evidence_span": "플라스틱 수지를 녹여 실린더에 저장한 후"},
+    {"name": "호퍼", "category": "장비", "evidence_span": "기계 또는 호퍼에 배합된 재료를 투입한다"},
+    {"name": "다이", "category": "도구", "evidence_span": "다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "롤러", "category": "도구", "evidence_span": "다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "연마 휠", "category": "도구", "evidence_span": "다이, 롤러, 금형, 칼, 연마 휠 등의 부착물을 장착한다"},
+    {"name": "가이드·밸브·조종 장치", "category": "도구", "evidence_span": "가이드, 밸브, 조종 장치를 조작한다"}
+  ],
+  "work_context": []
+}

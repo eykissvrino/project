@@ -1,0 +1,103 @@
+{
+  "ksco_code": "79920",
+  "tasks": [
+    {
+      "verb": "확인하다",
+      "object": "오염·질병·전염병 발생 여부",
+      "full_statement": "주택가, 건물, 사업체 등의 오염, 질병, 전염병 발생 여부를 확인한다.",
+      "source_sentence": "주택가(아파트 포함), 건물, 사업체 등의 오염, 질병, 전염병 등을 예방‧살균, 소독하기 위하여 약품의 종류를 적절히 배합하여 분무한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.72
+    },
+    {
+      "verb": "선택하다",
+      "object": "약품의 종류",
+      "full_statement": "예방·살균·소독 목적에 맞게 약품의 종류를 적절히 선택한다.",
+      "source_sentence": "약품의 종류를 적절히 배합하여 분무한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배합하다",
+      "object": "살균·소독용 약품",
+      "full_statement": "살균, 소독용 약품을 적절히 배합한다.",
+      "source_sentence": "살균, 소독용 약품을 적절히 배합한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "주입하다",
+      "object": "방역약품",
+      "full_statement": "방역약품을 방역기계에 주입한다.",
+      "source_sentence": "방역약품을 방역기계에 주입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이동하다",
+      "object": "방역할 장소",
+      "full_statement": "방역할 장소로 이동한다.",
+      "source_sentence": "방역할 장소로 이동하여 분무한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분무하다",
+      "object": "약품",
+      "full_statement": "주택가, 건물, 사업체 등에 배합한 약품을 분무한다.",
+      "source_sentence": "약품의 종류를 적절히 배합하여 분무한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "예방하다",
+      "object": "질병·전염병",
+      "full_statement": "주택가, 건물, 사업체 등의 질병과 전염병을 예방한다.",
+      "source_sentence": "주택가(아파트 포함), 건물, 사업체 등의 오염, 질병, 전염병 등을 예방‧살균, 소독하기 위하여 약품의 종류를 적절히 배합하여 분무한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살균하다",
+      "object": "주택·사업체 내외부",
+      "full_statement": "주택, 사업체 등의 내외부를 살균한다.",
+      "source_sentence": "주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "소독하다",
+      "object": "대상 장소",
+      "full_statement": "방역 대상 장소를 약품으로 소독한다.",
+      "source_sentence": "주택, 사업체 등의 내외부를 살균하기 위하여 소독하기도 한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "박멸하다",
+      "object": "병충해·해충",
+      "full_statement": "약품을 분무하여 병충해와 해충을 박멸한다.",
+      "source_sentence": "건물 소독원·구충 및 병충해 박멸원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.75
+    },
+    {
+      "verb": "구제하다",
+      "object": "구충 대상 해충",
+      "full_statement": "약품을 사용하여 구충 대상 해충을 구제한다.",
+      "source_sentence": "건물 소독원·구충 및 병충해 박멸원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [
+    {"name": "방역기계", "category": "장비", "evidence_span": "방역약품을 방역기계에 주입한다."},
+    {"name": "방역약품", "category": "도구", "evidence_span": "방역약품을 방역기계에 주입한다."},
+    {"name": "살균·소독용 약품", "category": "도구", "evidence_span": "살균, 소독용 약품을 적절히 배합한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "주택가(아파트 포함)·건물·사업체 등 다양한 방역 현장으로 이동", "evidence_span": "방역할 장소로 이동하여 분무한다."},
+    {"category": "위험", "value": "살균·소독용 약품(화학물질) 취급", "evidence_span": "살균, 소독용 약품을 적절히 배합한다."},
+    {"category": "위험", "value": "오염·질병·전염병 등 생물학적 위험 환경", "evidence_span": "주택가(아파트 포함), 건물, 사업체 등의 오염, 질병, 전염병 등을 예방‧살균, 소독하기 위하여"}
+  ]
+}

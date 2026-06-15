@@ -1,0 +1,79 @@
+{
+  "ksco_code": "13134",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "교도행정 업무의 운영",
+      "full_statement": "교도행정과 관련된 업무의 운영을 기획한다.",
+      "source_sentence": "교도행정과 관련된 업무의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관리하다",
+      "object": "교도행정 업무의 운영",
+      "full_statement": "교도행정과 관련된 업무의 운영을 관리한다.",
+      "source_sentence": "교도행정과 관련된 업무의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "교도행정 업무의 운영",
+      "full_statement": "교도행정과 관련된 업무의 운영을 조정한다.",
+      "source_sentence": "교도행정과 관련된 업무의 운영을 기획, 관리 및 조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "계획하다",
+      "object": "교도 관련 공공서비스를 제공하는 공공기관의 운영",
+      "full_statement": "교도 관련 공공서비스를 제공하는 공공기관의 운영을 계획한다.",
+      "source_sentence": "법률서비스나 경찰, 소방, 교도 관련 공공서비스를 제공하는 사업체나 공공기관의 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조직하다",
+      "object": "교도 관련 공공기관의 운영",
+      "full_statement": "교도 관련 공공서비스를 제공하는 공공기관의 운영을 조직한다.",
+      "source_sentence": "법률서비스나 경찰, 소방, 교도 관련 공공서비스를 제공하는 사업체나 공공기관의 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "지시하다",
+      "object": "교도 관련 공공기관의 운영",
+      "full_statement": "교도 관련 공공서비스를 제공하는 공공기관의 운영을 지시한다.",
+      "source_sentence": "법률서비스나 경찰, 소방, 교도 관련 공공서비스를 제공하는 사업체나 공공기관의 운영을 계획, 조직, 지시하며 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "면접하다",
+      "object": "직원",
+      "full_statement": "직원들의 면접을 담당한다.",
+      "source_sentence": "직원들의 면접, 고용 및 훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "고용하다",
+      "object": "직원",
+      "full_statement": "직원들을 고용한다.",
+      "source_sentence": "직원들의 면접, 고용 및 훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "훈련하다",
+      "object": "직원",
+      "full_statement": "직원들의 훈련을 담당한다.",
+      "source_sentence": "직원들의 면접, 고용 및 훈련을 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

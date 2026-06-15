@@ -1,0 +1,95 @@
+{
+  "ksco_code": "77212",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "위성방송 수신기(셋톱박스)",
+      "full_statement": "인공위성방송의 수신기(셋톱박스)를 설치한다.",
+      "source_sentence": "인공위성방송의 수신기(셋톱박스) 및 위성안테나를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "설치하다",
+      "object": "위성안테나",
+      "full_statement": "위성방송 수신용 위성안테나를 설치한다.",
+      "source_sentence": "인공위성방송의 수신기(셋톱박스) 및 위성안테나를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "위성방송 수신기(셋톱박스)",
+      "full_statement": "고장난 위성방송 수신기(셋톱박스)를 수리한다.",
+      "source_sentence": "인공위성방송의 수신기(셋톱박스) 및 위성안테나를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "위성안테나",
+      "full_statement": "고장난 위성안테나를 수리한다.",
+      "source_sentence": "인공위성방송의 수신기(셋톱박스) 및 위성안테나를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "읽다",
+      "object": "설계도",
+      "full_statement": "설계도를 읽고 위성방송 장비의 설치위치를 표시한다.",
+      "source_sentence": "설계도를 읽고 방송장비의 설치위치를 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "표시하다",
+      "object": "설치위치",
+      "full_statement": "위성안테나 및 수신기의 설치위치를 표시한다.",
+      "source_sentence": "설계도를 읽고 방송장비의 설치위치를 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "배치하다",
+      "object": "위성방송 장비",
+      "full_statement": "위성방송 장비를 표시된 위치에 배치한다.",
+      "source_sentence": "각종 방송장비를 표시된 위치에 배치하고 장비부속품을 상호 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "연결하다",
+      "object": "장비부속품",
+      "full_statement": "위성안테나와 수신기 등 장비부속품을 상호 연결한다.",
+      "source_sentence": "각종 방송장비를 표시된 위치에 배치하고 장비부속품을 상호 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "확인하다",
+      "object": "장비의 가동여부",
+      "full_statement": "설치한 위성방송 장비의 가동여부를 확인한다.",
+      "source_sentence": "장비의 가동여부를 확인하고 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "점검하다",
+      "object": "위성방송 장비",
+      "full_statement": "위성방송 장비를 점검한다.",
+      "source_sentence": "장비의 가동여부를 확인하고 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수리하다",
+      "object": "장비의 이상",
+      "full_statement": "장비에 이상이 발생할 경우 이를 수리한다.",
+      "source_sentence": "이상이 발생할 경우에는 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

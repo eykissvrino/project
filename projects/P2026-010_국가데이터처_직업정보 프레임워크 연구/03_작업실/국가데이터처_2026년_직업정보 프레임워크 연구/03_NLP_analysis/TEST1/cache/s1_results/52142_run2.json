@@ -1,0 +1,68 @@
+{
+  "ksco_code": "52142",
+  "tasks": [
+    {
+      "verb": "수취하다",
+      "object": "요금",
+      "full_statement": "시설 사용이나 서비스의 대가로 지불된 요금을 수취한다.",
+      "source_sentence": "시설 사용이나 서비스의 대가로 지불된 요금을 수취하고 거스름돈을 지불하고 영수증을 주는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지불하다",
+      "object": "거스름돈",
+      "full_statement": "지불된 요금에 대해 거스름돈을 지불한다.",
+      "source_sentence": "시설 사용이나 서비스의 대가로 지불된 요금을 수취하고 거스름돈을 지불하고 영수증을 주는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "교부하다",
+      "object": "영수증",
+      "full_statement": "요금 수취 후 이용자에게 영수증을 교부한다.",
+      "source_sentence": "시설 사용이나 서비스의 대가로 지불된 요금을 수취하고 거스름돈을 지불하고 영수증을 주는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "파악하다",
+      "object": "요금",
+      "full_statement": "제공된 시설 사용이나 서비스의 요금을 파악한다.",
+      "source_sentence": "제품, 서비스의 가격을 파악하고 금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제시하다",
+      "object": "청구서",
+      "full_statement": "금전등록기나 바코드 스캐너를 사용하여 청구서를 제시한다.",
+      "source_sentence": "제품, 서비스의 가격을 파악하고 금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "계산하다",
+      "object": "요금",
+      "full_statement": "현금, 수표, 신용카드, 전자화폐 등으로 요금을 계산한다.",
+      "source_sentence": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정산하다",
+      "object": "수납액",
+      "full_statement": "매일의 수납액과 수취 요금을 정산한다.",
+      "source_sentence": "매일의 수납액과 판매액을 정산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "금전등록기", "category": "장비", "evidence_span": "금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다"},
+    {"name": "바코드 스캐너", "category": "장비", "evidence_span": "금전등록기나 바코드 스캐너를 사용해서 청구서를 제시한다"},
+    {"name": "신용카드 결제", "category": "시스템", "evidence_span": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다"},
+    {"name": "전자화폐 결제", "category": "시스템", "evidence_span": "현금, 수표, 신용카드, 전자화폐 등으로 계산을 한다"}
+  ],
+  "work_context": []
+}

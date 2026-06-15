@@ -1,0 +1,146 @@
+{
+  "ksco_code": "23124",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "건축 설비",
+      "full_statement": "건축물에 설치되는 각종 전기·기계 등 건축 설비를 설치한다.",
+      "source_sentence": "건축물에 설치되는 각종 전기, 기계 등 건축 설비의 설치, 작동점검 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "점검하다",
+      "object": "건축 설비 작동상태",
+      "full_statement": "설치된 전기·기계 등 건축 설비의 작동상태를 점검한다.",
+      "source_sentence": "건축물에 설치되는 각종 전기, 기계 등 건축 설비의 설치, 작동점검 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수행하다",
+      "object": "전기 설비 기술업무",
+      "full_statement": "건축물에 설치되는 전기 설비에 관한 기술적 업무를 수행한다.",
+      "source_sentence": "건축물에 설치되는 각종 전기, 기계 등 건축 설비의 설치, 작동점검 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수행하다",
+      "object": "기계 설비 기술업무",
+      "full_statement": "건축물에 설치되는 기계 설비에 관한 기술적 업무를 수행한다.",
+      "source_sentence": "건축물에 설치되는 각종 전기, 기계 등 건축 설비의 설치, 작동점검 등 기술적 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "고용하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "건축 설비 공사에 수반되는 도급업자와 인력들을 고용한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "도급업자 및 건설 인력",
+      "full_statement": "건축 설비 공사에 수반되는 도급업자와 인력들을 감독한다.",
+      "source_sentence": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "건설현장 활동",
+      "full_statement": "설계도 및 시방서와 맞는지 확인하기 위하여 설비 설치 현장의 활동을 감독한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "확인하다",
+      "object": "설계도 및 시방서 적합성",
+      "full_statement": "설비 설치가 설계도 및 시방서와 맞는지 확인한다.",
+      "source_sentence": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "예비조사",
+      "full_statement": "건축 설비 사업의 예비조사를 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "분석하다",
+      "object": "재무",
+      "full_statement": "건축 설비 사업의 재무 분석을 수행한다.",
+      "source_sentence": "건축사업의 예비조사 및 재무 분석을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "준비하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 설비 건축도면의 작성을 준비한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "감독하다",
+      "object": "건축도면 작성",
+      "full_statement": "도급업자 및 기능 인력들이 사용할 설비 건축도면의 작성을 감독한다.",
+      "source_sentence": "도급업자 및 기능 인력들이 사용할 건축도면의 작성을 준비하고 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "관리하다",
+      "object": "설비 공사현장",
+      "full_statement": "건축 설계도 및 시방서에 따라 설비가 시공될 수 있도록 공사현장을 관리한다.",
+      "source_sentence": "건축 설계도 및 시방서에 따라 건축물이 시공될 수 있도록 공사현장을 관리하기도 한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "수행하다",
+      "object": "설비 안전 기술업무",
+      "full_statement": "건축 설비의 안전에 관한 기술적 업무를 수행한다.",
+      "source_sentence": "각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수행하다",
+      "object": "감리 업무",
+      "full_statement": "설비 시공에 대한 감리 업무를 수행한다.",
+      "source_sentence": "각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수행하다",
+      "object": "건축에너지 기술업무",
+      "full_statement": "건축에너지에 관한 기술적 업무를 수행한다.",
+      "source_sentence": "각종 건물의 건설 및 수리를 위한 구조, 감리, 시공, 설비 안전, 건축에너지 등의 기술적 업무를 수행하며",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "건설현장(설비 설치 현장)",
+      "evidence_span": "설계도 및 시방서와 맞는지 확인하기 위하여 건설현장의 활동을 감독한다."
+    },
+    {
+      "category": "사회적",
+      "value": "도급업자·인력 감독(팀 감독)",
+      "evidence_span": "도급업자들과 건설에 수반되는 인력들을 고용하고 감독한다."
+    }
+  ]
+}

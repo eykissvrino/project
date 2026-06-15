@@ -1,0 +1,204 @@
+{
+  "ksco_code": "36209",
+  "tasks": [
+    {
+      "verb": "청취하다",
+      "object": "고객의 요구",
+      "full_statement": "고객의 요구사항을 청취한다.",
+      "source_sentence": "병의원에서 환자나 보호자 등 고객의 요구를 청취하고, 고객이 원하는 의료 서비스의 절차와 방법, 가격 등에 대해 안내․ 상담을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(범위 일반화)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "안내하다",
+      "object": "서비스의 절차와 방법",
+      "full_statement": "고객이 원하는 서비스의 절차와 방법, 가격 등에 대해 안내한다.",
+      "source_sentence": "병의원에서 환자나 보호자 등 고객의 요구를 청취하고, 고객이 원하는 의료 서비스의 절차와 방법, 가격 등에 대해 안내․ 상담을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(범위 일반화)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "상담하다",
+      "object": "고객 문의",
+      "full_statement": "고객의 문의에 대해 상담을 실시한다.",
+      "source_sentence": "병의원에서 환자나 보호자 등 고객의 요구를 청취하고, 고객이 원하는 의료 서비스의 절차와 방법, 가격 등에 대해 안내․ 상담을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(범위 일반화)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "지원하다",
+      "object": "마케팅·홍보 판촉활동",
+      "full_statement": "서비스의 마케팅, 홍보 등의 판촉활동을 지원한다.",
+      "source_sentence": "병의원에서 의료 서비스의 마케팅, 홍보 등의 판촉활동을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(범위 일반화)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "접수하다",
+      "object": "청구서",
+      "full_statement": "각종 상품의 신규신청, 전·출입, 명의변경, 해지, 요금조정 및 증명서 발급에 관한 청구서를 접수한다.",
+      "source_sentence": "각종 상품의 신규신청, 전‧출입, 명의변경, 해지, 요금조정 및 증명서 발급에 관한 청구서를 접수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "작성하다",
+      "object": "계약서식",
+      "full_statement": "계약서식의 여백을 채운다.",
+      "source_sentence": "계약서식의 여백을 채우고 요구된 서비스에 대한 요금을 알려 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "안내하다",
+      "object": "서비스 요금",
+      "full_statement": "요구된 서비스에 대한 요금을 알려 준다.",
+      "source_sentence": "계약서식의 여백을 채우고 요구된 서비스에 대한 요금을 알려 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "입력하다",
+      "object": "관련 자료",
+      "full_statement": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경한다.",
+      "source_sentence": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "발행하다",
+      "object": "증명서",
+      "full_statement": "증명서를 발행한다.",
+      "source_sentence": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "발송하다",
+      "object": "상품 카탈로그·안내장·내역서",
+      "full_statement": "상품 카탈로그, 안내장 및 내역서 등을 발송한다.",
+      "source_sentence": "상품 카탈로그, 안내장 및 내역서 등을 발송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "홍보하다",
+      "object": "신종서비스 사용방법",
+      "full_statement": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보한다.",
+      "source_sentence": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보하고 가입을 권유 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "권유하다",
+      "object": "가입",
+      "full_statement": "고객에게 서비스 가입을 권유한다.",
+      "source_sentence": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보하고 가입을 권유 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "응대하다",
+      "object": "민원사항",
+      "full_statement": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대한다.",
+      "source_sentence": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고 창구의 자료 및 이용 안내문 배치 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "배치하다",
+      "object": "창구 자료 및 이용 안내문",
+      "full_statement": "창구의 자료 및 이용 안내문을 배치한다.",
+      "source_sentence": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고 창구의 자료 및 이용 안내문 배치 등에 관련된 사무업무를 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수렴하다",
+      "object": "시청자·독자 의견",
+      "full_statement": "방송이나 신문 등의 시청자 또는 독자를 위해 의견을 수렴한다.",
+      "source_sentence": "또한 방송이나 신문 등의 시청자 또는 독자를 위해 의견을 수렴하거나 제품 등에 대해 소비자 관점의 평가 의견을 수집하여 보고한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "수집하다",
+      "object": "소비자 관점 평가 의견",
+      "full_statement": "제품 등에 대해 소비자 관점의 평가 의견을 수집한다.",
+      "source_sentence": "또한 방송이나 신문 등의 시청자 또는 독자를 위해 의견을 수렴하거나 제품 등에 대해 소비자 관점의 평가 의견을 수집하여 보고한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "보고하다",
+      "object": "평가 의견",
+      "full_statement": "수집한 평가 의견을 보고한다.",
+      "source_sentence": "또한 방송이나 신문 등의 시청자 또는 독자를 위해 의견을 수렴하거나 제품 등에 대해 소비자 관점의 평가 의견을 수집하여 보고한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.65
+    },
+    {
+      "verb": "전달하다",
+      "object": "비평과 소감",
+      "full_statement": "방송 프로그램을 시청·청취하고 그에 대한 비평과 소감을 적어 방송사에 전달한다.",
+      "source_sentence": "언론사 모니터 요원은 방송 프로그램을 시청하거나 청취하고서 그에 대한 비평과 소감을 상세히 적어 방송사에 전달, 향후 제작에 참고가 되도록 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조사하다",
+      "object": "신제품 소비자 반응",
+      "full_statement": "신제품에 대한 소비자의 반응과 의견, 타사 제품과의 비교 등을 조사한다.",
+      "source_sentence": "가전, 화장품 등 제조업체 모니터 요원은 신제품에 대한 소비자의 반응과 의견, 타사 제품과의 비교, 점원 및 대리점 직원들의 근무 태도, 광고에 대한 의견 반응 등을 주로 조사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "분석하다",
+      "object": "업계 현황 및 자사 제품",
+      "full_statement": "동 업계 현황과 자사의 제품, 고객 서비스 상품 개발, 디스플레이 등을 파악·분석한다.",
+      "source_sentence": "백화점 등 유통업체의 모니터 요원은 동 업계 현황과 자사의 제품, 고객 서비스 상품 개발, 디스플레이 등을 파악‧ 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보여주다",
+      "object": "중개할 물건",
+      "full_statement": "중개할 물건을 고객에게 보여준다.",
+      "source_sentence": "중개할 물건을 고객에게 보여준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "준비하다",
+      "object": "관련 서류",
+      "full_statement": "고객 또는 공인 중개사를 대신하여 관련 서류 등을 준비한다.",
+      "source_sentence": "중개 업무를 위해 고객에게 연락을 취하거나, 고객 또는 공인 중개사를 대신하여 관련 서류 등을 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "알선하다",
+      "object": "취업",
+      "full_statement": "취업관련 상담, 직업소개 및 취업 알선과 관련된 업무를 담당한다.",
+      "source_sentence": "취업관련 상담, 직업소개 및 취업 알선과 관련된 업무를 담당한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "기록하다",
+      "object": "정보",
+      "full_statement": "당해 작업에 관련된 정보의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "source_sentence": "당해 작업에 관련된 정보(data)의 기록, 보관, 계산 및 검색 등의 업무를 수행한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "방문고객 및 상담전화 응대(고객응대)", "evidence_span": "방문고객 및 상담전화로 걸려오는 각종 민원사항에 응대하고"},
+    {"category": "장소", "value": "창구 등 실내 근무", "evidence_span": "창구의 자료 및 이용 안내문 배치 등에 관련된 사무업무를 수행한다."}
+  ]
+}

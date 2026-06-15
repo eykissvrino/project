@@ -1,0 +1,135 @@
+{
+  "ksco_code": "12129",
+  "tasks": [
+    {
+      "verb": "기획하다",
+      "object": "경영기획 부서의 활동",
+      "full_statement": "경영기획 부서의 활동을 기획한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(경영지원 분야 관리자)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "관리하다",
+      "object": "인사노무 부서의 활동",
+      "full_statement": "인사노무 부서의 활동을 관리한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(경영지원 분야 관리자)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조정하다",
+      "object": "재무·회계 부서의 활동",
+      "full_statement": "재무·회계 부서의 활동을 조정한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "관리하다",
+      "object": "자재·구매 부서의 활동",
+      "full_statement": "자재·구매 부서의 활동을 관리한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "조정하다",
+      "object": "판매 부서의 활동",
+      "full_statement": "판매 부서의 활동을 조정한다.",
+      "source_sentence": "경영기획, 인사노무, 재무, 회계, 자재, 구매, 판매 등 소관 부서의 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수립하다",
+      "object": "장·단기 및 연간 사업계획",
+      "full_statement": "다른 부서의 관리자들과 함께 장·단기 및 연간 사업계획을 수립한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분석하다",
+      "object": "사업계획 성과",
+      "full_statement": "사업계획의 성과를 분석한다.",
+      "source_sentence": "다른 부서의 관리자들과 함께 장‧단기 및 연간 사업계획을 수립하고 성과를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "대표하다",
+      "object": "부서",
+      "full_statement": "다른 부서나 외부기관에 대해 부서를 대표한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "통제하다",
+      "object": "부서의 지출",
+      "full_statement": "부서의 지출을 통제한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관장하다",
+      "object": "자원의 효율적 사용",
+      "full_statement": "자원의 효율적 사용을 관장한다.",
+      "source_sentence": "다른 부서나 외부기관에 대해 부서를 대표하며, 부서의 지출을 통제하고, 자원의 효율적 사용을 관장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.79
+    },
+    {
+      "verb": "입안하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "운영 및 관리절차를 입안한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "관리하다",
+      "object": "운영 및 관리절차",
+      "full_statement": "운영 및 관리절차를 관리한다.",
+      "source_sentence": "운영 및 관리절차를 입안하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.79
+    },
+    {
+      "verb": "의논하다",
+      "object": "다른 부서의 관리자",
+      "full_statement": "경영 지원 업무에 관하여 다른 부서의 관리자와 의논한다.",
+      "source_sentence": "경영자의 포괄적인 관리 하에 다른 부서의 관리자와 의논하여 경영, 인사 등의 경영 지원 업무와 생산관리, 자재구매 등의 생산 활동을 지원하는 업무에 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류 1212)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "지원하다",
+      "object": "생산관리·자재구매 등 생산 활동",
+      "full_statement": "생산관리·자재구매 등의 생산 활동을 지원하는 업무를 관리한다.",
+      "source_sentence": "다른 부서의 관리자와 의논하여 경영, 인사 등의 경영 지원 업무와 생산관리, 자재구매 등의 생산 활동을 지원하는 업무에 관련된 활동을 기획, 관리 및 조정한다.",
+      "derived_from": "조상정의(세분류 1212)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "수립하다",
+      "object": "내부 부서의 정책과 계획",
+      "full_statement": "내부 부서의 정책과 계획을 수립한다.",
+      "source_sentence": "기업이나 단체에서 내부 부서의 정책과 계획을 수립하고 부서원들의 활동을 관리 및 조정한다.",
+      "derived_from": "조상정의(소분류 121)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "조정하다",
+      "object": "부서원들의 활동",
+      "full_statement": "부서원들의 활동을 관리 및 조정한다.",
+      "source_sentence": "기업이나 단체에서 내부 부서의 정책과 계획을 수립하고 부서원들의 활동을 관리 및 조정한다.",
+      "derived_from": "조상정의(소분류 121)",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

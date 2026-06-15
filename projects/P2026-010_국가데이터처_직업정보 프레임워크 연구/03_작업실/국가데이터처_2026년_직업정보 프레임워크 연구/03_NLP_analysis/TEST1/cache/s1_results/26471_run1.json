@@ -1,0 +1,77 @@
+{
+  "ksco_code": "26471",
+  "tasks": [
+    {
+      "verb": "가르치다",
+      "object": "국악 이론",
+      "full_statement": "수강생들에게 국악의 기능을 기르기 위한 이론을 가르친다.",
+      "source_sentence": "수강생들에게 국악의 기능을 기르기 위한 이론과 실기를 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "가르치다",
+      "object": "국악 실기",
+      "full_statement": "수강생들에게 국악의 기능을 기르기 위한 실기를 가르친다.",
+      "source_sentence": "수강생들에게 국악의 기능을 기르기 위한 이론과 실기를 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지도하다",
+      "object": "국악 분야",
+      "full_statement": "국악 등의 예능분야를 전문으로 지도한다.",
+      "source_sentence": "음악, 미술, 서예, 영화배우, 성우, 무용 등의 예능분야를 전문으로 지도한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가르치다",
+      "object": "기본 이론",
+      "full_statement": "국악의 기본적인 이론을 가르친다.",
+      "source_sentence": "기본적인 이론을 가르치고 기능을 시범한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시범하다",
+      "object": "국악 기능",
+      "full_statement": "국악의 기능을 시범한다.",
+      "source_sentence": "기본적인 이론을 가르치고 기능을 시범한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "지도하다",
+      "object": "실기실습 교육",
+      "full_statement": "실기실습 위주로 국악 교육을 지도한다.",
+      "source_sentence": "실기실습 위주로 교육을 지도하고 실습작품으로 실기기능을 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "평가하다",
+      "object": "실기기능",
+      "full_statement": "실습작품으로 수강생의 실기기능을 평가한다.",
+      "source_sentence": "실기실습 위주로 교육을 지도하고 실습작품으로 실기기능을 평가한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안·교재",
+      "full_statement": "국악 강의를 위한 강의안과 교재를 작성한다.",
+      "source_sentence": "다양한 교육수준에서 학문에 대한 이론 및 실제를 가르치고 해당 학문분야를 연구하여 그에 대한 개념 및 운영기법을 개선, 개발하고 강의안, 교재 등을 작성한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "수강생 대상 교육·지도",
+      "evidence_span": "수강생들에게 국악의 기능을 기르기 위한 이론과 실기를 가르친다."
+    }
+  ]
+}

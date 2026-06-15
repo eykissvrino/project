@@ -1,0 +1,66 @@
+{
+  "ksco_code": "26920",
+  "tasks": [
+    {
+      "verb": "보조하다",
+      "object": "지도교수의 수업",
+      "full_statement": "대학에서 교육과정 수행 시 지도교수를 보조하여 수업을 지원한다.",
+      "source_sentence": "대학에서 교육과정 수행 시 지도교수를 보조하여 수업 및 실험지도 등을 하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "지도하다",
+      "object": "실험",
+      "full_statement": "지도교수를 보조하여 학생의 실험지도를 한다.",
+      "source_sentence": "대학에서 교육과정 수행 시 지도교수를 보조하여 수업 및 실험지도 등을 하며",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보조하다",
+      "object": "연구 업무",
+      "full_statement": "관련 개념, 이론 및 운영기법과 관련된 연구 업무를 보조한다.",
+      "source_sentence": "관련 개념, 이론 및 운영기법과 관련된 연구 업무를 보조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보조하다",
+      "object": "운영기법 관련 연구 업무",
+      "full_statement": "대학에서 실험 및 운영기법 등 연구관련 업무를 보조한다.",
+      "source_sentence": "대학에서 실험, 운영기법 등 연구관련 업무를 보조한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "교육과정 수행",
+      "full_statement": "대학의 교육과정 수행 과정을 지원한다.",
+      "source_sentence": "대학에서 교육과정 수행 시 지도교수를 보조하여",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "보조하다",
+      "object": "개념 및 이론 연구",
+      "full_statement": "관련 개념 및 이론과 관련된 연구 업무를 보조한다.",
+      "source_sentence": "관련 개념, 이론 및 운영기법과 관련된 연구 업무를 보조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "대학(교육기관) 내 수업 및 실험 환경",
+      "evidence_span": "대학에서 교육과정 수행 시 지도교수를 보조하여 수업 및 실험지도 등을 하며"
+    },
+    {
+      "category": "사회적",
+      "value": "지도교수 보조(협업·지원적 역할)",
+      "evidence_span": "지도교수를 보조하여 수업 및 실험지도 등을 하며"
+    }
+  ]
+}

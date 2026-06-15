@@ -1,0 +1,100 @@
+{
+  "ksco_code": "76197",
+  "tasks": [
+    {
+      "verb": "조절하다",
+      "object": "광학기구",
+      "full_statement": "카메라를 제외한 광학기구를 조절한다.",
+      "source_sentence": "카메라를 제외한 광학기구를 조절, 수리하며 정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "광학기구",
+      "full_statement": "카메라를 제외한 광학기구를 수리한다.",
+      "source_sentence": "카메라를 제외한 광학기구를 조절, 수리하며 정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "정밀렌즈",
+      "full_statement": "정밀렌즈를 수리한다.",
+      "source_sentence": "정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "프리즘",
+      "full_statement": "프리즘을 수리한다.",
+      "source_sentence": "정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수리하다",
+      "object": "거울 등 광학기구 부속품",
+      "full_statement": "거울 등의 광학기구 부속품을 수리한다.",
+      "source_sentence": "정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "전기회로·부품",
+      "full_statement": "검사계기를 사용하여 전기회로·부품의 단락, 잘못된 연결, 결함 있는 부품의 위치를 찾아내기 위하여 검사한다.",
+      "source_sentence": "검사계기를 사용하여 전기회로‧부품의 단락․ 잘못된 연결․ 결함 있는 부품의 위치를 찾아내기 위하여 검사한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "땜질하다",
+      "object": "엉성한 연결부위",
+      "full_statement": "납땜인두를 사용하여 엉성한 연결부위를 땜질한다.",
+      "source_sentence": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고, 변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "교체하다",
+      "object": "결합부품",
+      "full_statement": "변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "source_sentence": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고, 변압기, 저항기, 콘덴서, 스위치 등의 결합부품을 교체한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "분해하다",
+      "object": "장치",
+      "full_statement": "장치를 분해한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수선하다",
+      "object": "잘못된 기계부품",
+      "full_statement": "잘못된 기계부품을 수선한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "교체하다",
+      "object": "잘못된 기계부품",
+      "full_statement": "잘못된 기계부품을 교체한다.",
+      "source_sentence": "장치를 분해하고 잘못된 기계부품을 수선‧교체한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "검사계기", "category": "장비", "evidence_span": "검사계기를 사용하여 전기회로‧부품의 단락"},
+    {"name": "납땜인두", "category": "도구", "evidence_span": "납땜인두를 사용하여 엉성한 연결부위를 땜질하고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀렌즈·프리즘 등 정밀 광학부속품 수리(정밀작업)", "evidence_span": "정밀렌즈, 프리즘, 거울 등의 광학기구 부속품을 수리한다."}
+  ]
+}

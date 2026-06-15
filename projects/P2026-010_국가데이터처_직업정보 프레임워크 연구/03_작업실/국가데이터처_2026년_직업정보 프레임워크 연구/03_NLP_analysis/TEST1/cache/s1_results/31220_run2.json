@@ -1,0 +1,125 @@
+{
+  "ksco_code": "31220",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "교육훈련 계획",
+      "full_statement": "직원의 교육훈련을 목적으로 훈련 계획을 수립한다.",
+      "source_sentence": "사내 또는 사업체 부설 교육시설 등에서 직원의 교육훈련을 목적으로 훈련 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조율하다",
+      "object": "교육 일정·장소·강사 섭외",
+      "full_statement": "교육 일정, 장소, 강사 섭외 등을 조율한다.",
+      "source_sentence": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고, 교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "확정하다",
+      "object": "교육 일정·장소·강사",
+      "full_statement": "교육 일정, 장소, 강사 섭외 등을 확정한다.",
+      "source_sentence": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고, 교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "교재·기자재",
+      "full_statement": "교육훈련 진행 시 필요한 교재, 기자재 등을 준비한다.",
+      "source_sentence": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고, 교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "관리하다",
+      "object": "교재·기자재",
+      "full_statement": "교육훈련에 필요한 교재, 기자재 등을 관리한다.",
+      "source_sentence": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고, 교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "관리하다",
+      "object": "교육생 출석",
+      "full_statement": "교육생 출석을 관리한다.",
+      "source_sentence": "교육생 출석 관리 및 교육 수료 여부를 확인하고 관련 자료를 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "확인하다",
+      "object": "교육 수료 여부",
+      "full_statement": "교육 수료 여부를 확인한다.",
+      "source_sentence": "교육생 출석 관리 및 교육 수료 여부를 확인하고 관련 자료를 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "교육 관련 자료",
+      "full_statement": "교육생 출석 및 수료와 관련된 자료를 기록한다.",
+      "source_sentence": "교육생 출석 관리 및 교육 수료 여부를 확인하고 관련 자료를 기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "실시하다",
+      "object": "교육 효과 및 만족도 조사",
+      "full_statement": "교육 수료 후 교육 효과 및 만족도 조사를 실시한다.",
+      "source_sentence": "교육 수료 후 교육 효과 및 만족도 조사를 실시·분석하고, 개선 사항을 도출하여 차기 교육 과정에 반영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "분석하다",
+      "object": "교육 효과 및 만족도 조사 결과",
+      "full_statement": "교육 효과 및 만족도 조사 결과를 분석한다.",
+      "source_sentence": "교육 수료 후 교육 효과 및 만족도 조사를 실시·분석하고, 개선 사항을 도출하여 차기 교육 과정에 반영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "도출하다",
+      "object": "개선 사항",
+      "full_statement": "조사 결과를 바탕으로 개선 사항을 도출한다.",
+      "source_sentence": "교육 수료 후 교육 효과 및 만족도 조사를 실시·분석하고, 개선 사항을 도출하여 차기 교육 과정에 반영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "반영하다",
+      "object": "개선 사항",
+      "full_statement": "도출한 개선 사항을 차기 교육 과정에 반영한다.",
+      "source_sentence": "교육 수료 후 교육 효과 및 만족도 조사를 실시·분석하고, 개선 사항을 도출하여 차기 교육 과정에 반영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "섭외하다",
+      "object": "강사",
+      "full_statement": "교육훈련 진행에 필요한 강사를 섭외한다.",
+      "source_sentence": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고, 교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "직무능력향상 교육훈련 업무",
+      "full_statement": "인력 관리 및 직무능력향상을 위하여 교육 및 훈련에 관련된 업무를 수행한다.",
+      "source_sentence": "인력의 관리 및 직무능력향상과 업무의 숙련도 향상을 통한 경영능률 향상을 위하여 교육 및 훈련에 관련된 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "교재", "category": "도구", "evidence_span": "교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다."},
+    {"name": "기자재", "category": "장비", "evidence_span": "교육훈련 진행 시 필요한 교재, 기자재 등을 준비하고 관리한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "사내 또는 사업체 부설 교육시설(실내)", "evidence_span": "사내 또는 사업체 부설 교육시설 등에서 직원의 교육훈련을 목적으로 훈련 계획을 수립한다."},
+    {"category": "사회적", "value": "강사 섭외·교육생 응대 등 대인 조율", "evidence_span": "교육 일정, 장소, 강사 섭외 등을 조율 및 확정하고"}
+  ]
+}

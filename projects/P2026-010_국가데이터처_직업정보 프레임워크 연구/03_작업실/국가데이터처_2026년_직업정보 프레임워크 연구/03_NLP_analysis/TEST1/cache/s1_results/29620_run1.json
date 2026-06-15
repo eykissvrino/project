@@ -1,0 +1,119 @@
+{
+  "ksco_code": "29620",
+  "tasks": [
+    {
+      "verb": "숙지하다",
+      "object": "해당 종목의 규칙",
+      "full_statement": "해당 종목의 경기 규칙을 숙지한다.",
+      "source_sentence": "해당종목의 규칙을 숙지하고 육체적‧기술적 능력을 발전시키기 위하여 체력 훈련과 기술훈련을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "체력 훈련",
+      "full_statement": "육체적 능력을 발전시키기 위하여 체력 훈련을 수행한다.",
+      "source_sentence": "해당종목의 규칙을 숙지하고 육체적‧기술적 능력을 발전시키기 위하여 체력 훈련과 기술훈련을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "수행하다",
+      "object": "기술 훈련",
+      "full_statement": "기술적 능력을 발전시키기 위하여 기술 훈련을 수행한다.",
+      "source_sentence": "해당종목의 규칙을 숙지하고 육체적‧기술적 능력을 발전시키기 위하여 체력 훈련과 기술훈련을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "개발하다",
+      "object": "새로운 전술",
+      "full_statement": "경기에 승리하기 위하여 새로운 전술을 개발한다.",
+      "source_sentence": "경기에 승리하기 위하여 새로운 전술‧ 전략을 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "개발하다",
+      "object": "새로운 전략",
+      "full_statement": "경기에 승리하기 위하여 새로운 전략을 개발한다.",
+      "source_sentence": "경기에 승리하기 위하여 새로운 전술‧ 전략을 개발한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조사하다",
+      "object": "자신 또는 경쟁상대의 장단점",
+      "full_statement": "자기 자신 또는 경쟁상대의 장단점을 조사한다.",
+      "source_sentence": "자기 자신 또는 경쟁상대의 장단점을 조사‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "분석하다",
+      "object": "자신 또는 경쟁상대의 장단점",
+      "full_statement": "자기 자신 또는 경쟁상대의 장단점을 분석한다.",
+      "source_sentence": "자기 자신 또는 경쟁상대의 장단점을 조사‧분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "출전하다",
+      "object": "경기",
+      "full_statement": "각종 운동경기에 선수로 출전한다.",
+      "source_sentence": "경기에 출전하여 규칙에 따라 시합을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "치르다",
+      "object": "시합",
+      "full_statement": "경기 규칙에 따라 시합을 치른다.",
+      "source_sentence": "경기에 출전하여 규칙에 따라 시합을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "준수하다",
+      "object": "경기 규칙",
+      "full_statement": "시합 중 경기 규칙을 준수한다.",
+      "source_sentence": "운동경기에 참여하고 경기훈련을 관리하며 경기 규칙을 준수하도록 유도하고, 이들 경기의 진행을 관리하며, 체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "참여하다",
+      "object": "운동경기",
+      "full_statement": "축구, 야구, 권투, 레슬링 등 각종 운동경기에 직업 선수로 참여한다.",
+      "source_sentence": "직업으로 축구, 야구, 권투, 레슬링 등 각종 운동경기에서 선수로 활약한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "유지하다",
+      "object": "신체적 적성",
+      "full_statement": "체력훈련을 통하여 신체적 적성을 개발하고 유지한다.",
+      "source_sentence": "체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "경쟁상대와의 시합 등 경쟁적 상황",
+      "evidence_span": "자기 자신 또는 경쟁상대의 장단점을 조사‧분석한다."
+    },
+    {
+      "category": "신체적",
+      "value": "체력 훈련을 통한 신체적 적성 개발·유지 등 높은 체력 부담",
+      "evidence_span": "체력훈련을 통하여 신체적 적성을 개발하고 유지하도록 지도한다."
+    },
+    {
+      "category": "시간적",
+      "value": "규칙에 따라 진행되는 경기 출전",
+      "evidence_span": "경기에 출전하여 규칙에 따라 시합을 한다."
+    }
+  ]
+}

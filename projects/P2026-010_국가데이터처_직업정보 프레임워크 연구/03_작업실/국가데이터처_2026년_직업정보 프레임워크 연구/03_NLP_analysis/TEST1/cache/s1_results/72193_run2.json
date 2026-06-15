@@ -1,0 +1,101 @@
+{
+  "ksco_code": "72193",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "자동차 내부 시트",
+      "full_statement": "자동차의 내부 쿠션, 커버, 시트를 제조한다.",
+      "source_sentence": "자동차, 철도객차, 비행기 등의 내부 쿠션, 커버, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "제조하다",
+      "object": "철도객차 내부 시트",
+      "full_statement": "철도객차의 내부 쿠션, 커버, 시트를 제조한다.",
+      "source_sentence": "자동차, 철도객차, 비행기 등의 내부 쿠션, 커버, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "비행기 내부 시트",
+      "full_statement": "비행기의 내부 쿠션, 커버, 시트를 제조한다.",
+      "source_sentence": "자동차, 철도객차, 비행기 등의 내부 쿠션, 커버, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "쿠션",
+      "full_statement": "운송수단 내부에 사용되는 쿠션을 제조한다.",
+      "source_sentence": "자동차, 철도객차, 비행기 등의 내부 쿠션, 커버, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제조하다",
+      "object": "커버",
+      "full_statement": "시트에 씌우는 커버를 제조한다.",
+      "source_sentence": "자동차, 철도객차, 비행기 등의 내부 쿠션, 커버, 시트를 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장치하다",
+      "object": "스프링",
+      "full_statement": "가구틀에 스프링을 장치한다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시트 골격 제작)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "넣다",
+      "object": "솜",
+      "full_statement": "쿠션 속에 솜을 넣는다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무→세세정의 특화(쿠션 충전)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "씌우다",
+      "object": "커버",
+      "full_statement": "쿠션과 시트에 커버를 씌운다.",
+      "source_sentence": "가구틀에 스프링을 장치하고 속에 솜을 넣어 커버를 씌운다.",
+      "derived_from": "상속 주요업무→세세정의 특화(시트 커버 마감)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "장식하다",
+      "object": "내부 장식물",
+      "full_statement": "섬유, 피혁 및 유사제품의 내부 장식을 장식한다.",
+      "source_sentence": "섬유, 피혁 및 유사제품 등의 안락기구 또는 내부 장식을 낮추고 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.55
+    },
+    {
+      "verb": "재단하다",
+      "object": "시트 커버 원단",
+      "full_statement": "시트 커버 제작을 위해 섬유·피혁 원단을 재단한다.",
+      "source_sentence": "천연섬유, 연사, 방적사를 가공하며 직조, 편직 및 기타 방법으로 직물을 제조하고 의복을 재단, 재봉하며 구두를 만들고, 가죽 장식물을 제조한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "재봉하다",
+      "object": "시트 커버",
+      "full_statement": "재단한 원단을 재봉하여 시트 커버를 완성한다.",
+      "source_sentence": "천연섬유, 연사, 방적사를 가공하며 직조, 편직 및 기타 방법으로 직물을 제조하고 의복을 재단, 재봉하며 구두를 만들고, 가죽 장식물을 제조한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손과 수공구를 주로 사용하는 기능 작업",
+      "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"
+    }
+  ]
+}

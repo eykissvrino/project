@@ -1,0 +1,143 @@
+{
+  "ksco_code": "23715",
+  "tasks": [
+    {
+      "verb": "연구하다",
+      "object": "각종 폐기물의 처리 및 감량",
+      "full_statement": "각종 폐기물의 처리 및 감량에 관한 연구를 수행한다.",
+      "source_sentence": "각종 폐기물의 처리 및 감량에 관한 연구를 수행하고, 폐기물 처리시설 및 장치를 설계, 시공, 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "설계하다",
+      "object": "폐기물 처리시설 및 장치",
+      "full_statement": "폐기물 처리시설 및 장치를 설계한다.",
+      "source_sentence": "폐기물 처리시설 및 장치를 설계, 시공, 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시공하다",
+      "object": "폐기물 처리시설 및 장치",
+      "full_statement": "폐기물 처리시설 및 장치를 시공한다.",
+      "source_sentence": "폐기물 처리시설 및 장치를 설계, 시공, 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "폐기물 처리시설 및 장치",
+      "full_statement": "폐기물 처리시설 및 장치를 관리한다.",
+      "source_sentence": "폐기물 처리시설 및 장치를 설계, 시공, 관리업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연구하다",
+      "object": "폐기물 재활용",
+      "full_statement": "폐기물 재활용에 대한 연구를 수행한다.",
+      "source_sentence": "폐기물 재활용에 대한 연구를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "환경보전에 필요한 공학적 기술",
+      "full_statement": "환경보전에 필요한 다양한 공학적인 기술을 개발한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "설계하다",
+      "object": "환경오염 방지 및 제어용 처리시설",
+      "full_statement": "환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "source_sentence": "환경보전에 필요한 다양한 공학적인 기술을 개발하고, 환경오염 방지 및 제어를 위한 처리시설을 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "폐기물 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질을 정화하기 위한 공정을 설계한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시공하다",
+      "object": "폐기물 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질을 정화하기 위한 공정을 시공한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "운전하다",
+      "object": "폐기물 정화 공정",
+      "full_statement": "발생된 폐기물 및 기타 오염물질을 정화하기 위한 공정을 운전한다.",
+      "source_sentence": "발생된 폐기물 및 기타 오염물질 등을 정화하기 위한 공정의 설계 및 시공, 운전 등에 관여한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "진단하다",
+      "object": "오폐수 처리장 시설",
+      "full_statement": "오폐수 처리장의 시설을 진단한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수립하다",
+      "object": "기존시설의 효율적 이용계획 및 발전계획",
+      "full_statement": "오폐수 처리장 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "source_sentence": "오폐수 처리장의 시설을 진단하고 기존시설의 효율적인 이용계획과 발전 계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연구하다",
+      "object": "도시고형폐기물 처리",
+      "full_statement": "도시고형폐기물(MSW)의 처리에 관한 연구를 수행한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "매립지",
+      "full_statement": "도시고형폐기물 처리를 위한 매립지를 설계한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "진단하다",
+      "object": "쓰레기 매립장 안전",
+      "full_statement": "쓰레기 매립장의 안전진단을 수행한다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "수립하다",
+      "object": "쓰레기 매립장 안정대책",
+      "full_statement": "쓰레기 매립장의 안정대책을 세운다.",
+      "source_sentence": "도시고형폐기물(MSW: Municipal Solid Waste)의 처리에 관한 연구와 매립지를 설계하고 쓰레기 매립장의 안전진단 및 안정대책을 세운다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "평가하다",
+      "object": "개발 행위가 자연환경에 미치는 영향",
+      "full_statement": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "source_sentence": "각종 개발 행위가 자연환경에 미치는 영향을 오염방지 대책 및 환경보전 정책을 중심으로 사전 평가한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,133 @@
+{
+  "ksco_code": "51021",
+  "tasks": [
+    {
+      "verb": "촉진하다",
+      "object": "건축자재 판매",
+      "full_statement": "기존 고객을 대상으로 건축자재 판매를 촉진시킨다.",
+      "source_sentence": "기존 고객을 대상으로 판매를 촉진시킬 수 있도록 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(건축자재)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파악하다",
+      "object": "잠재 구매고객",
+      "full_statement": "잠재적인 구매고객을 파악한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설득하다",
+      "object": "구매고객",
+      "full_statement": "구매가 이루어지도록 구매고객을 설득한다.",
+      "source_sentence": "잠재적인 구매고객을 파악하고 구매가 이루어지도록 설득한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "보고서·제안서",
+      "full_statement": "제품의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "source_sentence": "제품의 이용으로 얻게 될 이익을 설명하기 위해 보고서나 제안서를 작성한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "협의하다",
+      "object": "구매비용·인도일자·계약조건",
+      "full_statement": "구매자와 구매비용, 인도일자 및 계약조건 등을 협의한다.",
+      "source_sentence": "구매자와 구매비용, 인도일자 및 계약조건 등을 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "처리하다",
+      "object": "주문",
+      "full_statement": "주문 받은 사항을 처리한다.",
+      "source_sentence": "주문 받은 사항을 처리하고 배달계획을 짠다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수립하다",
+      "object": "배달계획",
+      "full_statement": "배달계획을 짠다.",
+      "source_sentence": "주문 받은 사항을 처리하고 배달계획을 짠다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "계산하다",
+      "object": "주문량·매출액",
+      "full_statement": "주문량과 매출액을 계산하는 등의 사무적인 업무를 처리한다.",
+      "source_sentence": "주문량과 매출액을 계산하는 등의 사무적인 업무를 처리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "처리하다",
+      "object": "판매 후 문제",
+      "full_statement": "제품의 판매 후 문제가 발생했을 경우 이를 처리한다.",
+      "source_sentence": "제품의 판매 후 문제가 발생했을 경우 이를 처리해준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "파악하다",
+      "object": "제품·경쟁업체·시장 정보",
+      "full_statement": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악한다.",
+      "source_sentence": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "연계하다",
+      "object": "시장정보와 영업활동",
+      "full_statement": "파악한 정보를 영업활동과 연계시킨다.",
+      "source_sentence": "제품정보, 경쟁업체, 시장상황에 관한 정보를 파악하고 이를 영업활동과 연계시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "감독하다",
+      "object": "다른 영업원의 활동",
+      "full_statement": "다른 영업원의 활동을 감독한다.",
+      "source_sentence": "다른 영업원의 활동을 감독하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "판매하다",
+      "object": "건축자재 및 인테리어 재료",
+      "full_statement": "건축자재 및 인테리어 관련 재료를 판매하기 위해 영업한다.",
+      "source_sentence": "건축자재(합판, 타일, 창호, 양변기, 황토벽돌, 조명, 유리, 벽난로) 및 인테리어 관련 재료를 판매하기 위해 영업 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확보하다",
+      "object": "거래처",
+      "full_statement": "건축자재 판매를 위한 거래처를 확보한다.",
+      "source_sentence": "건축자재 판매를 위한 거래처를 확보하거나, 부족한 품목을 납품하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "납품하다",
+      "object": "부족 품목",
+      "full_statement": "부족한 품목을 납품한다.",
+      "source_sentence": "건축자재 판매를 위한 거래처를 확보하거나, 부족한 품목을 납품하는 업무를 수행하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객·구매자 대상 영업 및 협의(고객응대)",
+      "evidence_span": "구매자와 구매비용, 인도일자 및 계약조건 등을 협의한다."
+    }
+  ]
+}

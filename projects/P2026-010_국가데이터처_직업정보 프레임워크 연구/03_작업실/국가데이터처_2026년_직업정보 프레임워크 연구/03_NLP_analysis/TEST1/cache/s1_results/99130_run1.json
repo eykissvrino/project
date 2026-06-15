@@ -1,0 +1,90 @@
+{
+  "ksco_code": "99130",
+  "tasks": [
+    {
+      "verb": "채취하다",
+      "object": "해초",
+      "full_statement": "간단한 수공구를 사용하여 해초를 채취한다.",
+      "source_sentence": "간단한 수공구를 사용하여 해초, 바다이끼, 조개 등 연체동물을 채취한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(해초 채취자)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "채취하다",
+      "object": "바다이끼",
+      "full_statement": "간단한 수공구를 사용하여 바다이끼를 채취한다.",
+      "source_sentence": "간단한 수공구를 사용하여 해초, 바다이끼, 조개 등 연체동물을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "채취하다",
+      "object": "조개",
+      "full_statement": "간단한 수공구를 사용하여 조개를 채취한다.",
+      "source_sentence": "간단한 수공구를 사용하여 해초, 바다이끼, 조개 등 연체동물을 채취한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(조개 채취자)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "채취하다",
+      "object": "연체동물",
+      "full_statement": "간단한 수공구를 사용하여 조개 등 연체동물을 채취한다.",
+      "source_sentence": "간단한 수공구를 사용하여 해초, 바다이끼, 조개 등 연체동물을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "손질하다",
+      "object": "구멍난 그물",
+      "full_statement": "어로작업 중 구멍난 그물을 간단히 손질한다.",
+      "source_sentence": "어로작업 중 구멍난 그물을 간단히 손질한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(그물 수선원·어망 수리원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "어망",
+      "full_statement": "손상된 어망을 간단히 수리한다.",
+      "source_sentence": "그물 수선원·어망 수리원",
+      "derived_from": "세세분류 직업 예시→상속 주요업무(그물 손질) 연계",
+      "confidence": 0.7
+    },
+    {
+      "verb": "돕다",
+      "object": "숙련 어업종사원의 어로작업",
+      "full_statement": "숙련된 어업종사원을 도와서 간단한 어로작업을 수행한다.",
+      "source_sentence": "정기적이지 않고 일시적으로 숙련된 어업종사원을 도와서 간단한 어로작업을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {
+      "name": "간단한 수공구",
+      "category": "도구",
+      "evidence_span": "간단한 수공구를 사용하여 해초, 바다이끼, 조개 등 연체동물을 채취한다."
+    },
+    {
+      "name": "그물·어망",
+      "category": "장비",
+      "evidence_span": "어로작업 중 구멍난 그물을 간단히 손질한다."
+    }
+  ],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."
+    },
+    {
+      "category": "시간적",
+      "value": "정기적이지 않고 일시적인 작업",
+      "evidence_span": "정기적이지 않고 일시적으로 숙련된 어업종사원을 도와서 간단한 어로작업을 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "숙련 어업종사원을 보조하는 협업",
+      "evidence_span": "숙련된 어업종사원을 도와서 간단한 어로작업을 수행한다."
+    }
+  ]
+}

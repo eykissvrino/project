@@ -1,0 +1,108 @@
+{
+  "ksco_code": "24142",
+  "tasks": [
+    {
+      "verb": "진단하다",
+      "object": "치아와 잇몸, 구강조직의 질병",
+      "full_statement": "치아와 잇몸, 구강조직의 질병이나 상해 및 기능 이상을 진단한다.",
+      "source_sentence": "치아와 잇몸, 구강조직의 질병이나 상해 및 기능 이상을 진단하고 치료한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "치료하다",
+      "object": "치아와 잇몸, 구강조직의 질병",
+      "full_statement": "치아와 잇몸, 구강조직의 질병이나 상해 및 기능 이상을 치료한다.",
+      "source_sentence": "치아와 잇몸, 구강조직의 질병이나 상해 및 기능 이상을 진단하고 치료한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지시하다",
+      "object": "병리검사",
+      "full_statement": "구강질환을 정밀하게 진단하기 위해 X-ray 및 기타 의료기기를 이용한 병리검사를 지시한다.",
+      "source_sentence": "구강질환을 정밀하게 진단하기 위해서, X-ray 및 기타 의료기기를 이용한병리검사를 지시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "수술하다",
+      "object": "외과적 수술",
+      "full_statement": "회전공구, 수공구 등 치과기구를 사용하여 외과적 수술을 한다.",
+      "source_sentence": "회전공구, 수공구 등 치과기구를 사용하여 외과적 수술 및 약물치료를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "치료하다",
+      "object": "약물치료",
+      "full_statement": "회전공구, 수공구 등 치과기구를 사용하여 약물치료를 한다.",
+      "source_sentence": "회전공구, 수공구 등 치과기구를 사용하여 외과적 수술 및 약물치료를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "청소하다",
+      "object": "치아",
+      "full_statement": "치아를 청소한다.",
+      "source_sentence": "치아를 청소하고, 홈을 때우며, 이를 뽑거나 심으며 의치로 대체하는 일도 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "충전하다",
+      "object": "치아의 홈",
+      "full_statement": "치아의 홈을 때운다.",
+      "source_sentence": "치아를 청소하고, 홈을 때우며, 이를 뽑거나 심으며 의치로 대체하는 일도 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "발치하다",
+      "object": "치아",
+      "full_statement": "이를 뽑는다.",
+      "source_sentence": "치아를 청소하고, 홈을 때우며, 이를 뽑거나 심으며 의치로 대체하는 일도 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "식립하다",
+      "object": "치아",
+      "full_statement": "이를 심는다.",
+      "source_sentence": "치아를 청소하고, 홈을 때우며, 이를 뽑거나 심으며 의치로 대체하는 일도 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "대체하다",
+      "object": "의치",
+      "full_statement": "치아를 의치로 대체한다.",
+      "source_sentence": "치아를 청소하고, 홈을 때우며, 이를 뽑거나 심으며 의치로 대체하는 일도 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "돌보다",
+      "object": "치아의 건강",
+      "full_statement": "전문의학적 지식을 적용하여 치아의 건강을 돌본다.",
+      "source_sentence": "[세분류 2414 치과의사] 전문의학적 지식을 적용하여 치아의 건강을 돌보고 치아질환을 치료하는 일을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "치료하다",
+      "object": "치아질환",
+      "full_statement": "전문의학적 지식을 적용하여 치아질환을 치료한다.",
+      "source_sentence": "[세세분류 24142 일반 치과의사] 치아의 건강을 돌보고 치아 질환을 치료하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "X-ray", "category": "장비", "evidence_span": "X-ray 및 기타 의료기기를 이용한병리검사를 지시한다"},
+    {"name": "회전공구", "category": "도구", "evidence_span": "회전공구, 수공구 등 치과기구를 사용하여"},
+    {"name": "수공구", "category": "도구", "evidence_span": "회전공구, 수공구 등 치과기구를 사용하여"},
+    {"name": "치과기구", "category": "도구", "evidence_span": "회전공구, 수공구 등 치과기구를 사용하여 외과적 수술 및 약물치료를 한다"}
+  ],
+  "work_context": []
+}

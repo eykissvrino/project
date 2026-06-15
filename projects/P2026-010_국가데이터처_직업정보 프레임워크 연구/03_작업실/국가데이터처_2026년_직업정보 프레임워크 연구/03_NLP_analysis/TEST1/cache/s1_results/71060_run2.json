@@ -1,0 +1,92 @@
+{
+  "ksco_code": "71060",
+  "tasks": [
+    {
+      "verb": "계량하다",
+      "object": "조리 재료",
+      "full_statement": "도시락 조리에 사용할 곡류, 육류, 채소류 등의 재료를 계량한다.",
+      "source_sentence": "도시락 등 식사용 조리식품을 생산하기 위해 곡류, 육류, 채소류 등의 재료를 계량, 세척, 손질, 절단, 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "세척하다",
+      "object": "식품 재료",
+      "full_statement": "도시락 및 밀키트 제조에 필요한 곡류, 육류, 채소류 등의 식품 재료를 세척한다.",
+      "source_sentence": "곡류, 육류, 채소류 등의 재료를 계량, 세척, 손질, 절단, 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "손질하다",
+      "object": "식품 재료",
+      "full_statement": "도시락 제조에 사용할 곡류, 육류, 채소류 등의 재료를 손질한다.",
+      "source_sentence": "곡류, 육류, 채소류 등의 재료를 계량, 세척, 손질, 절단, 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "절단하다",
+      "object": "식품 재료",
+      "full_statement": "손질한 식품 재료를 용도에 맞게 절단한다.",
+      "source_sentence": "곡류, 육류, 채소류 등의 재료를 계량, 세척, 손질, 절단, 조리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조리하다",
+      "object": "식품 재료",
+      "full_statement": "손질·절단한 재료를 조리하여 도시락용 식사용 조리식품을 만든다.",
+      "source_sentence": "도시락 등 식사용 조리식품을 생산하기 위해 곡류, 육류, 채소류 등의 재료를 계량, 세척, 손질, 절단, 조리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "담다",
+      "object": "조리식품",
+      "full_statement": "손질된 재료나 조리된 식품을 정해진 용기에 담는다.",
+      "source_sentence": "손질된 재료나 조리된 식품을 정해진 용기에 담아 포장한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "포장하다",
+      "object": "조리식품",
+      "full_statement": "용기에 담은 조리식품을 포장한다.",
+      "source_sentence": "손질된 재료나 조리된 식품을 정해진 용기에 담아 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.94
+    },
+    {
+      "verb": "냉동포장하다",
+      "object": "조리식품",
+      "full_statement": "조리된 식품을 냉동포장한다.",
+      "source_sentence": "냉동포장하거나 통조림, 레토르트 용기 등을 활용하여 포장한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "포장하다",
+      "object": "통조림 식품",
+      "full_statement": "조리된 식품을 통조림 용기를 활용하여 포장한다.",
+      "source_sentence": "냉동포장하거나 통조림, 레토르트 용기 등을 활용하여 포장한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "포장하다",
+      "object": "레토르트 식품",
+      "full_statement": "조리된 식품을 레토르트 용기를 활용하여 포장한다.",
+      "source_sentence": "냉동포장하거나 통조림, 레토르트 용기 등을 활용하여 포장한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "통조림 용기", "category": "도구", "evidence_span": "냉동포장하거나 통조림, 레토르트 용기 등을 활용하여 포장한다."},
+    {"name": "레토르트 용기", "category": "도구", "evidence_span": "냉동포장하거나 통조림, 레토르트 용기 등을 활용하여 포장한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "제조 시설(실내)", "evidence_span": "주로 제조 시설에서 도시락 등 식사용 조리식품을 생산하기 위해"}
+  ]
+}

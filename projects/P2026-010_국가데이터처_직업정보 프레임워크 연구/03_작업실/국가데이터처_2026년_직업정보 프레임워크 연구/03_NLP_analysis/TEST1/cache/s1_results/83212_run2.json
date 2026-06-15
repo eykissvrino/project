@@ -1,0 +1,164 @@
+{
+  "ksco_code": "83212",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "화장품 생산기",
+      "full_statement": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기를 조작한다.",
+      "source_sentence": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "화장용품 과립기",
+      "full_statement": "화장용품 재료를 처리하는 화장용품 과립기를 조작한다.",
+      "source_sentence": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "향수 증류기",
+      "full_statement": "향수를 제조하기 위하여 향수 증류기를 조작한다.",
+      "source_sentence": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수행하다",
+      "object": "충전 및 봉합 일괄공정",
+      "full_statement": "경우에 따라 화장품의 충전 및 봉합 일괄공정을 수행한다.",
+      "source_sentence": "경우에 따라서는 충전 및 봉합의 일괄공정을 하기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 처리온도",
+      "full_statement": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치의 압력",
+      "full_statement": "원료를 처리하는 각종 기계장치의 압력을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "재료의 흐름",
+      "full_statement": "기계장치 내 재료의 흐름을 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계의 속도",
+      "full_statement": "기계의 속도를 조정한다.",
+      "source_sentence": "원료를 혼합, 분쇄, 여과, 가열, 증류, 성형, 충진, 봉합하는 각종 기계장치의 처리온도, 압력, 재료의 흐름, 기계의 속도 등을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "관찰하다",
+      "object": "혼합물의 처리과정",
+      "full_statement": "혼합물의 처리과정을 관찰한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "확인하다",
+      "object": "색의 변화와 농도",
+      "full_statement": "처리 중인 혼합물의 색의 변화, 농도 등을 확인한다.",
+      "source_sentence": "혼합물의 처리과정을 관찰하고 색의 변화, 농도 등을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성품",
+      "full_statement": "완성된 화장품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "완성품",
+      "full_statement": "완성된 화장품을 검사한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성품",
+      "full_statement": "완성된 화장품을 포장한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "탐지하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 탐지한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계",
+      "full_statement": "기능장애가 발생한 기계를 정비한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "세척하다",
+      "object": "기계",
+      "full_statement": "기계를 세척 및 소제한다.",
+      "source_sentence": "기계의 기능장애를 탐지하여 정비하고, 세척 및 소제한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "작성한 생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "화장품 생산기", "category": "장비", "evidence_span": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다."},
+    {"name": "화장용품 과립기", "category": "장비", "evidence_span": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다."},
+    {"name": "향수 증류기", "category": "장비", "evidence_span": "화장품 생산에 사용되는 재료를 성형, 여과, 가열, 혼합, 분쇄하는 화장품 생산기, 화장용품 과립기, 향수 증류기 등을 조작한다."},
+    {"name": "화장용품 주형기", "category": "장비", "evidence_span": "화장용품 주형기 조작원·향수 증류기 조작원"}
+  ],
+  "work_context": []
+}

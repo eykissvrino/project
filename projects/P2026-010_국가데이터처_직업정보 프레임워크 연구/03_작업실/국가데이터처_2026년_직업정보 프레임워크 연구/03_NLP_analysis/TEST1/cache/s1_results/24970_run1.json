@@ -1,0 +1,77 @@
+{
+  "ksco_code": "24970",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "환자안전사고 예방계획",
+      "full_statement": "환자안전사고를 예방하기 위한 예방계획을 수립한다.",
+      "source_sentence": "각종 의료기관에서 환자안전사고 예방계획 수립 및 시행, 환자안전기준 마련 및 교육 실시, 환자안전사고 실태 파악 등 환자안전과 의료 질 향상에 관한 업무를 전담하여 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시행하다",
+      "object": "환자안전사고 예방계획",
+      "full_statement": "수립된 환자안전사고 예방계획을 시행한다.",
+      "source_sentence": "각종 의료기관에서 환자안전사고 예방계획 수립 및 시행, 환자안전기준 마련 및 교육 실시, 환자안전사고 실태 파악 등 환자안전과 의료 질 향상에 관한 업무를 전담하여 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "마련하다",
+      "object": "환자안전기준",
+      "full_statement": "환자안전기준을 마련한다.",
+      "source_sentence": "환자안전기준 마련하고 시행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "시행하다",
+      "object": "환자안전기준",
+      "full_statement": "마련된 환자안전기준을 시행한다.",
+      "source_sentence": "환자안전기준 마련하고 시행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "실시하다",
+      "object": "환자안전 교육",
+      "full_statement": "환자안전에 관한 교육을 실시한다.",
+      "source_sentence": "환자안전기준 마련 및 교육 실시",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수립하다",
+      "object": "환자안전 계획",
+      "full_statement": "환자안전 계획을 수립한다.",
+      "source_sentence": "환자안전 계획 및 교육을 실시하고, 환자안전사고 실태 등을 파악한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파악하다",
+      "object": "환자안전사고 실태",
+      "full_statement": "환자안전사고의 실태를 파악한다.",
+      "source_sentence": "환자안전사고 실태 파악 등 환자안전과 의료 질 향상에 관한 업무를 전담하여 수행한다.",
+      "derived_from": "세세분류 정의 / 상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "향상하다",
+      "object": "의료 질",
+      "full_statement": "의료 질 향상에 관한 업무를 수행한다.",
+      "source_sentence": "환자안전사고 실태 파악 등 환자안전과 의료 질 향상에 관한 업무를 전담하여 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "각종 의료기관",
+      "evidence_span": "각종 의료기관에서 환자안전사고 예방계획 수립 및 시행"
+    }
+  ]
+}

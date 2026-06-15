@@ -1,0 +1,85 @@
+{
+  "ksco_code": "43199",
+  "tasks": [
+    {
+      "verb": "연출하다",
+      "object": "의상과 액세서리",
+      "full_statement": "패션 감각에 맞게 의상과 신발, 가방, 스카프, 액세서리 등을 조화롭게 연출한다.",
+      "source_sentence": "패션 감각에 맞게 의상과 신발, 가방, 스카프, 액세서리 등을 조화롭게 연출한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조언하다",
+      "object": "이미지 연출",
+      "full_statement": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리, 화술, 자세 등을 조언한다.",
+      "source_sentence": "직위나 직책, 분위기에 맞는 이미지를 연출할 수 있도록 의상, 화장, 액세서리,화술, 자세 등을 조언한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "개선하다",
+      "object": "고객의 용모",
+      "full_statement": "고객의 용모를 개선하기 위하여 여러 가지 미용 처리를 한다.",
+      "source_sentence": "고객의 용모를 개선하기 위하여 여러 가지 처리를 하는 피부미용 및 체형 관리사, 메이크업 아티스트 및 분장사, 패션코디네이터 등 기타 미용서비스 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 피부",
+      "full_statement": "고객의 피부 상태에 맞추어 피부를 관리한다.",
+      "source_sentence": "피부 관리, 화장 등 고객의 용모를 개선하기 위하여 여러 가지 처리를 하는 피부미용 및 체형 관리사",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "관리하다",
+      "object": "고객의 체형",
+      "full_statement": "고객의 체형을 관리한다.",
+      "source_sentence": "피부미용 및 체형 관리사",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "시술하다",
+      "object": "화장",
+      "full_statement": "고객의 용모를 개선하기 위하여 화장을 시술한다.",
+      "source_sentence": "피부 관리, 화장 등 고객의 용모를 개선하기 위하여 여러 가지 처리를 하는",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수행하다",
+      "object": "메이크업",
+      "full_statement": "고객에게 메이크업을 수행한다.",
+      "source_sentence": "메이크업 아티스트 및 분장사, 패션코디네이터 등 기타 미용서비스 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "수행하다",
+      "object": "분장",
+      "full_statement": "목적에 맞게 분장을 수행한다.",
+      "source_sentence": "메이크업 아티스트 및 분장사, 패션코디네이터 등 기타 미용서비스 종사자가 여기에 분류된다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.5
+    },
+    {
+      "verb": "제공하다",
+      "object": "헤어 및 외모 관리 서비스",
+      "full_statement": "고객에게 헤어 및 외모 관리 서비스를 제공한다.",
+      "source_sentence": "헤어 및 외모 관리, 결혼 및 장례, 반려동물 관리 등 개인 생활 관련 서비스직이 여기에 포함된다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.45
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(대인 서비스)",
+      "evidence_span": "고객의 용모를 개선하기 위하여 여러 가지 처리를 하는"
+    }
+  ]
+}

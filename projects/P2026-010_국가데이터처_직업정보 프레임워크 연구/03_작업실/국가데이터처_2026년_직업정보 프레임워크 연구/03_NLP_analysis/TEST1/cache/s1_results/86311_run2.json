@@ -1,0 +1,132 @@
+{
+  "ksco_code": "86311",
+  "tasks": [
+    {
+      "verb": "혼합하다",
+      "object": "일차전지 활물질",
+      "full_statement": "일차전지의 전극반응에 관여하는 활물질을 기계장치를 조작하여 혼합한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(일차전지)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "코팅하다",
+      "object": "일차전지 전극",
+      "full_statement": "일차전지의 전극에 활물질을 코팅하는 기계장치를 조작한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(일차전지)",
+      "confidence": 0.83
+    },
+    {
+      "verb": "압축하다",
+      "object": "활물질",
+      "full_statement": "일차전지의 활물질을 압축하는 기계장치를 조작한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(일차전지)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "성형하다",
+      "object": "양극 및 음극 활물질",
+      "full_statement": "양극 및 음극 활물질 성형장치를 조작하여 활물질을 성형한다.",
+      "source_sentence": "양극 및 음극 활물질 성형장치 조작원",
+      "derived_from": "세세분류 직업 예시→고유활동 추가",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "전극혼합·코팅·압축 공정에 사용되는 각종 기계장치를 조정한다.",
+      "source_sentence": "전지의 전극반응에 관여하는 물질(활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가공하다",
+      "object": "전극 연결부",
+      "full_statement": "전극의 연결부를 가공한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "용접하다",
+      "object": "전극 연결부",
+      "full_statement": "전극의 연결부를 용접한다.",
+      "source_sentence": "전극의 연결부를 가공하거나 용접한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조립하다",
+      "object": "일차전지",
+      "full_statement": "가공된 전극과 부품으로 일차전지를 조립하는 장비를 조작한다.",
+      "source_sentence": "재충전성이 없는 일차전지의 전극혼합, 조립 및 외관검사, 포장 및 출고와 관련된 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "채취하다",
+      "object": "샘플",
+      "full_statement": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "가공처리 정도",
+      "full_statement": "채취한 샘플로 가공처리 정도를 검사·시험한다.",
+      "source_sentence": "가공처리 정도를 검사·시험하기 위하여 샘플을 채취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "검사하다",
+      "object": "전류·전압",
+      "full_statement": "전류·전압 검사장치를 조작하여 일차전지의 전류·전압을 검사한다.",
+      "source_sentence": "전류‧전압 검사장치 조작원",
+      "derived_from": "세세분류 직업 예시→고유활동 추가",
+      "confidence": 0.8
+    },
+    {
+      "verb": "검사하다",
+      "object": "외관",
+      "full_statement": "완성된 일차전지의 외관을 검사한다.",
+      "source_sentence": "재충전성이 없는 일차전지의 전극혼합, 조립 및 외관검사, 포장 및 출고와 관련된 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "인출하다",
+      "object": "완성품",
+      "full_statement": "완성된 일차전지 완성품을 인출한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "포장하다",
+      "object": "완성품",
+      "full_statement": "완성된 일차전지를 포장한다.",
+      "source_sentence": "완성품을 인출, 검사, 포장한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(일차전지)",
+      "confidence": 0.86
+    },
+    {
+      "verb": "출고하다",
+      "object": "완성품",
+      "full_statement": "포장된 일차전지 완성품을 출고한다.",
+      "source_sentence": "재충전성이 없는 일차전지의 전극혼합, 조립 및 외관검사, 포장 및 출고와 관련된 장비를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    }
+  ],
+  "tools": [
+    {"name": "활물질 혼합·코팅·압축 기계장치", "category": "장비", "evidence_span": "활물질)을 혼합, 코팅, 압축하는 각종 기계장치를 조정한다"},
+    {"name": "양극 및 음극 활물질 성형장치", "category": "장비", "evidence_span": "양극 및 음극 활물질 성형장치 조작원"},
+    {"name": "전류·전압 검사장치", "category": "장비", "evidence_span": "전류‧전압 검사장치 조작원"},
+    {"name": "용접기", "category": "장비", "evidence_span": "전극의 연결부를 가공하거나 용접한다"}
+  ],
+  "work_context": []
+}

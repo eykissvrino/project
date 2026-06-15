@@ -1,0 +1,109 @@
+{
+  "ksco_code": "36110",
+  "tasks": [
+    {
+      "verb": "추천하다",
+      "object": "여행상품",
+      "full_statement": "여행을 하려는 고객에게 여행상품을 추천한다.",
+      "source_sentence": "여행사에서 여행을 하려는 고객에게 여행상품을 추천 및 판매하고, 여행과 관련된 예약 및 발권업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "판매하다",
+      "object": "여행상품",
+      "full_statement": "고객에게 여행상품을 판매한다.",
+      "source_sentence": "여행사에서 여행을 하려는 고객에게 여행상품을 추천 및 판매하고, 여행과 관련된 예약 및 발권업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "계획하다",
+      "object": "여행일정",
+      "full_statement": "고객의 여행일정을 계획하여 작성한다.",
+      "source_sentence": "여행일정을 계획‧작성하고, 필요한 예약을 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "예약하다",
+      "object": "여행 관련 예약",
+      "full_statement": "여행과 관련된 예약업무를 수행한다.",
+      "source_sentence": "여행사에서 여행을 하려는 고객에게 여행상품을 추천 및 판매하고, 여행과 관련된 예약 및 발권업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "예약하다",
+      "object": "호텔·항공권",
+      "full_statement": "여행을 하려는 고객을 대신하여 호텔, 항공권 등을 예약한다.",
+      "source_sentence": "여행을 하려는 고객을 대신하여 호텔, 항공권 등을 예약해 주는 여행 관련 사무원",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "발권하다",
+      "object": "승차권",
+      "full_statement": "여행사에서 비행기표·기차표 등 승차권을 발권한다.",
+      "source_sentence": "여행사에서 승차권(비행기표, 기차표), 숙박권 및 기타 서류를 발권한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "발권하다",
+      "object": "숙박권",
+      "full_statement": "여행사에서 숙박권을 발권한다.",
+      "source_sentence": "여행사에서 승차권(비행기표, 기차표), 숙박권 및 기타 서류를 발권한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발권하다",
+      "object": "기타 서류",
+      "full_statement": "여행사에서 기타 서류를 발권한다.",
+      "source_sentence": "여행사에서 승차권(비행기표, 기차표), 숙박권 및 기타 서류를 발권한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "대행하다",
+      "object": "여권 발급",
+      "full_statement": "필요한 경우 여권의 발급을 대행한다.",
+      "source_sentence": "필요한 경우 여권 및 비자의 발급을 대행하며, 청구서 작성 및 대금을 영수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "대행하다",
+      "object": "비자 발급",
+      "full_statement": "필요한 경우 비자의 발급을 대행한다.",
+      "source_sentence": "필요한 경우 여권 및 비자의 발급을 대행하며, 청구서 작성 및 대금을 영수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "작성하다",
+      "object": "청구서",
+      "full_statement": "여행 대금에 대한 청구서를 작성한다.",
+      "source_sentence": "필요한 경우 여권 및 비자의 발급을 대행하며, 청구서 작성 및 대금을 영수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "영수하다",
+      "object": "대금",
+      "full_statement": "여행 상품에 대한 대금을 영수한다.",
+      "source_sentence": "필요한 경우 여권 및 비자의 발급을 대행하며, 청구서 작성 및 대금을 영수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "고객 응대(여행을 하려는 고객 대상 상품 추천·판매)",
+      "evidence_span": "여행을 하려는 고객에게 여행상품을 추천 및 판매하고"
+    }
+  ]
+}

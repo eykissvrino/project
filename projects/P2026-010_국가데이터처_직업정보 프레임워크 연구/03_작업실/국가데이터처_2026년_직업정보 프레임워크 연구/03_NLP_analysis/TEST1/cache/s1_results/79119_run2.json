@@ -1,0 +1,290 @@
+{
+  "ksco_code": "79119",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "공예 재료",
+      "full_statement": "종이, 나무, 짚, 갈대 및 기타 재료를 준비한다.",
+      "source_sentence": "종이, 나무, 짚, 갈대 및 기타 재료를 준비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조립하다",
+      "object": "공예 제품",
+      "full_statement": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "직조하다",
+      "object": "공예 제품",
+      "full_statement": "그릇, 화병, 바구니 등의 여러 가지 제품을 직조한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "도장하다",
+      "object": "공예 제품",
+      "full_statement": "그릇, 화병, 바구니 등의 여러 가지 제품을 도장한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장식하다",
+      "object": "공예 제품",
+      "full_statement": "그릇, 화병, 바구니 등의 여러 가지 제품을 장식한다.",
+      "source_sentence": "그릇, 화병, 바구니 등의 물건과 같은 여러 가지 제품을 조립, 직조, 도장 및 장식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "녹이다",
+      "object": "파라핀",
+      "full_statement": "파라핀을 녹여 원하는 모양으로 양초 제품을 만든다.",
+      "source_sentence": "파라핀을 녹여 원하는 모양으로 만들거나 천이나 플라스틱으로 각종 조화제품을 만드는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "만들다",
+      "object": "조화제품",
+      "full_statement": "천이나 플라스틱으로 각종 조화제품을 만든다.",
+      "source_sentence": "파라핀을 녹여 원하는 모양으로 만들거나 천이나 플라스틱으로 각종 조화제품을 만드는 등의 직무가 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "만들다",
+      "object": "갓",
+      "full_statement": "말총과 대나무를 원재료로 하여 갓을 만든다.",
+      "source_sentence": "갓장이 : 말총과 대나무를 원재료로 하여 갓을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "만들다",
+      "object": "자개",
+      "full_statement": "전복껍질의 외피를 숫돌에 갈아 내피만을 종잇장처럼 만들어 자개를 만든다.",
+      "source_sentence": "나전장(螺鈿匠) : 전복껍질의 외피를 숫돌에 갈아 내피만을 종잇장처럼 만들어 자개를 만들고 자개로 무늬를 놓은 후 목재에 옻칠을 한다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "옻칠하다",
+      "object": "목재",
+      "full_statement": "자개로 무늬를 놓은 후 목재에 옻칠을 한다.",
+      "source_sentence": "나전장(螺鈿匠) : 전복껍질의 외피를 숫돌에 갈아 내피만을 종잇장처럼 만들어 자개를 만들고 자개로 무늬를 놓은 후 목재에 옻칠을 한다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "짜다",
+      "object": "모시",
+      "full_statement": "모시풀의 껍질을 벗겨 실올을 쪼개낸 후 모시를 짠다.",
+      "source_sentence": "한산(韓山) 모시짜기 : 모시풀이라는 나무의 껍질을 벗겨 희게 바랜 다음, 치아로 일일이 머리카락 같은 실올을 쪼개낸 후 모시를 짠다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "장식하다",
+      "object": "매듭",
+      "full_statement": "명주실로 만든 끈목으로 각종 모양의 매듭을 만들어 옷을 장식한다.",
+      "source_sentence": "매듭장 : 명주실을 염색하여 만든 끈목을 가지고 굵고 가는 두 가닥으로 늘어뜨려서 각종 모양을 만든 매듭으로 옷을 장식한다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "짜다",
+      "object": "무명",
+      "full_statement": "재래종 목화로 솜을 피우고 물레로 실을 뽑아 베틀에서 무명을 짠다.",
+      "source_sentence": "샛골나이 : 재래종 목화를 채취하여 활(綿弓)로 솜을 피우고 물레로 실을 가늘게 뽑아내어 베틀에서 고운 무명을 짠다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "새기다",
+      "object": "낙죽 무늬",
+      "full_statement": "불에 달군 인두로 대나무 표피에 지져서 낙죽 무늬를 새긴다.",
+      "source_sentence": "낙죽장(烙竹匠) : 불에 달군 인두를 가지고 대나무 표피에 지져서 무늬를 새긴 낙죽으로 담뱃대나 부채, 베개 등의 겉모양을 장식한다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "짜다",
+      "object": "삼베 실",
+      "full_statement": "대마를 쪄서 껍질을 벗긴 후 삼삼기를 하여 물레로 실을 짠다.",
+      "source_sentence": "돌실나이 : 대마(大麻)를 베어낸 즉시 삼굿에 쪄서 껍질을 벗긴 후, 껍질을 손톱으로 가늘게 째기를 하고 한올, 한올을 잇는 삼삼기를 하여 물레로 실을 짠다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "새기다",
+      "object": "무늬",
+      "full_statement": "금·은 기물이나 장신구의 표면에 철정으로 무늬를 새기거나 금선·은선을 넣어 무늬를 놓는다.",
+      "source_sentence": "조각장(彫刻匠) : 금·은의 기물이나 장신구의 표면에다가 미세한 철정(鐵鋌)으로 새겨 다져내거나 또는 홈을 판 자리에다 금선(金線), 은선(銀線), 오동선(烏銅線) 등을 넣어서 갖가지 무늬를 놓는다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "전통 악기",
+      "full_statement": "거문고, 가야금, 북, 장고 등의 악기를 만든다.",
+      "source_sentence": "악기장(樂器匠) : 거문고, 가야금, 북, 장고 등의 악기를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "만들다",
+      "object": "활(궁)",
+      "full_statement": "대나무에 쇠뿔과 쇠심줄을 부레풀로 접착시켜 궁을 만든다.",
+      "source_sentence": "궁시장(弓矢匠) : 강력한 탄력을 요하는 부분에 대나무를 넣고 그 안팎에다 쇠뿔과 쇠심줄을 부레풀로 접착시켜 궁을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "엮다",
+      "object": "채상 상자",
+      "full_statement": "대나무를 얇게 떠내어 물들인 후 무늬를 만들며 엮어 소형 상자를 만든다.",
+      "source_sentence": "채상장(彩箱匠) : 대나무를 가지고 얇고 좁게 대올을 떠내어 각양각색으로 물들인 후, 비단을 짜듯 무늬를 만들며 엮어 소형의 상자(箱子)를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "장도",
+      "full_statement": "은, 금, 수정, 상아 등을 사용하여 장도를 만든다.",
+      "source_sentence": "장도장(粧刀匠) : 은장도(銀粧刀) 외에도 금이나 수정, 상아 등을 사용하여 장도를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "금속제 장식",
+      "full_statement": "목가구나 목조건물의 결합부분에 부착하는 금속제 장식을 만든다.",
+      "source_sentence": "두석장(豆錫匠) : 목가구나 목조건물의 결합부분에 부착하는 금속제 장식을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "담뱃대",
+      "full_statement": "합금, 단조, 땜질 과정을 거쳐 백동 담뱃대를 만든다.",
+      "source_sentence": "백동연죽장(白銅煙竹匠) : 합금(合金), 단조(鍛造), 땜질로 이어지는 일련의 섬세한 과정을 거쳐 담뱃대를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "망건",
+      "full_statement": "말총, 사람의 머리카락 등을 이용하여 망건을 만든다.",
+      "source_sentence": "망건장(網巾匠) : 말총, 사람의 머리카락 등을 이용하여 망건을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "탕건",
+      "full_statement": "말총, 사람의 머리카락 등을 이용하여 탕건을 만든다.",
+      "source_sentence": "탕건장(宕巾匠) : 말총, 사람의 머리카락 등을 이용하여 탕건을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "유기 그릇",
+      "full_statement": "구리에 주석을 넣은 놋쇠로 유기 그릇을 만든다.",
+      "source_sentence": "유기장(鍮器匠) : 구리에 주석을 넣은 향동(響銅), 주동(鑄銅) 등의 놋쇠 그릇을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "덧붙이다",
+      "object": "은사",
+      "full_statement": "철물의 표면에 은사를 덧붙인다.",
+      "source_sentence": "입사장(入絲匠) : 철물의 표면에 은사(銀絲)를 덧붙인다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "자수",
+      "full_statement": "명주실에 염료를 입혀 장식용이나 의복용 자수를 만든다.",
+      "source_sentence": "자수장(刺繡匠) : 명주실에 다양한 색의 염료를 입혀 장식용이나 의복용으로 사용되는 자수를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "짜다",
+      "object": "명주",
+      "full_statement": "누에꼬치에서 뽑은 실로 명주를 짠다.",
+      "source_sentence": "명주(明紬)짜기 : 누에꼬치에서 뽑은 실로 짠 피륙을 면주(綿紬) 혹은 명주로 옷을 짠다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "바디",
+      "full_statement": "베틀에 들어가는 부속품인 바디를 만든다.",
+      "source_sentence": "바디장 : 직조기구인 베틀에 들어가는 부속품인 바디를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "바느질하다",
+      "object": "바느질감",
+      "full_statement": "감침질, 홈질, 박음질 등 여러 기법으로 바느질을 한다.",
+      "source_sentence": "침선장(針線匠) : 감침질하는 법, 홈질하는 법, 박음질하는 법, 상침뜨는 법, 휘감치는 법 등 여러 가지 기법으로 바느질을 한다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "화살통",
+      "full_statement": "대나무 몸통에 문양을 조각하고 칠을 하여 화살통을 만든다.",
+      "source_sentence": "전통장(箭筒匠) : 대나무 몸통 속의 마디를 제거하고 문양을 조각하며 마개와 덮개 및 끈을 달고 필요한 칠을 하여 화살통을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "만들다",
+      "object": "옹기",
+      "full_statement": "장독대에 설치되는 저장 용기인 독과 항아리를 만든다.",
+      "source_sentence": "옹기장(甕器匠) : 장독대에 설치되는 저장 용기인 독과 항아리를 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "소반",
+      "full_statement": "음식을 놓고 먹는 음식상 또는 밥상을 만든다.",
+      "source_sentence": "소반장(小盤匠) : 음식을 놓고 먹는 음식상 또는 밥상을 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "만들다",
+      "object": "옥 장신구",
+      "full_statement": "전통 기법으로 옥을 장신구 및 장식용으로 만든다.",
+      "source_sentence": "옥장(玉匠) : 전통적인 기법으로 옥(玉)을 장신구 및 장식용으로 만든다.",
+      "derived_from": "상속 주요업무→세세예시 특화",
+      "confidence": 0.84
+    }
+  ],
+  "tools": [
+    {"name": "숫돌", "category": "도구", "evidence_span": "전복껍질의 외피를 숫돌에 갈아 내피만을 종잇장처럼 만들어"},
+    {"name": "물레", "category": "장비", "evidence_span": "물레로 실을 가늘게 뽑아내어"},
+    {"name": "베틀", "category": "장비", "evidence_span": "베틀에서 고운 무명을 짠다"},
+    {"name": "인두", "category": "도구", "evidence_span": "불에 달군 인두를 가지고 대나무 표피에 지져서"},
+    {"name": "철정(鐵鋌)", "category": "도구", "evidence_span": "미세한 철정(鐵鋌)으로 새겨 다져내거나"},
+    {"name": "활(綿弓)", "category": "도구", "evidence_span": "활(綿弓)로 솜을 피우고"}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀 수작업", "evidence_span": "치아로 일일이 머리카락 같은 실올을 쪼개낸 후 모시를 짠다"},
+    {"category": "신체적", "value": "손과 간단한 도구 사용", "evidence_span": "손이나 간단한 도구를 이용하여 개인용 또는 장식용으로 사용하기 위한 공예품을 제작한다"},
+    {"category": "위험", "value": "고온 작업(불·열)", "evidence_span": "불에 달군 인두를 가지고 대나무 표피에 지져서"}
+  ]
+}

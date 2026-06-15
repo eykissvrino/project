@@ -1,0 +1,122 @@
+{
+  "ksco_code": "52131",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "항공권 정원·예약상황",
+      "full_statement": "항공권의 정원이나 예약상황을 검토한다.",
+      "source_sentence": "정원이나 예약상황을 검토한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "확인하다",
+      "object": "고객 요구 항공권 매수",
+      "full_statement": "고객의 요구에 따라 항공권 매수를 확인한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "기록하다",
+      "object": "탑승시간·좌석번호",
+      "full_statement": "탑승시간이나 좌석번호 등을 항공권에 기록한다.",
+      "source_sentence": "고객의 요구에 따라 매표 수를 확인하고 시간이나 좌석번호 등을 표에 기록하여 판매한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "판매하다",
+      "object": "항공권",
+      "full_statement": "공항·여행사 등에서 고객에게 항공권을 판매한다.",
+      "source_sentence": "공항, 여행사 등에서 항공권을 판매하는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "받다",
+      "object": "항공권 대금",
+      "full_statement": "판매한 항공권의 대금을 받는다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "계산하다",
+      "object": "거스름돈",
+      "full_statement": "받은 대금에서 거스름돈을 계산하여 지급한다.",
+      "source_sentence": "표의 대금을 받고 거스름돈을 계산하여 지급한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "정산하다",
+      "object": "일일 판매내역",
+      "full_statement": "일일 항공권 판매내역을 정산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "계산하다",
+      "object": "이용률",
+      "full_statement": "정산한 내역을 바탕으로 이용률을 계산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "계산하다",
+      "object": "판매대금",
+      "full_statement": "일일 판매내역을 바탕으로 판매대금을 계산한다.",
+      "source_sentence": "일일매표내역을 정산하여 이용률을 계산하고 판매대금을 계산한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "접수하다",
+      "object": "전화예매",
+      "full_statement": "고객의 전화예매를 접수한다.",
+      "source_sentence": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객 질문",
+      "full_statement": "고객의 질문에 응대한다.",
+      "source_sentence": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(항공권)",
+      "confidence": 0.72
+    },
+    {
+      "verb": "설명하다",
+      "object": "상품 내용",
+      "full_statement": "고객에게 항공권 상품의 내용을 설명한다.",
+      "source_sentence": "도‧소매 업체가 개설한 매장에서 고객에게 상품의 내용을 설명하고 다양한 모델 및 색상을 보여줌으로써 고객이 상품을 선택‧구매하도록 유도하고",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "유도하다",
+      "object": "고객 구매",
+      "full_statement": "고객이 상품을 선택·구매하도록 유도한다.",
+      "source_sentence": "고객이 상품을 선택‧구매하도록 유도하고, 구매한 상품의 가격계산 및 포장등의 상품을 판매하는데 관련된 업무를 수행한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.58
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "공항·여행사 등 실내 판매 장소",
+      "evidence_span": "공항, 여행사 등에서 항공권을 판매하는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객응대",
+      "evidence_span": "전화예매를 받기도 하며 고객의 질문에 대답하기도 한다."
+    }
+  ]
+}

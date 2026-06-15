@@ -1,0 +1,63 @@
+{
+  "ksco_code": "42901",
+  "tasks": [
+    {
+      "verb": "돌보다",
+      "object": "산모",
+      "full_statement": "산후조리원·기타 관련기관·가정에서 산모를 돌본다.",
+      "source_sentence": "산후조리원, 기타 관련기관, 가정에서 산모를 돌보는 업무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "점검하다",
+      "object": "산모의 상태",
+      "full_statement": "산모의 상태를 점검한다.",
+      "source_sentence": "산모의 상태를 점검하고 필요시 환자를 부축하고 목욕을 도와주며 산모에게 적합한 음식을 제공하는 등의 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "부축하다",
+      "object": "환자",
+      "full_statement": "필요시 환자를 부축한다.",
+      "source_sentence": "산모의 상태를 점검하고 필요시 환자를 부축하고 목욕을 도와주며 산모에게 적합한 음식을 제공하는 등의 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "도와주다",
+      "object": "목욕",
+      "full_statement": "산모의 목욕을 도와준다.",
+      "source_sentence": "산모의 상태를 점검하고 필요시 환자를 부축하고 목욕을 도와주며 산모에게 적합한 음식을 제공하는 등의 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제공하다",
+      "object": "적합한 음식",
+      "full_statement": "산모에게 적합한 음식을 제공한다.",
+      "source_sentence": "산모의 상태를 점검하고 필요시 환자를 부축하고 목욕을 도와주며 산모에게 적합한 음식을 제공하는 등의 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "산후조리원·기타 관련기관·가정",
+      "evidence_span": "산후조리원, 기타 관련기관, 가정에서 산모를 돌보는 업무를 수행한다."
+    },
+    {
+      "category": "사회적",
+      "value": "산모·환자 대상 대인 돌봄 서비스 제공",
+      "evidence_span": "산후조리원, 기타 관련기관, 가정에서 산모를 돌보는 업무를 수행한다."
+    },
+    {
+      "category": "신체적",
+      "value": "환자 부축·목욕 보조 등 신체적 부조 동반",
+      "evidence_span": "필요시 환자를 부축하고 목욕을 도와주며"
+    }
+  ]
+}

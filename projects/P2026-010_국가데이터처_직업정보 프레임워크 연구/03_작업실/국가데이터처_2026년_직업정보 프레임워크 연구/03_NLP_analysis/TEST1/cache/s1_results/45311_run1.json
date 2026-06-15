@@ -1,0 +1,130 @@
+{
+  "ksco_code": "45311",
+  "tasks": [
+    {
+      "verb": "단정히하다",
+      "object": "용모 및 복장",
+      "full_statement": "업무시간 전에 용모 및 복장을 단정히 한다.",
+      "source_sentence": "업무시간 전에 용모 및 복장을 단정히 하고 근무에 필요한 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "준비하다",
+      "object": "근무에 필요한 사항",
+      "full_statement": "업무시간 전에 근무에 필요한 준비를 한다.",
+      "source_sentence": "업무시간 전에 용모 및 복장을 단정히 하고 근무에 필요한 준비를 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "맞이하다",
+      "object": "고객",
+      "full_statement": "음식업소를 방문한 고객을 친절하게 맞이한다.",
+      "source_sentence": "고객을 친절하게 맞이하며 고객에게 메뉴판을 제시하고 질문에 답하며 음식과 음료에 대한 조언을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(음식업소에서 고객에게 메뉴를 제시)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제시하다",
+      "object": "메뉴판",
+      "full_statement": "고객에게 메뉴판을 제시한다.",
+      "source_sentence": "고객을 친절하게 맞이하며 고객에게 메뉴판을 제시하고 질문에 답하며 음식과 음료에 대한 조언을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(고객에게 메뉴를 제시하고)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "답하다",
+      "object": "고객의 질문",
+      "full_statement": "고객의 질문에 답한다.",
+      "source_sentence": "고객을 친절하게 맞이하며 고객에게 메뉴판을 제시하고 질문에 답하며 음식과 음료에 대한 조언을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "조언하다",
+      "object": "음식과 음료",
+      "full_statement": "고객에게 음식과 음료에 대한 조언을 한다.",
+      "source_sentence": "고객을 친절하게 맞이하며 고객에게 메뉴판을 제시하고 질문에 답하며 음식과 음료에 대한 조언을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "주문받다",
+      "object": "음식",
+      "full_statement": "고객으로부터 음식을 주문받는다.",
+      "source_sentence": "음식업소에서 고객에게 메뉴를 제시하고 음식을 주문받아 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "전달하다",
+      "object": "음·식료 주문",
+      "full_statement": "음·식료의 주문을 주방에 전달한다.",
+      "source_sentence": "음‧식료의 주문을 주방에 전달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "조리된 음·식료",
+      "full_statement": "주방으로부터 조리되어 나온 음·식료를 고객에게 제공한다.",
+      "source_sentence": "주방으로부터 음‧식료가 조리되어 나오면 고객에게 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(음식을 주문받아 제공한다)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "정리하다",
+      "object": "테이블",
+      "full_statement": "고객의 식사가 끝나면 테이블을 정리한다.",
+      "source_sentence": "고객의 식사가 끝나면 테이블 정리 후에 디저트 주문을 받는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "주문받다",
+      "object": "디저트",
+      "full_statement": "테이블 정리 후에 디저트 주문을 받는다.",
+      "source_sentence": "고객의 식사가 끝나면 테이블 정리 후에 디저트 주문을 받는다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제시하다",
+      "object": "계산서",
+      "full_statement": "고객이 계산서를 요구할 경우 작성된 계산서를 제시한다.",
+      "source_sentence": "식사가 끝난 고객이 계산서를 요구할 경우에는 작성된 계산서를 제시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제공하다",
+      "object": "와인",
+      "full_statement": "업소의 규모나 영업기준에 따라 고객에게 와인을 제공한다.",
+      "source_sentence": "업소의 규모나 영업기준에 따라 와인을 제공하는 업무를 수행하는 등 기타 서비스를 제공하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 서비스",
+      "full_statement": "고객에게 음식 및 각종 서비스를 제공한다.",
+      "source_sentence": "고객에게 음식 및 각종 서비스를 제공한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "음식업소(레스토랑·호텔·바·주점 등) 실내",
+      "evidence_span": "음식업소에서 고객에게 메뉴를 제시하고 음식을 주문받아 제공한다."
+    },
+    {
+      "category": "사회적",
+      "value": "고객 응대(대면 서비스)",
+      "evidence_span": "고객을 친절하게 맞이하며 고객에게 메뉴판을 제시하고 질문에 답하며"
+    }
+  ]
+}

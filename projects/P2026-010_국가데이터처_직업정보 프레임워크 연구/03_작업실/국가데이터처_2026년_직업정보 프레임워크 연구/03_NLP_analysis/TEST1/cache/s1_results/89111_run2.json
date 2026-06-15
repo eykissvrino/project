@@ -1,0 +1,127 @@
+{
+  "ksco_code": "89111",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "목재제재기",
+      "full_statement": "제재소에서 목재를 다듬고 가공하기 위하여 목재제재기를 조작한다.",
+      "source_sentence": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "띠톱제재기",
+      "full_statement": "제재소에서 목재를 다듬고 가공하기 위하여 띠톱제재기를 조작한다.",
+      "source_sentence": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "다듬다",
+      "object": "목재",
+      "full_statement": "제재소에서 제재기를 이용하여 목재를 다듬는다.",
+      "source_sentence": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "자르다",
+      "object": "원목",
+      "full_statement": "원목을 일정한 규격으로 자르기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "켜다",
+      "object": "원목",
+      "full_statement": "판재·재목·각목 등을 제조하기 위하여 원목을 일정한 규격으로 켠다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "제조하다",
+      "object": "판재·재목·각목",
+      "full_statement": "제재기를 조작하여 판재·재목·각목 등을 제조한다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "기계톱",
+      "full_statement": "원목을 규격에 맞게 가공하기 위하여 다양한 기계톱을 조작한다.",
+      "source_sentence": "원목을 일정한 규격으로 자르고 켜서 판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판절삭기",
+      "full_statement": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "source_sentence": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.6
+    },
+    {
+      "verb": "조작하다",
+      "object": "파티클 보드 제조 기계",
+      "full_statement": "목재를 파쇄하여 섬유 상태로 만든 다음 접착제와 혼합·성형·압착하여 파티클 보드를 제조하는 기계를 조작한다.",
+      "source_sentence": "목재를 파쇄하여 섬유 상태로 만든 다음 접착제와 혼합, 성형, 압착하여 파티클 보드를 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "조작하다",
+      "object": "단판 접착 기계",
+      "full_statement": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "source_sentence": "합판을 제조하기 위하여 단판에 아교를 살포하고 접착하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.5
+    },
+    {
+      "verb": "투입하다",
+      "object": "재료",
+      "full_statement": "가공을 위하여 기계장치에 재료를 투입한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조정하다",
+      "object": "기계장치",
+      "full_statement": "작업표준에 따라 가공하기 위하여 기계장치를 조정한다.",
+      "source_sentence": "재료를 투입하고, 작업표준에 따라 가공하기 위하여 기계장치를 조정 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 점검한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정비하다",
+      "object": "기계의 기능장애",
+      "full_statement": "기계의 기능장애를 정비한다.",
+      "source_sentence": "기계의 기능장애를 점검‧정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [
+    {"name": "목재제재기", "category": "장비", "evidence_span": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다."},
+    {"name": "띠톱제재기", "category": "장비", "evidence_span": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다."},
+    {"name": "기계톱", "category": "장비", "evidence_span": "판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다."},
+    {"name": "제재기", "category": "장비", "evidence_span": "판재, 재목, 각목 등을 제조하기 위하여 다양한 기계톱 및 제재기를 조작한다."},
+    {"name": "단판절삭기", "category": "장비", "evidence_span": "합판제조에 사용할 단판을 제조하기 위하여 단판절삭기를 조작한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "제재소", "evidence_span": "제재소에서 목재를 다듬고 가공하는 목재제재기나 띠톱제재기 등을 조작한다."}
+  ]
+}

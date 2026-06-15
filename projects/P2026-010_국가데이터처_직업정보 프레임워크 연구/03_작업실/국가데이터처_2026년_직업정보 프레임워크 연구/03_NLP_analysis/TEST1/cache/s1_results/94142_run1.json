@@ -1,0 +1,98 @@
+{
+  "ksco_code": "94142",
+  "tasks": [
+    {
+      "verb": "수거하다",
+      "object": "생활쓰레기",
+      "full_statement": "종량제봉투로 버린 생활쓰레기를 수거한다.",
+      "source_sentence": "종량제봉투로 버린 생활쓰레기나 대형폐기물, 음식물쓰레기, 분뇨 등을 수거하여 집하소 또는 소각장, 매립장으로 운반한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수거하다",
+      "object": "대형폐기물",
+      "full_statement": "대형폐기물을 수거한다.",
+      "source_sentence": "종량제봉투로 버린 생활쓰레기나 대형폐기물, 음식물쓰레기, 분뇨 등을 수거하여 집하소 또는 소각장, 매립장으로 운반한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수거하다",
+      "object": "음식물쓰레기",
+      "full_statement": "음식물쓰레기를 수거한다.",
+      "source_sentence": "종량제봉투로 버린 생활쓰레기나 대형폐기물, 음식물쓰레기, 분뇨 등을 수거하여 집하소 또는 소각장, 매립장으로 운반한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "수거하다",
+      "object": "분뇨",
+      "full_statement": "분뇨를 수거한다.",
+      "source_sentence": "종량제봉투로 버린 생활쓰레기나 대형폐기물, 음식물쓰레기, 분뇨 등을 수거하여 집하소 또는 소각장, 매립장으로 운반한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "운반하다",
+      "object": "수거한 쓰레기",
+      "full_statement": "수거한 쓰레기를 집하소 또는 소각장, 매립장으로 운반한다.",
+      "source_sentence": "종량제봉투로 버린 생활쓰레기나 대형폐기물, 음식물쓰레기, 분뇨 등을 수거하여 집하소 또는 소각장, 매립장으로 운반한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수거하다",
+      "object": "재활용품",
+      "full_statement": "재활용품을 수거한다.",
+      "source_sentence": "재활용품을 수거한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "싣다",
+      "object": "폐기물",
+      "full_statement": "수거한 폐기물을 차량에 싣는다.",
+      "source_sentence": "폐기물을 수거하여 싣거나 하차한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "하차하다",
+      "object": "폐기물",
+      "full_statement": "운반한 폐기물을 하차한다.",
+      "source_sentence": "폐기물을 수거하여 싣거나 하차한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "단속하다",
+      "object": "쓰레기 무단투기",
+      "full_statement": "쓰레기 무단투기를 단속한다.",
+      "source_sentence": "쓰레기 무단투기나 불법투기를 단속하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "단속하다",
+      "object": "불법투기",
+      "full_statement": "쓰레기 불법투기를 단속한다.",
+      "source_sentence": "쓰레기 무단투기나 불법투기를 단속하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "상당한 육체적 노력이 요구되는 단순 노무",
+      "evidence_span": "어떤 경우에는 상당한 육체적 노력이 요구되고, 거의 제한된 창의와 판단만을 필요로 하는 업무를 수행한다."
+    },
+    {
+      "category": "장소",
+      "value": "거리 및 기타 공공장소 등 실외에서 수거 작업",
+      "evidence_span": "건물, 야적장, 거리 및 기타 공공장소에서 재활용 쓰레기나 폐기물을 수거한다."
+    }
+  ]
+}

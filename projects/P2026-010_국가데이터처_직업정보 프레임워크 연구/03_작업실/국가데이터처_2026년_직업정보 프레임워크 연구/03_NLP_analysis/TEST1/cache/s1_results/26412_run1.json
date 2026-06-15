@@ -1,0 +1,66 @@
+{
+  "ksco_code": "26412",
+  "tasks": [
+    {
+      "verb": "가르치다",
+      "object": "중국어 과목",
+      "full_statement": "어학계열 학원 등에서 수강생들에게 중국어 과목을 가르친다.",
+      "source_sentence": "어학계열 학원 등에서 수강생들에게 중국어 과목을 가르친다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "개발하다",
+      "object": "중국어 교재",
+      "full_statement": "중국어 등 외국어 교재를 개발한다.",
+      "source_sentence": "영어, 중국어 등 외국어 교재개발, 교육계획을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수립하다",
+      "object": "교육계획",
+      "full_statement": "중국어 교육계획을 수립한다.",
+      "source_sentence": "영어, 중국어 등 외국어 교재개발, 교육계획을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "지도하다",
+      "object": "외국어 학습",
+      "full_statement": "수강생의 중국어 등 외국어 학습을 지도한다.",
+      "source_sentence": "외국어 학습을 지도하고 회화능력 향상을 도모한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "도모하다",
+      "object": "회화능력 향상",
+      "full_statement": "수강생의 중국어 회화능력 향상을 도모한다.",
+      "source_sentence": "외국어 학습을 지도하고 회화능력 향상을 도모한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "작성하다",
+      "object": "강의안",
+      "full_statement": "중국어 강의안 및 교재를 작성한다.",
+      "source_sentence": "다양한 교육수준에서 학문에 대한 이론 및 실제를 가르치고 해당 학문분야를 연구하여 그에 대한 개념 및 운영기법을 개선, 개발하고 강의안, 교재 등을 작성한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "어학계열 학원 등 실내 교육기관",
+      "evidence_span": "어학계열 학원 등에서 수강생들에게 중국어 과목을 가르친다."
+    },
+    {
+      "category": "사회적",
+      "value": "수강생 대상 강의·지도(대면 교육)",
+      "evidence_span": "어학계열 학원 등에서 수강생들에게 중국어 과목을 가르친다."
+    }
+  ]
+}

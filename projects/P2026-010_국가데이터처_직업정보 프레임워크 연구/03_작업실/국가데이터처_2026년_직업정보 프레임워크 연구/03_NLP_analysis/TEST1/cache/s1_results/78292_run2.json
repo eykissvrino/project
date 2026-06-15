@@ -1,0 +1,76 @@
+{
+  "ksco_code": "78292",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "건물 칸막이",
+      "full_statement": "플라스틱재, 목재 등의 건물 칸막이를 설치한다.",
+      "source_sentence": "플라스틱재, 목재 등의 건물 칸막이를 설치한다.",
+      "derived_from": "세세분류 78292 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "확인하다",
+      "object": "칸막이 재료",
+      "full_statement": "설치할 칸막이의 재료가 플라스틱재인지 목재인지 확인한다.",
+      "source_sentence": "플라스틱재, 목재 등의 건물 칸막이를 설치한다.",
+      "derived_from": "세세분류 78292 정의→재료 식별 활동 도출",
+      "confidence": 0.55
+    },
+    {
+      "verb": "세우다",
+      "object": "방음벽",
+      "full_statement": "건물 내부 구획을 위해 방음벽을 세운다.",
+      "source_sentence": "방음벽을 세우거나 정화조를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의(칸막이 설치) 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "보강하다",
+      "object": "건물",
+      "full_statement": "구조를 변경할 때 건물을 떠받치고 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "떠받치다",
+      "object": "건물",
+      "full_statement": "구조를 변경할 때 받침대로 건물을 떠받친다.",
+      "source_sentence": "구조를 변경할 때 건물을 떠받치고 필요에 따라 금속, 목재의 받침대로 접속된 빌딩을 보강한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.45
+    },
+    {
+      "verb": "건설하다",
+      "object": "벽 및 주요 부분",
+      "full_statement": "건물 내·외부 및 기타 건설물의 벽 및 주요 부분을 건설한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)→칸막이 설치 특화",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수리하다",
+      "object": "건물 벽 및 주요 부분",
+      "full_statement": "건물 내·외부 및 기타 건설물의 벽 및 주요 부분을 유지하며 수리한다.",
+      "source_sentence": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고 유지하며 수리한다.",
+      "derived_from": "조상정의(소분류 782)",
+      "confidence": 0.35
+    },
+    {
+      "verb": "사용하다",
+      "object": "수공구",
+      "full_statement": "칸막이 설치 작업에 손과 수공구를 주로 사용한다.",
+      "source_sentence": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다",
+      "derived_from": "조상정의(대분류 7)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [
+    {"name": "수공구", "category": "도구", "evidence_span": "작업은 손과 수공구를 주로 사용하며"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내·외부 건설 현장", "evidence_span": "건물 내‧외부 및 기타 건설물의 기초공사 또는 벽 및 주요 부분을 건설하고"},
+    {"category": "신체적", "value": "손과 수공구를 사용하는 기능 중심 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

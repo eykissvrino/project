@@ -1,0 +1,94 @@
+{
+  "ksco_code": "85104",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "정밀연삭기",
+      "full_statement": "자동·반자동 정밀연삭기를 조작하여 금속을 연삭한다.",
+      "source_sentence": "자동, 반자동 정밀연삭기, 금속을 갈고 광택을 내는 데 사용되는 고정식, 이동식 연마기 및 광택기 절단도구를 동력 연삭휠로 예리하게 가는 연삭기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "연마기 및 광택기",
+      "full_statement": "고정식·이동식 연마기 및 광택기를 조작하여 금속을 갈고 광택을 낸다.",
+      "source_sentence": "금속을 갈고 광택을 내는 데 사용되는 고정식, 이동식 연마기 및 광택기 절단도구를 동력 연삭휠로 예리하게 가는 연삭기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "갈다",
+      "object": "절단도구",
+      "full_statement": "절단도구를 동력 연삭휠로 예리하게 간다.",
+      "source_sentence": "절단도구를 동력 연삭휠로 예리하게 가는 연삭기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "연삭기",
+      "full_statement": "절단도구를 예리하게 가는 연삭기를 조작한다.",
+      "source_sentence": "절단도구를 동력 연삭휠로 예리하게 가는 연삭기를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "광택을 내다",
+      "object": "금속",
+      "full_statement": "광택기를 사용하여 금속에 광택을 낸다.",
+      "source_sentence": "금속을 갈고 광택을 내는 데 사용되는 고정식, 이동식 연마기 및 광택기",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "해석하다",
+      "object": "작업 주문서와 청사진",
+      "full_statement": "작업 주문서와 청사진을 해석하여 연삭·연마 작업 내용을 파악한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "결정하다",
+      "object": "기계 조작",
+      "full_statement": "작업 내용에 따라 연삭기·연마기의 조작 방법을 결정한다.",
+      "source_sentence": "작업 주문서와 청사진을 해석하고 기계 조작을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "설치하다",
+      "object": "기계",
+      "full_statement": "연삭기·연마기를 설치하고 작동시켜 그라인딩 조작을 수행한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.83
+    },
+    {
+      "verb": "작동시키다",
+      "object": "연삭기",
+      "full_statement": "설치된 연삭기를 작동시켜 그라인딩 조작을 한다.",
+      "source_sentence": "기계를 설치하고 작동시켜 터닝, 밀링, 드릴링, 보링, 그라인딩과 같은 조작을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "부품의 치수",
+      "full_statement": "정밀측정 기구를 사용하여 연삭·연마한 부품의 치수를 측정한다.",
+      "source_sentence": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    }
+  ],
+  "tools": [
+    {"name": "정밀연삭기", "category": "장비", "evidence_span": "자동, 반자동 정밀연삭기"},
+    {"name": "연마기", "category": "장비", "evidence_span": "고정식, 이동식 연마기 및 광택기"},
+    {"name": "광택기", "category": "장비", "evidence_span": "고정식, 이동식 연마기 및 광택기"},
+    {"name": "연삭기", "category": "장비", "evidence_span": "절단도구를 동력 연삭휠로 예리하게 가는 연삭기를 조작한다"},
+    {"name": "동력 연삭휠", "category": "도구", "evidence_span": "절단도구를 동력 연삭휠로 예리하게 가는"},
+    {"name": "정밀측정 기구", "category": "도구", "evidence_span": "정밀측정 기구를 사용하여 기계장치 부품의 치수를 잰다"}
+  ],
+  "work_context": []
+}

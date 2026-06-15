@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28352",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "행사 형식",
+      "full_statement": "행사의 범위 및 형식을 계획하고 예산을 편성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "모니터하다",
+      "object": "행사 진행",
+      "full_statement": "행사 관리절차와 진행 사항을 수시로 모니터한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조직하다",
+      "object": "참가자 등록",
+      "full_statement": "참가자의 등록을 조직화하고 홍보자료를 준비한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "행사 지원자",
+      "full_statement": "행사 지원자를 고용·교육하고 감독한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

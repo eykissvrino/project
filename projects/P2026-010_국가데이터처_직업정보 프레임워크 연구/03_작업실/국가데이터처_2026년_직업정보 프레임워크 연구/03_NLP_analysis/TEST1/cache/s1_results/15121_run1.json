@@ -1,0 +1,159 @@
+{
+  "ksco_code": "15121",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "육상운송 계획",
+      "full_statement": "육상운송에 관한 전반적인 계획을 수립한다.",
+      "source_sentence": "육상운송에 관한 전반적인 계획을 수립하고, 신속하고 효율적인 수송을 위하여 운송 업무에 종사하는 직원들의 활동을 지휘‧조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지휘조정하다",
+      "object": "운송 직원의 활동",
+      "full_statement": "신속하고 효율적인 수송을 위하여 운송 업무에 종사하는 직원들의 활동을 지휘‧조정한다.",
+      "source_sentence": "육상운송에 관한 전반적인 계획을 수립하고, 신속하고 효율적인 수송을 위하여 운송 업무에 종사하는 직원들의 활동을 지휘‧조정한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "관리하다",
+      "object": "운송회사 운영",
+      "full_statement": "운송회사의 운영을 계획, 조직, 지시하고 관리한다.",
+      "source_sentence": "운송회사의 운영을 계획, 조직, 지시하고 관리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(육상운송회사)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "위험물품 안전절차 기준",
+      "full_statement": "위험물품을 처리하기 위한 안전절차 등의 기준을 수립한다.",
+      "source_sentence": "위험물품을 처리하기 위한 안전절차 등의 기준을 수립하고 운송규정에 맞는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "운송규정 준수 여부",
+      "full_statement": "안전절차 기준이 운송규정에 맞는지 확인한다.",
+      "source_sentence": "위험물품을 처리하기 위한 안전절차 등의 기준을 수립하고 운송규정에 맞는지 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기획하다",
+      "object": "물품의 운송 및 이동",
+      "full_statement": "물품의 운송 및 이동을 기획하고 관리한다.",
+      "source_sentence": "물품의 운송 및 이동을 기획, 관리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "세우다",
+      "object": "선적서류 계획",
+      "full_statement": "선적서류에 대한 계획을 세운다.",
+      "source_sentence": "선적서류에 대한 계획을 세우고 물품 운송, 수송의 행로기록 및 추적을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "물품 운송의 행로기록 및 추적",
+      "full_statement": "물품 운송과 수송의 행로기록 및 추적을 감독한다.",
+      "source_sentence": "선적서류에 대한 계획을 세우고 물품 운송, 수송의 행로기록 및 추적을 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(육상수송)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "감독하다",
+      "object": "상품 운송 및 저장 계획과 절차",
+      "full_statement": "상품의 운송 및 저장에 대한 계획과 절차를 감독한다.",
+      "source_sentence": "상품의 운송 및 저장에 대한 계획과 절차를 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파악하다",
+      "object": "화물 입출고작업 및 작업 우선순위",
+      "full_statement": "화물의 입‧출고작업 및 작업 우선순위를 파악한다.",
+      "source_sentence": "화물의 입‧출고작업 및 작업 우선순위를 파악하여 작업계획을 수립하고 작업을 배분한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수립하다",
+      "object": "작업계획",
+      "full_statement": "화물의 입‧출고작업 우선순위를 바탕으로 작업계획을 수립한다.",
+      "source_sentence": "화물의 입‧출고작업 및 작업 우선순위를 파악하여 작업계획을 수립하고 작업을 배분한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배분하다",
+      "object": "작업",
+      "full_statement": "수립된 작업계획에 따라 작업을 배분한다.",
+      "source_sentence": "화물의 입‧출고작업 및 작업 우선순위를 파악하여 작업계획을 수립하고 작업을 배분한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "순회하다",
+      "object": "작업현장",
+      "full_statement": "수시로 작업현장을 순회한다.",
+      "source_sentence": "수시로 작업현장을 순회하여 안전관리시설, 안전수칙의 준수사항 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "안전관리시설 및 안전수칙 준수사항",
+      "full_statement": "안전관리시설과 안전수칙의 준수사항 등을 점검한다.",
+      "source_sentence": "수시로 작업현장을 순회하여 안전관리시설, 안전수칙의 준수사항 등을 점검한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "반출서류와 근무일지",
+      "full_statement": "반출서류와 근무일지 등을 확인한다.",
+      "source_sentence": "반출서류와 근무일지 등을 확인한다. 입‧출고 운임청구서를 확인하고, 운임 전표를 검토 결재한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "입출고 운임청구서",
+      "full_statement": "입‧출고 운임청구서를 확인한다.",
+      "source_sentence": "반출서류와 근무일지 등을 확인한다. 입‧출고 운임청구서를 확인하고, 운임 전표를 검토 결재한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토결재하다",
+      "object": "운임 전표",
+      "full_statement": "운임 전표를 검토하고 결재한다.",
+      "source_sentence": "반출서류와 근무일지 등을 확인한다. 입‧출고 운임청구서를 확인하고, 운임 전표를 검토 결재한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "작업현장 순회(이동)",
+      "evidence_span": "수시로 작업현장을 순회하여 안전관리시설, 안전수칙의 준수사항 등을 점검한다."
+    },
+    {
+      "category": "위험",
+      "value": "위험물품 처리",
+      "evidence_span": "위험물품을 처리하기 위한 안전절차 등의 기준을 수립하고"
+    },
+    {
+      "category": "사회적",
+      "value": "직원 활동 지휘·조정(팀 관리)",
+      "evidence_span": "운송 업무에 종사하는 직원들의 활동을 지휘‧조정한다."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28311",
+  "tasks": [
+    {
+      "verb": "수집하다",
+      "object": "시장 정보",
+      "full_statement": "시장 상황과 소비자 구매 패턴에 관한 정보를 수집하고 분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기획하다",
+      "object": "상품",
+      "full_statement": "시장성 있는 상품을 기획한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "총괄하다",
+      "object": "상품 흐름",
+      "full_statement": "상품의 기획·생산·판매·재고조절 전 과정을 총괄한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "판매 전략",
+      "full_statement": "상품의 효과적인 생산·판매 전략을 수립한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

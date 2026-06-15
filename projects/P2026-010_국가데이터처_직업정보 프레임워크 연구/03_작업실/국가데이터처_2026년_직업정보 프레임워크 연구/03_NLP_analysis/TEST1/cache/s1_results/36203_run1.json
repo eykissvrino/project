@@ -1,0 +1,156 @@
+{
+  "ksco_code": "36203",
+  "tasks": [
+    {
+      "verb": "설명하다",
+      "object": "각종 문의사항",
+      "full_statement": "방문한 고객에게 각종 문의사항에 대해 설명한다.",
+      "source_sentence": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고 해당 부서에 통보하여 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "응대하다",
+      "object": "고객의 불편사항",
+      "full_statement": "방문한 고객의 불편사항에 대해 응대하고 설명한다.",
+      "source_sentence": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고 해당 부서에 통보하여 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "처리하다",
+      "object": "상품에 대한 불만",
+      "full_statement": "고객의 상품에 대한 불만을 청취하고 처리한다.",
+      "source_sentence": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고 해당 부서에 통보하여 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "통보하다",
+      "object": "해당 부서",
+      "full_statement": "고객의 문의 및 불만사항을 해당 부서에 통보한다.",
+      "source_sentence": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고 해당 부서에 통보하여 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "취하다",
+      "object": "필요한 조치",
+      "full_statement": "고객의 요구에 대해 필요한 조치를 취한다.",
+      "source_sentence": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고 해당 부서에 통보하여 필요한 조치를 취한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "제공하다",
+      "object": "각종 서비스",
+      "full_statement": "창구를 방문한 고객에게 각종 서비스를 제공한다.",
+      "source_sentence": "또한 창구의 이용자료 및 이용안내문 배치 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "배치하다",
+      "object": "창구의 이용자료",
+      "full_statement": "창구의 이용자료를 배치한다.",
+      "source_sentence": "또한 창구의 이용자료 및 이용안내문 배치 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "배치하다",
+      "object": "이용안내문",
+      "full_statement": "창구의 이용안내문을 배치한다.",
+      "source_sentence": "또한 창구의 이용자료 및 이용안내문 배치 등 각종 서비스를 제공한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "안내하다",
+      "object": "의료 서비스의 절차와 방법, 가격",
+      "full_statement": "방문한 고객이 원하는 서비스의 절차와 방법, 가격 등에 대해 안내한다.",
+      "source_sentence": "병의원에서 환자나 보호자 등 고객의 요구를 청취하고, 고객이 원하는 의료 서비스의 절차와 방법, 가격 등에 대해 안내․ 상담을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "청취하다",
+      "object": "고객의 요구",
+      "full_statement": "방문한 고객의 요구를 청취한다.",
+      "source_sentence": "병의원에서 환자나 보호자 등 고객의 요구를 청취하고, 고객이 원하는 의료 서비스의 절차와 방법, 가격 등에 대해 안내․ 상담을 실시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "접수하다",
+      "object": "각종 청구서",
+      "full_statement": "각종 상품의 신규신청, 명의변경, 해지 등에 관한 청구서를 접수한다.",
+      "source_sentence": "각종 상품의 신규신청, 전‧출입, 명의변경, 해지, 요금조정 및 증명서 발급에 관한 청구서를 접수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "채우다",
+      "object": "계약서식의 여백",
+      "full_statement": "계약서식의 여백을 채운다.",
+      "source_sentence": "계약서식의 여백을 채우고 요구된 서비스에 대한 요금을 알려 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "알려주다",
+      "object": "서비스 요금",
+      "full_statement": "요구된 서비스에 대한 요금을 고객에게 알려 준다.",
+      "source_sentence": "계약서식의 여백을 채우고 요구된 서비스에 대한 요금을 알려 준다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "입력하다",
+      "object": "관련 자료",
+      "full_statement": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경한다.",
+      "source_sentence": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "발행하다",
+      "object": "증명서",
+      "full_statement": "고객 요청에 따라 증명서를 발행한다.",
+      "source_sentence": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "발송하다",
+      "object": "상품 카탈로그 및 안내장",
+      "full_statement": "상품 카탈로그, 안내장 및 내역서 등을 발송한다.",
+      "source_sentence": "상품 카탈로그, 안내장 및 내역서 등을 발송한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "홍보하다",
+      "object": "신종서비스의 사용방법 및 절차",
+      "full_statement": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보한다.",
+      "source_sentence": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보하고 가입을 권유 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "권유하다",
+      "object": "가입",
+      "full_statement": "고객에게 신종서비스 가입을 권유한다.",
+      "source_sentence": "신종서비스에 대한 사용방법 및 절차를 고객에게 홍보하고 가입을 권유 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.77
+    }
+  ],
+  "tools": [
+    {"name": "컴퓨터", "category": "HW", "evidence_span": "컴퓨터에 관련 자료를 입력하여 기록내용을 변경하고 증명서를 발행한다."}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "방문 고객 응대(대면 상담)", "evidence_span": "방문한 고객에게 각종 문의사항, 불편사항 및 상품에 대한 불만 등에 대해 설명하고"},
+    {"category": "장소", "value": "창구(실내 근무)", "evidence_span": "또한 창구의 이용자료 및 이용안내문 배치 등 각종 서비스를 제공한다."}
+  ]
+}

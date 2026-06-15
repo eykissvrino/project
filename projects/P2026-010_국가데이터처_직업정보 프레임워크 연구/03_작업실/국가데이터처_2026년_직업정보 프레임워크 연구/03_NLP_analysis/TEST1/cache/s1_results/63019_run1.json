@@ -1,0 +1,94 @@
+{
+  "ksco_code": "63019",
+  "tasks": [
+    {
+      "verb": "양식하다",
+      "object": "진주",
+      "full_statement": "진주를 양식한다.",
+      "source_sentence": "상기 세세분류 어느 항목에도 포함되지 않은 유사한 직무를 수행하며, 진주를 양식하는 등의 직무를 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "양식하다",
+      "object": "수생 동·식물",
+      "full_statement": "물고기, 굴, 조개 또는 기타 형태의 수생 동·식물을 양식한다.",
+      "source_sentence": "물고기, 굴, 조개 또는 기타 형태의 수생 동‧식물을 양식한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "채집하다",
+      "object": "수생 동·식물",
+      "full_statement": "해안 및 얕은 물에서 수생 동·식물을 채집한다.",
+      "source_sentence": "해안 및 얕은 물에서 수생 동‧식물을 채집한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "준비하다",
+      "object": "어망 및 어로도구",
+      "full_statement": "어망, 기타 어로도구 및 장비를 준비한다.",
+      "source_sentence": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수선하다",
+      "object": "어망 및 어로도구",
+      "full_statement": "어망, 기타 어로도구 및 장비를 수선한다.",
+      "source_sentence": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "운영하다",
+      "object": "어선",
+      "full_statement": "어장에서 어선을 운영한다.",
+      "source_sentence": "어장에서 어선을 운영한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "정비하다",
+      "object": "시설·기계·장비",
+      "full_statement": "양식에 사용되는 시설, 기계 및 장비를 정비한다.",
+      "source_sentence": "시설, 기계 및 장비를 정비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "양식한 생산물을 공급 및 출하한다.",
+      "source_sentence": "생산물을 공급 및 출하한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "채취하다",
+      "object": "양식물",
+      "full_statement": "양식한 수생 동·식물을 채취한다.",
+      "source_sentence": "물고기, 조개, 굴 및 기타 형태의 수생 동‧식물을 양식하고 채취한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "번식시키다",
+      "object": "수생 동·식물",
+      "full_statement": "물고기 또는 기타 형태의 수생 동·식물을 번식시킨다.",
+      "source_sentence": "물고기 또는 기타 형태의 수생 동‧식물을 번식 및 양식하며, 포획하고 채취한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "어망", "category": "도구", "evidence_span": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다."},
+    {"name": "어로도구", "category": "도구", "evidence_span": "어망, 기타 어로도구 및 장비를 준비하거나 수선한다."},
+    {"name": "어선", "category": "장비", "evidence_span": "어장에서 어선을 운영한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "해안 및 얕은 물", "evidence_span": "해안 및 얕은 물에서 수생 동‧식물을 채집한다."},
+    {"category": "장소", "value": "어장(해상)", "evidence_span": "어장에서 어선을 운영한다."}
+  ]
+}

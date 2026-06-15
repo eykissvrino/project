@@ -1,0 +1,168 @@
+{
+  "ksco_code": "29212",
+  "tasks": [
+    {
+      "verb": "보존하다",
+      "object": "유형문화재",
+      "full_statement": "궁궐, 사찰, 미술품, 공예품, 서적 등의 유형문화재를 보존한다.",
+      "source_sentence": "문화적 가치가 있는 유형‧무형의 소산물로서, 궁궐, 사찰, 미술품, 공예품, 서적 등의 유형문화재를 보존하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "유형문화재",
+      "full_statement": "궁궐, 사찰, 미술품, 공예품, 서적 등의 유형문화재를 수리한다.",
+      "source_sentence": "문화적 가치가 있는 유형‧무형의 소산물로서, 궁궐, 사찰, 미술품, 공예품, 서적 등의 유형문화재를 보존하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "자문하다",
+      "object": "각 분야 기술적 사항",
+      "full_statement": "각 분야에 대한 기술적 자문을 한다.",
+      "source_sentence": "문화재 수리기술자는 각 분야에 대한 기술적 자문을 하고, 각종 공사와 문화재 수리기능자에 대한 관리‧ 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "관리하다",
+      "object": "각종 공사와 문화재 수리기능자",
+      "full_statement": "각종 공사와 문화재 수리기능자에 대한 관리를 한다.",
+      "source_sentence": "문화재 수리기술자는 각 분야에 대한 기술적 자문을 하고, 각종 공사와 문화재 수리기능자에 대한 관리‧ 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "감독하다",
+      "object": "각종 공사와 문화재 수리기능자",
+      "full_statement": "각종 공사와 문화재 수리기능자에 대한 감독을 한다.",
+      "source_sentence": "문화재 수리기술자는 각 분야에 대한 기술적 자문을 하고, 각종 공사와 문화재 수리기능자에 대한 관리‧ 감독을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조사하다",
+      "object": "원형 고증",
+      "full_statement": "분야에 따라 원형 고증 조사를 한다.",
+      "source_sentence": "분야에 따라 원형 고증 조사 혹은 전통기법의 연구‧조사‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연구하다",
+      "object": "전통기법",
+      "full_statement": "전통기법을 연구한다.",
+      "source_sentence": "분야에 따라 원형 고증 조사 혹은 전통기법의 연구‧조사‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제작하다",
+      "object": "전통기법 산물",
+      "full_statement": "전통기법에 따라 제작 업무를 한다.",
+      "source_sentence": "분야에 따라 원형 고증 조사 혹은 전통기법의 연구‧조사‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수리하다",
+      "object": "문화재",
+      "full_statement": "각 분야에 대한 실제적인 수리 업무를 한다.",
+      "source_sentence": "문화재 수리기능자는 각 분야에 대한 실제적인 수리와 시공‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "시공하다",
+      "object": "문화재 수리 공사",
+      "full_statement": "각 분야에 대한 시공 업무를 한다.",
+      "source_sentence": "문화재 수리기능자는 각 분야에 대한 실제적인 수리와 시공‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제작하다",
+      "object": "문화재 부재",
+      "full_statement": "각 분야에 대한 제작 업무를 한다.",
+      "source_sentence": "문화재 수리기능자는 각 분야에 대한 실제적인 수리와 시공‧제작 업무를 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.86
+    },
+    {
+      "verb": "규명하다",
+      "object": "문화재의 손실원인",
+      "full_statement": "문화재의 손실원인을 과학적으로 규명한다.",
+      "source_sentence": "문화재의 손실원인을 과학적으로 규명하여 이에 적합한 방법으로 보존한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "보존하다",
+      "object": "문화재",
+      "full_statement": "손실원인에 적합한 방법으로 문화재를 보존한다.",
+      "source_sentence": "문화재의 손실원인을 과학적으로 규명하여 이에 적합한 방법으로 보존한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보수하다",
+      "object": "파손되어 분실된 부위",
+      "full_statement": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다.",
+      "source_sentence": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "복원하다",
+      "object": "파손되어 분실된 부위",
+      "full_statement": "파손되어 분실된 부위를 복원한다.",
+      "source_sentence": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.87
+    },
+    {
+      "verb": "분석하다",
+      "object": "예술품의 재질·제작기술·예술사적 단서",
+      "full_statement": "적외선 분석기, 전자현미경 등을 사용하여 예술품의 재질, 제작기술 및 기타 예술사적인 단서를 분석한다.",
+      "source_sentence": "적외선 분석기, 전자현미경 등을 사용하여 예술품의 재질, 제작기술 및 기타 예술사적인 단서를 분석한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "실시하다",
+      "object": "지표조사 및 발굴조사",
+      "full_statement": "전국의 문화유적 현황을 파악하기 위하여 지표조사 및 발굴조사를 실시한다.",
+      "source_sentence": "전국의 문화유적 현황을 파악하기 위하여 지표조사 및 발굴조사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "파악하다",
+      "object": "전국의 문화유적 현황",
+      "full_statement": "전국의 문화유적 현황을 파악한다.",
+      "source_sentence": "전국의 문화유적 현황을 파악하기 위하여 지표조사 및 발굴조사를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "수행하다",
+      "object": "소장품 관련 학술적 연구업무",
+      "full_statement": "소장품과 관련된 학술적인 연구업무를 수행한다.",
+      "source_sentence": "소장품과 관련된 학술적인 연구업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [
+    {"name": "적외선 분석기", "category": "장비", "evidence_span": "적외선 분석기, 전자현미경 등을 사용하여 예술품의 재질, 제작기술 및 기타 예술사적인 단서를 분석한다."},
+    {"name": "전자현미경", "category": "장비", "evidence_span": "적외선 분석기, 전자현미경 등을 사용하여 예술품의 재질, 제작기술 및 기타 예술사적인 단서를 분석한다."},
+    {"name": "합성수지", "category": "도구", "evidence_span": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다."},
+    {"name": "목재", "category": "도구", "evidence_span": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다."},
+    {"name": "고령토", "category": "도구", "evidence_span": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "정밀 보수·복원 작업", "evidence_span": "파손되어 분실된 부위를 복원하기 위하여 합성수지, 목재, 고령토 등을 사용하여 보수한다."},
+    {"category": "장소", "value": "현장 시공(문화재 수리 공사)", "evidence_span": "문화재 수리기능자는 각 분야에 대한 실제적인 수리와 시공‧제작 업무를 한다."}
+  ]
+}

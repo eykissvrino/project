@@ -1,0 +1,54 @@
+{
+  "ksco_code": "26489",
+  "tasks": [
+    {
+      "verb": "방문하다",
+      "object": "회원의 가정",
+      "full_statement": "회원의 가정을 직접 방문하여 학습을 지도한다.",
+      "source_sentence": "회원의 가정을 직접 방문하여 학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다.",
+      "derived_from": "조상정의(세분류 2648)→상속 주요업무 결합",
+      "confidence": 0.78
+    },
+    {
+      "verb": "지도하다",
+      "object": "학습지 내용",
+      "full_statement": "가정을 방문하여 학습지 내용을 지도한다.",
+      "source_sentence": "가정 방문하여 학습지 내용을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "활용하다",
+      "object": "교재나 교구",
+      "full_statement": "학습지 이외의 교재나 교구를 활용하여 학습을 지도한다.",
+      "source_sentence": "가정 방문하여 학습지 이외 교재나 교구를 활용하여 학습을 지도한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "가르치다",
+      "object": "아동이나 학생",
+      "full_statement": "교육 교구를 이용하여 아동이나 학생들을 가르친다.",
+      "source_sentence": "회원의 가정을 직접 방문하여 학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다.",
+      "derived_from": "조상정의(세분류 2648)",
+      "confidence": 0.74
+    },
+    {
+      "verb": "가르치다",
+      "object": "배우려는 학생",
+      "full_statement": "가정에서 배우려는 학생을 대상으로 학습 내용을 가르친다.",
+      "source_sentence": "초‧중‧고등학교 및 대학을 제외한 각급 교육기관 또는 가정에서 특정 직업에 필요한 직업훈련, 취업, 진학을 위하여 배우려는 학생을 가르친다.",
+      "derived_from": "조상정의(소분류 264)",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [
+    {"name": "학습지", "category": "도구", "evidence_span": "가정 방문하여 학습지 내용을 지도한다."},
+    {"name": "교육 교구", "category": "도구", "evidence_span": "학습지나 교육 교구를 이용하여 아동이나 학생들을 가르친다."},
+    {"name": "교재", "category": "도구", "evidence_span": "가정 방문하여 학습지 이외 교재나 교구를 활용하여 학습을 지도한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "회원의 가정 방문(이동 근무)", "evidence_span": "회원의 가정을 직접 방문하여"},
+    {"category": "사회적", "value": "아동·학생 대면 지도", "evidence_span": "아동이나 학생들을 가르친다."}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "ksco_code": "71091",
+  "tasks": [
+    {
+      "verb": "제조하다",
+      "object": "건강식품",
+      "full_statement": "한약 및 특정재료를 이용하여 건강식품을 제조한다.",
+      "source_sentence": "한약 및 특정재료를 이용하여 건강식품을 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "이용하다",
+      "object": "한약 및 특정재료",
+      "full_statement": "건강식품 제조를 위해 한약 및 특정재료를 이용한다.",
+      "source_sentence": "한약 및 특정재료를 이용하여 건강식품을 제조한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "준비하다",
+      "object": "재료",
+      "full_statement": "건강식품 제조에 필요한 재료를 준비한다.",
+      "source_sentence": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "넣다",
+      "object": "재료",
+      "full_statement": "필요한 재료를 가마에 넣는다.",
+      "source_sentence": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "익히다",
+      "object": "재료",
+      "full_statement": "가마에 넣은 재료를 오랫동안 익힌다.",
+      "source_sentence": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "짜내다",
+      "object": "즙",
+      "full_statement": "익힌 재료에서 즙을 짜낸다.",
+      "source_sentence": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "만들다",
+      "object": "건강식품",
+      "full_statement": "한약재를 이용하여 건강식품을 만든다.",
+      "source_sentence": "한약재를 이용하여 건강식품을 만들거나 어류 및 해조류를 가공하는 등 특정재료 및 식품가공과 관련된 기능적 업무를 수행한다.",
+      "derived_from": "조상정의(세분류 7109)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "검사하다",
+      "object": "식품의 맛과 안전성",
+      "full_statement": "제조한 식품의 맛과 안전성을 검사한다.",
+      "source_sentence": "식품의 맛과 안전성을 검사하는 업무도 수행한다.",
+      "derived_from": "조상정의(소분류 710)",
+      "confidence": 0.62
+    }
+  ],
+  "tools": [
+    {"name": "가마", "category": "장비", "evidence_span": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다."}
+  ],
+  "work_context": [
+    {"category": "시간적", "value": "장시간 가열(오랫동안 익힘)", "evidence_span": "필요한 재료를 가마에 넣고 오랫동안 익히거나 즙을 짜내기도 한다."},
+    {"category": "신체적", "value": "손과 수공구를 주로 사용하는 기능 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

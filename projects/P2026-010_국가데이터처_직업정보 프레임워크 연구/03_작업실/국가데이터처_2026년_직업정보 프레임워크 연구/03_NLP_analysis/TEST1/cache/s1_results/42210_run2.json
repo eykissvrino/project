@@ -1,0 +1,148 @@
+{
+  "ksco_code": "42210",
+  "tasks": [
+    {
+      "verb": "지원하다",
+      "object": "식사",
+      "full_statement": "일상생활을 혼자 수행하기 어려운 성인의 식사를 지원한다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지원하다",
+      "object": "목욕",
+      "full_statement": "성인의 목욕을 지원한다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "처리하다",
+      "object": "대소변",
+      "full_statement": "성인의 대소변 처리를 돕는다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "돕다",
+      "object": "옷 갈아입기",
+      "full_statement": "성인의 옷 갈아입기를 돕는다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.93
+    },
+    {
+      "verb": "돕다",
+      "object": "이동",
+      "full_statement": "성인의 이동을 돕는다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "변경하다",
+      "object": "몸 위치 및 자세",
+      "full_statement": "성인의 몸 위치와 자세를 변환하는 체위 변경을 한다.",
+      "source_sentence": "식사, 목욕, 대소변 처리, 옷 갈아입기, 이동, 몸 위치 자세 변환 체위 변경 등을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "산책",
+      "full_statement": "성인의 산책 등 신체활동을 지원한다.",
+      "source_sentence": "산책, 병원동행, 보행훈련 등 간단한 재활훈련과 같은 신체활동을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "동행하다",
+      "object": "병원",
+      "full_statement": "성인의 병원 방문에 동행한다.",
+      "source_sentence": "산책, 병원동행, 보행훈련 등 간단한 재활훈련과 같은 신체활동을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "지원하다",
+      "object": "보행훈련",
+      "full_statement": "보행훈련 등 간단한 재활훈련을 지원한다.",
+      "source_sentence": "산책, 병원동행, 보행훈련 등 간단한 재활훈련과 같은 신체활동을 지원한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "세탁",
+      "full_statement": "성인의 세탁 등 일상생활을 지원한다.",
+      "source_sentence": "세탁, 물건사기, 식사준비 및 조리지원, 은행 일 등 업무지원을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "구매하다",
+      "object": "물건",
+      "full_statement": "성인을 대신하여 물건을 구매한다.",
+      "source_sentence": "세탁, 물건사기, 식사준비 및 조리지원, 은행 일 등 업무지원을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.86
+    },
+    {
+      "verb": "준비하다",
+      "object": "식사",
+      "full_statement": "성인의 식사를 준비하고 조리를 지원한다.",
+      "source_sentence": "세탁, 물건사기, 식사준비 및 조리지원, 은행 일 등 업무지원을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "은행 일",
+      "full_statement": "성인의 은행 일 등 업무를 지원한다.",
+      "source_sentence": "세탁, 물건사기, 식사준비 및 조리지원, 은행 일 등 업무지원을 해준다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.84
+    },
+    {
+      "verb": "제공하다",
+      "object": "심리적 지원 서비스",
+      "full_statement": "대화 상대가 되어주는 등 심리적 지원을 위한 서비스를 제공한다.",
+      "source_sentence": "대화 상대가 되어주는 등 기타 심리적 지원을 위한 서비스를 제공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "지원하다",
+      "object": "신체활동 및 일상생활",
+      "full_statement": "고령이나 노인성 질환 등으로 일상생활을 혼자 수행하기 어려운 성인에게 신체활동 및 일상생활을 지원한다.",
+      "source_sentence": "주로 생활 복지시설 또는 재가 서비스를 통해 방문한 가정에서 고령이나 노인성 질환 등을 사유로 일상생활을 혼자서 수행하기 어려운 성인에게 신체활동 및 일상생활을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "생활 복지시설",
+      "evidence_span": "주로 생활 복지시설 또는 재가 서비스를 통해 방문한 가정에서"
+    },
+    {
+      "category": "장소",
+      "value": "재가 서비스 방문 가정",
+      "evidence_span": "주로 생활 복지시설 또는 재가 서비스를 통해 방문한 가정에서"
+    },
+    {
+      "category": "사회적",
+      "value": "고령자·노인성 질환자 대인 돌봄",
+      "evidence_span": "고령이나 노인성 질환 등을 사유로 일상생활을 혼자서 수행하기 어려운 성인에게 신체활동 및 일상생활을 지원한다"
+    },
+    {
+      "category": "신체적",
+      "value": "이동·체위 변경 등 신체적 부담",
+      "evidence_span": "이동, 몸 위치 자세 변환 체위 변경 등을 한다"
+    }
+  ]
+}

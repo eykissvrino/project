@@ -1,0 +1,100 @@
+{
+  "ksco_code": "82121",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "표백기",
+      "full_statement": "섬유제품의 색상을 더 밝게 하기 위하여 표백기를 조작한다.",
+      "source_sentence": "섬유, 방사, 직물 또는 기타 섬유제품의 색상을 더 밝게 하기 위하여 표백기나 정련기를 조작하고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "정련기",
+      "full_statement": "섬유제품을 정련하기 위하여 정련기를 조작한다.",
+      "source_sentence": "섬유, 방사, 직물 또는 기타 섬유제품의 색상을 더 밝게 하기 위하여 표백기나 정련기를 조작하고",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "검사하다",
+      "object": "직물의 파손",
+      "full_statement": "처리가 끝난 직물의 파손 상태를 검사한다.",
+      "source_sentence": "처리가 끝난 직물의 파손, 기름점, 녹물중화와 침투 분량 등 정련 및 표백상태를 검사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "검사하다",
+      "object": "직물의 기름점",
+      "full_statement": "처리가 끝난 직물의 기름점을 검사한다.",
+      "source_sentence": "처리가 끝난 직물의 파손, 기름점, 녹물중화와 침투 분량 등 정련 및 표백상태를 검사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "검사하다",
+      "object": "직물의 녹물중화 상태",
+      "full_statement": "처리가 끝난 직물의 녹물중화 상태를 검사한다.",
+      "source_sentence": "처리가 끝난 직물의 파손, 기름점, 녹물중화와 침투 분량 등 정련 및 표백상태를 검사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "침투 분량",
+      "full_statement": "처리가 끝난 직물의 침투 분량을 검사한다.",
+      "source_sentence": "처리가 끝난 직물의 파손, 기름점, 녹물중화와 침투 분량 등 정련 및 표백상태를 검사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검사하다",
+      "object": "정련 및 표백상태",
+      "full_statement": "처리가 끝난 직물의 정련 및 표백상태를 검사한다.",
+      "source_sentence": "처리가 끝난 직물의 파손, 기름점, 녹물중화와 침투 분량 등 정련 및 표백상태를 검사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "색상 처리 기계",
+      "full_statement": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "source_sentence": "색깔을 밝게 하거나 특별한 색깔을 주기 위하여 섬유제품을 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "직물 강화 기계",
+      "full_statement": "천을 수축하거나 섬유를 맞물리게 하여 직물을 강하게 하는 기계를 조작한다.",
+      "source_sentence": "천을 수축하거나 섬유를 맞물리게 하여, 직물을 강하게 하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "화학물 침투 기계",
+      "full_statement": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "source_sentence": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조작하다",
+      "object": "실크 처리 기계",
+      "full_statement": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "source_sentence": "밀도와 무게를 주기 위하여 실크를 처리하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    }
+  ],
+  "tools": [
+    {"name": "표백기", "category": "장비", "evidence_span": "색상을 더 밝게 하기 위하여 표백기나 정련기를 조작하고"},
+    {"name": "정련기", "category": "장비", "evidence_span": "색상을 더 밝게 하기 위하여 표백기나 정련기를 조작하고"}
+  ],
+  "work_context": [
+    {"category": "위험", "value": "화학물질 취급(섬유에 화학물 침투)", "evidence_span": "방수성을 주기 위하여 섬유에 화학물을 침투시키는 기계를 조작한다."}
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "ksco_code": "85301",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "자동 조립라인",
+      "full_statement": "기계 제조 및 조립과정에서 자동 조립라인을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "조작하다",
+      "object": "반자동 조립라인",
+      "full_statement": "기계 제조 및 조립과정에서 반자동 조립라인을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조작하다",
+      "object": "산업용 로봇",
+      "full_statement": "기계 제조 및 조립과정에서 산업용 로봇을 조작한다.",
+      "source_sentence": "기계 제조 및 조립과정의 산업용 로봇을 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "이동하다",
+      "object": "작업대 사이",
+      "full_statement": "조립과정에서 작업대와 작업대 사이를 이동하며 작업을 수행한다.",
+      "source_sentence": "작업대와 작업대 사이를 이동하면서 순차적으로 부품이 추가되는 조립라인을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "순차적 부품 추가 조립라인",
+      "full_statement": "순차적으로 부품이 추가되는 조립라인을 조작한다.",
+      "source_sentence": "작업대와 작업대 사이를 이동하면서 순차적으로 부품이 추가되는 조립라인을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "추가하다",
+      "object": "부품",
+      "full_statement": "조립라인을 따라 순차적으로 부품을 추가한다.",
+      "source_sentence": "작업대와 작업대 사이를 이동하면서 순차적으로 부품이 추가되는 조립라인을 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조립하다",
+      "object": "금속제품 구성품·부품",
+      "full_statement": "각종 기계의 여러 가지 형태의 금속제품 구성품이나 부품을 조립한다.",
+      "source_sentence": "각종 기계의 여러 가지 형태의 금속제품 구성품이나 부품을 조립한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "제어하다",
+      "object": "기계",
+      "full_statement": "컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응하여 기계를 제어한다.",
+      "source_sentence": "작업은 기계 조작뿐만 아니라 컴퓨터에 의한 기계 제어 등 기술적 혁신에 적응할 수 있는 능력을 포함하여 기계 및 장비에 대한 경험과 이해가 요구되며, 기계의 성능이 생산성을 좌우한다.",
+      "derived_from": "조상정의(대분류)",
+      "confidence": 0.5
+    }
+  ],
+  "tools": [
+    {"name": "자동 조립라인", "category": "장비", "evidence_span": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다."},
+    {"name": "반자동 조립라인", "category": "장비", "evidence_span": "기계 제조 및 조립과정의 자동, 반자동 조립라인을 조작한다."},
+    {"name": "산업용 로봇", "category": "장비", "evidence_span": "기계 제조 및 조립과정의 산업용 로봇을 조작한다."}
+  ],
+  "work_context": [
+    {"category": "신체적", "value": "작업대 사이를 이동하며 작업", "evidence_span": "작업대와 작업대 사이를 이동하면서 순차적으로 부품이 추가되는 조립라인을 조작한다."},
+    {"category": "시간적", "value": "순차적·연속 라인 작업", "evidence_span": "순차적으로 부품이 추가되는 조립라인을 조작한다."}
+  ]
+}

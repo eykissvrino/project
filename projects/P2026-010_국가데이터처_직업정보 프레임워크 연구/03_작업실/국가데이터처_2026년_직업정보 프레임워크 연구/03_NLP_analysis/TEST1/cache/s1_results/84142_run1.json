@@ -1,0 +1,145 @@
+{
+  "ksco_code": "84142",
+  "tasks": [
+    {
+      "verb": "조작하다",
+      "object": "용해로",
+      "full_statement": "철 또는 비철금속을 용융하기 위하여 용해로를 조작한다.",
+      "source_sentence": "철 또는 비철금속을 용융하기 위하여 용해로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.97
+    },
+    {
+      "verb": "용융하다",
+      "object": "철 또는 비철금속",
+      "full_statement": "용해로를 이용하여 철 또는 비철금속을 용융한다.",
+      "source_sentence": "철 또는 비철금속을 용융하기 위하여 용해로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "주조하다",
+      "object": "용융물",
+      "full_statement": "경우에 따라 용융물을 주조한다.",
+      "source_sentence": "경우에 따라서는 용융물을 주조하거나 이송용 컨베이어 작업을 돕기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "돕다",
+      "object": "이송용 컨베이어 작업",
+      "full_statement": "이송용 컨베이어 작업을 돕는다.",
+      "source_sentence": "경우에 따라서는 용융물을 주조하거나 이송용 컨베이어 작업을 돕기도 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "조작하다",
+      "object": "가열로",
+      "full_statement": "봉, 판, 기타 금속재를 압출·압연하기 위하여 가열로를 조작한다.",
+      "source_sentence": "또한, 봉, 판, 기타 금속재를 압출, 압연하기 위하여 가열로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "압출하다",
+      "object": "금속재",
+      "full_statement": "가열로를 이용하여 봉, 판, 기타 금속재를 압출한다.",
+      "source_sentence": "또한, 봉, 판, 기타 금속재를 압출, 압연하기 위하여 가열로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "압연하다",
+      "object": "금속재",
+      "full_statement": "가열로를 이용하여 봉, 판, 기타 금속재를 압연한다.",
+      "source_sentence": "또한, 봉, 판, 기타 금속재를 압출, 압연하기 위하여 가열로를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "제어하다",
+      "object": "금속 제련·정련 과정",
+      "full_statement": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련·정련 과정을 조정하고 제어한다.",
+      "source_sentence": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.82
+    },
+    {
+      "verb": "관찰하다",
+      "object": "컴퓨터 출력정보 및 모니터 자료",
+      "full_statement": "컴퓨터 출력정보, 모니터 자료 등을 관찰한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "측정하다",
+      "object": "가공조건 적절성",
+      "full_statement": "적절한 가공조건인지 측정한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "조치하다",
+      "object": "필요한 조치",
+      "full_statement": "측정 결과에 따라 필요한 조치를 취한다.",
+      "source_sentence": "컴퓨터 출력정보, 모니터 자료 등을 관찰하고, 적절한 가공조건인지 측정하여 필요한 조치를 취한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "감독하다",
+      "object": "기기조작원의 활동",
+      "full_statement": "기기조작원의 활동을 조정하고 감독한다.",
+      "source_sentence": "기기조작원의 활동을 조정하고 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "가동하다",
+      "object": "생산시스템",
+      "full_statement": "긴급 상황 발생 시 또는 작업 일정에 따라 생산시스템을 가동시킨다.",
+      "source_sentence": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "중단하다",
+      "object": "생산시스템",
+      "full_statement": "긴급 상황 발생 시 또는 작업 일정에 따라 생산시스템을 중단시킨다.",
+      "source_sentence": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "작성하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 작성한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "보관하다",
+      "object": "생산기록",
+      "full_statement": "생산기록을 보관한다.",
+      "source_sentence": "생산기록을 작성하고 보관한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [
+    {"name": "용해로", "category": "장비", "evidence_span": "철 또는 비철금속을 용융하기 위하여 용해로를 조작한다."},
+    {"name": "가열로", "category": "장비", "evidence_span": "봉, 판, 기타 금속재를 압출, 압연하기 위하여 가열로를 조작한다."},
+    {"name": "이송용 컨베이어", "category": "장비", "evidence_span": "이송용 컨베이어 작업을 돕기도 한다."},
+    {"name": "제어장치", "category": "시스템", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "컴퓨터 터미널", "category": "HW", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"},
+    {"name": "통제시스템", "category": "시스템", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "중앙조정실", "evidence_span": "중앙조정실에서 조정하는 제어장치, 컴퓨터 터미널, 기타 통제시스템을 통해 금속 제련, 정련과정을 조정하고 제어한다."},
+    {"category": "시간적", "value": "긴급 상황 또는 작업 일정에 따른 생산시스템 가동·중단", "evidence_span": "긴급 상황 발생시 또는 작업 일정에 따라 생산시스템을 가동시키거나 중단시킨다."}
+  ]
+}

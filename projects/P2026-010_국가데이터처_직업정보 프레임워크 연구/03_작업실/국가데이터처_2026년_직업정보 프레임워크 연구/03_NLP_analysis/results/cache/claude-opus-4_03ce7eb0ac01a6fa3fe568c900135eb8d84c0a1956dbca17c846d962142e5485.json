@@ -1,0 +1,21 @@
+{
+  "ksco_code": "28299",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "금융 자료",
+      "full_statement": "금융·보험 관련 자료를 평가한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "자문하다",
+      "object": "금융",
+      "full_statement": "금융 및 보험에 대해 자문한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

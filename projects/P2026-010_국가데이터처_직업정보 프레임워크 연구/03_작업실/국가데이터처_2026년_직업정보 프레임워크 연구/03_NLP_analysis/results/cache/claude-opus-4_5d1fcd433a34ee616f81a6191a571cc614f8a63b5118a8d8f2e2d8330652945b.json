@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28241",
+  "tasks": [
+    {
+      "verb": "중개하다",
+      "object": "증권 매매",
+      "full_statement": "개인이나 사업체를 대리하여 증권과 채권을 매매·중개한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수집하다",
+      "object": "증시 정보",
+      "full_statement": "국내외 증시동향을 체크하고 정보를 수집한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수립하다",
+      "object": "매매 전략",
+      "full_statement": "장세 전망과 매매 전략을 수립한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분석하다",
+      "object": "고객 재정",
+      "full_statement": "고객의 재정 상태를 분석하여 투자를 상담한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

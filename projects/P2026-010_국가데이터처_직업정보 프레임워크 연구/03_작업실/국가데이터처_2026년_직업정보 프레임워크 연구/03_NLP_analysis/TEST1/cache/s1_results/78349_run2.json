@@ -1,0 +1,143 @@
+{
+  "ksco_code": "78349",
+  "tasks": [
+    {
+      "verb": "검토하다",
+      "object": "도면",
+      "full_statement": "도면을 검토하고 현장측량을 통하여 바닥재의 종류와 형태를 결정한다.",
+      "source_sentence": "도면을 검토하고 현장측량을 통하여 타일의 종류와 형태를 결정하고, 시공 작업을 계획한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(타일→바닥재/구성타일·모자이크)",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측량하다",
+      "object": "시공 현장",
+      "full_statement": "현장측량을 실시하여 시공 작업을 계획한다.",
+      "source_sentence": "도면을 검토하고 현장측량을 통하여 타일의 종류와 형태를 결정하고, 시공 작업을 계획한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "처리하다",
+      "object": "작업 표면",
+      "full_statement": "작업할 표면의 재질에 따라 표면처리 작업을 수행한다.",
+      "source_sentence": "작업할 표면의 재질에 따라 표면처리 작업을 하고, 기준위치를 결정 하며 수직‧수평을 측정하여 실을 띄운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "결정하다",
+      "object": "기준위치",
+      "full_statement": "시공할 기준위치를 결정한다.",
+      "source_sentence": "작업할 표면의 재질에 따라 표면처리 작업을 하고, 기준위치를 결정 하며 수직‧수평을 측정하여 실을 띄운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "측정하다",
+      "object": "수직‧수평",
+      "full_statement": "수직‧수평을 측정하여 실을 띄운다.",
+      "source_sentence": "작업할 표면의 재질에 따라 표면처리 작업을 하고, 기준위치를 결정 하며 수직‧수평을 측정하여 실을 띄운다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "배합하다",
+      "object": "접합재료",
+      "full_statement": "모르타르 또는 기타 접합재료를 배합한다.",
+      "source_sentence": "모르타르 또는 기타 접합재료를 배합하고, 타일을 용도에 따라 절단‧ 가공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "절단하다",
+      "object": "바닥재",
+      "full_statement": "구성타일이나 모자이크 패널을 용도에 따라 절단‧가공한다.",
+      "source_sentence": "모르타르 또는 기타 접합재료를 배합하고, 타일을 용도에 따라 절단‧ 가공한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(타일→구성타일·모자이크 패널)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "바르다",
+      "object": "접합재",
+      "full_statement": "표면에 접합재를 바른다.",
+      "source_sentence": "접합재를 바르고 균형을 맞추어 타일을 배열하여 붙인다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "부착하다",
+      "object": "모자이크 패널",
+      "full_statement": "바닥, 벽 또는 기타 표면을 장식하기 위하여 모자이크 패널을 부착한다.",
+      "source_sentence": "바닥, 벽 또는 기타 표면을 장식하기 위하여 모자이크 패널을 부착 업무, 건물의 내부에 충격흡수, 바닥포장 및 장식 목적으로 구성타일을 부착 업무 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "부착하다",
+      "object": "구성타일",
+      "full_statement": "건물 내부에 충격흡수, 바닥포장 및 장식 목적으로 구성타일을 부착한다.",
+      "source_sentence": "건물의 내부에 충격흡수, 바닥포장 및 장식 목적으로 구성타일을 부착 업무 등이 여기에 분류된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배열하다",
+      "object": "바닥재",
+      "full_statement": "균형을 맞추어 타일이나 패널을 배열하여 붙인다.",
+      "source_sentence": "접합재를 바르고 균형을 맞추어 타일을 배열하여 붙인다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "마무리하다",
+      "object": "바닥재 표면",
+      "full_statement": "바닥재 표면 및 바닥재 사이를 마무리한다.",
+      "source_sentence": "타일 표면 및 타일과 타일사이를 마무리하고 양생한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "양생하다",
+      "object": "시공면",
+      "full_statement": "시공한 면을 양생한다.",
+      "source_sentence": "타일 표면 및 타일과 타일사이를 마무리하고 양생한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "시공하다",
+      "object": "고무타일 바닥",
+      "full_statement": "바닥에 고무타일을 깐다.",
+      "source_sentence": "고무타일 바닥깔기원·모자이크 부착원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "시공하다",
+      "object": "코르크타일 바닥",
+      "full_statement": "바닥에 코르크타일을 깐다.",
+      "source_sentence": "구성타일 부착원·코르크타일 깔기원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    },
+    {
+      "verb": "부착하다",
+      "object": "아스팔트타일",
+      "full_statement": "바닥에 아스팔트타일을 부착한다.",
+      "source_sentence": "아스팔트타일 부착원",
+      "derived_from": "세세분류 직업 예시",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "모르타르", "category": "도구", "evidence_span": "모르타르 또는 기타 접합재료를 배합하고"},
+    {"name": "접합재", "category": "도구", "evidence_span": "접합재를 바르고 균형을 맞추어 타일을 배열하여 붙인다."},
+    {"name": "모자이크 패널", "category": "도구", "evidence_span": "모자이크 패널을 부착 업무"},
+    {"name": "구성타일", "category": "도구", "evidence_span": "구성타일을 부착 업무"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "건물 내부(바닥·벽·표면)", "evidence_span": "건물의 내부에 충격흡수, 바닥포장 및 장식 목적으로 구성타일을 부착 업무"},
+    {"category": "신체적", "value": "수공구·기능 중심의 정밀 시공 작업", "evidence_span": "작업은 손과 수공구를 주로 사용하며 기계를 사용하더라도 기계의 성능보다 사람의 기능이 갖는 역할이 중요하다"}
+  ]
+}

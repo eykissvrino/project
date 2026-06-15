@@ -1,0 +1,55 @@
+{
+  "ksco_code": "29391",
+  "tasks": [
+    {
+      "verb": "기록하다",
+      "object": "촬영 전 과정",
+      "full_statement": "영화나 드라마의 촬영 전 과정을 기록한다.",
+      "source_sentence": "영화나 드라마의 촬영 전 과정을 기록하는 자로서",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "기록하다",
+      "object": "연기자의 연기",
+      "full_statement": "촬영기간 내에 연기자의 연기를 기록한다.",
+      "source_sentence": "촬영기간 내에 연기자의 연기나 의상, 소품을 기록해서 다음 촬영에 차질이 없게 하는 역할을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "연기자의 의상",
+      "full_statement": "촬영기간 내에 연기자의 의상을 기록한다.",
+      "source_sentence": "촬영기간 내에 연기자의 연기나 의상, 소품을 기록해서 다음 촬영에 차질이 없게 하는 역할을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "기록하다",
+      "object": "소품",
+      "full_statement": "촬영기간 내에 소품을 기록한다.",
+      "source_sentence": "촬영기간 내에 연기자의 연기나 의상, 소품을 기록해서 다음 촬영에 차질이 없게 하는 역할을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "확인하다",
+      "object": "촬영 연속성",
+      "full_statement": "기록한 정보를 바탕으로 다음 촬영에 차질이 없게 촬영 연속성을 확인한다.",
+      "source_sentence": "다음 촬영에 차질이 없게 하는 역할을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "기록하다",
+      "object": "촬영과정 전반",
+      "full_statement": "촬영과정 전반을 기록한다.",
+      "source_sentence": "촬영과정 전반을 기록하는 스크립터도 여기에 분류한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

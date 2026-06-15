@@ -1,0 +1,86 @@
+{
+  "ksco_code": "63021",
+  "tasks": [
+    {
+      "verb": "준비하다",
+      "object": "어로 도구",
+      "full_statement": "어로 작업에 사용할 어로 도구를 준비한다.",
+      "source_sentence": "어로 도구 및 미끼를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "준비하다",
+      "object": "미끼",
+      "full_statement": "어로 작업에 사용할 미끼를 준비한다.",
+      "source_sentence": "어로 도구 및 미끼를 준비한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "잡다",
+      "object": "고기",
+      "full_statement": "어로 장비를 써서 고기를 잡는다.",
+      "source_sentence": "어로 장비를 써서 고기를 잡은 후 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.95
+    },
+    {
+      "verb": "분류하다",
+      "object": "잡은 고기",
+      "full_statement": "잡은 고기를 종류별로 분류한다.",
+      "source_sentence": "어로 장비를 써서 고기를 잡은 후 분류한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "씻다",
+      "object": "잡은 물고기",
+      "full_statement": "잡은 물고기를 씻는다.",
+      "source_sentence": "경우에 따라서는 잡은 물고기를 씻어서 소금에 절이는 일을 하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "절이다",
+      "object": "물고기",
+      "full_statement": "씻은 물고기를 소금에 절인다.",
+      "source_sentence": "경우에 따라서는 잡은 물고기를 씻어서 소금에 절이는 일을 하기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수행하다",
+      "object": "원양어로 작업",
+      "full_statement": "원양어로 작업에 관련된 업무를 수행한다.",
+      "source_sentence": "원양어로 작업에 관련된 업무를 수행하는데, 어로 도구 및 미끼를 준비하며 어로 장비를 써서 고기를 잡은 후 분류한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.7
+    },
+    {
+      "verb": "잡다",
+      "object": "연안 물고기",
+      "full_statement": "연안에서 물고기를 잡는다.",
+      "source_sentence": "또한 연안에서 물고기를 잡거나 기타 수생 동‧식물들을 포획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "포획하다",
+      "object": "기타 수생 동‧식물",
+      "full_statement": "연안에서 기타 수생 동‧식물을 포획한다.",
+      "source_sentence": "또한 연안에서 물고기를 잡거나 기타 수생 동‧식물들을 포획한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    }
+  ],
+  "tools": [
+    {"name": "어로 도구", "category": "도구", "evidence_span": "어로 도구 및 미끼를 준비한다."},
+    {"name": "미끼", "category": "도구", "evidence_span": "어로 도구 및 미끼를 준비한다."},
+    {"name": "어로 장비", "category": "장비", "evidence_span": "어로 장비를 써서 고기를 잡은 후 분류한다."}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "원양(원해)", "evidence_span": "원양어로 작업에 관련된 업무를 수행하는데"},
+    {"category": "장소", "value": "연안", "evidence_span": "또한 연안에서 물고기를 잡거나 기타 수생 동‧식물들을 포획한다."}
+  ]
+}

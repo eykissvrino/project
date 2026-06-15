@@ -1,0 +1,101 @@
+{
+  "ksco_code": "61110",
+  "tasks": [
+    {
+      "verb": "분비하다",
+      "object": "경작지",
+      "full_statement": "곡식작물을 재배하기 위해 경작지를 분비한다.",
+      "source_sentence": "경작지를 분비한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "선정하다",
+      "object": "재배품목",
+      "full_statement": "토지, 노동력, 기후여건 등을 고려하여 재배품목을 선정한다.",
+      "source_sentence": "토지, 노동력, 기후여건 등을 고려하여 재배품목을 선정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "파종하다",
+      "object": "곡식의 씨앗",
+      "full_statement": "경작지에 쌀, 보리, 밀, 콩, 옥수수 등 곡식의 씨앗을 파종한다.",
+      "source_sentence": "경작지에 곡식의 씨앗을 파종하고, 재배하여 쌀, 보리, 밀, 콩, 옥수수, 감자, 고구마 및 기타 곡물 등의 작물을 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "이식하다",
+      "object": "곡식작물",
+      "full_statement": "곡식작물의 모종을 경작지에 이식한다.",
+      "source_sentence": "곡식작물을 파종, 이식, 비료살포, 농약 살포 및 수확한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "살포하다",
+      "object": "비료",
+      "full_statement": "곡식작물의 생육을 위해 비료를 살포한다.",
+      "source_sentence": "곡식작물을 파종, 이식, 비료살포, 농약 살포 및 수확한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "살포하다",
+      "object": "농약",
+      "full_statement": "병해충 방제를 위해 곡식작물에 농약을 살포한다.",
+      "source_sentence": "곡식작물을 파종, 이식, 비료살포, 농약 살포 및 수확한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "재배하다",
+      "object": "곡식작물",
+      "full_statement": "파종한 곡식작물을 재배한다.",
+      "source_sentence": "경작지에 곡식의 씨앗을 파종하고, 재배하여 쌀, 보리, 밀, 콩, 옥수수, 감자, 고구마 및 기타 곡물 등의 작물을 수확한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수확하다",
+      "object": "곡식작물",
+      "full_statement": "쌀, 보리, 밀, 콩, 옥수수, 감자, 고구마 및 기타 곡물 등의 작물을 수확한다.",
+      "source_sentence": "경작지에 곡식의 씨앗을 파종하고, 재배하여 쌀, 보리, 밀, 콩, 옥수수, 감자, 고구마 및 기타 곡물 등의 작물을 수확한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.9
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "수확한 생산물을 저장한다.",
+      "source_sentence": "생산물을 저장하거나 일부 기초적인 가공을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "가공하다",
+      "object": "생산물",
+      "full_statement": "생산물에 대해 일부 기초적인 가공을 한다.",
+      "source_sentence": "생산물을 저장하거나 일부 기초적인 가공을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "판매하다",
+      "object": "생산물",
+      "full_statement": "구매자, 판매조직 또는 시장에 생산물을 판매한다.",
+      "source_sentence": "구매자, 판매조직 또는 시장에 생산물을 판매한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "경작지(실외 농경지)",
+      "evidence_span": "경작지에 곡식의 씨앗을 파종하고, 재배하여"
+    }
+  ]
+}

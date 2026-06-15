@@ -1,0 +1,63 @@
+{
+  "ksco_code": "29395",
+  "tasks": [
+    {
+      "verb": "등장하다",
+      "object": "연극·영화·방송 장면",
+      "full_statement": "연극, 영화, 방송 등의 장면에 엑스트라로 등장한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연기하다",
+      "object": "배경 역할",
+      "full_statement": "장면 속에서 배경 역할로 보조 연기를 수행한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "연기하다",
+      "object": "연극 장면",
+      "full_statement": "연극에서 엑스트라로 등장하여 연기한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연기하다",
+      "object": "영화 장면",
+      "full_statement": "영화에서 엑스트라로 등장하여 연기한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.78
+    },
+    {
+      "verb": "연기하다",
+      "object": "방송 프로그램 장면",
+      "full_statement": "방송 프로그램에서 엑스트라로 등장하여 연기한다.",
+      "source_sentence": "연극, 영화, 방송 등에서 엑스트라로 등장하여 연기한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.76
+    },
+    {
+      "verb": "수행하다",
+      "object": "연기 활동",
+      "full_statement": "영화, 방송 및 연극에서 연기 활동을 수행한다.",
+      "source_sentence": "미술, 음악, 무용, 스포츠 및 기타 예술작품을 창작하고, 영화, 방송 및 연극에서 연기를 하거나 감독한다.",
+      "derived_from": "조상정의(중분류)",
+      "confidence": 0.6
+    },
+    {
+      "verb": "참여하다",
+      "object": "촬영 과정",
+      "full_statement": "영상물 제작의 촬영 과정에 출연자로 참여한다.",
+      "source_sentence": "연극, 영화, 라디오 및 TV프로그램, 광고 등의 제작을 총괄적으로 감독하고 연출한다.",
+      "derived_from": "조상정의(소분류)→세세정의 특화",
+      "confidence": 0.55
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,103 @@
+{
+  "ksco_code": "77231",
+  "tasks": [
+    {
+      "verb": "가설하다",
+      "object": "통신선",
+      "full_statement": "통신망에 기초가 되는 통신선을 가설한다.",
+      "source_sentence": "통신망에 기초가 되는 통신선을 가설하며, 전화선 접속원, 광케이블 접속원, 무선통신 접속원으로 구분할 수 있다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "수리하다",
+      "object": "통신선",
+      "full_statement": "통신‧방송‧인터넷망에 기초가 되는 각종 통신선이 고장나면 이를 수리한다.",
+      "source_sentence": "통신‧방송‧인터넷망에 기초가 되는 각종 통신선을 가설하고 고장시 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연결하다",
+      "object": "전화선묶음의 선",
+      "full_statement": "전화선묶음의 선들을 같은 색깔별로 두 선씩 연결한다.",
+      "source_sentence": "전화선 접속원은 전화선묶음의 선들을 같은 색깔별로 두 선씩 연결하는 작업을 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.95
+    },
+    {
+      "verb": "둘러싸다",
+      "object": "통신선",
+      "full_statement": "물이나 기타 이물질로 인한 합선을 막기 위해 모든 선을 연결한 후 열수축관으로 통신선을 둘러싼다.",
+      "source_sentence": "모든 선을 연결한 후에 물이나 기타 이물질이 선에 묻어 합선되는 등의 문제점을 막기 위해 열수축관으로 통신선을 둘러싼다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "연결하다",
+      "object": "케이블",
+      "full_statement": "동선의 경우 단자를 이용하여 케이블을 연결한다.",
+      "source_sentence": "동선의 경우에는 단자를 이용하여 케이블을 연결한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "설치하다",
+      "object": "광케이블",
+      "full_statement": "몇 백가닥의 유리섬유 묶음으로 만들어진 광케이블을 설치한다.",
+      "source_sentence": "광케이블은 몇 백가닥의 유리섬유 묶음으로 만들어져 있어 케이블 설치가 까다롭기 때문에 광케이블 접속원은 고도의 기술이 필요하다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "절단하다",
+      "object": "광케이블",
+      "full_statement": "자동 코어커터기를 이용하여 광케이블을 절단한다.",
+      "source_sentence": "자동 코어커터(core cutter)기를 이용하여 이 작업을 수행하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접속하다",
+      "object": "광케이블",
+      "full_statement": "잘려진 광케이블을 광접속기를 이용하여 접속한다.",
+      "source_sentence": "잘려진 광케이블은 광접속기를 이용하여 광케이블을 접속한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.94
+    },
+    {
+      "verb": "연결하다",
+      "object": "안테나와 기지국",
+      "full_statement": "무선통신망 접속의 경우 철탑 위의 안테나와 지상의 기지국을 유선으로 연결한다.",
+      "source_sentence": "무선통신망 접속의 경우에는 철탑 위의 안테나와 지상의 기지국을 유선으로 연결하는 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.93
+    },
+    {
+      "verb": "올라가다",
+      "object": "철탑",
+      "full_statement": "안테나에 통신선을 연결하기 위해 직접 철탑 위로 올라간다.",
+      "source_sentence": "직접 철탑위로 올라가 안테나에 통신선을 연결하여 지상의 기지국과 연결시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연결하다",
+      "object": "통신선",
+      "full_statement": "철탑 위의 안테나에 통신선을 연결하여 지상의 기지국과 연결시킨다.",
+      "source_sentence": "직접 철탑위로 올라가 안테나에 통신선을 연결하여 지상의 기지국과 연결시킨다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [
+    {"name": "열수축관", "category": "도구", "evidence_span": "열수축관으로 통신선을 둘러싼다"},
+    {"name": "단자", "category": "도구", "evidence_span": "동선의 경우에는 단자를 이용하여 케이블을 연결한다"},
+    {"name": "자동 코어커터기", "category": "장비", "evidence_span": "자동 코어커터(core cutter)기를 이용하여 이 작업을 수행하기도 한다"},
+    {"name": "광접속기", "category": "장비", "evidence_span": "잘려진 광케이블은 광접속기를 이용하여 광케이블을 접속한다"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "철탑 위 고소작업", "evidence_span": "직접 철탑위로 올라가 안테나에 통신선을 연결하여"},
+    {"category": "신체적", "value": "고도의 기술 요구(정밀작업)", "evidence_span": "케이블 설치가 까다롭기 때문에 광케이블 접속원은 고도의 기술이 필요하다"}
+  ]
+}

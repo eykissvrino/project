@@ -1,0 +1,176 @@
+{
+  "ksco_code": "29432",
+  "tasks": [
+    {
+      "verb": "개발하다",
+      "object": "독창적인 아이디어",
+      "full_statement": "독창적인 아이디어를 개발하거나 자료를 수집하여 만화영화의 주제를 결정한다.",
+      "source_sentence": "독창적인 아이디어를 개발하거나 자료를 수집하여 주제를 결정한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수집하다",
+      "object": "자료",
+      "full_statement": "주제 결정을 위한 자료를 수집한다.",
+      "source_sentence": "독창적인 아이디어를 개발하거나 자료를 수집하여 주제를 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    },
+    {
+      "verb": "설정하다",
+      "object": "등장인물 및 주변상황",
+      "full_statement": "등장인물 및 주변상황을 설정한다.",
+      "source_sentence": "등장인물 및 주변상황을 설정하고 만화의 내용을 정리한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "정리하다",
+      "object": "만화영화의 내용",
+      "full_statement": "만화영화의 내용을 정리한다.",
+      "source_sentence": "등장인물 및 주변상황을 설정하고 만화의 내용을 정리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.76
+    },
+    {
+      "verb": "구상하다",
+      "object": "적절한 내용",
+      "full_statement": "장면, 대화 등에 따라 적절한 내용을 구상한다.",
+      "source_sentence": "장면, 대화 등에 따라 적절한 내용을 구상하여 그린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "협의하다",
+      "object": "등장인물의 표정·몸짓",
+      "full_statement": "만화영화연출가와 협의하여 등장인물의 표정, 몸짓 등을 검토한다.",
+      "source_sentence": "만화영화연출가와 협의하여 등장인물의 표정, 몸짓 등을 검토하고 관련 배경 및 도구들의 색상을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "검토하다",
+      "object": "등장인물의 표정·몸짓",
+      "full_statement": "등장인물의 표정, 몸짓 등을 검토한다.",
+      "source_sentence": "만화영화연출가와 협의하여 등장인물의 표정, 몸짓 등을 검토하고 관련 배경 및 도구들의 색상을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "확인하다",
+      "object": "관련 배경 및 도구들의 색상",
+      "full_statement": "관련 배경 및 도구들의 색상을 확인한다.",
+      "source_sentence": "만화영화연출가와 협의하여 등장인물의 표정, 몸짓 등을 검토하고 관련 배경 및 도구들의 색상을 확인한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "결정하다",
+      "object": "등장인물의 기본동작·중간동작의 분위기 및 색상",
+      "full_statement": "등장인물의 기본동작, 중간동작 등의 분위기 및 색상 등을 결정한다.",
+      "source_sentence": "등장인물의 기본동작, 중간동작 등의 분위기 및 색상 등을 결정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "그리다",
+      "object": "그림",
+      "full_statement": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다.",
+      "source_sentence": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "그리다",
+      "object": "기본동작·중간동작·채색·배경화면",
+      "full_statement": "만화의 기본동작, 중간동작, 채색, 배경화면 등을 전문으로 그린다.",
+      "source_sentence": "만화의 기본동작, 중간동작, 채색, 배경화면 등을 전문으로 그리기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "그리다",
+      "object": "한 장면씩의 배경",
+      "full_statement": "만화영화의 배경이 되는 한 장면, 한 장면을 그려 넣는다.",
+      "source_sentence": "만화영화 작가는 만화영화의 배경이 되는 한 장면, 한 장면을 그려 넣는 작업을 하는 자로서 그림에 그려진 인물이나 동물의 모습에 생동감을 불어 넣어 주는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "불어넣다",
+      "object": "인물이나 동물의 모습에 생동감",
+      "full_statement": "그림에 그려진 인물이나 동물의 모습에 생동감을 불어 넣는다.",
+      "source_sentence": "만화영화 작가는 만화영화의 배경이 되는 한 장면, 한 장면을 그려 넣는 작업을 하는 자로서 그림에 그려진 인물이나 동물의 모습에 생동감을 불어 넣어 주는 일을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.8
+    },
+    {
+      "verb": "만들다",
+      "object": "동영상",
+      "full_statement": "영화, 인터넷광고, TV광고 및 방송프로그램 등의 동영상을 만든다.",
+      "source_sentence": "디지털 애니메이터는 영화, 인터넷광고, TV광고 및 방송프로그램 등의 동영상을 만든다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "만들다",
+      "object": "캐릭터 모델링",
+      "full_statement": "캐릭터를 만드는 모델링 작업을 수행한다.",
+      "source_sentence": "디지털 애니메이션은 캐릭터를 만드는 모델링, 색깔과 질감을 주는 맵핑, 움직임을 주는 애니메이션 작업을 통해 제작된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.81
+    },
+    {
+      "verb": "주다",
+      "object": "색깔과 질감(맵핑)",
+      "full_statement": "색깔과 질감을 주는 맵핑 작업을 수행한다.",
+      "source_sentence": "디지털 애니메이션은 캐릭터를 만드는 모델링, 색깔과 질감을 주는 맵핑, 움직임을 주는 애니메이션 작업을 통해 제작된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.81
+    },
+    {
+      "verb": "주다",
+      "object": "움직임(애니메이션)",
+      "full_statement": "움직임을 주는 애니메이션 작업을 수행한다.",
+      "source_sentence": "디지털 애니메이션은 캐릭터를 만드는 모델링, 색깔과 질감을 주는 맵핑, 움직임을 주는 애니메이션 작업을 통해 제작된다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.81
+    },
+    {
+      "verb": "만들다",
+      "object": "인형",
+      "full_statement": "특수한 점토(클레이)를 이용하여 영화, 광고 및 방송프로그램 등을 위해 인형을 만든다.",
+      "source_sentence": "클레이 애니메이터, 인형 애니메이터는 특수한 점토(클레이)를 이용하여 영화, 광고 및 방송프로그램 등을 위해 인형을 만들고, 인형의 동작 하나 하나를 찍어 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "찍다",
+      "object": "인형의 동작",
+      "full_statement": "인형의 동작 하나 하나를 찍어 제작한다.",
+      "source_sentence": "클레이 애니메이터, 인형 애니메이터는 특수한 점토(클레이)를 이용하여 영화, 광고 및 방송프로그램 등을 위해 인형을 만들고, 인형의 동작 하나 하나를 찍어 제작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.81
+    },
+    {
+      "verb": "그리다",
+      "object": "만화영화의 그림",
+      "full_statement": "등장인물의 동작, 분위기 및 색상을 결정하여 만화영화의 그림을 그린다.",
+      "source_sentence": "등장인물의 동작, 분위기 및 색상을 결정하여 만화나 만화영화의 그림을 그린다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "연필", "category": "도구", "evidence_span": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다."},
+    {"name": "펜", "category": "도구", "evidence_span": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다."},
+    {"name": "붓", "category": "도구", "evidence_span": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다."},
+    {"name": "물감", "category": "도구", "evidence_span": "연필, 펜, 붓, 물감 등을 사용하여 그림을 그린다."},
+    {"name": "점토(클레이)", "category": "도구", "evidence_span": "특수한 점토(클레이)를 이용하여 영화, 광고 및 방송프로그램 등을 위해 인형을 만들고"}
+  ],
+  "work_context": [
+    {"category": "사회적", "value": "만화영화연출가와 협의(팀작업)", "evidence_span": "만화영화연출가와 협의하여 등장인물의 표정, 몸짓 등을 검토하고"},
+    {"category": "신체적", "value": "정밀한 그리기 작업", "evidence_span": "만화영화의 배경이 되는 한 장면, 한 장면을 그려 넣는 작업"}
+  ]
+}

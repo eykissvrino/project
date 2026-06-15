@@ -1,0 +1,37 @@
+{
+  "ksco_code": "99920",
+  "tasks": [
+    {
+      "verb": "세탁하다",
+      "object": "의류·섬유직물의 오염물",
+      "full_statement": "의류, 섬유직물 등에 묻은 오염물을 손으로 세탁한다.",
+      "source_sentence": "의류, 섬유직물 등에 묻은 오염물을 세탁한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(손으로 세탁)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "세탁하다",
+      "object": "유사물품",
+      "full_statement": "유사물품을 손으로 세탁한다.",
+      "source_sentence": "의류, 섬유직물 및 유사물품을 손으로 세탁하거나 구김을 펴는 정도의 단순한 다림질을 한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "다림질하다",
+      "object": "의류·섬유직물의 구김",
+      "full_statement": "구김을 펴는 정도의 간단한 다림질을 한다.",
+      "source_sentence": "구김을 펴는 정도의 간단한 다림질을 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(단순 다림질)",
+      "confidence": 0.95
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "신체적",
+      "value": "손작업 중심의 단순 수작업(손세탁)",
+      "evidence_span": "의류, 섬유직물 및 유사물품을 손으로 세탁하거나"
+    }
+  ]
+}

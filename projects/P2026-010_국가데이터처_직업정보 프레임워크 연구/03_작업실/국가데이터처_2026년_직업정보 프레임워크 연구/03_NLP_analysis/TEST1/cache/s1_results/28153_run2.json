@@ -1,0 +1,71 @@
+{
+  "ksco_code": "28153",
+  "tasks": [
+    {
+      "verb": "평가하다",
+      "object": "상품 품질의 표준규격 부합성",
+      "full_statement": "상품의 품질에 대해 표준규격과의 부합성을 평가한다.",
+      "source_sentence": "상품의 품질에 대해 표준규격과의 부합성을 평가하여 품질인증여부를 심사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "심사하다",
+      "object": "품질인증 여부",
+      "full_statement": "표준규격 부합성 평가를 바탕으로 품질인증 여부를 심사한다.",
+      "source_sentence": "상품의 품질에 대해 표준규격과의 부합성을 평가하여 품질인증여부를 심사한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "심사하다",
+      "object": "국제표준기구 품질인증 여부",
+      "full_statement": "국제표준기구의 품질인증여부를 심사한다.",
+      "source_sentence": "국제표준기구의 품질인증여부를 심사한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "분석하다",
+      "object": "사업 및 조직체계",
+      "full_statement": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무(조상정의 세분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "제안하다",
+      "object": "경영 개선점",
+      "full_statement": "사업 및 조직체계 분석 결과를 바탕으로 개선점을 제안한다.",
+      "source_sentence": "효율적인 경영을 위해 사업 및 조직체계를 검토, 분석하고 개선점을 제안한다.",
+      "derived_from": "상속 주요업무(조상정의 세분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "분석하다",
+      "object": "경영방법 및 조직",
+      "full_statement": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "source_sentence": "공공이나 민간부문 사업체들의 경영방법 및 조직을 분석하고 자문한다.",
+      "derived_from": "상속 주요업무(조상정의 세분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "수행하다",
+      "object": "경영정책 효율성 연구",
+      "full_statement": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "source_sentence": "경영정책 및 계획에 대한 효율성 및 효과를 판단하기 위한 연구를 수행한다.",
+      "derived_from": "상속 주요업무(조상정의 세분류)",
+      "confidence": 0.4
+    },
+    {
+      "verb": "작성하다",
+      "object": "운영 및 업무 절차매뉴얼",
+      "full_statement": "기업 운영 및 업무 절차매뉴얼을 작성한다.",
+      "source_sentence": "조직에 대한 연구 및 평가를 수행하며, 조직 체계 및 업무 절차를 설계하고 기업 운영 및 업무 절차매뉴얼을 작성한다.",
+      "derived_from": "상속 주요업무(조상정의 세분류)",
+      "confidence": 0.4
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,80 @@
+{
+  "ksco_code": "81121",
+  "tasks": [
+    {
+      "verb": "혼합하다",
+      "object": "밀가루와 다른 성분",
+      "full_statement": "반죽을 가공하기 위하여 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 가공하려고 밀가루에 다른 성분을 혼합하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(떡·빵·케이크·비스킷·파이·과자)",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조작하다",
+      "object": "반죽 압출·성형 기계",
+      "full_statement": "빵, 과자 및 떡 제조용 반죽을 압출, 성형하는 기계를 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 제조하기 위한 반죽을 압출, 성형하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "오븐",
+      "full_statement": "빵, 과자를 굽기 위하여 사용되는 오븐을 조작한다.",
+      "source_sentence": "빵, 과자, 라면 및 관련제품을 굽기 위하여 사용되는 오븐을 조작한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(빵·케이크·비스킷·파이·과자)",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조작하다",
+      "object": "곡물제품 제조 기계",
+      "full_statement": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "source_sentence": "곡물제품을 제조하는 데 사용되는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조작하다",
+      "object": "과자 제조 기계",
+      "full_statement": "밀가루 및 곡물 가루로 과자, 비스킷을 제조하는 기계를 조작한다.",
+      "source_sentence": "밀가루 및 여러 가지 곡물 가루로 떡, 빵, 케이크, 비스킷, 파이, 과자 등의 제품을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "떡 제조 기계",
+      "full_statement": "밀가루 및 곡물 가루로 떡을 제조하는 기계를 조작한다.",
+      "source_sentence": "밀가루 및 여러 가지 곡물 가루로 떡, 빵, 케이크, 비스킷, 파이, 과자 등의 제품을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의(고유활동: 떡 제조 — 직업예시 떡 생산기 조작원·강정 제조기 조작원)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "조작하다",
+      "object": "케이크·파이 제조 기계",
+      "full_statement": "밀가루 및 곡물 가루로 케이크, 파이를 제조하는 기계를 조작한다.",
+      "source_sentence": "밀가루 및 여러 가지 곡물 가루로 떡, 빵, 케이크, 비스킷, 파이, 과자 등의 제품을 제조하는 기계를 조작한다.",
+      "derived_from": "세세분류 정의(직업예시 페이스트리 생산기 조작원)",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "조제 식품 제조 기계",
+      "full_statement": "식사용으로 직접 먹거나 가열하여 먹을 수 있는 조제 식품을 제조하는 기계를 조작한다.",
+      "source_sentence": "식사용으로 직접 먹거나 먹기 전에 가열하여 먹을 수 있는 식사용 조제 식품을 제조하는 기계를 조작한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [
+    {"name": "혼합기", "category": "장비", "evidence_span": "밀가루에 다른 성분을 혼합하는 기계를 조작한다 / 제빵 반죽혼합기 조작원"},
+    {"name": "압출·성형기", "category": "장비", "evidence_span": "반죽을 압출, 성형하는 기계를 조작한다"},
+    {"name": "오븐", "category": "장비", "evidence_span": "굽기 위하여 사용되는 오븐을 조작한다"},
+    {"name": "빵 생산기", "category": "장비", "evidence_span": "빵 생산기 조작원"},
+    {"name": "페이스트리 생산기", "category": "장비", "evidence_span": "페이스트리 생산기 조작원"},
+    {"name": "과자 생산기", "category": "장비", "evidence_span": "과자 생산기 조작원"},
+    {"name": "떡 생산기", "category": "장비", "evidence_span": "떡 생산기 조작원"},
+    {"name": "강정 제조기", "category": "장비", "evidence_span": "강정 제조기 조작원"}
+  ],
+  "work_context": []
+}

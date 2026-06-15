@@ -1,0 +1,35 @@
+{
+  "ksco_code": "28140",
+  "tasks": [
+    {
+      "verb": "분류하다",
+      "object": "세목·세율",
+      "full_statement": "수출입 물품의 세목과 세율을 분류한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "세액",
+      "full_statement": "과세가격을 확인하고 세액을 계산한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대행하다",
+      "object": "수출입 신고",
+      "full_statement": "수출입 신고 및 관련 절차의 이행을 대행한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "대리하다",
+      "object": "관세 이의신청",
+      "full_statement": "관세법에 의한 이의신청·심판청구를 대리한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

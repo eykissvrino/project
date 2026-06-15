@@ -1,0 +1,159 @@
+{
+  "ksco_code": "37212",
+  "tasks": [
+    {
+      "verb": "접대하다",
+      "object": "내방객",
+      "full_statement": "단위 장에 대한 내방객을 접대한다.",
+      "source_sentence": "단위 장에 대한 내방객 접대, 대내외 연락 및 자료정리 등의 일상적 업무와 전화의 수‧발신, 사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "연락하다",
+      "object": "대내외 연락",
+      "full_statement": "대내외 연락 업무를 수행한다.",
+      "source_sentence": "단위 장에 대한 내방객 접대, 대내외 연락 및 자료정리 등의 일상적 업무와 전화의 수‧발신, 사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.85
+    },
+    {
+      "verb": "정리하다",
+      "object": "자료",
+      "full_statement": "각종 자료를 정리한다.",
+      "source_sentence": "단위 장에 대한 내방객 접대, 대내외 연락 및 자료정리 등의 일상적 업무와 전화의 수‧발신, 사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "발신하다",
+      "object": "전화",
+      "full_statement": "전화를 수신하고 발신한다.",
+      "source_sentence": "전화의 수‧발신, 사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "분류하다",
+      "object": "편지·안내장·문서",
+      "full_statement": "사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류한다.",
+      "source_sentence": "사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.92
+    },
+    {
+      "verb": "보관하다",
+      "object": "편지·안내장·문서",
+      "full_statement": "분류·정리한 편지, 안내장 및 각종 문서를 보관한다.",
+      "source_sentence": "사내외로부터 접수된 편지, 안내장 및 각종 문서를 분류‧정리하여 보관하는 일을 수행한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계획하다",
+      "object": "상사의 일정",
+      "full_statement": "상사의 일정을 계획한다.",
+      "source_sentence": "상사의 일정을 계획‧ 관리‧ 조정하는 일을 하며, 상사가 최적의 조건에서 업무를 수행할 수 있도록 보좌한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "상사의 일정",
+      "full_statement": "상사의 일정을 관리한다.",
+      "source_sentence": "상사의 일정을 계획‧ 관리‧ 조정하는 일을 하며, 상사가 최적의 조건에서 업무를 수행할 수 있도록 보좌한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "조정하다",
+      "object": "상사의 일정",
+      "full_statement": "상사의 일정을 조정한다.",
+      "source_sentence": "상사의 일정을 계획‧ 관리‧ 조정하는 일을 하며, 상사가 최적의 조건에서 업무를 수행할 수 있도록 보좌한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "보좌하다",
+      "object": "상사",
+      "full_statement": "상사가 최적의 조건에서 업무를 수행할 수 있도록 보좌한다.",
+      "source_sentence": "상사의 일정을 계획‧ 관리‧ 조정하는 일을 하며, 상사가 최적의 조건에서 업무를 수행할 수 있도록 보좌한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "보관하다",
+      "object": "우편물·서류",
+      "full_statement": "우편물이나 서류를 보관한다.",
+      "source_sentence": "우편물이나 서류보관, 각종 자료의 정리 및 문서작성, 전화응답, 회의 소집 연락, 외부손님 내왕 시 차 접대 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.87
+    },
+    {
+      "verb": "작성하다",
+      "object": "문서",
+      "full_statement": "각종 문서를 작성한다.",
+      "source_sentence": "우편물이나 서류보관, 각종 자료의 정리 및 문서작성, 전화응답, 회의 소집 연락, 외부손님 내왕 시 차 접대 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "응답하다",
+      "object": "전화",
+      "full_statement": "전화에 응답한다.",
+      "source_sentence": "우편물이나 서류보관, 각종 자료의 정리 및 문서작성, 전화응답, 회의 소집 연락, 외부손님 내왕 시 차 접대 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "연락하다",
+      "object": "회의 소집",
+      "full_statement": "회의 소집을 연락한다.",
+      "source_sentence": "우편물이나 서류보관, 각종 자료의 정리 및 문서작성, 전화응답, 회의 소집 연락, 외부손님 내왕 시 차 접대 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "접대하다",
+      "object": "외부손님 차",
+      "full_statement": "외부손님 내왕 시 차를 접대한다.",
+      "source_sentence": "우편물이나 서류보관, 각종 자료의 정리 및 문서작성, 전화응답, 회의 소집 연락, 외부손님 내왕 시 차 접대 등의 업무를 수행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "추출하다",
+      "object": "필요한 자료",
+      "full_statement": "필요한 자료를 추출한다.",
+      "source_sentence": "필요한 자료를 추출, 기록, 정리, 분류하고 브리핑하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "기록하다",
+      "object": "필요한 자료",
+      "full_statement": "필요한 자료를 기록한다.",
+      "source_sentence": "필요한 자료를 추출, 기록, 정리, 분류하고 브리핑하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "분류하다",
+      "object": "필요한 자료",
+      "full_statement": "필요한 자료를 분류한다.",
+      "source_sentence": "필요한 자료를 추출, 기록, 정리, 분류하고 브리핑하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "브리핑하다",
+      "object": "자료",
+      "full_statement": "정리된 자료를 브리핑한다.",
+      "source_sentence": "필요한 자료를 추출, 기록, 정리, 분류하고 브리핑하기도 한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.75
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

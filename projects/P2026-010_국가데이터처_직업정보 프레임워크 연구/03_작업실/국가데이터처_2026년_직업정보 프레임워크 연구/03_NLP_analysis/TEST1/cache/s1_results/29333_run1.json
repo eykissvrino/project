@@ -1,0 +1,74 @@
+{
+  "ksco_code": "29333",
+  "tasks": [
+    {
+      "verb": "소개하다",
+      "object": "상품",
+      "full_statement": "홈쇼핑 방송에서 상품을 소개한다.",
+      "source_sentence": "홈쇼핑 방송에서 상품을 소개하고 판매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "판매하다",
+      "object": "상품",
+      "full_statement": "홈쇼핑 방송에서 상품을 판매한다.",
+      "source_sentence": "홈쇼핑 방송에서 상품을 소개하고 판매한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "진행하다",
+      "object": "방송 프로그램",
+      "full_statement": "홈쇼핑 방송 프로그램을 진행한다.",
+      "source_sentence": "텔레비전과 라디오 방송에서 교양, 오락 등의 프로그램을 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.75
+    },
+    {
+      "verb": "소개하다",
+      "object": "방송 내용",
+      "full_statement": "방송 내용을 소개한다.",
+      "source_sentence": "텔레비전, 라디오, 케이블, 인터넷 방송에서 ... 방송내용을 소개하는 업무를 수행한다.",
+      "derived_from": "조상정의(세분류)→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "수집하다",
+      "object": "상품 정보",
+      "full_statement": "소개할 상품에 대한 정보를 수집한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    },
+    {
+      "verb": "분석하다",
+      "object": "상품 정보",
+      "full_statement": "수집한 상품 정보를 분석한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.55
+    },
+    {
+      "verb": "준비하다",
+      "object": "방송 원고",
+      "full_statement": "방송에 사용할 원고를 준비한다.",
+      "source_sentence": "사람 및 사건에 대한 정보를 수집‧분석하고 원고를 준비해 뉴스를 진행한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "장소",
+      "value": "홈쇼핑 방송 스튜디오(실내)",
+      "evidence_span": "홈쇼핑 방송에서 상품을 소개하고 판매한다."
+    },
+    {
+      "category": "사회적",
+      "value": "방송 출연·시청자 대상 진행(고객 응대)",
+      "evidence_span": "홈쇼핑 방송에서 상품을 소개하고 판매한다."
+    }
+  ]
+}

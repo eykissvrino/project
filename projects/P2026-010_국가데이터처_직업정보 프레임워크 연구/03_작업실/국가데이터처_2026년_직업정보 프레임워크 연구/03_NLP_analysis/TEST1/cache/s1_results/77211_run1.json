@@ -1,0 +1,143 @@
+{
+  "ksco_code": "77211",
+  "tasks": [
+    {
+      "verb": "읽다",
+      "object": "설계도",
+      "full_statement": "설계도를 읽고 방송장비의 설치위치를 표시한다.",
+      "source_sentence": "설계도를 읽고 방송장비의 설치위치를 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "표시하다",
+      "object": "방송장비의 설치위치",
+      "full_statement": "설계도에 따라 방송장비의 설치위치를 표시한다.",
+      "source_sentence": "설계도를 읽고 방송장비의 설치위치를 표시한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "배치하다",
+      "object": "각종 방송장비",
+      "full_statement": "각종 방송장비를 표시된 위치에 배치한다.",
+      "source_sentence": "각종 방송장비를 표시된 위치에 배치하고 장비부속품을 상호 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "연결하다",
+      "object": "장비부속품",
+      "full_statement": "방송장비의 장비부속품을 상호 연결한다.",
+      "source_sentence": "각종 방송장비를 표시된 위치에 배치하고 장비부속품을 상호 연결한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "확인하다",
+      "object": "장비의 가동여부",
+      "full_statement": "방송장비의 가동여부를 확인한다.",
+      "source_sentence": "장비의 가동여부를 확인하고 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "점검하다",
+      "object": "방송장비",
+      "full_statement": "방송장비를 점검한다.",
+      "source_sentence": "장비의 가동여부를 확인하고 점검한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "수리하다",
+      "object": "방송장비의 이상",
+      "full_statement": "방송장비에 이상이 발생할 경우 이를 수리한다.",
+      "source_sentence": "이상이 발생할 경우에는 이를 수리한다.",
+      "derived_from": "상속 주요업무→세세정의 특화(방송장비)",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "방송장비",
+      "full_statement": "TV, 케이블TV의 송수신 등에 필요한 방송장비를 설치한다.",
+      "source_sentence": "TV, 케이블TV의 송수신 등에 필요한 방송장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "수리하다",
+      "object": "방송장비",
+      "full_statement": "TV, 케이블TV의 송수신 등에 필요한 방송장비를 수리한다.",
+      "source_sentence": "TV, 케이블TV의 송수신 등에 필요한 방송장비를 설치하고 수리한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조절하다",
+      "object": "방송의 화질",
+      "full_statement": "방송의 화질을 조절한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "방송 송출장비",
+      "full_statement": "방송 송출장비를 설치한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(방송송출장비 설치 및 수리원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수리하다",
+      "object": "방송 송출장비",
+      "full_statement": "방송 송출장비를 수리한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(방송송출장비 설치 및 수리원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "구내방송장비",
+      "full_statement": "학교, 기업 등의 구내방송장비를 설치한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(학교방송시설 설치 및 수리원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "수리하다",
+      "object": "구내방송장비",
+      "full_statement": "학교, 기업 등의 구내방송장비를 수리한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(학교방송시설 설치 및 수리원)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "설치하다",
+      "object": "화면조정 장비",
+      "full_statement": "방송 화면조정 장비를 설치한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(방송화면조종기 설치수리원)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "수리하다",
+      "object": "화면조정 장비",
+      "full_statement": "방송 화면조정 장비를 수리한다.",
+      "source_sentence": "방송의 화질을 조절하거나 방송 송출장비 및 학교, 기업 등의 구내방송장비의 송출 및 화면조정 장비의 설치 수리원을 포함한다.",
+      "derived_from": "조상정의(세분류)→예시 특화(방송화면조종기 설치수리원)",
+      "confidence": 0.75
+    },
+    {
+      "verb": "보수하다",
+      "object": "방송장비",
+      "full_statement": "방송이나 통신에 사용되는 방송장비를 보수한다.",
+      "source_sentence": "방송장비, 통신설비, 통신케이블 등 방송이나 통신에 사용되는 장비를 설치하고 보수 및 수리한다.",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

@@ -1,0 +1,100 @@
+{
+  "ksco_code": "29371",
+  "tasks": [
+    {
+      "verb": "설치하다",
+      "object": "조명 설비",
+      "full_statement": "연극, 영화, 무용, 방송드라마 등의 제작을 위하여 조명 설비를 설치한다.",
+      "source_sentence": "연극, 영화, 무용, 방송드라마 등을 제작하기 위하여 조명 설비를 설치하고 조절한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "조절하다",
+      "object": "조명 설비",
+      "full_statement": "연극, 영화, 무용, 방송드라마 등의 제작을 위하여 조명 설비를 조절한다.",
+      "source_sentence": "연극, 영화, 무용, 방송드라마 등을 제작하기 위하여 조명 설비를 설치하고 조절한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "협의하다",
+      "object": "조명감독",
+      "full_statement": "작품의 공연이나 촬영에 필요한 전반적인 조명의 상태를 파악하기 위하여 조명감독과 협의한다.",
+      "source_sentence": "작품의 공연이나 촬영에 필요한 전반적인 조명의 상태를 파악하기 위하여 조명감독과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "파악하다",
+      "object": "전반적인 조명의 상태",
+      "full_statement": "작품의 공연이나 촬영에 필요한 전반적인 조명의 상태를 파악한다.",
+      "source_sentence": "작품의 공연이나 촬영에 필요한 전반적인 조명의 상태를 파악하기 위하여 조명감독과 협의한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "결정하다",
+      "object": "축전지 또는 발전기의 사용여부",
+      "full_statement": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정한다.",
+      "source_sentence": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정하고 투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설치하다",
+      "object": "조명장비",
+      "full_statement": "투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다.",
+      "source_sentence": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정하고 투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.88
+    },
+    {
+      "verb": "교체하다",
+      "object": "전등",
+      "full_statement": "일정한 주기로 전등을 교체한다.",
+      "source_sentence": "일정한 주기로 전등을 교체하고 축전지를 충전장치에 삽입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "삽입하다",
+      "object": "축전지",
+      "full_statement": "축전지를 충전장치에 삽입한다.",
+      "source_sentence": "일정한 주기로 전등을 교체하고 축전지를 충전장치에 삽입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "조작하다",
+      "object": "집중조명설비",
+      "full_statement": "무대공연에서 출연자의 움직임에 따라 집중조명설비를 조작한다.",
+      "source_sentence": "무대공연에서 출연자의 움직임에 따라 집중조명설비를 조작하는 경우 판조명원으로 호칭되기도 하고",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.8
+    },
+    {
+      "verb": "조정하다",
+      "object": "조명탁",
+      "full_statement": "조도, 시간, 색상 등을 조정하는 조명탁을 조정한다.",
+      "source_sentence": "조명탁(조도, 시간, 색상 등을 조정하는 조명설비)을 조정하는 경우 조명탁조정원으로 호칭되기도 한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "투광 조명기", "category": "장비", "evidence_span": "투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다"},
+    {"name": "반사판", "category": "장비", "evidence_span": "투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다"},
+    {"name": "집중조명(spot light)", "category": "장비", "evidence_span": "투광 조명기, 반사판, 집중조명(spot light) 등의 조명장비를 설치한다"},
+    {"name": "축전지", "category": "장비", "evidence_span": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정하고"},
+    {"name": "발전기", "category": "장비", "evidence_span": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정하고"},
+    {"name": "충전장치", "category": "장비", "evidence_span": "축전지를 충전장치에 삽입한다"},
+    {"name": "조명탁", "category": "장비", "evidence_span": "조명탁(조도, 시간, 색상 등을 조정하는 조명설비)을 조정하는 경우"},
+    {"name": "집중조명설비", "category": "장비", "evidence_span": "출연자의 움직임에 따라 집중조명설비를 조작하는 경우"}
+  ],
+  "work_context": [
+    {"category": "장소", "value": "촬영현장", "evidence_span": "촬영현장의 여건에 따라 축전지 또는 발전기의 사용여부를 결정하고"},
+    {"category": "장소", "value": "무대공연", "evidence_span": "무대공연에서 출연자의 움직임에 따라 집중조명설비를 조작하는 경우"},
+    {"category": "사회적", "value": "조명감독과 협의(팀작업)", "evidence_span": "전반적인 조명의 상태를 파악하기 위하여 조명감독과 협의한다"}
+  ]
+}

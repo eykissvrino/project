@@ -1,0 +1,143 @@
+{
+  "ksco_code": "32121",
+  "tasks": [
+    {
+      "verb": "수립하다",
+      "object": "생산 작업계획",
+      "full_statement": "고객의 주문 자료, 생산능력 정보 및 실적을 이용하여 생산 작업계획을 수립한다.",
+      "source_sentence": "고객의 주문으로 얻은 자료, 생산능력에 관한 정보 및 실적을 이용하여 생산 작업계획을 수립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "활용하다",
+      "object": "고객 주문 자료",
+      "full_statement": "고객의 주문으로 얻은 자료를 수집하여 생산계획 수립에 활용한다.",
+      "source_sentence": "고객의 주문으로 얻은 자료, 생산능력에 관한 정보 및 실적을 이용하여 생산 작업계획을 수립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.83
+    },
+    {
+      "verb": "분석하다",
+      "object": "생산능력 정보",
+      "full_statement": "생산능력에 관한 정보와 실적을 분석하여 생산계획의 근거로 삼는다.",
+      "source_sentence": "고객의 주문으로 얻은 자료, 생산능력에 관한 정보 및 실적을 이용하여 생산 작업계획을 수립한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.82
+    },
+    {
+      "verb": "계산하다",
+      "object": "재료의 수량·품질·종류",
+      "full_statement": "생산계획에 의거하여 요구되는 재료의 수량, 품질 및 종류를 계산한다.",
+      "source_sentence": "생산계획에 의거하여 요구되는 재료의 수량, 품질 및 종류를 계산한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.92
+    },
+    {
+      "verb": "조정하다",
+      "object": "작업 및 자재의 흐름",
+      "full_statement": "생산부 내 또는 관련 부서 간의 작업 및 자재의 흐름을 조정한다.",
+      "source_sentence": "생산부 내 또는 관련 부서간의 작업 및 자재의 흐름을 조정한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.91
+    },
+    {
+      "verb": "수집하다",
+      "object": "생산일정·기록·보고서 자료",
+      "full_statement": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집한다.",
+      "source_sentence": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집‧기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "기록하다",
+      "object": "생산일정·기록·보고서 자료",
+      "full_statement": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 기록한다.",
+      "source_sentence": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집‧기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "준비하다",
+      "object": "생산일정 및 보고서",
+      "full_statement": "수집한 자료를 바탕으로 생산일정, 기록, 보고서를 준비한다.",
+      "source_sentence": "생산일정, 기록, 보고서를 준비하기 위하여 자료를 수집‧기록한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "발송하다",
+      "object": "재료·부품",
+      "full_statement": "조립 또는 수리를 위하여 재료, 부품 등을 발송한다.",
+      "source_sentence": "조립 또는 수리를 위하여 재료, 부품 등을 발송‧ 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.86
+    },
+    {
+      "verb": "배달하다",
+      "object": "재료·부품",
+      "full_statement": "조립 또는 수리를 위하여 재료, 부품 등을 배달한다.",
+      "source_sentence": "조립 또는 수리를 위하여 재료, 부품 등을 발송‧ 배달한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "인수하다",
+      "object": "생산 자재",
+      "full_statement": "생산에 필요한 자재를 인수한다.",
+      "source_sentence": "생산에 필요한 자재를 인수, 저장, 관리, 분배한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산 자재",
+      "full_statement": "생산에 필요한 자재를 저장한다.",
+      "source_sentence": "생산에 필요한 자재를 인수, 저장, 관리, 분배한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "관리하다",
+      "object": "생산 자재",
+      "full_statement": "생산에 필요한 자재를 관리한다.",
+      "source_sentence": "생산에 필요한 자재를 인수, 저장, 관리, 분배한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "분배하다",
+      "object": "생산 자재",
+      "full_statement": "생산에 필요한 자재를 분배한다.",
+      "source_sentence": "생산에 필요한 자재를 인수, 저장, 관리, 분배한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "제공하다",
+      "object": "기술적 지원 및 서비스",
+      "full_statement": "생산방법, 시설 및 시스템 개발, 작업계획, 견적평가, 측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "source_sentence": "생산방법, 시설 및 시스템 개발, 작업계획, 견적평가, 측정 작업일정계획 등에 관한 기술적인 지원과 서비스를 제공한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.78
+    },
+    {
+      "verb": "유지하다",
+      "object": "적정 재고",
+      "full_statement": "제품생산에 필요한 각종 자재의 적정 재고를 유지한다.",
+      "source_sentence": "제품생산에 필요한 각종 자재를 구입하고 적정 재고를 유지하는 업무를 수행하며",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.7
+    },
+    {
+      "verb": "배치하다",
+      "object": "생산 인력",
+      "full_statement": "생산활동에 필요한 인력을 배치한다.",
+      "source_sentence": "생산활동에 필요한 자재관리, 인력배치, 기계사용 등 전반적인 생산활동을 관리하거나",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

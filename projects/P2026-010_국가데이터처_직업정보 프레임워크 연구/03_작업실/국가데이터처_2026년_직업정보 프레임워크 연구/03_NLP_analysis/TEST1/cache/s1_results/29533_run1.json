@@ -1,0 +1,114 @@
+{
+  "ksco_code": "29533",
+  "tasks": [
+    {
+      "verb": "계획하다",
+      "object": "무대 및 세트의 장식",
+      "full_statement": "무대 및 세트의 장식을 계획한다.",
+      "source_sentence": "무대 및 세트의 장식을 계획하여 디자인하고 배치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "디자인하다",
+      "object": "무대 및 세트의 장식",
+      "full_statement": "무대 및 세트의 장식을 디자인한다.",
+      "source_sentence": "무대 및 세트의 장식을 계획하여 디자인하고 배치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.9
+    },
+    {
+      "verb": "배치하다",
+      "object": "무대 및 세트의 장식",
+      "full_statement": "무대 및 세트의 장식을 배치한다.",
+      "source_sentence": "무대 및 세트의 장식을 계획하여 디자인하고 배치한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.88
+    },
+    {
+      "verb": "협의하다",
+      "object": "장식 영향 요인",
+      "full_statement": "무대·세트의 목적과 기능, 의뢰자의 기호, 예산, 형태, 시설장비 등 장식에 영향을 미치는 요인을 조사·결정하기 위하여 의뢰자와 협의한다.",
+      "source_sentence": "내부시설의 목적과 기능, 고객의 기호, 예산, 건축형태, 시설장비 등 내부 환경이 장식에 영향을 미치는 요인을 조사‧ 결정하기 위하여 고객과 협의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.7
+    },
+    {
+      "verb": "조사하다",
+      "object": "장식 영향 요인",
+      "full_statement": "무대·세트 장식에 영향을 미치는 목적·기능·예산·형태 등의 요인을 조사한다.",
+      "source_sentence": "내부시설의 목적과 기능, 고객의 기호, 예산, 건축형태, 시설장비 등 내부 환경이 장식에 영향을 미치는 요인을 조사‧ 결정하기 위하여 고객과 협의한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "검토하다",
+      "object": "조사결과",
+      "full_statement": "조사결과를 종합적으로 검토·분석한다.",
+      "source_sentence": "조사결과를 종합적으로 검토‧ 분석하여 설계계획을 수립한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.72
+    },
+    {
+      "verb": "수립하다",
+      "object": "설계계획",
+      "full_statement": "검토·분석 결과를 바탕으로 무대·세트의 설계계획을 수립한다.",
+      "source_sentence": "조사결과를 종합적으로 검토‧ 분석하여 설계계획을 수립한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.72
+    },
+    {
+      "verb": "선정하다",
+      "object": "기초재료",
+      "full_statement": "무대·세트 장식에 사용할 커튼, 벽지, 조명기구 등의 기초재료를 선정한다.",
+      "source_sentence": "커튼, 벽지, 조명기구 등의 기초재료를 선정하고 가구의 배치구도를 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.62
+    },
+    {
+      "verb": "설계하다",
+      "object": "배치구도",
+      "full_statement": "무대·세트 장식물 및 가구의 배치구도를 설계한다.",
+      "source_sentence": "커튼, 벽지, 조명기구 등의 기초재료를 선정하고 가구의 배치구도를 설계한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    },
+    {
+      "verb": "작성하다",
+      "object": "세부도면",
+      "full_statement": "디자인이 완성되면 세부도면을 작성한다.",
+      "source_sentence": "의뢰자의 요구에 알맞은 디자인이 완성되면 세부도면을 작성하여 시공업자 에게 전달하고 시공 작업을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.7
+    },
+    {
+      "verb": "전달하다",
+      "object": "세부도면",
+      "full_statement": "작성한 세부도면을 시공업자에게 전달한다.",
+      "source_sentence": "의뢰자의 요구에 알맞은 디자인이 완성되면 세부도면을 작성하여 시공업자 에게 전달하고 시공 작업을 감독한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.65
+    },
+    {
+      "verb": "감독하다",
+      "object": "시공 작업",
+      "full_statement": "무대·세트의 시공 작업을 감독한다.",
+      "source_sentence": "의뢰자의 요구에 알맞은 디자인이 완성되면 세부도면을 작성하여 시공업자 에게 전달하고 시공 작업을 감독한다.",
+      "derived_from": "상속 주요업무→세세정의 특화",
+      "confidence": 0.68
+    }
+  ],
+  "tools": [],
+  "work_context": [
+    {
+      "category": "사회적",
+      "value": "의뢰자(고객)와 협의·요구 반영",
+      "evidence_span": "내부 환경이 장식에 영향을 미치는 요인을 조사‧ 결정하기 위하여 고객과 협의한다."
+    },
+    {
+      "category": "사회적",
+      "value": "시공업자와 협업·작업 감독",
+      "evidence_span": "세부도면을 작성하여 시공업자 에게 전달하고 시공 작업을 감독한다."
+    }
+  ]
+}

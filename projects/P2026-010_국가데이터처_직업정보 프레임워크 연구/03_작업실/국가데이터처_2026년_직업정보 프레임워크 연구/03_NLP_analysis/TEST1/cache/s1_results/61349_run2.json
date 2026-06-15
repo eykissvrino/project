@@ -1,0 +1,103 @@
+{
+  "ksco_code": "61349",
+  "tasks": [
+    {
+      "verb": "결정하다",
+      "object": "사육할 가금 종류와 양",
+      "full_statement": "칠면조, 오리, 거위 등 사육할 가금의 종류와 양을 결정한다.",
+      "source_sentence": "닭, 오리 등 사육할 가금 종류와 양을 결정한다.",
+      "derived_from": "상속 주요업무→세세정의·예시 특화(칠면조·오리·거위)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "구입하다",
+      "object": "원료와 도구",
+      "full_statement": "가금 사육 시 필요한 원료와 도구를 구입한다.",
+      "source_sentence": "사육 시 필요한 원료와 도구를 구입한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.8
+    },
+    {
+      "verb": "저장하다",
+      "object": "생산물",
+      "full_statement": "가금고기나 알 등의 생산물을 저장한다.",
+      "source_sentence": "육계나 알 등의 생산물을 저장하고, 공급 및 출하한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.78
+    },
+    {
+      "verb": "공급하다",
+      "object": "생산물",
+      "full_statement": "가금고기나 알 등의 생산물을 공급한다.",
+      "source_sentence": "육계나 알 등의 생산물을 저장하고, 공급 및 출하한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "출하하다",
+      "object": "생산물",
+      "full_statement": "가금고기나 알 등의 생산물을 출하한다.",
+      "source_sentence": "육계나 알 등의 생산물을 저장하고, 공급 및 출하한다.",
+      "derived_from": "상속 주요업무(복합행동 분할)",
+      "confidence": 0.76
+    },
+    {
+      "verb": "사육하다",
+      "object": "가금",
+      "full_statement": "달걀 또는 가금고기를 얻기 위하여 칠면조, 오리, 거위 등의 가금을 사육한다.",
+      "source_sentence": "달걀 또는 가금고기를 얻기 위하여 닭, 오리 등의 가금을 사육한다.",
+      "derived_from": "조상정의(세분류)→세세정의·예시 특화",
+      "confidence": 0.74
+    },
+    {
+      "verb": "도살하다",
+      "object": "가금",
+      "full_statement": "출하를 위하여 사육한 가금을 도살한다.",
+      "source_sentence": "가금을 도살, 손질, 포장하여 출하하거나 직접 판매하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "손질하다",
+      "object": "가금",
+      "full_statement": "도살한 가금을 손질한다.",
+      "source_sentence": "가금을 도살, 손질, 포장하여 출하하거나 직접 판매하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "포장하다",
+      "object": "가금고기",
+      "full_statement": "손질한 가금고기를 포장한다.",
+      "source_sentence": "가금을 도살, 손질, 포장하여 출하하거나 직접 판매하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.68
+    },
+    {
+      "verb": "판매하다",
+      "object": "가금고기",
+      "full_statement": "가금고기를 직접 판매한다.",
+      "source_sentence": "가금을 도살, 손질, 포장하여 출하하거나 직접 판매하며",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.66
+    },
+    {
+      "verb": "번식하다",
+      "object": "가금",
+      "full_statement": "가금을 번식시킨다.",
+      "source_sentence": "조류, 파충류, 모피생산 동물, 가금, 엽조류를 포함하여 소, 양, 돼지, 산양, 말 등과 같은 가축을 번식, 사육하며",
+      "derived_from": "조상정의(소분류)",
+      "confidence": 0.62
+    },
+    {
+      "verb": "운영하다",
+      "object": "가금 부화장",
+      "full_statement": "가금 부화장을 운영한다.",
+      "source_sentence": "가금 부화장을 운영하거나 특정한 가금을 사육하기도 한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.6
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}

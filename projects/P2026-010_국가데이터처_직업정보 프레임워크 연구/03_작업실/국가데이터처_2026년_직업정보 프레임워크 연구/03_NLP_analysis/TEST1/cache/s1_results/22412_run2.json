@@ -1,0 +1,145 @@
+{
+  "ksco_code": "22412",
+  "tasks": [
+    {
+      "verb": "유지하다",
+      "object": "데이터베이스 관리 체계",
+      "full_statement": "수집 자료의 효용성과 안전성을 확보하기 위하여 데이터베이스 관리 체계를 유지한다.",
+      "source_sentence": "수집 자료의 효용성, 안전성 등을 확보하기 위하여 데이터베이스 관리 체계를 유지, 보수 또는 개선하고 데이터베이스 운영을 통제하며 이용을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.95
+    },
+    {
+      "verb": "보수하다",
+      "object": "데이터베이스 관리 체계",
+      "full_statement": "데이터베이스 관리 체계를 보수한다.",
+      "source_sentence": "수집 자료의 효용성, 안전성 등을 확보하기 위하여 데이터베이스 관리 체계를 유지, 보수 또는 개선하고 데이터베이스 운영을 통제하며 이용을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "개선하다",
+      "object": "데이터베이스 관리 체계",
+      "full_statement": "데이터베이스 관리 체계를 개선한다.",
+      "source_sentence": "수집 자료의 효용성, 안전성 등을 확보하기 위하여 데이터베이스 관리 체계를 유지, 보수 또는 개선하고 데이터베이스 운영을 통제하며 이용을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "통제하다",
+      "object": "데이터베이스 운영",
+      "full_statement": "데이터베이스 운영을 통제한다.",
+      "source_sentence": "데이터베이스 운영을 통제하며 이용을 지원한다.",
+      "derived_from": "세세분류 정의(세분류 상속과 일치)",
+      "confidence": 0.95
+    },
+    {
+      "verb": "지원하다",
+      "object": "데이터베이스 이용",
+      "full_statement": "이용자가 데이터베이스를 활용할 수 있도록 이용을 지원한다.",
+      "source_sentence": "데이터베이스 운영을 통제하며 이용을 지원한다.",
+      "derived_from": "세세분류 정의",
+      "confidence": 0.93
+    },
+    {
+      "verb": "이해하다",
+      "object": "데이터 특성",
+      "full_statement": "데이터 특성을 이해한다.",
+      "source_sentence": "데이터 특성을 이해하고 데이터 구조분석과 설계를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "데이터 구조",
+      "full_statement": "데이터 구조분석을 실시한다.",
+      "source_sentence": "데이터 특성을 이해하고 데이터 구조분석과 설계를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "설계하다",
+      "object": "데이터 구조",
+      "full_statement": "데이터 구조 설계를 실시한다.",
+      "source_sentence": "데이터 특성을 이해하고 데이터 구조분석과 설계를 실시한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.84
+    },
+    {
+      "verb": "조정하다",
+      "object": "데이터베이스 변화",
+      "full_statement": "데이터베이스에 대한 변화를 조정한다.",
+      "source_sentence": "데이터베이스에 대한 변화를 조정하고 데이터베이스 관리시스템의 적용 지식을 시험하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.85
+    },
+    {
+      "verb": "시험하다",
+      "object": "데이터베이스 관리시스템의 적용 지식",
+      "full_statement": "데이터베이스 관리시스템의 적용 지식을 시험한다.",
+      "source_sentence": "데이터베이스에 대한 변화를 조정하고 데이터베이스 관리시스템의 적용 지식을 시험하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "실행하다",
+      "object": "데이터베이스 관리시스템의 적용 지식",
+      "full_statement": "데이터베이스 관리시스템의 적용 지식을 실행한다.",
+      "source_sentence": "데이터베이스에 대한 변화를 조정하고 데이터베이스 관리시스템의 적용 지식을 시험하고 실행한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.82
+    },
+    {
+      "verb": "분석하다",
+      "object": "데이터베이스 디렉터리",
+      "full_statement": "데이터베이스 디렉터리를 분석한다.",
+      "source_sentence": "데이터베이스 디렉터리를 분석하고 개발하며 데이터베이스를 생성, 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "개발하다",
+      "object": "데이터베이스 디렉터리",
+      "full_statement": "데이터베이스 디렉터리를 개발한다.",
+      "source_sentence": "데이터베이스 디렉터리를 분석하고 개발하며 데이터베이스를 생성, 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "생성하다",
+      "object": "데이터베이스",
+      "full_statement": "데이터베이스를 생성한다.",
+      "source_sentence": "데이터베이스 디렉터리를 분석하고 개발하며 데이터베이스를 생성, 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.88
+    },
+    {
+      "verb": "유지하다",
+      "object": "데이터베이스",
+      "full_statement": "데이터베이스를 유지한다.",
+      "source_sentence": "데이터베이스 디렉터리를 분석하고 개발하며 데이터베이스를 생성, 유지한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.9
+    },
+    {
+      "verb": "효율화하다",
+      "object": "데이터 운영",
+      "full_statement": "하드웨어 및 소프트웨어에 관한 지식을 바탕으로 사업 분석가, 프로그래머 및 최종 사용자들을 위해 데이터 운영을 효율화한다.",
+      "source_sentence": "하드웨어 및 소프트웨어 모두에 관한 지식을 바탕으로 사업 분석가, 프로그래머 및 최종 사용자들을 위해 데이터 운영을 효율화한다.",
+      "derived_from": "상속 주요업무",
+      "confidence": 0.83
+    },
+    {
+      "verb": "수행하다",
+      "object": "데이터베이스 백업",
+      "full_statement": "데이터베이스의 관리 및 백업을 수행한다.",
+      "source_sentence": "데이터베이스 프로그램을 만들고, 데이터베이스 운영을 통제하며 이용을 지원하고 관리 및 백업을 수행한다.",
+      "derived_from": "조상정의(세분류)",
+      "confidence": 0.78
+    }
+  ],
+  "tools": [
+    {"name": "데이터베이스 관리시스템", "category": "시스템", "evidence_span": "데이터베이스 관리시스템의 적용 지식을 시험하고 실행한다"}
+  ],
+  "work_context": []
+}

@@ -1,0 +1,42 @@
+{
+  "ksco_code": "28231",
+  "tasks": [
+    {
+      "verb": "분석하다",
+      "object": "위험률 통계",
+      "full_statement": "사망률·사고·질병률을 판단하고 각종 통계를 작성·분석한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "구성하다",
+      "object": "확률표",
+      "full_statement": "수학·통계 지식을 적용하여 위험 확률표를 구성한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "계산하다",
+      "object": "보험료",
+      "full_statement": "보험료와 책임준비금을 계산하고 보험요율을 산정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "개발하다",
+      "object": "보험 상품",
+      "full_statement": "위험평가를 통해 적합한 보험 상품을 개발한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    },
+    {
+      "verb": "산정하다",
+      "object": "보험계약준비금",
+      "full_statement": "회계연도 말 적립금을 평가하여 보험계약준비금을 산정한다",
+      "source_sentence": "",
+      "confidence": 0.9
+    }
+  ],
+  "tools": [],
+  "work_context": []
+}
