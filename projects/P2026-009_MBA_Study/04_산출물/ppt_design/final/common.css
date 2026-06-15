@@ -1,0 +1,15 @@
+html { background: #ffffff; }
+body { width: 842pt; height: 595.5pt; margin: 0; padding: 0; background: #FFFFFF; font-family: 'Paperlogy 4 Regular', 'Malgun Gothic', sans-serif; display: flex; flex-direction: column; }
+.header { margin: 20pt 44pt 0 44pt; display: flex; }
+.badge { background: #F08000; padding: 6pt 12pt; display: flex; flex-direction: column; justify-content: center; }
+.badge p { font-family: 'Paperlogy 7 Bold', sans-serif; color: #FFFFFF; font-size: 13pt; margin: 0; letter-spacing: 1pt; }
+.sec { margin-left: 12pt; display: flex; flex-direction: column; justify-content: center; }
+.sectitle { font-family: 'Paperlogy 7 Bold', sans-serif; color: #F08000; font-size: 12.5pt; margin: 0; }
+.secstep { font-family: 'Paperlogy 5 Medium', sans-serif; color: #6B7178; font-size: 9.5pt; margin: 2pt 0 0 0; }
+.hlogo { margin-left: auto; display: flex; flex-direction: column; justify-content: center; }
+.headline { font-family: 'Paperlogy 7 Bold', sans-serif; color: #26282B; font-size: 15.5pt; margin: 11pt 44pt 0 44pt; line-height: 1.38; }
+.orule { width: 44pt; height: 3pt; background: #F08000; margin: 8pt 0 0 44pt; }
+.hairline { height: 0.75pt; background: #E3E6E9; margin: 5pt 44pt 0 44pt; }
+.footer { margin: auto 44pt 11pt 44pt; display: flex; border-top: 0.75pt solid #E3E6E9; }
+.footer p { font-size: 8pt; color: #9AA1A8; margin: 5pt 0 0 0; }
+.footer .pg { margin-left: auto; }

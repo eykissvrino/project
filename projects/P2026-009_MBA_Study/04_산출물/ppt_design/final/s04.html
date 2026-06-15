@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 14pt 44pt 0 44pt; display: flex; }
+.left { width: 300pt; display: flex; flex-direction: column; }
+.ltitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; color: #26282B; margin: 0 0 7pt 0; }
+.irow { display: flex; border-bottom: 0.75pt solid #EDF0F2; padding: 5.5pt 0; }
+.irow .k { width: 84pt; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; color: #A85A00; margin: 0; }
+.irow .v { width: 216pt; font-size: 9pt; color: #3A3F45; margin: 0; line-height: 1.35; }
+.right { width: 462pt; margin-left: 36pt; display: flex; flex-direction: column; }
+.chartbox { width: 462pt; height: 196pt; }
+.chips { margin: 14pt 0 0 0; }
+.ctitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; color: #26282B; margin: 0 0 7pt 0; }
+.chiprow { display: flex; margin-bottom: 6pt; }
+.chip { background: #FDF1E3; padding: 5pt 0; width: 110pt; margin-right: 7pt; }
+.chip p { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; color: #A85A00; margin: 0; text-align: center; }
+.chip2 { background: #F7F8F9; }
+.chip2 p { color: #6B7178; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 1</p></div>
+    <div class="sec"><p class="sectitle">회사개요</p><p class="secstep">① 일반 현황 Company Overview</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">시앤피컨설팅은 13년간 매출 26배(3.5억→89.8억) 성장한 92명 규모의 Total HR 솔루션 기업으로,<br>경영전략부터 ESG까지 8대 사업영역 · 8개 본부 체계로 확장하고 있음</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div class="left">
+      <p class="ltitle">일반 현황</p>
+      <div class="irow"><p class="k">법인명</p><p class="v">시앤피컨설팅(주) — CNP = Competency &amp; Performance</p></div>
+      <div class="irow"><p class="k">설립</p><p class="v">2012년 6월 (대표이사 조세형)</p></div>
+      <div class="irow"><p class="k">임직원</p><p class="v">92명 (2025.1 기준, 석·박사 51%)</p></div>
+      <div class="irow"><p class="k">매출</p><p class="v">89.8억 원 (2025) · 전년 대비 +4.5%</p></div>
+      <div class="irow"><p class="k">소재지</p><p class="v">서울 금천구 가산디지털단지 (BYC하이시티)</p></div>
+      <div class="irow"><p class="k">슬로건</p><p class="v">"HR Solutions for Competency and Performance"</p></div>
+      <div class="irow"><p class="k">경영철학</p><p class="v">고객과 함께 성장 · 지속적인 학습과 연구 · 전문성과 윤리의식</p></div>
+      <div class="irow"><p class="k">관계사</p><p class="v">HR아카데미(교육) · 시앤피노무법인 · 시앤피에이 · 비즈허브</p></div>
+      <div class="irow" style="border-bottom:none;"><p class="k">조직</p><p class="v">8개 사업본부 + AI연구소 + 경영지원팀, 별도사업부(HR아카데미·HR진단)</p></div>
+      <p class="ltitle" style="margin-top:11pt;">인력 구성 (2025.1, 92명)</p>
+      <div style="display:flex;">
+        <div style="background:#FDF1E3; border-top:2.5pt solid #F08000; padding:7pt 0 7pt 11pt; width:88pt; margin-right:8pt;">
+          <p style="font-family:'Paperlogy 8 ExtraBold',sans-serif; font-size:14pt; color:#F08000; margin:0;">51%</p>
+          <p style="font-size:7.5pt; color:#6B7178; margin:2pt 0 0 0; line-height:1.3;">석·박사 비중<br>(전문성의 원천)</p>
+        </div>
+        <div style="background:#F7F8F9; border-top:2.5pt solid #8B9197; padding:7pt 0 7pt 11pt; width:88pt; margin-right:8pt;">
+          <p style="font-family:'Paperlogy 8 ExtraBold',sans-serif; font-size:14pt; color:#3A3F45; margin:0;">40%</p>
+          <p style="font-size:7.5pt; color:#6B7178; margin:2pt 0 0 0; line-height:1.3;">1990년대생<br>(주니어 중심 구조)</p>
+        </div>
+        <div style="background:#F7F8F9; border-top:2.5pt solid #8B9197; padding:7pt 0 7pt 11pt; width:88pt;">
+          <p style="font-family:'Paperlogy 8 ExtraBold',sans-serif; font-size:14pt; color:#3A3F45; margin:0;">79명</p>
+          <p style="font-size:7.5pt; color:#6B7178; margin:2pt 0 0 0; line-height:1.3;">주임~수석 연구원<br>(컨설팅 직군)</p>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <p class="ltitle">매출액 추이 (억 원, 2012–2025) — 13년간 약 26배 성장</p>
+      <div id="rev-chart" class="placeholder chartbox"></div>
+      <div class="chips">
+        <p class="ctitle">8대 사업영역 (2026 홈페이지 기준) — 공공 기반에서 민간·신규영역으로 확장 중</p>
+        <div class="chiprow">
+          <div class="chip"><p>① 경영전략</p></div>
+          <div class="chip"><p>② HRM</p></div>
+          <div class="chip"><p>③ HRD</p></div>
+          <div class="chip"><p>④ NCS</p></div>
+        </div>
+        <div class="chiprow" style="margin-bottom:0;">
+          <div class="chip chip2"><p>⑤ Career Consulting</p></div>
+          <div class="chip chip2"><p>⑥ ODA (국제개발)</p></div>
+          <div class="chip chip2"><p>⑦ 조사·연구</p></div>
+          <div class="chip chip2"><p>⑧ ESG</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>자료: 시앤피컨설팅 홈페이지(2026.6), 손익계산서 2012–2024(내부)·2025(표준재무제표증명), 인원현황(2025.1)</p>
+    <p class="pg">C&amp;P Consulting Group · 4</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.charts { margin: 14pt 44pt 0 44pt; display: flex; }
+.panel { display: flex; flex-direction: column; width: 371pt; }
+.panel2 { display: flex; flex-direction: column; width: 371pt; margin-left: 12pt; }
+.ptitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; color: #3A3F45; margin: 0 0 6pt 0; }
+.chartbox { width: 371pt; height: 238pt; }
+.stats { margin: 14pt 44pt 0 44pt; display: flex; }
+.stat { background: #F7F8F9; border-top: 2.5pt solid #F08000; padding: 11pt 0 11pt 16pt; width: 230pt; }
+.stat2 { margin-left: 14pt; }
+.stat .num { font-family: 'Paperlogy 8 ExtraBold', sans-serif; font-size: 20pt; color: #F08000; margin: 0; }
+.stat .num-r { font-family: 'Paperlogy 8 ExtraBold', sans-serif; font-size: 20pt; color: #C0392B; margin: 0; }
+.stat .lbl { font-size: 9pt; color: #6B7178; margin: 4pt 0 0 0; line-height: 1.35; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 3</p></div>
+    <div class="sec"><p class="sectitle">주요 이슈 분석</p><p class="secstep">② 데이터 대시보드 — 악순환이 남긴 재무적 흔적</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">매출은 89.8억까지 성장했으나 영업이익률은 2.6%까지 하락함 — 인당 매출 정체(0.98억)와 급여 비중 상승<br>(56.1%)이 동시에 진행되어, 사람을 갈아 넣어 성장하는 구조의 한계가 숫자로 확인됨</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="charts">
+    <div class="panel">
+      <p class="ptitle">매출액 추이 (억 원, 2019–2025) — 성장 지속, 단 2025년 +4.5%로 둔화</p>
+      <div id="rev-chart" class="placeholder chartbox"></div>
+    </div>
+    <div class="panel2">
+      <p class="ptitle">영업이익률 추이 (%, 2019–2025) — 18.1%에서 2.6%로 하락</p>
+      <div id="margin-chart" class="placeholder chartbox"></div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <p class="num">0.98억 원</p>
+      <p class="lbl">인당 매출 (2025, 92명) — 컨설팅업 기준 낮은 수준, 주니어 편중 구조의 결과</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num-r">56.1%</p>
+      <p class="lbl">매출 대비 급여 비중 — 급여 증가율(10.5%)이 매출 증가율(8.4%)을 상회 (2020→2025 CAGR)</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num-r">69만 원</p>
+      <p class="lbl">1인당 연간 교육훈련비 (총 6,325만 원 = 매출의 0.07%) — "학습과 연구" 철학과의 괴리</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>자료: 시앤피컨설팅 손익계산서 2012–2024(내부), 2025년 손익계산서(표준재무제표증명), 인원현황(2025.1)</p>
+    <p class="pg">C&amp;P Consulting Group · 13</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 12pt 44pt 0 44pt; display: flex; }
+.left { width: 386pt; display: flex; flex-direction: column; }
+.ltitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; color: #26282B; margin: 0 0 6pt 0; }
+.tbl { width: 386pt; height: 224pt; }
+.qbox { background: #F7F8F9; border-left: 3pt solid #F08000; padding: 7pt 12pt; margin-top: 9pt; }
+.qbox p { margin: 0; font-size: 9pt; color: #3A3F45; line-height: 1.4; }
+.qbox .qsrc { color: #8B9197; font-size: 8pt; margin-top: 2pt; }
+.right { width: 340pt; margin-left: 28pt; display: flex; flex-direction: column; }
+.chain { display: flex; flex-direction: column; }
+.cnode { display: flex; margin-bottom: 0; }
+.cbox { background: #26282B; padding: 6pt 0; width: 112pt; }
+.cbox p { color: #FFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 10.5pt; margin: 0; text-align: center; }
+.clink { display: flex; flex-direction: column; justify-content: center; margin-left: 12pt; width: 216pt; }
+.clink p { margin: 0; font-size: 8.5pt; line-height: 1.35; }
+.carrow { margin: 2pt 0 2pt 50pt; }
+.ok { color: #1E8449; font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+.no { color: #C0392B; font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+.carrow p { font-size: 11pt; margin: 0; font-family: 'Paperlogy 7 Bold', sans-serif; }
+.theory { background: #FDF1E3; padding: 8pt 12pt; margin-top: 9pt; }
+.theory p { margin: 0 0 3pt 0; font-size: 8.5pt; color: #A85A00; line-height: 1.4; }
+.theory p:last-child { margin-bottom: 0; }
+.theory .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 3</p></div>
+    <div class="sec"><p class="sectitle">주요 이슈 분석</p><p class="secstep">③ 이슈 1 — 성과평가·보상: 동기의 사슬 단절</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">평가 제도(S~D 절대평가·1on1 면담)는 존재하나 출구가 막혀 있음 — 주임·선임 44명(48%)은 평가와 무관한<br>정액 인상, 책임·수석도 인상률 차등뿐이어서 '성과 → 보상'의 고리(Instrumentality)가 끊어짐</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div class="left">
+      <p class="ltitle">현행 직위별 임금 인상 구조 (내부 운영 기준)</p>
+      <div id="pay-table" class="placeholder tbl"></div>
+      <div class="qbox">
+        <p><i>"임금이 높게 올라가기는 하는데, 근로시간 대비로는 그렇게 높지는 않음… 바쁠 때는 밤새고 출장 가는 게 부지기수"</i></p>
+        <p class="qsrc">— 잡플래닛 현직자 (2026.4) — 형평이론: 투입(Ip) 대비 산출(Op)의 외부 비교 열위 지각</p>
+      </div>
+    </div>
+    <div class="right">
+      <p class="ltitle">기대이론(Vroom, 1964)으로 본 동기 사슬의 단절 지점</p>
+      <div class="chain">
+        <div class="cnode">
+          <div class="cbox"><p>노력 Effort</p></div>
+          <div class="clink"><p><span class="ok">E: Expectancy 작동 ○</span><br>역량 높은 인력(석박사 51%) — 노력하면 성과 가능</p></div>
+        </div>
+        <div class="carrow"><p class="ok">↓</p></div>
+        <div class="cnode">
+          <div class="cbox"><p>성과 Performance</p></div>
+          <div class="clink"><p><span class="no">I: Instrumentality 단절 ✗</span><br>구성원 48% 평가-보상 무관 · 변동급 ≈ 0 — "잘해도 똑같다"</p></div>
+        </div>
+        <div class="carrow"><p class="no">↓ ✗</p></div>
+        <div class="cnode">
+          <div class="cbox"><p>보상 Outcome</p></div>
+          <div class="clink"><p><span class="no">V: Valence 약화 ✗</span><br>초임 3,400만 — 시장 대비 낮은 수준 · 페이밴드 비공개(정보공정성 결손)</p></div>
+        </div>
+        <div class="carrow"><p class="no">↓ ✗</p></div>
+        <div class="cnode">
+          <div class="cbox" style="background:#8B9197;"><p>목표 Goal</p></div>
+          <div class="clink"><p>동기 형성 실패 → 이탈 또는 최소 노력 균형으로 수렴</p></div>
+        </div>
+      </div>
+      <div class="theory">
+        <p><span class="b">평가 5대 기준 진단(Session 7)</span> — 전략적 적합성 ✗(KPI가 당해 영업익 20~40% 중심, 역량 10~20%) · 신뢰성 ✗(본부별 자체 운영, 본부 간 편차 통제 불가) · 구체성 △(역량 행동지표 부재)</p>
+        <p><span class="b">강점(레버리지)</span> — 1on1 면담·평가자 체크리스트 등 운영 인프라는 일부 본부에 이미 정비됨 → 전사 확산이 빠른 개선 경로임</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>자료: 25년도 컨설팅센터 개인평가 계획(내부), 직위별 임금 운영 기준(내부) · 이론: 기대이론(Vroom), 형평이론(Adams), 성과평가 5대 기준(Noe)</p>
+    <p class="pg">C&amp;P Consulting Group · 14</p>
+  </div>
+</body>
+</html>

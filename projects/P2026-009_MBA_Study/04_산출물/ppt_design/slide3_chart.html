@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #FFFFFF; font-family: 'Malgun Gothic', Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header { margin: 22pt 36pt 0 36pt; }
+.kicker { color: #2E74B5; font-size: 9pt; font-weight: bold; letter-spacing: 1.5pt; margin: 0 0 5pt 0; }
+.headline { color: #16324F; font-size: 16.5pt; font-weight: bold; margin: 0; line-height: 1.3; }
+.hrule { height: 1.5pt; background: #16324F; margin: 9pt 36pt 0 36pt; }
+.charts { margin: 12pt 36pt 0 36pt; display: flex; }
+.panel { display: flex; flex-direction: column; width: 318pt; }
+.panel2 { display: flex; flex-direction: column; width: 318pt; margin-left: 12pt; }
+.ptitle { font-size: 10pt; font-weight: bold; color: #2B2B2B; margin: 0 0 4pt 0; }
+.chartbox { width: 318pt; height: 172pt; }
+.stats { margin: 11pt 36pt 0 36pt; display: flex; }
+.stat { background: #EEF2F7; padding: 8pt 0 8pt 14pt; width: 198pt; }
+.stat2 { margin-left: 11pt; }
+.stat .num { font-size: 16pt; font-weight: bold; color: #C0392B; margin: 0; }
+.stat .num-n { font-size: 16pt; font-weight: bold; color: #16324F; margin: 0; }
+.stat .lbl { font-size: 8.5pt; color: #5B6770; margin: 2pt 0 0 0; line-height: 1.3; }
+.footer { margin: auto 36pt 10pt 36pt; display: flex; }
+.footer p { font-size: 7.5pt; color: #9AA5AF; margin: 0; }
+.footer .pg { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="kicker">PART 3 · 이슈 분석 — 데이터로 보는 악순환의 결과</p>
+    <p class="headline">매출은 13년간 26배 성장했지만, 이익은 남지 않는 구조가 굳어지고 있다</p>
+  </div>
+  <div class="hrule"></div>
+  <div class="charts">
+    <div class="panel">
+      <p class="ptitle">매출액 추이 (억 원, 2019–2025)</p>
+      <div id="rev-chart" class="placeholder chartbox"></div>
+    </div>
+    <div class="panel2">
+      <p class="ptitle">영업이익률 추이 (%, 2019–2025)</p>
+      <div id="margin-chart" class="placeholder chartbox"></div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <p class="num-n">0.98억 원</p>
+      <p class="lbl">인당 매출 (2025, 92명) — 컨설팅업 기준 낮은 수준</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num">56.1%</p>
+      <p class="lbl">매출 대비 급여 비중 — 급여 증가율(10.5%)이 매출 증가율(8.4%) 상회</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num">69만 원</p>
+      <p class="lbl">1인당 연간 교육훈련비 — "학습과 연구" 철학과의 괴리</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>자료: 시앤피컨설팅 손익계산서 2012–2024(내부), 2025년 손익계산서(표준재무제표증명), 인원현황(2025.1)</p>
+    <p class="pg">11</p>
+  </div>
+</body>
+</html>

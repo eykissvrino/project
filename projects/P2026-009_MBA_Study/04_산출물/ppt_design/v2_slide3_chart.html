@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 842pt; height: 595.5pt; margin: 0; padding: 0;
+  background: #FFFFFF; font-family: 'Paperlogy 4 Regular', 'Malgun Gothic', sans-serif;
+  display: flex; flex-direction: column;
+}
+.header { margin: 26pt 44pt 0 44pt; display: flex; }
+.htext { width: 660pt; }
+.kicker { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #F08000; font-size: 10pt; letter-spacing: 1.8pt; margin: 0 0 6pt 0; }
+.headline { font-family: 'Paperlogy 7 Bold', sans-serif; color: #26282B; font-size: 19pt; margin: 0; line-height: 1.3; }
+.hlogo { margin-left: auto; }
+.orule { width: 44pt; height: 3pt; background: #F08000; margin: 10pt 0 0 44pt; }
+.hairline { height: 0.75pt; background: #E3E6E9; margin: 6pt 44pt 0 44pt; }
+.charts { margin: 18pt 44pt 0 44pt; display: flex; }
+.panel { display: flex; flex-direction: column; width: 371pt; }
+.panel2 { display: flex; flex-direction: column; width: 371pt; margin-left: 12pt; }
+.ptitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; color: #3A3F45; margin: 0 0 6pt 0; }
+.chartbox { width: 371pt; height: 252pt; }
+.stats { margin: 16pt 44pt 0 44pt; display: flex; }
+.stat { background: #F7F8F9; border-top: 2.5pt solid #F08000; padding: 12pt 0 12pt 16pt; width: 230pt; }
+.stat2 { margin-left: 14pt; }
+.stat .num { font-family: 'Paperlogy 8 ExtraBold', sans-serif; font-size: 21pt; color: #F08000; margin: 0; }
+.stat .num-r { font-family: 'Paperlogy 8 ExtraBold', sans-serif; font-size: 21pt; color: #C0392B; margin: 0; }
+.stat .lbl { font-size: 9.5pt; color: #6B7178; margin: 4pt 0 0 0; line-height: 1.35; }
+.footer { margin: auto 44pt 12pt 44pt; display: flex; border-top: 0.75pt solid #E3E6E9; }
+.footer p { font-size: 8pt; color: #9AA1A8; margin: 6pt 0 0 0; }
+.footer .pg { margin-left: auto; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="htext">
+      <p class="kicker">PART 3 · 이슈 분석 — 데이터로 보는 악순환의 결과</p>
+      <p class="headline">매출은 13년간 26배 성장했지만,<br>이익은 남지 않는 구조가 굳어지고 있다</p>
+    </div>
+    <div class="hlogo"><img src="logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="charts">
+    <div class="panel">
+      <p class="ptitle">매출액 추이 (억 원, 2019–2025)</p>
+      <div id="rev-chart" class="placeholder chartbox"></div>
+    </div>
+    <div class="panel2">
+      <p class="ptitle">영업이익률 추이 (%, 2019–2025)</p>
+      <div id="margin-chart" class="placeholder chartbox"></div>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <p class="num">0.98억 원</p>
+      <p class="lbl">인당 매출 (2025, 92명) — 컨설팅업 기준 낮은 수준</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num-r">56.1%</p>
+      <p class="lbl">매출 대비 급여 비중 — 급여 증가율(10.5%)이 매출 증가율(8.4%) 상회</p>
+    </div>
+    <div class="stat stat2">
+      <p class="num-r">69만 원</p>
+      <p class="lbl">1인당 연간 교육훈련비 (매출의 0.07%) — "학습과 연구" 철학과의 괴리</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>자료: 시앤피컨설팅 손익계산서 2012–2024(내부), 2025년 손익계산서(표준재무제표증명), 인원현황(2025.1)</p>
+    <p class="pg">C&amp;P Consulting Group · 11</p>
+  </div>
+</body>
+</html>

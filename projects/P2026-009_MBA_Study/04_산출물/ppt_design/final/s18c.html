@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 12pt 44pt 0 44pt; display: flex; }
+.left { width: 380pt; display: flex; flex-direction: column; }
+.ltitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 10.5pt; color: #26282B; margin: 0 0 6pt 0; }
+.band { display: flex; border-bottom: 0.75pt solid #EDF0F2; padding: 4.5pt 0; }
+.band .g { width: 88pt; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; color: #26282B; margin: 0; }
+.band .bar { display: flex; width: 200pt; }
+.band .seg { height: 11pt; }
+.band .r { width: 86pt; font-size: 8pt; color: #6B7178; margin: 0 0 0 6pt; }
+.bhead { display: flex; padding: 0 0 4pt 0; }
+.bhead p { font-size: 8pt; color: #8B9197; margin: 0; }
+.mtx { margin-top: 10pt; }
+.mrow { display: flex; }
+.mc { width: 92pt; padding: 4pt 0; border: 0.5pt solid #FFF; }
+.mc p { font-size: 8pt; margin: 0; text-align: center; color: #3A3F45; }
+.mh { background: #3A3F45; }
+.mh p { color: #FFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 8pt; }
+.m0 { background: #F7F8F9; } .m1 { background: #FDF1E3; } .m2 { background: #F8DCBA; } .m3 { background: #F08000; }
+.m3 p { color: #FFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+.note { background: #FDF1E3; border-left: 3pt solid #F08000; padding: 6pt 11pt; margin-top: 9pt; }
+.note p { margin: 0; font-size: 8.5pt; color: #A85A00; line-height: 1.4; }
+.note .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+.right { width: 346pt; margin-left: 28pt; display: flex; flex-direction: column; }
+.vp { display: flex; margin-bottom: 8pt; }
+.vph { width: 96pt; padding: 7pt 10pt; }
+.vph .t { font-family: 'Paperlogy 7 Bold', sans-serif; color: #FFF; font-size: 10pt; margin: 0; line-height: 1.3; }
+.vph .s { font-family: 'Paperlogy 5 Medium', sans-serif; color: rgba(255,255,255,0.85); font-size: 7.5pt; margin: 2pt 0 0 0; }
+.v1 { background: #F08000; } .v2 { background: #26282B; }
+.vpb { border: 0.75pt solid #E3E6E9; border-left: none; width: 226pt; padding: 6pt 11pt; }
+.vpb p { font-size: 8.5pt; color: #3A3F45; margin: 0 0 3pt 0; line-height: 1.4; }
+.vpb p:last-child { margin-bottom: 0; }
+.vpb .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #26282B; }
+.total { border-top: 2pt solid #26282B; margin-top: 2pt; padding-top: 6pt; }
+.total p { font-size: 8.5pt; color: #3A3F45; margin: 0 0 3pt 0; line-height: 1.4; }
+.total .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #A85A00; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 4</p></div>
+    <div class="sec"><p class="sectitle">개선과제 — HR 제도 세부 설계</p><p class="secstep">③-3 제도설계 3 · 보상체계 4P 재설계 (A3·A4)</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">역량/역할 중심 Pay Band를 설계·공개하고, 기본급 인상은 '밴드 내 위치 × 종합 리뷰' 매트릭스로,<br>변동급은 프로젝트 수익성 연동 집단 성과배분(Gain-sharing) + 전사 이익공유(Profit-sharing)의 2층으로 설계함</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div class="left">
+      <p class="ltitle">Pay Band 구조(안) — 시장 조사 후 확정, 밴드 공개가 원칙</p>
+      <div class="bhead"><p style="width:88pt;">직위</p><p style="width:200pt;">밴드 범위 (만 원/년) — 시장 Median 이상 지향</p></div>
+      <div class="band"><p class="g">주임</p><div class="bar"><div class="seg" style="width:40pt; background:#FFF;"></div><div class="seg" style="width:52pt; background:#F8DCBA;"></div></div><p class="r">3,600~4,400 [안]</p></div>
+      <div class="band"><p class="g">선임</p><div class="bar"><div class="seg" style="width:62pt; background:#FFF;"></div><div class="seg" style="width:62pt; background:#F2A551;"></div></div><p class="r">4,200~5,400 [안]</p></div>
+      <div class="band"><p class="g">책임</p><div class="bar"><div class="seg" style="width:88pt; background:#FFF;"></div><div class="seg" style="width:74pt; background:#F08000;"></div></div><p class="r">5,200~6,800 [안]</p></div>
+      <div class="band" style="border-bottom:none;"><p class="g">수석</p><div class="bar"><div class="seg" style="width:118pt; background:#FFF;"></div><div class="seg" style="width:82pt; background:#C86A00;"></div></div><p class="r">6,500~8,500+ [안]</p></div>
+      <p class="ltitle" style="margin-top:10pt;">기본급 인상 매트릭스 — 밴드 내 위치 × 연간 종합 리뷰</p>
+      <div class="mtx">
+        <div class="mrow"><div class="mc mh"><p>밴드 내 위치 ＼ 리뷰</p></div><div class="mc mh"><p>Needs Improvement</p></div><div class="mc mh"><p>Meets</p></div><div class="mc mh"><p>Exceeds</p></div></div>
+        <div class="mrow"><div class="mc mh"><p>하단 (~1/3)</p></div><div class="mc m1"><p>물가연동만</p></div><div class="mc m2"><p>표준+α</p></div><div class="mc m3"><p>최대 인상</p></div></div>
+        <div class="mrow"><div class="mc mh"><p>중단 (1/3~2/3)</p></div><div class="mc m0"><p>동결 검토</p></div><div class="mc m1"><p>표준 인상</p></div><div class="mc m2"><p>표준+α</p></div></div>
+        <div class="mrow"><div class="mc mh"><p>상단 (2/3~)</p></div><div class="mc m0"><p>동결</p></div><div class="mc m0"><p>최소 인상</p></div><div class="mc m1"><p>승진·변동급으로 보상</p></div></div>
+      </div>
+      <div class="note"><p><span class="b">설계 논리</span> — 같은 Exceeds라도 밴드 하단(시장 대비 저보상자)에게 더 큰 인상 → 내부 형평성과 외부 경쟁력을 동시에 회복. 주임·선임 자동 정액 인상은 이 매트릭스로 대체함</p></div>
+    </div>
+    <div class="right">
+      <p class="ltitle">변동급 2층 설계 — "성과에 따른 강력한 보상"</p>
+      <div class="vp">
+        <div class="vph v1"><p class="t">1층<br>Gain-sharing</p><p class="s">프로젝트 단위</p></div>
+        <div class="vpb">
+          <p><span class="b">산식 구조</span> — 프로젝트 마진이 목표 기준선 초과 시, 초과분의 일정률(예: 30% [안])을 해당 프로젝트 팀 풀(pool)로 적립 → 기여도에 따라 팀 내 배분</p>
+          <p><span class="b">효과</span> — 품질·효율 개선이 즉시 팀 보상으로 연결 (Harrah's Gain-sharing 구조의 적용: 측정지표·집계단위·보상규모의 3요소 설계)</p>
+        </div>
+      </div>
+      <div class="vp">
+        <div class="vph v2"><p class="t">2층<br>Profit-sharing</p><p class="s">전사 단위</p></div>
+        <div class="vpb">
+          <p><span class="b">산식 구조</span> — 전사 영업이익률이 기준(예: 5% [안]) 초과 시, 초과이익의 일정률을 전 구성원에 배분 (직위별 기본 배분 + 종합 리뷰 가중)</p>
+          <p><span class="b">효과</span> — 본부 사일로 완화: "회사가 잘 돼야 나도 받는다" — 협력이 성과의 원천(Session 4), 정보 공유(HPWS 7번 관행)</p>
+        </div>
+      </div>
+      <div class="total">
+        <p><span class="b">총보상(Total Rewards) 관점의 완성 (A4)</span></p>
+        <p>· 직접 보상 — 기본급(Pay Band) + 변동급 2층 · 간접 보상 — 복리후생 정비</p>
+        <p>· 비금전 보상 — 자율성 유지(현 강점), 성장 기회(아카데미·CDP), 인정(R 프로그램) — 내재적 동기를 훼손하지 않는 설계(자기결정이론)</p>
+        <p>· <span class="b">투명성</span> — 페이밴드·인상 매트릭스·변동급 산식 전면 공개 → 정보공정성 회복, "내 보상의 위치와 전망"을 누구나 알 수 있게 함</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>이론: 임금전략 4P Model·외부/내부 형평성·변동급 유형(개인/집단)·총보상(Session 9), Gain-sharing 설계 3요소(Harrah's), HPWS(Session 2) ※ 금액·비율은 [안] — 시장 임금 조사('27.2Q) 후 확정</p>
+    <p class="pg">C&amp;P Consulting Group · 24</p>
+  </div>
+</body>
+</html>

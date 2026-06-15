@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 12pt 44pt 0 44pt; display: flex; flex-direction: column; }
+.tbl { width: 754pt; height: 286pt; }
+.bottom { margin: 10pt 0 0 0; display: flex; }
+.impl { display: flex; width: 470pt; }
+.ibox { width: 108pt; padding: 7pt 0; margin-right: 6pt; display: flex; flex-direction: column; justify-content: center; }
+.ibox p { margin: 0; text-align: center; font-size: 8.5pt; line-height: 1.3; }
+.ibox .t { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; }
+.i1 { background: #F7F8F9; } .i1 p { color: #8B9197; }
+.i2 { background: #FDF1E3; } .i2 p { color: #A85A00; }
+.i3 { background: #F08000; } .i3 p { color: #FFFFFF; }
+.i4 { background: #E9ECEF; border: 1pt dashed #B8BFC6; } .i4 p { color: #6B7178; }
+.verdict { background: #26282B; margin-left: 12pt; padding: 9pt 16pt; width: 222pt; display: flex; flex-direction: column; justify-content: center; }
+.verdict p { margin: 0; color: #FFFFFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 11pt; line-height: 1.4; }
+.verdict .vsub { color: #F2A551; font-family: 'Paperlogy 4 Regular', sans-serif; font-size: 8.5pt; margin-top: 3pt; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 2</p></div>
+    <div class="sec"><p class="sectitle">전략적 HRM 진단</p><p class="secstep">④ VRIO 분석 (Barney, 1995) — 인적자원의 경쟁우위 평가</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">인적자원은 가치(V)와 희소성(R)을 충족하나 조직화(O)의 결핍으로 경쟁우위가 '일시적(Temporary)'에 그침 —<br>순이익률이 18.2%(2019)에서 3.4%(2025)로 회귀한 것이 그 실증임</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div id="vrio-table" class="placeholder tbl"></div>
+    <div class="bottom">
+      <div class="impl">
+        <div class="ibox i1"><p class="t">V만 충족</p><p>동등 경쟁<br>(Parity)</p></div>
+        <div class="ibox i2"><p class="t">V+R 충족</p><p>일시적 우위<br>(Temporary)</p></div>
+        <div class="ibox i2" style="border: 2pt solid #C0392B;"><p class="t" style="color:#C0392B;">V+R+I — 시앤피 현재</p><p style="color:#C0392B;">일시적 우위<br>O 결핍으로 지속 실패</p></div>
+        <div class="ibox i3"><p class="t">V+R+I+O 충족</p><p>지속적 경쟁우위<br>(Sustained) ← 목표</p></div>
+      </div>
+      <div class="verdict">
+        <p>O(조직화)의 결핍이 핵심 —</p>
+        <p class="vsub">"한 가지 HR제도가 아닌 전체 시스템이 중요(Horizontal Integration)" — HR시스템 정비가 곧 경쟁우위 지속의 전략 과제임</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>이론: VRIO Framework (Barney, 1995) · 모방가능성 3대 메커니즘(인과적 모호성·사회적 복잡성·경로 의존성) — 강의자료 Session 3</p>
+    <p class="pg">C&amp;P Consulting Group · 10</p>
+  </div>
+</body>
+</html>

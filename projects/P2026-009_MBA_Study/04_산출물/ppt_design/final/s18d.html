@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 12pt 44pt 0 44pt; display: flex; }
+.left { width: 380pt; display: flex; flex-direction: column; }
+.ltitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 10.5pt; color: #26282B; margin: 0 0 6pt 0; }
+.cg { display: flex; margin-bottom: 7pt; }
+.cgh { width: 104pt; padding: 6pt 10pt; }
+.cgh .t { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #FFF; font-size: 9.5pt; margin: 0; line-height: 1.3; }
+.c1 { background: #F08000; } .c2 { background: #3A3F45; } .c3 { background: #8B9197; }
+.cgb { border: 0.75pt solid #E3E6E9; border-left: none; width: 252pt; padding: 5pt 10pt; }
+.cgb p { font-size: 8pt; color: #3A3F45; margin: 0 0 2pt 0; line-height: 1.4; }
+.cgb p:last-child { margin-bottom: 0; }
+.cgb .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #A85A00; }
+.bi { background: #F7F8F9; padding: 6pt 11pt; margin-top: 3pt; }
+.bi p { margin: 0; font-size: 8pt; color: #6B7178; line-height: 1.45; }
+.bi .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #26282B; }
+.road { margin-top: 10pt; }
+.rrow { display: flex; border-bottom: 0.75pt solid #EDF0F2; padding: 4.5pt 0; }
+.rrow .k { width: 56pt; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 8.5pt; color: #26282B; margin: 0; }
+.rrow .v { width: 324pt; font-size: 8pt; color: #3A3F45; margin: 0; line-height: 1.35; }
+.right { width: 346pt; margin-left: 28pt; display: flex; flex-direction: column; }
+.dual { display: flex; margin-bottom: 9pt; }
+.base { display: flex; flex-direction: column; width: 100pt; }
+.bnode { background: #26282B; padding: 5pt 0; margin-bottom: 4pt; }
+.bnode p { color: #FFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; margin: 0; text-align: center; }
+.fork { display: flex; flex-direction: column; justify-content: center; width: 30pt; }
+.fork p { color: #F08000; font-family: 'Paperlogy 7 Bold', sans-serif; font-size: 12pt; margin: 0; text-align: center; }
+.tracks { width: 216pt; display: flex; flex-direction: column; }
+.track { border: 1pt solid #F08000; padding: 6pt 10pt; margin-bottom: 6pt; }
+.track .t { font-family: 'Paperlogy 7 Bold', sans-serif; font-size: 9.5pt; color: #F08000; margin: 0; }
+.track .d { font-size: 8pt; color: #3A3F45; margin: 2pt 0 0 0; line-height: 1.4; }
+.track2 { border-color: #26282B; }
+.track2 .t { color: #26282B; }
+.note { background: #FDF1E3; border-left: 3pt solid #F08000; padding: 7pt 11pt; }
+.note p { margin: 0; font-size: 8.5pt; color: #A85A00; line-height: 1.45; }
+.note .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 4</p></div>
+    <div class="sec"><p class="sectitle">개선과제 — HR 제도 세부 설계</p><p class="secstep">③-4 제도설계 4 · 역량모델과 경력경로 (B1·B2)</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">역량모델(역량군-역량-행동지표)을 채용·평가·육성·승진의 공통 언어로 구축하고, 책임 이상에서 관리 트랙과<br>전문가 트랙으로 갈라지는 Dual Ladder를 신설함 — 직위별 육성 로드맵은 HR아카데미 인프라로 운영함</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div class="left">
+      <p class="ltitle">컨설턴트 역량모델 구조(안) — McClelland·BEI 방법론으로 도출</p>
+      <div class="cg">
+        <div class="cgh c1"><p class="t">컨설팅 전문역량</p></div>
+        <div class="cgb">
+          <p>문제정의 · 조사분석 · 산출물 설계 · 방법론 활용</p>
+          <p><span class="b">행동지표 예시(선임)</span> — "고객 요구를 과업 범위로 번역하고, 분석 결과를 의사결정 가능한 형태로 구조화한다"</p>
+        </div>
+      </div>
+      <div class="cg">
+        <div class="cgh c2"><p class="t">고객·사업역량</p></div>
+        <div class="cgb">
+          <p>프로젝트 관리(PL/PM) · 고객 관계 · 제안·수주</p>
+          <p><span class="b">행동지표 예시(책임)</span> — "이해관계자 갈등 상황에서 대안을 설계해 합의를 끌어낸다" (승진 기준 'PM 가능'의 행동 번역)</p>
+        </div>
+      </div>
+      <div class="cg">
+        <div class="cgh c3"><p class="t">공통역량</p></div>
+        <div class="cgb">
+          <p>협업·지식공유 · 책임감 · 학습민첩성(Learning Agility)</p>
+          <p><span class="b">행동지표 예시</span> — "프로젝트 산출물·교훈을 지식체계에 등록하고 동료의 활용을 돕는다"</p>
+        </div>
+      </div>
+      <div class="bi"><p><span class="b">도출 절차(Session 5)</span> — 성과기준 정의 → 우수성과자 BEI 인터뷰(8~10명)·전문가 패널 → 모델 도출 → 타당성 검증 → 평가·승진·육성에 적용. 추상적이던 승진 기준("책임감, 팀웍 등")이 행동 수준으로 구체화됨</p></div>
+      <p class="ltitle" style="margin-top:9pt;">직위별 육성 로드맵 — 70:20:10의 '10'을 설계함</p>
+      <div class="road">
+        <div class="rrow"><p class="k">주임</p><p class="v">컨설팅 기본기 부트캠프(분석·문서·고객 커뮤니케이션) + 멘토 지정(공식 멘토링) — 커리어 관심 분야 파악(기존 면담 관행 계승)</p></div>
+        <div class="rrow"><p class="k">선임</p><p class="v">PL 양성과정(프로젝트 리드 시뮬레이션) + 직무전문 심화(HRM/HRD/보상 트랙 선택) + 코칭</p></div>
+        <div class="rrow"><p class="k">책임</p><p class="v">PM 역량과정(범위·품질·리스크 관리) + 제안·수주 실전(수석 동행 영업) — 트랙 선택 상담</p></div>
+        <div class="rrow" style="border-bottom:none;"><p class="k">전 직위</p><p class="v">전략적 프로젝트 배치(70) + 멘토링·코칭 제도화(20) + HR아카데미 필수과정(10) — 교육 효과는 Kirkpatrick 4수준으로 측정</p></div>
+      </div>
+    </div>
+    <div class="right">
+      <p class="ltitle">Dual Ladder 구조(안) — 영업 없이도 최고 전문가로 성장</p>
+      <div class="dual">
+        <div class="base">
+          <div class="bnode"><p>주임 (3년)</p></div>
+          <div class="bnode"><p>선임 (4년)</p></div>
+          <div class="bnode" style="margin-bottom:0;"><p>책임 — 분기점</p></div>
+        </div>
+        <div class="fork"><p>⟨</p></div>
+        <div class="tracks">
+          <div class="track">
+            <p class="t">관리 트랙 — 수석 · 본부장</p>
+            <p class="d">요건: 독자 수주(현행 기준 유지) + 조직관리 역량. 사업 성장과 팀 운영을 책임짐</p>
+          </div>
+          <div class="track track2" style="margin-bottom:0;">
+            <p class="t">전문가 트랙 — Principal 컨설턴트 [신설]</p>
+            <p class="d">요건: 방법론·품질 리더십 + 지식자산 기여 + 후배 육성. 수주 의무 없이 수석급 보상 — 딜리버리 최고 전문가의 성장 천장 제거</p>
+          </div>
+        </div>
+      </div>
+      <div class="note">
+        <p><span class="b">내적 정합성의 완성</span> — 하나의 역량모델이 채용 기준(B1) → 평가의 역량 축(A1) → 승진 요건(B2) → 육성 과정 설계(B3)에 일관 적용됨 → "채용-평가-보상-육성-승진이 같은 언어로 말하는" 번들 완성. 평가에서 발견된 역량 격차가 다음 해 육성 계획으로 자동 연결됨 (개발적 목적의 제도화)</p>
+      </div>
+      <div class="note" style="background:#F7F8F9; border-left-color:#8B9197; margin-top:8pt;">
+        <p style="color:#6B7178;"><span class="b" style="color:#26282B;">피터의 법칙 방지 장치</span> — 승진 전 차직급 역할 수행 검증(Leadership Challenge, Session 8): 선임→책임 승진 후보는 승진 전 1개 프로젝트를 PM 역할로 수행하고 그 결과를 심사위원회가 검증함</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>이론: 역량모델링·BEI(McClelland — Session 5), 70:20:10·개발 4방법·Kirkpatrick(Session 10), 피터의 법칙·AC/DC(Session 8), 학습민첩성(Session 10)</p>
+    <p class="pg">C&amp;P Consulting Group · 25</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="common.css">
+<style>
+.content { margin: 12pt 44pt 0 44pt; display: flex; }
+.left { width: 396pt; display: flex; flex-direction: column; }
+.ltitle { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 10.5pt; color: #26282B; margin: 0 0 6pt 0; }
+.layer { display: flex; margin-bottom: 8pt; }
+.lyhead { width: 92pt; padding: 8pt 10pt; }
+.lyhead .n { font-family: 'Paperlogy 8 ExtraBold', sans-serif; font-size: 13pt; margin: 0; color: #FFF; }
+.lyhead .t { font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; margin: 2pt 0 0 0; color: #FFF; line-height: 1.25; }
+.ly1 { background: #F08000; }
+.ly2 { background: #26282B; }
+.lybody { border: 0.75pt solid #E3E6E9; border-left: none; width: 280pt; padding: 6pt 11pt; }
+.lybody p { font-size: 8.5pt; color: #3A3F45; margin: 0 0 3pt 0; line-height: 1.4; }
+.lybody p:last-child { margin-bottom: 0; }
+.lybody .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #A85A00; }
+.lybody .b2 { font-family: 'Paperlogy 6 SemiBold', sans-serif; color: #26282B; }
+.sep { background: #FDF1E3; border-left: 3pt solid #F08000; padding: 7pt 11pt; margin-bottom: 8pt; }
+.sep p { margin: 0; font-size: 8.5pt; color: #A85A00; line-height: 1.4; }
+.sep .b { font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+.cal { display: flex; }
+.cq { width: 96pt; margin-right: 4pt; }
+.cq:last-child { margin-right: 0; }
+.cqh { background: #3A3F45; padding: 3pt 0; }
+.cqh p { color: #FFF; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 8.5pt; margin: 0; text-align: center; }
+.cqb { background: #F7F8F9; padding: 4pt 6pt; height: 40pt; }
+.cqb p { font-size: 7.5pt; color: #6B7178; margin: 0; line-height: 1.35; }
+.right { width: 330pt; margin-left: 28pt; display: flex; flex-direction: column; }
+.crit { border-top: 2pt solid #26282B; }
+.crow { display: flex; border-bottom: 0.75pt solid #EDF0F2; padding: 5.5pt 0; }
+.crow .k { width: 96pt; font-family: 'Paperlogy 6 SemiBold', sans-serif; font-size: 9pt; color: #26282B; margin: 0; }
+.crow .v { width: 234pt; font-size: 8.5pt; color: #3A3F45; margin: 0; line-height: 1.35; }
+.crow .o { color: #A85A00; font-family: 'Paperlogy 6 SemiBold', sans-serif; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="badge"><p>PART 4</p></div>
+    <div class="sec"><p class="sectitle">개선과제 — HR 제도 세부 설계</p><p class="secstep">③-1 제도설계 1 · 성과평가 (A1) — 2층 구조로 단순화</p></div>
+    <div class="hlogo"><img src="../logo_en.jpg" style="width: 110pt; height: 18pt;"></div>
+  </div>
+  <p class="headline">평가를 '프로젝트 리뷰(상시·개발용)'와 '연간 종합 리뷰(보상·승진 참고용)'의 2층 구조로 단순화하고,<br>평가 5대 기준(Noe)을 설계 단계에서 장치로 충족시킴 — 등급은 승진의견서와 동일한 3단계 척도로 통일함</p>
+  <div class="orule"></div>
+  <div class="hairline"></div>
+  <div class="content">
+    <div class="left">
+      <p class="ltitle">신(新)평가 2층 구조 — 현행 100점 산식·8개 KPI를 대체함</p>
+      <div class="layer">
+        <div class="lyhead ly1"><p class="n">1층</p><p class="t">프로젝트 리뷰<br>(상시 · 개발용)</p></div>
+        <div class="lybody">
+          <p><span class="b">시점</span> — 프로젝트 종료 시마다 (글로벌 펌의 engagement review 방식)</p>
+          <p><span class="b">도구</span> — 간이 리뷰 5문항: ①산출물 품질 ②고객 기여 ③협업·지식공유 ④성장 포인트 ⑤다음 과제 — 등급 없음, 피드백 대화 중심</p>
+          <p><span class="b">참여</span> — PM·동료 피드백 포함 (Morgan Stanley 360° 사례의 경량 적용)</p>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="lyhead ly2"><p class="n">2층</p><p class="t">연간 종합 리뷰<br>(보상·승진 참고)</p></div>
+        <div class="lybody">
+          <p><span class="b2">시점</span> — 연 1회 (4Q) · <span class="b2">투입</span> — 업적(연중 프로젝트 리뷰 종합) + 역량(행동지표 기반 — BARS 방식)</p>
+          <p><span class="b2">등급</span> — 3단계: Exceeds / Meets / Needs Improvement — 승진 의견서 척도와 통일하여 제도 간 일관성 확보</p>
+          <p><span class="b2">조정</span> — 본부 간 편차는 캘리브레이션 위원회에서 조정 (신뢰성 확보)</p>
+        </div>
+      </div>
+      <div class="sep">
+        <p><span class="b">분리 원칙</span> — 1층(성장 대화)은 보상 산정에 직결하지 않음. 2층 결과도 보상의 '참고 입력'일 뿐, 최종 보상은 별도 캘리브레이션에서 시장가치·기여·역량을 종합해 결정함 (MS 모델)</p>
+      </div>
+      <p class="ltitle">연간 운영 캘린더</p>
+      <div class="cal">
+        <div class="cq"><div class="cqh"><p>1Q</p></div><div class="cqb"><p>연간 목표·OKR 설정, 역량 개발계획 수립 (원온원)</p></div></div>
+        <div class="cq"><div class="cqh"><p>2Q</p></div><div class="cqb"><p>분기 체크인 + 프로젝트 리뷰 (수시)</p></div></div>
+        <div class="cq"><div class="cqh"><p>3Q</p></div><div class="cqb"><p>분기 체크인 + 중간 점검 원온원</p></div></div>
+        <div class="cq"><div class="cqh"><p>4Q</p></div><div class="cqb"><p>연간 종합 리뷰 → 캘리브레이션 → 결과 면담(소명 절차)</p></div></div>
+      </div>
+    </div>
+    <div class="right">
+      <p class="ltitle">평가 5대 기준(Session 7) 충족 설계 — 기준별 장치</p>
+      <div class="crit">
+        <div class="crow"><p class="k">① 전략적 적합성</p><p class="v">역량 평가에 <span class="o">협업·지식공유·전문성 축적</span>을 명시적 반영 — 차별화 전략이 요구하는 행동을 평가가 견인 (Kerr 오류 교정)</p></div>
+        <div class="crow"><p class="k">② 타당성</p><p class="v">프로젝트 단위 리뷰로 <span class="o">실제 수행한 일</span>을 평가 — 연말 기억 의존(오염·부족) 제거</p></div>
+        <div class="crow"><p class="k">③ 신뢰성</p><p class="v">전사 공통 양식 + <span class="o">캘리브레이션 위원회</span>로 본부 간·평가자 간 편차 통제, 평가자 교육 의무화(관대화·후광 오류 방지)</p></div>
+        <div class="crow"><p class="k">④ 수용성</p><p class="v">기준 사전 공개 + 설계 단계 구성원 의견수렴 2회 + <span class="o">소명 절차</span> — 절차·정보공정성 확보</p></div>
+        <div class="crow" style="border-bottom:none;"><p class="k">⑤ 구체성</p><p class="v">역량모델의 <span class="o">행동지표(BARS)</span>로 "무엇을 하면 Exceeds인지"를 행동 수준으로 정의</p></div>
+      </div>
+      <div class="sep" style="margin-top:9pt; margin-bottom:0;">
+        <p><span class="b">기존 자산의 재활용</span> — 직업능력개발연구본부의 1on1 면담 질의지·면담일지·평가자 체크리스트를 전사 표준 양식의 출발점으로 사용함 (제로 베이스 아님 — 실행 속도 확보)</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>이론: 성과평가 5대 기준·조직공정성·평가자 오류(Session 7), BARS·평가센터(Session 8), Morgan Stanley·MS 케이스 — Noe 교재 8장</p>
+    <p class="pg">C&amp;P Consulting Group · 22</p>
+  </div>
+</body>
+</html>
