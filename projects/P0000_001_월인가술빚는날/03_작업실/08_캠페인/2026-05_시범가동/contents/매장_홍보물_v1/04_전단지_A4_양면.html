@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>월인가 전단지 A4 양면</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream: #E8D5B7; --cream-2: #D9BFA0;
+    --sand: #C9A87C; --sand-dk: #A98863;
+    --red: #8B2A1F; --red-dk: #6F1F16;
+    --ink: #1F1A14; --ink-soft: #4A3F2E;
+    --white: #F5EFE3;
+  }
+  body { font-family: 'Noto Serif KR', 'Nanum Myeongjo', 'Malgun Gothic', '맑은 고딕', serif; color: var(--ink); }
+
+  .page {
+    width: 210mm; height: 297mm;
+    position: relative; overflow: hidden;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ===== FRONT — 브랜드 스토리 ===== */
+  .front {
+    background:
+      radial-gradient(ellipse at top left, rgba(255,255,255,0.5), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(169,136,99,0.35), transparent 65%),
+      linear-gradient(165deg, #F1E2C9 0%, #E8D5B7 40%, #D2B58E 100%);
+    padding: 30mm 22mm 22mm;
+    display: flex; flex-direction: column;
+  }
+  .front::before {
+    content: ''; position: absolute; top: 12mm; right: -20mm;
+    width: 130mm; height: 80mm;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 250'><g fill='none' stroke='%23A98863' stroke-width='1.6' opacity='0.30'><path d='M0 100 Q80 70 160 100 T320 100 T500 100'/><path d='M40 140 Q120 110 200 140 T360 140 T500 145'/><path d='M0 60 Q80 30 160 60 T320 55'/></g></svg>");
+    background-repeat: no-repeat; background-size: contain; pointer-events: none;
+  }
+  .front::after {
+    content: ''; position: absolute; bottom: -10mm; left: -25mm;
+    width: 160mm; height: 90mm;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 250'><g fill='none' stroke='%238B6F47' stroke-width='1.8' opacity='0.28'><path d='M0 180 Q80 130 160 170 T320 160 T500 170'/><path d='M40 220 Q120 180 200 215 T360 210 T500 215'/></g></svg>");
+    background-repeat: no-repeat; background-size: contain; pointer-events: none;
+  }
+
+  .front .logo-row { text-align: center; position: relative; z-index: 2; margin-bottom: 18mm; }
+  .front .logo-row img { width: 130mm; height: auto; }
+
+  .front .headline {
+    font-size: 32pt; line-height: 1.4; font-weight: 700;
+    text-align: center; position: relative; z-index: 2;
+    color: var(--ink); margin-bottom: 12mm;
+    letter-spacing: 0.03em;
+  }
+  .front .headline .accent { color: var(--red); }
+  .front .headline .small { display: block; font-size: 13pt; font-weight: 400; color: var(--ink-soft); margin-top: 5mm; letter-spacing: 0.2em; }
+
+  .front .story {
+    background: rgba(245,239,227,0.78);
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    padding: 10mm 12mm;
+    margin: 6mm 0 12mm;
+    position: relative; z-index: 2;
+  }
+  .front .story p {
+    font-size: 11.5pt; line-height: 2;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+  .front .story p + p { margin-top: 6mm; }
+  .front .story strong { color: var(--red); font-weight: 700; }
+
+  .front .seal-quote {
+    text-align: center; position: relative; z-index: 2;
+    margin-top: auto;
+    font-size: 10pt; color: var(--ink-soft); letter-spacing: 0.3em;
+  }
+  .front .seal-quote .seal-mark {
+    display: inline-block; width: 8mm; height: 10mm;
+    background: var(--red); color: var(--white);
+    line-height: 1.1; font-size: 6pt; font-weight: 700;
+    padding: 1.5mm 0; margin: 0 3mm; vertical-align: middle;
+    border-radius: 0.5mm;
+  }
+
+  /* ===== BACK — 제품·페어링·연락처 ===== */
+  .back {
+    background:
+      radial-gradient(ellipse at top right, rgba(255,255,255,0.45), transparent 60%),
+      linear-gradient(180deg, #EFE0C7 0%, #E8D5B7 100%);
+    padding: 15mm 14mm 12mm;
+  }
+  .back .title-row { text-align: center; margin-bottom: 8mm; }
+  .back .title-row .small-mark { font-size: 9pt; color: var(--red); letter-spacing: 0.4em; font-weight: 700; margin-bottom: 2mm; }
+  .back .title-row .title { font-size: 22pt; font-weight: 700; color: var(--ink); letter-spacing: 0.03em; }
+  .back .title-row .title .sub { display: block; font-size: 10pt; font-weight: 400; color: var(--ink-soft); margin-top: 2mm; letter-spacing: 0.2em; }
+
+  .back .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-bottom: 8mm; }
+  .back .p-card {
+    background: rgba(245,239,227,0.82);
+    border: 1px solid rgba(169,136,99,0.45);
+    border-left: 3px solid var(--red);
+    padding: 4mm 5mm;
+  }
+  .back .p-card .cat { font-size: 7pt; color: var(--red); letter-spacing: 0.35em; font-weight: 700; margin-bottom: 1.2mm; }
+  .back .p-card .nm { font-size: 12pt; font-weight: 700; line-height: 1.1; margin-bottom: 2mm; }
+  .back .p-card .meta { font-size: 8pt; color: var(--ink-soft); margin-bottom: 2.5mm; }
+  .back .p-card .row { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px dashed rgba(169,136,99,0.4); padding-top: 1.5mm; }
+  .back .p-card .row .lab { font-size: 7pt; color: var(--ink-soft); letter-spacing: 0.15em; }
+  .back .p-card .row .pri { font-size: 13pt; color: var(--red); font-weight: 700; }
+  .back .p-card .row .pri .w { font-size: 8pt; font-weight: 400; }
+
+  .back .pairing {
+    background: rgba(245,239,227,0.85);
+    border: 1px solid rgba(169,136,99,0.45);
+    border-radius: 1mm;
+    padding: 6mm 7mm; margin-bottom: 6mm;
+  }
+  .back .pairing h3 { font-size: 11pt; color: var(--red); letter-spacing: 0.3em; font-weight: 700; margin-bottom: 3.5mm; text-align: center; }
+  .back .pairing .pair-row { display: flex; align-items: center; gap: 4mm; padding: 2.5mm 0; }
+  .back .pairing .pair-row + .pair-row { border-top: 1px dashed rgba(169,136,99,0.4); }
+  .back .pairing .product-name { font-size: 9pt; color: var(--ink); font-weight: 700; min-width: 30mm; letter-spacing: 0.05em; }
+  .back .pairing .arrow { color: var(--red); font-size: 10pt; }
+  .back .pairing .pair-with { font-size: 9pt; color: var(--ink-soft); flex: 1; }
+
+  .back .footer {
+    display: grid; grid-template-columns: 1.4fr 1fr;
+    gap: 6mm;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 7mm 8mm;
+    border-radius: 1mm;
+    margin-bottom: 5mm;
+  }
+  .back .footer .col h4 { font-size: 8pt; color: var(--sand); letter-spacing: 0.4em; margin-bottom: 3mm; font-weight: 700; }
+  .back .footer .col p { font-size: 9pt; line-height: 1.7; color: var(--cream); }
+  .back .footer .col .big { font-size: 12pt; font-weight: 700; color: var(--white); margin-bottom: 1.5mm; letter-spacing: 0.02em; }
+
+  .back .closing { text-align: center; font-size: 9pt; color: var(--ink-soft); letter-spacing: 0.25em; }
+  .back .closing strong { color: var(--red); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- ============ FRONT ============ -->
+<div class="page front">
+  <div class="logo-row">
+    <img src="logo_horizontal.png" alt="월인가 술빚는날">
+  </div>
+
+  <div class="headline">
+    천 안 의   <span class="accent">가 족 양 조 장</span>이<br>
+    한 잔 한 잔 손으로 빚어
+    <span class="small">달의 자취가 깃든 집, 月印家</span>
+  </div>
+
+  <div class="story">
+    <p>
+      4대(代)에 걸친 손길이<br>
+      <strong>충남 천안의 쌀</strong> 위에 머뭅니다.
+    </p>
+    <p>
+      국화 향을 깨우고,<br>
+      누룩을 천천히 띄우고,<br>
+      사계절의 시간을 담아<br>
+      한 병 한 병 빚어 보내드립니다.
+    </p>
+    <p>
+      <strong>오늘의 식탁</strong> 위에,<br>
+      가만히 한 모금 올려보세요.
+    </p>
+  </div>
+
+  <div class="seal-quote">
+    月<span class="seal-mark">印家</span>술 빚 는 날
+  </div>
+</div>
+
+<!-- ============ BACK ============ -->
+<div class="page back">
+  <div class="title-row">
+    <div class="small-mark">제 품 안 내 · 페 어 링 · 방 문</div>
+    <div class="title">월인가의 한 잔<span class="sub">A   Q U I E T   S I P   F R O M   C H E O N A N</span></div>
+  </div>
+
+  <!-- 제품 4종 -->
+  <div class="product-grid">
+    <div class="p-card">
+      <div class="cat">YA K J U  ·  약 주</div>
+      <div class="nm">월인가 국화주 (약주)</div>
+      <div class="meta">375ml · ABV 15% · 냉장</div>
+      <div class="row"><span class="lab">판 매 가</span><span class="pri">25,000<span class="w">원</span></span></div>
+    </div>
+    <div class="p-card">
+      <div class="cat">TA K J U  ·  탁 주</div>
+      <div class="nm">월인가 국화주 (탁주)</div>
+      <div class="meta">500ml · ABV 10% · 냉장</div>
+      <div class="row"><span class="lab">판 매 가</span><span class="pri">12,000<span class="w">원</span></span></div>
+    </div>
+    <div class="p-card">
+      <div class="cat">D I S T I L L E D  ·  증 류 주</div>
+      <div class="nm">월인가 사계주 (소주)</div>
+      <div class="meta">375ml · ABV 43% · 실온</div>
+      <div class="row"><span class="lab">판 매 가</span><span class="pri">70,000<span class="w">원</span></span></div>
+    </div>
+    <div class="p-card">
+      <div class="cat">V I N E G A R  ·  발 효</div>
+      <div class="nm">현미식초</div>
+      <div class="meta">250ml · 현미·누룩 · 실온</div>
+      <div class="row"><span class="lab">판 매 가</span><span class="pri">19,000<span class="w">원</span></span></div>
+    </div>
+  </div>
+
+  <!-- 페어링 -->
+  <div class="pairing">
+    <h3>P A I R I N G   N O T E S</h3>
+    <div class="pair-row">
+      <div class="product-name">국화주 (약주)</div>
+      <div class="arrow">◦</div>
+      <div class="pair-with">치즈 플레이트, 다크 초콜릿, 식전의 한 모금으로</div>
+    </div>
+    <div class="pair-row">
+      <div class="product-name">국화주 (탁주)</div>
+      <div class="arrow">◦</div>
+      <div class="pair-with">샤퀴테리 보드, 부라타, 굴, 매콤한 아시안 한 접시</div>
+    </div>
+    <div class="pair-row">
+      <div class="product-name">사계주 (소주)</div>
+      <div class="arrow">◦</div>
+      <div class="pair-with">온더록 또는 니트, 다크 초콜릿과 식후의 한 잔</div>
+    </div>
+    <div class="pair-row">
+      <div class="product-name">현미식초</div>
+      <div class="arrow">◦</div>
+      <div class="pair-with">비네그레트, 드레싱, 혹은 물 한 잔에 한 스푼</div>
+    </div>
+  </div>
+
+  <!-- 연락처 -->
+  <div class="footer">
+    <div class="col">
+      <h4>찾 아 오 시 는 길</h4>
+      <p class="big">월인가 술빚는날</p>
+      <p>충남 천안시 동남구<br>다가말2길 81-1 (다가동)</p>
+      <p style="margin-top:2mm; font-size:8pt; opacity:0.85;">전통주 · 지역특산주 면허<br>탁주 · 약주 · 증류식소주 + 식품(식초)</p>
+    </div>
+    <div class="col">
+      <h4>시 음   ·   주 문</h4>
+      <p class="big">방문 시음 환영</p>
+      <p>· 매장 방문 시음 가능<br>· 선물 포장 주문 가능<br>· 거래처·B2B 문의 환영</p>
+      <p style="margin-top:2mm; font-size:8pt; opacity:0.85;">사업자번호 358-34-01806</p>
+    </div>
+  </div>
+
+  <div class="closing">한 잔   같 이   드 시 러   <strong>천 안 양 조 장</strong>으 로   오 시 겠 어 요  ?</div>
+</div>
+
+</body>
+</html>

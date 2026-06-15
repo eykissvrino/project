@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>월인가 술 빚는 날 — SNS 카드뉴스 (인스타 1080×1080)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Gowun+Batang:wght@400;700&family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream-1:#EFDDC2;
+    --cream-2:#E2C9A6;
+    --cream-3:#D2B488;
+    --sand:#B5945F;
+    --stamp:#8B2A1F;
+    --stamp-deep:#6E1F18;
+    --ink:#1F1A14;
+    --ink-soft:#3D332A;
+    --soft-white:#F8F1E3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#2c241e;font-family:"Noto Serif KR","Nanum Myeongjo",serif;color:var(--ink)}
+
+  /* 작업 안내 (상단) */
+  .guide{
+    max-width:1080px;margin:30px auto 12px;color:#cdb892;
+    font-family:"Noto Serif KR",serif;font-size:14px;line-height:1.7;
+    padding:14px 20px;border-left:3px solid #8B2A1F;background:rgba(0,0,0,.2);
+  }
+  .guide b{color:#f0d9af}
+  .guide code{background:rgba(0,0,0,.3);padding:1px 6px;border-radius:3px;color:#f0d9af}
+
+  /* 카드 5장 */
+  .stage{display:flex;flex-direction:column;gap:30px;align-items:center;padding:20px 0 60px}
+  .label{
+    color:#cdb892;font-size:13px;font-family:"Noto Serif KR";letter-spacing:.3em;
+    text-transform:uppercase;
+  }
+  .card{
+    width:1080px;height:1080px;
+    background:
+      radial-gradient(60% 50% at 20% 10%, rgba(255,235,200,.5), transparent 60%),
+      radial-gradient(80% 60% at 100% 100%, rgba(120,80,40,.25), transparent 60%),
+      linear-gradient(155deg, var(--cream-1) 0%, var(--cream-2) 50%, var(--cream-3) 100%);
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    position:relative;overflow:hidden;
+    padding:90px;
+    display:flex;flex-direction:column;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode:multiply;
+  }
+  .cloud{position:absolute;width:340px;opacity:.18;pointer-events:none;z-index:1}
+  .cloud.tl{top:50px;left:50px}
+  .cloud.br{bottom:50px;right:50px;transform:rotate(180deg)}
+
+  .card > *{position:relative;z-index:2}
+
+  /* 공통 푸터 */
+  .footer-row{
+    margin-top:auto;display:flex;align-items:center;justify-content:space-between;
+    padding-top:30px;border-top:1px solid rgba(139,42,31,.3);
+  }
+  .footer-row .logo-mini{display:flex;align-items:center;gap:14px}
+  .footer-row .logo-mini img{height:64px}
+  .footer-row .pgn{
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:16px;color:var(--stamp);
+    letter-spacing:.35em;padding:6px 14px;border:1px solid var(--stamp);
+  }
+
+  /* === CARD 1 — 표지 === */
+  .c1{justify-content:center;align-items:center;text-align:center}
+  .c1 .badge{
+    font-family:"Nanum Myeongjo",serif;font-size:18px;letter-spacing:.5em;color:var(--stamp);
+    padding:10px 28px;border:1px solid rgba(139,42,31,.5);background:rgba(248,241,227,.4);
+  }
+  .c1 .logo-big{margin-top:60px;height:200px;filter:drop-shadow(0 5px 12px rgba(80,40,20,.22))}
+  .c1 .brush{
+    margin-top:80px;font-family:"Nanum Brush Script",cursive;font-size:138px;line-height:1;color:var(--ink);
+  }
+  .c1 .lead{
+    margin-top:40px;font-family:"Nanum Myeongjo",serif;font-weight:400;font-size:30px;
+    color:var(--ink-soft);letter-spacing:.18em;line-height:1.8;
+  }
+  .c1 .lead em{font-style:normal;color:var(--stamp);font-weight:700}
+  .c1 .swipe{
+    position:absolute;bottom:90px;left:50%;transform:translateX(-50%);
+    font-family:"Nanum Myeongjo",serif;font-size:16px;letter-spacing:.35em;color:var(--ink-soft);
+    display:flex;align-items:center;gap:18px;
+  }
+  .c1 .swipe::after{content:"→";color:var(--stamp);font-size:24px;animation:swipe 2s ease-in-out infinite}
+  @keyframes swipe{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+
+  /* === CARD 2,3,4 — 제품 카드 공통 === */
+  .product{display:flex;flex-direction:column;height:100%}
+  .product .top-row{display:flex;justify-content:space-between;align-items:flex-start}
+  .product .seal{
+    width:96px;height:118px;background:linear-gradient(160deg,var(--stamp),var(--stamp-deep));
+    color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:"Nanum Myeongjo",serif;font-weight:700;
+    box-shadow:0 4px 10px rgba(60,15,8,.4);border-radius:4px;
+    position:relative;
+  }
+  .product .seal::after{
+    content:"";position:absolute;inset:0;border-radius:4px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='100'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.4'/></svg>");
+    mix-blend-mode:screen;opacity:.4;
+  }
+  .product .seal .ch{font-size:54px;line-height:1}
+  .product .seal .sub{font-size:12px;letter-spacing:.25em;margin-top:6px;opacity:.92}
+  .product .cat-tag{
+    font-family:"Nanum Myeongjo",serif;font-size:18px;letter-spacing:.35em;color:var(--ink-soft);
+    padding:8px 18px;border:1px solid rgba(139,42,31,.3);
+  }
+
+  .product .title{
+    margin-top:80px;
+  }
+  .product .title .ko{
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:90px;letter-spacing:.02em;
+    color:var(--ink);line-height:1.05;
+  }
+  .product .title .ko .sub{font-weight:400;font-size:54px;color:var(--ink-soft);margin-left:12px}
+  .product .title .meta{
+    margin-top:18px;font-family:"Nanum Myeongjo",serif;font-size:22px;letter-spacing:.18em;
+    color:var(--ink-soft);
+  }
+
+  .product .desc{
+    margin-top:60px;font-size:30px;line-height:1.75;color:var(--ink-soft);max-width:760px;
+  }
+  .product .desc em{font-style:normal;color:var(--stamp);font-weight:700}
+
+  .product .price-row{
+    margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;
+    padding-bottom:30px;border-bottom:1px solid rgba(139,42,31,.3);
+  }
+  .product .price-row .pair{font-family:"Nanum Myeongjo",serif;font-size:22px;letter-spacing:.22em;color:var(--ink-soft)}
+  .product .price-row .pair b{display:block;color:var(--stamp);font-size:30px;letter-spacing:.1em;margin-top:6px}
+  .product .price-row .pr{font-family:"Nanum Myeongjo",serif;font-weight:800;font-size:78px;color:var(--ink);line-height:1}
+  .product .price-row .pr .w{font-size:34px;font-weight:400;color:var(--ink-soft);margin-left:6px}
+
+  /* CARD 4 시그니처 강조 */
+  .c4{background:
+      radial-gradient(50% 40% at 80% 20%, rgba(255,215,160,.55), transparent 60%),
+      radial-gradient(80% 60% at 0% 100%, rgba(110,30,20,.18), transparent 60%),
+      linear-gradient(155deg, #ECD7B6 0%, #DBBE94 50%, #C19E70 100%);
+  }
+  .c4 .sig-banner{
+    position:absolute;top:90px;right:90px;z-index:3;
+    background:var(--stamp);color:#fff;
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:18px;letter-spacing:.4em;
+    padding:10px 22px;box-shadow:0 4px 10px rgba(60,15,8,.35);
+  }
+
+  /* === CARD 5 — CTA === */
+  .c5{justify-content:space-between}
+  .c5 .head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+  }
+  .c5 .head .ttl{
+    font-family:"Nanum Brush Script",cursive;font-size:96px;line-height:1;color:var(--ink);
+  }
+  .c5 .head .num{
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:24px;letter-spacing:.4em;color:var(--stamp);
+    padding:10px 20px;border:1px solid var(--stamp);
+  }
+  .c5 .pair-grid{
+    margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:30px;
+  }
+  .c5 .pair-cell{
+    padding:36px;background:rgba(248,241,227,.55);
+    border-left:3px solid var(--stamp);
+  }
+  .c5 .pair-cell .nm{font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:30px;color:var(--ink);letter-spacing:.05em}
+  .c5 .pair-cell .pair{margin-top:10px;font-size:22px;color:var(--ink-soft);line-height:1.6}
+  .c5 .pair-cell .pair b{color:var(--stamp);font-weight:700}
+
+  .c5 .closing{
+    margin-top:auto;text-align:center;
+  }
+  .c5 .closing .brush{
+    font-family:"Nanum Brush Script",cursive;font-size:64px;color:var(--stamp);line-height:1.2;
+  }
+  .c5 .closing .info{
+    margin-top:20px;font-family:"Nanum Myeongjo",serif;font-size:22px;letter-spacing:.15em;
+    color:var(--ink-soft);line-height:1.7;
+  }
+  .c5 .closing .info b{color:var(--ink);font-weight:700}
+
+  /* 19세 미만 작은 표시 */
+  .agewarn{
+    position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;
+    font-size:13px;color:#7a1810;letter-spacing:.3em;
+  }
+</style>
+</head>
+<body>
+
+<div class="guide">
+  <b>스크린샷 안내</b> · 크롬에서 <code>Ctrl + 0</code>(확대 100%)로 보고, 카드 위에서 마우스 우클릭 → <b>요소 검사</b>로 <code>&lt;div class="card"&gt;</code>를 선택 후 “Capture node screenshot” 또는<br/>
+  &nbsp;&nbsp;간단히 <b>윈도우 캡쳐 도구</b>로 카드 영역(1080×1080)을 잘라내면 인스타 업로드용 정사각 이미지가 됩니다. 5장 모두 같은 방법.
+</div>
+
+<div class="stage">
+
+  <!-- ====== CARD 1 — 표지 ====== -->
+  <div class="label">CARD 1 / 5 — COVER</div>
+  <div class="card c1">
+    <svg class="cloud tl" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <svg class="cloud br" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <div class="badge">충 남 　 천 안 　 양 조 장</div>
+    <img class="logo-big" src="logo_vertical.png" alt="月印家 술 빚는 날" />
+    <div class="brush">한 잔의 편지</div>
+    <div class="lead">
+      4 대 가 족 이 손 으 로 빚 어<br/>
+      <em>천 천 히 익 힌</em> 한 병
+    </div>
+    <div class="swipe">다음 장 으 로</div>
+  </div>
+
+  <!-- ====== CARD 2 — 약주 ====== -->
+  <div class="label">CARD 2 / 5 — 약주</div>
+  <div class="card">
+    <svg class="cloud tl" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <svg class="cloud br" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+
+    <div class="product">
+      <div class="top-row">
+        <div class="seal"><div class="ch">藥</div><div class="sub">YAKJU</div></div>
+        <div class="cat-tag">월 인 가 · 국 화 주</div>
+      </div>
+      <div class="title">
+        <div class="ko">국화주<span class="sub">약주</span></div>
+        <div class="meta">375 ml &nbsp;·&nbsp; ALC 15% &nbsp;·&nbsp; 12~15℃</div>
+      </div>
+      <div class="desc">
+        천안의 멥쌀·찹쌀에 <em>자가채취 국화</em>를 더했습니다.<br/>
+        단정한 단맛이 길게 머무는 약주, <em>호두과자</em> 한 입에 한 모금이 가장 어울립니다.
+      </div>
+      <div class="price-row">
+        <div class="pair">PAIRING<b>천안 호두과자</b></div>
+        <div class="pr">25,000<span class="w">원</span></div>
+      </div>
+      <div class="footer-row">
+        <div class="logo-mini"><img src="logo_horizontal.png" alt="" /></div>
+        <div class="pgn">02 / 05</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== CARD 3 — 탁주 ====== -->
+  <div class="label">CARD 3 / 5 — 탁주</div>
+  <div class="card">
+    <svg class="cloud tl" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <svg class="cloud br" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+
+    <div class="product">
+      <div class="top-row">
+        <div class="seal"><div class="ch">濁</div><div class="sub">TAKJU</div></div>
+        <div class="cat-tag">월 인 가 · 국 화 주</div>
+      </div>
+      <div class="title">
+        <div class="ko">국화주<span class="sub">탁주</span></div>
+        <div class="meta">500 ml &nbsp;·&nbsp; ALC 10% &nbsp;·&nbsp; 6~8℃</div>
+      </div>
+      <div class="desc">
+        찹쌀·멥쌀·전통누룩과 <em>국화꽃 0.02%</em>.<br/>
+        비 오는 날 전 한 접시, <em>병천순대</em> 곁에 가장 좋은 일상의 한 병입니다.
+      </div>
+      <div class="price-row">
+        <div class="pair">PAIRING<b>병천순대 · 전</b></div>
+        <div class="pr">12,000<span class="w">원</span></div>
+      </div>
+      <div class="footer-row">
+        <div class="logo-mini"><img src="logo_horizontal.png" alt="" /></div>
+        <div class="pgn">03 / 05</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== CARD 4 — 사계주 (시그니처) ====== -->
+  <div class="label">CARD 4 / 5 — 사계주 (시그니처)</div>
+  <div class="card c4">
+    <div class="sig-banner">시 그 니 처</div>
+    <svg class="cloud tl" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <svg class="cloud br" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+
+    <div class="product">
+      <div class="top-row">
+        <div class="seal"><div class="ch">四</div><div class="sub">SAGYE</div></div>
+        <div class="cat-tag">월 인 가 · 사 계 주</div>
+      </div>
+      <div class="title">
+        <div class="ko">사계주<span class="sub">증류식 소주</span></div>
+        <div class="meta">375 ml &nbsp;·&nbsp; ALC 43% &nbsp;·&nbsp; 상온 / 10~15℃</div>
+      </div>
+      <div class="desc">
+        <em>사계절을 한 모금에</em>.<br/>
+        단정한 곡주의 향과 깊은 마무리. 의례·선물·천천히 두고 마시는 자리에 두는 한 병입니다.
+      </div>
+      <div class="price-row">
+        <div class="pair">PAIRING<b>천안 호두 · 정찬</b></div>
+        <div class="pr">70,000<span class="w">원</span></div>
+      </div>
+      <div class="footer-row">
+        <div class="logo-mini"><img src="logo_horizontal.png" alt="" /></div>
+        <div class="pgn">04 / 05</div>
+      </div>
+    </div>
+    <div class="agewarn">19 세 미 만 청 소 년 에 게 판 매 금 지</div>
+  </div>
+
+  <!-- ====== CARD 5 — 한 줄에 모아보기 + CTA ====== -->
+  <div class="label">CARD 5 / 5 — 한 줄에 모아보기 + CTA</div>
+  <div class="card c5">
+    <svg class="cloud tl" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+    <svg class="cloud br" viewBox="0 0 200 100" fill="none"><path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/><path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/></svg>
+
+    <div class="head">
+      <div class="ttl">오늘의 네 잔</div>
+      <div class="num">05 / 05</div>
+    </div>
+
+    <div class="pair-grid">
+      <div class="pair-cell">
+        <div class="nm">藥 · 국화주 약주</div>
+        <div class="pair"><b>25,000원</b> &nbsp;|&nbsp; 호두과자와</div>
+      </div>
+      <div class="pair-cell">
+        <div class="nm">濁 · 국화주 탁주</div>
+        <div class="pair"><b>12,000원</b> &nbsp;|&nbsp; 병천순대와</div>
+      </div>
+      <div class="pair-cell">
+        <div class="nm">四 · 사계주 (시그니처)</div>
+        <div class="pair"><b>70,000원</b> &nbsp;|&nbsp; 천안 호두와</div>
+      </div>
+      <div class="pair-cell">
+        <div class="nm">醋 · 현미식초</div>
+        <div class="pair"><b>19,000원</b> &nbsp;|&nbsp; 한식 한 스푼</div>
+      </div>
+    </div>
+
+    <div class="closing">
+      <div class="brush">한 잔, 같이 드시러 오시겠어요?</div>
+      <div class="info">
+        <b>충남 천안시 동남구 다가말2길 81-1</b><br/>
+        010-4837-3479 &nbsp;·&nbsp; @월인가술빚는날
+      </div>
+    </div>
+    <div class="agewarn">19 세 미 만 청 소 년 에 게 판 매 금 지</div>
+  </div>
+
+</div>
+
+</body>
+</html>

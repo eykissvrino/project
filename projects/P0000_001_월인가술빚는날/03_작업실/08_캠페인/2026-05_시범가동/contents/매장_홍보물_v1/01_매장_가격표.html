@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>월인가 술 빚는 날 — 매장 가격표</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Gowun+Batang:wght@400;700&family=Nanum+Brush+Script&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --cream-1:#EFDDC2;
+    --cream-2:#E2C9A6;
+    --cream-3:#D2B488;
+    --sand:#B5945F;
+    --stamp:#8B2A1F;
+    --stamp-deep:#6E1F18;
+    --ink:#1F1A14;
+    --ink-soft:#3D332A;
+    --soft-white:#F8F1E3;
+    --line:#A98863;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#3a302a;font-family:"Noto Serif KR","Nanum Myeongjo",serif;color:var(--ink)}
+
+  /* A4 페이지 — 210×297mm */
+  .page{
+    width:210mm;height:297mm;
+    margin:14mm auto;
+    background:
+      radial-gradient(120% 80% at 0% 0%, rgba(255,235,200,.5), transparent 60%),
+      radial-gradient(120% 80% at 100% 100%, rgba(120,80,40,.18), transparent 55%),
+      linear-gradient(155deg, var(--cream-1) 0%, var(--cream-2) 55%, var(--cream-3) 100%);
+    box-shadow:0 20px 60px rgba(0,0,0,.45), inset 0 0 0 1px rgba(120,80,40,.08);
+    position:relative;overflow:hidden;
+    padding:18mm 16mm 14mm 16mm;
+    display:flex;flex-direction:column;
+  }
+  /* 한지 노이즈 */
+  .page::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .15  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode:multiply;
+  }
+  /* 모서리 구름 무늬 (브랜드 가이드 §5.1) */
+  .cloud{position:absolute;width:42mm;opacity:.20;pointer-events:none}
+  .cloud.tl{top:6mm;left:6mm}
+  .cloud.br{bottom:6mm;right:6mm;transform:rotate(180deg)}
+
+  /* 헤더 — 로고 + 태그라인 */
+  header{
+    display:flex;flex-direction:column;align-items:center;gap:6mm;
+    padding-bottom:10mm;border-bottom:1px solid rgba(139,42,31,.25);
+    position:relative;z-index:2;
+  }
+  header img.logo{height:24mm;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(80,40,20,.18))}
+  .tagline{
+    font-family:"Nanum Myeongjo",serif;font-weight:400;color:var(--ink-soft);
+    letter-spacing:.18em;font-size:10pt;text-align:center;
+  }
+  .tagline em{font-style:normal;color:var(--stamp);font-weight:700}
+
+  /* 메인 카피 */
+  .hero{
+    text-align:center;padding:9mm 0 4mm 0;position:relative;z-index:2;
+  }
+  .hero h1{
+    font-family:"Nanum Brush Script","Nanum Myeongjo",cursive;
+    font-size:34pt;line-height:1.1;color:var(--ink);letter-spacing:.02em;
+    text-shadow:0 1px 0 rgba(255,255,255,.4);
+  }
+  .hero .sub{
+    margin-top:3mm;font-family:"Nanum Myeongjo",serif;font-weight:400;
+    color:var(--ink-soft);font-size:11pt;letter-spacing:.12em;
+  }
+
+  /* 가격표 — 4종 카드 */
+  .menu{
+    flex:1;display:grid;grid-template-columns:1fr;gap:6mm;
+    padding:8mm 0 4mm 0;position:relative;z-index:2;
+  }
+  .item{
+    display:grid;grid-template-columns:13mm 1fr auto;align-items:center;gap:6mm;
+    padding:5mm 6mm;
+    background:linear-gradient(180deg, rgba(248,241,227,.55), rgba(248,241,227,.25));
+    border:1px solid rgba(139,42,31,.18);
+    border-radius:2mm;
+    position:relative;
+    box-shadow:0 2px 6px rgba(80,40,20,.06);
+  }
+  /* 도장형 카테고리 마크 */
+  .stamp{
+    width:13mm;height:16mm;
+    background:linear-gradient(160deg, var(--stamp) 0%, var(--stamp-deep) 100%);
+    border-radius:3px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    color:#fff;font-family:"Nanum Myeongjo",serif;font-weight:700;
+    box-shadow:0 1px 0 rgba(255,255,255,.18) inset, 0 2px 4px rgba(60,15,8,.4);
+    position:relative;
+  }
+  .stamp::before{
+    content:"";position:absolute;inset:0;border-radius:3px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='80'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.35'/></svg>");
+    mix-blend-mode:screen;opacity:.4;
+  }
+  .stamp .ch{font-size:14pt;line-height:1}
+  .stamp .sub{font-size:6.5pt;letter-spacing:.1em;margin-top:1mm;opacity:.92}
+
+  .info .name{
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:17pt;
+    color:var(--ink);letter-spacing:.01em;
+  }
+  .info .meta{
+    margin-top:1mm;font-size:9pt;color:var(--ink-soft);letter-spacing:.06em;
+  }
+  .info .desc{
+    margin-top:2mm;font-size:9.5pt;color:var(--ink-soft);line-height:1.55;
+    max-width:90mm;
+  }
+  .info .desc em{font-style:normal;color:var(--stamp);font-weight:600}
+
+  .price{
+    text-align:right;
+    font-family:"Nanum Myeongjo",serif;
+  }
+  .price .num{
+    font-size:22pt;font-weight:800;color:var(--ink);letter-spacing:.01em;
+  }
+  .price .unit{font-size:11pt;color:var(--ink-soft);margin-left:1mm}
+  .price .vol{display:block;margin-top:1mm;font-size:8.5pt;color:var(--ink-soft);letter-spacing:.1em}
+
+  /* 시그니처 표시 */
+  .item.signature{
+    background:linear-gradient(180deg, rgba(248,241,227,.7), rgba(231,205,165,.5));
+    border-color:rgba(139,42,31,.4);
+  }
+  .item.signature::after{
+    content:"시그니처";position:absolute;top:-3mm;right:8mm;
+    font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:8pt;
+    background:var(--stamp);color:#fff;padding:1mm 3mm;letter-spacing:.18em;
+    box-shadow:0 2px 4px rgba(60,15,8,.3);
+  }
+
+  /* 푸터 */
+  footer{
+    margin-top:auto;padding-top:6mm;
+    border-top:1px solid rgba(139,42,31,.2);
+    display:grid;grid-template-columns:auto 1fr auto;gap:4mm;align-items:center;
+    font-size:8.5pt;color:var(--ink-soft);letter-spacing:.05em;
+    position:relative;z-index:2;
+  }
+  footer .seal{
+    display:inline-block;font-family:"Nanum Myeongjo",serif;font-weight:700;color:var(--stamp);
+    border:1px solid var(--stamp);padding:1.5mm 3mm;border-radius:1mm;font-size:8pt;letter-spacing:.2em;
+  }
+  footer .addr{text-align:center;line-height:1.55}
+  footer .closing{font-family:"Nanum Brush Script",cursive;font-size:14pt;color:var(--stamp);}
+
+  /* 19세 미만 표시 */
+  .warn{
+    position:absolute;bottom:18mm;left:50%;transform:translateX(-50%);
+    font-size:7.5pt;color:#7a1810;letter-spacing:.25em;
+    padding:1mm 3mm;border:1px solid rgba(139,42,31,.45);background:rgba(248,241,227,.55);
+    z-index:2;
+  }
+
+  @media print{
+    html,body{background:#fff}
+    .page{margin:0;box-shadow:none;page-break-after:always}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <!-- 모서리 구름 무늬 -->
+  <svg class="cloud tl" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/>
+    <path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/>
+  </svg>
+  <svg class="cloud br" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 70 Q25 40 55 50 Q70 25 100 40 Q130 20 155 45 Q185 35 195 70 L195 90 L10 90 Z" stroke="#8B2A1F" stroke-width="1.2" fill="none"/>
+    <path d="M30 60 Q50 45 75 55 Q95 40 115 55 Q140 45 160 60" stroke="#8B2A1F" stroke-width="1" fill="none"/>
+  </svg>
+
+  <header>
+    <img class="logo" src="logo_horizontal.png" alt="月印家 술 빚는 날" />
+    <div class="tagline">천 안 의 작 은 양 조 장 · <em>4 대 가 족</em> 이 빚 는 한 잔</div>
+  </header>
+
+  <div class="hero">
+    <h1>고이 빚은 한 잔</h1>
+    <div class="sub">정 성 으 로 익 힌 술 ,  오 늘 손 님 앞 에 두 다</div>
+  </div>
+
+  <div class="menu">
+
+    <div class="item">
+      <div class="stamp">
+        <div class="ch">藥</div>
+        <div class="sub">YAKJU</div>
+      </div>
+      <div class="info">
+        <div class="name">월인가 국화주 <span style="font-weight:400;font-size:11pt;color:var(--ink-soft);margin-left:2mm">· 약주</span></div>
+        <div class="meta">375ml &nbsp;|&nbsp; 알코올 15% &nbsp;|&nbsp; 12~15℃ 음용</div>
+        <div class="desc">천안 멥쌀·찹쌀에 <em>자가채취 국화</em>를 넣고 천천히 익혔습니다. 단정한 단맛이 길게 머무는 결, 호두과자와 한 입씩 곁들이기 좋은 술입니다.</div>
+      </div>
+      <div class="price">
+        <span class="num">25,000</span><span class="unit">원</span>
+        <span class="vol">VOL · 375ml</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="stamp">
+        <div class="ch">濁</div>
+        <div class="sub">TAKJU</div>
+      </div>
+      <div class="info">
+        <div class="name">월인가 국화주 <span style="font-weight:400;font-size:11pt;color:var(--ink-soft);margin-left:2mm">· 탁주</span></div>
+        <div class="meta">500ml &nbsp;|&nbsp; 알코올 10% &nbsp;|&nbsp; 6~8℃ 음용</div>
+        <div class="desc">찹쌀·멥쌀과 전통누룩, 그리고 <em>국화꽃 0.02%</em>가 들어간 가벼운 한 병. 비 오는 날 전을 부치는 식탁, 병천순대 한 접시 곁에 가장 어울립니다.</div>
+      </div>
+      <div class="price">
+        <span class="num">12,000</span><span class="unit">원</span>
+        <span class="vol">VOL · 500ml</span>
+      </div>
+    </div>
+
+    <div class="item signature">
+      <div class="stamp">
+        <div class="ch">四</div>
+        <div class="sub">SAGYE</div>
+      </div>
+      <div class="info">
+        <div class="name">월인가 사계주 <span style="font-weight:400;font-size:11pt;color:var(--ink-soft);margin-left:2mm">· 증류식 소주</span></div>
+        <div class="meta">375ml &nbsp;|&nbsp; 알코올 43% &nbsp;|&nbsp; 상온 또는 10~15℃</div>
+        <div class="desc"><em>사계절을 한 모금에</em>. 곡주 베이스의 단정한 향과 깊은 마무리. 의례·선물·천천히 두고 마시는 자리에 두는 한 병입니다.</div>
+      </div>
+      <div class="price">
+        <span class="num">70,000</span><span class="unit">원</span>
+        <span class="vol">VOL · 375ml</span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="stamp">
+        <div class="ch">醋</div>
+        <div class="sub">VINEGAR</div>
+      </div>
+      <div class="info">
+        <div class="name">월인가 현미식초 <span style="font-weight:400;font-size:11pt;color:var(--ink-soft);margin-left:2mm">· 발효식초</span></div>
+        <div class="meta">250ml &nbsp;|&nbsp; 발효식초 &nbsp;|&nbsp; 한식·드레싱·발효음료</div>
+        <div class="desc">양조의 곁에서 함께 익은 한 병. 냉채·잡채·물김치 같은 한식에, 또 물 한 잔에 한 스푼이면 깊은 발효의 결을 맛볼 수 있습니다.</div>
+      </div>
+      <div class="price">
+        <span class="num">19,000</span><span class="unit">원</span>
+        <span class="vol">VOL · 250ml</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="warn">19 세 　 미 만 　 청 소 년 에 게 　 판 매 금 지</div>
+
+  <footer>
+    <span class="seal">월인가 술빚는날</span>
+    <div class="addr">충남 천안시 동남구 다가말2길 81-1 &middot; 010-4837-3479<br/>품목보고번호 202500285941 &middot; 사업자 358-34-01806</div>
+    <span class="closing">한 잔, 같이 드시러 오시겠어요?</span>
+  </footer>
+</div>
+
+</body>
+</html>
