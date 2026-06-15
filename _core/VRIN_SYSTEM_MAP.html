@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VRIN OS — 전체 체계도</title>
+<style>
+  :root{
+    --bg:#0f1117; --panel:#171a22; --line:#2a2f3a; --txt:#e8eaed; --mut:#9aa0ac;
+    --str:#6366f1; --hr:#14b8a6; --res:#0ea5e9; --pt:#a855f7; --gtm:#f59e0b; --del:#ec4899; --leg:#64748b;
+    --gov:#d98a3d; --good:#22c55e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI","Malgun Gothic",sans-serif;padding:28px;line-height:1.4}
+  h1{font-size:22px;font-weight:800;letter-spacing:-.3px}
+  .sub{color:var(--mut);font-size:13px;margin:4px 0 22px}
+  .layer{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;margin-bottom:12px}
+  .ltag{font-size:11px;font-weight:700;color:var(--mut);text-align:right;letter-spacing:.5px}
+  .lbody{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}
+  .box{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#1c2029;flex:1;min-width:0}
+  .box .t{font-weight:700;font-size:13px}
+  .box .d{color:var(--mut);font-size:11px;margin-top:3px}
+  .founder{text-align:center;background:linear-gradient(0deg,#1c2029,#1c2029);border-color:#3a3f4a}
+  .founder .t{font-size:15px}
+  .chip{border-radius:8px;padding:8px 10px;font-size:12px;font-weight:600;border:1px solid var(--line);background:#1c2029;flex:1;text-align:center}
+  .dept{border-top:3px solid var(--line)}
+  .d-str{border-top-color:var(--str)} .d-hr{border-top-color:var(--hr)} .d-res{border-top-color:var(--res)}
+  .d-pt{border-top-color:var(--pt)} .d-gtm{border-top-color:var(--gtm)} .d-del{border-top-color:var(--del)} .d-leg{border-top-color:var(--leg)}
+  .gov{border-color:var(--gov);background:#241d12}
+  .sprint{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .step{background:#1c2029;border:1px solid var(--line);border-radius:20px;padding:5px 11px;font-size:11.5px;font-weight:600}
+  .arr{color:var(--mut);font-size:13px}
+  .star{color:var(--gov)}
+  .evo{margin-top:14px;background:linear-gradient(90deg,#13241a,#1a2030);border:1px solid #2a4a35;border-radius:12px;padding:12px 16px;font-size:12.5px}
+  .evo b{color:var(--good)}
+  .note{color:var(--mut);font-size:11px;margin-top:6px}
+  .badge{font-size:10px;color:var(--mut)}
+</style>
+</head>
+<body>
+<h1>VRIN OS — 전체 체계도 <span class="badge">v2.1 · 매트릭스 조직 · 2026-06-15</span></h1>
+<div class="sub">이석주 대표의 AI 회사. 한국어로 말하면 → @CoS가 부서·스쿼드 배분 → 7단계 실행 → @BAR 검증 → 위키 축적 → Cockpit 현황 → @CLO 진화.</div>
+
+<!-- 1 사람 -->
+<div class="layer">
+  <div class="ltag">① 사람</div>
+  <div class="lbody"><div class="box founder"><div class="t">👤 이석주 대표 — Founder / CEO</div><div class="d">비전 · 최종 의사결정 · 안목(taste)</div></div></div>
+</div>
+
+<!-- 2 지휘·거버넌스 -->
+<div class="layer">
+  <div class="ltag">② 지휘<br>거버넌스</div>
+  <div class="lbody"><div class="row">
+    <div class="box gov"><div class="t">@BAR 품질검증관</div><div class="d">산출물 독립검증 · 셀프승인 금지 · A/B/C</div></div>
+    <div class="box" style="flex:1.4;border-color:#3a3f4a"><div class="t">@CoS 비서실장 / PMO</div><div class="d">라우팅 · 스쿼드 차출·배분 · 스프린트 · 대시보드</div></div>
+    <div class="box gov"><div class="t">@CLO 학습진화실</div><div class="d">자기진화 · 위키 Lint · 승격 판정</div></div>
+  </div></div>
+</div>
+
+<!-- 3 조직 -->
+<div class="layer">
+  <div class="ltag">③ 조직<br>(상시)</div>
+  <div class="lbody">
+    <div class="row">
+      <div class="box dept d-str"><div class="t">@STR 전략기획</div><div class="d">전략·신사업·재무</div></div>
+      <div class="box dept d-hr"><div class="t">@HR HR컨설팅 ⭐</div><div class="d">8팀원 (스킬·장애인·문화·OKR·애널리틱스·AX…)</div></div>
+      <div class="box dept d-res"><div class="t">@RES 리서치</div><div class="d">시장·데이터·위키사서</div></div>
+      <div class="box dept d-pt"><div class="t">@PT 제품기술 🚀</div><div class="d">PM·FE·BE·모바일·DevOps·QA</div></div>
+      <div class="box dept d-gtm"><div class="t">@GTM 그로스</div><div class="d">브랜드·콘텐츠·제안·영업</div></div>
+      <div class="box dept d-del"><div class="t">@DEL 딜리버리</div><div class="d">보고서·덱·비주얼</div></div>
+      <div class="box dept d-leg"><div class="t">@LEG 법무리스크</div><div class="d">계약·노동법·접근성</div></div>
+    </div>
+    <div class="note">↕ 매트릭스 세로축 = 부서(전문성의 영구적 집). 각 부서 = 부서장 + 팀원(서브에이전트) 로스터. 프로젝트 중 신설→검증→정규직 승격.</div>
+  </div>
+</div>
+
+<!-- 4 실행 -->
+<div class="layer">
+  <div class="ltag">④ 실행<br>(차출)</div>
+  <div class="lbody">
+    <div class="row">
+      <div class="chip"><span class="star">★</span> 장애인 HR솔루션 <span class="badge">@PT·HR·GTM·LEG·DEL</span></div>
+      <div class="chip"><span class="star">★</span> AX 진단도구 <span class="badge">@STR·RES·HR·PT</span></div>
+      <div class="chip"><span class="star">★</span> 상하수도 직무분석 <span class="badge">@HR·RES·DEL</span></div>
+      <div class="chip"><span class="star">★</span> 나라장터 웹앱 <span class="badge">@PT·DEL</span></div>
+    </div>
+    <div class="note">↔ 매트릭스 가로축 = 프로젝트 스쿼드. 부서에서 cross-functional 차출, 종료 시 해산. 같은 부서가 여러 프로젝트 동시 투입.</div>
+  </div>
+</div>
+
+<!-- 5 프로세스 -->
+<div class="layer">
+  <div class="ltag">⑤ 프로세스</div>
+  <div class="lbody"><div class="sprint">
+    <span class="step">1 Frame</span><span class="arr">→</span>
+    <span class="step">2 Plan</span><span class="arr">→</span>
+    <span class="step">3 Produce</span><span class="arr">→</span>
+    <span class="step">4 Critique <span class="badge">@BAR</span></span><span class="arr">→</span>
+    <span class="step">5 Validate</span><span class="arr">→</span>
+    <span class="step">6 Deliver <span class="badge">@DEL</span></span><span class="arr">→</span>
+    <span class="step">7 Learn <span class="badge">@CLO→위키</span></span>
+  </div></div>
+</div>
+
+<!-- 6 지식·현황 -->
+<div class="layer">
+  <div class="ltag">⑥ 지식<br>현황</div>
+  <div class="lbody"><div class="row">
+    <div class="box"><div class="t">🧠 Second Brain + LLM Wiki</div><div class="d">_wiki/ (index·log·schema·pages) · Ingest/Query/Lint · 제로베이스 금지</div></div>
+    <div class="box"><div class="t">📊 VRIN Cockpit</div><div class="d">cockpit.html · 프로젝트 단계·스쿼드·상태·부서 가동률 실시간</div></div>
+  </div></div>
+</div>
+
+<!-- 7 인프라 -->
+<div class="layer">
+  <div class="ltag">⑦ 인프라</div>
+  <div class="lbody"><div class="row">
+    <div class="box"><div class="t">멀티모델</div><div class="d">Claude(메인) · Codex(GPT) · Antigravity(Gemini)</div></div>
+    <div class="box"><div class="t">3-디바이스</div><div class="d">데스크탑 · 노트북 · 폰(수집)</div></div>
+    <div class="box"><div class="t">OneDrive SSOT</div><div class="d">vrin_AI_hub (git) · _core 단일원본 → 3벤더 sync</div></div>
+  </div></div>
+</div>
+
+<div class="evo">♻️ <b>자기진화 루프</b> (전 층 관통): 매 산출물 → @BAR 품질등급 · 매주 패턴수집 · 매월 정합성 · 매분기 @CLO 승격 — <b>에이전트 · 스킬 · 지식</b>이 프로젝트를 거칠수록 복리로 축적된다.</div>
+<div class="note">출처: oh-my-openagent · gstack · Karpathy(행동강령·LLM Wiki) · Anthropic 공식 · 닥터가드너 Second Brain · 이석주 대표 11년 실무</div>
+</body>
+</html>

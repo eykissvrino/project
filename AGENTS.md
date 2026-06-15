@@ -1,3 +1,5 @@
+<!-- 자동 생성: CLAUDE.md 미러 (Codex·Antigravity용). 원본은 CLAUDE.md를 수정하고 sync-agents 재실행 -->
+
 # VRIN AI Hub — 전역 컨텍스트 (얇은 헌법)
 
 > AI 도구가 이 워크스페이스에서 가장 먼저 읽는 1페이지. 상세는 `_core/`로 링크.

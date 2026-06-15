@@ -16,7 +16,7 @@ secrets.*
 .claude/transcripts/
 
 # === 프로젝트별 sync 복사본 (원본: _core/) ===
-# sync-tools.cmd 실행으로 복원 가능 → GitHub에 중복 저장 불필요
+# scripts/sync-tools.cmd 실행으로 복원 가능 → GitHub에 중복 저장 불필요
 projects/*/.claude/skills/
 projects/*/.claude/agents/
 projects/*/.claude/commands/
@@ -26,8 +26,17 @@ projects/*/.agent/workflows/
 # === 워크스페이스 루트 .claude (프로젝트 레벨 아닌 것) ===
 .claude/
 
+# === 에이전트 sync 복사본 (원본: _core/agents/v2/, scripts/sync-agents.py로 복원) ===
+# Antigravity(.agent/) · Codex(.codex/) 미러 — git 중복 저장 불필요
+.agent/
+.codex/
+
 # === 데스크탑 셋업 (OneDrive로 동기화되므로 git 불필요) ===
 .desktop-setup/
+
+# === 자체 git·원격을 가진 독립 프로젝트 (허브에서 추적 안 함) ===
+# 나라장터 웹앱은 자체 저장소(github.com/eykissvrino/cnpncs)로 독립 관리
+projects/P2026-004_나라장터모니터링_웹앱/
 
 # === archive 내 레거시 프로젝트 (git submodule 충돌 방지) ===
 archive/_archived_*/
@@ -65,3 +74,25 @@ __pycache__/
 .~lock.*
 ~$*
 nul
+
+# === 대용량 원시자료 (>50MB, GitHub 100MB 제한·저장소 비대화 방지) ===
+# 원본은 OneDrive로 동기화됨. git 추적만 제외. (대괄호는 glob * 로 표기)
+/projects/P0000-000_AI_B2B사업/01_입력자료/AIAX_관련자료/*The_LENS_2025-10*_주요국_120개_핵심_사례로_본_2025_글로벌_AI_정책_동향.pdf
+/projects/P0000_001_월인가술빚는날/00_관리/사업 행정 관리/03_월인가 술 빚는날_로고/월인가 술 빚는 날 최종원본.pdf
+/projects/P2026-003_2026년_선도기업_직무디자인_연구용역/01_입력자료/2026/02_보고회/01_착수보고회/*대우인력경영컨설팅* 2026년 선도기업 전략직종 직무개발 직무디자인 연구용역_착수보고회_260518.pptx
+/projects/P2026-003_2026년_선도기업_직무디자인_연구용역/04_산출물/01_성불복지회/00_기업정보/성불복지회_기관소개_data/성불복지회 시설 소개자료.zip
+/projects/P2026-003_2026년_선도기업_직무디자인_연구용역/04_산출물/01_성불복지회/00_기업정보/성불복지회_기관소개_data/소개자료/명륜종합복지관 사업안내서.pdf
+/projects/P2026-005_시앤피컨설팅_직업능력컨설팅본부_홈페이지구축/03_작업실/site
+/projects/P2026-008_KTR 훈련로드맵/02_지식리서치/99_참고자료/AIAX_관련자료/*The_LENS_2025-10*_주요국_120개_핵심_사례로_본_2025_글로벌_AI_정책_동향.pdf
+/projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/01_글로벌기업환경과윤리/01_글로벌기업환경과윤리.zip
+/projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리.pdf
+/projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재.pdf
+/projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재_12장_재무제표 분석.pdf
+/projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재_2~3장_회계순환과정.pdf
+/projects/P2026-009_MBA_Study/04_산출물/T&L 컨설팅 보고서.pptx
+/projects/P2026-009_MBA_Study/04_산출물/도일에코텍 컨설팅 보고서.pptx
+/projects/P2026-010_국가데이터처_직업정보 프레임워크 연구/03_작업실/국가데이터처_2026년_직업정보 프레임워크 연구/01_data_collection/00_external_references/직업정보 관련 참고자료_국내/한국직업사전_2020년_통합본 제5판/2020 한국직업사전 통합본 제5판.pdf
+/projects/P2026-010_국가데이터처_직업정보 프레임워크 연구/03_작업실/국가데이터처_2026년_직업정보 프레임워크 연구/03_NLP_analysis/TEST1/cache/embeddings.npy
+/projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/AIAX_관련자료.zip
+/projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/AIAX_관련자료/*The_LENS_2025-10*_주요국_120개_핵심_사례로_본_2025_글로벌_AI_정책_동향.pdf
+/projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/NCS정보망DB(대분류별,2026년2월).xlsx
