@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>제안 배경 → 추진 목적 논리구조 v0.1</title>
+<style>
+  :root {
+    --navy:#1B3A57;
+    --navy-deep:#0F2438;
+    --blue:#3A6EA5;
+    --blue-soft:#5B86B5;
+    --light:#E8F0F8;
+    --green:#A8D5BA;
+    --green-soft:#E6F3EC;
+    --gold:#C9A24A;
+    --ink:#1A1A1A;
+    --gray:#5B6573;
+    --gray-line:#D6DCE3;
+    --bg:#F4F6FA;
+    --white:#FFFFFF;
+  }
+  * { box-sizing:border-box; }
+  body {
+    font-family:'Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    margin:0;
+    padding:24px 32px 48px;
+    line-height:1.5;
+  }
+
+  /* ─── 상단 헤더 ─────────────────────────────────────────── */
+  .doc-header {
+    border-bottom:3px solid var(--navy);
+    padding-bottom:14px;
+    margin-bottom:24px;
+  }
+  .doc-header .crumb {
+    color:var(--blue);
+    font-size:12px;
+    letter-spacing:1px;
+    margin-bottom:4px;
+  }
+  .doc-header h1 {
+    margin:0;
+    font-size:24px;
+    color:var(--navy);
+    font-weight:800;
+  }
+  .doc-header .sub {
+    margin-top:6px;
+    color:var(--gray);
+    font-size:13px;
+  }
+
+  /* ─── 섹션 공통 ────────────────────────────────────────── */
+  section { margin-bottom:28px; }
+  h2.sec-title {
+    font-size:15px;
+    color:var(--white);
+    background:var(--navy);
+    padding:8px 14px;
+    margin:0 0 14px 0;
+    display:inline-block;
+    letter-spacing:0.5px;
+  }
+  h2.sec-title .num {
+    color:var(--gold);
+    margin-right:8px;
+    font-weight:800;
+  }
+
+  /* ─── 1) 전체 흐름도 ───────────────────────────────────── */
+  .flow {
+    display:grid;
+    grid-template-columns:1fr 30px 1fr 30px 1fr 30px 1.3fr;
+    gap:0;
+    align-items:stretch;
+  }
+  .flow-step {
+    background:var(--white);
+    border:2px solid var(--blue);
+    border-radius:6px;
+    padding:14px 12px;
+    text-align:center;
+    position:relative;
+  }
+  .flow-step .label {
+    font-size:11px;
+    color:var(--blue);
+    letter-spacing:1px;
+    font-weight:700;
+  }
+  .flow-step .title {
+    font-size:14px;
+    color:var(--navy);
+    font-weight:800;
+    margin-top:4px;
+  }
+  .flow-step .desc {
+    font-size:11px;
+    color:var(--gray);
+    margin-top:6px;
+    line-height:1.4;
+  }
+  .flow-step.destination {
+    background:var(--navy);
+    border-color:var(--navy);
+  }
+  .flow-step.destination .label { color:var(--gold); }
+  .flow-step.destination .title { color:var(--white); }
+  .flow-step.destination .desc { color:var(--light); }
+  .flow-arrow {
+    align-self:center;
+    font-size:24px;
+    color:var(--blue);
+    text-align:center;
+    font-weight:300;
+  }
+
+  /* ─── 2) 슬라이드 3장 카드 ─────────────────────────────── */
+  .slides {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+  }
+  .slide-card {
+    background:var(--white);
+    border:1px solid var(--gray-line);
+    border-top:4px solid var(--blue);
+    border-radius:4px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+  }
+  .slide-card .slide-no {
+    font-size:11px;
+    color:var(--blue);
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .slide-card .q {
+    font-size:14px;
+    color:var(--navy);
+    font-weight:800;
+    margin:6px 0 10px;
+    line-height:1.4;
+    border-bottom:1px dashed var(--gray-line);
+    padding-bottom:10px;
+  }
+  .slide-card .msg {
+    background:var(--light);
+    padding:10px 12px;
+    border-left:3px solid var(--blue);
+    font-size:12.5px;
+    color:var(--ink);
+    line-height:1.5;
+    margin-bottom:10px;
+  }
+  .slide-card .msg b { color:var(--navy); }
+  .slide-card .block-title {
+    font-size:11px;
+    color:var(--blue);
+    font-weight:700;
+    margin:8px 0 4px;
+    letter-spacing:0.5px;
+  }
+  .slide-card ul {
+    margin:0;
+    padding-left:18px;
+    font-size:11.5px;
+    color:var(--ink);
+    line-height:1.55;
+  }
+  .slide-card ul li { margin-bottom:2px; }
+  .slide-card .src {
+    font-size:10px;
+    color:var(--gray);
+    margin-top:auto;
+    padding-top:8px;
+    border-top:1px dotted var(--gray-line);
+    line-height:1.4;
+  }
+
+  /* ─── 3) 도착점: 추진 목적·전략·과제 매트릭스 ─────────────── */
+  .destination {
+    background:var(--white);
+    border:2px solid var(--navy);
+    border-radius:6px;
+    padding:20px;
+  }
+  .dest-purpose-row {
+    display:grid;
+    grid-template-columns:80px 1fr;
+    gap:0;
+    margin-bottom:12px;
+  }
+  .dest-label {
+    background:var(--navy);
+    color:var(--white);
+    font-weight:700;
+    font-size:13px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 0;
+  }
+  .dest-purpose {
+    background:var(--navy-deep);
+    color:var(--white);
+    padding:14px 20px;
+    font-size:15px;
+    font-weight:700;
+    line-height:1.55;
+    text-align:center;
+  }
+  .dest-strategy-row {
+    display:grid;
+    grid-template-columns:80px 1fr 1fr 1fr;
+    gap:0;
+    margin-bottom:0;
+  }
+  .strategy-cell {
+    color:var(--white);
+    text-align:center;
+    padding:12px 10px;
+    font-size:13px;
+    font-weight:700;
+    border-left:1px solid rgba(255,255,255,0.25);
+  }
+  .strategy-cell.renew { background:var(--blue-soft); }
+  .strategy-cell.develop { background:var(--blue); }
+  .strategy-cell.scale { background:var(--navy); }
+  .strategy-cell .tag {
+    display:block;
+    font-size:11px;
+    color:var(--gold);
+    letter-spacing:1px;
+    margin-bottom:2px;
+    font-weight:800;
+  }
+  .dest-task-row {
+    display:grid;
+    grid-template-columns:80px 1fr 1fr 1fr;
+    gap:0;
+  }
+  .task-col {
+    border:1px solid var(--gray-line);
+    border-top:none;
+    padding:10px;
+    background:var(--white);
+  }
+  .task-block {
+    background:var(--green-soft);
+    border-left:3px solid var(--green);
+    padding:6px 8px;
+    font-size:11.5px;
+    font-weight:700;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .task-col ul {
+    margin:4px 0 10px;
+    padding-left:16px;
+    font-size:10.5px;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .task-col ul li { margin-bottom:1px; }
+
+  /* ─── 4) 슬라이드 → 추진 매핑 표 ────────────────────────── */
+  .mapping {
+    background:var(--white);
+    border:1px solid var(--gray-line);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .mapping table {
+    width:100%;
+    border-collapse:collapse;
+    font-size:11.5px;
+  }
+  .mapping th {
+    background:var(--navy);
+    color:var(--white);
+    font-weight:700;
+    padding:9px 12px;
+    text-align:left;
+    font-size:12px;
+  }
+  .mapping td {
+    padding:9px 12px;
+    border-top:1px solid var(--gray-line);
+    vertical-align:top;
+    line-height:1.5;
+  }
+  .mapping td.from {
+    width:34%;
+    background:var(--light);
+    color:var(--navy);
+    font-weight:700;
+  }
+  .mapping td .target {
+    display:inline-block;
+    background:var(--green-soft);
+    color:var(--navy);
+    font-weight:700;
+    padding:1px 6px;
+    margin-right:4px;
+    font-size:10.5px;
+    border-radius:2px;
+  }
+
+  /* ─── 5) Footer 가이드 ─────────────────────────────────── */
+  .footer-note {
+    margin-top:18px;
+    padding:12px 14px;
+    background:var(--navy-deep);
+    color:var(--light);
+    font-size:11.5px;
+    line-height:1.6;
+    border-radius:4px;
+  }
+  .footer-note .pill {
+    display:inline-block;
+    background:var(--gold);
+    color:var(--navy-deep);
+    font-weight:800;
+    padding:1px 8px;
+    font-size:10.5px;
+    margin-right:6px;
+    border-radius:2px;
+    letter-spacing:0.5px;
+  }
+
+  /* ─── 인쇄(PPT 변환) 시 ───────────────────────────────── */
+  @media print {
+    body { background:var(--white); padding:0; }
+    section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ────────── 상단 헤더 ────────── -->
+<div class="doc-header">
+  <div class="crumb">정성제안서 §Ⅰ. 제안개요 — 1. 제안의 목적 및 범위 · 제안 배경 논리구조</div>
+  <h1>제안 배경 → 추진 목적 논리구조 (v0.1)</h1>
+  <div class="sub">AX 환경변화 → 일터 재편 → STEP의 응답 → <b style="color:var(--navy)">본 사업 추진 목적·전략·과제</b> 까지의 단일 논리선</div>
+</div>
+
+<!-- ────────── 1) 전체 흐름도 ────────── -->
+<section>
+  <h2 class="sec-title"><span class="num">01</span>전체 논리 흐름 (Single Storyline)</h2>
+  <div class="flow">
+    <div class="flow-step">
+      <div class="label">SLIDE 1</div>
+      <div class="title">무엇이 변화하는가</div>
+      <div class="desc">AI 대전환(AX) — 국가·산업·정책의 동시 가속</div>
+    </div>
+    <div class="flow-arrow">▶</div>
+    <div class="flow-step">
+      <div class="label">SLIDE 2</div>
+      <div class="title">일터는 어떻게 바뀌는가</div>
+      <div class="desc">직무 단위 → 직무 × AI 결합 단위</div>
+    </div>
+    <div class="flow-arrow">▶</div>
+    <div class="flow-step">
+      <div class="label">SLIDE 3</div>
+      <div class="title">STEP은 무엇을 해야 하는가</div>
+      <div class="desc">SLR 고도화 + AX 융합형 신규 과목 도출</div>
+    </div>
+    <div class="flow-arrow">▶</div>
+    <div class="flow-step destination">
+      <div class="label">DESTINATION</div>
+      <div class="title">추진 목적·전략·과제</div>
+      <div class="desc">목적 1개 + 전략 3축(Renew·Develop·Scale) + 과제 7개</div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── 2) 슬라이드 3장 카드 ────────── -->
+<section>
+  <h2 class="sec-title"><span class="num">02</span>슬라이드 3장 — 헤더 질문 · 핵심 메시지 · 본문 구성</h2>
+  <div class="slides">
+    <!-- Slide 1 -->
+    <div class="slide-card">
+      <div class="slide-no">SLIDE 1</div>
+      <div class="q">Q. 지금 우리 사회에서 무엇이 변화하고 있는가?</div>
+      <div class="msg">
+        인공지능은 더 이상 IT 분야 한정 기술이 아니다. <b>산업·공공·사회·국방을 아우르는 AI 대전환(AX)</b>이 진행 중이다.
+      </div>
+      <div class="block-title">① AX 공식 정의</div>
+      <ul>
+        <li>특정 분야에 한정된 AI 활용을 넘어, 산업·공공·사회·지역·국방의 국가 전반 AI 대전환 (과기정통부)</li>
+      </ul>
+      <div class="block-title">② 글로벌 가속</div>
+      <ul>
+        <li>OECD AI 원칙 기반 한국 정책 정비 (2025)</li>
+        <li>주요국 120개 핵심 사례 — 정책·인프라·인재 3축</li>
+        <li>NRC-NST "AI 3대 강국" 국가전략</li>
+      </ul>
+      <div class="block-title">③ 국내 가속</div>
+      <ul>
+        <li>AI 기반 스마트제조혁신 3.0 (산업부, 2025.10)</li>
+        <li>제조AI 확산 TF · M.AX 얼라이언스</li>
+        <li>산업단지 M.AX · AI 로봇 규제 완화</li>
+      </ul>
+      <div class="src">Source: 과기정통부 · NRC-NST · 산업부 보도자료 · The LENS 2025-10</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-card">
+      <div class="slide-no">SLIDE 2</div>
+      <div class="q">Q. AX는 산업과 일터를 어떻게 바꾸고 있는가?</div>
+      <div class="msg">
+        기존 직무는 AI와 결합해 빠르게 재편되고, AI 결합형 신직무가 등장. <b>직업훈련 수요가 "직무 단위" → "직무 × AI 결합 단위"</b>로 이동.
+      </div>
+      <div class="block-title">① 산업 AX 확산</div>
+      <ul>
+        <li>제조 AX — M.AX 얼라이언스, 스마트제조 3.0 (KIAT·KPMG)</li>
+        <li>공공 AX — 범정부 혁신, 정부 AI 서비스 사례집 (삼성SDS)</li>
+        <li>R&amp;D AX — 화학·바이오 글로벌 기관 적용 (케미브리프)</li>
+        <li>거버넌스 — AI 전략 예측·선제 거버넌스</li>
+      </ul>
+      <div class="block-title">② 일터·고용 재편</div>
+      <ul>
+        <li>제조 디지털 전환의 고용 영향 (KLI 2025-13)</li>
+        <li>2026 HR 트렌드 — AI 기반 업무 재설계 (딜로이트)</li>
+        <li>기업 AI 활용 — 직무·거버넌스·인프라 동시 재편</li>
+        <li>AX 인재 패러다임 — 자격·역량 체계 갱신 (양희태)</li>
+      </ul>
+      <div class="src">Source: KIAT · 삼정KPMG · 삼성SDS · 케미브리프 · KLI · 딜로이트 · 양희태</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-card">
+      <div class="slide-no">SLIDE 3</div>
+      <div class="q">Q. 그렇다면 한기대 STEP은 무엇을 해야 하는가?</div>
+      <div class="msg">
+        STEP은 국내 평생직업능력개발의 콘텐츠 표준. <b>SLR 고도화 + AX 융합형 신규 과목 도출</b>로 변화에 응답해야 한다 → 본 사업의 추진 목적.
+      </div>
+      <div class="block-title">① STEP의 자산 · 현 과제</div>
+      <ul>
+        <li>SLR — 10대 NCS 대분류 학습 로드맵</li>
+        <li>기개발 2,586개 (이러닝 2,397 + 가상 189)</li>
+        <li>현 과제 — AX 환경 반영 갱신 + 신규 분야 확장</li>
+      </ul>
+      <div class="block-title">② RFP가 정의한 응답</div>
+      <ul>
+        <li>평생 100과목 (10대 NCS 대분류)</li>
+        <li>디지털·첨단 100과목 (21대 직종)</li>
+        <li><b>융합(AI+X) 200과목</b> — AX·GX·안전(로봇)</li>
+        <li>= 신규 <b>400과목</b> + SLR 매뉴얼</li>
+      </ul>
+      <div class="block-title">③ 본 사업의 결말 = 추진 목적</div>
+      <ul>
+        <li>SLR 고도화로 환경변화 추적 능력 내재화</li>
+        <li>AI+X 200과목으로 직무×AI 수요 대응</li>
+        <li>27·28년 후속사업의 출발점 (RFP §I-6)</li>
+      </ul>
+      <div class="src">Source: 한기대 RFP §II-1 / §I-6 / 2025년 결과물 Master DB</div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── 3) 도착점: 추진 목적·전략·과제 매트릭스 ────────── -->
+<section>
+  <h2 class="sec-title"><span class="num">03</span>도착점 — 본 사업 추진 목적 · 전략 · 과제 (Renew · Develop · Scale)</h2>
+  <div class="destination">
+
+    <!-- 목적 -->
+    <div class="dest-purpose-row">
+      <div class="dest-label">목적</div>
+      <div class="dest-purpose">
+        AI·디지털 전환 시대에 필요한 STEP 학습 로드맵(SLR) 고도화 및<br>
+        STEP 10대 산업 분야 × AX 융합형 신규과목 도출
+      </div>
+    </div>
+
+    <!-- 추진 전략 -->
+    <div class="dest-strategy-row">
+      <div class="dest-label">추진<br>전략</div>
+      <div class="strategy-cell renew">
+        <span class="tag">RENEW</span>
+        1. STEP 학습 로드맵(SLR) 최신화
+      </div>
+      <div class="strategy-cell develop">
+        <span class="tag">DEVELOP</span>
+        2. 수요조사 및 신규과목 도출 체계화
+      </div>
+      <div class="strategy-cell scale">
+        <span class="tag">SCALE</span>
+        3. AX 시대 SLR 고도화
+      </div>
+    </div>
+
+    <!-- 추진 과제 -->
+    <div class="dest-task-row">
+      <div class="dest-label">추진<br>과제</div>
+
+      <!-- Renew -->
+      <div class="task-col">
+        <div class="task-block">1-1. NCS·SQF 개편 및 신규 개발 내용 최신화</div>
+        <ul>
+          <li>산업인력공단·ISC 등 유관기관 최신 자료 확보</li>
+          <li>기개발 2,586개(이러닝 2,397·가상 189) 과목 분석 및 최신 NCS 능력단위 매핑</li>
+          <li>미활용 능력단위 도출</li>
+        </ul>
+        <div class="task-block">1-2. Master DB + SLR 최신화 및 고도화</div>
+        <ul>
+          <li>Master DB 1차 업데이트</li>
+          <li>STEP 10대 산업 분야별 SLR 업데이트</li>
+          <li>SLR 고도화 방안 마련 (AI 활용 자동화 등)</li>
+        </ul>
+      </div>
+
+      <!-- Develop -->
+      <div class="task-col">
+        <div class="task-block">2-1. NCS 세분류 우선순위 도출 (수요분석 + 설문조사)</div>
+        <ul>
+          <li>NCS 세분류 정량 Data 기반 수요조사</li>
+          <li>NCS 세분류 정성 Data 기반 수요조사</li>
+          <li>NCS 세분류 설문조사 (학습자·기업·기관)</li>
+        </ul>
+        <div class="task-block">2-2. NCS 능력단위 우선순위 도출</div>
+        <ul>
+          <li>NCS 세분류 우선순위 능력단위 풀 추출</li>
+          <li>정성 + 적합성 지표 신규 개발 우선순위 도출</li>
+          <li>능력단위별 과목 유형 (E / V / EV / AX) 설정</li>
+        </ul>
+        <div class="task-block">2-3. 신규 과목 도출 및 과목개요서 개발</div>
+        <ul>
+          <li>평생·디지털 분야 : 각 100개 과목개요서</li>
+          <li>융합(AI+X) 분야 : 200개 과목개요서 — 산업 도메인 능력단위 Skill + AI 스킬셋 융합</li>
+        </ul>
+      </div>
+
+      <!-- Scale -->
+      <div class="task-col">
+        <div class="task-block">3-1. AI 활용 자동화 및 DB 자산화 방안 마련</div>
+        <ul>
+          <li>AI 활용 STEP Master DB 자동화 방안 — Master DB 검증 AI 도구 / 신규 과목 Master DB 자동 반영 AI 도구</li>
+          <li>STEP 10대 산업분야 — AX 융합 스킬셋 DB 자산화 방안 마련</li>
+        </ul>
+        <div class="task-block">3-2. SLR 체계적 관리를 위한 매뉴얼 업데이트</div>
+        <ul>
+          <li>SLR 관리 요소(로드맵·DB·과목 세부정보)별 효율적 관리 방안</li>
+          <li>NCS 능력단위 — AX 스킬셋 융합 내용 관리 가이드</li>
+          <li>STEP DB 지속 활용 · AI 활용 내용 추가 등</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ────────── 4) 슬라이드 → 추진 매핑 ────────── -->
+<section>
+  <h2 class="sec-title"><span class="num">04</span>슬라이드 근거 ↔ 추진 목적·과제 정합 매핑</h2>
+  <div class="mapping">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:34%">슬라이드의 근거</th>
+          <th>도착점에서의 직접 연결</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="from">Slide 1 — AX(국가·산업·정책) 동시 가속</td>
+          <td>
+            <span class="target">목적</span> "AI·디지털 전환 시대" 라는 시점 정의의 근거.
+            <span class="target">Scale 3-1</span> <span class="target">Scale 3-2</span> — SLR을 AX 환경에서 운영 가능한 형태로 갱신할 필요성.
+          </td>
+        </tr>
+        <tr>
+          <td class="from">Slide 2 — 직무 단위 → 직무 × AI 결합 단위</td>
+          <td>
+            <span class="target">목적</span> "10대 산업 분야 × AX 융합형 신규과목 도출" 의 직접 근거.
+            <span class="target">Develop 2-2</span> 능력단위별 과목 유형 (E/V/EV/<b>AX</b>) 도입의 정당성.
+            <span class="target">Develop 2-3</span> 융합(AI+X) 200과목 — 산업 도메인 능력단위 Skill + AI 스킬셋 융합의 근거.
+          </td>
+        </tr>
+        <tr>
+          <td class="from">Slide 3 — STEP의 현 자산(2,586개) · RFP의 응답(400과목)</td>
+          <td>
+            <span class="target">Renew 1-1</span> <span class="target">Renew 1-2</span> 기개발 2,586개 · Master DB 갱신 · SLR 최신화의 직접 근거.
+            <span class="target">Develop 2-1</span> NCS 세분류 우선순위 도출 — RFP의 평생·디지털·융합 분야 분류와 연결.
+            <span class="target">Scale</span> 27·28년 후속사업의 출발점 — 매뉴얼·자동화 DB 자산화.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ────────── 5) PPT 변환 가이드 ────────── -->
+<section>
+  <h2 class="sec-title"><span class="num">05</span>PPT 변환 가이드 (시각 디자인 톤)</h2>
+  <div class="footer-note">
+    <div style="margin-bottom:6px"><span class="pill">슬라이드 비율</span> 16:9 가로, 작년 시앤피와 동일 (KOREATECH 톤)</div>
+    <div style="margin-bottom:6px"><span class="pill">컬러 팔레트</span> 네이비 #1B3A57(헤더·도착점) · 블루 #3A6EA5(액센트) · 옅은 그린 #A8D5BA(추진 과제 블록) · 화이트 본문</div>
+    <div style="margin-bottom:6px"><span class="pill">슬라이드 1</span> 좌상 큰 키워드 "AX" 5분할 도넛 + 우측 3단 카드(정의·글로벌·국내) · 하단 인사이트 1줄 배너</div>
+    <div style="margin-bottom:6px"><span class="pill">슬라이드 2</span> 좌측 4단 흐름(제조→공공→R&amp;D→거버넌스) + 우측 4단 흐름(직무→분해→AI 결합→신직무) · 하단에서 합쳐지는 V자 구도</div>
+    <div style="margin-bottom:6px"><span class="pill">슬라이드 3</span> 좌측 SLR 10대 도식 · 중앙 "AX 시대의 변화 반영" 화살표 · 우측 <b>400 신규 과목 분할 도넛(100·100·200)</b> + 하단 <b>추진 목적·전략·과제 매트릭스 1장</b></div>
+    <div style="margin-bottom:6px"><span class="pill">금지 표현</span> "혁신적 AI 솔루션" · "자체 LLM 활용" · "발주처 자력 운영" — v0.2 톤 가이드 준수</div>
+    <div><span class="pill">권장 표현</span> "RFP §II-1에서 명시한 ~" · "AX 시대의 ~을 반영하여" · "본 사업이 27·28년 후속사업의 출발점이 되도록 ~"</div>
+  </div>
+</section>
+
+</body>
+</html>

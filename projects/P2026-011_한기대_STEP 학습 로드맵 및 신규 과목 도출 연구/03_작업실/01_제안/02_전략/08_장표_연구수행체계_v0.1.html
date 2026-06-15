@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2026 한기대 STEP SLR — 장표: 연구 수행체계 v0.1</title>
+<style>
+  :root {
+    --navy-darker: #0A1F38;
+    --navy: #0B2748;
+    --navy-2: #143963;
+    --navy-3: #1F4F87;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-200: #DDE1E8;
+    --gray-300: #C9CED7;
+    --gray-500: #7C8696;
+    --gray-700: #3F4856;
+    --gray-900: #1B2330;
+    --step-bg: #F4F8FC;
+    --core-amber: #F0A93B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Pretendard", "Noto Sans KR", -apple-system, "Segoe UI", sans-serif;
+    background: #0E1726;
+    color: var(--gray-900);
+    line-height: 1.45;
+    padding: 24px;
+  }
+  .slide {
+    width: 1320px;
+    margin: 0 auto;
+    background: var(--navy-darker);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    color: #fff;
+  }
+  /* Topbar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 28px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .topbar .left { display: flex; align-items: center; gap: 14px; }
+  .topbar .tag {
+    background: var(--yellow);
+    color: var(--navy);
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .topbar .right { font-size: 11px; opacity: 0.85; text-align: right; }
+  /* Title */
+  .titlebar {
+    padding: 18px 28px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .titlebar h2 {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .titlebar .lede {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.55;
+  }
+  .titlebar .lede b { color: var(--yellow); }
+  .titlebar .lede em { color: var(--core-amber); font-style: normal; font-weight: 700; }
+
+  /* Main grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    padding: 18px 28px 22px;
+    gap: 14px;
+  }
+  .row-label {
+    color: rgba(255,255,255,0.55);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.04);
+    border-radius: 4px;
+    padding: 14px 0;
+    text-align: center;
+  }
+  /* Stages */
+  .stages {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    position: relative;
+  }
+  .stage {
+    background: var(--navy-2);
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    border-top: 3px solid var(--navy-3);
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);
+  }
+  .stage.core {
+    background: var(--core-amber);
+    color: var(--navy-darker);
+    border-top-color: var(--orange);
+  }
+  .stage .ref {
+    font-size: 10px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .stage.core .ref { opacity: 0.85; font-weight: 700; }
+  .stage .name {
+    font-size: 14.5px;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+  .stage .star {
+    position: absolute;
+    top: 6px;
+    right: 22px;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 1px 5px;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+  }
+  /* Step block */
+  .steps-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 4px; }
+  .stepbox {
+    background: var(--step-bg);
+    color: var(--navy-darker);
+    border-radius: 4px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .step {
+    padding: 9px 12px;
+    border-bottom: 1px dashed var(--gray-300);
+    position: relative;
+  }
+  .step:last-child { border-bottom: 0; }
+  .step .step-no {
+    display: inline-block;
+    background: var(--navy);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+  .stepbox.core .step .step-no { background: var(--orange); }
+  .step .step-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 3px;
+    line-height: 1.35;
+  }
+  .stepbox.core .step .step-title { color: var(--navy-darker); }
+  .step .step-desc {
+    font-size: 10.5px;
+    color: var(--gray-700);
+    line-height: 1.45;
+  }
+  /* Arrows between stages */
+  .stages::after, .steps-row::after {
+    /* no global arrows */
+  }
+  /* Outputs row */
+  .outputs-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .output {
+    background: rgba(31, 79, 135, 0.5);
+    border: 1px solid rgba(245, 197, 24, 0.25);
+    border-radius: 4px;
+    padding: 11px 12px;
+    color: #fff;
+  }
+  .output.core {
+    background: rgba(201, 122, 28, 0.25);
+    border-color: var(--core-amber);
+  }
+  .output .o-label {
+    font-size: 10px;
+    color: var(--yellow);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .output.core .o-label { color: var(--core-amber); }
+  .output ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .output li {
+    font-size: 10.8px;
+    color: rgba(255,255,255,0.88);
+    padding: 2px 0 2px 9px;
+    position: relative;
+    line-height: 1.45;
+  }
+  .output li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background: var(--yellow);
+    border-radius: 50%;
+  }
+  .output li b { color: #fff; font-weight: 700; }
+  /* Bottom strip (4 promises) */
+  .promises {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    background: rgba(255,255,255,0.04);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 12px 28px;
+  }
+  .promise {
+    padding: 4px 12px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .promise:last-child { border-right: 0; }
+  .promise .badge {
+    background: var(--yellow);
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .promise .text {
+    color: rgba(255,255,255,0.85);
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+  .promise .text b { color: #fff; font-weight: 700; }
+  /* Footer */
+  .footer {
+    padding: 10px 28px;
+    background: var(--navy);
+    color: rgba(255,255,255,0.65);
+    font-size: 11px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer b { color: var(--yellow); }
+</style>
+</head>
+<body>
+
+<div class="slide">
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="left">
+      <span class="tag">연구 수행체계</span>
+      <span>RFP §II-2 6대 절차 (가·나·다·라·마·바) 충실 수행 모델</span>
+    </div>
+    <div class="right">
+      Ⅱ. 제안 내용<br>
+      <span style="opacity:0.7;">2. 수행계획 및 방법</span>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="titlebar">
+    <h2>RFP 6대 절차 가·나·다·라·마·바 — 본 사업의 연구 수행체계</h2>
+    <div class="lede">
+      RFP §II-2 명시 <b>6대 절차 표기 그대로</b> 유지하며, <b>라 단계(능력단위)</b> 에서
+      <em>능력단위 스킬셋 도출 → STEP-AX 매핑 → 융합 200과목 자동 생성 → STEP SLR 자동 통합</em>을 본 사업 최대 차별점으로 수행함.
+      설문은 RFP §II-3 권고에 따라 <em>시나리오 B(세분류 단위)로 재배치</em>하여 능력단위 평가 결과 정밀도를 높임.
+    </div>
+  </div>
+
+  <!-- Stages grid -->
+  <div class="grid">
+    <div class="row-label">절차 (Stage)</div>
+    <div>
+      <div class="stages">
+        <div class="stage">
+          <div class="ref">RFP §II-2 가</div>
+          <div class="name">SLR 최신화</div>
+        </div>
+        <div class="stage">
+          <div class="ref">RFP §II-2 나</div>
+          <div class="name">NCS 세분류 수요분석</div>
+        </div>
+        <div class="stage core">
+          <div class="ref">RFP §II-2 다</div>
+          <div class="name">NCS 능력단위 분석</div>
+          <div class="star">★ 핵심</div>
+        </div>
+        <div class="stage">
+          <div class="ref">RFP §II-2 라</div>
+          <div class="name">설문조사 (재배치)</div>
+        </div>
+        <div class="stage">
+          <div class="ref">RFP §II-2 마</div>
+          <div class="name">과목개요서 제작</div>
+        </div>
+        <div class="stage">
+          <div class="ref">RFP §II-2 바</div>
+          <div class="name">연구결과 정리</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps row -->
+  <div class="grid" style="padding-top: 0;">
+    <div class="row-label">수행 체계 (Step)</div>
+    <div>
+      <div class="steps-row">
+        <!-- 가 -->
+        <div class="stepbox">
+          <div class="step">
+            <span class="step-no">Step 1</span>
+            <div class="step-title">SLR · NCS · SQF 최신화 W/S</div>
+            <div class="step-desc">2024.12.4 NCS 고시 + SQF 직접본 + ISC 발표본 반영</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 2</span>
+            <div class="step-title">기개발 매핑 + Master DB v0.5</div>
+            <div class="step-desc">기개발 2,586개 100% 매핑 + 미활용 능력단위 도출 + 검증 자동화</div>
+          </div>
+        </div>
+        <!-- 나 -->
+        <div class="stepbox">
+          <div class="step">
+            <span class="step-no">Step 3</span>
+            <div class="step-title">세분류 수요 평가 W/S</div>
+            <div class="step-desc">정량 11지표 + 정성 3지표 동시 평가 (분야 무관)</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 4</span>
+            <div class="step-title">N₁_pre 1차 후보 도출</div>
+            <div class="step-desc">결측치 처리(소분류 중앙값) → 상위 30% 약 240개 후보</div>
+          </div>
+        </div>
+        <!-- 다 (CORE) -->
+        <div class="stepbox core">
+          <div class="step">
+            <span class="step-no">Step 5</span>
+            <div class="step-title">능력단위 스킬셋 도출 W/S</div>
+            <div class="step-desc">NCS 능력단위요소별 스킬(S) 파싱 → 중복제거 → 핵심 5~10개 선별</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 6</span>
+            <div class="step-title">STEP-AX 매핑 + 분야 분류 + 트랙 처리</div>
+            <div class="step-desc">L2 12기능 매핑 매트릭스(●/○) → 평생·디지털 + 융합 트랙 분기</div>
+          </div>
+        </div>
+        <!-- 라 -->
+        <div class="stepbox">
+          <div class="step">
+            <span class="step-no">Step 7</span>
+            <div class="step-title">설문 표본 설계 W/S</div>
+            <div class="step-desc">학습자·기업·기관 표본 + 240개 세분류 단위 문항(시나리오 B)</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 8</span>
+            <div class="step-title">응답 가중치 + 상시 운영</div>
+            <div class="step-desc">응답률 25%+ 목표 · 가중치 모델 · 분기 사이클 상시 수요조사</div>
+          </div>
+        </div>
+        <!-- 마 -->
+        <div class="stepbox">
+          <div class="step">
+            <span class="step-no">Step 9</span>
+            <div class="step-title">과목 범위 확정 W/S</div>
+            <div class="step-desc">외부 전문가 + 발주처 검토 → 400과목 확정 (100+100+200)</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 10</span>
+            <div class="step-title">한기대 표준 양식 작성</div>
+            <div class="step-desc">회차 단위 · 능력단위요소 · 가상훈련 30개+ · E·V 연계 포인트</div>
+          </div>
+        </div>
+        <!-- 바 -->
+        <div class="stepbox">
+          <div class="step">
+            <span class="step-no">Step 11</span>
+            <div class="step-title">SLR 자동 통합 W/S</div>
+            <div class="step-desc">융합 과목 → 직무 × NCS 수준 SLR에 자동 배치 + 시스템 연계</div>
+          </div>
+          <div class="step">
+            <span class="step-no">Step 12</span>
+            <div class="step-title">매뉴얼화 + 다년 인계</div>
+            <div class="step-desc">4종 매뉴얼 + SLR 관리매뉴얼 + 27·28년 후속사업 인계 패키지</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Outputs row -->
+  <div class="grid" style="padding-top: 0;">
+    <div class="row-label">주요 산출물 (Output)</div>
+    <div>
+      <div class="outputs-row">
+        <div class="output">
+          <div class="o-label">OUTPUT · 가</div>
+          <ul>
+            <li><b>SLR 도식 v0.5</b> (10대 분야)</li>
+            <li><b>Master DB v0.5</b> (1식)</li>
+            <li>미활용 능력단위 리스트</li>
+          </ul>
+        </div>
+        <div class="output">
+          <div class="o-label">OUTPUT · 나</div>
+          <ul>
+            <li><b>세분류 1차 후보</b> N₁_pre 240개</li>
+            <li>정량·정성 평가 결과표</li>
+            <li>결측치 처리 매뉴얼</li>
+          </ul>
+        </div>
+        <div class="output core">
+          <div class="o-label">★ OUTPUT · 다 (핵심 자산)</div>
+          <ul>
+            <li><b>능력단위 스킬셋 DB</b> (~2,850개)</li>
+            <li><b>STEP-AX 매핑 매트릭스 v1.0</b></li>
+            <li>분야 분류 결과 (평생·디지털·융합)</li>
+          </ul>
+        </div>
+        <div class="output">
+          <div class="o-label">OUTPUT · 라</div>
+          <ul>
+            <li>설문 응답 <b>25%+ 표본</b></li>
+            <li>응답자 가중치 모델</li>
+            <li>상시 수요조사 운영 모델</li>
+          </ul>
+        </div>
+        <div class="output">
+          <div class="o-label">OUTPUT · 마</div>
+          <ul>
+            <li><b>과목개요서 400개</b></li>
+            <li>(평생 100 · 디지털 100 · 융합 200)</li>
+            <li>가상훈련 30개+ 포함</li>
+          </ul>
+        </div>
+        <div class="output">
+          <div class="o-label">OUTPUT · 바</div>
+          <ul>
+            <li>최종 보고서 20부</li>
+            <li><b>SLR 관리매뉴얼 1부</b></li>
+            <li>27·28년 동행 인계 패키지</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom 4 promises strip -->
+  <div class="promises">
+    <div class="promise">
+      <span class="badge">제도</span>
+      <span class="text"><b>가-3 SQF + 바 직능은행제 시범</b><br>제도연계 다년 활용</span>
+    </div>
+    <div class="promise">
+      <span class="badge">자동</span>
+      <span class="text"><b>가-4 Master DB + 바-1 SLR 자동 통합</b><br>시스템 연계 자동화</span>
+    </div>
+    <div class="promise">
+      <span class="badge">조사</span>
+      <span class="text"><b>라 시나리오 B + 다-2 융합 3지표</b><br>조사체계 개선</span>
+    </div>
+    <div class="promise">
+      <span class="badge">매뉴</span>
+      <span class="text"><b>4종 매뉴얼 + SLR 관리매뉴얼</b><br>매년 v2·v3 갱신</span>
+    </div>
+  </div>
+
+  <!-- Footer slogan -->
+  <div class="footer">
+    <b>한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27 · 28년 동행</b>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2. NCS 세분류 우선순위 도출 — Step 3·4 시각화</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #2C3440;
+    color: #E5EAF0;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px 60px;
+  }
+
+  /* ───────── Slide canvas (16:9 @ 1280×720) ───────── */
+  .slide {
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(180deg, #0E1F30 0%, #0A1828 100%);
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.45);
+    padding: 28px 40px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ───────── Top bar ───────── */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .module-chip {
+    background: linear-gradient(135deg, #1E5A7C 0%, #1B4D6A 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 7px 18px;
+    letter-spacing: 0.5px;
+  }
+  .question {
+    color: #9FB5C7;
+    font-size: 14px;
+    font-weight: 400;
+    flex: 1;
+  }
+  .question .q-mark { color: #5BAEC7; font-weight: 700; margin-right: 4px; }
+  .tab-indicator {
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    text-align: right;
+    color: #7B92A8;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .tab-indicator .tab-main { color: #B9CADB; }
+
+  /* ───────── Step title row ───────── */
+  .step-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+  }
+  .step-chip { color: #5BAEC7; font-weight: 700; font-size: 16px; letter-spacing: 0.5px; }
+  .step-title { color: #FFFFFF; font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+
+  /* ───────── Head message ───────── */
+  .head-message {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid #5BAEC7;
+    padding: 14px 20px;
+    color: #E8EFF5;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+  }
+  .head-message strong { color: #FFFFFF; font-weight: 600; }
+  .head-message .hl { color: #7DD3E8; font-weight: 600; }
+
+  /* ───────── Two-column main ───────── */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+  }
+  .col-panel {
+    background: #F7F9FB;
+    color: #1A2733;
+    padding: 16px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .col-header {
+    color: #1B4D6A;
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1B4D6A;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .col-header::before { content: "■"; color: #5BAEC7; font-size: 11px; }
+
+  /* ───────── Left: procedure steps ───────── */
+  .proc-step { display: flex; gap: 11px; margin-bottom: 10px; }
+  .proc-step:last-child { margin-bottom: 0; }
+  .proc-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: #1B4D6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+  .proc-body { flex: 1; min-width: 0; }
+  .proc-body h5 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0D2A45;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .proc-body ul { list-style: none; padding: 0; }
+  .proc-body ul li {
+    font-size: 12px;
+    color: #3D4A57;
+    line-height: 1.55;
+    padding-left: 8px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .proc-body ul li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: #5BAEC7;
+    font-weight: 700;
+  }
+
+  /* ───────── Right: 평가 구조 (Step 3) ───────── */
+  .score-frame {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .score-bar {
+    background: #FFFFFF;
+    border: 1px solid #C7D3DE;
+    padding: 10px 12px;
+  }
+  .score-bar .sb-title {
+    font-size: 10px;
+    color: #5BAEC7;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+  }
+  .score-bar .sb-meter {
+    height: 26px;
+    display: flex;
+    border: 1px solid #1B4D6A;
+  }
+  .score-bar .sb-meter .seg-quant {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    font-size: 11.5px;
+    font-weight: 700;
+    flex: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .score-bar .sb-meter .seg-qual {
+    background: #5BAEC7;
+    color: #FFFFFF;
+    font-size: 11.5px;
+    font-weight: 700;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .target-card {
+    background: linear-gradient(135deg, #0E1F30 0%, #1B4D6A 100%);
+    color: #FFFFFF;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .target-card .big {
+    font-size: 22px;
+    font-weight: 900;
+    color: #7DD3E8;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  .target-card .lbl {
+    font-size: 9.5px;
+    color: #B9CADB;
+    margin-top: 2px;
+    line-height: 1.3;
+  }
+  .target-card .split {
+    font-size: 10px;
+    color: #B9CADB;
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+
+  /* ───────── Indicator table ───────── */
+  .indicator-title {
+    font-size: 12px;
+    color: #1B4D6A;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top: 4px;
+  }
+  .ind-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+  .ind-table thead th {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 10px;
+  }
+  .ind-table thead th.cat-quant { background: #1B4D6A; }
+  .ind-table thead th.cat-qual { background: #5BAEC7; }
+  .ind-table tbody td {
+    padding: 3.5px 8px;
+    border-bottom: 1px solid #E1E7ED;
+    color: #2C3A48;
+    line-height: 1.3;
+  }
+  .ind-table tbody td.num {
+    width: 24px;
+    color: #5BAEC7;
+    font-weight: 700;
+    text-align: center;
+  }
+  .ind-table tbody td.weight {
+    width: 50px;
+    text-align: right;
+    font-weight: 600;
+    color: #1B4D6A;
+    font-size: 10px;
+  }
+  .ind-table tbody tr.qual td.num { color: #5BAEC7; }
+  .ind-table tbody tr.qual td { background: #F0F8FB; }
+
+  /* ───────── Step 4 right: 설문 대상 ───────── */
+  .survey-targets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .target-bx {
+    background: #FFFFFF;
+    border: 1px solid #C7D3DE;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .target-bx .icon {
+    font-size: 18px;
+    color: #5BAEC7;
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+  .target-bx .name {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #0D2A45;
+    margin-bottom: 4px;
+  }
+  .target-bx .desc {
+    font-size: 10px;
+    color: #4A5663;
+    line-height: 1.35;
+  }
+
+  /* ───────── 가중치 모델 ───────── */
+  .formula-box {
+    background: #FFFFFF;
+    border: 1px solid #C7D3DE;
+    padding: 11px 14px;
+    margin-bottom: 10px;
+  }
+  .formula-title {
+    font-size: 11px;
+    color: #1B4D6A;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .formula-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #0D2A45;
+    flex-wrap: wrap;
+  }
+  .formula-row .op { color: #5BAEC7; font-weight: 700; font-size: 13px; }
+  .formula-row .chip {
+    background: #EDF2F6;
+    color: #1B4D6A;
+    padding: 4px 9px;
+    font-weight: 600;
+    border: 1px solid #D6DEE6;
+    font-size: 10.5px;
+  }
+  .formula-row .chip.q { background: #1B4D6A; color: #FFFFFF; border-color: #1B4D6A; }
+  .formula-row .chip.s { background: #5BAEC7; color: #FFFFFF; border-color: #5BAEC7; }
+  .formula-row .chip.r { background: #4A6478; color: #FFFFFF; border-color: #4A6478; }
+  .formula-note {
+    font-size: 9.5px;
+    color: #6B7B8C;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* ───────── Priority sample table ───────── */
+  .pri-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+  .pri-table thead th {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 9.5px;
+  }
+  .pri-table tbody td {
+    padding: 3.5px 8px;
+    border-bottom: 1px solid #E1E7ED;
+    color: #2C3A48;
+    line-height: 1.3;
+  }
+  .pri-table tbody td.rank {
+    text-align: center;
+    font-weight: 700;
+    color: #5BAEC7;
+    width: 28px;
+  }
+  .pri-table tbody td.score {
+    text-align: right;
+    font-weight: 600;
+    color: #1B4D6A;
+    width: 42px;
+  }
+  .pri-table tbody td.div {
+    background: #5BAEC7;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    width: 50px;
+    font-size: 9.5px;
+  }
+  .pri-table tbody td.div.d-digital { background: #4A6478; }
+
+  /* ───────── Bottom row ───────── */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 16px;
+    margin-top: 14px;
+    flex-shrink: 0;
+  }
+  .bottom-box {
+    background: rgba(91, 174, 199, 0.10);
+    border-left: 3px solid #5BAEC7;
+    padding: 11px 16px 12px;
+  }
+  .bottom-box .bb-title {
+    color: #7DD3E8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .bottom-box .bb-list { display: flex; gap: 18px; flex-wrap: wrap; }
+  .bottom-box .bb-list .bb-item {
+    color: #E5EAF0;
+    font-size: 12px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 10px;
+  }
+  .bottom-box .bb-list .bb-item::before {
+    content: "▸";
+    color: #5BAEC7;
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+  }
+  .bottom-box .bb-list .bb-item strong { color: #FFFFFF; font-weight: 600; }
+
+  .page-num {
+    position: absolute;
+    bottom: 14px;
+    right: 40px;
+    color: #5A7186;
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  @media print {
+    body { background: #FFFFFF; }
+    .deck { padding: 0; gap: 0; }
+    .slide { box-shadow: none; page-break-after: always; width: 100vw; height: 100vh; }
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- =============================================== -->
+  <!--  Slide 1.  Module 2 — Step 3                    -->
+  <!-- =============================================== -->
+  <section class="slide">
+    <div class="top-bar">
+      <div class="module-chip">Module 2</div>
+      <div class="question"><span class="q-mark">Q.</span>NCS 세분류 수요를 어떤 평가 체계로 측정할 것인가?</div>
+    </div>
+    <div class="tab-indicator">
+      <div class="tab-main">Ⅱ. 제안 내용</div>
+      <div>2. 과업 수행계획 및 방법</div>
+    </div>
+
+    <div class="step-title-row">
+      <span class="step-chip">Step 3.</span>
+      <span class="step-title">정량·정성 Data 기반 NCS 세분류 수요분석</span>
+    </div>
+
+    <div class="head-message">
+      기술·공학 10대 분야 NCS 세분류 <strong>796개</strong>(평생 651개·디지털·첨단 145개)를 대상으로,
+      자격·인력수급·STEP 실적 등 <span class="hl">11개 정량 지표(70점)</span>와
+      미래 수요·개발 필요성·시급성 등 <span class="hl">3개 정성 지표(30점)</span>를 종합 평가하여 분야별 세분류 수요 순위를 도출하고자 함.
+    </div>
+
+    <div class="main-grid">
+      <!-- Left: 수행 절차 -->
+      <div class="col-panel">
+        <div class="col-header">수행 절차</div>
+
+        <div class="proc-step">
+          <div class="proc-num">①</div>
+          <div class="proc-body">
+            <h5>평가 대상 확정 및 데이터 최신화</h5>
+            <ul>
+              <li>2024.12 고시 기준 NCS 10대 분야 세분류 796개 평가 대상 확정</li>
+              <li>신설 6개 세분류(데이터거래관리·SW공급망보안·모빌리티보안 등) 별도 평가 계획 수립</li>
+              <li>정량 데이터(자격·인력수급·STEP 실적) 최신화 — 매년 최신화 지표 + 3년 주기 지표 분리 운영</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">②</div>
+          <div class="proc-body">
+            <h5>정량평가 실시 (70점)</h5>
+            <ul>
+              <li>자격·인력수급·STEP 실적 등 11개 지표별 데이터 수집·전처리</li>
+              <li>NCS 세분류 ↔ 자격·직업 매칭 후 평가값 산출</li>
+              <li>평생/디지털·첨단 분야별 점수 분포 분석(평균/중앙값/표준편차)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">③</div>
+          <div class="proc-body">
+            <h5>정성평가 실시 (30점)</h5>
+            <ul>
+              <li>미래 수요·개발 필요성·개발 시급성 3개 지표</li>
+              <li>분야별 전문가 3인 평가 합산(만점 45점)</li>
+              <li>신설 세분류 별도 평가 후 전체 통합 → 세분류별 정성 점수 확정</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 적용 예시 -->
+      <div class="col-panel">
+        <div class="col-header">평가 체계 및 지표 구성</div>
+
+        <div class="score-frame">
+          <div class="score-bar">
+            <div class="sb-title">평가 점수 구성 (100점 만점)</div>
+            <div class="sb-meter">
+              <div class="seg-quant">정량 70점</div>
+              <div class="seg-qual">정성 30점</div>
+            </div>
+          </div>
+          <div class="target-card">
+            <div class="big">796<span style="font-size:14px;color:#5BAEC7;font-weight:700">개</span></div>
+            <div class="lbl">평가 대상 세분류</div>
+            <div class="split">평생 651 · 디지털 145</div>
+          </div>
+        </div>
+
+        <div class="indicator-title">14개 평가 지표 구성 (정량 11 + 정성 3)</div>
+        <table class="ind-table">
+          <thead>
+            <tr>
+              <th style="width:18px"></th>
+              <th colspan="2" class="cat-quant">정량 지표 (70점)</th>
+              <th style="width:50px;text-align:right" class="cat-quant">비중</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td colspan="2">훈련유형별 연평균 실시인원 수</td><td class="weight">7.2</td></tr>
+            <tr><td class="num">2</td><td colspan="2">훈련유형별 연평균 개설 과정 수</td><td class="weight">6.0</td></tr>
+            <tr><td class="num">3</td><td colspan="2">국가기술자격시험 응시자 수</td><td class="weight">6.5</td></tr>
+            <tr><td class="num">4</td><td colspan="2">취업자 수 연평균 성장률 전망</td><td class="weight">6.1</td></tr>
+            <tr><td class="num">5</td><td colspan="2">STEP 과정별 연평균 수강생 수</td><td class="weight">6.4</td></tr>
+            <tr><td colspan="4" style="text-align:center;color:#7B92A8;padding:3px;font-size:10px">… 외 6개 정량 지표 (향상/양성훈련 수요, 응시자 증가율 등) — 합계 70점</td></tr>
+            <tr class="qual"><td class="num">●</td><td colspan="2"><strong>정성 1.</strong> 미래 교육과정 수요 예상도</td><td class="weight">10</td></tr>
+            <tr class="qual"><td class="num">●</td><td colspan="2"><strong>정성 2.</strong> 교육과정 개발 필요성</td><td class="weight">10</td></tr>
+            <tr class="qual"><td class="num">●</td><td colspan="2"><strong>정성 3.</strong> 교육과정 개발 시급성</td><td class="weight">10</td></tr>
+          </tbody>
+        </table>
+
+        <div class="indicator-title" style="margin-top:8px">신설 세분류 별도 평가 대상 (2024.12 고시)</div>
+        <div style="font-size:10.5px;color:#3D4A57;line-height:1.5;background:#FFF7E1;padding:6px 10px;border-left:3px solid #EF9F27">
+          건설기계성능검사 · 의약품임상시험 · 데이터거래관리 · 정보보호제품 시험·평가 · <strong>SW공급망보안</strong> · <strong>모빌리티보안</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="bottom-row">
+      <div class="bottom-box">
+        <div class="bb-title">활용 방법론·도구</div>
+        <div class="bb-list">
+          <div class="bb-item"><strong>11개 지표 데이터 분석</strong> — Excel 기반 정량 평가 시트</div>
+          <div class="bb-item"><strong>전문가 평가 매트릭스</strong> — 직무정의·정량 순위 정보 사전 제공</div>
+          <div class="bb-item"><strong>통계 분석</strong> — 4분위 분포·평균·표준편차 비교</div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="bb-title">핵심 산출물</div>
+        <div class="bb-list">
+          <div class="bb-item">세분류 정량평가 결과표</div>
+          <div class="bb-item">세분류 정성평가 결과표</div>
+          <div class="bb-item">세분류 분야별 점수 분포 분석</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-num">- 18 -</div>
+  </section>
+
+
+  <!-- =============================================== -->
+  <!--  Slide 2.  Module 2 — Step 4                    -->
+  <!-- =============================================== -->
+  <section class="slide">
+    <div class="top-bar">
+      <div class="module-chip">Module 2</div>
+      <div class="question"><span class="q-mark">Q.</span>평가 결과와 설문조사를 어떻게 합쳐 최종 순위를 확정할 것인가?</div>
+    </div>
+    <div class="tab-indicator">
+      <div class="tab-main">Ⅱ. 제안 내용</div>
+      <div>2. 과업 수행계획 및 방법</div>
+    </div>
+
+    <div class="step-title-row">
+      <span class="step-chip">Step 4.</span>
+      <span class="step-title">NCS 세분류 우선순위 검토 및 확정</span>
+    </div>
+
+    <div class="head-message">
+      정량·정성 평가 결과를 합산하여 세분류 1차 순위를 도출하고,
+      <span class="hl">학습자·기업·기관 대상 설문조사 결과</span>를 반영함으로써
+      <strong>최종 우선순위표</strong>와 <strong>선정 근거 데이터</strong>를 확정하고자 함.
+    </div>
+
+    <div class="main-grid">
+      <!-- Left: 수행 절차 -->
+      <div class="col-panel">
+        <div class="col-header">수행 절차</div>
+
+        <div class="proc-step">
+          <div class="proc-num">①</div>
+          <div class="proc-body">
+            <h5>정량·정성 평가 결과 합산</h5>
+            <ul>
+              <li>분야별(평생/디지털·첨단) 세분류 정량(70) + 정성(30) 점수 합산</li>
+              <li>평가 결과 종합 후 분야별 1차 순위 도출</li>
+              <li>점수 분포·편중 구조 분석</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">②</div>
+          <div class="proc-body">
+            <h5>학습자·기업·기관 설문조사 실시</h5>
+            <ul>
+              <li>대상: STEP 수강생·잠재 학습자 / 산업별 협회·ISC·훈련기관 / HR 담당</li>
+              <li>문항: 수요 의향·시급성·활용 의도 (5점 척도)</li>
+              <li>온라인 설문 약 2주, 표본 약 2,000명 + 회수율 제고 방안</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">③</div>
+          <div class="proc-body">
+            <h5>종합 우선순위 확정 및 선정 근거 정리</h5>
+            <ul>
+              <li>평가 점수 + 설문 결과 가중치 적용 시뮬레이션 다수 (안) 도출</li>
+              <li>발주처 협의 통한 가중치 (안) 최종 확정</li>
+              <li>세분류 선정 근거 데이터(점수·설문·전문가 의견) 일괄 정리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 적용 예시 -->
+      <div class="col-panel">
+        <div class="col-header">설문 대상 및 종합 산정 모델</div>
+
+        <div class="survey-targets">
+          <div class="target-bx">
+            <div class="icon">👥</div>
+            <div class="name">학습자</div>
+            <div class="desc">STEP 수강생<br>잠재 학습자</div>
+          </div>
+          <div class="target-bx">
+            <div class="icon">🏢</div>
+            <div class="name">기업</div>
+            <div class="desc">HR 담당·재직자<br>산업별 협회</div>
+          </div>
+          <div class="target-bx">
+            <div class="icon">🏛</div>
+            <div class="name">기관</div>
+            <div class="desc">ISC·훈련기관<br>관련 정부기관</div>
+          </div>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-title">최종 순위 산정 모델 (가중치 시뮬레이션 후 발주처 확정)</div>
+          <div class="formula-row">
+            <span class="chip q">정량 70</span>
+            <span class="op">+</span>
+            <span class="chip s">정성 30</span>
+            <span class="op">×</span>
+            <span class="chip">α</span>
+            <span class="op">+</span>
+            <span class="chip r">설문 점수</span>
+            <span class="op">×</span>
+            <span class="chip">β</span>
+            <span class="op">=</span>
+            <span class="chip" style="background:#1B4D6A;color:#FFFFFF">최종 점수</span>
+          </div>
+          <div class="formula-note">
+            α·β 가중치는 시뮬레이션 다수 (안)을 발주처와 협의하여 최종 확정 (2025년 가중치 적용 방식 차용)
+          </div>
+        </div>
+
+        <div class="indicator-title">분야별 최종 우선순위표 (산출물 발췌 예시)</div>
+        <table class="pri-table">
+          <thead>
+            <tr>
+              <th style="width:28px">#</th>
+              <th>NCS 세분류명</th>
+              <th>대분류</th>
+              <th style="width:50px;text-align:center">분야</th>
+              <th style="width:42px;text-align:right">점수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="rank">1</td><td>응용SW엔지니어링</td><td>정보통신</td><td class="div d-digital">디지털</td><td class="score">94.2</td></tr>
+            <tr><td class="rank">2</td><td>반도체개발</td><td>전기·전자</td><td class="div d-digital">디지털</td><td class="score">91.6</td></tr>
+            <tr><td class="rank">3</td><td>인공지능모델링</td><td>정보통신</td><td class="div d-digital">디지털</td><td class="score">90.1</td></tr>
+            <tr><td class="rank">1</td><td>기계소프트웨어개발</td><td>기계</td><td class="div">평생</td><td class="score">89.4</td></tr>
+            <tr><td class="rank">2</td><td>화학물질분석</td><td>화학·바이오</td><td class="div">평생</td><td class="score">87.8</td></tr>
+            <tr><td colspan="5" style="text-align:center;color:#7B92A8;padding:4px;font-size:10px">… (분야별 상위 N개 세분류 도출 → Module 3 능력단위 평가로 연계)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="bottom-row">
+      <div class="bottom-box">
+        <div class="bb-title">활용 방법론·도구</div>
+        <div class="bb-list">
+          <div class="bb-item"><strong>가중치 합산 시뮬레이션</strong> — 평가 점수 ↔ 설문 결과 통합 (안) 다수 도출</div>
+          <div class="bb-item"><strong>온라인 설문</strong> — 모아폼·서베이몽키, 표본 약 2,000명</div>
+          <div class="bb-item"><strong>발주처 협의 회의</strong> — 가중치 확정 + 최종 순위 검토</div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="bb-title">핵심 산출물</div>
+        <div class="bb-list">
+          <div class="bb-item">세분류 설문조사 결과 보고서</div>
+          <div class="bb-item">세분류 종합 우선순위표</div>
+          <div class="bb-item">세분류 선정 근거 데이터</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-num">- 19 -</div>
+  </section>
+
+</div>
+</body>
+</html>

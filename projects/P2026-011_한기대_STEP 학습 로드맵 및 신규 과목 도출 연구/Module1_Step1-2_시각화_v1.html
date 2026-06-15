@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 1. 연구 기반 정비 및 SLR 최신화 — Step 1·2 시각화</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #2C3440;
+    color: #E5EAF0;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .deck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px 60px;
+  }
+
+  /* ───────── Slide canvas (16:9 @ 1280×720) ───────── */
+  .slide {
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(180deg, #0E1F30 0%, #0A1828 100%);
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.45);
+    padding: 28px 40px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ───────── Top bar ───────── */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .module-chip {
+    background: linear-gradient(135deg, #1E5A7C 0%, #1B4D6A 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 7px 18px;
+    letter-spacing: 0.5px;
+  }
+  .question {
+    color: #9FB5C7;
+    font-size: 14px;
+    font-weight: 400;
+    flex: 1;
+  }
+  .question .q-mark {
+    color: #5BAEC7;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  .tab-indicator {
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    text-align: right;
+    color: #7B92A8;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  .tab-indicator .tab-main { color: #B9CADB; }
+
+  /* ───────── Step title row ───────── */
+  .step-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+  }
+  .step-chip {
+    color: #5BAEC7;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .step-title {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  /* ───────── Head message ───────── */
+  .head-message {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid #5BAEC7;
+    padding: 14px 20px;
+    color: #E8EFF5;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+  }
+  .head-message strong {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  .head-message .hl {
+    color: #7DD3E8;
+    font-weight: 600;
+  }
+
+  /* ───────── Two-column main ───────── */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+  }
+  .col-panel {
+    background: #F7F9FB;
+    color: #1A2733;
+    padding: 16px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .col-header {
+    color: #1B4D6A;
+    font-weight: 700;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1B4D6A;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .col-header::before {
+    content: "■";
+    color: #5BAEC7;
+    font-size: 11px;
+  }
+
+  /* ───────── Left: procedure steps ───────── */
+  .proc-step {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 10px;
+  }
+  .proc-step:last-child { margin-bottom: 0; }
+  .proc-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background: #1B4D6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+  .proc-body { flex: 1; min-width: 0; }
+  .proc-body h5 {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #0D2A45;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .proc-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  .proc-body ul li {
+    font-size: 12px;
+    color: #3D4A57;
+    line-height: 1.55;
+    padding-left: 8px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .proc-body ul li::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    color: #5BAEC7;
+    font-weight: 700;
+  }
+
+  /* ───────── Right: examples ───────── */
+  .num-cards {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .num-card {
+    background: linear-gradient(135deg, #0E1F30 0%, #1B4D6A 100%);
+    color: #FFFFFF;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .num-card .big {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #7DD3E8;
+    letter-spacing: -0.5px;
+  }
+  .num-card .lbl {
+    font-size: 10.5px;
+    color: #B9CADB;
+    margin-top: 3px;
+    line-height: 1.3;
+  }
+  .num-card .unit { font-size: 14px; color: #5BAEC7; font-weight: 700; }
+
+  /* ───────── Right: sample table ───────── */
+  .sample-title {
+    font-size: 12px;
+    color: #1B4D6A;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top: 4px;
+  }
+  .ba-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+  .ba-table thead th {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 10.5px;
+  }
+  .ba-table thead th.before-h { background: #4A6478; }
+  .ba-table thead th.after-h { background: #1B4D6A; }
+  .ba-table tbody td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #E1E7ED;
+    color: #2C3A48;
+    line-height: 1.3;
+  }
+  .ba-table tbody td.code {
+    font-family: 'Courier New', monospace;
+    color: #4A6478;
+    font-size: 10px;
+  }
+  .ba-table tbody tr.diff td.code,
+  .ba-table tbody tr.diff td.name {
+    background: #FFF7E1;
+  }
+  .ba-table tbody tr.del td {
+    color: #C95C5C;
+    font-style: italic;
+  }
+  .ba-table .div-col {
+    background: #F7F9FB;
+    width: 4px;
+    padding: 0;
+  }
+
+  /* ───────── 10 industries grid ───────── */
+  .ind-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .ind-card {
+    background: #FFFFFF;
+    border: 1px solid #C7D3DE;
+    padding: 8px 6px;
+    text-align: center;
+    font-size: 11px;
+    color: #0D2A45;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .ind-card .num {
+    display: block;
+    font-size: 9px;
+    color: #5BAEC7;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+
+  /* ───────── SLR structure diagram ───────── */
+  .slr-diagram {
+    background: #FFFFFF;
+    border: 1px solid #C7D3DE;
+    padding: 12px;
+  }
+  .slr-diag-title {
+    font-size: 11px;
+    color: #1B4D6A;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .slr-tree {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .slr-tier {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+  }
+  .slr-tier .label {
+    width: 76px;
+    flex-shrink: 0;
+    color: #5BAEC7;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: right;
+  }
+  .slr-tier .boxes {
+    display: flex;
+    gap: 4px;
+    flex: 1;
+  }
+  .slr-tier .box {
+    background: #EDF2F6;
+    color: #1B4D6A;
+    padding: 3px 7px;
+    font-size: 10px;
+    font-weight: 600;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #D6DEE6;
+  }
+  .slr-tier .box.lvl1 { background: #1B4D6A; color: #FFFFFF; }
+  .slr-tier .box.lvl2 { background: #4A7C9A; color: #FFFFFF; }
+  .slr-tier .box.lvl3 { background: #B0CEDF; color: #0D2A45; }
+  .slr-tier .arrow { color: #B0BFCF; font-weight: 700; }
+
+  /* ───────── Bottom row ───────── */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 16px;
+    margin-top: 14px;
+    flex-shrink: 0;
+  }
+  .bottom-box {
+    background: rgba(91, 174, 199, 0.10);
+    border-left: 3px solid #5BAEC7;
+    padding: 11px 16px 12px;
+  }
+  .bottom-box .bb-title {
+    color: #7DD3E8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .bottom-box .bb-list {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .bottom-box .bb-list .bb-item {
+    color: #E5EAF0;
+    font-size: 12px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 10px;
+  }
+  .bottom-box .bb-list .bb-item::before {
+    content: "▸";
+    color: #5BAEC7;
+    position: absolute;
+    left: 0;
+    font-size: 10px;
+  }
+  .bottom-box .bb-list .bb-item strong {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+
+  /* ───────── Page number ───────── */
+  .page-num {
+    position: absolute;
+    bottom: 14px;
+    right: 40px;
+    color: #5A7186;
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  /* ───────── Side label (수행방안 type tag) ───────── */
+  .side-tag {
+    position: absolute;
+    top: 78px;
+    left: 40px;
+    color: #5BAEC7;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+  }
+
+  /* ───────── Print rules ───────── */
+  @media print {
+    body { background: #FFFFFF; }
+    .deck { padding: 0; gap: 0; }
+    .slide {
+      box-shadow: none;
+      page-break-after: always;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- =============================================== -->
+  <!--  Slide 1.  Module 1 — Step 1                    -->
+  <!-- =============================================== -->
+  <section class="slide">
+    <div class="top-bar">
+      <div class="module-chip">Module 1</div>
+      <div class="question"><span class="q-mark">Q.</span>STEP Master DB의 최신성과 정합성을 어떻게 확보할 것인가?</div>
+    </div>
+    <div class="tab-indicator">
+      <div class="tab-main">Ⅱ. 제안 내용</div>
+      <div>2. 과업 수행계획 및 방법</div>
+    </div>
+
+    <div class="step-title-row">
+      <span class="step-chip">Step 1.</span>
+      <span class="step-title">STEP Master DB 관련 Data 확보 및 최신화</span>
+    </div>
+
+    <div class="head-message">
+      산업인력공단·ISC 등 유관기관의 최신 NCS·SQF 자료와 기개발 STEP 과목 <strong>2,586개</strong>(이러닝 2,397개, 가상훈련 189개)를 확보하여,
+      최신 NCS 능력단위와 매핑한 <span class="hl">Master DB 1차 업데이트본</span>과 <span class="hl">미활용 능력단위 List</span>를 도출하고자 함.
+    </div>
+
+    <div class="main-grid">
+      <!-- Left: 수행 절차 -->
+      <div class="col-panel">
+        <div class="col-header">수행 절차</div>
+
+        <div class="proc-step">
+          <div class="proc-num">①</div>
+          <div class="proc-body">
+            <h5>유관기관 최신 자료 확보</h5>
+            <ul>
+              <li>산업인력공단·NCS 홈페이지·ISC 등에서 최신 NCS('25.03 Ver 이후 개정) · SQF · 활용패키지 자료 확보</li>
+              <li>평생·디지털·첨단 분야 신설·변경·삭제 NCS 세분류·능력단위 내역 정리</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">②</div>
+          <div class="proc-body">
+            <h5>기개발 과목 분석 및 NCS 매핑</h5>
+            <ul>
+              <li>STEP 기개발 과목 2,586개(이러닝 2,397개, 가상훈련 189개) 메타데이터 확보</li>
+              <li>과목별 핵심 학습내용 → 최신 NCS 능력단위 매핑</li>
+              <li>변경·삭제·신설 능력단위별 매핑 결과 갱신</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">③</div>
+          <div class="proc-body">
+            <h5>미활용 능력단위 List 도출</h5>
+            <ul>
+              <li>매핑 결과 기반 '활용 능력단위' vs '미활용 능력단위' 구분</li>
+              <li>미활용 능력단위 = 신규 과정 개발 후보 Pool 1차 선정</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 적용 예시 -->
+      <div class="col-panel">
+        <div class="col-header">적용 예시</div>
+
+        <div class="num-cards">
+          <div class="num-card">
+            <div class="big">2,586<span class="unit">개</span></div>
+            <div class="lbl">기개발 과목 총수</div>
+          </div>
+          <div class="num-card">
+            <div class="big">2,397<span class="unit">개</span></div>
+            <div class="lbl">이러닝</div>
+          </div>
+          <div class="num-card">
+            <div class="big">189<span class="unit">개</span></div>
+            <div class="lbl">가상훈련</div>
+          </div>
+        </div>
+
+        <div class="sample-title">NCS 매핑 Before / After (발췌 · 2025년 분석 결과 활용)</div>
+        <table class="ba-table">
+          <thead>
+            <tr>
+              <th colspan="2" class="before-h">변경 前 NCS (2023.11 Ver)</th>
+              <th class="div-col"></th>
+              <th colspan="2" class="after-h">변경 後 NCS (2025.03 Ver)</th>
+            </tr>
+            <tr>
+              <th class="before-h" style="font-size:9.5px">분류번호</th>
+              <th class="before-h" style="font-size:9.5px">능력단위명</th>
+              <th class="div-col"></th>
+              <th class="after-h" style="font-size:9.5px">분류번호</th>
+              <th class="after-h" style="font-size:9.5px">능력단위명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="code">1505010401_14v2</td>
+              <td class="name">공작기계 설치정비 준비</td>
+              <td class="div-col"></td>
+              <td class="code">1505010401_24v3</td>
+              <td class="name">공작기계 설치 준비</td>
+            </tr>
+            <tr class="diff">
+              <td class="code">1505010409_14v2</td>
+              <td class="name">공작기계 안전관리</td>
+              <td class="div-col"></td>
+              <td class="code">1505010409_24v3</td>
+              <td class="name">공작기계 설치·정비 안전관리</td>
+            </tr>
+            <tr class="del">
+              <td class="code">2001060303_19v2</td>
+              <td class="name">디지털 포렌식</td>
+              <td class="div-col"></td>
+              <td colspan="2" style="text-align:center;color:#C95C5C">→ 능력단위 삭제</td>
+            </tr>
+            <tr>
+              <td class="code">1506030208_17v3</td>
+              <td class="name">가솔린 전자제어장치 정비</td>
+              <td class="div-col"></td>
+              <td class="code">1506030208_24v4</td>
+              <td class="name">가솔린전자제어장치 정비</td>
+            </tr>
+            <tr>
+              <td colspan="5" style="text-align:center;color:#7B92A8;padding:5px">… (전체 10대 분야 NCS 일괄 점검)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="bottom-row">
+      <div class="bottom-box">
+        <div class="bb-title">활용 방법론·도구</div>
+        <div class="bb-list">
+          <div class="bb-item"><strong>문헌 분석</strong> — NCS·SQF 최신 고시안, ISC 보고서</div>
+          <div class="bb-item"><strong>데이터 매핑 DB</strong> — Excel 기반 매핑(전년도 결과 활용 + 변경분 갱신)</div>
+          <div class="bb-item"><strong>연구진 검토 회의</strong> — 신설/삭제 능력단위 처리 기준 합의</div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="bb-title">핵심 산출물</div>
+        <div class="bb-list">
+          <div class="bb-item">기개발 과목 – NCS 매핑표</div>
+          <div class="bb-item">미활용 능력단위 List</div>
+          <div class="bb-item">Master DB 1차 업데이트본</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-num">- 16 -</div>
+  </section>
+
+
+  <!-- =============================================== -->
+  <!--  Slide 2.  Module 1 — Step 2                    -->
+  <!-- =============================================== -->
+  <section class="slide">
+    <div class="top-bar">
+      <div class="module-chip">Module 1</div>
+      <div class="question"><span class="q-mark">Q.</span>10대 산업 분야별 SLR을 어떻게 최신 체계로 정비할 것인가?</div>
+    </div>
+    <div class="tab-indicator">
+      <div class="tab-main">Ⅱ. 제안 내용</div>
+      <div>2. 과업 수행계획 및 방법</div>
+    </div>
+
+    <div class="step-title-row">
+      <span class="step-chip">Step 2.</span>
+      <span class="step-title">SLR 관련 Data 확보 및 최신화</span>
+    </div>
+
+    <div class="head-message">
+      Step 1의 NCS 매핑 결과를 반영하여 <strong>Master DB 1차 업데이트</strong>를 완료하고,
+      <span class="hl">STEP 10대 산업 분야별 학습 로드맵(SLR)</span>을 최신 NCS·SQF 체계에 맞춰 정비함으로써
+      <span class="hl">SLR 고도화의 기반</span>을 마련하고자 함.
+    </div>
+
+    <div class="main-grid">
+      <!-- Left: 수행 절차 -->
+      <div class="col-panel">
+        <div class="col-header">수행 절차</div>
+
+        <div class="proc-step">
+          <div class="proc-num">①</div>
+          <div class="proc-body">
+            <h5>Master DB 1차 업데이트</h5>
+            <ul>
+              <li>Step 1 매핑 결과를 반영해 Master DB 갱신</li>
+              <li>과목 ↔ NCS 능력단위 연결 정합성 검토·보완</li>
+              <li>NCS·SQF 변경 사항(신설·변경·삭제) 일괄 반영</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">②</div>
+          <div class="proc-body">
+            <h5>STEP 10대 산업 분야별 SLR 최신화</h5>
+            <ul>
+              <li>10대 산업 분야 SLR 현황 정리 (분야별 과정 구성·수준·경력경로)</li>
+              <li>변경·신설 NCS 반영, SQF 경력이동 체계 재확인</li>
+              <li>분야별 과정 누락·중복 점검</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">③</div>
+          <div class="proc-body">
+            <h5>SLR 고도화 방안 초안 마련</h5>
+            <ul>
+              <li>AI 활용 Master DB 자동 검증 도구 가능성 검토</li>
+              <li>신규 과목 Master DB 자동 반영 AI 도구 방향 설정</li>
+              <li>분야별 고도화 적용 우선순위 도출</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: 적용 예시 -->
+      <div class="col-panel">
+        <div class="col-header">적용 예시</div>
+
+        <div class="sample-title">STEP 10대 산업 분야 SLR 점검 범위</div>
+        <div class="ind-grid">
+          <div class="ind-card"><span class="num">14</span>건설</div>
+          <div class="ind-card"><span class="num">15</span>기계</div>
+          <div class="ind-card"><span class="num">16</span>재료</div>
+          <div class="ind-card"><span class="num">17</span>화학·바이오</div>
+          <div class="ind-card"><span class="num">18</span>섬유·의복</div>
+          <div class="ind-card"><span class="num">19</span>전기·전자</div>
+          <div class="ind-card"><span class="num">20</span>정보통신</div>
+          <div class="ind-card"><span class="num">21</span>식품가공</div>
+          <div class="ind-card"><span class="num">22</span>인쇄·목재·공예</div>
+          <div class="ind-card"><span class="num">23</span>환경·에너지·안전</div>
+        </div>
+
+        <div class="sample-title">SLR 구조 정비 도식 (분야 → 직무 → 과정 → 능력단위)</div>
+        <div class="slr-diagram">
+          <div class="slr-tree">
+            <div class="slr-tier">
+              <span class="label">산업분야 ▸</span>
+              <div class="boxes">
+                <div class="box lvl1">19. 전기·전자</div>
+                <div class="box lvl1">20. 정보통신</div>
+                <div class="box lvl1">…</div>
+              </div>
+            </div>
+            <div class="slr-tier">
+              <span class="label">직무 ▸</span>
+              <div class="boxes">
+                <div class="box lvl2">반도체</div>
+                <div class="box lvl2">디스플레이</div>
+                <div class="box lvl2">정보보호</div>
+                <div class="box lvl2">SW엔지니어링</div>
+              </div>
+            </div>
+            <div class="slr-tier">
+              <span class="label">과정 ▸</span>
+              <div class="boxes">
+                <div class="box lvl3">반도체 공정설계 입문</div>
+                <div class="box lvl3">디스플레이 품질관리</div>
+                <div class="box lvl3">클라우드 보안 운영</div>
+                <div class="box lvl3">시스템 SW 아키텍처</div>
+              </div>
+            </div>
+            <div class="slr-tier">
+              <span class="label">능력단위 ▸</span>
+              <div class="boxes">
+                <div class="box">공정설계 기초</div>
+                <div class="box">품질이상 진단</div>
+                <div class="box">보안관제 운영</div>
+                <div class="box">SW 단위모듈 구현</div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size:10px;color:#7B92A8;margin-top:8px;line-height:1.4">
+            ※ 4계층 정합성 점검 후, SQF 경력이동 체계 반영 → 분야별 SLR 최신화본 도출
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="bottom-row">
+      <div class="bottom-box">
+        <div class="bb-title">활용 방법론·도구</div>
+        <div class="bb-list">
+          <div class="bb-item"><strong>Master DB 정합성 검토</strong> — 연구진 협업 기반 교차 검증</div>
+          <div class="bb-item"><strong>SLR 현행 분석</strong> — '25년 TTR·SLR 결과물 + NCS 활용패키지 경력개발경로 모형 활용</div>
+          <div class="bb-item"><strong>벤치마킹</strong> — AI 활용 자동화 사례(국내외 EdTech·HRD 플랫폼)</div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <div class="bb-title">핵심 산출물</div>
+        <div class="bb-list">
+          <div class="bb-item">Master DB 1차 업데이트본</div>
+          <div class="bb-item">10대 산업 분야별 SLR 업데이트본</div>
+          <div class="bb-item">SLR 고도화 방안(AI 활용 자동화) 초안</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-num">- 17 -</div>
+  </section>
+
+</div>
+</body>
+</html>

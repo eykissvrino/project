@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 세분류 종합 점수 산정 (200점 만점)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 30px 24px;
+    color: #1F2937;
+  }
+  .slide-area { width: 580px; }
+  .header {
+    border-left: 5px solid #1F4E78;
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+  .module-tag { font-size: 10.5px; color: #64748B; letter-spacing: 0.3px; margin-bottom: 3px; }
+  .title { font-size: 16px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 11px; color: #475569; margin-top: 3px; }
+
+  /* 정량+정성 결합 박스 (100점 통합) */
+  .group-box {
+    background: #F1F5F9;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  .group-label {
+    font-size: 10.5px;
+    color: #64748B;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .group-label strong { color: #1F4E78; }
+
+  .group-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  /* 입력 행 (정량/정성/설문) */
+  .input-row {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: grid;
+    grid-template-columns: 44px 1fr 90px;
+    align-items: center;
+    gap: 12px;
+  }
+  .input-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .input-row.row-quant .input-icon { background: linear-gradient(135deg, #2E75B6 0%, #5B9BD5 100%); }
+  .input-row.row-qual .input-icon { background: linear-gradient(135deg, #5B9BD5 0%, #9DC3E6 100%); }
+  .input-row.row-survey .input-icon { background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%); }
+
+  .input-name {
+    font-size: 12.5px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 2px;
+  }
+  .input-detail {
+    font-size: 10px;
+    color: #64748B;
+    line-height: 1.4;
+  }
+  .input-weight {
+    text-align: right;
+    line-height: 1;
+  }
+  .input-weight-num {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .input-weight-unit {
+    font-size: 11px;
+    font-weight: 700;
+    color: #94A3B8;
+    margin-left: 2px;
+  }
+  .row-quant .input-weight-num { color: #2E75B6; }
+  .row-qual .input-weight-num { color: #5B9BD5; }
+  .row-survey .input-weight-num { color: #1F4E78; }
+
+  /* 그룹 소계 표시 */
+  .group-subtotal {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1.5px dashed #94A3B8;
+    text-align: right;
+    font-size: 11px;
+    color: #475569;
+    font-weight: 700;
+  }
+  .group-subtotal strong { color: #1F4E78; font-size: 13px; }
+
+  /* 플러스 기호 */
+  .plus {
+    text-align: center;
+    font-size: 18px;
+    color: #94A3B8;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* 결과 박스 */
+  .result {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+    color: #FFFFFF;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(31, 78, 120, 0.18);
+  }
+  .result-label {
+    font-size: 11px;
+    opacity: 0.85;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+  }
+  .result-formula {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  .result-total {
+    background: rgba(255,255,255,0.15);
+    border-radius: 6px;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .result-total strong {
+    font-size: 22px;
+    color: #FCE7F3;
+    margin: 0 2px;
+  }
+
+  /* 시앤피 비중 유지 시그널 */
+  .note {
+    margin-top: 12px;
+    background: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    padding: 9px 14px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #78350F;
+    line-height: 1.5;
+  }
+  .note strong { color: #92400E; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 · Step 3</div>
+    <div class="title">세분류 종합 점수 산정 — 200점 만점</div>
+    <div class="subtitle">정량·정성 100점 통합 (시앤피 원본 비중 유지) + 설문조사 100점 별도 척도</div>
+  </div>
+
+  <!-- 정량+정성 통합 박스 (100점) -->
+  <div class="group-box">
+    <div class="group-label">▸ 정량 · 정성 평가 합계 <strong>100점</strong> (시앤피 2025 원본 비중 유지)</div>
+    <div class="group-rows">
+
+      <div class="input-row row-quant">
+        <div class="input-icon">①</div>
+        <div>
+          <div class="input-name">정량 평가</div>
+          <div class="input-detail">11지표 · HRD-Net·자격통계·STEP 실적 3년치</div>
+        </div>
+        <div class="input-weight">
+          <span class="input-weight-num">70</span><span class="input-weight-unit">점</span>
+        </div>
+      </div>
+
+      <div class="input-row row-qual">
+        <div class="input-icon">②</div>
+        <div>
+          <div class="input-name">정성 평가</div>
+          <div class="input-detail">3지표 · 미래수요·필요성·시급성 (전문가 3인 패널)</div>
+        </div>
+        <div class="input-weight">
+          <span class="input-weight-num">30</span><span class="input-weight-unit">점</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="group-subtotal">정량(70) + 정성(30) = <strong>100점</strong></div>
+  </div>
+
+  <div class="plus">+</div>
+
+  <!-- 설문조사 (100점) -->
+  <div class="group-box" style="background: #DDEBF7;">
+    <div class="group-label">▸ 설문조사 평가 <strong>100점</strong> 별도 척도 (시나리오 B 재배치)</div>
+    <div class="group-rows">
+
+      <div class="input-row row-survey">
+        <div class="input-icon">③</div>
+        <div>
+          <div class="input-name">설문조사 평가</div>
+          <div class="input-detail">학습자·기업·기관 2,000명 · 5점 척도 + 응답자 가중치</div>
+        </div>
+        <div class="input-weight">
+          <span class="input-weight-num">100</span><span class="input-weight-unit">점</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 결과 -->
+  <div class="result">
+    <div class="result-label">세분류 종합 점수 산정</div>
+    <div class="result-formula">
+      정량(70) + 정성(30) + 설문조사(100)
+    </div>
+    <div class="result-total">
+      종합 점수 = <strong>200</strong>점 만점
+    </div>
+  </div>
+
+  <!-- 비중 유지 시그널 -->
+  <div class="note">
+    <strong>시앤피 2025 자료의 원본 비중 체계 유지</strong> — 정량·정성 평가는 11지표(7.2~6.0)와 3지표(10·10·10)의 원본 비중을 유지하여 평가 연속성·비교 가능성 확보. 설문조사 100점은 시나리오 B 재배치로 세분류 단계에서 통합 청취.
+  </div>
+
+</div>
+</body>
+</html>

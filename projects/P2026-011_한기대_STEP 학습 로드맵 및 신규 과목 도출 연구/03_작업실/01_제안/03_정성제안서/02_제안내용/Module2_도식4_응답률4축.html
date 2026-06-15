@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 응답률 25%+ 4축 제고 전략</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 30px 24px;
+    color: #1F2937;
+  }
+  .slide-area { width: 580px; }
+  .header {
+    border-left: 5px solid #1F4E78;
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+  .module-tag { font-size: 10.5px; color: #64748B; letter-spacing: 0.3px; margin-bottom: 3px; }
+  .title { font-size: 16px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 11px; color: #475569; margin-top: 3px; }
+
+  /* 응답률 비교 차트 */
+  .chart-box {
+    background: #F8FAFC;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+  .chart-title {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #64748B;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+  }
+  .bar-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .bar-row:last-child { margin-bottom: 0; }
+  .bar-label {
+    font-size: 11px;
+    color: #475569;
+    font-weight: 600;
+    text-align: right;
+  }
+  .bar-track {
+    height: 22px;
+    background: #E5E7EB;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .bar-fill.dim { background: #9CA3AF; }
+  .bar-fill.our { background: linear-gradient(90deg, #2E75B6 0%, #1F4E78 100%); }
+  .bar-value {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: right;
+  }
+  .bar-value.our { color: #1F4E78; }
+  .chart-note {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #E2E8F0;
+    font-size: 10.5px;
+    color: #475569;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .chart-note strong { color: #1F4E78; }
+
+  /* 4축 전략 카드 */
+  .strategies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .strategy {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    position: relative;
+  }
+  .strategy::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    border-radius: 8px 0 0 8px;
+  }
+  .strategy.s1::before { background: #5B9BD5; }
+  .strategy.s2::before { background: #2E75B6; }
+  .strategy.s3::before { background: #1F4E78; }
+  .strategy.s4::before { background: linear-gradient(180deg, #7030A0, #4A1D6B); }
+
+  .strategy-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .strategy-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .strategy.s1 .strategy-num { background: #5B9BD5; }
+  .strategy.s2 .strategy-num { background: #2E75B6; }
+  .strategy.s3 .strategy-num { background: #1F4E78; }
+  .strategy.s4 .strategy-num { background: #7030A0; }
+
+  .strategy-name {
+    font-size: 12px;
+    font-weight: 800;
+    color: #1F2937;
+    flex: 1;
+    line-height: 1.3;
+  }
+  .strategy-badge {
+    background: #FCE7F3;
+    color: #7030A0;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 8px;
+  }
+  .strategy.s1 .strategy-badge,
+  .strategy.s2 .strategy-badge {
+    background: #DBEAFE;
+    color: #1E40AF;
+  }
+  .strategy-desc {
+    font-size: 10.5px;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .strategy-desc strong { color: #1F2937; }
+
+  /* RFP 시그널 */
+  .rfp-note {
+    margin-top: 12px;
+    background: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    padding: 9px 14px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #78350F;
+    line-height: 1.5;
+  }
+  .rfp-note strong { color: #92400E; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 · Step 3</div>
+    <div class="title">응답률 25%+ 확보 — 4축 제고 전략</div>
+    <div class="subtitle">기존 9.5% 응답률의 한계를 보완하기 위한 4축 통합 전략</div>
+  </div>
+
+  <!-- 응답률 비교 차트 -->
+  <div class="chart-box">
+    <div class="chart-title">응답률 비교 · 2.6배 향상 목표</div>
+
+    <div class="bar-row">
+      <div class="bar-label">~'25</div>
+      <div class="bar-track">
+        <div class="bar-fill dim" style="width: 19%;">9.5%</div>
+      </div>
+      <div class="bar-value">9.5%</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">'26 목표</div>
+      <div class="bar-track">
+        <div class="bar-fill our" style="width: 50%;">25.0%+</div>
+      </div>
+      <div class="bar-value our">25%+</div>
+    </div>
+
+    <div class="bar-row">
+      <div class="bar-label">표본</div>
+      <div class="bar-track">
+        <div class="bar-fill our" style="width: 100%; background: linear-gradient(90deg, #5B9BD5 0%, #1F4E78 100%);">2,000명+</div>
+      </div>
+      <div class="bar-value our">2,000+</div>
+    </div>
+
+    <div class="chart-note">
+      ▶ 실효 응답자 <strong>500+명</strong> 확보 → 240개 세분류 × 평균 2명+ 응답 보장
+    </div>
+  </div>
+
+  <!-- 4축 전략 -->
+  <div class="strategies">
+
+    <div class="strategy s1">
+      <div class="strategy-head">
+        <div class="strategy-num">1</div>
+        <div class="strategy-name">홈페이지·발주처 협업</div>
+        <div class="strategy-badge">유지·강화</div>
+      </div>
+      <div class="strategy-desc">
+        STEP 홈페이지 공지·홍보<br>
+        + 발주처 <strong>일일 응답 현황 공유</strong>
+      </div>
+    </div>
+
+    <div class="strategy s2">
+      <div class="strategy-head">
+        <div class="strategy-num">2</div>
+        <div class="strategy-name">답례품 활용</div>
+        <div class="strategy-badge">유지</div>
+      </div>
+      <div class="strategy-desc">
+        성실 응답자 <strong>1,000명+ 추첨</strong>으로<br>
+        답례품 제공 (발주처 협의 후 결정)
+      </div>
+    </div>
+
+    <div class="strategy s3">
+      <div class="strategy-head">
+        <div class="strategy-num">3</div>
+        <div class="strategy-name">응답자 가중치 모델</div>
+        <div class="strategy-badge">신설</div>
+      </div>
+      <div class="strategy-desc">
+        직무·산업·경력별 가중치 →<br>
+        <strong>표본 편향 자동 보정</strong>
+      </div>
+    </div>
+
+    <div class="strategy s4">
+      <div class="strategy-head">
+        <div class="strategy-num">4</div>
+        <div class="strategy-name">분기 상시 사이클</div>
+        <div class="strategy-badge">신설</div>
+      </div>
+      <div class="strategy-desc">
+        자동화 사이클 설계 →<br>
+        <strong>27년 본격 운영 인계</strong>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RFP 시그널 -->
+  <div class="rfp-note">
+    <strong>RFP §II-3 [조사체계 개선] 직접 답</strong> — 응답자 가중치 모델·분기 상시 사이클 2종 신설을 통해 다년 상시 운영 인프라 구축. 본 사업 종료 후 27년 한기대 STEP 상시 수요조사 운영 모델로 인계.
+  </div>
+
+</div>
+</body>
+</html>

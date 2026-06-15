@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 시나리오 B 재배치 + 응답률 25%+ 확보</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 40px 32px;
+    color: #1F2937;
+  }
+  .slide-area { width: 1180px; }
+  .header {
+    border-left: 6px solid #1F4E78;
+    padding-left: 14px;
+    margin-bottom: 22px;
+  }
+  .module-tag { font-size: 11px; color: #64748B; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .title { font-size: 22px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 13px; color: #475569; margin-top: 4px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 24px;
+  }
+  .panel-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1F4E78;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1F4E78;
+  }
+  .panel-title small {
+    font-weight: 600;
+    color: #64748B;
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  /* 시나리오 비교 */
+  .scenarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .scenario {
+    background: #F8FAFC;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    gap: 14px;
+    align-items: center;
+  }
+  .scenario.recommended {
+    background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+    border-color: #1F4E78;
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(31, 78, 120, 0.18);
+  }
+  .scenario-letter {
+    font-size: 26px;
+    font-weight: 900;
+    color: #94A3B8;
+    text-align: center;
+  }
+  .scenario.recommended .scenario-letter { color: #FFFFFF; }
+  .scenario-content {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+  .scenario-name {
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 3px;
+  }
+  .scenario.recommended .scenario-name { color: #FFFFFF; }
+  .scenario-desc { color: #475569; font-size: 11.5px; }
+  .scenario.recommended .scenario-desc { color: rgba(255,255,255,0.92); }
+  .badge {
+    background: #FFFFFF;
+    color: #1F4E78;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+  .badge.dim {
+    background: #E5E7EB;
+    color: #6B7280;
+  }
+  .badge.dim-2 {
+    background: transparent;
+    color: #94A3B8;
+  }
+
+  /* 응답률 비교 */
+  .response-chart {
+    background: #F8FAFC;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .bar-row {
+    display: grid;
+    grid-template-columns: 70px 1fr 80px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .bar-label {
+    font-size: 11.5px;
+    color: #475569;
+    font-weight: 600;
+  }
+  .bar-track {
+    height: 26px;
+    background: #E5E7EB;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .bar-fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .bar-fill.dim { background: #9CA3AF; }
+  .bar-fill.our { background: linear-gradient(90deg, #2E75B6 0%, #1F4E78 100%); }
+  .bar-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: right;
+  }
+  .bar-value.our { color: #1F4E78; }
+
+  .impact-arrow {
+    margin: 14px auto 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    color: #DC2626;
+  }
+  .impact-detail {
+    font-size: 12px;
+    color: #475569;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .impact-detail strong { color: #1F2937; }
+
+  /* 4대 전략 카드 */
+  .strategies {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .strategy-card {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-left: 4px solid #2E75B6;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .strategy-card strong {
+    display: block;
+    color: #1F4E78;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  /* 하단 footer */
+  .footer {
+    margin-top: 22px;
+    background: #FEF3C7;
+    border-left: 5px solid #F59E0B;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #78350F;
+    line-height: 1.55;
+  }
+  .footer strong { color: #92400E; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 — NCS 세분류 우선순위 도출 / Step 3</div>
+    <div class="title">시나리오 B 재배치 + 응답률 25%+ 확보</div>
+    <div class="subtitle">RFP §II-3 [조사체계 개선] 직접 답 — 세분류 단위 통합 설문 + 상시 사이클</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 좌측: 시나리오 비교 -->
+    <div>
+      <div class="panel-title">설문 배치 시나리오 비교 <small>· 우리 권고: B</small></div>
+      <div class="scenarios">
+
+        <div class="scenario">
+          <div class="scenario-letter">A</div>
+          <div class="scenario-content">
+            <div class="scenario-name">현재 RFP 순서 답습</div>
+            <div class="scenario-desc">설문 시점: 능력단위 단계 후 / 단위: 능력단위 / 선행 연구 답습</div>
+          </div>
+          <div class="badge dim-2">참고</div>
+        </div>
+
+        <div class="scenario recommended">
+          <div class="scenario-letter">B</div>
+          <div class="scenario-content">
+            <div class="scenario-name">★ 세분류 단계 통합 — 우리 권고</div>
+            <div class="scenario-desc">설문 시점: 세분류 단계 동시 / 단위: 240개 세분류 / RFP §II-3 [조사] 직접 답</div>
+          </div>
+          <div class="badge">권고</div>
+        </div>
+
+        <div class="scenario">
+          <div class="scenario-letter">C</div>
+          <div class="scenario-content">
+            <div class="scenario-name">혼합 (세분류 + 능력단위)</div>
+            <div class="scenario-desc">설문 시점: 양쪽 모두 / 단위: 양쪽 모두 / 응답 부담 ↑ · 응답률 ↓</div>
+          </div>
+          <div class="badge dim">부담↑</div>
+        </div>
+
+      </div>
+
+      <!-- 4대 응답률 전략 -->
+      <div class="strategies">
+        <div class="strategy-card">
+          <strong>① 표본 설계 정밀화</strong>
+          학습자 1,500 · 기업 300 · 기관 200<br>총 2,000명 (전년 대비 2배 표본)
+        </div>
+        <div class="strategy-card">
+          <strong>② 인센티브 + 사이트 협업</strong>
+          STEP 홈페이지 공지 + 1,000명 추첨 답례품 + 발주처 일일 응답 공유
+        </div>
+        <div class="strategy-card">
+          <strong>③ 응답자 가중치 모델</strong>
+          직무·산업·경력별 가중치로 표본 편향 자동 보정
+        </div>
+        <div class="strategy-card">
+          <strong>④ 분기 상시 사이클</strong>
+          자동화 사이클 설계 → 27년 본격 운영 인계 (다년 동행)
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측: 응답률 비교 -->
+    <div>
+      <div class="panel-title">응답률 비교 · 9.5% → 25%+ (2.6배 향상)</div>
+      <div class="response-chart">
+
+        <div class="bar-row">
+          <div class="bar-label">시앤피 2025</div>
+          <div class="bar-track">
+            <div class="bar-fill dim" style="width: 19%;">9.5%</div>
+          </div>
+          <div class="bar-value">9.5%</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">우리 2026 목표</div>
+          <div class="bar-track">
+            <div class="bar-fill our" style="width: 50%;">25.0%+</div>
+          </div>
+          <div class="bar-value our">25%+</div>
+        </div>
+
+        <div class="bar-row">
+          <div class="bar-label">표본 (응답자)</div>
+          <div class="bar-track">
+            <div class="bar-fill our" style="width: 100%; background: linear-gradient(90deg, #5B9BD5 0%, #1F4E78 100%);">2,000+명</div>
+          </div>
+          <div class="bar-value our">2,000+</div>
+        </div>
+
+        <div class="impact-arrow">▼ 표본 신뢰성 확보</div>
+        <div class="impact-detail">
+          <strong>실효 응답자 500+명</strong> 확보로<br>
+          240개 세분류 × 평균 2명+ 응답 보장
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <strong>RFP §II-3 [조사체계 개선] 4대 제언 직접 답</strong> — 시나리오 B 재배치 + 응답률 2.6배 향상 + 응답자 가중치 모델 + 분기 상시 사이클 운영으로 RFP 충실을 수치로 입증
+  </div>
+
+</div>
+</body>
+</html>

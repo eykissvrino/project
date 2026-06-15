@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 세분류 수요평가 3단계 프로세스 + Framework 위치</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 32px 28px;
+    color: #1F2937;
+  }
+  .slide-area { width: 720px; }
+  .header {
+    border-left: 6px solid #1F4E78;
+    padding-left: 14px;
+    margin-bottom: 18px;
+  }
+  .module-tag { font-size: 11px; color: #64748B; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .title { font-size: 18px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 12px; color: #475569; margin-top: 4px; }
+
+  /* Framework 위치 미니맵 */
+  .framework-map {
+    background: #F1F5F9;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+  }
+  .framework-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748B;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .framework-flow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .fw-node {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 6px;
+    padding: 8px 6px;
+    text-align: center;
+    font-size: 10px;
+    color: #94A3B8;
+    line-height: 1.3;
+  }
+  .fw-node.done {
+    background: #DDEBF7;
+    border-color: #2E75B6;
+    color: #1F4E78;
+  }
+  .fw-node.current {
+    background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+    border-color: #1F4E78;
+    color: #FFFFFF;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(31, 78, 120, 0.25);
+  }
+  .fw-node strong {
+    display: block;
+    font-size: 10.5px;
+    margin-bottom: 2px;
+  }
+  .fw-arrow {
+    color: #94A3B8;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  /* 3단계 프로세스 */
+  .process {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .step {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px 1fr 180px;
+    gap: 14px;
+    align-items: center;
+  }
+  .step::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 5px;
+    border-radius: 8px 0 0 8px;
+  }
+  .step-1::before { background: #5B9BD5; }
+  .step-2::before { background: #2E75B6; }
+  .step-3::before { background: #1F4E78; }
+
+  .step-num {
+    text-align: center;
+  }
+  .step-num-mini {
+    font-size: 10px;
+    color: #94A3B8;
+    font-weight: 600;
+  }
+  .step-num-main {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .step-1 .step-num-main { color: #5B9BD5; }
+  .step-2 .step-num-main { color: #2E75B6; }
+  .step-3 .step-num-main { color: #1F4E78; }
+
+  .step-body { padding-left: 4px; }
+  .step-name {
+    font-size: 13px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 4px;
+  }
+  .step-desc {
+    font-size: 11px;
+    color: #475569;
+    line-height: 1.5;
+  }
+  .step-desc strong { color: #1F2937; }
+
+  .step-output {
+    background: #F8FAFC;
+    border-left: 3px solid #94A3B8;
+    padding: 6px 9px;
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 1.45;
+  }
+  .step-output strong {
+    display: block;
+    color: #1F4E78;
+    font-size: 10.5px;
+    margin-bottom: 2px;
+  }
+
+  .arrow-down {
+    text-align: center;
+    color: #CBD5E1;
+    font-size: 12px;
+    line-height: 0.5;
+  }
+
+  /* 최종 인계 */
+  .handoff {
+    margin-top: 12px;
+    background: linear-gradient(135deg, #7030A0 0%, #4A1D6B 100%);
+    color: #FFFFFF;
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .handoff-label {
+    font-size: 10px;
+    opacity: 0.85;
+    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+  }
+  .handoff-name {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .handoff-name strong {
+    color: #FCE7F3;
+  }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 — NCS 세분류 우선순위 도출 · Step 3</div>
+    <div class="title">세분류 수요평가 3단계 프로세스</div>
+    <div class="subtitle">Develop 추진전략의 출발점 — 정량·정성·설문 3축 통합 평가</div>
+  </div>
+
+  <!-- Framework 미니맵 -->
+  <div class="framework-map">
+    <div class="framework-title">5 Module Framework 위치</div>
+    <div class="framework-flow">
+      <div class="fw-node done">
+        <strong>Module 1</strong>
+        SLR 최신화
+      </div>
+      <div class="fw-arrow">▶</div>
+      <div class="fw-node current">
+        <strong>Module 2</strong>
+        세분류 우선순위 ◀ 현재
+      </div>
+      <div class="fw-arrow">▶</div>
+      <div class="fw-node">
+        <strong>Module 3 ★</strong>
+        능력단위 우선순위
+      </div>
+      <div class="fw-arrow">▶</div>
+      <div class="fw-node">
+        <strong>Module 4</strong>
+        과목개요서
+      </div>
+      <div class="fw-arrow">▶</div>
+      <div class="fw-node">
+        <strong>Module 5</strong>
+        SLR 고도화
+      </div>
+    </div>
+  </div>
+
+  <!-- 3단계 프로세스 -->
+  <div class="process">
+
+    <div class="step step-1">
+      <div class="step-num">
+        <div class="step-num-mini">STEP</div>
+        <div class="step-num-main">1</div>
+      </div>
+      <div class="step-body">
+        <div class="step-name">평가 준비</div>
+        <div class="step-desc">
+          • <strong>2025년 NCS 최신 고시본</strong> 세분류 전수<br>
+          • 신설 세분류 별표 처리 + 평가 룰 적용<br>
+          • 데이터 확보 방안 검토 및 발주처 실무 협의
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>준비 산출</strong>
+        평가 대상 세분류 명세서<br>
+        데이터 확보 계획서
+      </div>
+    </div>
+
+    <div class="arrow-down">▼</div>
+
+    <div class="step step-2">
+      <div class="step-num">
+        <div class="step-num-mini">STEP</div>
+        <div class="step-num-main">2</div>
+      </div>
+      <div class="step-body">
+        <div class="step-name">3축 평가 실시</div>
+        <div class="step-desc">
+          • <strong>정량 11지표 (70점)</strong> — HRD-Net·자격통계·STEP 실적<br>
+          • <strong>정성 3지표 (30점)</strong> — 전문가 3인 패널<br>
+          • <strong>설문조사 (100점)</strong> 약 2,000명 ★ 시나리오 B
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>3축 평가 산출</strong>
+        정량·정성·설문 결과 DB<br>
+        (세분류 × 14지표 + 설문)
+      </div>
+    </div>
+
+    <div class="arrow-down">▼</div>
+
+    <div class="step step-3">
+      <div class="step-num">
+        <div class="step-num-mini">STEP</div>
+        <div class="step-num-main">3</div>
+      </div>
+      <div class="step-body">
+        <div class="step-name">종합 점수 산정 및 합산</div>
+        <div class="step-desc">
+          • 시앤피 2025 자료 원본 비중 유지<br>
+          • <strong>정량(70) + 정성(30) + 설문조사(100) = 200점 만점</strong><br>
+          • 결측치·중복 처리 매뉴얼 v0.1 적용
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>종합 산출</strong>
+        세분류 종합 점수표<br>
+        (세분류 전수 × 200점)
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 인계 -->
+  <div class="handoff">
+    <div class="handoff-label">▶ Step 4 인계 → Module 3 모집단</div>
+    <div class="handoff-name">
+      외부 8인 패널 검토 → <strong>N₁_final 세분류 우선순위 240개 확정</strong>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

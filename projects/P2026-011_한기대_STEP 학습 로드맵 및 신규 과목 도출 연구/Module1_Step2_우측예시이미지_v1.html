@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 1 Step 2 — 우측 예시 시각화</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #0A1828;
+    color: #E5EAF0;
+    -webkit-font-smoothing: antialiased;
+    padding: 30px;
+  }
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 540px;
+  }
+
+  /* ───── Box wrapper (mimics slide right-side box) ───── */
+  .box {
+    background: transparent;
+  }
+  .box-header {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-left: 3px solid #5BAEC7;
+  }
+  .box-header::before {
+    content: "▶";
+    color: #7DD3E8;
+    font-size: 11px;
+  }
+  .box-body {
+    background: #FFFFFF;
+    padding: 16px 14px;
+    color: #1A2733;
+    border: 1px solid #2D4A66;
+    border-top: none;
+  }
+
+  /* ───── Visual 1: SLR 4계층 ───── */
+  .tier-row {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 10px;
+  }
+  .tier-row:last-child { margin-bottom: 0; }
+  .tier-label {
+    width: 70px;
+    flex-shrink: 0;
+    background: #5BAEC7;
+    color: #FFFFFF;
+    font-size: 10.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    text-align: center;
+  }
+  .tier-content {
+    flex: 1;
+    display: flex;
+    gap: 4px;
+    padding-left: 8px;
+    align-items: stretch;
+  }
+  .tier-box {
+    background: #EDF2F6;
+    border: 1px solid #C7D3DE;
+    color: #1B4D6A;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 8px;
+    flex: 1;
+    text-align: center;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tier-box.active {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    border-color: #1B4D6A;
+    box-shadow: 0 0 0 2px rgba(125, 211, 232, 0.4);
+  }
+  .tier-box.dim {
+    background: #F7F9FB;
+    color: #8B9BAB;
+    font-weight: 400;
+  }
+  .arrow-down {
+    text-align: center;
+    color: #5BAEC7;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 70px;
+    line-height: 0.8;
+    padding: 1px 0;
+  }
+  .legend {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #4A5663;
+    line-height: 1.4;
+    padding-top: 8px;
+    border-top: 1px dashed #C7D3DE;
+  }
+  .legend .swatch {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #1B4D6A;
+    margin-right: 4px;
+    vertical-align: -1px;
+  }
+  .legend .swatch.dim { background: #EDF2F6; border: 1px solid #C7D3DE; }
+
+  /* ───── Visual 2: 정합성 검증 표 ───── */
+  .verify-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+  }
+  .verify-table thead th {
+    background: #1B4D6A;
+    color: #FFFFFF;
+    padding: 6px 8px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.3;
+  }
+  .verify-table thead th.col-mid { background: #4A6478; text-align: center; width: 28px; }
+  .verify-table thead th.col-verdict { width: 60px; text-align: center; }
+  .verify-table tbody td {
+    padding: 5px 8px;
+    border-bottom: 1px solid #E1E7ED;
+    color: #2C3A48;
+    line-height: 1.35;
+    vertical-align: middle;
+  }
+  .verify-table tbody td.arrow {
+    text-align: center;
+    color: #5BAEC7;
+    font-weight: 700;
+    font-size: 14px;
+    background: #F7F9FB;
+  }
+  .verify-table tbody td.verdict {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .verify-table tbody td.verdict.ok {
+    background: rgba(29, 158, 117, 0.15);
+    color: #0F6E56;
+  }
+  .verify-table tbody td.verdict.warn {
+    background: rgba(239, 159, 39, 0.18);
+    color: #854F0B;
+  }
+  .verify-table tbody td.verdict.del {
+    background: rgba(226, 75, 74, 0.15);
+    color: #A32D2D;
+  }
+  .verify-table tbody td.code {
+    font-family: 'Courier New', monospace;
+    font-size: 9.5px;
+    color: #4A6478;
+  }
+  .legend-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    font-size: 10px;
+    color: #4A5663;
+  }
+  .legend-row .lg {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .legend-row .lg-mark {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 14px;
+    font-size: 10px;
+  }
+  .legend-row .lg-mark.ok { background: rgba(29, 158, 117, 0.18); color: #0F6E56; }
+  .legend-row .lg-mark.warn { background: rgba(239, 159, 39, 0.20); color: #854F0B; }
+  .legend-row .lg-mark.del { background: rgba(226, 75, 74, 0.18); color: #A32D2D; }
+</style>
+</head>
+<body>
+<div class="stack">
+
+  <!-- ====== Visual 1: SLR 4계층 구조 예시 ====== -->
+  <div class="box">
+    <div class="box-header">10대 산업 분야별 SLR 4계층 구조 예시</div>
+    <div class="box-body">
+
+      <div class="tier-row">
+        <div class="tier-label">분야</div>
+        <div class="tier-content">
+          <div class="tier-box active">19. 전기·전자</div>
+          <div class="tier-box dim">20. 정보통신</div>
+          <div class="tier-box dim">…</div>
+        </div>
+      </div>
+      <div class="arrow-down">▼</div>
+
+      <div class="tier-row">
+        <div class="tier-label">직무</div>
+        <div class="tier-content">
+          <div class="tier-box active">반도체</div>
+          <div class="tier-box">디스플레이</div>
+          <div class="tier-box">정보보호</div>
+          <div class="tier-box">SW엔지</div>
+        </div>
+      </div>
+      <div class="arrow-down">▼</div>
+
+      <div class="tier-row">
+        <div class="tier-label">과정</div>
+        <div class="tier-content">
+          <div class="tier-box active">반도체 공정설계 입문</div>
+          <div class="tier-box">반도체 공정 운영</div>
+          <div class="tier-box">품질 분석</div>
+        </div>
+      </div>
+      <div class="arrow-down">▼</div>
+
+      <div class="tier-row">
+        <div class="tier-label">능력단위</div>
+        <div class="tier-content">
+          <div class="tier-box active">공정설계 기초</div>
+          <div class="tier-box">장비 운영</div>
+          <div class="tier-box">품질이상 진단</div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <span class="swatch"></span> Step 2에서 정합성 점검 대상 경로 (예시 1건)　·
+        <span class="swatch dim"></span> 동일 계층 내 다른 항목
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Visual 2: Master DB ↔ SLR 교차 정합성 검증 ====== -->
+  <div class="box">
+    <div class="box-header">Master DB ↔ SLR 교차 정합성 검증 예시</div>
+    <div class="box-body">
+      <table class="verify-table">
+        <thead>
+          <tr>
+            <th style="width:38%">Master DB (Step 1 결과)</th>
+            <th class="col-mid">↔</th>
+            <th style="width:38%">SLR 4계층 (Step 2)</th>
+            <th class="col-verdict">검증</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>반도체 공정설계 입문</strong><br>
+              <span class="code">→ 공정설계 기초</span>
+            </td>
+            <td class="arrow">↔</td>
+            <td>
+              19.전기·전자 ▸ 반도체 ▸<br>
+              공정설계 입문 ▸ <strong>공정설계 기초</strong>
+            </td>
+            <td class="verdict ok">✓<br><span style="font-size:9px">정합</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>AI 활용 보고서 작성</strong><br>
+              <span class="code">→ AI 활용 문서작성</span>
+            </td>
+            <td class="arrow">↔</td>
+            <td>
+              <span style="color:#A32D2D">해당 과정·능력단위<br>SLR 미수록</span>
+            </td>
+            <td class="verdict warn">⚠<br><span style="font-size:9px">누락</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>디지털 포렌식</strong> <span style="color:#A32D2D">(구)</span><br>
+              <span class="code">→ 능력단위 삭제됨</span>
+            </td>
+            <td class="arrow">↔</td>
+            <td>
+              정보통신 ▸ 정보보호 ▸<br>
+              <span style="color:#A32D2D">구 능력단위 잔존</span>
+            </td>
+            <td class="verdict del">⚠<br><span style="font-size:9px">갱신</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>클라우드 보안 운영</strong><br>
+              <span class="code">→ 보안관제 운영</span>
+            </td>
+            <td class="arrow">↔</td>
+            <td>
+              20.정보통신 ▸ 정보보호 ▸<br>
+              클라우드 보안 ▸ <strong>보안관제 운영</strong>
+            </td>
+            <td class="verdict ok">✓<br><span style="font-size:9px">정합</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="legend-row">
+        <div class="lg"><span class="lg-mark ok">✓</span>정합 — 양방향 일치</div>
+        <div class="lg"><span class="lg-mark warn">⚠</span>누락 — SLR 추가 필요</div>
+        <div class="lg"><span class="lg-mark del">⚠</span>갱신 — 변경·삭제 반영</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

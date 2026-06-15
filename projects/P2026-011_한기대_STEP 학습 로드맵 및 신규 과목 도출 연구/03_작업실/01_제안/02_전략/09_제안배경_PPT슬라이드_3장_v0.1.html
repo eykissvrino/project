@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>제안 배경 PPT 슬라이드 3장 v0.1</title>
+<style>
+  :root {
+    --navy:#1B3A57;
+    --navy-deep:#0F2438;
+    --navy-soft:#244B72;
+    --blue:#3A6EA5;
+    --blue-soft:#6A93BD;
+    --blue-pale:#E5EEF7;
+    --green:#7FBE9B;
+    --green-soft:#D5EBDD;
+    --gold:#C9A24A;
+    --orange:#E8833A;
+    --ink:#1A1A1A;
+    --gray:#5B6573;
+    --gray-line:#D6DCE3;
+    --bg:#E8ECF1;
+    --white:#FFFFFF;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family:'Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    padding:30px 20px;
+    line-height:1.4;
+  }
+  .doc-intro {
+    max-width:1200px;
+    margin:0 auto 24px;
+    padding:14px 18px;
+    background:var(--navy-deep);
+    color:#fff;
+    border-radius:6px;
+    font-size:13px;
+    line-height:1.6;
+  }
+  .doc-intro b { color:var(--gold); }
+
+  /* ════════════════ 슬라이드 박스 (16:9) ════════════════ */
+  .slide {
+    width:1200px;
+    height:675px;
+    margin:0 auto 32px;
+    background:var(--white);
+    box-shadow:0 8px 32px rgba(15,36,56,0.18);
+    position:relative;
+    overflow:hidden;
+    font-size:13px;
+  }
+  .slide-no-badge {
+    position:absolute;
+    top:-14px; left:-14px;
+    background:var(--gold);
+    color:var(--navy-deep);
+    width:48px; height:48px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    font-size:18px;
+    box-shadow:0 4px 12px rgba(15,36,56,0.25);
+    z-index:10;
+  }
+
+  /* ── 슬라이드 헤더(공통) ── */
+  .s-header {
+    height:50px;
+    background:var(--navy);
+    display:grid;
+    grid-template-columns:130px 1fr 180px;
+    align-items:center;
+    color:#fff;
+  }
+  .s-tag {
+    background:var(--navy-deep);
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-weight:700;
+    color:#fff;
+    letter-spacing:1px;
+  }
+  .s-question {
+    padding:0 18px;
+    font-size:14.5px;
+    font-weight:700;
+    line-height:1.3;
+  }
+  .s-question .qmark {
+    color:var(--gold);
+    font-weight:900;
+    margin-right:6px;
+    font-size:15px;
+  }
+  .s-chapter {
+    text-align:right;
+    padding-right:20px;
+    font-size:10.5px;
+    color:var(--blue-pale);
+    line-height:1.5;
+  }
+  .s-chapter b { color:#fff; }
+
+  /* ── 슬라이드 메시지 띠 ── */
+  .s-message {
+    background:var(--blue-pale);
+    padding:11px 22px;
+    border-left:5px solid var(--blue);
+    font-size:13.5px;
+    font-weight:700;
+    color:var(--navy);
+    line-height:1.55;
+    margin:0;
+  }
+  .s-message b { color:var(--orange); }
+
+  /* ── 슬라이드 본문 영역 ── */
+  .s-body {
+    padding:14px 22px 0;
+    height:calc(100% - 50px - 70px - 38px);
+  }
+
+  /* ── 슬라이드 하단 인사이트 배너 ── */
+  .s-footer {
+    position:absolute;
+    bottom:0; left:0; right:0;
+    height:38px;
+    background:var(--navy-deep);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 22px;
+    font-size:11px;
+  }
+  .s-footer .insight {
+    font-weight:700;
+    color:var(--gold);
+    font-size:12px;
+  }
+  .s-footer .src {
+    color:var(--blue-pale);
+    font-size:10px;
+  }
+
+  /* ════════════════ Slide 1 전용 ════════════════ */
+  .s1-body { display:grid; grid-template-columns:340px 1fr; gap:18px; }
+  .s1-hero {
+    background:linear-gradient(145deg,var(--navy) 0%, var(--navy-soft) 100%);
+    color:#fff;
+    border-radius:6px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .s1-hero .lead { font-size:11px; color:var(--gold); letter-spacing:1px; font-weight:700; }
+  .s1-hero .big {
+    font-size:62px;
+    font-weight:900;
+    line-height:1;
+    margin-top:6px;
+    letter-spacing:-2px;
+  }
+  .s1-hero .big small { font-size:14px; color:var(--blue-pale); font-weight:600; display:block; margin-top:6px; letter-spacing:0; }
+  .s1-hero .def {
+    margin-top:14px;
+    background:rgba(255,255,255,0.08);
+    border-left:3px solid var(--gold);
+    padding:10px 12px;
+    font-size:11px;
+    line-height:1.55;
+  }
+  .s1-hero .def b { color:var(--gold); }
+  .s1-domain-row { display:flex; gap:5px; margin-top:12px; }
+  .s1-domain {
+    flex:1;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    text-align:center;
+    padding:7px 2px;
+    font-size:10.5px;
+    font-weight:700;
+    border-radius:3px;
+  }
+  .s1-cards { display:grid; grid-template-rows:1fr 1fr; gap:10px; }
+  .s1-card {
+    background:#fff;
+    border:1px solid var(--gray-line);
+    border-top:3px solid var(--blue);
+    border-radius:4px;
+    padding:11px 14px;
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+  }
+  .s1-card .num {
+    background:var(--blue);
+    color:#fff;
+    font-size:13px;
+    font-weight:900;
+    width:30px; height:30px;
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .s1-card .title {
+    font-size:13px;
+    font-weight:800;
+    color:var(--navy);
+    margin-bottom:3px;
+  }
+  .s1-card .title small { color:var(--gray); font-weight:500; font-size:10.5px; margin-left:6px; }
+  .s1-card ul { list-style:none; padding:0; font-size:11px; line-height:1.55; color:var(--ink); }
+  .s1-card ul li {
+    position:relative;
+    padding-left:11px;
+    margin-bottom:1px;
+  }
+  .s1-card ul li:before {
+    content:'·';
+    position:absolute; left:0; top:-2px;
+    color:var(--blue);
+    font-weight:900;
+    font-size:14px;
+  }
+  .s1-card ul li b { color:var(--navy); }
+
+  /* ════════════════ Slide 2 전용 ════════════════ */
+  .s2-body {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    height:calc(100% - 50px - 70px - 38px);
+  }
+  .s2-col { display:flex; flex-direction:column; }
+  .s2-col-title {
+    background:var(--navy);
+    color:#fff;
+    padding:7px 12px;
+    font-size:12px;
+    font-weight:800;
+    text-align:center;
+    border-radius:4px 4px 0 0;
+  }
+  .s2-col-title.right { background:var(--blue); }
+  .s2-flow {
+    background:#fff;
+    border:1px solid var(--gray-line);
+    border-top:none;
+    flex:1;
+    padding:12px 12px;
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+  }
+  .s2-stage {
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:8px;
+    align-items:center;
+  }
+  .s2-stage .step {
+    background:var(--blue-pale);
+    color:var(--navy);
+    font-weight:900;
+    font-size:13px;
+    border-radius:50%;
+    width:32px; height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid var(--blue);
+  }
+  .s2-stage .body {
+    background:var(--blue-pale);
+    padding:5px 10px;
+    border-radius:3px;
+    font-size:10.5px;
+    line-height:1.45;
+  }
+  .s2-stage .body .h {
+    color:var(--navy);
+    font-weight:800;
+    font-size:11.5px;
+    margin-bottom:1px;
+  }
+  .s2-col.right .s2-stage .body { background:var(--green-soft); }
+  .s2-col.right .s2-stage .step { background:var(--green-soft); color:var(--navy); border-color:var(--green); }
+  .s2-conclusion {
+    grid-column:1 / 3;
+    background:linear-gradient(90deg, var(--navy) 0%, var(--blue) 100%);
+    color:#fff;
+    padding:9px 14px;
+    border-radius:4px;
+    font-size:12.5px;
+    font-weight:700;
+    text-align:center;
+    margin-top:5px;
+  }
+  .s2-conclusion b { color:var(--gold); }
+
+  /* ════════════════ Slide 3 전용 ════════════════ */
+  .s3-body {
+    display:grid;
+    grid-template-rows:auto 1fr;
+    gap:10px;
+    height:calc(100% - 50px - 70px - 38px);
+  }
+  .s3-top {
+    display:grid;
+    grid-template-columns:1.1fr 0.05fr 1fr;
+    gap:10px;
+    align-items:stretch;
+  }
+  .s3-asset {
+    background:var(--blue-pale);
+    border:1px solid var(--blue-soft);
+    border-radius:4px;
+    padding:8px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+  .s3-asset .h {
+    font-size:11px;
+    font-weight:800;
+    color:var(--navy);
+    margin-bottom:5px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .s3-asset .h .badge {
+    background:var(--navy); color:#fff;
+    font-size:9px;
+    padding:1px 6px;
+    border-radius:2px;
+    letter-spacing:0.5px;
+  }
+  .s3-asset .slr-image {
+    flex:1;
+    background:#fff;
+    border:1px solid var(--gray-line);
+    border-radius:3px;
+    overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
+    min-height:0;
+  }
+  .s3-asset .slr-image img {
+    width:100%; height:100%;
+    object-fit:contain;
+    display:block;
+  }
+  .s3-asset .cap {
+    font-size:9.5px;
+    color:var(--gray);
+    margin-top:3px;
+    line-height:1.3;
+  }
+  .s3-arrow {
+    display:flex; align-items:center; justify-content:center;
+    font-size:28px; color:var(--orange);
+    font-weight:900;
+  }
+  .s3-target {
+    background:#fff;
+    border:1px solid var(--gray-line);
+    border-top:3px solid var(--orange);
+    border-radius:4px;
+    padding:8px 10px;
+    display:flex;
+    flex-direction:column;
+  }
+  .s3-target .h {
+    font-size:11px;
+    font-weight:800;
+    color:var(--navy);
+    margin-bottom:4px;
+  }
+  .s3-target .donut-row {
+    display:flex; gap:6px;
+    margin-bottom:4px;
+  }
+  .s3-donut {
+    flex:1;
+    text-align:center;
+    padding:5px 3px;
+    border-radius:4px;
+    color:#fff;
+  }
+  .s3-donut.a { background:var(--blue-soft); }
+  .s3-donut.b { background:var(--blue); }
+  .s3-donut.c { background:var(--navy); }
+  .s3-donut .num {
+    font-size:20px;
+    font-weight:900;
+    line-height:1;
+  }
+  .s3-donut .lbl {
+    font-size:9px;
+    margin-top:2px;
+    line-height:1.2;
+  }
+  .s3-target .note {
+    font-size:9.5px;
+    color:var(--gray);
+    line-height:1.4;
+    margin-top:2px;
+  }
+  .s3-target .note b { color:var(--navy); }
+
+  /* 추진 목적·전략·과제 매트릭스 */
+  .s3-matrix {
+    background:#fff;
+    border:1.5px solid var(--navy);
+    border-radius:4px;
+    display:grid;
+    grid-template-rows:auto auto 1fr;
+    overflow:hidden;
+  }
+  .matrix-purpose-row {
+    display:grid;
+    grid-template-columns:60px 1fr;
+    background:var(--navy-deep);
+  }
+  .matrix-label {
+    background:var(--navy);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:10px;
+    font-weight:800;
+    letter-spacing:1px;
+  }
+  .matrix-purpose {
+    color:#fff;
+    padding:8px 14px;
+    font-size:12.5px;
+    font-weight:800;
+    text-align:center;
+    line-height:1.4;
+  }
+  .matrix-strategy-row {
+    display:grid;
+    grid-template-columns:60px 1fr 1fr 1fr;
+  }
+  .strat-cell {
+    color:#fff;
+    text-align:center;
+    padding:5px 6px;
+    font-size:10.5px;
+    font-weight:700;
+    border-left:1px solid rgba(255,255,255,0.25);
+  }
+  .strat-cell .tag { display:block; color:var(--gold); font-size:9.5px; letter-spacing:1px; font-weight:900; }
+  .strat-cell.renew { background:var(--blue-soft); }
+  .strat-cell.develop { background:var(--blue); }
+  .strat-cell.scale { background:var(--navy); }
+  .matrix-task-row {
+    display:grid;
+    grid-template-columns:60px 1fr 1fr 1fr;
+  }
+  .task-col-mini {
+    border:1px solid var(--gray-line);
+    border-top:none; border-bottom:none;
+    padding:6px 7px;
+    background:#fff;
+  }
+  .task-col-mini:last-child { border-right:none; }
+  .task-mini-block {
+    background:var(--green-soft);
+    border-left:2px solid var(--green);
+    padding:2px 5px;
+    font-size:9.5px;
+    font-weight:700;
+    color:var(--navy);
+    margin-bottom:3px;
+    line-height:1.3;
+  }
+  .task-col-mini ul {
+    list-style:none;
+    padding:0 0 4px 6px;
+    font-size:9px;
+    color:var(--ink);
+    line-height:1.4;
+  }
+  .task-col-mini ul li {
+    position:relative;
+    padding-left:7px;
+    margin-bottom:0;
+  }
+  .task-col-mini ul li:before {
+    content:'·';
+    position:absolute; left:0;
+    color:var(--blue);
+  }
+
+  /* PPT 디자인 가이드 카드 */
+  .design-guide {
+    max-width:1200px;
+    margin:8px auto 0;
+    background:#fff;
+    border-radius:6px;
+    padding:18px 22px;
+    box-shadow:0 4px 12px rgba(15,36,56,0.08);
+  }
+  .design-guide h3 {
+    color:var(--navy);
+    font-size:14px;
+    margin-bottom:10px;
+    border-bottom:2px solid var(--navy);
+    padding-bottom:5px;
+  }
+  .design-guide ul {
+    list-style:none;
+    font-size:12px;
+    line-height:1.7;
+    color:var(--ink);
+  }
+  .design-guide ul li {
+    padding-left:18px;
+    position:relative;
+  }
+  .design-guide ul li:before {
+    content:'▸';
+    position:absolute; left:0;
+    color:var(--orange);
+    font-weight:900;
+  }
+  .design-guide ul li b { color:var(--navy); }
+
+  @media print {
+    body { background:#fff; padding:0; }
+    .slide { box-shadow:none; page-break-after:always; margin:0; }
+    .doc-intro, .design-guide { display:none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ────────── 문서 안내 ────────── -->
+<div class="doc-intro">
+  <b>정성제안서 §Ⅰ-1 제안 배경 — PPT 슬라이드 3장 시각화 v0.1</b><br>
+  16:9 비율 (1200×675px). 좌상단 노란 뱃지는 슬라이드 번호. v0.2 톤 가이드 준수 — AX 시대 환경 분석 → 직무 재편 → STEP의 응답(목적·전략·과제)으로 단일 논리선. Slide 1 질문을 <b>"AX는 어디까지 와 있는가?"</b>로 좁힘.
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ SLIDE 1 ════════════════════════ -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div class="slide" id="slide-1">
+  <div class="slide-no-badge">01</div>
+  <div class="s-header">
+    <div class="s-tag">제안 배경</div>
+    <div class="s-question"><span class="qmark">Q.</span>AI 대전환(AX)은 지금 어디까지 와 있는가? <span style="color:var(--blue-pale);font-weight:500;font-size:12px"> — 정책 · 산업의 동시 가속</span></div>
+    <div class="s-chapter"><b>Ⅰ. 제안개요</b><br>1. 제안의 목적 및 범위</div>
+  </div>
+
+  <div class="s-message">
+    인공지능은 더 이상 IT 분야에 한정된 기술이 아니다 — <b>산업 · 공공 · 사회 · 지역 · 국방</b>을 아우르는 국가 전반의 AI 대전환(AX)이 정책 · 산업 양 축에서 동시에 가속되고 있다.
+  </div>
+
+  <div class="s-body s1-body">
+    <!-- 좌측: AX 정의 + 적용 영역 -->
+    <div class="s1-hero">
+      <div>
+        <div class="lead">AI TRANSFORMATION</div>
+        <div class="big">AX<small>국가 전반의 AI 대전환</small></div>
+        <div class="def">
+          <b>"</b>특정 분야에 한정된 인공지능 활용을 넘어,<br>
+          산업·공공·사회·지역·국방에 이르는 국가 전반의 AI 대전환<b>"</b><br>
+          <span style="font-size:9.5px;color:var(--blue-pale);margin-top:4px;display:inline-block">— 과학기술정보통신부</span>
+        </div>
+      </div>
+      <div class="s1-domain-row">
+        <div class="s1-domain">산업</div>
+        <div class="s1-domain">공공</div>
+        <div class="s1-domain">사회</div>
+        <div class="s1-domain">지역</div>
+        <div class="s1-domain">국방</div>
+      </div>
+    </div>
+
+    <!-- 우측: 정책 가속 & 산업 가속 카드 2개 -->
+    <div class="s1-cards">
+      <div class="s1-card">
+        <div class="num">1</div>
+        <div>
+          <div class="title">정책 가속 <small>국가전략 · 글로벌 정합</small></div>
+          <ul>
+            <li><b>한국 AI 정책 정비</b> — OECD AI 원칙 기반 2025년 현황 점검</li>
+            <li><b>NRC-NST 협동 제안</b> — "AI 3대 강국"을 향한 국가전략</li>
+            <li><b>글로벌 정합</b> — 주요국 120개 핵심 사례, 정책·인프라·인재 3축 동시 가속</li>
+          </ul>
+        </div>
+      </div>
+      <div class="s1-card">
+        <div class="num">2</div>
+        <div>
+          <div class="title">산업 가속 <small>제조 AX · 산업단지 · 규제</small></div>
+          <ul>
+            <li><b>스마트제조혁신 3.0</b> 전략 발표 (산업부, 2025.10) — AI 기반 전면 전환</li>
+            <li><b>제조AI 확산 TF</b> 출범 & <b>M.AX 얼라이언스</b> — 산업계 결집</li>
+            <li><b>산업단지 M.AX</b> 본격 추진 & <b>AI 로봇 규제 완화</b> — 지역 단위 AX 확산</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-footer">
+    <div class="insight">▶ 정책 · 산업의 동시 가속 → AX는 더 이상 미래 이슈가 아닌 "지금" 진행 중인 현실</div>
+    <div class="src">Source: 과기정통부 / NRC-NST / 산업부(2025.09-2026.02) / The LENS 2025-10</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ SLIDE 2 ════════════════════════ -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div class="slide" id="slide-2">
+  <div class="slide-no-badge">02</div>
+  <div class="s-header">
+    <div class="s-tag">제안 배경</div>
+    <div class="s-question"><span class="qmark">Q.</span>AX는 산업의 직무와 역량을 어떻게 재편하고 있는가? <span style="color:var(--blue-pale);font-weight:500;font-size:12px"> — 일터 도달 경로</span></div>
+    <div class="s-chapter"><b>Ⅰ. 제안개요</b><br>1. 제안의 목적 및 범위</div>
+  </div>
+
+  <div class="s-message">
+    AX는 산업 전 영역으로 확산되며, 일터에서는 <b>기존 직무가 AI와 결합되어 재편되고 AI 결합형 신직무가 등장</b>한다 — 직업훈련 수요가 <b>"직무 단위" → "직무 × AI 결합 단위"</b>로 이동.
+  </div>
+
+  <div class="s-body s2-body">
+    <!-- 좌측: 산업 AX 확산 흐름 -->
+    <div class="s2-col">
+      <div class="s2-col-title">[A] 산업 AX의 확산 — 전 분야로 도달</div>
+      <div class="s2-flow">
+        <div class="s2-stage">
+          <div class="step">1</div>
+          <div class="body">
+            <div class="h">제조 AX</div>
+            M.AX 얼라이언스 · 스마트제조 3.0 · 산업단지 M.AX 확산 (KIAT · 삼정KPMG)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">2</div>
+          <div class="body">
+            <div class="h">공공 AX</div>
+            범정부 AX 혁신 · AI 정부 서비스 사례집 · AI-augmented Engineering (삼성SDS)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">3</div>
+          <div class="body">
+            <div class="h">R&amp;D AX</div>
+            화학·바이오 글로벌 R&amp;D 기관의 AX 적용 본격화 (케미브리프 2호)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">4</div>
+          <div class="body">
+            <div class="h">거버넌스 AX</div>
+            전략적 미래예측에서의 AI 활용 · 선제적 거버넌스 재구성 (케미브리프 11호)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측: 직무·역량 재편 흐름 -->
+    <div class="s2-col right">
+      <div class="s2-col-title right">[B] 일터의 직무 · 역량 재편</div>
+      <div class="s2-flow">
+        <div class="s2-stage">
+          <div class="step">①</div>
+          <div class="body">
+            <div class="h">기존 직무 분해</div>
+            제조 디지털 전환이 직무를 단위 작업으로 재정의 (KLI 이슈페이퍼 2025-13)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">②</div>
+          <div class="body">
+            <div class="h">AI 결합 재구성</div>
+            업무 단위에 AI가 결합 — 기업 AI 활용 확산 (딜로이트 2026)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">③</div>
+          <div class="body">
+            <div class="h">신직무 출현</div>
+            AI 결합형 신직무 등장, HR · 인재 운영 표준 재정립 (딜로이트 2026 HR)
+          </div>
+        </div>
+        <div class="s2-stage">
+          <div class="step">④</div>
+          <div class="body">
+            <div class="h">자격·역량 체계 갱신</div>
+            AX 시대 인재 패러다임 — 직무 × AI 결합 역량이 표준 (양희태, 정책포커스 48호)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="s2-conclusion">
+      ▶ 모든 산업 직무가 AI와 결합되는 시대 → <b>"직무 × AI 결합 단위"</b>의 평생직업능력개발 콘텐츠가 표준이 되어야 한다
+    </div>
+  </div>
+
+  <div class="s-footer">
+    <div class="insight">▶ 일터의 직무 단위가 재정의되는 중 — 콘텐츠 표준의 갱신이 요구됨</div>
+    <div class="src">Source: KIAT · KPMG · 삼성SDS · 케미브리프 · KLI 2025-13 · 딜로이트 2026 · 양희태(48호)</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ SLIDE 3 ════════════════════════ -->
+<!-- ════════════════════════════════════════════════════════════════ -->
+<div class="slide" id="slide-3">
+  <div class="slide-no-badge">03</div>
+  <div class="s-header">
+    <div class="s-tag">추진 목적 및 범위</div>
+    <div class="s-question"><span class="qmark">Q.</span>그렇다면 한기대 STEP은 무엇을 해야 하는가? <span style="color:var(--blue-pale);font-weight:500;font-size:12px"> — 본 사업의 추진 목적 · 전략 · 과제</span></div>
+    <div class="s-chapter"><b>Ⅰ. 제안개요</b><br>1. 제안의 목적 및 범위</div>
+  </div>
+
+  <div class="s-message">
+    STEP은 국내 평생직업능력개발의 콘텐츠 표준 — <b>SLR 고도화</b>와 <b>10대 산업 분야 × AX 융합형 신규 과목 도출</b>로 변화에 응답한다.
+  </div>
+
+  <div class="s-body s3-body">
+
+    <!-- 상단: STEP 현 자산 → 본 사업의 응답 -->
+    <div class="s3-top">
+      <!-- 좌: 현 자산(SLR 도식 이미지) -->
+      <div class="s3-asset">
+        <div class="h"><span class="badge">AS-IS</span>STEP 학습 로드맵(SLR) — 현 자산 (기개발 2,586개)</div>
+        <div class="slr-image">
+          <img src="./images/slr_도식_예시.png" alt="SLR 도식 예시 (작년 결과물)">
+        </div>
+        <div class="cap">※ 작년 결과물 SLR 도식 예시 — 10대 NCS 대분류 기반 · 직무별 학습 로드맵</div>
+      </div>
+
+      <div class="s3-arrow">▶</div>
+
+      <!-- 우: RFP가 정의한 응답 (400 과목) -->
+      <div class="s3-target">
+        <div class="h">RFP §II-1 — 본 사업이 도출할 신규 400과목</div>
+        <div class="donut-row">
+          <div class="s3-donut a"><div class="num">100</div><div class="lbl">평생직업<br>능력개발</div></div>
+          <div class="s3-donut b"><div class="num">100</div><div class="lbl">디지털·<br>첨단</div></div>
+          <div class="s3-donut c"><div class="num">200</div><div class="lbl">융합<br>(AI+X)</div></div>
+        </div>
+        <div class="note">
+          • 평생 — 10대 NCS 대분류 / 디지털·첨단 — 21대 직종<br>
+          • <b>융합(AI+X) 200과목</b> — AX · GX · 안전(로봇) 등 산업 × AI 결합<br>
+          • + <b>SLR 관리매뉴얼</b> 1부 · <b>Master DB 최신화</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- 하단: 추진 목적·전략·과제 매트릭스 -->
+    <div class="s3-matrix">
+      <div class="matrix-purpose-row">
+        <div class="matrix-label">목적</div>
+        <div class="matrix-purpose">
+          AI · 디지털 전환 시대에 필요한 STEP 학습 로드맵(SLR) 고도화 및 STEP 10대 산업 분야 × AX 융합형 신규과목 도출
+        </div>
+      </div>
+      <div class="matrix-strategy-row">
+        <div class="matrix-label">전략</div>
+        <div class="strat-cell renew"><span class="tag">RENEW</span>1. SLR 최신화</div>
+        <div class="strat-cell develop"><span class="tag">DEVELOP</span>2. 수요조사 · 신규과목 도출 체계화</div>
+        <div class="strat-cell scale"><span class="tag">SCALE</span>3. AX 시대 SLR 고도화</div>
+      </div>
+      <div class="matrix-task-row">
+        <div class="matrix-label">과제</div>
+        <div class="task-col-mini">
+          <div class="task-mini-block">1-1. NCS·SQF 개편 및 신규 개발 내용 최신화</div>
+          <ul>
+            <li>산업인력공단·ISC 최신 자료 확보</li>
+            <li>기개발 2,586개 매핑·미활용 도출</li>
+          </ul>
+          <div class="task-mini-block">1-2. Master DB + SLR 최신화·고도화</div>
+          <ul>
+            <li>Master DB 1차 업데이트</li>
+            <li>10대 산업 분야별 SLR 갱신</li>
+          </ul>
+        </div>
+        <div class="task-col-mini">
+          <div class="task-mini-block">2-1. NCS 세분류 우선순위 도출</div>
+          <ul>
+            <li>정량·정성 수요분석 + 설문조사</li>
+          </ul>
+          <div class="task-mini-block">2-2. NCS 능력단위 우선순위 도출</div>
+          <ul>
+            <li>능력단위 풀 추출 · E/V/EV/AX 유형 설정</li>
+          </ul>
+          <div class="task-mini-block">2-3. 신규 과목 도출 · 과목개요서 개발</div>
+          <ul>
+            <li>평생·디지털 각 100 · 융합(AI+X) 200</li>
+          </ul>
+        </div>
+        <div class="task-col-mini">
+          <div class="task-mini-block">3-1. AI 활용 자동화 · DB 자산화</div>
+          <ul>
+            <li>Master DB 검증·자동 반영 도구</li>
+            <li>AX 융합 스킬셋 DB 자산화</li>
+          </ul>
+          <div class="task-mini-block">3-2. SLR 체계적 관리 매뉴얼 업데이트</div>
+          <ul>
+            <li>로드맵·DB·과목 관리 가이드</li>
+            <li>27·28년 후속사업 출발점 (RFP §I-6)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-footer">
+    <div class="insight">▶ 본 사업은 한기대 STEP의 다년 협력 파트너로서 27 · 28년 후속사업의 출발점이 된다</div>
+    <div class="src">Source: 한기대 RFP §II-1 · §I-6 / 2025년 결과물 (시앤피컨설팅) Master DB</div>
+  </div>
+</div>
+
+<!-- ────────── PPT 변환 가이드 ────────── -->
+<div class="design-guide">
+  <h3>PPT 변환 가이드</h3>
+  <ul>
+    <li><b>슬라이드 비율</b> — 16:9 가로 (1200×675px 기준 · PPT 표준 1920×1080)</li>
+    <li><b>컬러 팔레트</b> — 네이비 #1B3A57 / 진한 네이비 #0F2438 / 블루 #3A6EA5 / 옅은 블루 #E5EEF7 / 그린 #7FBE9B (옅은 #D5EBDD) / 골드 #C9A24A / 오렌지 #E8833A</li>
+    <li><b>헤더 띠</b> — 좌측 진한 네이비 라벨 + 중앙 헤더 질문(Q. 흰색 굵게 + 골드 ?마크) + 우측 챕터 표기</li>
+    <li><b>본문 메시지 띠</b> — 옅은 블루 배경 + 좌측 5px 블루 라인 + 진한 네이비 텍스트 · 핵심 단어는 오렌지</li>
+    <li><b>슬라이드 1 시각화</b> — 좌측 진한 네이비 히어로 박스(큰 키워드 "AX" + 정의) + 5개 적용영역 + 우측 정책·산업 가속 2단 카드</li>
+    <li><b>슬라이드 2 시각화</b> — 좌측 4단 산업 AX 확산 흐름(블루) + 우측 4단 직무 재편 흐름(그린) + 하단 융합 결론 배너</li>
+    <li><b>슬라이드 3 시각화</b> — 좌측 SLR 도식 이미지(작년 결과물 활용) + 화살표 + 우측 400과목 도넛(100·100·200) + 하단 추진 목적·전략·과제 매트릭스</li>
+    <li><b>활용 이미지</b> — `images/slr_도식_예시.png` (작년 시앤피 발표자료에서 추출한 SLR 도식 예시, AS-IS 자산 표현용) / 추가 이미지가 필요한 경우 `images/배경_디지털.jpeg` 활용 가능</li>
+    <li><b>금지 표현</b> — "혁신적 AI 솔루션" / "자체 LLM 활용" / "발주처 자력 운영" (v0.2 톤 가이드)</li>
+    <li><b>권장 표현</b> — "RFP §II-1에서 명시한 ~" / "AX 시대의 ~을 반영하여" / "본 사업이 27·28년 후속사업의 출발점이 되도록 ~"</li>
+  </ul>
+</div>
+
+</body>
+</html>

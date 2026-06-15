@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2026 한기대 STEP SLR — 제안전략 캔버스 v0.1</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-light: #1A3D6B;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-300: #C9CED7;
+    --gray-600: #5B6573;
+    --gray-900: #1B2330;
+    --green: #1E9E6A;
+    --red: #C53030;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .canvas {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: white;
+    padding: 28px 36px;
+  }
+  .header .meta {
+    font-size: 12px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .slogan {
+    background: var(--yellow);
+    color: var(--navy);
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: center;
+  }
+  /* Top KPI Row */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--gray-100);
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .kpi {
+    background: white;
+    padding: 16px 12px;
+    text-align: center;
+  }
+  .kpi-label {
+    font-size: 11px;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .kpi-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .kpi-value.warn { color: var(--orange); }
+  /* Section */
+  .section {
+    padding: 24px 36px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+    display: inline-block;
+  }
+  /* Win Themes Grid */
+  .wt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .wt {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .wt::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--yellow);
+  }
+  .wt-no {
+    font-size: 11px;
+    color: var(--orange);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .wt-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .wt-headline {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .wt-metric {
+    background: var(--navy);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .wt-rfp {
+    font-size: 10px;
+    color: var(--gray-600);
+    background: var(--gray-50);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  /* Two-column */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  /* Comparison table */
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .compare th, .compare td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .compare th {
+    background: var(--gray-50);
+    color: var(--navy);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .compare td.cnp { color: var(--gray-600); }
+  .compare td.us { color: var(--navy); font-weight: 600; }
+  /* Score Allocation */
+  .score-bar {
+    display: flex;
+    height: 36px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border: 1px solid var(--gray-300);
+  }
+  .score-seg {
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .seg-1 { background: var(--orange); }
+  .seg-2 { background: var(--navy); }
+  .seg-3 { background: var(--navy-light); }
+  .seg-4 { background: var(--gray-600); }
+  /* Page allocation */
+  .page-alloc {
+    list-style: none;
+    font-size: 12px;
+  }
+  .page-alloc li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--gray-100);
+  }
+  .page-alloc li.total {
+    font-weight: 700;
+    color: var(--navy);
+    border-top: 1.5px solid var(--navy);
+    border-bottom: none;
+    margin-top: 4px;
+    padding-top: 8px;
+  }
+  /* Modules Track Matrix */
+  .matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .matrix th, .matrix td {
+    border: 1px solid var(--gray-300);
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .matrix th {
+    background: var(--navy);
+    color: white;
+    font-weight: 700;
+  }
+  .matrix th.row-head {
+    background: var(--gray-50);
+    color: var(--navy);
+    text-align: left;
+    padding-left: 12px;
+  }
+  .matrix td.cell {
+    background: white;
+    color: var(--gray-900);
+  }
+  .matrix td.star {
+    background: var(--yellow);
+    font-weight: 700;
+    color: var(--navy);
+  }
+  /* Pill */
+  .pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  .pill.wt1 { background: #FFE8B0; color: #8B5500; }
+  .pill.wt2 { background: #C7E5F5; color: #1F4E79; }
+  .pill.wt3 { background: #F5C7C7; color: #8B1A1A; }
+  .pill.wt4 { background: #C7E5C7; color: #1B5E1B; }
+  /* Risk */
+  .risk-list {
+    list-style: none;
+    font-size: 12px;
+  }
+  .risk-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .risk-tag {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .risk-tag.client { background: var(--orange); color: white; }
+  .risk-tag.internal { background: var(--gray-600); color: white; }
+  /* Footer */
+  .footer {
+    padding: 16px 36px;
+    background: var(--gray-50);
+    color: var(--gray-600);
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- ============== HEADER ============== -->
+  <div class="header">
+    <div class="meta">제안전략 캔버스 v0.1 · 2026-05-11 · 한기대 STEP 사업 TF</div>
+    <h1>2026년도 STEP 학습 로드맵(SLR) 및 신규 과목 도출 연구 — 제안전략</h1>
+    <div class="slogan">
+      AI·데이터로 진화하는 SLR — 1년이 지나도 한기대가 직접 돌리는 자율 운영체계
+    </div>
+  </div>
+
+  <!-- ============== TOP KPI ============== -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-label">사업비</div>
+      <div class="kpi-value">1.48억</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">기간</div>
+      <div class="kpi-value">~ 26.11.20</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">평가 배점</div>
+      <div class="kpi-value">기술90 + 가격10</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">협상적격선</div>
+      <div class="kpi-value warn">76.5점</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">발표</div>
+      <div class="kpi-value">20분 + Q&amp;A 10분</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">최대 경쟁자</div>
+      <div class="kpi-value warn">시앤피컨설팅</div>
+    </div>
+  </div>
+
+  <!-- ============== WIN THEMES ============== -->
+  <div class="section">
+    <div class="section-title">4대 Win Theme — RFP 4대 제언영역과 1:1 정렬</div>
+    <div class="wt-grid">
+      <div class="wt">
+        <div class="wt-no">WT1 · 자동화</div>
+        <div class="wt-title">AI 기반 SLR 자동화 엔진</div>
+        <div class="wt-headline">수기를 코드로. LLM·NLP·Python으로 작년 매핑·DB 작업의 70%를 자동화. 재현 가능한 코드 함께 납품.</div>
+        <div class="wt-metric">Master DB 수기 작업 70%↓</div>
+        <div class="wt-rfp">RFP §II-3 자동화 / §II-2 가·바</div>
+      </div>
+      <div class="wt">
+        <div class="wt-no">WT2 · 조사체계</div>
+        <div class="wt-title">실증 데이터 기반 수요조사</div>
+        <div class="wt-headline">응답자가 아닌 학습자에게 묻는다. STEP 188만 학습로그·검색어·중도이탈을 1차 신호화.</div>
+        <div class="wt-metric">학습자 188만 + 응답자 1,000명</div>
+        <div class="wt-rfp">RFP §II-3 조사체계 / §II-2 라</div>
+      </div>
+      <div class="wt">
+        <div class="wt-no">WT3 · AX·GX</div>
+        <div class="wt-title">AX·GX·안전 융합 200과목</div>
+        <div class="wt-headline">10대 NCS 대분류 × AI 적용 매트릭스. 작년 AI 리터러시 26개 한계 정조준.</div>
+        <div class="wt-metric">AX 26 → 200과목 (7.7배)</div>
+        <div class="wt-rfp">RFP §II-2 마 / §I-2 라</div>
+      </div>
+      <div class="wt">
+        <div class="wt-no">WT4 · 매뉴얼화</div>
+        <div class="wt-title">지속가능 매뉴얼화·제도연계</div>
+        <div class="wt-headline">12월부터 한기대 1인 운영 가능 형태. 직무능력은행제 시범 매핑으로 27년 후속 명분.</div>
+        <div class="wt-metric">27년 후속사업 부담 1/3</div>
+        <div class="wt-rfp">RFP §II-3 제도·매뉴얼 / §I-3 다</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== TWO-COL: SCORE + PAGE ============== -->
+  <div class="section two-col">
+    <div>
+      <div class="section-title">평가 배점 = 자원 배분 원칙</div>
+      <div style="font-size:12px; color:var(--gray-600); margin-bottom:10px;">
+        동점자 우선순위: ①수행계획(25) → ②인력조직(25) → ③과업이해도(20) → ④활용성(10)<br>
+        제안서 분량·발표 시간도 동일 순서로 배분.
+      </div>
+      <div class="score-bar">
+        <div class="score-seg seg-1" style="flex:25;">
+          <div>수행계획</div><div>25점</div>
+        </div>
+        <div class="score-seg seg-2" style="flex:25;">
+          <div>인력조직</div><div>25점</div>
+        </div>
+        <div class="score-seg seg-3" style="flex:20;">
+          <div>과업이해</div><div>20점</div>
+        </div>
+        <div class="score-seg seg-4" style="flex:10;">
+          <div>활용성</div><div>10점</div>
+        </div>
+      </div>
+      <div style="font-size:11px; color:var(--gray-600);">
+        + 정량 10점 (재무 5 / 책임자 5) + 가점 5 (상생협력)
+      </div>
+    </div>
+    <div>
+      <div class="section-title">정성제안서 분량 배분 (총 68쪽)</div>
+      <ul class="page-alloc">
+        <li><span>표지·요약·차례</span><span>4쪽 (6%)</span></li>
+        <li><span>Ⅰ. 제안개요 — 과업이해도</span><span>8쪽 (12%)</span></li>
+        <li><span>Ⅱ. 제안내용 — 수행계획 ★</span><span><strong>39쪽 (57%)</strong></span></li>
+        <li><span>Ⅲ. 수행조직 — 인력조직 ★</span><span>12쪽 (18%)</span></li>
+        <li><span>Ⅳ. 제안업체 일반</span><span>5쪽 (7%)</span></li>
+        <li class="total"><span>합계</span><span>68쪽</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============== MODULE × TRACK MATRIX ============== -->
+  <div class="section">
+    <div class="section-title">6대 절차 × 4트랙 매트릭스 (제안서 §Ⅱ-2의 핵심 구조)</div>
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th style="width:120px;"></th>
+          <th>M1 SLR 최신화</th>
+          <th>M2 세분류</th>
+          <th>M3 능력단위</th>
+          <th>M4 설문조사</th>
+          <th>M5 과목개요서</th>
+          <th>M6 결과정리</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="row-head">자동화 (WT1)</th>
+          <td class="star">LLM 매핑 ★</td>
+          <td class="cell">지표 자동산출</td>
+          <td class="cell">분류 자동화</td>
+          <td class="cell">설문 도구</td>
+          <td class="cell">개요서 검증</td>
+          <td class="star">DB 파이프라인 ★</td>
+        </tr>
+        <tr>
+          <th class="row-head">데이터 (WT2)</th>
+          <td class="cell">SQF + ISC 직접</td>
+          <td class="star">학습로그 ★</td>
+          <td class="cell">정성 패널</td>
+          <td class="star">시나리오 ABC ★</td>
+          <td class="cell">검색어 분석</td>
+          <td class="cell">결측치 규정</td>
+        </tr>
+        <tr>
+          <th class="row-head">도메인 (WT3)</th>
+          <td class="cell">10대 분류 정합성</td>
+          <td class="cell">N₁ 분야 분류</td>
+          <td class="star">AX 정성 3지표 ★</td>
+          <td class="cell">AX 수요</td>
+          <td class="star">10×N 매트릭스 ★</td>
+          <td class="cell">SLR 도식</td>
+        </tr>
+        <tr>
+          <th class="row-head">매뉴얼 (WT4)</th>
+          <td class="cell">미활용 자동만료</td>
+          <td class="cell">지표 표준화</td>
+          <td class="cell">합의 룰</td>
+          <td class="star">상시조사 운영체계 ★</td>
+          <td class="cell">개요서 표준</td>
+          <td class="star">4종 매뉴얼 ★</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="font-size:11px; color:var(--gray-600); margin-top:8px;">
+      ★ = 차별화 핵심 셀. 정성제안서·발표자료에서 별도 강조.
+    </div>
+  </div>
+
+  <!-- ============== COMPARE: 시앤피 vs 우리 ============== -->
+  <div class="section">
+    <div class="section-title">작년 시앤피(2025) vs 우리(2026) — 5대 차별화</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:25%;">영역</th>
+          <th style="width:35%;">시앤피 2025</th>
+          <th style="width:40%;">우리 2026</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="pill wt1">WT</span>슬로건·Win Theme</td>
+          <td class="cnp">표지·요약 슬로건 없음. 수행실적·기관이해도 어필만.</td>
+          <td class="us">"AI·데이터로 진화하는 SLR" 통일 슬로건. 4대 Win Theme.</td>
+        </tr>
+        <tr>
+          <td><span class="pill wt1">WT1</span>AI/데이터 활용</td>
+          <td class="cnp">제안서 전체에 AI/데이터 활용 단어 0건.</td>
+          <td class="us">LLM 매핑 + Master DB Python + 자동 만료 시스템 4종.</td>
+        </tr>
+        <tr>
+          <td><span class="pill wt2">WT2</span>수요조사 방식</td>
+          <td class="cnp">모아폼·서베이몽키 + 답례품 추첨 1,000명. 작년·재작년 동일.</td>
+          <td class="us">학습로그+설문 결합, 응답률 4종 정책, 시나리오 ABC 검증.</td>
+        </tr>
+        <tr>
+          <td><span class="pill wt3">WT3</span>AX 도메인</td>
+          <td class="cnp">"AI 리터러시 26과목" 별도 트랙. 발주처가 협소하다고 평가.</td>
+          <td class="us">10×N 매트릭스로 AX 200과목 + GX 20 + 안전 10 사전 후보.</td>
+        </tr>
+        <tr>
+          <td><span class="pill wt4">WT4</span>제도연계·매뉴얼</td>
+          <td class="cnp">직무능력은행제 1쪽·"협의체 구성 협의" 약속만.</td>
+          <td class="us">4종 매뉴얼 + 영상 튜토리얼 + 직능은행제 시범 매핑 1개 분야.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============== TWO-COL: ORG + RISK ============== -->
+  <div class="section two-col">
+    <div>
+      <div class="section-title">3축 컨소시엄 인력 구조 (배점 25점 동률 1순위)</div>
+      <div style="font-size:13px; line-height:1.7; padding:8px 0;">
+        <div style="border-left:4px solid var(--navy); padding:4px 12px; margin-bottom:10px;">
+          <strong>Axis 1. NCS·이러닝 본진</strong><br>
+          <span style="font-size:11px; color:var(--gray-600);">책임자(박사·교수) + ID 전문가 + NCS 분석가</span>
+        </div>
+        <div style="border-left:4px solid var(--orange); padding:4px 12px; margin-bottom:10px;">
+          <strong>Axis 2. AI·데이터 트랙 ★ 신설</strong><br>
+          <span style="font-size:11px; color:var(--gray-600);">데이터 엔지니어 + LLM/NLP 엔지니어</span>
+        </div>
+        <div style="border-left:4px solid var(--yellow); padding:4px 12px;">
+          <strong>Axis 3. AX·GX·안전 도메인 자문단 ★</strong><br>
+          <span style="font-size:11px; color:var(--gray-600);">제조 AX · 공공 AX · ESG·GX · 로봇·안전</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">리스크 & 발주처 사전 확인 사항</div>
+      <ul class="risk-list">
+        <li><span class="risk-tag client">CLIENT</span><span>AX 개발 절차 1안/2안 발주처 선호 방향</span></li>
+        <li><span class="risk-tag client">CLIENT</span><span>평생 vs 디지털 비중 (50:50 vs 81:19)</span></li>
+        <li><span class="risk-tag client">CLIENT</span><span>학습로그 활용 발주처 수용도 (개인정보)</span></li>
+        <li><span class="risk-tag internal">INTERNAL</span><span>책임자 확정 (학위·경력 검증) — T-25일까지</span></li>
+        <li><span class="risk-tag internal">INTERNAL</span><span>AX 자문위원 동의서 — T-15일까지</span></li>
+        <li><span class="risk-tag internal">INTERNAL</span><span>LLM 자동화 데모 프로토타입 — T-20일까지</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============== TIMELINE / NEXT ============== -->
+  <div class="section">
+    <div class="section-title">제안서 작성 마일스톤 (제출 D-Day 기준)</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th>D-?</th>
+          <th>산출물</th>
+          <th>위치</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>T-30 (완료)</strong></td><td>전략 문서 v0.1 · 정성목차 v0.1 · PT 스토리라인 v0.1 · 본 캔버스</td><td>01_제안/02_전략/</td></tr>
+        <tr><td>T-25</td><td>전략 v1.0 확정 · 정성목차 v1.0 · 책임자 확정</td><td>02_전략/, 03_정성제안서/</td></tr>
+        <tr><td>T-20</td><td>정성제안서 본문 50% 초안 · LLM 데모 프로토타입</td><td>03_정성제안서/</td></tr>
+        <tr><td>T-15</td><td>인력 이력서·자문위원 동의서 확보</td><td>03_정성제안서/Ⅲ_인력/</td></tr>
+        <tr><td>T-10</td><td>정성제안서·발표자료 100% 초안</td><td>03_정성제안서/, 05_발표자료/</td></tr>
+        <tr><td>T-7</td><td>내부 모의평가 (위원 역할분담)</td><td>01_분석/모의평가_체크리스트.md</td></tr>
+        <tr><td>T-5</td><td>수정 반영 후 PDF 변환 · 300MB 용량 점검</td><td>06_제출본/</td></tr>
+        <tr><td><strong>T-3</strong></td><td><strong>나라장터 제출</strong> + 보고회 발표자료 인쇄물 10부</td><td>—</td></tr>
+        <tr><td>T-Day</td><td>발표 20분 + Q&amp;A 10분</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <div>
+      문서 트리:
+      <a href="01_제안전략_Master_v0.1.md">전략 마스터</a> ·
+      <a href="02_정성제안서_목차_v0.1.md">정성목차</a> ·
+      <a href="03_PT_스토리라인_v0.1.md">PT 스토리라인</a>
+    </div>
+    <div>v0.1 · 2026-05-11 · 본 캔버스는 v1.0 확정 시 갱신</div>
+  </div>
+</div>
+</body>
+</html>

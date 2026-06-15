@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 3축 통합 평가 도식 (RFP 50/35/15)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 40px 32px;
+    color: #1F2937;
+  }
+  .slide-area {
+    width: 1180px;
+    background: #FFFFFF;
+  }
+  .header {
+    border-left: 6px solid #1F4E78;
+    padding-left: 14px;
+    margin-bottom: 24px;
+  }
+  .module-tag {
+    font-size: 11px;
+    color: #64748B;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1F4E78;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 4px;
+  }
+
+  /* 3축 통합 평가 도식 */
+  .diagram {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 16px;
+  }
+  .axes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .axis {
+    background: #F8FAFC;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .axis::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+  }
+  .axis-1::before { background: #2E75B6; }
+  .axis-2::before { background: #5B9BD5; }
+  .axis-3::before { background: #1F4E78; }
+
+  .axis-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .axis-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+  .axis-weight {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .axis-1 .axis-weight { color: #2E75B6; }
+  .axis-2 .axis-weight { color: #5B9BD5; }
+  .axis-3 .axis-weight { color: #1F4E78; }
+
+  .axis-detail {
+    font-size: 11.5px;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .axis-detail strong { color: #1F2937; }
+
+  /* 중앙 합산 */
+  .merge-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  .arrow {
+    width: 0; height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 22px solid #94A3B8;
+  }
+  .formula {
+    background: #1F4E78;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .formula-label {
+    font-size: 11px;
+    opacity: 0.85;
+    margin-bottom: 4px;
+  }
+  .formula-eq {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  /* 우측 결과 */
+  .result-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+  }
+  .result-card {
+    background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+    color: #FFFFFF;
+    padding: 18px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(31, 78, 120, 0.15);
+  }
+  .result-card-title {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 8px;
+  }
+  .result-num {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .result-desc {
+    font-size: 11.5px;
+    line-height: 1.5;
+    opacity: 0.95;
+  }
+  .next-step {
+    background: #F1F5F9;
+    border: 1.5px solid #94A3B8;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 11.5px;
+    color: #1F2937;
+    line-height: 1.55;
+  }
+  .next-step strong { color: #1F4E78; }
+  .next-step .arrow-inline {
+    color: #94A3B8;
+    margin: 0 4px;
+  }
+
+  /* RFP 충실 시그널 */
+  .rfp-signal {
+    margin-top: 22px;
+    background: #FEF3C7;
+    border-left: 5px solid #F59E0B;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #78350F;
+    line-height: 1.55;
+  }
+  .rfp-signal strong { color: #92400E; }
+
+  /* 시앤피 비교 라인 */
+  .compare {
+    margin-top: 16px;
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 11.5px;
+    color: #475569;
+    line-height: 1.6;
+  }
+  .compare strong { color: #1F2937; }
+  .compare .as-is { color: #9CA3AF; text-decoration: line-through; }
+  .compare .to-be { color: #1F4E78; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 — NCS 세분류 우선순위 도출 / Step 3</div>
+    <div class="title">3축 통합 평가 — RFP 50/35/15 정확 적용</div>
+    <div class="subtitle">설문(50%) + 정량(35%) + 정성(15%) = 세분류 종합 점수 100점 정규화</div>
+  </div>
+
+  <div class="diagram">
+
+    <!-- 좌측: 3축 -->
+    <div class="axes">
+      <div class="axis axis-1">
+        <div class="axis-head">
+          <div class="axis-name">① 설문 평가</div>
+          <div class="axis-weight">50%</div>
+        </div>
+        <div class="axis-detail">
+          <strong>대상 2,000명</strong> (학습자 75% · 기업 15% · 기관 10%)<br>
+          5점 척도 + 응답자 가중치 (직무·산업·경력별)<br>
+          시나리오 B 재배치 — 세분류 단위 통합
+        </div>
+      </div>
+
+      <div class="axis axis-2">
+        <div class="axis-head">
+          <div class="axis-name">② 정량 평가</div>
+          <div class="axis-weight">35%</div>
+        </div>
+        <div class="axis-detail">
+          <strong>11개 지표</strong> · 훈련실시·자격응시·취업전망·STEP 수강 등<br>
+          공식 통계 + HRD-Net + STEP 실적 (3년치)<br>
+          신설 세분류: 소분류 중앙값 대체
+        </div>
+      </div>
+
+      <div class="axis axis-3">
+        <div class="axis-head">
+          <div class="axis-name">③ 정성 평가</div>
+          <div class="axis-weight">15%</div>
+        </div>
+        <div class="axis-detail">
+          <strong>3개 지표</strong> (RFP §II-2 나 명시)<br>
+          미래 수요 예상도 · 개발 필요성 · 개발 시급성<br>
+          전문가 3인 패널 (ISC · 교강사 · 산업전문가)
+        </div>
+      </div>
+    </div>
+
+    <!-- 중앙: 합산 -->
+    <div class="merge-col">
+      <div class="arrow"></div>
+      <div class="formula">
+        <div class="formula-label">RFP 명시 가중치</div>
+        <div class="formula-eq">설문 × 0.50<br>+ 정량 × 0.35<br>+ 정성 × 0.15</div>
+      </div>
+      <div class="arrow"></div>
+    </div>
+
+    <!-- 우측: 결과 -->
+    <div class="result-col">
+      <div class="result-card">
+        <div class="result-card-title">세분류 종합 점수</div>
+        <div class="result-num">796<span style="font-size: 18px; font-weight: 600; opacity: 0.85;">개</span></div>
+        <div class="result-desc">전체 세분류 100점으로 정규화<br>분야 무관 일관 평가</div>
+      </div>
+
+      <div class="next-step">
+        ▶ <strong>Step 4</strong>: 상위 30% <strong>N₁_pre 240개</strong><span class="arrow-inline">→</span>외부 8인 패널 검토<span class="arrow-inline">→</span><strong>N₁_final 확정</strong> (Module 3 모집단)
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RFP 시그널 -->
+  <div class="rfp-signal">
+    <strong>RFP §II-2 나 + §II-3 [조사체계 개선] 직접 답</strong> — 시나리오 B 재배치(설문을 세분류 단위로 통합)와 RFP 명시 가중치(50/35/15) 정확 적용으로 RFP 충실을 정량 시그널로 입증
+  </div>
+
+  <!-- 시앤피 vs 우리 -->
+  <div class="compare">
+    <strong>시앤피 2025 → 우리 2026 차별</strong> &nbsp;|&nbsp;
+    <span class="as-is">정량·정성 통합 50% + 설문 50%</span>
+    <span style="margin: 0 6px;">→</span>
+    <span class="to-be">RFP 정확 적용 50/35/15</span>
+    &nbsp;·&nbsp;
+    <span class="as-is">설문 응답률 9.5%</span>
+    <span style="margin: 0 6px;">→</span>
+    <span class="to-be">25%+ (2.6배 향상) + 응답자 가중치 모델</span>
+  </div>
+
+</div>
+</body>
+</html>

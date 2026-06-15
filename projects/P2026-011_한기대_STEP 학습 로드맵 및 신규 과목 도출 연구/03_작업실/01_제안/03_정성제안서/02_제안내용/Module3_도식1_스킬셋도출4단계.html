@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 3 — 능력단위 스킬셋 도출 4단계 워크플로우</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 36px 28px;
+    color: #1F2937;
+  }
+  .slide-area { width: 1180px; }
+  .header {
+    border-left: 6px solid #7030A0;
+    padding-left: 14px;
+    margin-bottom: 20px;
+  }
+  .module-tag {
+    font-size: 11px;
+    color: #64748B;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .module-tag .star { color: #DC2626; font-weight: 800; margin-left: 4px; }
+  .title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1F4E78;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 4px;
+  }
+
+  /* 입력 라인 */
+  .input-bar {
+    background: #F1F5F9;
+    border: 1.5px solid #94A3B8;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .input-bar strong { color: #1F4E78; }
+  .input-bar .arrow-down {
+    margin-left: auto;
+    color: #94A3B8;
+    font-weight: 700;
+  }
+
+  /* 4단계 워크플로우 */
+  .workflow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .step {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 60px 1fr 240px;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+  }
+  .step::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    border-radius: 10px 0 0 10px;
+  }
+  .step-1::before { background: #5B9BD5; }
+  .step-2::before { background: #2E75B6; }
+  .step-3::before { background: #1F4E78; }
+  .step-4::before { background: linear-gradient(180deg, #7030A0, #4A1D6B); }
+
+  .step-num {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+  }
+  .step-1 .step-num { color: #5B9BD5; }
+  .step-2 .step-num { color: #2E75B6; }
+  .step-3 .step-num { color: #1F4E78; }
+  .step-4 .step-num { color: #7030A0; }
+
+  .step-body { padding-left: 4px; }
+  .step-name {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 4px;
+  }
+  .step-name .badge-asset {
+    background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+    color: #FFFFFF;
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .step-desc {
+    font-size: 11.5px;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .step-desc strong { color: #1F2937; }
+
+  .step-output {
+    background: #F8FAFC;
+    border-left: 3px solid #94A3B8;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    line-height: 1.5;
+  }
+  .step-output strong {
+    display: block;
+    color: #1F4E78;
+    font-size: 11px;
+    margin-bottom: 3px;
+  }
+  .step-4 .step-output {
+    background: #FCE7F3;
+    border-left-color: #7030A0;
+  }
+  .step-4 .step-output strong { color: #7030A0; }
+
+  .connector {
+    text-align: center;
+    color: #CBD5E1;
+    font-size: 14px;
+    line-height: 0.5;
+  }
+
+  /* 최종 결과 */
+  .final-result {
+    margin-top: 18px;
+    background: linear-gradient(135deg, #7030A0 0%, #4A1D6B 100%);
+    color: #FFFFFF;
+    padding: 18px 22px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(112, 48, 160, 0.25);
+  }
+  .final-title {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .final-desc {
+    font-size: 12.5px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+  .final-desc strong { color: #FCE7F3; }
+  .final-num {
+    font-size: 38px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1;
+  }
+  .final-num small {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.85;
+    margin-top: 6px;
+  }
+
+  /* 시앤피 비교 */
+  .compare {
+    margin-top: 16px;
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 11.5px;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .compare strong { color: #1F2937; }
+  .compare .as-is { color: #9CA3AF; text-decoration: line-through; }
+  .compare .to-be { color: #7030A0; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 3 — NCS 능력단위 우선순위 도출 / Step 5<span class="star">★ 최대 차별점</span></div>
+    <div class="title">능력단위 스킬셋 도출 4단계 워크플로우</div>
+    <div class="subtitle">NCS 표준 [기술(S)] 출발 → 객관적·재현 가능 방식으로 능력단위별 핵심 스킬셋 도출 → 다년 자산화</div>
+  </div>
+
+  <div class="input-bar">
+    <strong>[입력]</strong> Module 2 N₁_final 240개 세분류 → 약 <strong>2,850개 능력단위 풀</strong>
+    (시앤피 2025 4,018개 대비 70% — 평가 정밀화)
+    <span class="arrow-down">▼</span>
+  </div>
+
+  <div class="workflow">
+
+    <!-- Step 1 -->
+    <div class="step step-1">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <div class="step-name">NCS 표준 [기술(S)] 자동 파싱</div>
+        <div class="step-desc">
+          한 능력단위 = 평균 <strong>4~6개 능력단위요소</strong> × 각 요소 <strong>3~5개 기술(S)</strong> 항목<br>
+          ⇒ 능력단위당 평균 12~30개 <strong>원시 스킬</strong> 자동 추출
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>산출</strong>
+        원시 스킬 매핑 ~50,000개<br>
+        (능력단위 × 능력단위요소 × 기술)
+      </div>
+    </div>
+
+    <div class="connector">▼</div>
+
+    <!-- Step 2 -->
+    <div class="step step-2">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <div class="step-name">LLM 보조 중복 제거·정규화 + 분야 전문가 검증</div>
+        <div class="step-desc">
+          • <strong>동일·유사 표현 자동 통합</strong> ("요구사항 분석" = "요구분석")<br>
+          • 10대 분야별 표준 용어집 적용 (유의어 사전)<br>
+          • 분야 전문가 1차 검증 (3인 패널 — 통합 적정성·누락 확인)
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>산출</strong>
+        정규화 스킬 ~30,000개<br>
+        분야 표준 용어집 v1.0
+      </div>
+    </div>
+
+    <div class="connector">▼</div>
+
+    <!-- Step 3 -->
+    <div class="step step-3">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <div class="step-name">핵심 스킬 선별 (가중 채점)</div>
+        <div class="step-desc">
+          • <strong>출현 빈도</strong> (능력단위요소 N개 중 N개 등장)<br>
+          • <strong>능력단위요소 가중치</strong> (현장 활용도 기반)<br>
+          • <strong>전문가 평가</strong> (3인 패널 5점 척도)<br>
+          ⇒ 능력단위당 <strong>5~10개 핵심 스킬셋</strong>
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>산출</strong>
+        능력단위 × 핵심 스킬셋<br>
+        ~20,000개 매핑
+      </div>
+    </div>
+
+    <div class="connector">▼</div>
+
+    <!-- Step 4 -->
+    <div class="step step-4">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <div class="step-name">
+          능력단위별 핵심 스킬셋 DB 구축
+          <span class="badge-asset">다년 자산 ★</span>
+        </div>
+        <div class="step-desc">
+          스키마: <strong>NCS 코드 / 능력단위명 / 스킬 ID / 스킬명 / 출처 능력단위요소 / 가중치 / 검증자</strong><br>
+          ⇒ 모든 스킬에 NCS 코드 자동 매핑 → Module 4·Module 5 통합 자동화 기반
+        </div>
+      </div>
+      <div class="step-output">
+        <strong>★ 최종 산출 (다년 자산)</strong>
+        능력단위 스킬셋 DB v1.0<br>
+        ~20,000개 매핑 × NCS 코드
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 최종 결과 -->
+  <div class="final-result">
+    <div>
+      <div class="final-title">▶ Module 3 Step 6 입력 + 다년 자산</div>
+      <div class="final-desc">
+        능력단위 스킬셋 DB 1차 (~20,000개 매핑)는 <strong>STEP-AX 매핑 매트릭스</strong> 구축의 직접 입력이자,<br>
+        27·28년 후속사업에서 매년 v2·v3로 갱신 가능한 <strong>다년 동행 인프라 자산</strong>
+      </div>
+    </div>
+    <div class="final-num">
+      ~20,000
+      <small>능력단위 × 스킬 매핑</small>
+    </div>
+  </div>
+
+  <!-- 시앤피 비교 -->
+  <div class="compare">
+    <strong>시앤피 2025 → 우리 2026 차별</strong>
+    &nbsp;|&nbsp;
+    <span class="as-is">"AI 리터러시 자체 정의 3분야 자문회의"</span>
+    <span style="margin: 0 6px;">→</span>
+    <span class="to-be">NCS 능력단위요소 [기술(S)] 표준 출발</span>
+    &nbsp;·&nbsp;
+    <span class="as-is">전문가 단순 자문</span>
+    <span style="margin: 0 6px;">→</span>
+    <span class="to-be">4단계 객관적·재현 가능 워크플로우 + 다년 자산 DB</span>
+  </div>
+
+</div>
+</body>
+</html>

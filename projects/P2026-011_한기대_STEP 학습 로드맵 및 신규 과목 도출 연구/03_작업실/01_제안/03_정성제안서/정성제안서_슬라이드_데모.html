@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2026 한기대 STEP SLR — 정성제안서 핵심 슬라이드 데모</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-light: #1A3D6B;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-200: #E2E5EC;
+    --gray-300: #C9CED7;
+    --gray-600: #5B6573;
+    --gray-900: #1B2330;
+    --green: #1E9E6A;
+    --red: #C53030;
+    --purple: #6D5BBA;
+    --teal: #2C8A9B;
+    --skill-yellow: #FFE9A6;
+    --ai-purple: #DDD0F5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+    background: var(--gray-100);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .intro {
+    background: white;
+    padding: 24px 32px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .intro h1 {
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .intro p {
+    color: var(--gray-600);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .intro .legend {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .intro .lg {
+    background: var(--gray-50);
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--gray-900);
+  }
+
+  /* Slide */
+  .slide {
+    aspect-ratio: 16/9;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 32px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-meta {
+    background: var(--gray-50);
+    padding: 8px 16px;
+    font-size: 11px;
+    color: var(--gray-600);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slide-meta .num {
+    background: var(--orange);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .slide-meta .featured {
+    color: var(--orange);
+    font-weight: 700;
+  }
+
+  /* Slide Inner */
+  .slide-inner {
+    flex: 1;
+    padding: 28px 36px 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+  .ft-tags { display: flex; gap: 4px; }
+  .ft {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .ft-jedo { background: #FFE8B0; color: #8B5500; }
+  .ft-jad { background: #C7E5F5; color: #1F4E79; }
+  .ft-jos { background: #F5C7C7; color: #8B1A1A; }
+  .ft-man { background: #C7E5C7; color: #1B5E1B; }
+  .slide-pageno {
+    color: var(--gray-600);
+    font-weight: 600;
+  }
+
+  .slide-headline {
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--yellow);
+    margin-bottom: 18px;
+  }
+  .slide-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide-footer {
+    border-top: 1px solid var(--gray-200);
+    padding-top: 8px;
+    margin-top: 12px;
+    font-size: 10px;
+    color: var(--gray-600);
+    text-align: center;
+  }
+
+  /* ============== s.1 표지 ============== */
+  .cover {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: white;
+    padding: 40px 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(245,197,24,0.15) 0%, transparent 40%),
+                radial-gradient(circle at 20% 80%, rgba(226,88,34,0.12) 0%, transparent 40%);
+  }
+  .cover-org {
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .cover-title {
+    position: relative;
+  }
+  .cover-title h1 {
+    font-size: 36px;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+  .cover-title .sub {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  .cover-slogan {
+    background: var(--yellow);
+    color: var(--navy);
+    padding: 18px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  }
+  .cover-slogan .small {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  .cover-foot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    opacity: 0.85;
+    position: relative;
+  }
+
+  /* ============== s.2 1쪽 요약 (4분면) ============== */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+  }
+  .quad {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px;
+    position: relative;
+  }
+  .quad::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--yellow);
+  }
+  .quad-tag {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .quad-title {
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .quad-rfp {
+    background: var(--gray-50);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: var(--gray-600);
+    font-style: italic;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .quad-ans {
+    font-size: 11px;
+    color: var(--gray-900);
+    line-height: 1.5;
+  }
+  .summary-conclusion {
+    background: var(--orange);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  /* ============== s.10 4대 Win Theme ============== */
+  .wt-headline {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .wt-headline .main {
+    font-size: 22px;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .wt-headline .sub {
+    font-size: 12px;
+    color: var(--gray-600);
+  }
+  .wt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+  }
+  .wt-card {
+    border: 2px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+  .wt-card .num {
+    background: var(--orange);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .wt-card .name {
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .wt-card .desc {
+    color: var(--gray-900);
+    font-size: 11px;
+    line-height: 1.5;
+    flex: 1;
+  }
+  .wt-card .gain {
+    background: #FFF8F2;
+    color: var(--orange);
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  /* ============== s.11 작년 vs 우리 5대 변화 ============== */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .compare-table th {
+    background: var(--gray-50);
+    color: var(--navy);
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--gray-300);
+  }
+  .compare-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--gray-200);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .compare-table td.area {
+    font-weight: 700;
+    color: var(--navy);
+    width: 18%;
+  }
+  .compare-table td.bad {
+    color: var(--gray-600);
+    background: #FFF5F5;
+    width: 41%;
+  }
+  .compare-table td.good {
+    color: var(--navy);
+    font-weight: 600;
+    background: #E8F5EE;
+    width: 41%;
+  }
+
+  /* ============== s.13 6대 절차 흐름 ============== */
+  .procedure-flow {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    flex: 1;
+    align-items: stretch;
+  }
+  .proc {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 10px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .proc .month {
+    font-size: 10px;
+    color: var(--gray-600);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .proc .letter {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .proc .name {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .proc .out {
+    font-size: 10px;
+    color: var(--gray-600);
+    border-top: 1px dashed var(--gray-300);
+    padding-top: 4px;
+    flex: 1;
+  }
+  .proc .tags {
+    margin-top: 4px;
+  }
+
+  /* ============== s.27 시나리오 ABC ============== */
+  .scenarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+  }
+  .scen {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: relative;
+  }
+  .scen.recommend {
+    border: 2.5px solid var(--green);
+    background: #E8F5EE;
+  }
+  .scen.recommend::after {
+    content: '★ 권고';
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: var(--green);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .scen.discard {
+    background: #FFF5F5;
+    border-color: var(--red);
+    opacity: 0.85;
+  }
+  .scen .name {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  .scen .flow-box {
+    background: white;
+    padding: 6px 8px;
+    border-left: 3px solid var(--gray-300);
+    border-radius: 4px;
+    font-size: 11px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .scen.recommend .flow-box { border-left-color: var(--green); }
+  .scen.discard .flow-box { border-left-color: var(--red); }
+  .scen .kpi {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-top: auto;
+  }
+  .scen .kpi strong { color: var(--navy); }
+
+  /* ============== s.31 라 단계 5 하위 ============== */
+  .stage-flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    flex: 1;
+    align-items: stretch;
+  }
+  .stg {
+    border: 2px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .stg.featured {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .stg .badge {
+    background: var(--gray-600);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    align-self: flex-start;
+  }
+  .stg.featured .badge {
+    background: var(--orange);
+  }
+  .stg .name {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .stg .desc {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.5;
+    flex: 1;
+  }
+  .stg .star {
+    font-size: 9px;
+    color: var(--orange);
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  /* ============== s.32 능력단위 스킬셋 도출 ============== */
+  .skill-flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+    gap: 6px;
+    align-items: stretch;
+    margin-bottom: 18px;
+  }
+  .skill-step {
+    border: 1.5px solid var(--purple);
+    border-radius: 8px;
+    padding: 10px 8px;
+    text-align: center;
+    background: white;
+  }
+  .skill-step .num {
+    background: var(--purple);
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 4px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .skill-step .ttl { font-size: 11px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .skill-step .ds { font-size: 9px; color: var(--gray-600); line-height: 1.3; }
+  .skill-arr { color: var(--purple); display: flex; align-items: center; font-size: 16px; font-weight: 700; }
+  .skill-example {
+    background: var(--gray-50);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: var(--gray-900);
+  }
+  .skill-example .ex-head {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .skill-example .ex-row {
+    display: grid;
+    grid-template-columns: 110px 1fr 200px;
+    gap: 8px;
+    padding: 4px 0;
+    border-bottom: 1px dashed var(--gray-300);
+    line-height: 1.5;
+  }
+  .skill-example .ex-row:last-child { border-bottom: none; }
+  .skill-example .ex-row .unit { font-weight: 700; color: var(--navy); }
+  .skill-example .ex-row .src { color: var(--gray-600); font-size: 10px; }
+  .skill-example .ex-row .extracted { color: var(--orange); font-weight: 600; font-size: 10px; }
+
+  /* ============== s.35 매핑 매트릭스 ============== */
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    flex: 1;
+  }
+  .matrix-table th, .matrix-table td {
+    border: 1px solid var(--gray-300);
+    padding: 4px 3px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .matrix-table th.col-head {
+    background: var(--ai-purple);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .matrix-table th.row-head {
+    background: var(--skill-yellow);
+    color: var(--navy);
+    font-weight: 600;
+    text-align: left;
+    padding-left: 8px;
+    font-size: 10px;
+  }
+  .matrix-table th.corner {
+    background: var(--gray-50);
+    font-size: 9px;
+    color: var(--gray-600);
+  }
+  .matrix-table td.cell { background: white; }
+  .matrix-table td.core {
+    background: var(--orange);
+    color: white;
+    font-weight: 700;
+  }
+  .matrix-table td.aux {
+    background: #FFE8B0;
+    color: #8B5500;
+    font-weight: 700;
+  }
+  .matrix-legend {
+    margin-top: 10px;
+    font-size: 10px;
+    color: var(--gray-600);
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .matrix-legend .lg-it { display: flex; align-items: center; gap: 5px; }
+  .matrix-legend .lg-c {
+    width: 16px; height: 16px; border-radius: 3px; display: flex;
+    align-items: center; justify-content: center; font-weight: 700; font-size: 10px;
+  }
+
+  /* ============== s.39 SLR Before/After ============== */
+  .slr-int {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    gap: 12px;
+    flex: 1;
+  }
+  .slr-card {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  .slr-card.new { border-color: var(--orange); }
+  .slr-card .head {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+    margin-bottom: 8px;
+  }
+  .slr-card.new .head { color: var(--orange); border-color: var(--orange); }
+  .slr-row {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 5px;
+    margin-bottom: 4px;
+    align-items: start;
+    font-size: 10px;
+  }
+  .slr-row .lvl {
+    background: var(--gray-100);
+    text-align: center;
+    padding: 3px 0;
+    font-size: 9px;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+  .slr-row .crs { line-height: 1.4; }
+  .crs .ne {
+    background: var(--orange);
+    color: white;
+    font-size: 8px;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 2px;
+    font-weight: 700;
+  }
+  .crs .et {
+    background: #4A90E2;
+    color: white;
+    font-size: 8px;
+    padding: 1px 3px;
+    border-radius: 50%;
+    margin-right: 2px;
+    width: 12px; height: 12px;
+    line-height: 10px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+  }
+  .slr-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 22px;
+  }
+
+  /* ============== s.60 시간축 ============== */
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    flex: 1;
+    align-items: stretch;
+  }
+  .tl-item {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px 12px;
+    text-align: center;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .tl-item.now {
+    border-color: var(--orange);
+    background: #FFF8F2;
+    border-width: 2.5px;
+  }
+  .tl-item .time {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .tl-item.now .time { color: var(--orange); }
+  .tl-item .role {
+    font-size: 11px;
+    color: var(--gray-900);
+    margin-bottom: 6px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  .tl-item .act {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.5;
+    flex: 1;
+  }
+  .tl-end {
+    background: var(--navy);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .tl-end span { color: var(--yellow); }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="intro">
+    <h1>2026 한기대 STEP SLR — 정성제안서 핵심 슬라이드 데모</h1>
+    <p>본 페이지는 정성제안서 PPT(.pptx) 제작 시 참고할 <strong>핵심 차별화 슬라이드 10개의 시각 데모</strong>입니다.
+       PPT 디자인 작업자는 본 데모의 레이아웃·컬러·도식 패턴을 그대로 참조하여 16:9 슬라이드를 제작합니다.</p>
+    <div class="legend">
+      <span class="lg"><span class="ft ft-jedo">제도</span> 제도연계</span>
+      <span class="lg"><span class="ft ft-jad">자동</span> 자동화</span>
+      <span class="lg"><span class="ft ft-jos">조사</span> 조사체계</span>
+      <span class="lg"><span class="ft ft-man">매뉴</span> 매뉴얼화</span>
+      <span class="lg" style="margin-left: auto;">★ = 디자인 투자 우선순위 1 (12개 핵심 슬라이드)</span>
+    </div>
+  </div>
+
+  <!-- ===================== s.1 표지 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.1</span> &nbsp; 표지 — 정성제안서 첫 인상</span>
+      <span class="featured">디자인 우선순위 1 / 시앤피 작년: 슬로건 부재</span>
+    </div>
+    <div class="cover">
+      <div class="cover-org">한국기술교육대학교 온라인평생교육원 발주</div>
+      <div class="cover-title">
+        <h1>2026년도 STEP 학습 로드맵(SLR)<br>및 신규 과목 도출 연구</h1>
+        <div class="sub">정 성 제 안 서</div>
+      </div>
+      <div class="cover-slogan">
+        한기대 STEP의 다년 파트너
+        <div class="small">RFP 4대 제언 정직한 답, 27·28년 동행</div>
+      </div>
+      <div class="cover-foot">
+        <span>2026.  .  .</span>
+        <span>제안업체명: ○○○○○○</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== s.2 1쪽 요약 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.2</span> &nbsp; 1쪽 요약 — 평가위원의 30초 인지를 결정</span>
+      <span class="featured">정성제안서의 심장</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags">
+          <span class="ft ft-jedo">제도</span>
+          <span class="ft ft-jad">자동</span>
+          <span class="ft ft-jos">조사</span>
+          <span class="ft ft-man">매뉴</span>
+        </div>
+        <span class="slide-pageno">요약 / 2</span>
+      </div>
+      <div class="slide-headline">RFP §II-3 4대 제언에 정직한 답</div>
+      <div class="slide-body">
+        <div class="summary-grid">
+          <div class="quad">
+            <div class="quad-tag">[제도] 제도연계</div>
+            <div class="quad-title">제도 연계 + 후속사업 추진</div>
+            <div class="quad-rfp">"정책 활용 및 후속 사업 추진을 위한 관련 제도 연계 방안 제언" — RFP §II-3</div>
+            <div class="quad-ans">직무능력은행제 시범 매핑 + SQF 직접본 활용 + 27·28년 후속사업 출발점</div>
+          </div>
+          <div class="quad">
+            <div class="quad-tag">[자동] 자동화</div>
+            <div class="quad-title">신규 과목 ↔ SLR 시스템 연계</div>
+            <div class="quad-rfp">"신규 과목 도출 방식과 STEP 학습 로드맵 간 연계 효율화 및 시스템 연계 자동화 제언"</div>
+            <div class="quad-ans">과목개요서 → Master DB → SLR 도식 자동 갱신 + DB 무결성 자동 검증</div>
+          </div>
+          <div class="quad">
+            <div class="quad-tag">[조사] 조사체계</div>
+            <div class="quad-title">설문 + 분류 + 상시 수요조사</div>
+            <div class="quad-rfp">"설문 단계 재배치 / 분야 분류 지표 / 상시 수요조사 (실시방법·가중치·반영비율)"</div>
+            <div class="quad-ans">설문 ABC 시나리오(B 권고·발주처 합의) + 융합 분류 정성 3지표 + 분기 사이클</div>
+          </div>
+          <div class="quad">
+            <div class="quad-tag">[매뉴] 매뉴얼화</div>
+            <div class="quad-title">4종 매뉴얼 + 다년 갱신 협력</div>
+            <div class="quad-rfp">"산출물 / Master DB / 미활용 사후조치 / 결측치 처리 + 절차별 매뉴얼화"</div>
+            <div class="quad-ans">4종 운영 매뉴얼 + SLR 관리매뉴얼 + 매뉴얼 v2·v3 매년 갱신 협력</div>
+          </div>
+        </div>
+        <div class="summary-conclusion">
+          ★ 본 사업 최대 차별화 — NCS 능력단위 스킬셋 × STEP-AX 스킬셋 매핑 → 융합 200과목 → STEP SLR 자동 통합
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.10 4대 Win Theme ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.10</span> &nbsp; Ⅰ-4. 4대 Win Theme 매트릭스</span>
+      <span class="featured">평가위원이 본 제안의 차별점을 30초 안에 인지</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags">
+          <span class="ft ft-jedo">제도</span><span class="ft ft-jad">자동</span><span class="ft ft-jos">조사</span><span class="ft ft-man">매뉴</span>
+        </div>
+        <span class="slide-pageno">Ⅰ-4 / 10</span>
+      </div>
+      <div class="slide-headline">본 제안의 4대 약속 — RFP §II-3 4대 제언과 1:1 정렬</div>
+      <div class="slide-body">
+        <div class="wt-grid">
+          <div class="wt-card">
+            <div class="num">1</div>
+            <div class="name">[제도] 제도연계</div>
+            <div class="desc">직무능력은행제 시범 매핑 1개 분야 + SQF 직접본 활용 + 27·28년 후속사업 출발점</div>
+            <div class="gain">→ 27·28년 후속사업의 명분</div>
+          </div>
+          <div class="wt-card">
+            <div class="num">2</div>
+            <div class="name">[자동] 자동화</div>
+            <div class="desc">신규 과목 → SLR 시스템 자동 연계 워크플로우 + Master DB 무결성 자동 검증</div>
+            <div class="gain">→ 발주처 운영 부담 감소</div>
+          </div>
+          <div class="wt-card">
+            <div class="num">3</div>
+            <div class="name">[조사] 조사체계</div>
+            <div class="desc">설문 ABC 시나리오 + 융합 분류 정성 3지표 + 상시 수요조사 운영 모델</div>
+            <div class="gain">→ 응답률 9.5%→25%+</div>
+          </div>
+          <div class="wt-card">
+            <div class="num">4</div>
+            <div class="name">[매뉴] 매뉴얼화</div>
+            <div class="desc">4종 운영 매뉴얼 + SLR 관리매뉴얼 + 매뉴얼 v2·v3 매년 갱신 협력</div>
+            <div class="gain">→ 다년 갱신 협력 모델</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.11 작년 vs 우리 5대 변화 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.11</span> &nbsp; Ⅰ-3. 작년 사업과의 5대 변화 매트릭스</span>
+      <span class="featured">시앤피 깎아내리지 않고 RFP 변화 + 우리 답으로 포지셔닝</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags">
+          <span class="ft ft-jedo">제도</span><span class="ft ft-jad">자동</span><span class="ft ft-jos">조사</span><span class="ft ft-man">매뉴</span>
+        </div>
+        <span class="slide-pageno">Ⅰ-3 / 9</span>
+      </div>
+      <div class="slide-headline">작년 사업 토대 위에 본 사업이 새 단계로 진입하는 5가지 영역</div>
+      <div class="slide-body">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>영역</th>
+              <th>작년 (시앤피 2025)</th>
+              <th>본 사업 (2026)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="area">제도연계</td>
+              <td class="bad">5개국 벤치마킹 수준 (보고서 p.154~167) "협의체 구성" 약속만</td>
+              <td class="good">직무능력은행제 시범 매핑 + 27·28년 후속 명분</td>
+            </tr>
+            <tr>
+              <td class="area">자동화</td>
+              <td class="bad">제언 부재. "엑셀 기반 수기 운영을 전제" (보고서 p.139)</td>
+              <td class="good">신규 과목 ↔ SLR 자동 연계 + DB 자동 검증</td>
+            </tr>
+            <tr>
+              <td class="area">조사체계</td>
+              <td class="bad">능력단위 단위 설문 742개, 응답률 9.5% (보고서 p.62), 종합 50/50 (RFP 이탈)</td>
+              <td class="good">세분류 단위 설문(시나리오 B) + 25%+ 목표 + RFP 50/35/15 정확</td>
+            </tr>
+            <tr>
+              <td class="area">매뉴얼화</td>
+              <td class="bad">데이터 관리 매뉴얼 1종, 수기 엑셀 기반</td>
+              <td class="good">4종 매뉴얼 + SLR 관리매뉴얼 + 매년 갱신 협력</td>
+            </tr>
+            <tr>
+              <td class="area">AI+X 도출</td>
+              <td class="bad">AI 리터러시 26개 (NCS 매핑 부재, "사무직/마케팅" 일반 과목)</td>
+              <td class="good">AX 200과목 — NCS 능력단위 스킬셋 × AI 스킬셋 매핑 → 도메인 특화 + SLR 자동 통합</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.13 6대 절차 흐름 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.13</span> &nbsp; Ⅱ장 간지 + RFP 6대 절차 흐름도</span>
+      <span class="featured">자체 Module 재구조화 X — RFP 그대로 가·나·다·라·마·바</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags">
+          <span class="ft ft-jedo">제도</span><span class="ft ft-jad">자동</span><span class="ft ft-jos">조사</span><span class="ft ft-man">매뉴</span>
+        </div>
+        <span class="slide-pageno">Ⅱ장 간지 / 13</span>
+      </div>
+      <div class="slide-headline">Ⅱ. 제안내용 — RFP §II-2 6대 절차(가·나·다·라·마·바) 그대로</div>
+      <div class="slide-body">
+        <div class="procedure-flow">
+          <div class="proc">
+            <div class="month">2026.04~05</div>
+            <div class="letter">가</div>
+            <div class="name">SLR 최신화</div>
+            <div class="out">기개발 2,586개 매핑<br>Master DB 1차</div>
+            <div class="tags"><span class="ft ft-jedo">제도</span> <span class="ft ft-jad">자동</span> <span class="ft ft-man">매뉴</span></div>
+          </div>
+          <div class="proc">
+            <div class="month">2026.06</div>
+            <div class="letter">나</div>
+            <div class="name">세분류 수요분석<br><small style="color:var(--orange);">★분야무관</small></div>
+            <div class="out">정량11+정성3<br>→ N₁_pre ~240개</div>
+            <div class="tags"><span class="ft ft-jos">조사</span></div>
+          </div>
+          <div class="proc">
+            <div class="month">2026.06~07</div>
+            <div class="letter">다</div>
+            <div class="name">세분류 설문<br><small style="color:var(--orange);">★위치 재배치</small></div>
+            <div class="out">시나리오 B<br>50/35/15 정확<br>→ N₁_final</div>
+            <div class="tags"><span class="ft ft-jos">조사</span></div>
+          </div>
+          <div class="proc" style="border-color:var(--orange); background:#FFF8F2;">
+            <div class="month">2026.07~08</div>
+            <div class="letter">라</div>
+            <div class="name">능력단위 + 분야 + 융합<br><small style="color:var(--orange);">★ 5하위 단계</small></div>
+            <div class="out">스킬셋 도출 + 매핑<br>평생100+디지털100<br>+ AI+X 200</div>
+            <div class="tags"><span class="ft ft-jos">조사</span></div>
+          </div>
+          <div class="proc">
+            <div class="month">2026.09</div>
+            <div class="letter">마</div>
+            <div class="name">과목개요서</div>
+            <div class="out">한기대 양식<br>회차+능력단위요소<br>= 400과목</div>
+            <div class="tags"></div>
+          </div>
+          <div class="proc">
+            <div class="month">2026.10~11</div>
+            <div class="letter">바</div>
+            <div class="name">결과 정리<br>+ SLR 통합</div>
+            <div class="out">SLR 자동 통합<br>4종 매뉴얼<br>제도연계 시범</div>
+            <div class="tags"><span class="ft ft-jad">자동</span> <span class="ft ft-man">매뉴</span> <span class="ft ft-jedo">제도</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.27 시나리오 ABC ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.27</span> &nbsp; Ⅱ-2-다-1. 설문 단계 재배치 시나리오 ABC</span>
+      <span class="featured">RFP §II-3 명시 요구 직접 답 + 발주처 합의 후 채택</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jos">조사</span></div>
+        <span class="slide-pageno">Ⅱ-2-다-1 / 27</span>
+      </div>
+      <div class="slide-headline">[조사] 설문 단계 재배치 — 시나리오 A·B·C 비교 + B 권고 + 발주처 합의 후 채택</div>
+      <div class="slide-body">
+        <div class="scenarios">
+          <div class="scen discard">
+            <div class="name">A. 현행 (시앤피 2025)</div>
+            <div class="flow-box">세분류 → 능력단위 → 과정명 → <strong>설문</strong></div>
+            <div class="kpi">
+              <strong>설문 문항</strong>: 742개<br>
+              <strong>응답률</strong>: 9.5% (1,974명)<br>
+              <strong>종합 비율</strong>: 50/50 (RFP 이탈)<br>
+              <strong>일괄 개발</strong>: 어려움 (탈락 능력단위)
+            </div>
+          </div>
+          <div class="scen recommend">
+            <div class="name">B. 사용자 제안 ★</div>
+            <div class="flow-box">세분류 → <strong>설문</strong> → 세분류 확정 → 능력단위 → 과정</div>
+            <div class="kpi">
+              <strong>설문 문항</strong>: ~240개 (1/3)<br>
+              <strong>응답률 목표</strong>: 25%+<br>
+              <strong>종합 비율</strong>: 50/35/15 (RFP 정확)<br>
+              <strong>일괄 개발</strong>: 가능 (수요 높은 세분류)
+            </div>
+          </div>
+          <div class="scen">
+            <div class="name">C. 혼합</div>
+            <div class="flow-box">세분류 → <strong>설문 1차</strong> → 세분류 확정 → 능력단위 → <strong>설문 2차</strong></div>
+            <div class="kpi">
+              <strong>정밀도</strong>: ↑↑<br>
+              <strong>운영 부담</strong>: ↑<br>
+              <strong>비고</strong>: 발주처 선호 시 채택<br>
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.31 라 단계 5 하위 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.31</span> &nbsp; Ⅱ-2-라. 능력단위 단계 5개 하위 구조</span>
+      <span class="featured">v0.2 핵심 — 분야 분류·융합 도출이 능력단위 단계로 이동</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jos">조사</span></div>
+        <span class="slide-pageno">Ⅱ-2-라 간지 / 31</span>
+      </div>
+      <div class="slide-headline">RFP §II-2 라. 능력단위 분석 + 분야 분류 + 융합 도출 — ★ 본 사업 최대 차별화</div>
+      <div class="slide-body">
+        <div class="stage-flow">
+          <div class="stg">
+            <span class="badge">라-1</span>
+            <div class="name">능력단위 풀 추출</div>
+            <div class="desc">선정 세분류(상위 30%) 내 ~2,850개 능력단위. 미활용 능력단위 우선 검토.</div>
+          </div>
+          <div class="stg featured">
+            <span class="badge">라-2</span>
+            <div class="name">능력단위 스킬셋 도출</div>
+            <div class="desc">NCS 표준의 능력단위요소별 스킬 → 중복제거 → 핵심화. 능력단위별 5~10개 스킬셋.</div>
+            <div class="star">★ v0.2 핵심 신규 / NCS 표준 직접 활용</div>
+          </div>
+          <div class="stg">
+            <span class="badge">라-3</span>
+            <div class="name">분야 분류</div>
+            <div class="desc">RFP §II-2 다 분류 기준 적용 — 평생 / 디지털·첨단 / 융합(AI+X) 3분기.</div>
+          </div>
+          <div class="stg">
+            <span class="badge">라-4</span>
+            <div class="name">평생 + 디지털 트랙</div>
+            <div class="desc">정성 3 + 적합성 6 평가 + Borich+Locus 우선순위 + 매핑 룰 → 200과목.</div>
+          </div>
+          <div class="stg featured">
+            <span class="badge">라-5</span>
+            <div class="name">융합(AI+X) 트랙</div>
+            <div class="desc">능력단위 스킬셋 × AI 스킬셋 매핑 → AS-IS/TO-BE → 융합 200과목.</div>
+            <div class="star">★ STEP-AX 융합 모델</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.32 능력단위 스킬셋 도출 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.32</span> &nbsp; Ⅱ-2-라-2. 능력단위 스킬셋 도출 4단계 워크플로우</span>
+      <span class="featured">NCS 표준 직접 활용 — 시앤피에 없던 자산</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jos">조사</span></div>
+        <span class="slide-pageno">Ⅱ-2-라-2 / 32</span>
+      </div>
+      <div class="slide-headline">[조사] 라-2 능력단위 스킬셋 도출 — NCS 표준에서 출발 (출처: NCS 고시)</div>
+      <div class="slide-body">
+        <div class="skill-flow">
+          <div class="skill-step">
+            <div class="num">1</div>
+            <div class="ttl">스킬 항목 파싱</div>
+            <div class="ds">NCS 능력단위요소 [기술(S)] 추출 / 평균 12~30개</div>
+          </div>
+          <div class="skill-arr">→</div>
+          <div class="skill-step">
+            <div class="num">2</div>
+            <div class="ttl">중복 제거</div>
+            <div class="ds">의미 정규화 / LLM 1차 + 분야 전문가 검증</div>
+          </div>
+          <div class="skill-arr">→</div>
+          <div class="skill-step">
+            <div class="num">3</div>
+            <div class="ttl">핵심 선별</div>
+            <div class="ds">출현 빈도 + 가중치 + 분야 전문가 평가</div>
+          </div>
+          <div class="skill-arr">→</div>
+          <div class="skill-step">
+            <div class="num">4</div>
+            <div class="ttl">DB 구축</div>
+            <div class="ds">능력단위별 핵심 스킬셋 5~10개 / 다년 자산</div>
+          </div>
+        </div>
+        <div class="skill-example">
+          <div class="ex-head">예시 — 교환전송설비공사 직무 (사용자 화면 캡처 참조)</div>
+          <div class="ex-row">
+            <span class="unit">라우팅 관리</span>
+            <span class="src">경로 상태 확인 / 라우팅 프로토콜 설정 / 트래픽 분석 / 보안정책 적용 / ...</span>
+            <span class="extracted">① 라우팅 프로토콜 설정<br>② 트래픽 모니터링·분석<br>③ 네트워크 경로 최적화<br>④ 장애 진단·복구</span>
+          </div>
+          <div class="ex-row">
+            <span class="unit">L2·L3 스위치 구축</span>
+            <span class="src">스위치 설치 / VLAN 구성 / STP 설정 / QoS 설정 / ...</span>
+            <span class="extracted">① 스위치 설치<br>② VLAN/STP 구성<br>③ QoS 설정<br>④ 보안 정책 적용</span>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.35 매핑 매트릭스 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.35</span> &nbsp; Ⅱ-2-라-5. 능력단위 스킬셋 × AI 스킬셋 매핑 매트릭스</span>
+      <span class="featured">★ 본 사업 최대 차별화 — 시앤피 작년 AI 리터러시 한계의 본질적 해결</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jos">조사</span></div>
+        <span class="slide-pageno">Ⅱ-2-라-5-① / 35</span>
+      </div>
+      <div class="slide-headline">[조사] 라-5 융합 트랙 ① — 능력단위 스킬셋 × STEP-AX 스킬셋 매핑 매트릭스</div>
+      <div class="slide-body">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th class="corner" style="width:140px;">능력단위 스킬 ↓ &nbsp; AI 스킬셋 →</th>
+              <th class="col-head">A1<br>생성AI</th>
+              <th class="col-head">A2<br>워크<br>플로우</th>
+              <th class="col-head">A3<br>프롬<br>프트</th>
+              <th class="col-head">B1<br>데이터<br>분석</th>
+              <th class="col-head">B2<br>모델<br>활용</th>
+              <th class="col-head">B3<br>운영</th>
+              <th class="col-head">C1<br>윤리</th>
+              <th class="col-head">C2<br>보안</th>
+              <th class="col-head">C3<br>거버<br>넌스</th>
+              <th class="col-head">D1<br>산업<br>도메인</th>
+              <th class="col-head">D2<br>직무<br>도메인</th>
+              <th class="col-head">D3<br>GX·<br>안전</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row-head">라우팅 프로토콜 설정</th>
+              <td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+            </tr>
+            <tr>
+              <th class="row-head">트래픽 모니터링·분석</th>
+              <td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="core">●</td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+            </tr>
+            <tr>
+              <th class="row-head">네트워크 경로 최적화</th>
+              <td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="aux">○</td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+            </tr>
+            <tr>
+              <th class="row-head">장애 진단·복구</th>
+              <td class="aux">○</td><td class="core">●</td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="matrix-legend">
+          <div class="lg-it"><span class="lg-c" style="background:var(--orange); color:white;">●</span> 핵심 융합 (필수 학습)</div>
+          <div class="lg-it"><span class="lg-c" style="background:#FFE8B0; color:#8B5500;">○</span> 보조 융합 (선택 학습)</div>
+          <div class="lg-it"><span class="lg-c" style="background:white; border:1px solid var(--gray-300);"></span> 미융합</div>
+          <div style="margin-left:auto; color:var(--gray-600);">※ LLM 1차 자동 + 분야 전문가 5인 패널 검증 → DB 구축 (다년 자산)</div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.39 SLR Before/After ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.39</span> &nbsp; Ⅱ-2-바-1. SLR 통합 Before/After</span>
+      <span class="featured">사용자 화면 캡처 직접 반영 — RFP §II-3 자동화 직접 답</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jad">자동</span></div>
+        <span class="slide-pageno">Ⅱ-2-바-1 / 39</span>
+      </div>
+      <div class="slide-headline">[자동] 신규 과목 → SLR 시스템 자동 통합 — 직무별 학습 로드맵 NCS 수준 자동 배치</div>
+      <div class="slide-body">
+        <div class="slr-int">
+          <div class="slr-card">
+            <div class="head">기존 STEP SLR (예: 교환전송설비공사 직무)</div>
+            <div class="slr-row"><div class="lvl">L7</div><div class="crs">—</div></div>
+            <div class="slr-row"><div class="lvl">L6</div><div class="crs"><span class="et">E</span>라우팅관리 part1 / <span class="et">E</span>알기쉬운 라우터·스위치</div></div>
+            <div class="slr-row"><div class="lvl">L5</div><div class="crs">—</div></div>
+            <div class="slr-row"><div class="lvl">L4</div><div class="crs"><span class="et">E</span>초연결사회 모바일 / <span class="et">E</span>통신공학</div></div>
+            <div class="slr-row"><div class="lvl">L3</div><div class="crs"><span class="et">E</span>L2·L3 스위치 / <span class="et">E</span>리눅스 입문 / <span class="et">E</span>사무직·마케팅 AI 리터러시</div></div>
+            <div style="font-size: 10px; color: var(--gray-600); margin-top: 6px;">※ 작년 시앤피 일반 AI 리터러시 → 도메인 특화 X</div>
+          </div>
+          <div class="slr-arrow">→</div>
+          <div class="slr-card new">
+            <div class="head">우리 융합 과목 추가 후 (v0.2 권고)</div>
+            <div class="slr-row"><div class="lvl">L7</div><div class="crs"><span class="ne">신규</span>통신 인프라 AX 거버넌스</div></div>
+            <div class="slr-row"><div class="lvl">L6</div><div class="crs"><span class="et">E</span>라우팅관리 part1 / <span class="et">E</span>알기쉬운 라우터·스위치 / <span class="ne">신규</span>AI 활용 트래픽 자동 분석 / <span class="ne">신규</span>AI 기반 라우팅 최적화</div></div>
+            <div class="slr-row"><div class="lvl">L5</div><div class="crs"><span class="ne">신규</span>AI 활용 장애 자동 진단·복구</div></div>
+            <div class="slr-row"><div class="lvl">L4</div><div class="crs"><span class="et">E</span>초연결사회 모바일 / <span class="et">E</span>통신공학</div></div>
+            <div class="slr-row"><div class="lvl">L3</div><div class="crs"><span class="et">E</span>L2·L3 스위치 / <span class="et">E</span>리눅스 입문 / <span class="et">E</span>사무직 AI 리터러시 (유지)</div></div>
+            <div style="font-size: 10px; color: var(--orange); font-weight: 700; margin-top: 6px;">※ 도메인 특화 + NCS 능력단위 매핑 + NCS 수준 자동 배치</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ===================== s.60 시간축 ===================== -->
+  <div class="slide">
+    <div class="slide-meta">
+      <span><span class="num">★ s.60</span> &nbsp; Ⅳ. 활용성 — 26·27·28년+ 동행 로드맵</span>
+      <span class="featured">v0.2 핵심 — "발주처 자력 운영" 폐기, "다년 협력" 채택</span>
+    </div>
+    <div class="slide-inner">
+      <div class="slide-header">
+        <div class="ft-tags"><span class="ft ft-jedo">제도</span></div>
+        <span class="slide-pageno">Ⅳ장 간지 / 60</span>
+      </div>
+      <div class="slide-headline">Ⅳ. 활용성 — 26·27·28년+ 동행 로드맵 ★ 본 제안의 본질</div>
+      <div class="slide-body">
+        <div class="timeline">
+          <div class="tl-item now">
+            <div class="time">2026.11</div>
+            <div class="role">한기대 + 우리</div>
+            <div class="act">본 사업 산출물 인계 + 이행 보고</div>
+          </div>
+          <div class="tl-item">
+            <div class="time">2027.초</div>
+            <div class="role">한기대 + 우리 (협력)</div>
+            <div class="act">신규 과목 선정 사업<br>(본 사업 N₁_final 활용)</div>
+          </div>
+          <div class="tl-item">
+            <div class="time">2027.연중</div>
+            <div class="role">한기대 + 우리 (자문)</div>
+            <div class="act">상시 수요조사 운영<br>매뉴얼 v2 갱신</div>
+          </div>
+          <div class="tl-item">
+            <div class="time">2028.초</div>
+            <div class="role">한기대 + 우리 (협력)</div>
+            <div class="act">차기 SLR 고도화 사업<br>본 사업 자동화 모델 활용</div>
+          </div>
+          <div class="tl-item">
+            <div class="time">2028+</div>
+            <div class="role">한기대 + 우리 (다년)</div>
+            <div class="act">매뉴얼 v3 갱신<br>STEP의 다음 도약</div>
+          </div>
+        </div>
+        <div class="tl-end">
+          본 사업은 26년 11월에 끝나지 않습니다 <span>—</span> 27·28년 그리고 그 이후도 한기대 STEP과 함께합니다
+        </div>
+      </div>
+      <div class="slide-footer">한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행</div>
+    </div>
+  </div>
+
+  <!-- ====================== END NOTE ====================== -->
+  <div class="intro" style="margin-top: 40px;">
+    <h1 style="color: var(--orange);">디자인 작업자 안내</h1>
+    <p>본 데모는 <strong>핵심 차별화 슬라이드 10개의 시각적 시안</strong>입니다. 실제 PowerPoint 제작 시 다음을 준수합니다.</p>
+    <ul style="font-size:12px; color:var(--gray-600); line-height:1.8; margin-left:18px; margin-top:8px;">
+      <li>슬라이드 비율 16:9 (1920×1080), Pretendard 폰트, 본문 색상 4종 (네이비·옐로우·오렌지·그레이) 일관</li>
+      <li>모든 슬라이드 좌상단 RFP 4대 제언 기호 + 우상단 절·페이지 번호 + 푸터 슬로건</li>
+      <li>1 슬라이드 = 1 메시지 + 1 시각화 (텍스트 본문 5줄 이하)</li>
+      <li>나머지 58개 슬라이드는 <code style="background:var(--gray-100); padding:2px 6px; border-radius:3px;">슬라이드별_설계_v1.0.md</code>의 명세를 본 데모의 디자인 시스템에 맞춰 제작</li>
+      <li>PPT → PDF 변환 시 폰트 임베드 필수, 파일 용량 50MB 이내 (총 300MB 합산 여유)</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

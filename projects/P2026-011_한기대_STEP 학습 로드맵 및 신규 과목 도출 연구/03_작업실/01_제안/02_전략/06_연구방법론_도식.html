@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>연구 절차·방법론 1페이지 도식 — STEP SLR 2026</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-light: #1A3D6B;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-300: #C9CED7;
+    --gray-600: #5B6573;
+    --gray-900: #1B2330;
+    --green: #1E9E6A;
+    --red: #C53030;
+    --purple: #6D5BBA;
+    --teal: #2C8A9B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .canvas {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: white;
+    padding: 24px 36px;
+  }
+  .header .meta {
+    font-size: 12px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .header .sub {
+    font-size: 13px;
+    opacity: 0.85;
+  }
+
+  .section {
+    padding: 24px 36px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+    display: inline-block;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 14px;
+  }
+
+  /* 6단계 흐름 */
+  .flow-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    position: relative;
+  }
+  .flow-step {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px 10px;
+    position: relative;
+  }
+  .flow-step.changed {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .flow-step .month {
+    font-size: 10px;
+    color: var(--gray-600);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .flow-step .letter {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .flow-step .name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .flow-step .output {
+    font-size: 11px;
+    color: var(--gray-900);
+    border-top: 1px dashed var(--gray-300);
+    padding-top: 6px;
+    line-height: 1.4;
+  }
+  .flow-step .tags {
+    margin-top: 6px;
+  }
+  .ft {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin: 1px;
+  }
+  .ft-jedo { background: #FFE8B0; color: #8B5500; }
+  .ft-jad { background: #C7E5F5; color: #1F4E79; }
+  .ft-jos { background: #F5C7C7; color: #8B1A1A; }
+  .ft-man { background: #C7E5C7; color: #1B5E1B; }
+  .ft-new { background: var(--orange); color: white; }
+
+  /* 세분류 우선순위 박스 (가운데 강조) */
+  .priority-box {
+    background: var(--navy);
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .priority-box .title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .priority-box .formula {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--yellow);
+    background: rgba(255,255,255,0.1);
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  .priority-box .note {
+    font-size: 11px;
+    opacity: 0.85;
+    margin-top: 6px;
+  }
+
+  /* 트랙 분기 (평생/디지털 vs 융합 AI+X) */
+  .track-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .track {
+    border: 2px solid var(--gray-300);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .track.basic {
+    border-color: var(--navy);
+  }
+  .track.ax {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .track .track-head {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+  }
+  .track.ax .track-head { color: var(--orange); }
+  .track .track-target {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-bottom: 12px;
+  }
+  .track ol {
+    margin-left: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .track ol li {
+    margin-bottom: 6px;
+    color: var(--gray-900);
+  }
+  .track ol li strong {
+    color: var(--navy);
+  }
+  .track.ax ol li strong { color: var(--orange); }
+  .track .result {
+    margin-top: 12px;
+    padding: 10px;
+    background: var(--navy);
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .track.ax .result { background: var(--orange); }
+
+  /* 시나리오 ABC */
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .scenario {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px;
+    position: relative;
+  }
+  .scenario.recommend {
+    border-color: var(--green);
+    background: #E8F5EE;
+  }
+  .scenario.recommend::after {
+    content: '★ 권고';
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: var(--green);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  .scenario.discard {
+    opacity: 0.65;
+    background: #FFF5F5;
+    border-color: var(--red);
+  }
+  .scenario .scen-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .scenario .scen-flow {
+    font-size: 11px;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+    line-height: 1.5;
+    background: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border-left: 3px solid var(--gray-300);
+  }
+  .scenario .scen-kpi {
+    font-size: 11px;
+    color: var(--gray-600);
+    margin-top: 6px;
+  }
+
+  /* AX 200 분야 분배 */
+  .ax-allocation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .ax-item {
+    background: white;
+    border: 1.5px solid var(--orange);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .ax-item .ax-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .ax-item .ax-name {
+    font-size: 12px;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .ax-item .ax-detail {
+    font-size: 10px;
+    color: var(--gray-600);
+  }
+
+  /* STEP-AX 분류체계 3-Layer */
+  .layer-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .layer-tag {
+    background: var(--navy);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .layer-content {
+    background: white;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 11px;
+    color: var(--gray-900);
+    line-height: 1.6;
+  }
+  .layer-content strong { color: var(--navy); }
+
+  /* 비교표 */
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .compare th, .compare td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: top;
+  }
+  .compare th {
+    background: var(--gray-50);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .compare td.cnp { color: var(--gray-600); text-decoration: line-through; opacity: 0.65; }
+  .compare td.us { color: var(--navy); font-weight: 600; }
+
+  .legend {
+    background: var(--gray-50);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 11px;
+    color: var(--gray-600);
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--gray-300);
+  }
+
+  .footer {
+    padding: 14px 36px;
+    background: var(--gray-50);
+    color: var(--gray-600);
+    font-size: 11px;
+  }
+
+  /* 4분면 Locus */
+  .locus {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+  }
+  .locus .axis-x, .locus .axis-y {
+    position: absolute;
+    background: var(--gray-300);
+  }
+  .locus .axis-x {
+    left: 0; right: 0; top: 50%; height: 1px;
+  }
+  .locus .axis-y {
+    top: 0; bottom: 0; left: 50%; width: 1px;
+  }
+  .locus .quad {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    font-size: 11px;
+    color: var(--gray-600);
+  }
+  .locus .q-hh {
+    top: 0; left: 50%;
+    background: #FFF8F2;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .locus .q-lh { top: 0; left: 0; }
+  .locus .q-hl { top: 50%; left: 50%; }
+  .locus .q-ll { top: 50%; left: 0; }
+  .locus .label-x {
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    font-size: 10px;
+    color: var(--gray-600);
+  }
+  .locus .label-y {
+    position: absolute;
+    top: 0;
+    left: -34px;
+    font-size: 10px;
+    color: var(--gray-600);
+    transform: rotate(-90deg);
+    transform-origin: top left;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="header">
+    <div class="meta">연구 절차·방법론 1페이지 도식 v0.1 · 2026-05-11</div>
+    <h1>2026 한기대 STEP SLR — 우리만의 연구 절차·방법론</h1>
+    <div class="sub">RFP §II-2 6단계 골격 유지 + 설문 재배치(시나리오 B) + 융합(AI+X) 200과목 별도 트랙 (STEP-AX 스킬셋 방법론)</div>
+  </div>
+
+  <!-- ============== LEGEND ============== -->
+  <div class="section">
+    <div class="legend">
+      <div class="legend-item"><span class="ft ft-jedo">제도</span> 제도연계 (RFP §II-3)</div>
+      <div class="legend-item"><span class="ft ft-jad">자동</span> 자동화 (RFP §II-3)</div>
+      <div class="legend-item"><span class="ft ft-jos">조사</span> 조사체계 (RFP §II-3)</div>
+      <div class="legend-item"><span class="ft ft-man">매뉴</span> 매뉴얼화 (RFP §II-3)</div>
+      <div class="legend-item"><span class="ft ft-new">신규</span> 시앤피 대비 변경·신설</div>
+      <div class="legend-item" style="margin-left:auto"><span class="legend-color" style="background:#FFF8F2;border-color:var(--orange);"></span> 본 사업에서 조정·신설된 단계</div>
+    </div>
+  </div>
+
+  <!-- ============== 전체 6단계 흐름 ============== -->
+  <div class="section">
+    <div class="section-title">RFP §II-2 6단계 흐름 + 우리 조정 2가지</div>
+    <div class="section-sub">RFP 표기 가·나·다·라·마·바 그대로 사용. 자체 "Module" 재구조화 없음.
+    조정 1 = 설문 위치 재배치 (다단계 안에 신규 위치) · 조정 2 = 융합 AI+X 별도 트랙 신설</div>
+
+    <div class="flow-6">
+      <div class="flow-step">
+        <div class="month">2026.04~05</div>
+        <div class="letter">가</div>
+        <div class="name">SLR 최신화</div>
+        <div class="output">NCS·SQF + ISC 발표본<br>기개발 2,586개 매핑<br>미활용 능력단위 도출<br>Master DB 1차</div>
+        <div class="tags"><span class="ft ft-jedo">제도</span><span class="ft ft-jad">자동</span><span class="ft ft-man">매뉴</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.06</div>
+        <div class="letter">나</div>
+        <div class="name">세분류 수요분석</div>
+        <div class="output">정량 11지표 + 정성 3지표<br>796개 → 상위 30% 후보<br>→ <strong>N₁_pre</strong> (약 240개)</div>
+        <div class="tags"><span class="ft ft-jos">조사</span><span class="ft ft-man">매뉴</span></div>
+      </div>
+      <div class="flow-step changed">
+        <div class="month">2026.06~07</div>
+        <div class="letter">다-1</div>
+        <div class="name">세분류 설문조사 <span class="ft ft-new">신규</span></div>
+        <div class="output">★ <strong>세분류 단위 문항</strong><br>학습자·기업·기관<br>문항 240개 (작년 742→1/3)<br>응답률 25%+ 목표</div>
+        <div class="tags"><span class="ft ft-jos">조사</span></div>
+      </div>
+      <div class="flow-step changed">
+        <div class="month">2026.07</div>
+        <div class="letter">다-2</div>
+        <div class="name">N₁_final 확정</div>
+        <div class="output"><strong>50/35/15 정확 적용</strong><br>(작년 시앤피 50/50 이탈)<br>세분류 우선순위 확정<br>평생·디지털·융합 분류</div>
+        <div class="tags"><span class="ft ft-jos">조사</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.07~09</div>
+        <div class="letter">라+마</div>
+        <div class="name">능력단위 → 과목개요서</div>
+        <div class="output">★ <strong>2트랙 병렬 진행</strong><br>(아래 트랙 분기 도식)<br>→ 400과목</div>
+        <div class="tags"><span class="ft ft-jos">조사</span><span class="ft ft-jedo">제도</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.10~11</div>
+        <div class="letter">바</div>
+        <div class="name">결과 정리</div>
+        <div class="output">SLR 도식 + 신규과목→SLR <strong>자동 연계</strong><br>보고서 20부 + 매뉴얼 1부<br>4종 운영 매뉴얼<br>제도연계 제언</div>
+        <div class="tags"><span class="ft ft-jad">자동</span><span class="ft ft-man">매뉴</span><span class="ft ft-jedo">제도</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 시나리오 ABC ============== -->
+  <div class="section">
+    <div class="section-title">Q1·Q2 답 — 설문 단계 재배치 시나리오 A/B/C 비교</div>
+    <div class="section-sub">RFP §II-3가 "재배치 방안 예시 + 타당성 검증"을 명시 요구. 우리는 B를 권고하되 발주처와 합의 후 최종 채택.</div>
+
+    <div class="scenario-grid">
+      <div class="scenario discard">
+        <div class="scen-name">A. 현행 (시앤피 2025)</div>
+        <div class="scen-flow">세분류 → 능력단위 → 과정명 → <strong>설문</strong></div>
+        <div class="scen-kpi">설문 문항 742개 / 응답률 9.5% / 종합 50/50<br>탈락 능력단위로 세분류 일괄 개발 불가</div>
+      </div>
+      <div class="scenario recommend">
+        <div class="scen-name">B. 사용자 제안 ★</div>
+        <div class="scen-flow">세분류 → <strong>설문</strong> → 세분류 확정 → 능력단위 → 과정</div>
+        <div class="scen-kpi">설문 문항 ~240개 / 응답률 25%+ 목표 / 종합 50/35/15<br>수요 높은 세분류 일괄 개발 가능</div>
+      </div>
+      <div class="scenario">
+        <div class="scen-name">C. 혼합</div>
+        <div class="scen-flow">세분류 → <strong>설문 1차</strong> → 세분류 확정 → 능력단위 → <strong>설문 2차</strong> → 과정</div>
+        <div class="scen-kpi">정밀도↑ 운영 부담↑<br>발주처 선호 시 채택 가능</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 세분류 우선순위 공식 ============== -->
+  <div class="section">
+    <div class="section-title">Q1·Q2 답 — 세분류 우선순위 산출 공식 (RFP 50/35/15 정확 적용)</div>
+    <div class="priority-box">
+      <div class="title">N₁_final = 설문 50% + 정량 35% + 정성 15%</div>
+      <div class="formula">RFP §II-2 라 명시 비율 정확 적용</div>
+      <div class="note">시앤피 2025 실제 적용은 50/50 (수요조사 100점 + 정량·정성 합산 100점) — RFP 명시 비율 이탈</div>
+    </div>
+  </div>
+
+  <!-- ============== 트랙 분기 ============== -->
+  <div class="section">
+    <div class="section-title">Q3·Q4 답 — 능력단위 → 과목개요서 도출 2트랙 병렬</div>
+
+    <div class="track-split">
+      <!-- 평생 + 디지털 트랙 -->
+      <div class="track basic">
+        <div class="track-head">트랙 1. 평생 + 디지털·첨단 (200과목)</div>
+        <div class="track-target">대상: 10대 NCS 대분류 평생 100과목 + 21대 직종 디지털·첨단 100과목</div>
+        <ol>
+          <li><strong>능력단위 풀 추출</strong> — 선정 세분류 내 ~2,850개</li>
+          <li><strong>정성 3지표 평가</strong> — 수요예상도·개발필요성·시급성 (5점)</li>
+          <li><strong>적합성 6지표 평가</strong> — 이러닝 3 + 가상훈련 3 (7점)<br>1차 AI 자동 + 2차 전문가 검증 5단계 (시앤피 방식 준용)</li>
+          <li><strong>Borich + Locus for Focus 4분면</strong> — KTR 도구 차용</li>
+          <li><strong>능력단위 → 과목 매핑 룰</strong><br>① 1:1 매핑 (NCS 수준 3+, 학습량 ≥15h)<br>② N:1 통합 (선·후행 능력단위 묶음)<br>③ 1:N 분할 (학습량 ≥60h 또는 난이도 격차)</li>
+        </ol>
+        <div class="result">평생 100 + 디지털 100 = 200과목</div>
+      </div>
+
+      <!-- 융합 AI+X 트랙 -->
+      <div class="track ax">
+        <div class="track-head">트랙 2. 융합 (AI+X) 200과목 ★ STEP-AX 방법론</div>
+        <div class="track-target">대상: 산업·직무 AI 융합 + AX·GX·안전(로봇) 포함</div>
+        <ol>
+          <li><strong>STEP-AX 스킬셋 분류체계 구축</strong> ★ 우리 자산<br>L1 핵심 4영역 + L2 기능 12개 + L3 세부 50개</li>
+          <li><strong>NCS 능력단위 × AX 스킬셋 매핑</strong> — 9,497개 × 12 매트릭스<br>1차 AI 자동 + 2차 분야별 전문가 패널</li>
+          <li><strong>AS-IS / TO-BE 워크플로우 분석</strong> — KTR 도구 차용<br>AI 적용 임팩트 3등급 (변혁/보조/한정)</li>
+          <li><strong>융합 분류 정성 3지표</strong> (RFP 명시 + 우리 정의)<br>AI 적용적합성 · 확장성 · 미래성 (5점)</li>
+          <li><strong>Borich + Locus 우선순위 + 분야 분배</strong></li>
+        </ol>
+        <div class="result">융합 AI+X 200과목 (분배안 ↓)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== AX 200 분야 분배 ============== -->
+  <div class="section">
+    <div class="section-title">Q4 답 — AX 200과목 분야 분배안 (발주처 협의 후 확정)</div>
+    <div class="ax-allocation">
+      <div class="ax-item">
+        <div class="ax-num">20</div>
+        <div class="ax-name">AX 공통</div>
+        <div class="ax-detail">전 산업 공통<br>(생성형 AI·프롬프트·자동화·윤리·보안)</div>
+      </div>
+      <div class="ax-item">
+        <div class="ax-num">150</div>
+        <div class="ax-name">산업별 AI 활용</div>
+        <div class="ax-detail">10대 NCS 대분류<br>대분류별 평균 15과목</div>
+      </div>
+      <div class="ax-item">
+        <div class="ax-num">20</div>
+        <div class="ax-name">GX</div>
+        <div class="ax-detail">Green Transformation<br>ESG·탄소중립·에너지</div>
+      </div>
+      <div class="ax-item">
+        <div class="ax-num">10</div>
+        <div class="ax-name">안전(로봇)</div>
+        <div class="ax-detail">RFP 명시 포함<br>협동로봇·산업안전</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== STEP-AX 스킬셋 분류체계 + Locus ============== -->
+  <div class="section">
+    <div style="display:grid; grid-template-columns: 2fr 1fr; gap: 28px;">
+      <div>
+        <div class="section-title">STEP-AX 스킬셋 3-Layer 분류체계 ★ 우리만의 자산</div>
+        <div class="section-sub">L1 핵심 영역 4개 + L2 기능 영역 12개 + L3 세부 스킬 ~50개. NCS 능력단위 매핑의 기준이 되며 27·28년 다년 자산.</div>
+
+        <div class="layer-grid">
+          <div class="layer-tag" style="background:var(--orange)">L1 (4)</div>
+          <div class="layer-content">
+            <strong>A. AI 활용</strong> · <strong>B. AI 개발·운영</strong> · <strong>C. AI 거버넌스</strong> · <strong>D. AI 융합 도메인</strong>
+          </div>
+        </div>
+        <div class="layer-grid">
+          <div class="layer-tag" style="background:var(--purple)">L2 (12)</div>
+          <div class="layer-content">
+            <strong>A-1</strong> 생성형 AI 도구 활용 · <strong>A-2</strong> AI 워크플로우 자동화 · <strong>A-3</strong> 프롬프트 엔지니어링<br>
+            <strong>B-1</strong> 데이터 분석·시각화 · <strong>B-2</strong> 모델 활용 (RAG·파인튜닝) · <strong>B-3</strong> AI 솔루션 운영<br>
+            <strong>C-1</strong> AI 윤리·책임 · <strong>C-2</strong> AI 보안·프라이버시 · <strong>C-3</strong> AI 거버넌스·법규<br>
+            <strong>D-1</strong> 산업 도메인 AI 활용 · <strong>D-2</strong> 직무 도메인 AI 활용 · <strong>D-3</strong> GX·안전(로봇)
+          </div>
+        </div>
+        <div class="layer-grid">
+          <div class="layer-tag" style="background:var(--teal)">L3 (~50)</div>
+          <div class="layer-content">
+            예: <em>ChatGPT 업무 활용 / Copilot 문서 자동화 / RAG 구축 실습 / EU AI Act 대응 실무 / 제조 AX 워크플로우 설계 / 화학·바이오 분광 분석 AI / ESG 데이터 분석 / 협동로봇 안전운영 ...</em>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">우선순위 4분면 (KTR Locus for Focus 차용)</div>
+        <div style="padding-left: 40px;">
+          <div class="locus">
+            <div class="axis-x"></div>
+            <div class="axis-y"></div>
+            <div class="quad q-lh">LH<br>장기 검토</div>
+            <div class="quad q-hh">HH ★<br>신규 개발<br>1순위</div>
+            <div class="quad q-ll">LL<br>제외</div>
+            <div class="quad q-hl">HL<br>보완 개발</div>
+            <div class="label-x">→ Gap (현재 격차)</div>
+            <div class="label-y">↑ 필요 수준</div>
+          </div>
+        </div>
+        <div style="font-size: 11px; color: var(--gray-600); margin-top: 8px; text-align: center;">
+          KTR 제안서 p.49 도식 차용 + 한기대 스케일 확장
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 시앤피 vs 우리 (방법론 차별) ============== -->
+  <div class="section">
+    <div class="section-title">시앤피 2025 (실증) vs 우리 2026 (권고) — 방법론 차별</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:22%;">항목</th>
+          <th style="width:38%;">시앤피 2025 실제</th>
+          <th style="width:40%;">우리 2026 권고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>절차 구조</td>
+          <td class="cnp">자체 6 Module 재구조화</td>
+          <td class="us">RFP 가~바 그대로 + 융합 별도 트랙</td>
+        </tr>
+        <tr>
+          <td>설문 위치</td>
+          <td class="cnp">능력단위 → 과정명 → 설문 (시나리오 A)</td>
+          <td class="us">세분류 단위 설문 (시나리오 B 권고)</td>
+        </tr>
+        <tr>
+          <td>설문 문항 수 / 응답률</td>
+          <td class="cnp">742개 / 9.5% (1,974명)</td>
+          <td class="us">~240개 / 25%+ 목표</td>
+        </tr>
+        <tr>
+          <td>종합 비율</td>
+          <td class="cnp">50/50 (수요 100 + 정량·정성 100) — <strong style="color:var(--red);">RFP 이탈</strong></td>
+          <td class="us">50/35/15 (설문/정량/정성) — RFP 명시 정확</td>
+        </tr>
+        <tr>
+          <td>응답자 가중치</td>
+          <td class="cnp">단순 평균 (가중치 없음)</td>
+          <td class="us">학습자·기업·기관 차등 + 분야 응답률 보정</td>
+        </tr>
+        <tr>
+          <td>능력단위→과목 매핑 룰</td>
+          <td class="cnp">미명시</td>
+          <td class="us">1:1 / N:1 / 1:N 3룰 명시</td>
+        </tr>
+        <tr>
+          <td>AI 융합 과목</td>
+          <td class="cnp">AI 리터러시 7 + AI+X 19 = 26개<br>리터러시 7개는 NCS 매핑 부재</td>
+          <td class="us">STEP-AX 스킬셋 + NCS 매핑 매트릭스 + 200과목<br>200개 모두 NCS 매핑</td>
+        </tr>
+        <tr>
+          <td>AS-IS/TO-BE 분석</td>
+          <td class="cnp">없음</td>
+          <td class="us">KTR 차용 + 한기대용 표준화 양식</td>
+        </tr>
+        <tr>
+          <td>Borich + Locus</td>
+          <td class="cnp">없음</td>
+          <td class="us">KTR 차용 + 분야 분배 모델</td>
+        </tr>
+        <tr>
+          <td>매뉴얼 산출</td>
+          <td class="cnp">데이터 관리 매뉴얼 1종 (수기 운영 전제)</td>
+          <td class="us">4종 운영 매뉴얼 + 영상 튜토리얼 + SLR 관리매뉴얼</td>
+        </tr>
+        <tr>
+          <td>제도연계</td>
+          <td class="cnp">벤치마킹 수준 (5개국 사례)</td>
+          <td class="us">직능은행제 시범 매핑 1개 분야 + 27년 명분</td>
+        </tr>
+        <tr>
+          <td>다년 자산화</td>
+          <td class="cnp">단발성 산출물</td>
+          <td class="us">NCS×AX 매핑 매트릭스 → 27·28년 자산</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============== 발주처 협의 필요 ============== -->
+  <div class="section">
+    <div class="section-title">발주처 협의 필요 4건 (착수보고 전 사전 문의)</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:6%;">#</th>
+          <th style="width:34%;">협의 사항</th>
+          <th style="width:30%;">우리 권고</th>
+          <th style="width:30%;">백업안</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>설문 단계 재배치 시나리오</td>
+          <td class="us">B (세분류 단위 설문)</td>
+          <td>C (혼합)</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>종합 비율</td>
+          <td class="us">RFP 명시 50/35/15</td>
+          <td>시앤피 작년 50/50</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>분야 비율 (평생·디지털·융합)</td>
+          <td class="us">RFP 그대로 100·100·200</td>
+          <td>발주처 조정안</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>AX 200 분야 분배</td>
+          <td class="us">공통20 + 산업150 + GX20 + 안전10</td>
+          <td>발주처 조정안</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <strong>문서 트리</strong>:
+    01_제안전략_Master_v0.2.md · 02_정성제안서_목차_v0.2.md · 03_PT_스토리라인_v0.2.md ·
+    04_제안전략_캔버스_v0.2.html · <strong>05_연구절차_방법론_v0.1.md (본 도식의 원문)</strong> · 06_연구방법론_도식.html (본 파일)
+    <br><br>
+    핵심 메시지: <strong>RFP 6단계 골격 유지 + 설문 재배치 + 융합 별도 트랙(STEP-AX 스킬셋) — 시앤피 6 Module 재구조화 X / 50/50 비율 이탈 X</strong>
+  </div>
+</div>
+</body>
+</html>

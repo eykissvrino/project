@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>연구 절차·방법론 도식 v0.2 — STEP SLR 2026 (능력단위 스킬셋 × AI 스킬셋 융합)</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-light: #1A3D6B;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-300: #C9CED7;
+    --gray-600: #5B6573;
+    --gray-900: #1B2330;
+    --green: #1E9E6A;
+    --red: #C53030;
+    --purple: #6D5BBA;
+    --teal: #2C8A9B;
+    --skill-yellow: #FFE9A6;
+    --ai-purple: #DDD0F5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .canvas {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  .version-banner {
+    background: var(--orange);
+    color: white;
+    padding: 10px 36px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: white;
+    padding: 24px 36px;
+  }
+  .header .meta { font-size: 12px; opacity: 0.7; margin-bottom: 6px; }
+  .header h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+  .header .sub { font-size: 13px; opacity: 0.85; }
+
+  .section {
+    padding: 24px 36px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+    display: inline-block;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 14px;
+  }
+
+  /* 6단계 흐름 */
+  .flow-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+  }
+  .flow-step {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px 10px;
+  }
+  .flow-step.changed {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .flow-step.featured {
+    border-color: var(--orange);
+    background: #FFF8F2;
+    border-width: 2.5px;
+  }
+  .flow-step .month {
+    font-size: 10px;
+    color: var(--gray-600);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .flow-step .letter {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .flow-step .name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .flow-step .output {
+    font-size: 11px;
+    color: var(--gray-900);
+    border-top: 1px dashed var(--gray-300);
+    padding-top: 6px;
+    line-height: 1.4;
+  }
+  .flow-step .tags { margin-top: 6px; }
+  .ft {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin: 1px;
+  }
+  .ft-jedo { background: #FFE8B0; color: #8B5500; }
+  .ft-jad { background: #C7E5F5; color: #1F4E79; }
+  .ft-jos { background: #F5C7C7; color: #8B1A1A; }
+  .ft-man { background: #C7E5C7; color: #1B5E1B; }
+  .ft-new { background: var(--orange); color: white; }
+
+  /* 라 단계 expanded box */
+  .stage-expand {
+    border: 2.5px solid var(--orange);
+    border-radius: 12px;
+    background: #FFF8F2;
+    padding: 18px;
+    margin-top: 16px;
+  }
+  .stage-expand-head {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .stage-expand-head .badge {
+    background: var(--orange);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+  }
+
+  .stage-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+    margin-bottom: 10px;
+    align-items: stretch;
+  }
+  .stage-tag {
+    background: var(--orange);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+  }
+  .stage-tag.normal { background: var(--navy); }
+  .stage-tag.split { background: var(--purple); }
+  .stage-content {
+    background: white;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 12px;
+    color: var(--gray-900);
+    line-height: 1.6;
+  }
+  .stage-content strong { color: var(--navy); }
+  .stage-content.featured { border-color: var(--orange); border-width: 2px; }
+
+  /* 분야 분류 3분기 */
+  .branch3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .branch {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  .branch.ax {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .branch .name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .branch .criteria {
+    font-size: 10px;
+    color: var(--gray-600);
+  }
+  .branch .count {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-top: 4px;
+  }
+
+  /* 능력단위 스킬셋 도출 4단계 */
+  .skill-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+  }
+  .skill-step {
+    background: white;
+    border: 1.5px solid var(--purple);
+    border-radius: 8px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+  .skill-step .num {
+    background: var(--purple);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 6px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .skill-step .title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .skill-step .desc {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.4;
+  }
+  .skill-arrow {
+    color: var(--purple);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .skill-result {
+    background: var(--purple);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* 매핑 매트릭스 */
+  .matrix-wrap {
+    background: white;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 14px;
+    overflow-x: auto;
+  }
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .matrix-table th, .matrix-table td {
+    border: 1px solid var(--gray-300);
+    padding: 6px 4px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .matrix-table th.col-head {
+    background: var(--ai-purple);
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .matrix-table th.row-head {
+    background: var(--skill-yellow);
+    color: var(--navy);
+    font-weight: 600;
+    text-align: left;
+    padding-left: 10px;
+    min-width: 130px;
+  }
+  .matrix-table th.corner {
+    background: var(--gray-50);
+    font-size: 10px;
+    color: var(--gray-600);
+  }
+  .matrix-table td.cell {
+    background: white;
+  }
+  .matrix-table td.core {
+    background: var(--orange);
+    color: white;
+    font-weight: 700;
+  }
+  .matrix-table td.aux {
+    background: #FFE8B0;
+    color: #8B5500;
+    font-weight: 700;
+  }
+  .matrix-legend {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--gray-600);
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .matrix-legend .lg-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .matrix-legend .lg-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+  }
+
+  /* AS-IS / TO-BE */
+  .asto-wrap {
+    background: white;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .asto-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .asto-table th {
+    background: var(--gray-50);
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--gray-300);
+  }
+  .asto-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .asto-table td.label {
+    font-weight: 700;
+    color: var(--navy);
+    width: 22%;
+  }
+  .asto-table td.asis { color: var(--gray-600); width: 39%; }
+  .asto-table td.tobe { color: var(--orange); font-weight: 600; width: 39%; }
+
+  /* SLR 통합 시각화 */
+  .slr-integration {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .slr-card {
+    background: white;
+    border: 1.5px solid var(--gray-300);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .slr-card .head {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--yellow);
+    margin-bottom: 10px;
+  }
+  .slr-card.new .head { color: var(--orange); border-color: var(--orange); }
+
+  .slr-row {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 6px;
+    margin-bottom: 6px;
+    align-items: center;
+    font-size: 11px;
+  }
+  .slr-row .lvl {
+    background: var(--gray-100);
+    color: var(--gray-900);
+    text-align: center;
+    padding: 4px 0;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  .slr-row .courses {
+    color: var(--gray-900);
+    line-height: 1.4;
+  }
+  .slr-row .courses .new-tag {
+    display: inline-block;
+    background: var(--orange);
+    color: white;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 3px;
+    font-weight: 700;
+  }
+  .slr-row .courses .e-tag {
+    display: inline-block;
+    background: #4A90E2;
+    color: white;
+    font-size: 9px;
+    padding: 1px 4px;
+    border-radius: 50%;
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .slr-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 24px;
+  }
+
+  /* 비교표 */
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .compare th, .compare td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: top;
+  }
+  .compare th {
+    background: var(--gray-50);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .compare td.cnp { color: var(--gray-600); text-decoration: line-through; opacity: 0.65; }
+  .compare td.us { color: var(--navy); font-weight: 600; }
+
+  .footer {
+    padding: 14px 36px;
+    background: var(--gray-50);
+    color: var(--gray-600);
+    font-size: 11px;
+  }
+
+  .changelog {
+    background: #FFF8F2;
+    border-left: 4px solid var(--orange);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: var(--gray-900);
+  }
+  .changelog strong { color: var(--orange); }
+
+  .strength-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .strength {
+    background: white;
+    border: 1.5px solid var(--green);
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .strength .num {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .strength .title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .strength .desc {
+    font-size: 11px;
+    color: var(--gray-600);
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <div class="version-banner">
+    v0.2 (방향 재설정) — 분야 분류 단계를 능력단위 단계로 이동 · 융합 도출 = 능력단위 스킬셋 × AI 스킬셋 매핑 · STEP SLR 통합 흐름 명시
+  </div>
+
+  <div class="header">
+    <div class="meta">연구 절차·방법론 도식 v0.2 · 2026-05-11</div>
+    <h1>2026 한기대 STEP SLR — 우리만의 연구 절차·방법론</h1>
+    <div class="sub">RFP 6단계 골격 + 라(능력단위) 단계에서 분야 분류 + 융합(AI+X) = NCS 능력단위 스킬셋 × STEP-AX 스킬셋 매핑 → STEP SLR 직무별 학습 로드맵 통합</div>
+  </div>
+
+  <!-- ============== CHANGELOG ============== -->
+  <div class="section">
+    <div class="changelog">
+      <strong>v0.1 → v0.2 핵심 수정 4가지</strong> &nbsp;&nbsp;
+      ① <strong>세분류(다) 단계는 분야 무관</strong> 우선순위만 확정 (v0.1은 다단계에서 분야 분류 잘못 배치)
+      &nbsp; ② <strong>분야 분류는 능력단위(라) 단계로 이동</strong> (RFP §II-2 다 분류 기준에 정확히 부합)
+      &nbsp; ③ <strong>융합 도출 방법 = 능력단위 스킬셋(NCS 표준 직접 활용) × AI 스킬셋(우리 STEP-AX) 매핑</strong> (v0.1의 추상적 매핑을 구체화)
+      &nbsp; ④ <strong>STEP SLR 통합 명시</strong> — 도출된 융합 과목이 직무별 학습 로드맵에 NCS 수준 맞춰 자연스럽게 추가
+    </div>
+  </div>
+
+  <!-- ============== 6단계 흐름 (수정) ============== -->
+  <div class="section">
+    <div class="section-title">RFP §II-2 6단계 흐름 (v0.2 수정)</div>
+    <div class="section-sub">세분류(나·다)는 분야 무관. 분야 분류와 융합 도출은 능력단위(라) 단계에서. 마·바는 RFP 그대로.</div>
+
+    <div class="flow-6">
+      <div class="flow-step">
+        <div class="month">2026.04~05</div>
+        <div class="letter">가</div>
+        <div class="name">SLR 최신화</div>
+        <div class="output">기개발 2,586개 매핑<br>미활용 능력단위 도출<br>Master DB 1차</div>
+        <div class="tags"><span class="ft ft-jedo">제도</span><span class="ft ft-jad">자동</span><span class="ft ft-man">매뉴</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.06</div>
+        <div class="letter">나</div>
+        <div class="name">세분류 수요분석<br><small style="color:var(--orange);">★ 분야 무관</small></div>
+        <div class="output">정량 11지표 + 정성 3지표<br>796개 → 상위 30%<br>→ <strong>N₁_pre</strong> (~240개)</div>
+        <div class="tags"><span class="ft ft-jos">조사</span></div>
+      </div>
+      <div class="flow-step changed">
+        <div class="month">2026.06~07</div>
+        <div class="letter">다-1·2</div>
+        <div class="name">세분류 설문 + N₁_final<br><small style="color:var(--orange);">★ 분야 무관</small></div>
+        <div class="output">세분류 단위 설문<br>50/35/15 정확 적용<br><strong>N₁_final</strong> 우선순위만 확정</div>
+        <div class="tags"><span class="ft ft-jos">조사</span></div>
+      </div>
+      <div class="flow-step featured">
+        <div class="month">2026.07~08</div>
+        <div class="letter">라</div>
+        <div class="name">능력단위 + 분야 분류<br><small style="color:var(--orange);">★ v0.2 핵심 단계</small></div>
+        <div class="output">스킬셋 도출 → 분야 분류<br>→ 평생·디지털·융합 트랙<br>→ 400과목 후보</div>
+        <div class="tags"><span class="ft ft-jos">조사</span><span class="ft ft-new">신규 방법</span></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.09</div>
+        <div class="letter">마</div>
+        <div class="name">과목개요서</div>
+        <div class="output">한기대 표준 양식<br>회차 + NCS 능력단위요소<br>가상훈련 30개+<br>= <strong>400과목</strong></div>
+        <div class="tags"></div>
+      </div>
+      <div class="flow-step">
+        <div class="month">2026.10~11</div>
+        <div class="letter">바</div>
+        <div class="name">결과 정리 + SLR 통합</div>
+        <div class="output">SLR 도식 10대 분야<br><strong>융합 과목 SLR 자동 통합</strong><br>4종 매뉴얼<br>제도연계 시범</div>
+        <div class="tags"><span class="ft ft-jad">자동</span><span class="ft ft-man">매뉴</span><span class="ft ft-jedo">제도</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 라 단계 expanded ============== -->
+  <div class="section">
+    <div class="section-title">라. 능력단위 단계 상세 — 5개 하위 단계 (v0.2 핵심)</div>
+    <div class="section-sub">v0.1은 라 단계가 단순 평가였으나, v0.2는 능력단위 스킬셋 도출(라-2)과 분야 분류(라-3)를 신설하고 융합 트랙(라-5)을 별도 정의.</div>
+
+    <div class="stage-expand">
+      <div class="stage-expand-head">
+        <span class="badge">라</span> 능력단위 수요분석 + 개발 적합성 평가 + 분야 분류 + 융합 도출
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-tag normal">라-1<br>풀 추출</div>
+        <div class="stage-content">
+          <strong>능력단위 풀 추출</strong> — 선정 세분류(상위 30%) 내 <strong>~2,850개 능력단위</strong> 추출.
+          미활용 능력단위 우선 검토 (RFP §II-1 가 명시 요구).
+        </div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-tag">라-2<br>스킬셋 도출</div>
+        <div class="stage-content featured">
+          <strong>★ 능력단위 스킬셋 도출 (v0.2 핵심 신규)</strong><br>
+          NCS 표준의 능력단위요소별 [기술(S)] 항목 → 중복제거 + 의미 정규화 → 핵심 스킬 선별 → <strong>능력단위별 핵심 스킬셋 5~10개</strong>.<br>
+          출처: NCS 표준 (정부 공식 자료, RFP §III-1 부합). 결과: <strong>능력단위 스킬셋 DB</strong> (다년 자산).
+        </div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-tag split">라-3<br>분야 분류</div>
+        <div class="stage-content">
+          <strong>RFP §II-2 다 분류 기준 적용</strong>
+          <div class="branch3">
+            <div class="branch">
+              <div class="name">평생직업능력개발</div>
+              <div class="criteria">디지털·융합 미해당 잔여 능력단위</div>
+            </div>
+            <div class="branch">
+              <div class="name">디지털·첨단</div>
+              <div class="criteria">21직종 키워드 사전 매칭 (자동)</div>
+            </div>
+            <div class="branch ax">
+              <div class="name">융합(AI+X)</div>
+              <div class="criteria">능력단위 스킬셋 × AI 스킬셋 매핑 가능성</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-tag normal">라-4<br>평생+디지털</div>
+        <div class="stage-content">
+          <strong>평생 + 디지털·첨단 트랙</strong> — 정성 3지표 + 적합성 6지표 평가 → Borich + Locus 우선순위 → 능력단위→과목 매핑 룰 (1:1, N:1, 1:N) → <strong>평생 100 + 디지털 100 = 200과목</strong>
+        </div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-tag">라-5<br>융합(AI+X)</div>
+        <div class="stage-content featured">
+          <strong>★ 융합(AI+X) 트랙 — STEP-AX 융합 모델</strong><br>
+          능력단위 스킬셋 × AI 스킬셋 매핑 매트릭스 → 융합 가능 페어 식별 → AS-IS/TO-BE 융합 효과 검토 → 융합 분류 정성 3지표 평가 → <strong>융합 과목 200개 + STEP SLR 통합</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 능력단위 스킬셋 도출 4단계 ============== -->
+  <div class="section">
+    <div class="section-title">라-2 상세 — 능력단위 스킬셋 도출 4단계 워크플로우</div>
+    <div class="section-sub">NCS 표준이 이미 정의한 능력단위요소별 스킬을 정밀 활용. 우리는 새로 만들지 않고 표준 자료를 정리한다.</div>
+
+    <div class="skill-flow">
+      <div class="skill-step">
+        <div class="num">1</div>
+        <div class="title">스킬 항목 파싱</div>
+        <div class="desc">NCS 능력단위요소의 [기술(S)] 섹션 추출<br>1능력단위 평균 12~30개 원시 스킬</div>
+      </div>
+      <div class="skill-arrow">→</div>
+      <div class="skill-step">
+        <div class="num">2</div>
+        <div class="title">중복 제거</div>
+        <div class="desc">의미 정규화<br>LLM 1차 + 분야 전문가 검증<br>분야별 표준 용어집 적용</div>
+      </div>
+      <div class="skill-arrow">→</div>
+      <div class="skill-step">
+        <div class="num">3</div>
+        <div class="title">핵심 선별</div>
+        <div class="desc">출현 빈도 + 능력단위요소 가중치<br>+ 분야 전문가 평가</div>
+      </div>
+      <div class="skill-arrow">→</div>
+      <div class="skill-step">
+        <div class="num">4</div>
+        <div class="title">DB 구축</div>
+        <div class="desc">능력단위별 핵심 스킬셋<br>5~10개<br>다년 자산</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 18px;">
+      <div style="font-size:12px; font-weight:700; color: var(--navy); margin-bottom: 8px;">예시: 교환전송설비공사 직무 (사용자 화면 캡처 참조)</div>
+      <table class="compare">
+        <thead>
+          <tr>
+            <th style="width:25%;">능력단위</th>
+            <th style="width:40%;">능력단위요소별 스킬 (NCS 표준)</th>
+            <th style="width:35%;">중복제거 후 핵심 스킬셋</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="us">라우팅 관리</td>
+            <td>경로 상태 확인 / 라우팅 프로토콜 설정 / 트래픽 분석 / 보안정책 적용 / ...</td>
+            <td>① 라우팅 프로토콜 설정<br>② 트래픽 모니터링·분석<br>③ 네트워크 경로 최적화<br>④ 장애 진단·복구</td>
+          </tr>
+          <tr>
+            <td class="us">L2·L3 스위치 구축</td>
+            <td>스위치 설치 / VLAN 구성 / STP 설정 / QoS 설정 / ...</td>
+            <td>① 스위치 하드웨어 설치<br>② VLAN/STP 구성<br>③ QoS 설정<br>④ 보안 정책 적용</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============== 매핑 매트릭스 ============== -->
+  <div class="section">
+    <div class="section-title">라-5 ① 능력단위 스킬셋 × AI 스킬셋 매핑 매트릭스 (예시)</div>
+    <div class="section-sub">행 = 라-2에서 도출된 능력단위 스킬 / 열 = STEP-AX 스킬셋 L2 12 기능 영역. 셀 = 융합 가능성 (●/○/빈칸).</div>
+
+    <div class="matrix-wrap">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th class="corner" style="width:130px;">능력단위 스킬 ↓ &nbsp; AI 스킬셋 →</th>
+            <th class="col-head">A1<br>생성AI</th>
+            <th class="col-head">A2<br>워크플로우</th>
+            <th class="col-head">A3<br>프롬프트</th>
+            <th class="col-head">B1<br>데이터분석</th>
+            <th class="col-head">B2<br>모델활용</th>
+            <th class="col-head">B3<br>운영</th>
+            <th class="col-head">C1<br>윤리</th>
+            <th class="col-head">C2<br>보안</th>
+            <th class="col-head">C3<br>거버넌스</th>
+            <th class="col-head">D1<br>산업도메인</th>
+            <th class="col-head">D2<br>직무도메인</th>
+            <th class="col-head">D3<br>GX·안전</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="row-head">라우팅 프로토콜 설정</th>
+            <td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+          </tr>
+          <tr>
+            <th class="row-head">트래픽 모니터링·분석</th>
+            <td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="core">●</td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+          </tr>
+          <tr>
+            <th class="row-head">네트워크 경로 최적화</th>
+            <td class="cell"></td><td class="core">●</td><td class="cell"></td><td class="aux">○</td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+          </tr>
+          <tr>
+            <th class="row-head">장애 진단·복구</th>
+            <td class="aux">○</td><td class="core">●</td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="aux">○</td><td class="cell"></td><td class="cell"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="matrix-legend">
+        <div class="lg-item"><span class="lg-color" style="background: var(--orange);">●</span> 핵심 융합 (필수 학습)</div>
+        <div class="lg-item"><span class="lg-color" style="background: #FFE8B0; color: #8B5500;">○</span> 보조 융합 (선택 학습)</div>
+        <div class="lg-item"><span class="lg-color" style="background: white; border: 1px solid var(--gray-300);"></span> 미융합</div>
+        <div style="margin-left: auto; color: var(--gray-600);">※ LLM 1차 자동 + 분야 전문가 5인 패널 검증 → DB 구축 (다년 자산)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== AS-IS / TO-BE ============== -->
+  <div class="section">
+    <div class="section-title">라-5 ② AS-IS / TO-BE 융합 효과 검토 (KTR 도구 차용)</div>
+    <div class="section-sub">예시: "라우팅 관리" × "A-2 AI 워크플로우 자동화" 핵심 페어</div>
+
+    <div class="asto-wrap">
+      <table class="asto-table">
+        <thead>
+          <tr>
+            <th>업무 흐름</th>
+            <th>AS-IS (AI 도입 전)</th>
+            <th>TO-BE (AI 도입 후)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">트래픽 모니터링</td>
+            <td class="asis">운영자가 대시보드 실시간 감시</td>
+            <td class="tobe">AI 에이전트가 이상 트래픽 자동 탐지·알림</td>
+          </tr>
+          <tr>
+            <td class="label">경로 최적화</td>
+            <td class="asis">수동 라우팅 테이블 조정</td>
+            <td class="tobe">AI 추천 + 자동 적용 (확인 후 승인)</td>
+          </tr>
+          <tr>
+            <td class="label">장애 복구</td>
+            <td class="asis">운영자가 로그 분석 후 조치</td>
+            <td class="tobe">AI가 장애 패턴 학습·자동 진단·1차 복구 시도</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 10px; font-size: 12px; color: var(--orange); font-weight: 700;">
+        → AI 적용 임팩트: 변혁(★★★) → <strong>융합 과목 우선 개발 대상</strong>
+      </div>
+      <div style="margin-top: 4px; font-size: 11px; color: var(--gray-600);">
+        도출되는 융합 과목 후보: ① AI 활용 네트워크 트래픽 자동 분석 ② AI 기반 라우팅 최적화 실무 ③ AI 활용 통신장비 장애 자동 진단·복구
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== STEP SLR 통합 (Before/After) ============== -->
+  <div class="section">
+    <div class="section-title">바. STEP SLR 통합 — 융합 과목이 직무별 학습 로드맵에 자연스럽게 추가</div>
+    <div class="section-sub">사용자 화면 캡처 직접 반영. 시앤피 작년 일반 AI 리터러시(사무직·마케팅) → 우리 도메인 특화 융합 과목으로 차별.</div>
+
+    <div class="slr-integration">
+      <div class="slr-card">
+        <div class="head">기존 STEP SLR (예: 교환전송설비공사 직무)</div>
+        <div class="slr-row"><div class="lvl">수준 7</div><div class="courses">—</div></div>
+        <div class="slr-row"><div class="lvl">수준 6</div><div class="courses"><span class="e-tag">E</span>라우팅관리 part1 / <span class="e-tag">E</span>알기쉬운 라우터·스위치</div></div>
+        <div class="slr-row"><div class="lvl">수준 4</div><div class="courses"><span class="e-tag">E</span>초연결사회 모바일 통신 / <span class="e-tag">E</span>통신공학</div></div>
+        <div class="slr-row"><div class="lvl">수준 3</div><div class="courses"><span class="e-tag">E</span>L2·L3 스위치 / <span class="e-tag">E</span>리눅스·윈도우 서버 / <span class="e-tag">E</span>사무직·마케팅 AI 리터러시 향상</div></div>
+        <div style="font-size: 10px; color: var(--gray-600); margin-top: 8px;">※ 작년 시앤피 AI 리터러시는 도메인 특화 X</div>
+      </div>
+
+      <div class="slr-arrow">→</div>
+
+      <div class="slr-card new">
+        <div class="head">우리 융합 과목 추가 후 (v0.2 권고)</div>
+        <div class="slr-row"><div class="lvl">수준 7</div><div class="courses"><span class="new-tag">신규</span>통신 인프라 AX 거버넌스</div></div>
+        <div class="slr-row"><div class="lvl">수준 6</div><div class="courses"><span class="e-tag">E</span>라우팅관리 part1 / <span class="e-tag">E</span>알기쉬운 라우터·스위치 / <span class="new-tag">신규</span>AI 활용 트래픽 자동 분석 / <span class="new-tag">신규</span>AI 기반 라우팅 최적화</div></div>
+        <div class="slr-row"><div class="lvl">수준 5</div><div class="courses"><span class="new-tag">신규</span>AI 활용 장애 자동 진단·복구</div></div>
+        <div class="slr-row"><div class="lvl">수준 4</div><div class="courses"><span class="e-tag">E</span>통신공학 / <span class="e-tag">E</span>초연결사회 모바일 통신</div></div>
+        <div class="slr-row"><div class="lvl">수준 3</div><div class="courses"><span class="e-tag">E</span>L2·L3 스위치 / <span class="e-tag">E</span>리눅스·윈도우 서버 / <span class="e-tag">E</span>사무직 AI 리터러시 (유지)</div></div>
+        <div style="font-size: 10px; color: var(--orange); font-weight: 700; margin-top: 8px;">※ 도메인 특화 + NCS 능력단위 매핑 + NCS 수준 자동 배치</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 우리 방법론 4대 강점 ============== -->
+  <div class="section">
+    <div class="section-title">우리 방법론의 4대 강점 (제안서·발표 어필 포인트)</div>
+    <div class="strength-grid">
+      <div class="strength">
+        <div class="num">강점 1</div>
+        <div class="title">NCS 표준에서 출발 = 출처·근거의 강력함</div>
+        <div class="desc">능력단위요소별 스킬은 NCS 고시 표준. 우리는 새로 만들지 않고 정밀 활용. RFP §III-1 출처 명기 요구에 자연스럽게 부합.</div>
+      </div>
+      <div class="strength">
+        <div class="num">강점 2</div>
+        <div class="title">모든 융합 과목 NCS·SLR 자동 매핑</div>
+        <div class="desc">시앤피 AI 리터러시 7개 = NCS 매핑 부재로 직능은행제 연계 불가. 우리 200개 = 능력단위에서 출발 → 매핑·연계 자동.</div>
+      </div>
+      <div class="strength">
+        <div class="num">강점 3</div>
+        <div class="title">도메인 특화 = AX 본질 부합</div>
+        <div class="desc">과기정통부 AX 정의에 정확히 부합. 시앤피 일반 AI 리터러시 vs 우리 "교환전송설비공사 - AI 활용 라우팅 최적화" 같은 도메인 특화.</div>
+      </div>
+      <div class="strength">
+        <div class="num">강점 4</div>
+        <div class="title">다년 자산화 = 동행 근거</div>
+        <div class="desc">능력단위 스킬셋 DB + 매핑 매트릭스 = 27·28년 후속사업 자산. 매년 NCS 개정 시 부분 갱신. 다년 동행 모델의 인프라.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 시앤피 vs 우리 (재정리) ============== -->
+  <div class="section">
+    <div class="section-title">시앤피 2025 vs 우리 2026 — 융합 과목 도출 방법 본질 비교</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:18%;">항목</th>
+          <th style="width:41%;">시앤피 2025 (실증)</th>
+          <th style="width:41%;">우리 2026 v0.2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>출발점</td>
+          <td class="cnp">"AI 분야 전문가 자문회의로 데이터·보안·윤리 3개 핵심 분야 선정" (보고서 p.169)</td>
+          <td class="us"><strong>NCS 능력단위 안의 능력단위요소별 스킬</strong> (NCS 표준 직접 활용)</td>
+        </tr>
+        <tr>
+          <td>분류체계</td>
+          <td class="cnp">데이터·보안·윤리 + 트렌드 4개 (협소)</td>
+          <td class="us">STEP-AX 3-Layer 12 기능 영역 + 능력단위 스킬셋 매핑</td>
+        </tr>
+        <tr>
+          <td>NCS 매핑</td>
+          <td class="cnp">AI 리터러시 7개는 매핑 부재</td>
+          <td class="us"><strong>모든 융합 과목이 NCS 능력단위에서 출발 → 자동 매핑</strong></td>
+        </tr>
+        <tr>
+          <td>도메인 특화</td>
+          <td class="cnp">"사무직/마케팅의 AI 리터러시 향상" 같은 일반 과목</td>
+          <td class="us"><strong>"교환전송설비공사 - AI 활용 라우팅 최적화" 같은 도메인 특화</strong></td>
+        </tr>
+        <tr>
+          <td>과목 수</td>
+          <td class="cnp">7 + 19 = 26개</td>
+          <td class="us">200개 (능력단위 단위로 도출)</td>
+        </tr>
+        <tr>
+          <td>SLR 통합</td>
+          <td class="cnp">별도 트랙</td>
+          <td class="us"><strong>직무별 학습 로드맵에 NCS 수준 맞춰 자연스러운 통합</strong></td>
+        </tr>
+        <tr>
+          <td>직능은행제 연계</td>
+          <td class="cnp">부재 (NCS 매핑 없어 근거 없음)</td>
+          <td class="us">NCS 매핑 자동 → 직능은행제 시범 매핑 가능</td>
+        </tr>
+        <tr>
+          <td>다년 자산</td>
+          <td class="cnp">단발성</td>
+          <td class="us">능력단위 스킬셋 DB + 매핑 매트릭스 = 27·28년 자산</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============== 발주처 협의 ============== -->
+  <div class="section">
+    <div class="section-title">발주처 사전 협의 7건 (v0.2 갱신)</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:6%;">#</th>
+          <th style="width:44%;">협의 사항</th>
+          <th style="width:25%;">우리 권고</th>
+          <th style="width:25%;">백업안</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>설문 단계 재배치 시나리오</td><td class="us">B (세분류 단위)</td><td>C (혼합)</td></tr>
+        <tr><td>2</td><td>종합 비율</td><td class="us">RFP 50/35/15</td><td>시앤피 50/50</td></tr>
+        <tr><td>3</td><td>분야 비율 (평생·디지털·융합)</td><td class="us">RFP 100·100·200</td><td>발주처 조정</td></tr>
+        <tr><td>4</td><td>AX 200 분야 분배</td><td class="us">공통20+산업150+GX20+안전10</td><td>발주처 조정</td></tr>
+        <tr><td>5</td><td><strong>STEP-AX 스킬셋 v0.1 검토</strong></td><td class="us">12 기능 영역 안</td><td>발주처 가감</td></tr>
+        <tr><td>6</td><td><strong>능력단위 스킬셋 도출 양식·검증 룰</strong></td><td class="us">4단계 워크플로우</td><td>발주처 합의</td></tr>
+        <tr><td>7</td><td><strong>융합 과목 SLR 통합 시각화·UI</strong></td><td class="us">직무별 매트릭스 자동 추가</td><td>발주처 IT 협의</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <strong>문서 트리 (v0.2)</strong>:
+    01_제안전략_Master_v0.2.md · 02_정성제안서_목차_v0.2.md · 03_PT_스토리라인_v0.2.md · 04_제안전략_캔버스_v0.2.html ·
+    <strong>05_연구절차_방법론_v0.2.md (본 도식의 원문)</strong> · 06_연구방법론_도식_v0.2.html (본 파일)
+    <br><br>
+    <strong>핵심 메시지</strong>: 세분류 단계는 분야 무관. 분야 분류와 융합 도출은 능력단위 단계에서.
+    융합(AI+X) = <strong>능력단위 스킬셋(NCS 표준 직접) × AI 스킬셋(STEP-AX) 매핑</strong> → 도메인 특화 과목 → STEP SLR 직무별 학습 로드맵 자동 통합.
+  </div>
+</div>
+</body>
+</html>

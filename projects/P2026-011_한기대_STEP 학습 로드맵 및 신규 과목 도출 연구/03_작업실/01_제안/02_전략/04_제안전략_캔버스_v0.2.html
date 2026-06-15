@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2026 한기대 STEP SLR — 제안전략 캔버스 v0.2</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-light: #1A3D6B;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-300: #C9CED7;
+    --gray-600: #5B6573;
+    --gray-900: #1B2330;
+    --green: #1E9E6A;
+    --red: #C53030;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .canvas {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  /* Version banner */
+  .version-banner {
+    background: var(--orange);
+    color: white;
+    padding: 10px 36px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: white;
+    padding: 28px 36px;
+  }
+  .header .meta {
+    font-size: 12px;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .slogan {
+    background: var(--yellow);
+    color: var(--navy);
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .slogan-sub {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    margin-top: 8px;
+  }
+  /* Top KPI Row */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--gray-100);
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .kpi {
+    background: white;
+    padding: 16px 12px;
+    text-align: center;
+  }
+  .kpi-label {
+    font-size: 11px;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .kpi-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .kpi-value.warn { color: var(--orange); }
+  .kpi-value.good { color: var(--green); }
+  /* Section */
+  .section {
+    padding: 24px 36px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--yellow);
+    display: inline-block;
+  }
+  .section-sub {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: 12px;
+  }
+  /* RFP 4대 제언 Grid */
+  .rfp4-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .rfp4 {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 12px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rfp4::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--yellow);
+  }
+  .rfp4-tag {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .rfp4-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .rfp4-rfp-quote {
+    font-size: 11px;
+    color: var(--gray-600);
+    background: var(--gray-50);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  .rfp4-answer-label {
+    font-size: 10px;
+    color: var(--orange);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .rfp4-answer {
+    font-size: 12px;
+    color: var(--gray-900);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .rfp4-multiyear {
+    font-size: 11px;
+    color: var(--green);
+    background: #E8F5EE;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border-left: 3px solid var(--green);
+  }
+  /* Two-column */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  /* Comparison table */
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .compare th, .compare td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: top;
+  }
+  .compare th {
+    background: var(--gray-50);
+    color: var(--navy);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .compare td.bad { color: var(--gray-600); text-decoration: line-through; opacity: 0.7; }
+  .compare td.good { color: var(--navy); font-weight: 600; }
+  .compare td.bad-block { background: #FFF5F5; color: var(--red); }
+  .compare td.good-block { background: #E8F5EE; color: var(--navy); font-weight: 600; }
+  /* Score Allocation */
+  .score-bar {
+    display: flex;
+    height: 36px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border: 1px solid var(--gray-300);
+  }
+  .score-seg {
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .seg-1 { background: var(--orange); }
+  .seg-2 { background: var(--navy); }
+  .seg-3 { background: var(--navy-light); }
+  .seg-4 { background: var(--gray-600); }
+  /* Page allocation */
+  .page-alloc {
+    list-style: none;
+    font-size: 12px;
+  }
+  .page-alloc li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--gray-100);
+  }
+  .page-alloc li.total {
+    font-weight: 700;
+    color: var(--navy);
+    border-top: 1.5px solid var(--navy);
+    border-bottom: none;
+    margin-top: 4px;
+    padding-top: 8px;
+  }
+  /* 6대 절차 흐름도 */
+  .procedure-flow {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+  }
+  .proc-step {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    position: relative;
+  }
+  .proc-step .step-letter {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .proc-step .step-name {
+    font-size: 11px;
+    color: var(--navy);
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .proc-step .step-output {
+    font-size: 10px;
+    color: var(--gray-600);
+    border-top: 1px solid var(--gray-100);
+    padding-top: 4px;
+  }
+  .proc-step .step-tags {
+    margin-top: 4px;
+  }
+  .step-tag {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--navy);
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin: 1px;
+  }
+  /* Multiyear timeline */
+  .timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+  .timeline-item {
+    border: 1.5px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    background: white;
+  }
+  .timeline-item.now {
+    border-color: var(--orange);
+    background: #FFF8F2;
+  }
+  .timeline-item .time {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .timeline-item.now .time {
+    color: var(--orange);
+  }
+  .timeline-item .role {
+    font-size: 11px;
+    color: var(--gray-900);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .timeline-item .activity {
+    font-size: 10px;
+    color: var(--gray-600);
+    line-height: 1.3;
+  }
+  /* Risk */
+  .risk-list {
+    list-style: none;
+    font-size: 12px;
+  }
+  .risk-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .risk-tag {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .risk-tag.client { background: var(--orange); color: white; }
+  .risk-tag.internal { background: var(--gray-600); color: white; }
+  .risk-tag.decision { background: var(--green); color: white; }
+  /* Footer */
+  .footer {
+    padding: 16px 36px;
+    background: var(--gray-50);
+    color: var(--gray-600);
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .changelog {
+    background: #FFF8F2;
+    border-left: 4px solid var(--orange);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: var(--gray-900);
+  }
+  .changelog strong { color: var(--orange); }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- ============== VERSION BANNER ============== -->
+  <div class="version-banner">
+    v0.2 (방향 재설정) — v0.1의 "1년 후 자율 운영" 슬로건 폐기 · "AI/LLM 자체 신기술" 메인 강조 강등 · RFP 4대 제언 + 다년 동행으로 전환
+  </div>
+
+  <!-- ============== HEADER ============== -->
+  <div class="header">
+    <div class="meta">제안전략 캔버스 v0.2 · 2026-05-11 · 한기대 STEP 사업 TF</div>
+    <h1>2026년도 STEP 학습 로드맵(SLR) 및 신규 과목 도출 연구 — 제안전략</h1>
+    <div class="slogan">
+      한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행
+    </div>
+    <div class="slogan-sub">
+      ※ 슬로건 후보 A/B/C 중 권고안. 발주처 사전 미팅·발표 톤 검증 후 v1.0 확정.
+    </div>
+  </div>
+
+  <!-- ============== TOP KPI ============== -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-label">사업비</div>
+      <div class="kpi-value">1.48억</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">기간</div>
+      <div class="kpi-value">~ 26.11.20</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">평가 배점</div>
+      <div class="kpi-value">기술90 + 가격10</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">협상적격선</div>
+      <div class="kpi-value warn">76.5점</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">발표</div>
+      <div class="kpi-value">20분 + Q&amp;A 10분</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">결승선</div>
+      <div class="kpi-value good">1순위 + 27년 연속</div>
+    </div>
+  </div>
+
+  <!-- ============== CHANGELOG ============== -->
+  <div class="section">
+    <div class="changelog">
+      <strong>v0.2 핵심 전환 5가지</strong> &nbsp;&nbsp;
+      ① 마스터 메시지: "1년 후 자율 운영" → "다년 파트너 + RFP 4대 제언 + 27·28년 동행"
+      &nbsp; ② Win Theme: 자체 정의 4트랙 → <strong>RFP §II-3 4대 제언 그대로 1:1 정렬</strong>
+      &nbsp; ③ AI/LLM·학습로그: 메인 차별화 → 6대 절차 보조 도구로 강등
+      &nbsp; ④ 활용성: "한기대 1인 운영" → "26·27·28년+ 동행 로드맵"
+      &nbsp; ⑤ Ⅱ장 구조: "6대 절차 × 4트랙 매트릭스" → RFP 표기 가·나·다·라·마·바 그대로
+    </div>
+  </div>
+
+  <!-- ============== RFP 4대 제언 ============== -->
+  <div class="section">
+    <div class="section-title">4대 Win Theme = RFP §II-3 "보고서에 포함되어야 할 사항" 4대 제언 그대로</div>
+    <div class="section-sub">
+      발주처가 RFP에 직접 "제언 요청"한 4개 영역. 작년 사업은 이 4가지가 RFP에 명시되기 전이었다.
+      본 사업은 이 4가지가 출발점이며, 각 답안이 27·28년 후속사업의 명분과 출발점이 된다.
+    </div>
+    <div class="rfp4-grid">
+      <div class="rfp4">
+        <div class="rfp4-tag">[제도연계]</div>
+        <div class="rfp4-title">제도 연계 + 후속사업 추진</div>
+        <div class="rfp4-rfp-quote">
+          "정책 활용 및 후속 사업 추진을 위한 관련 제도 연계 방안 제언" — RFP §II-3
+        </div>
+        <div class="rfp4-answer-label">우리 답</div>
+        <div class="rfp4-answer">
+          ① 직무능력은행제 시범 매핑 1개 분야<br>
+          ② SQF 직접 발표본 활용 (작년 매칭률 한계 보완)<br>
+          ③ 27·28년 후속사업 연속성 명분 형성
+        </div>
+        <div class="rfp4-multiyear">→ 27·28년 후속사업의 출발점</div>
+      </div>
+      <div class="rfp4">
+        <div class="rfp4-tag">[자동화]</div>
+        <div class="rfp4-title">신규 과목 ↔ SLR 시스템 연계</div>
+        <div class="rfp4-rfp-quote">
+          "신규 과목 도출 방식과 STEP 학습 로드맵 간 연계 효율화 및 시스템 연계 자동화 제언" — RFP §II-3
+        </div>
+        <div class="rfp4-answer-label">우리 답</div>
+        <div class="rfp4-answer">
+          ① 과목개요서 → Master DB → SLR 도식 자동 갱신 워크플로우<br>
+          ② Master DB 무결성 자동 검증<br>
+          ③ NCS 개정 시 매핑 자동 갱신 모델
+        </div>
+        <div class="rfp4-multiyear">→ 27·28년 발주처-우리 시스템 구축 협력</div>
+      </div>
+      <div class="rfp4">
+        <div class="rfp4-tag">[조사체계]</div>
+        <div class="rfp4-title">설문 + 분류 + 상시 수요조사</div>
+        <div class="rfp4-rfp-quote">
+          "설문 단계 재배치 / 분야 분류 지표 명확화 / 상시 수요조사 도입 (실시방법·가중치·반영비율)" — RFP §II-3
+        </div>
+        <div class="rfp4-answer-label">우리 답</div>
+        <div class="rfp4-answer">
+          ① 설문 단계 재배치 ABC 시나리오 + 발주처 합의 후 채택<br>
+          ② 융합(AI+X) 분류 정성 3지표 정의<br>
+          ③ 상시 수요조사 분기 사이클 + 다년 운영
+        </div>
+        <div class="rfp4-multiyear">→ 27·28년 다년 운영 협력 모델</div>
+      </div>
+      <div class="rfp4">
+        <div class="rfp4-tag">[매뉴얼화]</div>
+        <div class="rfp4-title">4종 매뉴얼 + 다년 갱신 협력</div>
+        <div class="rfp4-rfp-quote">
+          "산출물 / Master DB / 미활용 사후조치 / 결측치 처리 + 연구절차별 매뉴얼화" — RFP §II-3
+        </div>
+        <div class="rfp4-answer-label">우리 답</div>
+        <div class="rfp4-answer">
+          ① 4종 운영 매뉴얼 + SLR 관리매뉴얼 1부<br>
+          ② 미활용 과목개요서 1년/2년 만료 룰<br>
+          ③ 매뉴얼 v2·v3로 매년 갱신 협력
+        </div>
+        <div class="rfp4-multiyear">→ 발주처 자력 운영 X, 다년 갱신 협력 ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 6대 절차 흐름도 ============== -->
+  <div class="section">
+    <div class="section-title">RFP §II-2 6대 절차 (가·나·다·라·마·바) — 그대로 따른다</div>
+    <div class="section-sub">
+      자체 "Module" 또는 "Track" 명칭으로 재구조화하지 않는다. 각 절차에 4대 제언 답안을 심어 차별화한다.
+    </div>
+    <div class="procedure-flow">
+      <div class="proc-step">
+        <div class="step-letter">가</div>
+        <div class="step-name">SLR 최신화</div>
+        <div class="step-output">Master DB 1차</div>
+        <div class="step-tags"><span class="step-tag">제도</span><span class="step-tag">매뉴</span></div>
+      </div>
+      <div class="proc-step">
+        <div class="step-letter">나</div>
+        <div class="step-name">세분류 수요분석</div>
+        <div class="step-output">N₁ (정량11+정성3)</div>
+        <div class="step-tags"><span class="step-tag">조사</span><span class="step-tag">매뉴</span></div>
+      </div>
+      <div class="proc-step">
+        <div class="step-letter">다</div>
+        <div class="step-name">능력단위 + 적합성</div>
+        <div class="step-output">N₂ + 적합성</div>
+        <div class="step-tags"><span class="step-tag">조사</span></div>
+      </div>
+      <div class="proc-step">
+        <div class="step-letter">라</div>
+        <div class="step-name">설문조사</div>
+        <div class="step-output">N₃ (50/35/15)</div>
+        <div class="step-tags"><span class="step-tag">조사</span></div>
+      </div>
+      <div class="proc-step">
+        <div class="step-letter">마</div>
+        <div class="step-name">과목개요서</div>
+        <div class="step-output">400과목</div>
+        <div class="step-tags"><span class="step-tag">조사</span></div>
+      </div>
+      <div class="proc-step">
+        <div class="step-letter">바</div>
+        <div class="step-name">결과정리</div>
+        <div class="step-output">SLR+DB+보고서</div>
+        <div class="step-tags"><span class="step-tag">자동</span><span class="step-tag">매뉴</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== 다년 동행 타임라인 ============== -->
+  <div class="section">
+    <div class="section-title">활용성 = 26·27·28년+ 동행 로드맵</div>
+    <div class="section-sub">
+      v0.1의 "12월부터 한기대 1인 자력 운영" 메시지 폐기. 본 사업은 다년 협력의 한 단계.
+    </div>
+    <div class="timeline">
+      <div class="timeline-item now">
+        <div class="time">2026.11</div>
+        <div class="role">한기대 + 우리</div>
+        <div class="activity">본 사업 산출물 인계 + 이행 보고</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">2027.초</div>
+        <div class="role">한기대 + 우리 (협력)</div>
+        <div class="activity">신규 과목 선정 (400과목 중)<br>본 사업 N₃ 활용</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">2027.연중</div>
+        <div class="role">한기대 + 우리 (자문)</div>
+        <div class="activity">상시 수요조사 운영<br>매뉴얼 v2 갱신</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">2028.초</div>
+        <div class="role">한기대 + 우리 (협력)</div>
+        <div class="activity">차기 SLR 고도화 사업<br>본 사업 자동화 모델 활용</div>
+      </div>
+      <div class="timeline-item">
+        <div class="time">2028+</div>
+        <div class="role">한기대 + 우리 (다년)</div>
+        <div class="activity">매뉴얼 v3 갱신<br>STEP의 다음 도약</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== TWO-COL: SCORE + PAGE ============== -->
+  <div class="section two-col">
+    <div>
+      <div class="section-title">평가 배점 = 자원 배분 원칙</div>
+      <div style="font-size:12px; color:var(--gray-600); margin-bottom:10px;">
+        동점자 우선순위: ①수행계획(25) → ②인력조직(25) → ③과업이해도(20) → ④활용성(10)
+      </div>
+      <div class="score-bar">
+        <div class="score-seg seg-1" style="flex:25;">
+          <div>수행계획</div><div>25점</div>
+        </div>
+        <div class="score-seg seg-2" style="flex:25;">
+          <div>인력조직</div><div>25점</div>
+        </div>
+        <div class="score-seg seg-3" style="flex:20;">
+          <div>과업이해</div><div>20점</div>
+        </div>
+        <div class="score-seg seg-4" style="flex:10;">
+          <div>활용성</div><div>10점</div>
+        </div>
+      </div>
+      <div style="font-size:11px; color:var(--gray-600);">
+        + 정량 10점 (재무 5 / 책임자 5) + 가점 5 (상생협력)
+      </div>
+    </div>
+    <div>
+      <div class="section-title">정성제안서 분량 배분 (총 68쪽, v0.2)</div>
+      <ul class="page-alloc">
+        <li><span>표지·요약·차례</span><span>4쪽 (6%)</span></li>
+        <li><span>Ⅰ. 제안개요 — 과업이해도</span><span>8쪽 (12%)</span></li>
+        <li><span>Ⅱ. 제안내용 — 수행계획 ★</span><span><strong>35쪽 (51%)</strong></span></li>
+        <li><span>Ⅲ. 수행조직 — 인력조직 ★</span><span>12쪽 (18%)</span></li>
+        <li><span>Ⅳ. 활용성 (v0.2 신설)</span><span>4쪽 (6%)</span></li>
+        <li><span>Ⅴ. 제안업체 일반</span><span>5쪽 (7%)</span></li>
+        <li class="total"><span>합계</span><span>68쪽</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============== v0.1 vs v0.2 ============== -->
+  <div class="section">
+    <div class="section-title">v0.1 (잘못된 방향) vs v0.2 (재설정) 변경 매트릭스</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:18%;">항목</th>
+          <th style="width:38%;">v0.1 (폐기)</th>
+          <th style="width:44%;">v0.2 (채택)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>마스터 슬로건</td>
+          <td class="bad-block">"1년이 지나도 한기대가 직접 돌리는 자율 운영체계"<br><span style="font-size:10px;">→ 본 사업·후속사업 우리 파트너십 부정</span></td>
+          <td class="good-block">"한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27·28년 동행"</td>
+        </tr>
+        <tr>
+          <td>Win Theme 4개</td>
+          <td class="bad-block">자체 정의: AI 자동화 / 학습로그 / AX 7.7배 / 매뉴얼화·자율운영</td>
+          <td class="good-block">RFP §II-3 4대 제언 그대로: 제도연계 / 자동화 / 조사체계 / 매뉴얼화</td>
+        </tr>
+        <tr>
+          <td>AI/LLM·학습로그</td>
+          <td class="bad-block">메인 차별화 (WT1·WT2 핵심)</td>
+          <td class="good-block">6대 절차 보조 도구로 강등 (메인 메시지 X)</td>
+        </tr>
+        <tr>
+          <td>활용성</td>
+          <td class="bad-block">"12월부터 한기대 1인 운영"</td>
+          <td class="good-block">"26·27·28년+ 동행 로드맵" — 별도 챕터 신설</td>
+        </tr>
+        <tr>
+          <td>Ⅱ장 구조</td>
+          <td class="bad-block">"6대 절차 × 4트랙 매트릭스" (자체 재구조화)</td>
+          <td class="good-block">RFP 표기 가·나·다·라·마·바 그대로</td>
+        </tr>
+        <tr>
+          <td>발표 마무리</td>
+          <td class="bad-block">"1년 후 한기대 자율 운영"</td>
+          <td class="good-block">"27·28년 그리고 그 이후도 함께"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ============== TWO-COL: 시앤피 vs 우리 + RISK ============== -->
+  <div class="section two-col">
+    <div>
+      <div class="section-title">작년 시앤피(2025) vs 우리(2026) — 진짜 차별점</div>
+      <table class="compare">
+        <tbody>
+          <tr>
+            <td style="width:30%;">RFP 4대 제언 충실도</td>
+            <td>작년 RFP에는 4대 제언 명시 전.<br>시앤피는 직능은행제 1쪽 등 약함.</td>
+          </tr>
+          <tr>
+            <td>슬로건/Win Theme</td>
+            <td>없음 (수행실적·기관이해도 어필만)</td>
+          </tr>
+          <tr>
+            <td>27·28년 동행</td>
+            <td>명시적 후속사업 연계 약함</td>
+          </tr>
+          <tr>
+            <td>도구·방법론</td>
+            <td>NCS Ver 비교·자문회의·설문 (재래식)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size:11px; color:var(--gray-600); margin-top:8px;">
+        ※ 우리는 시앤피의 한기대 다년 누적 관계를 깎아내리지 않고, RFP 새 명시 요구에 충실 + 다년 동행을 약속한다.
+      </div>
+    </div>
+    <div>
+      <div class="section-title">발주처 사전 확인 4건 + 내부 리스크 3건</div>
+      <ul class="risk-list">
+        <li><span class="risk-tag client">CLIENT</span><span><strong>AX 개발 절차</strong> 1안/2안 발주처 선호 방향</span></li>
+        <li><span class="risk-tag client">CLIENT</span><span><strong>평생 vs 디지털 비중</strong> (50:50 vs 81:19)</span></li>
+        <li><span class="risk-tag client">CLIENT</span><span><strong>시스템 연계 자동화</strong> 대상 시스템 (STEP·LMS 등)</span></li>
+        <li><span class="risk-tag client">CLIENT</span><span><strong>학습로그 활용</strong> 발주처 수용도 (메인 X, 보조 도구로만)</span></li>
+        <li><span class="risk-tag internal">INTERNAL</span><span>책임자 확정 — T-25일까지</span></li>
+        <li><span class="risk-tag internal">INTERNAL</span><span>자문위원 동의서 — T-15일까지</span></li>
+        <li><span class="risk-tag decision">DECISION</span><span>슬로건 후보 A/B/C 중 최종 선택</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============== TIMELINE ============== -->
+  <div class="section">
+    <div class="section-title">제안서 작성 마일스톤 (제출 D-Day 기준)</div>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th style="width:10%;">D-?</th>
+          <th style="width:55%;">산출물</th>
+          <th style="width:35%;">위치</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>T-30 (완료)</strong></td><td>전략 v0.2 · 정성목차 v0.2 · PT 스토리라인 v0.2 · 본 캔버스 v0.2</td><td>01_제안/02_전략/</td></tr>
+        <tr><td>T-25</td><td>슬로건 최종 선택 · 책임자 확정 · 전략 v1.0 확정</td><td>02_전략/, 03_정성제안서/</td></tr>
+        <tr><td>T-20</td><td>정성제안서 본문 50% 초안 (RFP 6대 절차 가~바)</td><td>03_정성제안서/</td></tr>
+        <tr><td>T-15</td><td>인력 이력서·자문위원 동의서 확보</td><td>03_정성제안서/Ⅲ_인력/</td></tr>
+        <tr><td>T-10</td><td>정성제안서·발표자료 100% 초안</td><td>03_정성제안서/, 05_발표자료/</td></tr>
+        <tr><td>T-7</td><td>내부 모의평가 (위원 역할분담)</td><td>01_분석/모의평가_체크리스트.md</td></tr>
+        <tr><td>T-5</td><td>수정 반영 후 PDF 변환 · 300MB 용량 점검</td><td>06_제출본/</td></tr>
+        <tr><td><strong>T-3</strong></td><td><strong>나라장터 제출</strong> + 보고회 발표자료 인쇄물 10부</td><td>—</td></tr>
+        <tr><td>T-Day</td><td>발표 20분 + Q&amp;A 10분</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">
+    <div>
+      문서 트리 (v0.2):
+      <a href="01_제안전략_Master_v0.2.md">전략 마스터</a> ·
+      <a href="02_정성제안서_목차_v0.2.md">정성목차</a> ·
+      <a href="03_PT_스토리라인_v0.2.md">PT 스토리라인</a> ·
+      v0.1 (참고 보존, 잘못된 방향)
+    </div>
+    <div>v0.2 · 2026-05-11 · v1.0 확정 시 갱신</div>
+  </div>
+</div>
+</body>
+</html>

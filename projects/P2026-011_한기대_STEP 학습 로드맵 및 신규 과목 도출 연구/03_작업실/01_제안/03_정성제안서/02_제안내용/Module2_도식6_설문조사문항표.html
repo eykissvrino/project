@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 세분류 단위 설문조사 문항 설계</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 32px 28px;
+    color: #1F2937;
+  }
+  .slide-area { width: 1180px; }
+
+  .header {
+    border-left: 6px solid #1F4E78;
+    padding-left: 14px;
+    margin-bottom: 18px;
+  }
+  .module-tag { font-size: 11px; color: #64748B; letter-spacing: 0.3px; margin-bottom: 4px; }
+  .title { font-size: 20px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 12.5px; color: #475569; margin-top: 4px; }
+
+  /* 표 영역 */
+  table.q {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  table.q thead th {
+    background: #1F4E78;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #1F4E78;
+    letter-spacing: 0.3px;
+  }
+  table.q tbody td {
+    border: 1px solid #D1D5DB;
+    padding: 8px 10px;
+    vertical-align: middle;
+    background: #FFFFFF;
+  }
+
+  /* 섹션 머리 행 */
+  tr.section-row td {
+    padding: 8px 12px;
+    font-weight: 800;
+    font-size: 12.5px;
+    color: #FFFFFF;
+    letter-spacing: 0.3px;
+  }
+  tr.section-row.s-a td { background: #64748B; }
+  tr.section-row.s-b td { background: #2E75B6; }
+  tr.section-row.s-c td { background: #C2410C; }
+  tr.section-row.s-d td { background: #7030A0; }
+  tr.section-row .section-meta {
+    float: right;
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.92;
+  }
+
+  /* 문항 셀 */
+  .q-id {
+    text-align: center;
+    font-weight: 800;
+    width: 50px;
+    font-size: 12px;
+  }
+  .q-id.id-a { background: #F1F5F9; color: #475569; }
+  .q-id.id-b { background: #DDEBF7; color: #1F4E78; }
+  .q-id.id-c { background: #FED7AA; color: #9A3412; }
+  .q-id.id-d { background: #E9D5FF; color: #581C87; }
+
+  .q-text {
+    color: #1F2937;
+    font-size: 11.5px;
+    line-height: 1.5;
+    padding-left: 12px;
+  }
+  .q-target {
+    text-align: center;
+    width: 90px;
+    font-size: 11px;
+    color: #475569;
+    font-weight: 600;
+  }
+  .q-scale {
+    text-align: center;
+    width: 100px;
+    font-size: 11px;
+  }
+  .scale-badge {
+    background: #DDEBF7;
+    color: #1F4E78;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 10.5px;
+    display: inline-block;
+  }
+  .scale-badge.select {
+    background: #F1F5F9;
+    color: #475569;
+  }
+  .q-cover {
+    width: 160px;
+    font-size: 10.5px;
+    color: #64748B;
+    line-height: 1.45;
+  }
+  .q-cover strong {
+    color: #1F2937;
+    font-weight: 700;
+  }
+
+  /* 응답자 분배 박스 (하단) */
+  .summary {
+    margin-top: 18px;
+    background: #F8FAFC;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+  .summary-card {
+    background: #FFFFFF;
+    border-left: 3px solid #2E75B6;
+    border-radius: 4px;
+    padding: 10px 12px;
+  }
+  .summary-card .card-label {
+    font-size: 10.5px;
+    color: #64748B;
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+  }
+  .summary-card .card-value {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1F4E78;
+    line-height: 1.1;
+  }
+  .summary-card .card-detail {
+    font-size: 10px;
+    color: #94A3B8;
+    margin-top: 3px;
+  }
+
+  /* 참고 박스 */
+  .note {
+    margin-top: 14px;
+    background: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    color: #78350F;
+    line-height: 1.55;
+  }
+  .note strong { color: #92400E; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 — NCS 세분류 우선순위 도출 · Step 3</div>
+    <div class="title">세분류 단위 설문조사 문항 설계 (16문항 · 4섹션)</div>
+    <div class="subtitle">정량·정성 평가로 측정 불가능한 현장 직접 수요 차원을 학습자·기업·기관 3주체별로 청취</div>
+  </div>
+
+  <!-- 설문 문항 표 -->
+  <table class="q">
+    <thead>
+      <tr>
+        <th style="width: 50px;">#</th>
+        <th style="text-align: left; padding-left: 12px;">설문 문항</th>
+        <th style="width: 90px;">응답 대상</th>
+        <th style="width: 100px;">응답 방식</th>
+        <th style="width: 160px;">정량·정성 보완 차원</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- 섹션 A -->
+      <tr class="section-row s-a">
+        <td colspan="5">A. 응답자 일반사항 (공통 · 5문항) <span class="section-meta">응답자 사전 매칭에 활용</span></td>
+      </tr>
+      <tr>
+        <td class="q-id id-a">A1</td>
+        <td class="q-text">귀하의 주 직무 분야는 어떻게 분류되십니까? (NCS 대분류·중분류·소분류 사전 매칭)</td>
+        <td class="q-target">공통</td>
+        <td class="q-scale"><span class="scale-badge select">사전 매칭</span></td>
+        <td class="q-cover">응답자별 <strong>관심 세분류 사전 매칭</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-a">A2</td>
+        <td class="q-text">귀하가 속한 산업 분류는 무엇입니까? (제조 · 서비스 · IT · 교육 · 공공 등)</td>
+        <td class="q-target">공통</td>
+        <td class="q-scale"><span class="scale-badge select">선택</span></td>
+        <td class="q-cover">응답자 가중치 모델 입력</td>
+      </tr>
+      <tr>
+        <td class="q-id id-a">A3</td>
+        <td class="q-text">귀하의 경력 단계는 어디에 해당합니까? (입문 · 중급 · 고급)</td>
+        <td class="q-target">공통</td>
+        <td class="q-scale"><span class="scale-badge select">선택</span></td>
+        <td class="q-cover">응답자 가중치 모델 입력</td>
+      </tr>
+      <tr>
+        <td class="q-id id-a">A4</td>
+        <td class="q-text"><strong>관심 NCS 세분류를 5~10개 선택해 주십시오.</strong> (이후 B·C·D 문항은 선택한 세분류별 응답)</td>
+        <td class="q-target">공통</td>
+        <td class="q-scale"><span class="scale-badge select">5~10개 선택</span></td>
+        <td class="q-cover"><strong>응답자 1인당 평균 7개 분배</strong> — 응답 피로 완화</td>
+      </tr>
+      <tr>
+        <td class="q-id id-a">A5</td>
+        <td class="q-text">귀하의 소속 주체는 무엇입니까? (학습자 / 기업 인사·교육 담당 / 유관 기관)</td>
+        <td class="q-target">공통</td>
+        <td class="q-scale"><span class="scale-badge select">선택</span></td>
+        <td class="q-cover">B·C·D 섹션 분기 라우팅</td>
+      </tr>
+
+      <!-- 섹션 B -->
+      <tr class="section-row s-b">
+        <td colspan="5">B. 학습자 직접 수요 (학습자 응답자 · 4문항 · 5점 척도) <span class="section-meta">개인 학습 동기·시급성 청취</span></td>
+      </tr>
+      <tr>
+        <td class="q-id id-b">B1</td>
+        <td class="q-text">본 세분류는 귀하의 <strong>현재 또는 예정 직무</strong>와 얼마나 부합합니까?</td>
+        <td class="q-target">학습자</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">개인 직무 부합성 — <strong>정량 미반영</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-b">B2</td>
+        <td class="q-text">본 세분류를 <strong>향후 새롭게 학습할 의향</strong>이 있습니까?</td>
+        <td class="q-target">학습자</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">학습 동기 — <strong>정성 보완</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-b">B3</td>
+        <td class="q-text">본 세분류 관련 <strong>STEP 신규 과정이 개설된다면 수강할 의향</strong>이 있습니까?</td>
+        <td class="q-target">학습자</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">운영 측면 수요 — <strong>정량 미반영</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-b">B4</td>
+        <td class="q-text">본 세분류 학습이 귀하의 경력 관점에서 얼마나 <strong>시급</strong>합니까?</td>
+        <td class="q-target">학습자</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">개인 시급성 — <strong>정성 보완</strong></td>
+      </tr>
+
+      <!-- 섹션 C -->
+      <tr class="section-row s-c">
+        <td colspan="5">C. 기업 직접 수요 (기업 응답자 · 4문항 · 5점 척도) <span class="section-meta">현장 채용·재교육 수요 청취</span></td>
+      </tr>
+      <tr>
+        <td class="q-id id-c">C1</td>
+        <td class="q-text">귀사에서 본 세분류 인재의 <strong>현재 채용 수요</strong>는 어느 정도입니까?</td>
+        <td class="q-target">기업</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">현장 채용 — <strong>정량 후행 보완</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-c">C2</td>
+        <td class="q-text">향후 3년간 본 세분류 인재의 <strong>채용 수요 전망</strong>은 어느 정도입니까?</td>
+        <td class="q-target">기업</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">미래 수요 — <strong>정성 보완</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-c">C3</td>
+        <td class="q-text">귀사 재직자의 본 세분류 <strong>재교육 수요</strong>는 어느 정도입니까?</td>
+        <td class="q-target">기업</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">재직자 교육 — <strong>정량 미반영</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-c">C4</td>
+        <td class="q-text">STEP 신규 과정이 개설된다면 귀사에서 본 세분류 과정을 <strong>활용할 의향</strong>이 있습니까?</td>
+        <td class="q-target">기업</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">운영 측면 수요 — <strong>정량 미반영</strong></td>
+      </tr>
+
+      <!-- 섹션 D -->
+      <tr class="section-row s-d">
+        <td colspan="5">D. 정책·기관 수요 (기관 응답자 · 3문항 · 5점 척도) <span class="section-meta">정책·산업·NCS 갱신 관점 청취</span></td>
+      </tr>
+      <tr>
+        <td class="q-id id-d">D1</td>
+        <td class="q-text">본 세분류는 정부·기관 <strong>정책 우선순위</strong> 관점에서 어느 정도로 평가됩니까?</td>
+        <td class="q-target">기관</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">정책 관점 — <strong>정량·정성 모두 미반영</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-d">D2</td>
+        <td class="q-text">본 세분류는 최근 <strong>산업 동향·기술 변화에 얼마나 부합</strong>합니까?</td>
+        <td class="q-target">기관</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">산업 변화 — <strong>정량 후행 보완</strong></td>
+      </tr>
+      <tr>
+        <td class="q-id id-d">D3</td>
+        <td class="q-text">본 세분류는 <strong>ISC 직무 분류 변화 반영</strong>을 위한 갱신 필요성이 어느 정도입니까?</td>
+        <td class="q-target">기관</td>
+        <td class="q-scale"><span class="scale-badge">5점 척도</span></td>
+        <td class="q-cover">NCS 갱신 관점 — <strong>정량·정성 모두 미반영</strong></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- 응답자 분배 요약 -->
+  <div class="summary">
+    <div class="summary-card">
+      <div class="card-label">총 발송</div>
+      <div class="card-value">2,000명</div>
+      <div class="card-detail">학습자 1,500 + 기업 300 + 기관 200</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">응답률 목표</div>
+      <div class="card-value">25%+</div>
+      <div class="card-detail">2.6배 향상 (기존 9.5% 대비)</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">실효 응답자</div>
+      <div class="card-value">500+명</div>
+      <div class="card-detail">1인당 평균 7개 세분류 응답</div>
+    </div>
+    <div class="summary-card">
+      <div class="card-label">세분류당 응답</div>
+      <div class="card-value">평균 14</div>
+      <div class="card-detail">3,500+ 세분류 응답 데이터</div>
+    </div>
+  </div>
+
+  <!-- 참고 -->
+  <div class="note">
+    <strong>과목 유형(이러닝·가상훈련·AI 융합 등) 질문은 본 세분류 단위 설문에 포함하지 않음</strong> — 과목 유형 설정은 Module 3 능력단위 우선순위 도출 단계의 결정 사항. 본 세분류 단위 설문은 정량·정성 평가로 측정 불가능한 직접 수요·우선순위 차원만 청취하여 종합 점수 200점의 신뢰성과 현장 정합성을 확보함.
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 2 — 외부 8인 패널 + 산출물 6종 (Module 3 인계)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 32px 28px;
+    color: #1F2937;
+  }
+  .slide-area { width: 1180px; }
+  .header {
+    border-left: 6px solid #1F4E78;
+    padding-left: 14px;
+    margin-bottom: 18px;
+  }
+  .module-tag { font-size: 11px; color: #64748B; letter-spacing: 0.3px; margin-bottom: 4px; }
+  .title { font-size: 22px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 13px; color: #475569; margin-top: 4px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 18px;
+  }
+
+  /* 좌측: 8인 패널 + 3단계 절차 */
+  .panel-section {
+    background: #F8FAFC;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 800;
+    color: #1F4E78;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1F4E78;
+  }
+
+  /* 8인 패널 구성 */
+  .panel-group {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+  }
+  .panel-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  .panel-group-name {
+    font-size: 12px;
+    font-weight: 800;
+    color: #1F2937;
+  }
+  .panel-group-count {
+    background: #DDEBF7;
+    color: #1F4E78;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .panel-members {
+    font-size: 10.5px;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .panel-total {
+    background: linear-gradient(135deg, #1F4E78 0%, #2E75B6 100%);
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  /* 3단계 검토 절차 */
+  .review-steps {
+    margin-top: 14px;
+  }
+  .review-step {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  .review-num {
+    width: 22px;
+    height: 22px;
+    background: #2E75B6;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .review-text {
+    font-size: 11px;
+    color: #1F2937;
+    line-height: 1.5;
+  }
+  .review-text strong { color: #1F4E78; font-weight: 700; }
+
+  /* 우측: 산출물 6종 */
+  .outputs {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .output-row {
+    background: #F8FAFC;
+    border-left: 4px solid #2E75B6;
+    border-radius: 4px;
+    padding: 9px 12px;
+    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 28px 1fr 80px;
+    gap: 10px;
+    align-items: center;
+  }
+  .output-row.highlight {
+    background: #FCE7F3;
+    border-left-color: #7030A0;
+  }
+  .output-num {
+    width: 22px;
+    height: 22px;
+    background: #2E75B6;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .output-row.highlight .output-num { background: #7030A0; }
+  .output-body { padding-left: 2px; }
+  .output-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 2px;
+  }
+  .output-name .star { color: #DC2626; margin-left: 2px; }
+  .output-desc {
+    font-size: 10.5px;
+    color: #475569;
+    line-height: 1.4;
+  }
+  .output-tag {
+    background: #FFFFFF;
+    border: 1.5px solid #2E75B6;
+    color: #1F4E78;
+    font-size: 9.5px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .output-row.highlight .output-tag {
+    background: #7030A0;
+    border-color: #7030A0;
+    color: #FFFFFF;
+  }
+
+  /* Module 3 인계 */
+  .handoff {
+    margin-top: 14px;
+    background: linear-gradient(135deg, #7030A0 0%, #4A1D6B 100%);
+    color: #FFFFFF;
+    padding: 12px 14px;
+    border-radius: 8px;
+  }
+  .handoff-title {
+    font-size: 11px;
+    opacity: 0.9;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+  }
+  .handoff-flow {
+    font-size: 11.5px;
+    line-height: 1.7;
+  }
+  .handoff-flow strong { color: #FCE7F3; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 2 — NCS 세분류 우선순위 도출 · Step 4</div>
+    <div class="title">외부 8인 패널 검토 + 산출물 패키지 6종</div>
+    <div class="subtitle">투명·객관 검토를 통해 N₁_final을 확정하고 Module 3 능력단위 분석에 인계</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 좌측: 8인 패널 + 3단계 검토 -->
+    <div class="panel-section">
+      <div class="section-title">외부 8인 합의 패널 구성</div>
+
+      <div class="panel-group">
+        <div class="panel-group-head">
+          <div class="panel-group-name">외부 전문가</div>
+          <div class="panel-group-count">5인</div>
+        </div>
+        <div class="panel-members">
+          • NCS 정책 전문가 1인 (KRIVET)<br>
+          • ISC 위원 2인 (디지털·평생 분야)<br>
+          • 산업전문가 1인 (제조·서비스)<br>
+          • PHE 운영 전문가 1인
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <div class="panel-group-head">
+          <div class="panel-group-name">발주처</div>
+          <div class="panel-group-count">2인</div>
+        </div>
+        <div class="panel-members">
+          • 한기대 STEP 책임자<br>
+          • 한기대 평생직능 책임자
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <div class="panel-group-head">
+          <div class="panel-group-name">우리 책임자</div>
+          <div class="panel-group-count">1인</div>
+        </div>
+        <div class="panel-members">
+          • 실무 책임자 (PL)
+        </div>
+      </div>
+
+      <div class="panel-total">
+        합계 8인 합의 패널 · Module 2~3 동일 운영
+      </div>
+
+      <!-- 3단계 검토 -->
+      <div class="review-steps">
+        <div class="section-title" style="margin-top: 14px;">3단계 검토 절차</div>
+
+        <div class="review-step">
+          <div class="review-num">1</div>
+          <div class="review-text">
+            <strong>1차 서면 자문</strong> — N₁_pre 240개 사전 검토 (이메일 회람, 2주)
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-num">2</div>
+          <div class="review-text">
+            <strong>2차 패널 회의</strong> — 그룹별 60개 정밀 검토 (4그룹: 산업·정책·운영·신설)
+          </div>
+        </div>
+
+        <div class="review-step">
+          <div class="review-num">3</div>
+          <div class="review-text">
+            <strong>3차 합의</strong> — 다수결(≥5인) + 책임자 조정 + 발주처 최종 합의
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측: 산출물 패키지 6종 -->
+    <div class="outputs">
+      <div class="section-title">산출물 패키지 6종 → Module 3 인계</div>
+
+      <div class="output-row highlight">
+        <div class="output-num">1</div>
+        <div class="output-body">
+          <div class="output-name">세분류 우선순위표 N₁_final<span class="star">★</span></div>
+          <div class="output-desc">240개 × 14열 (코드·명·정량·정성·설문·종합·분야)</div>
+        </div>
+        <div class="output-tag">M3 직접 입력</div>
+      </div>
+
+      <div class="output-row">
+        <div class="output-num">2</div>
+        <div class="output-body">
+          <div class="output-name">정량 지표별 점수 근거 표</div>
+          <div class="output-desc">11지표 × 세분류 원시값 + 정규화 점수</div>
+        </div>
+        <div class="output-tag">발주처<br>검증용</div>
+      </div>
+
+      <div class="output-row">
+        <div class="output-num">3</div>
+        <div class="output-body">
+          <div class="output-name">정성 지표별 평가 근거</div>
+          <div class="output-desc">3지표 × 전문가 패널 평가 의견 + 합의 기록</div>
+        </div>
+        <div class="output-tag">발주처<br>검증용</div>
+      </div>
+
+      <div class="output-row">
+        <div class="output-num">4</div>
+        <div class="output-body">
+          <div class="output-name">설문 응답 분석 보고서</div>
+          <div class="output-desc">응답자 속성별 가중 적용 + 표본 편향 보정 내역</div>
+        </div>
+        <div class="output-tag">발주처<br>검증용</div>
+      </div>
+
+      <div class="output-row">
+        <div class="output-num">5</div>
+        <div class="output-body">
+          <div class="output-name">외부 8인 패널 합의 의견서</div>
+          <div class="output-desc">1·2·3차 검토 회의록 + 채택·이견 정리</div>
+        </div>
+        <div class="output-tag">검토<br>투명성</div>
+      </div>
+
+      <div class="output-row highlight">
+        <div class="output-num">6</div>
+        <div class="output-body">
+          <div class="output-name">상시 수요조사 운영 모델 v1.0<span class="star">★</span></div>
+          <div class="output-desc">분기 사이클 자동화 흐름도 + 운영 룰</div>
+        </div>
+        <div class="output-tag">27년<br>인계</div>
+      </div>
+
+      <!-- Module 3 인계 -->
+      <div class="handoff">
+        <div class="handoff-title">▶ Module 3 능력단위 분석으로 인계</div>
+        <div class="handoff-flow">
+          N₁_final <strong>240개 세분류</strong><br>
+          → ~2,850개 능력단위 풀 추출<br>
+          → 능력단위 스킬셋 도출 4단계<br>
+          → <strong>STEP-AX 매핑 매트릭스 ★</strong><br>
+          → 과목 유형(E/V/EV/AX) 자동 분류
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

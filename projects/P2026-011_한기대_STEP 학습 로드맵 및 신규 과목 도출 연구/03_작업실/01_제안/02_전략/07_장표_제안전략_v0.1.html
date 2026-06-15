@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2026 한기대 STEP SLR — 장표: 제안 추진 전략 및 추진 과제 v0.1</title>
+<style>
+  :root {
+    --navy: #0B2748;
+    --navy-2: #143963;
+    --navy-3: #1F4F87;
+    --yellow: #F5C518;
+    --orange: #E25822;
+    --gray-50: #F7F8FA;
+    --gray-100: #ECEEF2;
+    --gray-200: #DDE1E8;
+    --gray-300: #C9CED7;
+    --gray-500: #7C8696;
+    --gray-700: #3F4856;
+    --gray-900: #1B2330;
+    --pillar1: #1F4F87;   /* 충실성 - 네이비 */
+    --pillar2: #C97A1C;   /* 전문성 - 앰버 (강조) */
+    --pillar3: #2E7D4F;   /* 지속성 - 그린 */
+    --pillar1-tint: #E8EFF7;
+    --pillar2-tint: #FBEFD9;
+    --pillar3-tint: #E4F1EA;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Pretendard", "Noto Sans KR", -apple-system, "Segoe UI", sans-serif;
+    background: #F0F2F5;
+    color: var(--gray-900);
+    line-height: 1.45;
+    padding: 24px;
+  }
+  .slide {
+    width: 1280px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+  /* Header strip (RFP 위치 표기) */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 28px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .topbar .left { display: flex; align-items: center; gap: 14px; }
+  .topbar .tag {
+    background: var(--yellow);
+    color: var(--navy);
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .topbar .right { font-size: 11px; opacity: 0.85; text-align: right; }
+  /* Title row */
+  .titlebar {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .titlebar .label {
+    background: var(--navy-2);
+    color: #fff;
+    padding: 16px 22px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .titlebar .desc {
+    padding: 14px 22px;
+    color: var(--gray-700);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border-right: 1px solid var(--gray-200);
+  }
+  .titlebar .sec {
+    padding: 14px 22px;
+    color: var(--gray-700);
+    font-size: 12px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    min-width: 200px;
+    background: var(--gray-50);
+  }
+  .titlebar .sec strong { color: var(--navy); font-size: 13px; }
+  /* Intro line */
+  .intro {
+    padding: 14px 28px;
+    background: #fff;
+    color: var(--gray-700);
+    font-size: 13.5px;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .intro b { color: var(--orange); font-weight: 800; }
+  /* Mission / Vision */
+  .mv {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .mv .k {
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    padding: 14px 8px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+  }
+  .mv .k small { font-size: 10px; font-weight: 600; opacity: 0.7; margin-top: 2px; letter-spacing: 0.5px; }
+  .mv .v {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid var(--gray-100);
+    font-size: 15px;
+    color: var(--gray-900);
+    font-weight: 600;
+    line-height: 1.55;
+  }
+  .mv .v.vision { background: #FCFCFD; }
+  .mv .v b { color: var(--orange); font-weight: 800; }
+  /* Pillars row (추진전략) */
+  .pillars-label {
+    background: var(--navy-2);
+    color: #fff;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .pillars-wrap {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+  .pillar {
+    padding: 16px 16px 18px;
+    border-right: 1px solid var(--gray-200);
+    text-align: center;
+    background: #fff;
+    position: relative;
+  }
+  .pillar:last-child { border-right: 0; }
+  .pillar .eng {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+  .pillar .eng.p1 { color: var(--pillar1); }
+  .pillar .eng.p2 { color: var(--pillar2); }
+  .pillar .eng.p3 { color: var(--pillar3); }
+  .pillar .core {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gray-900);
+    line-height: 1.5;
+    margin: 8px auto 6px;
+    max-width: 360px;
+  }
+  .pillar .core .hl { display: inline-block; padding: 1px 6px; border-radius: 3px; font-weight: 800; }
+  .pillar .core .hl.p1 { background: var(--pillar1-tint); color: var(--pillar1); }
+  .pillar .core .hl.p2 { background: var(--pillar2-tint); color: var(--pillar2); }
+  .pillar .core .hl.p3 { background: var(--pillar3-tint); color: var(--pillar3); }
+  .pillar .tagline { font-size: 11.5px; color: var(--gray-500); }
+  /* Tasks (추진과제) */
+  .tasks-wrap {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .tasks-label {
+    background: var(--navy-2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .col {
+    border-right: 1px solid var(--gray-200);
+    padding: 0;
+  }
+  .col:last-child { border-right: 0; }
+  .task-block { border-bottom: 1px solid var(--gray-100); padding: 0; }
+  .task-block:last-child { border-bottom: 0; }
+  .task-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    font-weight: 800;
+    font-size: 13.5px;
+    color: var(--gray-900);
+  }
+  .task-head .num {
+    display: inline-flex;
+    width: 22px; height: 22px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 800;
+  }
+  .task-block.p1 .task-head { background: var(--pillar1-tint); }
+  .task-block.p2 .task-head { background: var(--pillar2-tint); }
+  .task-block.p3 .task-head { background: var(--pillar3-tint); }
+  .task-block.p1 .task-head .num { background: var(--pillar1); }
+  .task-block.p2 .task-head .num { background: var(--pillar2); }
+  .task-block.p3 .task-head .num { background: var(--pillar3); }
+  .task-items {
+    padding: 8px 14px 12px 14px;
+    list-style: none;
+  }
+  .task-items li {
+    font-size: 12px;
+    color: var(--gray-700);
+    padding: 3px 0 3px 16px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .task-items li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 11px;
+    width: 5px;
+    height: 5px;
+    background: var(--gray-500);
+    border-radius: 50%;
+  }
+  .task-items li b { color: var(--navy); font-weight: 700; }
+  .badge {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 4px;
+    color: #fff;
+  }
+  .badge.j { background: #1F4F87; }   /* 제도 */
+  .badge.a { background: #C97A1C; }   /* 자동 */
+  .badge.s { background: #2E7D4F; }   /* 조사 */
+  .badge.m { background: #6E3FA0; }   /* 매뉴 */
+  /* Footer */
+  .footer {
+    padding: 10px 28px;
+    background: var(--gray-50);
+    color: var(--gray-500);
+    font-size: 11px;
+    text-align: center;
+    border-top: 1px solid var(--gray-200);
+  }
+  .footer b { color: var(--navy); }
+</style>
+</head>
+<body>
+
+<div class="slide">
+  <!-- Top RFP location bar -->
+  <div class="topbar">
+    <div class="left">
+      <span class="tag">제안 전략</span>
+      <span>제안 추진 전략 및 추진 과제</span>
+    </div>
+    <div class="right">
+      Ⅱ. 제안 개요<br>
+      <span style="opacity:0.7;">2. 제안 목적 및 전략</span>
+    </div>
+  </div>
+
+  <!-- Intro line -->
+  <div class="intro">
+    앞서 도출한 <b>RFP 4대 제언 · 시앤피 2025 한계 분석 · 한기대 다년 동행 니즈</b>를 기반으로
+    본 사업의 <b>미션 및 비전을 수립</b>하고, 그에 따른 <b>추진 전략과 세부 추진 과제</b>를 설정함.
+  </div>
+
+  <!-- Mission / Vision -->
+  <div class="mv">
+    <div class="k">미션<small>Mission</small></div>
+    <div class="v">
+      한기대 STEP의 <b>다년 파트너</b>로서 RFP 4대 제언에 체계적으로 응답하여
+      <b>STEP 학습 로드맵(SLR) 고도화 · 신규 과목 400개 도출</b>을 수행하고 평생직업능력개발 · 산업 발전에 기여
+    </div>
+  </div>
+  <div class="mv">
+    <div class="k" style="background: var(--navy-3);">비전<small>Vision</small></div>
+    <div class="v vision">
+      <b>NCS 표준 직접 활용 + 도메인 특화 융합</b>으로
+      <b>27 · 28년 후속사업까지 동행</b>하는 지속 가능한 STEP 학습 로드맵(SLR) · 신규 과목 개발 체계 구축
+    </div>
+  </div>
+
+  <!-- 추진전략 (3 Pillars) -->
+  <div class="pillars-wrap">
+    <div class="pillars-label">추진 전략</div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="eng p1">Fidelity</div>
+        <div class="core">
+          <span class="hl p1">RFP 4대 제언 직접 응답</span>을 통한<br>RFP 충실도 1순위 확보
+        </div>
+        <div class="tagline">자체 재구조화 회피 · 평가비율 50/35/15 정확 적용</div>
+      </div>
+      <div class="pillar">
+        <div class="eng p2">Specialization</div>
+        <div class="core">
+          <span class="hl p2">NCS 능력단위 스킬셋 × STEP-AX 스킬셋 매핑</span>으로<br>도메인 특화 AX 200과목 도출
+        </div>
+        <div class="tagline">시앤피 AI 리터러시 26개의 본질적 해결</div>
+      </div>
+      <div class="pillar">
+        <div class="eng p3">Sustainability</div>
+        <div class="core">
+          <span class="hl p3">자동화 · 매뉴얼화 · DB 자산화</span>로<br>27 · 28년 후속사업 인프라 마련
+        </div>
+        <div class="tagline">4종 매뉴얼 + SLR 관리매뉴얼 + 다년 동행 로드맵</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 추진과제 -->
+  <div class="tasks-wrap">
+    <div class="tasks-label">추진 과제</div>
+    <div class="tasks">
+      <!-- Pillar 1: 충실성 (3 tasks) -->
+      <div class="col">
+        <div class="task-block p1">
+          <div class="task-head"><span class="num">1</span>RFP 6대 절차 충실 수행</div>
+          <ul class="task-items">
+            <li>1-1. RFP 표기 <b>가·나·다·라·마·바</b> 그대로 유지(자체 모듈명 회피)</li>
+            <li>1-2. 평가 비율 <b>50/35/15</b> 정확 적용 (시앤피 50/50 이탈 교정)</li>
+            <li>1-3. 정량 <b>11지표</b> + 정성 <b>3지표</b> + 적합성 <b>6지표</b> 충실 활용</li>
+          </ul>
+        </div>
+        <div class="task-block p1">
+          <div class="task-head"><span class="num">2</span>RFP 4대 제언 정직한 답</div>
+          <ul class="task-items">
+            <li><span class="badge j">제도</span>직능은행제 시범 매핑 + SQF 직접본 활용</li>
+            <li><span class="badge a">자동</span>신규 과목 ↔ SLR 시스템 연계 자동화</li>
+            <li><span class="badge s">조사</span>설문 단계 재배치(시나리오 B) + 상시 수요조사</li>
+            <li><span class="badge m">매뉴</span>산출물·DB·미활용·결측치 4종 매뉴얼</li>
+          </ul>
+        </div>
+        <div class="task-block p1">
+          <div class="task-head"><span class="num">3</span>발주처 사전 협의 충실</div>
+          <ul class="task-items">
+            <li>3-1. 7대 협의 사항 <b>착수보고 전 사전 문의</b></li>
+            <li>3-2. 권고안 + 백업안 병기 ("발주처와 합의 후 채택" 표기)</li>
+            <li>3-3. 분야 비율(평생100·디지털100·융합200) RFP 그대로</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pillar 2: 전문성 (2 tasks) -->
+      <div class="col">
+        <div class="task-block p2">
+          <div class="task-head"><span class="num">4</span>능력단위 스킬셋 도출 (NCS 표준 직접 활용)</div>
+          <ul class="task-items">
+            <li>4-1. NCS <b>능력단위요소별 스킬(S)</b> 항목 파싱</li>
+            <li>4-2. LLM 1차 정규화 + 분야 전문가 검증 (중복 제거 · 핵심화)</li>
+            <li>4-3. 능력단위별 <b>핵심 스킬셋 5~10개</b> 선별 + DB 구축</li>
+            <li>4-4. <b>다년 자산화</b> — 27·28년 매뉴얼 v2·v3 갱신 출발점</li>
+          </ul>
+        </div>
+        <div class="task-block p2">
+          <div class="task-head"><span class="num">5</span>STEP-AX 매핑 → AX 200과목 → SLR 자동 통합</div>
+          <ul class="task-items">
+            <li>5-1. STEP-AX 분류체계 <b>L1 4영역 · L2 12기능 · L3 ~50세부</b></li>
+            <li>5-2. 능력단위 스킬셋 × AI 스킬셋 <b>매핑 매트릭스</b> (●/○/공란)</li>
+            <li>5-3. AX 200과목 분배 — 공통 20 · 산업 150 · GX 20 · 안전(로봇) 10</li>
+            <li>5-4. 직무 × NCS 수준 <b>SLR 자동 통합</b> (직능은행제 연계 가능)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Pillar 3: 지속성 (2 tasks) -->
+      <div class="col">
+        <div class="task-block p3">
+          <div class="task-head"><span class="num">6</span>4종 운영 매뉴얼 + SLR 관리 매뉴얼화</div>
+          <ul class="task-items">
+            <li>6-1. <b>4종 매뉴얼</b> — 산출물 · Master DB · 미활용 능력단위 · 결측치</li>
+            <li>6-2. <b>SLR 관리 매뉴얼 v1.0</b> 1부 (RFP §II-1 다 명시)</li>
+            <li>6-3. <b>매뉴얼 v2·v3</b> 매년 갱신 모델 (한기대-우리 공동)</li>
+          </ul>
+        </div>
+        <div class="task-block p3">
+          <div class="task-head"><span class="num">7</span>27 · 28년 후속사업 동행 인프라</div>
+          <ul class="task-items">
+            <li>7-1. 능력단위 핵심 스킬셋 <b>DB 자산화</b></li>
+            <li>7-2. STEP-AX 매핑 매트릭스 <b>다년 자산화</b></li>
+            <li>7-3. <b>26·27·28년 동행 로드맵</b> (정성제안서 Ⅳ장)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer slogan -->
+  <div class="footer">
+    <b>한기대 STEP의 다년 파트너 — RFP 4대 제언 정직한 답, 27 · 28년 동행</b>
+  </div>
+</div>
+
+</body>
+</html>

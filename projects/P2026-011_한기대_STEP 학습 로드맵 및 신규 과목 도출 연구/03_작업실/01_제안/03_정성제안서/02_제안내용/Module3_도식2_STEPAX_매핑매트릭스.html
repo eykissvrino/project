@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Module 3 — STEP-AX 분류체계 + 매핑 매트릭스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background: #FFFFFF;
+    padding: 32px 24px;
+    color: #1F2937;
+  }
+  .slide-area { width: 1180px; }
+  .header {
+    border-left: 6px solid #7030A0;
+    padding-left: 14px;
+    margin-bottom: 18px;
+  }
+  .module-tag { font-size: 11px; color: #64748B; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .module-tag .star { color: #DC2626; font-weight: 800; margin-left: 4px; }
+  .title { font-size: 22px; font-weight: 800; color: #1F4E78; }
+  .subtitle { font-size: 12.5px; color: #475569; margin-top: 4px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 18px;
+  }
+
+  /* 분류체계 영역 */
+  .taxonomy {
+    background: #F8FAFC;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .taxonomy-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #7030A0;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #7030A0;
+  }
+  .taxonomy-title small {
+    font-weight: 600;
+    color: #64748B;
+    font-size: 10.5px;
+    margin-left: 5px;
+  }
+  .domain {
+    background: #FFFFFF;
+    border: 1.2px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 7px 9px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    align-items: center;
+    gap: 8px;
+  }
+  .domain:last-child { margin-bottom: 0; }
+  .domain-num {
+    width: 22px; height: 22px;
+    background: #7030A0;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 10.5px;
+    font-weight: 800;
+  }
+  .domain-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+  .domain-skills {
+    font-size: 10px;
+    color: #64748B;
+    margin-top: 2px;
+    line-height: 1.4;
+  }
+  .domain-count {
+    background: #FCE7F3;
+    color: #7030A0;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+
+  /* 매핑 매트릭스 영역 */
+  .matrix-wrap {
+    background: #FFFFFF;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .matrix-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1F4E78;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1F4E78;
+  }
+  .matrix-title small {
+    font-weight: 600;
+    color: #64748B;
+    font-size: 10.5px;
+    margin-left: 5px;
+  }
+
+  table.matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5px;
+  }
+  table.matrix th, table.matrix td {
+    border: 1px solid #D1D5DB;
+    padding: 3px 2px;
+    text-align: center;
+  }
+  table.matrix th.group-head {
+    background: #1F4E78;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 9.5px;
+    padding: 4px 2px;
+    line-height: 1.2;
+  }
+  table.matrix th.col-head {
+    background: #DDEBF7;
+    color: #1F2937;
+    font-weight: 600;
+    font-size: 8.5px;
+    padding: 4px 2px;
+    line-height: 1.2;
+    height: 50px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+  }
+  table.matrix th.row-label, table.matrix td.row-label {
+    background: #F1F5F9;
+    text-align: left;
+    padding: 4px 6px;
+    font-size: 10px;
+    color: #1F2937;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  table.matrix td.row-label {
+    background: #F8FAFC;
+  }
+  /* 결합 강도 색상 */
+  .cell-s-circle-full { background: #F5F5F5; color: #1F2937; font-weight: 800; font-size: 11px;}
+  .cell-s-circle-empty { background: #F5F5F5; color: #1F2937; font-size: 11px;}
+  .cell-m-circle-full { background: #BDD7EE; color: #1F2937; font-weight: 800; font-size: 11px;}
+  .cell-m-circle-empty { background: #BDD7EE; color: #1F2937; font-size: 11px;}
+  .cell-l-circle-full { background: #2E75B6; color: #FFFFFF; font-weight: 800; font-size: 11px;}
+  .cell-l-circle-empty { background: #2E75B6; color: #FFFFFF; font-size: 11px;}
+  .cell-blank { background: #FFFFFF; color: #CBD5E1; font-size: 9px;}
+
+  .legend {
+    margin-top: 10px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 10.5px;
+    color: #475569;
+  }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .legend-symbol {
+    width: 14px; height: 14px;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 9px;
+  }
+
+  /* 융합 과목 도출 흐름 */
+  .derive-flow {
+    margin-top: 14px;
+    background: linear-gradient(135deg, #7030A0 0%, #4A1D6B 100%);
+    color: #FFFFFF;
+    padding: 12px 14px;
+    border-radius: 8px;
+  }
+  .derive-title {
+    font-size: 11px;
+    opacity: 0.9;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .derive-content {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.55;
+  }
+  .derive-arrow {
+    margin: 4px 0;
+    color: #FCE7F3;
+    font-weight: 700;
+  }
+  .derive-result {
+    font-size: 15px;
+    font-weight: 900;
+    color: #FCE7F3;
+  }
+
+  /* 시앤피 비교 */
+  .compare {
+    margin-top: 14px;
+    background: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: #78350F;
+    line-height: 1.55;
+  }
+  .compare strong { color: #92400E; }
+</style>
+</head>
+<body>
+<div class="slide-area">
+
+  <div class="header">
+    <div class="module-tag">Module 3 — NCS 능력단위 우선순위 도출 / Step 6<span class="star">★ 본 사업 최대 차별점</span></div>
+    <div class="title">STEP-AX 분류체계 v1.0 + 매핑 매트릭스 — 융합 과목 자동 도출</div>
+    <div class="subtitle">6대 영역 · 18 스킬 분류체계 × 능력단위 매핑 매트릭스 → 과목 유형(E/V/EV/AX) 자동 분류</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 좌측: STEP-AX 분류체계 -->
+    <div class="taxonomy">
+      <div class="taxonomy-title">STEP-AX 분류체계 v1.0 <small>· 다년 자산 · 6대 영역 · 18 스킬</small></div>
+
+      <div class="domain">
+        <div class="domain-num">1</div>
+        <div>
+          <div class="domain-name">생성형 AI 업무 문서 작성</div>
+          <div class="domain-skills">보고서·기획서 / 이메일·공문 / 기술문서·매뉴얼</div>
+        </div>
+        <div class="domain-count">3</div>
+      </div>
+
+      <div class="domain">
+        <div class="domain-num">2</div>
+        <div>
+          <div class="domain-name">AI 활용 정보 검색·요약</div>
+          <div class="domain-skills">산업 동향·규제 / 경쟁사·시장 / 기술 문헌·논문 / 번역·다국어</div>
+        </div>
+        <div class="domain-count">4</div>
+      </div>
+
+      <div class="domain">
+        <div class="domain-num">3</div>
+        <div>
+          <div class="domain-name">업무 데이터 표준화 수집·정리</div>
+          <div class="domain-skills">표준 양식 설계 / 이상치·결측치 처리 / AI 학습용 라벨링</div>
+        </div>
+        <div class="domain-count">3</div>
+      </div>
+
+      <div class="domain">
+        <div class="domain-num">4</div>
+        <div>
+          <div class="domain-name">AI 도구 활용 데이터 분석</div>
+          <div class="domain-skills">Excel·BI / AI 분석 도구 패턴 탐색 / 다변량 AI 분석</div>
+        </div>
+        <div class="domain-count">3</div>
+      </div>
+
+      <div class="domain">
+        <div class="domain-num">5</div>
+        <div>
+          <div class="domain-name">AI 기반 업무 자동화 구현</div>
+          <div class="domain-skills">반복 업무 워크플로우 / AI-OCR / 보고서 자동 생성</div>
+        </div>
+        <div class="domain-count">3</div>
+      </div>
+
+      <div class="domain">
+        <div class="domain-num">6</div>
+        <div>
+          <div class="domain-name">AI 예측·최적화</div>
+          <div class="domain-skills">AI 모델 요건 정의 / 현장 실증·피드백 (확장 가능)</div>
+        </div>
+        <div class="domain-count">2</div>
+      </div>
+
+      <!-- 융합 과목 도출 흐름 -->
+      <div class="derive-flow">
+        <div class="derive-title">▶ 매트릭스 → 과목 유형(E/V/EV/AX) 자동 분류 룰</div>
+        <div class="derive-content">
+          매트릭스 ◉ ≥ 3개<br>
+          + AI 영역 ②③④⑤⑥ 결합
+          <div class="derive-arrow">▼</div>
+          <div class="derive-result">★ AX 융합 과목</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측: 매핑 매트릭스 -->
+    <div class="matrix-wrap">
+      <div class="matrix-title">매핑 매트릭스 샘플 <small>· 화학신소재 능력단위 × 18 스킬</small></div>
+
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th rowspan="2" class="group-head" style="width: 160px;">능력단위요소</th>
+            <th colspan="3" class="group-head" style="background: #1F4E78;">① 생성형</th>
+            <th colspan="4" class="group-head" style="background: #2E75B6;">② 정보 검색</th>
+            <th colspan="3" class="group-head" style="background: #305496;">③ 표준화</th>
+            <th colspan="3" class="group-head" style="background: #1F4E78;">④ 도구 분석</th>
+            <th colspan="3" class="group-head" style="background: #2E75B6;">⑤ 자동화</th>
+            <th colspan="2" class="group-head" style="background: #305496;">⑥ 예측</th>
+          </tr>
+          <tr>
+            <th class="col-head">보고서</th>
+            <th class="col-head">이메일</th>
+            <th class="col-head">매뉴얼</th>
+            <th class="col-head">산업</th>
+            <th class="col-head">경쟁사</th>
+            <th class="col-head">기술문헌</th>
+            <th class="col-head">번역</th>
+            <th class="col-head">표준양식</th>
+            <th class="col-head">이상치</th>
+            <th class="col-head">라벨링</th>
+            <th class="col-head">BI</th>
+            <th class="col-head">패턴</th>
+            <th class="col-head">다변량</th>
+            <th class="col-head">반복</th>
+            <th class="col-head">OCR</th>
+            <th class="col-head">보고서</th>
+            <th class="col-head">요건</th>
+            <th class="col-head">실증</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">시장구조 분석하기</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-blank">·</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-s-circle-full">◉</td><td class="cell-s-circle-empty">○</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-blank">·</td><td class="cell-blank">·</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-empty">○</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-l-circle-empty">○</td><td class="cell-l-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td>
+          </tr>
+          <tr>
+            <td class="row-label">신소재 동향 분석하기</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-blank">·</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-s-circle-full">◉</td><td class="cell-s-circle-full">◉</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-blank">·</td>
+            <td class="cell-s-circle-empty">○</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-empty">○</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-l-circle-empty">○</td><td class="cell-l-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td>
+          </tr>
+          <tr>
+            <td class="row-label">기술 문헌 분석하기</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td><td class="cell-s-circle-full">◉</td><td class="cell-s-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-m-circle-empty">○</td>
+            <td class="cell-blank">·</td><td class="cell-m-circle-full">◉</td><td class="cell-blank">·</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-l-circle-full">◉</td><td class="cell-blank">·</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td>
+          </tr>
+          <tr>
+            <td class="row-label">신소재 후보군 선정</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td><td class="cell-blank">·</td>
+            <td class="cell-m-circle-full">◉</td><td class="cell-m-circle-empty">○</td><td class="cell-m-circle-full">◉</td>
+            <td class="cell-s-circle-empty">○</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-l-circle-empty">○</td>
+            <td class="cell-m-circle-full">◉</td><td class="cell-l-circle-full">◉</td>
+          </tr>
+          <tr>
+            <td class="row-label">리스크 영향 분석·평가</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-s-circle-empty">○</td><td class="cell-blank">·</td><td class="cell-s-circle-empty">○</td><td class="cell-blank">·</td>
+            <td class="cell-m-circle-full">◉</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-empty">○</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-l-circle-empty">○</td>
+            <td class="cell-m-circle-full">◉</td><td class="cell-l-circle-full">◉</td>
+          </tr>
+          <tr>
+            <td class="row-label">프로토타입 설계하기</td>
+            <td class="cell-s-circle-full">◉</td><td class="cell-blank">·</td><td class="cell-s-circle-full">◉</td>
+            <td class="cell-blank">·</td><td class="cell-blank">·</td><td class="cell-s-circle-full">◉</td><td class="cell-s-circle-empty">○</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-m-circle-empty">○</td><td class="cell-m-circle-full">◉</td>
+            <td class="cell-s-circle-empty">○</td><td class="cell-m-circle-full">◉</td><td class="cell-m-circle-full">◉</td>
+            <td class="cell-m-circle-empty">○</td><td class="cell-blank">·</td><td class="cell-l-circle-empty">○</td>
+            <td class="cell-m-circle-full">◉</td><td class="cell-l-circle-full">◉</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="legend">
+        <div class="legend-item">
+          <span class="legend-symbol cell-s-circle-full">◉</span>
+          <span>핵심 결합</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-symbol cell-s-circle-empty">○</span>
+          <span>보조 결합</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-symbol cell-s-circle-empty" style="background: #F5F5F5;">S</span>
+          <span>즉시</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-symbol cell-m-circle-empty" style="background: #BDD7EE;">M</span>
+          <span>단기</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-symbol cell-l-circle-empty" style="background: #2E75B6; color: #FFFFFF;">L</span>
+          <span>중장기</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 시앤피 비교 -->
+  <div class="compare">
+    <strong>본 매트릭스가 본 사업 최대 차별점</strong> — 시앤피 2025는 AI 리터러시 26개 과목의 NCS 매핑이 부재했으나, 우리는 능력단위 × 18 스킬 매트릭스로 200개 융합 과목을 도출하며 모든 과목이 NCS 능력단위에 자동 매핑되어 직능은행제 연계·SLR 자동 통합·다년 자산화를 동시 달성한다.
+  </div>
+
+</div>
+</body>
+</html>
