@@ -1,13 +1,13 @@
 ---
 name: branding-marketing
-description: B2B 컨설팅 업체와 HR 솔루션 사업의 브랜드 정체성·네이밍·메시지·마케팅 콘텐츠 제작 가이드. 시앤피컨설팅과 산하 브랜드(이음 등)의 일관된 브랜드 자산 구축, 신규 사업 네이밍, 클라이언트 제안 시 차별화 메시지 도출을 지원. Aphrodite 에이전트가 호출.
+description: B2B 컨설팅 업체와 HR 솔루션 사업의 브랜드 정체성·네이밍·메시지·마케팅 콘텐츠 제작 가이드. 시앤피컨설팅과 산하 브랜드(이음 등)의 일관된 브랜드 자산 구축, 신규 사업 네이밍, 클라이언트 제안 시 차별화 메시지 도출을 지원. @GTM(gtm-brand) 에이전트가 호출.
 trigger: 브랜드, 브랜딩, 네이밍, 슬로건, 태그라인, 마케팅, 카피, 메시지, 브랜드 스토리, 마케팅 콘텐츠, 브랜드 정체성, BX
 ---
 
 # Branding & Marketing Skill
 
 > B2B 컨설팅 업체의 브랜드 자산 구축·네이밍·마케팅 메시지 제작 스킬
-> 호출 에이전트: **Aphrodite** (미의 여신)
+> 호출 에이전트: **@GTM gtm-brand** (브랜드/카피라이터)
 
 ---
 
@@ -168,7 +168,7 @@ Layer 3: Proof (사례·수치·인증)
    ↓
 5. 1-pager + 랜딩 카피 + 보이스 가이드 작성
    ↓
-6. Ralph 루프 검증 (보이스 일관성·차별화 점검)
+6. @BAR 품질검증 (보이스 일관성·차별화 점검)
    ↓
 7. 최종 가이드 문서화
 ```
@@ -220,7 +220,7 @@ Layer 3: Proof (사례·수치·인증)
 - 트렌드: 한국기업평판연구소, 잡코리아 HR 트렌드
 
 ### 내부
-- `_core/agents/aphrodite.md` — Aphrodite 에이전트 정의
+- `_core/agents/v2/gtm-brand.md` — gtm-brand(브랜드/카피라이터) 에이전트 정의
 - `_core/skills/brand-guidelines/SKILL.md` — 일반 브랜드 가이드라인
 - `_core/skills/ppt-brand-guidelines/SKILL.md` — PPT 브랜드 가이드
 - `_core/prompts/common/tone-consulting.md` — 컨설팅 톤 가이드

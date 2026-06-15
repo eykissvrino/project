@@ -23,24 +23,49 @@ for dest in DESTS:
     n += 1
     print(f"  → {os.path.relpath(dest, HUB)} : {len(src_files)}개 배포")
 
-# 프로젝트 배포 — 각 projects/*/ 에도 v2 배치 (추가/갱신만, 커스텀 에이전트는 보존)
+# 프로젝트 배포 — 각 projects/*/ 에 v2 에이전트 + 스킬 + 커맨드 배치
+#   (추가/갱신만 — 프로젝트 커스텀 에이전트/파일은 삭제하지 않고 보존)
+SKILLS = os.path.join(HUB, "_core", "skills")
+CMDS = os.path.join(HUB, "_core", "commands")
 PROJ = os.path.join(HUB, "projects")
+
+def deploy_dir(src_root, dst_root):
+    """src_root 내용을 dst_root 로 복사(덮어쓰기, 기존 추가분 보존)."""
+    if not os.path.isdir(src_root):
+        return
+    os.makedirs(dst_root, exist_ok=True)
+    for item in os.listdir(src_root):
+        s = os.path.join(src_root, item)
+        d = os.path.join(dst_root, item)
+        if os.path.isdir(s):
+            shutil.copytree(s, d, dirs_exist_ok=True)
+        else:
+            shutil.copy2(s, d)
+
+def deploy_agents(dst):
+    os.makedirs(dst, exist_ok=True)
+    for f in src_files:
+        shutil.copy2(f, os.path.join(dst, os.path.basename(f)))
+
 proj_count = 0
 if os.path.isdir(PROJ):
     for proj in sorted(os.listdir(PROJ)):
         ppath = os.path.join(PROJ, proj)
         if not os.path.isdir(ppath):
             continue
-        for sub in (os.path.join(".claude", "agents"), os.path.join(".agent", "agents")):
-            parent = os.path.join(ppath, sub.split(os.sep)[0])
-            if not os.path.isdir(parent):
-                continue  # 해당 벤더 폴더가 없는 프로젝트는 건너뜀
-            dest = os.path.join(ppath, sub)
-            os.makedirs(dest, exist_ok=True)
-            for f in src_files:
-                shutil.copy2(f, os.path.join(dest, os.path.basename(f)))
+        has_claude = os.path.isdir(os.path.join(ppath, ".claude"))
+        has_agent = os.path.isdir(os.path.join(ppath, ".agent"))
+        if not (has_claude or has_agent):
+            continue
+        if has_claude:
+            deploy_agents(os.path.join(ppath, ".claude", "agents"))
+            deploy_dir(SKILLS, os.path.join(ppath, ".claude", "skills"))
+            deploy_dir(CMDS, os.path.join(ppath, ".claude", "commands"))
+        if has_agent:
+            deploy_agents(os.path.join(ppath, ".agent", "agents"))
+            deploy_dir(SKILLS, os.path.join(ppath, ".agent", "skills"))
         proj_count += 1
-    print(f"  → projects/*/ : {proj_count}개 프로젝트에 v2 배치 (커스텀 보존)")
+    print(f"  → projects/*/ : {proj_count}개 프로젝트에 v2 에이전트+스킬+커맨드 배치 (커스텀 보존)")
 
 # Codex용 AGENTS.md = CLAUDE.md 미러 (동일 조직 컨텍스트)
 claude_md = os.path.join(HUB, "CLAUDE.md")

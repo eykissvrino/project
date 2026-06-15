@@ -1,13 +1,13 @@
 ---
 name: legal-consulting
-description: 한국 법률·계약·노동·개인정보 환경에 기반한 법무 컨설팅 가이드. 시앤피컨설팅의 HR/사업 프로젝트에서 발생하는 계약 검토, NDA, 근로 관련 분쟁 예방, 장애인고용·개인정보·하도급법 등 컴플라이언스 점검을 지원. Themis 에이전트가 호출.
+description: 한국 법률·계약·노동·개인정보 환경에 기반한 법무 컨설팅 가이드. 시앤피컨설팅의 HR/사업 프로젝트에서 발생하는 계약 검토, NDA, 근로 관련 분쟁 예방, 장애인고용·개인정보·하도급법 등 컴플라이언스 점검을 지원. @LEG(leg-contract·leg-compliance) 에이전트가 호출.
 trigger: 계약서, NDA, 비밀유지, 근로계약, 약관, 컴플라이언스, 개인정보, 장애인고용, 하도급, 공정거래, 법률 검토, 법적 리스크
 ---
 
 # Legal Consulting Skill
 
 > 한국 법률 환경 기반 컨설팅 프로젝트의 법무 검토·문서화·리스크 진단 스킬
-> 호출 에이전트: **Themis** (정의의 여신)
+> 호출 에이전트: **@LEG** (leg-contract·leg-labor·leg-compliance)
 
 ---
 
@@ -138,7 +138,7 @@ trigger: 계약서, NDA, 비밀유지, 근로계약, 약관, 컴플라이언스,
    ↓
 4. 수정 권고안 작성 (Track Changes 또는 의견서)
    ↓
-5. Ralph 루프 검증 (놓친 조항 없는지)
+5. @BAR 품질검증 (놓친 조항 없는지)
    ↓
 6. 최종 보고
 ```
@@ -181,7 +181,7 @@ trigger: 계약서, NDA, 비밀유지, 근로계약, 약관, 컴플라이언스,
 - 개인정보보호위원회: pipc.go.kr
 
 ### 내부 참조
-- `_core/agents/themis.md` — Themis 에이전트 정의
+- `_core/agents/v2/leg.md` — @LEG(법무리스크부) 에이전트 정의
 - `_core/prompts/common/tone-consulting.md` — 톤 가이드
 - `_core/quality-contracts/QUALITY_CONTRACT.md` — 법무 산출물 품질 기준
 
