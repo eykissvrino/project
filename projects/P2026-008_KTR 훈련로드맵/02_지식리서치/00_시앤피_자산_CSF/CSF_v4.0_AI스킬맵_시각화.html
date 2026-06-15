@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시앤피 AI 스킬맵 v4.0 — CnP AI Skill Map</title>
+<style>
+:root{--navy:#1f3864;--blue:#2e5f8a;--teal:#0e7490;--amber:#b45309;--slate:#475569;--ink:#1e293b;--mut:#64748b;--line:#dbe2ea}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI','Malgun Gothic','맑은 고딕',sans-serif;color:var(--ink);background:#f7f9fb;padding-bottom:80px}
+.hero{background:linear-gradient(135deg,#13294b 0%,#1f3864 50%,#0e7490 100%);color:#fff;padding:40px 5% 30px}
+.hero h1{font-size:27px;letter-spacing:-.3px}
+.hero .en{font-size:13px;opacity:.75;margin-top:4px}
+.hero .sub{font-size:14px;margin-top:12px;opacity:.92;max-width:920px;line-height:1.65}
+.stats{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:6px 14px;font-size:12.5px}
+.chip b{font-size:14px}
+.legend{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap;font-size:12px;opacity:.9}
+.dF,.dA,.dT{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.dF{background:#9fb1c8}.dA{background:#4cc3d9}.dT{background:#f2b25c}
+.wrap{max-width:1300px;margin:0 auto;padding:26px 4%}
+/* derivation matrix */
+.matrix{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:8px}
+.matrix h2{font-size:15px;color:var(--navy);margin-bottom:4px}
+.matrix .cap{font-size:11.5px;color:var(--mut);margin-bottom:12px}
+table.mx{width:100%;border-collapse:collapse;font-size:12px}
+table.mx th{background:#1f3864;color:#fff;padding:7px 9px;font-weight:600;border:1px solid #31507e;text-align:left}
+table.mx td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;line-height:1.5}
+table.mx td:first-child{font-weight:700;white-space:nowrap}
+.mxfoot{display:flex;gap:24px;margin-top:12px;flex-wrap:wrap;font-size:11.5px;color:var(--mut)}
+.mxfoot b{color:var(--navy)}
+.bandTitle{display:flex;align-items:center;gap:10px;margin:26px 0 12px;font-size:15px;font-weight:700}
+.bandTag{font-size:11px;padding:3px 10px;border-radius:12px;color:#fff}
+.bandRow{display:grid;gap:16px}
+.bandRow.A{grid-template-columns:repeat(auto-fit,minmax(295px,1fr))}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 1px 4px rgba(15,40,80,.06)}
+.ghead{padding:14px 16px;color:#fff}
+.ghead h3{font-size:15.5px}
+.ghead .gen{font-size:10.5px;opacity:.8;letter-spacing:.3px;text-transform:uppercase}
+.ghead p{font-size:12px;opacity:.9;margin-top:6px;line-height:1.5}
+.gbody{padding:12px 14px 16px}
+.comp{margin-top:10px}
+.comp h4{font-size:13px;color:var(--navy)}
+.comp h4 small{color:var(--mut);font-weight:400;font-size:10.5px;margin-left:4px}
+.comp .cdef{font-size:11.5px;color:var(--mut);margin:2px 0 6px}
+.sset{margin:7px 0 4px;font-size:11.5px;color:#0f5e74;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}
+.skill{border:1.5px solid var(--line);background:#fbfdfe;border-radius:9px;padding:6px 10px;font-size:12.5px;cursor:pointer;transition:.15s;display:flex;gap:6px;align-items:center}
+.skill:hover{border-color:var(--teal);background:#eefafc;transform:translateY(-1px)}
+.skill .sid{font-size:10px;font-weight:700;color:#fff;border-radius:5px;padding:1.5px 5px}
+.bF .sid{background:var(--slate)}.bA .sid{background:var(--teal)}.bT .sid{background:var(--amber)}
+.bF .ghead{background:var(--slate)}.bA .ghead{background:var(--teal)}.bT .ghead{background:var(--amber)}
+.bF{border-top:4px solid var(--slate)}.bA{border-top:4px solid var(--teal)}.bT{border-top:4px solid var(--amber)}
+.flow{background:#fff;border:1px dashed #b8c4d2;border-radius:12px;margin-top:30px;padding:16px 18px;font-size:12.5px;color:var(--mut);line-height:1.7}
+.flow b{color:var(--navy)}
+.srcsec{max-width:1300px;margin:34px auto 0;padding:0 4%}
+.srcsec h2{font-size:16px;color:var(--navy);margin-bottom:10px}
+.srcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:9px}
+.src{background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 12px;font-size:11.5px;line-height:1.5}
+.src b{color:var(--blue)}.src .cat{display:inline-block;font-size:10px;background:#eef2f7;border-radius:8px;padding:1px 7px;margin-left:6px;color:var(--mut)}
+.src .use{color:var(--mut);margin-top:3px}
+/* modal */
+.mback{position:fixed;inset:0;background:rgba(15,28,50,.55);display:none;z-index:50;align-items:center;justify-content:center;padding:4%}
+.mback.on{display:flex}
+.modal{background:#fff;border-radius:16px;max-width:820px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 18px 60px rgba(0,0,0,.3)}
+.mhead{padding:18px 22px 14px;color:#fff;border-radius:16px 16px 0 0;position:relative}
+.mhead .crumb{font-size:11px;opacity:.85}
+.mhead h3{font-size:19px;margin-top:5px}
+.mhead .men{font-size:11.5px;opacity:.8;margin-top:2px;letter-spacing:.2px}
+.mhead .mdef{font-size:13px;opacity:.94;margin-top:8px;line-height:1.55}
+.mx2{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.2);border:none;color:#fff;width:30px;height:30px;border-radius:50%;font-size:15px;cursor:pointer}
+.mbody{padding:18px 22px 24px}
+.msec{margin-top:14px}
+.msec h4{font-size:13px;color:var(--navy);border-left:3px solid var(--teal);padding-left:8px;margin-bottom:8px}
+.elgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.elitem{font-size:12px;background:#f4f8fa;border-radius:8px;padding:7px 11px;line-height:1.5}
+.outitem{display:inline-block;font-size:11.5px;background:#eef9f1;color:#13724b;border-radius:10px;padding:4px 11px;margin:0 5px 5px 0}
+.bositem{font-size:12.5px;background:#f4f8fa;border-radius:8px;padding:7px 11px;margin-bottom:5px}
+.bositem .freq{color:var(--mut);font-size:10.5px;float:right}
+table.bars{width:100%;border-collapse:collapse;font-size:12px}
+table.bars td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;line-height:1.5}
+table.bars td.lv{width:74px;font-weight:700;text-align:center;color:#fff;font-size:11px}
+.lv1{background:#94a3b8}.lv2{background:#64a5b8}.lv3{background:#0e7490}.lv4{background:#155e75}.lv5{background:#b45309}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;background:#eef6f8;color:#0f5e74;border-radius:10px;padding:3px 9px}
+.tagS{font-size:11px;background:#f3f0fa;color:#5b48a8;border-radius:10px;padding:3px 9px;cursor:help}
+.note{font-size:10.5px;color:var(--mut);margin-top:6px}
+footer{max-width:1300px;margin:36px auto 0;padding:0 4%;font-size:11px;color:var(--mut);line-height:1.6}
+@media(max-width:640px){.elgrid{grid-template-columns:1fr}}
+@media print{.mback{display:none!important}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>시앤피 AI 스킬맵 <span style="font-weight:400;opacity:.8">v4.0</span></h1>
+  <div class="en">CnP AI Skill Map — Practical &amp; Industry-Universal AI Skill Framework</div>
+  <div class="sub">모든 산업에 적용 가능한 시앤피컨설팅의 AI 활용 역량·스킬 체계.
+  보편 업무 가치사슬 × AI 협업 모드 매트릭스에서 체계적으로 도출한 40개 스킬을
+  세부 스킬 요소·산출물·행동지표(BOS)·5단계 숙련수준(BARS)으로 정의한다. <b>스킬을 클릭하면 카드가 열립니다.</b></div>
+  <div class="stats">
+    <span class="chip">역량군 <b>6</b></span><span class="chip">역량 <b>13</b></span>
+    <span class="chip">Skillset <b>15</b></span><span class="chip">Skill <b>40</b></span>
+    <span class="chip">BOS <b>120</b> · BARS <b>200</b></span>
+    <span class="chip">근거 문헌 <b>25</b></span>
+  </div>
+  <div class="legend"><span><span class="dF"></span>코어 Core (전 직원 토대)</span>
+  <span><span class="dA"></span>실무 활용 Application (업무활동 4영역)</span>
+  <span><span class="dT"></span>워크 트랜스포메이션 (★시앤피 시그니처)</span></div>
+</div>
+
+<div class="wrap">
+  <div class="matrix">
+    <h2>도출 체계 — 보편 업무 가치사슬 × AI 협업 모드</h2>
+    <div class="cap">스킬은 임의 나열이 아니라, 모든 산업이 공유하는 업무 가치사슬과 AI 협업 모드(M1 보조 → M2 위임 → M3 재설계)의 교차 매트릭스에서 도출되었다.</div>
+    <table class="mx"><thead><tr><th style="width:190px">역량군</th><th style="width:230px">매트릭스 위치</th><th>도출 논리</th></tr></thead>
+    <tbody id="mxbody"></tbody></table>
+    <div class="mxfoot" id="mxfoot"></div>
+  </div>
+  <div id="map"></div>
+  <div class="flow"><b>스킬 기반 HR 운용</b> — ① 진단: BOS 120문항 + BARS 수준 판정 → 개인 스킬 프로파일
+  ② 갭분석: 직무별 Job-Skill Profile 대비 ③ 교육매칭: Skillset 단위 모듈(1 SS = 과정 1개) ④ 인증: PBL 산출물 BARS 인증
+  ⑤ 환류: 조직 스킬 대시보드 → <b>연 1회 인벤토리 개정</b> (도구·기법은 '현재 표현형' 태그에 격리)</div>
+</div>
+
+<div class="srcsec">
+  <h2>근거 문헌·출처 (25)</h2>
+  <div class="srcgrid" id="srcs"></div>
+</div>
+
+<footer>시앤피컨설팅 CnP Skill Framework v4.0 | 2026-05-30 | 설계: 이석주 | 자문회의 1차(2026.6) SME 검증 예정<br>
+숙련수준: L1 인지 — 안내에 따라 시도 · L2 활용 — 독립 정기 수행 · L3 적용 — 상황 조정·판단 · L4 통합 — 팀 체계화·지도 · L5 전파 — 표준 창출·조직 확산 (KIRD·IBM 정합)</footer>
+
+<div class="mback" id="mback" onclick="if(event.target===this)closeM()">
+  <div class="modal">
+    <div class="mhead" id="mhead">
+      <button class="mx2" onclick="closeM()">✕</button>
+      <div class="crumb" id="mcrumb"></div>
+      <h3 id="mname"></h3>
+      <div class="men" id="men"></div>
+      <div class="mdef" id="mdef"></div>
+    </div>
+    <div class="mbody">
+      <div class="msec"><h4>세부 스킬 요소</h4><div class="elgrid" id="mel"></div></div>
+      <div class="msec"><h4>산출물 예시</h4><div id="mouts"></div></div>
+      <div class="msec"><h4>행동지표 — BOS 빈도 자가진단</h4><div id="mbos"></div>
+        <div class="note">각 문항을 ① 거의 안 함 ~ ⑤ 거의 항상으로 평정</div></div>
+      <div class="msec"><h4>숙련수준 — BARS 수준 판정</h4><table class="bars" id="mbars"></table></div>
+      <div class="msec"><h4>현재 표현형 〔가변층 · 연 1회 갱신〕</h4><div class="tags" id="mexpr"></div></div>
+      <div class="msec"><h4>근거 출처</h4><div class="tags" id="msrc"></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const GROUPS = [{"band": "F", "bandName": "AI 코어 Core", "group": "F. AI 코어 스킬", "groupEn": "AI Core Skills", "groupDef": "업무 영역과 무관하게 AI 활용의 품질·신뢰·안전을 결정하는 전 직원 공통 핵심 스킬군. 모든 실무 스킬의 토대.", "comps": [{"name": "F1. 프롬프트·컨텍스트 설계", "en": "Prompt & Context Design", "def": "의도와 맥락을 구조화해 AI에서 의도한 품질의 결과를 끌어내는 역량", "sets": [{"name": "SS F1.1 프롬프트 설계", "def": "과업 지시를 구조화하고 반복 개선으로 품질을 끌어올리는 스킬 묶음", "skills": [{"id": "F01", "ko": "과업 프롬프트 설계", "en": "Task Prompt Design", "def": "업무 과업의 목적·출력 규격·제약·평가 기준을 구조화한 프롬프트로 설계해, 첫 응답부터 업무 활용 가능한 품질을 끌어내는 스킬", "el": ["목적·역할·출력 형식(분량·구조·톤) 명세", "평가 기준·금지 조건의 사전 정의", "예시(few-shot)·반례 제시로 기대 수준 전달", "과업 유형별 프롬프트 패턴(요약·분석·작성·검토) 적용"], "outs": ["재사용 가능한 과업 프롬프트", "1차 응답 품질 합격률 향상"], "bos": ["프롬프트에 목적·출력 형식·제약·평가 기준을 명시한다", "과업 유형에 맞는 프롬프트 패턴을 선택해 적용한다", "예시·반례를 제시해 기대 수준을 전달한다"], "bars": ["단순 질문형 지시를 입력해 결과를 받아 본다", "목적·형식·제약을 갖춘 프롬프트로 업무 활용 가능한 1차 결과를 얻는다", "과업 유형별 패턴·예시 설계로 복잡한 과업도 의도한 규격의 결과를 얻는다", "팀 표준 프롬프트 패턴을 설계·보급하고 동료의 프롬프트를 진단·개선한다", "조직의 프롬프트 설계 표준·평가 기준을 수립하고 자산 체계로 확산한다"], "expr": "역할·형식 지정 프롬프트, few-shot 예시, 출력 스키마 지정", "srcs": ["Anthropic4D", "NCS2025", "Google", "Trend2026"]}, {"id": "F02", "ko": "반복 개선·프롬프트 체이닝", "en": "Iterative Refinement & Prompt Chaining", "def": "첫 결과를 평가해 지시를 수정하고, 복잡한 과업을 단계 프롬프트로 분할·연결해 목표 품질까지 끌어올리는 스킬", "el": ["결과 평가→결함 지목→수정 지시 루프 운영", "과업 분해→단계별 프롬프트 체인 구성", "중간 산출 검토 후 다음 단계 투입", "실패 원인(모호한 지시·맥락 부족) 진단"], "outs": ["단계별 프롬프트 체인", "목표 품질 도달 산출물"], "bos": ["결과의 부족한 점을 구체적으로 지목해 수정 지시한다", "복잡한 과업을 단계로 분할해 순차 수행시킨다", "중간 산출을 검토해 다음 단계 입력으로 보정한다"], "bars": ["같은 지시를 다시 시도하는 수준의 재요청을 한다", "결함을 지목한 수정 지시로 결과를 개선한다", "과업 분해·체이닝으로 복잡한 산출물을 완성한다", "팀의 체이닝 패턴을 표준화하고 코칭한다", "조직 차원의 다단계 프롬프트 방법론을 정립·확산한다"], "expr": "멀티턴 개선, 프롬프트 체인, 자기평가 루프", "srcs": ["Anthropic4D", "BCG", "Trend2026"]}]}, {"name": "SS F1.2 컨텍스트·자산 운용", "def": "맥락 정보를 설계하고 검증된 프롬프트를 자산화하는 스킬 묶음", "skills": [{"id": "F03", "ko": "컨텍스트·참조자료 구성", "en": "Context & Reference Engineering", "def": "AI가 정확히 답하도록 업무 문서·데이터·용어·작업 이력 등 맥락 정보를 선별·구조화해 제공하는 스킬", "el": ["과업 관련 문서·데이터의 선별·첨부", "용어집·조직 기준 등 맥락 정보 제공", "대화 이력·작업 상태의 관리", "컨텍스트 분량·배치 순서 최적화(핵심 우선)"], "outs": ["과업별 컨텍스트 패키지", "근거 기반 고정확 응답"], "bos": ["과업에 필요한 참조 문서·데이터를 선별해 제공한다", "조직 용어·기준을 함께 제공해 맥락을 맞춘다", "컨텍스트의 분량·순서를 조정해 정확도를 높인다"], "bars": ["자료 첨부가 가능함을 알고 시도한다", "관련 문서를 첨부해 근거 기반 응답을 얻는다", "컨텍스트 구성·순서를 설계해 정확도를 체계적으로 높인다", "팀 컨텍스트 패키지(용어집·표준자료)를 구축·보급한다", "조직 컨텍스트 엔지니어링 표준을 수립한다"], "expr": "파일 첨부·프로젝트 컨텍스트, 용어집 주입, 컨텍스트 윈도 관리", "srcs": ["AXBlender", "Trend2026", "MS"]}, {"id": "F04", "ko": "프롬프트 템플릿·자산화", "en": "Prompt Assetization & Standardization", "def": "검증된 프롬프트를 변수화된 템플릿으로 만들어 저장·공유·갱신하는 팀 프롬프트 자산 관리 스킬", "el": ["변수 슬롯 설계(대상·기간·형식)", "템플릿 명명·분류 체계 수립", "공유 저장소 운영·버전 관리", "사용 피드백 기반 템플릿 갱신"], "outs": ["팀 프롬프트 라이브러리", "업무별 템플릿 세트"], "bos": ["효과가 검증된 프롬프트를 템플릿으로 변수화한다", "템플릿을 분류 체계에 따라 저장·공유한다", "사용 결과를 반영해 템플릿을 갱신한다"], "bars": ["좋은 프롬프트를 메모해 둔다", "자주 쓰는 프롬프트를 템플릿화해 재사용한다", "변수 설계·분류 체계를 갖춘 템플릿 세트를 구축한다", "팀 라이브러리를 운영하며 품질·사용률을 관리한다", "조직 프롬프트 자산 거버넌스를 수립한다"], "expr": "프롬프트 라이브러리, 사내 위키, 템플릿 변수화", "srcs": ["NCS2025", "대기업사례"]}]}]}, {"name": "F2. AI 산출물 검증·품질관리", "en": "AI Output Verification & QA", "def": "AI 산출물의 사실성·정확성을 판정하고 업무 품질로 확정하는 역량", "sets": [{"name": "SS F2.1 검증·품질 확정", "def": "팩트체크→오류 탐지→보정·확정의 품질 보증 스킬 묶음", "skills": [{"id": "F05", "ko": "팩트체크·출처 검증", "en": "Fact-Checking & Source Verification", "def": "AI 산출물의 사실 주장·수치·인용을 원 출처와 대조해 진위를 확인하고 사용 가능 여부를 판정하는 스킬", "el": ["핵심 주장·수치·고유명사의 추출 점검", "원 출처 추적·대조(1차 자료 우선)", "교차 검색을 통한 이중 확인", "미검증 정보의 표시·격리"], "outs": ["검증 완료 산출물", "출처 표기·검증 로그"], "bos": ["핵심 수치·이름·인용을 원 출처와 대조한다", "사안 중요도에 따라 검증 강도(표본→전수)를 조정한다", "확인 불가 정보는 표시하거나 제외한다"], "bars": ["AI 오류 가능성을 알고 의심 항목을 표시한다", "핵심 사실을 출처 대조로 확인한 뒤 사용한다", "사안별 검증 강도를 설계하고 교차 검증한다", "팀 팩트체크 절차·체크리스트를 운영한다", "조직 검증 표준과 검증 문화를 구축한다"], "expr": "출처 링크 추적, 교차 검색, 1차 자료 대조", "srcs": ["Anthropic4D", "BCG", "WEF2025"]}, {"id": "F06", "ko": "환각·오류 탐지", "en": "Hallucination & Error Detection", "def": "그럴듯하게 생성된 허위 출처·논리 비약·계산 오류 등 AI 특유의 오류 패턴을 식별·차단하는 스킬", "el": ["환각 고위험 신호 식별(존재 불명 출처·과잉 확신 표현)", "논리 일관성 점검·계산 검산", "도메인 지식과의 대조 검토", "오류 사례의 기록·공유"], "outs": ["오류 검출 리포트", "팀 오류 패턴 사례집"], "bos": ["그럴듯하지만 의심스러운 대목을 별도로 확인한다", "인용·출처의 실존 여부를 확인한다", "발견한 오류 패턴을 기록해 공유한다"], "bars": ["환각 개념과 대표 사례를 안다", "허위 출처·기본 오류를 걸러낸다", "도메인 지식으로 미세한 오류까지 탐지·기록한다", "팀 오류 사례집과 예방 절차를 운영한다", "조직 품질 리스크 기준을 수립·확산한다"], "expr": "환각 패턴 점검, 검산 요청, 도메인 전문가 검토", "srcs": ["Anthropic4D", "Deloitte2026AI", "BCG"]}, {"id": "F07", "ko": "산출물 보정·품질 확정", "en": "Output Refinement & Quality Finalization", "def": "AI 초안을 업무 기준·조직 맥락에 맞게 재구성·보정하고 최종 품질을 책임지고 확정하는 스킬", "el": ["업무 기준(독자·형식·깊이) 대비 격차 진단", "조직 용어·맥락을 반영한 재작성", "누락·중복의 보완 정리", "최종 승인 판단과 책임 기록"], "outs": ["품질 확정본", "품질 체크 기록"], "bos": ["초안을 업무 기준과 대조해 격차를 보정한다", "조직 맥락·용어로 재구성한다", "최종 사용 여부를 책임지고 판정한다"], "bars": ["초안 그대로와 완성본의 차이를 구분한다", "기준에 맞춰 손질해 업무에 쓴다", "독자·목적별 재구성으로 품질을 보증한다", "팀 품질 기준·리뷰 체계를 운영한다", "조직 산출물 품질 표준을 수립한다"], "expr": "초안 후처리, 스타일 정합, 최종 승인 워크플로", "srcs": ["김은경2024", "Anthropic4D", "MS"]}]}]}, {"name": "F3. AI 리스크·컴플라이언스", "en": "AI Risk & Compliance", "def": "정보보호·법규·책임 기준을 지켜 AI 활용의 신뢰를 보증하는 역량 (전 스킬 횡단 적용)", "sets": [{"name": "SS F3.1 보안·규제 준수", "def": "민감정보 보호와 저작권·법규 준수를 실행하는 스킬 묶음", "skills": [{"id": "F08", "ko": "AI 정보보안·프라이버시 관리", "en": "AI Data Privacy & Security", "def": "AI 입력·활용 과정에서 개인정보·기밀의 유출 위험을 식별·차단하고 데이터 등급에 맞게 도구를 통제하는 스킬", "el": ["입력 전 민감정보 스크리닝", "가명처리·마스킹의 적용", "데이터 등급별 사용 가능 도구 매트릭스 적용", "유출 의심 시 인지·보고 절차 이행"], "outs": ["안전 입력 처리 기록", "등급별 도구 사용 준수"], "bos": ["입력 전 개인정보·기밀 포함 여부를 점검한다", "민감 데이터는 마스킹·가명화 후 사용한다", "데이터 등급에 따라 승인된 도구만 사용한다"], "bars": ["입력 정보의 유출 위험을 인지한다", "민감정보 제외·마스킹을 실천한다", "데이터 등급별 도구·범위 통제를 적용한다", "팀 입력 보안 규칙과 점검 체계를 운영한다", "조직 AI 정보보호 체계를 수립한다"], "expr": "입력 스크리닝, 마스킹, 승인 도구 목록, 접근권한 관리", "srcs": ["EUAIAct", "AI기본법", "삼성SDS"]}, {"id": "F09", "ko": "AI 저작권·규제 준수", "en": "AI Copyright & Regulatory Compliance", "def": "생성물의 저작권·라이선스와 AI 관련 법규·사내 정책을 확인하고 사용 표시·기록으로 책임을 확보하는 스킬", "el": ["생성물 저작권·라이선스 확인", "AI 사용 고지·표기 기준 적용", "법규(AI기본법·EU AI Act)·사내 정책 대조", "활용 기록(로그)의 유지"], "outs": ["규정 준수 활용 기록", "AI 사용 표시 산출물"], "bos": ["생성물의 저작권·라이선스를 확인하고 사용한다", "규정에 따라 AI 사용을 표시·기록한다", "모호한 사안은 가이드라인·담당자에게 확인한다"], "bars": ["관련 규정의 존재를 안다", "기본 규정(표시·저작권)을 준수한다", "사안별 규정 적용을 판단하고 기록을 남긴다", "팀 컴플라이언스 체크리스트를 운영한다", "조직 AI 거버넌스 정책을 수립·갱신한다"], "expr": "AI 사용 고지, 라이선스 확인, 활용 로그", "srcs": ["EUAIAct", "AI기본법", "IBM-AIA", "Google"]}]}]}]}, {"band": "A", "bandName": "AI 실무 활용 Application", "group": "A1. AI 리서치·지식관리", "groupEn": "AI Research & Knowledge", "groupDef": "정보를 AI로 탐색·조사·정리하고 조직 지식 자산으로 전환하는 실무 영역. (가치사슬: 탐색·수집)", "comps": [{"name": "A1-1. AI 리서치", "en": "AI-Powered Research", "def": "필요한 정보를 AI로 빠르고 깊게 확보하는 역량", "sets": [{"name": "SS A1.1 탐색·조사·모니터링", "def": "검색 질의→심층 조사 위임→상시 모니터링의 리서치 스킬 묶음", "skills": [{"id": "A01", "ko": "AI 검색·질의 설계", "en": "AI Search & Query Design", "def": "업무 질문을 AI 검색·질의로 변환하고 결과의 출처 신뢰도를 평가해 필요한 자료를 빠르게 확보하는 스킬", "el": ["업무 질문의 검색 질의 변환(키워드·조건·기간)", "결과 출처의 신뢰도 평가·선별", "후속 질의로 범위 좁히기·넓히기", "검색 결과의 업무 맥락 정리"], "outs": ["신뢰 출처 자료 목록", "질의-결과 정리 노트"], "bos": ["업무 질문을 조건을 갖춘 질의로 변환한다", "결과의 출처·신뢰도를 평가해 선별한다", "후속 질의로 부족한 부분을 보강한다"], "bars": ["AI 검색을 알고 단순 질문을 해 본다", "업무 자료 확보에 정기 활용한다", "질의 설계·출처 평가로 자료의 깊이를 확보한다", "팀 리서치 질의 패턴을 표준화한다", "조직 정보 탐색 체계를 재설계한다"], "expr": "AI 검색엔진, 챗 질의, 출처 필터링", "srcs": ["제안서v5", "Google", "WEF-NES"]}, {"id": "A02", "ko": "딥리서치 위임·종합", "en": "Deep Research Delegation & Synthesis", "def": "범위·관점·산출 규격을 설계해 조사 과제를 AI에 위임하고, 중간 조정과 결과 검증을 거쳐 보고 수준으로 종합하는 스킬", "el": ["조사 설계(범위·관점·지정 소스)", "산출 규격(목차·인용 형식) 정의", "중간 결과 검토와 방향 조정", "복수 결과의 교차 검증·종합"], "outs": ["검증된 조사 보고서", "출처 목록"], "bos": ["범위·관점·산출 형식을 정해 조사를 위임한다", "중간 결과를 검토해 방향을 조정한다", "결과의 출처를 검증해 종합 보고로 만든다"], "bars": ["위임형 조사 기능을 알고 시험한다", "정형화된 조사를 위임해 결과를 활용한다", "조사 설계·검증을 주도해 보고 품질을 확보한다", "팀 조사 업무를 위임 체계로 재편한다", "조직 리서치 표준 프로세스를 수립한다"], "expr": "딥리서치, 에이전트 조사 위임, 자동 보고서 생성", "srcs": ["Trend2026", "Deloitte2026AI", "제안서v5"]}, {"id": "A03", "ko": "동향 인텔리전스 운영", "en": "Trend Intelligence Operations", "def": "시장·기술·정책·경쟁 동향을 AI로 정기 수집·요약하는 모니터링 체계를 설계·운영하는 스킬", "el": ["주제·키워드·출처의 설계", "수집 주기·브리핑 형식 설정", "노이즈 필터링과 중요도 선별", "브리핑 배포·피드백 반영"], "outs": ["정기 동향 브리핑", "이슈 알림 체계"], "bos": ["주제·출처·주기를 정해 동향 수집을 자동화한다", "수집 결과에서 중요 변화를 선별한다", "브리핑을 팀에 배포하고 형식을 개선한다"], "bars": ["동향 수집 기능을 안다", "정기 요약을 받아 업무에 참고한다", "수집 설계와 선별 기준을 운영한다", "팀 인텔리전스 브리핑 체계를 구축한다", "조직 인텔리전스 운영 모델을 설계한다"], "expr": "정기 브리핑 자동화, 키워드 알림, 뉴스레터 생성", "srcs": ["제안서v5", "삼성SDS", "Trend2026"]}]}]}, {"name": "A1-2. 지식 정제·자산화", "en": "Knowledge Curation & Assetization", "def": "수집한 정보를 검증된 조직 지식 자산으로 전환하는 역량", "sets": [{"name": "SS A1.2 요약·정리", "def": "대용량 자료·기록을 핵심 정보로 변환하는 스킬 묶음", "skills": [{"id": "A04", "ko": "문서 요약·핵심추출", "en": "Document Summarization & Key Extraction", "def": "보고서·논문·영상 등 대용량 자료를 용도별 형식으로 요약하고 핵심 논점·수치를 정확히 추출하는 스킬", "el": ["용도별 요약 규격(의사결정용·공유용) 지정", "복수 문서의 비교 요약", "핵심 수치·논점·근거의 구조화 추출", "원문 대조를 통한 정확성 확인"], "outs": ["용도별 요약본", "핵심 논점·수치 시트"], "bos": ["용도에 맞는 분량·형식을 지정해 요약한다", "여러 자료를 비교 요약해 차이를 드러낸다", "요약의 누락·왜곡을 원문과 대조한다"], "bars": ["요약 기능을 써 본다", "자료 파악에 정기 활용한다", "용도별 규격·비교 요약을 설계하고 검증한다", "팀 요약 표준·품질 기준을 운영한다", "조직 지식 처리 표준을 수립한다"], "expr": "문서·영상 요약, 비교 요약, 핵심 추출", "srcs": ["제안서v5", "Google", "대기업사례"]}, {"id": "A05", "ko": "회의록 자동화·액션 도출", "en": "Meeting Intelligence & Action Tracking", "def": "회의·통화 기록을 AI로 전사·정리하고 결정사항·담당·기한을 구조화해 실행 추적으로 연결하는 스킬", "el": ["녹취 전사와 화자 구분 정리", "결정·논의·보류 사항의 구분 정리", "액션아이템(담당·기한) 추출", "후속 추적·업무도구 연동 공유"], "outs": ["표준 회의록", "액션아이템 트래커"], "bos": ["회의 기록을 AI로 정리해 표준 회의록을 만든다", "결정사항·담당·기한을 구조화해 추출한다", "정리본을 원기록과 대조 확인한 뒤 공유·추적한다"], "bars": ["회의 정리 기능을 시험한다", "정기 회의를 자동 정리해 공유한다", "회의 유형별 형식·추출 규칙을 설계한다", "팀 회의 지능화 체계(자동화·검수)를 운영한다", "조직 회의 지식화 표준을 수립한다"], "expr": "전사+요약, 액션 추출, 캘린더·업무도구 연동", "srcs": ["대기업사례", "DeloitteHC2026", "제안서v5"]}, {"id": "A06", "ko": "다국어 번역·현지화", "en": "AI Translation & Localization", "def": "외국어 자료·커뮤니케이션을 분야 용어에 맞게 번역·보정하고 번역+요약 결합으로 빠르게 소화하는 스킬", "el": ["용어집을 적용한 번역", "전문용어·맥락의 보정", "번역+요약 결합 처리", "발신 문서의 현지화(격식·문화)"], "outs": ["용어 정합 번역본", "다국어 커뮤니케이션 문서"], "bos": ["외국어 자료를 번역해 업무에 활용한다", "분야 용어집·맥락을 적용해 번역을 보정한다", "번역과 요약을 결합해 빠르게 소화한다"], "bars": ["번역 기능을 써 본다", "업무 번역에 정기 활용한다", "용어집 적용·보정으로 전문 번역 품질을 확보한다", "팀 용어 표준·번역 워크플로를 구축한다", "조직 다국어 정보 체계를 수립한다"], "expr": "문서 번역, 용어집 적용, 실시간 통역", "srcs": ["제안서v5", "대기업사례"]}]}, {"name": "SS A1.3 지식 자산화", "def": "지식을 AI 참조 가능한 자산으로 구축·운영하는 스킬 묶음", "skills": [{"id": "A07", "ko": "문서 기반 Q&A 구축", "en": "Document-Grounded Q&A (RAG 활용)", "def": "사내 문서·매뉴얼·규정을 AI가 참조하는 질의응답 환경으로 구성해 근거 있는 답을 얻는 스킬", "el": ["대상 문서의 선별·정리", "질의응답 환경 구성(노트북형·RAG)", "답변 근거 위치의 확인", "활용 시나리오 설계(규정·매뉴얼·FAQ)"], "outs": ["문서 기반 Q&A 환경", "근거 표시 답변"], "bos": ["업무 문서를 올려 근거 기반 답을 얻는다", "답변의 근거 위치를 확인해 신뢰도를 판단한다", "팀 매뉴얼·규정의 Q&A 활용 시나리오를 만든다"], "bars": ["문서 기반 질의를 시험한다", "개인 자료 Q&A로 업무에 활용한다", "자료 구성·근거 확인으로 정확도를 관리한다", "팀 지식 Q&A 환경을 구축·운영한다", "조직 지식 접근 체계를 재설계한다"], "expr": "문서 업로드 Q&A, RAG, 노트북형 지식도구", "srcs": ["Trend2026", "AXBlender", "MS"]}, {"id": "A08", "ko": "지식베이스 구축·관리", "en": "Knowledge Base Curation", "def": "팀·조직 지식을 AI가 참조 가능한 구조(분류·메타데이터·최신성)로 축적·갱신하는 스킬", "el": ["지식 구조 설계(분류·태그)", "문서 표준화·메타데이터 부여", "갱신 주기·책임의 운영", "활용도 측정과 구조 개선"], "outs": ["AI 참조용 지식베이스", "갱신 운영 규칙"], "bos": ["지식을 AI가 참조 가능한 형식으로 정리한다", "갱신 규칙에 따라 최신성을 유지한다", "활용 현황을 점검해 구조를 개선한다"], "bars": ["지식 정리의 필요성을 안다", "담당 지식을 표준 형식으로 축적한다", "분류·메타데이터·갱신 체계를 설계한다", "팀 지식베이스 운영을 책임진다", "조직 지식 자산 전략을 수립한다"], "expr": "위키 구조화, 태깅, 갱신 워크플로", "srcs": ["Trend2026", "DeloitteHC2026"]}]}]}]}, {"band": "A", "bandName": "AI 실무 활용 Application", "group": "A2. AI 콘텐츠·커뮤니케이션", "groupEn": "AI Content & Communication", "groupDef": "업무 문서·시각물·커뮤니케이션 콘텐츠를 AI와 함께 생산하는 실무 영역. (가치사슬: 생산·소통)", "comps": [{"name": "A2-1. 비즈니스 문서 생성", "en": "Business Writing with AI", "def": "실무 문서를 AI로 초안부터 발신 수준까지 완성하는 역량", "sets": [{"name": "SS A2.1 문서 작성·정련", "def": "보고서·커뮤니케이션 문서의 생성과 품질 정련 스킬 묶음", "skills": [{"id": "A09", "ko": "보고서·기획서 AI 작성", "en": "AI-Assisted Report & Proposal Writing", "def": "목차 설계→자료 결합→초안 생성→완성의 단계로 보고서·기획서를 AI와 함께 작성하는 스킬", "el": ["목차·논리 구조의 공동 설계", "근거 자료·데이터 결합 초안 생성", "섹션별 심화·보강 작성", "전체 일관성·논리 검토 마감"], "outs": ["보고서·기획서 완성본", "재사용 목차 템플릿"], "bos": ["목차·논리를 먼저 설계한 뒤 초안을 생성한다", "근거 자료를 결합해 섹션별로 심화한다", "전체 일관성·논리를 검토해 완성한다"], "bars": ["초안 생성을 시험한다", "정형 보고서를 AI로 작성해 완성한다", "목적·독자별 구조 설계로 고품질 문서를 만든다", "팀 문서 작성 체계(템플릿+AI)를 운영한다", "조직 문서 생산 방식을 재설계한다"], "expr": "초안 생성, 개요 전개, 자료 결합 작성", "srcs": ["제안서v5", "대기업사례", "Google"]}, {"id": "A10", "ko": "비즈니스 커뮤니케이션 작성", "en": "Business Correspondence with AI", "def": "이메일·공문·공지 등 대내외 실무 문서를 상대·격식에 맞는 톤으로 신속 작성하는 스킬", "el": ["상대·목적별 톤 설계", "격식·공문 규격의 적용", "민감 내용의 발신 전 점검", "문의·항의 등 시나리오별 회신 대응"], "outs": ["발신 가능 수준 문서", "상황별 회신 세트"], "bos": ["목적·상대를 지정해 문서를 작성한다", "격식·톤을 조정해 발신 수준으로 다듬는다", "민감 사안은 점검 후 발신한다"], "bars": ["메일 초안 기능을 시험한다", "일상 문서를 신속 작성한다", "상대·상황별 톤 전략으로 효과를 높인다", "팀 커뮤니케이션 표준을 운영한다", "조직 대내외 문서 체계를 고도화한다"], "expr": "메일 초안, 공문 양식, 톤 조정", "srcs": ["대기업사례", "Google"]}, {"id": "A11", "ko": "교정·윤문·톤 최적화", "en": "Editing & Tone Optimization", "def": "문서의 표현·용어·격식을 대상 독자와 조직 스타일에 맞게 일관 보정하는 스킬", "el": ["맞춤법·문법의 교정", "용어·표기의 일관화", "독자별 난이도·톤 조정", "조직 스타일 가이드 적용"], "outs": ["스타일 정합 문서", "용어 일관성 점검표"], "bos": ["문서를 대상·격식 기준으로 다듬는다", "용어·표기를 일관화한다", "조직 스타일 기준을 적용한다"], "bars": ["교정 기능을 시험한다", "문서 다듬기에 정기 활용한다", "스타일·용어 기준 적용으로 품질을 표준화한다", "팀 스타일 가이드를 AI와 연동해 운영한다", "조직 문서 품질 표준을 수립한다"], "expr": "윤문, 용어 통일, 스타일 변환", "srcs": ["대기업사례", "Google"]}]}]}, {"name": "A2-2. 멀티모달 콘텐츠 제작", "en": "Multimodal Content Creation", "def": "발표·이미지·영상 등 시각 콘텐츠를 AI로 제작하는 역량", "sets": [{"name": "SS A2.2 발표·시각물 제작", "def": "발표자료와 이미지·영상 콘텐츠 제작 스킬 묶음", "skills": [{"id": "A12", "ko": "프레젠테이션 설계·생성", "en": "AI Presentation Design", "def": "청중·목적 기반 스토리라인을 설계하고 슬라이드 구조·메시지·시각 요소를 AI로 생성·정련하는 스킬", "el": ["청중 분석과 핵심 메시지 설계", "스토리라인(문제→해법→근거) 구성", "슬라이드 생성과 레이아웃 보정", "발표 노트·예상 질문 생성"], "outs": ["발표 덱", "발표 노트·Q&A 시트"], "bos": ["청중·목적에 맞는 스토리라인을 설계한다", "슬라이드 구조·문구를 AI로 생성해 다듬는다", "발표 노트·예상 질문을 준비한다"], "bars": ["슬라이드 생성 기능을 시험한다", "구성·문구 생성으로 제작 시간을 줄인다", "청중별 스토리 설계로 설득력을 높인다", "팀 발표 체계·템플릿을 운영한다", "조직 보고 문화를 재설계한다"], "expr": "슬라이드 생성, 스토리 설계, 도식화", "srcs": ["대기업사례", "제안서v5"]}, {"id": "A13", "ko": "이미지 생성·편집", "en": "AI Image Generation & Editing", "def": "업무 목적의 이미지·도식을 프롬프트로 생성하고 스타일·구도를 제어하며 권리 요건을 준수하는 스킬", "el": ["이미지 프롬프트(스타일·구도·맥락) 설계", "생성-편집(확장·보정)의 반복", "브랜드 가이드와의 정합", "저작권·초상권 점검"], "outs": ["업무용 이미지·도식", "브랜드 정합 시각자산"], "bos": ["목적에 맞는 이미지를 프롬프트로 생성한다", "스타일·구도를 제어해 의도에 맞춘다", "권리·브랜드 기준을 점검해 사용한다"], "bars": ["생성 도구를 시험한다", "업무 자료용 이미지를 생성해 쓴다", "스타일 제어·편집으로 의도한 결과를 얻는다", "팀 시각 자산 체계를 만든다", "조직 비주얼 전략을 수립한다"], "expr": "텍스트→이미지, 인페인팅·확장, 스타일 지정", "srcs": ["Trend2026", "대기업사례"]}, {"id": "A14", "ko": "영상·오디오 생성", "en": "AI Video & Audio Production", "def": "교육·홍보·안내용 영상과 음성을 대본 설계→생성→편집의 흐름으로 제작하는 스킬", "el": ["대본·콘티의 설계", "영상 생성·아바타·음성합성 활용", "자막·편집 보정", "품질·권리의 점검"], "outs": ["교육·안내 영상", "음성 콘텐츠"], "bos": ["대본을 설계해 영상·음성으로 변환한다", "자막·편집으로 완성도를 높인다", "품질·권리를 점검해 배포한다"], "bars": ["생성 도구를 안다", "간단한 콘텐츠를 제작해 쓴다", "대본·연출 설계로 목적 품질을 확보한다", "팀 제작 파이프라인을 구축한다", "조직 미디어 체계를 재편한다"], "expr": "영상 생성, 음성합성(TTS), 아바타, 자동 자막", "srcs": ["Trend2026", "대기업사례"]}]}]}]}, {"band": "A", "bandName": "AI 실무 활용 Application", "group": "A3. AI 데이터 분석·의사결정", "groupEn": "AI Data & Decision", "groupDef": "업무 데이터를 AI로 준비·분석하고 의사결정 메시지로 전환하는 실무 영역. (가치사슬: 처리·분석)", "comps": [{"name": "A3-1. 데이터 준비", "en": "Data Preparation", "def": "데이터를 분석 가능한 상태로 만드는 역량", "sets": [{"name": "SS A3.1 데이터 준비·가공", "def": "정제·전처리와 표 작업을 AI로 처리하는 스킬 묶음", "skills": [{"id": "A15", "ko": "데이터 정제·전처리", "en": "AI Data Cleaning & Preparation", "def": "흩어진 업무 데이터를 AI로 표준화·정제하고 결측·중복·이상값을 처리해 분석 가능 상태로 만드는 스킬", "el": ["형식 표준화·구조 변환", "결측·중복·이상값 처리 규칙 적용", "분류·라벨링의 자동화", "정제 결과의 표본 대조 검증"], "outs": ["분석 준비 데이터셋", "정제 규칙 문서"], "bos": ["데이터 형식을 AI로 표준화·변환한다", "결측·중복·이상값을 규칙에 따라 처리한다", "정제 결과를 표본 대조로 검증한다"], "bars": ["데이터 손질 기능을 안다", "정형 데이터 정제를 수행한다", "데이터 특성별 정제 기준을 설계한다", "팀 정제 표준·절차를 운영한다", "조직 데이터 품질 체계를 수립한다"], "expr": "형식 변환, 결측 처리, 자동 라벨링", "srcs": ["제안서v5", "NCS2025", "IBM-AIA"]}, {"id": "A16", "ko": "스프레드시트 AI 활용", "en": "AI-Powered Spreadsheet Operations", "def": "수식 생성·집계·변환 등 표 작업을 AI에 시키고 검산으로 신뢰를 확보해 시트 업무를 가속하는 스킬", "el": ["자연어→수식·함수 생성", "집계·피벗·변환 지시", "표본 검산·오류 점검", "반복 시트 작업의 패턴화"], "outs": ["자동화된 업무 시트", "검산 기록"], "bos": ["수식·집계 작업을 AI로 생성한다", "산출 수치를 표본 검산한다", "반복 작업을 패턴화해 재사용한다"], "bars": ["시트 AI 기능을 안다", "수식·집계를 AI로 처리한다", "복잡한 가공을 검산과 함께 안정적으로 운영한다", "팀 시트 업무를 표준화한다", "조직 표 업무를 자동화 체계로 전환한다"], "expr": "수식 생성, 표 분석, 시트 자동화", "srcs": ["대기업사례", "Trend2026"]}]}]}, {"name": "A3-2. 분석·의사결정 지원", "en": "Analytics & Decision Support", "def": "데이터에서 의미를 끌어내 의사결정으로 잇는 역량", "sets": [{"name": "SS A3.2 분석·인사이트·보고", "def": "대화형 분석→시각화→예측→보고 연결 스킬 묶음", "skills": [{"id": "A17", "ko": "대화형 데이터 분석", "en": "Conversational Data Analytics", "def": "데이터에 업무 질문을 던져 AI 분석을 수행하고 방법·전제를 확인하며 결과를 업무 의미로 해석하는 스킬", "el": ["가설 기반 분석 질문 설계", "분석 방법·전제의 확인", "세분화·비교 등 다각도 추가 분석", "한계·불확실성의 해석"], "outs": ["분석 결과 노트", "가설 검증 기록"], "bos": ["가설을 세워 데이터에 분석 질문을 던진다", "분석 방법·전제를 확인한다", "결과의 의미와 한계를 해석한다"], "bars": ["대화형 분석을 시험한다", "기본 집계·비교를 질문으로 수행한다", "가설 기반 다각 분석과 한계 해석을 수행한다", "팀 분석 질문·해석 기준을 코칭한다", "조직 셀프 분석 문화를 구축한다"], "expr": "대화형 분석, 자동 EDA, 코드 생성 분석", "srcs": ["제안서v5", "WEF2025", "IBM-AIA"]}, {"id": "A18", "ko": "시각화·대시보드 구축", "en": "AI Visualization & Dashboarding", "def": "분석 결과를 메시지에 맞는 차트로 시각화하고 정기 보고용 대시보드로 구성하는 스킬", "el": ["메시지→차트 유형 매칭", "차트 생성·라벨·강조 보정", "대시보드 레이아웃 구성", "갱신 주기의 자동화"], "outs": ["보고용 차트 세트", "운영 대시보드"], "bos": ["메시지에 맞는 차트 유형을 선택해 생성한다", "라벨·강조를 보정해 전달력을 높인다", "정기 보고용 대시보드를 구성한다"], "bars": ["차트 생성을 시험한다", "기본 차트로 보고에 활용한다", "메시지 중심 시각화를 설계한다", "팀 대시보드 체계를 운영한다", "조직 데이터 가시화 표준을 수립한다"], "expr": "차트 생성, 대시보드, 인포그래픽", "srcs": ["제안서v5", "대기업사례"]}, {"id": "A19", "ko": "예측·시뮬레이션 활용", "en": "AI Forecasting & Scenario Simulation", "def": "추세 예측·시나리오 비교·이상 감지를 업무 판단에 활용하고 불확실성을 감안해 결정을 보강하는 스킬", "el": ["예측 질문·기간·전제의 설정", "시나리오(낙관·기준·보수) 비교", "민감도·불확실성의 해석", "이상 신호의 감지·대응"], "outs": ["예측 보고", "시나리오 비교표"], "bos": ["추세 예측을 업무 판단에 참고한다", "전제를 바꾼 시나리오를 비교한다", "예측의 불확실성을 명시해 보고한다"], "bars": ["예측 기능을 안다", "기본 추세 예측을 참고한다", "시나리오·민감도 설계로 판단을 보강한다", "팀 의사결정에 예측 활용을 정착시킨다", "조직 예측 기반 운영 체계를 설계한다"], "expr": "추세 예측, 시나리오 시뮬레이션, 이상 감지", "srcs": ["제안서v5", "KPMG", "삼일PwC"]}, {"id": "A20", "ko": "데이터 스토리텔링·보고", "en": "Data Storytelling & Executive Reporting", "def": "분석 결과를 의사결정자의 언어로 변환해 핵심 메시지·근거·한계를 갖춘 보고로 완성하는 스킬", "el": ["So-What 핵심 메시지 도출", "근거-주장 구조화", "청중별 깊이·언어 조정", "한계·전제의 투명한 표기"], "outs": ["경영 보고 요약", "의사결정 브리핑"], "bos": ["분석에서 의사결정 포인트를 추출한다", "근거와 한계를 함께 제시한다", "청중에 맞춰 깊이·언어를 조정한다"], "bars": ["분석-보고 연결의 필요를 안다", "분석 요약 보고를 작성한다", "So-What 중심 보고로 의사결정을 끌어낸다", "팀 데이터 보고 표준을 운영한다", "조직 데이터 기반 의사결정 문화를 만든다"], "expr": "인사이트 요약, 경영 브리핑 생성, 데이터 내러티브", "srcs": ["WEF2025", "DeloitteHC2026", "제안서v5"]}]}]}]}, {"band": "A", "bandName": "AI 실무 활용 Application", "group": "A4. AI 자동화·에이전트", "groupEn": "AI Automation & Agents", "groupDef": "반복 업무를 자동화하고 자율 수행 에이전트를 설계·감독해 업무 처리량을 확장하는 실무 영역. (가치사슬: 운영·자동화 / 2026 최대 스킬 갭)", "comps": [{"name": "A4-1. 업무 자동화 구현", "en": "Workflow Automation", "def": "반복·규칙 업무를 자동 흐름과 도구로 전환하는 역량", "sets": [{"name": "SS A4.1 자동화·도구 개발", "def": "프로세스 자동화와 시민개발 스킬 묶음", "skills": [{"id": "A21", "ko": "업무 프로세스 자동화", "en": "AI Process Automation", "def": "반복·규칙 업무를 식별해 AI 기반 자동 흐름으로 전환하고 안정적으로 운영하는 스킬", "el": ["자동화 대상 식별(빈도·규칙성 기준)", "트리거-처리-출력 흐름 설계", "예외 처리 규칙 정의", "운영 모니터링·보완"], "outs": ["자동화 워크플로", "절감 효과 기록"], "bos": ["반복 업무를 식별해 자동 흐름으로 만든다", "예외 상황의 처리 규칙을 정의한다", "자동화 결과를 모니터링해 보완한다"], "bars": ["자동화 사례를 안다", "단순 반복 작업을 자동화한다", "예외를 포함한 흐름을 설계·운영한다", "팀 자동화 체계를 구축한다", "조직 자동화 로드맵을 설계한다"], "expr": "문서처리 자동화, 워크플로 도구, 자동 취합·발송", "srcs": ["제안서v5", "삼성SDS", "McKinsey"]}, {"id": "A22", "ko": "AI 코딩·업무도구 개발", "en": "AI-Assisted Tooling & Citizen Development", "def": "자연어 지시로 스크립트·매크로·미니앱을 생성·검증해 업무 도구를 직접 만드는 스킬", "el": ["요구 정의→코드 생성 지시", "실행 테스트·디버깅 반복", "안전 범위(데이터·권한) 준수", "도구 문서화·공유"], "outs": ["업무 스크립트·미니앱", "도구 사용 가이드"], "bos": ["필요한 도구를 자연어로 정의해 생성한다", "동작을 테스트하고 수정을 지시한다", "만든 도구를 문서화해 공유한다"], "bars": ["코드 생성을 시험한다", "간단한 스크립트를 만들어 쓴다", "요구 정의·테스트로 안정적인 도구를 만든다", "팀 공용 도구를 개발·보급한다", "조직 시민개발 체계를 설계한다"], "expr": "코드 생성, 바이브 코딩, 노코드+AI 결합", "srcs": ["Trend2026", "대기업사례", "NCS2025"]}]}]}, {"name": "A4-2. 에이전트 오케스트레이션", "en": "Agent Orchestration", "def": "자율 수행 AI에 일을 맡기고 연결·감독하는 역량 (Workera 2026: 숙련자 13%, 최대 갭)", "sets": [{"name": "SS A4.2 에이전트 운용·감독", "def": "위임 설계→워크플로우 구축→휴먼 오버사이트의 에이전트 스킬 묶음", "skills": [{"id": "A23", "ko": "에이전트 과업 설계·위임", "en": "Agent Task Design & Delegation", "def": "과업의 범위·완료 기준·권한을 정의해 AI 에이전트에 위임하고 결과 수용 기준을 운영하는 스킬", "el": ["위임 과업의 정의(범위·완료 기준)", "권한 최소화 설정(자료·도구 접근)", "보고 형식·체크포인트 지정", "결과 수용·반려 기준 운영"], "outs": ["에이전트 과업 명세서", "위임 운영 기준"], "bos": ["범위·완료 기준·보고 형식을 정해 위임한다", "접근 권한을 필요 최소로 설정한다", "결과를 기준에 따라 수용·반려한다"], "bars": ["에이전트 개념을 알고 시험한다", "정형 과업을 기준을 정해 위임한다", "위험도별 위임 설계를 운영한다", "팀 위임 체계를 구축하고 지도한다", "조직 에이전트 운용 표준을 수립한다"], "expr": "에이전트 과업 지시, 권한 설정, 완료 조건 지정", "srcs": ["Deloitte2026AI", "Trend2026", "삼성SDS"]}, {"id": "A24", "ko": "멀티스텝 워크플로우 구축", "en": "Multi-Step Agent Workflow Orchestration", "def": "여러 단계·도구를 잇는 에이전트 워크플로우를 설계하고 단계 간 인계·분기·예외를 정의해 안정화하는 스킬", "el": ["단계 분해와 인계 조건 정의", "도구·데이터 연동 구성", "분기·예외 시나리오 설계", "종단(end-to-end) 테스트·안정화"], "outs": ["멀티스텝 워크플로우", "운영 시나리오 문서"], "bos": ["다단계 업무를 하나의 흐름으로 설계한다", "단계 간 인계·분기 조건을 정의한다", "전체 흐름을 시험해 안정화한다"], "bars": ["다단계 연결 개념을 안다", "2~3단계 흐름을 구성해 쓴다", "분기·예외를 포함한 흐름을 설계한다", "팀 핵심 업무의 흐름을 구축·운영한다", "조직 오케스트레이션 표준을 만든다"], "expr": "멀티스텝 워크플로, 도구 연동(MCP·API), 오케스트레이션", "srcs": ["Trend2026", "삼성SDS", "AXBlender"]}, {"id": "A25", "ko": "에이전트 모니터링·휴먼 오버사이트", "en": "Agent Monitoring & Human Oversight", "def": "자율 수행 과정을 로그·체크포인트로 감시하고 이상 시 개입·중단·롤백으로 결과를 보증하는 스킬", "el": ["체크포인트·알림의 설계", "로그·중간 산출의 검토", "이상 시 개입·중단·롤백", "최종 휴먼 승인의 운영"], "outs": ["감독 체계(체크포인트·알림)", "개입·승인 기록"], "bos": ["중간 산출과 로그를 정기 확인한다", "이상 징후 시 중단하고 원인을 확인한다", "최종 결과를 사람 기준으로 승인한다"], "bars": ["감독 필요성을 알고 결과를 확인한다", "체크포인트 승인 운영을 한다", "위험도별 감독 강도·개입을 설계한다", "팀 감독 체계를 구축·운영한다", "조직 에이전트 거버넌스를 수립한다"], "expr": "로그 검토, 중간 승인, 예외 알림, 중단·롤백", "srcs": ["Trend2026", "Deloitte2026AI", "DeloitteHC2026"]}]}]}]}, {"band": "T", "bandName": "AI 워크 트랜스포메이션 ★", "group": "T. AI 워크 트랜스포메이션", "groupEn": "AI Work Transformation", "groupDef": "개인 활용을 넘어 팀·조직의 일하는 방식을 AI 중심으로 재설계하고 성과·확산을 주도하는 영역. (시앤피 AX 컨설팅 시그니처 — McKinsey: 재설계 기업이 미재설계 대비 2.75배 성과)", "comps": [{"name": "T1. 워크플로우 리디자인", "en": "Workflow Redesign", "def": "기회 진단→재설계→성과 측정의 업무 전환 역량", "sets": [{"name": "SS T1.1 진단·재설계·측정", "def": "AI 기회 발굴부터 ROI 관리까지의 전환 실행 스킬 묶음", "skills": [{"id": "T01", "ko": "AI 기회 진단·우선순위화", "en": "AI Opportunity Assessment & Prioritization", "def": "업무 흐름을 분해해 AI 적용 기회를 식별하고 효과·난이도·리스크 기준으로 우선순위를 도출하는 스킬", "el": ["업무의 과업 단위 분해", "적용 기회 식별(소요시간·반복성·가치 기준)", "효과×난이도 매트릭스 평가", "우선순위 로드맵 도출"], "outs": ["AI 기회 맵", "우선순위 로드맵"], "bos": ["업무를 과업 단위로 분해해 기회를 찾는다", "효과·난이도·리스크를 평가한다", "우선 적용 과제를 선정한다"], "bars": ["업무 분해의 필요성을 안다", "내 업무의 적용 후보를 도출한다", "평가 기준으로 우선순위를 설계한다", "팀 기회 맵을 만들어 합의를 끌어낸다", "조직 기회 발굴 체계를 설계한다"], "expr": "업무 분해, 기회 매트릭스, 효과 추정", "srcs": ["McKinsey", "AXBlender", "KPMG"]}, {"id": "T02", "ko": "워크플로우 리디자인", "en": "AI Workflow Redesign", "def": "As-is 업무 흐름을 인간-AI 역할 배분과 검증 게이트를 갖춘 To-be 프로세스로 재설계해 실행하는 스킬", "el": ["As-is 흐름 매핑·병목 진단", "인간-AI 역할 배분 설계", "검증·승인 게이트 배치", "To-be 이행·정착 관리"], "outs": ["To-be 프로세스 설계서", "이행 체크리스트"], "bos": ["As-is 흐름과 병목을 매핑한다", "인간-AI 역할과 게이트를 배치해 To-be를 설계한다", "재설계를 실행해 정착시킨다"], "bars": ["도구 도입과 재설계의 차이를 안다", "단일 업무를 AI 내장 절차로 바꾼다", "부서 프로세스를 재설계해 정착시킨다", "복수 팀의 재설계를 이끌고 표준화한다", "조직 전사 워크플로 전환을 주도한다"], "expr": "As-is/To-be 매핑, 역할 배분, 게이트 설계", "srcs": ["McKinsey", "Deloitte2026AI", "산인공자산"]}, {"id": "T03", "ko": "성과 측정·ROI 관리", "en": "AI Impact Measurement & ROI", "def": "AI 적용 효과를 시간·품질·비용 지표로 측정하고 개선 사이클과 투자 판단으로 연결하는 스킬", "el": ["전후 비교 측정 지표 설계", "데이터 수집·기록 체계 운영", "개선 포인트 도출·반복", "ROI 산정·경영 보고"], "outs": ["효과 측정 리포트", "ROI 대시보드"], "bos": ["적용 전후의 지표를 측정한다", "측정 결과로 개선점을 도출한다", "ROI를 산정해 보고한다"], "bars": ["측정의 필요성을 안다", "기본 전후 비교를 수행한다", "지표 체계·개선 사이클을 운영한다", "팀 측정·환류 체계를 구축한다", "조직 ROI 측정 표준을 수립한다"], "expr": "전후 지표, 사용률·품질 측정, ROI 산정", "srcs": ["McKinsey", "AXBlender", "산인공자산"]}]}]}, {"name": "T2. AX 확산·체인지 리딩", "en": "AX Scaling & Change Leading", "def": "검증된 활용을 조직 표준과 문화로 만드는 역량", "sets": [{"name": "SS T2.1 확산·코칭·운영체계", "def": "사례 확산, 역량 코칭, 팀 운영체계 구축 스킬 묶음", "skills": [{"id": "T04", "ko": "베스트 프랙티스 확산", "en": "Best Practice Scaling", "def": "검증된 활용을 재현 가능한 사례로 표준화해 팀·부서 경계를 넘어 확산시키는 스킬", "el": ["사례 표준화(맥락·절차·효과 기록)", "데모·쇼케이스 운영", "챔피언·커뮤니티 연계", "재현 지원과 장애 제거"], "outs": ["표준 사례집", "확산 캠페인 기록"], "bos": ["성공 활용을 재현 가능한 사례로 문서화한다", "데모·공유 채널로 전파한다", "다른 팀의 재현을 지원한다"], "bars": ["사례화의 가치를 안다", "내 활용을 정리해 공유한다", "재현 가능한 표준 사례를 만든다", "부서 간 확산을 조직화한다", "조직 확산 체계(챔피언·커뮤니티)를 설계한다"], "expr": "사례 문서화, 데모, 커뮤니티 운영", "srcs": ["AXBlender", "DeloitteHC2026", "대기업사례"]}, {"id": "T05", "ko": "AI 역량 코칭", "en": "AI Capability Coaching", "def": "구성원의 AI 활용 수준을 진단하고 수준별 처방·실습으로 행동 변화를 끌어내는 스킬", "el": ["수준 진단(BOS·BARS 활용)", "수준별 학습 처방 설계", "실습 과제 설계·피드백", "변화 추적·재진단"], "outs": ["코칭 플랜", "수준 변화 기록"], "bos": ["구성원의 수준을 진단해 갭을 파악한다", "수준별 처방·실습을 설계한다", "변화를 추적해 재진단한다"], "bars": ["코칭의 필요성을 안다", "경험 기반 조언을 한다", "진단→처방→실습의 코칭을 수행한다", "팀 코칭 프로그램을 운영한다", "조직 AI 코치 체계를 구축한다"], "expr": "진단 피드백, 실습 워크숍, 1:1 코칭", "srcs": ["BCG", "DeloitteHC2026", "대기업사례"]}, {"id": "T06", "ko": "팀 AI 운영체계 구축", "en": "Team AI Operating Model", "def": "팀의 AI 활용 규칙·도구 포트폴리오·품질 게이트·자산 관리를 묶은 운영체계를 수립·운영하는 스킬", "el": ["활용 규칙·가이드 제정", "도구 포트폴리오·권한 관리", "품질 게이트·리뷰 절차 운영", "자산(프롬프트·사례) 관리·갱신"], "outs": ["팀 AI 운영 가이드", "도구·자산 대장"], "bos": ["팀 활용 규칙·품질 기준을 정해 합의한다", "도구 포트폴리오와 권한을 관리한다", "운영 현황을 점검해 갱신한다"], "bars": ["운영체계의 필요성을 안다", "기존 규칙을 정리해 안내한다", "팀 맞춤 운영체계 초안을 합의시킨다", "운영·갱신 체계를 정착시킨다", "조직 표준·거버넌스로 확장한다"], "expr": "활용 가이드, 도구 대장, 품질 게이트", "srcs": ["AXBlender", "Deloitte2026AI", "EUAIAct"]}]}]}]}];
+const SOURCES = {"김은경2024": {"cat": "학술", "bib": "김은경·권기범·조대연(2024). 스킬 모델링을 활용한 HRD 담당자의 스킬 분석. HRD연구 26(4).", "use": "스킬 정의('숙달된 행동 능력')·스킬 중심 체계 전환 논거"}, "KIRD역량사전": {"cat": "표준·형식", "bib": "KIRD(2016). 과학기술인 역량사전 제2판.", "use": "역량기술서 형식(정의·행동지표·수준), BOS·BARS 이원 측정, 5수준(인지~창조/전파)"}, "Anthropic4D": {"cat": "학술·프레임", "bib": "Dakan·Feller × Anthropic(2025). AI Fluency Framework(4D: Delegation·Description·Discernment·Diligence).", "use": "기본기 밴드 설계(지시·검증·책임), 활용 중심 행동 정의"}, "Deloitte2026AI": {"cat": "컨설팅", "bib": "딜로이트(2026). 기업의 AI 활용 현황 — 확산 가속, 구조 재편, 거버넌스.", "use": "AI 플루언시 1순위(53%), 에이전틱 74% vs 거버넌스 21%, 84% 업무 미재설계"}, "DeloitteHC2026": {"cat": "컨설팅", "bib": "딜로이트(2026). 글로벌 인적자원 트렌드.", "use": "인간×기계 협업 설계, 스킬 기반 민첩 조직, 앰배서더 확산 사례"}, "DeloitteGenAI": {"cat": "컨설팅", "bib": "Deloitte. GenAI Fluency(Use·Choose·Build) & AI Academy.", "use": "활용 중심 fluency 3유형, 역할별 학습경로"}, "McKinsey": {"cat": "컨설팅", "bib": "McKinsey. Rewired / The State of AI / AI upskilling as change imperative.", "use": "3-Layer(literacy→adoption→transformation), Plug-in vs Rewiring 격차, 전환 밴드 논거"}, "KPMG": {"cat": "컨설팅", "bib": "삼정KPMG(2025). AX를 통한 제조 기업의 가치 창출 전략.", "use": "AX 성숙도 Enable–Embed–Evolve, 제조 적용 단계론"}, "BCG": {"cat": "컨설팅", "bib": "BCG(2025). AI at Work / GenAI Fluency at Work(HBP 공동).", "use": "critical thinking 검증 역량, 5시간+ 훈련·코칭 효과"}, "MS": {"cat": "빅테크", "bib": "Microsoft. AI Skills Navigator(2026.4 업데이트).", "use": "역할 기반 경로, 지식 아닌 applied capability 검증"}, "IBM-AIA": {"cat": "빅테크·표준", "bib": "IBM SkillsBuild × AI Alliance. Guide to Essential Competencies for AI.", "use": "responsible use 1순위 역량군, Foundations→Mastery 5단계"}, "Google": {"cat": "빅테크", "bib": "Google. AI Essentials(프롬프팅·생산성·Use AI Responsibly).", "use": "실무 프롬프팅·책임 사용 독립 과정"}, "SFIA9": {"cat": "국제표준", "bib": "SFIA 9. AI Skills Framework.", "use": "책임수준과 숙련척도 분리 원칙, 직무 통합형 스킬"}, "WEF2025": {"cat": "국제기구", "bib": "WEF(2025). Future of Jobs Report.", "use": "AI·빅데이터 1위 성장 스킬, 분석적 사고 핵심(70%), 스킬 40% 변화"}, "WEF-NES": {"cat": "국제기구", "bib": "WEF(2025). New Economy Skills.", "use": "Foundational Digital→Data→AI 계층, 디지털 스킬 68% AI 변형"}, "NCS2025": {"cat": "국가표준", "bib": "한국산업인력공단(2025). NCS 생성형AI 엔지니어링 직무기술서.", "use": "프롬프트 구현·최적화 능력단위(국가 공인), 데이터 준비, K·S·A 골격"}, "EUAIAct": {"cat": "법규", "bib": "EU AI Act Article 4(2025.2 시행) — AI 리터러시 의무.", "use": "책임 스킬군(F2.2)의 법적 근거"}, "AI기본법": {"cat": "법규", "bib": "한국 AI기본법(2026.1 시행).", "use": "국내 AI 활용 규율 — 규정 준수 스킬 근거"}, "삼성SDS": {"cat": "국내사례", "bib": "삼성SDS(2025). 범정부 AX 혁신 인사이트리포트.", "use": "AI Agent 설계 3단계(도구정의→설계→확산), 권한 기반 접근 제어, Deep Change"}, "AXBlender": {"cat": "국내연구", "bib": "AX Issue Blender(2025-01). AI-augmented Engineering 기반 공공기관 AX 전략.", "use": "4단계 성숙도(Champion→Scaling→Integration→Innovation), 컨텍스트 엔지니어링=핵심역량, 품질게이트"}, "제안서v5": {"cat": "시앤피자산", "bib": "시앤피컨설팅(2026). KTR 제안서 v5.0 — 4대 영역.", "use": "실무 밴드 4영역의 원형(정보탐색·데이터분석·콘텐츠생성·자동화·의사결정)"}, "산인공자산": {"cat": "시앤피자산", "bib": "시앤피 산인공 컨소시엄 자산(AX 진단 7영역, 워크플로우 재설계 사례, PBL 방법론).", "use": "전환 밴드(T)의 컨설팅 방법론 기반"}, "대기업사례": {"cat": "국내사례", "bib": "삼성전자(파워유저 4단계)·LG(초·중급+자동화 설계)·SK(SKALA) AX 교육 사례(2025~26).", "use": "기본활용→직무활용→개발 위계, 실무형 스킬 결"}, "Trend2026": {"cat": "최신트렌드", "bib": "2026 트렌드 종합: 프롬프트→컨텍스트→하니스 엔지니어링 / Workera 벤치마크(에이전틱 숙련 13%) / 오케스트레이션 설계 이동 / RAG·지식관리 / 멀티모달.", "use": "에이전트·자동화 스킬군(A4)·표현형 최신화, 내구성 설계"}, "삼일PwC": {"cat": "컨설팅", "bib": "삼일PwC(2026). 제조업, AI로 다시 설계되다.", "use": "예측·최적화 우선 적용론(A19), 중소기업 단계 접근"}};
+const MATRIX = {"value_chain": ["① 탐색·수집", "② 처리·분석", "③ 생산·작성", "④ 소통·실행", "⑤ 운영·자동화"], "modes": ["M1 Assist (AI 보조)", "M2 Delegate (위임·자동화)", "M3 Transform (재설계)"], "mapping": [["F. AI 코어", "전 단계 공통 인터페이스", "지시·검증·보안은 모든 셀의 전제 조건 → 횡단 배치"], ["A1. 리서치·지식", "① 탐색·수집 × M1·M2", "검색·요약(M1) + 딥리서치·모니터링 위임(M2)"], ["A3. 데이터·의사결정", "② 처리·분석 × M1·M2", "대화형 분석(M1) + 정제·예측 자동화(M2)"], ["A2. 콘텐츠·커뮤니케이션", "③ 생산·작성 + ④ 소통 × M1", "문서·시각물·커뮤니케이션의 AI 공동 생산"], ["A4. 자동화·에이전트", "⑤ 운영·자동화 × M2", "프로세스 자동화 + 에이전트 위임·오케스트레이션·감독"], ["T. 트랜스포메이션", "전 단계 × M3", "가치사슬 자체를 재설계·확산 — 시앤피 AX 시그니처"]], "criteria": ["보편성 — 산업·직무 무관 적용", "수요 근거 — 문헌·트렌드 빈도 입증", "측정 가능성 — 행동·산출물로 평정", "교육 가능성 — Skillset이 과정 1개로 전환"], "naming": ["「업무 대상·맥락」+「AI 작업 유형」의 전문 명사형", "국문+영문 병기 (글로벌 호환)", "범용 동사형(~하기)·유행 제품명 금지", "세부 기법·도구는 '세부 스킬 요소'와 '현재 표현형'에 배치"]};
+const LVN = ["L1 인지","L2 활용","L3 적용","L4 통합","L5 전파"];
+const BC = {F:"bF",A:"bA",T:"bT"};
+const BCOL = {F:"#475569",A:"#0e7490",T:"#b45309"};
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+
+// matrix
+document.getElementById("mxbody").innerHTML = MATRIX.mapping.map(m=>`<tr><td>${esc(m[0])}</td><td>${esc(m[1])}</td><td>${esc(m[2])}</td></tr>`).join("");
+document.getElementById("mxfoot").innerHTML =
+  `<span><b>선별 기준:</b> ${MATRIX.criteria.map(esc).join(" / ")}</span><span><b>명명 규칙:</b> ${MATRIX.naming.map(esc).join(" / ")}</span>`;
+
+const meta = {F:["Band F — AI 코어 Core","전 직원 공통 토대 · 9스킬"],A:["Band A — AI 실무 활용 Application","업무활동 4영역 · 25스킬"],T:["Band T — AI 워크 트랜스포메이션 ★","재설계·확산 · 6스킬 · 시앤피 AX 시그니처"]};
+const map = document.getElementById("map");
+const bands = {F:[],A:[],T:[]};
+GROUPS.forEach((g,i)=>bands[g.band].push(i));
+["F","A","T"].forEach(b=>{
+  const t = document.createElement("div"); t.className = "bandTitle";
+  t.innerHTML = `<span class="bandTag" style="background:${BCOL[b]}">${meta[b][0]}</span><span style="color:#64748b;font-weight:500;font-size:12.5px">${meta[b][1]}</span>`;
+  map.appendChild(t);
+  const row = document.createElement("div"); row.className = "bandRow"+(b==="A"?" A":"");
+  bands[b].forEach(gi=>{
+    const g = GROUPS[gi];
+    const card = document.createElement("div"); card.className = "gcard "+BC[b];
+    let h = `<div class="ghead"><div class="gen">${esc(g.groupEn)}</div><h3>${esc(g.group)}</h3><p>${esc(g.groupDef)}</p></div><div class="gbody">`;
+    g.comps.forEach(c=>{
+      h += `<div class="comp"><h4>${esc(c.name)}<small>${esc(c.en)}</small></h4><div class="cdef">${esc(c.def)}</div>`;
+      c.sets.forEach(s=>{
+        h += `<div class="sset">${esc(s.name)}</div><div class="chips">`;
+        s.skills.forEach(sk=>{ h += `<div class="skill" onclick='openM("${sk.id}")'><span class="sid">${sk.id}</span>${esc(sk.ko)}</div>`; });
+        h += `</div>`;
+      });
+      h += `</div>`;
+    });
+    h += `</div>`;
+    card.innerHTML = h; row.appendChild(card);
+  });
+  map.appendChild(row);
+});
+const sg = document.getElementById("srcs");
+Object.entries(SOURCES).forEach(([k,v])=>{
+  const d = document.createElement("div"); d.className = "src";
+  d.innerHTML = `<b>${esc(k)}</b><span class="cat">${esc(v.cat)}</span><div>${esc(v.bib)}</div><div class="use">→ ${esc(v.use)}</div>`;
+  sg.appendChild(d);
+});
+const SKILLS = {};
+GROUPS.forEach(g=>g.comps.forEach(c=>c.sets.forEach(s=>s.skills.forEach(sk=>{
+  SKILLS[sk.id] = {...sk, crumb:`${g.group} › ${c.name} › ${s.name}`, band:g.band};
+}))));
+function openM(id){
+  const sk = SKILLS[id];
+  document.getElementById("mhead").style.background = BCOL[sk.band];
+  document.getElementById("mcrumb").textContent = sk.crumb;
+  document.getElementById("mname").textContent = sk.id+" · "+sk.ko;
+  document.getElementById("men").textContent = sk.en;
+  document.getElementById("mdef").textContent = sk.def;
+  document.getElementById("mel").innerHTML = sk.el.map(e=>`<div class="elitem">▸ ${esc(e)}</div>`).join("");
+  document.getElementById("mouts").innerHTML = sk.outs.map(o=>`<span class="outitem">📄 ${esc(o)}</span>`).join("");
+  document.getElementById("mbos").innerHTML = sk.bos.map((b,i)=>`<div class="bositem">${i+1}. 나는 ${esc(b)}<span class="freq">①②③④⑤</span></div>`).join("");
+  document.getElementById("mbars").innerHTML = sk.bars.map((b,i)=>`<tr><td class="lv lv${i+1}">${LVN[i]}</td><td>${esc(b)}</td></tr>`).join("");
+  document.getElementById("mexpr").innerHTML = sk.expr.split(",").map(e=>`<span class="tag">${esc(e.trim())}</span>`).join("");
+  document.getElementById("msrc").innerHTML = sk.srcs.map(s=>`<span class="tagS" title="${esc(SOURCES[s]?SOURCES[s].bib:s)}">${esc(s)}</span>`).join("");
+  document.getElementById("mback").classList.add("on");
+}
+function closeM(){document.getElementById("mback").classList.remove("on");}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeM();});
+</script>
+</body>
+</html>

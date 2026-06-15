@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>KTR AI 교육로드맵 — 2026 수행 프레임워크 v2 (최종본 정합)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .m1 { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 4px solid #2563eb; }
+  .m2 { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-left: 4px solid #059669; }
+  .m3 { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #d97706; }
+  .gate { background: #fee2e2; border-left: 4px solid #dc2626; }
+  .bar { height: 24px; border-radius: 4px; }
+  .progress-bg { background: #e5e7eb; border-radius: 4px; height: 8px; }
+  .progress-fill { background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%); height: 100%; border-radius: 4px; }
+  .new-badge { background: #f59e0b; color: white; font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+  @media print { body { font-size: 10pt; } }
+</style>
+</head>
+<body class="bg-slate-50 p-6">
+<div class="max-w-7xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+
+<!-- Header -->
+<header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8">
+  <div class="flex justify-between items-start">
+    <div>
+      <div class="text-sm text-slate-300 mb-1">시앤피컨설팅 × KTR 교육컨설팅센터</div>
+      <h1 class="text-3xl font-bold mb-2">산업전환 공동훈련센터(KTR) AI 교육과정개발 반영 교육로드맵 체계 구축</h1>
+      <div class="text-xl text-slate-200">2026년 실제 수행 프레임워크 <span class="text-amber-300">v2</span></div>
+      <div class="text-sm text-slate-300 mt-1">⚙ 4월 6일 KTR 제출 최종본(제안서 v5.0) 정합 갱신</div>
+    </div>
+    <div class="text-right text-sm">
+      <div class="bg-amber-500 text-slate-900 px-3 py-1 rounded font-semibold mb-2">2026.05.29 갱신</div>
+      <div class="text-slate-300">착수: 4월말 · 마감: 12.31</div>
+      <div class="text-slate-300">잔여 약 7개월</div>
+    </div>
+  </div>
+</header>
+
+<!-- v1 → v2 변경 요약 -->
+<section class="p-6 border-b bg-amber-50">
+  <h2 class="text-xl font-bold text-amber-900 mb-3">v1 → v2 핵심 변경 5건</h2>
+  <div class="grid grid-cols-5 gap-3 text-xs">
+    <div class="bg-white p-3 rounded border border-amber-200">
+      <div class="font-bold text-amber-900 mb-1">① Step 명칭·순서</div>
+      <div class="text-slate-600">M1-S1 "AI 활용방안 조사·분석"으로 시작, M3-S7 "교육로드맵 재설계"로 큰 그림 우선</div>
+    </div>
+    <div class="bg-white p-3 rounded border border-amber-200">
+      <div class="font-bold text-amber-900 mb-1">② PL 신설</div>
+      <div class="text-slate-600"><strong>조예슬</strong>이 실무책임자(PL)로 격상, 안은하/허상희 직위·경력 갱신</div>
+    </div>
+    <div class="bg-white p-3 rounded border border-amber-200">
+      <div class="font-bold text-amber-900 mb-1">③ 융합 스킬셋 표기</div>
+      <div class="text-slate-600">코드 R/M/Q/E/P → <strong>연구개발/생산관리/QA·QC/ESG/기획</strong> 분류</div>
+    </div>
+    <div class="bg-white p-3 rounded border border-amber-200">
+      <div class="font-bold text-amber-900 mb-1">④ 일정</div>
+      <div class="text-slate-600">4월~12월 <strong>9개월</strong>, M1 1차 자문 7월, M2 2차 자문 9월, M3 3차 자문 11월</div>
+    </div>
+    <div class="bg-white p-3 rounded border border-amber-200">
+      <div class="font-bold text-amber-900 mb-1">⑤ 보고 체계</div>
+      <div class="text-slate-600"><strong>격주 정기보고</strong> 의무, 총 16~18회 KTR 송다영 책임과 협의</div>
+    </div>
+  </div>
+</section>
+
+<!-- 한 페이지 요약 -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">한 페이지 요약</h2>
+  <div class="grid grid-cols-4 gap-4">
+    <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+      <div class="text-xs text-blue-600 font-semibold mb-1">과업 구조</div>
+      <div class="text-2xl font-bold text-blue-900">3 Module</div>
+      <div class="text-sm text-blue-700">× 9 Step (최종본 정합)</div>
+    </div>
+    <div class="bg-green-50 border border-green-200 p-4 rounded">
+      <div class="text-xs text-green-600 font-semibold mb-1">핵심 산출물</div>
+      <div class="text-2xl font-bold text-green-900">10건</div>
+      <div class="text-sm text-green-700">+ 최종보고서 (HWP 5부 + USB)</div>
+    </div>
+    <div class="bg-amber-50 border border-amber-200 p-4 rounded">
+      <div class="text-xs text-amber-600 font-semibold mb-1">검증 체계</div>
+      <div class="text-2xl font-bold text-amber-900">자문 3회 + 격주</div>
+      <div class="text-sm text-amber-700">M1·M2·M3 자문회의 + 격주보고</div>
+    </div>
+    <div class="bg-rose-50 border border-rose-200 p-4 rounded">
+      <div class="text-xs text-rose-600 font-semibold mb-1">투입 인력</div>
+      <div class="text-2xl font-bold text-rose-900">PM+PL+3명</div>
+      <div class="text-sm text-rose-700">유대훈 / 조예슬 / 이석주·안은하·허상희</div>
+    </div>
+  </div>
+
+  <div class="mt-4 bg-slate-100 p-4 rounded text-sm text-slate-700">
+    <strong class="text-slate-900">최종본 핵심 수행 흐름:</strong>
+    ①업종·직무별 AI 활용방안 분석 → ②기존 25개 과정 직무 스킬 도출 → ③AI 직무역량 모델 → ④매핑 분석 → <span class="bg-amber-200 px-1">⑤협약기업 수요조사<span class="new-badge ml-1">최종본 신규</span></span> → ⑥마스터플랜 → ⑦교육로드맵 재설계 → ⑧기존 과정 재설계 → ⑨신규 콘텐츠 설계
+  </div>
+</section>
+
+<!-- 3 Module × 9 Step -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">수행 체계: 3 Module × 9 Step (제안서 v5.0 정합)</h2>
+
+  <!-- Module 1 -->
+  <div class="m1 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold">Module 1</span>
+        <span class="ml-3 text-lg font-bold text-blue-900">AI 직무역량 모델링</span>
+      </div>
+      <div class="text-sm text-blue-700">4월말~6월 · 책임: <strong>이석주 책임/팀장</strong></div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 1. AI 활용방안 조사·분석</div>
+        <div class="text-xs text-slate-600 mt-1">업종별/직무별 AI 활용방안, 국내 사례, AI 적용 패턴(분석·예측·자동화·생성), 활용 Tool</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 업종·직무별 AI 활용방안 + 핵심 스킬</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 60%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 2. 기존 친환경 바이오화학 교육로드맵 분석</div>
+        <div class="text-xs text-slate-600 mt-1">26년 운영 25개 과정 교과목 분석 → 수행행동 스킬 도출 → 스킬셋 클러스터링 → AI 연계 검토</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 기존 과정 스킬 목록</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 30%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 3. AI 직무역량 모델 구축</div>
+        <div class="text-xs text-slate-600 mt-1">국내외 문헌 분석(NCS·PwC·김은경·WEF·OECD·DigComp) → 4역량×12항목×3수준×38스킬</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> AI 융합 직무역량 모델</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 85% ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자문회의 1차 + 중간보고 -->
+  <div class="gate p-3 rounded text-center mb-4">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ 자문회의 1차</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">7월 둘째 주 · 친환경·저탄소·AI 전문가</span>
+    <span class="mx-2 text-red-400">|</span>
+    <span class="bg-red-700 text-white px-3 py-1 rounded text-xs font-bold">★ 중간보고</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">7월 셋째 주</span>
+  </div>
+
+  <!-- Module 2 -->
+  <div class="m2 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-green-600 text-white px-3 py-1 rounded text-sm font-bold">Module 2</span>
+        <span class="ml-3 text-lg font-bold text-green-900">차세대 AI 반영 교육체계 고도화</span>
+      </div>
+      <div class="text-sm text-green-700">6월말~9월 · 책임: <strong>이석주·조예슬 PL</strong></div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-green-800">Step 4. 기존 과정 – AI 직무역량 매핑</div>
+        <div class="text-xs text-slate-600 mt-1">매트릭스(◎○ + 단기/중장기) → 기존+AI 스킬 융합 → 7개 KTR 특화 AI 융합 스킬셋</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 매핑표 + 융합 스킬셋</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 45% + 70% ✓</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm border-2 border-amber-400">
+        <div class="font-bold text-green-800">Step 5. KTR 협약기업 수요조사 <span class="new-badge">최종본 신규</span></div>
+        <div class="text-xs text-slate-600 mt-1">담당자+수료생 대상 온라인 설문 → 필요도×현업적용성 2×2 매트릭스 → 우선순위 도출</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 협약기업 수요분석 결과</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 15% ⚠</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-green-800">Step 6. 차세대 마스터플랜 고도화</div>
+        <div class="text-xs text-slate-600 mt-1">3-Phase: '26 설계구축 / '27~'29 확대운영 / '30~ 표준모델, 5개년 과정 매트릭스</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 5개년 마스터플랜</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 75% ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자문회의 2차 -->
+  <div class="gate p-3 rounded text-center mb-4">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ 자문회의 2차</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">9월 둘째 주 · 산업별 현장전문가 + 강사진 FGI 워크숍</span>
+  </div>
+
+  <!-- Module 3 -->
+  <div class="m3 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-amber-600 text-white px-3 py-1 rounded text-sm font-bold">Module 3</span>
+        <span class="ml-3 text-lg font-bold text-amber-900">AI 반영 교육로드맵 및 과정 설계</span>
+      </div>
+      <div class="text-sm text-amber-700">9월~11월 · 책임: <strong>조예슬 PL·안은하</strong> · 지원: 허상희</div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 7. AI 반영 교육로드맵 재설계</div>
+        <div class="text-xs text-slate-600 mt-1">3대 축 재설계: ①수준체계(Lv1~3 AX 결합) ②분류체계(산업특화/실무공통/AI공통/인사이트) ③교육과정 유형(유지/업스킬링/리스킬링)</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 교육로드맵 재설계 결과</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 60%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 8. AI 반영 기존 교육과정 재설계</div>
+        <div class="text-xs text-slate-600 mt-1">25개 과정 중 개편 대상 As-Is/To-Be 비교(과정명·목표·교과목·교육내용)</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 기존 과정 재설계</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 50%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 9. AI 신규 교육콘텐츠 설계</div>
+        <div class="text-xs text-slate-600 mt-1">미반영 스킬 → 신규 과정 설계(과정명·교과목·교육내용) + 개발 시기 + 학습경로 포함</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 신규 과정 기획안 + 학습경로</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 35%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자문회의 3차 -->
+  <div class="gate p-3 rounded text-center">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ 자문회의 3차</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">11월 셋째 주 · KTR 담당 + 강사진 + 전문가 이해관계자 간담회</span>
+    <span class="ml-2 text-xs text-red-700">→ 12월 최종보고</span>
+  </div>
+</section>
+
+<!-- 월별 Gantt -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">월별 WBS (4월말~12월)</h2>
+  <table class="w-full text-xs">
+    <thead>
+      <tr class="bg-slate-200 text-slate-700">
+        <th class="p-2 text-left w-48">Step / 마일스톤</th>
+        <th class="p-1">4월말</th><th class="p-1">5월</th><th class="p-1">6월</th><th class="p-1">7월</th>
+        <th class="p-1">8월</th><th class="p-1">9월</th><th class="p-1">10월</th><th class="p-1">11월</th><th class="p-1">12월</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b"><td class="p-2 font-semibold text-blue-700">M1-S1 AI 활용방안</td>
+        <td class="p-1"><div class="bar bg-blue-400"></div></td>
+        <td class="p-1"><div class="bar bg-blue-400"></div></td>
+        <td class="p-1"><div class="bar bg-blue-400" style="width:60%"></div></td><td colspan="6"></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-blue-700">M1-S2 기존 로드맵 분석</td>
+        <td></td>
+        <td class="p-1"><div class="bar bg-blue-500"></div></td>
+        <td class="p-1"><div class="bar bg-blue-500"></div></td>
+        <td class="p-1"><div class="bar bg-blue-500" style="width:30%"></div></td><td colspan="5"></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-blue-700">M1-S3 AI 직무역량 모델</td>
+        <td></td><td></td>
+        <td class="p-1"><div class="bar bg-blue-600"></div></td>
+        <td class="p-1"><div class="bar bg-blue-600" style="width:50%"></div></td><td colspan="5"></td></tr>
+      <tr class="border-b bg-red-50"><td class="p-2 font-bold text-red-700">◆ 자문회의 1차 / ★ 중간보고</td>
+        <td colspan="3"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆ ★</td><td colspan="5"></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-green-700">M2-S4 매핑 분석</td>
+        <td colspan="2"></td>
+        <td class="p-1"><div class="bar bg-green-400" style="width:30%"></div></td>
+        <td class="p-1"><div class="bar bg-green-400"></div></td>
+        <td class="p-1"><div class="bar bg-green-400" style="width:50%"></div></td><td colspan="4"></td></tr>
+      <tr class="border-b bg-amber-50"><td class="p-2 font-semibold text-green-700">M2-S5 협약기업 수요조사 ⚡</td>
+        <td colspan="3"></td>
+        <td class="p-1"><div class="bar bg-amber-500" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-amber-500"></div></td>
+        <td class="p-1"><div class="bar bg-amber-500" style="width:30%"></div></td><td colspan="3"></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-green-700">M2-S6 마스터플랜</td>
+        <td colspan="4"></td>
+        <td class="p-1"><div class="bar bg-green-600" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-green-600"></div></td>
+        <td class="p-1"><div class="bar bg-green-600" style="width:30%"></div></td><td colspan="2"></td></tr>
+      <tr class="border-b bg-red-50"><td class="p-2 font-bold text-red-700">◆ 자문회의 2차</td>
+        <td colspan="5"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆</td><td colspan="3"></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-amber-700">M3-S7 로드맵 재설계</td>
+        <td colspan="5"></td>
+        <td class="p-1"><div class="bar bg-amber-400" style="width:40%"></div></td>
+        <td class="p-1"><div class="bar bg-amber-400"></div></td>
+        <td class="p-1"><div class="bar bg-amber-400" style="width:30%"></div></td><td></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-amber-700">M3-S8 기존 과정 재설계</td>
+        <td colspan="6"></td>
+        <td class="p-1"><div class="bar bg-amber-500"></div></td>
+        <td class="p-1"><div class="bar bg-amber-500" style="width:60%"></div></td><td></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-amber-700">M3-S9 신규 콘텐츠 설계</td>
+        <td colspan="6"></td>
+        <td class="p-1"><div class="bar bg-amber-600" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-amber-600"></div></td><td></td></tr>
+      <tr class="border-b bg-red-50"><td class="p-2 font-bold text-red-700">◆ 자문회의 3차</td>
+        <td colspan="7"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆</td><td></td></tr>
+      <tr class="border-b"><td class="p-2 font-semibold text-slate-700">최종보고서 초안+보완</td>
+        <td colspan="7"></td>
+        <td class="p-1"><div class="bar bg-slate-400" style="width:60%"></div></td>
+        <td class="p-1"><div class="bar bg-slate-400"></div></td></tr>
+      <tr class="bg-red-100"><td class="p-2 font-bold text-red-800">★ 최종보고서 5부+USB 제출</td>
+        <td colspan="8"></td>
+        <td class="p-1 text-center font-bold text-red-700">★ 12.31</td></tr>
+      <tr class="border-t border-slate-300"><td class="p-2 font-semibold text-slate-600">📅 격주 정기보고</td>
+        <td colspan="9" class="p-1 text-center text-xs text-slate-600 italic">전 기간 격주 1회 (총 16~18회) — KTR 송다영 책임과 진척도·이슈 협의</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 산출물 맵 -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">산출물 맵 — 최종본 9개 + 최종보고서</h2>
+  <table class="w-full text-xs">
+    <thead>
+      <tr class="bg-slate-200 text-slate-700">
+        <th class="p-2 text-left">#</th><th class="p-2 text-left">Module</th>
+        <th class="p-2 text-left">약속 산출물 (제안서 v5.0 §추진일정)</th>
+        <th class="p-2 text-left w-32">초안 완성도</th>
+        <th class="p-2 text-left">잔여 작업</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b"><td class="p-2">1</td><td class="p-2 text-blue-700">M1</td><td class="p-2 font-semibold">업종·직무별 AI 활용방안 + 핵심 스킬</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:60%"></div></div>60%</td><td class="p-2 text-slate-600">KTR 7개 산업군 재정렬, AIAX 28건 보강</td></tr>
+      <tr class="border-b"><td class="p-2">2</td><td class="p-2 text-blue-700">M1</td><td class="p-2 font-semibold">기존 교육과정 스킬 목록</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:30%"></div></div>30%</td><td class="p-2 text-slate-600">25개 과정 전수 추출</td></tr>
+      <tr class="border-b bg-green-50"><td class="p-2">3</td><td class="p-2 text-blue-700">M1</td><td class="p-2 font-semibold">AI 융합 직무역량 모델 + 핵심 스킬</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:85%"></div></div>85% ✓</td><td class="p-2 text-slate-600">AIAX 반영 + 자문회의 1차</td></tr>
+      <tr class="border-b"><td class="p-2">4</td><td class="p-2 text-green-700">M2</td><td class="p-2 font-semibold">기존 교육과정 – AI 직무역량 매핑표</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:45%"></div></div>45%</td><td class="p-2 text-slate-600">25개 과정 전수 매트릭스 정량 평가</td></tr>
+      <tr class="border-b bg-green-50"><td class="p-2">5</td><td class="p-2 text-green-700">M2</td><td class="p-2 font-semibold">KTR 특화 AI 융합 스킬셋</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:70%"></div></div>70% ✓</td><td class="p-2 text-slate-600">자문회의 1·2차 검증</td></tr>
+      <tr class="border-b bg-amber-50 border-l-4 border-amber-400"><td class="p-2">6</td><td class="p-2 text-green-700">M2</td><td class="p-2 font-semibold">협약기업 수요분석 결과 <span class="new-badge">신규</span></td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:15%"></div></div>15% ⚠</td><td class="p-2 text-slate-600">설문 본 설계·발송·회수·분석 (7~8월 임계 경로)</td></tr>
+      <tr class="border-b bg-green-50"><td class="p-2">7</td><td class="p-2 text-green-700">M2</td><td class="p-2 font-semibold">차세대('26~'30) AI 반영 마스터플랜</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:75%"></div></div>75% ✓</td><td class="p-2 text-slate-600">KTR 합의 + 수요조사 결과 반영</td></tr>
+      <tr class="border-b"><td class="p-2">8</td><td class="p-2 text-amber-700">M3</td><td class="p-2 font-semibold">AI 반영 교육로드맵 재설계 결과</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:60%"></div></div>60%</td><td class="p-2 text-slate-600">KTR 운영 인프라 호환성 검토</td></tr>
+      <tr class="border-b"><td class="p-2">9</td><td class="p-2 text-amber-700">M3</td><td class="p-2 font-semibold">AI 반영 기존 교육과정 재설계 결과</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:50%"></div></div>50%</td><td class="p-2 text-slate-600">개편 대상 전수 As-Is/To-Be</td></tr>
+      <tr class="border-b"><td class="p-2">10</td><td class="p-2 text-amber-700">M3</td><td class="p-2 font-semibold">AI 신규 교육과정 기획안 (목록·개요·체계·운영·학습경로)</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:35%"></div></div>35%</td><td class="p-2 text-slate-600">29개 기획안 격상 + 학습경로 가이드</td></tr>
+      <tr class="bg-rose-50"><td class="p-2">F</td><td class="p-2 text-slate-700">전체</td><td class="p-2 font-semibold">최종보고서 (HWP 5부 + 협약기업별 결과물 + USB)</td><td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:0%"></div></div>0%</td><td class="p-2 text-slate-600">11월말 통합 착수, 12.21 KTR 초안 승인 신청</td></tr>
+    </tbody>
+  </table>
+  <div class="mt-3 text-xs text-slate-600">
+    <span class="bg-green-50 px-2 py-1 rounded">✓ 강세 (70%+)</span>
+    <span class="bg-amber-50 px-2 py-1 rounded ml-2">⚠ 신규 / 약세 (35% 이하)</span>
+    — 산출물 ⑥(수요조사)이 임계 경로. 설문 발송 7월 둘째 주 → 회수 8월 둘째 주 → 분석 8월 셋째 주
+  </div>
+</section>
+
+<!-- 인력 + 마일스톤 + 액션 -->
+<section class="p-6 border-b">
+  <div class="grid grid-cols-2 gap-6">
+    <!-- 인력 -->
+    <div>
+      <h2 class="text-xl font-bold text-slate-800 mb-3">인력 구성 (최종본 갱신)</h2>
+      <table class="w-full text-xs">
+        <thead>
+          <tr class="bg-slate-200"><th class="p-2 text-left">구분</th><th class="p-2 text-left">성명</th><th class="p-2 text-left">직위</th><th class="p-2 text-left">경력</th></tr>
+        </thead>
+        <tbody>
+          <tr class="border-b"><td class="p-2 font-bold">PM</td><td class="p-2">유대훈</td><td class="p-2">수석연구원/본부장</td><td class="p-2">13년</td></tr>
+          <tr class="border-b bg-amber-50"><td class="p-2 font-bold">PL <span class="new-badge">신설</span></td><td class="p-2">조예슬</td><td class="p-2">선임연구원</td><td class="p-2">6년</td></tr>
+          <tr class="border-b"><td class="p-2 font-bold">연구원</td><td class="p-2">이석주</td><td class="p-2">책임연구원/팀장</td><td class="p-2">11년</td></tr>
+          <tr class="border-b"><td class="p-2 font-bold">보조</td><td class="p-2">안은하</td><td class="p-2">주임연구원</td><td class="p-2">2년 (석사 산조심리)</td></tr>
+          <tr class="border-b"><td class="p-2 font-bold">보조</td><td class="p-2">허상희</td><td class="p-2">주임연구원</td><td class="p-2">1개월</td></tr>
+        </tbody>
+      </table>
+      <div class="mt-3 text-xs text-slate-600">
+        <strong>산업현장전문가 자문위원회</strong>: 친환경·저탄소·AI 분야 전문가 풀 (전년도 확보 12명 + AI 신규 5명 섭외 예정)
+      </div>
+    </div>
+
+    <!-- 마일스톤 -->
+    <div>
+      <h2 class="text-xl font-bold text-slate-800 mb-3">핵심 마일스톤</h2>
+      <ol class="space-y-1 text-xs">
+        <li class="flex"><span class="bg-blue-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">4월말</span><span class="ml-2">착수보고 완료</span></li>
+        <li class="flex"><span class="bg-blue-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">6.1</span><span class="ml-2">KTR 운영 데이터 공식 요청</span></li>
+        <li class="flex"><span class="bg-blue-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">6.20</span><span class="ml-2"><strong>협약기업 수요조사 설문 본 설계</strong></span></li>
+        <li class="flex"><span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">7.10</span><span class="ml-2"><strong>자문회의 1차</strong> (M1 검증)</span></li>
+        <li class="flex"><span class="bg-red-700 text-white font-bold px-2 py-0.5 rounded w-16 text-center">7.15</span><span class="ml-2"><strong>★ KTR 중간보고</strong> + 수요조사 발송</span></li>
+        <li class="flex"><span class="bg-amber-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">8.20</span><span class="ml-2">수요조사 회수·분석 완료</span></li>
+        <li class="flex"><span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">9.10</span><span class="ml-2"><strong>자문회의 2차</strong> (M2 검증)</span></li>
+        <li class="flex"><span class="bg-green-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">10.15</span><span class="ml-2">M2 완료 → M3 본격 착수</span></li>
+        <li class="flex"><span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded w-16 text-center">11.18</span><span class="ml-2"><strong>자문회의 3차</strong> (M3 검증)</span></li>
+        <li class="flex"><span class="bg-amber-700 text-white font-bold px-2 py-0.5 rounded w-16 text-center">11.30</span><span class="ml-2">최종보고서 초안 작성 완료</span></li>
+        <li class="flex"><span class="bg-red-700 text-white font-bold px-2 py-0.5 rounded w-16 text-center">12.21</span><span class="ml-2"><strong>★ KTR 초안 승인 신청</strong></span></li>
+        <li class="flex"><span class="bg-red-700 text-white font-bold px-2 py-0.5 rounded w-16 text-center">12.31</span><span class="ml-2"><strong>★ 5부+USB 제출</strong></span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 즉시 액션 -->
+<section class="p-6">
+  <h2 class="text-xl font-bold text-slate-800 mb-3">즉시 착수 과제 (5월말~6월 30일 Top 12)</h2>
+  <div class="grid grid-cols-2 gap-4 text-xs">
+    <ol class="space-y-1">
+      <li class="flex"><span class="text-slate-400 w-8">A1.</span><span><strong>KTR 운영 데이터·185개 명부 공식 요청</strong> · PM · ~6.1</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A2.</span><span>AI 신규 자문 5인 후보·접촉 · AI 연구소 · ~6.5</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A3.</span><span>AIAX 자료 28건 핵심 메모 · 이석주·허상희 · ~6.10</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A4.</span><span>25개 과정 직무 스킬 전수 추출 · 이석주 · ~6.15</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A5.</span><span><strong>협약기업 수요조사 설문 본 설계</strong> · 조예슬 PL·안은하 · ~6.20</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A6.</span><span>수요조사 답례품 예산·KTR 협의 · 조예슬 PL · ~6.20</span></li>
+    </ol>
+    <ol class="space-y-1">
+      <li class="flex"><span class="text-slate-400 w-8">A7.</span><span>자문회의 1차 일정·참석자 확정 (7.10 권장) · PM · ~6.20</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A8.</span><span>M1 산출물 템플릿 표준화 · 허상희 · ~6.10</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A9.</span><span>4월 초안과 v5.0 최종본 정합성 갱신 회의 · 전원 · ~6.5</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A10.</span><span>본 프레임워크 v2 KTR 비공식 공유·피드백 · PM · ~6.10</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A11.</span><span><strong>격주 정기보고 표준 양식·첫 보고 일정</strong> · PM·조예슬 PL · ~6.5</span></li>
+      <li class="flex"><span class="text-slate-400 w-8">A12.</span><span>KTR LMS·시설·강사 운영 인프라 사전 인터뷰 · 조예슬 PL · ~6.25</span></li>
+    </ol>
+  </div>
+
+  <div class="mt-6 grid grid-cols-2 gap-4">
+    <div class="bg-blue-50 p-3 rounded text-xs">
+      <strong class="text-blue-900">시앤피 내부 합의 필요:</strong>
+      ①수요조사 발송 시점·규모 ②자문회의 1차 형식 ③답례품 예산 처리 ④격주 정기보고 형식
+    </div>
+    <div class="bg-rose-50 p-3 rounded text-xs">
+      <strong class="text-rose-900">KTR 사전 합의 필요:</strong>
+      ①운영 데이터·명부 수령 ②답례품 예산 KTR 협조 ③5개년 정량목표(9월) ④신규 콘텐츠 우선 개발 선정(10월) ⑤최종보고회 형식(11월)
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-800 text-slate-300 p-4 text-center text-xs">
+  본 프레임워크는 v2 — 자문회의 1차(7.10) 결과 및 협약기업 수요조사 분석(8월 셋째 주) 후 v3 갱신 예정
+  · 시앤피컨설팅 (PM 유대훈 / PL 조예슬 / 이석주·안은하·허상희)
+</footer>
+
+</div>
+</body>
+</html>

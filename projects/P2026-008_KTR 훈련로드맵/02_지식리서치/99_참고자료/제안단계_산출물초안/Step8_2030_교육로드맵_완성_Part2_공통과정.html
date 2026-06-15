@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2030 AI 교육로드맵 완성(안) — ② 실무공통·AI공통·인사이트과정</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap');
+  :root{
+    --dk:#3b4a3c;--dk2:#4a5d4b;--grn:#6d9a56;--grn-l:#eaf4e4;--grn-ll:#f3f8f0;
+    --org:#d4790e;--org-bg:#fdf1de;--org-bd:#e8a94a;
+    --g-bg:#f4f5f3;--g-bd:#d0d3ce;--tx:#2c3e2d;--txl:#7a8a7b;
+    --l1:#5a7a4c;--l2:#8a6d28;--l3:#3a6a5a;
+    --ins:#5c5080;--ins-bg:#f0edf8;
+    --blu:#5a7da8;--blu-bg:#e4ecf5;--blu-bd:#8aa4c8;
+    --w:2px solid #fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Noto Sans KR',sans-serif;background:#fff;color:var(--tx);width:1900px;padding:0}
+
+  .bar{background:var(--dk);padding:10px 24px;display:flex;align-items:center;gap:16px}
+  .bar b{font-size:16px;color:#fff} .bar b span{color:#a4d48a}
+  .bar small{font-size:12px;color:rgba(255,255,255,.5)}
+
+  .info{margin:8px 24px;display:flex;justify-content:space-between;align-items:center}
+  .leg{display:flex;gap:10px}
+  .lg{display:flex;align-items:center;gap:5px;font-size:13px;font-weight:600;padding:4px 10px;border-radius:4px;background:#f8f9f7}
+  .lg i{width:12px;height:12px;border-radius:2px;display:inline-block}
+  .lg.k i{background:var(--g-bd)}.lg.u i{background:var(--grn)}.lg.n i{background:var(--org)}.lg.f i{background:var(--blu)}
+  .sts{display:flex;gap:6px}
+  .ss{padding:3px 10px;background:#f8f9f7;border-radius:4px;text-align:center}
+  .ss b{font-size:16px;font-weight:700;display:block}
+  .ss small{font-size:10px;color:var(--txl)}
+  .ss.t b{color:var(--dk)}.ss.k b{color:#888}.ss.u b{color:var(--grn)}.ss.w b{color:var(--org)}.ss.f b{color:var(--blu)}
+
+  .wr{margin:0 24px 10px;border:2px solid #ccc;border-radius:6px;overflow:hidden}
+  table{width:100%;border-collapse:separate;border-spacing:0}
+
+  thead th{padding:8px 4px;font-size:17px;font-weight:700;text-align:center;color:#fff;border:var(--w)}
+  th.hs{background:var(--dk)}
+  th.h1{background:var(--l1)}th.h2{background:var(--l2)}th.h3{background:var(--l3)}
+  th.ha{background:var(--dk);width:10px;padding:0;font-size:9px;color:rgba(255,255,255,.25);border:var(--w)}
+  th.hm{width:28px}
+  th .s{display:block;font-size:10px;font-weight:400;opacity:.8;margin-top:1px}
+
+  td{padding:3px 4px;vertical-align:top;border:var(--w)}
+  td.m{background:var(--dk);color:#fff;font-weight:700;font-size:15px;text-align:center;vertical-align:middle;letter-spacing:1px;line-height:1.3;width:28px;border:var(--w)}
+  td.mi{background:var(--ins);color:#fff;font-weight:700;font-size:15px;text-align:center;vertical-align:middle;letter-spacing:1px;line-height:1.3;width:28px;border:var(--w)}
+  td.s{background:var(--dk2);color:#fff;font-weight:700;font-size:14px;text-align:center;vertical-align:middle;white-space:nowrap;padding:3px 5px;border:var(--w)}
+  td.si{background:#6b5f8a;color:#fff;font-weight:700;font-size:14px;text-align:center;vertical-align:middle;white-space:nowrap;padding:3px 5px;border:var(--w)}
+  td.j{background:var(--grn-ll);font-weight:700;font-size:13px;color:var(--dk);text-align:center;vertical-align:middle;white-space:nowrap;padding:3px 5px;border:var(--w)}
+  td.ji{background:var(--ins-bg);font-weight:700;font-size:13px;color:var(--ins);text-align:center;vertical-align:middle;white-space:nowrap;padding:3px 5px;border:var(--w)}
+  td.v1{background:#fafcf8;border:var(--w)}
+  td.v2{background:#fdfaf5;border:var(--w)}
+  td.v3{background:#f7fbf9;border:var(--w)}
+  td.a{background:#f0f1ee;text-align:center;vertical-align:middle;color:#ccc;font-size:9px;padding:0;width:10px;border:var(--w)}
+  tr.ms td{border-top:4px solid #fff}
+
+  .c{display:block;padding:4px 6px;border-radius:4px;font-size:16px;font-weight:500;line-height:1.3;margin-bottom:3px}
+  .c:last-child{margin-bottom:0}
+  .c.ke{background:var(--g-bg);border:1px solid var(--g-bd);color:#444}
+  .c.up{background:var(--grn-l);border:1px solid #a8d494;color:#2a5518}
+  .c.nw{background:var(--org-bg);border:1px solid var(--org-bd);color:#7a3d08}
+  .c.fu{background:var(--blu-bg);border:1px solid var(--blu-bd);color:#2a4568}
+  .c .t{display:inline-block;font-size:9px;font-weight:700;padding:1px 4px;border-radius:2px;margin-right:3px;vertical-align:middle}
+  .c.up .t{background:var(--grn);color:#fff}
+  .c.nw .t{background:var(--org);color:#fff}
+  .c.fu .t{background:var(--blu);color:#fff}
+
+  .pn{margin:0 24px}
+  .pb{background:#f8f9f7;border-radius:6px;border:2px solid #ccc;padding:10px;display:flex}
+  .ph{flex:1;padding:6px 10px}
+  .ph:not(:last-child){border-right:1px solid #ddd}
+  .ph b{font-size:12px;font-weight:700;padding:2px 8px;border-radius:3px;display:inline-block;margin-bottom:4px;color:#fff}
+  .ph:nth-child(1) b{background:var(--dk)}.ph:nth-child(2) b{background:var(--l2)}.ph:nth-child(3) b{background:var(--l3)}
+  .ph ul{margin:0;padding-left:12px}
+  .ph li{font-size:11px;color:var(--txl);line-height:1.5}
+  .ph .k{margin-top:4px;padding-top:4px;border-top:1px solid #ddd;font-size:11px;font-weight:600;color:var(--tx)}
+
+  .ft{margin:6px 24px 16px;font-size:10px;color:var(--txl)}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <b>Step 8 <span>2030 완성</span></b>
+  <small>AI 반영 교육로드맵 완성(안) — ② 실무공통·AI공통·인사이트과정</small>
+</div>
+
+<div class="info">
+  <div class="leg">
+    <div class="lg k"><i></i>기존과정</div>
+    <div class="lg u"><i></i>AI 업스킬링</div>
+    <div class="lg n"><i></i>AI 리스킬링</div>
+    <div class="lg f"><i></i>'27~신규개발</div>
+  </div>
+  <div class="sts">
+    <div class="ss t"><b>98</b><small>전체('30)</small></div>
+    <div class="ss k"><b>17</b><small>기존</small></div>
+    <div class="ss u"><b>14</b><small>업스킬링</small></div>
+    <div class="ss w"><b>31</b><small>리스킬링</small></div>
+    <div class="ss f"><b>36</b><small>'27~신규</small></div>
+  </div>
+</div>
+
+<div class="wr">
+<table>
+<thead><tr>
+  <th class="hs hm">모듈</th><th class="hs">산업군</th><th class="hs">직무</th>
+  <th class="h1">Lv1 선제대응<span class="s">NCS 4수준 · AI 인식·기초</span></th>
+  <th class="ha">▶</th>
+  <th class="h2">Lv2 전환<span class="s">NCS 5수준 · AI 실무적용</span></th>
+  <th class="ha">▶</th>
+  <th class="h3">Lv3 정착<span class="s">NCS 6수준 · AI 주도혁신</span></th>
+</tr></thead>
+<tbody>
+
+<!-- 실무공통 탄소관리 -->
+<tr class="ms">
+  <td class="m" rowspan="3">실<br>무<br>공<br>통</td>
+  <td class="s">탄소관리</td>
+  <td class="j">환경경영</td>
+  <td class="v1">
+    <span class="c ke">기업 저탄소경영 친환경제도 이해</span>
+    <span class="c ke">지속가능 패키징 트렌드와 대응 전략</span>
+    <span class="c nw"><span class="t">리</span>AI 탄소배출 데이터 수집·분석</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c up"><span class="t">업</span>바이오화학 LCA + AI 자동화 분석</span>
+    <span class="c up"><span class="t">업</span>Scope 3 배출량 산정 + AI 자동 산정</span>
+    <span class="c fu"><span class="t">'27</span>AI 공급망 탄소배출 추적·관리</span>
+    <span class="c fu"><span class="t">'28</span>AI 제품환경발자국(PEF) 산정</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c nw"><span class="t">리</span>AI 탄소중립 시나리오 시뮬레이션</span>
+    <span class="c fu"><span class="t">'29</span>AI 탄소크레딧 거래·관리</span>
+    <span class="c fu"><span class="t">'30</span>AI 탄소국경조정(CBAM) 대응</span>
+  </td>
+</tr>
+
+<!-- 실무공통 ESG -->
+<tr>
+  <td class="s">ESG경영</td>
+  <td class="j">ESG</td>
+  <td class="v1">
+    <span class="c ke">ESG 지속가능 경영 실무</span>
+    <span class="c nw"><span class="t">리</span>AI ESG 데이터 수집·정리 기초</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c up"><span class="t">업</span>ESG 데이터관리 + AI 성과 분석·보고</span>
+    <span class="c fu"><span class="t">'28</span>AI ESG 공시 자동화(CSRD)</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c nw"><span class="t">리</span>AI ESG 리스크 예측·의사결정 지원</span>
+    <span class="c fu"><span class="t">'29</span>AI 순환경제 비즈니스 모델 설계</span>
+  </td>
+</tr>
+
+<!-- 실무공통 친환경소재 -->
+<tr>
+  <td class="s">친환경소재</td>
+  <td class="j">R&D·제품화</td>
+  <td class="v1">
+    <span class="c up"><span class="t">업</span>화학 산업 디지털·AI 전환</span>
+    <span class="c up"><span class="t">업</span>AI 친환경 소재 제품화 전략 실무</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c up"><span class="t">업</span>바이오화학 R&D 관리 + AI 배합 최적화</span>
+    <span class="c fu"><span class="t">'27</span>AI 산업안전 위험성 평가</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3"><span class="c nw"><span class="t">리</span>디지털트윈 소재개발 시뮬레이션</span></td>
+</tr>
+
+<!-- AI공통 AI 리터러시 -->
+<tr class="ms">
+  <td class="m" rowspan="3">AI<br>공<br>통</td>
+  <td class="s" rowspan="3">전 산업군</td>
+  <td class="j">AI 리터러시</td>
+  <td class="v1"><span class="c nw"><span class="t">리</span>제조업 AI 리터러시 입문</span></td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c nw"><span class="t">리</span>산업별 AI 활용 전략 수립</span>
+    <span class="c fu"><span class="t">'27</span>AI 윤리·책임있는 AI 활용</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c nw"><span class="t">리</span>AI 프로젝트 기획·관리 실무</span>
+    <span class="c fu"><span class="t">'29</span>산업 AI 거버넌스 체계 구축</span>
+  </td>
+</tr>
+
+<!-- AI공통 생성형 AI -->
+<tr>
+  <td class="j">생성형 AI</td>
+  <td class="v1"><span class="c nw"><span class="t">리</span>생성형 AI 업무 활용 기초</span></td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c nw"><span class="t">리</span>생성형 AI 기반 업무 자동화</span>
+    <span class="c fu"><span class="t">'27</span>산업특화 프롬프트 엔지니어링</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c nw"><span class="t">리</span>생성형 AI R&D·규제문서 자동화</span>
+    <span class="c fu"><span class="t">'28</span>AI 에이전트 활용 업무혁신</span>
+  </td>
+</tr>
+
+<!-- AI공통 데이터 분석 -->
+<tr>
+  <td class="j">데이터 분석</td>
+  <td class="v1"><span class="c nw"><span class="t">리</span>산업 데이터 분석 기초</span></td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c nw"><span class="t">리</span>AutoML 품질·공정 데이터 분석</span>
+    <span class="c fu"><span class="t">'28</span>MLOps 기반 산업 AI 모델 관리</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c nw"><span class="t">리</span>AI 기반 예측 모델링 실무</span>
+    <span class="c fu"><span class="t">'29</span>멀티모달 AI 제조현장 혁신</span>
+    <span class="c fu"><span class="t">'30</span>AI 기술 트렌드 상시 개편</span>
+  </td>
+</tr>
+
+<!-- 인사이트 산업동향 -->
+<tr class="ms">
+  <td class="mi" rowspan="2">인<br>사<br>이<br>트</td>
+  <td class="si" rowspan="2">전 산업군</td>
+  <td class="ji">산업동향</td>
+  <td class="v1">
+    <span class="c ke">친환경 바이오 화학 산업 동향</span>
+    <span class="c nw"><span class="t">리</span>AI 산업 트렌드 분석 기초</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v2">
+    <span class="c nw"><span class="t">리</span>AI 시장·기술 동향 모니터링</span>
+    <span class="c fu"><span class="t">'27</span>AI 특허·기술 동향 자동 분석</span>
+  </td>
+  <td class="a">▶</td>
+  <td class="v3">
+    <span class="c ke">친환경 제품 에코디자인 규정</span>
+    <span class="c nw"><span class="t">리</span>AI 에코디자인 시뮬레이션</span>
+    <span class="c fu"><span class="t">'28</span>AI 글로벌 인증·규격 변화 예측</span>
+    <span class="c fu"><span class="t">'29</span>AI 산업전환 시나리오 플래닝</span>
+  </td>
+</tr>
+
+<!-- 인사이트 규제동향 -->
+<tr>
+  <td class="ji">규제동향</td>
+  <td class="v1"><span class="c ke">그린워싱 규제 동향</span></td>
+  <td class="a">▶</td>
+  <td class="v2"><span class="c nw"><span class="t">리</span>AI 글로벌 규제 변화 추적·분석</span></td>
+  <td class="a">▶</td>
+  <td class="v3"><span class="c fu"><span class="t">'30</span>AI 미래 산업 시나리오 분석</span></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="pn">
+<div class="pb">
+  <div class="ph"><b>Phase 1 (~2026)</b><ul><li>AI 직무역량 모델링 + KTR 특화 Skill Set 구축</li><li>기존 교육체계 AI 융합 재설계 (62개 과정)</li></ul><div class="k">AI과정 10개 · 수료 100명</div></div>
+  <div class="ph"><b>Phase 2 (2027~2029)</b><ul><li>섬유화학·전자소재 신규 산업군 확대</li><li>AI 공통·실무 심화과정 단계적 개발 (+32과정)</li></ul><div class="k">AI과정 25개 · 수료 500명</div></div>
+  <div class="ph"><b>Phase 3 (2030~)</b><ul><li>KTR형 AI 산업전환 교육 표준모델 확립</li><li>7개 산업군 × 3수준 통합 포트폴리오 완성 (98과정)</li></ul><div class="k">AI과정 35개+ · 수료 600명 · 강사Pool 30명+</div></div>
+</div>
+</div>
+
+<div class="ft">* 2026 교육로드맵 62개 과정(기존·업스킬링·리스킬링) + 2027~2030 마스터플랜 신규 36개 과정 = 총 98개 | 파란색은 '27~'30 단계적 개발 과정 | 시앤피컨설팅 2026</div>
+
+</body>
+</html>

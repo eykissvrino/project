@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>KTR AI 교육로드맵 — 2026 수행 프레임워크 v1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .grid-step { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+  .m1 { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 4px solid #2563eb; }
+  .m2 { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-left: 4px solid #059669; }
+  .m3 { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #d97706; }
+  .gate { background: #fee2e2; border-left: 4px solid #dc2626; }
+  .gantt-cell { display: inline-block; width: 11.5%; vertical-align: middle; }
+  .bar { height: 24px; border-radius: 4px; }
+  .progress-bg { background: #e5e7eb; border-radius: 4px; height: 8px; }
+  .progress-fill { background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%); height: 100%; border-radius: 4px; }
+  @media print { body { font-size: 10pt; } }
+</style>
+</head>
+<body class="bg-slate-50 p-6">
+<div class="max-w-7xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+
+<!-- Header -->
+<header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8">
+  <div class="flex justify-between items-start">
+    <div>
+      <div class="text-sm text-slate-300 mb-1">시앤피컨설팅 × KTR 교육컨설팅센터</div>
+      <h1 class="text-3xl font-bold mb-2">산업전환 공동훈련센터(KTR) AI 교육로드맵 체계구축</h1>
+      <div class="text-xl text-slate-200">2026년 실제 수행 프레임워크 <span class="text-amber-300">v1</span></div>
+    </div>
+    <div class="text-right text-sm">
+      <div class="bg-amber-500 text-slate-900 px-3 py-1 rounded font-semibold mb-2">2026.05.29 작성</div>
+      <div class="text-slate-300">과업기간 ~ 2026.12.31</div>
+      <div class="text-slate-300">잔여 약 7개월</div>
+    </div>
+  </div>
+</header>
+
+<!-- 한 페이지 요약 -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">한 페이지 요약</h2>
+  <div class="grid grid-cols-4 gap-4">
+    <div class="bg-blue-50 border border-blue-200 p-4 rounded">
+      <div class="text-xs text-blue-600 font-semibold mb-1">과업 구조</div>
+      <div class="text-2xl font-bold text-blue-900">3 Module</div>
+      <div class="text-sm text-blue-700">× 9 Step</div>
+    </div>
+    <div class="bg-green-50 border border-green-200 p-4 rounded">
+      <div class="text-xs text-green-600 font-semibold mb-1">핵심 산출물</div>
+      <div class="text-2xl font-bold text-green-900">11건</div>
+      <div class="text-sm text-green-700">HWP·PPT·Excel·USB</div>
+    </div>
+    <div class="bg-amber-50 border border-amber-200 p-4 rounded">
+      <div class="text-xs text-amber-600 font-semibold mb-1">검증 게이트</div>
+      <div class="text-2xl font-bold text-amber-900">3 Gate</div>
+      <div class="text-sm text-amber-700">자문 / FGI / 간담회</div>
+    </div>
+    <div class="bg-rose-50 border border-rose-200 p-4 rounded">
+      <div class="text-xs text-rose-600 font-semibold mb-1">투입 인력</div>
+      <div class="text-2xl font-bold text-rose-900">5명</div>
+      <div class="text-sm text-rose-700">+ 전문가 Pool 24명</div>
+    </div>
+  </div>
+
+  <div class="mt-4 bg-slate-100 p-4 rounded text-sm text-slate-700">
+    <strong class="text-slate-900">핵심 방법론:</strong>
+    Bottom-up 직무 스킬 도출(기존 25개 과정) + 국내외 6대 문헌 기반 AI 역량 모델링(WEF·OECD·DigComp·NCS·PwC·김은경)
+    → <strong>7대 AI 융합 스킬셋</strong>(R1 신소재개발 / R2 실험최적화 / M1 공정데이터 / Q1 품질예측 / Q2 규제대응 / E1 ESG보고 / P1 시장기술)
+    → <strong>58개 과정 개편</strong>(기존유지 16 + 업스킬링 13 + 리스킬링 29) + 5개년 마스터플랜
+  </div>
+</section>
+
+<!-- 3 Module × 9 Step 흐름도 -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">수행 체계: 3 Module × 9 Step</h2>
+
+  <!-- Module 1 -->
+  <div class="m1 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-blue-600 text-white px-3 py-1 rounded text-sm font-bold">Module 1</span>
+        <span class="ml-3 text-lg font-bold text-blue-900">진단·역량모델링</span>
+      </div>
+      <div class="text-sm text-blue-700">5월말~7월 중순 · 리드: <strong>이석주</strong></div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 1. 기존 로드맵·과정 구조 분석</div>
+        <div class="text-xs text-slate-600 mt-1">25개 과정 + 3모듈×3수준 체계 분석, 수료율·만족도·현업적용도</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 구조 분석 결과서(PPT+HWP)</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 30%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 2. 기존 과정 직무수행 Skill 도출</div>
+        <div class="text-xs text-slate-600 mt-1">25개 과정 → 김은경 외(2024) 3요소 기반 스킬 추출 → 스킬셋 클러스터링</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> Skill Matrix(Excel)</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 25%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-blue-800">Step 3. AI 직무역량 모델링</div>
+        <div class="text-xs text-slate-600 mt-1">6대 문헌 종합 → R1·R2·R3·R4 × 12항목 × 3수준 × 38 스킬</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> AI Skill Set(Excel)</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 85% ✓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gate 1 -->
+  <div class="gate p-3 rounded text-center mb-4">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ Gate 1</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">7월 둘째 주 · AI컨설팅연구소 + 산업전문가 4인 자문회의</span>
+    <span class="ml-2 text-xs text-red-700">→ 직후 KTR 중간보고</span>
+  </div>
+
+  <!-- Module 2 -->
+  <div class="m2 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-green-600 text-white px-3 py-1 rounded text-sm font-bold">Module 2</span>
+        <span class="ml-3 text-lg font-bold text-green-900">융합 체계·마스터플랜</span>
+      </div>
+      <div class="text-sm text-green-700">7월 중순~10월 · 리드: <strong>조예슬</strong></div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-green-800">Step 4. 기존×AI 매핑 → 7대 융합 스킬셋</div>
+        <div class="text-xs text-slate-600 mt-1">매핑 매트릭스 정량화, 유지/보강/개편/신설 판정, 우선순위 매트릭스</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 매핑 매트릭스 + Gap 분석표</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 40%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-green-800">Step 5. 5개년 마스터플랜 확정</div>
+        <div class="text-xs text-slate-600 mt-1">비전·5대전략·연도별테마·산업확장·정량목표 7개 KTR 합의</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 마스터플랜 (PPT+HWP)</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 80% ✓</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-green-800">Step 6. 교육체계 개편안 확정</div>
+        <div class="text-xs text-slate-600 mt-1">수평(3모듈+AI공통기반) · 수직(전환단계×AI수준) · 직무축 5개</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 교육체계 개편안 (PPT+HWP)</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 55%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gate 2 -->
+  <div class="gate p-3 rounded text-center mb-4">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ Gate 2</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">9월 둘째 주 · 산업별 현장전문가 + 강사진 FGI 워크숍 (1일)</span>
+  </div>
+
+  <!-- Module 3 -->
+  <div class="m3 rounded-lg p-4 mb-4">
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <span class="bg-amber-600 text-white px-3 py-1 rounded text-sm font-bold">Module 3</span>
+        <span class="ml-3 text-lg font-bold text-amber-900">과정·커리큘럼</span>
+      </div>
+      <div class="text-sm text-amber-700">9월~11월 · 리드: <strong>안은하</strong> · 지원: 허상희</div>
+    </div>
+    <div class="grid grid-cols-3 gap-3 text-sm">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 7. 기존 과정 AI 융합 재설계</div>
+        <div class="text-xs text-slate-600 mt-1">업스킬링 13개 교시별 변경표, 개편 대상 과정명·목표 재구성</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 기존 과정 재설계 결과서</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 50%</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 8. AI 신규 과정 + 학습경로 가이드</div>
+        <div class="text-xs text-slate-600 mt-1">신규 29개 기획안 격상 + 기업 유형별 학습경로 12개 시나리오</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 신규 기획안 29 + 학습경로 가이드</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 35% + ⓘ 신규</div>
+      </div>
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="font-bold text-amber-800">Step 9. 상세 커리큘럼 + 활용 제언</div>
+        <div class="text-xs text-slate-600 mt-1">2건 이상 상세 커리큘럼(교시·실습·루브릭·교재가이드) + 활용 제언</div>
+        <div class="text-xs mt-2"><span class="text-rose-600">산출:</span> 상세 커리큘럼 + 제언</div>
+        <div class="text-xs"><span class="text-slate-500">초안:</span> 20%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gate 3 -->
+  <div class="gate p-3 rounded text-center">
+    <span class="bg-red-600 text-white px-3 py-1 rounded text-xs font-bold">▶ Gate 3</span>
+    <span class="ml-2 text-sm font-semibold text-red-900">11월 셋째 주 · KTR 담당 + 강사진 + 전문가 이해관계자 간담회</span>
+    <span class="ml-2 text-xs text-red-700">→ 12월 최종보고</span>
+  </div>
+</section>
+
+<!-- 월별 Gantt -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">월별 WBS (5월말~12월)</h2>
+  <table class="w-full text-xs">
+    <thead>
+      <tr class="bg-slate-200 text-slate-700">
+        <th class="p-2 text-left w-44">Step / 마일스톤</th>
+        <th class="p-1">5월말</th><th class="p-1">6월</th><th class="p-1">7월</th><th class="p-1">8월</th>
+        <th class="p-1">9월</th><th class="p-1">10월</th><th class="p-1">11월</th><th class="p-1">12월</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-blue-700">M1-S1 로드맵 분석</td>
+        <td class="p-1"><div class="bar bg-blue-400"></div></td>
+        <td class="p-1"><div class="bar bg-blue-400" style="width:60%"></div></td>
+        <td colspan="6"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-blue-700">M1-S2 Skill Matrix</td>
+        <td class="p-1"><div class="bar bg-blue-500"></div></td>
+        <td class="p-1"><div class="bar bg-blue-500"></div></td>
+        <td class="p-1"><div class="bar bg-blue-500" style="width:30%"></div></td>
+        <td colspan="5"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-blue-700">M1-S3 AI 역량모델</td>
+        <td class="p-1"><div class="bar bg-blue-600"></div></td>
+        <td class="p-1"><div class="bar bg-blue-600"></div></td>
+        <td class="p-1"><div class="bar bg-blue-600" style="width:30%"></div></td>
+        <td colspan="5"></td>
+      </tr>
+      <tr class="border-b bg-red-50">
+        <td class="p-2 font-bold text-red-700">★ 중간보고 / ◆ Gate 1</td>
+        <td colspan="2"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆ ★</td>
+        <td colspan="5"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-green-700">M2-S4 매핑·Gap</td>
+        <td colspan="2"></td>
+        <td class="p-1"><div class="bar bg-green-400" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-green-400"></div></td>
+        <td class="p-1"><div class="bar bg-green-400" style="width:40%"></div></td>
+        <td colspan="3"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-green-700">M2-S5 마스터플랜</td>
+        <td colspan="3"></td>
+        <td class="p-1"><div class="bar bg-green-500" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-green-500"></div></td>
+        <td class="p-1"><div class="bar bg-green-500" style="width:30%"></div></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-green-700">M2-S6 체계 개편</td>
+        <td colspan="4"></td>
+        <td class="p-1"><div class="bar bg-green-600" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-green-600"></div></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr class="border-b bg-red-50">
+        <td class="p-2 font-bold text-red-700">◆ Gate 2</td>
+        <td colspan="4"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆</td>
+        <td colspan="3"></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-amber-700">M3-S7 과정 재설계</td>
+        <td colspan="4"></td>
+        <td class="p-1"><div class="bar bg-amber-400" style="width:40%"></div></td>
+        <td class="p-1"><div class="bar bg-amber-400"></div></td>
+        <td class="p-1"><div class="bar bg-amber-400" style="width:30%"></div></td>
+        <td></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-amber-700">M3-S8 신규+학습경로</td>
+        <td colspan="5"></td>
+        <td class="p-1"><div class="bar bg-amber-500" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-amber-500"></div></td>
+        <td></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-amber-700">M3-S9 커리큘럼+제언</td>
+        <td colspan="6"></td>
+        <td class="p-1"><div class="bar bg-amber-600"></div></td>
+        <td></td>
+      </tr>
+      <tr class="border-b bg-red-50">
+        <td class="p-2 font-bold text-red-700">◆ Gate 3</td>
+        <td colspan="6"></td>
+        <td class="p-1 text-center font-bold text-red-600">◆</td>
+        <td></td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2 font-semibold text-slate-700">산출물 통합 + HWP 변환</td>
+        <td colspan="6"></td>
+        <td class="p-1"><div class="bar bg-slate-400" style="width:50%"></div></td>
+        <td class="p-1"><div class="bar bg-slate-400"></div></td>
+      </tr>
+      <tr class="bg-red-100">
+        <td class="p-2 font-bold text-red-800">★ 최종보고서 제출</td>
+        <td colspan="7"></td>
+        <td class="p-1 text-center font-bold text-red-700">★ 12.31</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 산출물 맵 -->
+<section class="p-6 border-b">
+  <h2 class="text-xl font-bold text-slate-800 mb-4">산출물 맵 — 약속 / 보유 초안 / 잔여 작업</h2>
+  <table class="w-full text-xs">
+    <thead>
+      <tr class="bg-slate-200 text-slate-700">
+        <th class="p-2 text-left">#</th>
+        <th class="p-2 text-left">약속 산출물</th>
+        <th class="p-2 text-left">형태</th>
+        <th class="p-2 text-left w-32">초안 완성도</th>
+        <th class="p-2 text-left">잔여 작업</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b">
+        <td class="p-2">①</td>
+        <td class="p-2 font-semibold">기존 교육로드맵 구조 분석</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:30%"></div></div>30%</td>
+        <td class="p-2 text-slate-600">KTR 운영 데이터 분석 추가</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">②</td>
+        <td class="p-2 font-semibold">기존 과정 Skill Matrix</td>
+        <td class="p-2">Excel+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:25%"></div></div>25%</td>
+        <td class="p-2 text-slate-600">25개 과정 전수 추출 필요</td>
+      </tr>
+      <tr class="border-b bg-green-50">
+        <td class="p-2">③</td>
+        <td class="p-2 font-semibold">AI Skill Set (역량체계)</td>
+        <td class="p-2">HWP+Excel</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:85%"></div></div>85% ✓</td>
+        <td class="p-2 text-slate-600">AIAX 28건 반영 + Gate 1 검증</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">④</td>
+        <td class="p-2 font-semibold">기존-AI Skill 매핑·Gap 분석</td>
+        <td class="p-2">Excel+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:40%"></div></div>40%</td>
+        <td class="p-2 text-slate-600">매트릭스 정량화·우선순위 객관화</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">⑤</td>
+        <td class="p-2 font-semibold">AI 반영 교육체계 개편안</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:55%"></div></div>55%</td>
+        <td class="p-2 text-slate-600">운영 인프라 호환성, AI 공통기반 운영안</td>
+      </tr>
+      <tr class="border-b bg-green-50">
+        <td class="p-2">⑥</td>
+        <td class="p-2 font-semibold">5개년 마스터플랜</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:80%"></div></div>80% ✓</td>
+        <td class="p-2 text-slate-600">정량목표 KTR 합의·예산 추정</td>
+      </tr>
+      <tr class="border-b bg-rose-50">
+        <td class="p-2">⑦</td>
+        <td class="p-2 font-semibold">기업 유형별 학습경로 가이드</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:5%"></div></div>5% ⚠</td>
+        <td class="p-2 text-slate-600">신규 작성, 12개 기업 시나리오</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">⑧</td>
+        <td class="p-2 font-semibold">기존 과정 AI 융합 재설계</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:50%"></div></div>50%</td>
+        <td class="p-2 text-slate-600">업스킬링 13건 교시별 변경표</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">⑨</td>
+        <td class="p-2 font-semibold">AI 신규 과정 기획안 (29건)</td>
+        <td class="p-2">PPT+HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:35%"></div></div>35%</td>
+        <td class="p-2 text-slate-600">1단 정의 → 기획안 수준 격상</td>
+      </tr>
+      <tr class="border-b">
+        <td class="p-2">⑩</td>
+        <td class="p-2 font-semibold">상세 커리큘럼 2건+</td>
+        <td class="p-2">HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:20%"></div></div>20%</td>
+        <td class="p-2 text-slate-600">실습 데이터셋, 평가 루브릭, 교재가이드</td>
+      </tr>
+      <tr class="border-b bg-rose-50">
+        <td class="p-2">⑪</td>
+        <td class="p-2 font-semibold">활용 제언 (Bonus)</td>
+        <td class="p-2">HWP</td>
+        <td class="p-2"><div class="progress-bg"><div class="progress-fill" style="width:0%"></div></div>0% ⚠</td>
+        <td class="p-2 text-slate-600">신규 작성</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="mt-3 text-xs text-slate-600">
+    <span class="bg-green-50 px-2 py-1 rounded">✓ 초안 강세(80%+)</span>
+    <span class="bg-rose-50 px-2 py-1 rounded ml-2">⚠ 신규 작성 필요</span>
+    — M2(④⑤⑥) 자료는 80% 가까이 준비됐으나 M1(②)과 M3(⑦⑨⑩⑪)는 추가 부하 큼
+  </div>
+</section>
+
+<!-- 마일스톤 타임라인 + 즉시 액션 -->
+<section class="p-6">
+  <div class="grid grid-cols-2 gap-6">
+    <!-- 마일스톤 -->
+    <div>
+      <h2 class="text-xl font-bold text-slate-800 mb-4">핵심 마일스톤</h2>
+      <ol class="space-y-2 text-sm">
+        <li class="flex"><span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">5월말</span><span class="ml-2">M1 본격 착수 + KTR 데이터 수령 협의</span></li>
+        <li class="flex"><span class="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">7.10</span><span class="ml-2"><strong>Gate 1</strong> 자문회의 (Skill Matrix + AI Skill Set)</span></li>
+        <li class="flex"><span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">7.15</span><span class="ml-2"><strong>★ KTR 중간보고</strong> (M1 결과 + M2 방향)</span></li>
+        <li class="flex"><span class="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">8.20</span><span class="ml-2">Step 4 매핑·Gap 완성</span></li>
+        <li class="flex"><span class="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">9.10</span><span class="ml-2"><strong>Gate 2</strong> FGI 워크숍 (체계+마스터플랜)</span></li>
+        <li class="flex"><span class="bg-green-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">10.15</span><span class="ml-2">M2 완료 → M3 본격 착수</span></li>
+        <li class="flex"><span class="bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">11.18</span><span class="ml-2"><strong>Gate 3</strong> 이해관계자 간담회</span></li>
+        <li class="flex"><span class="bg-amber-600 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">11.30</span><span class="ml-2">Step 9 상세 커리큘럼 완성</span></li>
+        <li class="flex"><span class="bg-red-700 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">12.21</span><span class="ml-2"><strong>★ 최종보고서 초안 KTR 승인 신청</strong></span></li>
+        <li class="flex"><span class="bg-red-700 text-white text-xs font-bold px-2 py-1 rounded w-16 text-center">12.31</span><span class="ml-2"><strong>★ 인쇄본 5부 + 협약기업별 결과물 + USB 제출</strong></span></li>
+      </ol>
+    </div>
+
+    <!-- 즉시 액션 -->
+    <div>
+      <h2 class="text-xl font-bold text-slate-800 mb-4">즉시 착수 과제 (Top 10)</h2>
+      <ol class="space-y-1 text-sm">
+        <li class="flex"><span class="text-slate-400 w-6">A1.</span><span><strong>KTR 운영 데이터 공식 요청 공문</strong> · PM · ~6.1</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A2.</span><span>AI 신규 자문 5인 후보 리스트·접촉 · AI연구소 · ~6.5</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A3.</span><span><strong>25개 과정 직무 스킬 전수 추출</strong> · 이석주 · ~6.15</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A4.</span><span>AIAX 자료 28건 핵심 메모 · 이석주·허상희 · ~6.10</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A5.</span><span>협약기업 추가 진단 옵션 A/B KTR 협의 · 조예슬 · ~6.20</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A6.</span><span>Gate 1 자문회의 일정·참석자 확정 · PM · ~6.20</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A7.</span><span>Step 1 운영 데이터 분석 착수 · 이석주 · ~6.22</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A8.</span><span>산출물 템플릿(PPT·HWP·Excel) 표준화 · 허상희 · ~6.10</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A9.</span><span>4월 초안 v5 정합성 점검 회의 · 전원 · ~6.5</span></li>
+        <li class="flex"><span class="text-slate-400 w-6">A10.</span><span>본 프레임워크 v1 KTR 비공식 공유·피드백 · PM · ~6.10</span></li>
+      </ol>
+
+      <div class="mt-6 bg-slate-100 p-3 rounded text-xs">
+        <strong class="text-slate-900">KTR 사전 합의 필요:</strong>
+        ①운영 데이터 수령 범위·시점(6월초), ②5개년 마스터플랜 정량목표(9월), ③상세 커리큘럼 2건 선정(10월초), ④최종보고회 형식(11월초)
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-800 text-slate-300 p-4 text-center text-xs">
+  본 프레임워크는 v1 — Gate 1 결과(7월 셋째 주) 및 M2 완료 시점(10월 둘째 주)에 v2/v3로 갱신 예정
+  · 시앤피컨설팅 직업능력컨설팅본부 × AI컨설팅연구소
+</footer>
+
+</div>
+</body>
+</html>

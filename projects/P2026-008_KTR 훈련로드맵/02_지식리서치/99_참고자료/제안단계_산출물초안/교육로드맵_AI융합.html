@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KTR AI 융합 교육과정 로드맵</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap');
+
+  :root {
+    --dark: #3b4a3c;
+    --dark2: #4a5d4b;
+    --green2: #6d9a56;
+    --green-light: #eaf4e4;
+    --green-lighter: #f3f8f0;
+    --orange: #d4790e;
+    --orange-bg: #fdf1de;
+    --orange-border: #e8a94a;
+    --gray-bg: #f4f5f3;
+    --gray-border: #d8dbd6;
+    --text: #2c3e2d;
+    --text-light: #7a8a7b;
+    --lv1-head: #5a7a4c;
+    --lv2-head: #8a6d28;
+    --lv3-head: #3a6a5a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f0f1ee;
+    color: var(--text);
+    padding: 32px 24px 60px;
+  }
+
+  .page-header {
+    max-width: 1500px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .page-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+  .page-header .sub {
+    font-size: 13px;
+    color: var(--text-light);
+  }
+
+  .controls {
+    max-width: 1500px;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .legend {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 4px;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .legend-item:hover { opacity: 0.8; }
+  .legend-item .swatch {
+    width: 14px; height: 14px; border-radius: 3px;
+  }
+  .legend-item[data-type="existing"] .swatch { background: var(--gray-bg); border: 1px solid var(--gray-border); }
+  .legend-item[data-type="upskill"] .swatch { background: var(--green-light); border: 1px solid var(--green2); }
+  .legend-item[data-type="reskill"] .swatch { background: var(--orange-bg); border: 1px solid var(--orange-border); }
+  .legend-item.dimmed { opacity: 0.35; }
+
+  .filter-group { display: flex; gap: 6px; }
+  .filter-btn {
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--green2); }
+  .filter-btn.active { background: var(--dark); color: white; border-color: var(--dark); }
+
+  .stats {
+    max-width: 1500px;
+    margin: 0 auto 20px;
+    display: flex;
+    gap: 12px;
+  }
+  .stat {
+    padding: 10px 20px;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    min-width: 100px;
+  }
+  .stat .num { font-size: 22px; font-weight: 700; }
+  .stat .lbl { font-size: 11px; color: var(--text-light); }
+  .stat.s-total .num { color: var(--dark); }
+  .stat.s-existing .num { color: #888; }
+  .stat.s-upskill .num { color: var(--green2); }
+  .stat.s-reskill .num { color: var(--orange); }
+
+  .tooltip {
+    display: none;
+    position: fixed;
+    background: var(--dark);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    max-width: 280px;
+    line-height: 1.6;
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  }
+  .tooltip .tt-type { font-size: 10px; font-weight: 700; margin-bottom: 2px; }
+  .tooltip .tt-type.upskill { color: #9ddb7a; }
+  .tooltip .tt-type.reskill { color: #f0b060; }
+  .tooltip .tt-type.existing { color: #aaa; }
+
+  .table-wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1100px;
+    table-layout: fixed;
+  }
+
+  col.c-module { width: 70px; }
+  col.c-sector { width: 90px; }
+  col.c-job { width: 120px; }
+  col.c-lv { width: auto; }
+  col.c-arrow { width: 22px; }
+
+  thead th {
+    padding: 12px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid var(--dark);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  th.h-struct { background: var(--dark); }
+  th.h-lv1 { background: var(--lv1-head); }
+  th.h-lv2 { background: var(--lv2-head); }
+  th.h-lv3 { background: var(--lv3-head); }
+  th .lv-sub {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: 2px;
+  }
+  th.h-arrow {
+    background: var(--dark);
+    width: 22px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    padding: 0;
+  }
+
+  td {
+    padding: 8px 6px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+  }
+  td.td-module {
+    background: var(--dark);
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    letter-spacing: 1px;
+  }
+  td.td-sector {
+    background: var(--dark2);
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  td.td-job {
+    background: var(--green-lighter);
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--dark);
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #dde5d8;
+    border-bottom: 1px solid #e4ebe0;
+  }
+  td.td-lv1 { background: #fafcf8; }
+  td.td-lv2 { background: #fdfaf5; }
+  td.td-lv3 { background: #f7fbf9; }
+  td.td-arrow {
+    background: #f5f6f4;
+    text-align: center;
+    vertical-align: middle;
+    color: #bbb;
+    font-size: 11px;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  tr.module-sep td { border-top: 3px solid var(--dark); }
+
+  .c {
+    display: block;
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    transition: all 0.15s;
+    cursor: default;
+  }
+  .c:last-child { margin-bottom: 0; }
+  .c:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); transform: translateY(-1px); }
+
+  .c.existing {
+    background: var(--gray-bg);
+    border: 1px solid var(--gray-border);
+    color: #555;
+  }
+  .c.upskill {
+    background: var(--green-light);
+    border: 1px solid #a8d494;
+    color: #2a5518;
+  }
+  .c.reskill {
+    background: var(--orange-bg);
+    border: 1px solid var(--orange-border);
+    color: #7a3d08;
+  }
+
+  .c .tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-right: 3px;
+    vertical-align: middle;
+  }
+  .c.upskill .tag { background: var(--green2); color: white; }
+  .c.reskill .tag { background: var(--orange); color: white; }
+
+  .c.hidden { display: none; }
+
+  .footer {
+    max-width: 1500px;
+    margin: 16px auto 0;
+    text-align: left;
+    font-size: 11px;
+    color: var(--text-light);
+  }
+
+  @media (max-width: 1000px) {
+    body { padding: 16px 8px; }
+    .stats { flex-wrap: wrap; }
+    .controls { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>AI 융합 Skill 기반 교육과정 로드맵 (개편안)</h1>
+  <div class="sub">KTR 산업전환 공동훈련센터 | 산업전환 단계 x AI 역량 수준 교차 매트릭스</div>
+</div>
+
+<div class="controls">
+  <div class="legend">
+    <div class="legend-item" data-type="existing" onclick="toggleType('existing')"><span class="swatch"></span> 기존과정</div>
+    <div class="legend-item" data-type="upskill" onclick="toggleType('upskill')"><span class="swatch"></span> AI 업스킬링</div>
+    <div class="legend-item" data-type="reskill" onclick="toggleType('reskill')"><span class="swatch"></span> AI 리스킬링</div>
+  </div>
+  <div class="filter-group">
+    <button class="filter-btn active" onclick="setFilter('all',this)">전체</button>
+    <button class="filter-btn" onclick="setFilter('ai',this)">AI 과정만</button>
+    <button class="filter-btn" onclick="setFilter('upskill',this)">업스킬링만</button>
+    <button class="filter-btn" onclick="setFilter('reskill',this)">리스킬링만</button>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat s-total"><div class="num" id="n-total">63</div><div class="lbl">전체 과정</div></div>
+  <div class="stat s-existing"><div class="num" id="n-existing">28</div><div class="lbl">기존과정</div></div>
+  <div class="stat s-upskill"><div class="num" id="n-upskill">22</div><div class="lbl">업스킬링</div></div>
+  <div class="stat s-reskill"><div class="num" id="n-reskill">13</div><div class="lbl">리스킬링</div></div>
+</div>
+
+<div class="tooltip" id="tip"></div>
+
+<div class="table-wrap">
+<table>
+<colgroup>
+  <col class="c-module">
+  <col class="c-sector">
+  <col class="c-job">
+  <col class="c-lv">
+  <col class="c-arrow">
+  <col class="c-lv">
+  <col class="c-arrow">
+  <col class="c-lv">
+</colgroup>
+<thead>
+  <tr>
+    <th class="h-struct">모듈</th>
+    <th class="h-struct">산업군</th>
+    <th class="h-struct">직무</th>
+    <th class="h-lv1">Lv1 선제대응<span class="lv-sub">AI 인식 / 기초 활용</span></th>
+    <th class="h-arrow">▶</th>
+    <th class="h-lv2">Lv2 전환<span class="lv-sub">AI 실무 적용</span></th>
+    <th class="h-arrow">▶</th>
+    <th class="h-lv3">Lv3 정착<span class="lv-sub">AI 주도 혁신</span></th>
+  </tr>
+</thead>
+<tbody>
+
+<!-- ===== AI 공통기반 ===== -->
+<tr class="module-sep">
+  <td class="td-module" rowspan="3">AI<br>공통<br>기반</td>
+  <td class="td-sector" rowspan="3">전<br>산업군<br>공통</td>
+  <td class="td-job">AI 리터러시</td>
+  <td class="td-lv1"><span class="c upskill" data-t="upskill" data-d="AI 개념, 산업 적용 사례, 바이오화학 분야 AI 활용 이해"><span class="tag">업스킬링</span>제조업 AI 리터러시 입문</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2"><span class="c upskill" data-t="upskill" data-d="자사 업무에 AI 도입 기회 식별 및 전략 수립"><span class="tag">업스킬링</span>산업별 AI 활용 전략 수립</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3"><span class="c reskill" data-t="reskill" data-d="AI 과제 발굴~PoC~현업적용 전 과정 관리"><span class="tag">리스킬링</span>AI 프로젝트 기획·관리 실무</span></td>
+</tr>
+<tr>
+  <td class="td-job">생성형 AI 활용</td>
+  <td class="td-lv1"><span class="c upskill" data-t="upskill" data-d="ChatGPT/Copilot 등 활용한 문서작성·데이터정리"><span class="tag">업스킬링</span>생성형 AI 업무 활용 기초</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2"><span class="c upskill" data-t="upskill" data-d="프롬프트 엔지니어링, 업무 워크플로우 자동화"><span class="tag">업스킬링</span>생성형 AI 기반 업무 자동화</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3"><span class="c reskill" data-t="reskill" data-d="R&D 보고서·규제문서 자동 생성 파이프라인 구축"><span class="tag">리스킬링</span>생성형 AI 기반 R&D·규제문서 작성 자동화</span></td>
+</tr>
+<tr>
+  <td class="td-job">AI 데이터 분석</td>
+  <td class="td-lv1"><span class="c upskill" data-t="upskill" data-d="Excel+Python 기초, 데이터 시각화 입문"><span class="tag">업스킬링</span>산업 데이터 분석 기초</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2"><span class="c upskill" data-t="upskill" data-d="노코드 AI 분석 도구 실습"><span class="tag">업스킬링</span>AutoML 활용 품질·공정 데이터 분석</span></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3"><span class="c reskill" data-t="reskill" data-d="수요예측, 불량예측, 공정최적화 모델 구축"><span class="tag">리스킬링</span>AI 기반 예측 모델링 실무</span></td>
+</tr>
+
+<!-- ===== 산업특화 - 바이오플라스틱 ===== -->
+<tr class="module-sep">
+  <td class="td-module" rowspan="10">산업<br>특화<br>과정</td>
+  <td class="td-sector" rowspan="2">바이오<br>플라스틱</td>
+  <td class="td-job">바이오플라스틱<br>R&D</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 소재 제품화 기본 전략</span>
+    <span class="c upskill" data-t="upskill" data-d="머신러닝 기반 소재 특성 예측 입문"><span class="tag">업스킬링</span>AI 활용 친환경 소재 물성 예측 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">바이오화학 R&D 관리 실무</span>
+    <span class="c existing" data-t="existing" data-d="기존과정">3D프린팅 기술을 활용한 친환경제품 설계</span>
+    <span class="c upskill" data-t="upskill" data-d="AI로 배합비 설계·시뮬레이션"><span class="tag">업스킬링</span>AI 기반 바이오소재 배합 최적화</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">생분해성 수지 제품 시험인증 실무</span>
+    <span class="c existing" data-t="existing" data-d="기존과정">바이오플라스틱·셀룰라스토머 제품 분석 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="가상환경 소재개발 시뮬레이션"><span class="tag">리스킬링</span>디지털트윈 기반 바이오소재 R&D 시뮬레이션</span>
+  </td>
+</tr>
+<tr>
+  <td class="td-job">바이오플라스틱<br>생산</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">바이오 플라스틱 사출성형 이해</span>
+    <span class="c existing" data-t="existing" data-d="기존과정">바이오 플라스틱 성형 이해</span>
+    <span class="c upskill" data-t="upskill" data-d="센서데이터 기반 품질 모니터링"><span class="tag">업스킬링</span>AI 기반 사출성형 공정 모니터링 입문</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">재활용·생분해 바이오플라스틱 스마트 생산관리</span>
+    <span class="c reskill" data-t="reskill" data-d="공정변수 자동제어, 불량 예측"><span class="tag">리스킬링</span>AI 활용 스마트팩토리 생산최적화</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c reskill" data-t="reskill" data-d="디지털트윈 기반 전주기 생산 관리"><span class="tag">리스킬링</span>디지털트윈 기반 바이오플라스틱 스마트 생산 관리</span>
+  </td>
+</tr>
+
+<!-- 플라스틱 재활용 -->
+<tr>
+  <td class="td-sector">플라스틱<br>재활용</td>
+  <td class="td-job">재생 플라스틱<br>생산</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">순환경제와 폐플라스틱 재생</span>
+    <span class="c upskill" data-t="upskill" data-d="이미지인식 AI 기반 선별 이해"><span class="tag">업스킬링</span>AI 활용 폐플라스틱 선별·분류 자동화 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">플라스틱 재활용 산업 및 인증 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="AI 선별 자동화·품질 예측"><span class="tag">리스킬링</span>AI 기반 재활용 품질관리 시스템 구축</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c reskill" data-t="reskill" data-d="전주기 추적·탄소발자국 자동 산정"><span class="tag">리스킬링</span>순환경제 AI 플랫폼 활용 실무</span>
+  </td>
+</tr>
+
+<!-- 의료기기 -->
+<tr>
+  <td class="td-sector" rowspan="2">의료기기</td>
+  <td class="td-job">의료기기<br>R&D</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">의료기기 친환경 패키징 이해</span>
+    <span class="c upskill" data-t="upskill" data-d="AI 기반 설계 파라미터 최적화 입문"><span class="tag">업스킬링</span>AI 활용 의료기기 설계 보조 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 소재 활용 의료기기 기술문서 작성실무</span>
+    <span class="c upskill" data-t="upskill" data-d="임상시험 데이터 패턴 분석"><span class="tag">업스킬링</span>AI 기반 의료기기 임상데이터 분석</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">스마트 의료기기 성능·임상평가</span>
+    <span class="c reskill" data-t="reskill" data-d="가상 임상시험 설계"><span class="tag">리스킬링</span>AI 기반 의료기기 성능 예측·시뮬레이션</span>
+  </td>
+</tr>
+<tr>
+  <td class="td-job">의료기기<br>규제·품질인증</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 의료기기 사이버보안</span>
+    <span class="c upskill" data-t="upskill" data-d="생성형AI 기반 기술문서 작성 지원"><span class="tag">업스킬링</span>AI 활용 규제문서 자동화 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">스마트 의료기기 SW 검증·밸리데이션</span>
+    <span class="c upskill" data-t="upskill" data-d="AI 활용 시험성적서 분석·이상탐지"><span class="tag">업스킬링</span>AI 기반 품질검증 자동화</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c reskill" data-t="reskill" data-d="글로벌 규제변화 자동 모니터링·대응"><span class="tag">리스킬링</span>AI 기반 의료기기 규제 인텔리전스</span>
+  </td>
+</tr>
+
+<!-- 화장품 -->
+<tr>
+  <td class="td-sector" rowspan="3">화장품</td>
+  <td class="td-job">친환경<br>화장품 기획</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 화장품 브랜딩 기본 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="소셜데이터 AI 분석 입문"><span class="tag">업스킬링</span>AI 활용 소비자 트렌드 분석 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 화장품 사업화 전략 수립</span>
+    <span class="c upskill" data-t="upskill" data-d="AI 활용 시장분석·컨셉 도출"><span class="tag">업스킬링</span>생성형 AI 기반 제품 컨셉·마케팅 기획</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">(EcoVadis)(CDP) 대응 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="AI 기반 수요예측·포트폴리오 최적화"><span class="tag">리스킬링</span>AI 기반 수요예측·포트폴리오 최적화</span>
+  </td>
+</tr>
+<tr>
+  <td class="td-job">클린뷰티<br>규제·품질인증</td>
+  <td class="td-lv1">
+    <span class="c upskill" data-t="upskill" data-d="AI 기반 유해성분 사전 검출"><span class="tag">업스킬링</span>AI 활용 성분 안전성 스크리닝 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">클린뷰티 화장품 기술 및 인증 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="가속시험 데이터 AI 분석"><span class="tag">업스킬링</span>AI 기반 화장품 안정성·유효성 예측</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">클린뷰티 화장품 안정성 평가 심화</span>
+    <span class="c reskill" data-t="reskill" data-d="글로벌 규제 자동 모니터링·대응"><span class="tag">리스킬링</span>AI 기반 글로벌 화장품 규제 자동 대응</span>
+  </td>
+</tr>
+<tr>
+  <td class="td-job">클린뷰티<br>R&D</td>
+  <td class="td-lv1"></td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">친환경 화장품 위탁생산 관리</span>
+    <span class="c upskill" data-t="upskill" data-d="AI 기반 배합비 설계·예측"><span class="tag">업스킬링</span>AI 활용 클린뷰티 처방 최적화</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">클린화장품 특화 탄소발자국 보고서 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="자율실험설계 기반 R&D 자동화"><span class="tag">리스킬링</span>AI 기반 화장품 R&D 자동화 플랫폼 활용</span>
+  </td>
+</tr>
+
+<!-- 정밀화학 -->
+<tr>
+  <td class="td-sector">정밀화학</td>
+  <td class="td-job">규제·<br>품질인증</td>
+  <td class="td-lv1">
+    <span class="c upskill" data-t="upskill" data-d="규제DB 자동 탐색·알림"><span class="tag">업스킬링</span>AI 기반 화학물질 규제 모니터링 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">화학물질, 화학제품 규제대응 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="QSAR 모델 이해·활용"><span class="tag">업스킬링</span>AI 활용 화학물질 위해성 예측 분석</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">환경규제물질 규제대응을 위한 ICP 활용 무기분석 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="디지털트윈 적용 공정 자율운전"><span class="tag">리스킬링</span>AI 기반 정밀화학 공정 최적화·자율운전</span>
+  </td>
+</tr>
+
+<!-- ===== 실무 공통 ===== -->
+<tr class="module-sep">
+  <td class="td-module" rowspan="2">실무<br>공통<br>과정</td>
+  <td class="td-sector">환경 경영</td>
+  <td class="td-job">환경 경영</td>
+  <td class="td-lv1">
+    <span class="c existing" data-t="existing" data-d="기존과정">기업 저탄소경영을 위한 전환경제도 이해하기</span>
+    <span class="c upskill" data-t="upskill" data-d="탄소배출 데이터 수집·분석"><span class="tag">업스킬링</span>AI 활용 탄소배출 데이터 수집·분석 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">바이오화학 LCA 기본 실무</span>
+    <span class="c existing" data-t="existing" data-d="기존과정">화학산업 Scope 3 배출량 산정 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="LCA+AI 자동화"><span class="tag">업스킬링</span>AI 기반 LCA 자동화 분석 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="Scope3+AI 자동 산정"><span class="tag">업스킬링</span>AI 활용 Scope 3 배출량 자동 산정</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c reskill" data-t="reskill" data-d="탄소중립 시나리오 시뮬레이션"><span class="tag">리스킬링</span>AI 기반 탄소중립 시나리오 시뮬레이션</span>
+  </td>
+</tr>
+<tr>
+  <td class="td-sector">ESG 경영</td>
+  <td class="td-job">ESG 경영</td>
+  <td class="td-lv1">
+    <span class="c upskill" data-t="upskill" data-d="ESG 데이터 수집·정리"><span class="tag">업스킬링</span>AI 활용 ESG 데이터 수집·정리 기초</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv2">
+    <span class="c existing" data-t="existing" data-d="기존과정">ESG 지속가능 경영 실무</span>
+    <span class="c upskill" data-t="upskill" data-d="ESG+AI 성과 분석·보고 자동화"><span class="tag">업스킬링</span>AI 기반 ESG 성과 분석·보고 자동화</span>
+  </td>
+  <td class="td-arrow">▶</td>
+  <td class="td-lv3">
+    <span class="c existing" data-t="existing" data-d="기존과정">ESG 경영 데이터관리 실무</span>
+    <span class="c reskill" data-t="reskill" data-d="ESG 리스크 예측·의사결정 지원"><span class="tag">리스킬링</span>AI 기반 ESG 리스크 예측·의사결정 지원</span>
+  </td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="footer">
+  * 인사이트 과정 생략 &nbsp;|&nbsp; 본 교육로드맵은 전문가 자문회의 및 KTR 담당자 협의를 거쳐 확정됩니다. &nbsp;|&nbsp; 시앤피컨설팅 · 2026
+</div>
+
+<script>
+const hidden = new Set();
+let mode = 'all';
+
+function toggleType(type) {
+  const el = document.querySelector(`.legend-item[data-type="${type}"]`);
+  if (hidden.has(type)) { hidden.delete(type); el.classList.remove('dimmed'); }
+  else { hidden.add(type); el.classList.add('dimmed'); }
+  render();
+}
+
+function setFilter(f, btn) {
+  mode = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+function render() {
+  let t=0, e=0, u=0, r=0;
+  document.querySelectorAll('.c').forEach(c => {
+    const tp = c.dataset.t;
+    let show = !hidden.has(tp);
+    if (mode === 'ai' && tp === 'existing') show = false;
+    if (mode === 'upskill' && tp !== 'upskill') show = false;
+    if (mode === 'reskill' && tp !== 'reskill') show = false;
+    c.classList.toggle('hidden', !show);
+    if (show) { t++; if(tp==='existing')e++; if(tp==='upskill')u++; if(tp==='reskill')r++; }
+  });
+  document.getElementById('n-total').textContent = t;
+  document.getElementById('n-existing').textContent = e;
+  document.getElementById('n-upskill').textContent = u;
+  document.getElementById('n-reskill').textContent = r;
+}
+
+const tip = document.getElementById('tip');
+document.querySelectorAll('.c').forEach(c => {
+  c.addEventListener('mouseenter', () => {
+    const tp = c.dataset.t;
+    const lb = tp==='upskill'?'업스킬링 · 기존직무 + AI 역량 강화':tp==='reskill'?'리스킬링 · AI 기반 새 직무 전환':'기존과정 유지';
+    tip.innerHTML = `<div class="tt-type ${tp}">${lb}</div><div>${c.dataset.d}</div>`;
+    tip.style.display = 'block';
+  });
+  c.addEventListener('mousemove', e => {
+    let x = e.clientX+12, y = e.clientY+12;
+    const r = tip.getBoundingClientRect();
+    if(x+r.width > window.innerWidth-10) x = e.clientX-r.width-12;
+    if(y+r.height > window.innerHeight-10) y = e.clientY-r.height-12;
+    tip.style.left = x+'px'; tip.style.top = y+'px';
+  });
+  c.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+});
+</script>
+</body>
+</html>

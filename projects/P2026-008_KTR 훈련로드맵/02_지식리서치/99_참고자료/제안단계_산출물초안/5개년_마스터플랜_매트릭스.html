@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KTR 5개년 AI 교육훈련 마스터플랜</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    padding: 40px;
+  }
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #2d3436 0%, #3d5a3e 100%);
+    color: #fff;
+    padding: 36px 48px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* Mission & Goal */
+  .mission-bar {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .mission-bar .label {
+    width: 120px;
+    min-width: 120px;
+    padding: 20px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3d5a3e;
+    display: flex;
+    align-items: center;
+    background: #f9faf8;
+    border-right: 1px solid #e0e0e0;
+  }
+  .mission-bar .content {
+    flex: 1;
+    padding: 20px 32px;
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #2d3436;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Phase Timeline */
+  .phase-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .phase-row .label {
+    width: 120px;
+    min-width: 120px;
+    padding: 16px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3d5a3e;
+    display: flex;
+    align-items: center;
+    background: #f9faf8;
+    border-right: 1px solid #e0e0e0;
+  }
+  .phases {
+    flex: 1;
+    display: flex;
+  }
+  .phase-block {
+    flex: 1;
+    text-align: center;
+    padding: 16px 12px;
+    border-right: 1px solid #e8e8e8;
+    position: relative;
+  }
+  .phase-block:last-child { border-right: none; }
+
+  .phase-block .year {
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin-bottom: 8px;
+  }
+  .phase-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+  .phase-tag.p1 { background: #3d5a3e; }
+  .phase-tag.p2 { background: #5a7d5e; }
+  .phase-tag.p3 { background: #6d9470; }
+  .phase-tag.p4 { background: #7faa82; }
+  .phase-tag.p5 { background: #92c096; }
+
+  .phase-sub {
+    font-size: 11px;
+    color: #e74c3c;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  /* Arrow between phases */
+  .phase-block::after {
+    content: '▶';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #3d5a3e;
+    z-index: 1;
+  }
+  .phase-block:last-child::after { content: ''; }
+
+  /* Matrix Table */
+  .matrix {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .matrix th, .matrix td {
+    border: 1px solid #e0e0e0;
+    padding: 14px 16px;
+    vertical-align: top;
+    font-size: 12.5px;
+    line-height: 1.75;
+  }
+  .matrix thead th {
+    background: #3d5a3e;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 13px;
+    padding: 14px 12px;
+    position: sticky;
+    top: 0;
+  }
+  .matrix thead th:first-child {
+    background: #2d4a2e;
+    width: 120px;
+    min-width: 120px;
+  }
+  .matrix tbody td:first-child {
+    background: #f9faf8;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: #3d5a3e;
+    text-align: center;
+    width: 120px;
+    min-width: 120px;
+    line-height: 1.5;
+  }
+  .matrix tbody tr:nth-child(even) td:not(:first-child) {
+    background: #fafcfa;
+  }
+  .matrix tbody td ul {
+    list-style: none;
+    padding: 0;
+  }
+  .matrix tbody td ul li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 5px;
+  }
+  .matrix tbody td ul li::before {
+    content: '·';
+    position: absolute;
+    left: 2px;
+    top: 0;
+    font-weight: 900;
+    color: #3d5a3e;
+    font-size: 16px;
+  }
+
+  /* Highlight current year */
+  .matrix thead th.current {
+    background: #2d4a2e;
+    position: relative;
+  }
+  .matrix thead th.current::after {
+    content: '본 용역';
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffd43b;
+    margin-top: 2px;
+  }
+
+  /* KPI row */
+  .matrix tbody tr.kpi-row td:first-child {
+    background: #3d5a3e;
+    color: #fff;
+  }
+  .matrix tbody tr.kpi-row td:not(:first-child) {
+    background: #f0f5f0;
+  }
+  .kpi-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .kpi-item .kpi-label {
+    color: #555;
+  }
+  .kpi-item .kpi-value {
+    font-weight: 700;
+    color: #3d5a3e;
+  }
+
+  /* Milestone row */
+  .matrix tbody tr.milestone-row td:not(:first-child) {
+    background: #fffdf0;
+    border-top: 2px solid #3d5a3e;
+  }
+  .matrix tbody tr.milestone-row td:first-child {
+    background: #3d5a3e;
+    color: #fff;
+  }
+  .milestone-tag {
+    display: inline-block;
+    background: #3d5a3e;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 48px;
+    background: #f9faf8;
+    border-top: 1px solid #e0e0e0;
+    font-size: 11.5px;
+    color: #888;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>5개년도 단계별 AI 교육훈련 이행계획 및 마스터플랜</h1>
+    <div class="subtitle">KTR 산업전환 공동훈련센터 · 친환경 바이오화학 × AI 융합 교육 로드맵 (2026~2030)</div>
+  </div>
+
+  <!-- Mission -->
+  <div class="mission-bar">
+    <div class="label">미션</div>
+    <div class="content">친환경 바이오화학 산업의 산업전환과 AX 가속화에 대응하여, 협약기업이 현장에서 바로 활용할 수 있는 직무·수준·산업단계 기반의 실무형 인재 양성</div>
+  </div>
+
+  <!-- Goal -->
+  <div class="mission-bar">
+    <div class="label">목표</div>
+    <div class="content" style="font-weight:700;">KTR 산업전환 공동훈련센터를 바이오화학 산업의 친환경·AX 전환을 선도하는 산업전환 교육 표준 플랫폼으로 고도화</div>
+  </div>
+
+  <!-- Phase Timeline -->
+  <div class="phase-row">
+    <div class="label">추진단계</div>
+    <div class="phases">
+      <div class="phase-block">
+        <div class="year">2026</div>
+        <div class="phase-tag p1">설계·구축</div>
+        <div class="phase-sub">※ 본 용역 과업범위</div>
+      </div>
+      <div class="phase-block">
+        <div class="year">2027</div>
+        <div class="phase-tag p2">본격 운영</div>
+      </div>
+      <div class="phase-block">
+        <div class="year">2028</div>
+        <div class="phase-tag p3">고도화·검증</div>
+      </div>
+      <div class="phase-block">
+        <div class="year">2029</div>
+        <div class="phase-tag p4">융합·혁신</div>
+      </div>
+      <div class="phase-block">
+        <div class="year">2030</div>
+        <div class="phase-tag p5">자립·표준화</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Matrix Table -->
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>영역</th>
+        <th class="current">2026</th>
+        <th>2027</th>
+        <th>2028</th>
+        <th>2029</th>
+        <th>2030</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- 핵심 전략 -->
+      <tr>
+        <td>핵심<br>전략</td>
+        <td>
+          <ul>
+            <li>기존 교육체계·로드맵 분석 및 AI 융합 교육체계 재설계</li>
+            <li>AI 직무 역량 모델링 및 KTR 특화 AI 융합 스킬셋 도출</li>
+            <li>5개년 마스터플랜 수립으로 중장기 방향 확정</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>3대 핵심 산업군 AI 융합 과정 본격 개발·운영</li>
+            <li>AI 공통기반 과정 전 협약기업 대상 확산</li>
+            <li>교육 성과평가 체계 구축 및 1차 성과 환류</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Lv.3 심화 과정 개발로 교육 깊이 확보</li>
+            <li>마스터플랜 중간점검 및 후반기 방향 조정</li>
+            <li>성과 데이터 기반 과정 포트폴리오 최적화</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>산업 간 AI 교류 및 융합 과정 개발</li>
+            <li>기업 참여형 공동 교육 모델 운영</li>
+            <li>AI 기반 교육 운영 자동화 파일럿</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>KTR형 AI 융합 교육모델 표준화</li>
+            <li>자립형 운영 모델 확립</li>
+            <li>타 공동훈련센터 확산 모델 정립</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 교육과정 개발 -->
+      <tr>
+        <td>교육과정<br>개발</td>
+        <td>
+          <ul>
+            <li>AI 공통기반 3개 과정 커리큘럼 개발 (AI 리터러시, 생성형 AI, 데이터 분석)</li>
+            <li>기존 과정 AI 모듈 보강 3개 (LCA+AI, ESG+AI, Scope3+AI)</li>
+            <li>AI 융합 과정 개발 방향 설정</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>산업특화 AI 과정 5~6개 신규 개발</li>
+            <li>기존 과정 AI 중심 개편 2~3개</li>
+            <li>협약기업 맞춤형 PBL 교육과정 설계</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Lv.3 심화 과정 3~4개 개발 (디지털트윈, AI R&D, 프로젝트 관리)</li>
+            <li>저성과 과정 개편·통합 3~5개</li>
+            <li>온라인 선수학습 과정 3개 개발</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>산업 융합 AI 과정 1~2개 개발</li>
+            <li>신규 산업(바이오에너지 등) AI 과정 기획</li>
+            <li>트렌드 반영 기존 과정 개편 2개</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>전 산업군 AI 융합 교육 완비 (25개+)</li>
+            <li>과정 최적화 및 최종 포트폴리오 확정</li>
+            <li>차기(2031~) 과정 개발 방향 설정</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 대상 산업군 -->
+      <tr>
+        <td>대상<br>산업군</td>
+        <td>
+          <ul>
+            <li><b>핵심 3개</b>: 바이오플라스틱, 화장품, 의료기기</li>
+            <li>정밀화학·섬유소재: 기존 과정 유지</li>
+            <li>전 산업군: AI 공통기반 공통 적용</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>핵심 3개 산업군 AI 과정 본격 운영</li>
+            <li><b>정밀화학</b> AI 융합 스킬셋 도출 및 과정 개발 착수</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>정밀화학 AI 과정 본격 운영</li>
+            <li><b>섬유소재</b> AI 융합 스킬셋 도출 및 과정 개발 착수</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>섬유소재 AI 과정 본격 운영</li>
+            <li><b>신규 산업</b>(바이오에너지, 기능성 식품소재) 착수</li>
+            <li>산업 간 크로스 융합 과정 운영</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>전 산업군 AI 융합 교육 완비</li>
+            <li>산업 간 융합 교육 정례화</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 교육 운영 체계 -->
+      <tr>
+        <td>교육 운영<br>체계</td>
+        <td>
+          <ul>
+            <li>교육체계 개편: 3모듈 + AI 공통기반 신설</li>
+            <li>산업전환 단계 × AI 역량 수준 교차 매트릭스 설계</li>
+            <li>4유형 기업 맞춤 학습경로 설계</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>학습경로 가이드 전 협약기업 배포</li>
+            <li>산업·직무별 맞춤형 과정 포트폴리오 운영</li>
+            <li>Kirkpatrick 4수준 성과평가 체계 가동</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>온-오프라인 블렌디드 러닝 체계 도입</li>
+            <li>수준별(Lv.1/2/3) AI 역량인증 체계 구축</li>
+            <li>프로젝트 기반 학습(PBL) 본격 적용</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>AI 기반 맞춤 추천·교육 운영 자동화</li>
+            <li>기업 참여형 공동 교육 모델 운영</li>
+            <li>글로벌 AI 교육 벤치마킹 반영</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>진단→추천→이수→인증→재진단 풀사이클 완성</li>
+            <li>협약기업 상시 지원형 교육 플랫폼 운영</li>
+            <li>교육-현업 적용-성과 창출 연계체계 내재화</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 인프라·강사 -->
+      <tr>
+        <td>인프라<br>· 강사</td>
+        <td>
+          <ul>
+            <li>AI 교육 환경 점검 및 필요 인프라 산정</li>
+            <li>AI 교육 강사 Pool 10명 구축 (AI컨설팅연구소 연계)</li>
+            <li>AI Readiness 진단 모듈 개발</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>AI 실습 인프라 본격 구축 (AutoML, 실습 데이터셋)</li>
+            <li>기존 강사 AI 교수역량 강화 워크숍</li>
+            <li>강사 Pool 20명 확대</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>산업 현장 데이터 기반 실습 교재 5종 제작</li>
+            <li>온라인 학습 플랫폼 구축</li>
+            <li>강사 Pool 25명 확대</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>AI 교육 운영 자동화 시스템 파일럿</li>
+            <li>기업-교육기관 공동 강사 운영</li>
+            <li>강사 Pool 28명 확대</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>KTR 자체 AI 교육 기획·운영 역량 확립</li>
+            <li>강사 Pool 30명+ 안정적 확보</li>
+            <li>산업 변화 상시 반영 체계 운영</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 성과 관리 -->
+      <tr>
+        <td>성과<br>관리</td>
+        <td>
+          <ul>
+            <li>AI Readiness 진단 실시 (50개사)</li>
+            <li>교육 만족도 조사 체계 마련</li>
+            <li>성과 측정 Baseline 설정</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Kirkpatrick 4수준 평가 체계 가동</li>
+            <li>1차 교육성과 분석 → 커리큘럼 환류</li>
+            <li>현업적용도 추적 조사 시작</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>AI Readiness 재진단 및 변화 추적</li>
+            <li>저성과 과정 개편, 고성과 과정 확대</li>
+            <li>5개년 마스터플랜 중간점검 보고</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>교육→현업적용→비즈니스 임팩트 연계 분석</li>
+            <li>협약기업 AI 전환 우수사례 발굴 5건+</li>
+            <li>교육 ROI 분석 시범 적용</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>5개년 성과 종합 평가 보고서</li>
+            <li>AI Readiness 변화 추적(2026→2030)</li>
+            <li>차기 5개년(2031~) 계획 수립</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- KPI Row -->
+      <tr class="kpi-row">
+        <td>핵심<br>KPI</td>
+        <td>
+          <div class="kpi-item"><span class="kpi-label">AI 과정 수(누적)</span><span class="kpi-value">6개</span></div>
+          <div class="kpi-item"><span class="kpi-label">연간 수료 인원</span><span class="kpi-value">230명</span></div>
+          <div class="kpi-item"><span class="kpi-label">이수 기업 수</span><span class="kpi-value">30개</span></div>
+          <div class="kpi-item"><span class="kpi-label">교육 만족도</span><span class="kpi-value">4.0/5.0</span></div>
+          <div class="kpi-item"><span class="kpi-label">강사 Pool</span><span class="kpi-value">10명</span></div>
+        </td>
+        <td>
+          <div class="kpi-item"><span class="kpi-label">AI 과정 수(누적)</span><span class="kpi-value">14~16개</span></div>
+          <div class="kpi-item"><span class="kpi-label">연간 수료 인원</span><span class="kpi-value">300명</span></div>
+          <div class="kpi-item"><span class="kpi-label">이수 기업 수</span><span class="kpi-value">40개</span></div>
+          <div class="kpi-item"><span class="kpi-label">현업적용률</span><span class="kpi-value">50%</span></div>
+          <div class="kpi-item"><span class="kpi-label">강사 Pool</span><span class="kpi-value">20명</span></div>
+        </td>
+        <td>
+          <div class="kpi-item"><span class="kpi-label">AI 과정 수(누적)</span><span class="kpi-value">20~22개</span></div>
+          <div class="kpi-item"><span class="kpi-label">연간 수료 인원</span><span class="kpi-value">400명</span></div>
+          <div class="kpi-item"><span class="kpi-label">이수 기업 수</span><span class="kpi-value">70개</span></div>
+          <div class="kpi-item"><span class="kpi-label">Lv.2+ 이수율</span><span class="kpi-value">30%</span></div>
+          <div class="kpi-item"><span class="kpi-label">강사 Pool</span><span class="kpi-value">25명</span></div>
+        </td>
+        <td>
+          <div class="kpi-item"><span class="kpi-label">AI 과정 수(누적)</span><span class="kpi-value">23~25개</span></div>
+          <div class="kpi-item"><span class="kpi-label">연간 수료 인원</span><span class="kpi-value">450명</span></div>
+          <div class="kpi-item"><span class="kpi-label">이수 기업 수</span><span class="kpi-value">90개</span></div>
+          <div class="kpi-item"><span class="kpi-label">현업적용률</span><span class="kpi-value">58%</span></div>
+          <div class="kpi-item"><span class="kpi-label">강사 Pool</span><span class="kpi-value">28명</span></div>
+        </td>
+        <td>
+          <div class="kpi-item"><span class="kpi-label">AI 과정 수(누적)</span><span class="kpi-value">25개+</span></div>
+          <div class="kpi-item"><span class="kpi-label">연간 수료 인원</span><span class="kpi-value">500명+</span></div>
+          <div class="kpi-item"><span class="kpi-label">이수 기업 수</span><span class="kpi-value">100개+</span></div>
+          <div class="kpi-item"><span class="kpi-label">현업적용률</span><span class="kpi-value">60%+</span></div>
+          <div class="kpi-item"><span class="kpi-label">강사 Pool</span><span class="kpi-value">30명+</span></div>
+        </td>
+      </tr>
+
+      <!-- Milestone Row -->
+      <tr class="milestone-row">
+        <td>핵심<br>마일스톤</td>
+        <td>
+          <ul>
+            <li><span class="milestone-tag">M1</span> AI 역량 프레임워크 최종 확정</li>
+            <li><span class="milestone-tag">M2</span> AI 융합 교육체계 개편안 확정</li>
+            <li><span class="milestone-tag">M3</span> AI 과정 6개 커리큘럼 완성</li>
+            <li><span class="milestone-tag">M4</span> 5개년 마스터플랜 최종 승인</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><span class="milestone-tag">M5</span> 산업특화 AI 과정 첫 운영 개시</li>
+            <li><span class="milestone-tag">M6</span> 성과평가 체계 가동</li>
+            <li><span class="milestone-tag">M7</span> AI 실습 인프라 구축 완료</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><span class="milestone-tag">M8</span> Lv.3 심화 과정 첫 운영</li>
+            <li><span class="milestone-tag">M9</span> 마스터플랜 중간점검 완료</li>
+            <li><span class="milestone-tag">M10</span> AI 역량인증 체계 가동</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><span class="milestone-tag">M11</span> 산업 융합 AI 과정 첫 운영</li>
+            <li><span class="milestone-tag">M12</span> 기업 참여형 교육 모델 안착</li>
+            <li><span class="milestone-tag">M13</span> 교육 자동화 시스템 파일럿 완료</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><span class="milestone-tag">M14</span> 학습경로 풀사이클 가동</li>
+            <li><span class="milestone-tag">M15</span> KTR 자립형 운영 모델 확립</li>
+            <li><span class="milestone-tag">M16</span> 교육 표준 모델 문서화 완료</li>
+          </ul>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- Footer -->
+  <div class="footer">
+    ※ 본 마스터플랜은 과업 수행 과정에서 전문가 자문회의 및 KTR 담당자 협의를 거쳐 확정됩니다. &nbsp;|&nbsp;
+    2028년 중간점검 시 산업 환경 변화와 교육 성과 데이터를 반영하여 후반기(2029~2030) 계획을 조정합니다. &nbsp;|&nbsp;
+    시앤피컨설팅 · 2026.04
+  </div>
+
+</div>
+
+</body>
+</html>
