@@ -51,12 +51,12 @@
 | 부서 | 부서장 | 팀원(서브에이전트) | 기존 신화 |
 |------|--------|-------------------|----------|
 | **@STR** 전략기획부 | 전략기획부장 | `str-strategy`(사업전략가) · `str-finance`(재무모델러) · `str-newbiz`(신사업기획가) | Athena+Midas |
-| **@HR** HR컨설팅부 ⭐ | HR컨설팅부장 | `hr-job`(직무분석가) · `hr-org`(조직진단가) · `hr-system`(인사제도설계가) · `hr-hrd`(HRD설계가) | Hera |
+| **@HR** HR컨설팅부 ⭐ | HR컨설팅부장 | `hr-skills`(스킬·직무분석) · `hr-disability`(장애인고용) · `hr-org`(조직설계) · `hr-culture`(조직문화) · `hr-perf`(성과·보상) · `hr-learn`(역량개발) · `hr-analytics`(피플애널리틱스) · `hr-aix`(HR AI/AX) | Hera |
 | **@RES** 리서치부 | 리서치부장 | `res-web`(웹리서처) · `res-data`(데이터분석가) · `res-market`(경쟁분석가) · `res-wiki`(위키사서) | Apollo |
-| **@PT** 제품기술부 🚀 | 제품기술부장(CPO/CTO) | `pt-pm`(제품기획) · `pt-fe`(프론트) · `pt-be`(백엔드) · `pt-mobile`(모바일) · `pt-devops`(DevOps) · `pt-qa`(QA) | Daedalus+개발12 |
+| **@PT** 제품기술부 🚀 | 제품기술부장(CPO/CTO) | `pt-pm`(제품기획) · `pt-ai`(제품AI) · `pt-fe`(프론트) · `pt-be`(백엔드) · `pt-mobile`(모바일) · `pt-devops`(DevOps) · `pt-qa`(QA) · `pt-game`(게임화) | Daedalus+개발12 |
 | **@GTM** 그로스부 | 그로스부장 | `gtm-brand`(브랜드/카피) · `gtm-content`(콘텐츠) · `gtm-proposal`(제안서작성가) · `gtm-sales`(B2B영업) | Aphrodite+Hermes(제안) |
 | **@DEL** 딜리버리부 | 딜리버리부장 | `del-report`(보고서편집가) · `del-deck`(덱디자이너) · `del-visual`(비주얼아티스트) | Hermes+Aphrodite(디자인) |
-| **@LEG** 법무리스크부 | 법무리스크부장 | `leg-contract`(계약검토가) · `leg-compliance`(컴플라이언스/접근성) | Themis |
+| **@LEG** 법무리스크부 | 법무리스크부장 | `leg-contract`(계약검토가) · `leg-labor`(노무·노동법) · `leg-compliance`(컴플라이언스/접근성) | Themis |
 
 ### 거버넌스 (부서 라인 밖 — 회사 전체 기능)
 
