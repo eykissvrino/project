@@ -23,6 +23,25 @@ for dest in DESTS:
     n += 1
     print(f"  → {os.path.relpath(dest, HUB)} : {len(src_files)}개 배포")
 
+# 프로젝트 배포 — 각 projects/*/ 에도 v2 배치 (추가/갱신만, 커스텀 에이전트는 보존)
+PROJ = os.path.join(HUB, "projects")
+proj_count = 0
+if os.path.isdir(PROJ):
+    for proj in sorted(os.listdir(PROJ)):
+        ppath = os.path.join(PROJ, proj)
+        if not os.path.isdir(ppath):
+            continue
+        for sub in (os.path.join(".claude", "agents"), os.path.join(".agent", "agents")):
+            parent = os.path.join(ppath, sub.split(os.sep)[0])
+            if not os.path.isdir(parent):
+                continue  # 해당 벤더 폴더가 없는 프로젝트는 건너뜀
+            dest = os.path.join(ppath, sub)
+            os.makedirs(dest, exist_ok=True)
+            for f in src_files:
+                shutil.copy2(f, os.path.join(dest, os.path.basename(f)))
+        proj_count += 1
+    print(f"  → projects/*/ : {proj_count}개 프로젝트에 v2 배치 (커스텀 보존)")
+
 # Codex용 AGENTS.md = CLAUDE.md 미러 (동일 조직 컨텍스트)
 claude_md = os.path.join(HUB, "CLAUDE.md")
 agents_md = os.path.join(HUB, "AGENTS.md")
