@@ -38,7 +38,8 @@
 ---
 
 ## 3. 스킬 (Tier 2, `_core/skills/`)
-컨설팅·문서 25종 (consulting-report·job-analysis·proposal·hr-consulting·org-diagnosis·strategic-management·business-planning·legal-consulting·branding-marketing·pptx·docx·pdf·mermaid 등). 부서별 활용은 각 에이전트 파일 참조.
+컨설팅·문서 26종 (consulting-report·job-analysis·proposal·hr-consulting·org-diagnosis·strategic-management·business-planning·legal-consulting·branding-marketing·project-management·pptx·docx·pdf·mermaid 등). 부서별 활용은 각 에이전트 파일 참조.
+> `project-management`는 P2026-003·P2026-010 프로젝트 패턴을 일반화해 승격(2026-06-16). 도메인 특화 진행관리는 프로젝트 로컬 유지.
 > 신규 스킬은 프로젝트 `.claude/skills/`에 신설 → 검증 → @CLO가 글로벌 승격 ([`VRIN_PROJECT_STANDARD.md`](VRIN_PROJECT_STANDARD.md) §5).
 
 ## 4. 지식 — LLM Wiki (`_wiki/`, Phase 3 구축 예정)
