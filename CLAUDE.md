@@ -12,6 +12,7 @@
 
 ## 행동강령 (전 직원, Karpathy)
 ① 착수 전 사고(가정 말고 확인) ② 단순함 우선 ③ 외과적 변경(요청한 것만) ④ 목표 주도(성공기준+검증)
+> 4원칙 전문(세부 지침)은 [`_core/VRIN_CODE_OF_CONDUCT.md`](_core/VRIN_CODE_OF_CONDUCT.md).
 
 ## 자동 라우팅 — 자연어 → 부서 (@CoS가 배분)
 | 대표님 말 | 부서 |
@@ -32,6 +33,7 @@
 
 ## 상세 (필요 시 로드)
 - 마스터: [`_core/VRIN_OS.md`](_core/VRIN_OS.md)
+- 행동강령 전문: [`_core/VRIN_CODE_OF_CONDUCT.md`](_core/VRIN_CODE_OF_CONDUCT.md)
 - 조직: [`_core/VRIN_ORG_SYSTEM.md`](_core/VRIN_ORG_SYSTEM.md)
 - 프로젝트 표준: [`_core/VRIN_PROJECT_STANDARD.md`](_core/VRIN_PROJECT_STANDARD.md)
 - 지식/위키: [`_core/VRIN_SECOND_BRAIN.md`](_core/VRIN_SECOND_BRAIN.md)
