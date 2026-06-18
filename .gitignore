@@ -8,6 +8,8 @@ secrets.*
 
 # === AI 도구 런타임 (동기화 불필요) ===
 .omc/
+.omo/
+.sisyphus/
 .claude/cache/
 .claude/debug/
 .claude/downloads/
@@ -89,10 +91,11 @@ nul
 /projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재.pdf
 /projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재_12장_재무제표 분석.pdf
 /projects/P2026-009_MBA_Study/02_지식리서치/MBA_STUDY/DATA/*1-1* 2025년 2학기/03_기초회계/회계원리_기본교재/회계원리_기본교재_2~3장_회계순환과정.pdf
-/projects/P2026-009_MBA_Study/04_산출물/T&L 컨설팅 보고서.pptx
-/projects/P2026-009_MBA_Study/04_산출물/도일에코텍 컨설팅 보고서.pptx
+/projects/P2026-009_MBA_Study/04_산출물/컨설팅보고서/T&L 컨설팅 보고서.pptx
+/projects/P2026-009_MBA_Study/04_산출물/컨설팅보고서/도일에코텍 컨설팅 보고서.pptx
 /projects/P2026-010_국가데이터처_직업정보 프레임워크 연구/03_작업실/국가데이터처_2026년_직업정보 프레임워크 연구/01_data_collection/00_external_references/직업정보 관련 참고자료_국내/한국직업사전_2020년_통합본 제5판/2020 한국직업사전 통합본 제5판.pdf
 /projects/P2026-010_국가데이터처_직업정보 프레임워크 연구/03_작업실/국가데이터처_2026년_직업정보 프레임워크 연구/03_NLP_analysis/TEST1/cache/embeddings.npy
 /projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/AIAX_관련자료.zip
 /projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/AIAX_관련자료/*The_LENS_2025-10*_주요국_120개_핵심_사례로_본_2025_글로벌_AI_정책_동향.pdf
 /projects/P2026-011_한기대_STEP 학습 로드맵 및 신규 과목 도출 연구/02_지식리서치/00_참고자료/NCS정보망DB(대분류별,2026년2월).xlsx
+.gstack/

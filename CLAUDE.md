@@ -35,5 +35,5 @@
 - 조직: [`_core/VRIN_ORG_SYSTEM.md`](_core/VRIN_ORG_SYSTEM.md)
 - 프로젝트 표준: [`_core/VRIN_PROJECT_STANDARD.md`](_core/VRIN_PROJECT_STANDARD.md)
 - 지식/위키: [`_core/VRIN_SECOND_BRAIN.md`](_core/VRIN_SECOND_BRAIN.md)
-- 대시보드: [`_core/VRIN_COCKPIT.md`](_core/VRIN_COCKPIT.md)
+- 대시보드: **노션 START-대시보드** (본부 정본 SSOT — 모든 프로젝트 현황은 여기서 추적)
 - 빌드: [`_core/VRIN_BUILD_PLAN.md`](_core/VRIN_BUILD_PLAN.md)

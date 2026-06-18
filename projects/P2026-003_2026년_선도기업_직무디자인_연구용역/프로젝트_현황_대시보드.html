@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2026-003 선도기업 직무디자인 — 진행 현황</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#171d26; --panel2:#1e2632; --line:#2a3340;
+    --ink:#e8edf3; --sub:#9aa7b8; --mut:#6b7888;
+    --blue:#3b82f6; --green:#22c55e; --amber:#f59e0b; --red:#ef4444; --violet:#8b5cf6;
+    --grad:linear-gradient(135deg,#3b82f6,#8b5cf6);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Pretendard','맑은 고딕','Malgun Gothic',-apple-system,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.5;
+    padding:32px 24px; max-width:1240px; margin:0 auto;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .head{
+    background:var(--grad); border-radius:18px; padding:30px 34px;
+    position:relative; overflow:hidden; box-shadow:0 12px 40px rgba(59,130,246,.18);
+  }
+  .head::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);border-radius:50%}
+  .head .code{font-size:13px;letter-spacing:2px;opacity:.85;font-weight:600}
+  .head h1{font-size:27px;margin:8px 0 14px;font-weight:800;letter-spacing:-.5px}
+  .head .meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;opacity:.95}
+  .head .meta b{font-weight:700}
+  .badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.18);
+    padding:5px 13px;border-radius:999px;font-size:12.5px;font-weight:700;backdrop-filter:blur(4px)}
+  .dot{width:8px;height:8px;border-radius:50%;background:#22ff88;box-shadow:0 0 8px #22ff88}
+
+  .grid{display:grid;gap:16px;margin-top:18px}
+  .kpis{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:820px){.kpis{grid-template-columns:repeat(2,1fr)}body{padding:18px 14px}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .kpi .lbl{font-size:12px;color:var(--mut);font-weight:600;letter-spacing:.3px}
+  .kpi .val{font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-1px}
+  .kpi .val small{font-size:14px;color:var(--sub);font-weight:600}
+  .kpi .sub{font-size:12px;color:var(--sub);margin-top:4px}
+
+  .sec{margin-top:30px}
+  .sec h2{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+  .sec h2::before{content:"";width:4px;height:17px;background:var(--grad);border-radius:3px}
+  .sec h2 .note{font-size:12px;color:var(--mut);font-weight:500;margin-left:auto}
+
+  /* overall bar */
+  .obar{height:30px;background:var(--panel2);border-radius:9px;overflow:hidden;position:relative;border:1px solid var(--line)}
+  .obar > span{display:block;height:100%;width:50%;background:var(--grad);
+    display:flex;align-items:center;justify-content:flex-end;padding-right:12px;
+    font-size:13px;font-weight:800;color:#fff}
+
+  /* 5M pipeline */
+  .pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  @media(max-width:820px){.pipe{grid-template-columns:repeat(2,1fr)}}
+  .stage{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;position:relative}
+  .stage .m{font-size:11px;font-weight:800;color:var(--mut);letter-spacing:1px}
+  .stage .t{font-size:14px;font-weight:700;margin:5px 0 9px}
+  .stage .pb{height:6px;background:var(--panel2);border-radius:4px;overflow:hidden}
+  .stage .pb>i{display:block;height:100%;border-radius:4px}
+  .stage .pct{font-size:11.5px;color:var(--sub);margin-top:6px;font-weight:600}
+  .stage.done{border-color:rgba(34,197,94,.4)} .stage.act{border-color:rgba(245,158,11,.5)}
+
+  /* company table */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:11px 10px;text-align:left;border-bottom:1px solid var(--line)}
+  th{font-size:11.5px;color:var(--mut);font-weight:700;letter-spacing:.4px;text-transform:uppercase}
+  tbody tr:hover{background:var(--panel2)}
+  .co{font-weight:700;font-size:13.5px}
+  .co small{display:block;color:var(--mut);font-weight:500;font-size:11.5px;margin-top:1px}
+  .steps{display:flex;gap:3px}
+  .steps i{width:15px;height:15px;border-radius:4px;background:var(--panel2);font-size:9px;
+    display:flex;align-items:center;justify-content:center;color:var(--mut);font-weight:700;font-style:normal}
+  .steps i.d{background:var(--green);color:#06250f}
+  .steps i.a{background:var(--amber);color:#3a2600;animation:pulse 1.8s infinite}
+  @keyframes pulse{50%{opacity:.55}}
+  .tag{display:inline-block;padding:3px 10px;border-radius:7px;font-size:11.5px;font-weight:700}
+  .tag.m2{background:rgba(34,197,94,.15);color:#7ee2a0}
+  .tag.m2a{background:rgba(245,158,11,.16);color:#f6c163}
+  .tag.m1{background:rgba(59,130,246,.16);color:#8fbcf9}
+
+  /* milestones */
+  .ms{display:flex;flex-direction:column;gap:0}
+  .ms .row{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}
+  .ms .ic{width:26px;height:26px;border-radius:50%;flex:0 0 26px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+  .ic.d{background:var(--green);color:#06250f} .ic.a{background:var(--amber);color:#3a2600} .ic.w{background:var(--panel2);color:var(--mut);border:1px solid var(--line)}
+  .ms .nm{font-weight:600;font-size:13.5px;flex:1}
+  .ms .md{font-size:12px;color:var(--mut)}
+
+  .two{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+  @media(max-width:820px){.two{grid-template-columns:1fr}}
+  ul.clean{list-style:none;display:flex;flex-direction:column;gap:9px}
+  ul.clean li{font-size:13px;padding-left:20px;position:relative;color:var(--sub)}
+  ul.clean li::before{content:"▸";position:absolute;left:0;color:var(--blue);font-weight:800}
+  ul.clean li b{color:var(--ink)}
+  .b2b{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(59,130,246,.08));border-color:rgba(139,92,246,.3)}
+  .b2b .flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;font-size:12px}
+  .b2b .flow span{background:var(--panel2);padding:6px 11px;border-radius:8px;font-weight:600;border:1px solid var(--line)}
+  .b2b .flow b{color:var(--violet);font-weight:800}
+  .foot{margin-top:30px;text-align:center;font-size:11.5px;color:var(--mut);line-height:1.8}
+  .risk{font-size:12.5px;color:var(--sub);background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.25);
+    border-radius:10px;padding:12px 15px;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="code">P2026-003 · 한국장애인고용공단 연구용역</div>
+  <h1>2026년 선도기업 직무디자인 연구용역</h1>
+  <div class="meta">
+    <span class="badge"><span class="dot"></span> 정상 추진 (GREEN)</span>
+    <span>수행 · <b>대우인력경영컨설팅㈜</b></span>
+    <span>기간 · <b>2026.03 ~ 2026.11</b></span>
+    <span>현 단계 · <b>Phase 3 (M2→M3)</b></span>
+    <span>기준일 · <b>2026.06.16</b></span>
+  </div>
+</div>
+
+<!-- KPI -->
+<div class="grid kpis">
+  <div class="card kpi"><div class="lbl">전체 진척률</div><div class="val">50<small>%</small></div><div class="sub">8개월 중 약 3.5개월 경과</div></div>
+  <div class="card kpi"><div class="lbl">참여 기업</div><div class="val">8<small> / 8 사</small></div><div class="sub">오티스 이탈 → ㈜태광 교체</div></div>
+  <div class="card kpi"><div class="lbl">후보군 도출 완료</div><div class="val">6<small> / 8 사</small></div><div class="sub">M2 적합직무 후보군 확정</div></div>
+  <div class="card kpi"><div class="lbl">다음 마일스톤</div><div class="val" style="font-size:19px;padding-top:7px">중간보고</div><div class="sub">M3 직무평가 후 진입</div></div>
+</div>
+
+<!-- overall -->
+<div class="sec">
+  <h2>전체 진척 <span class="note">5M·10S 프레임워크 기준</span></h2>
+  <div class="obar"><span>50% 완료</span></div>
+</div>
+
+<!-- pipeline -->
+<div class="sec">
+  <h2>모듈별 진행 (M1 → M5)</h2>
+  <div class="pipe">
+    <div class="stage done"><div class="m">M1</div><div class="t">요구분석</div>
+      <div class="pb"><i style="width:100%;background:var(--green)"></i></div><div class="pct">8/8 완료 · S1–S2</div></div>
+    <div class="stage act"><div class="m">M2</div><div class="t">적합직무 발굴</div>
+      <div class="pb"><i style="width:75%;background:var(--amber)"></i></div><div class="pct">6/8 후보군 도출 · S3–S4</div></div>
+    <div class="stage"><div class="m">M3</div><div class="t">적합직무 선정</div>
+      <div class="pb"><i style="width:8%;background:var(--blue)"></i></div><div class="pct">진입 예정 · S5–S6</div></div>
+    <div class="stage"><div class="m">M4</div><div class="t">직무분석·프로파일</div>
+      <div class="pb"><i style="width:0%"></i></div><div class="pct">예정 · S7–S8</div></div>
+    <div class="stage"><div class="m">M5</div><div class="t">활용·확산</div>
+      <div class="pb"><i style="width:0%"></i></div><div class="pct">예정 · S9–S10</div></div>
+  </div>
+</div>
+
+<!-- companies -->
+<div class="sec">
+  <h2>기업별 진행 현황 <span class="note">S1●●●●●●●●●●S10 (녹색=완료, 주황=진행)</span></h2>
+  <div class="card" style="padding:6px 16px">
+  <table>
+    <thead><tr><th>기업</th><th>형태 · 업종</th><th>10단계 진행</th><th>현 단계</th><th>핵심 산출물</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="co">성불복지회<small>상시 549명 / 장애 3명</small></td>
+        <td>사회복지법인<br><small style="color:var(--mut)">사회복지사업</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="a">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 후보군</span></td>
+        <td><small>직무달인 TASK카드 v1·v2</small></td>
+      </tr>
+      <tr>
+        <td class="co">어보브반도체㈜<small>상시 220명 / 장애 2명</small></td>
+        <td>민간기업<br><small style="color:var(--mut)">반도체 제조</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="d">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 완료</span></td>
+        <td><small>후보군 도출보고서·결과</small></td>
+      </tr>
+      <tr>
+        <td class="co">인천국제공항보안㈜<small>상시 3,794명 / 장애 10명</small></td>
+        <td>민간기업<br><small style="color:var(--mut)">경비·경호</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="a">3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2a">M2 W/S 예정</span></td>
+        <td><small>법령충돌 해결방안 보고서</small></td>
+      </tr>
+      <tr>
+        <td class="co">자동차손해배상진흥원<small>상시 104명 / 장애 1명</small></td>
+        <td>공공기관<br><small style="color:var(--mut)">정책연구·기금</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="d">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 완료</span></td>
+        <td><small>후보군 도출보고서·TASK카드</small></td>
+      </tr>
+      <tr>
+        <td class="co">케이티서비스남부<small>상시 2,180명 / 장애 52명</small></td>
+        <td>민간기업<br><small style="color:var(--mut)">케이블 설치</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="a">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 후보군</span></td>
+        <td><small>직무달인 TASK카드 KT남부</small></td>
+      </tr>
+      <tr>
+        <td class="co">㈜태광<small>상시 300~1,000명 / 장애 TBD</small></td>
+        <td>민간기업<br><small style="color:var(--mut)">관이음쇠 제조</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="a">2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m1">M1·신규합류</span></td>
+        <td><small>착수정리 · 컨설턴트 배정 필요</small></td>
+      </tr>
+      <tr>
+        <td class="co">한국국제교류재단<small>상시 144명 / 장애 3명</small></td>
+        <td>공공기관<br><small style="color:var(--mut)">국제교류</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="d">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 완료</span></td>
+        <td><small>후보군 도출보고서·TASK카드</small></td>
+      </tr>
+      <tr>
+        <td class="co">해양환경공단<small>상시 725명 / 장애 29명</small></td>
+        <td>공공기관<br><small style="color:var(--mut)">환경 엔지니어링</small></td>
+        <td><div class="steps"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="d">4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>0</i></div></td>
+        <td><span class="tag m2">M2 완료</span></td>
+        <td><small>후보군 도출보고서·결과</small></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- milestones + next -->
+<div class="sec two">
+  <div class="card">
+    <h2 style="font-size:15px">주요 마일스톤</h2>
+    <div class="ms">
+      <div class="row"><div class="ic d">✓</div><div class="nm">착수보고 · 디자인팀 구성</div><div class="md">완료 (5월)</div></div>
+      <div class="row"><div class="ic d">✓</div><div class="nm">M1 요구분석 — 8개사</div><div class="md">완료</div></div>
+      <div class="row"><div class="ic a">◐</div><div class="nm">M2 적합직무 후보군 도출</div><div class="md">6/8 진행</div></div>
+      <div class="row"><div class="ic w">○</div><div class="nm">중간보고</div><div class="md">예정</div></div>
+      <div class="row"><div class="ic w">○</div><div class="nm">M3 적합직무 선정</div><div class="md">진입 임박</div></div>
+      <div class="row"><div class="ic w">○</div><div class="nm">M4 직무프로파일 개발</div><div class="md">예정</div></div>
+      <div class="row" style="border:none"><div class="ic w">○</div><div class="nm">M5 활용·확산 · 최종보고 · 성과공유회</div><div class="md">예정</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2 style="font-size:15px">다음 액션</h2>
+    <ul class="clean">
+      <li><b>㈜태광·인천국제공항보안</b> — M2 적합직무 발굴 W/S 실시</li>
+      <li><b>전사 M3 진입</b> — 적합직무 평가 W/S (수행부담도·안전성·실행가능성·확산성)</li>
+      <li><b>㈜태광 컨설턴트 배정</b> 확정 (현재 미배정)</li>
+      <li><b>중간보고서·발표자료</b> 준비 착수</li>
+      <li>기업별 <b>2개 이상</b> 적합직무 선정(실행가능형+전략확산형)</li>
+    </ul>
+    <div class="risk" style="margin-top:14px">⚠ <b>리스크</b> — 인천공항보안 경비업법 등 법령충돌 이슈 / 태광 신규합류로 일정 압축 필요</div>
+  </div>
+</div>
+
+<!-- B2B -->
+<div class="sec">
+  <div class="card b2b">
+    <h2 style="font-size:15px">최상위 전략 목표 · B2B 사업 연계 (P2026-001)</h2>
+    <p style="font-size:13px;color:var(--sub);margin-top:4px">
+      본 용역은 시앤피컨설팅 장애인 HR솔루션 B2B 사업의 <b style="color:var(--ink)">파일럿이자 고객 확보 채널</b>.
+      M5 활용·확산 단계에서 기업별 추가 HR 니즈를 파악해 자연 전환.
+    </p>
+    <div class="flow">
+      <span>Land · P2026-003 컨설팅 신뢰 구축</span> <b>→</b>
+      <span>Product 1 · 직무발굴</span> <b>→</b>
+      <span>Product 2 · HR체계 구축</span> <b>→</b>
+      <span>Product 3 · 위탁관리 BPO</span>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  데이터 출처 · <code>00_관리/_현황.md</code> (2026-06-16) + <code>04_산출물/기업별</code> 실제 산출물 교차확인<br>
+  ※ 본부 전체 현황 정본은 <b>노션 START-대시보드</b> · 본 HTML은 P2026-003 단건 현황 스냅샷
+</div>
+
+</body>
+</html>

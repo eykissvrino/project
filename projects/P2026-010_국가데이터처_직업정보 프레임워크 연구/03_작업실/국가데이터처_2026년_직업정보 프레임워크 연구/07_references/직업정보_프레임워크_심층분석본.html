@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>직업정보 프레임워크 연구 — 심층 분석본</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#1a2230; --body:#28303e; --muted:#697587; --faint:#8a94a3;
+    --line:#dde3ec; --line2:#eef1f6; --bg:#ffffff; --paper:#fbfcfe;
+    --navy:#152544; --accent:#1f4e8c; --accent2:#7a2e3a;
+    --task:#9a6212; --dwa:#1f4e8c; --iwa:#0f6b5f; --gwa:#5b3a8a;
+    --soft:#f1f5fb;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    font-size:15.5px;line-height:1.8;letter-spacing:-.1px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 30px}
+  header.cover{border-bottom:3px solid var(--navy);padding:52px 0 26px;margin-bottom:8px}
+  .docmeta{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.6px;margin-bottom:14px}
+  header.cover h1{font-size:30px;line-height:1.32;font-weight:800;color:var(--navy);margin:0 0 10px;letter-spacing:-.5px}
+  header.cover .sub{font-size:17px;color:var(--muted);font-weight:600;margin:0 0 22px}
+  .coverbar{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .coverbar div{flex:1;min-width:150px;padding:11px 16px;border-right:1px solid var(--line2);font-size:13px}
+  .coverbar div:last-child{border-right:none}
+  .coverbar b{display:block;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:.4px;margin-bottom:2px}
+  .abstract{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:18px 22px;margin:24px 0 6px;font-size:14.5px;color:var(--body)}
+  .abstract b{color:var(--navy)}
+  nav.toc{margin:26px 0 8px;padding:18px 22px;background:var(--soft);border-radius:8px}
+  nav.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.5px;color:var(--faint);font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px;font-size:13.5px}
+  @media(max-width:680px){nav.toc ol{columns:1}}
+  nav.toc li{margin:4px 0}
+  nav.toc a{color:var(--accent);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  .part{margin:38px 0 0;padding:18px 22px;background:var(--navy);color:#fff;border-radius:10px}
+  .part .pl{font-size:12px;letter-spacing:1px;color:#9fb4d6;font-weight:700}
+  .part h2{font-size:21px;font-weight:800;color:#fff;margin:3px 0 0;border:none;padding:0}
+  .part p{margin:6px 0 0;font-size:13.5px;color:#c7d4ea}
+  section{padding:30px 0;border-bottom:1px solid var(--line2)}
+  h2{font-size:20px;font-weight:800;color:var(--navy);margin:0 0 4px;letter-spacing:-.3px;padding-bottom:9px;border-bottom:2px solid var(--line)}
+  h2 .num{color:var(--accent);margin-right:9px}
+  h3{font-size:16.5px;font-weight:800;color:var(--ink);margin:24px 0 8px}
+  h3 .num{color:var(--accent);font-weight:700;margin-right:7px}
+  h4{font-size:14px;font-weight:700;color:var(--accent2);margin:16px 0 6px}
+  p{margin:10px 0}
+  .lead{font-size:14.5px;color:var(--muted);margin:6px 0 16px}
+  strong,b{color:var(--ink)}
+  .why{border:1px solid #d9e6f5;border-left:3px solid var(--accent);background:#f3f8fd;border-radius:6px;padding:12px 18px;margin:14px 0;font-size:13.5px}
+  .why b{color:var(--accent)}
+  .key{border:1px solid #cfe0d6;border-left:3px solid #0f6b5f;background:#f3faf6;border-radius:6px;padding:13px 18px;margin:15px 0;font-size:14px}
+  .key b{color:#0f6b5f}
+  .caveat{border:1px solid #ecd9c2;border-left:3px solid var(--accent2);background:#fdf8f3;border-radius:6px;padding:12px 18px;margin:14px 0;font-size:13.5px}
+  .caveat b{color:var(--accent2)}
+  .quote{border-left:3px solid var(--faint);background:#fbfcfe;padding:8px 16px;margin:12px 0;font-style:italic;color:#445;font-size:13.5px}
+  details.src{border:1px dashed #b9c6da;border-radius:8px;margin:12px 0;background:#f8fafd}
+  details.src>summary{cursor:pointer;padding:9px 16px;font-size:12.5px;font-weight:700;color:var(--accent);list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+  details.src>summary::-webkit-details-marker{display:none}
+  details.src>summary::before{content:"▸";font-size:11px;transition:transform .15s}
+  details.src[open]>summary::before{transform:rotate(90deg)}
+  details.src .sb{padding:4px 18px 14px;font-size:13px;border-top:1px solid #e3eaf4}
+  table{width:100%;border-collapse:collapse;margin:13px 0;font-size:13px}
+  caption{caption-side:top;text-align:left;font-size:12px;color:var(--faint);font-weight:700;margin-bottom:6px;letter-spacing:.3px}
+  th,td{border-bottom:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--navy);color:var(--navy);font-weight:700;font-size:12.5px;letter-spacing:.2px}
+  tbody tr:hover td{background:var(--paper)}
+  td code,p code,li code{background:var(--soft);color:var(--accent2);padding:1px 6px;border-radius:4px;font-size:12.5px;font-family:Consolas,monospace}
+  .levels{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0}
+  .lvrow{display:flex;border-bottom:1px solid var(--line2)}
+  .lvrow:last-child{border-bottom:none}
+  .lvrow .tier{flex:none;width:158px;padding:12px 15px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+  .lvrow .tier b{font-size:15px;letter-spacing:.4px}.lvrow .tier small{font-size:11px;opacity:.92}
+  .lvrow .desc{padding:11px 17px;font-size:13.5px}
+  .lvrow .desc .ex{color:var(--muted);font-size:12.5px;margin-top:3px}
+  .t-gwa{background:var(--gwa)}.t-iwa{background:var(--iwa)}.t-dwa{background:var(--dwa)}.t-task{background:var(--task)}
+  ul.tight{margin:8px 0;padding-left:20px}ul.tight li{margin:5px 0}
+  ol.steps{margin:8px 0;padding-left:22px}ol.steps li{margin:6px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.two{grid-template-columns:1fr}.lvrow{flex-direction:column}.lvrow .tier{width:100%}}
+  .flow{border:1px solid var(--line);border-radius:8px;padding:16px;margin:14px 0;background:var(--paper);font-size:13px}
+  .pill{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:4px;color:#fff;margin-left:4px}
+  .p-ai{background:#1f4e8c}.p-h{background:#7a2e3a}.p-mix{background:#0f6b5f}
+  footer{padding:26px 0 56px;color:var(--faint);font-size:12.5px;border-top:2px solid var(--navy);margin-top:8px}
+  .backtop{position:fixed;right:22px;bottom:22px;background:var(--navy);color:#fff;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px;box-shadow:0 3px 12px rgba(0,0,0,.2);opacity:.85}
+  .backtop:hover{opacity:1}
+  svg{max-width:100%;height:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover" id="top">
+  <div class="docmeta">국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 (P2026-010)</div>
+  <h1>직업정보 프레임워크 연구 — 심층 분석본</h1>
+  <p class="sub">문헌·O*NET 원자료·작년 한국직업자격학회 수행연구의 정밀 분석</p>
+  <div class="coverbar">
+    <div><b>위상</b>「마스터 학습서(요약본)」의 심층 동반본</div>
+    <div><b>작성</b>2026-06-16</div>
+    <div><b>출처</b>내부 심층분석 7편 + O*NET 공식 사이트 직접확인</div>
+    <div><b>읽는 법</b>본문 정독 · ▸ 출처박스 = 근거·원문</div>
+  </div>
+
+  <div class="abstract">
+    본 문서는 「대표를 위한 마스터 학습서」(요약본)의 <b>심층 동반본</b>이다. 요약본이 줄거리였다면, 본 문서는 <b>① 분류의 국제표준(ISCO)·② O*NET 콘텐츠모델과 4계층의 정밀구조·③ O*NET이 실제로 만들어진 방법론(HumRRO·WA Project)·④ AI 자동화 설계</b>를 원자료 수준으로 파고든다.
+    특히 <b>작년 (사)한국직업자격학회가 수행한 직계 사전연구 — 조세형 박사의 「ISCO-28 SLF 국내도입 적정성 평가」(2025.12, 국가데이터처)와 「직업문항 측정방법 개선」(통계청), 그리고 KRIVET의 KSCO 8차 개정 연구</b> — 를 별도 장(Part Ⅴ)으로 정밀 분석하여, 본 사업이 이 선행연구들의 <b>실행 단계 후속과제</b>임을 드러낸다.
+    O*NET 수치는 2026-06 시점 <b>O*NET 공식 사이트에서 직접 확인</b>했고, 자료 간 수치 차이는 숨기지 않고 병기한다.
+  </div>
+
+  <nav class="toc">
+    <h4>목 차</h4>
+    <ol>
+      <li><a href="#p1">Ⅰ. 분류의 국제표준 — ISCO-08 / ISCO-28</a></li>
+      <li><a href="#p2">Ⅱ. O*NET 정밀구조 — 콘텐츠모델·4계층·척도</a></li>
+      <li><a href="#p3">Ⅲ. O*NET은 어떻게 만들어졌나 — HumRRO·WA Project</a></li>
+      <li><a href="#p4">Ⅳ. AI 자동화 방법론과 우리의 실제 적용</a></li>
+      <li><a href="#p5">Ⅴ. 작년 한국직업자격학회 수행연구 ★</a></li>
+      <li><a href="#p6">Ⅵ. 세 연구의 결합 — 본 사업의 실체</a></li>
+      <li><a href="#p7">Ⅶ. 한국 분류 맥락 — KSCO 8차·KECO 2025</a></li>
+      <li><a href="#p8">Ⅷ. 참고문헌 지도 + 방법론적 타당성·한계</a></li>
+    </ol>
+  </nav>
+</header>
+
+<!-- ====================== PART I ====================== -->
+<div class="part" id="p1"><div class="pl">PART Ⅰ</div><h2>분류의 국제표준 — ISCO-08 / ISCO-28</h2><p>모든 직업분류가 따르는 ILO의 국제 틀. 본 사업의 정책 명분(ISCO-28 대응)이 여기서 나온다.</p></div>
+
+<section>
+  <h2><span class="num">1.</span>ISCO-08의 2차원 구조와 7개 모듈</h2>
+  <p class="lead">ILO(국제노동기구)가 1958년부터 운영하는 국제표준직업분류. 한국 KSCO는 이것의 국가판이다.</p>
+
+  <p><b>ISCO-08</b>은 직업을 <b>두 축</b>으로 가른다 — <b>직능수준(Skill Level, 4단계)</b>과 <b>직능유형(Skill Specialization, 4차원)</b>. 이 두 축이 직교(orthogonal)해야 분류가 깨끗합니다. 위계는 4단계입니다.</p>
+  <table>
+    <caption>ISCO-08 4단계 위계와 KSCO 대응</caption>
+    <thead><tr><th>수준</th><th>영문</th><th>항목수</th><th>코드</th><th>KSCO 대응</th></tr></thead>
+    <tbody>
+      <tr><td>주요군</td><td>Major Group</td><td><b>10</b></td><td>1자리</td><td>대분류 10</td></tr>
+      <tr><td>세부주요군</td><td>Sub-major Group</td><td><b>43</b></td><td>2자리</td><td>중분류 57(한국 확장)</td></tr>
+      <tr><td>소군</td><td>Minor Group</td><td><b>130</b></td><td>3자리</td><td>소분류 167</td></tr>
+      <tr><td>단위군</td><td>Unit Group</td><td><b>436</b></td><td>4자리</td><td>세분류 495</td></tr>
+    </tbody>
+  </table>
+
+  <p><b>직능유형 4차원</b>: ① 지식 분야(Field of Knowledge) ② 사용 도구·장비(Tools & Machinery) ③ 작업 대상(Materials Worked On) ④ 산출물(Goods or Services). <b>직능수준은 주로 상위 분류(대분류)에, 직능유형은 하위 분류(세분류)에</b> 적용됩니다.</p>
+
+  <div class="why"><b>왜 본 연구에 중요한가</b> — ISCO는 <b>코드·정의·과업 예시만</b> 제공할 뿐, "직무활동·기술·능력" 같은 정보 차원은 <b>비어 있습니다</b>. 그 빈칸을 O*NET 콘텐츠 모델로 채우는 것이 본 연구의 본질입니다. ISCO가 "뼈대", O*NET이 "살".</div>
+
+  <details class="src">
+    <summary>출처 — ILO ISCO-08 Companion Guide 7개 모듈(국가 분류 개발 표준)</summary>
+    <div class="sb">
+      <p>ILO(2018) <i>ISCO-08 Companion Guide</i>(David Hunter·Lara Badre, 약 250p)는 국가 직업분류 개발의 표준 절차서다. 7개 모듈: ①개요 ②경계영역 ③적응과정·거버넌스 ④구조설계 ⑤데이터수집·코딩 ⑥매핑 ⑦배포. 본 연구는 모듈 4(구조설계)·5(데이터수집)를 핵심 방법론 근거로 인용한다.</p>
+      <p>분류 6대 원칙: 상호배타성·완전성·일관성·유용성·국제비교성·시계열연속성. 거버넌스 4단계: 자문위원회 → 작업그룹 → 공청회 → 최종 승인·고시.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2><span class="num">2.</span>ISCO-28 개정 — 직능수준의 4축 다차원화(SLF)</h2>
+  <p class="lead">본 사업이 "선제 대응"한다고 내세우는 바로 그 국제 동향.</p>
+
+  <p>ILO는 ISCO-08의 한계 — 특히 <b>직능수준 2의 범위가 과도하게 넓어</b>(KSCO 대분류 3~8이 모두 수준 2) 변별력이 떨어지는 문제 — 를 고치기 위해 <b>ISCO-28</b>을 개정 중입니다. 핵심은 "교육수준만으로 직능을 재던" 것을 <b>4축으로 다차원화한 SLF(Skill Level Framework)</b>입니다.</p>
+  <table>
+    <caption>ISCO-28 SLF 4차원</caption>
+    <thead><tr><th>차원</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 교육</b> (Education)</td><td>ISCED-11 기준. (예: 중등후 비학위과정을 직능수준 2→3 상향)</td></tr>
+      <tr><td><b>② 책임성</b> (Responsibility)</td><td><b>관리·감독·안전</b> 3종 책임 — 본 연구 "Responsibility 3축"의 직접 근거</td></tr>
+      <tr><td><b>③ 경험</b> (Experience)</td><td>핵심과업 독립수행에 필요한 실무 숙련 기간(질·관련성 포함)</td></tr>
+      <tr><td><b>④ 업무기반학습</b> (WBL)</td><td>OJT·도제·인턴십 등 업무환경 내 학습(형식·비형식·무형식)</td></tr>
+    </tbody>
+  </table>
+  <p>적용은 <b>5단계 우선순위</b>로: ① 직무내용 → ② 공식 자격요건 → ③ 교육수준 → ④ 책임 → ⑤ 경험·WBL, 그리고 4축이 어긋나도 <b>최적합 원칙(best fit)</b>으로 종합 판단합니다.</p>
+
+  <div class="key"><b>🟢 연결고리</b> — 이 ISCO-28 SLF 4축을 <b>한국에 도입할지 평가한 연구가 바로 작년 (사)한국직업자격학회 조세형 박사의 사전연구(2025.12)</b>입니다. 본 사업은 그 "도입 평가"를 KSCO 495개에 실제 적용하는 단계입니다 — Part Ⅴ에서 정밀 분석합니다.</div>
+</section>
+
+<!-- ====================== PART II ====================== -->
+<div class="part" id="p2"><div class="pl">PART Ⅱ</div><h2>O*NET 정밀구조 — 콘텐츠모델·4계층·척도</h2><p>우리가 본뜨는 미국 표준의 해부도. 2026-06 공식 사이트 직접 확인 수치.</p></div>
+
+<section>
+  <h2><span class="num">3.</span>콘텐츠 모델 6대 도메인</h2>
+  <p class="lead">O*NET이 직업을 기술하는 표준 틀. 약 277개 디스크립터가 6개 도메인에 조직됨.</p>
+  <table>
+    <caption>O*NET 콘텐츠 모델 6대 도메인</caption>
+    <thead><tr><th>도메인</th><th>핵심 디스크립터(규모)</th><th>측정</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 근로자 특성</b> Worker Characteristics</td><td>Abilities 52 · 흥미(RIASEC 6) · 가치 6 · Work Styles 17</td><td>BARS/자기보고</td></tr>
+      <tr><td><b>② 근로자 요건</b> Worker Requirements</td><td>Skills 35 · Knowledge 33 · Education</td><td>Level+Importance</td></tr>
+      <tr><td><b>③ 경험 요건</b> Experience Requirements</td><td>경험·훈련 · 면허 · <b>Job Zones</b></td><td>개월·분류</td></tr>
+      <tr><td><b>④ 직업 요건</b> Occupational Requirements ★</td><td><b>GWA·IWA·DWA</b> · Work Context 57 · 조직맥락 39</td><td>GWA만 Level+Imp</td></tr>
+      <tr><td><b>⑤ 직업특수 정보</b> Occupation-Specific</td><td><b>TASK</b> 약 19,000+ · 도구·기술</td><td>Imp+Relevance+Freq</td></tr>
+      <tr><td><b>⑥ 인력 특성</b> Workforce Characteristics</td><td>임금·고용전망(BLS 연계)</td><td>외부 행정데이터</td></tr>
+    </tbody>
+  </table>
+  <p>4계층 작업활동 체계는 <b>도메인 ④·⑤에 걸쳐</b> 존재합니다. 모든 직업이 이 6도메인의 동일한 좌표 위에 측정값을 갖는 "인스턴스"입니다.</p>
+
+  <details class="src">
+    <summary>출처 — 데이터 수집의 4가지 소스 / 운영 2단계 파이프라인</summary>
+    <div class="sb">
+      <p><b>4 소스</b>: 재직자 자기보고(Knowledge·Skills·GWA·Work Context·Tasks) / 관리자(조직맥락) / 직업분석가 SME(Abilities·Task 진술 작성) / 외부 BLS(임금·전망).</p>
+      <p><b>운영 2단계</b>: ① 직업 등재(OCA 사용자신청 / N&E 신생직업 방법론으로 O*NET-SOC 8자리 코드 부여) → ② 측정값 부여(RTI International 위탁, 직업당 재직자 표본 설문, 분기 릴리즈). 두 단계는 별개이며 등재→측정 사이 1~수년 시차.</p>
+      <p>2024 개정: Work Styles 도메인 30년 만에 재검토. 2026 O*NET 30.2: <b>Job Zones 5→4단계 통합</b>(325개 직업 재할당), Level Scale Anchor 텍스트 60개 갱신(척도 자체는 1995년부터 불변).</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2><span class="num">4.</span>4계층 — 정의·규모·비대칭</h2>
+  <div class="levels">
+    <div class="lvrow"><div class="tier t-gwa"><b>GWA</b><small>일반화 작업활동</small></div>
+      <div class="desc"><b>41개</b>(WA Project 기준) — 모든 직업 공통 좌표. <b>Level+Importance 측정값 보유</b>.<div class="ex">현재 O*NET Online 브라우즈 표시는 38개(정보입력4·정신과정10·작업산출9·상호작용15)</div></div></div>
+    <div class="lvrow"><div class="tier t-iwa"><b>IWA</b><small>중간 작업활동</small></div>
+      <div class="desc"><b>332개</b>(2014) — 분류 단위만(측정값 없음). DWA를 GWA로 직접 묶기엔 거칠어 신설.<div class="ex">1 GWA당 ≈8 IWA / 1 IWA당 ≈6.2 DWA</div></div></div>
+    <div class="lvrow"><div class="tier t-dwa"><b>DWA</b><small>세부 작업활동</small></div>
+      <div class="desc"><b>약 2,069개</b>(2014)→현재 약 2,087 — 같은 직업군 다수 직업이 공유. 측정값 없음, TASK 매핑만.<div class="ex">직업당 평균 17개 DWA 연결</div></div></div>
+    <div class="lvrow"><div class="tier t-task"><b>TASK</b><small>직업특수 과업</small></div>
+      <div class="desc"><b>약 19,000+개</b> — 한 직업 전용 SME 진술. <b>Importance·Relevance·Frequency 측정</b>.<div class="ex">직업당 평균 21~23개</div></div></div>
+  </div>
+
+  <p><b>핵심 설계 — "측정값의 비대칭"</b>: <b>GWA와 TASK만 측정값을 갖고, IWA·DWA는 분류(군집) 단위로만</b> 존재합니다. IWA·DWA는 TASK를 의미적으로 정렬한 결과이므로 별도 측정이 불필요하고, 그 결과를 모든 직업 공통인 GWA 위에 매핑함으로써 <b>직업 간 비교 가능성</b>을 확보합니다. 이것이 O*NET의 영리함입니다.</p>
+
+  <h3><span class="num">4.1</span> 수직 위계와 수평 다중연결</h3>
+  <p>위계는 <code>GWA →(1:N) IWA →(1:N) DWA →(N:M) TASK</code>. 핵심은 마지막 <b>N:M(다중연결)</b>입니다 — 한 TASK가 여러 활동을 담으면 <b>최대 3개 DWA</b>에 연결됩니다.</p>
+  <table>
+    <caption>TASK→DWA 연결 분포 (WA Project)</caption>
+    <thead><tr><th>연결</th><th>건수</th><th>비율</th></tr></thead>
+    <tbody>
+      <tr><td>1차(primary)</td><td>18,291</td><td>81%</td></tr>
+      <tr><td>2차</td><td>3,851</td><td>17%</td></tr>
+      <tr><td>3차</td><td>572</td><td>2.5%</td></tr>
+    </tbody>
+  </table>
+  <p>이 다중연결이 <b>"직업 간 전환 가능성"</b> 분석의 데이터 토대입니다(같은 DWA를 공유하는 직업끼리 활동이 이동 가능). ID 체계는 <code>4.A.1.b.2</code>(GWA)→<code>.I01</code>(IWA)→<code>.D03</code>(DWA), 번호는 무작위(신규 추가 시 재배치 불필요).</p>
+
+  <div class="caveat"><b>수치 차이 정직 보고</b> — 자료마다 GWA를 41(WA Project)·42(일부 카운트)·38(현재 O*NET Online 브라우즈)로, IWA를 332(2014)·325(정제 후)로, DWA를 2,069(2014)·2,087(현재)로 다르게 적습니다. 본 연구는 <b>WA Project 2014 기준(GWA 41/IWA 332/DWA 2,069)</b>을 벤치마크로 채택하되 차이를 병기합니다 — 이 투명성 자체가 발주기관 신뢰의 근거입니다.</div>
+</section>
+
+<section>
+  <h2><span class="num">5.</span>측정 척도 <span style="font-size:13px;color:var(--faint)">(2026-06 O*NET 공식 사이트 직접 확인)</span></h2>
+  <table>
+    <caption>O*NET 척도 — onetonline.org/help/online/scales 확인</caption>
+    <thead><tr><th>척도</th><th>범위</th><th>의미</th></tr></thead>
+    <tbody>
+      <tr><td><b>Importance</b> 중요도</td><td><b>1~5</b></td><td>해당 디스크립터가 직업에 얼마나 중요한가</td></tr>
+      <tr><td><b>Level</b> 수준</td><td><b>0~7</b></td><td>어느 수준/복잡도로 요구되는가(BARS 닻점)</td></tr>
+      <tr><td><b>Frequency</b> 빈도</td><td>범주형</td><td>Frequently(일일+)·Occasionally(월 1회+)·Rarely(연 1회−)</td></tr>
+      <tr><td><b>Relevance</b> 관련성</td><td>%</td><td>해당 TASK를 자기 직업과 관련 있다고 답한 재직자 비율</td></tr>
+    </tbody>
+  </table>
+  <p><b>표준점수(0~100) 공식</b>: <code>S = ((O − L) / (H − L)) × 100</code> (O=원점수, L=최저, H=최고). 예: Importance 3 → 50점, Level 5 → 약 71점.</p>
+  <div class="key"><b>🟢 핵심 규칙(Core 판정)</b> — O*NET이 직업별로 "이 활동이 핵심"이라 표시하는 기준은 <b>관련성 ≥ 67% AND 평균 중요도 ≥ 3.0</b>. 둘 다 충족해야 Core, 아니면 Supplemental. → 우리 Stage 5(직업별 GWA 측정) 설계가 그대로 차용할 규칙.</div>
+</section>
+
+<!-- ====================== PART III ====================== -->
+<div class="part" id="p3"><div class="pl">PART Ⅲ</div><h2>O*NET은 어떻게 만들어졌나 — HumRRO · WA Project</h2><p>우리가 따르는 절차의 원전. 11년·168 인·월의 수작업.</p></div>
+
+<section>
+  <h2><span class="num">6.</span>HumRRO(2002) — TASK 품질관리의 원점</h2>
+  <p class="lead">맨 아래 TASK 층을 "어떻게 거를 것인가"의 기준을 세운 보고서.</p>
+
+  <h3><span class="num">6.1</span> 3대 유지 기준과 통계적 근거</h3>
+  <ul class="tight">
+    <li><b>최소 15명</b> 재직자가 평정 — 7점 척도 평균 중요도의 <b>표준오차(SEM) ≤ 0.50</b> 시뮬레이션 근거(15명 SEM≈0.21). OMB 가이드라인 정합.</li>
+    <li><b>관련성 ≥ 67%</b> (초기 50%에서 상향). 무응답자는 분모 제외, "잘 알면서 무관하다 명시한 자"만 분모.</li>
+    <li><b>평균 중요도 ≥ 3.0</b> (5점). <b>빈도는 유지기준에서 제외</b> — 드물지만 치명적인 과업(응급수술·비상착륙)을 보호하기 위해.</li>
+  </ul>
+  <p>이를 <b>3-tier</b>로 분류: Core(≥67%∧≥3.0) / Supplementary(A: ≥67%∧&lt;3.0, B: 10~66%) / Non-relevant(&lt;10%, 폐기).</p>
+
+  <h3><span class="num">6.2</span> 결정적 발견과 수치</h3>
+  <table>
+    <thead><tr><th>발견</th><th>수치</th><th>의미</th></tr></thead>
+    <tbody>
+      <tr><td>과업 수 ↔ 평정 음의 상관</td><td><b>r = −0.64</b>(중요도)</td><td>과업을 무한정 늘리면 직업 핵심이 흐려짐 → 직업당 적정 수 제한 근거</td></tr>
+      <tr><td>분석가 2인 독립판정 일치</td><td><b>Cohen's Kappa 0.88</b></td><td>"almost perfect" — 절차가 명확하면 사람도 일관됨(우리 벤치마크)</td></tr>
+      <tr><td>자유응답 가지치기</td><td>1,088건 → <b>17건(1.6%)</b></td><td>진짜 신규 과업은 극소수 → AI가 35% 비과업을 자동 거르면 부하 격감</td></tr>
+      <tr><td>사전테스트 평균</td><td>중요도 4.08 · 관련성 84%</td><td>현행 목록 대다수가 양호</td></tr>
+    </tbody>
+  </table>
+
+  <div class="why"><b>왜 이게 AI 정당화의 핵심인가</b> — 자유응답의 35%가 "과업이 아님(이해불가·너무 넓음·KSAO·GWA)"이었습니다. 이 판별을 <b>현대 LLM이 95% 정확도로 자동화</b>하면, 인간 분석가의 부하가 65%로 줄어듭니다. 이것이 "AI가 인간 분석가를 대체"하는 산술적 근거입니다.</div>
+</section>
+
+<section>
+  <h2><span class="num">7.</span>WA Project(2014) — DWA·IWA 도출과 "인간 판단 우선"</h2>
+
+  <h3><span class="num">7.1</span> 가장 중요한 선택 — 정량(NLP) vs 정성(사람)</h3>
+  <p>WA Project는 시작에서 <b>"컴퓨터가 아닌 사람이 판단한다"</b>를 택했습니다. 원문:</p>
+  <div class="quote">"task statement structure is so variable that it would be very difficult for a technical system to reliably derive the most important data from tasks. In short, <b>human judgment was determined to be paramount</b>."</div>
+  <div class="caveat"><b>★ 본 연구의 방법론적 출발점</b> — 이 결론은 <b>2014년의 기술 한계</b> 때문입니다(BERT 2018·LLM 등장 이전). 2026년 LLM은 verb–object 분해를 넘어 의미 군집까지 인간 수준으로 합니다. <b>"human judgment is paramount"는 원리적 우위가 아니라 시대적 제약</b>이었고, 본 연구는 이 명제를 정면으로 갱신합니다 — 단, "의심 항목은 전문가 검수로 승격"하여 인간 판단의 본질은 유지.</div>
+
+  <h3><span class="num">7.2</span> 실제 절차와 자원</h3>
+  <ol class="steps">
+    <li><b>22개 직업군 분할</b> — 19,450 TASK를 직업군별로(Legal 134 ~ Production 2,344).</li>
+    <li><b>GWA 41 배정</b> — 분석가 3~4명 독립 선택 → consensus/majority, 분기 건만 토론(Healthcare 1,683건 중 76% 즉시 합의).</li>
+    <li><b>GWA 내 7단계 군집화</b> → DWA 후보.</li>
+    <li><b>DWA 작성 8대 규칙</b>(동사 시작·3인칭 현재·명사 최소·직무군 적정·예시절 회피·목적절 최소·8학년 가독성). 모호동사(use·handle) 금지.</li>
+    <li><b>후처리</b> — cross-family 통합 / multiple linkage 3중 검증 / legacy DWA 통합(2,164개 중 단 10개만 신규 추가 = 외적 타당도).</li>
+    <li><b>DWA→IWA 도출</b> — 같은 절차 한 단계 위(단 직업군 분할 없음). 332 IWA.</li>
+    <li><b>Round-Robin QC</b> — 한 팀 산출을 다른 팀이 검수(셀프승인 금지).</li>
+  </ol>
+  <div class="key"><b>🟢 자원 비교</b> — WA Project ≈ <b>168 인·월</b>(14명×12개월), HumRRO 파일럿 별도. 본 사업은 그 30% 미만 자원 + 8개월. <b>3.5배 효율을 AI로 확보</b>해야 산술이 맞습니다 → AI 자동화는 선택이 아니라 필수.</div>
+</section>
+
+<!-- ====================== PART IV ====================== -->
+<div class="part" id="p4"><div class="pl">PART Ⅳ</div><h2>AI 자동화 방법론과 우리의 실제 적용</h2><p>미국의 수작업 절차를 AI가 어떻게 대체했고, 우리가 실제로 무엇을 돌렸나.</p></div>
+
+<section>
+  <h2><span class="num">8.</span>13단계 인간–AI 분담과 5대 기술</h2>
+  <p class="lead">원칙: AI는 대체가 아니라 가속기. 저비용(임베딩)+고정밀(LLM) 조합. 합의도(Kappa)로 검수율 동적 조정.</p>
+  <table>
+    <caption>핵심 단계별 분담(발췌) · <span class="pill p-ai">AI</span> <span class="pill p-mix">AI+사람</span> <span class="pill p-h">사람</span></caption>
+    <thead><tr><th>단계</th><th>방법</th><th>인간검수</th></tr></thead>
+    <tbody>
+      <tr><td>TASK 후보 추출</td><td>LLM zero-shot 생성 <span class="pill p-ai">AI</span></td><td>20%</td></tr>
+      <tr><td>과업 여부·중복 판정(HumRRO)</td><td>LLM 분류 + 임베딩 cosine <span class="pill p-ai">AI</span></td><td>5%</td></tr>
+      <tr><td>GWA 41 배정</td><td>LLM few-shot + 합의 <span class="pill p-mix">AI+사람</span></td><td>30%</td></tr>
+      <tr><td>GWA 내 군집화</td><td>계층군집/HDBSCAN + 후처리 <span class="pill p-mix">AI+사람</span></td><td>50%</td></tr>
+      <tr><td>DWA·IWA 작성</td><td>LLM 초안 + 8조항 자동검증 <span class="pill p-h">사람 편집</span></td><td>100%</td></tr>
+    </tbody>
+  </table>
+  <p><b>5대 기술</b>: ① LLM zero/few-shot 분류 ② 임베딩(의미 벡터) ③ 군집화 ④ LLM 생성(라벨 초안) ⑤ 다중검증(multi-vote·self-consistency). <b>품질 게이트</b>: 인간–AI Cohen's Kappa ≥0.70, F1 ≥0.82, Silhouette ≥0.30.</p>
+</section>
+
+<section>
+  <h2><span class="num">9.</span>우리가 실제로 돌린 것 — 무-API Opus + 단일트리</h2>
+  <p>설계상의 일반론을 우리는 다음과 같이 <b>실제 가동</b>했습니다(요약본 4장의 기술 상세판).</p>
+  <ul class="tight">
+    <li><b>분석가 = Claude Opus 단독</b>(외부 API/GPT 없이 구독 서브에이전트). 같은 작업을 <b>2회 독립 추출</b>해 둘 다 나온 것만 채택(cross-run agreement).</li>
+    <li><b>임베딩 = bge-m3</b>(다국어 1024차원), <b>군집 = scipy 계층적 응집군집</b>(평균/Ward·코사인).</li>
+    <li><b>단일트리 절단</b> — 처음에 전체 TASK로 한 그루 나무를 만들고 높이를 달리 잘라 DWA·IWA·GWA를 얻음 → <b>nesting(포함관계)이 수학적으로 보장</b>(고아·중복 0).</li>
+    <li><b>실측 결과</b>: TASK 16,168 → DWA 1,192(8조항 100%, cross-family 41.4%) → IWA 178(DWA:IWA 6.7:1) → GWA <b>3안</b>(4a ONET41 수입 / 4b 순수상향식 / 4c 연역적 한국형 36).</li>
+  </ul>
+  <div class="why"><b>방법론 타당성(학술 방어)</b> — ① <b>재현성</b>: 임베딩·군집·절단이 결정론적(seed 고정) ② <b>설명가능성</b>: TASK→GWA 판정을 하위까지 역추적(Concept Bottleneck Model 정합) ③ <b>국제정합</b>: O*NET 절차 차용 + O*NET 비교로 구성타당도 보고 ④ <b>정직한 한계</b>: 자연 granularity가 약하게만 정의되고(안정구간 좁음) GWA는 데이터 자생이 아닌 전문가 설계 분류임을 실증 → 그래서 3안 비교가 정당.</div>
+  <details class="src">
+    <summary>출처 — 이론 근거(핵심 인용)</summary>
+    <div class="sb">분포가설(Harris 1954·Firth 1957) / BGE-M3 다국어 임베딩(Chen 2024) / 안정성 기반 군집수 선택(Ben-Hur 2002, Milligan&amp;Cooper 1985) / Concept Bottleneck Models(Koh 2020) / 구성타당도(Cronbach&amp;Meehl 1955) / task inventory 전통(McCormick 1979) / O*NET WA Project Technical Report(2014).</div>
+  </details>
+</section>
+
+<!-- ====================== PART V ====================== -->
+<div class="part" id="p5"><div class="pl">PART Ⅴ · 핵심</div><h2>작년 한국직업자격학회 수행연구</h2><p>본 사업이 "왜 우리에게 왔는가"의 답. 직계 사전연구 3건의 정밀 분석.</p></div>
+
+<section>
+  <h2><span class="num">10.</span>왜 본 사업은 (사)한국직업자격학회에 왔나</h2>
+  <p class="lead">본 사업은 고립된 신규 연구가 아니라, 우리 연구진이 작년에 쓴 사전연구의 실행 단계다.</p>
+  <p>본 사업의 <b>수행기관이 (사)한국직업자격학회, 연구책임자가 조세형 박사</b>입니다. 그리고 바로 그 조세형 박사가 <b>작년에 본 사업의 직계 선행과제 2건</b>을 직접 수행했습니다. 발주처(국가데이터처·통계청)도 같은 라인입니다. 즉 본 사업 RFP의 행간은 <b>"사전연구에서 평가·설계한 것을 이제 실제로 만들어라"</b>입니다.</p>
+
+  <div class="flow">
+    <b>선행 → 본 사업 타임라인</b><br><br>
+    [2021] KRIVET 1차(대분류 1–5) · [2023] KRIVET 2차(대분류 6–A) ──▶ <b>KSCO 8차</b>(2024.7 고시·2025.1 시행)<br>
+    [2024–25] 조세형 <b>직업문항 측정 개선</b>(통계청) ─┐<br>
+    [2025.12] 조세형 <b>ISCO-28 SLF 도입 평가</b>(국가데이터처) ─┼──▶ <b>[2026] P2026-010 본 사업</b><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└▶ "KSCO 8차 코드는 그대로 + 정보 층 부착"
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">11.</span>사전연구 ① — ISCO-28 SLF 국내도입 적정성 평가</h2>
+  <table>
+    <thead><tr><th>항목</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>정식명칭</td><td>국제표준직업분류 개정안 국내도입 적정성 평가 연구</td></tr>
+      <tr><td>발주</td><td><b>국가데이터처장</b></td></tr>
+      <tr><td>수행</td><td><b>(사)한국직업자격학회</b> (본 사업과 동일)</td></tr>
+      <tr><td>연구책임</td><td><b>조세형</b> · 공동 정동열·나태희·용석현</td></tr>
+      <tr><td>제출</td><td><b>2025년 12월 8일</b> (본 사업 발주 약 5~6개월 전)</td></tr>
+    </tbody>
+  </table>
+  <p>이 연구는 ISCO-28의 <b>SLF 4축(교육·책임성·경험·WBL)</b>을 한국에 도입할 수 있는지 평가하고, <b>한국형 K-SLF 적용 절차</b>를 설계했습니다.</p>
+  <table>
+    <caption>K-SLF 4단계 적용 절차와 국내 대응자료</caption>
+    <thead><tr><th>SLF 차원</th><th>국내 대응자료(사전연구 제안)</th></tr></thead>
+    <tbody>
+      <tr><td>교육</td><td>경활조사·임금직업포털 / 과정평가형 국가기술자격 / 국가기간·전략산업직종 훈련과정</td></tr>
+      <tr><td>책임성</td><td>KSCO·한국직업사전에서 <b>관리·감독·안전 책임</b> 텍스트 추출(전수 직무분석 비현실 → 텍스트 우선 + 부족분만 선택적 분석)</td></tr>
+      <tr><td>경험</td><td>한국직업사전 <b>숙련기간</b> + 채용공고 보조 + 전문가 합의</td></tr>
+      <tr><td>WBL</td><td><b>일학습병행 자격제도</b>를 대표 모델로 우선 적용</td></tr>
+    </tbody>
+  </table>
+  <div class="key"><b>🟢 본 사업과의 직결</b> — 본 연구의 <b>"Responsibility 3축(관리·감독·안전)"</b>은 이 사전연구가 설계한 K-SLF의 책임성 차원을 KSCO 직업에 실제로 부여하는 작업입니다. 즉 우리 Stage 5의 책무성 측정은 작년 사전연구의 직접 후속입니다.</div>
+</section>
+
+<section>
+  <h2><span class="num">12.</span>사전연구 ② — 직업문항 측정방법 평가 및 개선</h2>
+  <table>
+    <thead><tr><th>항목</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>발주</td><td><b>통계청장</b>(격상 이전, 2024~2025)</td></tr>
+      <tr><td>수행</td><td>(사)한국직업자격학회</td></tr>
+      <tr><td>핵심 산출</td><td>개선 직업문항 + 파일럿(500명) + AutoCoder 사례분석</td></tr>
+    </tbody>
+  </table>
+  <p><b>직업문항</b>은 설문에서 응답자의 직업을 묻는 문항입니다. 기존 3문항(하는 일·직위·산업)은 직업코딩 정확도가 낮아, 이를 <b>3영역(직능유형·직능수준·산업) 11문항</b>으로 개선했습니다.</p>
+  <table>
+    <caption>파일럿 결과(500명, 온라인 50%+면접 50%)</caption>
+    <thead><tr><th>지표</th><th>값</th></tr></thead>
+    <tbody>
+      <tr><td>1차 매칭률</td><td><b>80.2%</b></td></tr>
+      <tr><td>2차 매칭률</td><td><b>97.8%</b> (17.6%p 향상)</td></tr>
+      <tr><td>문항 수</td><td>3 → 11 (응답부담 증가)</td></tr>
+      <tr><td>특이점</td><td>직능수준 문항은 응답자 이해 부족으로 효과 제한 / 산출물 문항은 대분류 8(조작·조립)에 특히 유효</td></tr>
+    </tbody>
+  </table>
+
+  <details class="src">
+    <summary>출처 — 사전연구가 분석한 자동 직업코딩(AutoCoder) 3대 사례</summary>
+    <div class="sb">
+      <table>
+        <thead><tr><th>시스템</th><th>기술</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td><b>O*NET-SOC AutoCoder</b>(미국)</td><td>NLP+ML</td><td>시간당 10만 건, 수작업 대비 시간 70%↓·매칭 85%↑</td></tr>
+          <tr><td><b>NIOCCS</b>(미국 NIOSH)</td><td>ML(2021~)</td><td>무료·웹·직업건강 특화(SOC 2018)</td></tr>
+          <tr><td><b>G-Code</b>(캐나다 통계청)</td><td>FastText+XGBoost</td><td>영·불 다중모델, 수작업+자동 통합</td></tr>
+        </tbody>
+      </table>
+      <p><b>본 사업 시사</b>: 한국형 AutoCoder의 입력=개선된 11개 직업문항, 출력=KSCO 코드 + 직무활동 매핑 + K-SLF 4축. 사전연구 ②가 입력, ①이 출력 차원, 4계층이 매칭 엔진.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2><span class="num">13.</span>KRIVET 사전연구 — KSCO 8차 개정의 학술 근거</h2>
+  <table>
+    <thead><tr><th>보고서</th><th>발간</th><th>범위</th></tr></thead>
+    <tbody>
+      <tr><td>한국표준직업분류 개정 1차 연구 (E120210265)</td><td>2021</td><td>KSCO 대분류 1~5(관리·전문·사무·서비스·판매)</td></tr>
+      <tr><td>한국표준직업분류 개정 2차 연구 (E120230025)</td><td>2023</td><td>KSCO 대분류 6~A(농림어업·기능·조작·단순노무·군인)</td></tr>
+    </tbody>
+  </table>
+  <p>한국직업능력연구원(KRIVET)의 이 2건이 <b>KSCO 8차 개정(2024.7 고시)의 코드 변경 근거</b>입니다. 본 사업은 이 8차 코드를 <b>건드리지 않고</b> 그 위에 정보 층을 부착합니다. (krivet.re.kr에서 PDF 확보 가능)</p>
+</section>
+
+<!-- ====================== PART VI ====================== -->
+<div class="part" id="p6"><div class="pl">PART Ⅵ</div><h2>세 연구의 결합 — 본 사업의 실체</h2><p>본 사업은 직무활동 하나가 아니라 세 차원의 통합이다.</p></div>
+
+<section>
+  <h2><span class="num">14.</span>본 사업 = 직무활동 + 직능수준 + 직업문항</h2>
+  <p class="lead">스터디 자료가 다룬 "4계층"은 본 사업의 1/3일 뿐이다.</p>
+  <div class="figwrap" style="border:1px solid var(--line);border-radius:8px;padding:18px;background:#fff;text-align:center">
+    <svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3차원 결합">
+      <rect x="250" y="14" width="220" height="40" rx="8" fill="#152544"/>
+      <text x="360" y="39" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">직업정보 프레임워크 (본 사업)</text>
+      <line x1="360" y1="54" x2="360" y2="78" stroke="#c7d0de" stroke-width="1.5"/>
+      <line x1="130" y1="78" x2="590" y2="78" stroke="#c7d0de" stroke-width="1.5"/>
+      <line x1="130" y1="78" x2="130" y2="96" stroke="#c7d0de" stroke-width="1.5"/>
+      <line x1="360" y1="78" x2="360" y2="96" stroke="#c7d0de" stroke-width="1.5"/>
+      <line x1="590" y1="78" x2="590" y2="96" stroke="#c7d0de" stroke-width="1.5"/>
+      <rect x="40" y="96" width="180" height="130" rx="8" fill="#5b3a8a"/>
+      <rect x="270" y="96" width="180" height="130" rx="8" fill="#0f6b5f"/>
+      <rect x="500" y="96" width="180" height="130" rx="8" fill="#9a6212"/>
+      <text x="130" y="122" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">① 직무활동</text>
+      <text x="130" y="146" fill="#e9e2f5" font-size="11" text-anchor="middle">GWA·IWA</text>
+      <text x="130" y="163" fill="#e9e2f5" font-size="11" text-anchor="middle">DWA·TASK</text>
+      <text x="130" y="187" fill="#cbb9e6" font-size="10" text-anchor="middle">O*NET 4계층</text>
+      <text x="130" y="208" fill="#cbb9e6" font-size="10" text-anchor="middle">(본 스터디)</text>
+      <text x="360" y="122" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">② 직능수준</text>
+      <text x="360" y="146" fill="#d8efe9" font-size="11" text-anchor="middle">교육·책임성</text>
+      <text x="360" y="163" fill="#d8efe9" font-size="11" text-anchor="middle">경험·WBL</text>
+      <text x="360" y="187" fill="#b3ddd3" font-size="10" text-anchor="middle">K-SLF 4축</text>
+      <text x="360" y="208" fill="#b3ddd3" font-size="10" text-anchor="middle">(사전연구 ①)</text>
+      <text x="590" y="122" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">③ 직업문항</text>
+      <text x="590" y="146" fill="#f1e3cf" font-size="11" text-anchor="middle">직능유형·수준</text>
+      <text x="590" y="163" fill="#f1e3cf" font-size="11" text-anchor="middle">·산업 측정</text>
+      <text x="590" y="187" fill="#e3cba6" font-size="10" text-anchor="middle">11문항 개선</text>
+      <text x="590" y="208" fill="#e3cba6" font-size="10" text-anchor="middle">(사전연구 ②)</text>
+    </svg>
+    <div class="figcap" style="font-size:12.5px;color:var(--faint);margin-top:8px">본 사업의 3차원 결합 — 본 스터디가 다룬 ①은 그 1/3</div>
+  </div>
+  <div class="caveat"><b>전략적 함의</b> — 본 사업을 "O*NET 한국판(4계층) 만들기"로만 보면 RFP의 2/3를 놓칩니다. <b>직무기술 정의서는 직무활동 + K-SLF 직능수준 + 개선 직업문항 응답이 통합된 산출물</b>이어야 합니다. 우리 연구가 현재 ①에 집중돼 있으므로, ②(책무성 측정)·③(직업문항 연계)을 Stage 5 이후 통합하는 것이 완성의 조건입니다.</div>
+</section>
+
+<!-- ====================== PART VII ====================== -->
+<div class="part" id="p7"><div class="pl">PART Ⅶ</div><h2>한국 분류 맥락 — KSCO 8차 · KECO 2025</h2><p>우리가 정보 층을 부착하는 토대 분류.</p></div>
+
+<section>
+  <h2><span class="num">15.</span>KSCO 8차와 KECO 2025 — 두 분류의 긴장</h2>
+  <table>
+    <caption>KSCO 8차 vs KECO 2025 (세분류는 1:1 연계)</caption>
+    <thead><tr><th>수준</th><th>KSCO 8차</th><th>KECO 2025</th><th>기준</th></tr></thead>
+    <tbody>
+      <tr><td>대분류</td><td>10</td><td>10</td><td rowspan="4" style="vertical-align:middle"><b>KSCO=직능수준 우선</b><br><b>KECO=직무유형 우선</b></td></tr>
+      <tr><td>중분류</td><td><b>57</b></td><td><b>35</b></td></tr>
+      <tr><td>소분류</td><td>167</td><td>140</td></tr>
+      <tr><td>세분류</td><td><b>495</b></td><td><b>495</b> (1:1)</td></tr>
+    </tbody>
+  </table>
+  <p>KSCO 8차: 통계청 고시 제2024-328호, 2024.7 고시·2025.1 시행, 세세분류 1,270. 7차 대비 세분류 31개 신설·25개 이동. KECO 2025: 세분류 48개 신설·명칭변경 176건. <b>신설 직업(데이터/AI 1341·1342, 반려동물 513, 플랫폼배달 6242, 미디어창작 4168, 돌봄 5501~5504)</b>이 NLP 적용 우선순위 — 기존 직업설명 텍스트가 빈약하기 때문.</p>
+  <div class="why"><b>방법론 함의</b> — 같은 직업이 KSCO(직능수준 축)와 KECO(직무유형 축)에서 위계 위치가 다릅니다. 본 연구의 직무활동 체계는 <b>두 관점을 모두 수용</b>하는 중립 좌표를 제공할 수 있습니다. 그리고 우리 DWA의 cross-family 41.4%(미국 12%보다 높음)는 바로 이 한국 직업구조 — 범용 활동이 여러 직군에 걸침 — 의 반영입니다.</div>
+</section>
+
+<!-- ====================== PART VIII ====================== -->
+<div class="part" id="p8"><div class="pl">PART Ⅷ</div><h2>참고문헌 지도 + 방법론적 타당성·한계</h2><p>무엇이 어디에 있고, 우리 방법이 어디까지 방어되며 어디가 비는가.</p></div>
+
+<section>
+  <h2><span class="num">16.</span>참고문헌 전체 지도</h2>
+  <table>
+    <caption>해외 1차 자료(본 연구 모태)</caption>
+    <thead><tr><th>자료</th><th>역할</th><th>본 연구 활용</th></tr></thead>
+    <tbody>
+      <tr><td>O*NET 콘텐츠모델(Peterson 2001) + 1995 프로토타입</td><td>6도메인 설계철학</td><td>한국형 차원 설계 1순위 근거</td></tr>
+      <tr><td>O*NET WA Project Technical Report(2014, 영/한)</td><td>DWA·IWA 도출 절차</td><td>NLP 파이프라인 직접 모태</td></tr>
+      <tr><td>HumRRO 예비분석(2002/2010, 영/한)</td><td>TASK 품질 임계</td><td>채택기준·SEM·Kappa</td></tr>
+      <tr><td>ISCO-08 Companion Guide(ILO 2018, 영/한)</td><td>국가분류 개발 표준 7모듈</td><td>거버넌스·구조설계·매핑</td></tr>
+      <tr><td>SOC 개정 보고서(BLS) · ESCO · NOC · ANZSCO</td><td>각국 사례</td><td>국내외 비교분석</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <caption>국내 자료 + 작년 학회 수행연구</caption>
+    <thead><tr><th>자료</th><th>역할</th></tr></thead>
+    <tbody>
+      <tr><td><b>조세형 ISCO-28 SLF 도입평가(2025.12, 학회)</b></td><td>K-SLF 직능수준 차원 직계 선행</td></tr>
+      <tr><td><b>조세형 직업문항 개선(통계청, 학회)</b></td><td>직업문항·AutoCoder 직계 선행</td></tr>
+      <tr><td><b>KRIVET KSCO 개정 1·2차(2021·2023)</b></td><td>KSCO 8차 코드 근거</td></tr>
+      <tr><td>KSCO 8차(총설·분류항목표·고시) · KECO 2025(연계표)</td><td>본 연구 분석 대상·신생직업</td></tr>
+      <tr><td>NCS · KQF · 한국직업사전(KNOW)</td><td>텍스트 보강·경험/WBL 차원</td></tr>
+    </tbody>
+  </table>
+  <p><b>O*NET 원자료 입수</b>: O*NET 30.3 DB(엑셀 43개 — Tasks↔DWAs·GWAs↔IWAs↔DWAs 매핑표 포함)가 <code>01_data_collection/00_external_references/</code>에 확보되어, 우리 산출물을 미국 것과 직접 대조 가능.</p>
+</section>
+
+<section>
+  <h2><span class="num">17.</span>방법론적 타당성과 정직한 한계</h2>
+  <table>
+    <thead><tr><th>차원</th><th>타당성 근거</th></tr></thead>
+    <tbody>
+      <tr><td>재현성</td><td>임베딩·군집·절단 결정론적(seed 고정) → 통계기관 요건 충족</td></tr>
+      <tr><td>설명가능성</td><td>4계층 = concept bottleneck, GWA 판정을 TASK까지 역추적</td></tr>
+      <tr><td>국제정합</td><td>O*NET 절차 차용 + O*NET 비교로 구성타당도 보고</td></tr>
+      <tr><td>변별력</td><td>같은 KSCO 코드 내 직업이 다른 DWA/책무성으로 갈리면 세분류 분기 근거</td></tr>
+    </tbody>
+  </table>
+  <div class="caveat"><b>정직한 한계(보고서에 그대로 싣는다)</b>
+    <ul class="tight" style="margin-top:6px">
+      <li><b>자연 granularity 약함</b> — 데이터만으론 GWA가 ~2~5개로 무너짐. GWA는 전문가 설계 분류임을 실증(→ 3안 비교의 정당성).</li>
+      <li><b>추상활동 공백</b> — 의사결정·전략·자문 등은 KSCO 텍스트에 얇아 데이터로 안 잡힘 → Stage 5 전문가 측정 필요.</li>
+      <li><b>교차언어 비교 손실</b> — 한국어 TASK ↔ 영어 O*NET 라벨 cosine은 번역본 기준 참고치.</li>
+      <li><b>전문가 검증 미실행</b> — 현 산출은 AI 단독, CBM intervention(검수 웹) 가동이 신뢰성의 관건.</li>
+    </ul>
+  </div>
+  <div class="key"><b>🟢 종합</b> — 본 연구는 O*NET의 검증된 절차를 AI로 압축하되, ① 작년 학회 사전연구(K-SLF·직업문항)의 실행 후속이고, ② O*NET·ISCO 국제표준에 정합하며, ③ 한계를 정직하게 병기한다. 이 세 가지가 발주기관 앞에서의 방어선이다.</div>
+</section>
+
+<footer>
+  직업정보 프레임워크 연구 — 심층 분석본 · P2026-010 · 2026-06-16<br>
+  「대표를 위한 마스터 학습서(요약본)」의 심층 동반본. O*NET 수치는 2026-06 공식 사이트 직접 확인, 자료 간 차이는 병기.<br>
+  내부 출처: 07_references/심층분석 00~06 · 스터디자료 Part0~8 · 04_framework_design/docs/stages.
+</footer>
+
+</div>
+<a href="#top" class="backtop" aria-label="맨 위로">↑</a>
+</body>
+</html>

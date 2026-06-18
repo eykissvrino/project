@@ -1,0 +1,7 @@
+# 실시간 이벤트 로그 (이 PC 로컬 데이터 — 백업/공유 불필요)
+data/
+# 검증용 스크린샷
+_screenshots/
+# 캐릭터 일러스트는 용량이 크면 OneDrive에만 두고 git 제외 (선택)
+# public/avatars/*.png
+node_modules/

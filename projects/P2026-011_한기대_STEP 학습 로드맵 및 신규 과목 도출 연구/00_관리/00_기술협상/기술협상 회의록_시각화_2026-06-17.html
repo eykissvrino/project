@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기술협상 회의록 · 2026 STEP 학습 로드맵</title>
+<style>
+  :root{
+    --navy:#1f3355; --blue:#2e5c8a; --line:#e2e7ee; --line2:#cfd8e3;
+    --ink:#222a35; --gray:#5d6775; --soft:#f7f9fc; --soft2:#eef3f9;
+    --accent:#1f3355; --hi:#b8860b; --red:#9b2f2f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Malgun Gothic','맑은 고딕',-apple-system,sans-serif;background:#e9edf2;color:var(--ink);line-height:1.65;font-size:14px}
+  .page{max-width:880px;margin:26px auto;background:#fff;padding:46px 54px 56px;box-shadow:0 4px 22px rgba(20,40,70,.12);border-radius:4px}
+  /* doc header */
+  .doc-label{font-size:12px;letter-spacing:3px;color:var(--blue);font-weight:700;text-transform:uppercase}
+  h1.title{font-size:25px;font-weight:800;color:var(--navy);margin:8px 0 4px;letter-spacing:-.3px;line-height:1.35}
+  .org{font-size:13.5px;color:var(--gray);font-weight:600}
+  .rule{height:3px;background:var(--navy);margin:16px 0 0;border-radius:2px}
+  .rule.thin{height:1px;background:var(--line2)}
+  /* overview table */
+  table.ov{width:100%;border-collapse:collapse;margin-top:22px;font-size:13px}
+  table.ov th{background:var(--soft2);color:var(--navy);font-weight:700;text-align:left;padding:8px 12px;width:128px;border:1px solid var(--line);vertical-align:top}
+  table.ov td{padding:8px 12px;border:1px solid var(--line);color:#33404f}
+  .won{font-weight:800;color:var(--navy)}
+  .note{font-size:11.5px;color:var(--gray);margin-top:8px;line-height:1.5}
+  /* summary box */
+  .summary{margin-top:22px;border:1px solid var(--line2);border-left:4px solid var(--navy);background:var(--soft);border-radius:0 4px 4px 0;padding:16px 20px}
+  .summary h4{font-size:13px;color:var(--navy);font-weight:800;margin-bottom:8px;letter-spacing:.5px}
+  .summary ul{list-style:none}
+  .summary li{font-size:13px;padding-left:16px;position:relative;margin:4px 0;color:#34404e}
+  .summary li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;background:var(--blue);border-radius:1px}
+  .summary li b{color:var(--navy)}
+  /* section */
+  section{margin-top:34px}
+  h2{font-size:16.5px;color:var(--navy);font-weight:800;display:flex;align-items:baseline;gap:9px;padding-bottom:7px;border-bottom:2px solid var(--navy)}
+  h2 .n{font-size:13px;background:var(--navy);color:#fff;padding:1px 8px;border-radius:3px;font-weight:700}
+  h2 .en{font-size:11.5px;color:var(--gray);font-weight:600;margin-left:auto}
+  h3{font-size:13.5px;color:var(--blue);font-weight:800;margin:15px 0 6px}
+  /* body lists */
+  ul.b{list-style:none;margin:8px 0}
+  ul.b li{font-size:13px;padding-left:16px;position:relative;margin:5px 0;color:#33404f}
+  ul.b li::before{content:"–";position:absolute;left:2px;color:var(--blue);font-weight:700}
+  ul.b li b{color:var(--navy)}
+  ul.b ul{margin:4px 0 4px 6px}
+  ul.b ul li::before{content:"·"}
+  p.lead{font-size:13px;margin:8px 0;color:#33404f}
+  /* data tables */
+  table.dt{width:100%;border-collapse:collapse;margin:12px 0;font-size:12.5px}
+  table.dt th{background:var(--navy);color:#fff;font-weight:700;padding:8px 10px;text-align:left;border:1px solid #2a4366}
+  table.dt td{padding:7px 10px;border:1px solid var(--line);vertical-align:top;color:#34404e}
+  table.dt tbody tr:nth-child(even){background:var(--soft)}
+  table.dt td.c1{font-weight:700;color:var(--navy);white-space:nowrap}
+  table.dt td.idx{text-align:center;font-weight:700;color:var(--blue);width:30px}
+  /* callout */
+  .call{border:1px solid var(--line2);border-radius:4px;padding:13px 16px;margin:12px 0;font-size:13px;background:var(--soft)}
+  .call.key{border-left:4px solid var(--hi);background:#fdfaf2}
+  .call.warn{border-left:4px solid var(--red);background:#fcf5f5}
+  .call.concl{border-left:4px solid var(--navy);background:var(--soft2)}
+  .call .lab{font-weight:800;color:var(--navy);margin-right:6px}
+  .call.warn .lab{color:var(--red)}
+  .call.key .lab{color:var(--hi)}
+  /* number adjust inline */
+  .nums{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--navy);font-size:14px}
+  .nums .a{color:var(--gray)} .nums .arw{color:var(--blue);font-weight:700} .nums .b{color:var(--hi)}
+  /* two col */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  /* action table emphasis */
+  td.due{white-space:nowrap;font-weight:700;color:var(--navy);text-align:center}
+  tr.hot td.due{color:var(--hi)}
+  /* footer */
+  footer{margin-top:38px;padding-top:14px;border-top:1px solid var(--line2);font-size:11px;color:var(--gray);text-align:center;line-height:1.6}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0;max-width:100%;padding:20px 24px}}
+  @media(max-width:720px){.page{padding:28px 20px}.two{grid-template-columns:1fr}h2 .en{display:none}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 표제 -->
+  <div class="doc-label">기술협상 회의록</div>
+  <h1 class="title">2026년도 STEP 학습 로드맵(SLR) 및 신규 과목 도출 연구</h1>
+  <div class="org">한국기술교육대학교(STEP 온라인평생교육원) &nbsp;×&nbsp; 시앤피컨설팅(주)</div>
+  <div class="rule"></div>
+
+  <table class="ov">
+    <tr><th>사업명</th><td>2026년도 STEP 학습 로드맵(SLR) 및 신규 과목 도출 연구</td>
+        <th>협상일시</th><td>2026. 06. 17.(화)</td></tr>
+    <tr><th>입찰공고번호</th><td>R26BK01517303-000</td>
+        <th>계약금액</th><td><span class="won">145,000,000원</span> (가감조정 0원)</td></tr>
+    <tr><th>수요기관</th><td>한국기술교육대학교 (STEP 온라인평생교육원)</td>
+        <th>협상결과</th><td>성립 (계약의 일부로 동의)</td></tr>
+    <tr><th>수행사</th><td>시앤피컨설팅(주) · 대표 조세형</td>
+        <th>착수보고회</th><td>2026. 07. 08.(수) · 보직자 약 10명</td></tr>
+    <tr><th>참석</th><td colspan="3">(발주처) STEP 사업담당 파트장 외 &nbsp;/&nbsp; (수행사) 시앤피컨설팅 연구진 &nbsp;|&nbsp; 목표완료 2026.11.20 (5개월)</td></tr>
+  </table>
+
+  <!-- 핵심 요약 -->
+  <div class="summary">
+    <h4>핵심 요약</h4>
+    <ul>
+      <li>담당 인력 교체에 따른 <b>사업 연속성 확보</b>가 관건 — 전년도 수행인력(김준식·손혜림 선임 등) 인수인계 필요</li>
+      <li>최대 쟁점 ①: 도출 방법론을 <b>세분류 단위 설문</b>으로 전환(잠정), <b>최종 결정은 착수보고회</b></li>
+      <li>최대 쟁점 ②: <b>AX 과정의 실수요</b> — NCS 세분류 외 기업 맞춤형 등 현실적 수요조사 방안 필요(과목 200→150)</li>
+      <li>착수보고회(7/8) 완성도가 사업 신뢰도를 좌우 — 그 전 <b>WBS는 다음주 중</b>, <b>MASTER DB 1차 업데이트</b> 선행</li>
+    </ul>
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="n">1</span> 회의 개요 및 발주처 협의 방향</h2>
+    <p class="lead">본 사업은 시앤피컨설팅이 과거부터 수행해 온 사업이나, 양측 담당 인력이 모두 교체되어 사업 연속성 확보가 필요한 상황이다. 발주처는 착수에 앞서 다음의 보완·중점 사항을 전달하였다.</p>
+    <ul class="b">
+      <li>전년도 수행 맥락(NCS DB 구축 등)에 대한 <b>이해를 한층 높일 필요</b></li>
+      <li>제안 내용의 <b>구체화 및 실행 방안 보강</b> 필요</li>
+      <li>작년 프로세스 답습을 지양하고, 특히 <b>AX 분야는 신규 프로세스 설계</b>가 필요</li>
+      <li>요청: 전년도 수행인력(<b>김준식 선임, 손혜림 선임 등</b>)으로부터 인수인계 후 착수보고회까지 구체화</li>
+    </ul>
+    <h3>작년 대비 유리한 여건</h3>
+    <ul class="b">
+      <li>훈련·협회·자격 데이터를 <b>발주처가 직접 확보·제공</b> → 과거 약 3개월 소요되던 수집 작업 불필요</li>
+      <li>NCS 양식·데이터가 정비되어 있어 <b>업데이트 중심</b>으로 진행 가능</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="n">2</span> 착수보고회(7/8) 전 보완 요청 사항<span class="en">RFP 볼드 + 평가위원 의견</span></h2>
+    <table class="dt">
+      <thead><tr><th class="idx">#</th><th style="width:150px">항목</th><th>발주처 요청 내용</th></tr></thead>
+      <tbody>
+        <tr><td class="idx">1</td><td class="c1">분류 기준</td><td>일반 과목과 AX 과목의 수요조사 방법·우선순위 가중치를 분리하고, 평생/디지털/첨단융합(AX) 추출의 명확한 지표·기준 제시</td></tr>
+        <tr><td class="idx">2</td><td class="c1">응답률 제고</td><td>발표 시 5% 언급 → 실제 10% 수준. 쿠폰 외에 응답률·정확성을 높일 구체적 방안 보완</td></tr>
+        <tr><td class="idx">3</td><td class="c1">조사체계 개선</td><td>설문 단계·재배치 방안·타당성 검증 (응답률과 연계)</td></tr>
+        <tr><td class="idx">4</td><td class="c1">일정 단축</td><td>6개월 → <b>5개월 이내</b> 재조정 (목표완료 11.20)</td></tr>
+        <tr><td class="idx">5</td><td class="c1">자동화 방안</td><td>STEP 시스템 연계 자동화(현재 수기). 착수발표분·최종반영분 구분 보고</td></tr>
+        <tr><td class="idx">6</td><td class="c1">미활용 과목 처리</td><td>버퍼 개발분 폐기 기준 부재 → '2년 이상 미활용 시 폐기' 등 근거 명시(현재 근거 없이 1년)</td></tr>
+        <tr><td class="idx">7</td><td class="c1">결측치 처리</td><td>제외/중간값/최솟값 중 처리 방법론을 전년도와 비교 제시</td></tr>
+        <tr><td class="idx">8</td><td class="c1">AI 학습 방지·보안</td><td>「AI 활용 이력 명세서」(모델·위치·방법) 자유 양식으로 최종 제출</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="n">3</span> 연구재현 — 연구보고서 필수 반영<span class="en">RFP 10p 박스</span></h2>
+    <table class="dt">
+      <tbody>
+        <tr><td class="c1" style="width:120px">① 제도연계</td><td>정책 활용률 제고 · 후속사업 추진을 위한 제도 연계 방안</td></tr>
+        <tr><td class="c1">② 자동화</td><td>STEP 로드맵과 발주처 시스템의 효율화·연계 자동화</td></tr>
+        <tr><td class="c1">③ 조사체계 개선</td><td>설문조사 단계 · 재배치 방안 · 타당성 검증</td></tr>
+        <tr><td class="c1">④ 매뉴얼화</td><td>산출물·프로세스의 매뉴얼화</td></tr>
+      </tbody>
+    </table>
+    <div class="call key"><span class="lab">지속적·체계적 수집체계 (발주처 핵심 문제의식)</span>매년 대량 설문 → 낮은 응답률(5%) 반복에 대한 근본적 의문. 대안으로 STEP 행동 데이터(클릭·학습경로) 기반 자동 모니터링으로 연계 과정의 공백을 탐지하고, 강의 후기 설문에 '추가 필요 과정' 문항을 누적하는 상시 수집 + 타 기관 벤치마킹을 요청.</div>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="n">4</span> 핵심 쟁점 ① 도출 방법론<span class="en">세분류 vs 능력단위</span></h2>
+    <p class="lead"><b>쟁점</b> — 수요조사·설문조사를 어느 단위에서 수행할 것인가.</p>
+    <table class="dt">
+      <thead><tr><th style="width:70px">구분</th><th>작년까지 (능력단위)</th><th>수행사 제안 (세분류)</th></tr></thead>
+      <tbody>
+        <tr><td class="c1">방식</td><td>능력단위 수요조사 → 설문조사 → 능력단위별 우선순위 도출</td><td>세분류 설문으로 분야 확정 → AI기반+정성(전문가)평가로 능력단위 선정</td></tr>
+        <tr><td class="c1">장점</td><td>실수요 기반, 콘텐츠 과정명과 유사해 학습자 이해 용이</td><td>설문 분량 축소, 결측치 감소, 대량 도출에 적합</td></tr>
+        <tr><td class="c1">단점</td><td>설문 분량 과다, 결측치 다발(3점 통일 등)</td><td>학습자가 세분류(직무수준)를 이해 못함 → 응답 타당성 우려</td></tr>
+      </tbody>
+    </table>
+    <h3>논의·합의 방향</h3>
+    <ul class="b">
+      <li>발주처: 객관적 정량 데이터가 <b>세분류 기준으로만 확보 가능</b>(직능연 자문) → 세분류 불가피</li>
+      <li>단, 학습자 이해를 위해 <b>능력단위명·과정명 예시 제시</b> + 클릭 시 하위 과정 펼침(화면 캡처 활용)</li>
+      <li>전문가 의존성을 <b>객관적 근거(데이터·설문)로 보완</b>하는 방안 제시 요망</li>
+    </ul>
+    <div class="call concl"><span class="lab">잠정 결론</span>발주처는 세분류 단위 설문으로 방향을 정하고자 함(자문·평가위원 의견 일치). 단, 방향성 사안이므로 <b>최종 결정은 착수보고회</b>. 수행사는 의사결정용 근거자료(전환 타당성·우려 해소·능력단위 예시 화면)를 준비.</div>
+    <p class="note">추가 고려 — E-러닝은 소단위 개발 불가피 → 세분류는 분야 선정용, 콘텐츠 단위는 전문가 위임 등 후속 제안 필요.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="n">5</span> 핵심 쟁점 ② AX(AI 전환) 과정 도출<span class="en">발주처 최대 관심</span></h2>
+    <p class="lead"><b>과목 수 조정(협의)</b> &nbsp; <span class="nums"><span class="a">제안서 100 / 100 / 200</span> <span class="arw">→</span> <span class="b">100 / 150 / 150</span></span> &nbsp; (AX 200→150 축소 · GX 포함이나 올해 개발분 多로 비중 확대 불필요)</p>
+    <div class="two">
+      <div>
+        <h3>구조적 특성</h3>
+        <ul class="b">
+          <li>평생·디지털은 키워드로 분리 가능하나, <b>AX는 모든 직무에 접목</b>되어 별도 분리 불가 — 전체에서 AI를 먼저 선별 후 평생/디지털 구분</li>
+          <li>같은 세분류·과정이 AI 버전과 디지털·평생 버전으로 동시 개발될 수 있음</li>
+        </ul>
+        <h3>수준 체계화</h3>
+        <ul class="b">
+          <li>초급·중급·고급 단계화(발주처 작년부터 요청), 시장 성숙도 미흡 → 단계적 추진</li>
+          <li>강사 수급(산업 도메인 + AI 양면 전문가 부재)이 현실적 제약</li>
+        </ul>
+      </div>
+      <div>
+        <div class="call warn"><span class="lab">최대 우려 · 수요 실재성</span>작년 세분류 상위 24개 AX 과정 개발 중이나 "실제 수강 수요가 있는가"가 관건. NCS 세분류 외 <b>현실적 수요조사 방안</b> 추가 제시 요청.</div>
+        <h3>현실적 대안</h3>
+        <ul class="b">
+          <li>협력기업·훈련기업 대상 <b>맞춤형 AX 수요조사</b>(기업대표·교육담당자 등)</li>
+          <li>NCS 종속 X → <b>"어떤 도메인 × 어떤 AI 도구"</b> 중심 수요 파악</li>
+        </ul>
+      </div>
+    </div>
+    <div class="call warn"><span class="lab">리터러시·중복 회피 (중요)</span>AI 리터러시 과정은 가급적 도출하지 말 것 — 과기부·EBS 등 타 부처와 콘텐츠 중복(부처 간 조정 진행 중). 방향은 <b>직업훈련 적합 콘텐츠 + 산업 적용형 AX</b>로, 도구 자체보다 "산업에서 어떻게 활용하는가"에 초점.</div>
+  </section>
+
+  <!-- 6+7 -->
+  <section>
+    <h2><span class="n">6·7</span> 정량평가 · 산출물 · 데이터 관리</h2>
+    <div class="two">
+      <div>
+        <h3>정량평가 점수체계</h3>
+        <ul class="b">
+          <li>결측치 처리(4분위→5점 만점, 결측 1점) 적정성 검토(편차 과다 우려)</li>
+          <li>설문 신뢰도 대비 큰 비중(50) 부여에 평가위원 의견 제기</li>
+          <li><b>올해는 기존 체계 유지</b>(AX까지 재설계는 무리), 후반부·연구재현으로 보완</li>
+          <li>"5:5 유지하려면 설문 신뢰도 제고가 전제" — 양측 공감</li>
+        </ul>
+      </div>
+      <div>
+        <h3>산출물 · 데이터</h3>
+        <ul class="b">
+          <li><b>MASTER DB 1차 업데이트 수행</b> — 1차 단계 산출물로 제출(게시용/정보용 2종 변경이력 명기)</li>
+          <li>최종 산출물 4종: 연구보고서·매뉴얼·DB·과목개요서</li>
+          <li><b>과목개요서 엑셀 제출</b>(AI 활용·다업체 관리)</li>
+          <li>단계별 백데이터 제출 필수(DB→수요평가→적합성평가)</li>
+          <li>데이터: 훈련(심사평가원)·지역=발주처 제공 / 자격=별도수집</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="n">8</span> 향후 일정 및 협업 방식</h2>
+    <table class="dt">
+      <thead><tr><th style="width:130px">시점</th><th>내용</th></tr></thead>
+      <tbody>
+        <tr><td class="c1">즉시 ~ 다음 주</td><td>협업툴 'Flow' 계정 발급 · 협업 착수. 실무 소통은 담당 파트장과 직접</td></tr>
+        <tr><td class="c1">다음 주 중</td><td><b>일정 세부 계획(WBS) 제출</b> — 주차별 상세 일정·진행률 (이후 착수보고회에서 확정)</td></tr>
+        <tr><td class="c1">7/8 이전</td><td>발주처: DB·설문 표본 제공 / 수행사: 자격 데이터 선작업, 표본 항목(연령·소속) 협의</td></tr>
+        <tr><td class="c1">2026.07.08(수)</td><td><b>착수보고회</b> — 보직자 약 10명, 방법론 최종 의사결정</td></tr>
+        <tr><td class="c1">2026.11.20</td><td>목표 완료 (5개월 과업)</td></tr>
+      </tbody>
+    </table>
+    <p class="note">자문위원회: 수행사 내부 고문 제도 + 필요시 외부 자문 구성·운영. 전문가 자문 워크숍 시 발주처 참여.</p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="n">9</span> 액션 아이템</h2>
+    <table class="dt">
+      <thead><tr><th style="width:70px">주체</th><th>항목</th><th style="width:110px">기한</th></tr></thead>
+      <tbody>
+        <tr class="hot"><td class="c1">수행사</td><td>도출 방법론(세분류 전환) 의사결정용 근거자료 — 타당성·우려 해소·능력단위 예시 화면</td><td class="due">착수보고회 7/8</td></tr>
+        <tr class="hot"><td class="c1">수행사</td><td>AX 현실적 수요조사 방안(기업 맞춤형) + 초·중·고급 단계화 + 리터러시 중복 회피</td><td class="due">착수보고회 7/8</td></tr>
+        <tr><td class="c1">수행사</td><td>분류기준·응답률·조사체계·일정(5개월)·미활용 과목·결측치 처리 보완안</td><td class="due">착수보고회 7/8</td></tr>
+        <tr class="hot"><td class="c1">수행사</td><td>MASTER DB 1차 업데이트 수행</td><td class="due">1차 단계</td></tr>
+        <tr class="hot"><td class="c1">수행사</td><td>일정 세부 계획(WBS) 제출</td><td class="due">다음주 중</td></tr>
+        <tr><td class="c1">수행사</td><td>「AI 활용 이력 명세서」 양식 운영 시작</td><td class="due">연구 전 기간</td></tr>
+        <tr><td class="c1">발주처</td><td>DB·설문 표본·훈련/지역 데이터 제공, 협업툴(Flow) 계정 발급</td><td class="due">착수보고회 이전</td></tr>
+        <tr><td class="c1">양측</td><td>설문 표본 항목(연령·소속 등) 협의</td><td class="due">착수 전</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    작성: VRIN AI Hub &nbsp;·&nbsp; 근거: 기술협상 녹취록(2026.06.17) + 제안서 협상 결과 통보서(성립)<br>
+    ※ 음성 기록상 일부 기관·용어는 문맥에 따라 정정(온평원=온라인평생교육원, 직능연=한국직업능력연구원)
+  </footer>
+
+</div>
+</body>
+</html>

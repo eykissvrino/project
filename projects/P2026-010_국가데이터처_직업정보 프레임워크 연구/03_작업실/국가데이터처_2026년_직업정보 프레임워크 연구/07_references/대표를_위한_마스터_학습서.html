@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대표를 위한 마스터 학습서 — 직업정보 프레임워크 연구</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ink:#1a2230; --body:#28303e; --muted:#697587; --faint:#8a94a3;
+    --line:#dde3ec; --line2:#eef1f6; --bg:#ffffff; --paper:#fbfcfe;
+    --navy:#152544; --accent:#1f4e8c; --accent2:#7a2e3a;
+    --task:#9a6212; --dwa:#1f4e8c; --iwa:#0f6b5f; --gwa:#5b3a8a;
+    --soft:#f1f5fb;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--body);
+    font-family:"Pretendard",-apple-system,system-ui,"Segoe UI","Malgun Gothic",sans-serif;
+    font-size:16px;line-height:1.82;letter-spacing:-.1px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:0 30px}
+  header.cover{border-bottom:3px solid var(--navy);padding:52px 0 26px;margin-bottom:8px}
+  .docmeta{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.6px;margin-bottom:14px}
+  header.cover h1{font-size:32px;line-height:1.3;font-weight:800;color:var(--navy);margin:0 0 10px;letter-spacing:-.6px}
+  header.cover .sub{font-size:18px;color:var(--muted);font-weight:600;margin:0 0 22px}
+  .coverbar{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .coverbar div{flex:1;min-width:150px;padding:11px 16px;border-right:1px solid var(--line2);font-size:13.5px}
+  .coverbar div:last-child{border-right:none}
+  .coverbar b{display:block;color:var(--faint);font-size:11.5px;font-weight:700;letter-spacing:.4px;margin-bottom:2px}
+  .abstract{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:6px;padding:18px 22px;margin:24px 0 6px;font-size:15px;color:var(--body)}
+  .abstract b{color:var(--navy)}
+  .how{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0 0}
+  .how .chip{flex:1;min-width:210px;border:1px solid var(--line);border-radius:8px;padding:12px 16px;font-size:13.5px;background:#fff}
+  .how .chip b{display:block;color:var(--navy);font-size:14px;margin-bottom:3px}
+  nav.toc{margin:26px 0 8px;padding:18px 22px;background:var(--soft);border-radius:8px}
+  nav.toc h4{margin:0 0 10px;font-size:12.5px;letter-spacing:.5px;color:var(--faint);font-weight:700}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px;font-size:14px}
+  @media(max-width:680px){nav.toc ol{columns:1}}
+  nav.toc li{margin:4px 0}
+  nav.toc a{color:var(--accent);text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{padding:36px 0;border-bottom:1px solid var(--line2)}
+  h2{font-size:22px;font-weight:800;color:var(--navy);margin:0 0 6px;letter-spacing:-.3px;
+    padding-bottom:9px;border-bottom:2px solid var(--line)}
+  h2 .num{color:var(--accent);margin-right:9px}
+  h3{font-size:17.5px;font-weight:800;color:var(--ink);margin:28px 0 8px}
+  h3 .num{color:var(--accent);font-weight:700;margin-right:7px}
+  h4{font-size:14px;font-weight:700;color:var(--accent2);margin:16px 0 6px}
+  p{margin:11px 0}
+  .lead{font-size:15.5px;color:var(--muted);margin:6px 0 18px}
+  strong,b{color:var(--ink)}
+  .interp{border:1px solid var(--line);border-left:3px solid var(--iwa);background:#f4faf8;border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .interp b{color:#0f6b5f}
+  .method{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--paper);border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .why{border:1px solid #d9e6f5;border-left:3px solid var(--accent);background:#f3f8fd;border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .why b{color:var(--accent)}
+  .caveat{border:1px solid #ecd9c2;border-left:3px solid var(--accent2);background:#fdf8f3;border-radius:6px;padding:12px 18px;margin:14px 0;font-size:14px}
+  .caveat b{color:var(--accent2)}
+  .key{border:1px solid #cfe0d6;border-left:3px solid #0f6b5f;background:#f3faf6;border-radius:6px;padding:14px 18px;margin:16px 0;font-size:14.5px}
+  .key b{color:#0f6b5f}
+  details.deep{border:1px dashed #b9c6da;border-radius:8px;margin:14px 0;background:#f8fafd;overflow:hidden}
+  details.deep>summary{cursor:pointer;padding:11px 16px;font-size:13px;font-weight:700;color:var(--accent);
+    list-style:none;display:flex;align-items:center;gap:8px;user-select:none}
+  details.deep>summary::-webkit-details-marker{display:none}
+  details.deep>summary::before{content:"▸";font-size:12px;transition:transform .15s}
+  details.deep[open]>summary::before{transform:rotate(90deg)}
+  details.deep>summary:hover{background:#eef3fa}
+  details.deep .dbody{padding:4px 18px 16px;font-size:13.5px;color:var(--body);border-top:1px solid #e3eaf4}
+  details.deep .dbody table{font-size:13px}
+  .tag{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:4px;background:#e7eef6;color:var(--accent);margin-left:6px;letter-spacing:.3px}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  caption{caption-side:top;text-align:left;font-size:12.5px;color:var(--faint);font-weight:700;margin-bottom:6px;letter-spacing:.3px}
+  th,td{border-bottom:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  thead th{border-bottom:2px solid var(--navy);color:var(--navy);font-weight:700;font-size:13px;letter-spacing:.2px}
+  tbody tr:hover td{background:var(--paper)}
+  td code,p code,li code{background:var(--soft);color:var(--accent2);padding:1px 6px;border-radius:4px;font-size:13px;font-family:Consolas,monospace}
+  .levels{border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:16px 0}
+  .lvrow{display:flex;border-bottom:1px solid var(--line2)}
+  .lvrow:last-child{border-bottom:none}
+  .lvrow .tier{flex:none;width:150px;padding:13px 16px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+  .lvrow .tier b{font-size:16px;letter-spacing:.5px}.lvrow .tier small{font-size:11.5px;opacity:.92}
+  .lvrow .desc{padding:12px 18px;font-size:14px}
+  .lvrow .desc .ex{color:var(--muted);font-size:13px;margin-top:3px}
+  .t-gwa{background:var(--gwa)}.t-iwa{background:var(--iwa)}.t-dwa{background:var(--dwa)}.t-task{background:var(--task)}
+  ul.tight{margin:8px 0;padding-left:20px}ul.tight li{margin:6px 0}
+  ol.steps{margin:8px 0;padding-left:22px}ol.steps li{margin:7px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.two{grid-template-columns:1fr}.lvrow{flex-direction:column}.lvrow .tier{width:100%}}
+  .trackcard{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:14px 0}
+  .trackcard .th{padding:11px 16px;color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;gap:10px}
+  .trackcard .th .badge{font-size:11px;background:rgba(255,255,255,.25);padding:2px 9px;border-radius:5px;font-weight:700}
+  .trackcard .tb{padding:12px 18px;font-size:14px}
+  .tc-a{background:#5b3a8a}.tc-b{background:#9a6212}.tc-c{background:#0f6b5f}
+  .figwrap{border:1px solid var(--line);border-radius:8px;padding:18px;margin:16px 0;background:#fff;text-align:center}
+  .figcap{font-size:12.5px;color:var(--faint);margin-top:10px}
+  .num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+  @media(max-width:680px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+  .num-grid .cell{border:1px solid var(--line);border-radius:8px;padding:14px 12px;text-align:center;background:var(--paper)}
+  .num-grid .cell .big{font-size:24px;font-weight:800;color:var(--navy);line-height:1.1}
+  .num-grid .cell .lbl{font-size:12px;color:var(--muted);margin-top:5px}
+  .num-grid .cell .sub{font-size:11px;color:var(--faint);margin-top:2px}
+  footer{padding:26px 0 56px;color:var(--faint);font-size:12.5px;border-top:2px solid var(--navy);margin-top:8px}
+  svg{max-width:100%;height:auto}
+  .backtop{position:fixed;right:22px;bottom:22px;background:var(--navy);color:#fff;border-radius:50%;width:44px;height:44px;
+    display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px;box-shadow:0 3px 12px rgba(0,0,0,.2);opacity:.85}
+  .backtop:hover{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover" id="top">
+  <div class="docmeta">국가데이터처 2026 · 직업분류 고도화를 위한 직업정보 프레임워크 연구 (P2026-010)</div>
+  <h1>대표를 위한 마스터 학습서<br>— 직업정보 프레임워크 연구의 모든 것</h1>
+  <p class="sub">핵심 자료 · O*NET 개발 방법론 · 현재 O*NET 구성 · 우리의 연구개발 방법</p>
+  <div class="coverbar">
+    <div><b>대상</b>이석주 대표님 (의사결정자용)</div>
+    <div><b>작성</b>2026-06-16</div>
+    <div><b>읽는 법</b>본문 = 평이 · 심화 박스 = 펼쳐보기</div>
+    <div><b>분량</b>30~40분 통독</div>
+  </div>
+
+  <div class="abstract">
+    이 문서는 대표님이 <b>「직업정보 프레임워크 연구」를 스스로 판단·지휘</b>하실 수 있도록 연구 전체를 한 권으로 엮은 학습서입니다.
+    우리가 무엇을 만드는지(1장), 세계 표준인 미국 <b>O*NET이 지금 어떤 모습인지</b>(2장), O*NET이 <b>어떻게 11년에 걸쳐 만들어졌는지</b>(3장),
+    그리고 우리가 그것을 <b>인공지능으로 8개월 안에 어떻게 압축해 만들었는지</b>(4장)를 차례로 다룹니다.
+    5장은 지금 대표님이 고민 중이신 <b>GWA(최상위 활동) 도출의 세 갈래 길</b>을, 6장은 <b>어떤 자료가 어디에 있는지</b> 지도를 담았습니다.
+    <b>본문은 비개발자도 읽히도록 평이하게</b> 썼고, 숫자·알고리즘 같은 기술 상세는 <b>회색 점선의 '심화' 박스</b>에 접어 두었습니다. 필요할 때만 펼치시면 됩니다.
+  </div>
+
+  <div class="how">
+    <div class="chip"><b>📖 본문</b>대표님이 그냥 읽으시면 되는 줄거리. '왜 이렇게 했나'와 의사결정 포인트 중심.</div>
+    <div class="chip"><b>▸ 심화 박스</b>클릭하면 펼쳐지는 기술 상세(수치·절차·알고리즘). 안 펼쳐도 이해에 지장 없음.</div>
+    <div class="chip"><b>🟢 핵심 카드</b>그 장에서 꼭 기억할 한 문장.</div>
+  </div>
+
+  <nav class="toc">
+    <h4>목 차</h4>
+    <ol>
+      <li><a href="#s0">30초 요약 — 전체 그림 한 장</a></li>
+      <li><a href="#s1">우리가 만드는 것은 무엇인가</a></li>
+      <li><a href="#s2">O*NET이란 무엇인가 (현재 구성)</a></li>
+      <li><a href="#s3">O*NET은 어떻게 만들어졌나 (개발 방법론)</a></li>
+      <li><a href="#s4">우리는 어떻게 만들었나 (우리의 방법)</a></li>
+      <li><a href="#s5">GWA — 세 갈래 길과 핵심 발견</a></li>
+      <li><a href="#s6">핵심 자료 지도 — 어디에 뭐가 있나</a></li>
+      <li><a href="#s7">대표님이 기억할 10가지 · 의사결정 포인트</a></li>
+      <li><a href="#s8">용어 빠른 사전</a></li>
+    </ol>
+  </nav>
+</header>
+
+<!-- ===================== 0. 30초 요약 ===================== -->
+<section id="s0">
+  <h2><span class="num">0.</span>30초 요약 — 전체 그림 한 장</h2>
+  <p class="lead">바쁘시면 이 장만 읽으셔도 핵심은 잡힙니다.</p>
+
+  <ul class="tight">
+    <li><b>무엇을 하나</b> — 한국의 모든 직업(약 1,270개)이 "실제로 무슨 일을 하는가"를 <b>4단계 활동 사전</b>으로 만드는 국가 연구입니다. 미국에는 이미 <b>O*NET</b>이라는 표준이 있고, 우리는 그 한국판을 만듭니다.</li>
+    <li><b>4단계란</b> — 가장 구체적인 <b>TASK(과업)</b> → 묶음 <b>DWA</b> → 중간 <b>IWA</b> → 가장 일반적인 <b>GWA</b>. 아래에서 위로 쌓아 올립니다.</li>
+    <li><b>미국은 어떻게 했나</b> — 박사급 인력 십수 명이 <b>11년</b> 동안 손으로 분류했습니다(약 168 인·월).</li>
+    <li><b>우리는 어떻게 하나</b> — 그 일을 <b>인공지능(Claude Opus)</b>이 사람 분석가 대신 수행하게 해 <b>8개월</b>로 압축했습니다. 핵심은 "AI가 초안, 전문가가 검증".</li>
+    <li><b>지금까지</b> — TASK 16,168개 → DWA 1,192개 → IWA 178개까지 <b>전수 완성</b>. 모두 한 뿌리에서 잘라내 위·아래가 수학적으로 맞물립니다.</li>
+    <li><b>지금 고민 중인 지점</b> — 맨 위 <b>GWA</b>를 ① 미국 것 41개를 그대로 들여올지, ② 우리 데이터로 새로 뽑을지, ③ 미국의 <i>방법</i>만 빌려 한국형을 설계할지. <b>세 가지를 다 만들어 비교</b>해 두었고, 정본(공식본) 선택만 남았습니다.</li>
+  </ul>
+
+  <div class="key"><b>🟢 한 문장</b> — "세계 표준(O*NET)의 검증된 설계를 따르되, 사람이 11년 한 일을 AI로 8개월에 압축했고, 4계층 골격은 다 섰으며, 맨 위 GWA의 '정본 선택'이 지금의 핵심 의사결정이다."</div>
+</section>
+
+<!-- ===================== 1. 무엇을 만드나 ===================== -->
+<section id="s1">
+  <h2><span class="num">1.</span>우리가 만드는 것은 무엇인가</h2>
+  <p class="lead">직업·직무·과업의 차이부터, 왜 "활동"을 4단계로 쪼개는지까지.</p>
+
+  <h3><span class="num">1.1</span> 직업 분류는 왜 필요한가</h3>
+  <p>국가는 "이 나라에 어떤 직업이 몇 명 있고, 무슨 일을 하는가"를 알아야 정책을 세웁니다. 그래서 <b>한국표준직업분류(KSCO)</b>라는 국가 코드표가 있습니다(통계청 → 2025년 10월 출범한 <b>국가데이터처</b>가 관할). 그런데 KSCO는 직업에 <b>번호와 이름</b>을 붙일 뿐, "그 직업이 실제로 매일 무슨 활동을 하는지"는 담고 있지 않습니다. 그 빈칸을 채우는 것이 이 연구입니다.</p>
+
+  <div class="why"><b>왜 지금?</b> AI·자동화 시대에는 "직업 이름"보다 "그 직업이 하는 <b>활동</b>"이 중요해졌습니다. 어떤 활동이 자동화되는지, 한 직업에서 다른 직업으로 어떤 활동이 옮겨갈 수 있는지를 보려면 활동 단위의 데이터가 필요합니다. 국가데이터처가 "직업분류 <b>고도화</b>"라고 이름 붙인 이유입니다.</div>
+
+  <h3><span class="num">1.2</span> 직업 → 직무 → 과업, 그리고 '활동'</h3>
+  <p>용어를 한 번만 정리하면 나머지가 쉬워집니다.</p>
+  <table>
+    <thead><tr><th>용어</th><th>뜻</th><th>예시</th></tr></thead>
+    <tbody>
+      <tr><td><b>직업</b></td><td>사회에서 한 사람이 맡는 일자리의 종류</td><td>"간호사"</td></tr>
+      <tr><td><b>직무</b></td><td>그 직업이 책임지는 일의 묶음</td><td>"환자 간호", "투약 관리"</td></tr>
+      <tr><td><b>과업(TASK)</b></td><td>실제로 하는 가장 구체적인 한 가지 행동</td><td>"환자의 혈압을 측정한다"</td></tr>
+      <tr><td><b>활동(Work Activity)</b></td><td>여러 직업·과업에서 공통으로 나타나는 행동을 묶은 것</td><td>"환자의 상태를 점검한다"</td></tr>
+    </tbody>
+  </table>
+  <p>이 연구의 핵심은 마지막 줄, <b>활동</b>입니다. 수만 개의 구체적 과업을 점점 더 일반적인 활동으로 <b>4단계</b>로 묶어 올립니다. 그래야 "간호사의 혈압 측정"과 "정비사의 계기 점검"이 사실은 같은 상위 활동('상태 점검')이라는 걸 데이터로 볼 수 있습니다.</p>
+
+  <div class="key"><b>🟢 핵심</b> — 우리는 직업에 이름표를 다는 게 아니라, 직업이 하는 <b>'활동'을 4단계로 구조화</b>합니다. 이게 자동화 분석·직업 간 이동 분석의 토대가 됩니다.</div>
+
+  <details class="deep">
+    <summary>심화 — KSCO와 국제표준 ISCO의 두 축</summary>
+    <div class="dbody">
+      <p>국제노동기구(ILO)의 <b>ISCO-08</b>은 직업을 두 축으로 봅니다: <b>직능수준</b>(skill level, 일의 복잡도·교육수준)과 <b>직능유형</b>(skill specialization, 어느 분야 일인가). KSCO도 이 틀을 따릅니다. 최근 <b>ISCO-28 개정 논의</b>에서는 여기에 <b>책무성(responsibility)·자율성</b> 차원을 보강하자는 흐름이 있고(조세형 박사 직계 사전연구), 본 연구는 시범적으로 이 책무성 축(관리·자원·안전 책임)을 직업별로 부여하는 것까지 범위에 넣었습니다. 즉 이 연구는 ① 직무활동 4계층 + ② 책무성 측정 두 갈래를 함께 봅니다.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 2. O*NET 현재 구성 ===================== -->
+<section id="s2">
+  <h2><span class="num">2.</span>O*NET이란 무엇인가 — 현재 구성</h2>
+  <p class="lead">우리가 본뜨는 세계 표준. 지금 어떤 모습인지부터.</p>
+
+  <p><b>O*NET(오넷, Occupational Information Network)</b>은 미국 노동부가 운영하는 직업정보 표준입니다. 1995년에 옛 직업사전(DOT)을 대체하며 만들어졌고, 전 세계 직업 연구가 참고하는 사실상의 글로벌 기준입니다. 그 한복판에 우리가 만드는 것과 똑같은 <b>4계층 활동 체계</b>가 있습니다.</p>
+
+  <h3><span class="num">2.1</span> 4계층 — 아래(구체)에서 위(일반)로</h3>
+  <div class="levels">
+    <div class="lvrow"><div class="tier t-gwa"><b>GWA</b><small>일반화 작업활동</small></div>
+      <div class="desc"><b>가장 일반적인 활동</b>. 모든 직업을 비교하는 공통 좌표. <b>41개</b>.<div class="ex">예: "정보 입수", "데이터·정보 분석", "물체 취급 및 이동"</div></div></div>
+    <div class="lvrow"><div class="tier t-iwa"><b>IWA</b><small>중간 작업활동</small></div>
+      <div class="desc">GWA와 DWA 사이의 중간 묶음. 여러 직업군에 걸침. <b>332개</b>.<div class="ex">예: "진단 검사를 시행하여 환자 상태를 평가한다"</div></div></div>
+    <div class="lvrow"><div class="tier t-dwa"><b>DWA</b><small>세부 작업활동</small></div>
+      <div class="desc">같은 직업군 안 여러 직업이 공유하는 구체적 활동. <b>약 2,087개</b>.<div class="ex">예: "환자의 시력을 검사한다"</div></div></div>
+    <div class="lvrow"><div class="tier t-task"><b>TASK</b><small>직업특수 과업</small></div>
+      <div class="desc">한 직업에서만 쓰는 가장 구체적 진술. <b>약 19,000개+</b>.<div class="ex">예: "스넬렌 시력표를 사용해 환자의 원거리 시력을 측정한다"</div></div></div>
+  </div>
+  <p>위로 갈수록 <b>개수는 적고 더 일반적</b>이며, 아래로 갈수록 <b>개수는 많고 더 구체적</b>입니다. 피라미드를 떠올리시면 됩니다.</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="4계층 피라미드">
+      <polygon points="320,18 250,82 390,82" fill="#5b3a8a"/>
+      <polygon points="250,86 200,150 440,150 390,86" fill="#0f6b5f"/>
+      <polygon points="200,154 150,218 490,218 440,154" fill="#1f4e8c"/>
+      <polygon points="150,222 100,286 540,286 490,222" fill="#9a6212"/>
+      <text x="320" y="66" fill="#fff" font-size="15" font-weight="800" text-anchor="middle">GWA · 41</text>
+      <text x="320" y="126" fill="#fff" font-size="15" font-weight="800" text-anchor="middle">IWA · 332</text>
+      <text x="320" y="194" fill="#fff" font-size="15" font-weight="800" text-anchor="middle">DWA · 2,087</text>
+      <text x="320" y="262" fill="#fff" font-size="15" font-weight="800" text-anchor="middle">TASK · 19,000+</text>
+      <text x="585" y="54" fill="#697587" font-size="11" text-anchor="middle">일반</text>
+      <text x="585" y="270" fill="#697587" font-size="11" text-anchor="middle">구체</text>
+      <line x1="585" y1="62" x2="585" y2="252" stroke="#c7d0de" stroke-width="1.5" marker-end="url(#ar)"/>
+      <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#c7d0de"/></marker></defs>
+    </svg>
+    <div class="figcap">O*NET 4계층 — 위로 갈수록 일반적, 아래로 갈수록 구체적</div>
+  </div>
+
+  <h3><span class="num">2.2</span> GWA의 4대 영역</h3>
+  <p>맨 위 41개 GWA는 인간 활동을 <b>네 가지 큰 영역</b>으로 나눕니다. 이 4영역이 나중에 매우 중요한 쟁점이 됩니다(5장).</p>
+  <table>
+    <thead><tr><th>영역</th><th>뜻</th><th>GWA 예</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 정보 입력</b></td><td>정보를 받아들임</td><td>정보 입수 · 관찰 · 점검</td></tr>
+      <tr><td><b>② 정신 과정</b></td><td>머릿속에서 처리·판단</td><td>분석 · 의사결정 · 창의적 사고 · 계획</td></tr>
+      <tr><td><b>③ 작업 산출</b></td><td>몸·기계로 실제 결과물</td><td>물체 취급 · 기계 조작 · 운전</td></tr>
+      <tr><td><b>④ 타인과의 상호작용</b></td><td>사람을 상대</td><td>소통 · 조정 · 판매 · 돌봄</td></tr>
+    </tbody>
+  </table>
+  <div class="why"><b>핵심 통찰(미리 던지는 떡밥)</b> — 이 4영역은 "<b>어떤 인지기능을 쓰는가</b>"(정보입력·정신·산출·상호작용)로 나눈 겁니다. 그런데 이건 데이터에서 저절로 나온 게 아니라 <b>심리학 이론이 부과한 틀</b>입니다. 우리 데이터로 직접 묶으면 전혀 다른 축으로 갈립니다 — 5장에서 다룹니다.</p></div>
+
+  <details class="deep">
+    <summary>심화 — 규모·작성규칙·다중연결·ID 체계</summary>
+    <div class="dbody">
+      <p><b>규모(O*NET 30.x, 2026):</b> GWA 41 · IWA 332 · DWA 2,087 · TASK 약 19,000. 평균 1 직업당 17개 DWA가 연결.</p>
+      <p><b>DWA 작성 8대 규칙:</b> ①동사 1개로 시작 ②3인칭·현재형 ③명사 최소화 ④직무군에 맞는 적정 구체성("equipment"는 너무 넓고 "laser surgery robot"은 너무 좁음 → "medical treatment equipment") ⑤형용사로 명료화 ⑥예시절 회피 ⑦목적절 최소 ⑧8학년 가독성. 모호동사(use·handle) 금지, 구체동사(operate·analyze) 강제.</p>
+      <p><b>다중연결(Multiple Linkage):</b> 한 TASK가 여러 활동을 담으면 최대 <b>3개 DWA</b>에 연결. 전체 연결의 81%가 1차·17%가 2차·2.5%가 3차. 이 다중연결이 "직업 간 전환 가능성" 분석의 데이터 토대.</p>
+      <p><b>ID 체계:</b> <code>4.A.1.b.2</code>(GWA) → <code>.I01</code>(IWA) → <code>.D03</code>(DWA). IWA·DWA 번호는 <b>무작위</b> 부여 — 나중에 새 활동을 추가해도 번호를 재배치할 필요가 없게 함. (한국 적용 시에도 권장.)</p>
+      <p><b>완전분류 아님:</b> O*NET조차 약 6%의 TASK는 어느 DWA에도 안 붙입니다(본질적으로 특이한 과업). "100% 분류"를 목표로 잡으면 무리가 생긴다는 교훈.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 3. O*NET 개발 방법론 ===================== -->
+<section id="s3">
+  <h2><span class="num">3.</span>O*NET은 어떻게 만들어졌나 — 개발 방법론</h2>
+  <p class="lead">우리가 본뜬 "절차". 미국이 11년에 걸쳐 한 일.</p>
+
+  <p>O*NET 4계층은 한 번에 만든 게 아니라 <b>11년 간격의 두 작업</b>이 합쳐진 결과입니다. 이 두 작업의 절차가 곧 우리가 따르는 교본입니다.</p>
+  <table>
+    <thead><tr><th>작업</th><th>시기</th><th>한 일</th></tr></thead>
+    <tbody>
+      <tr><td><b>HumRRO</b>(험로)</td><td>2002</td><td>맨 아래 <b>TASK의 품질관리</b> — "이게 진짜 과업인가? 핵심인가?"를 거르는 기준</td></tr>
+      <tr><td><b>WA Project</b>(작업활동 프로젝트)</td><td>2014</td><td>거른 TASK를 묶어 <b>DWA·IWA를 새로 도출</b>, GWA에 연결 — 4계층 완성</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">3.1</span> 핵심 철학 — "사람의 판단이 최고다"</h3>
+  <p>2014년 WA Project가 내린 가장 중요한 결정은 이것입니다: <b>"컴퓨터(NLP)에 맡기지 말고 사람이 직접 판단하자."</b> 당시 과업 문장이 너무 제각각이라 컴퓨터가 핵심 활동을 안정적으로 못 뽑는다고 봤기 때문입니다. 그래서 박사급 분석가 팀을 대거 투입했습니다.</p>
+
+  <div class="caveat"><b>★ 우리 연구의 결정적 출발점</b> — 그 결론은 <b>2014년의 기술 한계</b> 때문이었습니다. 그때는 ChatGPT는커녕 현대 AI의 시초(BERT, 2018)도 나오기 전입니다. <b>2026년의 대형언어모델(Claude Opus 등)은 문장의 의미를 사람 수준으로 이해</b>합니다. 즉 "사람 판단이 최고"라는 결론은 더 이상 유효하지 않고, AI가 그 일을 대신할 수 있게 됐습니다. <b>이것이 우리가 발주기관에 내세우는 방법론적 정당성의 핵심</b>입니다.</div>
+
+  <h3><span class="num">3.2</span> 미국이 실제로 한 절차 (요약)</h3>
+  <ol class="steps">
+    <li><b>TASK 거르기(HumRRO)</b> — 재직자 설문 응답을 받아 "과업이 맞는가 / 중복인가 / 신규인가"를 의사결정 나무로 판정. 자유응답 1,088개 중 <b>단 1.6%만</b> 진짜 신규 과업으로 살아남음(나머지는 중복·모호·과업 아님).</li>
+    <li><b>직업군으로 분할</b> — 2만 개 과업을 22개 직업군으로 나눔(한 번에 다루기엔 너무 많으니까).</li>
+    <li><b>GWA에 배정</b> — 분석가 3~4명이 <b>각자 독립적으로</b> 과업마다 가장 맞는 GWA를 고름 → 다 같으면 합의, 갈리면 토론.</li>
+    <li><b>묶어서 DWA 작성</b> — 비슷한 과업을 모아 8대 규칙으로 DWA 문장을 씀.</li>
+    <li><b>DWA를 다시 묶어 IWA</b> — 같은 절차를 한 단계 위에서 반복.</li>
+    <li><b>교차 검증(Round-Robin QC)</b> — 한 팀이 만든 것을 <b>다른 팀이 검수</b>. 자기 것을 자기가 승인 못 하게.</li>
+  </ol>
+
+  <div class="key"><b>🟢 핵심</b> — 미국 방식의 두 기둥은 ① <b>아래에서 위로 묶어 올리기</b>(상향식)와 ② <b>만든 사람과 검수하는 사람을 분리</b>(셀프승인 금지)입니다. 우리도 이 두 기둥을 그대로 가져왔습니다.</div>
+
+  <details class="deep">
+    <summary>심화 — 핵심 수치와 "왜 NLP를 거부했나"의 원문</summary>
+    <div class="dbody">
+      <p><b>HumRRO 임계값:</b> 과업당 응답자 ≥15명(표준오차 시뮬레이션 근거), 관련성 ≥67%, 평균 중요도 ≥3.0(5점). 분석가 2명 독립 판정 일치도 <b>Cohen's Kappa 0.88</b>("almost perfect").</p>
+      <p><b>WA Project NLP 거부 원문:</b> "task statement structure is so variable that it would be very difficult for a technical system to reliably derive the most important data... <b>human judgment was determined to be paramount</b>." → 2026년 LLM은 이 "구조 변동성" 문제를 해소.</p>
+      <p><b>자원 투입(역산):</b> WA 개발팀 약 14명 × 12개월 ≈ <b>168 인·월</b>. 한국 본 사업은 그 30% 미만 자원 + 8개월. → <b>AI로 3배 이상 효율</b>을 내야 산술이 맞음(= AI 자동화가 선택이 아니라 필수인 근거).</p>
+      <p><b>다중연결 3중 검증:</b> 분석가1이 1~3차 연결 부여 → 분석가2 검토 → 분석가3이 분기 해소. 최종 22,714개 연결.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 4. 우리의 방법 ===================== -->
+<section id="s4">
+  <h2><span class="num">4.</span>우리는 어떻게 만들었나 — 우리의 연구개발 방법</h2>
+  <p class="lead">미국의 절차를 따르되, 사람 분석가를 AI로 대체해 8개월로 압축.</p>
+
+  <h3><span class="num">4.1</span> 단 하나의 큰 차이 — "사람 분석가 → AI 분석가"</h3>
+  <p>우리는 미국의 4계층 골격과 규칙을 <b>그대로</b> 따릅니다. 단 한 가지가 다릅니다: 미국이 박사 십수 명을 11년 투입한 자리에, 우리는 <b>인공지능(Claude Opus)을 '분석가'로</b> 앉혔습니다. 사람은 AI가 만든 것을 <b>검증·수정</b>하는 역할로 올라섭니다("AI가 초안, 전문가가 정본").</p>
+
+  <div class="method"><b>왜 외부 AI(GPT 등) 안 쓰고 Claude만?</b> 비용을 예측 가능하게(구독 정액제) 하고, 외부 API 키 없이 보안을 단순화하기 위해 <b>Claude Opus 단독</b>으로 전 과정을 돌렸습니다. 같은 작업을 <b>2번 독립적으로</b> 시켜 둘 다 나온 것만 채택하는 식으로 신뢰도를 높였습니다.</div>
+
+  <h3><span class="num">4.2</span> 5단계 파이프라인 (Stage 0 → 4)</h3>
+  <ol class="steps">
+    <li><b>Stage 0 — 입력 준비</b>: KSCO 8차 해설서의 직업설명 텍스트를 정제. 설명이 빈약한 직업은 상위 분류의 설명을 물려받게(상속) 처리.</li>
+    <li><b>Stage 1 — TASK 추출</b>: AI가 각 직업 설명을 읽고 과업을 뽑음(직업당 8~30개). "무슨 일 + 어떤 도구 + 어떤 환경"을 한 번에. → <b>16,168개</b>.</li>
+    <li><b>Stage 2 — DWA 도출</b>: 비슷한 과업을 <b>의미가 가까운 것끼리 자동으로 묶고</b>(군집), AI가 8대 규칙으로 이름 붙임. → <b>1,192개</b>.</li>
+    <li><b>Stage 3 — IWA 도출</b>: 같은 나무에서 한 단계 위를 잘라 묶음. → <b>178개</b>.</li>
+    <li><b>Stage 4 — GWA 도출</b>: 맨 위 일반 활동. → <b>세 가지 방식</b>으로(5장).</li>
+  </ol>
+
+  <div class="num-grid">
+    <div class="cell"><div class="big">16,168</div><div class="lbl">TASK</div><div class="sub">1,270개 직업 전수</div></div>
+    <div class="cell"><div class="big">1,192</div><div class="lbl">DWA</div><div class="sub">8대 규칙 100% 준수</div></div>
+    <div class="cell"><div class="big">178</div><div class="lbl">IWA</div><div class="sub">DWA:IWA = 6.7:1</div></div>
+    <div class="cell"><div class="big">41 / 36</div><div class="lbl">GWA</div><div class="sub">3안 비교 중</div></div>
+  </div>
+
+  <h3><span class="num">4.3</span> 우리 방식의 영리한 점 — "한 나무에서 잘라내기"</h3>
+  <p>미국은 DWA를 묶고, 그 결과를 다시 묶어 IWA를 만들고… 단계마다 따로 작업해서 위·아래가 안 맞을 위험이 있었습니다. 우리는 <b>처음에 모든 과업으로 '한 그루의 나무'(계층 구조)를 만들어 두고, 그 나무를 다른 높이에서 잘라</b> DWA·IWA·GWA를 얻습니다. 같은 나무를 자르니 <b>위·아래가 100% 맞물리는 것이 수학적으로 보장</b>됩니다(고아·중복 0건).</p>
+
+  <div class="key"><b>🟢 핵심</b> — 미국의 <b>규칙·철학은 그대로</b>, 실행은 <b>AI + 단일 나무 절단</b>으로. 결과: 사람이 11년 할 일을 8개월에, 게다가 계층이 빈틈없이 맞물리게.</div>
+
+  <details class="deep">
+    <summary>심화 — 군집 방법·검증 게이트·정직한 한계</summary>
+    <div class="dbody">
+      <p><b>어떻게 묶나:</b> 각 과업 문장을 AI가 숫자 벡터로 바꾸고(bge-m3 임베딩), 의미가 가까운 것끼리 계층적으로 묶음(scipy 응집군집, 코사인 거리). 미국의 "직업군 분할 → GWA 배정 → 군집" 수작업을 이 자동 군집이 대신함.</p>
+      <p><b>검증 게이트:</b> DWA 8조항·IWA 7조항을 기계가 자동 검사 → 위반 항목만 AI에 재작성 지시(최대 1라운드). 형식 준수율 100% 확보.</p>
+      <p><b>다중연결 유지:</b> 미국처럼 한 TASK를 최대 3개 DWA에 연결(평균 1.3개, 미국 1.26과 거의 동일).</p>
+      <p><b>정직한 발견 — cross-family 41.4%:</b> 우리 DWA의 41%가 여러 직업군에 걸침(미국 12%보다 높음). 결함이 아니라 "기계 조작 생산"이 129개 직업, "고객 응대"가 94개 직업에 공통으로 나타나는 한국 직업구조의 반영.</p>
+      <p><b>아직 비어 있는 것:</b> ① 모든 산출이 AI 단독 → 전문가 검수 웹(Streamlit)으로 사람 검증을 실제 돌리는 단계가 남음. ② 직업별로 각 활동을 "얼마나 중요하게 하는가" 측정(Stage 5)은 시범 2개 중분류만 예정.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 5. GWA 세 갈래 ===================== -->
+<section id="s5">
+  <h2><span class="num">5.</span>GWA — 세 갈래 길과 핵심 발견</h2>
+  <p class="lead">지금 대표님이 고민 중이신 바로 그 지점. 가장 중요한 장.</p>
+
+  <p>맨 위 <b>GWA</b>(일반 활동 41개)는 다른 계층과 성격이 다릅니다. 아래 계층들은 데이터를 묶으면 자연히 나오지만, GWA는 <b>"데이터에서 나오는 게 아니라 전문가가 이론으로 설계한 분류"</b>입니다. 그래서 "어떻게 만들 것인가"가 진짜 선택의 문제가 됩니다. 우리는 <b>세 갈래를 다 만들어</b> 비교해 두었습니다.</p>
+
+  <div class="trackcard"><div class="th tc-a"><span>4a · 하이브리드</span><span class="badge">현재 정본</span></div>
+    <div class="tb">미국 GWA <b>41개를 한국어로 들여오고</b>, 우리 IWA 178개를 거기에 배정. <b>33개</b>가 실제 사용됨.<br>
+    <b>장점</b> 국제 비교가 완벽(미국과 1:1). <b>단점</b> "ONET 번역"으로 보여 독창성이 약함.</div></div>
+
+  <div class="trackcard"><div class="th tc-b"><span>4b · 순수 상향식</span><span class="badge">실험</span></div>
+    <div class="tb">미국 것을 안 보고 <b>우리 데이터만으로</b> 위로 묶어 41개를 자생시킴.<br>
+    <b>발견</b> 우리 데이터는 미국의 "인지기능 축"이 아니라 <b>"직능유형 축"(생산·대인서비스·사무·운송)</b>으로 갈림. 미국 41개 중 19개와만 닮음.</div></div>
+
+  <div class="trackcard"><div class="th tc-c"><span>4c · 연역적 한국형</span><span class="badge">권장</span></div>
+    <div class="tb">미국의 <b>'만드는 방법'(4영역 틀 + 이론설계+데이터검증)만 빌리고, 41개 목록은 안 씀</b>. 한국 데이터·이론으로 <b>한국형 36개</b>를 자체 설계.<br>
+    <b>장점</b> 틀·방법은 국제 정합 + 내용은 한국 고유. 미국 41개 중 <b>28개</b>와 닮아 비교가능성도 가장 높음.</div></div>
+
+  <h3><span class="num">5.1</span> 두 가지 핵심 발견 (보고서의 학술 기여)</h3>
+  <p><b>① 데이터가 스스로 묶이는 축은 '인지기능'이 아니라 '직능유형'이다.</b> 우리 데이터로 직접 묶으면 미국의 "정보입력·정신과정·…"이 아니라 "생산·대인서비스·사무·운송"으로 갈립니다. → <b>미국의 4영역은 데이터가 아니라 이론이 부과한 틀</b>임을 실증한 것. 발주기관에 내세울 강력한 근거입니다.</p>
+  <p><b>② 추상 활동(의사결정·전략·자문·설득)은 한국 직업설명 텍스트에 잘 안 적혀 있다.</b> 그래서 데이터만으로는 이 활동들이 자생하지 못합니다. 미국도 이 부분은 <b>'추출'이 아니라 '전문가 평정'으로</b> 채웠습니다. → 우리의 연역 골격(4c) + <b>직업별 전문가 측정(Stage 5)이 한 세트</b>여야 완성됩니다.</p>
+
+  <h3><span class="num">5.2</span> 제 권고</h3>
+  <div class="key"><b>🟢 권고</b> — <b>4c(연역적 한국형 36개)를 정본</b>으로, <b>4a(ONET 41)를 국제 비교 매핑표</b>로 첨부, <b>4b를 구성타당도 부록</b>으로. 이 사업의 목적은 "한국형 프레임워크"인데 정본이 "ONET 번역"이면 <i>"왜 직접 연구했나"</i>에 무너집니다. 단, 이건 <b>발주기관과 합의할 사항</b>이라 <b>중간보고회 때 3안을 나란히 제시</b>해 정본을 함께 정하는 것을 권합니다.</div>
+
+  <details class="deep">
+    <summary>심화 — 세 갈래 정량 비교와 "미표출 22개"</summary>
+    <div class="dbody">
+      <table>
+        <thead><tr><th></th><th>4a 하이브리드</th><th>4b 순수상향식</th><th>4c 연역</th></tr></thead>
+        <tbody>
+          <tr><td>결과 GWA 수</td><td>41 (33 사용)</td><td>41 자생</td><td>36</td></tr>
+          <tr><td>4영역 축</td><td>인지기능(미국)</td><td>직능유형(데이터)</td><td>인지기능(이론채택)</td></tr>
+          <tr><td>미국 41 정합</td><td>100%(수입)</td><td>19/41</td><td>28/41</td></tr>
+          <tr><td>성격</td><td>수입</td><td>데이터 자생</td><td>틀=국제·내용=한국</td></tr>
+        </tbody>
+      </table>
+      <p><b>미표출 22개:</b> 순수 상향식(4b)에서 미국 GWA 41개 중 22개가 우리 데이터로는 독립 범주로 안 나타남. 그 22개는 대부분 <b>정신과정·타인상호작용</b>(의사결정·전략수립·자문·설득·팀 구축·행정)에 몰려 있음. 물리적·생산적 활동은 잘 표출되지만 추상 인지·관리 활동은 KSCO 텍스트가 잘게 기술하지 않기 때문. 4c는 이를 <b>연역으로 복원</b>해 의사결정·전문지식적용·조정 등을 되살림(basis가 'theory'/'mixed'인 범주 = Stage 5 측정으로 채울 자리).</p>
+    </div>
+  </details>
+</section>
+
+<!-- ===================== 6. 자료 지도 ===================== -->
+<section id="s6">
+  <h2><span class="num">6.</span>핵심 자료 지도 — 어디에 뭐가 있나</h2>
+  <p class="lead">더 깊이 보고 싶으실 때 펼칠 자료들의 위치.</p>
+
+  <h3><span class="num">6.1</span> 학습 시리즈 (개념·방법론 입문)</h3>
+  <p>경로: <code>07_references/스터디자료/</code> — 연구진용으로 작년 5월 작성. 본 학습서가 그 핵심을 대표님 눈높이로 압축했지만, 더 깊이 보실 땐 아래가 원전입니다.</p>
+  <table>
+    <thead><tr><th>자료</th><th>다루는 것</th></tr></thead>
+    <tbody>
+      <tr><td>Part 1 직업분류 기초</td><td>직업·직무·과업, ISCO·KSCO 원리</td></tr>
+      <tr><td>Part 2 O*NET 4계층 완전이해</td><td>GWA·IWA·DWA·TASK 정의·규모·규칙 (본 학습서 2·3장의 원전)</td></tr>
+      <tr><td>Part 3 미국 도출 방법론</td><td>HumRRO·WA Project 절차 상세 (본 학습서 3장의 원전)</td></tr>
+      <tr><td>Part 4 AI 활용 도출방법</td><td>LLM·임베딩·군집을 어디에 쓰나</td></tr>
+      <tr><td>Part 0 발주기관 사전연구</td><td>국가데이터처·KSCO 8차·조세형 박사 사전연구·RFP 행간</td></tr>
+    </tbody>
+  </table>
+
+  <h3><span class="num">6.2</span> 심층분석 (원자료 해부)</h3>
+  <p>경로: <code>07_references/심층분석/</code> — 국제 원문 자료를 직접 해부한 문서들.</p>
+  <ul class="tight">
+    <li><b>00 O*NET 종합분석</b> · <b>01 콘텐츠모델</b> · <b>02 작업활동/DWA</b> — 미국 표준의 속살</li>
+    <li><b>03 ISCO-08 동반지침</b> — 국제표준·책무성 차원</li>
+    <li><b>04 HumRRO 품질관리</b> — TASK 거르기 원리</li>
+    <li><b>05 KSCO 8차</b> · <b>06 KECO 2025</b> — 한국 분류체계</li>
+  </ul>
+
+  <h3><span class="num">6.3</span> 우리 연구의 설계·결과 문서 (가장 최신)</h3>
+  <p>경로: <code>04_framework_design/docs/</code></p>
+  <ul class="tight">
+    <li><b>stages/Stage0~5 설계서</b> — 각 단계를 무엇을·어떻게 (4·5장의 근거)</li>
+    <li><b>stages/results/Stage1~4c 결과해설서</b> — 실제로 무엇이 나왔는지 (3안 GWA 결과)</li>
+    <li><b>직무활동체계_도출방법론_연구진보고.html</b> — 연구진용 종합 방법론(본 학습서의 기술 원전)</li>
+    <li><b>전체로드맵_및_진행현황_연구진보고.html</b> — 일정·진척</li>
+  </ul>
+
+  <h3><span class="num">6.4</span> 원천 데이터</h3>
+  <p>미국 <b>O*NET 30.3 데이터베이스</b>(엑셀 43개, Tasks↔DWAs·GWAs↔IWAs 매핑표 포함)가 <code>01_data_collection/00_external_references/</code>에 입수되어 있어, 우리 결과를 미국 것과 직접 대조할 수 있습니다.</p>
+</section>
+
+<!-- ===================== 7. 기억할 것 ===================== -->
+<section id="s7">
+  <h2><span class="num">7.</span>대표님이 기억할 10가지 · 의사결정 포인트</h2>
+
+  <h3><span class="num">7.1</span> 핵심 10가지</h3>
+  <ol class="steps">
+    <li>이 연구는 직업에 <b>이름표가 아니라 '활동'을 4단계로</b> 다는 일이다.</li>
+    <li>4단계는 아래부터 <b>TASK → DWA → IWA → GWA</b>. 위로 갈수록 일반적·소수.</li>
+    <li>우리는 세계 표준 <b>O*NET의 설계를 그대로</b> 따른다(독자 발명이 아님 = 방어력).</li>
+    <li>미국은 <b>사람이 11년</b>, 우리는 <b>AI로 8개월</b>. "AI가 초안, 전문가가 정본".</li>
+    <li>미국이 2014년 AI를 거부한 건 <b>그때 기술 한계</b> 때문 — 2026년엔 유효하지 않다.</li>
+    <li>TASK 16,168 · DWA 1,192 · IWA 178까지 <b>전수 완성</b>, 계층이 빈틈없이 맞물린다.</li>
+    <li>맨 위 GWA는 <b>데이터가 아니라 이론으로 설계</b>하는 층 → 그래서 선택의 문제.</li>
+    <li>GWA <b>3안(4a 수입 / 4b 상향식 / 4c 연역)</b>을 다 만들어 비교해 두었다.</li>
+    <li>우리 데이터는 미국의 '인지기능 축'이 아니라 <b>'직능유형 축'</b>으로 갈린다(핵심 발견).</li>
+    <li>추상 활동(의사결정·전략)은 텍스트에 안 적혀 있어 <b>전문가 측정(Stage 5)으로 채워야</b> 완성.</li>
+  </ol>
+
+  <h3><span class="num">7.2</span> 지금 대표님 앞에 놓인 의사결정</h3>
+  <table>
+    <thead><tr><th>결정할 것</th><th>선택지</th><th>제 권고</th></tr></thead>
+    <tbody>
+      <tr><td><b>GWA 정본</b></td><td>4a 수입 / 4b 상향식 / 4c 연역</td><td><b>4c 정본 + 4a 매핑표 + 4b 부록</b>, 발주기관과 합의</td></tr>
+      <tr><td><b>전문가 검증</b></td><td>AI 단독 / 전문가 검수 게이트 실행</td><td>검수 웹 띄워 <b>실제 검증 실행</b>(정부 납품물 신뢰성)</td></tr>
+      <tr><td><b>Stage 5 측정 범위</b></td><td>최소(TASK·GWA) / 중간(+책무성·환경·도구) / 확장(+지식·기술·임금)</td><td><b>중간(2안)</b> — 추가비용 적고 ISCO 책무성 반영</td></tr>
+      <tr><td><b>시범 중분류</b></td><td>경영·금융 / 정보통신 / 보건 등</td><td><b>경영·금융 1개</b>로 Stage 0→5 전 과정 1회 관통 검증</td></tr>
+    </tbody>
+  </table>
+
+  <div class="key"><b>🟢 다음 한 걸음</b> — ① 중간보고회용 "GWA 3안 비교 + 권고" 슬라이드를 만들거나, ② 시범 중분류 1개로 Stage 5(전문가 측정)를 실제 돌려 '추상활동 공백'이 메워지는지 확인하는 것. 둘 중 하나로 들어가면 됩니다.</div>
+</section>
+
+<!-- ===================== 8. 용어 사전 ===================== -->
+<section id="s8">
+  <h2><span class="num">8.</span>용어 빠른 사전</h2>
+  <table>
+    <thead><tr><th>용어</th><th>한 줄 뜻</th></tr></thead>
+    <tbody>
+      <tr><td><b>O*NET</b></td><td>미국 노동부의 직업정보 표준. 우리가 본뜨는 세계 기준.</td></tr>
+      <tr><td><b>KSCO</b></td><td>한국표준직업분류. 직업에 코드·이름을 붙이는 국가 분류표.</td></tr>
+      <tr><td><b>TASK</b></td><td>한 직업이 하는 가장 구체적인 한 가지 행동(과업).</td></tr>
+      <tr><td><b>DWA</b></td><td>세부 작업활동. 같은 직업군 여러 직업이 공유하는 활동.</td></tr>
+      <tr><td><b>IWA</b></td><td>중간 작업활동. DWA와 GWA 사이.</td></tr>
+      <tr><td><b>GWA</b></td><td>일반화 작업활동. 모든 직업 비교의 공통 좌표(최상위).</td></tr>
+      <tr><td><b>nesting</b></td><td>위·아래 계층이 빈틈없이 맞물리는 포함관계.</td></tr>
+      <tr><td><b>상향식</b></td><td>구체적 데이터를 아래에서 위로 묶어 올리는 방식.</td></tr>
+      <tr><td><b>연역적</b></td><td>이론으로 먼저 틀을 정하고 데이터로 채우는 방식.</td></tr>
+      <tr><td><b>임베딩</b></td><td>문장을 의미가 담긴 숫자 벡터로 바꾸는 AI 기술(묶음의 기준).</td></tr>
+      <tr><td><b>책무성</b></td><td>관리·자원·안전에 대한 책임 정도. ISCO 개정이 강조하는 새 축.</td></tr>
+      <tr><td><b>Stage 5</b></td><td>직업별로 각 활동을 "얼마나 중요하게 하는가" 전문가가 측정하는 단계.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  대표를 위한 마스터 학습서 · P2026-010 국가데이터처 직업정보 프레임워크 연구 · 2026-06-16 작성<br>
+  본문은 의사결정자용으로 평이하게, 기술 상세는 '심화' 박스로 분리했습니다. 원전은 6장 자료 지도를 참조하세요.
+</footer>
+
+</div>
+<a href="#top" class="backtop" aria-label="맨 위로">↑</a>
+</body>
+</html>
