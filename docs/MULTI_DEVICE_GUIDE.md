@@ -78,7 +78,7 @@
 | 대상 | 방법 | 속도 |
 |------|------|------|
 | 문서·스킬·에이전트·산출물 (`_core/`, `projects/`, `outputs/`) | OneDrive 실시간 | 즉시 |
-| Git 이력 (커밋·브랜치) | `scripts\git-sync.cmd` 실행 (진단→pull→commit→push 원클릭) | 주 1~2회 |
+| Git 이력 (커밋·브랜치) | **매일 자동** (`setup-autosync.cmd` 로 등록) · 수동은 `git-sync.cmd` | 매일 1회 |
 | **Tier 1 스킬 (`~/.claude/skills/` 69개)** | `backup-user-settings.cmd` → `.desktop-setup/` → 다른 PC 복원 | 수동 (변경 시) |
 | **플러그인·MCP·settings.json** | 위와 동일 — 백업 기반 동기화 | 수동 |
 | AI 런타임 (`.git`, `.omc`, `.claude`) | 각 PC 로컬 (동기화 안 함) | — |
@@ -258,7 +258,8 @@ Claude Code: "오늘 미팅 메모를 회의록 양식으로 정리해줘"
 
 | 증상 | 원인 | 해결 |
 |------|------|------|
-| **GitHub에 최근 작업이 안 보임** | 커밋·push를 안 함 (OneDrive는 실시간, Git은 수동) | `scripts\git-sync.cmd` 실행 |
+| **GitHub에 최근 작업이 안 보임** | 자동 동기화 미등록 또는 실패 | `scripts\setup-autosync.cmd /status` 로 로그 확인 |
+| 자동 동기화가 매일 멈춤 | 충돌·인증 만료 | 로그 `%USERPROFILE%\.git-repos\vrin-autosync.log` 확인 후 `git-sync.cmd` 수동 실행 |
 | `git status` 에러 | junction 깨짐 | `setup-desktop.cmd` 재실행 |
 | push 충돌 | 양쪽 각각 커밋 | `git pull --rebase` 후 `git push` |
 | Git이 느림 | .git이 OneDrive 안 | junction 확인 `fsutil reparsepoint query .git` |
